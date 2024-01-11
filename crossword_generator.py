@@ -99,3 +99,28 @@ class Crossword(object):
                     intersections.append(tuple([row + i, column]))
 
         return intersections
+
+    def _can_word_be_inserted(self, word, direction, row, column):
+        if direction == Directions.ACROSS: 
+            if column + len(word) > self.dimensions:
+                return False
+
+            for i in range(len(word)): 
+                if self.grid[row][column + i] not in [Style.EMPTY, word[i]]:
+                    return False
+            
+            if word[0] == self.grid[row][column] or word[-1] == self.grid[row][column + len(word) - 1]:
+                return False
+
+        if direction == Directions.DOWN:
+            if row + len(word) > self.dimensions:
+                return False
+
+            for i in range(len(word)):
+                if self.grid[row + i][column] not in [Style.EMPTY, word[i]]:
+                    return False
+            
+            if word[0] == self.grid[row][column] or word[-1] == self.grid[row + len(word) - 1][column]:
+                return False
+            
+        return True
