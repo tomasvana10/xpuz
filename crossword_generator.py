@@ -37,7 +37,7 @@ class EscapeCharacterInWord(Exception):
         
         
 class Crossword(object):
-    def __init__(self, name, definitions, word_count):
+    def __init__(self, name, definitions, word_count, retry=False):
         if not definitions:
             raise EmptyDefinitions
         if len(definitions) < 3 or word_count < 3:
@@ -47,6 +47,7 @@ class Crossword(object):
         if any("\\" in word for word in definitions.keys()):
             raise EscapeCharacterInWord
 
+        self.retry = retry
         self.name = name
         self.word_count = word_count
         self.definitions = self._format_definitions(definitions)
@@ -65,11 +66,36 @@ class Crossword(object):
             return formatted_definitions
     
     def _find_dimensions(self):
-        '''Determine the square dimensions of the crossword based on total word count or maximum
-        word length'''
         total_char_count = sum(len(word) for word in self.definitions.keys())
-        dimensions = math.ceil(math.sqrt(total_char_count * 1.85))
+        dimensions = math.ceil(math.sqrt(total_char_count * 1.85)) + 1
         if dimensions < (max_word_len := (len(max(self.definitions.keys(), key=len)))):
             dimensions = max_word_len
 
         return dimensions
+
+    def _initialise_crossword_grid(self):
+        self.grid = [[Style.EMPTY for i in range(self.dimensions)] for j in range(self.dimensions)]
+    
+    def _place_word(self, word, direction, row, column):
+        if direction == Directions.ACROSS:
+            for i in range(len(word)):
+                self.grid[row][column + i] = word[i]
+
+        if direction == Directions.DOWN:
+            for i in range(len(word)):
+                self.grid[row + i][column] = word[i]
+
+    def _find_intersections(self, word, direction, row, column):
+        intersections = list()
+
+        if direction == Directions.ACROSS:
+            for i in range(len(word)):
+                if self.grid[row][column + i] == word[i]:
+                    intersections.append(tuple([row, column + i]))
+
+        if direction == Directions.DOWN:
+            for i in range(len(word)):
+                if self.grid[row + i][column] == word[i]:
+                    intersections.append(tuple([row + i, column]))
+
+        return intersections
