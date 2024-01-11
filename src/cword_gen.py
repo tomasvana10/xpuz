@@ -2,6 +2,7 @@ import random
 import string
 import json
 import math
+import pathlib
 
 import regex # Similar to "re" module but with more functionality
 
@@ -18,6 +19,10 @@ class Style:
 class Restrictions:
     KEEP_LANGUAGES_PATTERN = r"\PL" # The opposite of \p{l} which matches characters from any language
 
+
+class Paths:
+    ATTEMPTS_DB_PATH = pathlib.Path(__file__).resolve().parents[0] / "data/attempts_db.json"
+    CROSSWORDS_PATH = pathlib.Path(__file__).resolve().parents[0] / "cwords"
 
 # Errors
 class EmptyDefinitions(Exception):
@@ -47,13 +52,13 @@ class Crossword(object):
     '''The Crossword class creates and populates a grid with a given amount of randomly sampled words
     from a larger set of crossword definitions. Complete with error detection.
     
-    > To begin, assign a definitions JSON to a variable by running Crossword.load_definitions("path/to/file")
+    > To begin, assign a definitions JSON to a variable by running Crossword.load_definitions(f"{Paths.CROSSWORDS_PATH}/<name>.json)
     > For simple use, instantiate the class with the required parameters and call the generate() function.
-    > For more advanced use, use CrosswordHelper.find_best_crossword, which takes the same parameters as the crossword
+    > For more advanced use, use CrosswordHelper.find_best_crossword, which takes an ungenerated instance of the Crossword
       class. This will return a crossword object that is already has a populated grid and has more intersections than 
       a crossword generated with only a single attempt.
     
-    When inserting large amounts of words, fails will occur and the crossword will be missing a few words'''
+    When inserting large amounts of words, fails with insertion may occur.'''
      
     def __init__(self, name, definitions, word_count, retry=False):
         if not definitions:
@@ -353,26 +358,27 @@ class Crossword(object):
             # Recurse _populate_grid with "uninserted_words_backlog"
             self._populate_grid(self.uninserted_words_backlog, insert_backlog=True) 
             
-class CrosswordHelper:
+class CrosswordHelper():
+    '''Contains static methods to help with the loading of necessary JSON files and for performing optimised crossword
+    creation with `find_best_crossword`'''
     @staticmethod
-    def find_best_crossword(definitions, word_count, name):
+    def find_best_crossword(crossword):
         '''Determines the best crossword out of a amount of instantiated crosswords based on the largest 
         amount of total intersections and smallest amount of fails'''
-        if word_count < 3: # Have to pick up this error early
-            raise InsufficientDefinitionsAndOrWordCount
+        name = crossword.name
+        word_count = crossword.word_count
         
-        word_ct_to_attempts = CrosswordHelper._load_attempts("src/data/attempts.json")
-        max_attempts = word_ct_to_attempts[str(word_count)]
+        attempts_db = CrosswordHelper._load_attempts_db(Paths.ATTEMPTS_DB_PATH)
+        max_attempts = attempts_db[str(word_count)] # Get specified amount of attempts based on word count
         attempts = 0
 
-        crossword = Crossword(name=name, definitions=definitions, word_count=word_count)
-        crossword.generate()
         reinsert_definitions = crossword.definitions
+        crossword.generate()
         best_crossword = crossword
         
         while attempts < max_attempts:
             # Setting the "retry" param to True will make the Crossword class only randomise the 
-            # definitions it is given
+            # definitions it is given, not sample new random ones
             crossword = Crossword(name=name, definitions=reinsert_definitions, word_count=word_count, retry=True)
             crossword.generate()
             # Ensure the crossword with the most intersections is always assigned to best_crossword
@@ -394,21 +400,23 @@ class CrosswordHelper:
         return definitions
 
     @staticmethod
-    def _load_attempts(file_path):
+    def _load_attempts_db(file_path):
         '''Load a json that specifies the amount of attempts a crossword should be recreated based on
         the amount of words that crossword will contain'''
         with open(file_path, "r") as file:
-            attempts = json.load(file)
+            attempts_db = json.load(file)
         
-        return attempts
+        return attempts_db
 
 
 if __name__ == "__main__": # Example usage
-    definitions = Crossword.load_definitions("src/cwords/capitals.json") # Required
+    definitions = CrosswordHelper.load_definitions(f"{Paths.CROSSWORDS_PATH}/capitals.json")
     
-    crossword = CrosswordHelper.find_best_crossword(definitions=definitions, word_count=10, name="Capitals")
+    crossword = Crossword(definitions=definitions, word_count=100, name="Capitals")
+    crossword = CrosswordHelper.find_best_crossword(crossword)   
+    
     # You can also generate a single crossword:
     # crossword = Crossword(definitions=definitions, word_count=10, name="Capitals")
-    # crossword.generate()
+    # crossword.generate
 
     print(crossword)
