@@ -51,12 +51,16 @@ class PrintingCrosswordObjectBeforeGeneration(Exception):
 class Crossword(object):
     '''The Crossword class creates and populates a grid with a given amount of randomly sampled words
     from a larger set of crossword definitions. Complete with error detection.
-    
-    > To begin, assign a definitions JSON to a variable by running Crossword.load_definitions(f"{Paths.CROSSWORDS_PATH}/<name>.json)
+
+    Usage information:
+    > To begin, assign a definitions JSON to a variable by running 
+      Crossword.load_definitions(f"{Paths.CROSSWORDS_PATH}/<name>.json)
+      
     > For simple use, instantiate the class with the required parameters and call the generate() function.
-    > For more advanced use, use CrosswordHelper.find_best_crossword, which takes an ungenerated instance of the Crossword
-      class. This will return a crossword object that is already has a populated grid and has more intersections than 
-      a crossword generated with only a single attempt.
+    
+    > For more advanced use, use CrosswordHelper.find_best_crossword, which takes an ungenerated 
+      instance of the Crossword class. This will return a crossword object that is already has a 
+      populated grid and has more intersections than a crossword generated with only a single attempt.
     
     When inserting large amounts of words, fails with insertion may occur.'''
      
@@ -359,17 +363,17 @@ class Crossword(object):
             self._populate_grid(self.uninserted_words_backlog, insert_backlog=True) 
             
 class CrosswordHelper():
-    '''Contains static methods to help with the loading of necessary JSON files and for performing optimised crossword
-    creation with `find_best_crossword`'''
+    '''Contains static methods to help with the loading of necessary JSON files and for performing 
+    optimised crossword creation with `find_best_crossword`'''
     @staticmethod
     def find_best_crossword(crossword):
-        '''Determines the best crossword out of a amount of instantiated crosswords based on the largest 
-        amount of total intersections and smallest amount of fails'''
+        '''Determines the best crossword out of a amount of instantiated crosswords based on the 
+        largest amount of total intersections and smallest amount of fails'''
         name = crossword.name
         word_count = crossword.word_count
         
         attempts_db = CrosswordHelper._load_attempts_db(Paths.ATTEMPTS_DB_PATH)
-        max_attempts = attempts_db[str(word_count)] # Get specified amount of attempts based on word count
+        max_attempts = attempts_db[str(word_count)] # Get amount of attempts based on word count
         attempts = 0
 
         reinsert_definitions = crossword.definitions
@@ -379,10 +383,12 @@ class CrosswordHelper():
         while attempts < max_attempts:
             # Setting the "retry" param to True will make the Crossword class only randomise the 
             # definitions it is given, not sample new random ones
-            crossword = Crossword(name=name, definitions=reinsert_definitions, word_count=word_count, retry=True)
+            crossword = Crossword(name=name, definitions=reinsert_definitions, 
+                                  word_count=word_count, retry=True)
             crossword.generate()
             # Ensure the crossword with the most intersections is always assigned to best_crossword
-            if crossword.total_intersections > best_crossword.total_intersections and crossword.fails <= best_crossword.fails: 
+            if (crossword.total_intersections > best_crossword.total_intersections) and \
+                    (crossword.fails <= best_crossword.fails): 
                 best_crossword = crossword
             attempts += 1
         
@@ -401,8 +407,8 @@ class CrosswordHelper():
 
     @staticmethod
     def _load_attempts_db(file_path):
-        '''Load a json that specifies the amount of attempts a crossword should be recreated based on
-        the amount of words that crossword will contain'''
+        '''Load a json that specifies the amount of attempts a crossword should be recreated based 
+        on the amount of words that crossword will contain'''
         with open(file_path, "r") as file:
             attempts_db = json.load(file)
         
