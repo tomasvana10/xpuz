@@ -433,6 +433,6 @@ if __name__ == "__main__": # Example usage
     
     # You can also generate a single crossword:
     # crossword = Crossword(definitions=definitions, word_count=10, name="Capitals")
-    # crossword.generate
+    # crossword.generate()
 
     print(crossword)
