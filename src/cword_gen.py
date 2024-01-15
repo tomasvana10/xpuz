@@ -2,50 +2,15 @@ import random
 import string
 import json
 import math
-import pathlib
 
 import regex # Similar to "re" module but with more functionality
 
-
-class Directions:
-    ACROSS = "a"
-    DOWN = "d"
-
-
-class Style:
-    EMPTY = "▮"
-
-
-class Restrictions:
-    KEEP_LANGUAGES_PATTERN = r"\PL" # The opposite of \p{l} which matches characters from any language
-
-
-class Paths:
-    ATTEMPTS_DB_PATH = pathlib.Path(__file__).resolve().parents[0] / "data/attempts_db.json"
-    CROSSWORDS_PATH = pathlib.Path(__file__).resolve().parents[0] / "cwords"
-
-# Errors
-class EmptyDefinitions(Exception):
-    def __init__(self):
-        super().__init__("Definitions must not be empty")
-class InsufficientDefinitionsAndOrWordCount(Exception):
-    def __init__(self):
-        super().__init__("Length of definitions and/or word count must be greater than or equal to 3")
-class ShorterDefinitionsThanWordCount(Exception):
-    def __init__(self):
-        super().__init__("Length of definitions must be greater than or equal to the crossword word count")
-class InsufficientWordLength(Exception):
-    def __init__(self):
-        super().__init__("All words must be greater than or equal to 3 characters in length")
-class EscapeCharacterInWord(Exception):
-    def __init__(self):
-        super().__init__("All keys in words must not contain an escape character")
-class AlreadyGeneratedCrossword(Exception):
-    def __init__(self):
-        super().__init__("This crossword object already contains a generated crossword")
-class PrintingCrosswordObjectBeforeGeneration(Exception):
-    def __init__(self):
-        super().__init__("Call generate() on this instance before printing it")
+from constants import Directions, Style, Restrictions, Paths
+from errors import (
+    EmptyDefinitions, InsufficientDefinitionsAndOrWordCount, ShorterDefinitionsThanWordCount, 
+    InsufficientWordLength, EscapeCharacterInWord, AlreadyGeneratedCrossword, 
+    PrintingCrosswordObjectBeforeGeneration
+)
 
 
 class Crossword(object):
@@ -54,7 +19,7 @@ class Crossword(object):
 
     Usage information:
     > To begin, assign a definitions JSON to a variable by running 
-      Crossword.load_definitions(f"{Paths.CROSSWORDS_PATH}/<name>.json)
+      Crossword.load_definitions(f"{Paths.CWORDS_PATH}/<name>.json)
       
     > For simple use, instantiate the class with the required parameters and call the generate() function.
     
@@ -102,7 +67,7 @@ class Crossword(object):
         '''Create an "EMPTY" two-dimensional array then populate it.'''
         if not self.generated:
             self.generated = True
-            self._initialise_crossword_grid()
+            self._initialise_cword_grid()
             self._populate_grid(list(self.definitions.keys()))
         else:
             raise AlreadyGeneratedCrossword
@@ -130,7 +95,7 @@ class Crossword(object):
 
         return dimensions
 
-    def _initialise_crossword_grid(self):
+    def _initialise_cword_grid(self):
         '''Make a two-dimensional array of "EMPTY" characters.'''
         self.grid = [[Style.EMPTY for i in range(self.dimensions)] for j in range(self.dimensions)]
 
@@ -405,7 +370,7 @@ class CrosswordHelper():
 
     @staticmethod
     def load_definitions(file_path):
-        '''Load a definitions json from the current directory.'''
+        '''Load a definitions json for a given crossword.'''
         try:
             with open(file_path, "r") as file:
                 definitions = json.load(file)
@@ -426,7 +391,7 @@ class CrosswordHelper():
 
 
 if __name__ == "__main__": # Example usage
-    definitions = CrosswordHelper.load_definitions(f"{Paths.CROSSWORDS_PATH}/capitals.json")
+    definitions = CrosswordHelper.load_definitions(f"{Paths.CWORDS_PATH}/capitals/capitals.json")
     
     crossword = Crossword(definitions=definitions, word_count=100, name="Capitals")
     crossword = CrosswordHelper.find_best_crossword(crossword)   

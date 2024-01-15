@@ -1,21 +1,16 @@
 import googletrans
 import subprocess
 
-REPLACEMENTS = {
-    "zh-cn": "zh",
-    "zh-tw": None,
-    "ht": None,
-    "hmn": "hnj",
-    "sm": None,
-}
+from constants import LanguageReplacements
 
 def parse_langcodes(langcodes):
     parsed_langcodes = langcodes
-    for replacement in REPLACEMENTS:
+    for replacement in LanguageReplacements.REPLACEMENTS:
         parsed_langcodes.remove(replacement)
-        if (sub := (REPLACEMENTS[replacement])):
+        if (sub := (LanguageReplacements.REPLACEMENTS[replacement])):
             parsed_langcodes.append(sub)
     
+    parsed_langcodes.append("en")
     return parsed_langcodes
 
 def write_locales(langcodes):

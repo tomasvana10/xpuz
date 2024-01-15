@@ -1,5 +1,5 @@
-# Yoruba translations for PROJECT.
-# Copyright (C) 2024 ORGANIZATION
+# Yoruba translations for crossword_puzzle.
+# Copyright (C) 2024 Tomas Vana
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-01-11 23:12+1100\n"
-"PO-Revision-Date: 2024-01-12 11:33+1100\n"
+"PO-Revision-Date: 2024-01-15 13:45+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: yo\n"
 "Language-Team: yo <LL@li.org>\n"

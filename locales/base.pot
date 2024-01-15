@@ -1,5 +1,5 @@
-# Translations template for PROJECT.
-# Copyright (C) 2024 ORGANIZATION
+# Translations template for crossword_puzzle.
+# Copyright (C) 2024 Tomas Vana
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
