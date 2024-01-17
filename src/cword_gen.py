@@ -5,7 +5,7 @@ import math
 
 import regex # Similar to "re" module but with more functionality
 
-from constants import Directions, Style, Restrictions, Paths
+from constants import CrosswordDirections, CrosswordStyle, CrosswordRestrictions, Paths
 from errors import (
     EmptyDefinitions, InsufficientDefinitionsAndOrWordCount, ShorterDefinitionsThanWordCount, 
     InsufficientWordLength, EscapeCharacterInWord, AlreadyGeneratedCrossword, 
@@ -57,7 +57,8 @@ class Crossword(object):
         if not self.generated:
             raise PrintingCrosswordObjectBeforeGeneration
         
-        return f"\nCrossword name: {self.name}\n" + \
+        return \
+            f"\nCrossword name: {self.name}\n" + \
             f"Word count: {self.inserts}, Failed insertions: {self.word_count - self.inserts}\n" + \
             f"Total intersections: {self.total_intersections}\n\n" + \
             "\n".join(" ".join(cell for cell in row) for row in self.grid) + "\n\n" + \
@@ -67,7 +68,7 @@ class Crossword(object):
         '''Create an "EMPTY" two-dimensional array then populate it.'''
         if not self.generated:
             self.generated = True
-            self._initialise_cword_grid()
+            self.grid = self._initialise_cword_grid()
             self._populate_grid(list(self.definitions.keys()))
         else:
             raise AlreadyGeneratedCrossword
@@ -80,7 +81,8 @@ class Crossword(object):
             return dict(random.sample(list(definitions.items()), len(definitions))) 
         else:
             randomly_sampled_definitions = dict(random.sample(list(definitions.items()), self.word_count))
-            formatted_definitions = {regex.sub(Restrictions.KEEP_LANGUAGES_PATTERN, "", k) .upper(): v \
+            formatted_definitions = {regex.sub(CrosswordRestrictions.KEEP_LANGUAGES_PATTERN, 
+                                               "", k).upper(): v \
                                     for k, v in randomly_sampled_definitions.items()}
             return formatted_definitions
 
@@ -88,8 +90,8 @@ class Crossword(object):
         '''Determine the square dimensions of the crossword based on total word count or maximum
         word length.
         '''
-        total_char_count = sum(len(word) for word in self.definitions.keys())
-        dimensions = math.ceil(math.sqrt(total_char_count * 1.85)) + 1
+        self.total_char_count = sum(len(word) for word in self.definitions.keys())
+        dimensions = math.ceil(math.sqrt(self.total_char_count * 1.85)) + 1 
         if dimensions < (max_word_len := (len(max(self.definitions.keys(), key=len)))):
             dimensions = max_word_len
 
@@ -97,45 +99,48 @@ class Crossword(object):
 
     def _initialise_cword_grid(self):
         '''Make a two-dimensional array of "EMPTY" characters.'''
-        self.grid = [[Style.EMPTY for i in range(self.dimensions)] for j in range(self.dimensions)]
+        grid = [[CrosswordStyle.EMPTY for column in range(self.dimensions)] \
+                     for row in range(self.dimensions)]
+
+        return grid
 
     def _place_word(self, word, direction, row, column):
         '''Place a word in the grid at the given row, column and direction.'''
-        if direction == Directions.ACROSS:
+        if direction == CrosswordDirections.ACROSS:
             for i in range(len(word)):
                 self.grid[row][column + i] = word[i]
 
-        if direction == Directions.DOWN:
+        if direction == CrosswordDirections.DOWN:
             for i in range(len(word)):
                 self.grid[row + i][column] = word[i]
 
     def _find_first_word_placement_position(self, word):
         '''Place the first word in a random orientation in the middle of the grid.'''
-        direction = random.choice([Directions.ACROSS, Directions.DOWN])
+        direction = random.choice([CrosswordDirections.ACROSS, CrosswordDirections.DOWN])
         middle = self.dimensions // 2
 
-        if direction == Directions.ACROSS:
+        if direction == CrosswordDirections.ACROSS:
             row = middle
             column = middle - len(word) // 2
-            return {"word": word, "direction": Directions.ACROSS, 
+            return {"word": word, "direction": CrosswordDirections.ACROSS, 
                     "pos": (row, column), "intersections": list()}
 
-        if direction == Directions.DOWN:
+        if direction == CrosswordDirections.DOWN:
             row = middle - len(word) // 2
             column = middle
-            return {"word": word, "direction": Directions.DOWN, 
+            return {"word": word, "direction": CrosswordDirections.DOWN, 
                     "pos": (row, column), "intersections": list()}
 
     def _find_intersections(self, word, direction, row, column):
         '''Find the indexes of all points of intersection that the parameter "word" has with the grid.'''
         intersections = list()
 
-        if direction == Directions.ACROSS:
+        if direction == CrosswordDirections.ACROSS:
             for i in range(len(word)):
                 if self.grid[row][column + i] == word[i]:
                     intersections.append(tuple([row, column + i]))
 
-        if direction == Directions.DOWN:
+        if direction == CrosswordDirections.DOWN:
             for i in range(len(word)):
                 if self.grid[row + i][column] == word[i]:
                     intersections.append(tuple([row + i, column]))
@@ -150,23 +155,23 @@ class Crossword(object):
             3. The word intersects with another word of the same orientation at its final letter, 
                e.x. ATHENSOFIA (Athens + Sofia)
         '''
-        if direction == Directions.ACROSS: # 1
+        if direction == CrosswordDirections.ACROSS: # 1
             if column + len(word) > self.dimensions:
                 return False
 
             for i in range(len(word)): # 2
-                if self.grid[row][column + i] not in [Style.EMPTY, word[i]]:
+                if self.grid[row][column + i] not in [CrosswordStyle.EMPTY, word[i]]:
                     return False
             
             if word[0] == self.grid[row][column] or word[-1] == self.grid[row][column + len(word) - 1]: # 3
                 return False
 
-        if direction == Directions.DOWN:
+        if direction == CrosswordDirections.DOWN:
             if row + len(word) > self.dimensions:
                 return False
 
             for i in range(len(word)):
-                if self.grid[row + i][column] not in [Style.EMPTY, word[i]]:
+                if self.grid[row + i][column] not in [CrosswordStyle.EMPTY, word[i]]:
                     return False
             
             if word[0] == self.grid[row][column] or word[-1] == self.grid[row + len(word) - 1][column]:
@@ -188,7 +193,7 @@ class Crossword(object):
             row, column = placement["pos"]
             readability_flags = 0
 
-            if placement["direction"] == Directions.ACROSS:
+            if placement["direction"] == CrosswordDirections.ACROSS:
                 check_above = row != 0
                 check_below = row != self.dimensions - 1
                 check_left = column != 0
@@ -197,19 +202,19 @@ class Crossword(object):
                     if (row, column + i) in placement["intersections"]:
                         continue
                     if check_above:
-                        if self.grid[row - 1][column + i] != Style.EMPTY:
+                        if self.grid[row - 1][column + i] != CrosswordStyle.EMPTY:
                             readability_flags += 1
                     if check_below:
-                        if self.grid[row + 1][column + i] != Style.EMPTY:
+                        if self.grid[row + 1][column + i] != CrosswordStyle.EMPTY:
                             readability_flags += 1
                     if check_left and i == 0:
-                        if self.grid[row][column - 1] != Style.EMPTY:
+                        if self.grid[row][column - 1] != CrosswordStyle.EMPTY:
                             readability_flags += 1
                     if check_right and i == word_length - 1:
-                        if self.grid[row][column + i + 1] != Style.EMPTY:
+                        if self.grid[row][column + i + 1] != CrosswordStyle.EMPTY:
                             readability_flags += 1
 
-            if placement["direction"] == Directions.DOWN:
+            if placement["direction"] == CrosswordDirections.DOWN:
                 check_above = row != 0
                 check_below = row + word_length < self.dimensions
                 check_left = column != 0 
@@ -218,16 +223,16 @@ class Crossword(object):
                     if (row + i, column) in placement["intersections"]:
                         continue
                     if check_above and i == 0:
-                        if self.grid[row - 1][column] != Style.EMPTY:
+                        if self.grid[row - 1][column] != CrosswordStyle.EMPTY:
                             readability_flags += 1
                     if check_below and i == word_length - 1:
-                        if self.grid[row + i + 1][column] != Style.EMPTY:
+                        if self.grid[row + i + 1][column] != CrosswordStyle.EMPTY:
                             readability_flags += 1
                     if check_left:
-                        if self.grid[row + i][column - 1] != Style.EMPTY:
+                        if self.grid[row + i][column - 1] != CrosswordStyle.EMPTY:
                             readability_flags += 1
                     if check_right:
-                        if self.grid[row + i][column + 1] != Style.EMPTY:
+                        if self.grid[row + i][column + 1] != CrosswordStyle.EMPTY:
                             readability_flags += 1
 
             if not readability_flags: 
@@ -245,19 +250,21 @@ class Crossword(object):
 
         for row in range(self.dimensions):
             for column in range(self.dimensions):
-                if self._can_word_be_inserted(word, Directions.ACROSS, row, column):
-                    intersections = self._find_intersections(word, Directions.ACROSS, row, column)
+                if self._can_word_be_inserted(word, CrosswordDirections.ACROSS, row, column):
+                    intersections = self._find_intersections(word, CrosswordDirections.ACROSS, 
+                                                             row, column)
                     placements.append({
                         "word": word,
-                        "direction": Directions.ACROSS,
+                        "direction": CrosswordDirections.ACROSS,
                         "pos": (row, column),
                         "intersections": intersections})
 
-                if self._can_word_be_inserted(word, Directions.DOWN, row, column):
-                    intersections = self._find_intersections(word, Directions.DOWN, row, column)
+                if self._can_word_be_inserted(word, CrosswordDirections.DOWN, row, column):
+                    intersections = self._find_intersections(word, CrosswordDirections.DOWN, 
+                                                             row, column)
                     placements.append({
                         "word": word,
-                        "direction": Directions.DOWN,
+                        "direction": CrosswordDirections.DOWN,
                         "pos": (row, column),
                         "intersections": intersections})
 
@@ -273,10 +280,10 @@ class Crossword(object):
 
     def _add_data(self, placement):
         '''Append placement data to either list 0 or 1 (across or down) in the self.data array.'''
-        if placement["direction"] == Directions.ACROSS:
+        if placement["direction"] == CrosswordDirections.ACROSS:
             self.data[0].append(placement)
             
-        elif placement["direction"] == Directions.DOWN:
+        elif placement["direction"] == CrosswordDirections.DOWN:
             self.data[1].append(placement)
 
     def _populate_grid(self, words, insert_backlog=False):
@@ -346,7 +353,7 @@ class CrosswordHelper():
         name = crossword.name
         word_count = crossword.word_count
         
-        attempts_db = CrosswordHelper._load_attempts_db(Paths.ATTEMPTS_DB_PATH)
+        attempts_db = CrosswordHelper._load_attempts_db()
         max_attempts = attempts_db[str(word_count)] # Get amount of attempts based on word count
         attempts = 0
 
@@ -369,10 +376,10 @@ class CrosswordHelper():
         return best_crossword
 
     @staticmethod
-    def load_definitions(file_path):
+    def load_definitions(name):
         '''Load a definitions json for a given crossword.'''
         try:
-            with open(file_path, "r") as file:
+            with open(f"{Paths.CWORDS_PATH}/{name}/{name}.json", "r") as file:
                 definitions = json.load(file)
         except json.decoder.JSONDecodeError:
             raise EmptyDefinitions
@@ -380,20 +387,20 @@ class CrosswordHelper():
         return definitions
 
     @staticmethod
-    def _load_attempts_db(file_path):
+    def _load_attempts_db():
         '''Load a json that specifies the amount of attempts a crossword should be recreated based 
         on the amount of words that crossword will contain.
         '''
-        with open(file_path, "r") as file:
+        with open(Paths.ATTEMPTS_DB_PATH, "r") as file:
             attempts_db = json.load(file)
         
         return attempts_db
 
 
 if __name__ == "__main__": # Example usage
-    definitions = CrosswordHelper.load_definitions(f"{Paths.CWORDS_PATH}/capitals/capitals.json")
+    definitions = CrosswordHelper.load_definitions("capitals")
     
-    crossword = Crossword(definitions=definitions, word_count=100, name="Capitals")
+    crossword = Crossword(definitions=definitions, word_count=3, name="Capitals")
     crossword = CrosswordHelper.find_best_crossword(crossword)   
     
     # You can also generate a single crossword:

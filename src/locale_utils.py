@@ -1,13 +1,13 @@
 import googletrans
 import subprocess
 
-from constants import LanguageReplacements
+from constants import LanguageReplacementsForPybabel
 
 def parse_langcodes(langcodes):
     parsed_langcodes = langcodes
-    for replacement in LanguageReplacements.REPLACEMENTS:
+    for replacement in LanguageReplacementsForPybabel.REPLACEMENTS:
         parsed_langcodes.remove(replacement)
-        if (sub := (LanguageReplacements.REPLACEMENTS[replacement])):
+        if (sub := (LanguageReplacementsForPybabel.REPLACEMENTS[replacement])):
             parsed_langcodes.append(sub)
     
     parsed_langcodes.append("en")

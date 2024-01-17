@@ -15,7 +15,7 @@ class EscapeCharacterInWord(Exception):
         super().__init__("All keys in words must not contain an escape character")
 class AlreadyGeneratedCrossword(Exception):
     def __init__(self):
-        super().__init__("This crossword object already contains a generated crossword")
+        super().__init__("This crossword object already contains a generated crossword, view it by printing the crossword object")
 class PrintingCrosswordObjectBeforeGeneration(Exception):
     def __init__(self):
-        super().__init__("Call generate() on this instance before printing it")
+        super().__init__("Call generate() on this object before printing it")

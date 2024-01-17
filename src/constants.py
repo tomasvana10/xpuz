@@ -17,13 +17,15 @@ class Colour:
     class Light:
         MAIN = "#B0BEC5"
         SUB = "#CFD8DC"
+        TEXT_DISABLED = "#999999"
 
     class Dark:
         MAIN = "#263238"
         SUB = "#37474F"
+        TEXT_DISABLED = "#737373"
 
 
-class Difficulties:
+class CrosswordDifficulties:
     DIFFICULTIES = ["Easy", "Medium", "Hard", "Extreme"]
 
 
@@ -34,7 +36,7 @@ class Fonts:
     BOLD_LABEL_FONT = {"size": 14, "weight": "bold", "slant": "roman"}
 
 
-class LanguageReplacements:
+class LanguageReplacementsForPybabel:
     REPLACEMENTS = {
         "zh-cn": "zh",
         "zh-tw": None,
@@ -44,18 +46,18 @@ class LanguageReplacements:
     }
 
 
-class Directions:
+class CrosswordDirections:
     ACROSS = "a"
     DOWN = "d"
 
 
-class Style:
+class CrosswordStyle:
     EMPTY = "▮"
 
 
-class Restrictions:
+class CrosswordRestrictions:
     KEEP_LANGUAGES_PATTERN = r"\PL" # The opposite of \p{l} which matches characters from any language
 
 
-class OtherConstants:
+class BaseEngStrings:
     BASE_ENG_APPEARANCES = ["light", "dark", "system"]
