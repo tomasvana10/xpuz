@@ -19,3 +19,6 @@ class AlreadyGeneratedCrossword(Exception):
 class PrintingCrosswordObjectBeforeGeneration(Exception):
     def __init__(self):
         super().__init__("Call generate() on this object before printing it")
+class MakingUnfilledReplicaGridBeforeGeneration(Exception):
+    def __init__(self):
+        super().__init__("Call generate() on this object before creating an unfilled replica of the populated grid")        

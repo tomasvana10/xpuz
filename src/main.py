@@ -13,7 +13,9 @@ from PIL import Image
 
 import cword_gen as cwg
 from cword_gen import Crossword, CrosswordHelper
-from constants import Paths, Colour, Fonts, CrosswordDifficulties, CrosswordStyle, BaseEngStrings
+from constants import (
+    Paths, Colour, Fonts, CrosswordDifficulties, CrosswordStyle, BaseEngStrings
+)
 
 
 class Home(ctk.CTk):
@@ -129,7 +131,7 @@ class Home(ctk.CTk):
 
     def _exit_handler(self, restart=False):
         if AppHelper.confirm_with_messagebox(exit_=True, restart=restart):
-            self.destroy()
+            self.quit()
         if restart:
             AppHelper.start_app()
 
@@ -171,6 +173,7 @@ class CrosswordBrowser(ctk.CTkFrame):
         self.grid_rowconfigure(0, weight=1)
         
         self.cword_launch_options_enabled = False
+        self.cword_game_loaded = False
         self.selected_block = ctk.IntVar()
         self.selected_block.set(-1)
         self.word_count_preference = ctk.IntVar()
@@ -234,11 +237,11 @@ class CrosswordBrowser(ctk.CTkFrame):
         else:
             self.custom_word_count_optionmenu.configure(state="normal")
             self.custom_word_count_optionmenu.set("3")
-        self.b_load_selected_cword.configure(state="normal")
+        
+        if not self.cword_game_loaded:
+            self.b_load_selected_cword.configure(state="normal")
      
     def load_selected_cword(self):
-        self.b_load_selected_cword.configure(state="disabled")
-        return
         if self.word_count_preference.get() == 0:
             chosen_word_count = self.selected_cword_word_count
         elif self.word_count_preference.get() == 1:
@@ -249,7 +252,9 @@ class CrosswordBrowser(ctk.CTkFrame):
                                   name=self.selected_cword_name)
         crossword = cwg.CrosswordHelper.find_best_crossword(crossword)
         
-        crossword_game = CrosswordGame(crossword, self)
+        self.cword_game_loaded = True
+
+        # ...
             
     def _generate_crossword_blocks(self):
         self.blocks_sequence = list()
@@ -280,67 +285,6 @@ class CrosswordBrowser(ctk.CTkFrame):
     
     def go_to_home(self):
         self.master.close_cword_browser()
-
-
-class CrosswordGame(ctk.CTkToplevel):
-    def __init__(self, crossword, master):
-        super().__init__(master)
-        self.master = master
-        self.crossword = crossword
-        
-        # Will likely need these attributes
-        self.word_count = self.crossword.word_count
-        self.complete_grid = self.crossword.grid
-        self.dimensions = self.crossword.dimensions
-        self.total_char_count = self.crossword.total_char_count
-        self.data = self.crossword.data
-        
-        self.ref_grid = self._make_ref_grid()
-        
-        self.resizable(False, False) # Prevent insane amounts of lag and allow the toplevel to open
-                                     # in a new window and not a new tab (on MacOS)
-        self.geometry(f"{self.winfo_screenwidth()}x{self.winfo_screenheight()}")
-        self.title("Crossword Puzzle - Game")
-
-        self._make_content()
-        self._place_content()
-        self._make_cells()
-    
-    def _make_content(self):
-        self.cword_container_dimensions = min(self.winfo_screenwidth(), self.winfo_screenheight())
-        self.cword_container = ctk.CTkFrame(self, height=self.cword_container_dimensions, 
-                                            width=self.cword_container_dimensions)
-        self._configure_container_grid()
-        
-    def _place_content(self):
-        self.cword_container.pack(side="left")
-
-    def _configure_container_grid(self):
-        for i in range(self.dimensions):
-            self.cword_container.grid_rowconfigure(i, weight=1)
-            self.cword_container.grid_columnconfigure(i, weight=1)
-
-    def _make_ref_grid(self):
-        ref_grid = self.complete_grid.copy()
-        ref_grid = [["" if column != CrosswordStyle.EMPTY else column for column in row] for row in ref_grid]
-
-        return ref_grid
-
-    def _make_cells(self):
-        self.cell_objects_grid = list()
-        
-        for row in range(self.dimensions):
-            cell_objects_row = list()
-            for column in range(self.dimensions):
-                frame_colour = "black" if self.ref_grid[row][column] == CrosswordStyle.EMPTY else "white"
-                cell_size = (self.cword_container_dimensions // self.dimensions)
-                cell_frame = ctk.CTkFrame(self.cword_container, fg_color=frame_colour,
-                                          width=cell_size, height=cell_size, corner_radius=0,
-                                          border_width=1)
-                cell_frame.grid(row=row, column=column, sticky="nsew")
-                cell_frame.bind("<Button-1>", lambda e: print("test"))
-                cell_objects_row.append(cell_frame)
-            self.cell_objects_grid.append(cell_objects_row)
 
     
 class HorizontalScrollFrame(ctk.CTkFrame):
