@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossword Puzzle - Game</title>
+    <style>
+        :root {
+            --dimensions: {{ dimensions }};
+            --dynamic_font_size: calc(120vmin / calc(var(--dimensions) * 1.65));
+        }
+
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 120vmin; /* Square dimensions - 1.2x larger than minimum viewport dimension */
+            height: 120vmin;
+        }
+
+        table {
+            margin: 1em;
+            table-layout: fixed;
+            height: 100%;
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 1px; 
+            background-color: black;
+        }
+
+        table td {
+            position: relative;
+            background: whitesmoke;
+            text-align: center;
+            text-transform: uppercase;
+            vertical-align: bottom;
+            font-size: var(--dynamic_font_size)
+        }
+
+        .num_label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: calc(var(--dynamic_font_size) / 2); /* I LOVE CALC FUNCTION!! THANKS CSS! */
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="title">Crossword Puzzle - Game</h1>
+    <hr>
+    <div class="container">
+        <table class="table">
+            {% for row in range(dimensions) %}
+                <tr>
+                    {% for column in range(dimensions) %}
+                        <td data-row="{{ row }}" data-column="{{ column }}">T 
+                            <div class="num_label">1</div>
+                        </td>
+                    {% endfor %}  
+                </tr>
+            {% endfor %} 
+        </table>
+    </div>
+</body>
+</html> 
+

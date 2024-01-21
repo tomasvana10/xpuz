@@ -1,9 +1,9 @@
-'''The `LocaleUtils` class uses `parse_langcodes` to parse `googletrans` langcodes to remove any 
+'''The `LocaleUtils` class uses `_parse_locales` to parse `googletrans` langcodes to remove any 
 inconsistencies with the locale naming conventions of Babel's `Locales` class. 
 
-The class uses `write_locales` to initialise all of the locale folders based on the parsed locales.
+The class uses `_write_locales` to initialise all of the locale folders based on the parsed locales.
 
-NOTE: `write_locales` only works on macOS currently.
+NOTE: `_write_locales` only works on macOS currently.
 '''
 
 import subprocess
@@ -15,7 +15,7 @@ from constants import LanguageReplacementsForPybabel
 
 class LocaleUtils:
     @staticmethod
-    def parse_langcodes(langcodes: Dict[str, str]) -> Dict[str, str]:
+    def _parse_locales(langcodes: Dict[str, str]) -> Dict[str, str]:
         '''Replace all googletrans langcodes as specified by `LanguageReplacementsForPyBabel` if the
         value of the langcode is a string. If it is a None value, it is removed entirely.
         '''
@@ -30,7 +30,7 @@ class LocaleUtils:
         return parsed_langcodes
 
     @staticmethod
-    def write_locales(langcodes: Dict[str, str]) -> None:
+    def _write_locales(langcodes: Dict[str, str]) -> None:
         '''Runs the pybabel `init` command to create approximately 104 locale files within
         `crossword_puzzle/locales` based on the parsed langcodes.
         '''
@@ -41,8 +41,9 @@ class LocaleUtils:
                 result = subprocess.run(['zsh', '-c', cmd], text=True)
             except:
                 print(f"Failed to insert: {code}")
-        
+
+
 if __name__ == "__main__":
     langcodes = list(googletrans.LANGCODES.values())
-    parsed_langcodes = LocaleUtils.parse_langcodes(langcodes)
-    LocaleUtils.write_locales(langcodes)
+    parsed_langcodes = LocaleUtils._parse_locales(langcodes)
+    LocaleUtils._write_locales(langcodes)

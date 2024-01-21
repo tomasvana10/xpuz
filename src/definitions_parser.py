@@ -1,6 +1,7 @@
-import regex # Similar to "re" module but with more functionality
 import random
 from typing import Dict
+
+import regex # Similar to "re" module but with more functionality
 
 from errors import (
     EmptyDefinitions, InsufficientDefinitionsAndOrWordCount, ShorterDefinitionsThanWordCount, 
@@ -15,6 +16,7 @@ class DefinitionsParser:
                            ) -> Dict[str, str]:
         definitions = definitions
 
+        # Required error checking
         if not definitions:
             raise EmptyDefinitions
         if len(definitions) < 3 or word_count < 3:

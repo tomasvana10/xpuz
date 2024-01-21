@@ -9,8 +9,7 @@ from definitions_parser import DefinitionsParser
 from constants import (
     CrosswordDirections, CrosswordStyle, DimensionsCalculation, Paths
 )
-from errors import ( # For the most part this isn't really necessary until, or if, custom crossword
-                     # creation is implemented
+from errors import ( 
     AlreadyGeneratedCrossword, PrintingCrosswordObjectBeforeGeneration, 
     MakingUnfilledReplicaGridBeforeGeneration
 )
@@ -45,7 +44,8 @@ class Crossword(object):
     >>> print(crossword)
     >>> pprint(crossword.unfilled_grid_replica) # Already made in this case
     
-    When inserting large amounts of words, fails with insertion may occur.
+    
+    NOTE: When inserting large amounts of words, fails with insertion may occur.
     '''
 
     def __init__(self, 
@@ -55,14 +55,15 @@ class Crossword(object):
                  retry: bool = False
                  ) -> None:
         self.retry = retry
-        if self.retry:
+        if self.retry: # Reattempting insertion, randomise exisiting definitions
             self.definitions = self._randomise_existing_definitions(definitions)
-        else:
+        else: # Randomly sample `word_count` amount of definitions and ensure they only contain
+              # language characters
             self.definitions = DefinitionsParser._parse_definitions(definitions, word_count)
 
-        self.generated: bool = False
         self.name = name
         self.word_count = word_count
+        self.generated: bool = False
         self.dimensions: int = self._find_dimensions()
         self.clues = dict() # Presentable to end-user; expanded as words are inserted
         ''' example: 
@@ -79,10 +80,11 @@ class Crossword(object):
         '''
         
     def __str__(self) -> str:
-        '''Display crossword when printing an instance of this class.'''
+        '''Display crossword when printing an instance of this class, on which `.generate()` has been called'''
         if not self.generated:
             raise PrintingCrosswordObjectBeforeGeneration
         
+        # Name, word count (insertions), failed insertions, total intersections, crossword, clues
         return \
             f"\nCrossword name: {self.name}\n" + \
             f"Word count: {self.inserts}, Failed insertions: {self.word_count - self.inserts}\n" + \
@@ -91,11 +93,11 @@ class Crossword(object):
             "\n".join(f"{k}: {v}" for k, v in self.clues.items())
 
     def generate(self) -> None:
-        '''Create an "EMPTY" two-dimensional array then populate it.'''
+        '''Create a two-dimensional array (filled with CrosswordStyle.EMPTY characters) then populate it.'''
         if not self.generated:
             self.generated = True
             self.grid: List[List[str]] = self._initialise_cword_grid()
-            self._populate_grid(list(self.definitions.keys()))
+            self._populate_grid(list(self.definitions.keys())) # Keys of definitions are the words
         else:
             raise AlreadyGeneratedCrossword
 
@@ -122,7 +124,7 @@ class Crossword(object):
         return dimensions
 
     def _initialise_cword_grid(self) -> List[List[str]]:
-        '''Make a two-dimensional array of "EMPTY" characters.'''
+        '''Make a two-dimensional array of `CrosswordStyle.EMPTY` characters.'''
         return [[CrosswordStyle.EMPTY for column in range(self.dimensions)] \
                 for row in range(self.dimensions)]
 
@@ -136,10 +138,12 @@ class Crossword(object):
         if direction == CrosswordDirections.ACROSS:
             for i in range(len(word)):
                 self.grid[row][column + i] = word[i]
-
-        if direction == CrosswordDirections.DOWN:
+            return
+        
+        elif direction == CrosswordDirections.DOWN:
             for i in range(len(word)):
                 self.grid[row + i][column] = word[i]
+            return
 
     def _find_first_word_placement_position(self, 
                                             word: str
@@ -154,7 +158,7 @@ class Crossword(object):
             return {"word": word, "direction": CrosswordDirections.ACROSS, 
                     "pos": (row, column), "intersections": list()}
 
-        if direction == CrosswordDirections.DOWN:
+        elif direction == CrosswordDirections.DOWN:
             row = middle - len(word) // 2
             column = middle
             return {"word": word, "direction": CrosswordDirections.DOWN, 
@@ -174,7 +178,7 @@ class Crossword(object):
                 if self.grid[row][column + i] == word[i]:
                     intersections.append(tuple([row, column + i]))
 
-        if direction == CrosswordDirections.DOWN:
+        elif direction == CrosswordDirections.DOWN:
             for i in range(len(word)):
                 if self.grid[row + i][column] == word[i]:
                     intersections.append(tuple([row + i, column]))
@@ -191,7 +195,7 @@ class Crossword(object):
         returning False include:
             1. The word being too long for the dimensions of the grid
             2. Other characters being in the way of the word (not intersecting)
-            3. The word intersects with another word of the same orientation at its final letter, 
+            3. The word intersects with another word of the same orientation at its first or last letter, 
                e.x. ATHENSOFIA (Athens + Sofia)
         '''
         if direction == CrosswordDirections.ACROSS: # 1
@@ -255,7 +259,7 @@ class Crossword(object):
                         if self.grid[row][column + i + 1] != CrosswordStyle.EMPTY:
                             readability_flags += 1
 
-            if placement["direction"] == CrosswordDirections.DOWN:
+            elif placement["direction"] == CrosswordDirections.DOWN:
                 check_above = row != 0
                 check_below = row + word_length < self.dimensions
                 check_left = column != 0 
@@ -417,9 +421,9 @@ class CrosswordHelper():
         attempts: int = 0
 
         reinsert_definitions: Dict[str, str] = crossword.definitions
-        try:
+        try: 
             crossword.generate()
-        except:
+        except: 
             ... # ok buddy
         best_crossword = crossword
         
@@ -463,7 +467,7 @@ class CrosswordHelper():
 if __name__ == "__main__": # Example usage
     definitions = CrosswordHelper.load_definitions("capitals")
     
-    crossword = Crossword(definitions=definitions, word_count=3, name="Capitals")
+    crossword = Crossword(definitions=definitions, word_count=80, name="Capitals")
     crossword = CrosswordHelper.find_best_crossword(crossword)   
 
     print(crossword)
