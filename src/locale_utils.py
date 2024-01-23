@@ -17,7 +17,7 @@ class LocaleUtils:
     @staticmethod
     def _parse_locales(langcodes: Dict[str, str]) -> Dict[str, str]:
         '''Replace all googletrans langcodes as specified by `LanguageReplacementsForPyBabel` if the
-        value of the langcode is a string. If it is a None value, it is removed entirely.
+        value of the langcode isn't falsy. If it is a None value, it is removed entirely.
         '''
         parsed_langcodes = langcodes
         for replacement in LanguageReplacementsForPybabel.REPLACEMENTS:

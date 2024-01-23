@@ -4,6 +4,10 @@ import gettext
 import locale
 import json
 import os
+import copy
+import subprocess
+import webbrowser
+import time
 from typing import List, Dict, Tuple, Union
 from pprint import pprint
 
@@ -14,9 +18,10 @@ from babel import Locale
 from PIL import Image
 
 import cword_gen as cwg
+import cword_webapp.app as app
 from cword_gen import Crossword, CrosswordHelper
 from constants import (
-    Paths, Colour, Fonts, CrosswordDifficulties, CrosswordStyle, BaseEngStrings
+    Paths, Colour, Fonts, CrosswordDifficulties, CrosswordStyle, CrosswordDirections, BaseEngStrings
 )
 
 
@@ -141,13 +146,19 @@ class Home(ctk.CTk):
         self._place_content()
 
     def _exit_handler(self, 
-                      restart: bool = False
+                      restart: bool = False,
+                      webapp_running: bool = False
                       ) -> None:
         '''Called when the event: "WM_DELETE_WINDOW" occurs or when the the program must be restarted,
         in which case the `restart` default parameter is overridden.
         '''
         if AppHelper.confirm_with_messagebox(exit_=True, restart=restart): # If user wants to exit/restart
+            try:
+                if self.cword_browser.webapp_running: 
+                    app.terminate_app()
+            except: ...
             self.quit()
+            
         if restart:
             AppHelper.start_app()
 
@@ -212,7 +223,7 @@ class CrosswordBrowser(ctk.CTkFrame):
         self.grid_rowconfigure(0, weight=1)
         
         self.cword_launch_options_enabled: bool = False
-        self.cword_game_loaded: bool = False
+        self.webapp_running: bool = False
         
         # Integer variables representing what crossword block the user has selected and their 
         # selected word count preference.
@@ -225,6 +236,10 @@ class CrosswordBrowser(ctk.CTkFrame):
         self._place_content()
         self._generate_crossword_blocks()
     
+        if self.master.cfg.get("misc", "cword_browser_opened") == "0":
+            AppHelper.show_messagebox(notify_must_terminate=True)
+            AppHelper._update_config(self.master.cfg, "misc", "cword_browser_opened", "1")
+            
     def _make_content(self) -> None:
         self.center_container = ctk.CTkFrame(self)
         self.horizontal_scroll_frame = ctk.CTkScrollableFrame(self.center_container, 
@@ -243,9 +258,19 @@ class CrosswordBrowser(ctk.CTkFrame):
                                           height=50, fg_color=Colour.Global.EXIT_BUTTON,
                                           hover_color=Colour.Global.EXIT_BUTTON_HOVER)
         
-        self.b_load_selected_cword = ctk.CTkButton(self, text="Load selected crossword", width=175, 
+        self.b_load_selected_cword = ctk.CTkButton(self, text="Load crossword", 
                                                    height=50, command=self.load_selected_cword, 
                                                    state="disabled")
+        
+        self.b_open_cword_webapp = ctk.CTkButton(self, text="Open web app",
+                                                 height=50, command=self.open_cword_webapp,
+                                                 state="disabled")
+        
+        self.b_terminate_cword_webapp = ctk.CTkButton(self, text="Terminate web app",
+                                             height=50, command=self.terminate_cword_webapp,
+                                             fg_color=Colour.Global.EXIT_BUTTON,
+                                             hover_color=Colour.Global.EXIT_BUTTON_HOVER,
+                                             state="disabled")
         
         self.l_word_count_preferences = ctk.CTkLabel(self, text="Word count preferences", 
                                                      font=ctk.CTkFont(size=Fonts.BOLD_LABEL_FONT["size"],
@@ -272,38 +297,77 @@ class CrosswordBrowser(ctk.CTkFrame):
         self.horizontal_scroll_frame.pack(expand=True, fill="both")
         self.l_title.place(relx=0.5, rely=0.1, anchor="c")
         self.b_go_to_home.place(relx=0.5, rely=0.2, anchor="c")
-        self.b_load_selected_cword.place(relx=0.65, rely=0.85, anchor="c")
+        self.b_load_selected_cword.place(relx=0.64, rely=0.81, anchor="c")
+        self.b_open_cword_webapp.place(relx=0.64, rely=0.91, anchor="c")
+        self.b_terminate_cword_webapp.place(relx=0.84, rely=0.855, anchor="c")
         self.l_word_count_preferences.place(relx=0.34, rely=0.745, anchor="c")
         self.radiobutton_max_word_count.place(relx=0.315, rely=0.8, anchor="c")
         self.radiobutton_custom_word_count.place(relx=0.315, rely=0.875, anchor="c")
         self.custom_word_count_optionmenu.place(relx=0.345, rely=0.935, anchor="c")
      
     def _on_word_count_radiobutton_selection(self, 
-                                    button_name: str
-                                    ) -> None: 
-        '''Based on what radiobutton called this function, the custom word count optionmenu will
-        either be disabled or enabled. If the crossword game is not yet loaded, this method will also
-        enable the launch button.
-        '''
-        if button_name == "max":
+                                             button_name: str
+                                             ) -> None: 
+        '''Configure custom word count optionmenu based on radiobutton selection.'''
+        if button_name == "max": # User wants max word count, do not let them select custom word count.
             self.custom_word_count_optionmenu.configure(state="disabled")
             self.custom_word_count_optionmenu.set("Select word count")
-        else:
+        else: # User wants custom word count, do not let them select max word count.
             self.custom_word_count_optionmenu.configure(state="normal")
             self.custom_word_count_optionmenu.set("3")
         
-        if not self.cword_game_loaded:
+        if not self.webapp_running: # Only if they haven't started the web app
             self.b_load_selected_cword.configure(state="normal")
      
+    def open_cword_webapp(self) -> None:
+        '''Open the crossword web app at a port read from `self.master.cfg`.'''
+        webbrowser.open(f"http://127.0.0.1:{self.master.cfg.get('misc', 'webapp_port')}/")
+     
+    def terminate_cword_webapp(self) -> None:
+        '''Appropriately reconfigure the states of the GUIs buttons and terminate the app.'''
+        self.b_terminate_cword_webapp.configure(state="disabled")
+        self.b_open_cword_webapp.configure(state="disabled")
+        self.word_count_preference.set(-1)
+        self._configure_cword_blocks_state("normal")
+        self._configure_cword_launch_options_state("disabled")
+        self.cword_launch_options_enabled: bool = False
+        self.webapp_running: bool = False
+        app.terminate_app() 
+     
+    def _configure_cword_blocks_state(self, 
+                                      state_: str
+                                      ) -> None:
+        '''Prevent the user from selecting a new crossword while they have one loaded.'''
+        for block in self.block_objects:
+            block.radiobutton_selector.configure(state=state_) 
+     
+    def _configure_cword_launch_options_state(self, 
+                                     state_: str
+                                     ) -> None:
+        '''Configure all the word_count preference widgets to an either an interactive or disabled
+        state (interactive when selecting a crossword, disabled when a crossword has been loaded).
+        '''
+        self.l_word_count_preferences.configure(state=state_)
+        self.radiobutton_max_word_count.configure(state=state_)
+        self.radiobutton_custom_word_count.configure(state=state_) 
+        self.custom_word_count_optionmenu.configure(state=state_)
+    
     def load_selected_cword(self) -> None:
         '''Load the selected crossword based on the selected word count option (retrieved from the
         `word_count_preference` IntVar). This method then loads the definitions based on the current
         crosswords name, instantiates a crossword object, finds the best crossword using
-        `CrosswordHelper.find_best_crossword`, and launches the interactive web app (work in progress).
+        `CrosswordHelper.find_best_crossword`, and launches the interactive web app using data retrieved
+        from the crossword instance's attributes.
         
         NOTE: The crossword information that this function accesses is saved whenever a new crossword
-        block is selected (by the `_on_cword_selection` function)
+        block is selected (by the `_on_cword_selection` function).
         '''
+        self.b_load_selected_cword.configure(state="disabled")
+        self.selected_block.set(-1)
+        self._configure_cword_blocks_state("disabled")
+        self._configure_cword_launch_options_state("disabled")
+        self.webapp_running: bool = True
+        
         if self.word_count_preference.get() == 0: # Just get the max word count
             chosen_word_count = self.selected_cword_word_count
         elif self.word_count_preference.get() == 1: # Get the selected word count from the option menu
@@ -314,44 +378,81 @@ class CrosswordBrowser(ctk.CTkFrame):
                                   name=self.selected_cword_name)
         crossword = cwg.CrosswordHelper.find_best_crossword(crossword)
         
-        self.cword_game_loaded: bool = True
+        self._interpret_cword_data(crossword)
+        self.init_webapp(crossword)
         
-        # ... work in progress
-            
+        time.sleep(1.0) # Must force user to wait before they click. If they click the open button
+                        # too fast, the browser seems to break.
+        self.b_open_cword_webapp.configure(state="normal")
+        self.b_terminate_cword_webapp.configure(state="normal")
+        
+    def init_webapp(self, 
+                    crossword: cwg.Crossword
+                    ) -> None:
+        '''Start the flask web app with information from the crossword and other interpreted data'''
+        app.init_webapp(
+            self.master.cfg.get("misc", "webapp_port"),
+            CrosswordStyle.EMPTY,
+            name = crossword.name,
+            word_count = crossword.word_count,
+            failed_insertions = crossword.fails,
+            dimensions = crossword.dimensions,
+            starting_word_positions = self.starting_word_positions,
+            starting_word_matrix = self.starting_word_matrix,
+            grid = crossword.grid,
+            definitions_a = self.definitions_a,
+            definitions_d = self.definitions_d
+        )
+
+    def _interpret_cword_data(self, 
+                              crossword: cwg.Crossword
+                              ) ->  None:
+        self.starting_word_positions = list(crossword.data.keys())
+        self.definitions_a = list()
+        self.definitions_d = list()
+        self.starting_word_matrix = copy.deepcopy(crossword.grid)
+        
+        i = 1
+        for row in range(crossword.dimensions):
+            for column in range(crossword.dimensions):
+                if (row, column) in self.starting_word_positions:
+                    current_cword_data = crossword.data[(row, column)]
+                    if current_cword_data["direction"] == CrosswordDirections.ACROSS:
+                        self.definitions_a.append({i: (current_cword_data["word"], current_cword_data["definition"])})
+                    elif current_cword_data["direction"] == CrosswordDirections.DOWN:
+                        self.definitions_d.append({i: (current_cword_data["word"], current_cword_data["definition"])})
+                    self.starting_word_matrix[row][column] = i
+                    i += 1
+                else:   
+                    self.starting_word_matrix[row][column] = 0
+    
     def _generate_crossword_blocks(self) -> None:
         '''Generates a variable amount of `CrosswordInfoBlock` instances based on how many crosswords
         are available, then packs them into `self.horizontal_scroll_frame`.
         '''
-        self.blocks_sequence = list() 
-        i = 0
+        self.block_objects = list() 
+        i = 1
         for file_name in os.listdir(Paths.CWORDS_PATH):
             if file_name.startswith("."): # Stupid hidden OS files
                 continue
             block = CrosswordInfoBlock(self.horizontal_scroll_frame, self, file_name, i)
             block.pack(side="left", padx=5, pady=(5, 0))
-            self.blocks_sequence.append(file_name)
+            self.block_objects.append(block)
             i += 1
-    
-    def _enable_cword_launch_options(self) -> None:
-        '''Configure all the word_count preference widgets to an interactive state (when the user
-        selects a crossword to configure).
-        '''
-        self.l_word_count_preferences.configure(state="normal")
-        self.radiobutton_max_word_count.configure(state="normal")
-        self.radiobutton_custom_word_count.configure(state="normal")
     
     def _on_cword_selection(self, 
                             name: str, 
-                            word_count: int
+                            word_count: int,
+                            value: int
                             ) -> None:
         '''Called by an instance of `CrosswordInfoBlock`, which passes the data for its given crossword 
         into this method. The method then saves this data, deselects any previous word count radiobutton
         selections, reconfigures the values of the custom word count optionmenu to be compatible with
         the newly selected crossword, and reconfigures the max word count label to show the correct
         maximum word count.
-        '''
+        '''        
         if not self.cword_launch_options_enabled:
-            self._enable_cword_launch_options()
+            self._configure_cword_launch_options_state("normal")
             self.cword_launch_options_enabled = True
 
         self.word_count_preference.set(-1)
@@ -364,6 +465,12 @@ class CrosswordBrowser(ctk.CTkFrame):
         '''Removes the content of `CrosswordBrowser` and regenerates the `Home` classes content. This
         must be done outside of this class.
         '''
+        if self.webapp_running:
+            if AppHelper.confirm_with_messagebox(go_to_home=True):
+                self.terminate_cword_webapp()
+            else:
+                return
+            
         self.master.close_cword_browser()
 
 
@@ -394,9 +501,9 @@ class CrosswordInfoBlock(ctk.CTkFrame):
         # Using a textbox because a label is impossible to wrap especially with custom widget scaling.
         self.name_textbox = ctk.CTkTextbox(self, font=ctk.CTkFont(size=Fonts.SUBHEADING_FONT["size"],
                                                                   slant=Fonts.SUBHEADING_FONT["slant"]),
-                                             wrap="word", fg_color=(Colour.Light.SUB, Colour.Dark.SUB),
-                                             scrollbar_button_color=(Colour.Light.MAIN, Colour.Dark.MAIN))
-        self.name_textbox.insert(1.0, f"{self.info['symbol']} {self.name.title()}")
+                                           wrap="word", fg_color=(Colour.Light.SUB, Colour.Dark.SUB),
+                                           scrollbar_button_color=(Colour.Light.MAIN, Colour.Dark.MAIN))
+        self.name_textbox.insert(1.0, f"{chr(int(self.info['symbol'], 16))} {self.name.title()}")
         self.name_textbox.configure(state="disabled")
 
         self.l_total_words = ctk.CTkLabel(self, text=f"Total words: {self.info['total_definitions']}")
@@ -409,11 +516,11 @@ class CrosswordInfoBlock(ctk.CTkFrame):
                         value=self.value, 
                         # Pass the necessary info to `self.master._on_cword_selection` so it can
                         # appropriately configure the word count preferences for the user.
-                        command=lambda name=self.name, word_count=self.info["total_definitions"]: \
-                            self.master._on_cword_selection(name, word_count))
+                        command=lambda name=self.name, word_count=self.info["total_definitions"], \
+                            value=self.value: self.master._on_cword_selection(name, word_count, value))
     
     def _place_content(self) -> None:
-        self.name_textbox.place(relx=0.5, rely=0.2, anchor="c", relwidth=0.9, relheight=0.21)
+        self.name_textbox.place(relx=0.5, rely=0.2, anchor="c", relwidth=0.9, relheight=0.22)
         self.l_total_words.place(relx=0.5, rely=0.47, anchor="c")
         self.l_difficulty.place(relx=0.5, rely=0.58, anchor="c")
         self.radiobutton_selector.place(relx=0.5, rely=0.76, anchor="c")
@@ -429,7 +536,7 @@ class AppHelper:
         cfg = ConfigParser()
         cfg.read(Paths.CONFIG_PATH)
         
-        if int(cfg.get("misc", "first_time_launch")): # Detect locale (first time launch)
+        if cfg.get("misc", "launches") == "0": # Detect locale (first time launch)
             language: str = locale.getlocale()[0]
         else: # Just read from config
             language: str = cfg.get("m", "language")
@@ -438,14 +545,15 @@ class AppHelper:
         # gettext.translation("messages", localedir=Paths.LOCALES_PATH, languages=[locale_.language]).install()
         
         AppHelper._update_config(cfg, "m", "language", locale_.language)
-        AppHelper._update_config(cfg, "misc", "first_time_launch", "0")
+        AppHelper._update_config(cfg, "misc", "launches", str(int(cfg.get("misc", "launches")) + 1))
         app = Home(AppHelper._get_language_options(), locale_, cfg)
         
         app.mainloop()
     
     @staticmethod
     def confirm_with_messagebox(exit_: bool = False, 
-                                restart: bool = False
+                                restart: bool = False,
+                                go_to_home: bool = False
                                 ) -> bool:
         '''Display appropriate confirmation messageboxes to the user, called by `Home._exit_handler`.'''
         if exit_ & restart:
@@ -456,12 +564,17 @@ class AppHelper:
             if tk.messagebox.askyesno("Exit", "Are you sure you want to exit the app?"):
                 return True
         
+        if go_to_home:
+            if tk.messagebox.askyesno("Back to home", "Are you sure you want to go back to the home screen? The webapp will be terminated."):
+                return True
+        
         return False
     
     @staticmethod
     def show_messagebox(same_lang: bool = False, 
                         same_scale: bool = False, 
-                        same_appearance: bool = False
+                        same_appearance: bool = False,
+                        notify_must_terminate: bool = False
                         ) -> None:
         '''Display appropriate error messages when a user attempts to select an already selected
         global settings options.
@@ -474,6 +587,10 @@ class AppHelper:
         
         if same_appearance:
             tk.messagebox.showerror("Error", "This appearance is already selected.")
+        
+        if notify_must_terminate:
+            tk.messagebox.showinfo("Info", "Once you load a crossword, you cannot load another one \
+                until you have terminated the web app") 
     
     @staticmethod
     def _update_config(cfg, 
@@ -502,9 +619,11 @@ class AppHelper:
         
         locales = sorted(os.listdir(Paths.LOCALES_PATH))
         locales.remove("base.pot")
-        
+
         i = 0
         for file_name in locales:
+            if file_name.startswith("."):
+                continue
             localised_langs.append(Locale.parse(file_name).language_name)
             localised_lang_db[localised_langs[i]] = file_name
             i += 1
@@ -518,7 +637,7 @@ class AppHelper:
             info = json.load(file)
         
         return info
-    
+
     
 if __name__ == "__main__":
     AppHelper.start_app()

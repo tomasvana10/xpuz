@@ -1,72 +1,153 @@
+<!-- The main (and only) page for the Crossword Puzzle game. This file contains the html that lays
+out the crossword grid, as well as the html to display the positions and clues of the words, and CSS.
+
+This file is viewed through a flask server and is interpreted by Jinja2 to help generate dynamic 
+content, as each crossword created by this program is unique (unless you get lucky). 
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crossword Puzzle - Game</title>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
     <style>
-        :root {
+        :root { 
             --dimensions: {{ dimensions }};
             --dynamic_font_size: calc(120vmin / calc(var(--dimensions) * 1.65));
         }
 
-        html {
-            font-family: Arial, Helvetica, sans-serif;
-        }
+        html { font-family: Arial, Helvetica, sans-serif; }
 
         .title {
             display: flex;
             justify-content: center;
         }
 
-        .container {
+        .container { /* Holds the crossword table/grid and the definitions div */
             width: 120vmin; /* Square dimensions - 1.2x larger than minimum viewport dimension */
             height: 120vmin;
         }
 
-        table {
+        table { /* The crossword grid */
             margin: 1em;
             table-layout: fixed;
             height: 100%;
             width: 100%;
+            /* Using separate instead of collapse for `border-collapse` fixes a lot of table problems somehow */
             border-collapse: separate;
             border-spacing: 1px; 
             background-color: black;
         }
 
-        table td {
-            position: relative;
+        table td { position: relative; } /* Cell (1 cell per letter) */
+
+        table td.non_empty_cell {
             background: whitesmoke;
             text-align: center;
-            text-transform: uppercase;
-            vertical-align: bottom;
+            text-transform: uppercase; /* When the user inputs a character into a cell, it will 
+                                        always be uppercase */
+            vertical-align: bottom; /* Make the words in a cell slightly below the cells center */
             font-size: var(--dynamic_font_size)
         }
 
-        .num_label {
+        table td.empty_cell { background: black; }
+
+        .num_label { /* Labels the start of a word */
             position: absolute;
             top: 0;
             left: 0;
-            font-size: calc(var(--dynamic_font_size) / 2); /* I LOVE CALC FUNCTION!! THANKS CSS! */
+            user-select: none;
+            -webkit-user-select: none;
+            font-size: calc(var(--dynamic_font_size) / 2); /* Half the font size of a cell letter */
         }
 
+        .definitions { /* Contains two divs that display the words that run across/down the grid */
+            position: absolute;
+            display: flex;
+            width: 37vmax;
+            max-width: 32vmax;
+            background-color: whitesmoke;
+            justify-content: center;
+            margin: 1em;
+            top: 10%;
+            right: 0;
+            overflow-y: auto;
+            max-height: 120vmin;
+        }
+
+        .definitions_a, .definitions_d { flex: 1; } /* Make both definition columns take up an equal 
+                                                    amount of space */
+
+        ul { list-style-type: none; } /* Remove bullet points from the unordered list */
+
+        li { 
+            margin-bottom: 10px; 
+            white-space: pre-wrap; /* Helps html recognise more whitespace for the definitions list */
+            user-select: none;
+            -webkit-user-select: none;
+        } 
+
+        li:hover { cursor: pointer; } /* Will help the user to understand that they can click on 
+                                    a list element/definition to set their input to the corresponding 
+                                    spot on the crossword grid */
+        .orient_heading {
+            user-select: none;
+            -webkit-user-select: none;
+        }    
     </style>
 </head>
-<body>
+
+<body data-grid="{{ grid }}" data-dimensions="{{ dimensions }}">
     <h1 class="title">Crossword Puzzle - Game</h1>
     <hr>
-    <div class="container">
-        <table class="table">
+    <div class="container">                         
+        <table>
             {% for row in range(dimensions) %}
-                <tr>
+                <tr> <!-- One <tr> (table row) per outer for loop iteration -->
                     {% for column in range(dimensions) %}
-                        <td data-row="{{ row }}" data-column="{{ column }}">T 
-                            <div class="num_label">1</div>
-                        </td>
+                    <!-- One <td> (data cell) per inner for loop iteration -->
+
+                        <!-- Determine cell content -->
+                        {% if grid[row][column] != empty %}  <!-- There is a word in this cell -->
+                            <td onclick="onCellClick()" class="non_empty_cell" data-row="{{ row }}" data-column="{{ column }}" data-value="{{ grid[row][column] }}">
+                                {% if (row, column) in starting_word_positions %}  <!-- This is the start of a word -->
+                                    <div class="num_label">{{ starting_word_matrix[row][column] }}</div>
+                                {% endif %}
+                            </td>
+
+                        {% else %} <!-- This cell has no characters, so it will be black -->
+                            <td class="empty_cell" data-row="{{ row }}" data-column="{{ column }}" data-value="None"></td>
+                        
+                        {% endif %} 
+
                     {% endfor %}  
                 </tr>
             {% endfor %} 
         </table>
+        <div class="definitions">
+            <div class="definitions_a"> <!-- Column one for across definitions -->
+                <ul>
+                    <h3 class="orient_heading">Across</h3>
+                    {% for dict_ in definitions_a %}
+                        {% for num_label, definition in dict_.items()%}
+                            <li data-num="{{ num_label }}"><b>{{num_label}}</b>  {{ definition[1]}}</li>
+                        {% endfor %}
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="definitions_d"> <!-- Column two for downward definitions -->
+                <ul>
+                    <h3 class="orient_heading">Down</h3>
+                    {% for dict_ in definitions_d %}
+                        {% for num_label, definition in dict_.items()%}
+                            <li data-num="{{ num_label }}"><b>{{num_label}}</b>  {{ definition[1]}}</li>
+                        {% endfor %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html> 

@@ -1,3 +1,6 @@
+'''Custom error classes used in `definitions_parser.py` and `cword_gen.py`.'''
+
+
 class EmptyDefinitions(Exception):
     def __init__(self):
         super().__init__("Definitions must not be empty")
@@ -19,6 +22,3 @@ class AlreadyGeneratedCrossword(Exception):
 class PrintingCrosswordObjectBeforeGeneration(Exception):
     def __init__(self):
         super().__init__("Call generate() on this object before printing it")
-class MakingUnfilledReplicaGridBeforeGeneration(Exception):
-    def __init__(self):
-        super().__init__("Call generate() on this object before creating an unfilled replica of the populated grid")        

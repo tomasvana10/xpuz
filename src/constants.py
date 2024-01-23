@@ -10,7 +10,6 @@ class Paths:
     CWORD_IMG_DARK_PATH = Path(__file__).resolve().parents[1] / "assets/images/cword_img_dark.png"
     CWORDS_PATH = Path(__file__).resolve().parents[0] / "cwords"
     ATTEMPTS_DB_PATH = Path(__file__).resolve().parents[0] / "data/attempts_db.json"
-    CWORD_REFERENCE_DATA = Path(__file__).resolve().parents[0] / "cword_webapp/cword_reference_data"
     
 
 class Colour:
@@ -54,6 +53,16 @@ class LanguageReplacementsForPybabel:
         "hmn": "hnj",
         "sm": None,
     }
+    
+''' Right to left scripts, can have translations but not for the crossword.
+"he": None,
+"ar": None,
+"fa": None,
+"ur": None,
+"ps": None,
+"ku": None,
+"sd": None,
+'''
 
 
 class CrosswordDirections:

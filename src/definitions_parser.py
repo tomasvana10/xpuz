@@ -9,25 +9,31 @@ from errors import (
 )
 from constants import CrosswordRestrictions
 
+
 class DefinitionsParser:
     @staticmethod
     def _parse_definitions(definitions: Dict[str, str], 
                            word_count: int
                            ) -> Dict[str, str]:
+        '''Conditional statements to raise errors for particular edge cases in a definitions dictionary.
+        This function also uses `_format_definitions` to randomly sample a specified amount of definitions
+        from the definitions dictionary, then format those definitions appropriately.
+        '''
         definitions = definitions
 
         # Required error checking
         if not definitions:
             raise EmptyDefinitions
-        if len(definitions) < 3 or word_count < 3:
+        if len(definitions) < 3 or word_count < 3: 
             raise InsufficientDefinitionsAndOrWordCount
-        if len(definitions) < word_count:
+        if len(definitions) < word_count: 
             raise ShorterDefinitionsThanWordCount
-        if any("\\" in word for word in definitions.keys()):
+        if any("\\" in word for word in definitions.keys()): # Escape character break regex filtering.
             raise EscapeCharacterInWord
 
         definitions = DefinitionsParser._format_definitions(definitions, word_count)
         
+        # Must check this after the definitions are formatted.
         if not (all(len(k) >= 3 for k in definitions.keys())):
                 raise InsufficientWordLength
 
@@ -39,8 +45,11 @@ class DefinitionsParser:
                             ) -> Dict[str, str]:
         '''Randomly pick definitions from a larger sample, then remove all but language characters.'''
         randomly_sampled_definitions = dict(random.sample(list(definitions.items()), word_count))
+        
+        # Remove all non language chars from the keys of `randomly_sampled_definitions` (the words)
+        # and capitalise its values (the clues/definitions).
         formatted_definitions = {regex.sub(CrosswordRestrictions.KEEP_LANGUAGES_PATTERN, 
-                                            "", k).upper(): v \
+                                          "", k).upper(): v.capitalize() \
                                 for k, v in randomly_sampled_definitions.items()}
         
         return formatted_definitions
