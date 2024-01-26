@@ -35,10 +35,10 @@ class LocaleUtils:
         `crossword_puzzle/locales` based on the parsed langcodes.
         '''
         for code in langcodes:
-            try:
+            try: 
                 print(f"Inserting: {code}")
                 cmd = f"pybabel init -l {code} -i locales/base.pot -d locales"
-                result = subprocess.run(['zsh', '-c', cmd], text=True)
+                subprocess.run(['zsh', '-c', cmd], text=True)
             except:
                 print(f"Failed to insert: {code}")
 

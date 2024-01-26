@@ -1,6 +1,5 @@
 Babel==2.14.0
 customtkinter==5.2.2
-darkdetect==0.8.0
 Flask==3.0.1
 googletrans==3.0.0
 Pillow==10.0.0

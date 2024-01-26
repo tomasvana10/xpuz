@@ -49,7 +49,9 @@ content, as each crossword created by this program is unique (unless you get luc
             text-transform: uppercase; /* When the user inputs a character into a cell, it will 
                                         always be uppercase */
             vertical-align: bottom; /* Make the words in a cell slightly below the cells center */
-            font-size: var(--dynamic_font_size)
+            font-size: var(--dynamic_font_size);
+            height: calc(100% / var(--dimensions));
+            vertical-align: middle;
         }
 
         table td.empty_cell { background: black; }
@@ -113,7 +115,7 @@ content, as each crossword created by this program is unique (unless you get luc
                         {% if grid[row][column] != empty %}  <!-- There is a word in this cell -->
                             <td onclick="onCellClick()" class="non_empty_cell" data-row="{{ row }}" data-column="{{ column }}" data-value="{{ grid[row][column] }}">
                                 {% if (row, column) in starting_word_positions %}  <!-- This is the start of a word -->
-                                    <div class="num_label">{{ starting_word_matrix[row][column] }}</div>
+                                    <div class="num_label" data-num_label="{{ starting_word_matrix[row][column] }}">{{ starting_word_matrix[row][column] }}</div>
                                 {% endif %}
                             </td>
 
@@ -132,7 +134,7 @@ content, as each crossword created by this program is unique (unless you get luc
                     <h3 class="orient_heading">Across</h3>
                     {% for dict_ in definitions_a %}
                         {% for num_label, definition in dict_.items()%}
-                            <li data-num="{{ num_label }}"><b>{{num_label}}</b>  {{ definition[1]}}</li>
+                            <li data-num="{{ num_label }}" onclick="onDefinitionsListItemClick('{{ num_label }}', 'ACROSS')"><b>{{num_label}}</b>  {{ definition[1]}}</li>
                         {% endfor %}
                     {% endfor %}
                 </ul>
@@ -142,7 +144,7 @@ content, as each crossword created by this program is unique (unless you get luc
                     <h3 class="orient_heading">Down</h3>
                     {% for dict_ in definitions_d %}
                         {% for num_label, definition in dict_.items()%}
-                            <li data-num="{{ num_label }}"><b>{{num_label}}</b>  {{ definition[1]}}</li>
+                            <li data-num="{{ num_label }}" onclick="onDefinitionsListItemClick('{{ num_label }}', 'DOWN')"><b>{{num_label}}</b>  {{ definition[1]}}</li>
                         {% endfor %}
                     {% endfor %}
                 </ul>
@@ -151,4 +153,3 @@ content, as each crossword created by this program is unique (unless you get luc
     </div>
 </body>
 </html> 
-

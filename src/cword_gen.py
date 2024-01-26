@@ -1,6 +1,6 @@
 import json
-import math
-import random
+from random import sample, choice
+from math import ceil, sqrt
 from typing import Dict, Tuple, List, Union
 
 from definitions_parser import DefinitionsParser
@@ -87,17 +87,17 @@ class Crossword(object):
         '''For reattempting generation, existing definitions are randomised, which prevents 
         find_best_crossword from favouring certain word groups with intrinsically higher intersections.
         '''
-        return dict(random.sample(list(definitions.items()), len(definitions)))
+        return dict(sample(list(definitions.items()), len(definitions)))
 
     def _find_dimensions(self) -> int:
         '''Determine the square dimensions of the crossword based on total word count or maximum
         word length.
         '''
         self.total_char_count: int = sum(len(word) for word in self.definitions.keys())
-        dimensions: int = math.ceil(math.sqrt(
-                                             self.total_char_count \
-                                             * DimensionsCalculation.WHITESPACE_SCALAR)) \
-                                             + DimensionsCalculation.DIMENSIONS_CONSTANT
+        dimensions: int = ceil(sqrt(
+                                   self.total_char_count \
+                                   * DimensionsCalculation.WHITESPACE_SCALAR)) \
+                                   + DimensionsCalculation.DIMENSIONS_CONSTANT
         # In case the maximum word length is longer than the calculated dimensions, this must be done.
         if dimensions < (max_word_len := (len(max(self.definitions.keys(), key=len)))):
             dimensions = max_word_len
@@ -132,7 +132,7 @@ class Crossword(object):
         '''Place the first word in a random orientation in the middle of the grid. This naturally makes
         the generator build off of the center, making the crossword look more symmetrical.
         '''
-        direction: str = random.choice([CrosswordDirections.ACROSS, CrosswordDirections.DOWN])
+        direction: str = choice([CrosswordDirections.ACROSS, CrosswordDirections.DOWN])
         middle: int = self.dimensions // 2
 
         if direction == CrosswordDirections.ACROSS:
@@ -347,7 +347,7 @@ class Crossword(object):
                     self.uninserted_words_backlog.append(word)
                     continue
                 else: # Reinsertion didn't help much, just pick a random placement
-                    placement: Placement = random.choice(sorted_placements)
+                    placement: Placement = choice(sorted_placements)
             else: 
                 placement: Placement = sorted_placements[0]
 
@@ -386,8 +386,7 @@ class CrosswordHelper():
         reinsert_definitions: Dict[str, str] = crossword.definitions
         try: 
             crossword.generate()
-        except: 
-            ... # ok buddy
+        except: ... # ok buddy
         best_crossword = crossword
         
         while attempts <= max_attempts:
@@ -430,7 +429,7 @@ class CrosswordHelper():
 if __name__ == "__main__": # Example usage
     definitions = CrosswordHelper.load_definitions("capitals")
     
-    crossword = Crossword(definitions=definitions, word_count=80, name="Capitals")
+    crossword = Crossword(definitions=definitions, word_count=3, name="Capitals")
     crossword = CrosswordHelper.find_best_crossword(crossword)   
 
     print(crossword)

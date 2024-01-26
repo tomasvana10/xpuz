@@ -22,9 +22,9 @@ def run(*args, **data):
         
     app.run(debug=False, port=int(args[0]))
 
-def init_webapp(port, empty, **data):
+def init_webapp(*args, **data):
     global server
-    server = Process(target=run, args=[port, empty], kwargs=data)
+    server = Process(target=run, args=args, kwargs=data)
     server.start()
 
 def terminate_app():

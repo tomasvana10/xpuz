@@ -52,17 +52,16 @@ class LanguageReplacementsForPybabel:
         "ht": None,
         "hmn": "hnj",
         "sm": None,
+        
+        "he": None,
+        "ar": None,
+        "fa": None,
+        "ur": None,
+        "ps": None,
+        "ku": None,
+        "sd": None,
     }
-    
-''' Right to left scripts, can have translations but not for the crossword.
-"he": None,
-"ar": None,
-"fa": None,
-"ur": None,
-"ps": None,
-"ku": None,
-"sd": None,
-'''
+
 
 
 class CrosswordDirections:
