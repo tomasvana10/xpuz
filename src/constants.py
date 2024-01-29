@@ -68,8 +68,8 @@ class CrosswordDirections:
     '''Constants representing words going across or down. Used extensively in conditional statements
     and functions in `cword_gen.py`.
     '''
-    ACROSS = "a"
-    DOWN = "d"
+    ACROSS = "ACROSS"
+    DOWN = "DOWN"
 
 
 class CrosswordStyle:

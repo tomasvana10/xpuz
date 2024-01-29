@@ -8,7 +8,8 @@ def run(*args, **data):
     def main():
         return render_template(
             "index.html",
-            empty=args[1],
+            cword_data=data["cword_data"],
+            empty=data["empty"],
             name=data["name"],
             word_count=data["word_count"],
             failed_insertions=data["failed_insertions"],
@@ -20,11 +21,11 @@ def run(*args, **data):
             definitions_d=data["definitions_d"],
         )
         
-    app.run(debug=False, port=int(args[0]))
+    app.run(debug=False, port=int(data["port"]))
 
-def init_webapp(*args, **data):
+def init_webapp(**data):
     global server
-    server = Process(target=run, args=args, kwargs=data)
+    server = Process(target=run, kwargs=data)
     server.start()
 
 def terminate_app():

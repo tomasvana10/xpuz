@@ -384,9 +384,10 @@ class CrosswordBrowser(ctk.CTkFrame):
                     ) -> None:
         '''Start the flask web app with information from the crossword and other interpreted data'''
         app.init_webapp(
-            self.master.cfg.get("misc", "webapp_port"), 
-            CrosswordStyle.EMPTY,
-            name = crossword.name,
+            cword_data=crossword.data,
+            port=self.master.cfg.get("misc", "webapp_port"), 
+            empty=CrosswordStyle.EMPTY,
+            name=crossword.name,
             word_count = crossword.word_count,
             failed_insertions = crossword.fails,
             dimensions = crossword.dimensions,
@@ -575,7 +576,9 @@ class AppHelper:
                 return True
         
         if go_to_home:
-            if tk.messagebox.askyesno("Back to home", "Are you sure you want to go back to the home screen? The web app will be terminated."):
+            if tk.messagebox.askyesno("Back to home", 
+                                      "Are you sure you want to go back to the home screen? The web "
+                                      "app will be terminated."):
                 return True
         
         return False
@@ -599,13 +602,13 @@ class AppHelper:
             tk.messagebox.showerror("Error", "This appearance is already selected.")
         
         if first_time_opening_cword_browser:
-            tk.messagebox.showinfo("Info", ("First time launch, please read:\n\
-                Once you have loaded a crossword, and wish to load another one, you must first \
-                terminate the web app.\n\nIMPORTANT: If you are on macOS, force quitting the \
-                application (using cmd+q) while the web app is running will prevent it from \
-                properly terminating. If you mistakenly do this, either find the Flask \
-                app process and terminate it, change the `webapp_port` number in \
-                src/config.ini, or restart your computer.").strip())
+            tk.messagebox.showinfo("Info", 
+                "First time launch, please read:\nOnce you have loaded a crossword, and wish to load "
+                "another one, you must first terminate the web app.\n\nIMPORTANT: If you are on macOS, "
+                "force quitting the application (using cmd+q) while the web app is running will prevent "
+                "it from properly terminating. If you mistakenly do this, either find the Flask app "
+                "process and terminate it, change the `webapp_port` number in src/config.ini, or "
+                "restart your computer.")
     
     @staticmethod
     def _update_config(cfg, 
