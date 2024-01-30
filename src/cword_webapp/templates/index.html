@@ -18,9 +18,32 @@ content, as each crossword created by this program is unique (unless you get luc
             --cell_font_size: calc(95vmin / calc(var(--dimensions) * 1.7));
             --num_label_font_size: calc(var(--cell_font_size) / 1.75);
             --grid_size: calc(95vmin / var(--dimensions));
+            --main_colour: {{ colour_palette[0] }};
+            --sub_colour: {{ colour_palette[1] }};
+            --text_colour: {{ colour_palette[2] }};
         }
 
-        html { font-family: Arial, Helvetica, sans-serif; }
+        html { 
+            font-family: Arial, Helvetica, sans-serif; 
+            color: var(--text_colour);
+        }
+        
+        body { /* These styles are from https://css-pattern.com */
+            --s: 80px; /* the size */
+            --c: var(--main_colour);
+            
+            --_s: calc(2*var(--s)) calc(2*var(--s));
+            --_g: 35.36% 35.36% at;
+            --_c: #0000 66%, var(--sub_colour) 68% 70%,#0000 72%;
+            background:
+                radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s),
+                radial-gradient(var(--_g) 0    75%,var(--_c)) var(--s) var(--s)/var(--_s),
+                radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s),
+                radial-gradient(var(--_g) 0    75%,var(--_c)) 0 0/var(--_s),
+                repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s),
+                radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s)
+                var(--c);
+        }
 
         #container { /* Holds the crossword grid and the definitions div */
             margin: 1em;
@@ -43,7 +66,7 @@ content, as each crossword created by this program is unique (unless you get luc
         #grid > div.empty_cell { background: black; }
 
         #grid > div.non_empty_cell {
-            background: whitesmoke;
+            background: var(--sub_colour);
             text-transform: uppercase; /* Force inner html to be uppercase */
             font-size: var(--cell_font_size);
             display: flex;
@@ -65,7 +88,7 @@ content, as each crossword created by this program is unique (unless you get luc
 
         .definitions { /* Contains two divs that display the words that run across/down the grid */
             display: flex;
-            background-color: whitesmoke;
+            background-color: var(--sub_colour);
             justify-content: center;
             right: 0;
             overflow-y: auto;
@@ -99,7 +122,8 @@ content, as each crossword created by this program is unique (unless you get luc
 <body 
     data-grid="{{ grid }}" 
     data-dimensions="{{ dimensions }}" 
-    data-empty="{{ empty }}">
+    data-empty="{{ empty }}"   
+    data-colour_palette="{{ colour_palette }}">
 
     <div id="container">                         
     <div id="grid">

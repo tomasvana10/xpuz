@@ -375,7 +375,7 @@ class CrosswordBrowser(ctk.CTkFrame):
         self._interpret_cword_data(crossword)
         self.init_webapp(crossword)
         
-        sleep(1.0) # Must force user to wait before they click, or else the browser might break
+        sleep(1.5) # Must force user to wait before they click, or else the browser might break
         self.b_open_cword_webapp.configure(state="normal")
         self.b_terminate_cword_webapp.configure(state="normal")
         
@@ -384,18 +384,19 @@ class CrosswordBrowser(ctk.CTkFrame):
                     ) -> None:
         '''Start the flask web app with information from the crossword and other interpreted data'''
         app.init_webapp(
+            colour_palette=AppHelper._get_colour_palette_for_webapp(ctk.get_appearance_mode()),
             cword_data=crossword.data,
             port=self.master.cfg.get("misc", "webapp_port"), 
             empty=CrosswordStyle.EMPTY,
             name=crossword.name,
-            word_count = crossword.word_count,
-            failed_insertions = crossword.fails,
-            dimensions = crossword.dimensions,
-            starting_word_positions = self.starting_word_positions,
-            starting_word_matrix = self.starting_word_matrix,
-            grid = crossword.grid,
-            definitions_a = self.definitions_a,
-            definitions_d = self.definitions_d
+            word_count=crossword.word_count,
+            failed_insertions=crossword.fails,
+            dimensions=crossword.dimensions,
+            starting_word_positions=self.starting_word_positions,
+            starting_word_matrix=self.starting_word_matrix,
+            grid=crossword.grid,
+            definitions_a=self.definitions_a,
+            definitions_d=self.definitions_d
         )
 
     def _interpret_cword_data(self, 
@@ -608,7 +609,8 @@ class AppHelper:
                 "force quitting the application (using cmd+q) while the web app is running will prevent "
                 "it from properly terminating. If you mistakenly do this, either find the Flask app "
                 "process and terminate it, change the `webapp_port` number in src/config.ini, or "
-                "restart your computer.")
+                "restart your computer.\n\nAlso important to know:\nIn some cases, you may have launched "
+                "the web app yet your browser cannot view it. If this happens, please restart your browser.")
     
     @staticmethod
     def _update_config(cfg, 
@@ -654,6 +656,12 @@ class AppHelper:
             info = json.load(file)
         
         return info
+    
+    @staticmethod
+    def _get_colour_palette_for_webapp(appearance_mode: str) -> List[str]:
+        return [Colour.Light.MAIN, Colour.Light.SUB, Colour.Light.TEXT, Colour.Light.FOCUS] \
+               if appearance_mode == "Light" else \
+               [Colour.Dark.MAIN, Colour.Dark.SUB, Colour.Dark.TEXT, Colour.Dark.FOCUS]
 
     
 if __name__ == "__main__":

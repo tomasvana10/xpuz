@@ -19,14 +19,18 @@ class Colour:
         EXIT_BUTTON_HOVER = "#BF0013"
         
     class Light:
-        MAIN = "#B0BEC5"
-        SUB = "#CFD8DC"
+        MAIN = "#c7d0d4"
+        SUB = "#dfe8ed"
+        TEXT = "#242424" # From tkinter, needed for web app
         TEXT_DISABLED = "#999999"
+        FOCUS = "#a7d8ff" # For focusing on a cell in the web app
 
     class Dark:
         MAIN = "#263238"
         SUB = "#37474F"
+        TEXT = "#d7d6d6"
         TEXT_DISABLED = "#737373"
+        FOCUS = "#5b778c"
 
 
 class CrosswordDifficulties:
@@ -52,7 +56,6 @@ class LanguageReplacementsForPybabel:
         "ht": None,
         "hmn": "hnj",
         "sm": None,
-        
         "he": None,
         "ar": None,
         "fa": None,
@@ -61,7 +64,6 @@ class LanguageReplacementsForPybabel:
         "ku": None,
         "sd": None,
     }
-
 
 
 class CrosswordDirections:

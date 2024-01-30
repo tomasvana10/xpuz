@@ -3,15 +3,12 @@ Additionally, this script offers automatic detection of crossword completion, an
 information to the user. 
 */
 
-let grid, dimensions, empty, definitions_a, definitions_d; // Jinja2 template variables
+let grid, dimensions, empty, definitions_a, definitions_d, colour_palette // Jinja2 template variables
 let direction = 'ACROSS',
     cellCoords = null,
     currentCell = null,
     futureCoords = null,
     mode = null;
-
-const FOCUSED_CELL_COLOUR = "#a7d8ff";
-const UNFOCUSED_CELL_COLOUR = "whitesmoke"; // for now
 
 
 document.addEventListener("DOMContentLoaded", () => { // On page load
@@ -23,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => { // On page load
     empty = body.getAttribute("data-empty");
     definitions_a = body.getAttribute("data-definitions_a");
     definitions_d = body.getAttribute("data-definitions_d");
+    colour_palette = eval(body.getAttribute("data-colour_palette"))
 });
 
 
@@ -60,7 +58,6 @@ function shiftCellCoords(coords, dir, mode) {
                             : [coords[0], coords[1] - 1]
     };
     let futureCell = getInputCellElement(futureCoords);
-    
     return futureCell !== null && futureCell.classList.contains('non_empty_cell')
            ? futureCoords /* If the cell at the future coords has the `non_empty_cell` class */
            : coords; /* Keep the coords at the current cell */
@@ -80,8 +77,8 @@ function onCellClick(cell) {
     if (currentCell !== null) { changeCellFocus(currentCell, focus=false) };
 
     currentCell = cell
-    updateCellCoords(cell);
-    changeCellFocus(cell, focus=true);
+    updateCellCoords(currentCell);
+    changeCellFocus(currentCell, focus=true);
     direction = shiftCellCoords(cellCoords, 'ACROSS', mode="enter") == cellCoords ? 'DOWN' : 'ACROSS';
 };
 
@@ -90,13 +87,13 @@ function updateCellCoords(cell) {
 };
 
 function changeCellFocus(cell, focus) {
-    cell.style.backgroundColor = focus ? FOCUSED_CELL_COLOUR : UNFOCUSED_CELL_COLOUR;
+    cell.style.backgroundColor = focus ? colour_palette[3] : colour_palette[1];
 };
 
 function getInputCellElement(cellCoords) {
     return cellCoords 
             ? document.querySelector(`[data-row="${cellCoords[0]}"][data-column="${cellCoords[1]}"]`) 
-            : true;
+            : null;
 };
 
 function checkIfCrosswordIsComplete() {

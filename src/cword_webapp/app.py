@@ -8,6 +8,7 @@ def run(*args, **data):
     def main():
         return render_template(
             "index.html",
+            colour_palette=data["colour_palette"],
             cword_data=data["cword_data"],
             empty=data["empty"],
             name=data["name"],
