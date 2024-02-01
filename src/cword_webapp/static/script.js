@@ -3,7 +3,7 @@ Additionally, this script offers automatic detection of crossword completion, an
 information to the user. 
 */
 
-let grid, dimensions, empty, definitions_a, definitions_d, colour_palette, intersections // Jinja2 template variables
+let grid, dimensions, empty, definitions_a, definitions_d, colour_palette, intersections; // Jinja2 template variables
 let direction = "ACROSS",
     cellCoords = null;
 
@@ -43,12 +43,12 @@ document.addEventListener("keydown", (event) => {
         setValue(currentCell, inputValue);
     } else {
         // User is focused on cell with text, just delete cell text
-        if (!isEmpty(currentCell)) { setValue(currentCell, ""); return };
+        if (!isEmpty(currentCell)) { setValue(currentCell, ""); return; }
         // User is focused on cell with no text, shift input backwards then delete what is in that cell
-        setValue(getInputCellElement(shiftCellCoords(cellCoords, direction, "del")), "")
-    };
+        setValue(getInputCellElement(shiftCellCoords(cellCoords, direction, "del")), "");
+    }
     
-    if (checkIfCrosswordIsComplete()) { sleep(1).then(() => alert("You completed the crossword!")) };
+    if (checkIfCrosswordIsComplete()) { sleep(1).then(() => alert("You completed the crossword!")); }
     
     // Remove focus from the old cell, get coords of the new cell, then focus the new word and cell
     changeCellFocus(focus=false);
@@ -61,54 +61,52 @@ function shiftCellCoords(coords, dir, mode) {
     /* Move the input forward or backward based on the `mode` parameter. If no such cell exists at
     these future coordinates, the original coordinates are returned. */
     let offset = (mode == "enter") ? 1 : -1;
-    let futureCoords = (dir == "DOWN") 
-                        ? [coords[0] + offset, coords[1]] 
-                        : [coords[0], coords[1] + offset];
+    let futureCoords = (dir == "DOWN") ? [coords[0] + offset, coords[1]] : [coords[0], coords[1] + offset];
     let futureCell = getInputCellElement(futureCoords);
 
     return futureCell !== null && futureCell.classList.contains("non_empty_cell")
            ? futureCoords // Cell at future coords is a non empty cell
            : coords; // Cell at future coords is empty/black, cannot move to it
-};
+}
 
 function onDefinitionsListItemClick(num_label, dir) {
     /* If the user is already focused on a word, remove both its focus and the individual cell focus, 
     then update the direction, cell coordinates and refocus appropriately. */
-    if (cellCoords !== null) { changeWordFocus(focus=false); changeCellFocus(focus=false) };
+    if (cellCoords !== null) { changeWordFocus(focus=false); changeCellFocus(focus=false); }
 
     // Get new cell element from parent of the number label
     let cell = document.querySelector(`[data-num_label="${num_label}"]`).parentElement;
-    direction = dir
+    direction = dir;
     cellCoords = updateCellCoords(cell);
     changeWordFocus(focus=true);
     changeCellFocus(focus=true);
-};
+}
 
 function onCellClick(cell) {
     /* Handles how the grid responds to a user clicking on the cell. Ensures the appropriate display
     of the current cell and word focus on cell click, as well as alternating input directions if
     clicking at an intersecting point between two words. */
-    if (cellCoords !== null) { changeWordFocus(focus=false); changeCellFocus(focus=false) };
+    if (cellCoords !== null) { changeWordFocus(focus=false); changeCellFocus(focus=false); }
 
     let newCellCoords = updateCellCoords(cell);
     if (JSON.stringify(intersections).includes(JSON.stringify(newCellCoords))) { // Alternate the direction
         direction = direction == "DOWN" ? "ACROSS" : "DOWN";
     } else { // Update direction according to the new cell coordinates
-        direction = shiftCellCoords(newCellCoords, "ACROSS", mode="enter") == newCellCoords ? "DOWN" : "ACROSS" 
-    };
+        direction = shiftCellCoords(newCellCoords, "ACROSS", "enter") == newCellCoords ? "DOWN" : "ACROSS";
+    }
         
     cellCoords = newCellCoords;
     changeWordFocus(focus=true);
     changeCellFocus(focus=true);
-};  
+}
 
 function updateCellCoords(cell) {
     return [parseInt(cell.getAttribute("data-row")), parseInt(cell.getAttribute("data-column"))];
-};
+}
 
 function changeCellFocus(focus) {
     getInputCellElement(cellCoords).style.backgroundColor = focus ? colour_palette[5] : colour_palette[1];
-};
+}
 
 function changeWordFocus(focus) {
     let [row, col] = cellCoords;
@@ -118,28 +116,28 @@ function changeWordFocus(focus) {
     // Find starting coords of the word
     while (startCoords > 0 && grid[isDown ? startCoords - 1 : row][isDown ? col : startCoords - 1] != empty) {
         startCoords--;
-    };
+    }
 
     // Find ending coords of the word
     while (endCoords < dimensions - 1 && grid[isDown ? endCoords + 1 : row][isDown ? col : endCoords + 1] != empty) {
         endCoords++;
-    };
+    }
 
     // Highlight the entire word
     for (let i = startCoords; i <= endCoords; i++) {
         let coords = isDown ? [i, col] : [row, i];
         getInputCellElement(coords).style.backgroundColor = focus ? colour_palette[4] : colour_palette[1];
-    };
-};
+    }
+}
 
 function getInputCellElement(coords) {
-    return document.querySelector(`[data-row="${coords[0]}"][data-column="${coords[1]}"]`) 
-};
+    return document.querySelector(`[data-row="${coords[0]}"][data-column="${coords[1]}"]`);
+}
 
 function checkIfCrosswordIsComplete() {
     // Compare all table cells with the grid, and if they are identical, return true
     return getWebAppGrid().every((row, i) => row.every((cell, j) => cell == grid[i][j]));
-};
+}
 
 function getWebAppGrid() {
     // Create an empty replica of the crossword grid, then update it according to the web app grid.
@@ -148,9 +146,9 @@ function getWebAppGrid() {
     document.querySelectorAll(".non_empty_cell").forEach((cell) => {
         let row = parseInt(cell.getAttribute("data-row"));
         let column = parseInt(cell.getAttribute("data-column"));
-        let value = cell.childNodes[0].nodeValue.toUpperCase() 
+        let value = cell.childNodes[0].nodeValue.toUpperCase();
         webAppGrid[row][column] = value;
     });
 
     return webAppGrid;
-};
+}
