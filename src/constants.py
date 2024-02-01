@@ -2,6 +2,9 @@
 
 from pathlib import Path
 
+import regex
+
+
 class Paths:
     '''Absolute paths used across the source code.'''
     CONFIG_PATH = Path(__file__).resolve().parents[0] / "config.ini"
@@ -23,14 +26,16 @@ class Colour:
         SUB = "#dfe8ed"
         TEXT = "#242424" # From tkinter, needed for web app
         TEXT_DISABLED = "#999999"
-        FOCUS = "#a7d8ff" # For focusing on a cell in the web app
+        WORD_FOCUS = "#a7d8ff"
+        CELL_FOCUS = "#ffda03" # For focusing on a cell in the web app
 
     class Dark:
         MAIN = "#263238"
         SUB = "#37474F"
         TEXT = "#d7d6d6"
         TEXT_DISABLED = "#737373"
-        FOCUS = "#5b778c"
+        WORD_FOCUS = "#5b778c"
+        CELL_FOCUS = "#998202"
 
 
 class CrosswordDifficulties:
@@ -83,7 +88,7 @@ class CrosswordRestrictions:
     '''Used in `definitions_parser.py` to remove all non-language characters from the words/keys of 
     a definitions dictionary.
     '''
-    KEEP_LANGUAGES_PATTERN = r"\PL" # The opposite of \p{l} which matches characters from any language
+    KEEP_LANGUAGES_PATTERN = regex.compile(r"\PL") # The opposite of \p{l} which matches characters from any language
 
 
 class DimensionsCalculation:

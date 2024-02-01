@@ -12,6 +12,7 @@ def run(*args, **data):
             cword_data=data["cword_data"],
             empty=data["empty"],
             name=data["name"],
+            intersections=data["intersections"],
             word_count=data["word_count"],
             failed_insertions=data["failed_insertions"],
             dimensions=data["dimensions"],

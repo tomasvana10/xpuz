@@ -1,4 +1,5 @@
 import json
+import os
 from random import sample, choice
 from math import ceil, sqrt
 from typing import Dict, Tuple, List, Union
@@ -52,6 +53,7 @@ class Crossword(object):
         self.word_count = word_count
         self.generated: bool = False
         self.dimensions: int = self._find_dimensions()
+        self.intersections = list() # Will be expanded to store all intersecting word points
         self.data = dict()  # Interpreted by `main.py`; expanded as words are inserted
         ''' example:
             self.data = {
@@ -330,6 +332,7 @@ class Crossword(object):
                 self._place_word(middle_placement["word"], middle_placement["direction"],
                                  middle_placement["pos"][0], middle_placement["pos"][1])
                 self._add_data(middle_placement)
+                self.intersections.append(middle_placement["intersections"])
                 self.inserts += 1
                 del words[0]
                 
@@ -354,6 +357,7 @@ class Crossword(object):
             self._place_word(placement["word"], placement["direction"], placement["pos"][0], 
                              placement["pos"][1])
             self._add_data(placement)
+            self.intersections.append(placement["intersections"])
             self.total_intersections += len(placement["intersections"])
             self.inserts += 1
 
@@ -408,7 +412,7 @@ class CrosswordHelper():
     def load_definitions(name: str) -> Dict[str, str]:
         '''Load a definitions json for a given crossword.'''
         try:
-            with open(f"{Paths.CWORDS_PATH}/{name}/{name}.json", "r") as file:
+            with open(os.path.join(Paths.CWORDS_PATH, name, f"{name}.json"), "r") as file:
                 definitions = json.load(file)
         except json.decoder.JSONDecodeError:
             raise EmptyDefinitions

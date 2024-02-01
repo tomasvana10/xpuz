@@ -3,7 +3,7 @@ import tkinter.messagebox
 import gettext
 import json
 import webbrowser
-from os import listdir
+import os
 from time import sleep
 from copy import deepcopy
 from typing import List, Dict, Tuple, Union
@@ -389,6 +389,10 @@ class CrosswordBrowser(ctk.CTkFrame):
             port=self.master.cfg.get("misc", "webapp_port"), 
             empty=CrosswordStyle.EMPTY,
             name=crossword.name,
+            # Tuples in intersections must be removed. Changing this in `cworg_gen.py` was annoying,
+            # so it is done here instead. 
+            intersections=[list(item) if isinstance(item, tuple) else item for \
+                          sublist in crossword.intersections for item in sublist],
             word_count=crossword.word_count,
             failed_insertions=crossword.fails,
             dimensions=crossword.dimensions,
@@ -446,7 +450,7 @@ class CrosswordBrowser(ctk.CTkFrame):
         '''
         self.block_objects = list() 
         i = 1
-        for file_name in listdir(Paths.CWORDS_PATH):
+        for file_name in os.listdir(Paths.CWORDS_PATH):
             if file_name.startswith("."): continue # Stupid hidden OS files
             block = CrosswordInfoBlock(self.horizontal_scroll_frame, self, file_name, i)
             block.pack(side="left", padx=5, pady=(5, 0)) 
@@ -613,7 +617,7 @@ class AppHelper:
                 "the web app yet your browser cannot view it. If this happens, please restart your browser.")
     
     @staticmethod
-    def _update_config(cfg, 
+    def _update_config(cfg: ConfigParser, 
                        section: str, 
                        option: str, 
                        value: str
@@ -638,7 +642,7 @@ class AppHelper:
         ["አማርኛ", "عربي"]
         '''
         
-        locales = sorted(listdir(Paths.LOCALES_PATH))
+        locales = sorted(os.listdir(Paths.LOCALES_PATH))
         locales.remove("base.pot")
         i = 0
         for file_name in locales:
@@ -652,16 +656,15 @@ class AppHelper:
     @staticmethod
     def _load_cword_info(name: str) -> Dict[str, Union[str, int]]:
         '''Load the `info.json` file for a crossword. Called by an instance of `CrosswordInfoBlock`.'''
-        with open(f"{Paths.CWORDS_PATH}/{name}/info.json") as file:
+        with open(os.path.join(Paths.CWORDS_PATH, name, "info.json")) as file:
             info = json.load(file)
         
         return info
     
     @staticmethod
     def _get_colour_palette_for_webapp(appearance_mode: str) -> List[str]:
-        return [Colour.Light.MAIN, Colour.Light.SUB, Colour.Light.TEXT, Colour.Light.FOCUS] \
-               if appearance_mode == "Light" else \
-               [Colour.Dark.MAIN, Colour.Dark.SUB, Colour.Dark.TEXT, Colour.Dark.FOCUS]
+        sub_class = Colour.Light if appearance_mode == "Light" else Colour.Dark
+        return [value for key, value in sub_class.__dict__.items() if key[0] != "_"]
 
     
 if __name__ == "__main__":

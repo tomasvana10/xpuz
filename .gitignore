@@ -1,8 +1,14 @@
+# my stuff
 notes.txt
-venv
+debugging
 
+# python related
+venv
+__pycache__
+
+# vscode extensions
 tempCodeRunnerFile.py
 tempCodeRunnerFile.python
 
-__pycache__
+# macos hidden file
 **/.DS_Store
