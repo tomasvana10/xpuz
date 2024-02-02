@@ -18,6 +18,8 @@ class Paths:
 class Colour:
     '''Light, dark and global colour specifications for widgets in `main.py`.'''
     class Global:
+        BUTTON = "#21528c"
+        BUTTON_HOVER = "#13385f"
         EXIT_BUTTON = "#ED3B4D"
         EXIT_BUTTON_HOVER = "#BF0013"
         

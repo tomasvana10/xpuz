@@ -3,14 +3,14 @@ Additionally, this script offers automatic detection of crossword completion, an
 information to the user. 
 */
 
-let grid, dimensions, empty, definitions_a, definitions_d, colour_palette, intersections; // Jinja2 template variables
+let grid, dimensions, empty, colour_palette, intersections; // Jinja2 template variables
 let direction = "ACROSS",
     cellCoords = null;
 
 const isEmpty = (cell) => !cell?.childNodes[0]?.nodeValue;
-const setValue = (cell, value) => cell.childNodes[0].nodeValue = value; // Using nodes prevents any `num_label` 
-                                                                        // elements from being deleted
+const setValue = (cell, value) => cell.childNodes[0].nodeValue = value; // Using nodes prevents any `num_label` elements from being deleted
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+Array.prototype.isEqualTo = function(arr) { return JSON.stringify(this) === JSON.stringify(arr); }   // Add a method to the Array class
 
 document.addEventListener("DOMContentLoaded", () => { // On page load
     const body = document.querySelector("body");
@@ -19,8 +19,6 @@ document.addEventListener("DOMContentLoaded", () => { // On page load
     grid = eval(body.getAttribute("data-grid")); /* Convert Python array to JS array */
     dimensions = parseInt(body.getAttribute("data-dimensions"));
     empty = body.getAttribute("data-empty");
-    // definitions_a = body.getAttribute("data-definitions_a");
-    // definitions_d = body.getAttribute("data-definitions_d");
     colour_palette = eval(body.getAttribute("data-colour_palette"));
     intersections = eval(body.getAttribute("data-intersections"));
 
@@ -30,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => { // On page load
 
 
 document.addEventListener("keydown", (event) => {
-    /* Handle user input - either set the value of the current cell to the users input (if valid) or
+    /* Handle user input - either set the value of the current cell to the user's input (if valid) or
     perform cell deletion. */
     if (cellCoords === null) return; // User hasn't selected a cell
 
@@ -39,7 +37,7 @@ document.addEventListener("keydown", (event) => {
     let currentCell = getInputCellElement(cellCoords);
 
     if (mode == "enter") {
-        if (!(inputValue.length == 1 && inputValue.match(/\p{L}/u))) return; // Input isn't a language char
+        if (!(inputValue.length === 1 && inputValue.match(/\p{L}/u))) return; // Input isn't a language char
         setValue(currentCell, inputValue);
     } else {
         // User is focused on cell with text, just delete cell text
@@ -89,12 +87,15 @@ function onCellClick(cell) {
     if (cellCoords !== null) { changeWordFocus(focus=false); changeCellFocus(focus=false); }
 
     let newCellCoords = updateCellCoords(cell);
-    if (JSON.stringify(intersections).includes(JSON.stringify(newCellCoords))) { // Alternate the direction
-        direction = direction == "DOWN" ? "ACROSS" : "DOWN";
-    } else { // Update direction according to the new cell coordinates
-        direction = shiftCellCoords(newCellCoords, "ACROSS", "enter") == newCellCoords ? "DOWN" : "ACROSS";
+    // Update direction according to the new cell coordinates
+    if (JSON.stringify(intersections).includes(JSON.stringify(newCellCoords)) && newCellCoords.isEqualTo(cellCoords)) {
+        direction = direction == "ACROSS" ? "DOWN" : "ACROSS"; // Alternate the direction.
+
+    } else if (shiftCellCoords(newCellCoords, direction, "enter").isEqualTo(newCellCoords) 
+              && shiftCellCoords(newCellCoords, direction, "del").isEqualTo(newCellCoords)) {
+        // If the future cell has no adjacent cells in the current direction then alternate the direction. Otherwise, keep it.
+        direction = direction == "ACROSS" ? "DOWN" : "ACROSS"; 
     }
-        
     cellCoords = newCellCoords;
     changeWordFocus(focus=true);
     changeCellFocus(focus=true);
@@ -136,12 +137,12 @@ function getInputCellElement(coords) {
 
 function checkIfCrosswordIsComplete() {
     // Compare all table cells with the grid, and if they are identical, return true
-    return getWebAppGrid().every((row, i) => row.every((cell, j) => cell == grid[i][j]));
+    return JSON.stringify(getWebAppGrid()) == JSON.stringify(grid);
 }
 
 function getWebAppGrid() {
     // Create an empty replica of the crossword grid, then update it according to the web app grid.
-    let webAppGrid = Array.from({length: dimensions}, () => Array(dimensions).fill(empty));
+    let webAppGrid = Array.from({ length: dimensions }, () => Array(dimensions).fill(empty));
 
     document.querySelectorAll(".non_empty_cell").forEach((cell) => {
         let row = parseInt(cell.getAttribute("data-row"));

@@ -664,7 +664,9 @@ class AppHelper:
     @staticmethod
     def _get_colour_palette_for_webapp(appearance_mode: str) -> List[str]:
         sub_class = Colour.Light if appearance_mode == "Light" else Colour.Dark
-        return [value for key, value in sub_class.__dict__.items() if key[0] != "_"]
+        palette = [value for key, value in sub_class.__dict__.items() if key[0] != "_"]
+        palette.extend([value for key, value in Colour.Global.__dict__.items() if key.startswith("BUTTON")])
+        return palette
 
     
 if __name__ == "__main__":
