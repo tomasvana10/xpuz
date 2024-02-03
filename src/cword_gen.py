@@ -411,7 +411,7 @@ class CrosswordHelper():
     def load_definitions(name: str) -> Dict[str, str]:
         '''Load a definitions json for a given crossword.'''
         try:
-            with open(os.path.join(Paths.CWORDS_PATH, name, f"{name}.json"), "r") as file:
+            with open(os.path.join(Paths.CWORDS_PATH, name, "definitions.json"), "r") as file:
                 definitions = json.load(file)
         except json.decoder.JSONDecodeError:
             raise EmptyDefinitions
