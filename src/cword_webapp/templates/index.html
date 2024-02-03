@@ -12,185 +12,90 @@ content, as each crossword created by this program is unique (unless you get luc
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crossword Puzzle - Game</title>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
     <style>
         :root { 
             --dimensions: {{ dimensions }};
             --cell_font_size: calc(95vmin / calc(var(--dimensions) * 1.7));
-            --num_label_font_size: calc(var(--cell_font_size) / 1.75);
+            --num_label_font_size: calc(var(--cell_font_size) / 1.79);
             --grid_size: calc(95vmin / var(--dimensions));
-            --main_colour: {{ colour_palette[0] }};
-            --sub_colour: {{ colour_palette[1] }};
-            --text_colour: {{ colour_palette[2] }};
-        }
-
-        html { 
-            font-family: Arial, Helvetica, sans-serif; 
-            color: var(--text_colour);
-        }
-        
-        body { /* These styles are from https://css-pattern.com */
-            --s: 80px; /* the size */
-            --c: var(--main_colour);
-            
-            --_s: calc(2*var(--s)) calc(2*var(--s));
-            --_g: 35.36% 35.36% at;
-            --_c: #0000 66%, var(--sub_colour) 68% 70%,#0000 72%;
-            background:
-                radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s),
-                radial-gradient(var(--_g) 0    75%,var(--_c)) var(--s) var(--s)/var(--_s),
-                radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s),
-                radial-gradient(var(--_g) 0    75%,var(--_c)) 0 0/var(--_s),
-                repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s),
-                radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s)
-                var(--c);
-        }
-
-        #container { /* Holds the crossword grid and the definitions div */
-            margin: 1em;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            column-gap: 3em; 
-        }
-
-        #grid { /* The crossword grid */
-          display: grid;
-          /* Configure `--dimensions` amount of rows/columns with a size of `95vmin / --dimensions` */
-          grid-template-columns: repeat(var(--dimensions), var(--grid_size));
-          grid-template-rows: repeat(var(--dimensions), var(--grid_size));
-          gap: 0 0; 
-        }
-
-        #grid > div { position: relative; }
-
-        #grid > div.empty_cell { background: black; }
-
-        #grid > div.non_empty_cell {
-            background: var(--sub_colour);
-            text-transform: uppercase; /* Force inner html to be uppercase */
-            font-size: var(--cell_font_size);
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            border: 0.1px solid black;
-            user-select: none;
-            -webkit-user-select: none;
-        }
-
-        .num_label { /* Labels the start of a word */
-            position: absolute; /* Positioned absolutely to `#grid > div` */
-            top: 1%;
-            left: 5%;
-            user-select: none;
-            -webkit-user-select: none;
-            font-size: var(--num_label_font_size); 
-        }
-
-        .definitions { /* Contains two divs that display the words that run across/down the grid */
-            display: flex;
-            background-color: var(--sub_colour);
-            justify-content: center;
-            right: 0;
-            overflow-y: auto;
-            max-height: 95vmin;
-            width: 95vmin;
-        }
-
-        .definitions_a, .definitions_d { flex: 1; } /* Make both definition columns take up an equal 
-                                                    amount of space */
-
-        ul { list-style-type: none; } /* Remove bullet points from the unordered list */
-
-        li { 
-            margin-bottom: 10px; 
-            white-space: pre-wrap; /* Helps html recognise more whitespace for the definitions list */
-            user-select: none;
-            -webkit-user-select: none;
-        } 
-
-        li:hover { cursor: pointer; } /* Will help the user to understand that they can click on 
-                                    a list element/definition to set their input to the corresponding 
-                                    spot on the crossword grid */
-
-        .def_heading {
-            user-select: none;
-            -webkit-user-select: none;
+            --main_colour: {{ colour_palette["MAIN"] }};
+            --sub_colour: {{ colour_palette["SUB"] }};
+            --text_colour: {{ colour_palette["TEXT"] }};
         }    
     </style>
 </head>
 
 <body 
-    data-grid="{{ grid }}" 
-    data-dimensions="{{ dimensions }}" 
-    data-empty="{{ empty }}"   
-    data-colour_palette="{{ colour_palette }}"
-    data-intersections="{{ intersections }}">
+data-grid="{{ grid }}" 
+data-dimensions="{{ dimensions }}" 
+data-empty="{{ empty }}"   
+data-colour_palette="{{ json_colour_palette }}"
+data-intersections="{{ intersections }}">
 
-    <div id="container">                         
-    <div id="grid">
-        {% for row in range(dimensions) %} 
-            {% for column in range(dimensions) %}
+<div id="container">                         
+<div id="grid">
+{% for row in range(dimensions) %} 
+{% for column in range(dimensions) %}
+    <!-- Determine cell content -->
+    {% if grid[row][column] != empty %}  <!-- There is a word in this cell -->
+        <div 
+            onclick="onCellClick(this)" 
+            class="non_empty_cell" 
+            data-row="{{ row }}" 
+            data-column="{{ column }}" 
+            data-value="{{ grid[row][column] }}">
 
-                <!-- Determine cell content -->
-                {% if grid[row][column] != empty %}  <!-- There is a word in this cell -->
-                    <div 
-                        onclick="onCellClick(this)" 
-                        class="non_empty_cell" 
-                        data-row="{{ row }}" 
-                        data-column="{{ column }}" 
-                        data-value="{{ grid[row][column] }}">
-
-                        {% if (row, column) in starting_word_positions %}  <!-- Start of a word -->
-                            <div 
-                                class="num_label" 
-                                data-num_label="{{ starting_word_matrix[row][column] }}">
-                                {{ starting_word_matrix[row][column] }}
-                            </div>
-                        {% endif %}
-                    </div>
-
-                {% else %} <!-- This cell will have no characters -->
-                    <div 
-                        class="empty_cell" 
-                        data-row="{{ row }}" 
-                        data-column="{{ column }}" 
-                        data-value="None">
-                    </div>
-                {% endif %} 
-
-            {% endfor %}  
-        {% endfor %} 
-    </div>
-
-    <div class="definitions">
-        <div class="definitions_a"> <!-- Column one for across definitions -->
-            <ul>
-                <h3 class="def_heading">Across</h3>
-                {% for dict_ in definitions_a %}
-                    {% for num_label, definition in dict_.items()%}
-                        <!-- I can't indent this because of pre-wrap whitespace 🥺 -->
-                        <li 
-                            data-num="{{ num_label }}" 
-                            onclick="onDefinitionsListItemClick('{{ num_label }}', 'ACROSS')"><b>{{num_label}}</b>  {{ definition[1]}}</li>
-                    {% endfor %}
-                {% endfor %}
-            </ul>
+            {% if (row, column) in starting_word_positions %}  <!-- Start of a word -->
+                <div 
+                    class="num_label" 
+                    data-num_label="{{ starting_word_matrix[row][column] }}">
+                    {{ starting_word_matrix[row][column] }}
+                </div>
+            {% endif %}
         </div>
-        
-        <div class="definitions_d"> <!-- Column two for downward definitions -->
-            <ul>
-                <h3 class="def_heading">Down</h3>
-                {% for dict_ in definitions_d %}
-                    {% for num_label, definition in dict_.items()%}
-                        <li 
-                            data-num="{{ num_label }}" 
-                            onclick="onDefinitionsListItemClick('{{ num_label }}', 'DOWN')"><b>{{num_label}}</b>  {{ definition[1]}}</li>
-                    {% endfor %}
-                {% endfor %}
-            </ul>
+
+    {% else %} <!-- This cell will have no characters -->
+        <div 
+            class="empty_cell" 
+            data-row="{{ row }}" 
+            data-column="{{ column }}" 
+            data-value="None">
         </div>
-    </div>
-    </div>
+    {% endif %} 
+
+    {% endfor %}  
+    {% endfor %} 
+</div>
+
+<div class="definitions">
+<div class="definitions_a"> <!-- Column one for across definitions -->
+    <ul>
+        <h3 class="def_heading">Across</h3>
+        {% for dict_ in definitions_a %}
+        {% for num_label, definition in dict_.items()%}
+            <!-- I can't indent this because of pre-wrap whitespace 🥺 -->
+            <li 
+                data-num="{{ num_label }}" 
+                onclick="onDefinitionsListItemClick('{{ num_label }}', 'ACROSS')"><b>{{num_label}}</b>  {{ definition[1]}}</li>
+        {% endfor %}
+        {% endfor %}
+    </ul>
+</div>  
+<div class="definitions_d"> <!-- Column two for downward definitions -->
+    <ul>
+        <h3 class="def_heading">Down</h3>
+        {% for dict_ in definitions_d %}
+        {% for num_label, definition in dict_.items()%}
+            <li 
+                data-num="{{ num_label }}" 
+                onclick="onDefinitionsListItemClick('{{ num_label }}', 'DOWN')"><b>{{num_label}}</b>  {{ definition[1]}}</li>
+        {% endfor %}
+        {% endfor %}
+    </ul>
+</div>
+</div>
+</div>
 </body>
 </html> 
 

@@ -14,21 +14,20 @@ class Crossword(object):
     '''The Crossword class creates and populates a grid with a given amount of randomly sampled words
     from a larger set of crossword definitions in a crossword-like pattern.
 
-    ~~~~~~
     Usage information:
-    > To begin, assign a definitions JSON to a variable by running 
-      Crossword.load_definitions(f"{Paths.CWORDS_PATH}/<name>.json)
+    To begin, assign a definitions JSON to a variable by running 
+    >>> Crossword.load_definitions(f"{Paths.CWORDS_PATH}/<name>.json)
     
     
-    > For simple use, instantiate the class with the required parameters and call the generate() function.
+    For simple use, instantiate the class with the required parameters and call the generate() function.
     >>> crossword = Crossword("Capitals", definitions=definitions, word_count=10)
     >>> crossword.generate()
     >>> print(crossword)
     
     
-    > For more advanced use, use CrosswordHelper.find_best_crossword, which takes an ungenerated 
-      instance of the Crossword class. This will return a crossword object that is already has a 
-      populated grid and has more intersections than a crossword generated with only a single attempt.
+    For more advanced use, use CrosswordHelper.find_best_crossword, which takes an ungenerated 
+    instance of the Crossword class. This will return a crossword object that is already has a 
+    populated grid and has more intersections than a crossword generated with only a single attempt.
     >>> crossword = Crossword("Capitals", definitions=definitions, word_count=10)
     >>> crossword = CrosswordHelper.find_best_crossword(crossword)
     >>> print(crossword)

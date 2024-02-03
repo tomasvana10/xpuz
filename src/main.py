@@ -373,18 +373,20 @@ class CrosswordBrowser(ctk.CTkFrame):
         crossword = cwg.CrosswordHelper.find_best_crossword(crossword)
         
         self._interpret_cword_data(crossword)
-        self.init_webapp(crossword)
+        self._init_webapp(crossword)
         
         sleep(1.5) # Must force user to wait before they click, or else the browser might break
         self.b_open_cword_webapp.configure(state="normal")
         self.b_terminate_cword_webapp.configure(state="normal")
         
-    def init_webapp(self, 
+    def _init_webapp(self, 
                     crossword: cwg.Crossword
                     ) -> None:
         '''Start the flask web app with information from the crossword and other interpreted data'''
-        app.init_webapp(
-            colour_palette=AppHelper._get_colour_palette_for_webapp(ctk.get_appearance_mode()),
+        colour_palette = AppHelper._get_colour_palette_for_webapp(ctk.get_appearance_mode())
+        app._create_app_process(
+            colour_palette=colour_palette,
+            json_colour_palette=json.dumps(colour_palette),
             cword_data=crossword.data,
             port=self.master.cfg.get("misc", "webapp_port"), 
             empty=CrosswordStyle.EMPTY,
@@ -664,8 +666,8 @@ class AppHelper:
     @staticmethod
     def _get_colour_palette_for_webapp(appearance_mode: str) -> List[str]:
         sub_class = Colour.Light if appearance_mode == "Light" else Colour.Dark
-        palette = [value for key, value in sub_class.__dict__.items() if key[0] != "_"]
-        palette.extend([value for key, value in Colour.Global.__dict__.items() if key.startswith("BUTTON")])
+        palette = {key: value for attr in [sub_class.__dict__, Colour.Global.__dict__]
+                  for key, value in attr.items() if key[0] != "_" or key.startswith("BUTTON")}
         return palette
 
     

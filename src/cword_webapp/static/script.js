@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => { // On page load
     grid = eval(body.getAttribute("data-grid")); /* Convert Python array to JS array */
     dimensions = parseInt(body.getAttribute("data-dimensions"));
     empty = body.getAttribute("data-empty");
-    colour_palette = eval(body.getAttribute("data-colour_palette"));
+    colour_palette = JSON.parse(body.getAttribute("data-colour_palette"));
     intersections = eval(body.getAttribute("data-intersections"));
 
     // Reset all non-empty cells to empty strings (issue with HTML)
@@ -106,7 +106,7 @@ function updateCellCoords(cell) {
 }
 
 function changeCellFocus(focus) {
-    getInputCellElement(cellCoords).style.backgroundColor = focus ? colour_palette[5] : colour_palette[1];
+    getInputCellElement(cellCoords).style.backgroundColor = focus ? colour_palette["CELL_FOCUS"] : colour_palette["SUB"];
 }
 
 function changeWordFocus(focus) {
@@ -127,7 +127,7 @@ function changeWordFocus(focus) {
     // Highlight the entire word
     for (let i = startCoords; i <= endCoords; i++) {
         let coords = isDown ? [i, col] : [row, i];
-        getInputCellElement(coords).style.backgroundColor = focus ? colour_palette[4] : colour_palette[1];
+        getInputCellElement(coords).style.backgroundColor = focus ? colour_palette["WORD_FOCUS"] : colour_palette["SUB"];
     }
 }
 
@@ -137,10 +137,10 @@ function getInputCellElement(coords) {
 
 function checkIfCrosswordIsComplete() {
     // Compare all table cells with the grid, and if they are identical, return true
-    return JSON.stringify(getWebAppGrid()) == JSON.stringify(grid);
+    return JSON.stringify(getGrid()) === JSON.stringify(grid);
 }
 
-function getWebAppGrid() {
+function getGrid() {
     // Create an empty replica of the crossword grid, then update it according to the web app grid.
     let webAppGrid = Array.from({ length: dimensions }, () => Array(dimensions).fill(empty));
 
