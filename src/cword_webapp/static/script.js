@@ -5,17 +5,20 @@ information to the user.
 
 let grid, dimensions, empty, colour_palette, intersections; // Jinja2 template variables
 let direction = "ACROSS",
-    cellCoords = null;
+    cellCoords = null,
+    staticIndex = null,
+    isDown = null;
+const arrowKeys = ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"];
 
-const isEmpty = (cell) => !cell?.childNodes[0]?.nodeValue;
+const isEmpty = (cell) => !cell?.childNodes[0]?.nodeValue || cell.childNodes[0].nodeValue === " ";
 const setValue = (cell, value) => cell.childNodes[0].nodeValue = value; // Using nodes prevents any `num_label` elements from being deleted
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
-Array.prototype.isEqualTo = function(arr) { return JSON.stringify(this) === JSON.stringify(arr); }   // Add a method to the Array class
+Array.prototype.isEqualTo = function(arr) { return JSON.stringify(this) === JSON.stringify(arr); };
+
 
 document.addEventListener("DOMContentLoaded", () => { // On page load
     const body = document.querySelector("body");
 
-    /// Retrieve Jinja2 template variables
     grid = eval(body.getAttribute("data-grid")); /* Convert Python array to JS array */
     dimensions = parseInt(body.getAttribute("data-dimensions"));
     empty = body.getAttribute("data-empty");
@@ -28,52 +31,71 @@ document.addEventListener("DOMContentLoaded", () => { // On page load
 
 
 document.addEventListener("keydown", (event) => {
-    /* Handle user input - either set the value of the current cell to the user's input (if valid) or
-    perform cell deletion. */
+    /* Handle user input - either set the value of the current cell to the user's input (if valid),
+    perform cell deletion, or remove the word/cell focus entirely. */
     if (cellCoords === null) return; // User hasn't selected a cell
 
-    let inputValue = event.key; 
-    let mode = (inputValue == "Backspace" || inputValue == "Delete") ? "del" : "enter";
-    let currentCell = getInputCellElement(cellCoords);
+    let inputValue = event.key === "Spacebar" ? " " : event.key; // Must account for the browser returning "Spacebar" 
+    if (arrowKeys.includes(inputValue)) { handleArrowPress(inputValue); }
+    if (inputValue === "Escape") { changeCellFocus(focus=false); changeWordFocus(focus=false); cellCoords = null; return; }
+    let mode = (inputValue === "Backspace" || inputValue === "Delete") ? "del" : "enter";
+    let currentCell = getCellElement(cellCoords);
 
-    if (mode == "enter") {
-        if (!(inputValue.length === 1 && inputValue.match(/\p{L}/u))) return; // Input isn't a language char
+    if (mode === "enter") {
+        if (!(inputValue.length === 1 && (inputValue.match(/\p{L}/u) || inputValue === " "))) return;
         setValue(currentCell, inputValue);
     } else {
         // User is focused on cell with text, just delete cell text
         if (!isEmpty(currentCell)) { setValue(currentCell, ""); return; }
         // User is focused on cell with no text, shift input backwards then delete what is in that cell
-        setValue(getInputCellElement(shiftCellCoords(cellCoords, direction, "del")), "");
+        setValue(getCellElement(shiftCellCoords(cellCoords, direction, mode)), "");
     }
     
-    if (checkIfCrosswordIsComplete()) { sleep(1).then(() => alert("You completed the crossword!")); }
+    if (isCrosswordComplete()) { sleep(1).then(() => alert("You completed the crossword!")); }
     
-    // Remove focus from the old cell, get coords of the new cell, then focus the new word and cell
     changeCellFocus(focus=false);
     cellCoords = shiftCellCoords(cellCoords, direction, mode);
     changeWordFocus(focus=true);
     changeCellFocus(focus=true);
 });
 
-function shiftCellCoords(coords, dir, mode) {
+function handleArrowPress(key) {
+    /* Determine how the program responds to the user pressing an arrow. First, see if a "enter" or
+    "del" shift is performed and in what direction. Then, ensure the user is not shifting into a
+    `.empty` cell. Finally, alternate the direction if necessary and refocus. */
+    let mode = (key === "ArrowDown" || key === "ArrowRight") ? "enter" : "del";
+    let dir = (key === "ArrowDown" || key === "ArrowUp") ? "DOWN" : "ACROSS";
+    // Force shift the cell coords to see if the coordinates of a .empty_cell are returned
+    let newCellCoords = shiftCellCoords(cellCoords, dir, mode, true);
+    if (getCellElement(newCellCoords).classList.contains("empty_cell")) { return; }
+
+    changeWordFocus(focus=false);
+    changeCellFocus(focus=false);
+    direction = (dir !== direction) ? dir : direction; // User is switching from a row to a column or vice versa
+    cellCoords = newCellCoords;
+    changeWordFocus(focus=true);  
+    changeCellFocus(focus=true);
+}
+
+function shiftCellCoords(coords, dir, mode, force=false) {
     /* Move the input forward or backward based on the `mode` parameter. If no such cell exists at
-    these future coordinates, the original coordinates are returned. */
+    these future coordinates (and the force param is false), the original coordinates are returned. */
     let offset = (mode == "enter") ? 1 : -1;
     let futureCoords = (dir == "DOWN") ? [coords[0] + offset, coords[1]] : [coords[0], coords[1] + offset];
-    let futureCell = getInputCellElement(futureCoords);
+    let futureCell = getCellElement(futureCoords);
 
-    return futureCell !== null && futureCell.classList.contains("non_empty_cell")
+    return futureCell !== null && futureCell.classList.contains("non_empty_cell") || force
            ? futureCoords // Cell at future coords is a non empty cell
            : coords; // Cell at future coords is empty/black, cannot move to it
 }
 
-function onDefinitionsListItemClick(num_label, dir) {
+function onDefinitionsListItemClick(numLabel, dir) {
     /* If the user is already focused on a word, remove both its focus and the individual cell focus, 
     then update the direction, cell coordinates and refocus appropriately. */
     if (cellCoords !== null) { changeWordFocus(focus=false); changeCellFocus(focus=false); }
 
     // Get new cell element from parent of the number label
-    let cell = document.querySelector(`[data-num_label="${num_label}"]`).parentElement;
+    let cell = document.querySelector(`[data-num_label="${numLabel}"]`).parentElement;
     direction = dir;
     cellCoords = updateCellCoords(cell);
     changeWordFocus(focus=true);
@@ -87,15 +109,15 @@ function onCellClick(cell) {
     if (cellCoords !== null) { changeWordFocus(focus=false); changeCellFocus(focus=false); }
 
     let newCellCoords = updateCellCoords(cell);
-    // Update direction according to the new cell coordinates
-    if (JSON.stringify(intersections).includes(JSON.stringify(newCellCoords)) && newCellCoords.isEqualTo(cellCoords)) {
-        direction = direction == "ACROSS" ? "DOWN" : "ACROSS"; // Alternate the direction.
+    // User is clicking on an intersection for the second time, so alternate the direction
+    if (JSON.stringify(intersections).includes(JSON.stringify(newCellCoords)) && newCellCoords.isEqualTo(cellCoords)) 
+        direction = direction === "ACROSS" ? "DOWN" : "ACROSS"; // Alternate the direction.
 
-    } else if (shiftCellCoords(newCellCoords, direction, "enter").isEqualTo(newCellCoords) 
-              && shiftCellCoords(newCellCoords, direction, "del").isEqualTo(newCellCoords)) {
-        // If the future cell has no adjacent cells in the current direction then alternate the direction. Otherwise, keep it.
-        direction = direction == "ACROSS" ? "DOWN" : "ACROSS"; 
-    }
+    // Cannot shift the cell in the original direction, so it must be alternated
+    else if (shiftCellCoords(newCellCoords, direction, "enter").isEqualTo(newCellCoords) 
+            && shiftCellCoords(newCellCoords, direction, "del").isEqualTo(newCellCoords)) 
+        direction = direction === "ACROSS" ? "DOWN" : "ACROSS"; 
+    
     cellCoords = newCellCoords;
     changeWordFocus(focus=true);
     changeCellFocus(focus=true);
@@ -106,38 +128,40 @@ function updateCellCoords(cell) {
 }
 
 function changeCellFocus(focus) {
-    getInputCellElement(cellCoords).style.backgroundColor = focus ? colour_palette["CELL_FOCUS"] : colour_palette["SUB"];
+    getCellElement(cellCoords).style.backgroundColor = focus ? colour_palette.CELL_FOCUS : colour_palette.SUB;
 }
 
 function changeWordFocus(focus) {
+    let [startCoords, endCoords] = getWordIndices();
+    for (let i = startCoords; i <= endCoords; i++) {
+        let coords = isDown ? [i, staticIndex] : [staticIndex, i];
+        getCellElement(coords).style.backgroundColor = focus ? colour_palette.WORD_FOCUS : colour_palette.SUB;
+    }
+}
+
+function getWordIndices() {
     let [row, col] = cellCoords;
-    let isDown = direction == "DOWN";
+    isDown = direction === "DOWN";
+    staticIndex = isDown ? col : row;
     let [startCoords, endCoords] = isDown ? [row, row] : [col, col];
 
     // Find starting coords of the word
-    while (startCoords > 0 && grid[isDown ? startCoords - 1 : row][isDown ? col : startCoords - 1] != empty) {
+    while (startCoords > 0 && grid[isDown ? startCoords - 1 : row][isDown ? col : startCoords - 1] != empty)
         startCoords--;
-    }
 
     // Find ending coords of the word
-    while (endCoords < dimensions - 1 && grid[isDown ? endCoords + 1 : row][isDown ? col : endCoords + 1] != empty) {
+    while (endCoords < dimensions - 1 && grid[isDown ? endCoords + 1 : row][isDown ? col : endCoords + 1] != empty) 
         endCoords++;
-    }
 
-    // Highlight the entire word
-    for (let i = startCoords; i <= endCoords; i++) {
-        let coords = isDown ? [i, col] : [row, i];
-        getInputCellElement(coords).style.backgroundColor = focus ? colour_palette["WORD_FOCUS"] : colour_palette["SUB"];
-    }
+    return [startCoords, endCoords];
 }
 
-function getInputCellElement(coords) {
+function getCellElement(coords) {
     return document.querySelector(`[data-row="${coords[0]}"][data-column="${coords[1]}"]`);
 }
 
-function checkIfCrosswordIsComplete() {
-    // Compare all table cells with the grid, and if they are identical, return true
-    return JSON.stringify(getGrid()) === JSON.stringify(grid);
+function isCrosswordComplete() {
+    return getGrid().isEqualTo(grid);
 }
 
 function getGrid() {

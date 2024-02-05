@@ -33,8 +33,9 @@ data-empty="{{ empty }}"
 data-colour_palette="{{ json_colour_palette }}"
 data-intersections="{{ intersections }}">
 
-<div id="container">                         
-<div id="grid">
+<div class="container">
+
+<div class="grid">
 {% for row in range(dimensions) %} 
 {% for column in range(dimensions) %}
     <!-- Determine cell content -->
@@ -64,8 +65,8 @@ data-intersections="{{ intersections }}">
         </div>
     {% endif %} 
 
-    {% endfor %}  
-    {% endfor %} 
+{% endfor %}  
+{% endfor %} 
 </div>
 
 <div class="definitions">
@@ -74,7 +75,6 @@ data-intersections="{{ intersections }}">
         <h3 class="def_heading">Across</h3>
         {% for dict_ in definitions_a %}
         {% for num_label, definition in dict_.items()%}
-            <!-- I can't indent this because of pre-wrap whitespace 🥺 -->
             <li 
                 data-num="{{ num_label }}" 
                 onclick="onDefinitionsListItemClick('{{ num_label }}', 'ACROSS')"><b>{{num_label}}</b>  {{ definition[1]}}</li>
@@ -95,6 +95,7 @@ data-intersections="{{ intersections }}">
     </ul>
 </div>
 </div>
+
 </div>
 </body>
 </html> 

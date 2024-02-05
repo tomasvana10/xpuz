@@ -20,7 +20,7 @@ body { /* These styles are from https://css-pattern.com */
         var(--c);
 }
 
-#container { /* Holds the crossword grid and the definitions div */
+.container { /* Holds the crossword grid and the definitions div */
     margin: 1em;
     display: flex;
     align-items: center;
@@ -28,7 +28,7 @@ body { /* These styles are from https://css-pattern.com */
     column-gap: 3em; 
 }
 
-#grid { /* The crossword grid */
+.grid { /* The crossword grid */
     display: grid;
     /* Configure `--dimensions` amount of rows/columns with a size of `95vmin / --dimensions` */
     grid-template-columns: repeat(var(--dimensions), var(--grid_size));
@@ -36,11 +36,11 @@ body { /* These styles are from https://css-pattern.com */
     gap: 0 0; 
 }
 
-#grid > div { position: relative; }
+.grid > div { position: relative; }
 
-#grid > div.empty_cell { background: black; }
+.grid > div.empty_cell { background: black; }
 
-#grid > div.non_empty_cell {
+.grid > div.non_empty_cell {
     background: var(--sub_colour);
     text-transform: uppercase; /* Force inner html to be uppercase */
     font-size: var(--cell_font_size);

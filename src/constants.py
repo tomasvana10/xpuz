@@ -1,5 +1,7 @@
 '''Constants that are used by `cword_gen.py`, `main.py`, `definitions_parser.py` and `locale_utils.py`'''
 
+import os
+from typing import Dict, List, Union
 from pathlib import Path
 
 import regex
@@ -9,34 +11,34 @@ class Paths:
     '''Absolute paths used across the source code.'''
     CONFIG_PATH = Path(__file__).resolve().parents[0] / "config.ini"
     LOCALES_PATH = Path(__file__).resolve().parents[1] / "locales"
-    CWORD_IMG_LIGHT_PATH = Path(__file__).resolve().parents[1] / "assets/images/cword_img_light.png"
-    CWORD_IMG_DARK_PATH = Path(__file__).resolve().parents[1] / "assets/images/cword_img_dark.png"
+    CWORD_IMG_LIGHT_PATH = Path(__file__).resolve().parents[1] / os.path.join("assets", "images", "cword_img_light.png")
+    CWORD_IMG_DARK_PATH = Path(__file__).resolve().parents[1] / os.path.join("assets", "images", "cword_img_dark.png")
     CWORDS_PATH = Path(__file__).resolve().parents[0] / "cwords"
-    ATTEMPTS_DB_PATH = Path(__file__).resolve().parents[0] / "data/attempts_db.json"
+    ATTEMPTS_DB_PATH = Path(__file__).resolve().parents[0] / os.path.join("data", "attempts_db.json")
     
 
 class Colour:
     '''Light, dark and global colour specifications for widgets in `main.py`.'''
     class Global:
-        BUTTON = "#21528c"
-        BUTTON_HOVER = "#13385f"
+        BUTTON = "#21528C"
+        BUTTON_HOVER = "#13385F"
         EXIT_BUTTON = "#ED3B4D"
         EXIT_BUTTON_HOVER = "#BF0013"
         
     class Light:
-        MAIN = "#c7d0d4"
-        SUB = "#dfe8ed"
+        MAIN = "#C7D0D4"
+        SUB = "#DFE8ED"
         TEXT = "#242424" # From tkinter, needed for web app
         TEXT_DISABLED = "#999999"
-        WORD_FOCUS = "#a7d8ff"
-        CELL_FOCUS = "#ffda03" # For focusing on a cell in the web app
+        WORD_FOCUS = "#A7D8FF"
+        CELL_FOCUS = "#FFDA03" # For focusing on a cell in the web app
 
     class Dark:
         MAIN = "#263238"
         SUB = "#37474F"
-        TEXT = "#d7d6d6"
+        TEXT = "#D7D6D6"
         TEXT_DISABLED = "#737373"
-        WORD_FOCUS = "#5b778c"
+        WORD_FOCUS = "#5B778C"
         CELL_FOCUS = "#998202"
 
 
@@ -44,7 +46,7 @@ class CrosswordDifficulties:
     '''Generic difficulty names for crosswords. In a crossword directory's `info.json` file, they
     are specified as indexes and not strings.
     '''
-    DIFFICULTIES = ["Easy", "Medium", "Hard", "Extreme"]
+    DIFFICULTIES: list[str] = ["Easy", "Medium", "Hard", "Extreme"]
 
 
 class Fonts:
@@ -57,7 +59,7 @@ class Fonts:
 
 class LanguageReplacementsForPybabel:
     '''See information about this class in `locale_utils.py`.'''
-    REPLACEMENTS = {
+    REPLACEMENTS: Dict[str, Union[str, None]] = {
         "zh-cn": "zh",
         "zh-tw": None,
         "ht": None,
@@ -77,13 +79,13 @@ class CrosswordDirections:
     '''Constants representing words going across or down. Used extensively in conditional statements
     and functions in `cword_gen.py`.
     '''
-    ACROSS = "ACROSS"
-    DOWN = "DOWN"
+    ACROSS: str = "ACROSS"
+    DOWN: str = "DOWN"
 
 
 class CrosswordStyle:
     '''The value of an "empty" cell (containing no letters) in the crossword grid.'''
-    EMPTY = "▮"
+    EMPTY: str = "▮"
 
 
 class CrosswordRestrictions:
@@ -97,9 +99,9 @@ class DimensionsCalculation:
     '''Values that aid with scaling whitespace and providing an appropriate side length for the grid.'''
     # Decrease attributes = break everything
     # Increase attributes = wait forever to make a crossword
-    WHITESPACE_SCALAR = 1.85
-    DIMENSIONS_CONSTANT = 1
+    WHITESPACE_SCALAR: float = 1.9
+    DIMENSIONS_CONSTANT: int = 1
     
 
 class BaseEngStrings:
-    BASE_ENG_APPEARANCES = ["light", "dark", "system"]
+    BASE_ENG_APPEARANCES: List[str] = ["light", "dark", "system"]
