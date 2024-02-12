@@ -20,6 +20,7 @@ def _run(*args, **data):
             json_colour_palette=data["json_colour_palette"],
             cword_data=data["cword_data"],
             empty=data["empty"],
+            directions=data["directions"],
             name=data["name"],
             intersections=data["intersections"],
             word_count=data["word_count"],

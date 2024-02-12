@@ -391,6 +391,7 @@ class CrosswordBrowser(ctk.CTkFrame):
             port=self.master.cfg.get("misc", "webapp_port"), 
             empty=CrosswordStyle.EMPTY,
             name=crossword.name,
+            directions=[CrosswordDirections.ACROSS, CrosswordDirections.DOWN],
             # Tuples in intersections must be removed. Changing this in `cworg_gen.py` was annoying,
             # so it is done here instead. 
             intersections=[list(item) if isinstance(item, tuple) else item for \
@@ -409,7 +410,8 @@ class CrosswordBrowser(ctk.CTkFrame):
                               crossword: cwg.Crossword
                               ) ->  None:
         '''Iterate through the range of the crosswords dimensions and gather data that will aid
-        the templated html in the webapp to function properly.'''
+        the templated html in the webapp to function properly.
+        '''
         self.starting_word_positions = list(crossword.data.keys()) # The keys are the position of the 
                                                                    # start of words
         '''example: [(1, 2), (4, 6)]'''
@@ -418,7 +420,7 @@ class CrosswordBrowser(ctk.CTkFrame):
         self.definitions_d = list()
         '''example: [{1: ("hello", "a standard english greeting)}]'''
         
-        self.starting_word_matrix = deepcopy(crossword.grid)
+        self.starting_word_matrix: List[List[str]] = deepcopy(crossword.grid)
         '''example: [[1, 0, 0, 0], 
                     [[0, 0, 2, 0]] 
            Each incremented number is the start of a new word.
@@ -573,13 +575,14 @@ class AppHelper:
                                 restart: bool = False,
                                 go_to_home: bool = False
                                 ) -> bool:
-        '''Display appropriate confirmation messageboxes to the user, called by `Home._exit_handler`.'''
         if exit_ & restart:
             if tk.messagebox.askyesno("Restart", "Are you sure you want to restart the app?"):
                 return True
         
         if exit_ & ~restart:
-            if tk.messagebox.askyesno("Exit", "Are you sure you want to exit the app?"):
+            if tk.messagebox.askyesno("Exit", 
+                                      "Are you sure you want to exit the app? If the web app is running, "
+                                      "it will be terminated."):
                 return True
         
         if go_to_home:
@@ -596,9 +599,6 @@ class AppHelper:
                         same_appearance: bool = False,
                         first_time_opening_cword_browser: bool = False
                         ) -> None:
-        '''Display appropriate error messages when a user attempts to select an already selected
-        global settings options.
-        '''
         if same_lang:
             tk.messagebox.showerror("Error", "This language is already selected.")
         
@@ -634,12 +634,12 @@ class AppHelper:
     def _get_language_options() -> None:
         '''Gather a dictionary that maps each localised language name to its english acronym, and a list
         that contains all of the localised language names. This data is derived from `Paths.LOCALES_PATH`.'''
-        localised_lang_db = dict() # Used to retrieve the language code for the selected language
+        localised_lang_db: Dict[str, str] = dict() # Used to retrieve the language code for the selected language
         ''' example:
         {"አማርኛ": "am",}
         '''
         
-        localised_langs = list() # Used in the language selection optionmenu
+        localised_langs: Dict[str, str] = list() # Used in the language selection optionmenu
         ''' example:
         ["አማርኛ", "عربي"]
         '''
@@ -665,6 +665,7 @@ class AppHelper:
     
     @staticmethod
     def _get_colour_palette_for_webapp(appearance_mode: str) -> List[str]:
+        '''Create a dictionary based on the `constants.Colour` for the web app.'''
         sub_class = Colour.Light if appearance_mode == "Light" else Colour.Dark
         palette = {key: value for attr in [sub_class.__dict__, Colour.Global.__dict__]
                   for key, value in attr.items() if key[0] != "_" or key.startswith("BUTTON")}

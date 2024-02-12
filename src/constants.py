@@ -31,7 +31,7 @@ class Colour:
         TEXT = "#242424" # From tkinter, needed for web app
         TEXT_DISABLED = "#999999"
         WORD_FOCUS = "#A7D8FF"
-        CELL_FOCUS = "#FFDA03" # For focusing on a cell in the web app
+        CELL_FOCUS = "#FFDA03"
 
     class Dark:
         MAIN = "#263238"
@@ -76,9 +76,7 @@ class LanguageReplacementsForPybabel:
 
 
 class CrosswordDirections:
-    '''Constants representing words going across or down. Used extensively in conditional statements
-    and functions in `cword_gen.py`.
-    '''
+    '''Constants representing words going across or down.'''
     ACROSS: str = "ACROSS"
     DOWN: str = "DOWN"
 
