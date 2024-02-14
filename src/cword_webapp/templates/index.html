@@ -77,7 +77,8 @@ data-intersections="{{ intersections }}">
         {% for num_label, definition in dict_.items()%}
             <li 
                 data-num="{{ num_label }}" 
-                onclick="onDefinitionsListItemClick('{{ num_label }}', '{{ directions[0] }}')"><b>{{num_label}}</b>  {{ definition[1]}}</li>
+                data-word="{{ definition[0].upper() }}"
+                onclick="onDefinitionsListItemClick('{{ num_label }}', '{{ directions[0] }}')"><b>{{ num_label }}</b>  {{ definition[1] }}</li>
         {% endfor %}
         {% endfor %}
     </ul>
@@ -89,7 +90,8 @@ data-intersections="{{ intersections }}">
         {% for num_label, definition in dict_.items()%}
             <li 
                 data-num="{{ num_label }}" 
-                onclick="onDefinitionsListItemClick('{{ num_label }}', '{{ directions[1] }}')"><b>{{num_label}}</b>  {{ definition[1]}}</li>
+                data-word="{{ definition[0].upper() }}"
+                onclick="onDefinitionsListItemClick('{{ num_label }}', '{{ directions[1] }}')"><b>{{ num_label }}</b>  {{ definition[1] }}</li>
         {% endfor %}
         {% endfor %}
     </ul>

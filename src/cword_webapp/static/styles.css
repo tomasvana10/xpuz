@@ -64,21 +64,26 @@ body { /* These styles are from https://css-pattern.com */
 .definitions { /* Contains two divs that display the words that run across/down the grid */
     display: flex;
     background-color: var(--sub_colour);
-    justify-content: center;
+    justify-content: space-evenly;
     right: 0;
     overflow-y: auto;
     max-height: 95vmin;
     width: 95vmin;
 }
 
-.definitions_a, .definitions_d { flex: 1; } /* Make both definition columns take up an equal 
-                                            amount of space */
+.def_heading { text-align: center; }
+
+/* Make both columns resize to fill the container. Flex is used to make this resizing equally distributed. */
+.definitions_a, .definitions_d { flex-grow: 1; flex: 1; }
+
+.definitions_d { padding-right: 7.75%; }
 
 ul { list-style-type: none; } /* Remove bullet points from the unordered list */
 
 li { 
     margin-bottom: 10px; 
     white-space: pre-wrap; /* Helps html recognise more whitespace for the definitions list */
+    padding: 4.5%;
     user-select: none;
     -webkit-user-select: none;
 } 

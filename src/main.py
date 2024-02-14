@@ -514,7 +514,8 @@ class CrosswordInfoBlock(ctk.CTkFrame):
                  ) -> None: 
         super().__init__(container)
         self.configure(fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN), 
-                       border_color=(Colour.Light.SUB, Colour.Dark.SUB), border_width=3)
+                       border_color=(Colour.Light.SUB, Colour.Dark.SUB), border_width=3, 
+                       corner_radius=10)
         self.master = master
         self.name = name
         self.value = value
