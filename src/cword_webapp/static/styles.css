@@ -96,3 +96,49 @@ li:hover { cursor: pointer; } /* Will help the user to understand that they can 
     user-select: none;
     -webkit-user-select: none;
 }
+
+#blur.active > :not(#completion_popup) {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#completion_popup {
+    position: fixed;
+    text-align: center;
+    background: var(--sub_colour);
+    top: 0%;
+    left: 50%;  
+    transform: translate(-50%, 50%);
+    transform: 0.5s;
+    width: 50vmin;
+    padding: 50px;
+    box-shadow: 0 5px 30px var(--main_colour);
+    visibility: hidden;
+    opacity: 0;
+}
+
+#completion_popup.active {
+    top: 25%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#completion_popup > button {
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    background: var(--button_colour);
+    color: var(--button_text_colour);
+    text-decoration: none;
+
+}
+
+#completion_popup > button:hover {
+    background: var(--button_hover_colour);
+    text-decoration: none;
+}

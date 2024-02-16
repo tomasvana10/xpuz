@@ -22,8 +22,23 @@ content, as each crossword created by this program is unique (unless you get luc
             --main_colour: {{ colour_palette["MAIN"] }};
             --sub_colour: {{ colour_palette["SUB"] }};
             --text_colour: {{ colour_palette["TEXT"] }};
+            --button_colour: {{ colour_palette["BUTTON"] }};
+            --button_hover_colour: {{ colour_palette["BUTTON_HOVER"] }};
+            --button_text_colour: {{ colour_palette["BUTTON_TEXT_COLOUR"] }};
         }    
     </style>
+    <!-- For crossword completion popup -->
+    <script type="text/javascript">
+        let popupToggled = false;
+
+        function toggleCompletionPopup() {
+            popupToggled = !popupToggled;
+            document.getElementById("blur").classList.toggle("active");
+            document.getElementById("completion_popup").classList.toggle("active");
+            if (popupToggled) { 
+                sleep(501).then(() => document.getElementById("close_popup_button").focus({ focusVisible: true })); }
+        }
+    </script>
 </head>
 
 <body 
@@ -33,7 +48,7 @@ data-empty="{{ empty }}"
 data-colour_palette="{{ json_colour_palette }}"
 data-intersections="{{ intersections }}">
 
-<div class="container">
+<div class="container" id="blur">
 
 <div class="grid">
 {% for row in range(dimensions) %} 
@@ -70,32 +85,45 @@ data-intersections="{{ intersections }}">
 </div>
 
 <div class="definitions">
+{% set ns = namespace(tab_index_counter = 1) %}
 <div class="definitions_a"> <!-- Column one for across definitions -->
     <ul>
         <h3 class="def_heading">Across</h3>
         {% for dict_ in definitions_a %}
         {% for num_label, definition in dict_.items()%}
             <li 
+                class="def"
+                tabindex="{{ ns.tab_index_counter }}"
                 data-num="{{ num_label }}" 
                 data-word="{{ definition[0].upper() }}"
                 onclick="onDefinitionsListItemClick('{{ num_label }}', '{{ directions[0] }}')"><b>{{ num_label }}</b>  {{ definition[1] }}</li>
+            {% set ns.tab_index_counter = ns.tab_index_counter + 1 %}
         {% endfor %}
         {% endfor %}
     </ul>
 </div>  
+
 <div class="definitions_d"> <!-- Column two for downward definitions -->
     <ul>
         <h3 class="def_heading">Down</h3>
         {% for dict_ in definitions_d %}
         {% for num_label, definition in dict_.items()%}
             <li 
+                class="def"
+                tabindex="{{ ns.tab_index_counter }}"
                 data-num="{{ num_label }}" 
                 data-word="{{ definition[0].upper() }}"
                 onclick="onDefinitionsListItemClick('{{ num_label }}', '{{ directions[1] }}')"><b>{{ num_label }}</b>  {{ definition[1] }}</li>
+            {% set ns.tab_index_counter = ns.tab_index_counter + 1 %}
         {% endfor %}
         {% endfor %}
     </ul>
 </div>
+</div>
+
+<div id="completion_popup">
+    <h2>You completed the crossword!</h2>
+    <button id="close_popup_button" onclick="toggleCompletionPopup()">Close</button>
 </div>
 
 </div>

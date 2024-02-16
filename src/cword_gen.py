@@ -131,7 +131,7 @@ class Crossword(object):
                                             word: str
                                             ) -> Placement:
         '''Place the first word in a random orientation in the middle of the grid. This naturally makes
-        the generator build off of the center, making the crossword look more symmetrical.
+        the generator build off of the center, making the crossword look nicer.
         '''
         direction: str = choice([CrosswordDirections.ACROSS, CrosswordDirections.DOWN])
         middle: int = self.dimensions // 2
@@ -139,14 +139,12 @@ class Crossword(object):
         if direction == CrosswordDirections.ACROSS:
             row = middle
             column: int = middle - len(word) // 2
-            return {"word": word, "direction": CrosswordDirections.ACROSS, 
-                    "pos": (row, column), "intersections": list()}
-
         elif direction == CrosswordDirections.DOWN:
             row = middle - len(word) // 2
             column = middle
-            return {"word": word, "direction": CrosswordDirections.DOWN, 
-                    "pos": (row, column), "intersections": list()}
+
+        return {"word": word, "direction": direction, 
+                "pos": (row, column), "intersections": list()}
 
     def _find_intersections(self, 
                             word: str, 
@@ -279,24 +277,15 @@ class Crossword(object):
         about the word - the word itself, its direction, its position and its intersections).
         '''
         placements = list()
-
-        for row in range(self.dimensions):
-            for column in range(self.dimensions):
-                if self._can_word_be_inserted(word, CrosswordDirections.ACROSS, row, column):
-                    intersections = self._find_intersections(word, CrosswordDirections.ACROSS, row, 
-                                                             column)
-                    placements.append({"word": word,
-                                       "direction": CrosswordDirections.ACROSS,
-                                       "pos": (row, column),
-                                       "intersections": intersections})
-
-                if self._can_word_be_inserted(word, CrosswordDirections.DOWN, row, column):
-                    intersections = self._find_intersections(word, CrosswordDirections.DOWN, row, 
-                                                             column)
-                    placements.append({"word": word,
-                                       "direction": CrosswordDirections.DOWN,
-                                       "pos": (row, column),
-                                       "intersections": intersections})
+        for direction in [CrosswordDirections.ACROSS, CrosswordDirections.DOWN]:
+            for row in range(self.dimensions):
+                for column in range(self.dimensions):
+                    if self._can_word_be_inserted(word, direction, row, column):
+                        intersections = self._find_intersections(word, direction, row, column)
+                        placements.append({"word": word,
+                                           "direction": direction,
+                                           "pos": (row, column),
+                                           "intersections": intersections})
 
         return placements
 

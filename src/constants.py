@@ -24,6 +24,7 @@ class Colour:
         BUTTON_HOVER = "#13385F"
         EXIT_BUTTON = "#ED3B4D"
         EXIT_BUTTON_HOVER = "#BF0013"
+        BUTTON_TEXT_COLOUR = "#DDE3ED"
         
     class Light:
         MAIN = "#C7D0D4"

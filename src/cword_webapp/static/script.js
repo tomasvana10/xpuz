@@ -1,6 +1,5 @@
-/* `script.js` implements various functions allow the crossword grid to be interacted with by the user. 
-Additionally, this script offers automatic detection of crossword completion, and relays this 
-information to the user. 
+/* `interaction.js` implements various functions allow the crossword grid to be interacted with by the user. 
+Additionally, this script offers automatic detection of crossword completion, and relays this information to the user. 
 */
 
 let grid, dimensions, empty, colour_palette, intersections; // Jinja2 template variables
@@ -8,13 +7,16 @@ let direction = "ACROSS",
     currentWord = null,
     cellCoords = null,
     staticIndex = null,
-    isDown = null;
+    isDown = null,
+    defItems = null,
+    defIndex = 0;
 const arrowKeys = ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"];
 const spacebarKeys = ["Spacebar", " "];
 
 /* Functions for conditional checks and other minor utilities */
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 const isEmpty = (cell) => !cell?.childNodes[0]?.nodeValue;
+const setFocusMode = (bool) => { if (cellCoords !== null) { changeWordFocus(bool); changeCellFocus(bool); changeDefinitionsListItemFocus(bool); } }
 const setValue = (cell, value) => cell.childNodes[0].nodeValue = value; // Using nodes prevents any `num_label` elements from being deleted
 const getCellElement = (coords) => document.querySelector(`[data-row="${coords[0]}"][data-column="${coords[1]}"]`);
 const updateCellCoords = (cell) => [parseInt(cell.getAttribute("data-row")), parseInt(cell.getAttribute("data-column"))]; 
@@ -37,6 +39,8 @@ document.addEventListener("DOMContentLoaded", () => { // On page load
     colour_palette = JSON.parse(body.getAttribute("data-colour_palette"));
     intersections = JSON.stringify(eval(body.getAttribute("data-intersections")));
 
+    defItems = document.querySelectorAll(".def");
+
     // Reset all non-empty cells to empty strings (issue with HTML)
     document.querySelectorAll(".non_empty_cell").forEach(cell => setValue(cell, "")); 
 });
@@ -46,13 +50,17 @@ document.addEventListener("keydown", (event) => {
     /* Handle user input - either set the value of the current cell to the user's input (if valid),
     perform cell deletion, or perform special tasks: remove the word/cell focus entirely, alternate
     direction at an intersection, or move the focus according to the arrow keys a user presses. */
-    if (cellCoords === null) { return; } // User hasn't selected a cell
-
     let inputValue = event.key;
+
+    // Accessibility related input detection relating to tab and tabindex. 
+    if (inputValue === "Enter" && !popupToggled) { event.target.click(); return; } // Select word
+
+    if (cellCoords === null) { return; } // User hasn't selected a cell, so normal/special inputs cannot be performed
+
     // Special inputs
     if (arrowKeys.includes(inputValue)) { handleArrowPress(inputValue, event); return; }
-    if (inputValue === "Escape") { handleEscapePress(); return; }
-    if (intersections.includes(JSON.stringify(cellCoords)) && spacebarKeys.includes(inputValue)) { handleSpacebarPress(); return; }
+    if (inputValue === "Escape") { handleEscapePress(event); return; }
+    if (intersections.includes(JSON.stringify(cellCoords)) && spacebarKeys.includes(inputValue)) { handleSpacebarPress(event); return; }
 
     // Normal inputs
     let mode = (inputValue === "Backspace" || inputValue === "Delete") ? "del" : "enter";
@@ -66,25 +74,28 @@ document.addEventListener("keydown", (event) => {
         setValue(getCellElement(shiftCellCoords(cellCoords, direction, mode)), ""); // Perform standard deletion
     }
     
-    if (isCrosswordComplete()) { sleep(1).then(() => alert("You completed the crossword!")); }
+    if (isCrosswordComplete()) { sleep(1).then(() => { document.dispatchEvent(new KeyboardEvent("keydown", {"key": "Escape"})); 
+                                                       toggleCompletionPopup(); }) }
     
-    changeCellFocus(focus=false);
+    changeCellFocus(false);
     cellCoords = shiftCellCoords(cellCoords, direction, mode);
-    changeWordFocus(focus=true); changeCellFocus(focus=true);
+    changeWordFocus(true); changeCellFocus(true);
 });
 
-function handleSpacebarPress() {
-    /* Alternate direction when pressing the spacebar at an intersection. */
-    changeDefinitionsListItemFocus(false); changeWordFocus(focus=false); changeCellFocus(focus=false);
+function handleSpacebarPress(event) {
+    /* Alternate direction when pressing the spacebar at an intersection. */    
+    event.preventDefault();
+    setFocusMode(false);
     alternateDirection();
     currentWord = updateCurrentWord();
-    changeDefinitionsListItemFocus(true); changeWordFocus(focus=true); changeCellFocus(focus=true);
+    setFocusMode(true);
 }
 
-function handleEscapePress() { 
-    changeCellFocus(focus=false); changeWordFocus(focus=false); 
-    cellCoords = null;
-    currentWord = null;
+function handleEscapePress(event) { 
+    /* Remove focus from everything. */
+    event.preventDefault();
+    setFocusMode(false);
+    cellCoords = null; currentWord = null;
 }
 
 function handleArrowPress(key, event) {
@@ -105,8 +116,7 @@ function handleArrowPress(key, event) {
         }
     } catch(err) { newCellCoords = cellCoords; } // Couldn't find any unfilled cells
 
-    changeWordFocus(focus=false); changeCellFocus(focus=false);
-    changeDefinitionsListItemFocus(false);
+    setFocusMode(false);
     // If moving perpendicular to an intersection, only alternate the direction and retain the prior `cellCoords`
     if (shouldDirectionBeAlternated(newCellCoords)) { 
         alternateDirection();
@@ -115,8 +125,7 @@ function handleArrowPress(key, event) {
         skipFlag = false;
     } else { cellCoords = newCellCoords; }
     currentWord = updateCurrentWord();
-    changeDefinitionsListItemFocus(true);
-    changeWordFocus(focus=true); changeCellFocus(focus=true);
+    setFocusMode(true);
 }
 
 function shiftCellCoords(coords, dir, mode, force=false) {
@@ -133,27 +142,22 @@ function shiftCellCoords(coords, dir, mode, force=false) {
 }
 
 function onDefinitionsListItemClick(numLabel, dir) {
-    /* If the user is already focused on a word, remove both its focus and the individual cell focus, 
-    then update the direction, cell coordinates and refocus appropriately. */
-    if (cellCoords !== null) { changeWordFocus(focus=false); changeCellFocus(focus=false); }
-    if (currentWord !== null) { changeDefinitionsListItemFocus(false); }
+    /* Set user input to the start of a word when they click its definition/clue. */
+    setFocusMode(false);
 
     // Get new cell element from parent of the number label
     let cell = document.querySelector(`[data-num_label="${numLabel}"]`).parentElement;
     direction = dir;
     cellCoords = updateCellCoords(cell);
     currentWord = updateCurrentWord();
-    changeDefinitionsListItemFocus(true);
-    changeWordFocus(focus=true);
-    changeCellFocus(focus=true);
+    setFocusMode(true);
 }
 
 function onCellClick(cell) {
     /* Handles how the grid responds to a user clicking on the cell. Ensures the appropriate display
     of the current cell and word focus on cell click, as well as alternating input directions if
     clicking at an intersecting point between two words. */
-    if (cellCoords !== null) { changeWordFocus(false); changeCellFocus(false); }
-    if (currentWord !== null) { changeDefinitionsListItemFocus(false); }
+    setFocusMode(false); 
 
     let newCellCoords = updateCellCoords(cell);
     // User is clicking on an intersection for the second time, so alternate the direction
@@ -166,9 +170,7 @@ function onCellClick(cell) {
         
     cellCoords = newCellCoords;
     currentWord = updateCurrentWord();
-    changeDefinitionsListItemFocus(true)
-    changeWordFocus(true);
-    changeCellFocus(true);
+    setFocusMode(true);
 }
 
 function changeWordFocus(focus) {

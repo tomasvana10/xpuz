@@ -31,8 +31,8 @@ class Home(ctk.CTk):
                  cfg: ConfigParser
                  ) -> None:
         super().__init__()
-        self.locale = locale 
-        self.cfg = cfg 
+        self.locale: Locale = locale 
+        self.cfg: ConfigParser = cfg 
         
         self.localised_lang_db, self.localised_langs = lang_info # Refer to `AppHelper._get_language_options`
         self.protocol("WM_DELETE_WINDOW", self._exit_handler)
@@ -125,7 +125,7 @@ class Home(ctk.CTk):
     def open_cword_browser(self) -> None:
         '''Remove all homescreen widgets and instantiate the `CrosswordBrowser` class'''
         self.container.pack_forget()
-        self.cword_browser = CrosswordBrowser(self)
+        self.cword_browser: object = CrosswordBrowser(self)
 
     def close_cword_browser(self) -> None:
         '''Remove all `CrosswordBrowser` widgets and regenerate the main screen.'''
@@ -166,7 +166,7 @@ class Home(ctk.CTk):
             return
         
         # Must be done because you cannot do `ctk.set_appearance_mode("نظام")`, for example
-        eng_appearance_name = BaseEngStrings.BASE_ENG_APPEARANCES[self.appearances.index(appearance)]
+        eng_appearance_name: str = BaseEngStrings.BASE_ENG_APPEARANCES[self.appearances.index(appearance)]
         ctk.set_appearance_mode(eng_appearance_name)
         AppHelper._update_config(self.cfg, "m", "appearance", eng_appearance_name)
 
@@ -194,7 +194,7 @@ class Home(ctk.CTk):
             return
         
         AppHelper._update_config(self.cfg, "m", "language", self.localised_lang_db[lang])
-        self.locale = Locale.parse(self.cfg.get("m", "language"))
+        self.locale: Locale = Locale.parse(self.cfg.get("m", "language"))
         # gettext.translation(...).install()  when I compile all the locales
         self.container.pack_forget()
         self.generate_screen()
@@ -363,14 +363,14 @@ class CrosswordBrowser(ctk.CTkFrame):
         self.webapp_running: bool = True
         
         # Max word count / custom word count
-        chosen_word_count = self.selected_cword_word_count if self.word_count_preference.get() == 0 \
+        chosen_word_count: int = self.selected_cword_word_count if self.word_count_preference.get() == 0 \
                             else int(self.custom_word_count_optionmenu.get())
 
         # Load definitions, instantiate a crossword, then find the best crossword using that instance
-        definitions = cwg.CrosswordHelper.load_definitions(self.selected_cword_name)
-        crossword = cwg.Crossword(definitions=definitions, word_count=chosen_word_count,
+        definitions: Dict[str, str] = cwg.CrosswordHelper.load_definitions(self.selected_cword_name)
+        crossword: object = cwg.Crossword(definitions=definitions, word_count=chosen_word_count,
                                   name=self.selected_cword_name)
-        crossword = cwg.CrosswordHelper.find_best_crossword(crossword)
+        crossword: object = cwg.CrosswordHelper.find_best_crossword(crossword)
         
         self._interpret_cword_data(crossword)
         self._init_webapp(crossword)
@@ -383,7 +383,7 @@ class CrosswordBrowser(ctk.CTkFrame):
                     crossword: cwg.Crossword
                     ) -> None:
         '''Start the flask web app with information from the crossword and other interpreted data'''
-        colour_palette = AppHelper._get_colour_palette_for_webapp(ctk.get_appearance_mode())
+        colour_palette: Dict[str, str] = AppHelper._get_colour_palette_for_webapp(ctk.get_appearance_mode())
         app._create_app_process(
             colour_palette=colour_palette,
             json_colour_palette=json.dumps(colour_palette),
@@ -412,15 +412,15 @@ class CrosswordBrowser(ctk.CTkFrame):
         '''Iterate through the range of the crosswords dimensions and gather data that will aid
         the templated html in the webapp to function properly.
         '''
-        self.starting_word_positions = list(crossword.data.keys()) # The keys are the position of the 
+        self.starting_word_positions: List[Tuple[int]] = list(crossword.data.keys()) # The keys are the position of the 
                                                                    # start of words
         '''example: [(1, 2), (4, 6)]'''
         
-        self.definitions_a = list() 
+        self.definitions_a: List[Dict[int, Tuple[str]]] = list() 
         self.definitions_d = list()
         '''example: [{1: ("hello", "a standard english greeting)}]'''
         
-        self.starting_word_matrix: List[List[str]] = deepcopy(crossword.grid)
+        self.starting_word_matrix: List[List[int]] = deepcopy(crossword.grid)
         '''example: [[1, 0, 0, 0], 
                     [[0, 0, 2, 0]] 
            Each incremented number is the start of a new word.
@@ -452,7 +452,7 @@ class CrosswordBrowser(ctk.CTkFrame):
         '''Generates a variable amount of `CrosswordInfoBlock` instances based on how many crosswords
         are available, then packs them into `self.horizontal_scroll_frame`.
         '''
-        self.block_objects = list() 
+        self.block_objects: List[CrosswordInfoBlock] = list() 
         i = 1
         for file_name in os.listdir(Paths.CWORDS_PATH):
             if file_name.startswith("."): continue # Stupid hidden OS files
@@ -481,8 +481,8 @@ class CrosswordBrowser(ctk.CTkFrame):
         self.word_count_preference.set(-1)
         
         # Always save the current crosswords name and word count to be ready for the user to laod it
-        self.selected_cword_name = name
-        self.selected_cword_word_count= word_count
+        self.selected_cword_name: str = name
+        self.selected_cword_word_count: int = word_count
         
         self.custom_word_count_optionmenu.configure(values=[str(num) for num in range(3, word_count + 1)])
         self.radiobutton_max_word_count.configure(text=f"Maximum: {word_count}")
@@ -494,7 +494,7 @@ class CrosswordBrowser(ctk.CTkFrame):
         if self.webapp_running:
             if AppHelper.confirm_with_messagebox(go_to_home=True):
                 self.terminate_cword_webapp()
-            else:
+            else: 
                 return
             
         self.master.close_cword_browser()
@@ -665,7 +665,7 @@ class AppHelper:
         return info
     
     @staticmethod
-    def _get_colour_palette_for_webapp(appearance_mode: str) -> List[str]:
+    def _get_colour_palette_for_webapp(appearance_mode: str) -> Dict[str, str]:
         '''Create a dictionary based on the `constants.Colour` for the web app.'''
         sub_class = Colour.Light if appearance_mode == "Light" else Colour.Dark
         palette = {key: value for attr in [sub_class.__dict__, Colour.Global.__dict__]
