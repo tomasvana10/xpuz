@@ -9,8 +9,6 @@ from pathlib import Path
 from flask import Flask, render_template
 from flask_babel import Babel
 
-
-
 def _run(*args, **kwargs):
     '''Ran as a new Process using the `multiprocessing` module. kwargs are forwarded from
     `_create_app_process`, which forwards the arguments from `init_webapp` in `main.py`.

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"POT-Creation-Date: 2024-02-18 21:00+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ko <LL@li.org>\n"
@@ -19,147 +19,147 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:66
+#: src/main.py:73
 msgid "Crossword Puzzle"
 msgstr "크로스워드 퍼즐"
 
-#: src/main.py:75
+#: src/main.py:81
 msgid "View crosswords"
 msgstr "크로스워드 보기"
 
-#: src/main.py:79
+#: src/main.py:85
 msgid "Exit the app"
 msgstr "앱 종료"
 
-#: src/main.py:84
+#: src/main.py:91
 msgid "Global Settings"
 msgstr "전역 설정"
 
-#: src/main.py:88
-msgid "🌐 Languages"
-msgstr "🌐 언어"
+#: src/main.py:94
+msgid "Languages"
+msgstr "언어"
 
-#: src/main.py:95
+#: src/main.py:100
 msgid "Size"
 msgstr "크기"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "light"
 msgstr "빛"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "dark"
 msgstr "어두운"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "system"
 msgstr "체계"
 
-#: src/main.py:105
+#: src/main.py:108
 msgid "Appearance"
 msgstr "모습"
 
-#: src/main.py:248
+#: src/main.py:254
 msgid "Crossword Browser"
 msgstr "크로스워드 브라우저"
 
-#: src/main.py:252
+#: src/main.py:256
 msgid "Go back"
 msgstr "돌아가기"
 
-#: src/main.py:256
+#: src/main.py:261
 msgid "Load crossword"
 msgstr "크로스워드 로드"
 
-#: src/main.py:260
+#: src/main.py:265
 msgid "Open web app"
 msgstr "웹 앱 열기"
 
-#: src/main.py:264
+#: src/main.py:269
 msgid "Terminate web app"
 msgstr "웹앱 종료"
 
-#: src/main.py:270
+#: src/main.py:275
 msgid "Word count preferences"
 msgstr "단어 수 환경 설정"
 
-#: src/main.py:278 src/main.py:308
+#: src/main.py:282 src/main.py:320
 msgid "Select word count"
 msgstr "단어 수 선택"
 
-#: src/main.py:280 src/main.py:491
+#: src/main.py:286 src/main.py:503
 msgid "Maximum"
 msgstr "최고"
 
-#: src/main.py:285
+#: src/main.py:294
 msgid "Custom"
 msgstr "관습"
 
-#: src/main.py:539
+#: src/main.py:551
 msgid "Total words"
 msgstr "총 단어수"
 
-#: src/main.py:543
+#: src/main.py:555
 msgid "Difficulty"
 msgstr "어려움"
 
-#: src/main.py:543
+#: src/main.py:555
 msgid "difficulty"
 msgstr "어려움"
 
-#: src/main.py:545
+#: src/main.py:557
 msgid "Select"
 msgstr "선택하다"
 
-#: src/main.py:584
+#: src/main.py:597
 msgid "Restart"
 msgstr "재시작"
 
-#: src/main.py:584
+#: src/main.py:597
 msgid "Are you sure you want to restart the app?"
 msgstr "앱을 다시 시작하시겠습니까?"
 
-#: src/main.py:588
+#: src/main.py:601
 msgid "Exit"
 msgstr "출구"
 
-#: src/main.py:589
+#: src/main.py:602
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr "앱을 종료하시겠습니까? 웹앱이 실행 중이면 종료됩니다."
 
-#: src/main.py:594
+#: src/main.py:607
 msgid "Back to home"
 msgstr "홈으로"
 
-#: src/main.py:595
+#: src/main.py:608
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr "홈 화면으로 돌아가시겠습니까? 웹앱이 종료됩니다."
 
-#: src/main.py:608 src/main.py:611 src/main.py:614
+#: src/main.py:621 src/main.py:624 src/main.py:627
 msgid "Error"
 msgstr "오류"
 
-#: src/main.py:608
+#: src/main.py:621
 msgid "This language is already selected."
 msgstr "이 언어는 이미 선택되어 있습니다."
 
-#: src/main.py:611
+#: src/main.py:624
 msgid "This size is already selected."
 msgstr "이 크기는 이미 선택되었습니다."
 
-#: src/main.py:614
+#: src/main.py:627
 msgid "This appearance is already selected."
 msgstr "이 표현은 이미 선택되어 있습니다."
 
-#: src/main.py:617
+#: src/main.py:630
 msgid "Info"
 msgstr "정보"
 
-#: src/main.py:618
+#: src/main.py:631
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"

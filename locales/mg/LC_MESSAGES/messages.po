@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"POT-Creation-Date: 2024-02-18 21:00+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: mg <LL@li.org>\n"
@@ -19,111 +19,111 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:66
+#: src/main.py:73
 msgid "Crossword Puzzle"
 msgstr "Puzzle Crossword"
 
-#: src/main.py:75
+#: src/main.py:81
 msgid "View crosswords"
 msgstr "Jereo ny crosswords"
 
-#: src/main.py:79
+#: src/main.py:85
 msgid "Exit the app"
 msgstr "Mialà amin&#39;ny app"
 
-#: src/main.py:84
+#: src/main.py:91
 msgid "Global Settings"
 msgstr "Global Settings"
 
-#: src/main.py:88
-msgid "🌐 Languages"
-msgstr "🌐 Fiteny"
+#: src/main.py:94
+msgid "Languages"
+msgstr "fiteny"
 
-#: src/main.py:95
+#: src/main.py:100
 msgid "Size"
 msgstr "Size"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "light"
 msgstr "fahazavana"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "dark"
 msgstr "maizina"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "system"
 msgstr "RAFITRA"
 
-#: src/main.py:105
+#: src/main.py:108
 msgid "Appearance"
 msgstr "Bika Aman &#39;endrika"
 
-#: src/main.py:248
+#: src/main.py:254
 msgid "Crossword Browser"
 msgstr "Crossword Browser"
 
-#: src/main.py:252
+#: src/main.py:256
 msgid "Go back"
 msgstr "Hiverina"
 
-#: src/main.py:256
+#: src/main.py:261
 msgid "Load crossword"
 msgstr "Load crossword"
 
-#: src/main.py:260
+#: src/main.py:265
 msgid "Open web app"
 msgstr "Sokafy ny app web"
 
-#: src/main.py:264
+#: src/main.py:269
 msgid "Terminate web app"
 msgstr "Atsaharo ny app web"
 
-#: src/main.py:270
+#: src/main.py:275
 msgid "Word count preferences"
 msgstr "Safidy isan&#39;ny teny"
 
-#: src/main.py:278 src/main.py:308
+#: src/main.py:282 src/main.py:320
 msgid "Select word count"
 msgstr "Fidio ny isan&#39;ny teny"
 
-#: src/main.py:280 src/main.py:491
+#: src/main.py:286 src/main.py:503
 msgid "Maximum"
 msgstr "Faratampony"
 
-#: src/main.py:285
+#: src/main.py:294
 msgid "Custom"
 msgstr "fanao"
 
-#: src/main.py:539
+#: src/main.py:551
 msgid "Total words"
 msgstr "Total teny"
 
-#: src/main.py:543
+#: src/main.py:555
 msgid "Difficulty"
 msgstr "fahasarotana"
 
-#: src/main.py:543
+#: src/main.py:555
 msgid "difficulty"
 msgstr "fahasarotana"
 
-#: src/main.py:545
+#: src/main.py:557
 msgid "Select"
 msgstr "Select"
 
-#: src/main.py:584
+#: src/main.py:597
 msgid "Restart"
 msgstr "Haverina velomina"
 
-#: src/main.py:584
+#: src/main.py:597
 msgid "Are you sure you want to restart the app?"
 msgstr "Tena te hamerina ny fampiharana ve ianao?"
 
-#: src/main.py:588
+#: src/main.py:601
 msgid "Exit"
 msgstr "Fivoahana"
 
-#: src/main.py:589
+#: src/main.py:602
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -131,11 +131,11 @@ msgstr ""
 "Tena te hiala amin&#39;ny fampiharana ve ianao? Raha mandeha ny app web dia "
 "hofoanana izany."
 
-#: src/main.py:594
+#: src/main.py:607
 msgid "Back to home"
 msgstr "Miverina any an-trano"
 
-#: src/main.py:595
+#: src/main.py:608
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -143,27 +143,27 @@ msgstr ""
 "Tena te hiverina any amin&#39;ny efijery an-trano ve ianao? Hatsahatra ny "
 "app web."
 
-#: src/main.py:608 src/main.py:611 src/main.py:614
+#: src/main.py:621 src/main.py:624 src/main.py:627
 msgid "Error"
 msgstr "fahadisoana"
 
-#: src/main.py:608
+#: src/main.py:621
 msgid "This language is already selected."
 msgstr "Efa voafantina ity fiteny ity."
 
-#: src/main.py:611
+#: src/main.py:624
 msgid "This size is already selected."
 msgstr "Efa voafantina io habe io."
 
-#: src/main.py:614
+#: src/main.py:627
 msgid "This appearance is already selected."
 msgstr "Ity endrika ity dia efa voafantina."
 
-#: src/main.py:617
+#: src/main.py:630
 msgid "Info"
 msgstr "Info"
 
-#: src/main.py:618
+#: src/main.py:631
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"

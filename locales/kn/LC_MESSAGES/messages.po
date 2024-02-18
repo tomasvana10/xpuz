@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"POT-Creation-Date: 2024-02-18 21:00+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: kn <LL@li.org>\n"
@@ -19,111 +19,111 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:66
+#: src/main.py:73
 msgid "Crossword Puzzle"
 msgstr "ಪದಬಂಧ"
 
-#: src/main.py:75
+#: src/main.py:81
 msgid "View crosswords"
 msgstr "ಕ್ರಾಸ್‌ವರ್ಡ್‌ಗಳನ್ನು ವೀಕ್ಷಿಸಿ"
 
-#: src/main.py:79
+#: src/main.py:85
 msgid "Exit the app"
 msgstr "ಅಪ್ಲಿಕೇಶನ್‌ನಿಂದ ನಿರ್ಗಮಿಸಿ"
 
-#: src/main.py:84
+#: src/main.py:91
 msgid "Global Settings"
 msgstr "ಜಾಗತಿಕ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
 
-#: src/main.py:88
-msgid "🌐 Languages"
-msgstr "🌐 ಭಾಷೆಗಳು"
+#: src/main.py:94
+msgid "Languages"
+msgstr "ಭಾಷೆಗಳು"
 
-#: src/main.py:95
+#: src/main.py:100
 msgid "Size"
 msgstr "ಗಾತ್ರ"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "light"
 msgstr "ಬೆಳಕು"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "dark"
 msgstr "ಕತ್ತಲು"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "system"
 msgstr "ವ್ಯವಸ್ಥೆ"
 
-#: src/main.py:105
+#: src/main.py:108
 msgid "Appearance"
 msgstr "ಗೋಚರತೆ"
 
-#: src/main.py:248
+#: src/main.py:254
 msgid "Crossword Browser"
 msgstr "ಕ್ರಾಸ್ವರ್ಡ್ ಬ್ರೌಸರ್"
 
-#: src/main.py:252
+#: src/main.py:256
 msgid "Go back"
 msgstr "ಹಿಂದೆ ಹೋಗು"
 
-#: src/main.py:256
+#: src/main.py:261
 msgid "Load crossword"
 msgstr "ಕ್ರಾಸ್ವರ್ಡ್ ಅನ್ನು ಲೋಡ್ ಮಾಡಿ"
 
-#: src/main.py:260
+#: src/main.py:265
 msgid "Open web app"
 msgstr "ವೆಬ್ ಅಪ್ಲಿಕೇಶನ್ ತೆರೆಯಿರಿ"
 
-#: src/main.py:264
+#: src/main.py:269
 msgid "Terminate web app"
 msgstr "ವೆಬ್ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಕೊನೆಗೊಳಿಸಿ"
 
-#: src/main.py:270
+#: src/main.py:275
 msgid "Word count preferences"
 msgstr "ಪದಗಳ ಎಣಿಕೆ ಆದ್ಯತೆಗಳು"
 
-#: src/main.py:278 src/main.py:308
+#: src/main.py:282 src/main.py:320
 msgid "Select word count"
 msgstr "ಪದಗಳ ಸಂಖ್ಯೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ"
 
-#: src/main.py:280 src/main.py:491
+#: src/main.py:286 src/main.py:503
 msgid "Maximum"
 msgstr "ಗರಿಷ್ಠ"
 
-#: src/main.py:285
+#: src/main.py:294
 msgid "Custom"
 msgstr "ಕಸ್ಟಮ್"
 
-#: src/main.py:539
+#: src/main.py:551
 msgid "Total words"
 msgstr "ಒಟ್ಟು ಪದಗಳು"
 
-#: src/main.py:543
+#: src/main.py:555
 msgid "Difficulty"
 msgstr "ಕಷ್ಟ"
 
-#: src/main.py:543
+#: src/main.py:555
 msgid "difficulty"
 msgstr "ಕಷ್ಟ"
 
-#: src/main.py:545
+#: src/main.py:557
 msgid "Select"
 msgstr "ಆಯ್ಕೆ ಮಾಡಿ"
 
-#: src/main.py:584
+#: src/main.py:597
 msgid "Restart"
 msgstr "ಪುನರಾರಂಭದ"
 
-#: src/main.py:584
+#: src/main.py:597
 msgid "Are you sure you want to restart the app?"
 msgstr "ನೀವು ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಮರುಪ್ರಾರಂಭಿಸಲು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?"
 
-#: src/main.py:588
+#: src/main.py:601
 msgid "Exit"
 msgstr "ನಿರ್ಗಮಿಸಿ"
 
-#: src/main.py:589
+#: src/main.py:602
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -131,11 +131,11 @@ msgstr ""
 "ನೀವು ಅಪ್ಲಿಕೇಶನ್‌ನಿಂದ ನಿರ್ಗಮಿಸಲು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ? ವೆಬ್ ಅಪ್ಲಿಕೇಶನ್ "
 "ಚಾಲನೆಯಲ್ಲಿದ್ದರೆ, ಅದನ್ನು ಕೊನೆಗೊಳಿಸಲಾಗುತ್ತದೆ."
 
-#: src/main.py:594
+#: src/main.py:607
 msgid "Back to home"
 msgstr "ಮರಳಿ ಮನೆಗೆ"
 
-#: src/main.py:595
+#: src/main.py:608
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -143,27 +143,27 @@ msgstr ""
 "ನೀವು ಹೋಮ್ ಸ್ಕ್ರೀನ್‌ಗೆ ಹಿಂತಿರುಗಲು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ? ವೆಬ್ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು "
 "ಕೊನೆಗೊಳಿಸಲಾಗುತ್ತದೆ."
 
-#: src/main.py:608 src/main.py:611 src/main.py:614
+#: src/main.py:621 src/main.py:624 src/main.py:627
 msgid "Error"
 msgstr "ದೋಷ"
 
-#: src/main.py:608
+#: src/main.py:621
 msgid "This language is already selected."
 msgstr "ಈ ಭಾಷೆಯನ್ನು ಈಗಾಗಲೇ ಆಯ್ಕೆ ಮಾಡಲಾಗಿದೆ."
 
-#: src/main.py:611
+#: src/main.py:624
 msgid "This size is already selected."
 msgstr "ಈ ಗಾತ್ರವನ್ನು ಈಗಾಗಲೇ ಆಯ್ಕೆ ಮಾಡಲಾಗಿದೆ."
 
-#: src/main.py:614
+#: src/main.py:627
 msgid "This appearance is already selected."
 msgstr "ಈ ನೋಟವನ್ನು ಈಗಾಗಲೇ ಆಯ್ಕೆಮಾಡಲಾಗಿದೆ."
 
-#: src/main.py:617
+#: src/main.py:630
 msgid "Info"
 msgstr "ಮಾಹಿತಿ"
 
-#: src/main.py:618
+#: src/main.py:631
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"

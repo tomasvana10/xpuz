@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"POT-Creation-Date: 2024-02-18 21:00+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: mi <LL@li.org>\n"
@@ -19,111 +19,111 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:66
+#: src/main.py:73
 msgid "Crossword Puzzle"
 msgstr "Whakawhiti Kupu"
 
-#: src/main.py:75
+#: src/main.py:81
 msgid "View crosswords"
 msgstr "Tirohia nga kupu whakawhiti"
 
-#: src/main.py:79
+#: src/main.py:85
 msgid "Exit the app"
 msgstr "Puta atu i te taupānga"
 
-#: src/main.py:84
+#: src/main.py:91
 msgid "Global Settings"
 msgstr "Tautuhinga Ao"
 
-#: src/main.py:88
-msgid "🌐 Languages"
-msgstr "🌐 Reo"
+#: src/main.py:94
+msgid "Languages"
+msgstr "Nga reo"
 
-#: src/main.py:95
+#: src/main.py:100
 msgid "Size"
 msgstr "Rahi"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "light"
 msgstr "marama"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "dark"
 msgstr "pouri"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "system"
 msgstr "pūnaha"
 
-#: src/main.py:105
+#: src/main.py:108
 msgid "Appearance"
 msgstr "Te ahua"
 
-#: src/main.py:248
+#: src/main.py:254
 msgid "Crossword Browser"
 msgstr "Pūtirotiro Crossword"
 
-#: src/main.py:252
+#: src/main.py:256
 msgid "Go back"
 msgstr "Hoki atu"
 
-#: src/main.py:256
+#: src/main.py:261
 msgid "Load crossword"
 msgstr "Utaina te kupu whakawhiti"
 
-#: src/main.py:260
+#: src/main.py:265
 msgid "Open web app"
 msgstr "Tuwhera te taupānga tukutuku"
 
-#: src/main.py:264
+#: src/main.py:269
 msgid "Terminate web app"
 msgstr "Whakamutua te taupānga tukutuku"
 
-#: src/main.py:270
+#: src/main.py:275
 msgid "Word count preferences"
 msgstr "Nga manakohanga tatau kupu"
 
-#: src/main.py:278 src/main.py:308
+#: src/main.py:282 src/main.py:320
 msgid "Select word count"
 msgstr "Tīpakohia te tatau kupu"
 
-#: src/main.py:280 src/main.py:491
+#: src/main.py:286 src/main.py:503
 msgid "Maximum"
 msgstr "Mōrahi"
 
-#: src/main.py:285
+#: src/main.py:294
 msgid "Custom"
 msgstr "Ritenga"
 
-#: src/main.py:539
+#: src/main.py:551
 msgid "Total words"
 msgstr "Kupu katoa"
 
-#: src/main.py:543
+#: src/main.py:555
 msgid "Difficulty"
 msgstr "Te uaua"
 
-#: src/main.py:543
+#: src/main.py:555
 msgid "difficulty"
 msgstr "uaua"
 
-#: src/main.py:545
+#: src/main.py:557
 msgid "Select"
 msgstr "Tīpakohia"
 
-#: src/main.py:584
+#: src/main.py:597
 msgid "Restart"
 msgstr "Tīmata anō"
 
-#: src/main.py:584
+#: src/main.py:597
 msgid "Are you sure you want to restart the app?"
 msgstr "Kei te tino hiahia koe ki te whakaara ano i te taupānga?"
 
-#: src/main.py:588
+#: src/main.py:601
 msgid "Exit"
 msgstr "Putaatu"
 
-#: src/main.py:589
+#: src/main.py:602
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -131,11 +131,11 @@ msgstr ""
 "Kei te tino hiahia koe ki te puta atu i te taupānga? Mena kei te rere te "
 "taupānga tukutuku, ka mutu."
 
-#: src/main.py:594
+#: src/main.py:607
 msgid "Back to home"
 msgstr "Hoki ki te kainga"
 
-#: src/main.py:595
+#: src/main.py:608
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -143,27 +143,27 @@ msgstr ""
 "Kei te tino hiahia koe ki te hoki ki te mata o te kainga? Ka whakamutua te "
 "taupānga tukutuku."
 
-#: src/main.py:608 src/main.py:611 src/main.py:614
+#: src/main.py:621 src/main.py:624 src/main.py:627
 msgid "Error"
 msgstr "Hapa"
 
-#: src/main.py:608
+#: src/main.py:621
 msgid "This language is already selected."
 msgstr "Kua tohua kē tēnei reo."
 
-#: src/main.py:611
+#: src/main.py:624
 msgid "This size is already selected."
 msgstr "Kua tohua kē tēnei rahi."
 
-#: src/main.py:614
+#: src/main.py:627
 msgid "This appearance is already selected."
 msgstr "Kua tohua kē tēnei ahua."
 
-#: src/main.py:617
+#: src/main.py:630
 msgid "Info"
 msgstr "Nga korero"
 
-#: src/main.py:618
+#: src/main.py:631
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"

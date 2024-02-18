@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"POT-Creation-Date: 2024-02-18 21:00+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: mk <LL@li.org>\n"
@@ -19,111 +19,111 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:66
+#: src/main.py:73
 msgid "Crossword Puzzle"
 msgstr "Крстозбор"
 
-#: src/main.py:75
+#: src/main.py:81
 msgid "View crosswords"
 msgstr "Погледнете ги крстозборите"
 
-#: src/main.py:79
+#: src/main.py:85
 msgid "Exit the app"
 msgstr "Излезете од апликацијата"
 
-#: src/main.py:84
+#: src/main.py:91
 msgid "Global Settings"
 msgstr "Глобални поставки"
 
-#: src/main.py:88
-msgid "🌐 Languages"
-msgstr "🌐 Јазици"
+#: src/main.py:94
+msgid "Languages"
+msgstr "Јазици"
 
-#: src/main.py:95
+#: src/main.py:100
 msgid "Size"
 msgstr "Големина"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "light"
 msgstr "светлина"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "dark"
 msgstr "темно"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "system"
 msgstr "систем"
 
-#: src/main.py:105
+#: src/main.py:108
 msgid "Appearance"
 msgstr "Изглед"
 
-#: src/main.py:248
+#: src/main.py:254
 msgid "Crossword Browser"
 msgstr "Прелистувач на крстозбори"
 
-#: src/main.py:252
+#: src/main.py:256
 msgid "Go back"
 msgstr "Врати се назад"
 
-#: src/main.py:256
+#: src/main.py:261
 msgid "Load crossword"
 msgstr "Вчитај крстозбор"
 
-#: src/main.py:260
+#: src/main.py:265
 msgid "Open web app"
 msgstr "Отворете веб-апликација"
 
-#: src/main.py:264
+#: src/main.py:269
 msgid "Terminate web app"
 msgstr "Прекинете ја веб-апликацијата"
 
-#: src/main.py:270
+#: src/main.py:275
 msgid "Word count preferences"
 msgstr "Преференци за броење зборови"
 
-#: src/main.py:278 src/main.py:308
+#: src/main.py:282 src/main.py:320
 msgid "Select word count"
 msgstr "Изберете број на зборови"
 
-#: src/main.py:280 src/main.py:491
+#: src/main.py:286 src/main.py:503
 msgid "Maximum"
 msgstr "Максимум"
 
-#: src/main.py:285
+#: src/main.py:294
 msgid "Custom"
 msgstr "Прилагодено"
 
-#: src/main.py:539
+#: src/main.py:551
 msgid "Total words"
 msgstr "Вкупно зборови"
 
-#: src/main.py:543
+#: src/main.py:555
 msgid "Difficulty"
 msgstr "Тешкотија"
 
-#: src/main.py:543
+#: src/main.py:555
 msgid "difficulty"
 msgstr "тешкотија"
 
-#: src/main.py:545
+#: src/main.py:557
 msgid "Select"
 msgstr "Изберете"
 
-#: src/main.py:584
+#: src/main.py:597
 msgid "Restart"
 msgstr "Рестарт"
 
-#: src/main.py:584
+#: src/main.py:597
 msgid "Are you sure you want to restart the app?"
 msgstr "Дали сте сигурни дека сакате да ја рестартирате апликацијата?"
 
-#: src/main.py:588
+#: src/main.py:601
 msgid "Exit"
 msgstr "Излезете"
 
-#: src/main.py:589
+#: src/main.py:602
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -131,11 +131,11 @@ msgstr ""
 "Дали сте сигурни дека сакате да излезете од апликацијата? Ако веб-"
 "апликацијата работи, таа ќе се прекине."
 
-#: src/main.py:594
+#: src/main.py:607
 msgid "Back to home"
 msgstr "Назад до дома"
 
-#: src/main.py:595
+#: src/main.py:608
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -143,27 +143,27 @@ msgstr ""
 "Дали сте сигурни дека сакате да се вратите на почетниот екран? Веб-"
 "апликацијата ќе се прекине."
 
-#: src/main.py:608 src/main.py:611 src/main.py:614
+#: src/main.py:621 src/main.py:624 src/main.py:627
 msgid "Error"
 msgstr "Грешка"
 
-#: src/main.py:608
+#: src/main.py:621
 msgid "This language is already selected."
 msgstr "Овој јазик е веќе избран."
 
-#: src/main.py:611
+#: src/main.py:624
 msgid "This size is already selected."
 msgstr "Оваа големина е веќе избрана."
 
-#: src/main.py:614
+#: src/main.py:627
 msgid "This appearance is already selected."
 msgstr "Овој изглед е веќе избран."
 
-#: src/main.py:617
+#: src/main.py:630
 msgid "Info"
 msgstr "Инфо"
 
-#: src/main.py:618
+#: src/main.py:631
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"POT-Creation-Date: 2024-02-18 21:00+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: el <LL@li.org>\n"
@@ -19,111 +19,111 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:66
+#: src/main.py:73
 msgid "Crossword Puzzle"
 msgstr "Σταυρόλεξο"
 
-#: src/main.py:75
+#: src/main.py:81
 msgid "View crosswords"
 msgstr "Δείτε σταυρόλεξα"
 
-#: src/main.py:79
+#: src/main.py:85
 msgid "Exit the app"
 msgstr "Έξοδος από την εφαρμογή"
 
-#: src/main.py:84
+#: src/main.py:91
 msgid "Global Settings"
 msgstr "Γενικές ρυθμίσεις"
 
-#: src/main.py:88
-msgid "🌐 Languages"
-msgstr "🌐 Γλώσσες"
+#: src/main.py:94
+msgid "Languages"
+msgstr "Γλώσσες"
 
-#: src/main.py:95
+#: src/main.py:100
 msgid "Size"
 msgstr "Μέγεθος"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "light"
 msgstr "φως"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "dark"
 msgstr "σκοτάδι"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "system"
 msgstr "Σύστημα"
 
-#: src/main.py:105
+#: src/main.py:108
 msgid "Appearance"
 msgstr "Εμφάνιση"
 
-#: src/main.py:248
+#: src/main.py:254
 msgid "Crossword Browser"
 msgstr "Πρόγραμμα περιήγησης σταυρόλεξων"
 
-#: src/main.py:252
+#: src/main.py:256
 msgid "Go back"
 msgstr "Πήγαινε πίσω"
 
-#: src/main.py:256
+#: src/main.py:261
 msgid "Load crossword"
 msgstr "Φόρτωση σταυρόλεξου"
 
-#: src/main.py:260
+#: src/main.py:265
 msgid "Open web app"
 msgstr "Ανοίξτε την εφαρμογή Ιστού"
 
-#: src/main.py:264
+#: src/main.py:269
 msgid "Terminate web app"
 msgstr "Τερματισμός εφαρμογής Ιστού"
 
-#: src/main.py:270
+#: src/main.py:275
 msgid "Word count preferences"
 msgstr "Προτιμήσεις καταμέτρησης λέξεων"
 
-#: src/main.py:278 src/main.py:308
+#: src/main.py:282 src/main.py:320
 msgid "Select word count"
 msgstr "Επιλέξτε μέτρηση λέξεων"
 
-#: src/main.py:280 src/main.py:491
+#: src/main.py:286 src/main.py:503
 msgid "Maximum"
 msgstr "Ανώτατο όριο"
 
-#: src/main.py:285
+#: src/main.py:294
 msgid "Custom"
 msgstr "Εθιμο"
 
-#: src/main.py:539
+#: src/main.py:551
 msgid "Total words"
 msgstr "Σύνολο λέξεων"
 
-#: src/main.py:543
+#: src/main.py:555
 msgid "Difficulty"
 msgstr "Δυσκολία"
 
-#: src/main.py:543
+#: src/main.py:555
 msgid "difficulty"
 msgstr "δυσκολία"
 
-#: src/main.py:545
+#: src/main.py:557
 msgid "Select"
 msgstr "Επιλέγω"
 
-#: src/main.py:584
+#: src/main.py:597
 msgid "Restart"
 msgstr "Επανεκκίνηση"
 
-#: src/main.py:584
+#: src/main.py:597
 msgid "Are you sure you want to restart the app?"
 msgstr "Είστε βέβαιοι ότι θέλετε να επανεκκινήσετε την εφαρμογή;"
 
-#: src/main.py:588
+#: src/main.py:601
 msgid "Exit"
 msgstr "Εξοδος"
 
-#: src/main.py:589
+#: src/main.py:602
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -131,11 +131,11 @@ msgstr ""
 "Είστε βέβαιοι ότι θέλετε να βγείτε από την εφαρμογή; Εάν η εφαρμογή Ιστού "
 "εκτελείται, θα τερματιστεί."
 
-#: src/main.py:594
+#: src/main.py:607
 msgid "Back to home"
 msgstr "Πίσω στο σπίτι"
 
-#: src/main.py:595
+#: src/main.py:608
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -143,27 +143,27 @@ msgstr ""
 "Είστε βέβαιοι ότι θέλετε να επιστρέψετε στην αρχική οθόνη; Η εφαρμογή Ιστού "
 "θα τερματιστεί."
 
-#: src/main.py:608 src/main.py:611 src/main.py:614
+#: src/main.py:621 src/main.py:624 src/main.py:627
 msgid "Error"
 msgstr "Λάθος"
 
-#: src/main.py:608
+#: src/main.py:621
 msgid "This language is already selected."
 msgstr "Αυτή η γλώσσα είναι ήδη επιλεγμένη."
 
-#: src/main.py:611
+#: src/main.py:624
 msgid "This size is already selected."
 msgstr "Αυτό το μέγεθος είναι ήδη επιλεγμένο."
 
-#: src/main.py:614
+#: src/main.py:627
 msgid "This appearance is already selected."
 msgstr "Αυτή η εμφάνιση είναι ήδη επιλεγμένη."
 
-#: src/main.py:617
+#: src/main.py:630
 msgid "Info"
 msgstr "Πληροφορίες"
 
-#: src/main.py:618
+#: src/main.py:631
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"

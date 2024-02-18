@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"POT-Creation-Date: 2024-02-18 21:00+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: haw <LL@li.org>\n"
@@ -19,111 +19,111 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:66
+#: src/main.py:73
 msgid "Crossword Puzzle"
 msgstr "Huʻi Huaʻōlelo Crossword"
 
-#: src/main.py:75
+#: src/main.py:81
 msgid "View crosswords"
 msgstr "Nānā i nā huaʻōlelo"
 
-#: src/main.py:79
+#: src/main.py:85
 msgid "Exit the app"
 msgstr "Haʻalele i ka polokalamu"
 
-#: src/main.py:84
+#: src/main.py:91
 msgid "Global Settings"
 msgstr "Nā hoʻonohonoho honua"
 
-#: src/main.py:88
-msgid "🌐 Languages"
-msgstr "🌐 ʻŌlelo"
+#: src/main.py:94
+msgid "Languages"
+msgstr "ʻŌlelo"
 
-#: src/main.py:95
+#: src/main.py:100
 msgid "Size"
 msgstr "Nui"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "light"
 msgstr "māmā"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "dark"
 msgstr "pouli"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "system"
 msgstr "ʻōnaehana"
 
-#: src/main.py:105
+#: src/main.py:108
 msgid "Appearance"
 msgstr "Ka nana aku"
 
-#: src/main.py:248
+#: src/main.py:254
 msgid "Crossword Browser"
 msgstr "Huli Huaʻōlelo Crossword"
 
-#: src/main.py:252
+#: src/main.py:256
 msgid "Go back"
 msgstr "Hoʻi aku"
 
-#: src/main.py:256
+#: src/main.py:261
 msgid "Load crossword"
 msgstr "Hoʻouka i ka huaʻōlelo"
 
-#: src/main.py:260
+#: src/main.py:265
 msgid "Open web app"
 msgstr "E wehe i ka polokalamu kele pūnaewele"
 
-#: src/main.py:264
+#: src/main.py:269
 msgid "Terminate web app"
 msgstr "E hoʻopau i ka polokalamu kele pūnaewele"
 
-#: src/main.py:270
+#: src/main.py:275
 msgid "Word count preferences"
 msgstr "Nā koho helu huaʻōlelo"
 
-#: src/main.py:278 src/main.py:308
+#: src/main.py:282 src/main.py:320
 msgid "Select word count"
 msgstr "E koho i ka helu ʻōlelo"
 
-#: src/main.py:280 src/main.py:491
+#: src/main.py:286 src/main.py:503
 msgid "Maximum"
 msgstr "Ka nui"
 
-#: src/main.py:285
+#: src/main.py:294
 msgid "Custom"
 msgstr "Kuʻuna"
 
-#: src/main.py:539
+#: src/main.py:551
 msgid "Total words"
 msgstr "Huina huaolelo"
 
-#: src/main.py:543
+#: src/main.py:555
 msgid "Difficulty"
 msgstr "Ka pilikia"
 
-#: src/main.py:543
+#: src/main.py:555
 msgid "difficulty"
 msgstr "pilikia"
 
-#: src/main.py:545
+#: src/main.py:557
 msgid "Select"
 msgstr "E koho"
 
-#: src/main.py:584
+#: src/main.py:597
 msgid "Restart"
 msgstr "Hoʻomaka hou"
 
-#: src/main.py:584
+#: src/main.py:597
 msgid "Are you sure you want to restart the app?"
 msgstr "Makemake ʻoe e hoʻomaka hou i ka polokalamu?"
 
-#: src/main.py:588
+#: src/main.py:601
 msgid "Exit"
 msgstr "Puka"
 
-#: src/main.py:589
+#: src/main.py:602
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -131,38 +131,38 @@ msgstr ""
 "Makemake ʻoe e haʻalele i ka polokalamu? Inā holo ka polokalamu pūnaewele, e"
 " hoʻopau ʻia."
 
-#: src/main.py:594
+#: src/main.py:607
 msgid "Back to home"
 msgstr "Hoʻi i ka home"
 
-#: src/main.py:595
+#: src/main.py:608
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
 "Makemake ʻoe e hoʻi i ka pale home? E hoʻopau ʻia ka polokalamu pūnaewele."
 
-#: src/main.py:608 src/main.py:611 src/main.py:614
+#: src/main.py:621 src/main.py:624 src/main.py:627
 msgid "Error"
 msgstr "Kuhihewa"
 
-#: src/main.py:608
+#: src/main.py:621
 msgid "This language is already selected."
 msgstr "Ua koho ʻia kēia ʻōlelo."
 
-#: src/main.py:611
+#: src/main.py:624
 msgid "This size is already selected."
 msgstr "Ua koho mua ʻia kēia nui."
 
-#: src/main.py:614
+#: src/main.py:627
 msgid "This appearance is already selected."
 msgstr "Ua koho ʻia kēia hiʻohiʻona."
 
-#: src/main.py:617
+#: src/main.py:630
 msgid "Info"
 msgstr "ʻIke"
 
-#: src/main.py:618
+#: src/main.py:631
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"

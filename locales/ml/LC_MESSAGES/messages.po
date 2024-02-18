@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"POT-Creation-Date: 2024-02-18 21:00+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ml <LL@li.org>\n"
@@ -19,111 +19,111 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:66
+#: src/main.py:73
 msgid "Crossword Puzzle"
 msgstr "ക്രോസ്വേഡ് പസിൽ"
 
-#: src/main.py:75
+#: src/main.py:81
 msgid "View crosswords"
 msgstr "ക്രോസ്വേഡുകൾ കാണുക"
 
-#: src/main.py:79
+#: src/main.py:85
 msgid "Exit the app"
 msgstr "ആപ്പിൽ നിന്ന് പുറത്തുകടക്കുക"
 
-#: src/main.py:84
+#: src/main.py:91
 msgid "Global Settings"
 msgstr "ആഗോള ക്രമീകരണങ്ങൾ"
 
-#: src/main.py:88
-msgid "🌐 Languages"
-msgstr "🌐 ഭാഷകൾ"
+#: src/main.py:94
+msgid "Languages"
+msgstr "ഭാഷകൾ"
 
-#: src/main.py:95
+#: src/main.py:100
 msgid "Size"
 msgstr "വലിപ്പം"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "light"
 msgstr "വെളിച്ചം"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "dark"
 msgstr "ഇരുണ്ട"
 
-#: src/main.py:104
+#: src/main.py:107
 msgid "system"
 msgstr "സിസ്റ്റം"
 
-#: src/main.py:105
+#: src/main.py:108
 msgid "Appearance"
 msgstr "രൂപഭാവം"
 
-#: src/main.py:248
+#: src/main.py:254
 msgid "Crossword Browser"
 msgstr "ക്രോസ്വേഡ് ബ്രൗസർ"
 
-#: src/main.py:252
+#: src/main.py:256
 msgid "Go back"
 msgstr "മടങ്ങിപ്പോവുക"
 
-#: src/main.py:256
+#: src/main.py:261
 msgid "Load crossword"
 msgstr "ക്രോസ്വേഡ് ലോഡ് ചെയ്യുക"
 
-#: src/main.py:260
+#: src/main.py:265
 msgid "Open web app"
 msgstr "വെബ് ആപ്പ് തുറക്കുക"
 
-#: src/main.py:264
+#: src/main.py:269
 msgid "Terminate web app"
 msgstr "വെബ് ആപ്പ് അവസാനിപ്പിക്കുക"
 
-#: src/main.py:270
+#: src/main.py:275
 msgid "Word count preferences"
 msgstr "വാക്കുകളുടെ എണ്ണം മുൻഗണനകൾ"
 
-#: src/main.py:278 src/main.py:308
+#: src/main.py:282 src/main.py:320
 msgid "Select word count"
 msgstr "വാക്കുകളുടെ എണ്ണം തിരഞ്ഞെടുക്കുക"
 
-#: src/main.py:280 src/main.py:491
+#: src/main.py:286 src/main.py:503
 msgid "Maximum"
 msgstr "പരമാവധി"
 
-#: src/main.py:285
+#: src/main.py:294
 msgid "Custom"
 msgstr "കസ്റ്റം"
 
-#: src/main.py:539
+#: src/main.py:551
 msgid "Total words"
 msgstr "ആകെ വാക്കുകൾ"
 
-#: src/main.py:543
+#: src/main.py:555
 msgid "Difficulty"
 msgstr "ബുദ്ധിമുട്ട്"
 
-#: src/main.py:543
+#: src/main.py:555
 msgid "difficulty"
 msgstr "ബുദ്ധിമുട്ട്"
 
-#: src/main.py:545
+#: src/main.py:557
 msgid "Select"
 msgstr "തിരഞ്ഞെടുക്കുക"
 
-#: src/main.py:584
+#: src/main.py:597
 msgid "Restart"
 msgstr "പുനരാരംഭിക്കുക"
 
-#: src/main.py:584
+#: src/main.py:597
 msgid "Are you sure you want to restart the app?"
 msgstr "ആപ്പ് പുനരാരംഭിക്കണമെന്ന് തീർച്ചയാണോ?"
 
-#: src/main.py:588
+#: src/main.py:601
 msgid "Exit"
 msgstr "പുറത്ത്"
 
-#: src/main.py:589
+#: src/main.py:602
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -131,11 +131,11 @@ msgstr ""
 "ആപ്പിൽ നിന്ന് പുറത്തുകടക്കണമെന്ന് തീർച്ചയാണോ? വെബ് ആപ്പ് "
 "പ്രവർത്തിക്കുകയാണെങ്കിൽ, അത് അവസാനിപ്പിക്കും."
 
-#: src/main.py:594
+#: src/main.py:607
 msgid "Back to home"
 msgstr "തിരികെ വീട്ടിലേക്ക്"
 
-#: src/main.py:595
+#: src/main.py:608
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -143,27 +143,27 @@ msgstr ""
 "ഹോം സ്‌ക്രീനിലേക്ക് തിരികെ പോകണമെന്ന് തീർച്ചയാണോ? വെബ് ആപ്പ് "
 "അവസാനിപ്പിക്കും."
 
-#: src/main.py:608 src/main.py:611 src/main.py:614
+#: src/main.py:621 src/main.py:624 src/main.py:627
 msgid "Error"
 msgstr "പിശക്"
 
-#: src/main.py:608
+#: src/main.py:621
 msgid "This language is already selected."
 msgstr "ഈ ഭാഷ ഇതിനകം തിരഞ്ഞെടുത്തു."
 
-#: src/main.py:611
+#: src/main.py:624
 msgid "This size is already selected."
 msgstr "ഈ വലുപ്പം ഇതിനകം തിരഞ്ഞെടുത്തു."
 
-#: src/main.py:614
+#: src/main.py:627
 msgid "This appearance is already selected."
 msgstr "ഈ രൂപം ഇതിനകം തിരഞ്ഞെടുത്തു."
 
-#: src/main.py:617
+#: src/main.py:630
 msgid "Info"
 msgstr "വിവരം"
 
-#: src/main.py:618
+#: src/main.py:631
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"

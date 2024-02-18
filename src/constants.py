@@ -5,6 +5,7 @@ from typing import Dict, List, Union
 from pathlib import Path
 
 import regex
+from customtkinter import CTkFont
 
 
 class Paths:
@@ -49,14 +50,6 @@ class CrosswordDifficulties:
     are specified as indexes and not strings.
     '''
     DIFFICULTIES: list[str] = ["Easy", "Medium", "Hard", "Extreme"]
-
-
-class Fonts:
-    '''Font size, weight and slant specifications for GUI text in `main.py`.'''
-    TITLE_FONT = {"size": 30, "weight": "bold", "slant": "roman"}
-    SUBHEADING_FONT = {"size": 23, "weight": "normal", "slant": "italic"}
-    LABEL_FONT = {"size": 14, "weight": "bold", "slant": "roman"}
-    BOLD_LABEL_FONT = {"size": 14, "weight": "bold", "slant": "roman"}
 
 
 class LanguageReplacementsForPybabel:
