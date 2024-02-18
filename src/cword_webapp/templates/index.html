@@ -10,7 +10,7 @@ content, as each crossword created by this program is unique (unless you get luc
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crossword Puzzle - Game</title>
+    <title>{{ _('Crossword Puzzle - Game') }}</title>
     <script src="{{ url_for('static', filename='interaction.js') }}"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
     <style>
@@ -88,7 +88,7 @@ data-intersections="{{ intersections }}">
 {% set ns = namespace(tab_index_counter = 1) %}
 <div class="definitions_a"> <!-- Column one for across definitions -->
     <ul>
-        <h3 class="def_heading">Across</h3>
+        <h3 class="def_heading">{{ _('Across') }}</h3>
         {% for dict_ in definitions_a %}
         {% for num_label, definition in dict_.items()%}
             <li 
@@ -105,7 +105,7 @@ data-intersections="{{ intersections }}">
 
 <div class="definitions_d"> <!-- Column two for downward definitions -->
     <ul>
-        <h3 class="def_heading">Down</h3>
+        <h3 class="def_heading">{{ _('Down') }}</h3>
         {% for dict_ in definitions_d %}
         {% for num_label, definition in dict_.items()%}
             <li 
@@ -122,8 +122,8 @@ data-intersections="{{ intersections }}">
 </div>
 
 <div id="completion_popup">
-    <h2>You completed the crossword!</h2>
-    <button id="close_popup_button" onclick="toggleCompletionPopup()">Close</button>
+    <h2>{{ _('You completed the crossword!') }}</h2>
+    <button id="close_popup_button" onclick="toggleCompletionPopup()">{{ _('Close') }}</button>
 </div>
 
 </div>

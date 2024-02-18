@@ -1,20 +1,225 @@
 # Lao translations for crossword_puzzle.
 # Copyright (C) 2024 Tomas Vana
-# This file is distributed under the same license as the PROJECT project.
+# This file is distributed under the same license as the crossword_puzzle
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-01-11 23:12+1100\n"
-"PO-Revision-Date: 2024-01-23 14:13+1100\n"
+"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: lo\n"
 "Language-Team: lo <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: lo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.14.0\n"
 
+#: src/main.py:66
+msgid "Crossword Puzzle"
+msgstr "ເກມປິດສະໜາ"
+
+#: src/main.py:75
+msgid "View crosswords"
+msgstr "ເບິ່ງ crosswords"
+
+#: src/main.py:79
+msgid "Exit the app"
+msgstr "ອອກຈາກແອັບ"
+
+#: src/main.py:84
+msgid "Global Settings"
+msgstr "ການຕັ້ງຄ່າທົ່ວໂລກ"
+
+#: src/main.py:88
+msgid "🌐 Languages"
+msgstr "🌐 ພາສາ"
+
+#: src/main.py:95
+msgid "Size"
+msgstr "ຂະໜາດ"
+
+#: src/main.py:104
+msgid "light"
+msgstr "ແສງສະຫວ່າງ"
+
+#: src/main.py:104
+msgid "dark"
+msgstr "ມືດ"
+
+#: src/main.py:104
+msgid "system"
+msgstr "ລະບົບ"
+
+#: src/main.py:105
+msgid "Appearance"
+msgstr "ຮູບລັກສະນະ"
+
+#: src/main.py:248
+msgid "Crossword Browser"
+msgstr "ຕົວທ່ອງເວັບຂອງ Crossword"
+
+#: src/main.py:252
+msgid "Go back"
+msgstr "ກັບ​ຄືນ"
+
+#: src/main.py:256
+msgid "Load crossword"
+msgstr "ໂຫຼດ crossword"
+
+#: src/main.py:260
+msgid "Open web app"
+msgstr "ເປີດແອັບເວັບ"
+
+#: src/main.py:264
+msgid "Terminate web app"
+msgstr "ຢຸດແອັບເວັບ"
+
+#: src/main.py:270
+msgid "Word count preferences"
+msgstr "ການຕັ້ງຄ່າການນັບຄໍາ"
+
+#: src/main.py:278 src/main.py:308
+msgid "Select word count"
+msgstr "ເລືອກການນັບຄໍາ"
+
+#: src/main.py:280 src/main.py:491
+msgid "Maximum"
+msgstr "ສູງສຸດ"
+
+#: src/main.py:285
+msgid "Custom"
+msgstr "ກຳນົດເອງ"
+
+#: src/main.py:539
+msgid "Total words"
+msgstr "ຄຳສັບທັງໝົດ"
+
+#: src/main.py:543
+msgid "Difficulty"
+msgstr "ຄວາມຫຍຸ້ງຍາກ"
+
+#: src/main.py:543
+msgid "difficulty"
+msgstr "ຄວາມຫຍຸ້ງຍາກ"
+
+#: src/main.py:545
+msgid "Select"
+msgstr "ເລືອກ"
+
+#: src/main.py:584
+msgid "Restart"
+msgstr "ເລີ່ມ​ຕົ້ນ​ໃຫມ່"
+
+#: src/main.py:584
+msgid "Are you sure you want to restart the app?"
+msgstr "ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການຣີສະຕາດແອັບ?"
+
+#: src/main.py:588
+msgid "Exit"
+msgstr "ອອກໄປ"
+
+#: src/main.py:589
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr ""
+"ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການອອກຈາກແອັບ? ຖ້າແອັບເວັບກຳລັງເຮັດວຽກຢູ່, ມັນຈະຖືກປິດ."
+
+#: src/main.py:594
+msgid "Back to home"
+msgstr "ກັບໄປຫາບ້ານ"
+
+#: src/main.py:595
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr "ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການກັບໄປໜ້າຈໍຫຼັກ? ແອັບເວັບຈະຖືກປິດ."
+
+#: src/main.py:608 src/main.py:611 src/main.py:614
+msgid "Error"
+msgstr "ຜິດພາດ"
+
+#: src/main.py:608
+msgid "This language is already selected."
+msgstr "ພາສານີ້ຖືກເລືອກແລ້ວ."
+
+#: src/main.py:611
+msgid "This size is already selected."
+msgstr "ຂະໜາດນີ້ຖືກເລືອກແລ້ວ."
+
+#: src/main.py:614
+msgid "This appearance is already selected."
+msgstr "ລັກສະນະນີ້ຖືກເລືອກແລ້ວ."
+
+#: src/main.py:617
+msgid "Info"
+msgstr "ຂໍ້ມູນ"
+
+#: src/main.py:618
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, either find the Flask app process and terminate it, change the "
+"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
+"IMPORTANT: In some cases, you may have launched the web app yet your browser"
+" cannot view it. If this happens, please restart your browser."
+msgstr ""
+"ການເປີດຕົວຄັ້ງທໍາອິດ, ກະລຸນາອ່ານ: ເມື່ອທ່ານໄດ້ໂຫລດ crossword, "
+"ແລະຕ້ອງການທີ່ຈະໂຫລດອັນອື່ນ, ທໍາອິດທ່ານຕ້ອງປິດ app ເວັບ. ສິ່ງ​ສໍາ​ຄັນ​: "
+"ຖ້າ​ຫາກ​ວ່າ​ທ່ານ​ຢູ່​ໃນ macOS​, ການ​ບັງ​ຄັບ​ໃຫ້​ອອກ​ຄໍາ​ຮ້ອງ​ສະ​ຫມັກ "
+"(ການ​ນໍາ​ໃຊ້ cmd+q​) ໃນ​ຂະ​ນະ​ທີ່​ເວັບ app "
+"ແລ່ນ​ຈະ​ປ້ອງ​ກັນ​ບໍ່​ໃຫ້​ມັນ​ຈາກ​ການ​ປິດ​ຢ່າງ​ຖືກ​ຕ້ອງ​. ຖ້າເຈົ້າເຮັດຜິດ, "
+"ຊອກຫາຂະບວນການແອັບ Flask ແລະຢຸດມັນ, ປ່ຽນຕົວເລກ `webapp_port` ໃນ "
+"src/config.ini, ຫຼືປິດເປີດຄອມພິວເຕີຂອງທ່ານຄືນໃໝ່. ສິ່ງສໍາຄັນຍັງ: "
+"ໃນບາງກໍລະນີ, "
+"ທ່ານອາດຈະໄດ້ເປີດແອັບຯເວັບແຕ່ຕົວທ່ອງເວັບຂອງທ່ານບໍ່ສາມາດເບິ່ງມັນໄດ້. "
+"ຖ້າສິ່ງນີ້ເກີດຂຶ້ນ, ກະລຸນາປິດເປີດຕົວທ່ອງເວັບຂອງທ່ານຄືນໃໝ່."
+
+#: src/cword_webapp/templates/index.html:13
+msgid "Crossword Puzzle - Game"
+msgstr "ເກມແຂ່ງລົດ Crossword - ເກມ"
+
+#: src/cword_webapp/templates/index.html:91
+msgid "Across"
+msgstr "ຂ້າມ"
+
+#: src/cword_webapp/templates/index.html:108
+msgid "Down"
+msgstr "ລົງ"
+
+#: src/cword_webapp/templates/index.html:125
+msgid "You completed the crossword!"
+msgstr "ທ່ານ​ໄດ້​ສໍາ​ເລັດ crossword​!"
+
+#: src/cword_webapp/templates/index.html:126
+msgid "Close"
+msgstr "ປິດ"
+
+msgid "Easy"
+msgstr "ງ່າຍ"
+
+msgid "Medium"
+msgstr "ຂະຫນາດກາງ"
+
+msgid "Hard"
+msgstr "ແຂງ"
+
+msgid "Extreme"
+msgstr "ທີ່ສຸດ"
+
+#~ msgid ""
+#~ "First time launch, please read:\n"
+#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
+#~ "\n"
+#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
+#~ "\n"
+#~ "Also important to know:\n"
+#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
+#~ msgstr ""

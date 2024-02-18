@@ -1,20 +1,219 @@
 # Korean translations for crossword_puzzle.
 # Copyright (C) 2024 Tomas Vana
-# This file is distributed under the same license as the PROJECT project.
+# This file is distributed under the same license as the crossword_puzzle
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-01-11 23:12+1100\n"
-"PO-Revision-Date: 2024-01-23 14:13+1100\n"
+"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.14.0\n"
 
+#: src/main.py:66
+msgid "Crossword Puzzle"
+msgstr "크로스워드 퍼즐"
+
+#: src/main.py:75
+msgid "View crosswords"
+msgstr "크로스워드 보기"
+
+#: src/main.py:79
+msgid "Exit the app"
+msgstr "앱 종료"
+
+#: src/main.py:84
+msgid "Global Settings"
+msgstr "전역 설정"
+
+#: src/main.py:88
+msgid "🌐 Languages"
+msgstr "🌐 언어"
+
+#: src/main.py:95
+msgid "Size"
+msgstr "크기"
+
+#: src/main.py:104
+msgid "light"
+msgstr "빛"
+
+#: src/main.py:104
+msgid "dark"
+msgstr "어두운"
+
+#: src/main.py:104
+msgid "system"
+msgstr "체계"
+
+#: src/main.py:105
+msgid "Appearance"
+msgstr "모습"
+
+#: src/main.py:248
+msgid "Crossword Browser"
+msgstr "크로스워드 브라우저"
+
+#: src/main.py:252
+msgid "Go back"
+msgstr "돌아가기"
+
+#: src/main.py:256
+msgid "Load crossword"
+msgstr "크로스워드 로드"
+
+#: src/main.py:260
+msgid "Open web app"
+msgstr "웹 앱 열기"
+
+#: src/main.py:264
+msgid "Terminate web app"
+msgstr "웹앱 종료"
+
+#: src/main.py:270
+msgid "Word count preferences"
+msgstr "단어 수 환경 설정"
+
+#: src/main.py:278 src/main.py:308
+msgid "Select word count"
+msgstr "단어 수 선택"
+
+#: src/main.py:280 src/main.py:491
+msgid "Maximum"
+msgstr "최고"
+
+#: src/main.py:285
+msgid "Custom"
+msgstr "관습"
+
+#: src/main.py:539
+msgid "Total words"
+msgstr "총 단어수"
+
+#: src/main.py:543
+msgid "Difficulty"
+msgstr "어려움"
+
+#: src/main.py:543
+msgid "difficulty"
+msgstr "어려움"
+
+#: src/main.py:545
+msgid "Select"
+msgstr "선택하다"
+
+#: src/main.py:584
+msgid "Restart"
+msgstr "재시작"
+
+#: src/main.py:584
+msgid "Are you sure you want to restart the app?"
+msgstr "앱을 다시 시작하시겠습니까?"
+
+#: src/main.py:588
+msgid "Exit"
+msgstr "출구"
+
+#: src/main.py:589
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr "앱을 종료하시겠습니까? 웹앱이 실행 중이면 종료됩니다."
+
+#: src/main.py:594
+msgid "Back to home"
+msgstr "홈으로"
+
+#: src/main.py:595
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr "홈 화면으로 돌아가시겠습니까? 웹앱이 종료됩니다."
+
+#: src/main.py:608 src/main.py:611 src/main.py:614
+msgid "Error"
+msgstr "오류"
+
+#: src/main.py:608
+msgid "This language is already selected."
+msgstr "이 언어는 이미 선택되어 있습니다."
+
+#: src/main.py:611
+msgid "This size is already selected."
+msgstr "이 크기는 이미 선택되었습니다."
+
+#: src/main.py:614
+msgid "This appearance is already selected."
+msgstr "이 표현은 이미 선택되어 있습니다."
+
+#: src/main.py:617
+msgid "Info"
+msgstr "정보"
+
+#: src/main.py:618
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, either find the Flask app process and terminate it, change the "
+"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
+"IMPORTANT: In some cases, you may have launched the web app yet your browser"
+" cannot view it. If this happens, please restart your browser."
+msgstr ""
+"처음 실행 시 다음 내용을 읽어 주십시오. 크로스워드를 로드한 후 다른 크로스워드를 로드하려면 먼저 웹 앱을 종료해야 합니다. 중요: "
+"macOS를 사용하는 경우 웹 앱이 실행되는 동안 응용 프로그램을 강제 종료(cmd+q 사용)하면 응용 프로그램이 제대로 종료되지 "
+"않습니다. 실수로 이 작업을 수행한 경우 Flask 앱 프로세스를 찾아서 종료하거나, src/config.ini에서 "
+"&#39;webapp_port&#39; 번호를 변경하거나, 컴퓨터를 다시 시작하세요. 또한 중요: 어떤 경우에는 웹 앱을 실행했지만 "
+"브라우저에서 볼 수 없는 경우가 있습니다. 이 경우 브라우저를 다시 시작하세요."
+
+#: src/cword_webapp/templates/index.html:13
+msgid "Crossword Puzzle - Game"
+msgstr "크로스워드 퍼즐 - 게임"
+
+#: src/cword_webapp/templates/index.html:91
+msgid "Across"
+msgstr "가로질러"
+
+#: src/cword_webapp/templates/index.html:108
+msgid "Down"
+msgstr "아래에"
+
+#: src/cword_webapp/templates/index.html:125
+msgid "You completed the crossword!"
+msgstr "십자말 풀이를 완료했습니다!"
+
+#: src/cword_webapp/templates/index.html:126
+msgid "Close"
+msgstr "닫다"
+
+msgid "Easy"
+msgstr "쉬운"
+
+msgid "Medium"
+msgstr "중간"
+
+msgid "Hard"
+msgstr "딱딱한"
+
+msgid "Extreme"
+msgstr "극심한"
+
+#~ msgid ""
+#~ "First time launch, please read:\n"
+#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
+#~ "\n"
+#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
+#~ "\n"
+#~ "Also important to know:\n"
+#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
+#~ msgstr ""

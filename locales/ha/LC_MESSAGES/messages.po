@@ -1,20 +1,228 @@
 # Hausa translations for crossword_puzzle.
 # Copyright (C) 2024 Tomas Vana
-# This file is distributed under the same license as the PROJECT project.
+# This file is distributed under the same license as the crossword_puzzle
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-01-11 23:12+1100\n"
-"PO-Revision-Date: 2024-01-23 14:13+1100\n"
+"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ha\n"
 "Language-Team: ha <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ha\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
+#: src/main.py:66
+msgid "Crossword Puzzle"
+msgstr "Kalmomin Kalma"
+
+#: src/main.py:75
+msgid "View crosswords"
+msgstr "Duba kalmomin shiga"
+
+#: src/main.py:79
+msgid "Exit the app"
+msgstr "Fita daga app"
+
+#: src/main.py:84
+msgid "Global Settings"
+msgstr "Saitunan Duniya"
+
+#: src/main.py:88
+msgid "🌐 Languages"
+msgstr "🌐 Harsuna"
+
+#: src/main.py:95
+msgid "Size"
+msgstr "Girman"
+
+#: src/main.py:104
+msgid "light"
+msgstr "haske"
+
+#: src/main.py:104
+msgid "dark"
+msgstr "duhu"
+
+#: src/main.py:104
+msgid "system"
+msgstr "tsarin"
+
+#: src/main.py:105
+msgid "Appearance"
+msgstr "Bayyanar"
+
+#: src/main.py:248
+msgid "Crossword Browser"
+msgstr "Crossword Browser"
+
+#: src/main.py:252
+msgid "Go back"
+msgstr "Komawa"
+
+#: src/main.py:256
+msgid "Load crossword"
+msgstr "Load da kalmar wucewa"
+
+#: src/main.py:260
+msgid "Open web app"
+msgstr "Bude aikace-aikacen yanar gizo"
+
+#: src/main.py:264
+msgid "Terminate web app"
+msgstr "Kashe aikace-aikacen yanar gizo"
+
+#: src/main.py:270
+msgid "Word count preferences"
+msgstr "Zaɓuɓɓukan ƙidayar kalma"
+
+#: src/main.py:278 src/main.py:308
+msgid "Select word count"
+msgstr "Zaɓi ƙidayar kalma"
+
+#: src/main.py:280 src/main.py:491
+msgid "Maximum"
+msgstr "Matsakaicin"
+
+#: src/main.py:285
+msgid "Custom"
+msgstr "Custom"
+
+#: src/main.py:539
+msgid "Total words"
+msgstr "Jimlar kalmomi"
+
+#: src/main.py:543
+msgid "Difficulty"
+msgstr "Wahala"
+
+#: src/main.py:543
+msgid "difficulty"
+msgstr "wahala"
+
+#: src/main.py:545
+msgid "Select"
+msgstr "Zaɓi"
+
+#: src/main.py:584
+msgid "Restart"
+msgstr "Sake kunnawa"
+
+#: src/main.py:584
+msgid "Are you sure you want to restart the app?"
+msgstr "Shin kun tabbata kuna son sake kunna app?"
+
+#: src/main.py:588
+msgid "Exit"
+msgstr "Fita"
+
+#: src/main.py:589
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr ""
+"Shin kun tabbata kuna son fita daga app? Idan aikace-aikacen gidan yanar "
+"gizon yana gudana, za a ƙare."
+
+#: src/main.py:594
+msgid "Back to home"
+msgstr "Komawa gida"
+
+#: src/main.py:595
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr ""
+"Shin kun tabbata kuna son komawa kan allo na gida? Za a ƙare aikace-aikacen "
+"yanar gizon."
+
+#: src/main.py:608 src/main.py:611 src/main.py:614
+msgid "Error"
+msgstr "Kuskure"
+
+#: src/main.py:608
+msgid "This language is already selected."
+msgstr "An riga an zaɓi wannan harshe."
+
+#: src/main.py:611
+msgid "This size is already selected."
+msgstr "An riga an zaɓi wannan girman."
+
+#: src/main.py:614
+msgid "This appearance is already selected."
+msgstr "An riga an zaɓi wannan bayyanar."
+
+#: src/main.py:617
+msgid "Info"
+msgstr "Bayani"
+
+#: src/main.py:618
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, either find the Flask app process and terminate it, change the "
+"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
+"IMPORTANT: In some cases, you may have launched the web app yet your browser"
+" cannot view it. If this happens, please restart your browser."
+msgstr ""
+"Kaddamar da farko, da fatan za a karanta: Da zarar kun loda kalmar wucewa, "
+"kuma kuna son loda wani, dole ne ku fara dakatar da aikace-aikacen yanar "
+"gizon. MUHIMMI: Idan kuna kan macOS, tilasta barin aikace-aikacen (ta amfani"
+" da cmd + q) yayin da aikace-aikacen yanar gizon ke gudana zai hana shi "
+"ƙarewa yadda yakamata. Idan kayi kuskure kayi wannan, ko dai nemo tsarin "
+"aikace-aikacen Flask kuma ka dakatar da shi, canza lambar `webapp_port` a "
+"cikin src/config.ini, ko kuma sake kunna kwamfutarka. NAN KUMA MAI MUHIMMI: "
+"A wasu lokuta, ƙila ka ƙaddamar da aikace-aikacen gidan yanar gizon duk da "
+"haka burauzar ka ba zai iya duba ta ba. Idan wannan ya faru, da fatan za a "
+"sake kunna burauzar ku."
+
+#: src/cword_webapp/templates/index.html:13
+msgid "Crossword Puzzle - Game"
+msgstr "Wasan Kwallon Kafa - Wasan"
+
+#: src/cword_webapp/templates/index.html:91
+msgid "Across"
+msgstr "Ketare"
+
+#: src/cword_webapp/templates/index.html:108
+msgid "Down"
+msgstr "Kasa"
+
+#: src/cword_webapp/templates/index.html:125
+msgid "You completed the crossword!"
+msgstr "Kun gama ma&#39;anar kalmar!"
+
+#: src/cword_webapp/templates/index.html:126
+msgid "Close"
+msgstr "Kusa"
+
+msgid "Easy"
+msgstr "Sauƙi"
+
+msgid "Medium"
+msgstr "Matsakaici"
+
+msgid "Hard"
+msgstr "Mai wuya"
+
+msgid "Extreme"
+msgstr "Matsanancin"
+
+#~ msgid ""
+#~ "First time launch, please read:\n"
+#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
+#~ "\n"
+#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
+#~ "\n"
+#~ "Also important to know:\n"
+#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
+#~ msgstr ""

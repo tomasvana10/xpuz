@@ -1,20 +1,227 @@
 # Luxembourgish translations for crossword_puzzle.
 # Copyright (C) 2024 Tomas Vana
-# This file is distributed under the same license as the PROJECT project.
+# This file is distributed under the same license as the crossword_puzzle
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-01-11 23:12+1100\n"
-"PO-Revision-Date: 2024-01-23 14:13+1100\n"
+"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: lb\n"
 "Language-Team: lb <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: lb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
+#: src/main.py:66
+msgid "Crossword Puzzle"
+msgstr "Kräizwuerträtsel"
+
+#: src/main.py:75
+msgid "View crosswords"
+msgstr "View crosswords"
+
+#: src/main.py:79
+msgid "Exit the app"
+msgstr "Gitt d&#39;App aus"
+
+#: src/main.py:84
+msgid "Global Settings"
+msgstr "Global Astellungen"
+
+#: src/main.py:88
+msgid "🌐 Languages"
+msgstr "🌐 Sproochen"
+
+#: src/main.py:95
+msgid "Size"
+msgstr "Gréisst"
+
+#: src/main.py:104
+msgid "light"
+msgstr "liicht"
+
+#: src/main.py:104
+msgid "dark"
+msgstr "donkel"
+
+#: src/main.py:104
+msgid "system"
+msgstr "System"
+
+#: src/main.py:105
+msgid "Appearance"
+msgstr "Ausgesinn"
+
+#: src/main.py:248
+msgid "Crossword Browser"
+msgstr "Crossword Browser"
+
+#: src/main.py:252
+msgid "Go back"
+msgstr "Géi zréck"
+
+#: src/main.py:256
+msgid "Load crossword"
+msgstr "Lueden crossword"
+
+#: src/main.py:260
+msgid "Open web app"
+msgstr "Open Web App"
+
+#: src/main.py:264
+msgid "Terminate web app"
+msgstr "Web App ofschléissen"
+
+#: src/main.py:270
+msgid "Word count preferences"
+msgstr "Wuertzuel Preferenzen"
+
+#: src/main.py:278 src/main.py:308
+msgid "Select word count"
+msgstr "Wielt Wuertzuel"
+
+#: src/main.py:280 src/main.py:491
+msgid "Maximum"
+msgstr "Maximum"
+
+#: src/main.py:285
+msgid "Custom"
+msgstr "Benotzerdefinéiert"
+
+#: src/main.py:539
+msgid "Total words"
+msgstr "Total Wierder"
+
+#: src/main.py:543
+msgid "Difficulty"
+msgstr "Schwieregkeet"
+
+#: src/main.py:543
+msgid "difficulty"
+msgstr "Schwieregkeet"
+
+#: src/main.py:545
+msgid "Select"
+msgstr "Wielt"
+
+#: src/main.py:584
+msgid "Restart"
+msgstr "Neistart"
+
+#: src/main.py:584
+msgid "Are you sure you want to restart the app?"
+msgstr "Sidd Dir sécher datt Dir d&#39;App nei starten wëllt?"
+
+#: src/main.py:588
+msgid "Exit"
+msgstr "Sortie"
+
+#: src/main.py:589
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr ""
+"Sidd Dir sécher datt Dir d&#39;App ausgoe wëllt? Wann d&#39;Webapp leeft, "
+"gëtt se ofgeschloss."
+
+#: src/main.py:594
+msgid "Back to home"
+msgstr "Zréck doheem"
+
+#: src/main.py:595
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr ""
+"Sidd Dir sécher datt Dir zréck op den Heembildschierm wëllt goen? D&#39;Web "
+"App gëtt ofgeschloss."
+
+#: src/main.py:608 src/main.py:611 src/main.py:614
+msgid "Error"
+msgstr "Feeler"
+
+#: src/main.py:608
+msgid "This language is already selected."
+msgstr "Dës Sprooch ass scho gewielt."
+
+#: src/main.py:611
+msgid "This size is already selected."
+msgstr "Dës Gréisst ass scho gewielt."
+
+#: src/main.py:614
+msgid "This appearance is already selected."
+msgstr "Dës Erscheinung ass scho gewielt."
+
+#: src/main.py:617
+msgid "Info"
+msgstr "Info"
+
+#: src/main.py:618
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, either find the Flask app process and terminate it, change the "
+"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
+"IMPORTANT: In some cases, you may have launched the web app yet your browser"
+" cannot view it. If this happens, please restart your browser."
+msgstr ""
+"Éischt Kéier lancéiert, liest w.e.g.: Wann Dir e Kräizwuerträtsel gelueden "
+"hutt a wëllt en aneren lueden, musst Dir d&#39;Webapp fir d&#39;éischt "
+"ofschléissen. WICHTEG: Wann Dir op macOS sidd, forcéiert d&#39;Applikatioun "
+"opzehalen (mat cmd + q) wärend d&#39;Webapp leeft, verhënnert datt se "
+"richteg ofgeschloss gëtt. Wann Dir dëst falsch maacht, fannt Dir entweder de"
+" Flask App Prozess an ofschléisst en, ännert d&#39;&#39;webapp_port&#39; "
+"Nummer an src/config.ini, oder start Äre Computer nei. OCH WICHTEG: A "
+"verschiddene Fäll hutt Dir vläicht d&#39;Webapp gestart, awer Äre Browser "
+"kann se net gesinn. Wann dat passéiert, start w.e.g. Äre Browser nei."
+
+#: src/cword_webapp/templates/index.html:13
+msgid "Crossword Puzzle - Game"
+msgstr "Crossword Puzzle - Spill"
+
+#: src/cword_webapp/templates/index.html:91
+msgid "Across"
+msgstr "Iwwer"
+
+#: src/cword_webapp/templates/index.html:108
+msgid "Down"
+msgstr "Down"
+
+#: src/cword_webapp/templates/index.html:125
+msgid "You completed the crossword!"
+msgstr "Dir hutt d&#39;Kräizwuert fäerdeg gemaach!"
+
+#: src/cword_webapp/templates/index.html:126
+msgid "Close"
+msgstr "Zoumaachen"
+
+msgid "Easy"
+msgstr "Einfach"
+
+msgid "Medium"
+msgstr "Mëttelméisseg"
+
+msgid "Hard"
+msgstr "Schwéier"
+
+msgid "Extreme"
+msgstr "Extrem"
+
+#~ msgid ""
+#~ "First time launch, please read:\n"
+#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
+#~ "\n"
+#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
+#~ "\n"
+#~ "Also important to know:\n"
+#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
+#~ msgstr ""

@@ -1,20 +1,226 @@
 # Czech translations for crossword_puzzle.
 # Copyright (C) 2024 Tomas Vana
-# This file is distributed under the same license as the PROJECT project.
+# This file is distributed under the same license as the crossword_puzzle
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-01-11 23:12+1100\n"
-"PO-Revision-Date: 2024-01-23 14:13+1100\n"
+"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: cs\n"
 "Language-Team: cs <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
+"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
 "Generated-By: Babel 2.14.0\n"
 
+#: src/main.py:66
+msgid "Crossword Puzzle"
+msgstr "Křížovka"
+
+#: src/main.py:75
+msgid "View crosswords"
+msgstr "Zobrazit křížovky"
+
+#: src/main.py:79
+msgid "Exit the app"
+msgstr "Ukončete aplikaci"
+
+#: src/main.py:84
+msgid "Global Settings"
+msgstr "Globální nastavení"
+
+#: src/main.py:88
+msgid "🌐 Languages"
+msgstr "🌐 Jazyky"
+
+#: src/main.py:95
+msgid "Size"
+msgstr "Velikost"
+
+#: src/main.py:104
+msgid "light"
+msgstr "světlo"
+
+#: src/main.py:104
+msgid "dark"
+msgstr "temný"
+
+#: src/main.py:104
+msgid "system"
+msgstr "Systém"
+
+#: src/main.py:105
+msgid "Appearance"
+msgstr "Vzhled"
+
+#: src/main.py:248
+msgid "Crossword Browser"
+msgstr "Prohlížeč křížovek"
+
+#: src/main.py:252
+msgid "Go back"
+msgstr "Vraťte se"
+
+#: src/main.py:256
+msgid "Load crossword"
+msgstr "Načíst křížovku"
+
+#: src/main.py:260
+msgid "Open web app"
+msgstr "Otevřete webovou aplikaci"
+
+#: src/main.py:264
+msgid "Terminate web app"
+msgstr "Ukončete webovou aplikaci"
+
+#: src/main.py:270
+msgid "Word count preferences"
+msgstr "Předvolby počtu slov"
+
+#: src/main.py:278 src/main.py:308
+msgid "Select word count"
+msgstr "Vyberte počet slov"
+
+#: src/main.py:280 src/main.py:491
+msgid "Maximum"
+msgstr "Maximum"
+
+#: src/main.py:285
+msgid "Custom"
+msgstr "Zvyk"
+
+#: src/main.py:539
+msgid "Total words"
+msgstr "Celkem slov"
+
+#: src/main.py:543
+msgid "Difficulty"
+msgstr "Obtížnost"
+
+#: src/main.py:543
+msgid "difficulty"
+msgstr "obtížnost"
+
+#: src/main.py:545
+msgid "Select"
+msgstr "Vybrat"
+
+#: src/main.py:584
+msgid "Restart"
+msgstr "Restartujte"
+
+#: src/main.py:584
+msgid "Are you sure you want to restart the app?"
+msgstr "Opravdu chcete aplikaci restartovat?"
+
+#: src/main.py:588
+msgid "Exit"
+msgstr "Výstup"
+
+#: src/main.py:589
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr ""
+"Opravdu chcete aplikaci ukončit? Pokud je webová aplikace spuštěna, bude "
+"ukončena."
+
+#: src/main.py:594
+msgid "Back to home"
+msgstr "Zpátky domů"
+
+#: src/main.py:595
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr ""
+"Opravdu se chcete vrátit na domovskou obrazovku? Webová aplikace bude "
+"ukončena."
+
+#: src/main.py:608 src/main.py:611 src/main.py:614
+msgid "Error"
+msgstr "Chyba"
+
+#: src/main.py:608
+msgid "This language is already selected."
+msgstr "Tento jazyk je již vybrán."
+
+#: src/main.py:611
+msgid "This size is already selected."
+msgstr "Tato velikost je již vybrána."
+
+#: src/main.py:614
+msgid "This appearance is already selected."
+msgstr "Tento vzhled je již vybrán."
+
+#: src/main.py:617
+msgid "Info"
+msgstr "Info"
+
+#: src/main.py:618
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, either find the Flask app process and terminate it, change the "
+"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
+"IMPORTANT: In some cases, you may have launched the web app yet your browser"
+" cannot view it. If this happens, please restart your browser."
+msgstr ""
+"Při prvním spuštění si přečtěte: Jakmile načtete křížovku a chcete načíst "
+"další, musíte nejprve ukončit webovou aplikaci. DŮLEŽITÉ: Pokud používáte "
+"macOS, vynucené ukončení aplikace (pomocí cmd+q) při spuštěné webové "
+"aplikaci zabrání jejímu řádnému ukončení. Pokud to uděláte omylem, buď "
+"najděte proces aplikace Flask a ukončete jej, změňte číslo `webapp_port` v "
+"src/config.ini nebo restartujte počítač. TAKÉ DŮLEŽITÉ: V některých "
+"případech jste možná spustili webovou aplikaci, ale váš prohlížeč ji nemůže "
+"zobrazit. Pokud k tomu dojde, restartujte prosím svůj prohlížeč."
+
+#: src/cword_webapp/templates/index.html:13
+msgid "Crossword Puzzle - Game"
+msgstr "Křížovka - hra"
+
+#: src/cword_webapp/templates/index.html:91
+msgid "Across"
+msgstr "Přes"
+
+#: src/cword_webapp/templates/index.html:108
+msgid "Down"
+msgstr "Dolů"
+
+#: src/cword_webapp/templates/index.html:125
+msgid "You completed the crossword!"
+msgstr "Dokončili jste křížovku!"
+
+#: src/cword_webapp/templates/index.html:126
+msgid "Close"
+msgstr "Zavřít"
+
+msgid "Easy"
+msgstr "Snadný"
+
+msgid "Medium"
+msgstr "Střední"
+
+msgid "Hard"
+msgstr "Tvrdý"
+
+msgid "Extreme"
+msgstr "Extrémní"
+
+#~ msgid ""
+#~ "First time launch, please read:\n"
+#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
+#~ "\n"
+#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
+#~ "\n"
+#~ "Also important to know:\n"
+#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
+#~ msgstr ""

@@ -11,6 +11,7 @@ class Paths:
     '''Absolute paths used across the source code.'''
     CONFIG_PATH = Path(__file__).resolve().parents[0] / "config.ini"
     LOCALES_PATH = Path(__file__).resolve().parents[1] / "locales"
+    BASE_POT_PATH = os.path.join(LOCALES_PATH, "base.pot")
     CWORD_IMG_LIGHT_PATH = Path(__file__).resolve().parents[1] / os.path.join("assets", "images", "cword_img_light.png")
     CWORD_IMG_DARK_PATH = Path(__file__).resolve().parents[1] / os.path.join("assets", "images", "cword_img_dark.png")
     CWORDS_PATH = Path(__file__).resolve().parents[0] / "cwords"
@@ -74,6 +75,7 @@ class LanguageReplacementsForPybabel:
         "ku": None,
         "sd": None,
     }
+    REVERSE_REPLACEMENTS = {value: key for key, value in REPLACEMENTS.items()}
 
 
 class CrosswordDirections:

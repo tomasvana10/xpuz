@@ -1,20 +1,228 @@
 # Kannada translations for crossword_puzzle.
 # Copyright (C) 2024 Tomas Vana
-# This file is distributed under the same license as the PROJECT project.
+# This file is distributed under the same license as the crossword_puzzle
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-01-11 23:12+1100\n"
-"PO-Revision-Date: 2024-01-23 14:13+1100\n"
+"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: kn\n"
 "Language-Team: kn <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: kn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
+#: src/main.py:66
+msgid "Crossword Puzzle"
+msgstr "ಪದಬಂಧ"
+
+#: src/main.py:75
+msgid "View crosswords"
+msgstr "ಕ್ರಾಸ್‌ವರ್ಡ್‌ಗಳನ್ನು ವೀಕ್ಷಿಸಿ"
+
+#: src/main.py:79
+msgid "Exit the app"
+msgstr "ಅಪ್ಲಿಕೇಶನ್‌ನಿಂದ ನಿರ್ಗಮಿಸಿ"
+
+#: src/main.py:84
+msgid "Global Settings"
+msgstr "ಜಾಗತಿಕ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
+
+#: src/main.py:88
+msgid "🌐 Languages"
+msgstr "🌐 ಭಾಷೆಗಳು"
+
+#: src/main.py:95
+msgid "Size"
+msgstr "ಗಾತ್ರ"
+
+#: src/main.py:104
+msgid "light"
+msgstr "ಬೆಳಕು"
+
+#: src/main.py:104
+msgid "dark"
+msgstr "ಕತ್ತಲು"
+
+#: src/main.py:104
+msgid "system"
+msgstr "ವ್ಯವಸ್ಥೆ"
+
+#: src/main.py:105
+msgid "Appearance"
+msgstr "ಗೋಚರತೆ"
+
+#: src/main.py:248
+msgid "Crossword Browser"
+msgstr "ಕ್ರಾಸ್ವರ್ಡ್ ಬ್ರೌಸರ್"
+
+#: src/main.py:252
+msgid "Go back"
+msgstr "ಹಿಂದೆ ಹೋಗು"
+
+#: src/main.py:256
+msgid "Load crossword"
+msgstr "ಕ್ರಾಸ್ವರ್ಡ್ ಅನ್ನು ಲೋಡ್ ಮಾಡಿ"
+
+#: src/main.py:260
+msgid "Open web app"
+msgstr "ವೆಬ್ ಅಪ್ಲಿಕೇಶನ್ ತೆರೆಯಿರಿ"
+
+#: src/main.py:264
+msgid "Terminate web app"
+msgstr "ವೆಬ್ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಕೊನೆಗೊಳಿಸಿ"
+
+#: src/main.py:270
+msgid "Word count preferences"
+msgstr "ಪದಗಳ ಎಣಿಕೆ ಆದ್ಯತೆಗಳು"
+
+#: src/main.py:278 src/main.py:308
+msgid "Select word count"
+msgstr "ಪದಗಳ ಸಂಖ್ಯೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ"
+
+#: src/main.py:280 src/main.py:491
+msgid "Maximum"
+msgstr "ಗರಿಷ್ಠ"
+
+#: src/main.py:285
+msgid "Custom"
+msgstr "ಕಸ್ಟಮ್"
+
+#: src/main.py:539
+msgid "Total words"
+msgstr "ಒಟ್ಟು ಪದಗಳು"
+
+#: src/main.py:543
+msgid "Difficulty"
+msgstr "ಕಷ್ಟ"
+
+#: src/main.py:543
+msgid "difficulty"
+msgstr "ಕಷ್ಟ"
+
+#: src/main.py:545
+msgid "Select"
+msgstr "ಆಯ್ಕೆ ಮಾಡಿ"
+
+#: src/main.py:584
+msgid "Restart"
+msgstr "ಪುನರಾರಂಭದ"
+
+#: src/main.py:584
+msgid "Are you sure you want to restart the app?"
+msgstr "ನೀವು ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಮರುಪ್ರಾರಂಭಿಸಲು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?"
+
+#: src/main.py:588
+msgid "Exit"
+msgstr "ನಿರ್ಗಮಿಸಿ"
+
+#: src/main.py:589
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr ""
+"ನೀವು ಅಪ್ಲಿಕೇಶನ್‌ನಿಂದ ನಿರ್ಗಮಿಸಲು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ? ವೆಬ್ ಅಪ್ಲಿಕೇಶನ್ "
+"ಚಾಲನೆಯಲ್ಲಿದ್ದರೆ, ಅದನ್ನು ಕೊನೆಗೊಳಿಸಲಾಗುತ್ತದೆ."
+
+#: src/main.py:594
+msgid "Back to home"
+msgstr "ಮರಳಿ ಮನೆಗೆ"
+
+#: src/main.py:595
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr ""
+"ನೀವು ಹೋಮ್ ಸ್ಕ್ರೀನ್‌ಗೆ ಹಿಂತಿರುಗಲು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ? ವೆಬ್ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು "
+"ಕೊನೆಗೊಳಿಸಲಾಗುತ್ತದೆ."
+
+#: src/main.py:608 src/main.py:611 src/main.py:614
+msgid "Error"
+msgstr "ದೋಷ"
+
+#: src/main.py:608
+msgid "This language is already selected."
+msgstr "ಈ ಭಾಷೆಯನ್ನು ಈಗಾಗಲೇ ಆಯ್ಕೆ ಮಾಡಲಾಗಿದೆ."
+
+#: src/main.py:611
+msgid "This size is already selected."
+msgstr "ಈ ಗಾತ್ರವನ್ನು ಈಗಾಗಲೇ ಆಯ್ಕೆ ಮಾಡಲಾಗಿದೆ."
+
+#: src/main.py:614
+msgid "This appearance is already selected."
+msgstr "ಈ ನೋಟವನ್ನು ಈಗಾಗಲೇ ಆಯ್ಕೆಮಾಡಲಾಗಿದೆ."
+
+#: src/main.py:617
+msgid "Info"
+msgstr "ಮಾಹಿತಿ"
+
+#: src/main.py:618
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, either find the Flask app process and terminate it, change the "
+"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
+"IMPORTANT: In some cases, you may have launched the web app yet your browser"
+" cannot view it. If this happens, please restart your browser."
+msgstr ""
+"ಮೊದಲ ಬಾರಿಗೆ ಲಾಂಚ್, ದಯವಿಟ್ಟು ಓದಿ: ಒಮ್ಮೆ ನೀವು ಕ್ರಾಸ್‌ವರ್ಡ್ ಅನ್ನು ಲೋಡ್ ಮಾಡಿದ "
+"ನಂತರ ಮತ್ತು ಇನ್ನೊಂದನ್ನು ಲೋಡ್ ಮಾಡಲು ಬಯಸಿದರೆ, ನೀವು ಮೊದಲು ವೆಬ್ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು "
+"ಕೊನೆಗೊಳಿಸಬೇಕು. ಪ್ರಮುಖ: ನೀವು MacOS ನಲ್ಲಿದ್ದರೆ, ವೆಬ್ ಅಪ್ಲಿಕೇಶನ್ "
+"ಚಾಲನೆಯಲ್ಲಿರುವಾಗ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು (cmd+q ಬಳಸಿ) ಬಲವಂತವಾಗಿ ತ್ಯಜಿಸುವುದರಿಂದ ಅದು "
+"ಸರಿಯಾಗಿ ಮುಕ್ತಾಯಗೊಳ್ಳುವುದನ್ನು ತಡೆಯುತ್ತದೆ. ನೀವು ಇದನ್ನು ತಪ್ಪಾಗಿ ಮಾಡಿದರೆ, Flask "
+"ಅಪ್ಲಿಕೇಶನ್ ಪ್ರಕ್ರಿಯೆಯನ್ನು ಹುಡುಕಿ ಮತ್ತು ಅದನ್ನು ಕೊನೆಗೊಳಿಸಿ, src/config.ini "
+"ನಲ್ಲಿ `webapp_port` ಸಂಖ್ಯೆಯನ್ನು ಬದಲಾಯಿಸಿ ಅಥವಾ ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್ ಅನ್ನು "
+"ಮರುಪ್ರಾರಂಭಿಸಿ. ಸಹ ಪ್ರಮುಖ: ಕೆಲವು ಸಂದರ್ಭಗಳಲ್ಲಿ, ನೀವು ವೆಬ್ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು "
+"ಪ್ರಾರಂಭಿಸಿರಬಹುದು ಆದರೆ ನಿಮ್ಮ ಬ್ರೌಸರ್ ಅದನ್ನು ವೀಕ್ಷಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ಇದು "
+"ಸಂಭವಿಸಿದಲ್ಲಿ, ದಯವಿಟ್ಟು ನಿಮ್ಮ ಬ್ರೌಸರ್ ಅನ್ನು ಮರುಪ್ರಾರಂಭಿಸಿ."
+
+#: src/cword_webapp/templates/index.html:13
+msgid "Crossword Puzzle - Game"
+msgstr "ಕ್ರಾಸ್ವರ್ಡ್ ಪಜಲ್ - ಆಟ"
+
+#: src/cword_webapp/templates/index.html:91
+msgid "Across"
+msgstr "ಅಡ್ಡಲಾಗಿ"
+
+#: src/cword_webapp/templates/index.html:108
+msgid "Down"
+msgstr "ಕೆಳಗೆ"
+
+#: src/cword_webapp/templates/index.html:125
+msgid "You completed the crossword!"
+msgstr "ನೀವು ಕ್ರಾಸ್‌ವರ್ಡ್ ಅನ್ನು ಪೂರ್ಣಗೊಳಿಸಿದ್ದೀರಿ!"
+
+#: src/cword_webapp/templates/index.html:126
+msgid "Close"
+msgstr "ಮುಚ್ಚಿ"
+
+msgid "Easy"
+msgstr "ಸುಲಭ"
+
+msgid "Medium"
+msgstr "ಮಾಧ್ಯಮ"
+
+msgid "Hard"
+msgstr "ಕಠಿಣ"
+
+msgid "Extreme"
+msgstr "ವಿಪರೀತ"
+
+#~ msgid ""
+#~ "First time launch, please read:\n"
+#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
+#~ "\n"
+#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
+#~ "\n"
+#~ "Also important to know:\n"
+#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
+#~ msgstr ""

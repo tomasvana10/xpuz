@@ -1,20 +1,220 @@
 # Japanese translations for crossword_puzzle.
 # Copyright (C) 2024 Tomas Vana
-# This file is distributed under the same license as the PROJECT project.
+# This file is distributed under the same license as the crossword_puzzle
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-01-11 23:12+1100\n"
-"PO-Revision-Date: 2024-01-23 14:13+1100\n"
+"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ja\n"
 "Language-Team: ja <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.14.0\n"
 
+#: src/main.py:66
+msgid "Crossword Puzzle"
+msgstr "クロスワードパズル"
+
+#: src/main.py:75
+msgid "View crosswords"
+msgstr "クロスワードを表示する"
+
+#: src/main.py:79
+msgid "Exit the app"
+msgstr "アプリを終了する"
+
+#: src/main.py:84
+msgid "Global Settings"
+msgstr "全体設定"
+
+#: src/main.py:88
+msgid "🌐 Languages"
+msgstr "🌐 言語"
+
+#: src/main.py:95
+msgid "Size"
+msgstr "サイズ"
+
+#: src/main.py:104
+msgid "light"
+msgstr "ライト"
+
+#: src/main.py:104
+msgid "dark"
+msgstr "暗い"
+
+#: src/main.py:104
+msgid "system"
+msgstr "システム"
+
+#: src/main.py:105
+msgid "Appearance"
+msgstr "外観"
+
+#: src/main.py:248
+msgid "Crossword Browser"
+msgstr "クロスワードブラウザ"
+
+#: src/main.py:252
+msgid "Go back"
+msgstr "戻る"
+
+#: src/main.py:256
+msgid "Load crossword"
+msgstr "クロスワードをロードする"
+
+#: src/main.py:260
+msgid "Open web app"
+msgstr "ウェブアプリを開く"
+
+#: src/main.py:264
+msgid "Terminate web app"
+msgstr "Webアプリを終了する"
+
+#: src/main.py:270
+msgid "Word count preferences"
+msgstr "文字数の設定"
+
+#: src/main.py:278 src/main.py:308
+msgid "Select word count"
+msgstr "文字数を選択してください"
+
+#: src/main.py:280 src/main.py:491
+msgid "Maximum"
+msgstr "最大"
+
+#: src/main.py:285
+msgid "Custom"
+msgstr "カスタム"
+
+#: src/main.py:539
+msgid "Total words"
+msgstr "総単語数"
+
+#: src/main.py:543
+msgid "Difficulty"
+msgstr "困難"
+
+#: src/main.py:543
+msgid "difficulty"
+msgstr "困難"
+
+#: src/main.py:545
+msgid "Select"
+msgstr "選択する"
+
+#: src/main.py:584
+msgid "Restart"
+msgstr "再起動"
+
+#: src/main.py:584
+msgid "Are you sure you want to restart the app?"
+msgstr "アプリを再起動してもよろしいですか?"
+
+#: src/main.py:588
+msgid "Exit"
+msgstr "出口"
+
+#: src/main.py:589
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr "アプリを終了してもよろしいですか? Web アプリが実行中の場合は終了します。"
+
+#: src/main.py:594
+msgid "Back to home"
+msgstr "家に帰る"
+
+#: src/main.py:595
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr "ホーム画面に戻ってもよろしいですか? Webアプリが終了します。"
+
+#: src/main.py:608 src/main.py:611 src/main.py:614
+msgid "Error"
+msgstr "エラー"
+
+#: src/main.py:608
+msgid "This language is already selected."
+msgstr "この言語はすでに選択されています。"
+
+#: src/main.py:611
+msgid "This size is already selected."
+msgstr "このサイズはすでに選択されています。"
+
+#: src/main.py:614
+msgid "This appearance is already selected."
+msgstr "この外観はすでに選択されています。"
+
+#: src/main.py:617
+msgid "Info"
+msgstr "情報"
+
+#: src/main.py:618
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, either find the Flask app process and terminate it, change the "
+"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
+"IMPORTANT: In some cases, you may have launched the web app yet your browser"
+" cannot view it. If this happens, please restart your browser."
+msgstr ""
+"初めて起動する場合は、必ずお読みください: クロスワードをロードした後、別のクロスワードをロードしたい場合は、まず Web "
+"アプリを終了する必要があります。重要: macOS を使用している場合、Web アプリの実行中にアプリケーションを強制終了 (cmd+q を使用) "
+"すると、Web アプリが適切に終了できなくなります。誤ってこれを行った場合は、Flask アプリ "
+"プロセスを見つけて終了するか、src/config.ini の `webapp_port` "
+"番号を変更するか、コンピューターを再起動してください。こちらも重要: 場合によっては、Web "
+"アプリを起動してもブラウザーで表示できない場合があります。このような場合はブラウザを再起動してください。"
+
+#: src/cword_webapp/templates/index.html:13
+msgid "Crossword Puzzle - Game"
+msgstr "クロスワード パズル - ゲーム"
+
+#: src/cword_webapp/templates/index.html:91
+msgid "Across"
+msgstr "横切って"
+
+#: src/cword_webapp/templates/index.html:108
+msgid "Down"
+msgstr "下"
+
+#: src/cword_webapp/templates/index.html:125
+msgid "You completed the crossword!"
+msgstr "クロスワードを完成させました!"
+
+#: src/cword_webapp/templates/index.html:126
+msgid "Close"
+msgstr "近い"
+
+msgid "Easy"
+msgstr "簡単"
+
+msgid "Medium"
+msgstr "中くらい"
+
+msgid "Hard"
+msgstr "難しい"
+
+msgid "Extreme"
+msgstr "過激"
+
+#~ msgid ""
+#~ "First time launch, please read:\n"
+#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
+#~ "\n"
+#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
+#~ "\n"
+#~ "Also important to know:\n"
+#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
+#~ msgstr ""

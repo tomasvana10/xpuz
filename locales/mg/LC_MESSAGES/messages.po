@@ -1,20 +1,229 @@
 # Malagasy translations for crossword_puzzle.
 # Copyright (C) 2024 Tomas Vana
-# This file is distributed under the same license as the PROJECT project.
+# This file is distributed under the same license as the crossword_puzzle
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-01-11 23:12+1100\n"
-"PO-Revision-Date: 2024-01-23 14:13+1100\n"
+"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: mg\n"
 "Language-Team: mg <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: mg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
+#: src/main.py:66
+msgid "Crossword Puzzle"
+msgstr "Puzzle Crossword"
+
+#: src/main.py:75
+msgid "View crosswords"
+msgstr "Jereo ny crosswords"
+
+#: src/main.py:79
+msgid "Exit the app"
+msgstr "Mialà amin&#39;ny app"
+
+#: src/main.py:84
+msgid "Global Settings"
+msgstr "Global Settings"
+
+#: src/main.py:88
+msgid "🌐 Languages"
+msgstr "🌐 Fiteny"
+
+#: src/main.py:95
+msgid "Size"
+msgstr "Size"
+
+#: src/main.py:104
+msgid "light"
+msgstr "fahazavana"
+
+#: src/main.py:104
+msgid "dark"
+msgstr "maizina"
+
+#: src/main.py:104
+msgid "system"
+msgstr "RAFITRA"
+
+#: src/main.py:105
+msgid "Appearance"
+msgstr "Bika Aman &#39;endrika"
+
+#: src/main.py:248
+msgid "Crossword Browser"
+msgstr "Crossword Browser"
+
+#: src/main.py:252
+msgid "Go back"
+msgstr "Hiverina"
+
+#: src/main.py:256
+msgid "Load crossword"
+msgstr "Load crossword"
+
+#: src/main.py:260
+msgid "Open web app"
+msgstr "Sokafy ny app web"
+
+#: src/main.py:264
+msgid "Terminate web app"
+msgstr "Atsaharo ny app web"
+
+#: src/main.py:270
+msgid "Word count preferences"
+msgstr "Safidy isan&#39;ny teny"
+
+#: src/main.py:278 src/main.py:308
+msgid "Select word count"
+msgstr "Fidio ny isan&#39;ny teny"
+
+#: src/main.py:280 src/main.py:491
+msgid "Maximum"
+msgstr "Faratampony"
+
+#: src/main.py:285
+msgid "Custom"
+msgstr "fanao"
+
+#: src/main.py:539
+msgid "Total words"
+msgstr "Total teny"
+
+#: src/main.py:543
+msgid "Difficulty"
+msgstr "fahasarotana"
+
+#: src/main.py:543
+msgid "difficulty"
+msgstr "fahasarotana"
+
+#: src/main.py:545
+msgid "Select"
+msgstr "Select"
+
+#: src/main.py:584
+msgid "Restart"
+msgstr "Haverina velomina"
+
+#: src/main.py:584
+msgid "Are you sure you want to restart the app?"
+msgstr "Tena te hamerina ny fampiharana ve ianao?"
+
+#: src/main.py:588
+msgid "Exit"
+msgstr "Fivoahana"
+
+#: src/main.py:589
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr ""
+"Tena te hiala amin&#39;ny fampiharana ve ianao? Raha mandeha ny app web dia "
+"hofoanana izany."
+
+#: src/main.py:594
+msgid "Back to home"
+msgstr "Miverina any an-trano"
+
+#: src/main.py:595
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr ""
+"Tena te hiverina any amin&#39;ny efijery an-trano ve ianao? Hatsahatra ny "
+"app web."
+
+#: src/main.py:608 src/main.py:611 src/main.py:614
+msgid "Error"
+msgstr "fahadisoana"
+
+#: src/main.py:608
+msgid "This language is already selected."
+msgstr "Efa voafantina ity fiteny ity."
+
+#: src/main.py:611
+msgid "This size is already selected."
+msgstr "Efa voafantina io habe io."
+
+#: src/main.py:614
+msgid "This appearance is already selected."
+msgstr "Ity endrika ity dia efa voafantina."
+
+#: src/main.py:617
+msgid "Info"
+msgstr "Info"
+
+#: src/main.py:618
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, either find the Flask app process and terminate it, change the "
+"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
+"IMPORTANT: In some cases, you may have launched the web app yet your browser"
+" cannot view it. If this happens, please restart your browser."
+msgstr ""
+"Famoahana voalohany, vakio azafady: Rehefa avy nametaka teny fanalahidy iray"
+" ianao ary te-hampiditra iray hafa dia tsy maintsy atsahatra aloha ny "
+"fampiharana tranonkala. ZAVA-DEHIBE: Raha mampiasa macOS ianao, dia tsy "
+"maintsy miala amin&#39;ny fampiharana (amin&#39;ny fampiasana cmd+q) raha "
+"mbola mandeha ny fampiharana tranonkala dia hisakana azy tsy hifarana araka "
+"ny tokony ho izy. Raha diso ianao manao izany dia tadiavo ny fizotry ny "
+"fampiharana Flask ary tapaho izany, ovay ny laharana `webapp_port` ao "
+"amin&#39;ny src/config.ini, na avereno indray ny solosainao. ZAVA-DEHIBE "
+"KOA: Amin&#39;ny toe-javatra sasany, mety efa nandefa ny fampiharana "
+"tranonkala ianao nefa tsy afaka mijery azy ny mpitety tranonkalanao. Raha "
+"mitranga izany dia avereno indray ny navigateur."
+
+#: src/cword_webapp/templates/index.html:13
+msgid "Crossword Puzzle - Game"
+msgstr "Puzzle Crossword - Lalao"
+
+#: src/cword_webapp/templates/index.html:91
+msgid "Across"
+msgstr "manerana"
+
+#: src/cword_webapp/templates/index.html:108
+msgid "Down"
+msgstr "Midina"
+
+#: src/cword_webapp/templates/index.html:125
+msgid "You completed the crossword!"
+msgstr "Nahavita ny crossword ianao!"
+
+#: src/cword_webapp/templates/index.html:126
+msgid "Close"
+msgstr "AKAIKY"
+
+msgid "Easy"
+msgstr "Mora"
+
+msgid "Medium"
+msgstr "SALASALANY"
+
+msgid "Hard"
+msgstr "Sarotra"
+
+msgid "Extreme"
+msgstr "tena"
+
+#~ msgid ""
+#~ "First time launch, please read:\n"
+#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
+#~ "\n"
+#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
+#~ "\n"
+#~ "Also important to know:\n"
+#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
+#~ msgstr ""

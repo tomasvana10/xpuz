@@ -1,20 +1,227 @@
 # Hmong Njua translations for crossword_puzzle.
 # Copyright (C) 2024 Tomas Vana
-# This file is distributed under the same license as the PROJECT project.
+# This file is distributed under the same license as the crossword_puzzle
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-01-11 23:12+1100\n"
-"PO-Revision-Date: 2024-01-23 14:13+1100\n"
+"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: hnj\n"
 "Language-Team: hnj <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: hnj\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
+#: src/main.py:66
+msgid "Crossword Puzzle"
+msgstr "Crossword Puzzle"
+
+#: src/main.py:75
+msgid "View crosswords"
+msgstr "Saib crosswords"
+
+#: src/main.py:79
+msgid "Exit the app"
+msgstr "Tawm ntawm lub app"
+
+#: src/main.py:84
+msgid "Global Settings"
+msgstr "Ntiaj teb no chaw"
+
+#: src/main.py:88
+msgid "🌐 Languages"
+msgstr "🌐 Lus"
+
+#: src/main.py:95
+msgid "Size"
+msgstr "Loj"
+
+#: src/main.py:104
+msgid "light"
+msgstr "teeb"
+
+#: src/main.py:104
+msgid "dark"
+msgstr "tsaus ntuj"
+
+#: src/main.py:104
+msgid "system"
+msgstr "qhov system"
+
+#: src/main.py:105
+msgid "Appearance"
+msgstr "Qhov tshwm sim"
+
+#: src/main.py:248
+msgid "Crossword Browser"
+msgstr "Crossword Browser"
+
+#: src/main.py:252
+msgid "Go back"
+msgstr "Rov qab mus"
+
+#: src/main.py:256
+msgid "Load crossword"
+msgstr "Load crossword"
+
+#: src/main.py:260
+msgid "Open web app"
+msgstr "Qhib web app"
+
+#: src/main.py:264
+msgid "Terminate web app"
+msgstr "Terminate web app"
+
+#: src/main.py:270
+msgid "Word count preferences"
+msgstr "Xaiv cov lus suav"
+
+#: src/main.py:278 src/main.py:308
+msgid "Select word count"
+msgstr "Xaiv cov lus suav"
+
+#: src/main.py:280 src/main.py:491
+msgid "Maximum"
+msgstr "Qhov siab tshaj plaws"
+
+#: src/main.py:285
+msgid "Custom"
+msgstr "Kev cai"
+
+#: src/main.py:539
+msgid "Total words"
+msgstr "Tag nrho cov lus"
+
+#: src/main.py:543
+msgid "Difficulty"
+msgstr "Nyuaj"
+
+#: src/main.py:543
+msgid "difficulty"
+msgstr "nyuaj"
+
+#: src/main.py:545
+msgid "Select"
+msgstr "Xaiv"
+
+#: src/main.py:584
+msgid "Restart"
+msgstr "Rov pib dua"
+
+#: src/main.py:584
+msgid "Are you sure you want to restart the app?"
+msgstr "Koj puas paub tseeb tias koj xav rov pib dua lub app?"
+
+#: src/main.py:588
+msgid "Exit"
+msgstr "Tawm"
+
+#: src/main.py:589
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr ""
+"Koj puas paub tseeb tias koj xav tawm ntawm lub app? Yog tias lub vev xaib "
+"app tab tom khiav, nws yuav raug txiav tawm."
+
+#: src/main.py:594
+msgid "Back to home"
+msgstr "Rov qab mus tsev"
+
+#: src/main.py:595
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr ""
+"Koj puas paub tseeb tias koj xav rov qab mus rau qhov screen tsev? Lub vev "
+"xaib app yuav raug txiav tawm."
+
+#: src/main.py:608 src/main.py:611 src/main.py:614
+msgid "Error"
+msgstr "yuam kev"
+
+#: src/main.py:608
+msgid "This language is already selected."
+msgstr "Cov lus no twb xaiv lawm."
+
+#: src/main.py:611
+msgid "This size is already selected."
+msgstr "Qhov loj me no twb xaiv lawm."
+
+#: src/main.py:614
+msgid "This appearance is already selected."
+msgstr "Cov tsos no twb xaiv lawm."
+
+#: src/main.py:617
+msgid "Info"
+msgstr "Cov ntaub ntawv"
+
+#: src/main.py:618
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, either find the Flask app process and terminate it, change the "
+"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
+"IMPORTANT: In some cases, you may have launched the web app yet your browser"
+" cannot view it. If this happens, please restart your browser."
+msgstr ""
+"Thawj zaug tso tawm, thov nyeem: Thaum koj tau thauj cov lus sib dhos, thiab"
+" xav thauj lwm tus, koj yuav tsum xub txiav tawm lub vev xaib app. TSEEM "
+"CEEB: Yog tias koj nyob ntawm macOS, yuam kom tawm daim ntawv thov (siv cmd "
+"+ q) thaum lub web app tab tom khiav yuav tiv thaiv nws los ntawm kev txiav "
+"kom raug. Yog tias koj ua yuam kev ua qhov no, txawm tias nrhiav Flask app "
+"txheej txheem thiab txiav nws, hloov &#39;webapp_port&#39; tus lej hauv "
+"src/config.ini, lossis rov pib koj lub computer. TSEEM CEEB: Qee zaum, tej "
+"zaum koj yuav tau pib lub web app tsis tau koj tus browser tsis tuaj yeem "
+"saib nws. Yog tias qhov no tshwm sim, thov rov pib koj lub browser."
+
+#: src/cword_webapp/templates/index.html:13
+msgid "Crossword Puzzle - Game"
+msgstr "Crossword Puzzle - Kev ua si"
+
+#: src/cword_webapp/templates/index.html:91
+msgid "Across"
+msgstr "Hla"
+
+#: src/cword_webapp/templates/index.html:108
+msgid "Down"
+msgstr "nqes"
+
+#: src/cword_webapp/templates/index.html:125
+msgid "You completed the crossword!"
+msgstr "Koj ua tiav qhov crossword!"
+
+#: src/cword_webapp/templates/index.html:126
+msgid "Close"
+msgstr "Kaw"
+
+msgid "Easy"
+msgstr "Yooj yim"
+
+msgid "Medium"
+msgstr "Nruab nrab"
+
+msgid "Hard"
+msgstr "Nyuaj"
+
+msgid "Extreme"
+msgstr "Heev"
+
+#~ msgid ""
+#~ "First time launch, please read:\n"
+#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
+#~ "\n"
+#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
+#~ "\n"
+#~ "Also important to know:\n"
+#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
+#~ msgstr ""

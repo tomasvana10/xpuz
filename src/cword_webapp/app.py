@@ -2,16 +2,24 @@
 user presses the "Load crossword" button in the main GUI.
 '''
 
+import os
 from multiprocessing import Process 
+from pathlib import Path
 
 from flask import Flask, render_template
+from flask_babel import Babel
 
-app = Flask(__name__)
+
 
 def _run(*args, **kwargs):
     '''Ran as a new Process using the `multiprocessing` module. kwargs are forwarded from
     `_create_app_process`, which forwards the arguments from `init_webapp` in `main.py`.
     '''
+    app = Flask(__name__)
+    app.config["BABEL_DEFAULT_LOCALE"] = kwargs["locale"].language
+    app.config["BABEL_TRANSLATION_DIRECTORIES"] = os.path.normpath(Path(__file__).resolve().parents[2] / "locales")
+    babel = Babel(app)
+    
     @app.route("/")
     def main():
         return render_template(
@@ -33,8 +41,8 @@ def _run(*args, **kwargs):
             definitions_d=kwargs["definitions_d"],
         )
         
-    app.run(debug=False, port=int(kwargs["port"])) # NOTE: debug mode does not work when running the app
-                                                 # as a process with the multiprocessing module   
+    app.run(debug=False, port=int(kwargs["port"]))
+    
 
 def _create_app_process(**kwargs):
     global server

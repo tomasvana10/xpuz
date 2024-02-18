@@ -1,20 +1,220 @@
 # Amharic translations for crossword_puzzle.
 # Copyright (C) 2024 Tomas Vana
-# This file is distributed under the same license as the PROJECT project.
+# This file is distributed under the same license as the crossword_puzzle
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-01-11 23:12+1100\n"
-"PO-Revision-Date: 2024-01-23 14:13+1100\n"
+"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: am\n"
 "Language-Team: am <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: am\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
+#: src/main.py:66
+msgid "Crossword Puzzle"
+msgstr "የቃላት አቋራጭ እንቆቅልሽ"
+
+#: src/main.py:75
+msgid "View crosswords"
+msgstr "መስቀለኛ ቃላትን ተመልከት"
+
+#: src/main.py:79
+msgid "Exit the app"
+msgstr "ከመተግበሪያው ውጣ"
+
+#: src/main.py:84
+msgid "Global Settings"
+msgstr "ዓለም አቀፍ ቅንብሮች"
+
+#: src/main.py:88
+msgid "🌐 Languages"
+msgstr "🌐 ቋንቋዎች"
+
+#: src/main.py:95
+msgid "Size"
+msgstr "መጠን"
+
+#: src/main.py:104
+msgid "light"
+msgstr "ብርሃን"
+
+#: src/main.py:104
+msgid "dark"
+msgstr "ጨለማ"
+
+#: src/main.py:104
+msgid "system"
+msgstr "ስርዓት"
+
+#: src/main.py:105
+msgid "Appearance"
+msgstr "መልክ"
+
+#: src/main.py:248
+msgid "Crossword Browser"
+msgstr "የመስቀል ቃል አሳሽ"
+
+#: src/main.py:252
+msgid "Go back"
+msgstr "ተመለስ"
+
+#: src/main.py:256
+msgid "Load crossword"
+msgstr "መስቀለኛ ቃል ጫን"
+
+#: src/main.py:260
+msgid "Open web app"
+msgstr "የድር መተግበሪያን ይክፈቱ"
+
+#: src/main.py:264
+msgid "Terminate web app"
+msgstr "የድር መተግበሪያን ያቋርጡ"
+
+#: src/main.py:270
+msgid "Word count preferences"
+msgstr "የቃላት ብዛት ምርጫዎች"
+
+#: src/main.py:278 src/main.py:308
+msgid "Select word count"
+msgstr "የቃላት ብዛትን ይምረጡ"
+
+#: src/main.py:280 src/main.py:491
+msgid "Maximum"
+msgstr "ከፍተኛ"
+
+#: src/main.py:285
+msgid "Custom"
+msgstr "ብጁ"
+
+#: src/main.py:539
+msgid "Total words"
+msgstr "ጠቅላላ ቃላት"
+
+#: src/main.py:543
+msgid "Difficulty"
+msgstr "አስቸጋሪ"
+
+#: src/main.py:543
+msgid "difficulty"
+msgstr "ችግር"
+
+#: src/main.py:545
+msgid "Select"
+msgstr "ይምረጡ"
+
+#: src/main.py:584
+msgid "Restart"
+msgstr "እንደገና ጀምር"
+
+#: src/main.py:584
+msgid "Are you sure you want to restart the app?"
+msgstr "እርግጠኛ ነዎት መተግበሪያውን እንደገና ማስጀመር ይፈልጋሉ?"
+
+#: src/main.py:588
+msgid "Exit"
+msgstr "ውጣ"
+
+#: src/main.py:589
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr "እርግጠኛ ነህ ከመተግበሪያው መውጣት ትፈልጋለህ? የድር መተግበሪያ እየሰራ ከሆነ ይቋረጣል።"
+
+#: src/main.py:594
+msgid "Back to home"
+msgstr "ወደ ቤት መመለስ"
+
+#: src/main.py:595
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr "እርግጠኛ ነህ ወደ መነሻ ስክሪን መመለስ ትፈልጋለህ? የድር መተግበሪያ ይቋረጣል።"
+
+#: src/main.py:608 src/main.py:611 src/main.py:614
+msgid "Error"
+msgstr "ስህተት"
+
+#: src/main.py:608
+msgid "This language is already selected."
+msgstr "ይህ ቋንቋ አስቀድሞ ተመርጧል።"
+
+#: src/main.py:611
+msgid "This size is already selected."
+msgstr "ይህ መጠን አስቀድሞ ተመርጧል።"
+
+#: src/main.py:614
+msgid "This appearance is already selected."
+msgstr "ይህ መልክ አስቀድሞ ተመርጧል።"
+
+#: src/main.py:617
+msgid "Info"
+msgstr "መረጃ"
+
+#: src/main.py:618
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, either find the Flask app process and terminate it, change the "
+"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
+"IMPORTANT: In some cases, you may have launched the web app yet your browser"
+" cannot view it. If this happens, please restart your browser."
+msgstr ""
+"ለመጀመሪያ ጊዜ ሲጀመር፣ እባክዎን ያንብቡ፡ አንዴ መስቀለኛ ቃል ከጫኑ እና ሌላ ለመጫን ከፈለጉ፣ መጀመሪያ የድር "
+"መተግበሪያን ማቋረጥ አለብዎት። አስፈላጊ፡ በ macOS ላይ ከሆኑ ዌብ አፕሊኬሽኑን በግድ (cmd+q ን በመጠቀም) "
+"እንዲያቆም ያስገድዱት። ይህንን በስህተት ካደረጉት ወይም የፍላስክ አፕ ሂደቱን ያግኙ እና ያቋርጡት፣ በ "
+"src/config.ini ውስጥ ያለውን የ‹webapp_port` ቁጥር ይቀይሩ ወይም ኮምፒተርዎን እንደገና ያስጀምሩ። "
+"በተጨማሪም አስፈላጊ፡ በአንዳንድ አጋጣሚዎች የድር መተግበሪያን ከፍተው ሊሆን ይችላል ነገር ግን አሳሽዎ ማየት አልቻለም።"
+" ይህ ከተከሰተ እባክዎን አሳሽዎን እንደገና ያስጀምሩ።"
+
+#: src/cword_webapp/templates/index.html:13
+msgid "Crossword Puzzle - Game"
+msgstr "እንቆቅልሽ - ጨዋታ"
+
+#: src/cword_webapp/templates/index.html:91
+msgid "Across"
+msgstr "ማዶ"
+
+#: src/cword_webapp/templates/index.html:108
+msgid "Down"
+msgstr "ወደታች"
+
+#: src/cword_webapp/templates/index.html:125
+msgid "You completed the crossword!"
+msgstr "መስቀለኛ ቃሉን ጨርሰሃል!"
+
+#: src/cword_webapp/templates/index.html:126
+msgid "Close"
+msgstr "ገጠመ"
+
+msgid "Easy"
+msgstr "ቀላል"
+
+msgid "Medium"
+msgstr "መካከለኛ"
+
+msgid "Hard"
+msgstr "ከባድ"
+
+msgid "Extreme"
+msgstr "ጽንፍ"
+
+#~ msgid ""
+#~ "First time launch, please read:\n"
+#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
+#~ "\n"
+#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
+#~ "\n"
+#~ "Also important to know:\n"
+#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
+#~ msgstr ""

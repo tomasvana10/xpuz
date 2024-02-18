@@ -1,20 +1,227 @@
 # Icelandic translations for crossword_puzzle.
 # Copyright (C) 2024 Tomas Vana
-# This file is distributed under the same license as the PROJECT project.
+# This file is distributed under the same license as the crossword_puzzle
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-01-11 23:12+1100\n"
-"PO-Revision-Date: 2024-01-23 14:13+1100\n"
+"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: is\n"
 "Language-Team: is <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n%10==1 && n%100!=11 ? 0 : 1);\n"
+"Language: is\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n%10==1 && n%100!=11 ? 0 : 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
+#: src/main.py:66
+msgid "Crossword Puzzle"
+msgstr "Krossgáta"
+
+#: src/main.py:75
+msgid "View crosswords"
+msgstr "Skoða krossgátur"
+
+#: src/main.py:79
+msgid "Exit the app"
+msgstr "Lokaðu appinu"
+
+#: src/main.py:84
+msgid "Global Settings"
+msgstr "Alþjóðlegar stillingar"
+
+#: src/main.py:88
+msgid "🌐 Languages"
+msgstr "🌐 Tungumál"
+
+#: src/main.py:95
+msgid "Size"
+msgstr "Stærð"
+
+#: src/main.py:104
+msgid "light"
+msgstr "ljós"
+
+#: src/main.py:104
+msgid "dark"
+msgstr "Myrkur"
+
+#: src/main.py:104
+msgid "system"
+msgstr "kerfi"
+
+#: src/main.py:105
+msgid "Appearance"
+msgstr "Útlit"
+
+#: src/main.py:248
+msgid "Crossword Browser"
+msgstr "Krossgátuvafri"
+
+#: src/main.py:252
+msgid "Go back"
+msgstr "Farðu til baka"
+
+#: src/main.py:256
+msgid "Load crossword"
+msgstr "Hlaða krossgátu"
+
+#: src/main.py:260
+msgid "Open web app"
+msgstr "Opnaðu vefforrit"
+
+#: src/main.py:264
+msgid "Terminate web app"
+msgstr "Lokaðu vefforriti"
+
+#: src/main.py:270
+msgid "Word count preferences"
+msgstr "Orðafjöldavalkostir"
+
+#: src/main.py:278 src/main.py:308
+msgid "Select word count"
+msgstr "Veldu orðafjölda"
+
+#: src/main.py:280 src/main.py:491
+msgid "Maximum"
+msgstr "Hámark"
+
+#: src/main.py:285
+msgid "Custom"
+msgstr "Sérsniðin"
+
+#: src/main.py:539
+msgid "Total words"
+msgstr "Samtals orð"
+
+#: src/main.py:543
+msgid "Difficulty"
+msgstr "Erfiðleikar"
+
+#: src/main.py:543
+msgid "difficulty"
+msgstr "erfiðleikar"
+
+#: src/main.py:545
+msgid "Select"
+msgstr "Veldu"
+
+#: src/main.py:584
+msgid "Restart"
+msgstr "Endurræsa"
+
+#: src/main.py:584
+msgid "Are you sure you want to restart the app?"
+msgstr "Ertu viss um að þú viljir endurræsa forritið?"
+
+#: src/main.py:588
+msgid "Exit"
+msgstr "Hætta"
+
+#: src/main.py:589
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr ""
+"Ertu viss um að þú viljir hætta í forritinu? Ef vefforritið er í gangi "
+"verður því lokað."
+
+#: src/main.py:594
+msgid "Back to home"
+msgstr "Aftur heim"
+
+#: src/main.py:595
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr ""
+"Ertu viss um að þú viljir fara aftur á heimaskjáinn? Vefforritinu verður "
+"lokað."
+
+#: src/main.py:608 src/main.py:611 src/main.py:614
+msgid "Error"
+msgstr "Villa"
+
+#: src/main.py:608
+msgid "This language is already selected."
+msgstr "Þetta tungumál er þegar valið."
+
+#: src/main.py:611
+msgid "This size is already selected."
+msgstr "Þessi stærð er þegar valin."
+
+#: src/main.py:614
+msgid "This appearance is already selected."
+msgstr "Þetta útlit er þegar valið."
+
+#: src/main.py:617
+msgid "Info"
+msgstr "Upplýsingar"
+
+#: src/main.py:618
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, either find the Flask app process and terminate it, change the "
+"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
+"IMPORTANT: In some cases, you may have launched the web app yet your browser"
+" cannot view it. If this happens, please restart your browser."
+msgstr ""
+"Fyrsta skiptið, vinsamlegast lestu: Þegar þú hefur hlaðið krossgátu og vilt "
+"hlaða öðru, verður þú fyrst að loka vefforritinu. MIKILVÆGT: Ef þú ert á "
+"macOS, þvingarðu til að hætta í forritinu (með því að nota cmd+q) á meðan "
+"vefforritið er í gangi kemur í veg fyrir að það lokist á réttan hátt. Ef þú "
+"gerir þetta fyrir mistök skaltu annað hvort finna Flask app ferlið og hætta "
+"því, breyta `webapp_port` númerinu í src/config.ini eða endurræsa tölvuna "
+"þína. EINNIG MIKILVÆGT: Í sumum tilfellum gætir þú hafa ræst vefforritið en "
+"vafrinn þinn getur ekki skoðað það. Ef þetta gerist skaltu endurræsa vafrann"
+" þinn."
+
+#: src/cword_webapp/templates/index.html:13
+msgid "Crossword Puzzle - Game"
+msgstr "Krossgátu - Leikur"
+
+#: src/cword_webapp/templates/index.html:91
+msgid "Across"
+msgstr "Þvert yfir"
+
+#: src/cword_webapp/templates/index.html:108
+msgid "Down"
+msgstr "Niður"
+
+#: src/cword_webapp/templates/index.html:125
+msgid "You completed the crossword!"
+msgstr "Þú kláraðir krossgátuna!"
+
+#: src/cword_webapp/templates/index.html:126
+msgid "Close"
+msgstr "Loka"
+
+msgid "Easy"
+msgstr "Auðvelt"
+
+msgid "Medium"
+msgstr "Miðlungs"
+
+msgid "Hard"
+msgstr "Erfitt"
+
+msgid "Extreme"
+msgstr "Öfgafullt"
+
+#~ msgid ""
+#~ "First time launch, please read:\n"
+#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
+#~ "\n"
+#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
+#~ "\n"
+#~ "Also important to know:\n"
+#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
+#~ msgstr ""

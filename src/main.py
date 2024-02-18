@@ -10,7 +10,7 @@ from typing import List, Dict, Tuple, Union
 
 import customtkinter as ctk 
 from configparser import ConfigParser
-from babel import Locale
+from babel import Locale, numbers
 from PIL import Image
 
 import cword_gen as cwg
@@ -63,7 +63,7 @@ class Home(ctk.CTk):
         self.cword_opts_frame.grid(row=0, column=0, sticky="nsew")
 
     def _make_content(self) -> None:
-        self.l_title = ctk.CTkLabel(self.cword_opts_frame, text="Crossword Puzzle", 
+        self.l_title = ctk.CTkLabel(self.cword_opts_frame, text=_("Crossword Puzzle"), 
                                     font=ctk.CTkFont(size=Fonts.TITLE_FONT["size"],
                                                      weight=Fonts.TITLE_FONT["weight"]))
         
@@ -72,42 +72,43 @@ class Home(ctk.CTk):
                                                    dark_image=Image.open(Paths.CWORD_IMG_DARK_PATH),
                                                    size=(453, 154)))
         
-        self.b_open_cword_browser = ctk.CTkButton(self.cword_opts_frame, text="View crosswords",
+        self.b_open_cword_browser = ctk.CTkButton(self.cword_opts_frame, text=_("View crosswords"),
                                                   command=self.open_cword_browser, width=175, 
                                                   height=50)
         
-        self.b_close_app = ctk.CTkButton(self.cword_opts_frame, text="Exit the app",
+        self.b_close_app = ctk.CTkButton(self.cword_opts_frame, text=_("Exit the app"),
                                          command=self._exit_handler, width=175, height=50, 
                                          fg_color=Colour.Global.EXIT_BUTTON,
                                          hover_color=Colour.Global.EXIT_BUTTON_HOVER)
 
-        self.l_settings = ctk.CTkLabel(self.settings_frame, text="Global Settings", 
+        self.l_settings = ctk.CTkLabel(self.settings_frame, text=_("Global Settings"), 
                                       font=ctk.CTkFont(size=Fonts.SUBHEADING_FONT["size"],
                                                        slant=Fonts.SUBHEADING_FONT["slant"]))
         
-        self.l_language_optionsmenu = ctk.CTkLabel(self.settings_frame, text="\U0001F310 Languages", 
+        self.l_language_optionsmenu = ctk.CTkLabel(self.settings_frame, text=_("\U0001F310 Languages"), 
                                                    font=ctk.CTkFont(size=Fonts.LABEL_FONT["size"],
                                                                     weight=Fonts.LABEL_FONT["weight"]))
         self.language_optionsmenu = ctk.CTkOptionMenu(self.settings_frame, values=self.localised_langs, 
                                              command=self.switch_lang)
         self.language_optionsmenu.set(self.locale.language_name)
         
-        self.l_scale_optionmenu = ctk.CTkLabel(self.settings_frame, text="Size", 
+        self.l_scale_optionmenu = ctk.CTkLabel(self.settings_frame, text=_("Size"), 
                                       font=ctk.CTkFont(size=Fonts.LABEL_FONT["size"],
                                                        weight=Fonts.LABEL_FONT["weight"]))
         self.scale_optionmenu = ctk.CTkOptionMenu(self.settings_frame, 
-                                             values=[str(round(num * 0.1, 1)) for num in range(7, 21)],
+                                             values=[numbers.format_decimal(str(round(num * 0.1, 1)), 
+                                                                            locale=self.locale) for num in range(7, 21)],
                                              command=self.change_scale)
-        self.scale_optionmenu.set(self.cfg.get("m", "scale"))
+        self.scale_optionmenu.set(numbers.format_decimal(self.cfg.get("m", "scale"), locale=self.locale))
         
-        self.appearances: List[str] = ["light", "dark", "system"] # NOTE: mark for translation later
-        self.l_appearance_optionmenu = ctk.CTkLabel(self.settings_frame, text="Appearance", 
+        self.appearances: List[str] = [_("light"), _("dark"), _("system")] # NOTE: mark for translation later
+        self.l_appearance_optionmenu = ctk.CTkLabel(self.settings_frame, text=_("Appearance"), 
                                       font=ctk.CTkFont(size=Fonts.LABEL_FONT["size"],
                                                        weight=Fonts.LABEL_FONT["weight"]),
                                       bg_color="transparent")
         self.appearance_optionmenu = ctk.CTkOptionMenu(self.settings_frame, values=self.appearances, 
                                              command=self.change_appearance)
-        self.appearance_optionmenu.set(self.cfg.get("m", "appearance"))
+        self.appearance_optionmenu.set(_(self.cfg.get("m", "appearance")))
 
     def _place_content(self) -> None:
         self.l_title.place(relx=0.5, rely=0.1, anchor="c")
@@ -174,14 +175,14 @@ class Home(ctk.CTk):
                      scale: str
                      ) -> None:
         '''Ensures the user is not selecting the same scale, then sets the scale.'''
-        # NOTE: Will prob need the same index comparisons as the change_appearance function when 
-        # configuring digits to be accurate to the current locale.
+        scale = float(numbers.parse_decimal(scale, locale=self.locale))
+
         if scale == self.cfg.get("m", "scale"):
             AppHelper.show_messagebox(same_scale=True)
             return
         
-        ctk.set_widget_scaling(float(scale))
-        AppHelper._update_config(self.cfg, "m", "scale", scale)
+        ctk.set_widget_scaling(scale)
+        AppHelper._update_config(self.cfg, "m", "scale", str(scale))
         
     def switch_lang(self, 
                     lang: str
@@ -195,7 +196,7 @@ class Home(ctk.CTk):
         
         AppHelper._update_config(self.cfg, "m", "language", self.localised_lang_db[lang])
         self.locale: Locale = Locale.parse(self.cfg.get("m", "language"))
-        # gettext.translation(...).install()  when I compile all the locales
+        gettext.translation("messages", localedir=Paths.LOCALES_PATH, languages=[self.locale.language]).install()
         self.container.pack_forget()
         self.generate_screen()
 
@@ -244,29 +245,29 @@ class CrosswordBrowser(ctk.CTkFrame):
                                                                                       Colour.Dark.MAIN),
                                                               corner_radius=0)
 
-        self.l_title = ctk.CTkLabel(self, text="Crossword Browser", 
+        self.l_title = ctk.CTkLabel(self, text=_("Crossword Browser"), 
                                     font=ctk.CTkFont(size=Fonts.TITLE_FONT["size"],
                                                      weight=Fonts.TITLE_FONT["weight"]))
         
-        self.b_go_to_home = ctk.CTkButton(self, text="Go back", command=self.go_to_home, width=175, 
+        self.b_go_to_home = ctk.CTkButton(self, text=_("Go back"), command=self.go_to_home, width=175, 
                                           height=50, fg_color=Colour.Global.EXIT_BUTTON,
                                           hover_color=Colour.Global.EXIT_BUTTON_HOVER)
         
-        self.b_load_selected_cword = ctk.CTkButton(self, text="Load crossword", 
+        self.b_load_selected_cword = ctk.CTkButton(self, text=_("Load crossword"), 
                                                    height=50, command=self.load_selected_cword, 
                                                    state="disabled")
         
-        self.b_open_cword_webapp = ctk.CTkButton(self, text="Open web app",
+        self.b_open_cword_webapp = ctk.CTkButton(self, text=_("Open web app"),
                                                  height=50, command=self.open_cword_webapp,
                                                  state="disabled")
         
-        self.b_terminate_cword_webapp = ctk.CTkButton(self, text="Terminate web app",
+        self.b_terminate_cword_webapp = ctk.CTkButton(self, text=_("Terminate web app"),
                                              height=50, command=self.terminate_cword_webapp,
                                              fg_color=Colour.Global.EXIT_BUTTON,
                                              hover_color=Colour.Global.EXIT_BUTTON_HOVER,
                                              state="disabled")
         
-        self.l_word_count_preferences = ctk.CTkLabel(self, text="Word count preferences", 
+        self.l_word_count_preferences = ctk.CTkLabel(self, text=_("Word count preferences"), 
                                                      font=ctk.CTkFont(size=Fonts.BOLD_LABEL_FONT["size"],
                                                                       weight=Fonts.BOLD_LABEL_FONT["weight"]),
                                                      text_color_disabled=(Colour.Light.TEXT_DISABLED,
@@ -274,14 +275,14 @@ class CrosswordBrowser(ctk.CTkFrame):
                                                      state="disabled") 
         
         self.custom_word_count_optionmenu = ctk.CTkOptionMenu(self, state="disabled")
-        self.custom_word_count_optionmenu.set("Select word count")
+        self.custom_word_count_optionmenu.set(_("Select word count"))
         
-        self.radiobutton_max_word_count = ctk.CTkRadioButton(self, text=f"Maximum: ",
+        self.radiobutton_max_word_count = ctk.CTkRadioButton(self, text=f"{_("Maximum")}: ",
                     variable=self.word_count_preference,
                     value=0, state="disabled", corner_radius=1,
                     command=lambda: self._on_word_count_radiobutton_selection("max"))
         
-        self.radiobutton_custom_word_count = ctk.CTkRadioButton(self, text="Custom", 
+        self.radiobutton_custom_word_count = ctk.CTkRadioButton(self, text=_("Custom"), 
                     variable=self.word_count_preference,
                     value=1, state="disabled", corner_radius=1,
                     command=lambda: self._on_word_count_radiobutton_selection("custom"))
@@ -304,10 +305,10 @@ class CrosswordBrowser(ctk.CTkFrame):
                                              ) -> None: 
         '''Configure custom word count optionmenu based on radiobutton selection.'''
         if button_name == "max": # User wants max word count, do not let them select custom word count.
-            self.custom_word_count_optionmenu.set("Select word count")
+            self.custom_word_count_optionmenu.set(_("Select word count"))
             self.custom_word_count_optionmenu.configure(state="disabled")
         else: # User wants custom word count, do not let them select max word count.
-            self.custom_word_count_optionmenu.set("3")
+            self.custom_word_count_optionmenu.set(f"{str(numbers.format_decimal(3, locale=self.master.locale))}")
             self.custom_word_count_optionmenu.configure(state="normal")
         
         if not self.webapp_running: # Only if they haven't started the web app
@@ -385,6 +386,7 @@ class CrosswordBrowser(ctk.CTkFrame):
         '''Start the flask web app with information from the crossword and other interpreted data'''
         colour_palette: Dict[str, str] = AppHelper._get_colour_palette_for_webapp(ctk.get_appearance_mode())
         app._create_app_process(
+            locale=self.master.locale,
             colour_palette=colour_palette,
             json_colour_palette=json.dumps(colour_palette),
             cword_data=crossword.data,
@@ -484,8 +486,9 @@ class CrosswordBrowser(ctk.CTkFrame):
         self.selected_cword_name: str = name
         self.selected_cword_word_count: int = word_count
         
-        self.custom_word_count_optionmenu.configure(values=[str(num) for num in range(3, word_count + 1)])
-        self.radiobutton_max_word_count.configure(text=f"Maximum: {word_count}")
+        self.custom_word_count_optionmenu.configure(values=[str(numbers.format_decimal(num, locale=self.master.locale))\
+                                                           for num in range(3, word_count + 1)])
+        self.radiobutton_max_word_count.configure(text=f"{_("Maximum")}: {numbers.format_decimal(word_count, locale=self.master.locale)}")
     
     def go_to_home(self) -> None:
         '''Removes the content of `CrosswordBrowser` and regenerates the `Home` classes content. This
@@ -533,12 +536,13 @@ class CrosswordInfoBlock(ctk.CTkFrame):
         self.name_textbox.insert(1.0, f"{chr(int(self.info['symbol'], 16))} {self.name.title()}")
         self.name_textbox.configure(state="disabled")
 
-        self.l_total_words = ctk.CTkLabel(self, text=f"Total words: {self.info['total_definitions']}")
+        self.l_total_words = ctk.CTkLabel(self, text=f"{_("Total words")}: {numbers.format_decimal(self.info['total_definitions'], 
+                                                                                                  locale=self.master.master.locale)}")
         
         self.l_difficulty = ctk.CTkLabel(self, 
-                    text=f"Difficulty: {CrosswordDifficulties.DIFFICULTIES[self.info['difficulty']]}")
+                    text=f"{_("Difficulty")}: {_(CrosswordDifficulties.DIFFICULTIES[self.info['difficulty']])}")
         
-        self.radiobutton_selector = ctk.CTkRadioButton(self, text="Select", corner_radius=1,
+        self.radiobutton_selector = ctk.CTkRadioButton(self, text=_("Select"), corner_radius=1,
                         variable=self.master.selected_block, 
                         value=self.value, 
                         # Pass the necessary info to `self.master._on_cword_selection` so it can
@@ -565,7 +569,7 @@ class AppHelper:
         
         language: str = cfg.get("m", "language")
         locale: Locale = Locale.parse(language)
-        # gettext.translation("messages", localedir=Paths.LOCALES_PATH, languages=[locale.language]).install()
+        gettext.translation("messages", localedir=Paths.LOCALES_PATH, languages=[locale.language]).install()
         AppHelper._update_config(cfg, "misc", "launches", str(int(cfg.get("misc", "launches")) + 1))
         
         app = Home(AppHelper._get_language_options(), locale, cfg)
@@ -576,20 +580,20 @@ class AppHelper:
                                 restart: bool = False,
                                 go_to_home: bool = False
                                 ) -> bool:
-        if exit_ & restart:
-            if tk.messagebox.askyesno("Restart", "Are you sure you want to restart the app?"):
+        if exit_ and restart:
+            if tk.messagebox.askyesno(_("Restart"), _("Are you sure you want to restart the app?")):
                 return True
         
-        if exit_ & ~restart:
-            if tk.messagebox.askyesno("Exit", 
-                                      "Are you sure you want to exit the app? If the web app is running, "
-                                      "it will be terminated."):
+        if exit_ and not restart:
+            if tk.messagebox.askyesno(_("Exit"), 
+                                      _("Are you sure you want to exit the app? If the web app is running, "
+                                      "it will be terminated.")):
                 return True
         
         if go_to_home:
-            if tk.messagebox.askyesno("Back to home", 
-                                      "Are you sure you want to go back to the home screen? The web "
-                                      "app will be terminated."):
+            if tk.messagebox.askyesno(_("Back to home"), 
+                                      _("Are you sure you want to go back to the home screen? The web "
+                                      "app will be terminated.")):
                 return True
         
         return False
@@ -601,23 +605,23 @@ class AppHelper:
                         first_time_opening_cword_browser: bool = False
                         ) -> None:
         if same_lang:
-            tk.messagebox.showerror("Error", "This language is already selected.")
+            tk.messagebox.showerror(_("Error"), _("This language is already selected."))
         
         if same_scale:
-            tk.messagebox.showerror("Error", "This size is already selected.")
+            tk.messagebox.showerror(_("Error"), _("This size is already selected."))
         
         if same_appearance:
-            tk.messagebox.showerror("Error", "This appearance is already selected.")
+            tk.messagebox.showerror(_("Error"), _("This appearance is already selected."))
         
         if first_time_opening_cword_browser:
-            tk.messagebox.showinfo("Info", 
-                "First time launch, please read:\nOnce you have loaded a crossword, and wish to load "
-                "another one, you must first terminate the web app.\n\nIMPORTANT: If you are on macOS, "
+            tk.messagebox.showinfo(_("Info"), 
+                _("First time launch, please read: Once you have loaded a crossword, and wish to load "
+                "another one, you must first terminate the web app. IMPORTANT: If you are on macOS, "
                 "force quitting the application (using cmd+q) while the web app is running will prevent "
                 "it from properly terminating. If you mistakenly do this, either find the Flask app "
                 "process and terminate it, change the `webapp_port` number in src/config.ini, or "
-                "restart your computer.\n\nAlso important to know:\nIn some cases, you may have launched "
-                "the web app yet your browser cannot view it. If this happens, please restart your browser.")
+                "restart your computer. ALSO IMPORTANT: In some cases, you may have launched "
+                "the web app yet your browser cannot view it. If this happens, please restart your browser."))
     
     @staticmethod
     def _update_config(cfg: ConfigParser, 

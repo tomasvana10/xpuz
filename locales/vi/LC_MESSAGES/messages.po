@@ -1,20 +1,227 @@
 # Vietnamese translations for crossword_puzzle.
 # Copyright (C) 2024 Tomas Vana
-# This file is distributed under the same license as the PROJECT project.
+# This file is distributed under the same license as the crossword_puzzle
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-01-11 23:12+1100\n"
-"PO-Revision-Date: 2024-01-23 14:13+1100\n"
+"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: vi\n"
 "Language-Team: vi <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.14.0\n"
 
+#: src/main.py:66
+msgid "Crossword Puzzle"
+msgstr "Câu đố ô chữ"
+
+#: src/main.py:75
+msgid "View crosswords"
+msgstr "Xem ô chữ"
+
+#: src/main.py:79
+msgid "Exit the app"
+msgstr "Thoát khỏi ứng dụng"
+
+#: src/main.py:84
+msgid "Global Settings"
+msgstr "Thiết lập toàn cầu"
+
+#: src/main.py:88
+msgid "🌐 Languages"
+msgstr "🌐 Ngôn ngữ"
+
+#: src/main.py:95
+msgid "Size"
+msgstr "Kích cỡ"
+
+#: src/main.py:104
+msgid "light"
+msgstr "ánh sáng"
+
+#: src/main.py:104
+msgid "dark"
+msgstr "tối tăm"
+
+#: src/main.py:104
+msgid "system"
+msgstr "hệ thống"
+
+#: src/main.py:105
+msgid "Appearance"
+msgstr "Vẻ bề ngoài"
+
+#: src/main.py:248
+msgid "Crossword Browser"
+msgstr "Trình duyệt ô chữ"
+
+#: src/main.py:252
+msgid "Go back"
+msgstr "Quay lại"
+
+#: src/main.py:256
+msgid "Load crossword"
+msgstr "Tải ô chữ"
+
+#: src/main.py:260
+msgid "Open web app"
+msgstr "Mở ứng dụng web"
+
+#: src/main.py:264
+msgid "Terminate web app"
+msgstr "Chấm dứt ứng dụng web"
+
+#: src/main.py:270
+msgid "Word count preferences"
+msgstr "Tùy chọn đếm từ"
+
+#: src/main.py:278 src/main.py:308
+msgid "Select word count"
+msgstr "Chọn số từ"
+
+#: src/main.py:280 src/main.py:491
+msgid "Maximum"
+msgstr "Tối đa"
+
+#: src/main.py:285
+msgid "Custom"
+msgstr "Phong tục"
+
+#: src/main.py:539
+msgid "Total words"
+msgstr "Tổng số từ"
+
+#: src/main.py:543
+msgid "Difficulty"
+msgstr "Khó khăn"
+
+#: src/main.py:543
+msgid "difficulty"
+msgstr "khó khăn"
+
+#: src/main.py:545
+msgid "Select"
+msgstr "Lựa chọn"
+
+#: src/main.py:584
+msgid "Restart"
+msgstr "Khởi động lại"
+
+#: src/main.py:584
+msgid "Are you sure you want to restart the app?"
+msgstr "Bạn có chắc chắn muốn khởi động lại ứng dụng không?"
+
+#: src/main.py:588
+msgid "Exit"
+msgstr "Lối ra"
+
+#: src/main.py:589
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr ""
+"Bạn có chắc chắn muốn thoát khỏi ứng dụng không? Nếu ứng dụng web đang chạy,"
+" nó sẽ bị chấm dứt."
+
+#: src/main.py:594
+msgid "Back to home"
+msgstr "Trở về nhà"
+
+#: src/main.py:595
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr ""
+"Bạn có chắc chắn muốn quay lại màn hình chính không? Ứng dụng web sẽ bị chấm"
+" dứt."
+
+#: src/main.py:608 src/main.py:611 src/main.py:614
+msgid "Error"
+msgstr "Lỗi"
+
+#: src/main.py:608
+msgid "This language is already selected."
+msgstr "Ngôn ngữ này đã được chọn."
+
+#: src/main.py:611
+msgid "This size is already selected."
+msgstr "Kích thước này đã được chọn."
+
+#: src/main.py:614
+msgid "This appearance is already selected."
+msgstr "Giao diện này đã được chọn."
+
+#: src/main.py:617
+msgid "Info"
+msgstr "Thông tin"
+
+#: src/main.py:618
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, either find the Flask app process and terminate it, change the "
+"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
+"IMPORTANT: In some cases, you may have launched the web app yet your browser"
+" cannot view it. If this happens, please restart your browser."
+msgstr ""
+"Lần đầu khởi chạy, vui lòng đọc: Khi bạn đã tải một ô chữ và muốn tải một ô "
+"chữ khác, trước tiên bạn phải thoát khỏi ứng dụng web. QUAN TRỌNG: Nếu bạn "
+"đang sử dụng macOS, việc buộc thoát ứng dụng (sử dụng cmd+q) trong khi ứng "
+"dụng web đang chạy sẽ khiến ứng dụng không thể kết thúc đúng cách. Nếu bạn "
+"làm điều này do nhầm lẫn, hãy tìm quy trình ứng dụng Flask và chấm dứt nó, "
+"thay đổi số `webapp_port` trong src/config.ini hoặc khởi động lại máy tính "
+"của bạn. CŨNG QUAN TRỌNG: Trong một số trường hợp, bạn có thể đã khởi chạy "
+"ứng dụng web nhưng trình duyệt của bạn không thể xem được. Nếu điều này xảy "
+"ra, vui lòng khởi động lại trình duyệt của bạn."
+
+#: src/cword_webapp/templates/index.html:13
+msgid "Crossword Puzzle - Game"
+msgstr "Câu Đố Ô Chữ - Trò Chơi"
+
+#: src/cword_webapp/templates/index.html:91
+msgid "Across"
+msgstr "Sang"
+
+#: src/cword_webapp/templates/index.html:108
+msgid "Down"
+msgstr "Xuống"
+
+#: src/cword_webapp/templates/index.html:125
+msgid "You completed the crossword!"
+msgstr "Bạn đã hoàn thành ô chữ!"
+
+#: src/cword_webapp/templates/index.html:126
+msgid "Close"
+msgstr "Đóng"
+
+msgid "Easy"
+msgstr "Dễ"
+
+msgid "Medium"
+msgstr "Trung bình"
+
+msgid "Hard"
+msgstr "Cứng"
+
+msgid "Extreme"
+msgstr "Vô cùng"
+
+#~ msgid ""
+#~ "First time launch, please read:\n"
+#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
+#~ "\n"
+#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
+#~ "\n"
+#~ "Also important to know:\n"
+#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
+#~ msgstr ""

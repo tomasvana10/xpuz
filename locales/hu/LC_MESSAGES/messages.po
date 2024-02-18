@@ -1,20 +1,227 @@
 # Hungarian translations for crossword_puzzle.
 # Copyright (C) 2024 Tomas Vana
-# This file is distributed under the same license as the PROJECT project.
+# This file is distributed under the same license as the crossword_puzzle
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-01-11 23:12+1100\n"
-"PO-Revision-Date: 2024-01-23 14:13+1100\n"
+"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: hu\n"
 "Language-Team: hu <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.14.0\n"
 
+#: src/main.py:66
+msgid "Crossword Puzzle"
+msgstr "Keresztrejtvény"
+
+#: src/main.py:75
+msgid "View crosswords"
+msgstr "Keresztrejtvények megtekintése"
+
+#: src/main.py:79
+msgid "Exit the app"
+msgstr "Lépjen ki az alkalmazásból"
+
+#: src/main.py:84
+msgid "Global Settings"
+msgstr "Általános beállítások"
+
+#: src/main.py:88
+msgid "🌐 Languages"
+msgstr "🌐 Nyelvek"
+
+#: src/main.py:95
+msgid "Size"
+msgstr "Méret"
+
+#: src/main.py:104
+msgid "light"
+msgstr "fény"
+
+#: src/main.py:104
+msgid "dark"
+msgstr "sötét"
+
+#: src/main.py:104
+msgid "system"
+msgstr "rendszer"
+
+#: src/main.py:105
+msgid "Appearance"
+msgstr "Kinézet"
+
+#: src/main.py:248
+msgid "Crossword Browser"
+msgstr "Keresztrejtvény böngésző"
+
+#: src/main.py:252
+msgid "Go back"
+msgstr "Menjen vissza"
+
+#: src/main.py:256
+msgid "Load crossword"
+msgstr "Töltsön be keresztrejtvényt"
+
+#: src/main.py:260
+msgid "Open web app"
+msgstr "Nyissa meg a webalkalmazást"
+
+#: src/main.py:264
+msgid "Terminate web app"
+msgstr "A webalkalmazás megszüntetése"
+
+#: src/main.py:270
+msgid "Word count preferences"
+msgstr "Szószám-beállítások"
+
+#: src/main.py:278 src/main.py:308
+msgid "Select word count"
+msgstr "Válassza ki a szavak számát"
+
+#: src/main.py:280 src/main.py:491
+msgid "Maximum"
+msgstr "Maximális"
+
+#: src/main.py:285
+msgid "Custom"
+msgstr "Egyedi"
+
+#: src/main.py:539
+msgid "Total words"
+msgstr "Összes szó"
+
+#: src/main.py:543
+msgid "Difficulty"
+msgstr "Nehézség"
+
+#: src/main.py:543
+msgid "difficulty"
+msgstr "nehézség"
+
+#: src/main.py:545
+msgid "Select"
+msgstr "Válassza ki"
+
+#: src/main.py:584
+msgid "Restart"
+msgstr "Újrakezd"
+
+#: src/main.py:584
+msgid "Are you sure you want to restart the app?"
+msgstr "Biztosan újra akarja indítani az alkalmazást?"
+
+#: src/main.py:588
+msgid "Exit"
+msgstr "Kijárat"
+
+#: src/main.py:589
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr ""
+"Biztosan ki akar lépni az alkalmazásból? Ha a webalkalmazás fut, akkor "
+"leáll."
+
+#: src/main.py:594
+msgid "Back to home"
+msgstr "Vissza a főoldalra"
+
+#: src/main.py:595
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr ""
+"Biztosan vissza akar térni a kezdőképernyőre? A webalkalmazás megszűnik."
+
+#: src/main.py:608 src/main.py:611 src/main.py:614
+msgid "Error"
+msgstr "Hiba"
+
+#: src/main.py:608
+msgid "This language is already selected."
+msgstr "Ez a nyelv már ki van választva."
+
+#: src/main.py:611
+msgid "This size is already selected."
+msgstr "Ez a méret már ki van választva."
+
+#: src/main.py:614
+msgid "This appearance is already selected."
+msgstr "Ez a megjelenés már ki van választva."
+
+#: src/main.py:617
+msgid "Info"
+msgstr "Info"
+
+#: src/main.py:618
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, either find the Flask app process and terminate it, change the "
+"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
+"IMPORTANT: In some cases, you may have launched the web app yet your browser"
+" cannot view it. If this happens, please restart your browser."
+msgstr ""
+"Első indításkor olvassa el: Miután betöltött egy keresztrejtvényt, és "
+"szeretne betölteni egy másikat, először le kell állítania a webalkalmazást. "
+"FONTOS: Ha macOS-t használ, kényszerítse ki az alkalmazásból való kilépést "
+"(cmd+q használatával), miközben a webalkalmazás fut, megakadályozza annak "
+"megfelelő leállását. Ha tévedésből teszi ezt, vagy keresse meg a Flask "
+"alkalmazás folyamatát, és fejezze be, módosítsa a `webapp_port&#39; számot "
+"az src/config.ini fájlban, vagy indítsa újra a számítógépet. IS FONTOS: "
+"Bizonyos esetekben előfordulhat, hogy elindította a webalkalmazást, de a "
+"böngészője nem tudja megtekinteni. Ha ez megtörténik, indítsa újra a "
+"böngészőt."
+
+#: src/cword_webapp/templates/index.html:13
+msgid "Crossword Puzzle - Game"
+msgstr "Keresztrejtvény - Játék"
+
+#: src/cword_webapp/templates/index.html:91
+msgid "Across"
+msgstr "Át"
+
+#: src/cword_webapp/templates/index.html:108
+msgid "Down"
+msgstr "Le"
+
+#: src/cword_webapp/templates/index.html:125
+msgid "You completed the crossword!"
+msgstr "Kitöltötted a keresztrejtvényt!"
+
+#: src/cword_webapp/templates/index.html:126
+msgid "Close"
+msgstr "Bezárás"
+
+msgid "Easy"
+msgstr "Könnyen"
+
+msgid "Medium"
+msgstr "Közepes"
+
+msgid "Hard"
+msgstr "Kemény"
+
+msgid "Extreme"
+msgstr "Szélső"
+
+#~ msgid ""
+#~ "First time launch, please read:\n"
+#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
+#~ "\n"
+#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
+#~ "\n"
+#~ "Also important to know:\n"
+#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
+#~ msgstr ""

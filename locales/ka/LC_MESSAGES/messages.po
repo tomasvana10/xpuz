@@ -1,20 +1,225 @@
 # Georgian translations for crossword_puzzle.
 # Copyright (C) 2024 Tomas Vana
-# This file is distributed under the same license as the PROJECT project.
+# This file is distributed under the same license as the crossword_puzzle
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-01-11 23:12+1100\n"
-"PO-Revision-Date: 2024-01-23 14:13+1100\n"
+"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: ka\n"
 "Language-Team: ka <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.14.0\n"
 
+#: src/main.py:66
+msgid "Crossword Puzzle"
+msgstr "კროსვორდის თავსატეხი"
+
+#: src/main.py:75
+msgid "View crosswords"
+msgstr "ნახეთ კროსვორდები"
+
+#: src/main.py:79
+msgid "Exit the app"
+msgstr "გადით აპიდან"
+
+#: src/main.py:84
+msgid "Global Settings"
+msgstr "გლობალური პარამეტრები"
+
+#: src/main.py:88
+msgid "🌐 Languages"
+msgstr "🌐 ენები"
+
+#: src/main.py:95
+msgid "Size"
+msgstr "ზომა"
+
+#: src/main.py:104
+msgid "light"
+msgstr "მსუბუქი"
+
+#: src/main.py:104
+msgid "dark"
+msgstr "ბნელი"
+
+#: src/main.py:104
+msgid "system"
+msgstr "სისტემა"
+
+#: src/main.py:105
+msgid "Appearance"
+msgstr "გარეგნობა"
+
+#: src/main.py:248
+msgid "Crossword Browser"
+msgstr "კროსვორდის ბრაუზერი"
+
+#: src/main.py:252
+msgid "Go back"
+msgstr "Დაბრუნდი"
+
+#: src/main.py:256
+msgid "Load crossword"
+msgstr "კროსვორდის ჩატვირთვა"
+
+#: src/main.py:260
+msgid "Open web app"
+msgstr "გახსენით ვებ აპლიკაცია"
+
+#: src/main.py:264
+msgid "Terminate web app"
+msgstr "ვებ აპის შეწყვეტა"
+
+#: src/main.py:270
+msgid "Word count preferences"
+msgstr "სიტყვების რაოდენობის პარამეტრები"
+
+#: src/main.py:278 src/main.py:308
+msgid "Select word count"
+msgstr "აირჩიეთ სიტყვების რაოდენობა"
+
+#: src/main.py:280 src/main.py:491
+msgid "Maximum"
+msgstr "მაქსიმალური"
+
+#: src/main.py:285
+msgid "Custom"
+msgstr "საბაჟო"
+
+#: src/main.py:539
+msgid "Total words"
+msgstr "სულ სიტყვები"
+
+#: src/main.py:543
+msgid "Difficulty"
+msgstr "სირთულე"
+
+#: src/main.py:543
+msgid "difficulty"
+msgstr "სირთულე"
+
+#: src/main.py:545
+msgid "Select"
+msgstr "აირჩიეთ"
+
+#: src/main.py:584
+msgid "Restart"
+msgstr "Რესტარტი"
+
+#: src/main.py:584
+msgid "Are you sure you want to restart the app?"
+msgstr "დარწმუნებული ხართ, რომ გსურთ აპის გადატვირთვა?"
+
+#: src/main.py:588
+msgid "Exit"
+msgstr "გასვლა"
+
+#: src/main.py:589
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr ""
+"დარწმუნებული ხართ, რომ გსურთ აპიდან გასვლა? თუ ვებ აპი გაშვებულია, ის "
+"შეწყდება."
+
+#: src/main.py:594
+msgid "Back to home"
+msgstr "სახლში დაბრუნება"
+
+#: src/main.py:595
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr ""
+"დარწმუნებული ხართ, რომ გსურთ საწყის ეკრანზე დაბრუნება? ვებ აპი შეწყდება."
+
+#: src/main.py:608 src/main.py:611 src/main.py:614
+msgid "Error"
+msgstr "შეცდომა"
+
+#: src/main.py:608
+msgid "This language is already selected."
+msgstr "ეს ენა უკვე შერჩეულია."
+
+#: src/main.py:611
+msgid "This size is already selected."
+msgstr "ეს ზომა უკვე შერჩეულია."
+
+#: src/main.py:614
+msgid "This appearance is already selected."
+msgstr "ეს გარეგნობა უკვე შერჩეულია."
+
+#: src/main.py:617
+msgid "Info"
+msgstr "ინფორმაცია"
+
+#: src/main.py:618
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, either find the Flask app process and terminate it, change the "
+"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
+"IMPORTANT: In some cases, you may have launched the web app yet your browser"
+" cannot view it. If this happens, please restart your browser."
+msgstr ""
+"პირველად გაშვებისას, გთხოვთ, წაიკითხოთ: როგორც კი ჩატვირთავთ კროსვორდს და "
+"გსურთ სხვა ჩატვირთოთ, ჯერ უნდა შეწყვიტოთ ვებ აპი. მნიშვნელოვანია: თუ თქვენ "
+"მუშაობთ macOS-ზე, აპლიკაციის იძულებით დატოვება (cmd+q-ის გამოყენებით) სანამ "
+"ვებ აპლიკაცია მუშაობს, ხელს შეუშლის მის სწორად შეწყვეტას. თუ ამას შეცდომით "
+"აკეთებთ, იპოვეთ Flask აპის პროცესი და შეწყვიტეთ იგი, შეცვალეთ `webapp_port` "
+"ნომერი src/config.ini-ში, ან გადატვირთეთ კომპიუტერი. ასევე მნიშვნელოვანია: "
+"ზოგიერთ შემთხვევაში, თქვენ შეიძლება გაუშვით ვებ აპი, მაგრამ თქვენს ბრაუზერს "
+"არ შეუძლია მისი ნახვა. თუ ეს მოხდება, გთხოვთ გადატვირთოთ თქვენი ბრაუზერი."
+
+#: src/cword_webapp/templates/index.html:13
+msgid "Crossword Puzzle - Game"
+msgstr "კროსვორდის თავსატეხი - თამაში"
+
+#: src/cword_webapp/templates/index.html:91
+msgid "Across"
+msgstr "გადაღმა"
+
+#: src/cword_webapp/templates/index.html:108
+msgid "Down"
+msgstr "ქვემოთ"
+
+#: src/cword_webapp/templates/index.html:125
+msgid "You completed the crossword!"
+msgstr "თქვენ დაასრულეთ კროსვორდი!"
+
+#: src/cword_webapp/templates/index.html:126
+msgid "Close"
+msgstr "დახურვა"
+
+msgid "Easy"
+msgstr "Ადვილი"
+
+msgid "Medium"
+msgstr "საშუალო"
+
+msgid "Hard"
+msgstr "მძიმე"
+
+msgid "Extreme"
+msgstr "ექსტრემალური"
+
+#~ msgid ""
+#~ "First time launch, please read:\n"
+#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
+#~ "\n"
+#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
+#~ "\n"
+#~ "Also important to know:\n"
+#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
+#~ msgstr ""

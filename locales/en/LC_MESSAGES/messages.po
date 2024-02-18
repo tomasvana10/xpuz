@@ -1,20 +1,214 @@
 # English translations for crossword_puzzle.
 # Copyright (C) 2024 Tomas Vana
-# This file is distributed under the same license as the PROJECT project.
+# This file is distributed under the same license as the crossword_puzzle
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-01-11 23:12+1100\n"
-"PO-Revision-Date: 2024-01-23 14:13+1100\n"
+"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: en\n"
 "Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
+#: src/main.py:66
+msgid "Crossword Puzzle"
+msgstr ""
+
+#: src/main.py:75
+msgid "View crosswords"
+msgstr ""
+
+#: src/main.py:79
+msgid "Exit the app"
+msgstr ""
+
+#: src/main.py:84
+msgid "Global Settings"
+msgstr ""
+
+#: src/main.py:88
+msgid "🌐 Languages"
+msgstr ""
+
+#: src/main.py:95
+msgid "Size"
+msgstr ""
+
+#: src/main.py:104
+msgid "light"
+msgstr ""
+
+#: src/main.py:104
+msgid "dark"
+msgstr ""
+
+#: src/main.py:104
+msgid "system"
+msgstr ""
+
+#: src/main.py:105
+msgid "Appearance"
+msgstr ""
+
+#: src/main.py:248
+msgid "Crossword Browser"
+msgstr ""
+
+#: src/main.py:252
+msgid "Go back"
+msgstr ""
+
+#: src/main.py:256
+msgid "Load crossword"
+msgstr ""
+
+#: src/main.py:260
+msgid "Open web app"
+msgstr ""
+
+#: src/main.py:264
+msgid "Terminate web app"
+msgstr ""
+
+#: src/main.py:270
+msgid "Word count preferences"
+msgstr ""
+
+#: src/main.py:278 src/main.py:308
+msgid "Select word count"
+msgstr ""
+
+#: src/main.py:280 src/main.py:491
+msgid "Maximum"
+msgstr ""
+
+#: src/main.py:285
+msgid "Custom"
+msgstr ""
+
+#: src/main.py:539
+msgid "Total words"
+msgstr ""
+
+#: src/main.py:543
+msgid "Difficulty"
+msgstr ""
+
+#: src/main.py:543
+msgid "difficulty"
+msgstr ""
+
+#: src/main.py:545
+msgid "Select"
+msgstr ""
+
+#: src/main.py:584
+msgid "Restart"
+msgstr ""
+
+#: src/main.py:584
+msgid "Are you sure you want to restart the app?"
+msgstr ""
+
+#: src/main.py:588
+msgid "Exit"
+msgstr ""
+
+#: src/main.py:589
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr ""
+
+#: src/main.py:594
+msgid "Back to home"
+msgstr ""
+
+#: src/main.py:595
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr ""
+
+#: src/main.py:608 src/main.py:611 src/main.py:614
+msgid "Error"
+msgstr ""
+
+#: src/main.py:608
+msgid "This language is already selected."
+msgstr ""
+
+#: src/main.py:611
+msgid "This size is already selected."
+msgstr ""
+
+#: src/main.py:614
+msgid "This appearance is already selected."
+msgstr ""
+
+#: src/main.py:617
+msgid "Info"
+msgstr ""
+
+#: src/main.py:618
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, either find the Flask app process and terminate it, change the "
+"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
+"IMPORTANT: In some cases, you may have launched the web app yet your browser"
+" cannot view it. If this happens, please restart your browser."
+msgstr ""
+
+#: src/cword_webapp/templates/index.html:13
+msgid "Crossword Puzzle - Game"
+msgstr ""
+
+#: src/cword_webapp/templates/index.html:91
+msgid "Across"
+msgstr ""
+
+#: src/cword_webapp/templates/index.html:108
+msgid "Down"
+msgstr ""
+
+#: src/cword_webapp/templates/index.html:125
+msgid "You completed the crossword!"
+msgstr ""
+
+#: src/cword_webapp/templates/index.html:126
+msgid "Close"
+msgstr ""
+
+msgid "Easy"
+msgstr ""
+
+msgid "Medium"
+msgstr ""
+
+msgid "Hard"
+msgstr ""
+
+msgid "Extreme"
+msgstr ""
+
+#~ msgid ""
+#~ "First time launch, please read:\n"
+#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
+#~ "\n"
+#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
+#~ "\n"
+#~ "Also important to know:\n"
+#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
+#~ msgstr ""

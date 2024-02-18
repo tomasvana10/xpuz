@@ -1,20 +1,227 @@
 # Māori translations for crossword_puzzle.
 # Copyright (C) 2024 Tomas Vana
-# This file is distributed under the same license as the PROJECT project.
+# This file is distributed under the same license as the crossword_puzzle
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-01-11 23:12+1100\n"
-"PO-Revision-Date: 2024-01-23 14:13+1100\n"
+"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: mi\n"
 "Language-Team: mi <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: mi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
+#: src/main.py:66
+msgid "Crossword Puzzle"
+msgstr "Whakawhiti Kupu"
+
+#: src/main.py:75
+msgid "View crosswords"
+msgstr "Tirohia nga kupu whakawhiti"
+
+#: src/main.py:79
+msgid "Exit the app"
+msgstr "Puta atu i te taupānga"
+
+#: src/main.py:84
+msgid "Global Settings"
+msgstr "Tautuhinga Ao"
+
+#: src/main.py:88
+msgid "🌐 Languages"
+msgstr "🌐 Reo"
+
+#: src/main.py:95
+msgid "Size"
+msgstr "Rahi"
+
+#: src/main.py:104
+msgid "light"
+msgstr "marama"
+
+#: src/main.py:104
+msgid "dark"
+msgstr "pouri"
+
+#: src/main.py:104
+msgid "system"
+msgstr "pūnaha"
+
+#: src/main.py:105
+msgid "Appearance"
+msgstr "Te ahua"
+
+#: src/main.py:248
+msgid "Crossword Browser"
+msgstr "Pūtirotiro Crossword"
+
+#: src/main.py:252
+msgid "Go back"
+msgstr "Hoki atu"
+
+#: src/main.py:256
+msgid "Load crossword"
+msgstr "Utaina te kupu whakawhiti"
+
+#: src/main.py:260
+msgid "Open web app"
+msgstr "Tuwhera te taupānga tukutuku"
+
+#: src/main.py:264
+msgid "Terminate web app"
+msgstr "Whakamutua te taupānga tukutuku"
+
+#: src/main.py:270
+msgid "Word count preferences"
+msgstr "Nga manakohanga tatau kupu"
+
+#: src/main.py:278 src/main.py:308
+msgid "Select word count"
+msgstr "Tīpakohia te tatau kupu"
+
+#: src/main.py:280 src/main.py:491
+msgid "Maximum"
+msgstr "Mōrahi"
+
+#: src/main.py:285
+msgid "Custom"
+msgstr "Ritenga"
+
+#: src/main.py:539
+msgid "Total words"
+msgstr "Kupu katoa"
+
+#: src/main.py:543
+msgid "Difficulty"
+msgstr "Te uaua"
+
+#: src/main.py:543
+msgid "difficulty"
+msgstr "uaua"
+
+#: src/main.py:545
+msgid "Select"
+msgstr "Tīpakohia"
+
+#: src/main.py:584
+msgid "Restart"
+msgstr "Tīmata anō"
+
+#: src/main.py:584
+msgid "Are you sure you want to restart the app?"
+msgstr "Kei te tino hiahia koe ki te whakaara ano i te taupānga?"
+
+#: src/main.py:588
+msgid "Exit"
+msgstr "Putaatu"
+
+#: src/main.py:589
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr ""
+"Kei te tino hiahia koe ki te puta atu i te taupānga? Mena kei te rere te "
+"taupānga tukutuku, ka mutu."
+
+#: src/main.py:594
+msgid "Back to home"
+msgstr "Hoki ki te kainga"
+
+#: src/main.py:595
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr ""
+"Kei te tino hiahia koe ki te hoki ki te mata o te kainga? Ka whakamutua te "
+"taupānga tukutuku."
+
+#: src/main.py:608 src/main.py:611 src/main.py:614
+msgid "Error"
+msgstr "Hapa"
+
+#: src/main.py:608
+msgid "This language is already selected."
+msgstr "Kua tohua kē tēnei reo."
+
+#: src/main.py:611
+msgid "This size is already selected."
+msgstr "Kua tohua kē tēnei rahi."
+
+#: src/main.py:614
+msgid "This appearance is already selected."
+msgstr "Kua tohua kē tēnei ahua."
+
+#: src/main.py:617
+msgid "Info"
+msgstr "Nga korero"
+
+#: src/main.py:618
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, either find the Flask app process and terminate it, change the "
+"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
+"IMPORTANT: In some cases, you may have launched the web app yet your browser"
+" cannot view it. If this happens, please restart your browser."
+msgstr ""
+"Ko te whakarewatanga tuatahi, panuihia: Ina utaina e koe he kupu whakawhiti,"
+" me te hiahia ki te uta i tetahi atu, me whakamutu i te taupānga tukutuku. "
+"HE MEA NUI: Mena kei runga koe i te macOS, tohe ki te whakamutu i te tono "
+"(ma te whakamahi cmd+q) i te wa e rere ana te taupānga tukutuku ka kore e "
+"mutu tika. Ki te pohehe koe i tenei mahi, kimihia te tukanga taupānga Flask "
+"ka whakamutua, hurihia te nama `webapp_port` i src/config.ini, ka whakaara "
+"ano ranei i to rorohiko. HE WHAKANUI HOKI: I etahi wa, kua whakarewahia pea "
+"e koe te taupānga tukutuku engari kaore e taea e to kaitirotiro te tiro. "
+"Mena ka pa mai tenei, me whakaara ano to kaitirotiro."
+
+#: src/cword_webapp/templates/index.html:13
+msgid "Crossword Puzzle - Game"
+msgstr "Whakawhiti Kupu - Kemu"
+
+#: src/cword_webapp/templates/index.html:91
+msgid "Across"
+msgstr "Puta noa"
+
+#: src/cword_webapp/templates/index.html:108
+msgid "Down"
+msgstr "Ki raro"
+
+#: src/cword_webapp/templates/index.html:125
+msgid "You completed the crossword!"
+msgstr "Kua oti i a koe te kupu whakawhiti!"
+
+#: src/cword_webapp/templates/index.html:126
+msgid "Close"
+msgstr "Katia"
+
+msgid "Easy"
+msgstr "Māmā"
+
+msgid "Medium"
+msgstr "Waenga"
+
+msgid "Hard"
+msgstr "pakeke"
+
+msgid "Extreme"
+msgstr "Tino"
+
+#~ msgid ""
+#~ "First time launch, please read:\n"
+#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
+#~ "\n"
+#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
+#~ "\n"
+#~ "Also important to know:\n"
+#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
+#~ msgstr ""

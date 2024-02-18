@@ -1,20 +1,227 @@
 # Bulgarian translations for crossword_puzzle.
 # Copyright (C) 2024 Tomas Vana
-# This file is distributed under the same license as the PROJECT project.
+# This file is distributed under the same license as the crossword_puzzle
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-01-11 23:12+1100\n"
-"PO-Revision-Date: 2024-01-23 14:13+1100\n"
+"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: bg\n"
 "Language-Team: bg <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
+#: src/main.py:66
+msgid "Crossword Puzzle"
+msgstr "Кръстословица"
+
+#: src/main.py:75
+msgid "View crosswords"
+msgstr "Вижте кръстословици"
+
+#: src/main.py:79
+msgid "Exit the app"
+msgstr "Излезте от приложението"
+
+#: src/main.py:84
+msgid "Global Settings"
+msgstr "Глобални настройки"
+
+#: src/main.py:88
+msgid "🌐 Languages"
+msgstr "🌐 Езици"
+
+#: src/main.py:95
+msgid "Size"
+msgstr "Размер"
+
+#: src/main.py:104
+msgid "light"
+msgstr "светлина"
+
+#: src/main.py:104
+msgid "dark"
+msgstr "тъмно"
+
+#: src/main.py:104
+msgid "system"
+msgstr "система"
+
+#: src/main.py:105
+msgid "Appearance"
+msgstr "Външен вид"
+
+#: src/main.py:248
+msgid "Crossword Browser"
+msgstr "Браузър за кръстословици"
+
+#: src/main.py:252
+msgid "Go back"
+msgstr "Върни се"
+
+#: src/main.py:256
+msgid "Load crossword"
+msgstr "Зареди кръстословица"
+
+#: src/main.py:260
+msgid "Open web app"
+msgstr "Отворете уеб приложението"
+
+#: src/main.py:264
+msgid "Terminate web app"
+msgstr "Прекратете уеб приложението"
+
+#: src/main.py:270
+msgid "Word count preferences"
+msgstr "Предпочитания за брой думи"
+
+#: src/main.py:278 src/main.py:308
+msgid "Select word count"
+msgstr "Изберете брой думи"
+
+#: src/main.py:280 src/main.py:491
+msgid "Maximum"
+msgstr "Максимум"
+
+#: src/main.py:285
+msgid "Custom"
+msgstr "Персонализиран"
+
+#: src/main.py:539
+msgid "Total words"
+msgstr "Общо думи"
+
+#: src/main.py:543
+msgid "Difficulty"
+msgstr "Трудност"
+
+#: src/main.py:543
+msgid "difficulty"
+msgstr "трудност"
+
+#: src/main.py:545
+msgid "Select"
+msgstr "Изберете"
+
+#: src/main.py:584
+msgid "Restart"
+msgstr "Рестартирам"
+
+#: src/main.py:584
+msgid "Are you sure you want to restart the app?"
+msgstr "Сигурни ли сте, че искате да рестартирате приложението?"
+
+#: src/main.py:588
+msgid "Exit"
+msgstr "Изход"
+
+#: src/main.py:589
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr ""
+"Сигурни ли сте, че искате да излезете от приложението? Ако уеб приложението "
+"работи, то ще бъде прекратено."
+
+#: src/main.py:594
+msgid "Back to home"
+msgstr "Обратно в къщи"
+
+#: src/main.py:595
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr ""
+"Сигурни ли сте, че искате да се върнете към началния екран? Уеб приложението"
+" ще бъде прекратено."
+
+#: src/main.py:608 src/main.py:611 src/main.py:614
+msgid "Error"
+msgstr "Грешка"
+
+#: src/main.py:608
+msgid "This language is already selected."
+msgstr "Този език вече е избран."
+
+#: src/main.py:611
+msgid "This size is already selected."
+msgstr "Този размер вече е избран."
+
+#: src/main.py:614
+msgid "This appearance is already selected."
+msgstr "Този вид вече е избран."
+
+#: src/main.py:617
+msgid "Info"
+msgstr "Информация"
+
+#: src/main.py:618
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, either find the Flask app process and terminate it, change the "
+"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
+"IMPORTANT: In some cases, you may have launched the web app yet your browser"
+" cannot view it. If this happens, please restart your browser."
+msgstr ""
+"Първо стартиране, моля, прочетете: След като сте заредили кръстословица и "
+"искате да заредите друга, първо трябва да прекратите уеб приложението. "
+"ВАЖНО: Ако сте на macOS, принудителното излизане от приложението (чрез "
+"cmd+q), докато уеб приложението работи, ще попречи на правилното му "
+"прекратяване. Ако направите това по погрешка, или намерете процеса на "
+"приложението Flask и го прекратете, променете номера на `webapp_port` в "
+"src/config.ini, или рестартирайте компютъра си. СЪЩО ВАЖНО: В някои случаи "
+"може да сте стартирали уеб приложението, но вашият браузър не може да го "
+"види. Ако това се случи, моля, рестартирайте браузъра си."
+
+#: src/cword_webapp/templates/index.html:13
+msgid "Crossword Puzzle - Game"
+msgstr "Кръстословица - игра"
+
+#: src/cword_webapp/templates/index.html:91
+msgid "Across"
+msgstr "През"
+
+#: src/cword_webapp/templates/index.html:108
+msgid "Down"
+msgstr "Надолу"
+
+#: src/cword_webapp/templates/index.html:125
+msgid "You completed the crossword!"
+msgstr "Попълнихте кръстословицата!"
+
+#: src/cword_webapp/templates/index.html:126
+msgid "Close"
+msgstr "Близо"
+
+msgid "Easy"
+msgstr "лесно"
+
+msgid "Medium"
+msgstr "Среден"
+
+msgid "Hard"
+msgstr "Твърд"
+
+msgid "Extreme"
+msgstr "Екстремни"
+
+#~ msgid ""
+#~ "First time launch, please read:\n"
+#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
+#~ "\n"
+#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
+#~ "\n"
+#~ "Also important to know:\n"
+#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
+#~ msgstr ""

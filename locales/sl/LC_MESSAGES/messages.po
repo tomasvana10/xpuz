@@ -1,21 +1,227 @@
 # Slovenian translations for crossword_puzzle.
 # Copyright (C) 2024 Tomas Vana
-# This file is distributed under the same license as the PROJECT project.
+# This file is distributed under the same license as the crossword_puzzle
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-01-11 23:12+1100\n"
-"PO-Revision-Date: 2024-01-23 14:13+1100\n"
+"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: sl\n"
 "Language-Team: sl <LL@li.org>\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 "
-"|| n%100==4 ? 2 : 3);\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 "Generated-By: Babel 2.14.0\n"
 
+#: src/main.py:66
+msgid "Crossword Puzzle"
+msgstr "Križanka"
+
+#: src/main.py:75
+msgid "View crosswords"
+msgstr "Oglejte si križanke"
+
+#: src/main.py:79
+msgid "Exit the app"
+msgstr "Zapustite aplikacijo"
+
+#: src/main.py:84
+msgid "Global Settings"
+msgstr "Globalne nastavitve"
+
+#: src/main.py:88
+msgid "🌐 Languages"
+msgstr "🌐 Jeziki"
+
+#: src/main.py:95
+msgid "Size"
+msgstr "Velikost"
+
+#: src/main.py:104
+msgid "light"
+msgstr "svetloba"
+
+#: src/main.py:104
+msgid "dark"
+msgstr "temno"
+
+#: src/main.py:104
+msgid "system"
+msgstr "sistem"
+
+#: src/main.py:105
+msgid "Appearance"
+msgstr "Videz"
+
+#: src/main.py:248
+msgid "Crossword Browser"
+msgstr "Brskalnik križank"
+
+#: src/main.py:252
+msgid "Go back"
+msgstr "Pojdi nazaj"
+
+#: src/main.py:256
+msgid "Load crossword"
+msgstr "Naloži križanko"
+
+#: src/main.py:260
+msgid "Open web app"
+msgstr "Odprite spletno aplikacijo"
+
+#: src/main.py:264
+msgid "Terminate web app"
+msgstr "Prekini spletno aplikacijo"
+
+#: src/main.py:270
+msgid "Word count preferences"
+msgstr "Nastavitve števila besed"
+
+#: src/main.py:278 src/main.py:308
+msgid "Select word count"
+msgstr "Izberite število besed"
+
+#: src/main.py:280 src/main.py:491
+msgid "Maximum"
+msgstr "Največ"
+
+#: src/main.py:285
+msgid "Custom"
+msgstr "Po meri"
+
+#: src/main.py:539
+msgid "Total words"
+msgstr "Skupaj besed"
+
+#: src/main.py:543
+msgid "Difficulty"
+msgstr "Težavnost"
+
+#: src/main.py:543
+msgid "difficulty"
+msgstr "težavnost"
+
+#: src/main.py:545
+msgid "Select"
+msgstr "Izberite"
+
+#: src/main.py:584
+msgid "Restart"
+msgstr "Ponovni zagon"
+
+#: src/main.py:584
+msgid "Are you sure you want to restart the app?"
+msgstr "Ali ste prepričani, da želite znova zagnati aplikacijo?"
+
+#: src/main.py:588
+msgid "Exit"
+msgstr "Izhod"
+
+#: src/main.py:589
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr ""
+"Ali ste prepričani, da želite zapreti aplikacijo? Če se spletna aplikacija "
+"izvaja, bo prekinjena."
+
+#: src/main.py:594
+msgid "Back to home"
+msgstr "Nazaj domov"
+
+#: src/main.py:595
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr ""
+"Ali ste prepričani, da se želite vrniti na začetni zaslon? Spletna "
+"aplikacija bo ukinjena."
+
+#: src/main.py:608 src/main.py:611 src/main.py:614
+msgid "Error"
+msgstr "Napaka"
+
+#: src/main.py:608
+msgid "This language is already selected."
+msgstr "Ta jezik je že izbran."
+
+#: src/main.py:611
+msgid "This size is already selected."
+msgstr "Ta velikost je že izbrana."
+
+#: src/main.py:614
+msgid "This appearance is already selected."
+msgstr "Ta videz je že izbran."
+
+#: src/main.py:617
+msgid "Info"
+msgstr "Informacije"
+
+#: src/main.py:618
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, either find the Flask app process and terminate it, change the "
+"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
+"IMPORTANT: In some cases, you may have launched the web app yet your browser"
+" cannot view it. If this happens, please restart your browser."
+msgstr ""
+"Ob prvem zagonu preberite: Ko naložite križanko in želite naložiti še eno, "
+"morate najprej zapreti spletno aplikacijo. POMEMBNO: Če uporabljate macOS, "
+"prisilno zapiranje aplikacije (z uporabo cmd+q), medtem ko se spletna "
+"aplikacija izvaja, bo preprečila njeno pravilno zaustavitev. Če to storite "
+"pomotoma, bodisi poiščite proces aplikacije Flask in ga zaključite, "
+"spremenite številko `webapp_port` v src/config.ini ali znova zaženite "
+"računalnik. POMEMBNO TUDI: V nekaterih primerih ste morda zagnali spletno "
+"aplikacijo, vendar je vaš brskalnik ne vidi. Če se to zgodi, znova zaženite "
+"brskalnik."
+
+#: src/cword_webapp/templates/index.html:13
+msgid "Crossword Puzzle - Game"
+msgstr "Križanka - igra"
+
+#: src/cword_webapp/templates/index.html:91
+msgid "Across"
+msgstr "Čez"
+
+#: src/cword_webapp/templates/index.html:108
+msgid "Down"
+msgstr "Dol"
+
+#: src/cword_webapp/templates/index.html:125
+msgid "You completed the crossword!"
+msgstr "Rešili ste križanko!"
+
+#: src/cword_webapp/templates/index.html:126
+msgid "Close"
+msgstr "Zapri"
+
+msgid "Easy"
+msgstr "enostavno"
+
+msgid "Medium"
+msgstr "Srednje"
+
+msgid "Hard"
+msgstr "težko"
+
+msgid "Extreme"
+msgstr "Ekstremno"
+
+#~ msgid ""
+#~ "First time launch, please read:\n"
+#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
+#~ "\n"
+#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
+#~ "\n"
+#~ "Also important to know:\n"
+#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
+#~ msgstr ""

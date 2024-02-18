@@ -1,20 +1,228 @@
 # Sundanese translations for crossword_puzzle.
 # Copyright (C) 2024 Tomas Vana
-# This file is distributed under the same license as the PROJECT project.
+# This file is distributed under the same license as the crossword_puzzle
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-01-11 23:12+1100\n"
-"PO-Revision-Date: 2024-01-23 14:13+1100\n"
+"POT-Creation-Date: 2024-02-18 17:07+1100\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: su\n"
 "Language-Team: su <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: su\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
+#: src/main.py:66
+msgid "Crossword Puzzle"
+msgstr "Teka-teki silang"
+
+#: src/main.py:75
+msgid "View crosswords"
+msgstr "Témbongkeun crosswords"
+
+#: src/main.py:79
+msgid "Exit the app"
+msgstr "Kaluar tina aplikasi"
+
+#: src/main.py:84
+msgid "Global Settings"
+msgstr "Setélan Global"
+
+#: src/main.py:88
+msgid "🌐 Languages"
+msgstr "🌐 Basa"
+
+#: src/main.py:95
+msgid "Size"
+msgstr "Ukuran"
+
+#: src/main.py:104
+msgid "light"
+msgstr "cahayaan"
+
+#: src/main.py:104
+msgid "dark"
+msgstr "poek"
+
+#: src/main.py:104
+msgid "system"
+msgstr "sistem"
+
+#: src/main.py:105
+msgid "Appearance"
+msgstr "Penampilan"
+
+#: src/main.py:248
+msgid "Crossword Browser"
+msgstr "Crossword Browser"
+
+#: src/main.py:252
+msgid "Go back"
+msgstr "Uih deui"
+
+#: src/main.py:256
+msgid "Load crossword"
+msgstr "Ngamuat crossword"
+
+#: src/main.py:260
+msgid "Open web app"
+msgstr "Buka aplikasi wéb"
+
+#: src/main.py:264
+msgid "Terminate web app"
+msgstr "Pareuman aplikasi wéb"
+
+#: src/main.py:270
+msgid "Word count preferences"
+msgstr "Preferensi cacah kecap"
+
+#: src/main.py:278 src/main.py:308
+msgid "Select word count"
+msgstr "Pilih jumlah kecap"
+
+#: src/main.py:280 src/main.py:491
+msgid "Maximum"
+msgstr "maksimal"
+
+#: src/main.py:285
+msgid "Custom"
+msgstr "Adat"
+
+#: src/main.py:539
+msgid "Total words"
+msgstr "Jumlah kecap"
+
+#: src/main.py:543
+msgid "Difficulty"
+msgstr "Kasusah"
+
+#: src/main.py:543
+msgid "difficulty"
+msgstr "kasusah"
+
+#: src/main.py:545
+msgid "Select"
+msgstr "Pilih"
+
+#: src/main.py:584
+msgid "Restart"
+msgstr "Uihan deui"
+
+#: src/main.py:584
+msgid "Are you sure you want to restart the app?"
+msgstr "Naha anjeun yakin hoyong ngabalikan deui aplikasi?"
+
+#: src/main.py:588
+msgid "Exit"
+msgstr "Kaluar"
+
+#: src/main.py:589
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr ""
+"Naha anjeun yakin hoyong kaluar tina aplikasi? Upami aplikasi wéb "
+"dijalankeun, éta bakal dileungitkeun."
+
+#: src/main.py:594
+msgid "Back to home"
+msgstr "Balik ka imah"
+
+#: src/main.py:595
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr ""
+"Naha anjeun yakin rék balik deui ka layar utama? Aplikasi wéb bakal "
+"dipareuman."
+
+#: src/main.py:608 src/main.py:611 src/main.py:614
+msgid "Error"
+msgstr "Kasalahan"
+
+#: src/main.py:608
+msgid "This language is already selected."
+msgstr "Basa ieu geus dipilih."
+
+#: src/main.py:611
+msgid "This size is already selected."
+msgstr "Ukuran ieu geus dipilih."
+
+#: src/main.py:614
+msgid "This appearance is already selected."
+msgstr "Penampilan ieu parantos dipilih."
+
+#: src/main.py:617
+msgid "Info"
+msgstr "Inpo"
+
+#: src/main.py:618
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, either find the Flask app process and terminate it, change the "
+"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
+"IMPORTANT: In some cases, you may have launched the web app yet your browser"
+" cannot view it. If this happens, please restart your browser."
+msgstr ""
+"Peluncuran pertama kali, mangga baca: Sakali anjeun parantos ngamuat silang,"
+" sareng hoyong ngamuat anu sanés, anjeun kedah ngeureunkeun heula aplikasi "
+"wéb. PENTING: Upami anjeun nganggo macOS, maksakeun kaluar aplikasina "
+"(nganggo cmd+q) nalika aplikasi wéb dijalankeun bakal nyegah éta "
+"ngeureunkeunana leres. Upami anjeun lepat ngalakukeun ieu, boh milarian "
+"prosés aplikasi Flask sareng ngeureunkeunana, ganti nomer `webapp_port` dina"
+" src/config.ini, atanapi balikan deui komputer anjeun. PENTING OGE: Dina "
+"sababaraha kasus, anjeun tiasa ngaluncurkeun aplikasi wéb tapi panyungsi "
+"anjeun henteu tiasa ningali éta. Upami ieu kajadian, mangga balikan deui "
+"panyungsi anjeun."
+
+#: src/cword_webapp/templates/index.html:13
+msgid "Crossword Puzzle - Game"
+msgstr "Crossword Puzzle - Kaulinan"
+
+#: src/cword_webapp/templates/index.html:91
+msgid "Across"
+msgstr "Meuntas"
+
+#: src/cword_webapp/templates/index.html:108
+msgid "Down"
+msgstr "Turun"
+
+#: src/cword_webapp/templates/index.html:125
+msgid "You completed the crossword!"
+msgstr "Anjeun ngalengkepan crossword!"
+
+#: src/cword_webapp/templates/index.html:126
+msgid "Close"
+msgstr "Tutup"
+
+msgid "Easy"
+msgstr "gampil"
+
+msgid "Medium"
+msgstr "Sedeng"
+
+msgid "Hard"
+msgstr "Teuas"
+
+msgid "Extreme"
+msgstr "Ekstrim"
+
+#~ msgid ""
+#~ "First time launch, please read:\n"
+#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
+#~ "\n"
+#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
+#~ "\n"
+#~ "Also important to know:\n"
+#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
+#~ msgstr ""
