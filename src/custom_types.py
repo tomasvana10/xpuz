@@ -1,5 +1,6 @@
 '''Custom types for type annotation in the source code of crossword_puzzle.'''
 
+
 from typing import List, Tuple, Union, TypedDict
 
 class Placement(TypedDict):

@@ -7,9 +7,9 @@ import os
 from time import sleep
 from copy import deepcopy
 from typing import List, Dict, Tuple, Union
+from configparser import ConfigParser
 
 import customtkinter as ctk 
-from configparser import ConfigParser
 from babel import Locale, numbers
 from PIL import Image
 
@@ -305,7 +305,7 @@ class CrosswordBrowser(ctk.CTkFrame):
         self.b_load_selected_cword.grid(row=0, column=0, sticky="nsew", padx=7, pady=7)
         self.b_open_cword_webapp.grid(row=0, column=1, sticky="nsew", padx=7, pady=7)
         self.b_terminate_cword_webapp.grid(row=1, column=0, columnspan=2, sticky="nsew", padx=77.5, pady=7)
-        self.l_word_count_preferences.grid(row=0, column=0, columnspan=2, pady=(5, 0))
+        self.l_word_count_preferences.grid(row=0, column=0, columnspan=2, pady=(5, 10))
         self.radiobutton_max_word_count.grid(row=1, column=0, padx=7, pady=7)
         self.radiobutton_custom_word_count.grid(row=2, column=0, padx=7, pady=7)  
         self.custom_word_count_optionmenu.grid(row=3, column=0, padx=7, pady=7)

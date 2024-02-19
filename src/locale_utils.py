@@ -4,6 +4,7 @@ inconsistencies with the locale naming conventions of Babel's `Locales` class.
 The class uses `_write_locales` to initialise all of the locale folders based on the parsed locales.
 
 NOTE: `_write_locales` only works on macOS currently.
+NOTE: Requires the googletrans module, which is not listed in `requirements.txt`.
 '''
 
 import subprocess
@@ -12,6 +13,7 @@ from typing import Dict
 import googletrans
 
 from constants import LanguageReplacementsForPybabel
+
 
 class LocaleUtils:
     @staticmethod

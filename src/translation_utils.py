@@ -8,6 +8,7 @@ from google.cloud import translate_v2
 
 from constants import Paths, LanguageReplacementsForPybabel
 
+
 class LocaleTranslatorUtils:
     @staticmethod
     def update_msgstrs() -> None:
