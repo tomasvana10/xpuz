@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-18 21:00+1100\n"
+"POT-Creation-Date: 2024-02-19 10:18+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ig <LL@li.org>\n"
@@ -59,110 +59,110 @@ msgstr "usoro"
 msgid "Appearance"
 msgstr "Ọdịdị"
 
-#: src/main.py:254
+#: src/main.py:252
 msgid "Crossword Browser"
 msgstr "Ihe nchọgharị okwu crossword"
 
-#: src/main.py:256
+#: src/main.py:254
 msgid "Go back"
 msgstr "Laghachi azụ"
 
-#: src/main.py:261
+#: src/main.py:259
 msgid "Load crossword"
 msgstr "Ibu okwu ntughari"
 
-#: src/main.py:265
+#: src/main.py:263
 msgid "Open web app"
 msgstr "Mepee ngwa weebụ"
 
-#: src/main.py:269
+#: src/main.py:267
 msgid "Terminate web app"
 msgstr "Kwụsị ngwa weebụ"
 
-#: src/main.py:275
+#: src/main.py:273
 msgid "Word count preferences"
 msgstr "Mmasị ọnụọgụ okwu"
 
-#: src/main.py:282 src/main.py:320
+#: src/main.py:280 src/main.py:318
 msgid "Select word count"
 msgstr "Họrọ ọnụ ọgụgụ okwu"
 
-#: src/main.py:286 src/main.py:503
+#: src/main.py:284 src/main.py:501
 msgid "Maximum"
 msgstr "Kachasị"
 
-#: src/main.py:294
+#: src/main.py:292
 msgid "Custom"
 msgstr "Omenala"
 
-#: src/main.py:551
+#: src/main.py:549
 msgid "Total words"
 msgstr "Mkpokọta okwu"
 
-#: src/main.py:555
+#: src/main.py:553
 msgid "Difficulty"
 msgstr "Ihe isi ike"
 
-#: src/main.py:555
+#: src/main.py:553
 msgid "difficulty"
 msgstr "ike"
 
-#: src/main.py:557
+#: src/main.py:555
 msgid "Select"
 msgstr "Họrọ"
 
-#: src/main.py:597
+#: src/main.py:595
 msgid "Restart"
 msgstr "Malitegharịa ekwentị"
 
-#: src/main.py:597
+#: src/main.py:595
 msgid "Are you sure you want to restart the app?"
-msgstr "Ị ji n&#39;aka na ịchọrọ ịmalitegharị ngwa ahụ?"
+msgstr "Ị ji n'aka na ịchọrọ ịmalitegharị ngwa ahụ?"
 
-#: src/main.py:601
+#: src/main.py:599
 msgid "Exit"
 msgstr "Ụzọ ọpụpụ"
 
-#: src/main.py:602
+#: src/main.py:600
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr ""
-"Ị ji n&#39;aka na ịchọrọ ịpụ na ngwa ahụ? Ọ bụrụ na ngwa weebụ na-agba ọsọ, "
+"Ị ji n'aka na ịchọrọ ịpụ na ngwa ahụ? Ọ bụrụ na ngwa weebụ na-agba ọsọ, "
 "a ga-akwụsị ya."
 
-#: src/main.py:607
+#: src/main.py:605
 msgid "Back to home"
-msgstr "Laghachi n&#39;ụlọ"
+msgstr "Laghachi n'ụlọ"
 
-#: src/main.py:608
+#: src/main.py:606
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
-"Ị ji n&#39;aka na ịchọrọ ịlaghachi na ihuenyo ụlọ? A ga-akwụsị ngwa weebụ."
+"Ị ji n'aka na ịchọrọ ịlaghachi na ihuenyo ụlọ? A ga-akwụsị ngwa weebụ."
 
-#: src/main.py:621 src/main.py:624 src/main.py:627
+#: src/main.py:619 src/main.py:622 src/main.py:625
 msgid "Error"
 msgstr "Njehie"
 
-#: src/main.py:621
+#: src/main.py:619
 msgid "This language is already selected."
 msgstr "Asụsụ a ahọpụtalarị."
 
-#: src/main.py:624
+#: src/main.py:622
 msgid "This size is already selected."
 msgstr "Ahọpụtala nha a."
 
-#: src/main.py:627
+#: src/main.py:625
 msgid "This appearance is already selected."
 msgstr "Ahọpụtalarị ọdịdị a."
 
-#: src/main.py:630
+#: src/main.py:628
 msgid "Info"
 msgstr "Ozi"
 
-#: src/main.py:631
+#: src/main.py:629
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -176,9 +176,9 @@ msgstr ""
 "Mwepụta oge mbụ, biko gụọ: Ozugbo i bujuru okwu mkpagharị, ma chọọ ibu nke "
 "ọzọ, ị ga-ebu ụzọ kwụsị ngwa weebụ. Mkpa: Ọ bụrụ na ịnọ na macOS, manye "
 "ịkwụsị ngwa ahụ (iji cmd + q) ka ngwa weebụ na-agba ọsọ ga-egbochi ya ịkwụsị"
-" nke ọma. Ọ bụrụ na ịmee nke a n&#39;ụzọ hiere ụzọ, chọta usoro ngwa Flask "
+" nke ọma. Ọ bụrụ na ịmee nke a n'ụzọ hiere ụzọ, chọta usoro ngwa Flask "
 "wee kwụsị ya, gbanwee nọmba `webapp_port` na src/config.ini, ma ọ bụ "
-"malitegharịa kọmputa gị. Ọ dị mkpa: N&#39;ọnọdụ ụfọdụ, ị nwere ike ịmalitela"
+"malitegharịa kọmputa gị. Ọ dị mkpa: N'ọnọdụ ụfọdụ, ị nwere ike ịmalitela"
 " ngwa weebụ mana ihe nchọgharị gị enweghị ike ịhụ ya. Ọ bụrụ na nke a emee, "
 "biko malitegharịa ihe nchọgharị gị."
 
@@ -188,7 +188,7 @@ msgstr "Okwu mgbagwoju anya - Egwuregwu"
 
 #: src/cword_webapp/templates/index.html:91
 msgid "Across"
-msgstr "N&#39;ofe"
+msgstr "N'ofe"
 
 #: src/cword_webapp/templates/index.html:108
 msgid "Down"

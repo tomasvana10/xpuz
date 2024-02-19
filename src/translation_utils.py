@@ -19,20 +19,24 @@ class LocaleTranslatorUtils:
         dest_codes, localedir_names = LocaleTranslatorUtils.get_dest_codes_and_localedir_names()
 
         for i, localedir_name in enumerate(localedir_names):
-            pofile = polib.pofile(os.path.join(Paths.LOCALES_PATH, localedir_name, "LC_MESSAGES", "messages.po"))
-            untranslated_entries = pofile.untranslated_entries()
+            messages = polib.pofile(os.path.join(Paths.LOCALES_PATH, localedir_name, "LC_MESSAGES", "messages.po"))
+            untranslated_entries = messages.untranslated_entries()
 
             if not untranslated_entries:
                 continue
 
             updates: int = 0
             for entry in untranslated_entries:
+                text = entry.msgid
+                if isinstance(text, bytes):
+                    text = text.decode("utf-8")
                 if dest_codes[i] == "en": continue # Cannot translate english
-                entry.msgstr = client.translate(entry.msgid, target_language=dest_codes[i], source_language="en")["translatedText"]
+                entry.msgstr = client.translate(entry.msgid, target_language=dest_codes[i], 
+                                                source_language="en", format_="text")["translatedText"]
                 updates += 1
             
             print(f"Updated {updates} msgstrs for {localedir_name}")
-            pofile.save(newline=None)
+            messages.save(newline=None)
             
 
     @staticmethod
@@ -53,6 +57,17 @@ class LocaleTranslatorUtils:
     
         return [sorted(dest_codes), sorted(locales)]
     
+
+class CrosswordTranslatorUtils:
+    @staticmethod
+    def update_localised_cwords():
+        ...
+    
+    @staticmethod
+    def get_base_cwords():
+        ...
+
+
 if __name__ == "__main__":
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "src/googlekey.json"
     LocaleTranslatorUtils.update_msgstrs()

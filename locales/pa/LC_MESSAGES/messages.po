@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-18 21:00+1100\n"
+"POT-Creation-Date: 2024-02-19 10:18+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: pa <LL@li.org>\n"
@@ -59,111 +59,111 @@ msgstr "ਸਿਸਟਮ"
 msgid "Appearance"
 msgstr "ਦਿੱਖ"
 
-#: src/main.py:254
+#: src/main.py:252
 msgid "Crossword Browser"
 msgstr "ਕ੍ਰਾਸਵਰਡ ਬ੍ਰਾਊਜ਼ਰ"
 
-#: src/main.py:256
+#: src/main.py:254
 msgid "Go back"
 msgstr "ਵਾਪਸ ਜਾਓ"
 
-#: src/main.py:261
+#: src/main.py:259
 msgid "Load crossword"
 msgstr "ਕ੍ਰਾਸਵਰਡ ਲੋਡ ਕਰੋ"
 
-#: src/main.py:265
+#: src/main.py:263
 msgid "Open web app"
 msgstr "ਵੈੱਬ ਐਪ ਖੋਲ੍ਹੋ"
 
-#: src/main.py:269
+#: src/main.py:267
 msgid "Terminate web app"
 msgstr "ਵੈੱਬ ਐਪ ਬੰਦ ਕਰੋ"
 
-#: src/main.py:275
+#: src/main.py:273
 msgid "Word count preferences"
 msgstr "ਸ਼ਬਦ ਗਿਣਤੀ ਤਰਜੀਹਾਂ"
 
-#: src/main.py:282 src/main.py:320
+#: src/main.py:280 src/main.py:318
 msgid "Select word count"
 msgstr "ਸ਼ਬਦ ਗਿਣਤੀ ਚੁਣੋ"
 
-#: src/main.py:286 src/main.py:503
+#: src/main.py:284 src/main.py:501
 msgid "Maximum"
 msgstr "ਅਧਿਕਤਮ"
 
-#: src/main.py:294
+#: src/main.py:292
 msgid "Custom"
 msgstr "ਪ੍ਰਥਾ"
 
-#: src/main.py:551
+#: src/main.py:549
 msgid "Total words"
 msgstr "ਕੁੱਲ ਸ਼ਬਦ"
 
-#: src/main.py:555
+#: src/main.py:553
 msgid "Difficulty"
 msgstr "ਮੁਸ਼ਕਲ"
 
-#: src/main.py:555
+#: src/main.py:553
 msgid "difficulty"
 msgstr "ਮੁਸ਼ਕਲ"
 
-#: src/main.py:557
+#: src/main.py:555
 msgid "Select"
 msgstr "ਚੁਣੋ"
 
-#: src/main.py:597
+#: src/main.py:595
 msgid "Restart"
 msgstr "ਰੀਸਟਾਰਟ ਕਰੋ"
 
-#: src/main.py:597
+#: src/main.py:595
 msgid "Are you sure you want to restart the app?"
-msgstr "ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਤੌਰ &#39;ਤੇ ਐਪ ਨੂੰ ਰੀਸਟਾਰਟ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
+msgstr "ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਤੌਰ 'ਤੇ ਐਪ ਨੂੰ ਰੀਸਟਾਰਟ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
-#: src/main.py:601
+#: src/main.py:599
 msgid "Exit"
 msgstr "ਨਿਕਾਸ"
 
-#: src/main.py:602
+#: src/main.py:600
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr ""
-"ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਤੌਰ &#39;ਤੇ ਐਪ ਤੋਂ ਬਾਹਰ ਜਾਣਾ ਚਾਹੁੰਦੇ ਹੋ? ਜੇਕਰ ਵੈੱਬ ਐਪ ਚੱਲ ਰਹੀ"
+"ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਤੌਰ 'ਤੇ ਐਪ ਤੋਂ ਬਾਹਰ ਜਾਣਾ ਚਾਹੁੰਦੇ ਹੋ? ਜੇਕਰ ਵੈੱਬ ਐਪ ਚੱਲ ਰਹੀ"
 " ਹੈ, ਤਾਂ ਇਸਨੂੰ ਬੰਦ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ।"
 
-#: src/main.py:607
+#: src/main.py:605
 msgid "Back to home"
 msgstr "ਵਾਪਸ ਘਰ"
 
-#: src/main.py:608
+#: src/main.py:606
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
-"ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਤੌਰ &#39;ਤੇ ਹੋਮ ਸਕ੍ਰੀਨ &#39;ਤੇ ਵਾਪਸ ਜਾਣਾ ਚਾਹੁੰਦੇ ਹੋ? ਵੈੱਬ ਐਪ "
+"ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਤੌਰ 'ਤੇ ਹੋਮ ਸਕ੍ਰੀਨ 'ਤੇ ਵਾਪਸ ਜਾਣਾ ਚਾਹੁੰਦੇ ਹੋ? ਵੈੱਬ ਐਪ "
 "ਨੂੰ ਬੰਦ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ।"
 
-#: src/main.py:621 src/main.py:624 src/main.py:627
+#: src/main.py:619 src/main.py:622 src/main.py:625
 msgid "Error"
 msgstr "ਗਲਤੀ"
 
-#: src/main.py:621
+#: src/main.py:619
 msgid "This language is already selected."
 msgstr "ਇਹ ਭਾਸ਼ਾ ਪਹਿਲਾਂ ਹੀ ਚੁਣੀ ਹੋਈ ਹੈ।"
 
-#: src/main.py:624
+#: src/main.py:622
 msgid "This size is already selected."
 msgstr "ਇਹ ਆਕਾਰ ਪਹਿਲਾਂ ਹੀ ਚੁਣਿਆ ਹੋਇਆ ਹੈ।"
 
-#: src/main.py:627
+#: src/main.py:625
 msgid "This appearance is already selected."
 msgstr "ਇਹ ਦਿੱਖ ਪਹਿਲਾਂ ਹੀ ਚੁਣੀ ਹੋਈ ਹੈ।"
 
-#: src/main.py:630
+#: src/main.py:628
 msgid "Info"
 msgstr "ਜਾਣਕਾਰੀ"
 
-#: src/main.py:631
+#: src/main.py:629
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -176,7 +176,7 @@ msgid ""
 msgstr ""
 "ਪਹਿਲੀ ਵਾਰ ਲਾਂਚ, ਕਿਰਪਾ ਕਰਕੇ ਪੜ੍ਹੋ: ਇੱਕ ਵਾਰ ਜਦੋਂ ਤੁਸੀਂ ਇੱਕ ਕ੍ਰਾਸਵਰਡ ਲੋਡ ਕਰ "
 "ਲੈਂਦੇ ਹੋ, ਅਤੇ ਇੱਕ ਹੋਰ ਲੋਡ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਤੁਹਾਨੂੰ ਪਹਿਲਾਂ ਵੈੱਬ ਐਪ ਨੂੰ "
-"ਬੰਦ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ। ਮਹੱਤਵਪੂਰਨ: ਜੇਕਰ ਤੁਸੀਂ macOS &#39;ਤੇ ਹੋ, ਤਾਂ ਵੈੱਬ ਐਪ ਦੇ "
+"ਬੰਦ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ। ਮਹੱਤਵਪੂਰਨ: ਜੇਕਰ ਤੁਸੀਂ macOS 'ਤੇ ਹੋ, ਤਾਂ ਵੈੱਬ ਐਪ ਦੇ "
 "ਚੱਲਦੇ ਸਮੇਂ ਐਪਲੀਕੇਸ਼ਨ ਨੂੰ ਛੱਡਣ ਲਈ ਮਜਬੂਰ ਕਰੋ (cmd+q ਵਰਤਦੇ ਹੋਏ) ਇਸ ਨੂੰ ਸਹੀ ਢੰਗ "
 "ਨਾਲ ਬੰਦ ਹੋਣ ਤੋਂ ਰੋਕੇਗਾ। ਜੇਕਰ ਤੁਸੀਂ ਗਲਤੀ ਨਾਲ ਅਜਿਹਾ ਕਰਦੇ ਹੋ, ਜਾਂ ਤਾਂ ਫਲਾਸਕ ਐਪ "
 "ਪ੍ਰਕਿਰਿਆ ਨੂੰ ਲੱਭੋ ਅਤੇ ਇਸਨੂੰ ਸਮਾਪਤ ਕਰੋ, src/config.ini ਵਿੱਚ `webapp_port` "

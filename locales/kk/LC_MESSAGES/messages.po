@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-18 21:00+1100\n"
+"POT-Creation-Date: 2024-02-19 10:18+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: kk <LL@li.org>\n"
@@ -59,71 +59,71 @@ msgstr "жүйесі"
 msgid "Appearance"
 msgstr "Сыртқы түрі"
 
-#: src/main.py:254
+#: src/main.py:252
 msgid "Crossword Browser"
 msgstr "Кроссворд браузері"
 
-#: src/main.py:256
+#: src/main.py:254
 msgid "Go back"
 msgstr "Қайтып келу"
 
-#: src/main.py:261
+#: src/main.py:259
 msgid "Load crossword"
 msgstr "Кроссворд жүктеңіз"
 
-#: src/main.py:265
+#: src/main.py:263
 msgid "Open web app"
 msgstr "Веб қолданбасын ашыңыз"
 
-#: src/main.py:269
+#: src/main.py:267
 msgid "Terminate web app"
 msgstr "Веб қолданбаны тоқтату"
 
-#: src/main.py:275
+#: src/main.py:273
 msgid "Word count preferences"
 msgstr "Сөздерді санау теңшелімдері"
 
-#: src/main.py:282 src/main.py:320
+#: src/main.py:280 src/main.py:318
 msgid "Select word count"
 msgstr "Сөз санын таңдаңыз"
 
-#: src/main.py:286 src/main.py:503
+#: src/main.py:284 src/main.py:501
 msgid "Maximum"
 msgstr "Максималды"
 
-#: src/main.py:294
+#: src/main.py:292
 msgid "Custom"
 msgstr "Арнаулы"
 
-#: src/main.py:551
+#: src/main.py:549
 msgid "Total words"
 msgstr "Жалпы сөздер"
 
-#: src/main.py:555
+#: src/main.py:553
 msgid "Difficulty"
 msgstr "Қиындық"
 
-#: src/main.py:555
+#: src/main.py:553
 msgid "difficulty"
 msgstr "қиындық"
 
-#: src/main.py:557
+#: src/main.py:555
 msgid "Select"
 msgstr "таңдаңыз"
 
-#: src/main.py:597
+#: src/main.py:595
 msgid "Restart"
 msgstr "Қайтадан қосу"
 
-#: src/main.py:597
+#: src/main.py:595
 msgid "Are you sure you want to restart the app?"
 msgstr "Қолданбаны қайта іске қосқыңыз келетініне сенімдісіз бе?"
 
-#: src/main.py:601
+#: src/main.py:599
 msgid "Exit"
 msgstr "Шығу"
 
-#: src/main.py:602
+#: src/main.py:600
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -131,11 +131,11 @@ msgstr ""
 "Қолданбадан шынымен шыққыңыз келе ме? Егер веб-бағдарлама жұмыс істеп тұрса,"
 " ол тоқтатылады."
 
-#: src/main.py:607
+#: src/main.py:605
 msgid "Back to home"
 msgstr "Үйге оралу"
 
-#: src/main.py:608
+#: src/main.py:606
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -143,27 +143,27 @@ msgstr ""
 "Негізгі экранға оралғыңыз келетініне сенімдісіз бе? Веб қолданба "
 "тоқтатылады."
 
-#: src/main.py:621 src/main.py:624 src/main.py:627
+#: src/main.py:619 src/main.py:622 src/main.py:625
 msgid "Error"
 msgstr "Қате"
 
-#: src/main.py:621
+#: src/main.py:619
 msgid "This language is already selected."
 msgstr "Бұл тіл әлдеқашан таңдалған."
 
-#: src/main.py:624
+#: src/main.py:622
 msgid "This size is already selected."
 msgstr "Бұл өлшем әлдеқашан таңдалған."
 
-#: src/main.py:627
+#: src/main.py:625
 msgid "This appearance is already selected."
 msgstr "Бұл көрініс әлдеқашан таңдалған."
 
-#: src/main.py:630
+#: src/main.py:628
 msgid "Info"
 msgstr "Ақпарат"
 
-#: src/main.py:631
+#: src/main.py:629
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"

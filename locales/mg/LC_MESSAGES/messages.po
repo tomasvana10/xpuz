@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-18 21:00+1100\n"
+"POT-Creation-Date: 2024-02-19 10:18+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: mg <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgstr "Jereo ny crosswords"
 
 #: src/main.py:85
 msgid "Exit the app"
-msgstr "Mialà amin&#39;ny app"
+msgstr "Mialà amin'ny app"
 
 #: src/main.py:91
 msgid "Global Settings"
@@ -57,113 +57,113 @@ msgstr "RAFITRA"
 
 #: src/main.py:108
 msgid "Appearance"
-msgstr "Bika Aman &#39;endrika"
+msgstr "Bika Aman 'endrika"
 
-#: src/main.py:254
+#: src/main.py:252
 msgid "Crossword Browser"
 msgstr "Crossword Browser"
 
-#: src/main.py:256
+#: src/main.py:254
 msgid "Go back"
 msgstr "Hiverina"
 
-#: src/main.py:261
+#: src/main.py:259
 msgid "Load crossword"
 msgstr "Load crossword"
 
-#: src/main.py:265
+#: src/main.py:263
 msgid "Open web app"
 msgstr "Sokafy ny app web"
 
-#: src/main.py:269
+#: src/main.py:267
 msgid "Terminate web app"
 msgstr "Atsaharo ny app web"
 
-#: src/main.py:275
+#: src/main.py:273
 msgid "Word count preferences"
-msgstr "Safidy isan&#39;ny teny"
+msgstr "Safidy isan'ny teny"
 
-#: src/main.py:282 src/main.py:320
+#: src/main.py:280 src/main.py:318
 msgid "Select word count"
-msgstr "Fidio ny isan&#39;ny teny"
+msgstr "Fidio ny isan'ny teny"
 
-#: src/main.py:286 src/main.py:503
+#: src/main.py:284 src/main.py:501
 msgid "Maximum"
 msgstr "Faratampony"
 
-#: src/main.py:294
+#: src/main.py:292
 msgid "Custom"
 msgstr "fanao"
 
-#: src/main.py:551
+#: src/main.py:549
 msgid "Total words"
 msgstr "Total teny"
 
-#: src/main.py:555
+#: src/main.py:553
 msgid "Difficulty"
 msgstr "fahasarotana"
 
-#: src/main.py:555
+#: src/main.py:553
 msgid "difficulty"
 msgstr "fahasarotana"
 
-#: src/main.py:557
+#: src/main.py:555
 msgid "Select"
 msgstr "Select"
 
-#: src/main.py:597
+#: src/main.py:595
 msgid "Restart"
 msgstr "Haverina velomina"
 
-#: src/main.py:597
+#: src/main.py:595
 msgid "Are you sure you want to restart the app?"
 msgstr "Tena te hamerina ny fampiharana ve ianao?"
 
-#: src/main.py:601
+#: src/main.py:599
 msgid "Exit"
 msgstr "Fivoahana"
 
-#: src/main.py:602
+#: src/main.py:600
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr ""
-"Tena te hiala amin&#39;ny fampiharana ve ianao? Raha mandeha ny app web dia "
+"Tena te hiala amin'ny fampiharana ve ianao? Raha mandeha ny app web dia "
 "hofoanana izany."
 
-#: src/main.py:607
+#: src/main.py:605
 msgid "Back to home"
 msgstr "Miverina any an-trano"
 
-#: src/main.py:608
+#: src/main.py:606
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
-"Tena te hiverina any amin&#39;ny efijery an-trano ve ianao? Hatsahatra ny "
+"Tena te hiverina any amin'ny efijery an-trano ve ianao? Hatsahatra ny "
 "app web."
 
-#: src/main.py:621 src/main.py:624 src/main.py:627
+#: src/main.py:619 src/main.py:622 src/main.py:625
 msgid "Error"
 msgstr "fahadisoana"
 
-#: src/main.py:621
+#: src/main.py:619
 msgid "This language is already selected."
 msgstr "Efa voafantina ity fiteny ity."
 
-#: src/main.py:624
+#: src/main.py:622
 msgid "This size is already selected."
 msgstr "Efa voafantina io habe io."
 
-#: src/main.py:627
+#: src/main.py:625
 msgid "This appearance is already selected."
 msgstr "Ity endrika ity dia efa voafantina."
 
-#: src/main.py:630
+#: src/main.py:628
 msgid "Info"
 msgstr "Info"
 
-#: src/main.py:631
+#: src/main.py:629
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -177,12 +177,12 @@ msgstr ""
 "Famoahana voalohany, vakio azafady: Rehefa avy nametaka teny fanalahidy iray"
 " ianao ary te-hampiditra iray hafa dia tsy maintsy atsahatra aloha ny "
 "fampiharana tranonkala. ZAVA-DEHIBE: Raha mampiasa macOS ianao, dia tsy "
-"maintsy miala amin&#39;ny fampiharana (amin&#39;ny fampiasana cmd+q) raha "
+"maintsy miala amin'ny fampiharana (amin'ny fampiasana cmd+q) raha "
 "mbola mandeha ny fampiharana tranonkala dia hisakana azy tsy hifarana araka "
 "ny tokony ho izy. Raha diso ianao manao izany dia tadiavo ny fizotry ny "
 "fampiharana Flask ary tapaho izany, ovay ny laharana `webapp_port` ao "
-"amin&#39;ny src/config.ini, na avereno indray ny solosainao. ZAVA-DEHIBE "
-"KOA: Amin&#39;ny toe-javatra sasany, mety efa nandefa ny fampiharana "
+"amin'ny src/config.ini, na avereno indray ny solosainao. ZAVA-DEHIBE "
+"KOA: Amin'ny toe-javatra sasany, mety efa nandefa ny fampiharana "
 "tranonkala ianao nefa tsy afaka mijery azy ny mpitety tranonkalanao. Raha "
 "mitranga izany dia avereno indray ny navigateur."
 

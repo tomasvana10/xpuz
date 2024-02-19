@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-18 21:00+1100\n"
+"POT-Creation-Date: 2024-02-19 10:18+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ha <LL@li.org>\n"
@@ -59,71 +59,71 @@ msgstr "tsarin"
 msgid "Appearance"
 msgstr "Bayyanar"
 
-#: src/main.py:254
+#: src/main.py:252
 msgid "Crossword Browser"
 msgstr "Crossword Browser"
 
-#: src/main.py:256
+#: src/main.py:254
 msgid "Go back"
 msgstr "Komawa"
 
-#: src/main.py:261
+#: src/main.py:259
 msgid "Load crossword"
 msgstr "Load da kalmar wucewa"
 
-#: src/main.py:265
+#: src/main.py:263
 msgid "Open web app"
 msgstr "Bude aikace-aikacen yanar gizo"
 
-#: src/main.py:269
+#: src/main.py:267
 msgid "Terminate web app"
 msgstr "Kashe aikace-aikacen yanar gizo"
 
-#: src/main.py:275
+#: src/main.py:273
 msgid "Word count preferences"
 msgstr "Zaɓuɓɓukan ƙidayar kalma"
 
-#: src/main.py:282 src/main.py:320
+#: src/main.py:280 src/main.py:318
 msgid "Select word count"
 msgstr "Zaɓi ƙidayar kalma"
 
-#: src/main.py:286 src/main.py:503
+#: src/main.py:284 src/main.py:501
 msgid "Maximum"
 msgstr "Matsakaicin"
 
-#: src/main.py:294
+#: src/main.py:292
 msgid "Custom"
 msgstr "Custom"
 
-#: src/main.py:551
+#: src/main.py:549
 msgid "Total words"
 msgstr "Jimlar kalmomi"
 
-#: src/main.py:555
+#: src/main.py:553
 msgid "Difficulty"
 msgstr "Wahala"
 
-#: src/main.py:555
+#: src/main.py:553
 msgid "difficulty"
 msgstr "wahala"
 
-#: src/main.py:557
+#: src/main.py:555
 msgid "Select"
 msgstr "Zaɓi"
 
-#: src/main.py:597
+#: src/main.py:595
 msgid "Restart"
 msgstr "Sake kunnawa"
 
-#: src/main.py:597
+#: src/main.py:595
 msgid "Are you sure you want to restart the app?"
 msgstr "Shin kun tabbata kuna son sake kunna app?"
 
-#: src/main.py:601
+#: src/main.py:599
 msgid "Exit"
 msgstr "Fita"
 
-#: src/main.py:602
+#: src/main.py:600
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -131,11 +131,11 @@ msgstr ""
 "Shin kun tabbata kuna son fita daga app? Idan aikace-aikacen gidan yanar "
 "gizon yana gudana, za a ƙare."
 
-#: src/main.py:607
+#: src/main.py:605
 msgid "Back to home"
 msgstr "Komawa gida"
 
-#: src/main.py:608
+#: src/main.py:606
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -143,27 +143,27 @@ msgstr ""
 "Shin kun tabbata kuna son komawa kan allo na gida? Za a ƙare aikace-aikacen "
 "yanar gizon."
 
-#: src/main.py:621 src/main.py:624 src/main.py:627
+#: src/main.py:619 src/main.py:622 src/main.py:625
 msgid "Error"
 msgstr "Kuskure"
 
-#: src/main.py:621
+#: src/main.py:619
 msgid "This language is already selected."
 msgstr "An riga an zaɓi wannan harshe."
 
-#: src/main.py:624
+#: src/main.py:622
 msgid "This size is already selected."
 msgstr "An riga an zaɓi wannan girman."
 
-#: src/main.py:627
+#: src/main.py:625
 msgid "This appearance is already selected."
 msgstr "An riga an zaɓi wannan bayyanar."
 
-#: src/main.py:630
+#: src/main.py:628
 msgid "Info"
 msgstr "Bayani"
 
-#: src/main.py:631
+#: src/main.py:629
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -199,7 +199,7 @@ msgstr "Kasa"
 
 #: src/cword_webapp/templates/index.html:125
 msgid "You completed the crossword!"
-msgstr "Kun gama ma&#39;anar kalmar!"
+msgstr "Kun gama ma'anar kalmar!"
 
 #: src/cword_webapp/templates/index.html:126
 msgid "Close"

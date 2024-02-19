@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-18 21:00+1100\n"
+"POT-Creation-Date: 2024-02-19 10:18+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ja <LL@li.org>\n"
@@ -59,107 +59,107 @@ msgstr "システム"
 msgid "Appearance"
 msgstr "外観"
 
-#: src/main.py:254
+#: src/main.py:252
 msgid "Crossword Browser"
 msgstr "クロスワードブラウザ"
 
-#: src/main.py:256
+#: src/main.py:254
 msgid "Go back"
 msgstr "戻る"
 
-#: src/main.py:261
+#: src/main.py:259
 msgid "Load crossword"
 msgstr "クロスワードをロードする"
 
-#: src/main.py:265
+#: src/main.py:263
 msgid "Open web app"
 msgstr "ウェブアプリを開く"
 
-#: src/main.py:269
+#: src/main.py:267
 msgid "Terminate web app"
 msgstr "Webアプリを終了する"
 
-#: src/main.py:275
+#: src/main.py:273
 msgid "Word count preferences"
 msgstr "文字数の設定"
 
-#: src/main.py:282 src/main.py:320
+#: src/main.py:280 src/main.py:318
 msgid "Select word count"
 msgstr "文字数を選択してください"
 
-#: src/main.py:286 src/main.py:503
+#: src/main.py:284 src/main.py:501
 msgid "Maximum"
 msgstr "最大"
 
-#: src/main.py:294
+#: src/main.py:292
 msgid "Custom"
 msgstr "カスタム"
 
-#: src/main.py:551
+#: src/main.py:549
 msgid "Total words"
 msgstr "総単語数"
 
-#: src/main.py:555
+#: src/main.py:553
 msgid "Difficulty"
 msgstr "困難"
 
-#: src/main.py:555
+#: src/main.py:553
 msgid "difficulty"
 msgstr "困難"
 
-#: src/main.py:557
+#: src/main.py:555
 msgid "Select"
 msgstr "選択する"
 
-#: src/main.py:597
+#: src/main.py:595
 msgid "Restart"
 msgstr "再起動"
 
-#: src/main.py:597
+#: src/main.py:595
 msgid "Are you sure you want to restart the app?"
 msgstr "アプリを再起動してもよろしいですか?"
 
-#: src/main.py:601
+#: src/main.py:599
 msgid "Exit"
 msgstr "出口"
 
-#: src/main.py:602
+#: src/main.py:600
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr "アプリを終了してもよろしいですか? Web アプリが実行中の場合は終了します。"
 
-#: src/main.py:607
+#: src/main.py:605
 msgid "Back to home"
 msgstr "家に帰る"
 
-#: src/main.py:608
+#: src/main.py:606
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr "ホーム画面に戻ってもよろしいですか? Webアプリが終了します。"
 
-#: src/main.py:621 src/main.py:624 src/main.py:627
+#: src/main.py:619 src/main.py:622 src/main.py:625
 msgid "Error"
 msgstr "エラー"
 
-#: src/main.py:621
+#: src/main.py:619
 msgid "This language is already selected."
 msgstr "この言語はすでに選択されています。"
 
-#: src/main.py:624
+#: src/main.py:622
 msgid "This size is already selected."
 msgstr "このサイズはすでに選択されています。"
 
-#: src/main.py:627
+#: src/main.py:625
 msgid "This appearance is already selected."
 msgstr "この外観はすでに選択されています。"
 
-#: src/main.py:630
+#: src/main.py:628
 msgid "Info"
 msgstr "情報"
 
-#: src/main.py:631
+#: src/main.py:629
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"

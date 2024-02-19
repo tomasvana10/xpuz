@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-18 21:00+1100\n"
+"POT-Creation-Date: 2024-02-19 10:18+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fy <LL@li.org>\n"
@@ -59,71 +59,71 @@ msgstr "systeem"
 msgid "Appearance"
 msgstr "Ferskining"
 
-#: src/main.py:254
+#: src/main.py:252
 msgid "Crossword Browser"
 msgstr "Crossword Browser"
 
-#: src/main.py:256
+#: src/main.py:254
 msgid "Go back"
 msgstr "Gean werom"
 
-#: src/main.py:261
+#: src/main.py:259
 msgid "Load crossword"
 msgstr "Laden krúswurd"
 
-#: src/main.py:265
+#: src/main.py:263
 msgid "Open web app"
 msgstr "Iepenje webapp"
 
-#: src/main.py:269
+#: src/main.py:267
 msgid "Terminate web app"
 msgstr "Beëinigje webapp"
 
-#: src/main.py:275
+#: src/main.py:273
 msgid "Word count preferences"
 msgstr "Wurd count foarkar"
 
-#: src/main.py:282 src/main.py:320
+#: src/main.py:280 src/main.py:318
 msgid "Select word count"
 msgstr "Selektearje wurd count"
 
-#: src/main.py:286 src/main.py:503
+#: src/main.py:284 src/main.py:501
 msgid "Maximum"
 msgstr "Maksimum"
 
-#: src/main.py:294
+#: src/main.py:292
 msgid "Custom"
 msgstr "Oanpast"
 
-#: src/main.py:551
+#: src/main.py:549
 msgid "Total words"
 msgstr "Totaal wurden"
 
-#: src/main.py:555
+#: src/main.py:553
 msgid "Difficulty"
 msgstr "Swierrichheid"
 
-#: src/main.py:555
+#: src/main.py:553
 msgid "difficulty"
 msgstr "swierrichheid"
 
-#: src/main.py:557
+#: src/main.py:555
 msgid "Select"
 msgstr "Útkieze"
 
-#: src/main.py:597
+#: src/main.py:595
 msgid "Restart"
-msgstr "Op &#39;e nij begjinne"
+msgstr "Op 'e nij begjinne"
 
-#: src/main.py:597
+#: src/main.py:595
 msgid "Are you sure you want to restart the app?"
 msgstr "Binne jo wis dat jo de app opnij starte wolle?"
 
-#: src/main.py:601
+#: src/main.py:599
 msgid "Exit"
 msgstr "Útgong"
 
-#: src/main.py:602
+#: src/main.py:600
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -131,11 +131,11 @@ msgstr ""
 "Binne jo wis dat jo de app ôfslute wolle? As de webapp rint, sil dizze wurde"
 " beëinige."
 
-#: src/main.py:607
+#: src/main.py:605
 msgid "Back to home"
 msgstr "Wêrom nei hûs"
 
-#: src/main.py:608
+#: src/main.py:606
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -143,27 +143,27 @@ msgstr ""
 "Binne jo wis dat jo werom wolle nei it thússkerm? De webapp sil wurde "
 "beëinige."
 
-#: src/main.py:621 src/main.py:624 src/main.py:627
+#: src/main.py:619 src/main.py:622 src/main.py:625
 msgid "Error"
 msgstr "Fersin"
 
-#: src/main.py:621
+#: src/main.py:619
 msgid "This language is already selected."
 msgstr "Dizze taal is al selektearre."
 
-#: src/main.py:624
+#: src/main.py:622
 msgid "This size is already selected."
 msgstr "Dizze grutte is al selektearre."
 
-#: src/main.py:627
+#: src/main.py:625
 msgid "This appearance is already selected."
 msgstr "Dit uterlik is al selektearre."
 
-#: src/main.py:630
+#: src/main.py:628
 msgid "Info"
 msgstr "Info"
 
-#: src/main.py:631
+#: src/main.py:629
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -176,12 +176,12 @@ msgid ""
 msgstr ""
 "Lês asjebleaft foar earste kear: As jo ienris in krúswurdwurd laden hawwe en"
 " in oare wolle laden, moatte jo de webapp earst beëinigje. WICHTICH: As jo "
-"op macOS binne, twingt it ôfsluten fan &#39;e applikaasje (mei cmd + q) "
+"op macOS binne, twingt it ôfsluten fan 'e applikaasje (mei cmd + q) "
 "wylst de webapp rint, sil foarkomme dat it goed beëiniget. As jo dit "
 "ferkeard dogge, fyn dan it Flask-appproses en beëinigje it, feroarje it "
 "nûmer `webapp_port` yn src/config.ini, of start jo kompjûter opnij. EK "
 "WICHTICH: Yn guon gefallen hawwe jo miskien de webapp lansearre, mar jo "
-"browser kin it net besjen. As dit bart, start jo blêder op &#39;e nij."
+"browser kin it net besjen. As dit bart, start jo blêder op 'e nij."
 
 #: src/cword_webapp/templates/index.html:13
 msgid "Crossword Puzzle - Game"
