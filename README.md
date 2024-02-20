@@ -10,7 +10,7 @@ A GUI application built with `CustomTkinter` that allows you to select, configur
 `Babel==2.14.0`<br>
 `customtkinter==5.2.2`<br>
 `Flask==3.0.1`<br>
-flask_babel==4.0.0<br>
+`flask_babel==4.0.0`<br>
 `Pillow==10.2.0`<br>
 `regex==2023.6.3`
 <br><br>
