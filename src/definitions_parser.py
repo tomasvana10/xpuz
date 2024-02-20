@@ -33,9 +33,11 @@ class DefinitionsParser:
 
         definitions = DefinitionsParser._format_definitions(definitions, word_count)
         
-        # Must check this after the definitions are formatted.
+        '''Removed for now; some translated crosswords have 1 letter words, and keeping this error checking
+        would be too inconvenient.
         if not (all(len(k) >= 3 for k in definitions.keys())):
                 raise InsufficientWordLength
+        '''
 
         return definitions
     

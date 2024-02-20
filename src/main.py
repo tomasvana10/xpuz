@@ -378,9 +378,9 @@ class CrosswordBrowser(ctk.CTkFrame):
                             else int(self.custom_word_count_optionmenu.get())
 
         # Load definitions, instantiate a crossword, then find the best crossword using that instance
-        definitions: Dict[str, str] = cwg.CrosswordHelper.load_definitions(self.selected_cword_name)
+        definitions: Dict[str, str] = cwg.CrosswordHelper.load_definitions(self.selected_cword_name, self.master.locale.language)
         crossword: object = cwg.Crossword(definitions=definitions, word_count=chosen_word_count,
-                                  name=self.selected_cword_name)
+                                          name=self.selected_cword_name)
         crossword: object = cwg.CrosswordHelper.find_best_crossword(crossword)
         
         self._interpret_cword_data(crossword)
@@ -466,7 +466,7 @@ class CrosswordBrowser(ctk.CTkFrame):
         '''
         self.block_objects: List[CrosswordInfoBlock] = list() 
         i = 1
-        for file_name in os.listdir(Paths.CWORDS_PATH):
+        for file_name in os.listdir(Paths.BASE_CWORDS_PATH):
             if file_name.startswith("."): continue # Stupid hidden OS files
             block = CrosswordInfoBlock(self.horizontal_scroll_frame, self, file_name, i)
             block.pack(side="left", padx=5, pady=(5, 0)) 
@@ -532,7 +532,7 @@ class CrosswordInfoBlock(ctk.CTkFrame):
         self.master = master
         self.name = name
         self.value = value
-        self.info = AppHelper._load_cword_info(name=name)
+        self.info = AppHelper._load_cword_info(name, self.master.master.locale.language)
         
         self._make_content()
         self._place_content()
@@ -542,7 +542,7 @@ class CrosswordInfoBlock(ctk.CTkFrame):
         self.name_textbox = ctk.CTkTextbox(self, font=self.master.master.SUBHEADING_FONT,
                                            wrap="word", fg_color=(Colour.Light.SUB, Colour.Dark.SUB),
                                            scrollbar_button_color=(Colour.Light.MAIN, Colour.Dark.MAIN))
-        self.name_textbox.insert(1.0, f"{chr(int(self.info['symbol'], 16))} {self.name.title()}")
+        self.name_textbox.insert(1.0, f"{chr(int(self.info['symbol'], 16))} {self.info["translated_name"].title()}")
         self.name_textbox.configure(state="disabled")
 
         self.l_total_words = ctk.CTkLabel(self, font=self.master.master.LABEL_FONT,
@@ -672,9 +672,11 @@ class AppHelper:
         return [localised_lang_db, localised_langs]
     
     @staticmethod
-    def _load_cword_info(name: str) -> Dict[str, Union[str, int]]:
+    def _load_cword_info(name: str, 
+                         language: str = "en"
+                         ) -> Dict[str, Union[str, int]]:
         '''Load the `info.json` file for a crossword. Called by an instance of `CrosswordInfoBlock`.'''
-        with open(os.path.join(Paths.CWORDS_PATH, name, "info.json")) as file:
+        with open(os.path.join(Paths.LOCALES_PATH, language, "cwords", name, "info.json")) as file:
             info = json.load(file)
         
         return info

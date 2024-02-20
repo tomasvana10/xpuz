@@ -10,12 +10,13 @@ A GUI application built with `CustomTkinter` that allows you to select, configur
 `Babel==2.14.0`<br>
 `customtkinter==5.2.2`<br>
 `Flask==3.0.1`<br>
+flask_babel==4.0.0<br>
 `Pillow==10.2.0`<br>
 `regex==2023.6.3`
 <br><br>
 ## Installation
 1. `git clone https://github.com/tomasvana10/crossword_puzzle.git`
-2. `cd cword_puzzle`
+2. `cd crossword_puzzle`
 3. Make a virtual environment (recommended)
    - `pip install virtualenv`
    - `python3 -m venv venv`
@@ -32,3 +33,4 @@ Will create external user documentation and add it to the repository eventually.
 - [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter) - Creation of the main GUI
 - [Google.Cloud.Translation.V2](https://cloud.google.com/dotnet/docs/reference/Google.Cloud.Translation.V2/latest) - Translation of locales 
 - [Pillow](https://pillow.readthedocs.io/en/stable/) - Image processing services
+- [regex](https://github.com/mrabarnett/mrab-regex) - Alternative to the standard `re` module, required for some functionality
