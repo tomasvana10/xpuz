@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-19 10:18+1100\n"
+"POT-Creation-Date: 2024-02-21 21:08+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ceb <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr "Mga gusto sa pag-ihap sa pulong"
 msgid "Select word count"
 msgstr "Pagpili sa gidaghanon sa pulong"
 
-#: src/main.py:284 src/main.py:501
+#: src/main.py:284 src/main.py:509
 msgid "Maximum"
 msgstr "Maximum"
 
@@ -95,35 +95,43 @@ msgstr "Maximum"
 msgid "Custom"
 msgstr "Custom"
 
-#: src/main.py:549
+#: src/main.py:548
+msgid "View"
+msgstr "Panglantaw"
+
+#: src/cword_webapp/templates/index.html:126 src/main.py:550
+msgid "Close"
+msgstr "Suod nga"
+
+#: src/main.py:620
 msgid "Total words"
 msgstr "Total nga mga pulong"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "Difficulty"
 msgstr "Kalisud"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "difficulty"
 msgstr "kalisud"
 
-#: src/main.py:555
+#: src/main.py:626
 msgid "Select"
 msgstr "Pagpili"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Restart"
 msgstr "I-restart"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Are you sure you want to restart the app?"
 msgstr "Sigurado ka ba nga gusto nimong i-restart ang app?"
 
-#: src/main.py:599
+#: src/main.py:671
 msgid "Exit"
 msgstr "Paggawas"
 
-#: src/main.py:600
+#: src/main.py:672
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -131,38 +139,38 @@ msgstr ""
 "Sigurado ka nga gusto nimong mugawas sa app? Kung ang web app nagdagan, kini"
 " mahunong."
 
-#: src/main.py:605
+#: src/main.py:677
 msgid "Back to home"
 msgstr "Balik sa balay"
 
-#: src/main.py:606
+#: src/main.py:678
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
 "Sigurado ka ba nga gusto nimong mobalik sa home screen? Ang web app ihunong."
 
-#: src/main.py:619 src/main.py:622 src/main.py:625
+#: src/main.py:691 src/main.py:694 src/main.py:697
 msgid "Error"
 msgstr "Sayop"
 
-#: src/main.py:619
+#: src/main.py:691
 msgid "This language is already selected."
 msgstr "Kini nga pinulongan gipili na."
 
-#: src/main.py:622
+#: src/main.py:694
 msgid "This size is already selected."
 msgstr "Kini nga gidak-on gipili na."
 
-#: src/main.py:625
+#: src/main.py:697
 msgid "This appearance is already selected."
 msgstr "Kini nga panagway gipili na."
 
-#: src/main.py:628
+#: src/main.py:700
 msgid "Info"
 msgstr "Impormasyon"
 
-#: src/main.py:629
+#: src/main.py:701
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -200,10 +208,6 @@ msgstr "Sa ubos"
 msgid "You completed the crossword!"
 msgstr "Nakompleto nimo ang crossword!"
 
-#: src/cword_webapp/templates/index.html:126
-msgid "Close"
-msgstr "Suod nga"
-
 msgid "Easy"
 msgstr "Sayon"
 
@@ -216,6 +220,9 @@ msgstr "Lisud"
 msgid "Extreme"
 msgstr "Grabe"
 
+msgid "Geography"
+msgstr "Geograpiya"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -225,3 +232,9 @@ msgstr "Grabe"
 #~ "Also important to know:\n"
 #~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
 #~ msgstr ""
+
+#~ msgid "Capitals"
+#~ msgstr "Mga kapital"
+
+#~ msgid "Countries"
+#~ msgstr "Mga nasud"

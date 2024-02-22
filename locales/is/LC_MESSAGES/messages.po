@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-19 10:18+1100\n"
+"POT-Creation-Date: 2024-02-21 21:08+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: is <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr "Orðafjöldavalkostir"
 msgid "Select word count"
 msgstr "Veldu orðafjölda"
 
-#: src/main.py:284 src/main.py:501
+#: src/main.py:284 src/main.py:509
 msgid "Maximum"
 msgstr "Hámark"
 
@@ -95,35 +95,43 @@ msgstr "Hámark"
 msgid "Custom"
 msgstr "Sérsniðin"
 
-#: src/main.py:549
+#: src/main.py:548
+msgid "View"
+msgstr "Útsýni"
+
+#: src/cword_webapp/templates/index.html:126 src/main.py:550
+msgid "Close"
+msgstr "Loka"
+
+#: src/main.py:620
 msgid "Total words"
 msgstr "Samtals orð"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "Difficulty"
 msgstr "Erfiðleikar"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "difficulty"
 msgstr "erfiðleikar"
 
-#: src/main.py:555
+#: src/main.py:626
 msgid "Select"
 msgstr "Veldu"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Restart"
 msgstr "Endurræsa"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Are you sure you want to restart the app?"
 msgstr "Ertu viss um að þú viljir endurræsa forritið?"
 
-#: src/main.py:599
+#: src/main.py:671
 msgid "Exit"
 msgstr "Hætta"
 
-#: src/main.py:600
+#: src/main.py:672
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -131,11 +139,11 @@ msgstr ""
 "Ertu viss um að þú viljir hætta í forritinu? Ef vefforritið er í gangi "
 "verður því lokað."
 
-#: src/main.py:605
+#: src/main.py:677
 msgid "Back to home"
 msgstr "Aftur heim"
 
-#: src/main.py:606
+#: src/main.py:678
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -143,27 +151,27 @@ msgstr ""
 "Ertu viss um að þú viljir fara aftur á heimaskjáinn? Vefforritinu verður "
 "lokað."
 
-#: src/main.py:619 src/main.py:622 src/main.py:625
+#: src/main.py:691 src/main.py:694 src/main.py:697
 msgid "Error"
 msgstr "Villa"
 
-#: src/main.py:619
+#: src/main.py:691
 msgid "This language is already selected."
 msgstr "Þetta tungumál er þegar valið."
 
-#: src/main.py:622
+#: src/main.py:694
 msgid "This size is already selected."
 msgstr "Þessi stærð er þegar valin."
 
-#: src/main.py:625
+#: src/main.py:697
 msgid "This appearance is already selected."
 msgstr "Þetta útlit er þegar valið."
 
-#: src/main.py:628
+#: src/main.py:700
 msgid "Info"
 msgstr "Upplýsingar"
 
-#: src/main.py:629
+#: src/main.py:701
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -200,10 +208,6 @@ msgstr "Niður"
 msgid "You completed the crossword!"
 msgstr "Þú kláraðir krossgátuna!"
 
-#: src/cword_webapp/templates/index.html:126
-msgid "Close"
-msgstr "Loka"
-
 msgid "Easy"
 msgstr "Auðvelt"
 
@@ -216,6 +220,9 @@ msgstr "Erfitt"
 msgid "Extreme"
 msgstr "Öfgafullt"
 
+msgid "Geography"
+msgstr "Landafræði"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -225,3 +232,9 @@ msgstr "Öfgafullt"
 #~ "Also important to know:\n"
 #~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
 #~ msgstr ""
+
+#~ msgid "Capitals"
+#~ msgstr "Höfuðborgir"
+
+#~ msgid "Countries"
+#~ msgstr "Lönd"

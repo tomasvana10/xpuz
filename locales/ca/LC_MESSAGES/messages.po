@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-19 10:18+1100\n"
+"POT-Creation-Date: 2024-02-21 21:08+1100\n"
 "PO-Revision-Date: 2024-02-19 10:20+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ca <LL@li.org>\n"
@@ -86,7 +86,7 @@ msgstr "Preferències de recompte de paraules"
 msgid "Select word count"
 msgstr "Seleccioneu el recompte de paraules"
 
-#: src/main.py:284 src/main.py:501
+#: src/main.py:284 src/main.py:509
 msgid "Maximum"
 msgstr "Màxim"
 
@@ -94,75 +94,82 @@ msgstr "Màxim"
 msgid "Custom"
 msgstr "Personalitzat"
 
-#: src/main.py:549
+#: src/main.py:548
+msgid "View"
+msgstr "Veure"
+
+#: src/cword_webapp/templates/index.html:126 src/main.py:550
+msgid "Close"
+msgstr "Tanca"
+
+#: src/main.py:620
 msgid "Total words"
 msgstr "Total de paraules"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "Difficulty"
 msgstr "Dificultat"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "difficulty"
 msgstr "dificultat"
 
-#: src/main.py:555
+#: src/main.py:626
 msgid "Select"
 msgstr "Seleccioneu"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Restart"
 msgstr "Reinicia"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Are you sure you want to restart the app?"
 msgstr "Esteu segur que voleu reiniciar l'aplicació?"
 
-#: src/main.py:599
+#: src/main.py:671
 msgid "Exit"
 msgstr "Sortida"
 
-#: src/main.py:600
+#: src/main.py:672
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr ""
-"Esteu segur que voleu sortir de l'aplicació? Si l'aplicació web "
-"s'està executant, s'acabarà."
+"Esteu segur que voleu sortir de l'aplicació? Si l'aplicació web s'està "
+"executant, s'acabarà."
 
-#: src/main.py:605
+#: src/main.py:677
 msgid "Back to home"
 msgstr "De tornada a casa"
 
-#: src/main.py:606
+#: src/main.py:678
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
-"Confirmes que vols tornar a la pantalla d'inici? L'aplicació web es "
-"tancarà."
+"Confirmes que vols tornar a la pantalla d'inici? L'aplicació web es tancarà."
 
-#: src/main.py:619 src/main.py:622 src/main.py:625
+#: src/main.py:691 src/main.py:694 src/main.py:697
 msgid "Error"
 msgstr "Error"
 
-#: src/main.py:619
+#: src/main.py:691
 msgid "This language is already selected."
 msgstr "Aquest idioma ja està seleccionat."
 
-#: src/main.py:622
+#: src/main.py:694
 msgid "This size is already selected."
 msgstr "Aquesta mida ja està seleccionada."
 
-#: src/main.py:625
+#: src/main.py:697
 msgid "This appearance is already selected."
 msgstr "Aquesta aparença ja està seleccionada."
 
-#: src/main.py:628
+#: src/main.py:700
 msgid "Info"
 msgstr "Informació"
 
-#: src/main.py:629
+#: src/main.py:701
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -174,15 +181,14 @@ msgid ""
 " cannot view it. If this happens, please restart your browser."
 msgstr ""
 "Per primera vegada, llegiu: Un cop hàgiu carregat un mot encreuat i voleu "
-"carregar-ne un altre, primer heu d'acabar l'aplicació web. "
-"IMPORTANT: si esteu a macOS, forçar la sortida de l'aplicació (amb "
-"cmd+q) mentre l'aplicació web s'està executant impedirà que "
-"finalitzi correctament. Si ho feu per error, trobeu el procés de "
-"l'aplicació Flask i finalitzeu-lo, canvieu el número de "
-"&quot;webapp_port&quot; a src/config.ini o reinicieu l'ordinador. TAMBÉ "
-"IMPORTANT: En alguns casos, és possible que hàgiu llançat l'aplicació "
-"web però el vostre navegador no la pot visualitzar. Si això passa, reinicieu"
-" el vostre navegador."
+"carregar-ne un altre, primer heu d'acabar l'aplicació web. IMPORTANT: si "
+"esteu a macOS, forçar la sortida de l'aplicació (amb cmd+q) mentre "
+"l'aplicació web s'està executant impedirà que finalitzi correctament. Si ho "
+"feu per error, trobeu el procés de l'aplicació Flask i finalitzeu-lo, "
+"canvieu el número de &quot;webapp_port&quot; a src/config.ini o reinicieu "
+"l'ordinador. TAMBÉ IMPORTANT: En alguns casos, és possible que hàgiu llançat"
+" l'aplicació web però el vostre navegador no la pot visualitzar. Si això "
+"passa, reinicieu el vostre navegador."
 
 #: src/cword_webapp/templates/index.html:13
 msgid "Crossword Puzzle - Game"
@@ -200,10 +206,6 @@ msgstr "Avall"
 msgid "You completed the crossword!"
 msgstr "Has completat els mots encreuats!"
 
-#: src/cword_webapp/templates/index.html:126
-msgid "Close"
-msgstr "Tanca"
-
 msgid "Easy"
 msgstr "Fàcil"
 
@@ -215,3 +217,12 @@ msgstr "Dur"
 
 msgid "Extreme"
 msgstr "Extrem"
+
+msgid "Geography"
+msgstr "Geografia"
+
+#~ msgid "Capitals"
+#~ msgstr "Capitals"
+
+#~ msgid "Countries"
+#~ msgstr "Països"

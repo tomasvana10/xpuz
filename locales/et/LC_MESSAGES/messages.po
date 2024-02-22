@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-19 10:18+1100\n"
+"POT-Creation-Date: 2024-02-21 21:08+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: et <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr "Sõnade arvu eelistused"
 msgid "Select word count"
 msgstr "Valige sõnade arv"
 
-#: src/main.py:284 src/main.py:501
+#: src/main.py:284 src/main.py:509
 msgid "Maximum"
 msgstr "Maksimaalne"
 
@@ -95,35 +95,43 @@ msgstr "Maksimaalne"
 msgid "Custom"
 msgstr "Kohandatud"
 
-#: src/main.py:549
+#: src/main.py:548
+msgid "View"
+msgstr "Vaade"
+
+#: src/cword_webapp/templates/index.html:126 src/main.py:550
+msgid "Close"
+msgstr "Sulge"
+
+#: src/main.py:620
 msgid "Total words"
 msgstr "Sõnu kokku"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "Difficulty"
 msgstr "Raskus"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "difficulty"
 msgstr "raskus"
 
-#: src/main.py:555
+#: src/main.py:626
 msgid "Select"
 msgstr "Valige"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Restart"
 msgstr "Taaskäivita"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Are you sure you want to restart the app?"
 msgstr "Kas olete kindel, et soovite rakenduse taaskäivitada?"
 
-#: src/main.py:599
+#: src/main.py:671
 msgid "Exit"
 msgstr "Välju"
 
-#: src/main.py:600
+#: src/main.py:672
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -131,38 +139,38 @@ msgstr ""
 "Kas olete kindel, et soovite rakendusest väljuda? Kui veebirakendus töötab, "
 "siis see lõpetatakse."
 
-#: src/main.py:605
+#: src/main.py:677
 msgid "Back to home"
 msgstr "Tagasi koju"
 
-#: src/main.py:606
+#: src/main.py:678
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
 "Kas olete kindel, et soovite naasta avakuvale? Veebirakendus lõpetatakse."
 
-#: src/main.py:619 src/main.py:622 src/main.py:625
+#: src/main.py:691 src/main.py:694 src/main.py:697
 msgid "Error"
 msgstr "Viga"
 
-#: src/main.py:619
+#: src/main.py:691
 msgid "This language is already selected."
 msgstr "See keel on juba valitud."
 
-#: src/main.py:622
+#: src/main.py:694
 msgid "This size is already selected."
 msgstr "See suurus on juba valitud."
 
-#: src/main.py:625
+#: src/main.py:697
 msgid "This appearance is already selected."
 msgstr "See välimus on juba valitud."
 
-#: src/main.py:628
+#: src/main.py:700
 msgid "Info"
 msgstr "Info"
 
-#: src/main.py:629
+#: src/main.py:701
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -178,9 +186,9 @@ msgstr ""
 "kasutate macOS-i, takistab veebirakenduse töötamise ajal rakenduse "
 "sundsulgemine (kasutades cmd+q) selle õiget lõpetamist. Kui teete seda "
 "ekslikult, otsige üles Flask rakenduse protsess ja lõpetage see, muutke "
-"failis src/config.ini 'webapp_port' numbrit või taaskäivitage "
-"arvuti. TÄHTIS. Mõnel juhul võite olla veebirakenduse käivitanud, kuid teie "
-"brauser ei saa seda vaadata. Kui see juhtub, taaskäivitage brauser."
+"failis src/config.ini 'webapp_port' numbrit või taaskäivitage arvuti. "
+"TÄHTIS. Mõnel juhul võite olla veebirakenduse käivitanud, kuid teie brauser "
+"ei saa seda vaadata. Kui see juhtub, taaskäivitage brauser."
 
 #: src/cword_webapp/templates/index.html:13
 msgid "Crossword Puzzle - Game"
@@ -198,10 +206,6 @@ msgstr "Alla"
 msgid "You completed the crossword!"
 msgstr "Sa täitsid ristsõna!"
 
-#: src/cword_webapp/templates/index.html:126
-msgid "Close"
-msgstr "Sulge"
-
 msgid "Easy"
 msgstr "Lihtne"
 
@@ -214,6 +218,9 @@ msgstr "Raske"
 msgid "Extreme"
 msgstr "Ekstreemne"
 
+msgid "Geography"
+msgstr "Geograafia"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -223,3 +230,9 @@ msgstr "Ekstreemne"
 #~ "Also important to know:\n"
 #~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
 #~ msgstr ""
+
+#~ msgid "Capitals"
+#~ msgstr "Pealinnad"
+
+#~ msgid "Countries"
+#~ msgstr "Riigid"

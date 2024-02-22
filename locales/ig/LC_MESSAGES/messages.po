@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-19 10:18+1100\n"
+"POT-Creation-Date: 2024-02-21 21:08+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ig <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr "Mmasị ọnụọgụ okwu"
 msgid "Select word count"
 msgstr "Họrọ ọnụ ọgụgụ okwu"
 
-#: src/main.py:284 src/main.py:501
+#: src/main.py:284 src/main.py:509
 msgid "Maximum"
 msgstr "Kachasị"
 
@@ -95,74 +95,82 @@ msgstr "Kachasị"
 msgid "Custom"
 msgstr "Omenala"
 
-#: src/main.py:549
+#: src/main.py:548
+msgid "View"
+msgstr "Lelee"
+
+#: src/cword_webapp/templates/index.html:126 src/main.py:550
+msgid "Close"
+msgstr "Mechie"
+
+#: src/main.py:620
 msgid "Total words"
 msgstr "Mkpokọta okwu"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "Difficulty"
 msgstr "Ihe isi ike"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "difficulty"
 msgstr "ike"
 
-#: src/main.py:555
+#: src/main.py:626
 msgid "Select"
 msgstr "Họrọ"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Restart"
 msgstr "Malitegharịa ekwentị"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Are you sure you want to restart the app?"
 msgstr "Ị ji n'aka na ịchọrọ ịmalitegharị ngwa ahụ?"
 
-#: src/main.py:599
+#: src/main.py:671
 msgid "Exit"
 msgstr "Ụzọ ọpụpụ"
 
-#: src/main.py:600
+#: src/main.py:672
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr ""
-"Ị ji n'aka na ịchọrọ ịpụ na ngwa ahụ? Ọ bụrụ na ngwa weebụ na-agba ọsọ, "
-"a ga-akwụsị ya."
+"Ị ji n'aka na ịchọrọ ịpụ na ngwa ahụ? Ọ bụrụ na ngwa weebụ na-agba ọsọ, a "
+"ga-akwụsị ya."
 
-#: src/main.py:605
+#: src/main.py:677
 msgid "Back to home"
 msgstr "Laghachi n'ụlọ"
 
-#: src/main.py:606
+#: src/main.py:678
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
 "Ị ji n'aka na ịchọrọ ịlaghachi na ihuenyo ụlọ? A ga-akwụsị ngwa weebụ."
 
-#: src/main.py:619 src/main.py:622 src/main.py:625
+#: src/main.py:691 src/main.py:694 src/main.py:697
 msgid "Error"
 msgstr "Njehie"
 
-#: src/main.py:619
+#: src/main.py:691
 msgid "This language is already selected."
 msgstr "Asụsụ a ahọpụtalarị."
 
-#: src/main.py:622
+#: src/main.py:694
 msgid "This size is already selected."
 msgstr "Ahọpụtala nha a."
 
-#: src/main.py:625
+#: src/main.py:697
 msgid "This appearance is already selected."
 msgstr "Ahọpụtalarị ọdịdị a."
 
-#: src/main.py:628
+#: src/main.py:700
 msgid "Info"
 msgstr "Ozi"
 
-#: src/main.py:629
+#: src/main.py:701
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -176,10 +184,10 @@ msgstr ""
 "Mwepụta oge mbụ, biko gụọ: Ozugbo i bujuru okwu mkpagharị, ma chọọ ibu nke "
 "ọzọ, ị ga-ebu ụzọ kwụsị ngwa weebụ. Mkpa: Ọ bụrụ na ịnọ na macOS, manye "
 "ịkwụsị ngwa ahụ (iji cmd + q) ka ngwa weebụ na-agba ọsọ ga-egbochi ya ịkwụsị"
-" nke ọma. Ọ bụrụ na ịmee nke a n'ụzọ hiere ụzọ, chọta usoro ngwa Flask "
-"wee kwụsị ya, gbanwee nọmba `webapp_port` na src/config.ini, ma ọ bụ "
-"malitegharịa kọmputa gị. Ọ dị mkpa: N'ọnọdụ ụfọdụ, ị nwere ike ịmalitela"
-" ngwa weebụ mana ihe nchọgharị gị enweghị ike ịhụ ya. Ọ bụrụ na nke a emee, "
+" nke ọma. Ọ bụrụ na ịmee nke a n'ụzọ hiere ụzọ, chọta usoro ngwa Flask wee "
+"kwụsị ya, gbanwee nọmba `webapp_port` na src/config.ini, ma ọ bụ "
+"malitegharịa kọmputa gị. Ọ dị mkpa: N'ọnọdụ ụfọdụ, ị nwere ike ịmalitela "
+"ngwa weebụ mana ihe nchọgharị gị enweghị ike ịhụ ya. Ọ bụrụ na nke a emee, "
 "biko malitegharịa ihe nchọgharị gị."
 
 #: src/cword_webapp/templates/index.html:13
@@ -198,10 +206,6 @@ msgstr "Ala"
 msgid "You completed the crossword!"
 msgstr "Ị mechaala okwu mkparịta ụka!"
 
-#: src/cword_webapp/templates/index.html:126
-msgid "Close"
-msgstr "Mechie"
-
 msgid "Easy"
 msgstr "Mfe"
 
@@ -214,6 +218,9 @@ msgstr "siri ike"
 msgid "Extreme"
 msgstr "Oke"
 
+msgid "Geography"
+msgstr "Geography"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -223,3 +230,9 @@ msgstr "Oke"
 #~ "Also important to know:\n"
 #~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
 #~ msgstr ""
+
+#~ msgid "Capitals"
+#~ msgstr "Isi obodo"
+
+#~ msgid "Countries"
+#~ msgstr "Mba"

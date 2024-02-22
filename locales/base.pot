@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-19 10:18+1100\n"
+"POT-Creation-Date: 2024-02-21 21:08+1100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,7 +85,7 @@ msgstr ""
 msgid "Select word count"
 msgstr ""
 
-#: src/main.py:284 src/main.py:501
+#: src/main.py:284 src/main.py:509
 msgid "Maximum"
 msgstr ""
 
@@ -93,67 +93,75 @@ msgstr ""
 msgid "Custom"
 msgstr ""
 
-#: src/main.py:549
+#: src/main.py:548
+msgid "View"
+msgstr ""
+
+#: src/cword_webapp/templates/index.html:126 src/main.py:550
+msgid "Close"
+msgstr ""
+
+#: src/main.py:620
 msgid "Total words"
 msgstr ""
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "Difficulty"
 msgstr ""
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "difficulty"
 msgstr ""
 
-#: src/main.py:555
+#: src/main.py:626
 msgid "Select"
 msgstr ""
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Restart"
 msgstr ""
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Are you sure you want to restart the app?"
 msgstr ""
 
-#: src/main.py:599
+#: src/main.py:671
 msgid "Exit"
 msgstr ""
 
-#: src/main.py:600
+#: src/main.py:672
 msgid "Are you sure you want to exit the app? If the web app is running, it will be terminated."
 msgstr ""
 
-#: src/main.py:605
+#: src/main.py:677
 msgid "Back to home"
 msgstr ""
 
-#: src/main.py:606
+#: src/main.py:678
 msgid "Are you sure you want to go back to the home screen? The web app will be terminated."
 msgstr ""
 
-#: src/main.py:619 src/main.py:622 src/main.py:625
+#: src/main.py:691 src/main.py:694 src/main.py:697
 msgid "Error"
 msgstr ""
 
-#: src/main.py:619
+#: src/main.py:691
 msgid "This language is already selected."
 msgstr ""
 
-#: src/main.py:622
+#: src/main.py:694
 msgid "This size is already selected."
 msgstr ""
 
-#: src/main.py:625
+#: src/main.py:697
 msgid "This appearance is already selected."
 msgstr ""
 
-#: src/main.py:628
+#: src/main.py:700
 msgid "Info"
 msgstr ""
 
-#: src/main.py:629
+#: src/main.py:701
 msgid "First time launch, please read: Once you have loaded a crossword, and wish to load another one, you must first terminate the web app. IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer. ALSO IMPORTANT: In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
 msgstr ""
 
@@ -173,10 +181,6 @@ msgstr ""
 msgid "You completed the crossword!"
 msgstr ""
 
-#: src/cword_webapp/templates/index.html:126
-msgid "Close"
-msgstr ""
-
 msgid "Easy"
 msgstr ""
 
@@ -187,4 +191,7 @@ msgid "Hard"
 msgstr ""
 
 msgid "Extreme"
+msgstr ""
+
+msgid "Geography"
 msgstr ""

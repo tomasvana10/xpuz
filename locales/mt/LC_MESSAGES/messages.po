@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-19 10:18+1100\n"
+"POT-Creation-Date: 2024-02-21 21:08+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: mt <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr "Preferenzi tal-għadd tal-kliem"
 msgid "Select word count"
 msgstr "Agħżel l-għadd tal-kliem"
 
-#: src/main.py:284 src/main.py:501
+#: src/main.py:284 src/main.py:509
 msgid "Maximum"
 msgstr "Massimu"
 
@@ -95,35 +95,43 @@ msgstr "Massimu"
 msgid "Custom"
 msgstr "Custom"
 
-#: src/main.py:549
+#: src/main.py:548
+msgid "View"
+msgstr "Ara"
+
+#: src/cword_webapp/templates/index.html:126 src/main.py:550
+msgid "Close"
+msgstr "Agħlaq"
+
+#: src/main.py:620
 msgid "Total words"
 msgstr "Kliem totali"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "Difficulty"
 msgstr "Diffikultà"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "difficulty"
 msgstr "diffikultà"
 
-#: src/main.py:555
+#: src/main.py:626
 msgid "Select"
 msgstr "Agħżel"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Restart"
 msgstr "Erġa ibda"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Are you sure you want to restart the app?"
 msgstr "Int żgur li trid terġa' tibda l-app?"
 
-#: src/main.py:599
+#: src/main.py:671
 msgid "Exit"
 msgstr "Ħruġ"
 
-#: src/main.py:600
+#: src/main.py:672
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -131,38 +139,38 @@ msgstr ""
 "Int żgur li trid toħroġ mill-app? Jekk l-app tal-web tkun qed taħdem, tiġi "
 "mitmuma."
 
-#: src/main.py:605
+#: src/main.py:677
 msgid "Back to home"
 msgstr "Lura d-dar"
 
-#: src/main.py:606
+#: src/main.py:678
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
 "Int żgur li trid tmur lura għall-iskrin tad-dar? Il-web app se tiġi mitmuma."
 
-#: src/main.py:619 src/main.py:622 src/main.py:625
+#: src/main.py:691 src/main.py:694 src/main.py:697
 msgid "Error"
 msgstr "Żball"
 
-#: src/main.py:619
+#: src/main.py:691
 msgid "This language is already selected."
 msgstr "Din il-lingwa hija diġà magħżula."
 
-#: src/main.py:622
+#: src/main.py:694
 msgid "This size is already selected."
 msgstr "Dan id-daqs huwa diġà magħżul."
 
-#: src/main.py:625
+#: src/main.py:697
 msgid "This appearance is already selected."
 msgstr "Din id-dehra hija diġà magħżula."
 
-#: src/main.py:628
+#: src/main.py:700
 msgid "Info"
 msgstr "Info"
 
-#: src/main.py:629
+#: src/main.py:701
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -176,12 +184,12 @@ msgstr ""
 "Tnedija għall-ewwel darba, jekk jogħġbok aqra: Ladarba tkun għabbejt "
 "tisliba, u tixtieq tagħbija oħra, l-ewwel trid ittemm l-app tal-web. "
 "IMPORTANTI: Jekk tkun fuq macOS, iġiegħel li tieqaf mill-applikazzjoni (bl-"
-"użu ta' cmd+q) waqt li tkun qed taħdem l-app tal-web se tevita li "
-"tintemm kif suppost. Jekk tagħmel dan bi żball, jew issib il-proċess tal-app"
-" Flask u ittemmha, ibdel in-numru `webapp_port` f'src/config.ini, jew "
-"ibda mill-ġdid il-kompjuter tiegħek. IMPORTANTI WKOLL: F'xi każijiet, "
-"jista' jkun li tkun nediet il-web app iżda l-browser tiegħek ma jistax "
-"jaraha. Jekk jiġri dan, jekk jogħġbok ibda mill-ġdid il-browser tiegħek."
+"użu ta' cmd+q) waqt li tkun qed taħdem l-app tal-web se tevita li tintemm "
+"kif suppost. Jekk tagħmel dan bi żball, jew issib il-proċess tal-app Flask u"
+" ittemmha, ibdel in-numru `webapp_port` f'src/config.ini, jew ibda mill-ġdid"
+" il-kompjuter tiegħek. IMPORTANTI WKOLL: F'xi każijiet, jista' jkun li tkun "
+"nediet il-web app iżda l-browser tiegħek ma jistax jaraha. Jekk jiġri dan, "
+"jekk jogħġbok ibda mill-ġdid il-browser tiegħek."
 
 #: src/cword_webapp/templates/index.html:13
 msgid "Crossword Puzzle - Game"
@@ -199,10 +207,6 @@ msgstr "Down"
 msgid "You completed the crossword!"
 msgstr "Imlejt it-tisliba!"
 
-#: src/cword_webapp/templates/index.html:126
-msgid "Close"
-msgstr "Agħlaq"
-
 msgid "Easy"
 msgstr "Faċli"
 
@@ -215,6 +219,9 @@ msgstr "Iebsa"
 msgid "Extreme"
 msgstr "Estremi"
 
+msgid "Geography"
+msgstr "Ġeografija"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -224,3 +231,9 @@ msgstr "Estremi"
 #~ "Also important to know:\n"
 #~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
 #~ msgstr ""
+
+#~ msgid "Capitals"
+#~ msgstr "Kapitali"
+
+#~ msgid "Countries"
+#~ msgstr "Pajjiżi"

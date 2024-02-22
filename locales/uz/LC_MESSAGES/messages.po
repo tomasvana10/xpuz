@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-19 10:18+1100\n"
+"POT-Creation-Date: 2024-02-21 21:08+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: uz <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr "So'zlarni hisoblash sozlamalari"
 msgid "Select word count"
 msgstr "So'z sonini tanlang"
 
-#: src/main.py:284 src/main.py:501
+#: src/main.py:284 src/main.py:509
 msgid "Maximum"
 msgstr "Maksimal"
 
@@ -95,73 +95,81 @@ msgstr "Maksimal"
 msgid "Custom"
 msgstr "Maxsus"
 
-#: src/main.py:549
+#: src/main.py:548
+msgid "View"
+msgstr "Ko'rinish"
+
+#: src/cword_webapp/templates/index.html:126 src/main.py:550
+msgid "Close"
+msgstr "Yopish"
+
+#: src/main.py:620
 msgid "Total words"
 msgstr "Jami so'zlar"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "Difficulty"
 msgstr "Qiyinchilik"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "difficulty"
 msgstr "qiyinchilik"
 
-#: src/main.py:555
+#: src/main.py:626
 msgid "Select"
 msgstr "Tanlang"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Restart"
 msgstr "Qayta ishga tushirish"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Are you sure you want to restart the app?"
 msgstr "Haqiqatan ham ilovani qayta ishga tushirmoqchimisiz?"
 
-#: src/main.py:599
+#: src/main.py:671
 msgid "Exit"
 msgstr "Chiqish"
 
-#: src/main.py:600
+#: src/main.py:672
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr ""
-"Haqiqatan ham ilovadan chiqmoqchimisiz? Agar veb-ilova ishlayotgan "
-"bo'lsa, u tugatiladi."
+"Haqiqatan ham ilovadan chiqmoqchimisiz? Agar veb-ilova ishlayotgan bo'lsa, u"
+" tugatiladi."
 
-#: src/main.py:605
+#: src/main.py:677
 msgid "Back to home"
 msgstr "Uyga qaytish"
 
-#: src/main.py:606
+#: src/main.py:678
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr "Haqiqatan ham bosh ekranga qaytmoqchimisiz? Veb-ilova tugatiladi."
 
-#: src/main.py:619 src/main.py:622 src/main.py:625
+#: src/main.py:691 src/main.py:694 src/main.py:697
 msgid "Error"
 msgstr "Xato"
 
-#: src/main.py:619
+#: src/main.py:691
 msgid "This language is already selected."
 msgstr "Bu til allaqachon tanlangan."
 
-#: src/main.py:622
+#: src/main.py:694
 msgid "This size is already selected."
 msgstr "Bu oʻlcham allaqachon tanlangan."
 
-#: src/main.py:625
+#: src/main.py:697
 msgid "This appearance is already selected."
 msgstr "Bu ko'rinish allaqachon tanlangan."
 
-#: src/main.py:628
+#: src/main.py:700
 msgid "Info"
 msgstr "Ma'lumot"
 
-#: src/main.py:629
+#: src/main.py:701
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -172,17 +180,16 @@ msgid ""
 "IMPORTANT: In some cases, you may have launched the web app yet your browser"
 " cannot view it. If this happens, please restart your browser."
 msgstr ""
-"Birinchi marta ishga tushirilganda, o'qing: Krossvordni yuklaganingizdan"
-" so'ng va boshqasini yuklamoqchi bo'lsangiz, avval veb-ilovani "
-"tugatishingiz kerak. MUHIM: Agar siz macOS operatsion tizimida "
-"bo'lsangiz, veb-ilova ishlayotgan vaqtda (cmd+q yordamida) ilovani "
-"majburan o'chirib qo'ysangiz, uning to'g'ri tugatilishi "
-"oldini oladi. Agar buni xato qilsangiz, Flask ilova jarayonini toping va uni"
-" tugating, src/config.ini sahifasida `webapp_port` raqamini o'zgartiring"
-" yoki kompyuteringizni qayta ishga tushiring. HAM MUHIM: Ba'zi hollarda "
-"siz veb-ilovani ishga tushirgan bo'lishingiz mumkin, ammo brauzeringiz "
-"uni ko'ra olmaydi. Agar shunday bo'lsa, brauzeringizni qayta ishga "
-"tushiring."
+"Birinchi marta ishga tushirilganda, o'qing: Krossvordni yuklaganingizdan "
+"so'ng va boshqasini yuklamoqchi bo'lsangiz, avval veb-ilovani tugatishingiz "
+"kerak. MUHIM: Agar siz macOS operatsion tizimida bo'lsangiz, veb-ilova "
+"ishlayotgan vaqtda (cmd+q yordamida) ilovani majburan o'chirib qo'ysangiz, "
+"uning to'g'ri tugatilishi oldini oladi. Agar buni xato qilsangiz, Flask "
+"ilova jarayonini toping va uni tugating, src/config.ini sahifasida "
+"`webapp_port` raqamini o'zgartiring yoki kompyuteringizni qayta ishga "
+"tushiring. HAM MUHIM: Ba'zi hollarda siz veb-ilovani ishga tushirgan "
+"bo'lishingiz mumkin, ammo brauzeringiz uni ko'ra olmaydi. Agar shunday "
+"bo'lsa, brauzeringizni qayta ishga tushiring."
 
 #: src/cword_webapp/templates/index.html:13
 msgid "Crossword Puzzle - Game"
@@ -200,10 +207,6 @@ msgstr "Pastga"
 msgid "You completed the crossword!"
 msgstr "Siz krossvordni tugatdingiz!"
 
-#: src/cword_webapp/templates/index.html:126
-msgid "Close"
-msgstr "Yopish"
-
 msgid "Easy"
 msgstr "Oson"
 
@@ -216,6 +219,9 @@ msgstr "Qattiq"
 msgid "Extreme"
 msgstr "Ekstremal"
 
+msgid "Geography"
+msgstr "Geografiya"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -225,3 +231,9 @@ msgstr "Ekstremal"
 #~ "Also important to know:\n"
 #~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
 #~ msgstr ""
+
+#~ msgid "Capitals"
+#~ msgstr "Poytaxtlar"
+
+#~ msgid "Countries"
+#~ msgstr "Mamlakatlar"

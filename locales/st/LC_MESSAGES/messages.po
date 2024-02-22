@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-19 10:18+1100\n"
+"POT-Creation-Date: 2024-02-21 21:08+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: st <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr "Likhetho tsa palo ea mantsoe"
 msgid "Select word count"
 msgstr "Khetha palo ea mantsoe"
 
-#: src/main.py:284 src/main.py:501
+#: src/main.py:284 src/main.py:509
 msgid "Maximum"
 msgstr "Boholo"
 
@@ -95,35 +95,43 @@ msgstr "Boholo"
 msgid "Custom"
 msgstr "Tloaelo"
 
-#: src/main.py:549
+#: src/main.py:548
+msgid "View"
+msgstr "Sheba"
+
+#: src/cword_webapp/templates/index.html:126 src/main.py:550
+msgid "Close"
+msgstr "Koala"
+
+#: src/main.py:620
 msgid "Total words"
 msgstr "Kakaretso ea mantsoe"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "Difficulty"
 msgstr "Bothata"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "difficulty"
 msgstr "bothata"
 
-#: src/main.py:555
+#: src/main.py:626
 msgid "Select"
 msgstr "Khetha"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Restart"
 msgstr "Qala hape"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Are you sure you want to restart the app?"
 msgstr "Na ehlile u batla ho qala sesebelisoa hape?"
 
-#: src/main.py:599
+#: src/main.py:671
 msgid "Exit"
 msgstr "Etsoa"
 
-#: src/main.py:600
+#: src/main.py:672
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -131,11 +139,11 @@ msgstr ""
 "Na ehlile u batla ho tsoa ho app? Haeba sesebelisoa sa marang-rang se ntse "
 "se sebetsa, se tla emisoa."
 
-#: src/main.py:605
+#: src/main.py:677
 msgid "Back to home"
 msgstr "Khutlela hae"
 
-#: src/main.py:606
+#: src/main.py:678
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -143,27 +151,27 @@ msgstr ""
 "Na ehlile u batla ho khutlela skrineng sa lapeng? Sesebelisoa sa Marang-rang"
 " se tla emisoa."
 
-#: src/main.py:619 src/main.py:622 src/main.py:625
+#: src/main.py:691 src/main.py:694 src/main.py:697
 msgid "Error"
 msgstr "Phoso"
 
-#: src/main.py:619
+#: src/main.py:691
 msgid "This language is already selected."
 msgstr "Puo ena e se e khethiloe."
 
-#: src/main.py:622
+#: src/main.py:694
 msgid "This size is already selected."
 msgstr "Boholo bona bo se bo khethiloe."
 
-#: src/main.py:625
+#: src/main.py:697
 msgid "This appearance is already selected."
 msgstr "Ponahalo ena e se e khethiloe."
 
-#: src/main.py:628
+#: src/main.py:700
 msgid "Info"
 msgstr "Info"
 
-#: src/main.py:629
+#: src/main.py:701
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -175,15 +183,14 @@ msgid ""
 " cannot view it. If this happens, please restart your browser."
 msgstr ""
 "Lekhetlo la pele ha u qala, ka kopo bala: Hang ha u se u kentse mantsoe a "
-"fapaneng, 'me u lakatsa ho kenya le leng, u tlameha ho qala ka ho emisa "
-"app ea tepo. BOHLOKOA: Haeba u sebelisa macOS, qobella ho tlohela "
-"ts'ebeliso (u sebelisa cmd+q) ha sesebelisoa sa marang-rang se ntse se "
-"sebetsa ho tla e thibela ho emisa hantle. Haeba u etsa sena ka phoso, fumana"
-" tšebetso ea Flask app 'me u e felise, fetola nomoro ea `webapp_port` ho"
-" src/config.ini, kapa qala komporo ea hau bocha. TSE LI BOHLOKOA: Maemong a "
-"mang, e ka 'na eaba u hlahisitse app ea websaete empa sebatli sa hau ha "
-"se khone ho e bona. Haeba sena se etsahala, ka kopo qala sebatli sa hau "
-"bocha."
+"fapaneng, 'me u lakatsa ho kenya le leng, u tlameha ho qala ka ho emisa app "
+"ea tepo. BOHLOKOA: Haeba u sebelisa macOS, qobella ho tlohela ts'ebeliso (u "
+"sebelisa cmd+q) ha sesebelisoa sa marang-rang se ntse se sebetsa ho tla e "
+"thibela ho emisa hantle. Haeba u etsa sena ka phoso, fumana tšebetso ea "
+"Flask app 'me u e felise, fetola nomoro ea `webapp_port` ho src/config.ini, "
+"kapa qala komporo ea hau bocha. TSE LI BOHLOKOA: Maemong a mang, e ka 'na "
+"eaba u hlahisitse app ea websaete empa sebatli sa hau ha se khone ho e bona."
+" Haeba sena se etsahala, ka kopo qala sebatli sa hau bocha."
 
 #: src/cword_webapp/templates/index.html:13
 msgid "Crossword Puzzle - Game"
@@ -201,10 +208,6 @@ msgstr "Tlase"
 msgid "You completed the crossword!"
 msgstr "U qetile mantsoe a fapaneng!"
 
-#: src/cword_webapp/templates/index.html:126
-msgid "Close"
-msgstr "Koala"
-
 msgid "Easy"
 msgstr "Bonolo"
 
@@ -217,6 +220,9 @@ msgstr "E thata"
 msgid "Extreme"
 msgstr "Feteletseng"
 
+msgid "Geography"
+msgstr "Geography"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -226,3 +232,9 @@ msgstr "Feteletseng"
 #~ "Also important to know:\n"
 #~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
 #~ msgstr ""
+
+#~ msgid "Capitals"
+#~ msgstr "Li-capital"
+
+#~ msgid "Countries"
+#~ msgstr "Linaha"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-19 10:18+1100\n"
+"POT-Creation-Date: 2024-02-21 21:08+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: mi <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr "Nga manakohanga tatau kupu"
 msgid "Select word count"
 msgstr "Tīpakohia te tatau kupu"
 
-#: src/main.py:284 src/main.py:501
+#: src/main.py:284 src/main.py:509
 msgid "Maximum"
 msgstr "Mōrahi"
 
@@ -95,35 +95,43 @@ msgstr "Mōrahi"
 msgid "Custom"
 msgstr "Ritenga"
 
-#: src/main.py:549
+#: src/main.py:548
+msgid "View"
+msgstr "Tirohanga"
+
+#: src/cword_webapp/templates/index.html:126 src/main.py:550
+msgid "Close"
+msgstr "Katia"
+
+#: src/main.py:620
 msgid "Total words"
 msgstr "Kupu katoa"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "Difficulty"
 msgstr "Te uaua"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "difficulty"
 msgstr "uaua"
 
-#: src/main.py:555
+#: src/main.py:626
 msgid "Select"
 msgstr "Tīpakohia"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Restart"
 msgstr "Tīmata anō"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Are you sure you want to restart the app?"
 msgstr "Kei te tino hiahia koe ki te whakaara ano i te taupānga?"
 
-#: src/main.py:599
+#: src/main.py:671
 msgid "Exit"
 msgstr "Putaatu"
 
-#: src/main.py:600
+#: src/main.py:672
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -131,11 +139,11 @@ msgstr ""
 "Kei te tino hiahia koe ki te puta atu i te taupānga? Mena kei te rere te "
 "taupānga tukutuku, ka mutu."
 
-#: src/main.py:605
+#: src/main.py:677
 msgid "Back to home"
 msgstr "Hoki ki te kainga"
 
-#: src/main.py:606
+#: src/main.py:678
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -143,27 +151,27 @@ msgstr ""
 "Kei te tino hiahia koe ki te hoki ki te mata o te kainga? Ka whakamutua te "
 "taupānga tukutuku."
 
-#: src/main.py:619 src/main.py:622 src/main.py:625
+#: src/main.py:691 src/main.py:694 src/main.py:697
 msgid "Error"
 msgstr "Hapa"
 
-#: src/main.py:619
+#: src/main.py:691
 msgid "This language is already selected."
 msgstr "Kua tohua kē tēnei reo."
 
-#: src/main.py:622
+#: src/main.py:694
 msgid "This size is already selected."
 msgstr "Kua tohua kē tēnei rahi."
 
-#: src/main.py:625
+#: src/main.py:697
 msgid "This appearance is already selected."
 msgstr "Kua tohua kē tēnei ahua."
 
-#: src/main.py:628
+#: src/main.py:700
 msgid "Info"
 msgstr "Nga korero"
 
-#: src/main.py:629
+#: src/main.py:701
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -200,10 +208,6 @@ msgstr "Ki raro"
 msgid "You completed the crossword!"
 msgstr "Kua oti i a koe te kupu whakawhiti!"
 
-#: src/cword_webapp/templates/index.html:126
-msgid "Close"
-msgstr "Katia"
-
 msgid "Easy"
 msgstr "Māmā"
 
@@ -216,6 +220,9 @@ msgstr "pakeke"
 msgid "Extreme"
 msgstr "Tino"
 
+msgid "Geography"
+msgstr "Matawhenua"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -225,3 +232,9 @@ msgstr "Tino"
 #~ "Also important to know:\n"
 #~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
 #~ msgstr ""
+
+#~ msgid "Capitals"
+#~ msgstr "Nga whakapaipai"
+
+#~ msgid "Countries"
+#~ msgstr "Nga whenua"

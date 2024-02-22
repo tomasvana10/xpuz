@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-19 10:18+1100\n"
+"POT-Creation-Date: 2024-02-21 21:08+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zu <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr "Izinketho zenani lamagama"
 msgid "Select word count"
 msgstr "Khetha isibalo samagama"
 
-#: src/main.py:284 src/main.py:501
+#: src/main.py:284 src/main.py:509
 msgid "Maximum"
 msgstr "Ubuningi"
 
@@ -95,35 +95,43 @@ msgstr "Ubuningi"
 msgid "Custom"
 msgstr "Ngokwezifiso"
 
-#: src/main.py:549
+#: src/main.py:548
+msgid "View"
+msgstr "Buka"
+
+#: src/cword_webapp/templates/index.html:126 src/main.py:550
+msgid "Close"
+msgstr "Vala"
+
+#: src/main.py:620
 msgid "Total words"
 msgstr "Ingqikithi yamagama"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "Difficulty"
 msgstr "Ubunzima"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "difficulty"
 msgstr "ubunzima"
 
-#: src/main.py:555
+#: src/main.py:626
 msgid "Select"
 msgstr "Khetha"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Restart"
 msgstr "Qala kabusha"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Are you sure you want to restart the app?"
 msgstr "Uqinisekile ukuthi ufuna ukuqala kabusha uhlelo lokusebenza?"
 
-#: src/main.py:599
+#: src/main.py:671
 msgid "Exit"
 msgstr "Phuma"
 
-#: src/main.py:600
+#: src/main.py:672
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -131,11 +139,11 @@ msgstr ""
 "Ingabe uqinisekile ukuthi ufuna ukuphuma ohlelweni lokusebenza? Uma uhlelo "
 "lokusebenza lwewebhu lusebenza, luzonqanyulwa."
 
-#: src/main.py:605
+#: src/main.py:677
 msgid "Back to home"
 msgstr "Emuva ekhaya"
 
-#: src/main.py:606
+#: src/main.py:678
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -143,27 +151,27 @@ msgstr ""
 "Uqinisekile ukuthi ufuna ukubuyela esikrinini sasekhaya? Uhlelo lokusebenza "
 "lwewebhu luzonqanyulwa."
 
-#: src/main.py:619 src/main.py:622 src/main.py:625
+#: src/main.py:691 src/main.py:694 src/main.py:697
 msgid "Error"
 msgstr "Iphutha"
 
-#: src/main.py:619
+#: src/main.py:691
 msgid "This language is already selected."
 msgstr "Lolu limi seluvele lukhethiwe."
 
-#: src/main.py:622
+#: src/main.py:694
 msgid "This size is already selected."
 msgstr "Lo sayizi usuvele ukhethiwe."
 
-#: src/main.py:625
+#: src/main.py:697
 msgid "This appearance is already selected."
 msgstr "Lokhu kubonakala sekukhethiwe kakade."
 
-#: src/main.py:628
+#: src/main.py:700
 msgid "Info"
 msgstr "Ulwazi"
 
-#: src/main.py:629
+#: src/main.py:701
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -201,10 +209,6 @@ msgstr "Phansi"
 msgid "You completed the crossword!"
 msgstr "Uqedele i-crossword!"
 
-#: src/cword_webapp/templates/index.html:126
-msgid "Close"
-msgstr "Vala"
-
 msgid "Easy"
 msgstr "Kulula"
 
@@ -217,6 +221,9 @@ msgstr "Kunzima"
 msgid "Extreme"
 msgstr "Okudlulele"
 
+msgid "Geography"
+msgstr "IJografi"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -226,3 +233,9 @@ msgstr "Okudlulele"
 #~ "Also important to know:\n"
 #~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
 #~ msgstr ""
+
+#~ msgid "Capitals"
+#~ msgstr "Osonhlamvukazi"
+
+#~ msgid "Countries"
+#~ msgstr "Amazwe"

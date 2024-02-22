@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-19 10:18+1100\n"
+"POT-Creation-Date: 2024-02-21 21:08+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: lb <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr "Wuertzuel Preferenzen"
 msgid "Select word count"
 msgstr "Wielt Wuertzuel"
 
-#: src/main.py:284 src/main.py:501
+#: src/main.py:284 src/main.py:509
 msgid "Maximum"
 msgstr "Maximum"
 
@@ -95,75 +95,83 @@ msgstr "Maximum"
 msgid "Custom"
 msgstr "Benotzerdefinéiert"
 
-#: src/main.py:549
+#: src/main.py:548
+msgid "View"
+msgstr "Vue"
+
+#: src/cword_webapp/templates/index.html:126 src/main.py:550
+msgid "Close"
+msgstr "Zoumaachen"
+
+#: src/main.py:620
 msgid "Total words"
 msgstr "Total Wierder"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "Difficulty"
 msgstr "Schwieregkeet"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "difficulty"
 msgstr "Schwieregkeet"
 
-#: src/main.py:555
+#: src/main.py:626
 msgid "Select"
 msgstr "Wielt"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Restart"
 msgstr "Neistart"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Are you sure you want to restart the app?"
 msgstr "Sidd Dir sécher datt Dir d'App nei starten wëllt?"
 
-#: src/main.py:599
+#: src/main.py:671
 msgid "Exit"
 msgstr "Sortie"
 
-#: src/main.py:600
+#: src/main.py:672
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr ""
-"Sidd Dir sécher datt Dir d'App ausgoe wëllt? Wann d'Webapp leeft, "
-"gëtt se ofgeschloss."
+"Sidd Dir sécher datt Dir d'App ausgoe wëllt? Wann d'Webapp leeft, gëtt se "
+"ofgeschloss."
 
-#: src/main.py:605
+#: src/main.py:677
 msgid "Back to home"
 msgstr "Zréck doheem"
 
-#: src/main.py:606
+#: src/main.py:678
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
-"Sidd Dir sécher datt Dir zréck op den Heembildschierm wëllt goen? D'Web "
-"App gëtt ofgeschloss."
+"Sidd Dir sécher datt Dir zréck op den Heembildschierm wëllt goen? D'Web App "
+"gëtt ofgeschloss."
 
-#: src/main.py:619 src/main.py:622 src/main.py:625
+#: src/main.py:691 src/main.py:694 src/main.py:697
 msgid "Error"
 msgstr "Feeler"
 
-#: src/main.py:619
+#: src/main.py:691
 msgid "This language is already selected."
 msgstr "Dës Sprooch ass scho gewielt."
 
-#: src/main.py:622
+#: src/main.py:694
 msgid "This size is already selected."
 msgstr "Dës Gréisst ass scho gewielt."
 
-#: src/main.py:625
+#: src/main.py:697
 msgid "This appearance is already selected."
 msgstr "Dës Erscheinung ass scho gewielt."
 
-#: src/main.py:628
+#: src/main.py:700
 msgid "Info"
 msgstr "Info"
 
-#: src/main.py:629
+#: src/main.py:701
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -175,14 +183,14 @@ msgid ""
 " cannot view it. If this happens, please restart your browser."
 msgstr ""
 "Éischt Kéier lancéiert, liest w.e.g.: Wann Dir e Kräizwuerträtsel gelueden "
-"hutt a wëllt en aneren lueden, musst Dir d'Webapp fir d'éischt "
-"ofschléissen. WICHTEG: Wann Dir op macOS sidd, forcéiert d'Applikatioun "
-"opzehalen (mat cmd + q) wärend d'Webapp leeft, verhënnert datt se "
-"richteg ofgeschloss gëtt. Wann Dir dëst falsch maacht, fannt Dir entweder de"
-" Flask App Prozess an ofschléisst en, ännert d''webapp_port' "
-"Nummer an src/config.ini, oder start Äre Computer nei. OCH WICHTEG: A "
-"verschiddene Fäll hutt Dir vläicht d'Webapp gestart, awer Äre Browser "
-"kann se net gesinn. Wann dat passéiert, start w.e.g. Äre Browser nei."
+"hutt a wëllt en aneren lueden, musst Dir d'Webapp fir d'éischt ofschléissen."
+" WICHTEG: Wann Dir op macOS sidd, forcéiert d'Applikatioun opzehalen (mat "
+"cmd + q) wärend d'Webapp leeft, verhënnert datt se richteg ofgeschloss gëtt."
+" Wann Dir dëst falsch maacht, fannt Dir entweder de Flask App Prozess an "
+"ofschléisst en, ännert d''webapp_port' Nummer an src/config.ini, oder start "
+"Äre Computer nei. OCH WICHTEG: A verschiddene Fäll hutt Dir vläicht d'Webapp"
+" gestart, awer Äre Browser kann se net gesinn. Wann dat passéiert, start "
+"w.e.g. Äre Browser nei."
 
 #: src/cword_webapp/templates/index.html:13
 msgid "Crossword Puzzle - Game"
@@ -200,10 +208,6 @@ msgstr "Down"
 msgid "You completed the crossword!"
 msgstr "Dir hutt d'Kräizwuert fäerdeg gemaach!"
 
-#: src/cword_webapp/templates/index.html:126
-msgid "Close"
-msgstr "Zoumaachen"
-
 msgid "Easy"
 msgstr "Einfach"
 
@@ -216,6 +220,9 @@ msgstr "Schwéier"
 msgid "Extreme"
 msgstr "Extrem"
 
+msgid "Geography"
+msgstr "Geographie"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -225,3 +232,9 @@ msgstr "Extrem"
 #~ "Also important to know:\n"
 #~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
 #~ msgstr ""
+
+#~ msgid "Capitals"
+#~ msgstr "Haaptstied"
+
+#~ msgid "Countries"
+#~ msgstr "Länner"

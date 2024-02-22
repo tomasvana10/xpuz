@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-19 10:18+1100\n"
+"POT-Creation-Date: 2024-02-21 21:08+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr "Préférences de nombre de mots"
 msgid "Select word count"
 msgstr "Sélectionnez le nombre de mots"
 
-#: src/main.py:284 src/main.py:501
+#: src/main.py:284 src/main.py:509
 msgid "Maximum"
 msgstr "Maximum"
 
@@ -95,75 +95,83 @@ msgstr "Maximum"
 msgid "Custom"
 msgstr "Coutume"
 
-#: src/main.py:549
+#: src/main.py:548
+msgid "View"
+msgstr "Voir"
+
+#: src/cword_webapp/templates/index.html:126 src/main.py:550
+msgid "Close"
+msgstr "Fermer"
+
+#: src/main.py:620
 msgid "Total words"
 msgstr "Nombre total de mots"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "Difficulty"
 msgstr "Difficulté"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "difficulty"
 msgstr "difficulté"
 
-#: src/main.py:555
+#: src/main.py:626
 msgid "Select"
 msgstr "Sélectionner"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Restart"
 msgstr "Redémarrage"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Are you sure you want to restart the app?"
 msgstr "Êtes-vous sûr de vouloir redémarrer l'application ?"
 
-#: src/main.py:599
+#: src/main.py:671
 msgid "Exit"
 msgstr "Sortie"
 
-#: src/main.py:600
+#: src/main.py:672
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr ""
-"Êtes-vous sûr de vouloir quitter l'application ? Si l'application "
-"Web est en cours d'exécution, elle sera terminée."
+"Êtes-vous sûr de vouloir quitter l'application ? Si l'application Web est en"
+" cours d'exécution, elle sera terminée."
 
-#: src/main.py:605
+#: src/main.py:677
 msgid "Back to home"
 msgstr "De retour à la maison"
 
-#: src/main.py:606
+#: src/main.py:678
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
-"Êtes-vous sûr de vouloir revenir à l'écran d'accueil ? "
-"L'application Web sera fermée."
+"Êtes-vous sûr de vouloir revenir à l'écran d'accueil ? L'application Web "
+"sera fermée."
 
-#: src/main.py:619 src/main.py:622 src/main.py:625
+#: src/main.py:691 src/main.py:694 src/main.py:697
 msgid "Error"
 msgstr "Erreur"
 
-#: src/main.py:619
+#: src/main.py:691
 msgid "This language is already selected."
 msgstr "Cette langue est déjà sélectionnée."
 
-#: src/main.py:622
+#: src/main.py:694
 msgid "This size is already selected."
 msgstr "Cette taille est déjà sélectionnée."
 
-#: src/main.py:625
+#: src/main.py:697
 msgid "This appearance is already selected."
 msgstr "Cette apparence est déjà sélectionnée."
 
-#: src/main.py:628
+#: src/main.py:700
 msgid "Info"
 msgstr "Info"
 
-#: src/main.py:629
+#: src/main.py:701
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -175,16 +183,15 @@ msgid ""
 " cannot view it. If this happens, please restart your browser."
 msgstr ""
 "Lors du premier lancement, veuillez lire : Une fois que vous avez chargé un "
-"mot croisé et que vous souhaitez en charger un autre, vous devez d'abord"
-" terminer l'application Web. IMPORTANT : si vous utilisez macOS, forcer "
-"la fermeture de l'application (à l'aide de cmd+q) pendant que "
-"l'application Web est en cours d'exécution l'empêchera de se "
-"terminer correctement. Si vous faites cela par erreur, recherchez le "
-"processus de l'application Flask et terminez-le, modifiez le numéro « "
-"webapp_port » dans src/config.ini ou redémarrez votre ordinateur. AUSSI "
-"IMPORTANT : Dans certains cas, vous pouvez avoir lancé l'application Web"
-" mais votre navigateur ne peut pas la visualiser. Si cela se produit, "
-"veuillez redémarrer votre navigateur."
+"mot croisé et que vous souhaitez en charger un autre, vous devez d'abord "
+"terminer l'application Web. IMPORTANT : si vous utilisez macOS, forcer la "
+"fermeture de l'application (à l'aide de cmd+q) pendant que l'application Web"
+" est en cours d'exécution l'empêchera de se terminer correctement. Si vous "
+"faites cela par erreur, recherchez le processus de l'application Flask et "
+"terminez-le, modifiez le numéro « webapp_port » dans src/config.ini ou "
+"redémarrez votre ordinateur. AUSSI IMPORTANT : Dans certains cas, vous "
+"pouvez avoir lancé l'application Web mais votre navigateur ne peut pas la "
+"visualiser. Si cela se produit, veuillez redémarrer votre navigateur."
 
 #: src/cword_webapp/templates/index.html:13
 msgid "Crossword Puzzle - Game"
@@ -202,10 +209,6 @@ msgstr "Vers le bas"
 msgid "You completed the crossword!"
 msgstr "Vous avez terminé les mots croisés !"
 
-#: src/cword_webapp/templates/index.html:126
-msgid "Close"
-msgstr "Fermer"
-
 msgid "Easy"
 msgstr "Facile"
 
@@ -218,6 +221,9 @@ msgstr "Dur"
 msgid "Extreme"
 msgstr "Extrême"
 
+msgid "Geography"
+msgstr "Géographie"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -227,3 +233,9 @@ msgstr "Extrême"
 #~ "Also important to know:\n"
 #~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
 #~ msgstr ""
+
+#~ msgid "Capitals"
+#~ msgstr "Capitales"
+
+#~ msgid "Countries"
+#~ msgstr "Des pays"

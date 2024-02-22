@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-19 10:18+1100\n"
+"POT-Creation-Date: 2024-02-21 21:08+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: mg <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr "Safidy isan'ny teny"
 msgid "Select word count"
 msgstr "Fidio ny isan'ny teny"
 
-#: src/main.py:284 src/main.py:501
+#: src/main.py:284 src/main.py:509
 msgid "Maximum"
 msgstr "Faratampony"
 
@@ -95,35 +95,43 @@ msgstr "Faratampony"
 msgid "Custom"
 msgstr "fanao"
 
-#: src/main.py:549
+#: src/main.py:548
+msgid "View"
+msgstr "View"
+
+#: src/cword_webapp/templates/index.html:126 src/main.py:550
+msgid "Close"
+msgstr "AKAIKY"
+
+#: src/main.py:620
 msgid "Total words"
 msgstr "Total teny"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "Difficulty"
 msgstr "fahasarotana"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "difficulty"
 msgstr "fahasarotana"
 
-#: src/main.py:555
+#: src/main.py:626
 msgid "Select"
 msgstr "Select"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Restart"
 msgstr "Haverina velomina"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Are you sure you want to restart the app?"
 msgstr "Tena te hamerina ny fampiharana ve ianao?"
 
-#: src/main.py:599
+#: src/main.py:671
 msgid "Exit"
 msgstr "Fivoahana"
 
-#: src/main.py:600
+#: src/main.py:672
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -131,39 +139,39 @@ msgstr ""
 "Tena te hiala amin'ny fampiharana ve ianao? Raha mandeha ny app web dia "
 "hofoanana izany."
 
-#: src/main.py:605
+#: src/main.py:677
 msgid "Back to home"
 msgstr "Miverina any an-trano"
 
-#: src/main.py:606
+#: src/main.py:678
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
-"Tena te hiverina any amin'ny efijery an-trano ve ianao? Hatsahatra ny "
-"app web."
+"Tena te hiverina any amin'ny efijery an-trano ve ianao? Hatsahatra ny app "
+"web."
 
-#: src/main.py:619 src/main.py:622 src/main.py:625
+#: src/main.py:691 src/main.py:694 src/main.py:697
 msgid "Error"
 msgstr "fahadisoana"
 
-#: src/main.py:619
+#: src/main.py:691
 msgid "This language is already selected."
 msgstr "Efa voafantina ity fiteny ity."
 
-#: src/main.py:622
+#: src/main.py:694
 msgid "This size is already selected."
 msgstr "Efa voafantina io habe io."
 
-#: src/main.py:625
+#: src/main.py:697
 msgid "This appearance is already selected."
 msgstr "Ity endrika ity dia efa voafantina."
 
-#: src/main.py:628
+#: src/main.py:700
 msgid "Info"
 msgstr "Info"
 
-#: src/main.py:629
+#: src/main.py:701
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -177,14 +185,14 @@ msgstr ""
 "Famoahana voalohany, vakio azafady: Rehefa avy nametaka teny fanalahidy iray"
 " ianao ary te-hampiditra iray hafa dia tsy maintsy atsahatra aloha ny "
 "fampiharana tranonkala. ZAVA-DEHIBE: Raha mampiasa macOS ianao, dia tsy "
-"maintsy miala amin'ny fampiharana (amin'ny fampiasana cmd+q) raha "
-"mbola mandeha ny fampiharana tranonkala dia hisakana azy tsy hifarana araka "
-"ny tokony ho izy. Raha diso ianao manao izany dia tadiavo ny fizotry ny "
+"maintsy miala amin'ny fampiharana (amin'ny fampiasana cmd+q) raha mbola "
+"mandeha ny fampiharana tranonkala dia hisakana azy tsy hifarana araka ny "
+"tokony ho izy. Raha diso ianao manao izany dia tadiavo ny fizotry ny "
 "fampiharana Flask ary tapaho izany, ovay ny laharana `webapp_port` ao "
-"amin'ny src/config.ini, na avereno indray ny solosainao. ZAVA-DEHIBE "
-"KOA: Amin'ny toe-javatra sasany, mety efa nandefa ny fampiharana "
-"tranonkala ianao nefa tsy afaka mijery azy ny mpitety tranonkalanao. Raha "
-"mitranga izany dia avereno indray ny navigateur."
+"amin'ny src/config.ini, na avereno indray ny solosainao. ZAVA-DEHIBE KOA: "
+"Amin'ny toe-javatra sasany, mety efa nandefa ny fampiharana tranonkala ianao"
+" nefa tsy afaka mijery azy ny mpitety tranonkalanao. Raha mitranga izany dia"
+" avereno indray ny navigateur."
 
 #: src/cword_webapp/templates/index.html:13
 msgid "Crossword Puzzle - Game"
@@ -202,10 +210,6 @@ msgstr "Midina"
 msgid "You completed the crossword!"
 msgstr "Nahavita ny crossword ianao!"
 
-#: src/cword_webapp/templates/index.html:126
-msgid "Close"
-msgstr "AKAIKY"
-
 msgid "Easy"
 msgstr "Mora"
 
@@ -218,6 +222,9 @@ msgstr "Sarotra"
 msgid "Extreme"
 msgstr "tena"
 
+msgid "Geography"
+msgstr "jeografia"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -227,3 +234,9 @@ msgstr "tena"
 #~ "Also important to know:\n"
 #~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
 #~ msgstr ""
+
+#~ msgid "Capitals"
+#~ msgstr "kapitaly"
+
+#~ msgid "Countries"
+#~ msgstr "TANY"

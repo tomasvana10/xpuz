@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-19 10:18+1100\n"
+"POT-Creation-Date: 2024-02-21 21:08+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: my <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr "စကားလုံးရေတွက်မှု ဦးစားပ�
 msgid "Select word count"
 msgstr "စကားလုံးအရေအတွက်ကို ရွေးပါ။"
 
-#: src/main.py:284 src/main.py:501
+#: src/main.py:284 src/main.py:509
 msgid "Maximum"
 msgstr "အများဆုံး"
 
@@ -95,35 +95,43 @@ msgstr "အများဆုံး"
 msgid "Custom"
 msgstr "စိတ်ကြိုက်"
 
-#: src/main.py:549
+#: src/main.py:548
+msgid "View"
+msgstr "အမြင်"
+
+#: src/cword_webapp/templates/index.html:126 src/main.py:550
+msgid "Close"
+msgstr "ပိတ်လိုက်"
+
+#: src/main.py:620
 msgid "Total words"
 msgstr "စုစုပေါင်းစကားလုံးများ"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "Difficulty"
 msgstr "အခက်အခဲ"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "difficulty"
 msgstr "အခက်အခဲ"
 
-#: src/main.py:555
+#: src/main.py:626
 msgid "Select"
 msgstr "ရွေးချယ်ပါ။"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Restart"
 msgstr "ပြန်စတင်သည်"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Are you sure you want to restart the app?"
 msgstr "အက်ပ်ကို ပြန်လည်စတင်လိုသည်မှာ သေချာပါသလား။"
 
-#: src/main.py:599
+#: src/main.py:671
 msgid "Exit"
 msgstr "ထွက်ပေါက်"
 
-#: src/main.py:600
+#: src/main.py:672
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -131,37 +139,37 @@ msgstr ""
 "အက်ပ်မှ ထွက်လိုသည်မှာ သေချာပါသလား။ ဝဘ်အက်ပ်ကို အသုံးပြုနေပါက ၎င်းကို "
 "ရပ်စဲသွားမည်ဖြစ်သည်။"
 
-#: src/main.py:605
+#: src/main.py:677
 msgid "Back to home"
 msgstr "အိမ်ပြန်"
 
-#: src/main.py:606
+#: src/main.py:678
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr "ပင်မစခရင်သို့ ပြန်သွားလိုသည်မှာ သေချာပါသလား။ ဝဘ်အက်ပ်ကို ရပ်စဲပါမည်။"
 
-#: src/main.py:619 src/main.py:622 src/main.py:625
+#: src/main.py:691 src/main.py:694 src/main.py:697
 msgid "Error"
 msgstr "အမှား"
 
-#: src/main.py:619
+#: src/main.py:691
 msgid "This language is already selected."
 msgstr "ဤဘာသာစကားကို ရွေးထားပြီးဖြစ်သည်။"
 
-#: src/main.py:622
+#: src/main.py:694
 msgid "This size is already selected."
 msgstr "ဤအရွယ်အစားကို ရွေးထားပြီးဖြစ်သည်။"
 
-#: src/main.py:625
+#: src/main.py:697
 msgid "This appearance is already selected."
 msgstr "ဤအသွင်အပြင်ကို ရွေးထားပြီးဖြစ်သည်။"
 
-#: src/main.py:628
+#: src/main.py:700
 msgid "Info"
 msgstr "အချက်အလက်"
 
-#: src/main.py:629
+#: src/main.py:701
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -200,10 +208,6 @@ msgstr "ဆင်းတယ်။"
 msgid "You completed the crossword!"
 msgstr "သင်သည် စကားဝှက်ကို ပြီးမြောက်ခဲ့သည်။"
 
-#: src/cword_webapp/templates/index.html:126
-msgid "Close"
-msgstr "ပိတ်လိုက်"
-
 msgid "Easy"
 msgstr "လွယ်ပါတယ်။"
 
@@ -216,6 +220,9 @@ msgstr "ခက်တယ်။"
 msgid "Extreme"
 msgstr "အလွန်အမင်း"
 
+msgid "Geography"
+msgstr "ပထဝီဝင်"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -225,3 +232,9 @@ msgstr "အလွန်အမင်း"
 #~ "Also important to know:\n"
 #~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
 #~ msgstr ""
+
+#~ msgid "Capitals"
+#~ msgstr "မြို့တော်များ"
+
+#~ msgid "Countries"
+#~ msgstr "နိုင်ငံတွေ"

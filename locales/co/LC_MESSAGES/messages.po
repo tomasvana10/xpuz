@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-19 10:18+1100\n"
+"POT-Creation-Date: 2024-02-21 21:08+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: co <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr "Preferenze di conte di parolle"
 msgid "Select word count"
 msgstr "Sceglie u numeru di parolle"
 
-#: src/main.py:284 src/main.py:501
+#: src/main.py:284 src/main.py:509
 msgid "Maximum"
 msgstr "Massimu"
 
@@ -95,75 +95,82 @@ msgstr "Massimu"
 msgid "Custom"
 msgstr "Custom"
 
-#: src/main.py:549
+#: src/main.py:548
+msgid "View"
+msgstr "Vede"
+
+#: src/cword_webapp/templates/index.html:126 src/main.py:550
+msgid "Close"
+msgstr "Chiudi"
+
+#: src/main.py:620
 msgid "Total words"
 msgstr "Parulle totale"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "Difficulty"
 msgstr "Difficultà"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "difficulty"
 msgstr "difficultà"
 
-#: src/main.py:555
+#: src/main.py:626
 msgid "Select"
 msgstr "Selezziunà"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Restart"
 msgstr "Riavvia"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Are you sure you want to restart the app?"
 msgstr "Sò sicuru chì vulete riavvia l'app?"
 
-#: src/main.py:599
+#: src/main.py:671
 msgid "Exit"
 msgstr "Esci"
 
-#: src/main.py:600
+#: src/main.py:672
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr ""
-"Sò sicuru chì vulete esce da l'app? Se l'app web hè in esecuzione, "
-"serà terminata."
+"Sò sicuru chì vulete esce da l'app? Se l'app web hè in esecuzione, serà "
+"terminata."
 
-#: src/main.py:605
+#: src/main.py:677
 msgid "Back to home"
 msgstr "Torna in casa"
 
-#: src/main.py:606
+#: src/main.py:678
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
-"Sò sicuru chì vulete vultà à u screnu in casa ? L'app web serà "
-"terminata."
+"Sò sicuru chì vulete vultà à u screnu in casa ? L'app web serà terminata."
 
-#: src/main.py:619 src/main.py:622 src/main.py:625
+#: src/main.py:691 src/main.py:694 src/main.py:697
 msgid "Error"
 msgstr "Errore"
 
-#: src/main.py:619
+#: src/main.py:691
 msgid "This language is already selected."
 msgstr "Sta lingua hè digià sceltu."
 
-#: src/main.py:622
+#: src/main.py:694
 msgid "This size is already selected."
 msgstr "Sta taglia hè digià sceltu."
 
-#: src/main.py:625
+#: src/main.py:697
 msgid "This appearance is already selected."
 msgstr "Stu aspettu hè digià sceltu."
 
-#: src/main.py:628
+#: src/main.py:700
 msgid "Info"
 msgstr "Info"
 
-#: src/main.py:629
+#: src/main.py:701
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -176,13 +183,12 @@ msgid ""
 msgstr ""
 "U primu lanciu, per piacè leghjite: Una volta chì avete caricatu un "
 "cruciverba, è vulete carricà un altru, duvete prima finisce l'app web. "
-"IMPORTANTE: Sè site in macOS, forzate a abbandunà l'applicazione (usendu"
-" cmd + q) mentre l'app web hè in esecuzione, impediscenu di finisce bè. "
-"Se fate questu per sbagliu, truvate u prucessu di l'app Flask è finisce,"
-" cambiate u numeru `webapp_port` in src/config.ini, o riavviate u vostru "
-"urdinatore. AUSSI IMPORTANTE: In certi casi, pudete avè lanciatu l'app "
-"web ma u vostru navigatore ùn pò micca vede. Se questu succede, riavvia u "
-"vostru navigatore."
+"IMPORTANTE: Sè site in macOS, forzate a abbandunà l'applicazione (usendu cmd"
+" + q) mentre l'app web hè in esecuzione, impediscenu di finisce bè. Se fate "
+"questu per sbagliu, truvate u prucessu di l'app Flask è finisce, cambiate u "
+"numeru `webapp_port` in src/config.ini, o riavviate u vostru urdinatore. "
+"AUSSI IMPORTANTE: In certi casi, pudete avè lanciatu l'app web ma u vostru "
+"navigatore ùn pò micca vede. Se questu succede, riavvia u vostru navigatore."
 
 #: src/cword_webapp/templates/index.html:13
 msgid "Crossword Puzzle - Game"
@@ -200,10 +206,6 @@ msgstr "Giù"
 msgid "You completed the crossword!"
 msgstr "Avete finitu u cruciverba !"
 
-#: src/cword_webapp/templates/index.html:126
-msgid "Close"
-msgstr "Chiudi"
-
 msgid "Easy"
 msgstr "Facile"
 
@@ -216,6 +218,9 @@ msgstr "Duru"
 msgid "Extreme"
 msgstr "Estremo"
 
+msgid "Geography"
+msgstr "Geografia"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -225,3 +230,9 @@ msgstr "Estremo"
 #~ "Also important to know:\n"
 #~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
 #~ msgstr ""
+
+#~ msgid "Capitals"
+#~ msgstr "Capitali"
+
+#~ msgid "Countries"
+#~ msgstr "I paesi"

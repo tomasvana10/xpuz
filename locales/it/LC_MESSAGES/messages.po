@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-19 10:18+1100\n"
+"POT-Creation-Date: 2024-02-21 21:08+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: it <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr "Preferenze sul conteggio delle parole"
 msgid "Select word count"
 msgstr "Seleziona il conteggio delle parole"
 
-#: src/main.py:284 src/main.py:501
+#: src/main.py:284 src/main.py:509
 msgid "Maximum"
 msgstr "Massimo"
 
@@ -95,47 +95,55 @@ msgstr "Massimo"
 msgid "Custom"
 msgstr "Costume"
 
-#: src/main.py:549
+#: src/main.py:548
+msgid "View"
+msgstr "Visualizzazione"
+
+#: src/cword_webapp/templates/index.html:126 src/main.py:550
+msgid "Close"
+msgstr "Vicino"
+
+#: src/main.py:620
 msgid "Total words"
 msgstr "Parole totali"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "Difficulty"
 msgstr "Difficoltà"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "difficulty"
 msgstr "difficoltà"
 
-#: src/main.py:555
+#: src/main.py:626
 msgid "Select"
 msgstr "Selezionare"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Restart"
 msgstr "Ricomincia"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Are you sure you want to restart the app?"
 msgstr "Sei sicuro di voler riavviare l'app?"
 
-#: src/main.py:599
+#: src/main.py:671
 msgid "Exit"
 msgstr "Uscita"
 
-#: src/main.py:600
+#: src/main.py:672
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr ""
-"Sei sicuro di voler uscire dall'app? Se l'app Web è in esecuzione, "
-"verrà terminata."
+"Sei sicuro di voler uscire dall'app? Se l'app Web è in esecuzione, verrà "
+"terminata."
 
-#: src/main.py:605
+#: src/main.py:677
 msgid "Back to home"
 msgstr "Tornare a casa"
 
-#: src/main.py:606
+#: src/main.py:678
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -143,27 +151,27 @@ msgstr ""
 "Sei sicuro di voler tornare alla schermata principale? L'app Web verrà "
 "terminata."
 
-#: src/main.py:619 src/main.py:622 src/main.py:625
+#: src/main.py:691 src/main.py:694 src/main.py:697
 msgid "Error"
 msgstr "Errore"
 
-#: src/main.py:619
+#: src/main.py:691
 msgid "This language is already selected."
 msgstr "Questa lingua è già selezionata."
 
-#: src/main.py:622
+#: src/main.py:694
 msgid "This size is already selected."
 msgstr "Questa dimensione è già selezionata."
 
-#: src/main.py:625
+#: src/main.py:697
 msgid "This appearance is already selected."
 msgstr "Questo aspetto è già selezionato."
 
-#: src/main.py:628
+#: src/main.py:700
 msgid "Info"
 msgstr "Informazioni"
 
-#: src/main.py:629
+#: src/main.py:701
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -175,13 +183,13 @@ msgid ""
 " cannot view it. If this happens, please restart your browser."
 msgstr ""
 "Al primo avvio, leggi: Una volta caricato un cruciverba e desideri caricarne"
-" un altro, devi prima chiudere l'app web. IMPORTANTE: se utilizzi macOS,"
-" forzare l'uscita dall'applicazione (utilizzando cmd+q) mentre "
-"l'app Web è in esecuzione ne impedirà la chiusura corretta. Se lo fai "
-"per errore, trova il processo dell'app Flask e terminalo, modifica il "
-"numero &quot;webapp_port&quot; in src/config.ini o riavvia il computer. "
-"IMPORTANTE ANCHE: in alcuni casi, potresti aver avviato l'app Web ma il "
-"tuo browser non riesce a visualizzarla. Se ciò accade, riavvia il browser."
+" un altro, devi prima chiudere l'app web. IMPORTANTE: se utilizzi macOS, "
+"forzare l'uscita dall'applicazione (utilizzando cmd+q) mentre l'app Web è in"
+" esecuzione ne impedirà la chiusura corretta. Se lo fai per errore, trova il"
+" processo dell'app Flask e terminalo, modifica il numero "
+"&quot;webapp_port&quot; in src/config.ini o riavvia il computer. IMPORTANTE "
+"ANCHE: in alcuni casi, potresti aver avviato l'app Web ma il tuo browser non"
+" riesce a visualizzarla. Se ciò accade, riavvia il browser."
 
 #: src/cword_webapp/templates/index.html:13
 msgid "Crossword Puzzle - Game"
@@ -199,10 +207,6 @@ msgstr "Giù"
 msgid "You completed the crossword!"
 msgstr "Hai completato il cruciverba!"
 
-#: src/cword_webapp/templates/index.html:126
-msgid "Close"
-msgstr "Vicino"
-
 msgid "Easy"
 msgstr "Facile"
 
@@ -215,6 +219,9 @@ msgstr "Difficile"
 msgid "Extreme"
 msgstr "Estremo"
 
+msgid "Geography"
+msgstr "Geografia"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -224,3 +231,9 @@ msgstr "Estremo"
 #~ "Also important to know:\n"
 #~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
 #~ msgstr ""
+
+#~ msgid "Capitals"
+#~ msgstr "Capitali"
+
+#~ msgid "Countries"
+#~ msgstr "Paesi"

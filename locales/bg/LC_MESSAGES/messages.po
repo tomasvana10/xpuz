@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-19 10:18+1100\n"
+"POT-Creation-Date: 2024-02-21 21:08+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: bg <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr "Предпочитания за брой думи"
 msgid "Select word count"
 msgstr "Изберете брой думи"
 
-#: src/main.py:284 src/main.py:501
+#: src/main.py:284 src/main.py:509
 msgid "Maximum"
 msgstr "Максимум"
 
@@ -95,35 +95,43 @@ msgstr "Максимум"
 msgid "Custom"
 msgstr "Персонализиран"
 
-#: src/main.py:549
+#: src/main.py:548
+msgid "View"
+msgstr "Преглед"
+
+#: src/cword_webapp/templates/index.html:126 src/main.py:550
+msgid "Close"
+msgstr "Близо"
+
+#: src/main.py:620
 msgid "Total words"
 msgstr "Общо думи"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "Difficulty"
 msgstr "Трудност"
 
-#: src/main.py:553
+#: src/main.py:624
 msgid "difficulty"
 msgstr "трудност"
 
-#: src/main.py:555
+#: src/main.py:626
 msgid "Select"
 msgstr "Изберете"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Restart"
 msgstr "Рестартирам"
 
-#: src/main.py:595
+#: src/main.py:667
 msgid "Are you sure you want to restart the app?"
 msgstr "Сигурни ли сте, че искате да рестартирате приложението?"
 
-#: src/main.py:599
+#: src/main.py:671
 msgid "Exit"
 msgstr "Изход"
 
-#: src/main.py:600
+#: src/main.py:672
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -131,11 +139,11 @@ msgstr ""
 "Сигурни ли сте, че искате да излезете от приложението? Ако уеб приложението "
 "работи, то ще бъде прекратено."
 
-#: src/main.py:605
+#: src/main.py:677
 msgid "Back to home"
 msgstr "Обратно в къщи"
 
-#: src/main.py:606
+#: src/main.py:678
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -143,27 +151,27 @@ msgstr ""
 "Сигурни ли сте, че искате да се върнете към началния екран? Уеб приложението"
 " ще бъде прекратено."
 
-#: src/main.py:619 src/main.py:622 src/main.py:625
+#: src/main.py:691 src/main.py:694 src/main.py:697
 msgid "Error"
 msgstr "Грешка"
 
-#: src/main.py:619
+#: src/main.py:691
 msgid "This language is already selected."
 msgstr "Този език вече е избран."
 
-#: src/main.py:622
+#: src/main.py:694
 msgid "This size is already selected."
 msgstr "Този размер вече е избран."
 
-#: src/main.py:625
+#: src/main.py:697
 msgid "This appearance is already selected."
 msgstr "Този вид вече е избран."
 
-#: src/main.py:628
+#: src/main.py:700
 msgid "Info"
 msgstr "Информация"
 
-#: src/main.py:629
+#: src/main.py:701
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -200,10 +208,6 @@ msgstr "Надолу"
 msgid "You completed the crossword!"
 msgstr "Попълнихте кръстословицата!"
 
-#: src/cword_webapp/templates/index.html:126
-msgid "Close"
-msgstr "Близо"
-
 msgid "Easy"
 msgstr "лесно"
 
@@ -216,6 +220,9 @@ msgstr "Твърд"
 msgid "Extreme"
 msgstr "Екстремни"
 
+msgid "Geography"
+msgstr "География"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -225,3 +232,9 @@ msgstr "Екстремни"
 #~ "Also important to know:\n"
 #~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
 #~ msgstr ""
+
+#~ msgid "Capitals"
+#~ msgstr "Главни букви"
+
+#~ msgid "Countries"
+#~ msgstr "Държави"
