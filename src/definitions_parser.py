@@ -28,7 +28,7 @@ class DefinitionsParser:
             raise InsufficientDefinitionsAndOrWordCount
         if len(definitions) < word_count: 
             raise ShorterDefinitionsThanWordCount
-        if any("\\" in word for word in definitions.keys()): # Escape character break regex filtering.
+        if any("\\" in word for word in definitions.keys()): # Escape character breaks regex filtering.
             raise EscapeCharacterInWord
 
         definitions = DefinitionsParser._format_definitions(definitions, word_count)
@@ -51,7 +51,6 @@ class DefinitionsParser:
         # Remove all non language chars from the keys of `randomly_sampled_definitions` (the words)
         # and capitalise its values (the clues/definitions).
         formatted_definitions = {regex.sub(CrosswordRestrictions.KEEP_LANGUAGES_PATTERN, 
-                                          "", k).upper(): v.capitalize() \
-                                for k, v in randomly_sampled_definitions.items()}
+                                           "", k).upper(): v for k, v in randomly_sampled_definitions.items()}
         
         return formatted_definitions

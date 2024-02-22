@@ -14,8 +14,9 @@ class Paths:
     CONFIG_PATH = Path(__file__).resolve().parents[0] / "config.ini"
     LOCALES_PATH = Path(__file__).resolve().parents[1] / "locales"
     BASE_POT_PATH = os.path.join(LOCALES_PATH, "base.pot")
-    CWORD_IMG_LIGHT_PATH = Path(__file__).resolve().parents[1] / os.path.join("assets", "images", "cword_img_light.png")
-    CWORD_IMG_DARK_PATH = Path(__file__).resolve().parents[1] / os.path.join("assets", "images", "cword_img_dark.png")
+    CWORD_IMG_LIGHT_PATH = Path(__file__).resolve().parents[1] / os.path.join("assets", "images", "cword_light.png")
+    CWORD_IMG_DARK_PATH = Path(__file__).resolve().parents[1] / os.path.join("assets", "images", "cword_dark.png")
+    ICONS_PATH = Path(__file__).resolve().parents[1] / os.path.join("assets", "icons")
     BASE_CWORDS_PATH = Path(__file__).resolve().parents[0] / "base_cwords"
     ATTEMPTS_DB_PATH = Path(__file__).resolve().parents[0] / os.path.join("data", "attempts_db.json")
     
@@ -28,6 +29,7 @@ class Colour:
         EXIT_BUTTON = "#ED3B4D"
         EXIT_BUTTON_HOVER = "#BF0013"
         BUTTON_TEXT_COLOUR = "#DDE3ED"
+        DIFFICULTIES: List[str] = ["#089E19", "#FCBA03", "#E01C07", "#6408A6"]
         
     class Light:
         MAIN = "#C7D0D4"
@@ -50,10 +52,10 @@ class CrosswordDifficulties:
     '''Generic difficulty names for crosswords. In a crossword directory's `info.json` file, they
     are specified as indexes and not strings.
     '''
-    DIFFICULTIES: list[str] = ["Easy", "Medium", "Hard", "Extreme"]
+    DIFFICULTIES: List[str] = ["Easy", "Medium", "Hard", "Extreme"]
 
 
-class LanguageReplacementsForPybabel:
+class LangReplacements:
     '''See information about this class in `locale_utils.py`.'''
     REPLACEMENTS: Dict[str, Union[str, None]] = {
         "zh-cn": "zh",
@@ -69,7 +71,7 @@ class LanguageReplacementsForPybabel:
         "ku": None,
         "sd": None,
     }
-    REVERSE_REPLACEMENTS = {value: key for key, value in REPLACEMENTS.items()}
+    REVERSE = {value: key for key, value in REPLACEMENTS.items()}
 
 
 class CrosswordDirections:

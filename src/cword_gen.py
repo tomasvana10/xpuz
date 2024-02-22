@@ -16,7 +16,7 @@ class Crossword(object):
 
     Usage information:
     To begin, assign a definitions JSON to a variable by running 
-    >>> Crossword.load_definitions(json_fpath, "en") # You can use any locale name from the `locales` directory
+    >>> Crossword.load_definitions("capitals", "capitals-easy", "en") # You can use any locale name from the `locales` directory
     
     
     For simple use, instantiate the class with the required parameters and call the generate() function.
@@ -397,12 +397,13 @@ class CrosswordHelper():
         return best_crossword # NOTE: `generate()`` has already been called on this object
 
     @staticmethod
-    def load_definitions(name: str, 
+    def load_definitions(category: str, 
+                         name: str,
                          language: str = "en",
                          ) -> Dict[str, str]:
         '''Load a definitions json for a given crossword.'''
         try:
-            with open(os.path.join(Paths.LOCALES_PATH, language, "cwords", name, "definitions.json"), "r") as file:
+            with open(os.path.join(Paths.LOCALES_PATH, language, "cwords", category, name, "definitions.json"), "r") as file:
                 definitions = json.load(file)
         except json.decoder.JSONDecodeError:
             raise EmptyDefinitions
@@ -420,8 +421,8 @@ class CrosswordHelper():
         return attempts_db
 
 
-if __name__ == "__main__": # Example usage
-    definitions = CrosswordHelper.load_definitions("capitals", "en")
+if __name__ == "__main__": # Example usage – this module is normally used in the executional context of `main.py`
+    definitions = CrosswordHelper.load_definitions("capitals", "capitals-easy", "en")
     
     crossword = Crossword(definitions=definitions, word_count=3, name="Capitals")
     crossword = CrosswordHelper.find_best_crossword(crossword)   

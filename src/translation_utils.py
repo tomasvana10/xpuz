@@ -10,7 +10,7 @@ from typing import List, Tuple, Dict, Union, Callable
 import polib
 from google.cloud import translate_v2
 
-from constants import Paths, LanguageReplacementsForPybabel
+from constants import Paths, LangReplacements
 from custom_types import CrosswordData
 
 
@@ -20,10 +20,10 @@ class LocaleTranslatorUtils:
         '''Find all the untranslated entries in each `messages.po` file, then translate and update them
         using Google Cloud's translate_v2 module.
         '''
-        dest_codes, localedir_names = LocaleTranslatorUtils._get_dest_codes_and_localedir_names()
+        locales, lang_codes = LocaleTranslatorUtils._get_locales_and_lang_codes()
 
-        for i, dir_name in enumerate(localedir_names):
-            messages: polib.POFile = polib.pofile(os.path.join(Paths.LOCALES_PATH, dir_name, "LC_MESSAGES", "messages.po"))
+        for i, locale in enumerate(locales):
+            messages: polib.POFile = polib.pofile(os.path.join(Paths.LOCALES_PATH, locale, "LC_MESSAGES", "messages.po"))
             untranslated_entries = messages.untranslated_entries()
 
             if not untranslated_entries: continue
@@ -33,32 +33,26 @@ class LocaleTranslatorUtils:
                 text = entry.msgid
                 if isinstance(text, bytes):
                     text = text.decode("utf-8")
-                if dest_codes[i] == "en": continue # Cannot translate english
-                entry.msgstr = client.translate(text, target_language=dest_codes[i], source_language="en", 
+                if lang_codes[i] == "en": continue # Cannot translate english
+                entry.msgstr = client.translate(text, target_language=lang_codes[i], source_language="en", 
                                                 format_="text")["translatedText"]
                 updates += 1
             
-            print(f"Updated {updates} msgstrs for {dir_name}")
+            print(f"Updated {updates} msgstrs for {locale}")
             messages.save(newline=None)
             
     @staticmethod
-    def _get_dest_codes_and_localedir_names() -> List[List[str]]:
+    def _get_locales_and_lang_codes() -> List[List[str]]:
         '''Get all the locale directory names, as well as the google translate language codes, which are 
         mostly the same. 
         '''
-        locales: List[str] = os.listdir(Paths.LOCALES_PATH) # The names of all the files in the `locales` directory
-        locales.remove("base.pot")
-        dest_codes: List[str] = list() # Same as `locales`, but compatible with translation (some replacements)
+        locales: List[str] = sorted([f.name for f in os.scandir(Paths.LOCALES_PATH) if f.is_dir()])
+        
+        lang_codes: List[str] = [LangReplacements.REVERSE[locale] if locale in LangReplacements.REPLACEMENTS.values() \
+                                else locale for locale in locales]
 
-        for locale_dir in locales:
-            if locale_dir not in LanguageReplacementsForPybabel.REPLACEMENTS.values():
-                dest_code = locale_dir
-            else: # The locale dir name must be replaced with its google translate counterpart.
-                dest_code = LanguageReplacementsForPybabel.REVERSE_REPLACEMENTS[locale_dir]  
-            dest_codes.append(dest_code)  
-    
-        if ".DS_Store" in locales: locales.remove(".DS_Store")
-        return [sorted(dest_codes), sorted(locales)]
+        
+        return locales, lang_codes
     
 
 class CrosswordTranslatorUtils:
@@ -68,48 +62,50 @@ class CrosswordTranslatorUtils:
         `base_cwords`, and all the necessary crosswords have been added and translated, and makes 
         those translations if required. 
         '''
-        base_cword_dir_names = CrosswordTranslatorUtils._get_base_cword_dir_names()
-        dest_codes, localedir_names = LocaleTranslatorUtils._get_dest_codes_and_localedir_names()
+        locales, lang_codes = LocaleTranslatorUtils._get_locales_and_lang_codes()
+        base_category_tree = CrosswordTranslatorUtils._get_base_cword_category_tree()
         
-        # Loop through each locale directory -> update necessary directories and files
-        for i, dir_name in enumerate(localedir_names):
-            translation_code = dir_name
-            # Locale dir name is different to the google translate language code
-            if translation_code in LanguageReplacementsForPybabel.REVERSE_REPLACEMENTS.keys():
-                translation_code = LanguageReplacementsForPybabel.REVERSE_REPLACEMENTS[dir_name]
-                
-            dir_path = os.path.join(Paths.LOCALES_PATH, dir_name)
-            locale_dir_items = os.listdir(dir_path)
-        
-            if "cwords" not in locale_dir_items: # Make `cwords` dir in locale file if it isn't there
-                os.mkdir(os.path.join(dir_path, "cwords"))
+        for i, locale in enumerate(locales):
+            locale_path = os.path.join(Paths.LOCALES_PATH, locale)
+            cwords_path = os.path.join(locale_path, "cwords")
+            if not os.path.exists(cwords_path): 
+                os.mkdir(cwords_path)
             
-            current_cwords = os.listdir(os.path.join(dir_path, "cwords"))
-            if ".DS_Store" in current_cwords: current_cwords.remove(".DS_Store")
-
-            # Check if all the base crosswords are in this locale directory, and translate them if needed.
-            for cword_dir_name in current_cwords:
-                current_cword_dir = os.path.join(dir_path, "cwords", cword_dir_name)
-                if os.listdir(current_cword_dir): continue # Already made translations for this cword
-                if cword_dir_name not in base_cword_dir_names: # No longer exists in base cwords
-                    shutil.rmtree(current_cword_dir)
-                    continue
-
-                # The current crossword directory hasn't been made yet; make it and do the translations
-                try: 
-                    os.mkdir(current_cword_dir)
-                except: ... # It may have just been empty
+            # Remove categories of the locale's crosswords if they are no longer present in the base categories
+            for existing_category in [f.name for f in os.scandir(cwords_path) if f.is_dir()]:
+                if existing_category not in base_category_tree.keys():
+                    shutil.rmtree(os.path.join(cwords_path, existing_category))
+            
+            for category, cwords in base_category_tree.items():
+                category_path = os.path.join(cwords_path, category)
+                if not os.path.exists(category_path): 
+                    os.mkdir(category_path)
                 
-                definitions, info = CrosswordTranslatorUtils._get_cword_data(cword_dir_name)
-                if dir_name == "en": # Just write the non-translated definitions and info
-                    info["translated_name"] = info["name"]
-                    CrosswordTranslatorUtils._write_translated_cword_data(current_cword_dir, definitions, info)
-                    return
-                
-                translated_definitions, translated_info = CrosswordTranslatorUtils._format_and_translate_cword_data(translation_code, definitions, info)
-                # Write the translated data!
-                CrosswordTranslatorUtils._write_translated_cword_data(current_cword_dir, translated_definitions, translated_info)
+                for existing_cword in [f.name for f in os.scandir(category_path) if f.is_dir()]:
+                    if existing_cword not in base_category_tree[category]:
+                        shutil.rmtree(os.path.join(category_path, existing_cword))
 
+                for cword in cwords: # Make and translate (if required) all crosswords in the current category
+                    cword_path = os.path.join(category_path, cword)
+                    if not os.path.exists(cword_path): 
+                        os.mkdir(cword_path)
+                
+                    if os.listdir(cword_path): continue # Probably made translations idk
+
+                    definitions, info = CrosswordTranslatorUtils._get_cword_data(category, cword)
+                    if locale == "en": # Just write the non-translated definitions and info
+                        info["translated_name"] = info["name"]
+                        CrosswordTranslatorUtils._write_translated_cword_data(cword_path, definitions, info)
+                        continue
+                    
+                    # Make the translations
+                    translated_definitions, translated_info = CrosswordTranslatorUtils._format_and_translate_cword_data(lang_codes[i], 
+                                                                                                                        definitions, 
+                                                                                                                        info)
+                    # Write the translated data! 
+                    CrosswordTranslatorUtils._write_translated_cword_data(cword_path, translated_definitions, translated_info)
+                    print(f"(Locale: {locale}) - Wrote translations of {category}/{cword}")
+                
     @staticmethod
     def _format_and_translate_cword_data(language: str,
                                          definitions: Dict[str, str], 
@@ -155,7 +151,7 @@ class CrosswordTranslatorUtils:
 
         def _reduce(length: int, 
                     parts: int
-                    ) -> Union[Callable, int]:
+                    ) -> int:
             length = int(length / 2)
             parts += 1
             if length > 128:
@@ -166,43 +162,43 @@ class CrosswordTranslatorUtils:
         return _reduce(length, parts)
     
     @staticmethod
-    def _get_cword_data(cword_dir_name: str) -> CrosswordData:
+    def _get_base_cword_category_tree() -> Dict[str, List[str]]:
+        category_tree: Dict[str, List[str]] = dict()
+        for category in [f for f in os.scandir(Paths.BASE_CWORDS_PATH) if f.is_dir()]:
+            cwords: List[str] = list()
+            for cword in [f.name for f in os.scandir(category.path) if f.is_dir()]:
+                cwords.append(cword)
+            category_tree[category.name] = cwords
+        
+        return category_tree
+        
+    @staticmethod
+    def _get_cword_data(category: str, 
+                        name: str
+                        ) -> CrosswordData:
+        base_cword_path = os.path.join(Paths.BASE_CWORDS_PATH, category, name)
         '''Load the `definitions.json` and `info.json` files from a given base crossword.'''
-        cword_path = os.path.join(Paths.BASE_CWORDS_PATH, cword_dir_name)
-        with open(os.path.join(cword_path, "definitions.json"), "r") as file:
+        with open(os.path.join(base_cword_path, "definitions.json"), "r") as file:
             definitions = json.load(file)
-        with open(os.path.join(cword_path, "info.json"), "r") as file:
+        with open(os.path.join(base_cword_path, "info.json"), "r") as file:
             info = json.load(file)
             
         return definitions, info
     
     @staticmethod
-    def _write_translated_cword_data(cword_dir_name: str, 
+    def _write_translated_cword_data(path: str, 
                                      definitions: Dict[str, str], 
                                      info: Dict[str, Union[str, int]]
                                      ) -> None:
-        with open(os.path.join(cword_dir_name, "definitions.json"), "w") as file:
+        with open(os.path.join(path, "definitions.json"), "w") as file:
             json.dump(definitions, file, indent=4)
-        with open(os.path.join(cword_dir_name, "info.json"), "w") as file:
+        with open(os.path.join(path, "info.json"), "w") as file:
             json.dump(info, file, indent=4)
-    
-    @staticmethod
-    def _get_base_cword_dir_names() -> List[str]:
-        '''Get all the directory names of the crosswords in `Paths.BASE_CWORDS_PATH`.'''
-        dir_names: List[str] = list()
-        for dir_name in os.listdir(Paths.BASE_CWORDS_PATH):
-            if dir_name: # Must not be NoneType
-                dir_names.append(dir_name)
-        
-        if ".DS_Store" in dir_names: dir_names.remove(".DS_Store")
-        
-        return dir_names
-            
+                    
         
 if __name__ == "__main__":
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "src/googlekey.json"
-    
     client = translate_v2.Client()
+    
     CrosswordTranslatorUtils.update_cword_translations()
-
-    # LocaleTranslatorUtils.update_msgstrs()
+    LocaleTranslatorUtils.update_msgstrs()
