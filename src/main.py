@@ -283,7 +283,7 @@ class CrosswordBrowser(ctk.CTkFrame):
                                                         font=self.master.TEXT_FONT)
         self.opts_custom_word_count.set(_("Select word count"))
         
-        self.rb_max_word_count = ctk.CTkRadioButton(self.preference_container, text=f"{_("Maximum")}: ",
+        self.rb_max_word_count = ctk.CTkRadioButton(self.preference_container, text=f"{_('Maximum')}: ",
                                                     variable=self.word_count_preference,
                                                     value=0, state="disabled", corner_radius=1,
                                                     command=lambda: self._on_word_count_rb_selection("max"),
@@ -353,7 +353,7 @@ class CrosswordBrowser(ctk.CTkFrame):
         self.b_terminate_cword_webapp.configure(state="disabled")
         self.b_open_cword_webapp.configure(state="disabled")
         self._configure_cword_launch_options_state("disabled")
-        self.rb_max_word_count.configure(text=f"{_("Maximum")}:")
+        self.rb_max_word_count.configure(text=f"{_('Maximum')}:")
         self.opts_custom_word_count.set(_("Select word count"))
         self.word_count_preference.set(-1)
      
@@ -502,7 +502,7 @@ class CrosswordBrowser(ctk.CTkFrame):
         
         self.opts_custom_word_count.configure(values=[str(numbers.format_decimal(num, locale=self.master.locale))\
                                                       for num in range(3, word_count + 1)])
-        self.rb_max_word_count.configure(text=f"{_("Maximum")}: {numbers.format_decimal(word_count, locale=self.master.locale)}")
+        self.rb_max_word_count.configure(text=f"{_('Maximum')}: {numbers.format_decimal(word_count, locale=self.master.locale)}")
     
     def go_to_home(self) -> None:
         '''Removes the content of `CrosswordBrowser` and regenerates the `Home` classes content. This
@@ -646,15 +646,14 @@ class CrosswordInfoBlock(ctk.CTkFrame):
                                       wrap="word", fg_color=(Colour.Light.SUB, Colour.Dark.SUB),
                                       scrollbar_button_color=(Colour.Light.MAIN, Colour.Dark.MAIN))
         self.tb_name.tag_config("center", justify="center")
-        self.tb_name.insert("end", f"{chr(int(self.info['symbol'], 16))} {self.info["translated_name"]}", "center")
+        self.tb_name.insert("end", f"{chr(int(self.info['symbol'], 16))} {self.info['translated_name']}", "center")
         self.tb_name.configure(state="disabled")
 
         self.l_total_words = ctk.CTkLabel(self, font=self.master.master.TEXT_FONT,
-                                          text=f"{_("Total words")}: {numbers.format_decimal(self.info['total_definitions'], 
-                                                                                             locale=self.master.master.locale)}")
+                                          text=f"{_('Total words')}: {numbers.format_decimal(self.info['total_definitions'], locale=self.master.master.locale)}")
         
         self.l_difficulty = ctk.CTkLabel(self, font=self.master.master.TEXT_FONT,
-                    text=f"{_("Difficulty")}: {_(CrosswordDifficulties.DIFFICULTIES[self.info['difficulty']])}")
+                    text=f"{_('Difficulty')}: {_(CrosswordDifficulties.DIFFICULTIES[self.info['difficulty']])}")
         
         self.bottom_colour_tag = ctk.CTkLabel(self, text="", fg_color=Colour.Global.DIFFICULTIES[self.info["difficulty"]],
                                               corner_radius=10)

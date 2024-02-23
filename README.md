@@ -22,7 +22,7 @@ A GUI application built with `CustomTkinter` that allows you to select, configur
    - `python3 -m venv venv`
    - Windows: `venv\Scripts\activate`, MacOS/Linux: `source venv/bin/activate`
 4. `pip install -r requirements.txt`
-5. `python3 src/main.py`
+5. `python3 src/main.py` (if this doesn't work, try using `python` instead of `python3`)
 <br><br>
 ## Usage
 Will create external user documentation and add it to the repository eventually.
