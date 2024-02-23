@@ -4,7 +4,6 @@ import os
 import shutil
 import json
 import numpy as np
-from pprint import pprint
 from typing import List, Tuple, Dict, Union, Callable
 
 import polib
@@ -21,6 +20,7 @@ class LocaleTranslatorUtils:
         using Google Cloud's translate_v2 module.
         '''
         locales, lang_codes = LocaleTranslatorUtils._get_locales_and_lang_codes()
+        local_client: translate_v2.Client = client
 
         for i, locale in enumerate(locales):
             messages: polib.POFile = polib.pofile(os.path.join(Paths.LOCALES_PATH, locale, "LC_MESSAGES", "messages.po"))
@@ -34,11 +34,11 @@ class LocaleTranslatorUtils:
                 if isinstance(text, bytes):
                     text = text.decode("utf-8")
                 if lang_codes[i] == "en": continue # Cannot translate english
-                entry.msgstr = client.translate(text, target_language=lang_codes[i], source_language="en", 
-                                                format_="text")["translatedText"]
+                entry.msgstr = local_client.translate(text, target_language=lang_codes[i], source_language="en", 
+                                                      format_="text")["translatedText"]
                 updates += 1
             
-            print(f"Updated {updates} msgstrs for {locale}")
+            print(f"(Locale: {locale}) - Updated {updates} msgstr(s)")
             messages.save(newline=None)
             
     @staticmethod
@@ -51,7 +51,6 @@ class LocaleTranslatorUtils:
         lang_codes: List[str] = [LangReplacements.REVERSE[locale] if locale in LangReplacements.REPLACEMENTS.values() \
                                 else locale for locale in locales]
 
-        
         return locales, lang_codes
     
 
@@ -116,6 +115,8 @@ class CrosswordTranslatorUtils:
         the definitions into parts. Returns a data with an identical structure to what was passed (except
         it is translated).
         '''
+        local_client: translate_v2.Client = client
+        
         arrayified_definitions = np.array([pair for item in definitions.items() for pair in item])
         # Split into manageable parts for translation requests
         split_definitions = np.array_split(arrayified_definitions, 
@@ -126,8 +127,8 @@ class CrosswordTranslatorUtils:
                                  for part in translated_definitions for i in range(0, len(part), 2)}
 
         # Update just the `translated_name` key of `info`
-        info["translated_name"] = client.translate(info["name"], target_language=language, 
-                                                   source_language="en", format_="text")["translatedText"]
+        info["translated_name"] = local_client.translate(info["name"], target_language=language, 
+                                                         source_language="en", format_="text")["translatedText"]
         
         return formatted_definitions, info
     
@@ -136,9 +137,11 @@ class CrosswordTranslatorUtils:
                          language: str
                          ) -> List[Dict]:
         '''Translate the parts of a split definitions array and return a new array of those translated parts.'''
+        local_client = client
+        
         translated_parts = list()
         for part in definitions:
-            translated_parts.append(client.translate(list(part), target_language=language, source_language="en", format_="text"))
+            translated_parts.append(local_client.translate(list(part), target_language=language, source_language="en", format_="text"))
 
         return translated_parts
     

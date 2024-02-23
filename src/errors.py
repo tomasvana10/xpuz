@@ -1,6 +1,5 @@
 '''Custom error classes used in `definitions_parser.py` and `cword_gen.py`.'''
 
-
 class EmptyDefinitions(Exception):
     def __init__(self):
         super().__init__("Definitions must not be empty")

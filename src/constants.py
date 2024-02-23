@@ -1,6 +1,5 @@
 '''Constants that are used by `cword_gen.py`, `main.py`, `definitions_parser.py` and `locale_utils.py`'''
 
-
 import os
 from typing import Dict, List, Union
 from pathlib import Path
@@ -62,6 +61,8 @@ class LangReplacements:
         "zh-tw": None,
         "ht": None,
         "hmn": "hnj",
+        "yi": None,
+        "ug": None,
         "sm": None,
         "he": None,
         "ar": None,

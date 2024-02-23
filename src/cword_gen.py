@@ -16,7 +16,7 @@ class Crossword(object):
 
     Usage information:
     To begin, assign a definitions JSON to a variable by running 
-    >>> Crossword.load_definitions("capitals", "capitals-easy", "en") # You can use any locale name from the `locales` directory
+    >>> Crossword.load_definitions("geography", "capitals-easy", "en")
     
     
     For simple use, instantiate the class with the required parameters and call the generate() function.
@@ -359,7 +359,7 @@ class Crossword(object):
             self._populate_grid(self.uninserted_words_backlog, insert_backlog=True) 
       
   
-class CrosswordHelper():
+class CrosswordHelper:
     '''Contains static methods to help with the loading of necessary JSON files and for performing 
     optimised crossword creation with `find_best_crossword`.
     '''
@@ -404,11 +404,9 @@ class CrosswordHelper():
         '''Load a definitions json for a given crossword.'''
         try:
             with open(os.path.join(Paths.LOCALES_PATH, language, "cwords", category, name, "definitions.json"), "r") as file:
-                definitions = json.load(file)
+                return json.load(file)
         except json.decoder.JSONDecodeError:
             raise EmptyDefinitions
-        
-        return definitions
 
     @staticmethod
     def _load_attempts_db() -> Dict[str, int]:
@@ -416,13 +414,11 @@ class CrosswordHelper():
         on the amount of words that crossword will contain.
         '''
         with open(Paths.ATTEMPTS_DB_PATH, "r") as file:
-            attempts_db = json.load(file)
-        
-        return attempts_db
+            return json.load(file)
 
 
 if __name__ == "__main__": # Example usage – this module is normally used in the executional context of `main.py`
-    definitions = CrosswordHelper.load_definitions("capitals", "capitals-easy", "en")
+    definitions = CrosswordHelper.load_definitions("geography", "capitals-easy", "en")
     
     crossword = Crossword(definitions=definitions, word_count=3, name="Capitals")
     crossword = CrosswordHelper.find_best_crossword(crossword)   
