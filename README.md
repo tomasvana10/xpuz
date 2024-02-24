@@ -1,5 +1,5 @@
 ![LICENSE](https://img.shields.io/badge/LICENSE-MIT-green?style=flat)
-[![VERSION](https://badge.fury.io/gh/tomasvana10%2Fcrossword_puzzle.svg)](https://github.com/tomasvana10/crossword_puzzle/releases/)
+![RELEASE](https://img.shields.io/github/release/tomasvana10/crossword_puzzle?style=flat)
 [![ISSUES](https://img.shields.io/github/issues-raw/tomasvana10/crossword_puzzle.svg?maxAge=25000)](https://github.com/tomasvana10/crossword_puzzle/issues)
 
 # crossword_puzzle
