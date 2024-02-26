@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-21 21:08+1100\n"
+"POT-Creation-Date: 2024-02-25 18:41+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: el <LL@li.org>\n"
@@ -19,119 +19,130 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:73
+#: src/main.py:39 src/main.py:75 src/main.py:202
 msgid "Crossword Puzzle"
 msgstr "Σταυρόλεξο"
 
-#: src/main.py:81
+#: src/main.py:83
 msgid "View crosswords"
 msgstr "Δείτε σταυρόλεξα"
 
-#: src/main.py:85
+#: src/main.py:87
 msgid "Exit the app"
 msgstr "Έξοδος από την εφαρμογή"
 
-#: src/main.py:91
+#: src/main.py:93
 msgid "Global Settings"
 msgstr "Γενικές ρυθμίσεις"
 
-#: src/main.py:94
+#: src/main.py:97
 msgid "Languages"
 msgstr "Γλώσσες"
 
-#: src/main.py:100
+#: src/main.py:103
 msgid "Size"
 msgstr "Μέγεθος"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "light"
 msgstr "φως"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "dark"
 msgstr "σκοτάδι"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "system"
 msgstr "Σύστημα"
 
-#: src/main.py:108
+#: src/main.py:111
 msgid "Appearance"
 msgstr "Εμφάνιση"
 
-#: src/main.py:252
+#: src/main.py:257
 msgid "Crossword Browser"
 msgstr "Πρόγραμμα περιήγησης σταυρόλεξων"
 
-#: src/main.py:254
+#: src/main.py:259
 msgid "Go back"
 msgstr "Πήγαινε πίσω"
 
-#: src/main.py:259
+#: src/main.py:264
 msgid "Load crossword"
 msgstr "Φόρτωση σταυρόλεξου"
 
-#: src/main.py:263
+#: src/main.py:268
 msgid "Open web app"
 msgstr "Ανοίξτε την εφαρμογή Ιστού"
 
-#: src/main.py:267
+#: src/main.py:272
 msgid "Terminate web app"
 msgstr "Τερματισμός εφαρμογής Ιστού"
 
-#: src/main.py:273
+#: src/main.py:278
 msgid "Word count preferences"
 msgstr "Προτιμήσεις καταμέτρησης λέξεων"
 
-#: src/main.py:280 src/main.py:318
+#: src/main.py:285 src/main.py:326 src/main.py:358 src/main.py:502
 msgid "Select word count"
 msgstr "Επιλέξτε μέτρηση λέξεων"
 
-#: src/main.py:284 src/main.py:509
+#: src/main.py:287 src/main.py:357 src/main.py:514
 msgid "Maximum"
 msgstr "Ανώτατο όριο"
 
-#: src/main.py:292
+#: src/main.py:293
 msgid "Custom"
 msgstr "Εθιμο"
 
-#: src/main.py:548
+#: src/main.py:435
+msgid "To check or reveal a cell/word, you must first select a cell"
+msgstr ""
+"Για να ελέγξετε ή να αποκαλύψετε ένα κελί/λέξη, πρέπει πρώτα να επιλέξετε "
+"ένα κελί"
+
+#: src/main.py:436
+msgid "To clear the current word, you must first select a cell."
+msgstr ""
+"Για να διαγράψετε την τρέχουσα λέξη, πρέπει πρώτα να επιλέξετε ένα κελί."
+
+#: src/main.py:560
 msgid "View"
 msgstr "Θέα"
 
-#: src/cword_webapp/templates/index.html:126 src/main.py:550
+#: src/cword_webapp/templates/index.html:187 src/main.py:562
 msgid "Close"
 msgstr "Κλείσε"
 
-#: src/main.py:620
-msgid "Total words"
-msgstr "Σύνολο λέξεων"
-
-#: src/main.py:624
-msgid "Difficulty"
-msgstr "Δυσκολία"
-
-#: src/main.py:624
+#: src/main.py:650 src/main.py:667
 msgid "difficulty"
 msgstr "δυσκολία"
 
-#: src/main.py:626
+#: src/main.py:664
+msgid "Total words"
+msgstr "Σύνολο λέξεων"
+
+#: src/main.py:667
+msgid "Difficulty"
+msgstr "Δυσκολία"
+
+#: src/main.py:672
 msgid "Select"
 msgstr "Επιλέγω"
 
-#: src/main.py:667
+#: src/main.py:714
 msgid "Restart"
 msgstr "Επανεκκίνηση"
 
-#: src/main.py:667
+#: src/main.py:714
 msgid "Are you sure you want to restart the app?"
 msgstr "Είστε βέβαιοι ότι θέλετε να επανεκκινήσετε την εφαρμογή;"
 
-#: src/main.py:671
+#: src/main.py:718
 msgid "Exit"
 msgstr "Εξοδος"
 
-#: src/main.py:672
+#: src/main.py:719
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -139,11 +150,11 @@ msgstr ""
 "Είστε βέβαιοι ότι θέλετε να βγείτε από την εφαρμογή; Εάν η εφαρμογή Ιστού "
 "εκτελείται, θα τερματιστεί."
 
-#: src/main.py:677
+#: src/main.py:724
 msgid "Back to home"
 msgstr "Πίσω στο σπίτι"
 
-#: src/main.py:678
+#: src/main.py:725
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -151,27 +162,27 @@ msgstr ""
 "Είστε βέβαιοι ότι θέλετε να επιστρέψετε στην αρχική οθόνη; Η εφαρμογή Ιστού "
 "θα τερματιστεί."
 
-#: src/main.py:691 src/main.py:694 src/main.py:697
+#: src/main.py:738 src/main.py:741 src/main.py:744
 msgid "Error"
 msgstr "Λάθος"
 
-#: src/main.py:691
+#: src/main.py:738
 msgid "This language is already selected."
 msgstr "Αυτή η γλώσσα είναι ήδη επιλεγμένη."
 
-#: src/main.py:694
+#: src/main.py:741
 msgid "This size is already selected."
 msgstr "Αυτό το μέγεθος είναι ήδη επιλεγμένο."
 
-#: src/main.py:697
+#: src/main.py:744
 msgid "This appearance is already selected."
 msgstr "Αυτή η εμφάνιση είναι ήδη επιλεγμένη."
 
-#: src/main.py:700
+#: src/main.py:747
 msgid "Info"
 msgstr "Πληροφορίες"
 
-#: src/main.py:701
+#: src/main.py:748
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -194,18 +205,72 @@ msgstr ""
 "προβάλει. Εάν συμβεί αυτό, επανεκκινήστε το πρόγραμμα περιήγησής σας."
 
 #: src/cword_webapp/templates/index.html:13
+#: src/cword_webapp/templates/index.html:172
 msgid "Crossword Puzzle - Game"
 msgstr "Σταυρόλεξο - Παιχνίδι"
 
-#: src/cword_webapp/templates/index.html:91
+#: src/cword_webapp/templates/index.html:116
 msgid "Across"
 msgstr "Απέναντι"
 
-#: src/cword_webapp/templates/index.html:108
+#: src/cword_webapp/templates/index.html:133
 msgid "Down"
 msgstr "Κάτω"
 
-#: src/cword_webapp/templates/index.html:125
+#: src/cword_webapp/templates/index.html:149
+msgid "Reveal"
+msgstr "Αποκαλύπτω"
+
+#: src/cword_webapp/templates/index.html:151
+#: src/cword_webapp/templates/index.html:158
+msgid "Cell"
+msgstr "Κύτταρο"
+
+#: src/cword_webapp/templates/index.html:152
+#: src/cword_webapp/templates/index.html:159
+#: src/cword_webapp/templates/index.html:165
+msgid "Word"
+msgstr "Λέξη"
+
+#: src/cword_webapp/templates/index.html:153
+#: src/cword_webapp/templates/index.html:160
+#: src/cword_webapp/templates/index.html:166
+msgid "Grid"
+msgstr "Πλέγμα"
+
+#: src/cword_webapp/templates/index.html:156
+msgid "Check"
+msgstr "Ελεγχος"
+
+#: src/cword_webapp/templates/index.html:163
+msgid "Clear"
+msgstr "Σαφή"
+
+#: src/cword_webapp/templates/index.html:173
+msgid "You are viewing"
+msgstr "Βλέπετε"
+
+#: src/cword_webapp/templates/index.html:173
+msgid "from"
+msgstr "από"
+
+#: src/cword_webapp/templates/index.html:175
+msgid "word(s) could not be inserted, sorry."
+msgstr "Δεν μπόρεσε να εισαχθεί λέξη(εις), συγγνώμη."
+
+#: src/cword_webapp/templates/index.html:176
+msgid "Word count (adjusted)"
+msgstr "Πλήθος λέξεων (προσαρμοσμένο)"
+
+#: src/cword_webapp/templates/index.html:178
+msgid "Word count"
+msgstr "Καταμέτρηση λέξεων"
+
+#: src/cword_webapp/templates/index.html:182
+msgid "Continue"
+msgstr "Να συνεχίσει"
+
+#: src/cword_webapp/templates/index.html:186
 msgid "You completed the crossword!"
 msgstr "Συμπλήρωσες το σταυρόλεξο!"
 
@@ -239,3 +304,18 @@ msgstr "Γεωγραφία"
 
 #~ msgid "Countries"
 #~ msgstr "Χώρες"
+
+#~ msgid "Easy"
+#~ msgstr "Ανετα"
+
+#~ msgid "Medium"
+#~ msgstr "Μεσαίο"
+
+#~ msgid "Hard"
+#~ msgstr "Σκληρά"
+
+#~ msgid "Extreme"
+#~ msgstr "Ακρο"
+
+#~ msgid "Geography"
+#~ msgstr "Γεωγραφία"

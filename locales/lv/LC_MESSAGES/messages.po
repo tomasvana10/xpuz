@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-21 21:08+1100\n"
+"POT-Creation-Date: 2024-02-25 18:41+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: lv <LL@li.org>\n"
@@ -19,119 +19,127 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:73
+#: src/main.py:39 src/main.py:75 src/main.py:202
 msgid "Crossword Puzzle"
 msgstr "Krustvārdu mīkla"
 
-#: src/main.py:81
+#: src/main.py:83
 msgid "View crosswords"
 msgstr "Skatīt krustvārdu mīklas"
 
-#: src/main.py:85
+#: src/main.py:87
 msgid "Exit the app"
 msgstr "Izejiet no lietotnes"
 
-#: src/main.py:91
+#: src/main.py:93
 msgid "Global Settings"
 msgstr "Globālie iestatījumi"
 
-#: src/main.py:94
+#: src/main.py:97
 msgid "Languages"
 msgstr "Valodas"
 
-#: src/main.py:100
+#: src/main.py:103
 msgid "Size"
 msgstr "Izmērs"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "light"
 msgstr "gaismas"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "dark"
 msgstr "tumšs"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "system"
 msgstr "sistēma"
 
-#: src/main.py:108
+#: src/main.py:111
 msgid "Appearance"
 msgstr "Izskats"
 
-#: src/main.py:252
+#: src/main.py:257
 msgid "Crossword Browser"
 msgstr "Krustvārdu mīklas pārlūks"
 
-#: src/main.py:254
+#: src/main.py:259
 msgid "Go back"
 msgstr "Atgriezties"
 
-#: src/main.py:259
+#: src/main.py:264
 msgid "Load crossword"
 msgstr "Ielādēt krustvārdu mīklu"
 
-#: src/main.py:263
+#: src/main.py:268
 msgid "Open web app"
 msgstr "Atveriet tīmekļa lietotni"
 
-#: src/main.py:267
+#: src/main.py:272
 msgid "Terminate web app"
 msgstr "Pārtraukt tīmekļa lietotni"
 
-#: src/main.py:273
+#: src/main.py:278
 msgid "Word count preferences"
 msgstr "Vārdu skaita preferences"
 
-#: src/main.py:280 src/main.py:318
+#: src/main.py:285 src/main.py:326 src/main.py:358 src/main.py:502
 msgid "Select word count"
 msgstr "Izvēlieties vārdu skaitu"
 
-#: src/main.py:284 src/main.py:509
+#: src/main.py:287 src/main.py:357 src/main.py:514
 msgid "Maximum"
 msgstr "Maksimums"
 
-#: src/main.py:292
+#: src/main.py:293
 msgid "Custom"
 msgstr "Pielāgots"
 
-#: src/main.py:548
+#: src/main.py:435
+msgid "To check or reveal a cell/word, you must first select a cell"
+msgstr "Lai pārbaudītu vai atklātu šūnu/vārdu, vispirms ir jāatlasa šūna"
+
+#: src/main.py:436
+msgid "To clear the current word, you must first select a cell."
+msgstr "Lai notīrītu pašreizējo vārdu, vispirms ir jāatlasa šūna."
+
+#: src/main.py:560
 msgid "View"
 msgstr "Skatīt"
 
-#: src/cword_webapp/templates/index.html:126 src/main.py:550
+#: src/cword_webapp/templates/index.html:187 src/main.py:562
 msgid "Close"
 msgstr "Aizvērt"
 
-#: src/main.py:620
-msgid "Total words"
-msgstr "Vārdu kopskaits"
-
-#: src/main.py:624
-msgid "Difficulty"
-msgstr "Grūtības"
-
-#: src/main.py:624
+#: src/main.py:650 src/main.py:667
 msgid "difficulty"
 msgstr "grūtības"
 
-#: src/main.py:626
+#: src/main.py:664
+msgid "Total words"
+msgstr "Vārdu kopskaits"
+
+#: src/main.py:667
+msgid "Difficulty"
+msgstr "Grūtības"
+
+#: src/main.py:672
 msgid "Select"
 msgstr "Izvēlieties"
 
-#: src/main.py:667
+#: src/main.py:714
 msgid "Restart"
 msgstr "Restartēt"
 
-#: src/main.py:667
+#: src/main.py:714
 msgid "Are you sure you want to restart the app?"
 msgstr "Vai tiešām vēlaties restartēt lietotni?"
 
-#: src/main.py:671
+#: src/main.py:718
 msgid "Exit"
 msgstr "Izeja"
 
-#: src/main.py:672
+#: src/main.py:719
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -139,11 +147,11 @@ msgstr ""
 "Vai tiešām vēlaties iziet no lietotnes? Ja tīmekļa lietotne darbojas, tā "
 "tiks pārtraukta."
 
-#: src/main.py:677
+#: src/main.py:724
 msgid "Back to home"
 msgstr "Atpakaļ uz mājām"
 
-#: src/main.py:678
+#: src/main.py:725
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -151,27 +159,27 @@ msgstr ""
 "Vai tiešām vēlaties atgriezties sākuma ekrānā? Tīmekļa lietotnes darbība "
 "tiks pārtraukta."
 
-#: src/main.py:691 src/main.py:694 src/main.py:697
+#: src/main.py:738 src/main.py:741 src/main.py:744
 msgid "Error"
 msgstr "Kļūda"
 
-#: src/main.py:691
+#: src/main.py:738
 msgid "This language is already selected."
 msgstr "Šī valoda jau ir atlasīta."
 
-#: src/main.py:694
+#: src/main.py:741
 msgid "This size is already selected."
 msgstr "Šis izmērs jau ir atlasīts."
 
-#: src/main.py:697
+#: src/main.py:744
 msgid "This appearance is already selected."
 msgstr "Šis izskats jau ir atlasīts."
 
-#: src/main.py:700
+#: src/main.py:747
 msgid "Info"
 msgstr "Informācija"
 
-#: src/main.py:701
+#: src/main.py:748
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -193,18 +201,72 @@ msgstr ""
 "restartējiet pārlūkprogrammu."
 
 #: src/cword_webapp/templates/index.html:13
+#: src/cword_webapp/templates/index.html:172
 msgid "Crossword Puzzle - Game"
 msgstr "Krustvārdu mīkla — spēle"
 
-#: src/cword_webapp/templates/index.html:91
+#: src/cword_webapp/templates/index.html:116
 msgid "Across"
 msgstr "Pāri"
 
-#: src/cword_webapp/templates/index.html:108
+#: src/cword_webapp/templates/index.html:133
 msgid "Down"
 msgstr "Uz leju"
 
-#: src/cword_webapp/templates/index.html:125
+#: src/cword_webapp/templates/index.html:149
+msgid "Reveal"
+msgstr "Atklājiet"
+
+#: src/cword_webapp/templates/index.html:151
+#: src/cword_webapp/templates/index.html:158
+msgid "Cell"
+msgstr "Šūna"
+
+#: src/cword_webapp/templates/index.html:152
+#: src/cword_webapp/templates/index.html:159
+#: src/cword_webapp/templates/index.html:165
+msgid "Word"
+msgstr "Vārds"
+
+#: src/cword_webapp/templates/index.html:153
+#: src/cword_webapp/templates/index.html:160
+#: src/cword_webapp/templates/index.html:166
+msgid "Grid"
+msgstr "Režģis"
+
+#: src/cword_webapp/templates/index.html:156
+msgid "Check"
+msgstr "Pārbaudiet"
+
+#: src/cword_webapp/templates/index.html:163
+msgid "Clear"
+msgstr "Skaidrs"
+
+#: src/cword_webapp/templates/index.html:173
+msgid "You are viewing"
+msgstr "Jūs skatāties"
+
+#: src/cword_webapp/templates/index.html:173
+msgid "from"
+msgstr "no"
+
+#: src/cword_webapp/templates/index.html:175
+msgid "word(s) could not be inserted, sorry."
+msgstr "vārdu(s) nevarēja ievietot, atvainojiet."
+
+#: src/cword_webapp/templates/index.html:176
+msgid "Word count (adjusted)"
+msgstr "Vārdu skaits (pielāgots)"
+
+#: src/cword_webapp/templates/index.html:178
+msgid "Word count"
+msgstr "Vārdu skaits"
+
+#: src/cword_webapp/templates/index.html:182
+msgid "Continue"
+msgstr "Turpināt"
+
+#: src/cword_webapp/templates/index.html:186
 msgid "You completed the crossword!"
 msgstr "Jūs pabeidzāt krustvārdu mīklu!"
 
@@ -238,3 +300,18 @@ msgstr "Ģeogrāfija"
 
 #~ msgid "Countries"
 #~ msgstr "valstis"
+
+#~ msgid "Easy"
+#~ msgstr "Viegli"
+
+#~ msgid "Medium"
+#~ msgstr "Vidēja"
+
+#~ msgid "Hard"
+#~ msgstr "Grūti"
+
+#~ msgid "Extreme"
+#~ msgstr "Ekstrēms"
+
+#~ msgid "Geography"
+#~ msgstr "Ģeogrāfija"

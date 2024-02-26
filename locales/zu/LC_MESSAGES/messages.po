@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-21 21:08+1100\n"
+"POT-Creation-Date: 2024-02-25 18:41+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zu <LL@li.org>\n"
@@ -19,119 +19,127 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:73
+#: src/main.py:39 src/main.py:75 src/main.py:202
 msgid "Crossword Puzzle"
 msgstr "I-Crossword Puzzle"
 
-#: src/main.py:81
+#: src/main.py:83
 msgid "View crosswords"
 msgstr "Buka amagama ahlukene"
 
-#: src/main.py:85
+#: src/main.py:87
 msgid "Exit the app"
 msgstr "Phuma kuhlelo lokusebenza"
 
-#: src/main.py:91
+#: src/main.py:93
 msgid "Global Settings"
 msgstr "Izilungiselelo zomhlaba jikelele"
 
-#: src/main.py:94
+#: src/main.py:97
 msgid "Languages"
 msgstr "Izilimi"
 
-#: src/main.py:100
+#: src/main.py:103
 msgid "Size"
 msgstr "Usayizi"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "light"
 msgstr "ukukhanya"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "dark"
 msgstr "mnyama"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "system"
 msgstr "uhlelo"
 
-#: src/main.py:108
+#: src/main.py:111
 msgid "Appearance"
 msgstr "Ukubukeka"
 
-#: src/main.py:252
+#: src/main.py:257
 msgid "Crossword Browser"
 msgstr "Isiphequluli se-Crossword"
 
-#: src/main.py:254
+#: src/main.py:259
 msgid "Go back"
 msgstr "Buyela emuva"
 
-#: src/main.py:259
+#: src/main.py:264
 msgid "Load crossword"
 msgstr "Layisha amagama aphambene"
 
-#: src/main.py:263
+#: src/main.py:268
 msgid "Open web app"
 msgstr "Vula uhlelo lokusebenza lwewebhu"
 
-#: src/main.py:267
+#: src/main.py:272
 msgid "Terminate web app"
 msgstr "Susa uhlelo lokusebenza lwewebhu"
 
-#: src/main.py:273
+#: src/main.py:278
 msgid "Word count preferences"
 msgstr "Izinketho zenani lamagama"
 
-#: src/main.py:280 src/main.py:318
+#: src/main.py:285 src/main.py:326 src/main.py:358 src/main.py:502
 msgid "Select word count"
 msgstr "Khetha isibalo samagama"
 
-#: src/main.py:284 src/main.py:509
+#: src/main.py:287 src/main.py:357 src/main.py:514
 msgid "Maximum"
 msgstr "Ubuningi"
 
-#: src/main.py:292
+#: src/main.py:293
 msgid "Custom"
 msgstr "Ngokwezifiso"
 
-#: src/main.py:548
+#: src/main.py:435
+msgid "To check or reveal a cell/word, you must first select a cell"
+msgstr "Ukuhlola noma ukuveza iseli/igama, kufanele uqale ukhethe iseli"
+
+#: src/main.py:436
+msgid "To clear the current word, you must first select a cell."
+msgstr "Ukusula igama lamanje, kufanele uqale ukhethe iseli."
+
+#: src/main.py:560
 msgid "View"
 msgstr "Buka"
 
-#: src/cword_webapp/templates/index.html:126 src/main.py:550
+#: src/cword_webapp/templates/index.html:187 src/main.py:562
 msgid "Close"
 msgstr "Vala"
 
-#: src/main.py:620
-msgid "Total words"
-msgstr "Ingqikithi yamagama"
-
-#: src/main.py:624
-msgid "Difficulty"
-msgstr "Ubunzima"
-
-#: src/main.py:624
+#: src/main.py:650 src/main.py:667
 msgid "difficulty"
 msgstr "ubunzima"
 
-#: src/main.py:626
+#: src/main.py:664
+msgid "Total words"
+msgstr "Ingqikithi yamagama"
+
+#: src/main.py:667
+msgid "Difficulty"
+msgstr "Ubunzima"
+
+#: src/main.py:672
 msgid "Select"
 msgstr "Khetha"
 
-#: src/main.py:667
+#: src/main.py:714
 msgid "Restart"
 msgstr "Qala kabusha"
 
-#: src/main.py:667
+#: src/main.py:714
 msgid "Are you sure you want to restart the app?"
 msgstr "Uqinisekile ukuthi ufuna ukuqala kabusha uhlelo lokusebenza?"
 
-#: src/main.py:671
+#: src/main.py:718
 msgid "Exit"
 msgstr "Phuma"
 
-#: src/main.py:672
+#: src/main.py:719
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -139,11 +147,11 @@ msgstr ""
 "Ingabe uqinisekile ukuthi ufuna ukuphuma ohlelweni lokusebenza? Uma uhlelo "
 "lokusebenza lwewebhu lusebenza, luzonqanyulwa."
 
-#: src/main.py:677
+#: src/main.py:724
 msgid "Back to home"
 msgstr "Emuva ekhaya"
 
-#: src/main.py:678
+#: src/main.py:725
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -151,27 +159,27 @@ msgstr ""
 "Uqinisekile ukuthi ufuna ukubuyela esikrinini sasekhaya? Uhlelo lokusebenza "
 "lwewebhu luzonqanyulwa."
 
-#: src/main.py:691 src/main.py:694 src/main.py:697
+#: src/main.py:738 src/main.py:741 src/main.py:744
 msgid "Error"
 msgstr "Iphutha"
 
-#: src/main.py:691
+#: src/main.py:738
 msgid "This language is already selected."
 msgstr "Lolu limi seluvele lukhethiwe."
 
-#: src/main.py:694
+#: src/main.py:741
 msgid "This size is already selected."
 msgstr "Lo sayizi usuvele ukhethiwe."
 
-#: src/main.py:697
+#: src/main.py:744
 msgid "This appearance is already selected."
 msgstr "Lokhu kubonakala sekukhethiwe kakade."
 
-#: src/main.py:700
+#: src/main.py:747
 msgid "Info"
 msgstr "Ulwazi"
 
-#: src/main.py:701
+#: src/main.py:748
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -194,18 +202,72 @@ msgstr ""
 "sicela uqale kabusha isiphequluli sakho."
 
 #: src/cword_webapp/templates/index.html:13
+#: src/cword_webapp/templates/index.html:172
 msgid "Crossword Puzzle - Game"
 msgstr "I-Crossword Puzzle - Umdlalo"
 
-#: src/cword_webapp/templates/index.html:91
+#: src/cword_webapp/templates/index.html:116
 msgid "Across"
 msgstr "Ngaphesheya"
 
-#: src/cword_webapp/templates/index.html:108
+#: src/cword_webapp/templates/index.html:133
 msgid "Down"
 msgstr "Phansi"
 
-#: src/cword_webapp/templates/index.html:125
+#: src/cword_webapp/templates/index.html:149
+msgid "Reveal"
+msgstr "Yembula"
+
+#: src/cword_webapp/templates/index.html:151
+#: src/cword_webapp/templates/index.html:158
+msgid "Cell"
+msgstr "Iseli"
+
+#: src/cword_webapp/templates/index.html:152
+#: src/cword_webapp/templates/index.html:159
+#: src/cword_webapp/templates/index.html:165
+msgid "Word"
+msgstr "Izwi"
+
+#: src/cword_webapp/templates/index.html:153
+#: src/cword_webapp/templates/index.html:160
+#: src/cword_webapp/templates/index.html:166
+msgid "Grid"
+msgstr "Igridi"
+
+#: src/cword_webapp/templates/index.html:156
+msgid "Check"
+msgstr "Hlola"
+
+#: src/cword_webapp/templates/index.html:163
+msgid "Clear"
+msgstr "Kucace"
+
+#: src/cword_webapp/templates/index.html:173
+msgid "You are viewing"
+msgstr "Uyabuka"
+
+#: src/cword_webapp/templates/index.html:173
+msgid "from"
+msgstr "kusuka"
+
+#: src/cword_webapp/templates/index.html:175
+msgid "word(s) could not be inserted, sorry."
+msgstr "(amagama) awakwazanga ukufakwa, ngiyaxolisa."
+
+#: src/cword_webapp/templates/index.html:176
+msgid "Word count (adjusted)"
+msgstr "Isibalo samagama (silungisiwe)"
+
+#: src/cword_webapp/templates/index.html:178
+msgid "Word count"
+msgstr "Isibalo samagama"
+
+#: src/cword_webapp/templates/index.html:182
+msgid "Continue"
+msgstr "Qhubeka"
+
+#: src/cword_webapp/templates/index.html:186
 msgid "You completed the crossword!"
 msgstr "Uqedele i-crossword!"
 
@@ -239,3 +301,18 @@ msgstr "IJografi"
 
 #~ msgid "Countries"
 #~ msgstr "Amazwe"
+
+#~ msgid "Easy"
+#~ msgstr "Kulula"
+
+#~ msgid "Medium"
+#~ msgstr "Maphakathi"
+
+#~ msgid "Hard"
+#~ msgstr "Kunzima"
+
+#~ msgid "Extreme"
+#~ msgstr "Okudlulele"
+
+#~ msgid "Geography"
+#~ msgstr "IJografi"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-21 21:08+1100\n"
+"POT-Creation-Date: 2024-02-25 18:41+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: id <LL@li.org>\n"
@@ -19,119 +19,130 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:73
+#: src/main.py:39 src/main.py:75 src/main.py:202
 msgid "Crossword Puzzle"
 msgstr "Teka teki silang"
 
-#: src/main.py:81
+#: src/main.py:83
 msgid "View crosswords"
 msgstr "Lihat teka-teki silang"
 
-#: src/main.py:85
+#: src/main.py:87
 msgid "Exit the app"
 msgstr "Keluar dari aplikasi"
 
-#: src/main.py:91
+#: src/main.py:93
 msgid "Global Settings"
 msgstr "Pengaturan global"
 
-#: src/main.py:94
+#: src/main.py:97
 msgid "Languages"
 msgstr "Bahasa"
 
-#: src/main.py:100
+#: src/main.py:103
 msgid "Size"
 msgstr "Ukuran"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "light"
 msgstr "lampu"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "dark"
 msgstr "gelap"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "system"
 msgstr "sistem"
 
-#: src/main.py:108
+#: src/main.py:111
 msgid "Appearance"
 msgstr "Penampilan"
 
-#: src/main.py:252
+#: src/main.py:257
 msgid "Crossword Browser"
 msgstr "Peramban Teka-Teki Silang"
 
-#: src/main.py:254
+#: src/main.py:259
 msgid "Go back"
 msgstr "Kembali"
 
-#: src/main.py:259
+#: src/main.py:264
 msgid "Load crossword"
 msgstr "Muat teka-teki silang"
 
-#: src/main.py:263
+#: src/main.py:268
 msgid "Open web app"
 msgstr "Buka aplikasi web"
 
-#: src/main.py:267
+#: src/main.py:272
 msgid "Terminate web app"
 msgstr "Hentikan aplikasi web"
 
-#: src/main.py:273
+#: src/main.py:278
 msgid "Word count preferences"
 msgstr "Preferensi jumlah kata"
 
-#: src/main.py:280 src/main.py:318
+#: src/main.py:285 src/main.py:326 src/main.py:358 src/main.py:502
 msgid "Select word count"
 msgstr "Pilih jumlah kata"
 
-#: src/main.py:284 src/main.py:509
+#: src/main.py:287 src/main.py:357 src/main.py:514
 msgid "Maximum"
 msgstr "Maksimum"
 
-#: src/main.py:292
+#: src/main.py:293
 msgid "Custom"
 msgstr "Kebiasaan"
 
-#: src/main.py:548
+#: src/main.py:435
+msgid "To check or reveal a cell/word, you must first select a cell"
+msgstr ""
+"Untuk memeriksa atau menampilkan sel/kata, Anda harus memilih sel terlebih "
+"dahulu"
+
+#: src/main.py:436
+msgid "To clear the current word, you must first select a cell."
+msgstr ""
+"Untuk menghapus kata saat ini, Anda harus memilih sel terlebih dahulu."
+
+#: src/main.py:560
 msgid "View"
 msgstr "Melihat"
 
-#: src/cword_webapp/templates/index.html:126 src/main.py:550
+#: src/cword_webapp/templates/index.html:187 src/main.py:562
 msgid "Close"
 msgstr "Menutup"
 
-#: src/main.py:620
-msgid "Total words"
-msgstr "Jumlah kata"
-
-#: src/main.py:624
-msgid "Difficulty"
-msgstr "Kesulitan"
-
-#: src/main.py:624
+#: src/main.py:650 src/main.py:667
 msgid "difficulty"
 msgstr "kesulitan"
 
-#: src/main.py:626
+#: src/main.py:664
+msgid "Total words"
+msgstr "Jumlah kata"
+
+#: src/main.py:667
+msgid "Difficulty"
+msgstr "Kesulitan"
+
+#: src/main.py:672
 msgid "Select"
 msgstr "Pilih"
 
-#: src/main.py:667
+#: src/main.py:714
 msgid "Restart"
 msgstr "Mengulang kembali"
 
-#: src/main.py:667
+#: src/main.py:714
 msgid "Are you sure you want to restart the app?"
 msgstr "Apakah Anda yakin ingin memulai ulang aplikasi?"
 
-#: src/main.py:671
+#: src/main.py:718
 msgid "Exit"
 msgstr "KELUAR"
 
-#: src/main.py:672
+#: src/main.py:719
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -139,11 +150,11 @@ msgstr ""
 "Apakah Anda yakin ingin keluar dari aplikasi? Jika aplikasi web sedang "
 "berjalan, itu akan dihentikan."
 
-#: src/main.py:677
+#: src/main.py:724
 msgid "Back to home"
 msgstr "Kembali ke rumah"
 
-#: src/main.py:678
+#: src/main.py:725
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -151,27 +162,27 @@ msgstr ""
 "Apakah Anda yakin ingin kembali ke layar beranda? Aplikasi web akan "
 "dihentikan."
 
-#: src/main.py:691 src/main.py:694 src/main.py:697
+#: src/main.py:738 src/main.py:741 src/main.py:744
 msgid "Error"
 msgstr "Kesalahan"
 
-#: src/main.py:691
+#: src/main.py:738
 msgid "This language is already selected."
 msgstr "Bahasa ini sudah dipilih."
 
-#: src/main.py:694
+#: src/main.py:741
 msgid "This size is already selected."
 msgstr "Ukuran ini sudah dipilih."
 
-#: src/main.py:697
+#: src/main.py:744
 msgid "This appearance is already selected."
 msgstr "Tampilan ini sudah dipilih."
 
-#: src/main.py:700
+#: src/main.py:747
 msgid "Info"
 msgstr "Informasi"
 
-#: src/main.py:701
+#: src/main.py:748
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -193,18 +204,72 @@ msgstr ""
 " dapat melihatnya. Jika ini terjadi, silakan restart browser Anda."
 
 #: src/cword_webapp/templates/index.html:13
+#: src/cword_webapp/templates/index.html:172
 msgid "Crossword Puzzle - Game"
 msgstr "Teka-teki Silang - Permainan"
 
-#: src/cword_webapp/templates/index.html:91
+#: src/cword_webapp/templates/index.html:116
 msgid "Across"
 msgstr "Lintas"
 
-#: src/cword_webapp/templates/index.html:108
+#: src/cword_webapp/templates/index.html:133
 msgid "Down"
 msgstr "Turun"
 
-#: src/cword_webapp/templates/index.html:125
+#: src/cword_webapp/templates/index.html:149
+msgid "Reveal"
+msgstr "Mengungkap"
+
+#: src/cword_webapp/templates/index.html:151
+#: src/cword_webapp/templates/index.html:158
+msgid "Cell"
+msgstr "Sel"
+
+#: src/cword_webapp/templates/index.html:152
+#: src/cword_webapp/templates/index.html:159
+#: src/cword_webapp/templates/index.html:165
+msgid "Word"
+msgstr "Kata"
+
+#: src/cword_webapp/templates/index.html:153
+#: src/cword_webapp/templates/index.html:160
+#: src/cword_webapp/templates/index.html:166
+msgid "Grid"
+msgstr "jaringan"
+
+#: src/cword_webapp/templates/index.html:156
+msgid "Check"
+msgstr "Memeriksa"
+
+#: src/cword_webapp/templates/index.html:163
+msgid "Clear"
+msgstr "Jernih"
+
+#: src/cword_webapp/templates/index.html:173
+msgid "You are viewing"
+msgstr "Anda sedang melihat"
+
+#: src/cword_webapp/templates/index.html:173
+msgid "from"
+msgstr "dari"
+
+#: src/cword_webapp/templates/index.html:175
+msgid "word(s) could not be inserted, sorry."
+msgstr "kata-kata tidak dapat dimasukkan, maaf."
+
+#: src/cword_webapp/templates/index.html:176
+msgid "Word count (adjusted)"
+msgstr "Jumlah kata (disesuaikan)"
+
+#: src/cword_webapp/templates/index.html:178
+msgid "Word count"
+msgstr "Jumlah kata"
+
+#: src/cword_webapp/templates/index.html:182
+msgid "Continue"
+msgstr "Melanjutkan"
+
+#: src/cword_webapp/templates/index.html:186
 msgid "You completed the crossword!"
 msgstr "Anda menyelesaikan teka-teki silang!"
 
@@ -238,3 +303,18 @@ msgstr "Geografi"
 
 #~ msgid "Countries"
 #~ msgstr "Negara"
+
+#~ msgid "Easy"
+#~ msgstr "Mudah"
+
+#~ msgid "Medium"
+#~ msgstr "Sedang"
+
+#~ msgid "Hard"
+#~ msgstr "Keras"
+
+#~ msgid "Extreme"
+#~ msgstr "Ekstrim"
+
+#~ msgid "Geography"
+#~ msgstr "Geografi"

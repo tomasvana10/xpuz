@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-21 21:08+1100\n"
+"POT-Creation-Date: 2024-02-25 18:41+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: haw <LL@li.org>\n"
@@ -19,119 +19,131 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:73
+#: src/main.py:39 src/main.py:75 src/main.py:202
 msgid "Crossword Puzzle"
 msgstr "Huʻi Huaʻōlelo Crossword"
 
-#: src/main.py:81
+#: src/main.py:83
 msgid "View crosswords"
 msgstr "Nānā i nā huaʻōlelo"
 
-#: src/main.py:85
+#: src/main.py:87
 msgid "Exit the app"
 msgstr "Haʻalele i ka polokalamu"
 
-#: src/main.py:91
+#: src/main.py:93
 msgid "Global Settings"
 msgstr "Nā hoʻonohonoho honua"
 
-#: src/main.py:94
+#: src/main.py:97
 msgid "Languages"
 msgstr "ʻŌlelo"
 
-#: src/main.py:100
+#: src/main.py:103
 msgid "Size"
 msgstr "Nui"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "light"
 msgstr "māmā"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "dark"
 msgstr "pouli"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "system"
 msgstr "ʻōnaehana"
 
-#: src/main.py:108
+#: src/main.py:111
 msgid "Appearance"
 msgstr "Ka nana aku"
 
-#: src/main.py:252
+#: src/main.py:257
 msgid "Crossword Browser"
 msgstr "Huli Huaʻōlelo Crossword"
 
-#: src/main.py:254
+#: src/main.py:259
 msgid "Go back"
 msgstr "Hoʻi aku"
 
-#: src/main.py:259
+#: src/main.py:264
 msgid "Load crossword"
 msgstr "Hoʻouka i ka huaʻōlelo"
 
-#: src/main.py:263
+#: src/main.py:268
 msgid "Open web app"
 msgstr "E wehe i ka polokalamu kele pūnaewele"
 
-#: src/main.py:267
+#: src/main.py:272
 msgid "Terminate web app"
 msgstr "E hoʻopau i ka polokalamu kele pūnaewele"
 
-#: src/main.py:273
+#: src/main.py:278
 msgid "Word count preferences"
 msgstr "Nā koho helu huaʻōlelo"
 
-#: src/main.py:280 src/main.py:318
+#: src/main.py:285 src/main.py:326 src/main.py:358 src/main.py:502
 msgid "Select word count"
 msgstr "E koho i ka helu ʻōlelo"
 
-#: src/main.py:284 src/main.py:509
+#: src/main.py:287 src/main.py:357 src/main.py:514
 msgid "Maximum"
 msgstr "Ka nui"
 
-#: src/main.py:292
+#: src/main.py:293
 msgid "Custom"
 msgstr "Kuʻuna"
 
-#: src/main.py:548
+#: src/main.py:435
+msgid "To check or reveal a cell/word, you must first select a cell"
+msgstr ""
+"No ka nānā a hōʻike ʻana i kahi kelepona/huaʻōlelo, pono ʻoe e koho mua i "
+"kahi kelepona"
+
+#: src/main.py:436
+msgid "To clear the current word, you must first select a cell."
+msgstr ""
+"No ka holoi ʻana i ka huaʻōlelo o kēia manawa, pono ʻoe e koho mua i kahi "
+"kelepona."
+
+#: src/main.py:560
 msgid "View"
 msgstr "Nānā"
 
-#: src/cword_webapp/templates/index.html:126 src/main.py:550
+#: src/cword_webapp/templates/index.html:187 src/main.py:562
 msgid "Close"
 msgstr "Pani"
 
-#: src/main.py:620
-msgid "Total words"
-msgstr "Huina huaolelo"
-
-#: src/main.py:624
-msgid "Difficulty"
-msgstr "Ka pilikia"
-
-#: src/main.py:624
+#: src/main.py:650 src/main.py:667
 msgid "difficulty"
 msgstr "pilikia"
 
-#: src/main.py:626
+#: src/main.py:664
+msgid "Total words"
+msgstr "Huina huaolelo"
+
+#: src/main.py:667
+msgid "Difficulty"
+msgstr "Ka pilikia"
+
+#: src/main.py:672
 msgid "Select"
 msgstr "E koho"
 
-#: src/main.py:667
+#: src/main.py:714
 msgid "Restart"
 msgstr "Hoʻomaka hou"
 
-#: src/main.py:667
+#: src/main.py:714
 msgid "Are you sure you want to restart the app?"
 msgstr "Makemake ʻoe e hoʻomaka hou i ka polokalamu?"
 
-#: src/main.py:671
+#: src/main.py:718
 msgid "Exit"
 msgstr "Puka"
 
-#: src/main.py:672
+#: src/main.py:719
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -139,38 +151,38 @@ msgstr ""
 "Makemake ʻoe e haʻalele i ka polokalamu? Inā holo ka polokalamu pūnaewele, e"
 " hoʻopau ʻia."
 
-#: src/main.py:677
+#: src/main.py:724
 msgid "Back to home"
 msgstr "Hoʻi i ka home"
 
-#: src/main.py:678
+#: src/main.py:725
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
 "Makemake ʻoe e hoʻi i ka pale home? E hoʻopau ʻia ka polokalamu pūnaewele."
 
-#: src/main.py:691 src/main.py:694 src/main.py:697
+#: src/main.py:738 src/main.py:741 src/main.py:744
 msgid "Error"
 msgstr "Kuhihewa"
 
-#: src/main.py:691
+#: src/main.py:738
 msgid "This language is already selected."
 msgstr "Ua koho ʻia kēia ʻōlelo."
 
-#: src/main.py:694
+#: src/main.py:741
 msgid "This size is already selected."
 msgstr "Ua koho mua ʻia kēia nui."
 
-#: src/main.py:697
+#: src/main.py:744
 msgid "This appearance is already selected."
 msgstr "Ua koho ʻia kēia hiʻohiʻona."
 
-#: src/main.py:700
+#: src/main.py:747
 msgid "Info"
 msgstr "ʻIke"
 
-#: src/main.py:701
+#: src/main.py:748
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -193,18 +205,72 @@ msgstr ""
 " i kāu polokalamu kele pūnaewele."
 
 #: src/cword_webapp/templates/index.html:13
+#: src/cword_webapp/templates/index.html:172
 msgid "Crossword Puzzle - Game"
 msgstr "Pāʻani Crossword Puzzle - Pāʻani"
 
-#: src/cword_webapp/templates/index.html:91
+#: src/cword_webapp/templates/index.html:116
 msgid "Across"
 msgstr "Ma kēlā ʻaoʻao"
 
-#: src/cword_webapp/templates/index.html:108
+#: src/cword_webapp/templates/index.html:133
 msgid "Down"
 msgstr "I lalo"
 
-#: src/cword_webapp/templates/index.html:125
+#: src/cword_webapp/templates/index.html:149
+msgid "Reveal"
+msgstr "Hōʻike"
+
+#: src/cword_webapp/templates/index.html:151
+#: src/cword_webapp/templates/index.html:158
+msgid "Cell"
+msgstr "Kelepona"
+
+#: src/cword_webapp/templates/index.html:152
+#: src/cword_webapp/templates/index.html:159
+#: src/cword_webapp/templates/index.html:165
+msgid "Word"
+msgstr "ʻŌlelo"
+
+#: src/cword_webapp/templates/index.html:153
+#: src/cword_webapp/templates/index.html:160
+#: src/cword_webapp/templates/index.html:166
+msgid "Grid"
+msgstr "Māhele"
+
+#: src/cword_webapp/templates/index.html:156
+msgid "Check"
+msgstr "Nānā"
+
+#: src/cword_webapp/templates/index.html:163
+msgid "Clear"
+msgstr "Akaka"
+
+#: src/cword_webapp/templates/index.html:173
+msgid "You are viewing"
+msgstr "Ke nānā nei ʻoe"
+
+#: src/cword_webapp/templates/index.html:173
+msgid "from"
+msgstr "mai"
+
+#: src/cword_webapp/templates/index.html:175
+msgid "word(s) could not be inserted, sorry."
+msgstr "ʻAʻole hiki ke hoʻokomo ʻia nā huaʻōlelo, kala mai."
+
+#: src/cword_webapp/templates/index.html:176
+msgid "Word count (adjusted)"
+msgstr "Helu huaʻōlelo (hoʻoponopono ʻia)"
+
+#: src/cword_webapp/templates/index.html:178
+msgid "Word count"
+msgstr "Helu hua'ōlelo"
+
+#: src/cword_webapp/templates/index.html:182
+msgid "Continue"
+msgstr "E hoʻomau"
+
+#: src/cword_webapp/templates/index.html:186
 msgid "You completed the crossword!"
 msgstr "Ua hoʻopau ʻoe i ka huaʻōlelo!"
 
@@ -238,3 +304,18 @@ msgstr "Palapala honua"
 
 #~ msgid "Countries"
 #~ msgstr "Nā ʻāina"
+
+#~ msgid "Easy"
+#~ msgstr "maʻalahi"
+
+#~ msgid "Medium"
+#~ msgstr "Kauwaena"
+
+#~ msgid "Hard"
+#~ msgstr "Paʻakikī"
+
+#~ msgid "Extreme"
+#~ msgstr "Kiʻekiʻe"
+
+#~ msgid "Geography"
+#~ msgstr "Palapala honua"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-21 21:08+1100\n"
+"POT-Creation-Date: 2024-02-25 18:41+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: km <LL@li.org>\n"
@@ -19,119 +19,127 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:73
+#: src/main.py:39 src/main.py:75 src/main.py:202
 msgid "Crossword Puzzle"
 msgstr "ល្បែងផ្គុំពាក្យឆ្លង"
 
-#: src/main.py:81
+#: src/main.py:83
 msgid "View crosswords"
 msgstr "មើលពាក្យឆ្លង"
 
-#: src/main.py:85
+#: src/main.py:87
 msgid "Exit the app"
 msgstr "ចេញពីកម្មវិធី"
 
-#: src/main.py:91
+#: src/main.py:93
 msgid "Global Settings"
 msgstr "ការកំណត់សកល"
 
-#: src/main.py:94
+#: src/main.py:97
 msgid "Languages"
 msgstr "ភាសា"
 
-#: src/main.py:100
+#: src/main.py:103
 msgid "Size"
 msgstr "ទំហំ"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "light"
 msgstr "ពន្លឺ"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "dark"
 msgstr "ងងឹត"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "system"
 msgstr "ប្រព័ន្ធ"
 
-#: src/main.py:108
+#: src/main.py:111
 msgid "Appearance"
 msgstr "រូបរាង"
 
-#: src/main.py:252
+#: src/main.py:257
 msgid "Crossword Browser"
 msgstr "កម្មវិធីរុករកតាមអ៊ីនធឺណិត"
 
-#: src/main.py:254
+#: src/main.py:259
 msgid "Go back"
 msgstr "ត្រឡប់​ក្រោយ"
 
-#: src/main.py:259
+#: src/main.py:264
 msgid "Load crossword"
 msgstr "ផ្ទុកពាក្យឆ្លង"
 
-#: src/main.py:263
+#: src/main.py:268
 msgid "Open web app"
 msgstr "បើកកម្មវិធីបណ្តាញ"
 
-#: src/main.py:267
+#: src/main.py:272
 msgid "Terminate web app"
 msgstr "បញ្ចប់កម្មវិធីបណ្តាញ"
 
-#: src/main.py:273
+#: src/main.py:278
 msgid "Word count preferences"
 msgstr "ចំណូលចិត្តរាប់ពាក្យ"
 
-#: src/main.py:280 src/main.py:318
+#: src/main.py:285 src/main.py:326 src/main.py:358 src/main.py:502
 msgid "Select word count"
 msgstr "ជ្រើសរើសចំនួនពាក្យ"
 
-#: src/main.py:284 src/main.py:509
+#: src/main.py:287 src/main.py:357 src/main.py:514
 msgid "Maximum"
 msgstr "អតិបរមា"
 
-#: src/main.py:292
+#: src/main.py:293
 msgid "Custom"
 msgstr "ផ្ទាល់ខ្លួន"
 
-#: src/main.py:548
+#: src/main.py:435
+msgid "To check or reveal a cell/word, you must first select a cell"
+msgstr "ដើម្បីពិនិត្យ ឬបង្ហាញក្រឡា/ពាក្យ អ្នកត្រូវតែជ្រើសរើសក្រឡាជាមុនសិន"
+
+#: src/main.py:436
+msgid "To clear the current word, you must first select a cell."
+msgstr "ដើម្បីជម្រះពាក្យបច្ចុប្បន្ន អ្នកត្រូវតែជ្រើសរើសក្រឡាជាមុនសិន។"
+
+#: src/main.py:560
 msgid "View"
 msgstr "មើល"
 
-#: src/cword_webapp/templates/index.html:126 src/main.py:550
+#: src/cword_webapp/templates/index.html:187 src/main.py:562
 msgid "Close"
 msgstr "បិទ"
 
-#: src/main.py:620
-msgid "Total words"
-msgstr "ពាក្យសរុប"
-
-#: src/main.py:624
-msgid "Difficulty"
-msgstr "ភាពលំបាក"
-
-#: src/main.py:624
+#: src/main.py:650 src/main.py:667
 msgid "difficulty"
 msgstr "ការលំបាក"
 
-#: src/main.py:626
+#: src/main.py:664
+msgid "Total words"
+msgstr "ពាក្យសរុប"
+
+#: src/main.py:667
+msgid "Difficulty"
+msgstr "ភាពលំបាក"
+
+#: src/main.py:672
 msgid "Select"
 msgstr "ជ្រើសរើស"
 
-#: src/main.py:667
+#: src/main.py:714
 msgid "Restart"
 msgstr "ចាប់ផ្ដើមឡើងវិញ"
 
-#: src/main.py:667
+#: src/main.py:714
 msgid "Are you sure you want to restart the app?"
 msgstr "តើអ្នកប្រាកដថាចង់ចាប់ផ្តើមកម្មវិធីឡើងវិញទេ?"
 
-#: src/main.py:671
+#: src/main.py:718
 msgid "Exit"
 msgstr "ចេញ"
 
-#: src/main.py:672
+#: src/main.py:719
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -139,38 +147,38 @@ msgstr ""
 "តើអ្នកប្រាកដថាចង់ចាកចេញពីកម្មវិធីមែនទេ? ប្រសិនបើកម្មវិធីបណ្តាញកំពុងដំណើរការ "
 "វានឹងត្រូវបានបញ្ចប់។"
 
-#: src/main.py:677
+#: src/main.py:724
 msgid "Back to home"
 msgstr "ត្រលប់​ទៅផ្ទះ"
 
-#: src/main.py:678
+#: src/main.py:725
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
 "តើអ្នកប្រាកដថាចង់ត្រលប់ទៅអេក្រង់ដើមវិញទេ? កម្មវិធីបណ្តាញនឹងត្រូវបានបិទ។"
 
-#: src/main.py:691 src/main.py:694 src/main.py:697
+#: src/main.py:738 src/main.py:741 src/main.py:744
 msgid "Error"
 msgstr "កំហុស"
 
-#: src/main.py:691
+#: src/main.py:738
 msgid "This language is already selected."
 msgstr "ភាសានេះត្រូវបានជ្រើសរើសរួចហើយ។"
 
-#: src/main.py:694
+#: src/main.py:741
 msgid "This size is already selected."
 msgstr "ទំហំនេះត្រូវបានជ្រើសរើសរួចហើយ។"
 
-#: src/main.py:697
+#: src/main.py:744
 msgid "This appearance is already selected."
 msgstr "រូបរាងនេះត្រូវបានជ្រើសរើសរួចហើយ។"
 
-#: src/main.py:700
+#: src/main.py:747
 msgid "Info"
 msgstr "ព័ត៌មាន"
 
-#: src/main.py:701
+#: src/main.py:748
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -193,18 +201,72 @@ msgstr ""
 "សូមចាប់ផ្តើមកម្មវិធីរុករករបស់អ្នកឡើងវិញ។"
 
 #: src/cword_webapp/templates/index.html:13
+#: src/cword_webapp/templates/index.html:172
 msgid "Crossword Puzzle - Game"
 msgstr "ល្បែងផ្គុំរូប Crossword - ហ្គេម"
 
-#: src/cword_webapp/templates/index.html:91
+#: src/cword_webapp/templates/index.html:116
 msgid "Across"
 msgstr "ឆ្លង"
 
-#: src/cword_webapp/templates/index.html:108
+#: src/cword_webapp/templates/index.html:133
 msgid "Down"
 msgstr "ចុះ"
 
-#: src/cword_webapp/templates/index.html:125
+#: src/cword_webapp/templates/index.html:149
+msgid "Reveal"
+msgstr "បង្ហាញ"
+
+#: src/cword_webapp/templates/index.html:151
+#: src/cword_webapp/templates/index.html:158
+msgid "Cell"
+msgstr "ក្រឡា"
+
+#: src/cword_webapp/templates/index.html:152
+#: src/cword_webapp/templates/index.html:159
+#: src/cword_webapp/templates/index.html:165
+msgid "Word"
+msgstr "ពាក្យ"
+
+#: src/cword_webapp/templates/index.html:153
+#: src/cword_webapp/templates/index.html:160
+#: src/cword_webapp/templates/index.html:166
+msgid "Grid"
+msgstr "ក្រឡាចត្រង្គ"
+
+#: src/cword_webapp/templates/index.html:156
+msgid "Check"
+msgstr "ពិនិត្យ"
+
+#: src/cword_webapp/templates/index.html:163
+msgid "Clear"
+msgstr "ច្បាស់"
+
+#: src/cword_webapp/templates/index.html:173
+msgid "You are viewing"
+msgstr "អ្នកកំពុងមើល"
+
+#: src/cword_webapp/templates/index.html:173
+msgid "from"
+msgstr "ពី"
+
+#: src/cword_webapp/templates/index.html:175
+msgid "word(s) could not be inserted, sorry."
+msgstr "មិនអាចបញ្ចូលពាក្យបានទេ សូមអភ័យទោស។"
+
+#: src/cword_webapp/templates/index.html:176
+msgid "Word count (adjusted)"
+msgstr "ចំនួន​ពាក្យ (កែសម្រួល)"
+
+#: src/cword_webapp/templates/index.html:178
+msgid "Word count"
+msgstr "រាប់​ពាក្យ"
+
+#: src/cword_webapp/templates/index.html:182
+msgid "Continue"
+msgstr "បន្ត"
+
+#: src/cword_webapp/templates/index.html:186
 msgid "You completed the crossword!"
 msgstr "អ្នកបានបញ្ចប់ crossword!"
 
@@ -238,3 +300,18 @@ msgstr "ភូមិសាស្ត្រ"
 
 #~ msgid "Countries"
 #~ msgstr "ប្រទេស"
+
+#~ msgid "Easy"
+#~ msgstr "ងាយស្រួល"
+
+#~ msgid "Medium"
+#~ msgstr "មធ្យម"
+
+#~ msgid "Hard"
+#~ msgstr "រឹង"
+
+#~ msgid "Extreme"
+#~ msgstr "ខ្លាំង"
+
+#~ msgid "Geography"
+#~ msgstr "ភូមិសាស្ត្រ"

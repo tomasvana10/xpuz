@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-21 21:08+1100\n"
+"POT-Creation-Date: 2024-02-25 18:41+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ml <LL@li.org>\n"
@@ -19,119 +19,129 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:73
+#: src/main.py:39 src/main.py:75 src/main.py:202
 msgid "Crossword Puzzle"
 msgstr "ക്രോസ്വേഡ് പസിൽ"
 
-#: src/main.py:81
+#: src/main.py:83
 msgid "View crosswords"
 msgstr "ക്രോസ്വേഡുകൾ കാണുക"
 
-#: src/main.py:85
+#: src/main.py:87
 msgid "Exit the app"
 msgstr "ആപ്പിൽ നിന്ന് പുറത്തുകടക്കുക"
 
-#: src/main.py:91
+#: src/main.py:93
 msgid "Global Settings"
 msgstr "ആഗോള ക്രമീകരണങ്ങൾ"
 
-#: src/main.py:94
+#: src/main.py:97
 msgid "Languages"
 msgstr "ഭാഷകൾ"
 
-#: src/main.py:100
+#: src/main.py:103
 msgid "Size"
 msgstr "വലിപ്പം"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "light"
 msgstr "വെളിച്ചം"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "dark"
 msgstr "ഇരുണ്ട"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "system"
 msgstr "സിസ്റ്റം"
 
-#: src/main.py:108
+#: src/main.py:111
 msgid "Appearance"
 msgstr "രൂപഭാവം"
 
-#: src/main.py:252
+#: src/main.py:257
 msgid "Crossword Browser"
 msgstr "ക്രോസ്വേഡ് ബ്രൗസർ"
 
-#: src/main.py:254
+#: src/main.py:259
 msgid "Go back"
 msgstr "മടങ്ങിപ്പോവുക"
 
-#: src/main.py:259
+#: src/main.py:264
 msgid "Load crossword"
 msgstr "ക്രോസ്വേഡ് ലോഡ് ചെയ്യുക"
 
-#: src/main.py:263
+#: src/main.py:268
 msgid "Open web app"
 msgstr "വെബ് ആപ്പ് തുറക്കുക"
 
-#: src/main.py:267
+#: src/main.py:272
 msgid "Terminate web app"
 msgstr "വെബ് ആപ്പ് അവസാനിപ്പിക്കുക"
 
-#: src/main.py:273
+#: src/main.py:278
 msgid "Word count preferences"
 msgstr "വാക്കുകളുടെ എണ്ണം മുൻഗണനകൾ"
 
-#: src/main.py:280 src/main.py:318
+#: src/main.py:285 src/main.py:326 src/main.py:358 src/main.py:502
 msgid "Select word count"
 msgstr "വാക്കുകളുടെ എണ്ണം തിരഞ്ഞെടുക്കുക"
 
-#: src/main.py:284 src/main.py:509
+#: src/main.py:287 src/main.py:357 src/main.py:514
 msgid "Maximum"
 msgstr "പരമാവധി"
 
-#: src/main.py:292
+#: src/main.py:293
 msgid "Custom"
 msgstr "കസ്റ്റം"
 
-#: src/main.py:548
+#: src/main.py:435
+msgid "To check or reveal a cell/word, you must first select a cell"
+msgstr ""
+"ഒരു സെൽ/വാക്ക് പരിശോധിക്കുന്നതിനോ വെളിപ്പെടുത്തുന്നതിനോ, നിങ്ങൾ ആദ്യം ഒരു "
+"സെൽ തിരഞ്ഞെടുക്കണം"
+
+#: src/main.py:436
+msgid "To clear the current word, you must first select a cell."
+msgstr "നിലവിലെ വാക്ക് മായ്‌ക്കാൻ, നിങ്ങൾ ആദ്യം ഒരു സെൽ തിരഞ്ഞെടുക്കണം."
+
+#: src/main.py:560
 msgid "View"
 msgstr "കാണുക"
 
-#: src/cword_webapp/templates/index.html:126 src/main.py:550
+#: src/cword_webapp/templates/index.html:187 src/main.py:562
 msgid "Close"
 msgstr "അടയ്ക്കുക"
 
-#: src/main.py:620
-msgid "Total words"
-msgstr "ആകെ വാക്കുകൾ"
-
-#: src/main.py:624
-msgid "Difficulty"
-msgstr "ബുദ്ധിമുട്ട്"
-
-#: src/main.py:624
+#: src/main.py:650 src/main.py:667
 msgid "difficulty"
 msgstr "ബുദ്ധിമുട്ട്"
 
-#: src/main.py:626
+#: src/main.py:664
+msgid "Total words"
+msgstr "ആകെ വാക്കുകൾ"
+
+#: src/main.py:667
+msgid "Difficulty"
+msgstr "ബുദ്ധിമുട്ട്"
+
+#: src/main.py:672
 msgid "Select"
 msgstr "തിരഞ്ഞെടുക്കുക"
 
-#: src/main.py:667
+#: src/main.py:714
 msgid "Restart"
 msgstr "പുനരാരംഭിക്കുക"
 
-#: src/main.py:667
+#: src/main.py:714
 msgid "Are you sure you want to restart the app?"
 msgstr "ആപ്പ് പുനരാരംഭിക്കണമെന്ന് തീർച്ചയാണോ?"
 
-#: src/main.py:671
+#: src/main.py:718
 msgid "Exit"
 msgstr "പുറത്ത്"
 
-#: src/main.py:672
+#: src/main.py:719
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -139,11 +149,11 @@ msgstr ""
 "ആപ്പിൽ നിന്ന് പുറത്തുകടക്കണമെന്ന് തീർച്ചയാണോ? വെബ് ആപ്പ് "
 "പ്രവർത്തിക്കുകയാണെങ്കിൽ, അത് അവസാനിപ്പിക്കും."
 
-#: src/main.py:677
+#: src/main.py:724
 msgid "Back to home"
 msgstr "തിരികെ വീട്ടിലേക്ക്"
 
-#: src/main.py:678
+#: src/main.py:725
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -151,27 +161,27 @@ msgstr ""
 "ഹോം സ്‌ക്രീനിലേക്ക് തിരികെ പോകണമെന്ന് തീർച്ചയാണോ? വെബ് ആപ്പ് "
 "അവസാനിപ്പിക്കും."
 
-#: src/main.py:691 src/main.py:694 src/main.py:697
+#: src/main.py:738 src/main.py:741 src/main.py:744
 msgid "Error"
 msgstr "പിശക്"
 
-#: src/main.py:691
+#: src/main.py:738
 msgid "This language is already selected."
 msgstr "ഈ ഭാഷ ഇതിനകം തിരഞ്ഞെടുത്തു."
 
-#: src/main.py:694
+#: src/main.py:741
 msgid "This size is already selected."
 msgstr "ഈ വലുപ്പം ഇതിനകം തിരഞ്ഞെടുത്തു."
 
-#: src/main.py:697
+#: src/main.py:744
 msgid "This appearance is already selected."
 msgstr "ഈ രൂപം ഇതിനകം തിരഞ്ഞെടുത്തു."
 
-#: src/main.py:700
+#: src/main.py:747
 msgid "Info"
 msgstr "വിവരം"
 
-#: src/main.py:701
+#: src/main.py:748
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -195,18 +205,72 @@ msgstr ""
 "ബ്രൗസർ പുനരാരംഭിക്കുക."
 
 #: src/cword_webapp/templates/index.html:13
+#: src/cword_webapp/templates/index.html:172
 msgid "Crossword Puzzle - Game"
 msgstr "ക്രോസ്വേഡ് പസിൽ - ഗെയിം"
 
-#: src/cword_webapp/templates/index.html:91
+#: src/cword_webapp/templates/index.html:116
 msgid "Across"
 msgstr "ഉടനീളം"
 
-#: src/cword_webapp/templates/index.html:108
+#: src/cword_webapp/templates/index.html:133
 msgid "Down"
 msgstr "താഴേക്ക്"
 
-#: src/cword_webapp/templates/index.html:125
+#: src/cword_webapp/templates/index.html:149
+msgid "Reveal"
+msgstr "വെളിപ്പെടുത്തുക"
+
+#: src/cword_webapp/templates/index.html:151
+#: src/cword_webapp/templates/index.html:158
+msgid "Cell"
+msgstr "സെൽ"
+
+#: src/cword_webapp/templates/index.html:152
+#: src/cword_webapp/templates/index.html:159
+#: src/cword_webapp/templates/index.html:165
+msgid "Word"
+msgstr "വാക്ക്"
+
+#: src/cword_webapp/templates/index.html:153
+#: src/cword_webapp/templates/index.html:160
+#: src/cword_webapp/templates/index.html:166
+msgid "Grid"
+msgstr "ഗ്രിഡ്"
+
+#: src/cword_webapp/templates/index.html:156
+msgid "Check"
+msgstr "ചെക്ക്"
+
+#: src/cword_webapp/templates/index.html:163
+msgid "Clear"
+msgstr "ക്ലിയർ"
+
+#: src/cword_webapp/templates/index.html:173
+msgid "You are viewing"
+msgstr "നിങ്ങൾ കാണുന്നു"
+
+#: src/cword_webapp/templates/index.html:173
+msgid "from"
+msgstr "നിന്ന്"
+
+#: src/cword_webapp/templates/index.html:175
+msgid "word(s) could not be inserted, sorry."
+msgstr "വാക്ക്(കൾ) ചേർക്കാൻ കഴിഞ്ഞില്ല, ക്ഷമിക്കണം."
+
+#: src/cword_webapp/templates/index.html:176
+msgid "Word count (adjusted)"
+msgstr "വാക്കുകളുടെ എണ്ണം (ക്രമീകരിച്ചത്)"
+
+#: src/cword_webapp/templates/index.html:178
+msgid "Word count"
+msgstr "വാക്കുകളുടെ എണ്ണം"
+
+#: src/cword_webapp/templates/index.html:182
+msgid "Continue"
+msgstr "തുടരുക"
+
+#: src/cword_webapp/templates/index.html:186
 msgid "You completed the crossword!"
 msgstr "നിങ്ങൾ ക്രോസ്വേഡ് പൂർത്തിയാക്കി!"
 
@@ -240,3 +304,18 @@ msgstr "ഭൂമിശാസ്ത്രം"
 
 #~ msgid "Countries"
 #~ msgstr "രാജ്യങ്ങൾ"
+
+#~ msgid "Easy"
+#~ msgstr "എളുപ്പം"
+
+#~ msgid "Medium"
+#~ msgstr "ഇടത്തരം"
+
+#~ msgid "Hard"
+#~ msgstr "കഠിനം"
+
+#~ msgid "Extreme"
+#~ msgstr "അങ്ങേയറ്റം"
+
+#~ msgid "Geography"
+#~ msgstr "ഭൂമിശാസ്ത്രം"

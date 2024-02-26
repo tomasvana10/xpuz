@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-02-21 21:08+1100\n"
+"POT-Creation-Date: 2024-02-25 18:41+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh <LL@li.org>\n"
@@ -19,155 +19,163 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:73
+#: src/main.py:39 src/main.py:75 src/main.py:202
 msgid "Crossword Puzzle"
 msgstr "填字游戏"
 
-#: src/main.py:81
+#: src/main.py:83
 msgid "View crosswords"
 msgstr "查看填字游戏"
 
-#: src/main.py:85
+#: src/main.py:87
 msgid "Exit the app"
 msgstr "退出应用程序"
 
-#: src/main.py:91
+#: src/main.py:93
 msgid "Global Settings"
 msgstr "全局设置"
 
-#: src/main.py:94
+#: src/main.py:97
 msgid "Languages"
 msgstr "语言"
 
-#: src/main.py:100
+#: src/main.py:103
 msgid "Size"
 msgstr "尺寸"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "light"
 msgstr "光"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "dark"
 msgstr "黑暗的"
 
-#: src/main.py:107
+#: src/main.py:110
 msgid "system"
 msgstr "系统"
 
-#: src/main.py:108
+#: src/main.py:111
 msgid "Appearance"
 msgstr "外貌"
 
-#: src/main.py:252
+#: src/main.py:257
 msgid "Crossword Browser"
 msgstr "填字游戏浏览器"
 
-#: src/main.py:254
+#: src/main.py:259
 msgid "Go back"
 msgstr "回去"
 
-#: src/main.py:259
+#: src/main.py:264
 msgid "Load crossword"
 msgstr "加载填字游戏"
 
-#: src/main.py:263
+#: src/main.py:268
 msgid "Open web app"
 msgstr "打开网络应用程序"
 
-#: src/main.py:267
+#: src/main.py:272
 msgid "Terminate web app"
 msgstr "终止网络应用程序"
 
-#: src/main.py:273
+#: src/main.py:278
 msgid "Word count preferences"
 msgstr "字数统计偏好"
 
-#: src/main.py:280 src/main.py:318
+#: src/main.py:285 src/main.py:326 src/main.py:358 src/main.py:502
 msgid "Select word count"
 msgstr "选择字数统计"
 
-#: src/main.py:284 src/main.py:509
+#: src/main.py:287 src/main.py:357 src/main.py:514
 msgid "Maximum"
 msgstr "最大限度"
 
-#: src/main.py:292
+#: src/main.py:293
 msgid "Custom"
 msgstr "风俗"
 
-#: src/main.py:548
+#: src/main.py:435
+msgid "To check or reveal a cell/word, you must first select a cell"
+msgstr "要检查或显示单元格/单词，您必须首先选择一个单元格"
+
+#: src/main.py:436
+msgid "To clear the current word, you must first select a cell."
+msgstr "要清除当前单词，您必须首先选择一个单元格。"
+
+#: src/main.py:560
 msgid "View"
 msgstr "看法"
 
-#: src/cword_webapp/templates/index.html:126 src/main.py:550
+#: src/cword_webapp/templates/index.html:187 src/main.py:562
 msgid "Close"
 msgstr "关闭"
 
-#: src/main.py:620
-msgid "Total words"
-msgstr "总字数"
-
-#: src/main.py:624
-msgid "Difficulty"
-msgstr "困难"
-
-#: src/main.py:624
+#: src/main.py:650 src/main.py:667
 msgid "difficulty"
 msgstr "困难"
 
-#: src/main.py:626
+#: src/main.py:664
+msgid "Total words"
+msgstr "总字数"
+
+#: src/main.py:667
+msgid "Difficulty"
+msgstr "困难"
+
+#: src/main.py:672
 msgid "Select"
 msgstr "选择"
 
-#: src/main.py:667
+#: src/main.py:714
 msgid "Restart"
 msgstr "重新开始"
 
-#: src/main.py:667
+#: src/main.py:714
 msgid "Are you sure you want to restart the app?"
 msgstr "您确定要重新启动应用程序吗？"
 
-#: src/main.py:671
+#: src/main.py:718
 msgid "Exit"
 msgstr "出口"
 
-#: src/main.py:672
+#: src/main.py:719
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr "您确定要退出该应用程序吗？如果 Web 应用程序正在运行，它将被终止。"
 
-#: src/main.py:677
+#: src/main.py:724
 msgid "Back to home"
 msgstr "回到家"
 
-#: src/main.py:678
+#: src/main.py:725
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr "您确定要返回主屏幕吗？ Web 应用程序将被终止。"
 
-#: src/main.py:691 src/main.py:694 src/main.py:697
+#: src/main.py:738 src/main.py:741 src/main.py:744
 msgid "Error"
 msgstr "错误"
 
-#: src/main.py:691
+#: src/main.py:738
 msgid "This language is already selected."
 msgstr "该语言已被选择。"
 
-#: src/main.py:694
+#: src/main.py:741
 msgid "This size is already selected."
 msgstr "该尺寸已选定。"
 
-#: src/main.py:697
+#: src/main.py:744
 msgid "This appearance is already selected."
 msgstr "此外观已选定。"
 
-#: src/main.py:700
+#: src/main.py:747
 msgid "Info"
 msgstr "信息"
 
-#: src/main.py:701
+#: src/main.py:748
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -184,18 +192,72 @@ msgstr ""
 "中的“webapp_port”编号，或者重新启动计算机。另重要提示：在某些情况下，您可能已启动网络应用程序，但浏览器无法查看它。如果发生这种情况，请重新启动浏览器。"
 
 #: src/cword_webapp/templates/index.html:13
+#: src/cword_webapp/templates/index.html:172
 msgid "Crossword Puzzle - Game"
 msgstr "填字游戏 - 游戏"
 
-#: src/cword_webapp/templates/index.html:91
+#: src/cword_webapp/templates/index.html:116
 msgid "Across"
 msgstr "穿过"
 
-#: src/cword_webapp/templates/index.html:108
+#: src/cword_webapp/templates/index.html:133
 msgid "Down"
 msgstr "向下"
 
-#: src/cword_webapp/templates/index.html:125
+#: src/cword_webapp/templates/index.html:149
+msgid "Reveal"
+msgstr "揭示"
+
+#: src/cword_webapp/templates/index.html:151
+#: src/cword_webapp/templates/index.html:158
+msgid "Cell"
+msgstr "细胞"
+
+#: src/cword_webapp/templates/index.html:152
+#: src/cword_webapp/templates/index.html:159
+#: src/cword_webapp/templates/index.html:165
+msgid "Word"
+msgstr "单词"
+
+#: src/cword_webapp/templates/index.html:153
+#: src/cword_webapp/templates/index.html:160
+#: src/cword_webapp/templates/index.html:166
+msgid "Grid"
+msgstr "网格"
+
+#: src/cword_webapp/templates/index.html:156
+msgid "Check"
+msgstr "查看"
+
+#: src/cword_webapp/templates/index.html:163
+msgid "Clear"
+msgstr "清除"
+
+#: src/cword_webapp/templates/index.html:173
+msgid "You are viewing"
+msgstr "您正在查看"
+
+#: src/cword_webapp/templates/index.html:173
+msgid "from"
+msgstr "从"
+
+#: src/cword_webapp/templates/index.html:175
+msgid "word(s) could not be inserted, sorry."
+msgstr "无法插入单词，抱歉。"
+
+#: src/cword_webapp/templates/index.html:176
+msgid "Word count (adjusted)"
+msgstr "字数（调整后）"
+
+#: src/cword_webapp/templates/index.html:178
+msgid "Word count"
+msgstr "字数"
+
+#: src/cword_webapp/templates/index.html:182
+msgid "Continue"
+msgstr "继续"
+
+#: src/cword_webapp/templates/index.html:186
 msgid "You completed the crossword!"
 msgstr "您完成了填字游戏！"
 
@@ -229,3 +291,18 @@ msgstr "地理"
 
 #~ msgid "Countries"
 #~ msgstr "国家"
+
+#~ msgid "Easy"
+#~ msgstr "简单的"
+
+#~ msgid "Medium"
+#~ msgstr "中等的"
+
+#~ msgid "Hard"
+#~ msgstr "难的"
+
+#~ msgid "Extreme"
+#~ msgstr "极端"
+
+#~ msgid "Geography"
+#~ msgstr "地理"
