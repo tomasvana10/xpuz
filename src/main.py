@@ -15,7 +15,6 @@ from PIL import Image
 
 import cword_gen as cwg
 import cword_webapp.app as app
-from cword_gen import Crossword, CrosswordHelper
 from constants import (
     Paths, Colour, CrosswordDifficulties, CrosswordStyle, CrosswordDirections, BaseEngStrings
 )
@@ -199,6 +198,7 @@ class Home(ctk.CTk):
         self.locale: Locale = Locale.parse(self.localised_lang_db[lang])
         gettext.translation("messages", localedir=Paths.LOCALES_PATH, languages=[self.locale.language]).install()
         AppHelper._update_config(self.cfg, "m", "language", self.localised_lang_db[lang])
+        self.title(_("Crossword Puzzle"))
         self.container.pack_forget()
         self.generate_screen()
 
@@ -315,6 +315,7 @@ class CrosswordBrowser(ctk.CTkFrame):
         scroll_region = self.info_block_container._parent_canvas.cget("scrollregion")
         viewable_width = self.info_block_container._parent_canvas.winfo_width()
         if scroll_region and int(scroll_region.split(" ")[2]) > viewable_width:
+            # -1 * event.delta emulates a "natural" scrolling motion
             self.info_block_container._parent_canvas.xview("scroll", -1 * event.delta, "units")
             
     def _on_word_count_rb_selection(self, 
@@ -386,16 +387,16 @@ class CrosswordBrowser(ctk.CTkFrame):
         self.webapp_running: bool = True
         
         # Max word count / custom word count
-        chosen_word_count: int = self.selected_cword_word_count if self.word_count_preference.get() == 0 \
+        chosen_word_count: int = self.cword_word_count if self.word_count_preference.get() == 0 \
                                  else int(self.opts_custom_word_count.get())
 
         # Load definitions, instantiate a crossword, then find the best crossword using that instance
-        definitions: Dict[str, str] = cwg.CrosswordHelper.load_definitions(self.selected_cword_category, 
-                                                                           self.selected_cword_name, 
+        definitions: Dict[str, str] = cwg.CrosswordHelper.load_definitions(self.cword_category, 
+                                                                           self.cword_name, 
                                                                            self.master.locale.language)
         crossword: object = cwg.CrosswordHelper.find_best_crossword(
                                 cwg.Crossword(definitions=definitions, word_count=chosen_word_count,
-                                              name=self.selected_cword_name))
+                                              name=self.cword_name))
         
         self._init_webapp(crossword)
         
@@ -415,7 +416,9 @@ class CrosswordBrowser(ctk.CTkFrame):
             cword_data=crossword.data,
             port=self.master.cfg.get("misc", "webapp_port"), 
             empty=CrosswordStyle.EMPTY,
-            name=crossword.name,
+            name=self.cword_translated_name,
+            category=self.cword_category,
+            difficulty=self.cword_difficulty,
             directions=[CrosswordDirections.ACROSS, CrosswordDirections.DOWN],
             # Tuples in intersections must be removed. Changing this in `cworg_gen.py` was annoying,
             # so it is done here instead. 
@@ -428,7 +431,9 @@ class CrosswordBrowser(ctk.CTkFrame):
             starting_word_matrix=self.starting_word_matrix,
             grid=crossword.grid,
             definitions_a=self.definitions_a,
-            definitions_d=self.definitions_d
+            definitions_d=self.definitions_d,
+            js_err_msgs = [_("To check or reveal a cell/word, you must first select a cell"), 
+                         _("To clear the current word, you must first select a cell.")]
         )
 
     def _interpret_cword_data(self, 
@@ -474,6 +479,8 @@ class CrosswordBrowser(ctk.CTkFrame):
   
     def _on_cword_selection(self, 
                             name: str, 
+                            translated_name: str,
+                            difficulty: str, 
                             word_count: int,
                             category: str,
                             category_object: object,
@@ -494,10 +501,12 @@ class CrosswordBrowser(ctk.CTkFrame):
         self.word_count_preference.set(-1)
         self.opts_custom_word_count.set(_("Select word count"))
         
-        # Always save the current crosswords name and word count to be ready for the user to laod it
-        self.selected_cword_name: str = name
-        self.selected_cword_word_count: int = word_count
-        self.selected_cword_category: str = category
+        # Always save the current crossword's data to be ready for the user to laod it
+        self.cword_name: str = name
+        self.cword_translated_name: str = translated_name
+        self.cword_difficulty: str = difficulty
+        self.cword_word_count: int = word_count
+        self.cword_category: str = category
         self.selected_category_object: object = category_object
         
         self.opts_custom_word_count.configure(values=[str(numbers.format_decimal(num, locale=self.master.locale))\
@@ -631,12 +640,14 @@ class CrosswordInfoBlock(ctk.CTkFrame):
                  ) -> None: 
         super().__init__(container, corner_radius=10, fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
                          border_color=(Colour.Light.SUB, Colour.Dark.SUB), border_width=3)
-        self.master = master
         self.name = name
+        self.master = master
         self.category = category
         self.category_object = category_object
         self.value = value
         self.info = AppHelper._load_cword_info(self.category, self.name, self.master.master.locale.language)
+        self.translated_name = self.info["translated_name"]
+        self.difficulty = _(CrosswordDifficulties.DIFFICULTIES[self.info["difficulty"]])
         
         self._make_content()
         self._place_content()
@@ -664,9 +675,11 @@ class CrosswordInfoBlock(ctk.CTkFrame):
                         value=self.value, 
                         # Pass the necessary info to `self.master._on_cword_selection` so it can save
                         # some instance attributes and properly configure the word count preferences
-                        command=lambda name=self.name, word_count=self.info["total_definitions"], category=self.category, \
+                        command=lambda name=self.name, translated_name=self.translated_name, difficulty=self.difficulty, \
+                                       word_count=self.info["total_definitions"], category=self.category, \
                                        category_object=self.category_object, value=self.value: \
-                            self.master._on_cword_selection(name, word_count, category, category_object, value))
+                            self.master._on_cword_selection(name, translated_name, difficulty, word_count, 
+                                                            category, category_object, value))
     
     def _place_content(self) -> None:
         self.tb_name.place(relx=0.5, rely=0.2, anchor="c", relwidth=0.9, relheight=0.198)

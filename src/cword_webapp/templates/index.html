@@ -25,18 +25,44 @@ content, as each crossword created by this program is unique (unless you get luc
             --button_colour: {{ colour_palette["BUTTON"] }};
             --button_hover_colour: {{ colour_palette["BUTTON_HOVER"] }};
             --button_text_colour: {{ colour_palette["BUTTON_TEXT_COLOUR"] }};
+            --correct_colour: {{ colour_palette["CORRECT"] }};
+            --wrong_colour: {{ colour_palette["WRONG"] }};
         }    
     </style>
-    <!-- For crossword completion popup -->
+
     <script type="text/javascript">
-        let popupToggled = false;
+        let completionPopupToggled = false;
+        let onloadPopupToggled = false;
+        let currentDropdown = null;
+
+        const hideDropdowns = () => document.querySelectorAll(".dropdown").forEach(
+                                                element => element.classList.remove("show_dropdown"));
 
         function toggleCompletionPopup() {
-            popupToggled = !popupToggled;
+            completionPopupToggled = !completionPopupToggled;
             document.getElementById("blur").classList.toggle("active");
             document.getElementById("completion_popup").classList.toggle("active");
-            if (popupToggled) { 
-                sleep(501).then(() => document.getElementById("close_popup_button").focus({ focusVisible: true })); }
+            if (completionPopupToggled) { /* Focus the close button */
+                sleep(501).then(() => document.getElementsByClassName("close_button")[0].focus({ focusVisible: true })); }
+        }
+
+        function onDropdownClick(id) {
+            /* Opens the dropdown a user clicks on or closes it if they already have it open. */
+            let dropdown = document.getElementById(id);
+            if (id === currentDropdown) {
+                dropdown.classList.remove("show_dropdown");
+                currentDropdown = null;
+                return;
+            }
+            hideDropdowns();
+            dropdown.classList.add("show_dropdown");
+            currentDropdown = id;
+        }
+
+        function closeOnloadPopup() {
+            onloadPopupToggled = false;
+            document.getElementById("blur").classList.toggle("active");
+            document.getElementById("onload_popup").classList.toggle("active");
         }
     </script>
 </head>
@@ -46,7 +72,8 @@ data-grid="{{ grid }}"
 data-dimensions="{{ dimensions }}" 
 data-empty="{{ empty }}"   
 data-colour_palette="{{ json_colour_palette }}"
-data-intersections="{{ intersections }}">
+data-intersections="{{ intersections }}"
+data-js_err_msgs="{{ js_err_msgs }}">
 
 <div class="container" id="blur">
 
@@ -85,7 +112,7 @@ data-intersections="{{ intersections }}">
 </div>
 
 <div class="definitions">
-{% set ns = namespace(tab_index_counter = 1) %}
+{% set ns = namespace(tab_index_counter = 12) %}
 <div class="definitions_a"> <!-- Column one for across definitions -->
     <ul>
         <h3 class="def_heading">{{ _('Across') }}</h3>
@@ -119,11 +146,45 @@ data-intersections="{{ intersections }}">
         {% endfor %}
     </ul>
 </div>
+
+<div class="top_buttons_container">
+    <button tabindex="1" id="reveal_button" onclick="onDropdownClick('reveal_dropdown')">{{ _('Reveal') }}</button>
+    <div class="dropdown" id="reveal_dropdown">
+        <button tabindex="2" onclick="handleCheckOrRevealButtonPress('cell', 'reveal')">{{ _('Cell') }}</button>
+        <button tabindex="3" onclick="handleCheckOrRevealButtonPress('word', 'reveal')">{{ _('Word') }}</button>
+        <button tabindex="4" onclick="handleCheckOrRevealButtonPress('grid', 'reveal')">{{ _('Grid') }}</button>
+    </div>
+
+    <button tabindex="5" id="check_button" onclick="onDropdownClick('check_dropdown')">{{ _('Check') }}</button>
+    <div class="dropdown" id="check_dropdown">
+        <button tabindex="6" onclick="handleCheckOrRevealButtonPress('cell', 'check')">{{ _('Cell') }}</button>
+        <button tabindex="7" onclick="handleCheckOrRevealButtonPress('word', 'check')">{{ _('Word') }}</button>
+        <button tabindex="8" onclick="handleCheckOrRevealButtonPress('grid', 'check')">{{ _('Grid') }}</button>
+    </div>
+
+    <button tabindex="9" id="clear_button" onclick="onDropdownClick('clear_dropdown')">{{ _('Clear') }}</button>
+    <div class="dropdown" id="clear_dropdown">
+        <button tabindex="10" onclick="handleClearButtonPress('word', 'clear')">{{ _('Word') }}</button>
+        <button tabindex="11" onclick="handleClearButtonPress('grid', 'clear')">{{ _('Grid') }}</button>
+    </div>
+</div>
 </div>
 
-<div id="completion_popup">
+<div id="onload_popup" class="popup">
+    <h2>{{ _('Crossword Puzzle - Game') }}</h2>
+    <p>{{ _('You are viewing') }} {{ name }} ({{ difficulty }}) {{ _('from') }} {{ _(category.title()) }}</p>
+    {% if failed_insertions > 0 %}
+        <p>{{ failed_insertions }} {{ _('word(s) could not be inserted, sorry.') }}</p>
+        <p>{{ _('Word count (adjusted)') }}: {{ word_count - failed_insertions }}</p>
+    {% else %}
+        <p>{{ _('Word count') }}: {{ word_count }}</p>
+    {% endif %}
+    <button id="close_popup_button" class="continue_button" onclick="closeOnloadPopup()">{{ _('Continue') }}</button>
+</div>
+
+<div id="completion_popup" class="popup">
     <h2>{{ _('You completed the crossword!') }}</h2>
-    <button id="close_popup_button" onclick="toggleCompletionPopup()">{{ _('Close') }}</button>
+    <button id="close_popup_button" class="close_button" onclick="toggleCompletionPopup()">{{ _('Close') }}</button>
 </div>
 
 </div>

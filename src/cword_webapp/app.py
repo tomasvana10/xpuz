@@ -28,6 +28,8 @@ def _run(*args, **kwargs):
             empty=kwargs["empty"],
             directions=kwargs["directions"],
             name=kwargs["name"],
+            category=kwargs["category"],
+            difficulty=kwargs["difficulty"],
             intersections=kwargs["intersections"],
             word_count=kwargs["word_count"],
             failed_insertions=kwargs["failed_insertions"],
@@ -37,6 +39,7 @@ def _run(*args, **kwargs):
             grid=kwargs["grid"],
             definitions_a=kwargs["definitions_a"],
             definitions_d=kwargs["definitions_d"],
+            js_err_msgs=kwargs["js_err_msgs"]
         )
         
     app.run(debug=False, port=int(kwargs["port"]))

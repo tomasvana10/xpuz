@@ -1,3 +1,4 @@
+/* ----- Misc styling, as well as generalised styling (e.g. buttons) ----- */
 html { 
     font-family: Arial, Helvetica, sans-serif; 
     color: var(--text_colour);
@@ -28,7 +29,31 @@ body { /* These styles are from https://css-pattern.com */
     column-gap: 3em; 
 }
 
-.grid { /* The crossword grid */
+button {
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    background: var(--button_colour);
+    color: var(--button_text_colour);
+    text-decoration: none;
+}
+
+button:hover {
+    background: var(--button_hover_colour);
+    text-decoration: none;
+}
+
+.non_empty_cell.lock_in { color: var(--correct_colour) }
+
+.non_empty_cell.wrong { color: var(--wrong_colour) }
+/* ---------- */
+
+
+/* ----- Styling for the crossword grid and its cells ----- */
+.grid {
     display: grid;
     /* Configure `--dimensions` amount of rows/columns with a size of `95vmin / --dimensions` */
     grid-template-columns: repeat(var(--dimensions), var(--grid_size));
@@ -42,7 +67,7 @@ body { /* These styles are from https://css-pattern.com */
 
 .grid > div.non_empty_cell {
     background: var(--sub_colour);
-    text-transform: uppercase; /* Force inner html to be uppercase */
+    text-transform: uppercase; 
     font-size: var(--cell_font_size);
     display: flex;
     justify-content: center;
@@ -53,23 +78,37 @@ body { /* These styles are from https://css-pattern.com */
 }
 
 .num_label { /* Labels the start of a word */
-    position: absolute; /* Positioned absolutely to `#grid > div` */
+    position: absolute;
     top: 1%;
     left: 5%;
     user-select: none;
     -webkit-user-select: none;
+    color: var(--text_colour);
     font-size: var(--num_label_font_size); 
 }
+/* ---------- */
 
+
+/* ----- Styling for the definitions container and its two rows (the definitions) ----- */
 .definitions { /* Contains two divs that display the words that run across/down the grid */
     display: flex;
     background-color: var(--sub_colour);
     justify-content: space-evenly;
+    margin-top: 10vmin;
     right: 0;
     overflow-y: auto;
-    max-height: 95vmin;
+    max-height: 85vmin;
     width: 95vmin;
 }
+
+ul { list-style-type: none; } /* Remove bullet points from the unordered list */
+
+li { /* Each definition/clue */
+    margin-bottom: 10px; 
+    white-space: pre-wrap; /* Helps html recognise more whitespace for the definitions list */
+    padding: 4.5%;
+    cursor: pointer;
+} 
 
 .def_heading { text-align: center; }
 
@@ -77,33 +116,17 @@ body { /* These styles are from https://css-pattern.com */
 .definitions_a, .definitions_d { flex-grow: 1; flex: 1; }
 
 .definitions_d { padding-right: 7.75%; }
+/* ---------- */
 
-ul { list-style-type: none; } /* Remove bullet points from the unordered list */
 
-li { 
-    margin-bottom: 10px; 
-    white-space: pre-wrap; /* Helps html recognise more whitespace for the definitions list */
-    padding: 4.5%;
-    user-select: none;
-    -webkit-user-select: none;
-} 
-
-li:hover { cursor: pointer; } /* Will help the user to understand that they can click on 
-                              a list element/definition to set their input to the corresponding 
-                              spot on the crossword grid */
-
-.def_heading {
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-#blur.active > :not(#completion_popup) {
+/* ----- Styling for the popups ----- */
+#blur.active > :not(.popup) { /* Blur everything but the popup */
     filter: blur(20px);
     pointer-events: none;
     user-select: none;
 }
 
-#completion_popup {
+.popup {
     position: fixed;
     text-align: center;
     background: var(--sub_colour);
@@ -118,27 +141,61 @@ li:hover { cursor: pointer; } /* Will help the user to understand that they can 
     opacity: 0;
 }
 
-#completion_popup.active {
+/* This popup needs its own transform property for some reason */
+.popup#onload_popup { transform: translate(-50%, 20%); }
+
+.popup.active {
     top: 25%;
     visibility: visible;
     opacity: 1;
     transition: 0.5s;
 }
+/* ---------- */
 
-#completion_popup > button {
-    -webkit-border-radius: 5;
-    -moz-border-radius: 5;
-    border-radius: 5px;
+
+/* ----- Styling of the dropdowns, their buttons and other related elements ----- */
+.dropdown {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    width: 18.73vmin;
+    background-color: var(--sub_colour);
+    box-shadow: 6px 6px 10px 1px var(--main_colour);
+    padding: 5px;
+}
+
+.dropdown button {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    display: block;
+    width: 100%;
+    padding: 10px;
     border: none;
-    cursor: pointer;
-    padding: 10px 20px 10px 20px;
-    background: var(--button_colour);
-    color: var(--button_text_colour);
-    text-decoration: none;
-
+    background: var(--sub_colour);
+    color: var(--text_colour);
+    border-bottom: 1px solid var(--main_colour);
 }
 
-#completion_popup > button:hover {
-    background: var(--button_hover_colour);
-    text-decoration: none;
+.definitions > div.top_buttons_container { 
+    display: flex;
+    position: absolute;
+    transform: translateY(-150%);
 }
+
+.dropdown button:last-child { border-bottom: none; }
+
+.dropdown button:hover { background-color: var(--main_colour); }
+
+.show_dropdown { display: block; }
+
+#reveal_button, #check_button, #clear_button { 
+    margin-right: 27px; 
+    width: 20vmin;
+}
+
+#check_dropdown { left: 33.3%; }
+
+#clear_dropdown { left: 66.75% }
+/* ---------- */ 

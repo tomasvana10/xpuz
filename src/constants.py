@@ -37,6 +37,8 @@ class Colour:
         TEXT_DISABLED = "#999999"
         WORD_FOCUS = "#A7D8FF"
         CELL_FOCUS = "#FFDA03"
+        CORRECT = "#20D44A"
+        WRONG = "#FC0A2A"
 
     class Dark:
         MAIN = "#263238"
@@ -45,6 +47,8 @@ class Colour:
         TEXT_DISABLED = "#737373"
         WORD_FOCUS = "#5B778C"
         CELL_FOCUS = "#998202"
+        CORRECT = "#25C44B"
+        WRONG = "#D90D28"
 
 
 class CrosswordDifficulties:

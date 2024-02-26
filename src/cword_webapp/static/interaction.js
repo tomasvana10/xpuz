@@ -2,21 +2,19 @@
 Additionally, this script offers automatic detection of crossword completion, and relays this information to the user. 
 */
 
-let grid, dimensions, empty, colour_palette, intersections; // Jinja2 template variables
+let grid, dimensions, empty, colour_palette, intersections, lazy_msgs; // Jinja2 template variables
 let direction = "ACROSS",
     currentWord = null,
     cellCoords = null,
     staticIndex = null,
-    isDown = null,
-    defItems = null,
-    defIndex = 0;
+    isDown = null;
 const arrowKeys = ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"];
 const spacebarKeys = ["Spacebar", " "];
 
 /* Functions for conditional checks and other minor utilities */
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 const isEmpty = (cell) => !cell?.childNodes[0]?.nodeValue;
-const setFocusMode = (bool) => { if (cellCoords !== null) { changeWordFocus(bool); changeCellFocus(bool); changeDefinitionsListItemFocus(bool); } }
+const setFocusMode = (bool) => { if (cellCoords !== null) { changeWordFocus(bool); changeCellFocus(bool); changeDefinitionsListItemFocus(bool); } };
 const setValue = (cell, value) => cell.childNodes[0].nodeValue = value; // Using nodes prevents any `num_label` elements from being deleted
 const getCellElement = (coords) => document.querySelector(`[data-row="${coords[0]}"][data-column="${coords[1]}"]`);
 const updateCellCoords = (cell) => [parseInt(cell.getAttribute("data-row")), parseInt(cell.getAttribute("data-column"))]; 
@@ -25,9 +23,15 @@ const changeCellFocus = (focus) => { getCellElement(cellCoords).style.background
 const getDefinitionsListItemFromWord = () => document.querySelector(`[data-word="${currentWord}"]`);
 const changeDefinitionsListItemFocus = (focus) => getDefinitionsListItemFromWord().style.backgroundColor = focus ? colour_palette.WORD_FOCUS : ""; 
 const alternateDirection = () => direction = direction === "ACROSS" ? "DOWN" : "ACROSS";
+const emulateEscapePress = () => document.dispatchEvent(new KeyboardEvent("keydown", {"key": "Escape"}));
 const isCrosswordComplete = () => getGrid().isEqualTo(grid);
 
 Array.prototype.isEqualTo = function(arr) { return JSON.stringify(this) === JSON.stringify(arr); };
+
+// Used on cell elements to check if their nodeValue (what the user typed) is equal to the data-value attribute (the true value)
+Element.prototype.hasCorrectValue = function() { 
+    return this.childNodes[0].nodeValue.toUpperCase() === this.getAttribute("data-value"); 
+};
 
 
 document.addEventListener("DOMContentLoaded", () => { // On page load
@@ -38,11 +42,17 @@ document.addEventListener("DOMContentLoaded", () => { // On page load
     empty = body.getAttribute("data-empty");
     colour_palette = JSON.parse(body.getAttribute("data-colour_palette"));
     intersections = JSON.stringify(eval(body.getAttribute("data-intersections")));
+    err_msgs = eval(body.getAttribute("data-js_err_msgs"));
 
-    defItems = document.querySelectorAll(".def");
+    onloadPopupToggled = true;
+    sleep(200).then(() => { // So the popup does not immediately load
+        document.getElementById("blur").classList.toggle("active");
+        document.getElementById("onload_popup").classList.toggle("active");
+        // Must wait for the transition to finish before focusing the continue button
+        sleep(301).then(() => { document.getElementsByClassName("continue_button")[0].focus({ focusVisible: true}); });
+    });
 
-    // Reset all non-empty cells to empty strings (issue with HTML)
-    document.querySelectorAll(".non_empty_cell").forEach(cell => setValue(cell, "")); 
+    clearAllCells(); // Prevent possible issues with HTML
 });
 
 
@@ -52,30 +62,42 @@ document.addEventListener("keydown", (event) => {
     direction at an intersection, or move the focus according to the arrow keys a user presses. */
     let inputValue = event.key;
 
+    // This special input has to be detected here to allow the user to close a dropdown
+    if (inputValue === "Escape") { handleEscapePress(event); return; }
+    
     // Accessibility related input detection relating to tab and tabindex. 
-    if (inputValue === "Enter" && !popupToggled) { event.target.click(); return; } // Select word
+    if (inputValue === "Enter" && !completionPopupToggled && !onloadPopupToggled) {
+        if (event?.target?.className === "def") { event.target.click(); }
+        return;
+    }
 
     if (cellCoords === null) { return; } // User hasn't selected a cell, so normal/special inputs cannot be performed
-
+    
     // Special inputs
     if (arrowKeys.includes(inputValue)) { handleArrowPress(inputValue, event); return; }
-    if (inputValue === "Escape") { handleEscapePress(event); return; }
     if (intersections.includes(JSON.stringify(cellCoords)) && spacebarKeys.includes(inputValue)) { handleSpacebarPress(event); return; }
 
     // Normal inputs
     let mode = (inputValue === "Backspace" || inputValue === "Delete") ? "del" : "enter";
     let currentCell = getCellElement(cellCoords);
+    currentCell.classList.remove("wrong");
 
     if (mode === "enter") {
         if (!(inputValue.length === 1 && (inputValue.match(/\p{L}/u)))) { return; } // Regex matches `letter` characters
-        setValue(currentCell, inputValue);
+        if (!currentCell.classList.contains("lock_in")) { setValue(currentCell, inputValue); }
     } else if (mode === "del") {
-        if (!isEmpty(currentCell)) { setValue(currentCell, ""); return; } // Focused cell has content, just delete it
-        setValue(getCellElement(shiftCellCoords(cellCoords, direction, mode)), ""); // Perform standard deletion
+        if (!isEmpty(currentCell) && !currentCell.classList.contains("lock_in"))
+                return setValue(currentCell, "");  // Focused cell has content, just delete it
+        if (!getCellElement(shiftCellCoords(cellCoords, direction, mode)).classList.contains("lock_in")) 
+            setValue(getCellElement(shiftCellCoords(cellCoords, direction, mode)), ""); // Perform standard deletion
     }
     
-    if (isCrosswordComplete()) { sleep(1).then(() => { document.dispatchEvent(new KeyboardEvent("keydown", {"key": "Escape"})); 
-                                                       toggleCompletionPopup(); }) }
+    if (isCrosswordComplete()) { 
+        sleep(1).then(() => { 
+            emulateEscapePress();
+            toggleCompletionPopup(); 
+        });
+    }
     
     changeCellFocus(false);
     cellCoords = shiftCellCoords(cellCoords, direction, mode);
@@ -94,6 +116,8 @@ function handleSpacebarPress(event) {
 function handleEscapePress(event) { 
     /* Remove focus from everything. */
     event.preventDefault();
+    hideDropdowns(); 
+    currentDropdown = null;
     setFocusMode(false);
     cellCoords = null; currentWord = null;
 }
@@ -118,7 +142,7 @@ function handleArrowPress(key, event) {
 
     setFocusMode(false);
     // If moving perpendicular to an intersection, only alternate the direction and retain the prior `cellCoords`
-    if (shouldDirectionBeAlternated(newCellCoords)) { 
+    if (shouldDirectionBeAlternated(newCellCoords)) {
         alternateDirection();
         // Cells were skipped to reach these new coordinates, so update `cellCoords`
         if (skipFlag) { cellCoords = newCellCoords; }
@@ -126,6 +150,100 @@ function handleArrowPress(key, event) {
     } else { cellCoords = newCellCoords; }
     currentWord = updateCurrentWord();
     setFocusMode(true);
+}
+
+function clearAllCells() {
+    /* Remove the content (in the nodeValue) of all non_empty_cells and any additional styling classes. */
+    document.querySelectorAll(".non_empty_cell").forEach(cell => {
+        cell.classList.remove("lock_in");
+        cell.classList.remove("wrong");
+        setValue(cell, "");
+    });
+}
+
+function handleCheckOrRevealButtonPress(magnitude, button) {
+    /* Perform reveal/checking operations on a selected cell or word, or, the grid. 
+    
+    Reveal operations immediately set the content of a cell to its true value, and make it green.
+
+    Check operations make the content of a cell (if there is any) either green or red based on 
+    if it is correct or not. 
+    
+    Green cells (with the "lock_in") class cannot be edited unless the user clears them with the 
+    Clear (word/grid) button. */
+
+    onDropdownClick(button + "_dropdown"); // Close the dropdown the user just clicked
+    currentDropdown = null;
+    if (cellCoords === null && magnitude !== "grid") { return alert(err_msgs[0]); }
+
+    if (magnitude === "cell") { 
+        let cell = getCellElement(cellCoords);
+        if (button === "reveal") {
+            cell.classList.remove("wrong");
+            setValue(cell, cell.getAttribute("data-value"));
+            cell.classList.add("lock_in"); // LOCK IN!!!
+
+        } else if (button === "check") {
+            if (!isEmpty(cell)) {
+                if (cell.hasCorrectValue()) {
+                    cell.classList.add("lock_in");
+                } else { cell.classList.add("wrong"); }
+            }
+        }
+    }
+
+    if (magnitude === "word") { 
+        for (const cell of getWordElements()) {
+            if (button === "reveal") {
+                cell.classList.remove("wrong");
+                setValue(cell, cell.getAttribute("data-value"));
+                cell.classList.add("lock_in");
+
+            } else if (button === "check") {
+                if (cell.hasCorrectValue()) {
+                    cell.classList.add("lock_in");
+                } else { cell.classList.add("wrong"); }
+            }
+        }
+    }
+
+    if (magnitude === "grid") { 
+        document.querySelectorAll(".non_empty_cell").forEach((cell) => {
+            if (button === "reveal") {
+                cell.classList.remove("wrong");
+                setValue(cell, cell.getAttribute("data-value"));
+                cell.classList.add("lock_in");
+            } else if (button === "check") {
+                if (cell.hasCorrectValue()) {
+                    cell.classList.add("lock_in");
+                } else { cell.classList.add("wrong"); }
+            }
+        });
+    }
+
+    if (isCrosswordComplete()) { 
+        sleep(1).then(() => { 
+            emulateEscapePress(); 
+            toggleCompletionPopup(); 
+        });
+    }
+}
+
+function handleClearButtonPress(magnitude, button) {
+    /* Clear the content and styling classes of a word or the entire grid. */
+    onDropdownClick(button + "_dropdown");
+    currentDropdown = null;
+    if (cellCoords === null && magnitude !== "grid") { return alert(err_msgs[1]); }
+
+    if (magnitude === "word") {
+        for (const cell of getWordElements()) {
+            cell.classList.remove("lock_in");
+            cell.classList.remove("wrong");
+            setValue(cell, "");
+        }
+    }
+
+    if (magnitude === "grid") { clearAllCells(); }
 }
 
 function shiftCellCoords(coords, dir, mode, force=false) {
@@ -176,23 +294,28 @@ function onCellClick(cell) {
 function changeWordFocus(focus) {
     /* Retrieve the starting and ending coordinates of a word and change the colour of the cell elements
     that make up that word to a different colour. */
-    let [startCoords, endCoords] = getWordIndices();
-    for (let i = startCoords; i <= endCoords; i++) {
-        let coords = isDown ? [i, staticIndex] : [staticIndex, i];
-        getCellElement(coords).style.backgroundColor = focus ? colour_palette.WORD_FOCUS : colour_palette.SUB;
+    for (const element of getWordElements()) {
+        element.style.backgroundColor = focus ? colour_palette.WORD_FOCUS : colour_palette.SUB;
     }
 }
 
 function updateCurrentWord() {
     /* Return the current word in uppercase using `getWordIndices` */
     let word = "";
-    let [startCoords, endCoords] = getWordIndices();
-    for (let i = startCoords; i <= endCoords; i++) {
-        let coords = isDown ? [i, staticIndex] : [staticIndex, i];
-        word += getCellElement(coords).getAttribute("data-value");
+    for (const element of getWordElements()) {
+        word += element.getAttribute("data-value");
     }
 
     return word.toUpperCase();
+}
+
+function* getWordElements() {
+    /* Generator function that yields all the consisting cell elements of the current word. */
+    let [startCoords, endCoords] = getWordIndices();
+    for (let i = startCoords; i <= endCoords; i++) { 
+        let coords = isDown? [i, staticIndex] : [staticIndex, i];
+        yield getCellElement(coords);
+    }
 }
 
 function getWordIndices() {
