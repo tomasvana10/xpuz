@@ -1,0 +1,19 @@
+{
+    "plasma": "State of matter consisting of charged particles (ions and electrons)",
+    "ionic": "Bond formed by attraction between oppositely charged ions",
+    "covalent": "Bond formed by sharing of electrons between atoms",
+    "metallic": "Bond formed by attraction between positive metal cations and delocalised electrons",
+    "balancing equation": "Chemical equation with equal numbers of atoms of each element on both sides",
+    "mole": "Unit used to measure the amount of a substance (Avogadro's number of particles)",
+    "mass number": "Sum of protons and neutrons in an atom's nucleus",
+    "atomic number": "Number of protons in an atom's nucleus (determines element identity)",
+    "isotope": "Atoms of the same element with different numbers of neutrons",
+    "oxidation": "Loss of electrons from an atom or molecule",
+    "reduction": "Gain of electrons by an atom or molecule",
+    "redox": "Chemical reaction involving both oxidation and reduction processes",
+    "activation energy": "Minimum energy required for a chemical reaction to occur",
+    "catalyst": "Substance that increases the rate of a chemical reaction without being consumed",
+    "thermodynamics": "Branch of chemistry concerned with heat, work, temperature, and energy",
+    "endothermic": "Chemical reaction that absorbs heat from the surroundings",
+    "exothermic": "Chemical reaction that releases heat to the surroundings"
+}

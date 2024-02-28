@@ -1,0 +1,11 @@
+{
+    "probability axioms": "Foundational propositions in probability theory",
+    "conditional probability": "The probability of an event given that another event has occurred",
+    "random variables": "A variable whose possible values are numerical outcomes of a random phenomenon",
+    "variance": "The expectation of the squared deviation of a random variable from its mean",
+    "dependent events": "Two events are dependent if the occurrence of one affects the probability of the occurrence of the other",
+    "equally likely outcomes": "Outcomes that have the same probability of occurring",
+    "standard deviation": "A measure of the amount of variation or dispersion of a set of values",
+    "statistic": "A single measure of some attribute of a sample",
+    "trial": "Each observation in a probability experiment"
+}

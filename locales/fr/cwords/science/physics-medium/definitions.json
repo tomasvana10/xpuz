@@ -1,0 +1,22 @@
+{
+    "mouvement": "Changement de position d'un objet au fil du temps",
+    "acc\u00e9l\u00e9ration": "Taux de changement de vitesse",
+    "rapidit\u00e9": "Vitesse et direction d'un objet",
+    "forcer": "Pousser ou tirer pour d\u00e9placer ou modifier le mouvement d'un objet",
+    "inertie": "Tendance d'un objet \u00e0 r\u00e9sister aux changements de mouvement",
+    "\u00e9lan": "Produit de la masse et de la vitesse d'un objet",
+    "la gravit\u00e9": "Force qui attire les objets ayant une masse les uns vers les autres",
+    "poids": "Force exerc\u00e9e sur un objet par la gravit\u00e9",
+    "masse": "Quantit\u00e9 de mati\u00e8re dans un objet",
+    "densit\u00e9": "Masse par unit\u00e9 de volume d'une substance",
+    "travail": "Transfert d'\u00e9nergie lorsqu'une force agit sur et d\u00e9place un objet",
+    "\u00e9nergie": "Capacit\u00e9 \u00e0 faire du travail",
+    "\u00e9nergie cin\u00e9tique": "\u00c9nergie d'un objet due \u00e0 son mouvement",
+    "\u00e9nergie potentielle": "\u00c9nergie stock\u00e9e en raison de la position ou de la configuration d'un objet",
+    "pouvoir": "Taux auquel le travail est effectu\u00e9",
+    "friction": "Force qui s'oppose au mouvement entre deux surfaces en contact",
+    "pression": "Force exerc\u00e9e par unit\u00e9 de surface",
+    "atmosph\u00e8re": "Couche de gaz entourant la Terre",
+    "flottabilit\u00e9": "Force ascendante exerc\u00e9e sur un objet immerg\u00e9 dans un fluide",
+    "son": "Forme d'\u00e9nergie qui se propage sous forme d'ondes \u00e0 travers un milieu"
+}

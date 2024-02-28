@@ -1,0 +1,15 @@
+{
+    "kumplikadong geometry": "Ang pag-aaral ng mga geometriko na istruktura at mga konstruksyon na nagmumula sa, o inilarawan ng, mga kumplikadong numero",
+    "kumplikadong mga numero": "Mga numero ng anyong a + bi kung saan ang a at b ay mga tunay na numero",
+    "tunay na bahagi": "Ang termino sa isang kumplikadong numero na hindi naglalaman ng haka-haka na yunit bilang isang kadahilanan",
+    "haka-haka na bahagi": "Ang bahagi ng isang kumplikadong numero na may haka-haka na yunit bilang isang kadahilanan",
+    "kumplikadong manifold": "Mga espasyo sa kumplikadong geometry na mga generalization ng mga curve at surface",
+    "kumplikadong algebraic varieties": "Mga puwang sa kumplikadong geometry na mga solusyon sa mga polynomial equation",
+    "holomorphic constructions": "Mga konstruksyon sa kumplikadong geometry na kumplikado-naiiba",
+    "minimal na modelo ng programa": "Isang programa sa kumplikadong geometry para sa pag-uuri ng mga kumplikadong manifold at kumplikadong algebraic varieties",
+    "mga puwang ng moduli": "Mga puwang sa kumplikadong geometry na nagpapaparameter ng ilang uri ng geometric na bagay",
+    "haka-haka ng calabi": "Isang haka-haka sa kumplikadong geometry na pinatunayan ni Shing-Tung Yau tungkol sa pagkakaroon ng isang espesyal na uri ng panukat sa isang kumplikadong manifold",
+    "hitchin-kobayashi sulat": "Isang sulat sa kumplikadong geometry sa pagitan ng mga stable na holomorphic vector bundle at mga solusyon sa isang partikular na differential equation",
+    "nonabelian hodge sulat": "Isang sulat sa kumplikadong geometry sa pagitan ng ilang uri ng kumplikadong manifold at ilang uri ng algebraic na istruktura",
+    "mga sukatan ng kahler-einstein": "Mga espesyal na uri ng mga sukatan sa isang kumplikadong manifold na nakakatugon sa isang partikular na kundisyon"
+}

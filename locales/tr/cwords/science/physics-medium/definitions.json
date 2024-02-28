@@ -1,0 +1,21 @@
+{
+    "hareket": "Bir cismin zamanla konumunun de\u011fi\u015fmesi",
+    "h\u0131zlanma": "H\u0131z de\u011fi\u015fim oran\u0131",
+    "h\u0131z": "Bir nesnenin h\u0131z\u0131 ve y\u00f6n\u00fc",
+    "g\u00fc\u00e7": "\u0130\u015fin yap\u0131lma h\u0131z\u0131",
+    "eylemsizlik": "Bir nesnenin hareketteki de\u011fi\u015fikliklere direnme e\u011filimi",
+    "itme": "Bir cismin k\u00fctlesi ile h\u0131z\u0131n\u0131n \u00e7arp\u0131m\u0131",
+    "yer \u00e7ekimi": "K\u00fctlesi olan cisimleri birbirine \u00e7eken kuvvet",
+    "a\u011f\u0131rl\u0131k": "Yer\u00e7ekimi nedeniyle bir cisme uygulanan kuvvet",
+    "y\u0131\u011f\u0131n": "Bir cisimdeki madde miktar\u0131",
+    "yo\u011funluk": "Bir maddenin birim hacmi ba\u015f\u0131na k\u00fctle",
+    "i\u015f": "Bir kuvvet bir nesneye etki etti\u011finde ve onu hareket ettirdi\u011finde enerji aktar\u0131m\u0131",
+    "enerji": "\u0130\u015f yapabilme yetene\u011fi",
+    "kinetik enerji": "Bir cismin hareketinden dolay\u0131 enerjisi",
+    "potansiyel enerji": "Bir nesnenin konumu veya konfig\u00fcrasyonu nedeniyle depolanan enerji",
+    "s\u00fcrt\u00fcnme": "Temas halindeki iki y\u00fczey aras\u0131ndaki harekete kar\u015f\u0131 \u00e7\u0131kan kuvvet",
+    "bas\u0131n\u00e7": "Birim alana uygulanan kuvvet",
+    "atmosfer": "D\u00fcnyay\u0131 \u00e7evreleyen gaz tabakas\u0131",
+    "kald\u0131rma kuvveti": "S\u0131v\u0131ya bat\u0131r\u0131lm\u0131\u015f bir cisme uygulanan yukar\u0131 y\u00f6nl\u00fc kuvvet",
+    "ses": "Bir ortamda dalgalar halinde yay\u0131lan enerji bi\u00e7imi"
+}

@@ -1,0 +1,22 @@
+{
+    "mugimendua": "Objektu baten posizioaren aldaketa denboran zehar",
+    "azelerazioa": "Abiadura-aldaketa-tasa",
+    "abiadura": "Objektu baten abiadura eta norabidea",
+    "indarra": "Objektu baten mugimendua mugitzen edo aldatzen duen bultza edo tira",
+    "inertzia": "Objektu batek mugimenduaren aldaketei aurre egiteko duen joera",
+    "bultzada": "Objektu baten masaren eta abiaduraren produktua",
+    "grabitatea": "Masa duten objektuak elkarrengana erakartzen dituen indarra",
+    "pisua": "Grabitatearen ondorioz objektu bati eragiten dion indarra",
+    "masa": "Objektu batean dagoen materia kantitatea",
+    "dentsitatea": "Substantzia baten bolumen-unitateko masa",
+    "lana": "Energia transferentzia indar batek objektu bati eragiten eta mugitzen duenean",
+    "energia": "Lana egiteko gaitasuna",
+    "energia zinetikoa": "Objektu baten energia bere mugimenduaren ondorioz",
+    "energia potentziala": "Objektu baten posizio edo konfigurazioaren ondorioz metatutako energia",
+    "boterea": "Lanak zein tasatan egiten den",
+    "marruskadura": "Kontaktuan dauden bi gainazalen arteko higidurari aurka egiten dion indarra",
+    "presioa": "Azalera unitateko egiten den indarra",
+    "giroa": "Lurra inguratzen duten gasen geruza",
+    "flotagarritasuna": "Fluido batean murgilduta dagoen objektu baten gaineko goranzko indarra",
+    "soinua": "Euskarri batean zehar uhin gisa bidaiatzen duen energia forma"
+}

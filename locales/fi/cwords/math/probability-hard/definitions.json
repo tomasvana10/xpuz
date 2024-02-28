@@ -1,0 +1,11 @@
+{
+    "todenn\u00e4k\u00f6isyysaksioomit": "Peruslausekkeet todenn\u00e4k\u00f6isyysteoriassa",
+    "ehdollinen todenn\u00e4k\u00f6isyys": "Tapahtuman todenn\u00e4k\u00f6isyys, kun toinen tapahtuma on tapahtunut",
+    "satunnaismuuttujia": "Muuttuja, jonka mahdolliset arvot ovat satunnaisilmi\u00f6n numeerisia tuloksia",
+    "varianssi": "Odotus satunnaismuuttujan keskiarvosta poikkeaman neli\u00f6st\u00e4",
+    "riippuvaisia tapahtumia": "Kaksi tapahtumaa ovat riippuvaisia, jos toisen tapahtuminen vaikuttaa toisen tapahtumisen todenn\u00e4k\u00f6isyyteen",
+    "yht\u00e4 todenn\u00e4k\u00f6isi\u00e4 tuloksia": "Tuloksia, joiden toteutumisen todenn\u00e4k\u00f6isyys on sama",
+    "keskihajonta": "Arvojoukon vaihtelun tai hajaantumisen mitta",
+    "tilastollinen": "Otoksen jonkin ominaisuuden yksitt\u00e4inen mitta",
+    "oikeudenk\u00e4ynti\u00e4": "Jokainen havainto todenn\u00e4k\u00f6isyyskokeessa"
+}

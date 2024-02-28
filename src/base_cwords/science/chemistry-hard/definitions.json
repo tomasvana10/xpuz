@@ -1,0 +1,28 @@
+{
+    "matter": "Anything that takes up space and has mass",
+    "element": "Pure substance made of only one type of atom",
+    "atom": "Smallest unit of matter that can participate in a chemical reaction",
+    "compound": "Substance made of two or more elements chemically bonded",
+    "molecule": "Group of atoms chemically bonded together",
+    "mixture": "Combination of two or more substances not chemically combined",
+    "homogeneous": "Mixture with uniform composition throughout (e.g., solution)",
+    "heterogeneous": "Mixture with non-uniform composition (e.g., suspension)",
+    "state": "Form in which matter exists (solid, liquid, gas, plasma)",
+    "solid": "State of matter with definite shape and volume",
+    "liquid": "State of matter with definite volume but no definite shape",
+    "gas": "State of matter with no definite shape or volume",
+    "reaction": "Process where substances change to form new substances",
+    "reactant": "Substance undergoing change in a chemical reaction",
+    "product": "New substance formed in a chemical reaction",
+    "bond": "Force holding atoms together in a molecule or compound",
+    "chemical formula": "Shorthand way of representing a substance using symbols and numbers",
+    "chemical equation": "Symbolic representation of a chemical reaction",
+    "solution": "Homogeneous mixture of a solute (dissolved substance) and a solvent (dissolving substance)",
+    "concentration": "Amount of solute dissolved in a given amount of solvent",
+    "acid": "Substance that donates hydrogen ions (H+) in water",
+    "base": "Substance that accepts hydrogen ions (H+) in water",
+    "neutralisation": "Reaction between an acid and a base, forming a salt and water",
+    "energy": "Ability to do work",
+    "chemical energy": "Potential energy stored in the chemical bonds of a substance"  
+}
+  

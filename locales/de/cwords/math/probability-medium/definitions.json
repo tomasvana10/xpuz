@@ -1,0 +1,11 @@
+{
+    "Wahrscheinlichkeit": "Ma\u00df f\u00fcr die Wahrscheinlichkeit, dass ein Ereignis eintritt",
+    "Probenraum": "Die Menge aller m\u00f6glichen Ergebnisse eines Wahrscheinlichkeitsexperiments",
+    "Ereignis": "Eine Reihe von Ergebnissen, denen eine Wahrscheinlichkeit zugewiesen wird",
+    "Ergebnis": "Ein m\u00f6gliches Ergebnis eines Wahrscheinlichkeitsexperiments",
+    "Durchschnitt": "Summe der Werte dividiert durch die Anzahl der Werte",
+    "Zufallsexperiment": "Ein Prozess, bei dem das Ergebnis erst bekannt ist, wenn es beobachtet wird",
+    "unm\u00f6glich": "Ein Ereignis ohne Chance, dass es eintritt",
+    "zuf\u00e4llig": "Geregelt durch oder mit gleichen Chancen f\u00fcr jeden Gegenstand",
+    "Probe": "Eine Teilmenge einer Population"
+}

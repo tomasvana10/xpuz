@@ -1,0 +1,21 @@
+{
+    "kombinatorika": "\u0160tudij \u0161tetja, urejanja in kombiniranja",
+    "permutacija": "Razporeditev predmetov v dolo\u010denem vrstnem redu",
+    "kombinacija": "Izbira artiklov brez upo\u0161tevanja naro\u010dila",
+    "faktorial": "Zmno\u017eek celega \u0161tevila in vseh celih \u0161tevil pod njim",
+    "binomski koeficient": "\u0160tevilo na\u010dinov za izbiro podmno\u017eice niza",
+    "na\u010delo golobja": "\u010ce je 'n' predmetov danih v 'm' vsebnikov in n > m, potem mora vsaj en vsebnik vsebovati ve\u010d kot en element",
+    "na\u010delo vklju\u010ditve izklju\u010ditve": "Za kateri koli dve kon\u010dni mno\u017eici je velikost njune unije vsota njunih velikosti minus velikost njunega prese\u010di\u0161\u010da",
+    "kartezi\u010dni produkt": "Zmno\u017eek ve\u010d nizov, rezultat katerega je mno\u017eica vseh urejenih parov",
+    "nabor mo\u010di": "Mno\u017eica vseh podmno\u017eic mno\u017eice",
+    "particija": "Razdelitev mno\u017eice na podmno\u017eice, ki se ne prekrivajo",
+    "\u0161tevilka zvonca": "\u0160tevilo na\u010dinov razdelitve niza",
+    "stirlingovo \u0161tevilko": "\u0160tevilo na\u010dinov za razdelitev mno\u017eice na neprazne podmno\u017eice",
+    "katalonska \u0161tevilka": "\u0160tevilo dolo\u010denih vrst mre\u017enih poti, permutacij, binarnih dreves itd",
+    "set": "Zbirka razli\u010dnih predmetov, ki veljajo za samostojen predmet",
+    "podnabor": "Niz, ki vsebuje samo elemente, ki jih najdemo v dolo\u010denem drugem nizu",
+    "zveza": "Mno\u017eica vseh razli\u010dnih elementov v vseh danih mno\u017eicah",
+    "kri\u017ei\u0161\u010de": "Mno\u017eica vseh elementov, ki so v vseh danih mno\u017eicah",
+    "Razlika": "Mno\u017eica vseh elementov v eni mno\u017eici, ki niso v drugi mno\u017eici",
+    "dopolnjujejo": "Mno\u017eica vseh elementov, ki niso v dani mno\u017eici"
+}

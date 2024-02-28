@@ -1,0 +1,18 @@
+{
+    "trigonometrisk funksjon": "En funksjon av en vinkel uttrykt som forholdet mellom lengden p\u00e5 sidene i en rettvinklet trekant",
+    "invers funksjon": "En funksjon oppn\u00e5dd ved \u00e5 uttrykke den avhengige variabelen til en funksjon som den uavhengige variabelen til en annen",
+    "arktangens": "Den inverse funksjonen til tangenten",
+    "arcsine": "Den inverse funksjonen til sinusen",
+    "arccosine": "Den inverse funksjonen til cosinus",
+    "cosecant": "Den resiproke av sinusfunksjonen, definert som forholdet mellom hypotenusen og motsatt side av en rettvinklet trekant",
+    "cotangens": "Den resiproke av tangentfunksjonen, definert som forholdet mellom tilst\u00f8tende og motsatt side av en rettvinklet trekant",
+    "trigonometrisk identitet": "En likhet som involverer trigonometriske funksjoner som er sann for alle verdiene til variablene",
+    "sinusloven": "I en trekant er forholdet mellom lengden p\u00e5 en side og sinusen til dens motsatte vinkel konstant",
+    "lov om cosinus": "I en trekant er kvadratet av en side lik summen av kvadratene til de to andre sidene minus to ganger produktet av disse to sidene og cosinus til den inkluderte vinkelen",
+    "radianm\u00e5l": "M\u00e5l p\u00e5 en vinkel i radianer, som er forholdet mellom lengden p\u00e5 en bue og dens radius",
+    "vinkelhastighet": "Hastigheten for endring av en vinkel i forhold til tid",
+    "buelengde": "Avstanden mellom to punkter langs en seksjon av en kurve",
+    "sektor": "Den delen av en sirkel som er omsluttet av to radier og deres avskj\u00e6rte bue",
+    "trigonometrisk forhold": "Forholdet mellom lengdene p\u00e5 to sider av en rettvinklet trekant",
+    "trigonometrisk ligning": "En ligning som involverer en eller flere trigonometriske funksjoner til en variabel"
+}

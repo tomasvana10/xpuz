@@ -1,0 +1,21 @@
+{
+    "combinatoria": "El estudio del conteo, disposici\u00f3n y combinaci\u00f3n.",
+    "permutaci\u00f3n": "Disposici\u00f3n de objetos en un orden espec\u00edfico.",
+    "combinaci\u00f3n": "Selecci\u00f3n de art\u00edculos sin considerar el pedido.",
+    "factorial": "Producto de un n\u00famero entero y todos los n\u00fameros enteros debajo de \u00e9l",
+    "coeficiente binomial": "N\u00famero de formas de elegir un subconjunto de un conjunto",
+    "principio de casillero": "Si 'n' art\u00edculos se colocan en 'm' contenedores y n > m, entonces al menos un contenedor debe contener m\u00e1s de un art\u00edculo",
+    "principio de inclusi\u00f3n y exclusi\u00f3n": "Para dos conjuntos finitos cualesquiera, el tama\u00f1o de su uni\u00f3n es la suma de sus tama\u00f1os menos el tama\u00f1o de su intersecci\u00f3n",
+    "producto cartesiano": "Producto de m\u00faltiples conjuntos, lo que da como resultado un conjunto de todos los pares ordenados",
+    "set de poder": "Conjunto de todos los subconjuntos de un conjunto.",
+    "dividir": "Una divisi\u00f3n de un conjunto en subconjuntos que no se superponen.",
+    "numero de campana": "N\u00famero de formas de particionar un conjunto",
+    "n\u00famero de Stirling": "N\u00famero de formas de dividir un conjunto en subconjuntos no vac\u00edos",
+    "numero catal\u00e1n": "N\u00famero de ciertos tipos de caminos de celos\u00eda, permutaciones, \u00e1rboles binarios, etc.",
+    "colocar": "Una colecci\u00f3n de objetos distintos, considerados como un objeto por derecho propio.",
+    "subconjunto": "Un conjunto que contiene s\u00f3lo elementos que se encuentran en otro conjunto determinado.",
+    "Uni\u00f3n": "El conjunto de todos los elementos distintos en todos los conjuntos dados.",
+    "intersecci\u00f3n": "El conjunto de todos los elementos que est\u00e1n en todos los conjuntos dados.",
+    "diferencia": "El conjunto de todos los elementos de un conjunto que no est\u00e1n en otro conjunto.",
+    "complementar": "El conjunto de todos los elementos que no est\u00e1n en un conjunto determinado."
+}

@@ -1,0 +1,21 @@
+{
+    "kombinatorik": "Sinau ngetang, susunan, lan kombinasi",
+    "permutasi": "Susunan obyek ing urutan tartamtu",
+    "kombinasi": "Pamilihan barang tanpa nimbang pesenan",
+    "faktorial": "Produk saka integer lan kabeh integer ing ngisor iki",
+    "koefisien binomial": "Jumlah cara kanggo milih subset saka set",
+    "prinsip pigeonhole": "Yen item 'n' dilebokake ing wadhah 'm' lan n > m, paling ora siji wadhah kudu ngemot luwih saka siji item.",
+    "prinsip inklusi eksklusi": "Kanggo rong set winates, ukuran gabungan kasebut minangka jumlah ukurane dikurangi ukuran persimpangan.",
+    "produk cartesian": "Produk saka pirang-pirang set, ngasilake kabeh pasangan sing diurutake",
+    "set daya": "Setel kabeh subset saka set",
+    "pemisahan": "Divisi saka himpunan dadi subset sing ora tumpang tindih",
+    "nomer bel": "Jumlah cara kanggo partisi set",
+    "angka stirling": "Jumlah cara kanggo misahake set dadi subset sing ora kosong",
+    "nomer catalan": "Jumlah jinis jalur kisi tartamtu, permutasi, wit binar, lsp",
+    "nyetel": "Koleksi obyek sing b\u00e9da-b\u00e9da, dianggep minangka obyek ing hak dhewe",
+    "subset": "Set sing mung ngemot unsur sing ditemokake ing set liyane tartamtu",
+    "kesatuan": "Set kabeh unsur sing beda ing kabeh set sing diwenehake",
+    "prapatan": "Set kabeh unsur sing ana ing kabeh set sing diwenehake",
+    "prab\u00e9dan": "Kumpulan kabeh unsur ing sak set sing ora ana ing set liyane",
+    "ngompliti": "Set kabeh unsur sing ora ana ing set tartamtu"
+}

@@ -1,0 +1,18 @@
+{
+    "trigonometrikus f\u00fcggv\u00e9ny": "Egy der\u00e9ksz\u00f6g\u0171 h\u00e1romsz\u00f6g oldalai hossz\u00e1nak ar\u00e1ny\u00e1ban kifejezett sz\u00f6g f\u00fcggv\u00e9nye",
+    "inverz f\u00fcggv\u00e9ny": "Olyan f\u00fcggv\u00e9ny, amelyet \u00fagy kapunk, hogy egy f\u00fcggv\u00e9ny f\u00fcgg\u0151 v\u00e1ltoz\u00f3j\u00e1t egy m\u00e1sik f\u00fcggv\u00e9ny f\u00fcggetlen v\u00e1ltoz\u00f3jak\u00e9nt fejezz\u00fck ki",
+    "arctangens": "Az \u00e9rint\u0151 inverz f\u00fcggv\u00e9nye",
+    "arcszinusz": "A szinusz inverz f\u00fcggv\u00e9nye",
+    "arccosine": "A koszinusz inverz f\u00fcggv\u00e9nye",
+    "koszek\u00e1ns": "A szinuszf\u00fcggv\u00e9ny reciproka, amelyet a befog\u00f3 \u00e9s a der\u00e9ksz\u00f6g\u0171 h\u00e1romsz\u00f6g szemk\u00f6zti oldal\u00e1nak ar\u00e1nyak\u00e9nt hat\u00e1rozunk meg",
+    "kotangens": "Az \u00e9rint\u0151f\u00fcggv\u00e9ny reciproka, amelyet egy der\u00e9ksz\u00f6g\u0171 h\u00e1romsz\u00f6g szomsz\u00e9dos \u00e9s ellent\u00e9tes oldal\u00e1nak ar\u00e1nyak\u00e9nt hat\u00e1roz meg",
+    "trigonometrikus azonoss\u00e1g": "Trigonometrikus f\u00fcggv\u00e9nyeket tartalmaz\u00f3 egyenl\u0151s\u00e9g, amely a v\u00e1ltoz\u00f3k minden \u00e9rt\u00e9k\u00e9re igaz",
+    "szinusz t\u00f6rv\u00e9nye": "Egy h\u00e1romsz\u00f6gben az oldal hossz\u00e1nak \u00e9s az ellent\u00e9tes sz\u00f6ge szinusz\u00e1nak ar\u00e1nya \u00e1lland\u00f3",
+    "koszinusz t\u00f6rv\u00e9nye": "Egy h\u00e1romsz\u00f6gben egy oldal n\u00e9gyzete egyenl\u0151 a m\u00e1sik k\u00e9t oldal n\u00e9gyzeteinek \u00f6sszeg\u00e9vel, m\u00ednusz e k\u00e9t oldal \u00e9s a bez\u00e1rt sz\u00f6g koszinusz\u00e1nak szorzata.",
+    "radi\u00e1n m\u00e9rt\u00e9k": "A sz\u00f6g radi\u00e1nban kifejezett m\u00e9rt\u00e9ke, amely az \u00edv hossz\u00e1nak \u00e9s sugar\u00e1nak ar\u00e1nya",
+    "sz\u00f6gsebess\u00e9g": "Egy sz\u00f6g v\u00e1ltoz\u00e1s\u00e1nak sebess\u00e9ge az id\u0151 f\u00fcggv\u00e9ny\u00e9ben",
+    "\u00edvhossz": "K\u00e9t pont t\u00e1vols\u00e1ga egy g\u00f6rbe szakasza ment\u00e9n",
+    "\u00e1gazat": "A k\u00f6rnek az a r\u00e9sze, amelyet k\u00e9t sug\u00e1r \u00e9s azok elfogott \u00edve z\u00e1r be",
+    "trigonometrikus ar\u00e1ny": "Egy der\u00e9ksz\u00f6g\u0171 h\u00e1romsz\u00f6g k\u00e9t oldal\u00e1nak hossz\u00e1nak ar\u00e1nya",
+    "trigonometrikus egyenlet": "Egy v\u00e1ltoz\u00f3 egy vagy t\u00f6bb trigonometrikus f\u00fcggv\u00e9ny\u00e9t tartalmaz\u00f3 egyenlet"
+}

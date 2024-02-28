@@ -1,0 +1,21 @@
+{
+    "kombinatorika": "L-istudju tal-g\u0127add, l-arran\u0121ament u l-kombinazzjoni",
+    "permutazzjoni": "Arran\u0121ament ta' o\u0121\u0121etti f'ordni spe\u010bifika",
+    "kombinazzjoni": "G\u0127a\u017cla ta 'o\u0121\u0121etti ming\u0127ajr ma titqies l-ordni",
+    "fatturali": "Prodott ta' numru s\u0127i\u0127 u n-numri interi kollha ta\u0127tu",
+    "koeffi\u010bjent binomjali": "Numru ta' modi kif tag\u0127\u017cel subsett ta' sett",
+    "prin\u010bipju tal-pigeonhole": "Jekk 'n' o\u0121\u0121etti jitpo\u0121\u0121ew f'kontenituri 'm' u n > m, allura mill-inqas kontenitur wie\u0127ed irid ikun fih aktar minn o\u0121\u0121ett wie\u0127ed",
+    "prin\u010bipju ta' esklu\u017cjoni tal-inklu\u017cjoni": "G\u0127al kwalunkwe \u017cew\u0121 settijiet finiti, id-daqs tal-unjoni tag\u0127hom huwa s-somma tad-daqsijiet tag\u0127hom nieqes id-daqs tal-intersezzjoni tag\u0127hom",
+    "prodott kartesjan": "Prodott ta 'settijiet multipli, li jirri\u017culta f'sett tal-pari ordnati kollha",
+    "sett tal-qawwa": "Sett tas-subsettijiet kollha ta' sett",
+    "divi\u017corju": "Divi\u017cjoni ta' sett f'sottogruppi li ma jikkoin\u010bidux",
+    "numru tal-qanpiena": "Numru ta 'modi biex jaqsam sett",
+    "numru Stirling": "G\u0127add ta' modi kif jaqsam sett f'subsettijiet mhux vojta",
+    "numru Katalan": "Numru ta '\u010berti tipi ta' mog\u0127dijiet tal-kannizzata, permutazzjonijiet, si\u0121ar binarji, e\u010b\u010b",
+    "sett": "\u0120abra ta\u2019 o\u0121\u0121etti distinti, meqjusa b\u0127ala o\u0121\u0121ett fih innifsu",
+    "subsett": "Sett li fih biss elementi misjuba f'\u010bertu sett ie\u0127or",
+    "unjoni": "Is-sett tal-elementi distinti kollha fis-settijiet kollha mog\u0127tija",
+    "intersezzjoni": "Is-sett tal-elementi kollha li huma fis-settijiet kollha mog\u0127tija",
+    "differenza": "Is-sett tal-elementi kollha f'sett wie\u0127ed li mhumiex f'sett ie\u0127or",
+    "jikkumplimentaw": "Is-sett tal-elementi kollha mhux f'sett partikolari"
+}

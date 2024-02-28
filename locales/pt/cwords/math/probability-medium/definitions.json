@@ -1,0 +1,11 @@
+{
+    "probabilidade": "Medida da probabilidade de um evento ocorrer",
+    "espa\u00e7o amostral": "O conjunto de todos os resultados poss\u00edveis de um experimento de probabilidade",
+    "evento": "Um conjunto de resultados aos quais uma probabilidade \u00e9 atribu\u00edda",
+    "resultado": "Um poss\u00edvel resultado de um experimento de probabilidade",
+    "m\u00e9dia": "Soma dos valores dividida pelo n\u00famero de valores",
+    "experimento aleat\u00f3rio": "Um processo onde o resultado n\u00e3o \u00e9 conhecido at\u00e9 que seja observado",
+    "imposs\u00edvel": "Um evento sem chance de ocorrer",
+    "aleat\u00f3rio": "Governado ou envolvendo chances iguais para cada item",
+    "amostra": "Um subconjunto de uma popula\u00e7\u00e3o"
+}

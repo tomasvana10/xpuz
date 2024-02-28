@@ -290,6 +290,12 @@ msgstr "தீவிர"
 msgid "Geography"
 msgstr "நிலவியல்"
 
+msgid "Math"
+msgstr "கணிதம்"
+
+msgid "Science"
+msgstr "அறிவியல்"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -320,3 +326,6 @@ msgstr "நிலவியல்"
 
 #~ msgid "Geography"
 #~ msgstr "நிலவியல்"
+
+#~ msgid "Science"
+#~ msgstr "அளவு"

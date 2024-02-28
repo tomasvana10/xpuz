@@ -277,6 +277,12 @@ msgstr "극심한"
 msgid "Geography"
 msgstr "지리학"
 
+msgid "Math"
+msgstr "수학"
+
+msgid "Science"
+msgstr "과학"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -307,3 +313,6 @@ msgstr "지리학"
 
 #~ msgid "Geography"
 #~ msgstr "지리학"
+
+#~ msgid "Science"
+#~ msgstr "크기"

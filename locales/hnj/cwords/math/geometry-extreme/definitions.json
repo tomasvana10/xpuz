@@ -1,0 +1,15 @@
+{
+    "complex geometry": "Kev kawm txog cov qauv geometric thiab cov qauv tsim tawm los ntawm, lossis piav qhia los ntawm, cov lej nyuaj",
+    "cov zauv": "Cov lej ntawm daim ntawv a + bi qhov twg a thiab b yog cov lej tiag",
+    "qhov tiag": "Lub sij hawm nyob rau hauv ib tug complex tooj uas tsis muaj lub tswv yim chav tsev raws li ib tug yam",
+    "xav txog ib feem": "Ib feem ntawm tus lej complex uas muaj qhov xav txog chav tsev ua qhov tseem ceeb",
+    "complex manifolds": "Qhov chaw nyob rau hauv complex geometry uas yog generalizations ntawm nkhaus thiab nto",
+    "complex algebraic ntau yam": "Qhov chaw nyob rau hauv complex geometry uas yog kev daws rau polynomial sib npaug",
+    "holomorphic kev tsim kho": "Tsim nyob rau hauv complex geometry uas yog complex-differentiable",
+    "yam tsawg kawg nkaus qauv program": "Ib qho kev pab cuam nyob rau hauv complex geometry rau kev faib tawm ntawm complex manifolds thiab complex algebraic ntau yam",
+    "moduli chaw": "Qhov chaw nyob rau hauv complex geometry uas parameterise ib co hom geometric khoom",
+    "calabi conjecture": "Ib qho kev xav hauv cov duab geometry nyuaj ua pov thawj los ntawm Shing-Tung Yau txog lub neej ntawm ib hom kev ntsuas tshwj xeeb ntawm ib qho kev sib txuam",
+    "hitchin-kobayashi sau ntawv": "Ib qho kev sib txuas lus hauv cov geometry nyuaj ntawm qhov ruaj khov holomorphic vector bundles thiab cov kev daws teeb meem rau qee qhov sib txawv sib txawv",
+    "nonabelian hodge ntawv xov xwm": "Ib qho kev sib txuas lus nyob rau hauv complex geometry ntawm tej hom complex manifolds thiab tej yam algebraic qauv",
+    "kahler-einstein metrics": "Cov hom kev ntsuas tshwj xeeb ntawm ib qho kev sib txuam ua ke uas ua kom tau raws li qhov xwm txheej"
+}

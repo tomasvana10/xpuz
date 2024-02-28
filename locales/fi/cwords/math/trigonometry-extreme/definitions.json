@@ -1,0 +1,18 @@
+{
+    "trigonometrinen funktio": "Kulman funktio, joka ilmaistaan suorakulmaisen kolmion sivujen pituuden suhteena",
+    "k\u00e4\u00e4nteinen funktio": "Funktio, joka saadaan ilmaisemalla yhden funktion riippuva muuttuja toisen riippumattomana muuttujana",
+    "arctangentti": "Tangentin k\u00e4\u00e4nteisfunktio",
+    "arcsininen": "Sinin k\u00e4\u00e4nteisfunktio",
+    "arkosiini": "Kosinin k\u00e4\u00e4nteisfunktio",
+    "kosekantti": "Sinifunktion k\u00e4\u00e4nteisluku, joka m\u00e4\u00e4ritell\u00e4\u00e4n hypotenuusan suhteeksi suorakulmaisen kolmion vastakkaiseen sivuun",
+    "kotangentti": "Tangenttifunktion k\u00e4\u00e4nteisluku, joka m\u00e4\u00e4ritell\u00e4\u00e4n suorakulmaisen kolmion viereisen sivun ja vastakkaisen sivun suhteena",
+    "trigonometrinen identiteetti": "Trigonometrisi\u00e4 funktioita sis\u00e4lt\u00e4v\u00e4 yht\u00e4l\u00f6, joka p\u00e4tee kaikkiin muuttujien arvoihin",
+    "sinien laki": "Kolmiossa sivun pituuden suhde sen vastakkaisen kulman siniin on vakio",
+    "kosinusten laki": "Kolmiossa sivun neli\u00f6 on yht\u00e4 suuri kuin kahden muun sivun neli\u00f6iden summa miinus kaksi kertaa n\u00e4iden kahden sivun tulo ja sis\u00e4llytetyn kulman kosini",
+    "radiaanimitta": "Kulman mitta radiaaneina, joka on kaaren pituuden suhde sen s\u00e4teeseen",
+    "kulmanopeus": "Kulman muutosnopeus ajan suhteen",
+    "kaaren pituus": "Kahden pisteen v\u00e4linen et\u00e4isyys k\u00e4yr\u00e4n osuudella",
+    "alalla": "Ympyr\u00e4n osa, jota ymp\u00e4r\u00f6i kaksi s\u00e4dett\u00e4 ja niiden katkaistu kaari",
+    "trigonometrinen suhde": "Suorakulmaisen kolmion kahden sivun pituuksien suhde",
+    "trigonometrinen yht\u00e4l\u00f6": "Yht\u00e4l\u00f6, joka sis\u00e4lt\u00e4\u00e4 yhden tai useamman muuttujan trigonometrisen funktion"
+}

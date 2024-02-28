@@ -1,0 +1,21 @@
+{
+    "combinatorics": "An sgr\u00f9dadh air cunntadh, r\u00e8iteachadh, agus measgachadh",
+    "iomralladh": "Ullachadh nithean ann an \u00f2rdugh s\u00f2nraichte",
+    "measgachadh": "Taghadh de nithean gun a bhith a 'beachdachadh air an \u00f2rdugh",
+    "factaraidh": "Bathar de shl\u00e0naighear agus a h-uile h-iomlan gu h-\u00ecosal",
+    "co-\u00e8ifeachd binomial": "An \u00e0ireamh de dh\u00f2ighean air fo-sheata de sheata a thaghadh",
+    "prionnsabal pigeonhole": "Ma th\u00e8id nithean 'n' a chur ann an soithichean 'm' agus n> m, feumaidh barrachd air aon n\u00ec a bhith ann an co-dhi\u00f9 aon soitheach",
+    "prionnsapal \u00e0s-d\u00f9nadh in-ghabhail": "Airson d\u00e0 sheata chr\u00ecochnaichte sam bith, is e meud an aonaidh suim am meudan \u00e0s aonais meud an eadar-ghearraidh",
+    "toradh cartesian": "Bathar ioma-sheata, a 'leantainn gu seata de na paidhrichean \u00f2rdaichte gu l\u00e8ir",
+    "seata cumhachd": "Seata de gach fo-sheata de sheata",
+    "sgaradh": "Roinn de sheata gu fo-bhuidhnean nach eil a\u2019 dol thairis air",
+    "\u00e0ireamh clag": "An \u00e0ireamh de dh\u00f2ighean air seata a sgaradh",
+    "\u00e0ireamh shruighlea": "An \u00e0ireamh de dh\u00f2ighean air seata a roinn ann am fo-bhuidhnean nach eil falamh",
+    "\u00e0ireamh cata": "An \u00e0ireamh de she\u00f2rsan s\u00f2nraichte de shlighean gl\u00f9ine, permutations, craobhan d\u00e0-ch\u00e0nanach, msaa",
+    "seata": "Cruinneachadh de nithean s\u00f2nraichte, air am meas mar n\u00ec ann fh\u00e8in",
+    "fo-sheata": "Seata anns nach eil ach eileamaidean a lorgar ann an seata s\u00f2nraichte eile",
+    "aonadh": "An seata de na h-eileamaidean s\u00f2nraichte anns a h-uile seata s\u00f2nraichte",
+    "eadar-ghearradh": "An seata de na h-eileamaidean uile a tha anns a h-uile seata ainmichte",
+    "eadar-dhealachadh": "Seata de na h-eileamaidean uile ann an aon sheata nach eil ann an seata eile",
+    "coimhlionta": "Seata de na h-eileamaidean uile nach eil ann an seata s\u00f2nraichte"
+}

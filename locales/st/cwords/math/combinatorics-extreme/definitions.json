@@ -1,0 +1,21 @@
+{
+    "li-combinatorics": "Thuto ea ho bala, ho hlophisa, le ho kopanya",
+    "permutation": "Tlhophiso ya dintho ka tatellano e itseng",
+    "motsoako": "Khetho ea lintho ntle le ho nahana ka taelo",
+    "fektheri": "Sehlahisoa sa nomoro e felletseng le linomoro tsohle tse ka tlase ho eona",
+    "coefficient ea binomial": "Palo ea mekhoa ea ho khetha sehlopha se senyenyane",
+    "molao-motheo oa pigeonhole": "Haeba lintho tsa 'n' li kentsoe ka har'a linkho tsa 'm' le n > m, bonyane sets'oants'o se le seng se tlameha ho ba le lintho tse fetang bonngoe.",
+    "molao-motheo oa ho kenyelletsa": "Bakeng sa lihlopha tse peli tse nang le moeli, boholo ba kopano ea tsona ke kakaretso ea boholo ba tsona ho tlosa boholo ba mateano a tsona.",
+    "sehlahisoa sa cartesian": "Sehlahisoa sa lihlopha tse ngata, se hlahisang sete ea lipara tsohle tse laetsoeng",
+    "sete ya matla": "Sehlopha sa lihlopha tsohle tse nyenyane tsa sete",
+    "karohano": "Karohano ea sete ho li-subsets tse sa amaneng",
+    "nomoro ea t\u0161epe": "Palo ea mekhoa ea ho arola sete",
+    "palo e tsosang": "Palo ea mekhoa ea ho arola sete ho li-subsets tse se nang letho",
+    "nomoro ea catalan": "Palo ea mefuta e itseng ea litsela tsa lattice, permutations, lifate tsa binary, joalo-joalo",
+    "beha": "Pokello ya dintho tse fapaneng, tse nkuwang joalo ka ntho ka boyona",
+    "karolo e nyane": "Sehlopha se nang le likarolo tse fumanehang feela sehlopheng se seng",
+    "kopano": "Sehlopha sa likarolo tsohle tse ikhethileng ka lihlopha tsohle tse fanoeng",
+    "mateano": "Sehlopha sa likarolo tsohle tse ka har'a lihlopha tsohle tse fanoeng",
+    "phapang": "Sehlopha sa likarolo tsohle ka sete e le 'ngoe tse seng sehlopheng se seng",
+    "tlatsana": "Sehlopha sa likarolo tsohle ha se sete e fanoeng"
+}

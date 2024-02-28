@@ -1,0 +1,18 @@
+{
+    "le\u0146\u0137is": "Divas l\u012bnijas, kas satiekas, lai izveidotu st\u016bri",
+    "kongruents": "Identiski p\u0113c izm\u0113ra un formas",
+    "mala": "Divu seju satik\u0161an\u0101s tr\u012bsdimensiju form\u0101",
+    "sejas": "Tr\u012bsdimensiju formu virsmas plaknes",
+    "vien\u0101dmalu": "Vien\u0101da garuma malas",
+    "paral\u0113li": "Divas l\u012bnijas divdimensiju telp\u0101, kas nesakr\u012bt",
+    "lidma\u0161\u012bna": "Plakana divdimensiju virsma, uz kuras var atrasties divdimensiju objekti",
+    "punktu": "Konkr\u0113ta poz\u012bcija uz l\u012bnijas, plaknes vai telp\u0101",
+    "pus\u0113": "L\u012bniju segmenti \u0123eometrisk\u0101s fig\u016br\u0101s, kas veido objekta \u0101rpusi",
+    "taisni": "Bez l\u012bknes",
+    "virsotne": "Punkts, kur\u0101 satiekas divas divdimensiju fig\u016bras malas vai divas tr\u012bsdimensiju fig\u016bras malas",
+    "aplis": "Divdimensiju forma, kur\u0101 visi punkti uz izliekt\u0101s l\u012bnijas atrodas vien\u0101d\u0101 att\u0101lum\u0101 no centra punkta",
+    "tr\u012bsst\u016bris": "Sl\u0113gta fig\u016bra ar trim mal\u0101m",
+    "taisnst\u016bris": "Divdimensiju, sl\u0113gta, \u010detrpus\u012bga fig\u016bra ar \u010detriem taisniem le\u0146\u0137iem",
+    "kvadr\u0101ts": "\u012apa\u0161s taisnst\u016bra veids, kuram ir vien\u0101dmalu malas un paral\u0113las pret\u0113j\u0101s malas",
+    "kubs": "Tr\u012bsdimensiju fig\u016bra ar identiskiem vien\u0101dmalu kvadr\u0101tiem k\u0101 sej\u0101m"
+}

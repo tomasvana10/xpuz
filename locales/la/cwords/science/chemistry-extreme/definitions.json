@@ -1,0 +1,19 @@
+{
+    "plasma": "Status materiae constans praecepit particularum (iones et electrons)",
+    "ionic": "Vinculum formatum attractione inter oppositum ions",
+    "covalent": "Vinculum ex communicatione electrons inter atomos",
+    "metallicum": "Vinculum ex attractione inter cationes metallicas positivae et electrons delocalised",
+    "aequatis aequatione": "Aequatio chemica aequalis numeri atomorum cuiusque elementi utrinque",
+    "mole": "Unitas ad quantitatem substantiae metiendam (Avogadro numerus particularum)",
+    "massa numerus": "Summa protons et neutronis in nuclei atomi",
+    "nuclei numerus": "Numerus protonum in nucleo atomi (elementum identitatis determinat)",
+    "isotope": "Atomis eiusdem elementi diversis numeris neutronis",
+    "oxidatio": "Damnum electrons ex atomo vel moleculo",
+    "reductionem": "Quaestum electrons atomi vel moleculae",
+    "redox": "Reactio chemica tam oxidationis quam processuum reductionis involventium",
+    "navitas activation": "Minimum industria requiritur ad reactionem chemica fieri",
+    "catalyst": "Substantia augens ratem chemicae reactionis sine consumptione",
+    "thermodynamics": "Chemiae germen pertinet ad calorem, laborem, temperiem et industriam",
+    "endothermic": "Chemical reactionem, quae trahit calorem a circumstantibus",
+    "exothermic": "Chemical reactionem qui emittit calorem in circuitu"
+}

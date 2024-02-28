@@ -291,6 +291,12 @@ msgstr "tena"
 msgid "Geography"
 msgstr "jeografia"
 
+msgid "Math"
+msgstr "Matematika"
+
+msgid "Science"
+msgstr "Science"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -321,3 +327,6 @@ msgstr "jeografia"
 
 #~ msgid "Geography"
 #~ msgstr "jeografia"
+
+#~ msgid "Science"
+#~ msgstr "Size"

@@ -1,0 +1,19 @@
+{
+    "kev txav chaw": "Hloov chaw ntawm ib qho khoom dhau sijhawm",
+    "kev ceev": "Tus nqi ntawm kev hloov ceev",
+    "ceev": "Mass per unit volume ntawm ib yam khoom",
+    "zog": "Tus nqi ntawm qhov ua haujlwm tiav",
+    "inertia": "Kev nyiam ntawm ib yam khoom los tiv thaiv kev hloov hauv kev txav",
+    "lub zog": "Cov khoom ntawm huab hwm coj thiab tshaj tawm ntawm ib yam khoom",
+    "lub ntiajteb txawj nqus": "quab yuam uas attracts khoom nrog loj ntawm ib leeg",
+    "hnyav": "Force exerted rau ib yam khoom vim lub ntiajteb txawj nqus",
+    "pawg": "Tus nqi ntawm cov khoom hauv ib qho khoom",
+    "ua haujlwm": "Hloov ntawm lub zog thaum lub zog ua rau thiab txav ib yam khoom",
+    "kinetic zog": "Lub zog ntawm ib yam khoom vim nws txoj kev txav",
+    "muaj peev xwm zog": "Khaws lub zog vim yog qhov khoom qhov chaw lossis kev teeb tsa",
+    "kev sib txhuam": "quab yuam uas tawm tsam kev txav ntawm ob qhov chaw hauv kev sib cuag",
+    "siab": "Force exerted rau ib cheeb tsam",
+    "huab cua": "Txheej ntawm cov roj cua puag ncig lub ntiaj teb",
+    "kev buoyancy": "Upward quab yuam ntawm ib yam khoom submerged nyob rau hauv ib tug kua",
+    "suab": "Daim ntawv ntawm lub zog uas taug kev raws li nthwv dej los ntawm qhov nruab nrab"
+}

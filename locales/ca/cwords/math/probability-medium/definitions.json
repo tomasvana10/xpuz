@@ -1,0 +1,11 @@
+{
+    "probabilitat": "Mesura de la probabilitat que es produeixi un esdeveniment",
+    "espai de mostra": "El conjunt de tots els resultats possibles d'un experiment de probabilitat",
+    "esdeveniment": "Conjunt de resultats als quals s'assigna una probabilitat",
+    "resultat": "Un possible resultat d'un experiment de probabilitat",
+    "mitjana": "Suma de valors dividida pel nombre de valors",
+    "experiment aleatori": "Un proc\u00e9s on no es coneix el resultat fins que no s'observa",
+    "impossible": "Un esdeveniment sense possibilitats de passar",
+    "aleat\u00f2ria": "Es regeix per o implica igualtat d'oportunitats per a cada element",
+    "mostra": "Un subconjunt d'una poblaci\u00f3"
+}

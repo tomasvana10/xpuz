@@ -1,0 +1,21 @@
+{
+    "combinatoria": "O estudo do reconto, a disposici\u00f3n e a combinaci\u00f3n",
+    "permutaci\u00f3n": "Ordenaci\u00f3n dos obxectos nunha orde determinada",
+    "combinaci\u00f3n": "Selecci\u00f3n de elementos sen ter en conta a orde",
+    "factorial": "Produto dun n\u00famero enteiro e de todos os n\u00fameros enteiros que est\u00e1n por debaixo del",
+    "coeficiente binomial": "N\u00famero de formas de escoller un subconxunto dun conxunto",
+    "principio de casillero": "Se se colocan \"n\" elementos en \"m\" recipientes e n > m, polo menos un recipiente debe conter m\u00e1is dun elemento",
+    "principio de inclusi\u00f3n exclusi\u00f3n": "Para dous conxuntos finitos calquera, o tama\u00f1o da s\u00faa uni\u00f3n \u00e9 a suma dos seus tama\u00f1os menos o tama\u00f1o da s\u00faa intersecci\u00f3n",
+    "produto cartesiano": "Produto de varios conxuntos, resultando en conxunto de todos os pares ordenados",
+    "conxunto de potencia": "Conxunto de todos os subconxuntos dun conxunto",
+    "partici\u00f3n": "Unha divisi\u00f3n dun conxunto en subconxuntos non superpostos",
+    "n\u00famero de timbre": "N\u00famero de formas de particionar un conxunto",
+    "n\u00famero de stirling": "N\u00famero de formas de particionar un conxunto en subconxuntos non baleiros",
+    "n\u00famero catal\u00e1n": "N\u00famero de certos tipos de cami\u00f1os de celos\u00eda, permutaci\u00f3ns, \u00e1rbores binarias, etc",
+    "conxunto": "Unha colecci\u00f3n de obxectos distintos, considerados como un obxecto por dereito propio",
+    "subconxunto": "Un conxunto que s\u00f3 cont\u00e9n elementos que se atopan noutro conxunto determinado",
+    "uni\u00f3n": "O conxunto de todos os elementos distintos en todos os conxuntos dados",
+    "intersecci\u00f3n": "O conxunto de todos os elementos que est\u00e1n en todos os conxuntos dados",
+    "diferenza": "O conxunto de todos os elementos dun conxunto que non est\u00e1n noutro conxunto",
+    "complemento": "O conxunto de todos os elementos que non est\u00e1n nun conxunto dado"
+}

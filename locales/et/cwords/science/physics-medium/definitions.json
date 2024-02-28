@@ -1,0 +1,22 @@
+{
+    "liikumine": "Objekti asukoha muutumine aja jooksul",
+    "kiirendus": "Kiiruse muutumise kiirus",
+    "kiirus": "Objekti kiirus ja suund",
+    "j\u00f5udu": "L\u00fckake v\u00f5i t\u00f5mba, mis liigutab v\u00f5i muudab objekti liikumist",
+    "inerts": "Objekti kalduvus liikumise muutustele vastu seista",
+    "hoogu": "Objekti massi ja kiiruse korrutis",
+    "gravitatsiooni": "J\u00f5ud, mis t\u00f5mbab massiga objekte \u00fcksteise poole",
+    "kaal": "Raskusj\u00f5u m\u00f5jul objektile m\u00f5juv j\u00f5ud",
+    "mass": "Aine hulk objektis",
+    "tihedus": "Mass aine mahu\u00fchiku kohta",
+    "t\u00f6\u00f6d": "Energia \u00fclekanne, kui j\u00f5ud m\u00f5jub objektile ja seda liigutab",
+    "energiat": "T\u00f6\u00f6 tegemise oskus",
+    "kineetiline energia": "Objekti energia selle liikumise t\u00f5ttu",
+    "potentsiaalne energia": "Objekti asukoha v\u00f5i konfiguratsiooni t\u00f5ttu salvestatud energia",
+    "v\u00f5imsus": "T\u00f6\u00f6 tegemise m\u00e4\u00e4r",
+    "h\u00f5\u00f5rdumine": "J\u00f5ud, mis takistab liikumist kahe kokkupuutes oleva pinna vahel",
+    "survet": "Pindala\u00fchiku kohta rakendatav j\u00f5ud",
+    "\u00f5hkkond": "Maad \u00fcmbritsev gaasikiht",
+    "ujuvus": "\u00dclespoole suunatud j\u00f5ud vedelikku sukeldatud objektile",
+    "heli": "Energia vorm, mis liigub lainetena l\u00e4bi keskkonna"
+}

@@ -1,0 +1,19 @@
+{
+    "angle": "Two lines that meet to make a corner",
+    "congruent": "Identical in size and shape",
+    "edge": "The meeting of two faces on a three-dimensional shape",
+    "face": "Surface planes of three-dimensional shapes",
+    "equilateral": "Sides that are the same length",
+    "parallel": "Two lines in a two-dimensional space that do not meet",
+    "plane": "A flat two-dimensional surface upon which two-dimensional objects can lie",
+    "point": "A specific position on a line, plane, or in space",
+    "side": "Line segments in geometric figures that compose the exterior of the object",
+    "straight": "Without a curve",
+    "vertex": "The point at which two sides of a two-dimensional figure or two edges of a three-dimensional figure meet",
+    "circle": "A two-dimensional shape in which all points on the curved line are equidistant from a center point",
+    "triangle": "A closed figure with three sides",
+    "rectangle": "A two-dimensional, closed, four-sided figure with four right angles",
+    "square": "A special type of rectangle that has equilateral sides and parallel opposite sides",
+    "cube": "A three-dimensional figure with identical equilateral squares as faces"
+}
+

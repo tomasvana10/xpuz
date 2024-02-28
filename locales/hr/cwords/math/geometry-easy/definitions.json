@@ -1,0 +1,18 @@
+{
+    "kut": "Dvije linije koje se sastaju i \u010dine kut",
+    "kongruentan": "Identi\u010dne veli\u010dine i oblika",
+    "rub": "Susret dvaju lica na trodimenzionalnom obliku",
+    "lice": "Plohe trodimenzionalnih oblika",
+    "jednakostrani\u010dan": "Strane koje su iste duljine",
+    "paralelno": "Dvije linije u dvodimenzionalnom prostoru koje se ne susre\u0107u",
+    "avion": "Ravna dvodimenzionalna povr\u0161ina na kojoj mogu le\u017eati dvodimenzionalni objekti",
+    "to\u010dka": "Odre\u0111eni polo\u017eaj na liniji, ravnini ili u prostoru",
+    "strana": "Segmenti linija u geometrijskim figurama koji \u010dine vanj\u0161tinu objekta",
+    "ravno": "Bez obline",
+    "vrh": "To\u010dka u kojoj se susre\u0107u dvije strane dvodimenzionalne figure ili dva ruba trodimenzionalne figure",
+    "krug": "Dvodimenzionalni oblik u kojem su sve to\u010dke na zakrivljenoj liniji jednako udaljene od sredi\u0161nje to\u010dke",
+    "trokut": "Zatvorena figura s tri strane",
+    "pravokutnik": "Dvodimenzionalna, zatvorena, \u010detverostrana figura s \u010detiri prava kuta",
+    "kvadrat": "Posebna vrsta pravokutnika koji ima jednakostrani\u010dne stranice i paralelne suprotne stranice",
+    "kocka": "Trodimenzionalni lik s identi\u010dnim jednakostrani\u010dnim kvadratima kao licima"
+}

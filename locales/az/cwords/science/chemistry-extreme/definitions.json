@@ -1,0 +1,19 @@
+{
+    "plazma": "Madd\u0259nin y\u00fckl\u00fc hiss\u0259cikl\u0259rd\u0259n (ionlar v\u0259 elektronlardan) ibar\u0259t v\u0259ziyy\u0259ti",
+    "ion": "\u018fks y\u00fckl\u00fc ionlar aras\u0131nda cazib\u0259 n\u0259tic\u0259sind\u0259 yaranan ba\u011f",
+    "kovalent": "Atomlar aras\u0131nda elektronlar\u0131n payla\u015f\u0131lmas\u0131 n\u0259tic\u0259sind\u0259 yaranan ba\u011f",
+    "metal": "M\u00fcsb\u0259t metal kationlar\u0131 v\u0259 delokalizasiya olunmu\u015f elektronlar aras\u0131nda cazib\u0259 n\u0259tic\u0259sind\u0259 yaranan ba\u011f",
+    "balansla\u015fd\u0131rma t\u0259nliyi": "H\u0259r iki t\u0259r\u0259fd\u0259 h\u0259r bir elementin atomlar\u0131n\u0131n b\u0259rab\u0259r sayda oldu\u011fu kimy\u0259vi t\u0259nlik",
+    "k\u00f6st\u0259b\u0259k": "Madd\u0259nin miqdar\u0131n\u0131 \u00f6l\u00e7m\u0259k \u00fc\u00e7\u00fcn istifad\u0259 olunan vahid (Avogadro hiss\u0259cikl\u0259rinin say\u0131)",
+    "k\u00fctl\u0259vi say\u0131": "Atomun n\u00fcv\u0259sind\u0259ki proton v\u0259 neytronlar\u0131n c\u0259mi",
+    "atom n\u00f6mr\u0259si": "Atomun n\u00fcv\u0259sind\u0259ki protonlar\u0131n say\u0131 (element \u015f\u0259xsiyy\u0259tini m\u00fc\u0259yy\u0259nl\u0259\u015fdirir)",
+    "izotop": "Eyni elementin m\u00fcxt\u0259lif sayda neytronlu atomlar\u0131",
+    "oksidl\u0259\u015fm\u0259": "Bir atomdan v\u0259 ya molekuldan elektronlar\u0131n itirilm\u0259si",
+    "azalma": "Bir atom v\u0259 ya molekul t\u0259r\u0259find\u0259n elektron qazanmas\u0131",
+    "redoks": "H\u0259m oksidl\u0259\u015fm\u0259, h\u0259m d\u0259 reduksiya prosesl\u0259rini \u0259hat\u0259 ed\u0259n kimy\u0259vi reaksiya",
+    "aktivl\u0259\u015fdirm\u0259 enerjisi": "Kimy\u0259vi reaksiyan\u0131n ba\u015f verm\u0259si \u00fc\u00e7\u00fcn t\u0259l\u0259b olunan minimum enerji",
+    "katalizator": "Kimy\u0259vi reaksiyan\u0131n s\u00fcr\u0259tini istehlak etm\u0259d\u0259n art\u0131ran madd\u0259",
+    "termodinamika": "Kimyan\u0131n istilik, i\u015f, temperatur v\u0259 enerji il\u0259 \u0259laq\u0259li sah\u0259si",
+    "endotermik": "\u018ftrafdan istiliyi udan kimy\u0259vi reaksiya",
+    "ekzotermik": "\u018ftrafa istilik yayan kimy\u0259vi reaksiya"
+}

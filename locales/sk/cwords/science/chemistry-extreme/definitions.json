@@ -1,0 +1,19 @@
+{
+    "plazma": "Stav hmoty pozost\u00e1vaj\u00faci z nabit\u00fdch \u010dast\u00edc (i\u00f3nov a elektr\u00f3nov)",
+    "i\u00f3nov\u00fd": "V\u00e4zba vytvoren\u00e1 pr\u00ed\u0165a\u017elivos\u0165ou medzi opa\u010dne nabit\u00fdmi i\u00f3nmi",
+    "kovalentn\u00fd": "V\u00e4zba vytvoren\u00e1 zdie\u013ean\u00edm elektr\u00f3nov medzi at\u00f3mami",
+    "kovov\u00e9": "V\u00e4zba vytvoren\u00e1 pr\u00ed\u0165a\u017elivos\u0165ou medzi kladn\u00fdmi kati\u00f3nmi kovov a delokalizovan\u00fdmi elektr\u00f3nmi",
+    "vyrovn\u00e1vacia rovnica": "Chemick\u00e1 rovnica s rovnak\u00fdm po\u010dtom at\u00f3mov ka\u017ed\u00e9ho prvku na oboch stran\u00e1ch",
+    "Krtko": "Jednotka pou\u017e\u00edvan\u00e1 na meranie mno\u017estva l\u00e1tky (Avogadroho po\u010det \u010dast\u00edc)",
+    "hromadn\u00e9 \u010d\u00edslo": "S\u00fa\u010det prot\u00f3nov a neutr\u00f3nov v jadre at\u00f3mu",
+    "at\u00f3mov\u00e9 \u010d\u00edslo": "Po\u010det prot\u00f3nov v jadre at\u00f3mu (ur\u010duje identitu prvku)",
+    "izotop": "At\u00f3my toho ist\u00e9ho prvku s r\u00f4znym po\u010dtom neutr\u00f3nov",
+    "oxid\u00e1cia": "Strata elektr\u00f3nov z at\u00f3mu alebo molekuly",
+    "zn\u00ed\u017eenie": "Zisk elektr\u00f3nov at\u00f3mom alebo molekulou",
+    "redox": "Chemick\u00e1 reakcia zah\u0155\u0148aj\u00faca oxida\u010dn\u00e9 aj reduk\u010dn\u00e9 procesy",
+    "aktiva\u010dnej energie": "Minim\u00e1lna energia potrebn\u00e1 na uskuto\u010dnenie chemickej reakcie",
+    "katalyz\u00e1tor": "L\u00e1tka, ktor\u00e1 zvy\u0161uje r\u00fdchlos\u0165 chemickej reakcie bez toho, aby sa spotrebovala",
+    "termodynamika": "Chemick\u00fd odbor zaoberaj\u00faci sa teplom, pr\u00e1cou, teplotou a energiou",
+    "endotermick\u00fd": "Chemick\u00e1 reakcia, ktor\u00e1 absorbuje teplo z okolia",
+    "exotermick\u00fd": "Chemick\u00e1 reakcia, ktor\u00e1 uvo\u013e\u0148uje teplo do okolia"
+}

@@ -1,0 +1,21 @@
+{
+    "kombinatorik": "Sayma, d\u00fczenleme ve birle\u015ftirme \u00e7al\u0131\u015fmas\u0131",
+    "perm\u00fctasyon": "Nesnelerin belirli bir s\u0131raya g\u00f6re d\u00fczenlenmesi",
+    "kombinasyon": "Sipari\u015f dikkate al\u0131nmadan \u00fcr\u00fcn se\u00e7imi",
+    "fakt\u00f6riyel": "Bir tam say\u0131 ile onun alt\u0131ndaki t\u00fcm tam say\u0131lar\u0131n \u00e7arp\u0131m\u0131",
+    "binom katsay\u0131s\u0131": "Bir k\u00fcmenin alt k\u00fcmesini se\u00e7menin yol say\u0131s\u0131",
+    "g\u00fcvercin yuvas\u0131 ilkesi": "E\u011fer 'n' \u00f6\u011fe 'm' konteynere konursa ve n > m ise en az bir konteyner birden fazla \u00f6\u011fe i\u00e7ermelidir",
+    "dahil etme hari\u00e7 tutma ilkesi": "Herhangi iki sonlu k\u00fcme i\u00e7in birle\u015fimlerinin boyutu, boyutlar\u0131n\u0131n toplam\u0131ndan kesi\u015fimlerinin boyutu \u00e7\u0131kar\u0131larak elde edilir.",
+    "Kartezyen \u00fcr\u00fcn": "Birden fazla k\u00fcmenin \u00e7arp\u0131m\u0131, t\u00fcm s\u0131ral\u0131 \u00e7iftlerin k\u00fcmesiyle sonu\u00e7lan\u0131r",
+    "G\u00fcc\u00fc ayarla": "Bir k\u00fcmenin t\u00fcm alt k\u00fcmelerinin k\u00fcmesi",
+    "b\u00f6lme": "Bir k\u00fcmenin \u00f6rt\u00fc\u015fmeyen alt k\u00fcmelere b\u00f6l\u00fcnmesi",
+    "zil numaras\u0131": "Bir seti b\u00f6l\u00fcmlendirmenin yol say\u0131s\u0131",
+    "Stirling numaras\u0131": "Bir k\u00fcmeyi bo\u015f olmayan alt k\u00fcmelere b\u00f6lmenin yollar\u0131n\u0131n say\u0131s\u0131",
+    "Katalan numaras\u0131": "Belirli kafes yolu t\u00fcrlerinin, perm\u00fctasyonlar\u0131n, ikili a\u011fa\u00e7lar\u0131n vb. say\u0131s\u0131",
+    "ayarlamak": "Kendi ba\u015f\u0131na bir nesne olarak kabul edilen farkl\u0131 nesnelerden olu\u015fan bir koleksiyon",
+    "alt k\u00fcme": "Yaln\u0131zca belirli bir ba\u015fka k\u00fcmede bulunan \u00f6\u011feleri i\u00e7eren bir k\u00fcme",
+    "birlik": "Verilen t\u00fcm k\u00fcmelerdeki farkl\u0131 \u00f6\u011felerin k\u00fcmesi",
+    "kav\u015fak": "Verilen t\u00fcm k\u00fcmelerdeki t\u00fcm elemanlar\u0131n k\u00fcmesi",
+    "fark": "Bir k\u00fcmede bulunan ve ba\u015fka bir k\u00fcmede olmayan t\u00fcm elemanlar\u0131n k\u00fcmesi",
+    "Tamamlay\u0131c\u0131": "Belirli bir k\u00fcmede olmayan t\u00fcm elemanlar\u0131n k\u00fcmesi"
+}

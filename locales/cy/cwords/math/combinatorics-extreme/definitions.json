@@ -1,0 +1,21 @@
+{
+    "combinatoreg": "Astudiaeth o gyfrif, trefniant, a chyfuniad",
+    "amnewidiad": "Trefnu gwrthrychau mewn trefn benodol",
+    "cyfuniad": "Detholiad o eitemau heb ystyried y gorchymyn",
+    "ffactoraidd": "Cynnyrch cyfanrif a phob cyfanrif oddi tano",
+    "cyfernod binomaidd": "Nifer o ffyrdd i ddewis is-set o set",
+    "egwyddor twll colomennod": "Os caiff eitemau 'n' eu rhoi mewn cynwysyddion 'm' ac n > m, yna mae'n rhaid i o leiaf un cynhwysydd gynnwys mwy nag un eitem",
+    "egwyddor eithrio cynhwysiant": "Ar gyfer unrhyw ddwy set feidrol, maint eu hundeb yw swm eu meintiau llai maint eu croestoriad",
+    "cynnyrch cartesaidd": "Cynnyrch setiau lluosog, gan arwain at set o'r holl barau a archebwyd",
+    "set p\u0175er": "Set o holl is-setiau set",
+    "pared": "Rhaniad o set yn is-setiau nad ydynt yn gorgyffwrdd",
+    "rhif cloch": "Nifer o ffyrdd i rannu set",
+    "rhif troellog": "Nifer y ffyrdd o rannu set yn is-setiau nad ydynt yn wag",
+    "rhif cata": "Nifer y mathau penodol o lwybrau dellt, trynewidiadau, coed deuaidd, ac ati",
+    "set": "Casgliad o wrthrychau gwahanol, a ystyrir yn wrthrych yn ei rinwedd ei hun",
+    "is-set": "Set sy'n cynnwys dim ond elfennau a geir mewn set benodol arall",
+    "undeb": "Y set o holl elfennau gwahanol ym mhob set a roddir",
+    "croestoriad": "Y set o holl elfennau sydd ym mhob set benodol",
+    "gwahaniaeth": "Set yr holl elfennau mewn un set nad yw mewn set arall",
+    "ategu": "Set yr holl elfennau nad ydynt mewn set benodol"
+}

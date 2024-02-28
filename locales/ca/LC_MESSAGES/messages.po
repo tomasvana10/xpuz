@@ -285,6 +285,12 @@ msgstr "Extrem"
 msgid "Geography"
 msgstr "Geografia"
 
+msgid "Math"
+msgstr "Matemàtiques"
+
+msgid "Science"
+msgstr "Ciència"
+
 #~ msgid "Capitals"
 #~ msgstr "Capitals"
 
@@ -305,3 +311,6 @@ msgstr "Geografia"
 
 #~ msgid "Geography"
 #~ msgstr "Geografia"
+
+#~ msgid "Science"
+#~ msgstr "Mida"

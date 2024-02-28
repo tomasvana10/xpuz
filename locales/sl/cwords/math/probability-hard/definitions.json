@@ -1,0 +1,11 @@
+{
+    "aksiomi verjetnosti": "Osnovne trditve v teoriji verjetnosti",
+    "pogojna verjetnost": "Verjetnost dogodka glede na to, da se je zgodil drug dogodek",
+    "naklju\u010dne spremenljivke": "Spremenljivka, katere mo\u017ene vrednosti so numeri\u010dni rezultati naklju\u010dnega pojava",
+    "varianca": "Pri\u010dakovanje kvadrata odstopanja naklju\u010dne spremenljivke od njene sredine",
+    "odvisni dogodki": "Dva dogodka sta odvisna, \u010de nastop enega vpliva na verjetnost nastopa drugega",
+    "enako verjetne rezultate": "Izidi, ki imajo enako verjetnost, da se bodo zgodili",
+    "standardni odklon": "Merilo koli\u010dine variacije ali razpr\u0161enosti niza vrednosti",
+    "statistika": "Posamezna mera nekega atributa vzorca",
+    "sojenje": "Vsako opazovanje v verjetnostnem poskusu"
+}

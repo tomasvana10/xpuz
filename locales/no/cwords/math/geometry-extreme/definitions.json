@@ -1,0 +1,15 @@
+{
+    "kompleks geometri": "Studiet av geometriske strukturer og konstruksjoner som oppst\u00e5r fra, eller beskrevet av, komplekse tall",
+    "komplekse tall": "Tall av formen a + bi hvor a og b er reelle tall",
+    "ekte del": "Begrepet i et komplekst tall som ikke inneholder den imagin\u00e6re enheten som faktor",
+    "imagin\u00e6r del": "Den delen av et komplekst tall som har den imagin\u00e6re enheten som faktor",
+    "komplekse manifolder": "Rom i kompleks geometri som er generaliseringer av kurver og overflater",
+    "komplekse algebraiske varianter": "Rom i kompleks geometri som er l\u00f8sninger p\u00e5 polynomlikninger",
+    "holomorfe konstruksjoner": "Konstruksjoner i kompleks geometri som er kompleks-differensierbare",
+    "minimalt modellprogram": "Et program i kompleks geometri for klassifisering av komplekse manifolder og komplekse algebraiske varianter",
+    "modulrom": "Mellomrom i kompleks geometri som parameteriserer en type geometrisk objekt",
+    "calabi formodning": "En formodning i kompleks geometri bevist av Shing-Tung Yau om eksistensen av en spesiell type metrikk p\u00e5 en kompleks manifold",
+    "hitchin-kobayashi korrespondanse": "En korrespondanse i kompleks geometri mellom stabile holomorfe vektorbunter og l\u00f8sninger til en viss differensialligning",
+    "nonabelian hodge korrespondanse": "En korrespondanse i kompleks geometri mellom visse typer komplekse manifolder og visse typer algebraiske strukturer",
+    "kahler-einstein-beregninger": "Spesielle typer beregninger p\u00e5 en kompleks manifold som tilfredsstiller en bestemt betingelse"
+}

@@ -1,0 +1,15 @@
+{
+    "kompleksna geometrija": "Preu\u010devanje geometrijskih struktur in konstrukcij, ki izhajajo iz kompleksnih \u0161tevil ali jih opisujejo",
+    "kompleksna \u0161tevila": "\u0160tevila oblike a + bi, kjer sta a in b realni \u0161tevili",
+    "pravi del": "Izraz v kompleksnem \u0161tevilu, ki ne vsebuje imaginarne enote kot faktorja",
+    "imaginarni del": "Del kompleksnega \u0161tevila, ki ima nami\u0161ljeno enoto kot faktor",
+    "kompleksne mnogoterosti": "Prostori v kompleksni geometriji, ki so posplo\u0161itve krivulj in povr\u0161in",
+    "kompleksne algebrai\u010dne varietete": "Prostori v kompleksni geometriji, ki so re\u0161itve polinomskih ena\u010db",
+    "holomorfne konstrukcije": "Konstrukcije v kompleksni geometriji, ki so kompleksno diferenciabilne",
+    "program minimalnega modela": "Program v kompleksni geometriji za klasifikacijo kompleksnih mnogoterosti in kompleksnih algebrskih varietet",
+    "prostori modulov": "Prostori v kompleksni geometriji, ki parametrirajo neko vrsto geometrijskega objekta",
+    "calabijeva domneva": "Domneva v kompleksni geometriji, ki jo je dokazal Shing-Tung Yau o obstoju posebne vrste metrike na kompleksnem mnogoterju",
+    "korespondenca hitchin-kobayashi": "Korespondenca v kompleksni geometriji med stabilnimi holomorfnimi vektorskimi sve\u017enji in re\u0161itvami dolo\u010dene diferencialne ena\u010dbe",
+    "nenabelska hodgeova korespondenca": "Korespondenca v kompleksni geometriji med nekaterimi tipi kompleksnih mnogoterosti in nekaterimi tipi algebrai\u010dnih struktur",
+    "Kahler-Einsteinova metrika": "Posebne vrste metrik na kompleksnem mnogoterju, ki izpolnjujejo dolo\u010den pogoj"
+}

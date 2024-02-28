@@ -1,0 +1,21 @@
+{
+    "kombinatorika": "Prou\u010davanje brojanja, rasporeda i kombinacije",
+    "permutacija": "Raspored objekata po odre\u0111enom redosledu",
+    "kombinacija": "Odabir artikala bez razmatranja narud\u017ebe",
+    "faktorijel": "Proizvod cijelog broja i svih cijelih brojeva ispod njega",
+    "binomni koeficijent": "Broj na\u010dina za odabir podskupa skupa",
+    "princip golubove rupe": "Ako se 'n' stavki stavljaju u 'm' spremnike i n > m, tada barem jedan spremnik mora sadr\u017eavati vi\u0161e od jedne stavke",
+    "princip isklju\u010denja uklju\u010denja": "Za bilo koja dva kona\u010dna skupa, veli\u010dina njihove unije je zbir njihovih veli\u010dina minus veli\u010dina njihovog presjeka",
+    "kartezijanski proizvod": "Proizvod vi\u0161e skupova, \u0161to rezultira skupom svih naru\u010denih parova",
+    "power set": "Skup svih podskupova skupa",
+    "particija": "Podjela skupa na podskupove koji se ne preklapaju",
+    "broj zvona": "Broj na\u010dina za particioniranje skupa",
+    "stirlingov broj": "Broj na\u010dina za particioniranje skupa na neprazne podskupove",
+    "katalonski broj": "Broj odre\u0111enih tipova re\u0161etkastih staza, permutacija, binarnih stabala itd",
+    "set": "Kolekcija razli\u010ditih objekata, koji se smatraju objektom za sebe",
+    "podset": "Skup koji sadr\u017ei samo elemente koji se nalaze u odre\u0111enom drugom skupu",
+    "sindikat": "Skup svih razli\u010ditih elemenata u svim datim skupovima",
+    "raskrsnica": "Skup svih elemenata koji se nalaze u svim datim skupovima",
+    "razlika": "Skup svih elemenata u jednom skupu koji nisu u drugom skupu",
+    "dopuna": "Skup svih elemenata koji nisu u datom skupu"
+}

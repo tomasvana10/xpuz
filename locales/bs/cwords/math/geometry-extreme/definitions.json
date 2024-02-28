@@ -1,0 +1,15 @@
+{
+    "slo\u017eena geometrija": "Prou\u010davanje geometrijskih struktura i konstrukcija koje proizlaze iz kompleksnih brojeva ili ih opisuju",
+    "kompleksni brojevi": "Brojevi oblika a + bi gdje su a i b realni brojevi",
+    "pravi deo": "Pojam u kompleksnom broju koji ne sadr\u017ei imaginarnu jedinicu kao faktor",
+    "imaginarni deo": "Dio kompleksnog broja koji ima imaginarnu jedinicu kao faktor",
+    "kompleksne mnogostrukosti": "Prostori u slo\u017eenoj geometriji koji su generalizacije krivulja i povr\u0161ina",
+    "kompleksni algebarski varijeteti": "Prostori u kompleksnoj geometriji koji su rje\u0161enja polinomskih jedna\u010dina",
+    "holomorfne konstrukcije": "Konstrukcije u slo\u017eenoj geometriji koje su kompleksno diferencirane",
+    "program minimalnog modela": "Program iz kompleksne geometrije za klasifikaciju kompleksnih mnogostrukosti i kompleksnih algebarskih varijeteta",
+    "moduli spaces": "Prostori u slo\u017eenoj geometriji koji parametrizuju neku vrstu geometrijskog objekta",
+    "calabi conjecture": "Pretpostavka u kompleksnoj geometriji koju je dokazao Shing-Tung Yau o postojanju posebnog tipa metrike na kompleksnoj mnogostrukosti",
+    "hitchin-kobayashi prepiska": "Korespondencija u kompleksnoj geometriji izme\u0111u stabilnih holomorfnih vektorskih snopova i rje\u0161enja odre\u0111ene diferencijalne jednad\u017ebe",
+    "neabelovska hod\u017e korespondencija": "Korespondencija u kompleksnoj geometriji izme\u0111u odre\u0111enih tipova kompleksnih mnogostrukosti i odre\u0111enih tipova algebarskih struktura",
+    "Kahler-Einstein metrika": "Posebni tipovi metrika na kompleksnoj mnogostrukosti koja zadovoljava odre\u0111eni uslov"
+}

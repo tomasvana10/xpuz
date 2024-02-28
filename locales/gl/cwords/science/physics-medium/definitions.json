@@ -1,0 +1,22 @@
+{
+    "movemento": "Cambio de posici\u00f3n dun obxecto ao longo do tempo",
+    "aceleraci\u00f3n": "Taxa de cambio de velocidade",
+    "velocidade": "Velocidade e direcci\u00f3n dun obxecto",
+    "forza": "Empurrar ou tirar que move ou cambia o movemento dun obxecto",
+    "inercia": "Tendencia dun obxecto a resistir os cambios de movemento",
+    "impulso": "Produto da masa e da velocidade dun obxecto",
+    "gravidade": "Forza que atrae obxectos con masa entre si",
+    "peso": "Forza exercida sobre un obxecto debido \u00e1 gravidade",
+    "masa": "Cantidade de materia nun obxecto",
+    "densidade": "Masa por unidade de volume dunha substancia",
+    "traballo": "Transferencia de enerx\u00eda cando unha forza act\u00faa e move un obxecto",
+    "enerx\u00eda": "Capacidade para facer traballo",
+    "enerx\u00eda cin\u00e9tica": "Enerx\u00eda dun obxecto debido ao seu movemento",
+    "enerx\u00eda potencial": "Enerx\u00eda almacenada debido \u00e1 posici\u00f3n ou configuraci\u00f3n dun obxecto",
+    "poder": "Velocidade coa que se realiza o traballo",
+    "rozamento": "Forza que se op\u00f3n ao movemento entre d\u00faas superficies en contacto",
+    "presi\u00f3n": "Forza exercida por unidade de superficie",
+    "atmosfera": "Capa de gases que rodea a Terra",
+    "flotabilidade": "Forza ascendente sobre un obxecto mergullado nun flu\u00eddo",
+    "son": "Forma de enerx\u00eda que viaxa como ondas a trav\u00e9s dun medio"
+}

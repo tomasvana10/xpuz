@@ -1,0 +1,21 @@
+{
+    "kombinatorika": "Die studie van tel, rangskikking en kombinasie",
+    "permutasie": "Rangskikking van voorwerpe in 'n spesifieke volgorde",
+    "kombinasie": "Keuse van items sonder om die bestelling in ag te neem",
+    "faktoriaal": "Produk van 'n heelgetal en alle heelgetalle daaronder",
+    "binomiale ko\u00ebffisi\u00ebnt": "Aantal maniere om 'n subset van 'n stel te kies",
+    "duiwehok beginsel": "As 'n' items in 'm'-houers geplaas word en n > m, moet ten minste een houer meer as een item bevat",
+    "insluiting uitsluiting beginsel": "Vir enige twee eindige versamelings is die grootte van hul vereniging die som van hul groottes minus die grootte van hul kruising",
+    "kartesiese produk": "Produk van veelvuldige stelle, wat lei tot stel van alle bestelde pare",
+    "krag stel": "Stel van alle substelle van 'n stel",
+    "partisie": "'n Verdeling van 'n versameling in nie-oorvleuelende subversamelings",
+    "klok nommer": "Aantal maniere om 'n stel te partisieer",
+    "stirling getal": "Aantal maniere om 'n stel in nie-le\u00eb substelle te verdeel",
+    "Katalaanse nommer": "Aantal sekere tipes traliepaaie, permutasies, bin\u00eare bome, ens",
+    "stel": "'n Versameling van afsonderlike voorwerpe, beskou as 'n voorwerp in sy eie reg",
+    "onderafdeling": "'n Stel wat slegs elemente bevat wat in 'n sekere ander stel gevind word",
+    "vakbond": "Die versameling van alle afsonderlike elemente in alle gegewe stelle",
+    "kruising": "Die versameling van alle elemente wat in alle gegewe stelle is",
+    "verskil": "Die versameling van alle elemente in een stel wat nie in 'n ander stel is nie",
+    "aanvul": "Die versameling van alle elemente wat nie in 'n gegewe stel is nie"
+}

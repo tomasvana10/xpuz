@@ -1,0 +1,18 @@
+{
+    "angulo": "Du linioj, kiuj kunvenas por fari angulon",
+    "kongrua": "Identa la\u016d grandeco kaj formo",
+    "rando": "La renkonti\u011do de du viza\u011doj sur tridimensia formo",
+    "viza\u011do": "Surfacaj ebenoj de tridimensiaj formoj",
+    "egallateraj": "Flankoj samlongaj",
+    "paralela": "Du linioj en dudimensia spaco, kiuj ne renkontas",
+    "aviadilo": "Plata dudimensia surfaco sur kiu dudimensiaj objektoj povas ku\u015di",
+    "punkto": "Specifa pozicio sur linio, ebeno a\u016d en spaco",
+    "flanko": "Liniaj segmentoj en geometriaj figuroj, kiuj formas la eksteron de la objekto",
+    "rekte": "Sen kurbo",
+    "vertico": "La punkto \u0109e kiu du flankoj de dudimensia figuro a\u016d du randoj de tridimensia figuro renkonti\u011das",
+    "cirklo": "Dudimensia formo en kiu \u0109iuj punktoj sur la kurba linio estas egaldistancaj de centra punkto",
+    "triangulo": "Fermita figuro kun tri flankoj",
+    "rektangulo": "Dudimensia, fermita, kvarflanka figuro kun kvar ortaj anguloj",
+    "kvadrato": "Speciala speco de rektangulo kiu havas egallaterajn flankojn kaj paralelajn kontra\u016dajn flankojn",
+    "kubo": "Tridimensia figuro kun identaj egallateraj kvadratoj kiel edroj"
+}

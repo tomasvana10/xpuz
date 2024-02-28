@@ -1,0 +1,21 @@
+{
+    "combinatorics": "Ny fianarana ny fanisana, ny fandaminana ary ny fitambarana",
+    "permutation": "Fandaminana zavatra amin'ny filaharana manokana",
+    "mitambatra": "Fifantenana zavatra tsy misy fiheverana ny baiko",
+    "factorial": "Vokatra ny integer sy ny isa rehetra eo ambany",
+    "binomial coefficient": "Isan'ny fomba hifidianana sobika amin'ny andiany iray",
+    "fitsipiky ny pigeonhole": "Raha ampidirina ao anaty fitoeran-javatra 'm' sy n > m ny entana 'n', dia tsy maintsy misy entana mihoatra ny iray ny kaontenera iray farafahakeliny.",
+    "fitsipika fanilikilihana fampidirana": "Ho an'ny andiany roa voafetra, ny haben'ny fitambaran'izy ireo dia ny fitambaran'ny haben'izy ireo minus ny haben'ny fihaonan'izy ireo.",
+    "vokatra cartesian": "Vokatra avy amin'ny andiana maromaro, ka mahatonga ny fitambaran'ireo mpivady voalamina rehetra",
+    "napetraka hery": "Sombiny rehetra amin'ny andiany iray",
+    "fisarahana": "Fizarana an-tambajotra ho zana-tsip\u00ecka tsy mifanipaka",
+    "laharana lakolosy": "Isan'ny fomba fizarazarana iray",
+    "laharana stirling": "Isan'ny fomba fizarazarana fitambarana iray ho zana-tsip\u00ecka tsy misy banga",
+    "laharana catalan": "Isan'ny karazana lalan-kely sasany, permutation, hazo binary, sns",
+    "mametraka": "Fitambarana zavatra miavaka, heverina ho zavatra amin'ny zony",
+    "ampahany": "Sehatra iray izay tsy misy afa-tsy singa hita ao anaty andiana hafa",
+    "Union": "Ny fitambaran'ny singa miavaka rehetra amin'ny andiany rehetra nomena",
+    "Fihaonan-dalana": "Ny fitambaran'ny singa rehetra izay ao anatin'ny andiany nomena rehetra",
+    "fahasamihafana": "Ny fitambaran'ny singa rehetra amin'ny andiany iray izay tsy ao anatin'ny andiany hafa",
+    "famenon'ny": "Ny fitambaran'ny singa rehetra tsy ao anatin'ny andiany iray"
+}

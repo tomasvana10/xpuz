@@ -1,0 +1,11 @@
+{
+    "waarskynlikheid": "Maatstaf van die waarskynlikheid dat 'n gebeurtenis sal plaasvind",
+    "monsterruimte": "Die stel van alle moontlike uitkomste van 'n waarskynlikheidseksperiment",
+    "gebeurtenis": "'n Stel uitkomste waaraan 'n waarskynlikheid toegeken word",
+    "uitkoms": "'n Moontlike resultaat van 'n waarskynlikheidseksperiment",
+    "gemiddeld": "Som van waardes gedeel deur aantal waardes",
+    "ewekansige eksperiment": "'n Proses waar die uitkoms nie bekend is voordat dit waargeneem word nie",
+    "onmoontlik": "'n Gebeurtenis met geen kans om te gebeur nie",
+    "ewekansig": "Word beheer deur of wat gelyke kanse vir elke item behels",
+    "monster": "'n Subversameling van 'n bevolking"
+}

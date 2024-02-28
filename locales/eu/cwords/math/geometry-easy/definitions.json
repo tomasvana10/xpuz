@@ -1,0 +1,18 @@
+{
+    "angelua": "Txoko bat egiteko elkartzen diren bi lerro",
+    "kongruentea": "Tamaina eta forma berdina",
+    "ertza": "Bi aurpegien elkartzea hiru dimentsioko forma batean",
+    "aurpegia": "Hiru dimentsioko formen gainazaleko planoak",
+    "aldekide": "Luzera bereko aldeak",
+    "paraleloa": "Bi dimentsioko espazio batean elkartzen ez diren bi lerro",
+    "hegazkina": "Bi dimentsioko gainazal laua, zeinaren gainean bi dimentsioko objektuak egon daitezkeen",
+    "puntua": "Lerro, plano edo espazioan posizio zehatz bat",
+    "alde": "Objektuaren kanpoaldea osatzen duten irudi geometrikoetako lerro-segmentuak",
+    "zuzen": "Kurbarik gabe",
+    "erpina": "Bi dimentsioko irudi baten bi aldeak edo hiru dimentsioko irudi baten bi ertzak elkartzen diren puntua",
+    "zirkulu": "Bi dimentsioko forma, lerro kurbatuaren puntu guztiak erdiko puntu batetik distantzia berdinean dauden",
+    "triangelua": "Hiru alde dituen irudi itxia",
+    "laukizuzena": "Lau angelu zuzen dituen bi dimentsioko irudi itxia eta lau aldekoa",
+    "karratu": "Laukizuzen mota berezi bat, alde aldekideak eta alde paraleloak dituena",
+    "kuboa": "Hiru dimentsioko irudia, aurpegiak bezalako karratu aldekide berdinak dituena"
+}

@@ -1,0 +1,18 @@
+{
+    "sz\u00f6g": "K\u00e9t sor, amelyek tal\u00e1lkoznak, hogy egy sarok",
+    "egybev\u00e1g\u00f3": "M\u00e9retben \u00e9s form\u00e1ban azonos",
+    "\u00e9l": "K\u00e9t arc tal\u00e1lkoz\u00e1sa egy h\u00e1romdimenzi\u00f3s alakzaton",
+    "arc": "H\u00e1romdimenzi\u00f3s form\u00e1k fel\u00fcleti s\u00edkjai",
+    "egyenl\u0151 oldal\u00fa": "Egyforma hossz\u00fas\u00e1g\u00fa oldalak",
+    "p\u00e1rhuzamos": "K\u00e9t vonal egy k\u00e9tdimenzi\u00f3s t\u00e9rben, amelyek nem tal\u00e1lkoznak",
+    "rep\u00fcl\u0151g\u00e9p": "Lapos, k\u00e9tdimenzi\u00f3s fel\u00fclet, amelyen k\u00e9tdimenzi\u00f3s t\u00e1rgyak fek\u00fcdhetnek",
+    "pont": "Egy adott poz\u00edci\u00f3 egy vonalon, s\u00edkon vagy t\u00e9rben",
+    "oldal": "Vonalszegmensek geometriai alakzatokban, amelyek az objektum k\u00fclsej\u00e9t alkotj\u00e1k",
+    "egyenes": "G\u00f6rbe n\u00e9lk\u00fcl",
+    "cs\u00facs": "Az a pont, ahol egy k\u00e9tdimenzi\u00f3s alakzat k\u00e9t oldala vagy egy h\u00e1romdimenzi\u00f3s alakzat k\u00e9t \u00e9le tal\u00e1lkozik",
+    "k\u00f6r": "K\u00e9tdimenzi\u00f3s alakzat, amelyben a g\u00f6rbe vonal minden pontja egyenl\u0151 t\u00e1vols\u00e1gra van a k\u00f6z\u00e9ppontt\u00f3l",
+    "h\u00e1romsz\u00f6g": "Z\u00e1rt figura h\u00e1rom oldallal",
+    "t\u00e9glalap": "K\u00e9tdimenzi\u00f3s, z\u00e1rt, n\u00e9gyoldalas figura n\u00e9gy der\u00e9ksz\u00f6ggel",
+    "n\u00e9gyzet": "Egy speci\u00e1lis t\u00e9glalapt\u00edpus, amelynek egyenl\u0151 oldal\u00fa oldalai \u00e9s p\u00e1rhuzamos ellent\u00e9tes oldalai vannak",
+    "kocka": "Egy h\u00e1romdimenzi\u00f3s figura azonos egyenl\u0151 oldal\u00fa n\u00e9gyzetekkel"
+}

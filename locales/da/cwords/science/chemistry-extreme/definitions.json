@@ -1,0 +1,19 @@
+{
+    "plasma": "Stoffets tilstand best\u00e5ende af ladede partikler (ioner og elektroner)",
+    "ionisk": "Binding dannet ved tiltr\u00e6kning mellem modsat ladede ioner",
+    "kovalent": "Binding dannet ved deling af elektroner mellem atomer",
+    "metallisk": "Binding dannet ved tiltr\u00e6kning mellem positive metalkationer og delokaliserede elektroner",
+    "balanceringsligning": "Kemisk ligning med lige mange atomer af hvert grundstof p\u00e5 begge sider",
+    "muldvarp": "Enhed brugt til at m\u00e5le m\u00e6ngden af et stof (Avogadros antal partikler)",
+    "massetal": "Summen af protoner og neutroner i et atoms kerne",
+    "Atom nummer": "Antal protoner i et atoms kerne (bestemmer elementets identitet)",
+    "isotop": "Atomer af samme grundstof med forskelligt antal neutroner",
+    "oxidation": "Tab af elektroner fra et atom eller molekyle",
+    "reduktion": "Forst\u00e6rkning af elektroner ved et atom eller molekyle",
+    "redox": "Kemisk reaktion, der involverer b\u00e5de oxidations- og reduktionsprocesser",
+    "aktiveringsenergi": "Minimum energi, der kr\u00e6ves for at en kemisk reaktion kan finde sted",
+    "katalysator": "Stof, der \u00f8ger hastigheden af en kemisk reaktion uden at blive indtaget",
+    "termodynamik": "Gren af kemi besk\u00e6ftiger sig med varme, arbejde, temperatur og energi",
+    "endotermisk": "Kemisk reaktion, der absorberer varme fra omgivelserne",
+    "eksotermisk": "Kemisk reaktion, der frigiver varme til omgivelserne"
+}

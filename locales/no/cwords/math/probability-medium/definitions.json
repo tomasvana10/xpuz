@@ -1,0 +1,11 @@
+{
+    "sannsynlighet": "M\u00e5l for sannsynligheten for at en hendelse skal inntreffe",
+    "pr\u00f8verom": "Settet med alle mulige utfall av et sannsynlighetseksperiment",
+    "begivenhet": "Et sett med utfall som en sannsynlighet er tildelt",
+    "utfall": "Et mulig resultat av et sannsynlighetseksperiment",
+    "gjennomsnitt": "Summen av verdier delt p\u00e5 antall verdier",
+    "tilfeldig eksperiment": "En prosess hvor utfallet ikke er kjent f\u00f8r det er observert",
+    "umulig": "En hendelse uten sjanse for \u00e5 inntreffe",
+    "tilfeldig": "Styres av eller involverer like sjanser for hver vare",
+    "pr\u00f8ve": "En undergruppe av en befolkning"
+}

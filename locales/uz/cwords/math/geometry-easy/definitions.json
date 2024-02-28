@@ -1,0 +1,18 @@
+{
+    "burchak": "Burchak qilish uchun uchrashadigan ikkita chiziq",
+    "mos keladigan": "Hajmi va shakli bo'yicha bir xil",
+    "chekka": "Ikki yuzning uch o'lchamli shakldagi uchrashuvi",
+    "yuz": "Uch o'lchamli shakllarning sirt tekisliklari",
+    "teng qirrali": "Bir xil uzunlikdagi tomonlar",
+    "parallel": "Ikki o'lchovli fazoda bir-biriga mos kelmaydigan ikkita chiziq",
+    "samolyot": "Ikki o'lchovli jismlar yotishi mumkin bo'lgan tekis ikki o'lchovli sirt",
+    "nuqta": "Chiziqda, tekislikda yoki kosmosda ma'lum bir pozitsiya",
+    "tomoni": "Ob'ektning tashqi qismini tashkil etuvchi geometrik shakllardagi chiziqli segmentlar",
+    "Streyt": "Egri chiziqsiz",
+    "cho'qqi": "Ikki o'lchamli figuraning ikki tomoni yoki uch o'lchamli figuraning ikki qirrasi uchrashadigan nuqta",
+    "doira": "Egri chiziqdagi barcha nuqtalar markazdan bir xil masofada joylashgan ikki o'lchovli shakl",
+    "uchburchak": "Uch tomoni bo'lgan yopiq shakl",
+    "to'rtburchak": "Ikki o'lchovli, yopiq, to'rt qirrali, to'rtta to'g'ri burchakli shakl",
+    "kvadrat": "Teng tomonlari va qarama-qarshi tomonlari parallel bo'lgan to'rtburchakning maxsus turi",
+    "kub": "Yuzlar bilan bir xil teng tomonli kvadratlarga ega bo'lgan uch o'lchamli figura"
+}

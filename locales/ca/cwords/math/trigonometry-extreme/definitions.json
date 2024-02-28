@@ -1,0 +1,18 @@
+{
+    "funci\u00f3 trigonom\u00e8trica": "Una funci\u00f3 d'un angle expressada com a relaci\u00f3 entre la longitud dels costats d'un triangle rectangle",
+    "funci\u00f3 inversa": "Una funci\u00f3 que s'obt\u00e9 expressant la variable dependent d'una funci\u00f3 com a variable independent d'una altra",
+    "arctangent": "La funci\u00f3 inversa de la tangent",
+    "arcsinusos": "La funci\u00f3 inversa del sinus",
+    "arccosina": "La funci\u00f3 inversa del cosinus",
+    "cosecant": "El rec\u00edproc de la funci\u00f3 sinus, definit com la relaci\u00f3 de la hipotenusa amb el costat oposat d'un triangle rectangle",
+    "cotangent": "El rec\u00edproc de la funci\u00f3 tangent, definit com la relaci\u00f3 del costat adjacent al costat oposat d'un triangle rectangle",
+    "identitat trigonom\u00e8trica": "Una igualtat que implica funcions trigonom\u00e8triques que \u00e9s certa per a tots els valors de les variables",
+    "llei dels sins": "En un triangle, la relaci\u00f3 entre la longitud d'un costat i el sinus del seu angle oposat \u00e9s constant",
+    "llei dels coseus": "En un triangle, el quadrat d'un costat \u00e9s igual a la suma dels quadrats dels altres dos costats menys el doble del producte d'aquests dos costats i el cosinus de l'angle incl\u00f2s.",
+    "mesura en radians": "La mesura d'un angle en radians, que \u00e9s la relaci\u00f3 entre la longitud d'un arc i el seu radi",
+    "velocitat angular": "Velocitat de canvi d'un angle respecte al temps",
+    "longitud de l'arc": "La dist\u00e0ncia entre dos punts al llarg d'una secci\u00f3 d'una corba",
+    "sector": "La porci\u00f3 d'un cercle tancada per dos radis i el seu arc interceptat",
+    "relaci\u00f3 trigonom\u00e8trica": "La relaci\u00f3 de les longituds de dos costats d'un triangle rectangle",
+    "equaci\u00f3 trigonom\u00e8trica": "Una equaci\u00f3 que implica una o diverses funcions trigonom\u00e8triques d'una variable"
+}

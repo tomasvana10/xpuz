@@ -287,6 +287,12 @@ msgstr "విపరీతమైనది"
 msgid "Geography"
 msgstr "భౌగోళిక శాస్త్రం"
 
+msgid "Math"
+msgstr "గణితం"
+
+msgid "Science"
+msgstr "సైన్స్"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -317,3 +323,6 @@ msgstr "భౌగోళిక శాస్త్రం"
 
 #~ msgid "Geography"
 #~ msgstr "భౌగోళిక శాస్త్రం"
+
+#~ msgid "Science"
+#~ msgstr "పరిమాణం"

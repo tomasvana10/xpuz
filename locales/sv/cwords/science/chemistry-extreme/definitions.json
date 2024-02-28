@@ -1,0 +1,19 @@
+{
+    "plasma": "Materiens tillst\u00e5nd som best\u00e5r av laddade partiklar (joner och elektroner)",
+    "jonisk": "Bindning som bildas genom attraktion mellan motsatt laddade joner",
+    "kovalent": "Bindning bildas genom delning av elektroner mellan atomer",
+    "metallisk": "Bindning som bildas genom attraktion mellan positiva metallkatjoner och delokaliserade elektroner",
+    "balansekvationen": "Kemisk ekvation med lika m\u00e5nga atomer av varje grund\u00e4mne p\u00e5 b\u00e5da sidor",
+    "mol": "Enhet som anv\u00e4nds f\u00f6r att m\u00e4ta m\u00e4ngden av ett \u00e4mne (Avogadros antal partiklar)",
+    "massnummer": "Summan av protoner och neutroner i en atoms k\u00e4rna",
+    "atomnummer": "Antal protoner i en atoms k\u00e4rna (best\u00e4mmer elementets identitet)",
+    "isotop": "Atomer av samma grund\u00e4mne med olika antal neutroner",
+    "oxidation": "F\u00f6rlust av elektroner fr\u00e5n en atom eller molekyl",
+    "minskning": "F\u00f6rst\u00e4rkning av elektroner av en atom eller molekyl",
+    "redox": "Kemisk reaktion som involverar b\u00e5de oxidations- och reduktionsprocesser",
+    "aktiverings energi": "Minsta energi som kr\u00e4vs f\u00f6r att en kemisk reaktion ska intr\u00e4ffa",
+    "katalysator": "\u00c4mne som \u00f6kar hastigheten f\u00f6r en kemisk reaktion utan att f\u00f6rbrukas",
+    "termodynamik": "Kemigren som handlar om v\u00e4rme, arbete, temperatur och energi",
+    "endotermisk": "Kemisk reaktion som absorberar v\u00e4rme fr\u00e5n omgivningen",
+    "exotermisk": "Kemisk reaktion som avger v\u00e4rme till omgivningen"
+}

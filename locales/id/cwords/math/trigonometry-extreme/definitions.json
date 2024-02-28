@@ -1,0 +1,18 @@
+{
+    "fungsi trigonometri": "Fungsi sudut yang dinyatakan sebagai perbandingan panjang sisi-sisi segitiga siku-siku",
+    "fungsi terbalik": "Suatu fungsi yang diperoleh dengan menyatakan variabel terikat suatu fungsi sebagai variabel bebas fungsi lainnya",
+    "tangen busur": "Fungsi kebalikan dari garis singgung",
+    "arcsinus": "Fungsi kebalikan dari sinus",
+    "arccosine": "Fungsi kebalikan dari kosinus",
+    "kosekans": "Kebalikan dari fungsi sinus, yang didefinisikan sebagai rasio sisi miring terhadap sisi berlawanan dari segitiga siku-siku",
+    "kotangens": "Kebalikan dari fungsi tangen, yang didefinisikan sebagai perbandingan sisi yang berdekatan dan sisi yang berhadapan pada suatu segitiga siku-siku",
+    "identitas trigonometri": "Persamaan yang melibatkan fungsi trigonometri yang berlaku untuk semua nilai variabel",
+    "hukum sinus": "Dalam suatu segitiga, perbandingan panjang salah satu sisinya dengan sinus sudut dihadapannya adalah tetap",
+    "hukum cosinus": "Dalam sebuah segitiga, kuadrat salah satu sisinya sama dengan jumlah kuadrat kedua sisi lainnya dikurangi dua kali hasil kali kedua sisi tersebut dan kosinus sudut yang disertakan.",
+    "ukuran radian": "Besaran sudut dalam radian, yaitu perbandingan panjang busur dengan jari-jarinya",
+    "kecepatan sudut": "Laju perubahan sudut terhadap waktu",
+    "panjang busur": "Jarak antara dua titik sepanjang suatu bagian kurva",
+    "sektor": "Bagian lingkaran yang dibatasi oleh dua jari-jari dan busur yang dipotongannya",
+    "perbandingan trigonometri": "Perbandingan panjang dua sisi segitiga siku-siku",
+    "persamaan trigonometri": "Persamaan yang melibatkan satu atau beberapa fungsi trigonometri suatu variabel"
+}

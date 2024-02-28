@@ -1,0 +1,11 @@
+{
+    "todenn\u00e4k\u00f6isyys": "Tapahtuman todenn\u00e4k\u00f6isyyden mitta",
+    "esimerkkitila": "Todenn\u00e4k\u00f6isyyskokeen kaikkien mahdollisten tulosten joukko",
+    "tapahtuma": "Joukko tuloksia, joille on m\u00e4\u00e4ritetty todenn\u00e4k\u00f6isyys",
+    "tulokset": "Todenn\u00e4k\u00f6isyyskokeen mahdollinen tulos",
+    "keskiverto": "Arvojen summa jaettuna arvojen lukum\u00e4\u00e4r\u00e4ll\u00e4",
+    "satunnainen kokeilu": "Prosessi, jossa lopputulosta ei tiedet\u00e4 ennen kuin se havaitaan",
+    "mahdotonta": "Tapahtuma, jolla ei ole mahdollisuutta tapahtua",
+    "satunnainen": "Hallitsee tai sis\u00e4lt\u00e4\u00e4 yht\u00e4l\u00e4iset mahdollisuudet jokaiselle esineelle",
+    "n\u00e4yte": "Populaation osajoukko"
+}

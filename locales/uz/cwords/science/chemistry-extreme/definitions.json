@@ -1,0 +1,19 @@
+{
+    "plazma": "Zaryadlangan zarralardan (ionlar va elektronlar) tashkil topgan moddaning holati",
+    "ionli": "Qarama-qarshi zaryadlangan ionlar orasidagi tortishish natijasida hosil bo'lgan bog'lanish",
+    "kovalent": "Atomlar o'rtasida elektron almashish natijasida hosil bo'lgan bog'lanish",
+    "metall": "Musbat metall kationlari va delokalizatsiyalangan elektronlar o'rtasidagi tortishish natijasida hosil bo'lgan bog'lanish",
+    "muvozanatlash tenglamasi": "Har bir elementning atomlari ikki tomonda teng bo'lgan kimyoviy tenglama",
+    "mol": "Moddaning miqdorini o'lchash uchun ishlatiladigan birlik (Avogadro zarralari soni)",
+    "massa raqami": "Atom yadrosidagi proton va neytronlar yig'indisi",
+    "atom raqami": "Atom yadrosidagi protonlar soni (elementning o'ziga xosligini aniqlaydi)",
+    "izotop": "Neytronlarning soni har xil bo'lgan bir xil element atomlari",
+    "oksidlanish": "Atom yoki molekuladan elektronlarning yo'qolishi",
+    "kamaytirish": "Atom yoki molekula tomonidan elektronlarni olish",
+    "redoks": "Oksidlanish va qaytarilish jarayonlarini o'z ichiga olgan kimyoviy reaktsiya",
+    "faollashtirish energiyasi": "Kimyoviy reaksiya sodir bo'lishi uchun zarur bo'lgan minimal energiya",
+    "katalizator": "Kimyoviy reaksiya tezligini iste'mol qilmasdan oshiradigan modda",
+    "termodinamika": "Kimyoning issiqlik, ish, harorat va energiya bilan bog'liq bo'limi",
+    "endotermik": "Atrofdagi issiqlikni yutadigan kimyoviy reaktsiya",
+    "ekzotermik": "Atrofga issiqlik chiqaradigan kimyoviy reaktsiya"
+}

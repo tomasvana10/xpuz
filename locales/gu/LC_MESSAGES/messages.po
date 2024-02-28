@@ -286,6 +286,12 @@ msgstr "આત્યંતિક"
 msgid "Geography"
 msgstr "ભૂગોળ"
 
+msgid "Math"
+msgstr "ગણિત"
+
+msgid "Science"
+msgstr "વિજ્ઞાન"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -316,3 +322,6 @@ msgstr "ભૂગોળ"
 
 #~ msgid "Geography"
 #~ msgstr "ભૂગોળ"
+
+#~ msgid "Science"
+#~ msgstr "કદ"

@@ -1,0 +1,19 @@
+{
+    "plazma": "Gjendja e materies q\u00eb p\u00ebrb\u00ebhet nga grimca t\u00eb ngarkuara (jone dhe elektrone)",
+    "jonike": "Lidhja e formuar nga t\u00ebrheqja midis joneve t\u00eb ngarkuar n\u00eb m\u00ebnyr\u00eb t\u00eb kund\u00ebrt",
+    "kovalente": "Lidhja e formuar nga ndarja e elektroneve midis atomeve",
+    "metalike": "Lidhja e formuar nga t\u00ebrheqja midis kationeve metalike pozitive dhe elektroneve t\u00eb delokalizuara",
+    "ekuacioni balancues": "Ekuacion kimik me num\u00ebr t\u00eb barabart\u00eb atomesh t\u00eb secilit element n\u00eb t\u00eb dyja an\u00ebt",
+    "nishan": "Nj\u00ebsia e p\u00ebrdorur p\u00ebr t\u00eb matur sasin\u00eb e nj\u00eb substance (numri i grimcave t\u00eb Avogadros)",
+    "numri masiv": "Shuma e protoneve dhe neutroneve n\u00eb b\u00ebrtham\u00ebn e nj\u00eb atomi",
+    "numer atomik": "Numri i protoneve n\u00eb b\u00ebrtham\u00ebn e nj\u00eb atomi (p\u00ebrcakton identitetin e elementit)",
+    "izotopi": "Atomet e t\u00eb nj\u00ebjtit element me num\u00ebr t\u00eb ndrysh\u00ebm neutronesh",
+    "oksidimi": "Humbja e elektroneve nga nj\u00eb atom ose molekul\u00eb",
+    "reduktim": "Fitimi i elektroneve nga nj\u00eb atom ose molekul\u00eb",
+    "redoks": "Reaksion kimik q\u00eb p\u00ebrfshin si proceset e oksidimit ashtu edhe ato t\u00eb reduktimit",
+    "energjia e aktivizimit": "Energjia minimale e nevojshme p\u00ebr t\u00eb ndodhur nj\u00eb reaksion kimik",
+    "katalizator": "Substanca q\u00eb rrit shpejt\u00ebsin\u00eb e nj\u00eb reaksioni kimik pa u konsumuar",
+    "termodinamika": "Dega e kimis\u00eb q\u00eb merret me nxeht\u00ebsin\u00eb, pun\u00ebn, temperatur\u00ebn dhe energjin\u00eb",
+    "endotermike": "Reaksion kimik q\u00eb thith nxeht\u00ebsin\u00eb nga mjedisi",
+    "ekzotermike": "Reaksion kimik q\u00eb l\u00ebshon nxeht\u00ebsi n\u00eb mjedis"
+}

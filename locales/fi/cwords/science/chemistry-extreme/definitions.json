@@ -1,0 +1,19 @@
+{
+    "plasma": "Varautuneista hiukkasista (ioneista ja elektroneista) koostuva aineen tila",
+    "ioninen": "Vastakkaisesti varautuneiden ionien v\u00e4lisen vetovoiman muodostama sidos",
+    "kovalenttinen": "Sidos muodostuu jakamalla elektroneja atomien v\u00e4lill\u00e4",
+    "metallinen": "Sidos muodostuu vetovoimasta positiivisten metallikationien ja siirrettyjen elektronien v\u00e4lill\u00e4",
+    "tasapainotusyht\u00e4l\u00f6": "Kemiallinen yht\u00e4l\u00f6, jossa kummankin alkuaineen molemmilla puolilla on sama m\u00e4\u00e4r\u00e4 atomeja",
+    "mooli": "Yksikk\u00f6, jota k\u00e4ytet\u00e4\u00e4n mittaamaan aineen m\u00e4\u00e4r\u00e4\u00e4 (Avogadron hiukkasten lukum\u00e4\u00e4r\u00e4)",
+    "massanumero": "Protonien ja neutronien summa atomin ytimess\u00e4",
+    "atominumero": "Protonien lukum\u00e4\u00e4r\u00e4 atomin ytimess\u00e4 (m\u00e4\u00e4ritt\u00e4\u00e4 elementin identiteetin)",
+    "isotooppi": "Saman alkuaineen atomit, joissa on eri m\u00e4\u00e4r\u00e4 neutroneja",
+    "hapettumista": "Elektronien menetys atomista tai molekyylist\u00e4",
+    "v\u00e4hent\u00e4minen": "Elektronien vahvistus atomin tai molekyylin toimesta",
+    "redox": "Kemiallinen reaktio, joka sis\u00e4lt\u00e4\u00e4 sek\u00e4 hapetus- ett\u00e4 pelkistysprosesseja",
+    "aktivointienergiaa": "V\u00e4himm\u00e4isenergia, joka tarvitaan kemiallisen reaktion tapahtumiseen",
+    "katalyytti": "Aine, joka lis\u00e4\u00e4 kemiallisen reaktion nopeutta kulumatta",
+    "termodynamiikka": "Kemian ala, joka koskee l\u00e4mp\u00f6\u00e4, ty\u00f6t\u00e4, l\u00e4mp\u00f6tilaa ja energiaa",
+    "endoterminen": "Kemiallinen reaktio, joka imee l\u00e4mp\u00f6\u00e4 ymp\u00e4rist\u00f6st\u00e4",
+    "eksoterminen": "Kemiallinen reaktio, joka vapauttaa l\u00e4mp\u00f6\u00e4 ymp\u00e4rist\u00f6\u00f6n"
+}

@@ -1,0 +1,11 @@
+{
+    "aksioma probabilitas": "Proposisi dasar dalam teori probabilitas",
+    "probabilitas bersyarat": "Peluang suatu peristiwa jika peristiwa lain telah terjadi",
+    "variabel acak": "Variabel yang nilai kemungkinannya merupakan hasil numerik dari fenomena acak",
+    "perbedaan": "Ekspektasi deviasi kuadrat suatu variabel acak dari meannya",
+    "peristiwa yang bergantung": "Dua kejadian dikatakan saling bergantung apabila kejadian yang satu mempengaruhi peluang terjadinya kejadian yang lain",
+    "kemungkinan hasil yang sama": "Hasil yang mempunyai kemungkinan yang sama untuk terjadi",
+    "deviasi standar": "Ukuran jumlah variasi atau penyebaran sekumpulan nilai",
+    "statistik": "Ukuran tunggal dari beberapa atribut sampel",
+    "uji coba": "Setiap observasi dalam eksperimen probabilitas"
+}

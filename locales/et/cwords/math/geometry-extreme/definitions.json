@@ -1,0 +1,15 @@
+{
+    "keeruline geomeetria": "Geomeetriliste struktuuride ja kompleksarvudest tulenevate v\u00f5i nende poolt kirjeldatud konstruktsioonide uurimine",
+    "kompleksarvud": "Arvud kujul a + bi, kus a ja b on reaalarvud",
+    "p\u00e4risosa": "Termin kompleksarvus, mis ei sisalda tegurina imaginaarset \u00fchikut",
+    "kujuteldav osa": "Kompleksarvu osa, mille teguriks on imaginaarne \u00fchik",
+    "keerulised kollektorid": "Keerulise geomeetriaga ruumid, mis on k\u00f5verate ja pindade \u00fcldistused",
+    "komplekssed algebralised sordid": "Keerulise geomeetriaga ruumid, mis on pol\u00fcnoomv\u00f5rrandite lahendused",
+    "holomorfsed konstruktsioonid": "Keerulise geomeetriaga konstruktsioonid, mis on kompleksselt diferentseeruvad",
+    "minimaalne mudelprogramm": "Keerulise geomeetria programm keerukate kollektorite ja keerukate algebraliste sortide klassifitseerimiseks",
+    "mooduliruumid": "Keerulise geomeetriaga ruumid, mis parameetristavad teatud t\u00fc\u00fcpi geomeetrilisi objekte",
+    "calabi oletus": "Shing-Tung Yau t\u00f5estatud oletus keerukas geomeetrias erit\u00fc\u00fcpi meetrika olemasolu kohta keerulises kollektoris",
+    "hitchin-kobayashi kirjavahetus": "Kompleksse geomeetria vastavus stabiilsete holomorfsete vektorite kimpude ja teatud diferentsiaalv\u00f5rrandi lahenduste vahel",
+    "nonabeli hodge kirjavahetus": "Keerulise geomeetria vastavus teatud t\u00fc\u00fcpi keerukate kollektorite ja teatud t\u00fc\u00fcpi algebraliste struktuuride vahel",
+    "Kahler-Einsteini m\u00f5\u00f5dikud": "Keerulise kollektori erit\u00fc\u00fcbid, mis vastavad teatud tingimusele"
+}

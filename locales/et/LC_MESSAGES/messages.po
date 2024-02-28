@@ -283,6 +283,12 @@ msgstr "Ekstreemne"
 msgid "Geography"
 msgstr "Geograafia"
 
+msgid "Math"
+msgstr "matemaatika"
+
+msgid "Science"
+msgstr "Teadus"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -313,3 +319,6 @@ msgstr "Geograafia"
 
 #~ msgid "Geography"
 #~ msgstr "Geograafia"
+
+#~ msgid "Science"
+#~ msgstr "Suurus"

@@ -283,6 +283,12 @@ msgstr "ທີ່ສຸດ"
 msgid "Geography"
 msgstr "ພູມສາດ"
 
+msgid "Math"
+msgstr "ຄະນິດສາດ"
+
+msgid "Science"
+msgstr "ວິທະຍາສາດ"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -313,3 +319,6 @@ msgstr "ພູມສາດ"
 
 #~ msgid "Geography"
 #~ msgstr "ພູມສາດ"
+
+#~ msgid "Science"
+#~ msgstr "ຂະໜາດ"

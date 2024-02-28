@@ -1,0 +1,21 @@
+{
+    "kombinatorika": "Ulikan ngeunaan cacah, susunan, jeung kombinasi",
+    "permutasi": "Susunan obj\u00e9k dina urutan husus",
+    "kombinasi": "Pilihan barang tanpa merhatikeun pesenan",
+    "faktorial": "Produk hiji integer jeung sakabeh integer handap eta",
+    "koefisien binomial": "Jumlah cara pikeun milih sawar\u00e9h tina set",
+    "prinsip pigeonhole": "Upami 'n' barang disimpen kana wadah 'm' sareng n > m, sahenteuna hiji wadah kedah ngandung langkung ti hiji barang.",
+    "prinsip pangaluaran inklusi": "Pikeun dua set anu terbatas, ukuran unionna nya\u00e9ta jumlah ukuranana dikurangan ukuran simpangna.",
+    "produk cart\u00e9sian": "Produk tina sababaraha set, hasilna set sadaya pasangan mar\u00e9ntahkeun",
+    "set kakuatan": "Set sadaya subset tina set",
+    "partisi": "A division tina susunan kana subset non-tumpang tindih",
+    "nomer bel": "Jumlah cara pikeun ngabagi set",
+    "angka stirling": "Jumlah cara pikeun ngabagi set kana subset non-kosong",
+    "angka catalan": "Jumlah sababaraha jenis jalur kisi, permutations, tangkal bin\u00e9r, jsb",
+    "nyet\u00e9l": "Kumpulan obj\u00e9k anu b\u00e9da, dianggap salaku oby\u00e9k sorangan",
+    "sawar\u00e9h": "Hiji set nu ngandung ukur elemen kapanggih dina set tangtu s\u00e9j\u00e9n",
+    "ngahiji": "Susunan sadaya elemen anu b\u00e9da dina sadaya set anu dipasihkeun",
+    "parapatan": "Susunan sadaya elemen anu aya dina sadaya set anu dipasihkeun",
+    "b\u00e9dana": "Susunan sadaya elemen dina hiji set anu henteu aya dina set anu san\u00e9s",
+    "pelengkap": "Susunan sadaya unsur teu aya dina set anu dipasihkeun"
+}

@@ -1,0 +1,17 @@
+{
+    "anggulo": "Dalawang linyang nagsasalubong para maging sulok",
+    "magkatugma": "Magkapareho sa laki at hugis",
+    "gilid": "Mga segment ng linya sa mga geometric na figure na bumubuo sa panlabas ng bagay",
+    "mukha": "Pang-ibabaw na eroplano ng mga three-dimensional na hugis",
+    "equilateral": "Mga gilid na magkapareho ang haba",
+    "parallel": "Dalawang linya sa isang two-dimensional na espasyo na hindi nagsasalubong",
+    "eroplano": "Isang patag na dalawang-dimensional na ibabaw kung saan maaaring nakahiga ang dalawang-dimensional na bagay",
+    "punto": "Isang tiyak na posisyon sa isang linya, eroplano, o sa kalawakan",
+    "tuwid": "Nang walang kurba",
+    "kaitaasan": "Ang punto kung saan nagtatagpo ang dalawang gilid ng two-dimensional figure o dalawang gilid ng three-dimensional figure",
+    "bilog": "Isang dalawang-dimensional na hugis kung saan ang lahat ng mga punto sa hubog na linya ay katumbas ng layo mula sa isang sentrong punto",
+    "tatsulok": "Isang saradong pigura na may tatlong panig",
+    "parihaba": "Isang two-dimensional, closed, four-sided figure na may apat na tamang anggulo",
+    "parisukat": "Isang espesyal na uri ng parihaba na may equilateral na gilid at parallel na magkatapat na gilid",
+    "kubo": "Isang three-dimensional na figure na may magkaparehong equilateral na mga parisukat bilang mga mukha"
+}

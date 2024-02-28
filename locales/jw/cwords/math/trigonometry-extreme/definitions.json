@@ -1,0 +1,18 @@
+{
+    "fungsi trigonometri": "Fungsi sudut sing dituduhake minangka rasio dawa sisih pinggir segitiga siku-siku",
+    "fungsi invers": "Fungsi sing dipikolehi kanthi nyebutake variabel terikat siji fungsi minangka variabel bebas liyane",
+    "arctangent": "Fungsi invers saka tangen",
+    "arcsine": "Fungsi invers sinus",
+    "arccosine": "Fungsi invers kosinus",
+    "cosecant": "Timbal balik saka fungsi sinus, ditetepake minangka rasio hypotenuse menyang sisih ngelawan saka segi telu sudut tengen.",
+    "kotangen": "Kebalikan saka fungsi tangen, ditetepake minangka rasio jejer karo sisih ngelawan saka segi telu sudut tengen.",
+    "identitas trigonometri": "Kesetaraan sing nglibatake fungsi trigonometri sing bener kanggo kabeh nilai variabel",
+    "hukum sinus": "Ing segi telu, rasio dawa sisih menyang sinus sudut ngelawan iku konstan",
+    "hukum kosinus": "Ing segi telu, kuadrat sisih padha karo jumlah kuadrat saka rong sisi liyane dikurangi kaping pindho produk loro sisi kasebut lan kosinus sudut sing kalebu.",
+    "ukuran radian": "Ukuran sudut ing radian, yaiku rasio dawa busur karo radius",
+    "kacepetan sudut": "Tingkat owah-owahan sudut babagan wektu",
+    "dawa busur": "Jarak antarane rong titik ing sadawane bagean saka kurva",
+    "sektor": "Bagean saka bunder sing ditutupi dening rong radius lan busur sing dicegat",
+    "rasio trigonometri": "Rasio dawa rong sisi segitiga tengen",
+    "persamaan trigonometri": "Persamaan sing nglibatake siji utawa sawetara fungsi trigonometri saka variabel"
+}

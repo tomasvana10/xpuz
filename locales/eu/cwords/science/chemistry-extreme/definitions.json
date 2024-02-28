@@ -1,0 +1,19 @@
+{
+    "plasma": "Partikula kargatuek (ioiak eta elektroiak) osatutako materiaren egoera",
+    "ionikoa": "Kontrako karga duten ioien arteko erakarpenaren ondorioz sortutako lotura",
+    "kobalentea": "Atomoen artean elektroiak partekatuz sortutako lotura",
+    "metalikoa": "Metal katioi positiboen eta elektroi deslokalizatuen arteko erakarpenaren ondorioz sortutako lotura",
+    "orekatzeko ekuazioa": "Elementu bakoitzaren atomo kopuru berdina duen ekuazio kimikoa bi aldeetan",
+    "satorra": "Substantzia baten kantitatea neurtzeko erabiltzen den unitatea (Avogadroren partikula kopurua)",
+    "masa-zenbakia": "Atomo baten nukleoko protoien eta neutroien batura",
+    "zenbaki atomikoa": "Atomo baten nukleoko protoi kopurua (elementuaren identitatea zehazten du)",
+    "isotopoa": "Elementu bereko atomoak neutroi kopuru desberdinekin",
+    "oxidazioa": "Atomo edo molekula batetik elektroien galera",
+    "murrizketa": "Atomo edo molekula batek elektroien irabazia",
+    "redox": "Oxidazio- eta erredukzio-prozesuak barne hartzen dituen erreakzio kimikoa",
+    "aktibazio-energia": "Erreakzio kimiko bat gertatzeko behar den gutxieneko energia",
+    "katalizatzailea": "Kontsumitu gabe erreakzio kimiko baten abiadura handitzen duen substantzia",
+    "termodinamika": "Beroa, lana, tenperatura eta energiaz arduratzen den kimikaren adarra",
+    "endotermikoa": "Inguruko beroa xurgatzen duen erreakzio kimikoa",
+    "exotermikoa": "Ingurura beroa askatzen duen erreakzio kimikoa"
+}

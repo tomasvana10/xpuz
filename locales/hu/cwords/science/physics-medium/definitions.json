@@ -1,0 +1,22 @@
+{
+    "mozg\u00e1s": "Egy objektum helyzet\u00e9nek v\u00e1ltoz\u00e1sa az id\u0151 m\u00fal\u00e1s\u00e1val",
+    "gyorsul\u00e1s": "A sebess\u00e9g v\u00e1ltoz\u00e1s\u00e1nak sebess\u00e9ge",
+    "sebess\u00e9g": "Egy t\u00e1rgy sebess\u00e9ge \u00e9s ir\u00e1nya",
+    "K\u00e9nyszer\u00edt\u00e9s": "Nyomja vagy h\u00fazza, amely mozgatja vagy megv\u00e1ltoztatja egy t\u00e1rgy mozg\u00e1s\u00e1t",
+    "tehetetlens\u00e9g": "Egy objektum hajlama arra, hogy ellen\u00e1lljon a mozg\u00e1s v\u00e1ltoz\u00e1sainak",
+    "lend\u00fclet": "Egy t\u00e1rgy t\u00f6meg\u00e9nek \u00e9s sebess\u00e9g\u00e9nek szorzata",
+    "gravit\u00e1ci\u00f3": "Er\u0151, amely a t\u00f6meggel rendelkez\u0151 t\u00e1rgyakat egym\u00e1s fel\u00e9 vonzza",
+    "s\u00faly": "A gravit\u00e1ci\u00f3 \u00e1ltal egy t\u00e1rgyra kifejtett er\u0151",
+    "t\u00f6meg": "Az anyag mennyis\u00e9ge egy t\u00e1rgyban",
+    "s\u0171r\u0171s\u00e9g": "Az anyag egys\u00e9gnyi t\u00e9rfogat\u00e1ra jut\u00f3 t\u00f6mege",
+    "munka": "Energia\u00e1tvitel, amikor egy er\u0151 hat \u00e9s mozgat egy t\u00e1rgyat",
+    "energia": "Munkav\u00e9gz\u00e9s k\u00e9pess\u00e9ge",
+    "kinetikus energia": "Egy t\u00e1rgy mozg\u00e1s\u00e1b\u00f3l ad\u00f3d\u00f3 energi\u00e1ja",
+    "helyzeti energia": "T\u00e1rolt energia az objektum helyzete vagy konfigur\u00e1ci\u00f3ja miatt",
+    "er\u0151": "A munka elv\u00e9gz\u00e9s\u00e9nek ar\u00e1nya",
+    "s\u00farl\u00f3d\u00e1s": "Er\u0151, amely ellent\u00e9tes a mozg\u00e1ssal k\u00e9t \u00e9rintkez\u0151 fel\u00fclet k\u00f6z\u00f6tt",
+    "nyom\u00e1s": "Az egys\u00e9gnyi ter\u00fcletre kifejtett er\u0151",
+    "l\u00e9gk\u00f6r": "F\u00f6ldet k\u00f6r\u00fclvev\u0151 g\u00e1zr\u00e9teg",
+    "felhajt\u00f3er\u0151": "Felfel\u00e9 ir\u00e1nyul\u00f3 er\u0151 egy folyad\u00e9kba mer\u00fclt t\u00e1rgyra",
+    "hang": "Az energia olyan form\u00e1ja, amely hull\u00e1mk\u00e9nt terjed a k\u00f6zegen kereszt\u00fcl"
+}

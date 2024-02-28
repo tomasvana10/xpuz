@@ -1,0 +1,19 @@
+{
+    "plasma": "Stato della materia costituito da particelle cariche (ioni ed elettroni)",
+    "ionico": "Legame formato dall'attrazione tra ioni di carica opposta",
+    "covalente": "Legame formato dalla condivisione di elettroni tra atomi",
+    "metallico": "Legame formato dall'attrazione tra cationi metallici positivi ed elettroni delocalizzati",
+    "equazione di bilanciamento": "Equazione chimica con numero uguale di atomi di ciascun elemento su entrambi i membri",
+    "neo": "Unit\u00e0 utilizzata per misurare la quantit\u00e0 di una sostanza (numero di particelle di Avogadro)",
+    "numero di Massa": "Somma di protoni e neutroni nel nucleo di un atomo",
+    "numero atomico": "Numero di protoni nel nucleo di un atomo (determina l'identit\u00e0 dell'elemento)",
+    "isotopo": "Atomi dello stesso elemento con diverso numero di neutroni",
+    "ossidazione": "Perdita di elettroni da un atomo o da una molecola",
+    "riduzione": "Guadagno di elettroni da parte di un atomo o di una molecola",
+    "redox": "Reazione chimica che coinvolge sia processi di ossidazione che di riduzione",
+    "energia di attivazione": "Energia minima richiesta affinch\u00e9 avvenga una reazione chimica",
+    "catalizzatore": "Sostanza che aumenta la velocit\u00e0 di una reazione chimica senza consumarsi",
+    "termodinamica": "Ramo della chimica che si occupa del calore, del lavoro, della temperatura e dell'energia",
+    "Endotermico": "Reazione chimica che assorbe calore dall'ambiente circostante",
+    "esotermico": "Reazione chimica che cede calore all'ambiente circostante"
+}

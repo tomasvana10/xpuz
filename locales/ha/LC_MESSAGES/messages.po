@@ -288,6 +288,12 @@ msgstr "Matsanancin"
 msgid "Geography"
 msgstr "Geography"
 
+msgid "Math"
+msgstr "Lissafi"
+
+msgid "Science"
+msgstr "Kimiyya"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -318,3 +324,6 @@ msgstr "Geography"
 
 #~ msgid "Geography"
 #~ msgstr "Geography"
+
+#~ msgid "Science"
+#~ msgstr "Girman"

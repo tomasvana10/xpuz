@@ -1,0 +1,18 @@
+{
+    "unghi": "Dou\u0103 linii care se \u00eent\u00e2lnesc pentru a face un col\u021b",
+    "congruente": "Identice ca m\u0103rime \u0219i form\u0103",
+    "margine": "\u00cent\u00e2lnirea a dou\u0103 fe\u021be pe o form\u0103 tridimensional\u0103",
+    "fa\u021b\u0103": "Planuri de suprafa\u021b\u0103 ale formelor tridimensionale",
+    "echilateral": "Laturile care au aceea\u0219i lungime",
+    "paralel": "Dou\u0103 linii \u00eentr-un spa\u021biu bidimensional care nu se \u00eent\u00e2lnesc",
+    "avion": "O suprafa\u021b\u0103 plan\u0103 bidimensional\u0103 pe care se pot afla obiecte bidimensionale",
+    "punct": "O pozi\u021bie specific\u0103 pe o linie, un plan sau \u00een spa\u021biu",
+    "latur\u0103": "Segmente de linie \u00een figuri geometrice care compun exteriorul obiectului",
+    "Drept": "F\u0103r\u0103 o curb\u0103",
+    "v\u00e2rf": "Punctul \u00een care dou\u0103 laturi ale unei figuri bidimensionale sau dou\u0103 margini ale unei figuri tridimensionale se \u00eent\u00e2lnesc",
+    "cerc": "O form\u0103 bidimensional\u0103 \u00een care toate punctele de pe linia curb\u0103 sunt echidistante de un punct central",
+    "triunghi": "O figur\u0103 \u00eenchis\u0103 cu trei laturi",
+    "dreptunghi": "O figur\u0103 bidimensional\u0103, \u00eenchis\u0103, cu patru laturi, cu patru unghiuri drepte",
+    "p\u0103trat": "Un tip special de dreptunghi care are laturi echilaterale \u0219i laturi opuse paralele",
+    "cub": "O figur\u0103 tridimensional\u0103 cu p\u0103trate echilaterale identice ca fe\u021be"
+}

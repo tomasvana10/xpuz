@@ -1,0 +1,21 @@
+{
+    "kombinatoriikka": "Laskennan, j\u00e4rjestelyn ja yhdist\u00e4misen tutkimus",
+    "permutaatio": "Esineiden j\u00e4rjestely tiettyyn j\u00e4rjestykseen",
+    "yhdistelm\u00e4": "Tavaroiden valinta ilman tilausta",
+    "tekij\u00e4llinen": "Kokonaisluvun ja kaikkien sen alapuolella olevien kokonaislukujen tulo",
+    "binomikerroin": "Useita tapoja valita joukon osajoukko",
+    "kyyhkynenreik\u00e4 periaate": "Jos \"n\" kohdetta laitetaan \"m\" s\u00e4ili\u00f6\u00f6n ja n > m, v\u00e4hint\u00e4\u00e4n yhdess\u00e4 kontissa on oltava useampi kuin yksi nimike",
+    "sis\u00e4llytt\u00e4misen poissulkemisperiaate": "Mink\u00e4 tahansa kahden \u00e4\u00e4rellisen joukon osalta niiden liiton koko on niiden kokojen summa miinus niiden leikkauspisteen koko",
+    "karteesinen tuote": "Useiden sarjojen tulos, jolloin saadaan sarja kaikista tilatuista pareista",
+    "tehosarja": "Joukon kaikkien osajoukkojen joukko",
+    "osio": "Joukon jako ei-p\u00e4\u00e4llekk\u00e4isiin osajoukkoon",
+    "kellon numero": "Useita tapoja osioida joukko",
+    "h\u00e4mment\u00e4v\u00e4 numero": "Kuinka monta tapaa osioida joukko ei-tyhjiin osajoukkoon",
+    "katalaani numero": "Tietyntyyppisten hilapolkujen, permutaatioiden, bin\u00e4\u00e4ripuiden jne. lukum\u00e4\u00e4r\u00e4",
+    "aseta": "Kokoelma erillisi\u00e4 esineit\u00e4, joita pidet\u00e4\u00e4n erillisin\u00e4 esinein\u00e4",
+    "osajoukko": "Joukko, joka sis\u00e4lt\u00e4\u00e4 vain tietyn toisen joukon elementtej\u00e4",
+    "liitto": "Kaikkien erillisten elementtien joukko kaikissa annetuissa joukoissa",
+    "Risteys": "Joukko kaikista elementeist\u00e4, jotka ovat kaikissa annetuissa joukoissa",
+    "ero": "Joukko kaikista yhden joukon alkioista, jotka eiv\u00e4t ole toisessa joukossa",
+    "t\u00e4ydent\u00e4\u00e4": "Kaikkien tiettyyn joukkoon kuulumattomien elementtien joukko"
+}

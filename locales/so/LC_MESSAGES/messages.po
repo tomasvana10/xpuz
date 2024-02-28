@@ -289,6 +289,12 @@ msgstr "Aad u daran"
 msgid "Geography"
 msgstr "Juqraafiga"
 
+msgid "Math"
+msgstr "Xisaab"
+
+msgid "Science"
+msgstr "Sayniska"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -319,3 +325,6 @@ msgstr "Juqraafiga"
 
 #~ msgid "Geography"
 #~ msgstr "Juqraafiga"
+
+#~ msgid "Science"
+#~ msgstr "Cabbirka"

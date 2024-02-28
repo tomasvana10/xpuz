@@ -1,0 +1,11 @@
+{
+    "kebarangkalian": "Mengukur kebarangkalian sesuatu kejadian akan berlaku",
+    "ruang sampel": "Set semua hasil yang mungkin bagi eksperimen kebarangkalian",
+    "peristiwa": "Satu set hasil yang diberikan kebarangkalian",
+    "hasil": "Keputusan yang mungkin daripada eksperimen kebarangkalian",
+    "purata": "Jumlah nilai dibahagikan dengan bilangan nilai",
+    "eksperimen rawak": "Satu proses di mana hasilnya tidak diketahui sehingga ia diperhatikan",
+    "mustahil": "Peristiwa yang tiada peluang untuk berlaku",
+    "rawak": "Ditadbir oleh atau melibatkan peluang yang sama untuk setiap item",
+    "sampel": "Subset populasi"
+}

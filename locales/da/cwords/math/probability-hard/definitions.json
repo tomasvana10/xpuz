@@ -1,0 +1,11 @@
+{
+    "sandsynlighedsaksiomer": "Grundl\u00e6ggende p\u00e5stande i sandsynlighedsteori",
+    "betinget sandsynlighed": "Sandsynligheden for en h\u00e6ndelse givet, at en anden h\u00e6ndelse har fundet sted",
+    "tilf\u00e6ldige variable": "En variabel, hvis mulige v\u00e6rdier er numeriske udfald af et tilf\u00e6ldigt f\u00e6nomen",
+    "varians": "Forventningen af den kvadrerede afvigelse af en stokastisk variabel fra dens middelv\u00e6rdi",
+    "afh\u00e6ngige begivenheder": "To begivenheder er afh\u00e6ngige, hvis forekomsten af den ene p\u00e5virker sandsynligheden for forekomsten af den anden",
+    "lige sandsynlige udfald": "Udfald, der har samme sandsynlighed for at indtr\u00e6ffe",
+    "standardafvigelse": "Et m\u00e5l for m\u00e6ngden af variation eller spredning af et s\u00e6t v\u00e6rdier",
+    "statistik": "Et enkelt m\u00e5l for en eller anden egenskab ved en pr\u00f8ve",
+    "fors\u00f8g": "Hver observation i et sandsynlighedseksperiment"
+}

@@ -1,0 +1,21 @@
+{
+    "kombinatorika": "Studimi i num\u00ebrimit, renditjes dhe kombinimit",
+    "nd\u00ebrrim": "Rregullimi i objekteve n\u00eb nj\u00eb rend t\u00eb caktuar",
+    "kombinim": "P\u00ebrzgjedhja e artikujve pa marr\u00eb parasysh porosin\u00eb",
+    "faktorial": "Prodhimi i nj\u00eb numri t\u00eb plot\u00eb dhe t\u00eb gjith\u00eb numrave t\u00eb plot\u00eb posht\u00eb tij",
+    "koeficienti binomial": "Numri i m\u00ebnyrave p\u00ebr t\u00eb zgjedhur nj\u00eb n\u00ebngrup t\u00eb nj\u00eb grupi",
+    "parimi i p\u00ebllumbave": "N\u00ebse artikujt 'n' vendosen n\u00eb kontejner\u00eb 'm' dhe n > m, at\u00ebher\u00eb t\u00eb pakt\u00ebn nj\u00eb en\u00eb duhet t\u00eb p\u00ebrmbaj\u00eb m\u00eb shum\u00eb se nj\u00eb artikull",
+    "parimi i p\u00ebrjashtimit t\u00eb p\u00ebrfshirjes": "P\u00ebr \u00e7do dy grupe t\u00eb fundme, madh\u00ebsia e bashkimit t\u00eb tyre \u00ebsht\u00eb shuma e madh\u00ebsive t\u00eb tyre minus madh\u00ebsia e kryq\u00ebzimit t\u00eb tyre",
+    "produkt kartezian": "Produkt i grupeve t\u00eb shumta, q\u00eb rezulton n\u00eb grupin e t\u00eb gjitha \u00e7ifteve t\u00eb renditura",
+    "komplet fuqie": "Bashk\u00ebsia e t\u00eb gjitha n\u00ebnbashk\u00ebsive t\u00eb nj\u00eb grupi",
+    "ndarje": "Nj\u00eb ndarje e nj\u00eb grupi n\u00eb n\u00ebnbashk\u00ebsi q\u00eb nuk mbivendosen",
+    "numri i ziles": "Numri i m\u00ebnyrave p\u00ebr t\u00eb ndar\u00eb nj\u00eb grup",
+    "num\u00ebr stirling": "Numri i m\u00ebnyrave p\u00ebr t\u00eb ndar\u00eb nj\u00eb grup n\u00eb n\u00ebnbashk\u00ebsi jo boshe",
+    "numri katalan": "Numri i llojeve t\u00eb caktuara t\u00eb shtigjeve t\u00eb rrjet\u00ebs, permutacioneve, pem\u00ebve binare, etj",
+    "vendosur": "Nj\u00eb koleksion objektesh t\u00eb dallueshme, t\u00eb konsideruara si nj\u00eb objekt m\u00eb vete",
+    "n\u00ebngrup": "Nj\u00eb grup q\u00eb p\u00ebrmban vet\u00ebm element\u00eb q\u00eb gjenden n\u00eb nj\u00eb grup tjet\u00ebr t\u00eb caktuar",
+    "bashkim": "Bashk\u00ebsia e t\u00eb gjith\u00eb elementeve t\u00eb dallueshme n\u00eb t\u00eb gjitha grupet e dh\u00ebna",
+    "kryq\u00ebzim": "Bashk\u00ebsia e t\u00eb gjith\u00eb element\u00ebve q\u00eb jan\u00eb n\u00eb t\u00eb gjitha grupet e dh\u00ebna",
+    "ndryshim": "Bashk\u00ebsia e t\u00eb gjith\u00eb element\u00ebve n\u00eb nj\u00eb grup q\u00eb nuk jan\u00eb n\u00eb nj\u00eb grup tjet\u00ebr",
+    "plot\u00ebsojn\u00eb": "Bashk\u00ebsia e t\u00eb gjith\u00eb element\u00ebve q\u00eb nuk jan\u00eb n\u00eb nj\u00eb grup t\u00eb caktuar"
+}

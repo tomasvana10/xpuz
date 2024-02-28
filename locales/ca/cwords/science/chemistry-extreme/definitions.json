@@ -1,0 +1,19 @@
+{
+    "plasma": "Estat de la mat\u00e8ria format per part\u00edcules carregades (ions i electrons)",
+    "i\u00f2nic": "Enlla\u00e7 format per atracci\u00f3 entre ions de c\u00e0rrega oposada",
+    "covalent": "Enlla\u00e7 format per la compartici\u00f3 d'electrons entre \u00e0toms",
+    "met\u00e0l\u00b7lic": "Enlla\u00e7 format per atracci\u00f3 entre cations met\u00e0l\u00b7lics positius i electrons deslocalitzats",
+    "equaci\u00f3 d'equilibri": "Equaci\u00f3 qu\u00edmica amb el mateix nombre d'\u00e0toms de cada element als dos costats",
+    "talp": "Unitat utilitzada per mesurar la quantitat d'una subst\u00e0ncia (nombre de part\u00edcules d'Avogadro)",
+    "nombre de massa": "Suma de protons i neutrons en el nucli d'un \u00e0tom",
+    "nombre at\u00f2mic": "Nombre de protons al nucli d'un \u00e0tom (determina la identitat de l'element)",
+    "is\u00f2top": "\u00c0toms d'un mateix element amb diferent nombre de neutrons",
+    "oxidaci\u00f3": "P\u00e8rdua d'electrons d'un \u00e0tom o mol\u00e8cula",
+    "reducci\u00f3": "Guany d'electrons per un \u00e0tom o mol\u00e8cula",
+    "redox": "Reacci\u00f3 qu\u00edmica que implica tant processos d'oxidaci\u00f3 com de reducci\u00f3",
+    "energia d'activaci\u00f3": "Energia m\u00ednima necess\u00e0ria perqu\u00e8 es produeixi una reacci\u00f3 qu\u00edmica",
+    "catalitzador": "Subst\u00e0ncia que augmenta la velocitat d'una reacci\u00f3 qu\u00edmica sense ser consumida",
+    "termodin\u00e0mica": "Branca de la qu\u00edmica relacionada amb la calor, el treball, la temperatura i l'energia",
+    "endot\u00e8rmic": "Reacci\u00f3 qu\u00edmica que absorbeix la calor de l'entorn",
+    "exot\u00e8rmic": "Reacci\u00f3 qu\u00edmica que allibera calor a l'entorn"
+}

@@ -1,0 +1,21 @@
+{
+    "combinatorics": "Kev tshawb fawb suav, kev npaj, thiab kev sib xyaw",
+    "kev hloov pauv": "Kev npaj cov khoom nyob rau hauv ib qho kev txiav txim",
+    "ua ke": "Xaiv cov khoom yam tsis xav txog qhov kev txiav txim",
+    "factorial": "Cov khoom ntawm tus lej thiab tag nrho cov lej hauv qab nws",
+    "binomial coefficient": "Tus naj npawb ntawm txoj hauv kev los xaiv ib lub subset ntawm ib txheej",
+    "pigeonhole txoj cai": "Yog tias 'n' khoom muab tso rau hauv 'm' ntim thiab n > m, ces tsawg kawg ib lub thawv yuav tsum muaj ntau tshaj ib yam khoom",
+    "inclusion exclusion txoj cai": "Rau ib qho kev txiav txim siab thib ob, qhov loj ntawm lawv lub koom haum yog qhov sib npaug ntawm lawv qhov loj me lossis qhov loj ntawm lawv qhov kev sib tshuam",
+    "cov khoom cartesian": "Cov khoom ntawm ntau lub teeb, ua rau cov txheej txheem ntawm txhua tus khub xaj",
+    "zog set": "Teeb ntawm tag nrho cov subsets ntawm ib txheej",
+    "muab faib": "Ib qho kev faib ntawm cov teeb rau hauv cov tsis sib tshooj",
+    "tswb tooj": "Tus naj npawb ntawm txoj hauv kev los faib ib txheej",
+    "nplawm tus lej": "Tus naj npawb ntawm txoj hauv kev los faib ib txheej rau hauv cov subsets uas tsis yog khoob",
+    "tus lej catalan": "Tus naj npawb ntawm qee yam ntawm txoj kab lattice, permutations, binary ntoo, thiab lwm yam",
+    "teeb": "Kev sau ntawm cov khoom sib txawv, suav tias yog ib qho khoom hauv nws txoj cai",
+    "subset": "Ib txheej uas tsuas muaj cov ntsiab lus pom nyob rau hauv ib co lwm yam teeb",
+    "lub koomhaum": "Cov txheej txheem ntawm txhua qhov sib txawv hauv txhua qhov muab teev",
+    "kev sib tshuam": "Cov txheej txheem ntawm tag nrho cov ntsiab lus uas muaj nyob rau hauv tag nrho cov muab teev",
+    "txawv": "Cov txheej txheem ntawm tag nrho cov ntsiab lus nyob rau hauv ib lub teeb uas tsis nyob rau hauv lwm lub teeb",
+    "ntxiv": "Cov txheej txheem ntawm tag nrho cov ntsiab lus tsis nyob rau hauv ib tug muab"
+}

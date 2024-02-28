@@ -1,0 +1,21 @@
+{
+    "combinatorics": "Ang pag-aaral ng pagbibilang, pagsasaayos, at kumbinasyon",
+    "permutasyon": "Pag-aayos ng mga bagay sa isang tiyak na pagkakasunud-sunod",
+    "kumbinasyon": "Pagpili ng mga item nang hindi isinasaalang-alang ang order",
+    "factorial": "Produkto ng isang integer at lahat ng integer sa ibaba nito",
+    "binomial coefficient": "Bilang ng mga paraan upang pumili ng subset ng isang set",
+    "prinsipyo ng pigeonhole": "Kung ang 'n' na mga item ay inilalagay sa 'm' na mga lalagyan at n > m, kung gayon hindi bababa sa isang lalagyan ang dapat maglaman ng higit sa isang item",
+    "prinsipyo ng pagbubukod ng pagsasama": "Para sa alinmang dalawang finite set, ang laki ng kanilang unyon ay ang kabuuan ng kanilang mga laki na binawasan ang laki ng kanilang intersection",
+    "Kartesyan produkto": "Produkto ng maraming hanay, na nagreresulta sa hanay ng lahat ng nakaayos na pares",
+    "set ng kapangyarihan": "Set ng lahat ng subset ng isang set",
+    "pagkahati": "Isang dibisyon ng isang set sa mga hindi magkakapatong na subset",
+    "numero ng kampana": "Bilang ng mga paraan upang hatiin ang isang set",
+    "stirling number": "Bilang ng mga paraan upang hatiin ang isang set sa mga hindi walang laman na subset",
+    "numero ng catalan": "Bilang ng ilang partikular na uri ng mga lattice path, permutation, binary tree, atbp",
+    "itakda": "Isang koleksyon ng mga natatanging bagay, na itinuturing na isang bagay sa sarili nitong karapatan",
+    "subset": "Isang set na naglalaman lamang ng mga elemento na matatagpuan sa isang partikular na iba pang set",
+    "unyon": "Ang hanay ng lahat ng natatanging elemento sa lahat ng ibinigay na hanay",
+    "interseksyon": "Ang set ng lahat ng elemento na nasa lahat ng ibinigay na set",
+    "pagkakaiba": "Ang set ng lahat ng elemento sa isang set na wala sa isa pang set",
+    "pandagdag": "Ang set ng lahat ng elemento na wala sa isang naibigay na set"
+}

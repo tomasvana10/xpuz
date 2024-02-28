@@ -1,0 +1,15 @@
+{
+    "sud\u0117tinga geometrija": "Geometrini\u0173 strukt\u016br\u0173 ir konstrukcij\u0173, kylan\u010di\u0173 i\u0161 kompleksini\u0173 skai\u010di\u0173 arba jais apib\u016bdinam\u0173, tyrimas",
+    "kompleksiniai skai\u010diai": "Skai\u010diai, kuri\u0173 forma yra a + bi, kur a ir b yra tikrieji skai\u010diai",
+    "tikroji dalis": "Terminas kompleksiniame skai\u010diuje, kuriame n\u0117ra \u012fsivaizduojamo vieneto kaip veiksnio",
+    "\u012fsivaizduojama dalis": "Kompleksinio skai\u010diaus dalis, kurios veiksnys yra \u012fsivaizduojamas vienetas",
+    "sud\u0117tingi kolektoriai": "Sud\u0117tingos geometrijos erdv\u0117s, kurios yra kreivi\u0173 ir pavir\u0161i\u0173 apibendrinimai",
+    "sud\u0117tingos algebrin\u0117s atmainos": "Sud\u0117tingos geometrijos erdv\u0117s, kurios yra daugianario lyg\u010di\u0173 sprendiniai",
+    "holomorfin\u0117s konstrukcijos": "Sud\u0117tingos geometrijos konstrukcijos, kurios yra kompleksi\u0161kai diferencijuojamos",
+    "minimali modelio programa": "Sud\u0117tingos geometrijos programa, skirta sud\u0117ting\u0173 kolektori\u0173 ir sud\u0117ting\u0173 algebrini\u0173 atmain\u0173 klasifikavimui",
+    "moduli\u0173 erdv\u0117s": "Sud\u0117tingos geometrijos erdv\u0117s, kurios parametrizuoja tam tikro tipo geometrin\u012f objekt\u0105",
+    "calabi sp\u0117jimas": "Shing-Tung Yau \u012frodytas sud\u0117tingos geometrijos sp\u0117jimas apie ypatingo tipo metrikos egzistavim\u0105 sud\u0117tingame kolektorius",
+    "hitchin-kobayashi korespondencija": "Sud\u0117tingos geometrijos atitikimas tarp stabili\u0173 holomorfini\u0173 vektori\u0173 pluo\u0161t\u0173 ir tam tikros diferencialin\u0117s lygties sprendini\u0173",
+    "nonabelian hodge korespondencija": "Sud\u0117tingos geometrijos atitikimas tarp tam tikr\u0173 sud\u0117ting\u0173 kolektori\u0173 ir tam tikr\u0173 tip\u0173 algebrini\u0173 strukt\u016br\u0173",
+    "Kahlerio-Ein\u0161teino metrika": "Special\u016bs sud\u0117tingo kolektoriaus metrikos tipai, atitinkantys tam tikr\u0105 s\u0105lyg\u0105"
+}

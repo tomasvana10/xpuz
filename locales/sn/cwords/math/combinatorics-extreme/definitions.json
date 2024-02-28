@@ -1,0 +1,21 @@
+{
+    "combinatorics": "Chidzidzo chekuverenga, kuronga, uye kusanganisa",
+    "permutation": "Kurongeka kwezvinhu nenzira yakati",
+    "musanganiswa": "Kusarudzwa kwezvinhu pasina kufunga nezveodha",
+    "factorial": "Chigadzirwa cheinhamba uye ese manhamba pasi payo",
+    "binomial coefficient": "Nhamba yenzira dzekusarudza chidimbu cheseti",
+    "pigeonhole musimboti": "Kana zvinhu zve 'n' zvikaiswa mumidziyo ye'm' uye n > m, saka chigaba chimwe chete chinofanira kunge chine zvinhu zvinopfuura chimwe.",
+    "kubatanidza kusabatanidzwa musimboti": "Kune ese maviri ane magumo seti, saizi yemubatanidzwa wavo ihuwandu hwehukuru hwadzo kubvisa saizi yemharadzano yavo.",
+    "cartesian chigadzirwa": "Chigadzirwa chemaseti akawanda, zvichikonzera seti yeese akaodha mapeya",
+    "power set": "Seti yeese ma subsets eseti",
+    "partition": "Kupatsanurwa kweseti muzvikamu zvisingapindirane",
+    "nhamba yebhero": "Nhamba yenzira dzekuparadzanisa seti",
+    "inokurudzira nhamba": "Nhamba yenzira dzekupatsanura seti kuita isina-isina chinhu subset",
+    "nhamba yeCatalan": "Nhamba yemamwe marudzi enzira dzelatisi, mvumo, miti yemabhinari, nezvimwe",
+    "set": "Muunganidzwa wezvinhu zvakasiyana, zvinoonekwa sechinhu chiri pachezvacho",
+    "subset": "Seti ine zvinhu chete zvinowanikwa mune imwe seti",
+    "mubatanidzwa": "Seti yezvinhu zvese zvakasiyana mumaseti ese akapihwa",
+    "mharadzano": "Seti yezvinhu zvese zviri mumaseti ese akapihwa",
+    "musiyano": "Seti yezvinhu zvese mune imwe seti isiri mune imwe seti",
+    "mubatsiri": "Iyo seti yeese maelementi asiri mune yakapihwa seti"
+}

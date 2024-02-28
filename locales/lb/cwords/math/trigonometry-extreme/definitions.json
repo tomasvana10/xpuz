@@ -1,0 +1,18 @@
+{
+    "trigonometric Funktioun": "Eng Funktioun vun engem W\u00e9nkel ausgedr\u00e9ckt als Verh\u00e4ltnis vun der L\u00e4ngt vun de S\u00e4iten vun engem rechteckegen Dr\u00e4ieck",
+    "invers Funktioun": "Eng Funktioun kritt andeems d\u00e9i ofh\u00e4ngeg Variabel vun enger Funktioun als onofh\u00e4ngeg Variabel vun enger anerer ausdr\u00e9ckt",
+    "arctangent": "D\u00e9i invers Funktioun vum Tangent",
+    "arcsine": "D\u00e9i invers Funktioun vum Sinus",
+    "arccosine": "D\u00e9i invers Funktioun vu Cosinus",
+    "cosecant": "D'G\u00e9iges\u00e4itegkeet vun der Sinusfunktioun, defin\u00e9iert als de Verh\u00e4ltnis vun der Hypotenus an der G\u00e9igendeel S\u00e4it vun engem rechtw\u00e9nkegen Dr\u00e4ieck",
+    "cotangent": "D'g\u00e9iges\u00e4iteg vun der Tangentfunktioun, defin\u00e9iert als de Verh\u00e4ltnis vun der Nopeschs\u00e4it vun der G\u00e9igendeel S\u00e4it vun engem rechtw\u00e9nkegen Dr\u00e4ieck",
+    "trigonometric Identit\u00e9it": "Eng Gl\u00e4ichheet mat trigonometresche Funktiounen d\u00e9i fir all W\u00e4erter vun de Variabelen richteg ass",
+    "Gesetz vun sines": "An engem Dr\u00e4ieck ass de Verh\u00e4ltnis vun der L\u00e4ngt vun enger S\u00e4it zum Sinus vu sengem G\u00e9igendeel W\u00e9nkel konstant",
+    "Cosinusgesetz": "An engem Dr\u00e4ieck ass de Quadrat vun enger S\u00e4it gl\u00e4ich w\u00e9i d'Zomm vun de Quadrate vun deenen aneren zwou S\u00e4iten minus zweemol dem Produkt vun d\u00ebsen zwou S\u00e4iten an der Cosinus vum abegraff W\u00e9nkel",
+    "Radianmessung": "D'Mooss vun engem W\u00e9nkel an Radianen, dat ass de Verh\u00e4ltnis vun der L\u00e4ngt vun engem Bou zu sengem Radius",
+    "W\u00e9nkelgeschwindegkeet": "Den Taux vun der \u00c4nnerung vun engem W\u00e9nkel par rapport zu Z\u00e4it",
+    "arc L\u00e4ngt": "D'Distanz t\u00ebscht zwee Punkten laanscht eng Sektioun vun enger K\u00e9ier",
+    "Secteur": "Den Deel vun engem Krees, deen duerch zwee Radien an hiren ofgefaangen Bogen zougemaach ass",
+    "trigonometric Verh\u00e4ltnis": "D'Verh\u00e4ltnis vun de L\u00e4ngt vun zwou S\u00e4iten vun engem rechteckegen Dr\u00e4ieck",
+    "trigonometresch Equatioun": "Eng Equatioun d\u00e9i eng oder m\u00e9i trigonometresch Funktiounen vun enger Variabel involv\u00e9iert"
+}

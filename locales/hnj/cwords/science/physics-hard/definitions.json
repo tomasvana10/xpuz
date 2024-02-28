@@ -1,0 +1,23 @@
+{
+    "yoj": "Kev cuam tshuam hloov lub zog yam tsis muaj kev thauj khoom",
+    "zaus": "Tus naj npawb ntawm yoj voj voog hla ib qho taw tes hauv ib lub sijhawm",
+    "wavelength": "Kev ncua deb ntawm ob lub ntsiab lus sib thooj ntawm nthwv dej",
+    "amplitude": "Qhov siab tshaj plaws txav ntawm ib qho taw tes los ntawm nws qhov sib npaug hauv nthwv dej",
+    "teeb": "Daim ntawv lub zog uas mus raws li nthwv dej",
+    "electromagnetic spectrum": "Ntau yam ntawm txhua qhov ua tau electromagnetic yoj zaus",
+    "hluav taws xob": "Muaj peev xwm sib txawv ntawm ob lub ntsiab lus hauv ib lub voj voog",
+    "hluav taws xob tam sim no": "Rate of flow of electric charge",
+    "hlau nplaum": "Kev quab yuam los ntawm cov hlau nplaum ntawm qee yam khoom",
+    "electromagnet": "Magnet tsim los ntawm hluav taws xob tam sim no los ntawm ib lub kauj",
+    "electroscope": "Cov cuab yeej kuaj pom muaj thiab kos npe ntawm tus nqi hluav taws xob",
+    "Circuit Court": "Kaw txoj kev cia hluav taws xob ntws",
+    "series": "Circuit Court nrog tag nrho cov khoom txuas nrog hauv ib lub voj voog",
+    "thaum uas tig mus": "Circuit Court nrog cov khoom sib txuas ntawm ntau ceg",
+    "tsis kam": "Kev tawm tsam rau hluav taws xob tam sim no ntws hauv tus neeg xyuas pib",
+    "ohm lawd": "Kev sib raug zoo ntawm voltage, tam sim no, thiab tsis kam (V = IR)",
+    "lens": "Cov khoom pob tshab uas tuaj yeem tsom lossis sib txawv ntawm lub teeb ci",
+    "iav": "Smooth nto uas qhia txog lub teeb",
+    "xav txog": "Rov qab rov qab ntawm lub teeb, suab, lossis lwm yam nthwv dej ntawm qhov chaw",
+    "refraction": "Khoov ntawm lub teeb thaum nws dhau los ntawm ib qho nruab nrab mus rau lwm qhov",
+    "optics": "Ceg ntawm physics kawm lub teeb thiab nws cov khoom"
+}

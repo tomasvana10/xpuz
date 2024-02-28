@@ -1,0 +1,21 @@
+{
+    "kombinatorik": "Studiet af t\u00e6lling, arrangement og kombination",
+    "permutation": "Arrangering af objekter i en bestemt r\u00e6kkef\u00f8lge",
+    "kombination": "Udvalg af varer uden hensyntagen til ordren",
+    "faktorielle": "Produkt af et heltal og alle heltal under det",
+    "binomial koefficient": "Antal m\u00e5der at v\u00e6lge en delm\u00e6ngde af et s\u00e6t p\u00e5",
+    "duehulsprincippet": "Hvis 'n' emner l\u00e6gges i 'm'-beholdere og n > m, skal mindst \u00e9n beholder indeholde mere end \u00e9n emne",
+    "inklusionsudelukkelsesprincippet": "For alle to endelige m\u00e6ngder er st\u00f8rrelsen af deres forening summen af deres st\u00f8rrelser minus st\u00f8rrelsen af deres sk\u00e6ringspunkt",
+    "kartesisk produkt": "Produkt af flere s\u00e6t, hvilket resulterer i s\u00e6t af alle bestilte par",
+    "str\u00f8ms\u00e6t": "S\u00e6t af alle delm\u00e6ngder af et s\u00e6t",
+    "skillev\u00e6g": "En opdeling af et s\u00e6t i ikke-overlappende delm\u00e6ngder",
+    "klokke nummer": "Antal m\u00e5der at opdele et s\u00e6t p\u00e5",
+    "stirling nummer": "Antal m\u00e5der at opdele et s\u00e6t i ikke-tomme unders\u00e6t",
+    "catalansk nummer": "Antal visse typer gitterbaner, permutationer, bin\u00e6re tr\u00e6er osv",
+    "s\u00e6t": "En samling af s\u00e6rskilte genstande, betragtet som et objekt i sig selv",
+    "delm\u00e6ngde": "Et s\u00e6t, der kun indeholder elementer, der findes i et bestemt andet s\u00e6t",
+    "Union": "S\u00e6ttet af alle distinkte elementer i alle givne s\u00e6t",
+    "vejkryds": "M\u00e6ttet af alle elementer, der er i alle givne s\u00e6t",
+    "forskel": "S\u00e6ttet af alle elementer i et s\u00e6t, der ikke er i et andet s\u00e6t",
+    "komplement": "S\u00e6ttet af alle elementer, der ikke er i et givet s\u00e6t"
+}

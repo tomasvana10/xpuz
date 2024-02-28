@@ -1,0 +1,11 @@
+{
+    "val\u00f3sz\u00edn\u0171s\u00e9g": "Az esem\u00e9ny bek\u00f6vetkez\u00e9s\u00e9nek val\u00f3sz\u00edn\u0171s\u00e9g\u00e9nek m\u00e9rt\u00e9ke",
+    "mintat\u00e9r": "Egy val\u00f3sz\u00edn\u0171s\u00e9gi k\u00eds\u00e9rlet \u00f6sszes lehets\u00e9ges kimenetel\u00e9nek halmaza",
+    "esem\u00e9ny": "Eredm\u00e9nyek halmaza, amelyhez val\u00f3sz\u00edn\u0171s\u00e9g van hozz\u00e1rendelve",
+    "eredm\u00e9ny": "Val\u00f3sz\u00edn\u0171s\u00e9gi k\u00eds\u00e9rlet lehets\u00e9ges eredm\u00e9nye",
+    "\u00e1tlagos": "Az \u00e9rt\u00e9kek \u00f6sszege osztva az \u00e9rt\u00e9kek sz\u00e1m\u00e1val",
+    "v\u00e9letlenszer\u0171 k\u00eds\u00e9rlet": "Olyan folyamat, amelynek eredm\u00e9nye addig nem ismert, am\u00edg meg nem figyelik",
+    "lehetetlen": "Esem\u00e9ny, amelynek bek\u00f6vetkez\u00e9s\u00e9nek es\u00e9lye sincs",
+    "v\u00e9letlen": "Az egyes t\u00e9telek \u00e1ltal szab\u00e1lyozott vagy egyenl\u0151 es\u00e9lyekkel j\u00e1r",
+    "minta": "Egy popul\u00e1ci\u00f3 egy r\u00e9szhalmaza"
+}

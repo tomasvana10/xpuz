@@ -1,0 +1,11 @@
+{
+    "verjetnost": "Mera verjetnosti, da se bo dogodek zgodil",
+    "vzor\u010dni prostor": "Nabor vseh mo\u017enih izidov verjetnostnega poskusa",
+    "dogodek": "Nabor izidov, ki jim je dodeljena verjetnost",
+    "izid": "Mo\u017een rezultat verjetnostnega eksperimenta",
+    "povpre\u010dje": "Vsota vrednosti, deljena s \u0161tevilom vrednosti",
+    "naklju\u010dni poskus": "Proces, pri katerem izid ni znan, dokler ga ne opazujemo",
+    "nemogo\u010de": "Dogodek brez mo\u017enosti, da se zgodi",
+    "naklju\u010den": "Ureja ali vklju\u010duje enake mo\u017enosti za vsako postavko",
+    "vzorec": "Podmno\u017eica populacije"
+}

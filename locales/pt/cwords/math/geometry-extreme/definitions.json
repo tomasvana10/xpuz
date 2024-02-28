@@ -1,0 +1,15 @@
+{
+    "geometria complexa": "O estudo de estruturas e constru\u00e7\u00f5es geom\u00e9tricas decorrentes ou descritas pelos n\u00fameros complexos",
+    "n\u00fameros complexos": "N\u00fameros da forma a + bi onde a e b s\u00e3o n\u00fameros reais",
+    "parte real": "O termo em um n\u00famero complexo que n\u00e3o cont\u00e9m a unidade imagin\u00e1ria como fator",
+    "parte imagin\u00e1ria": "A parte de um n\u00famero complexo que tem a unidade imagin\u00e1ria como fator",
+    "variedades complexas": "Espa\u00e7os em geometria complexa que s\u00e3o generaliza\u00e7\u00f5es de curvas e superf\u00edcies",
+    "variedades alg\u00e9bricas complexas": "Espa\u00e7os em geometria complexa que s\u00e3o solu\u00e7\u00f5es para equa\u00e7\u00f5es polinomiais",
+    "constru\u00e7\u00f5es holom\u00f3rficas": "Constru\u00e7\u00f5es em geometria complexa que s\u00e3o diferenci\u00e1veis em complexos",
+    "programa de modelo m\u00ednimo": "Um programa em geometria complexa para classifica\u00e7\u00e3o de variedades complexas e variedades alg\u00e9bricas complexas",
+    "espa\u00e7os de m\u00f3dulos": "Espa\u00e7os em geometria complexa que parametrizam algum tipo de objeto geom\u00e9trico",
+    "conjectura de Calabi": "Uma conjectura em geometria complexa comprovada por Shing-Tung Yau sobre a exist\u00eancia de um tipo especial de m\u00e9trica em uma variedade complexa",
+    "correspond\u00eancia hitchin-kobayashi": "Uma correspond\u00eancia em geometria complexa entre fibrados vetoriais holom\u00f3rficos est\u00e1veis e solu\u00e7\u00f5es para uma certa equa\u00e7\u00e3o diferencial",
+    "correspond\u00eancia hodge n\u00e3o-abeliana": "Uma correspond\u00eancia em geometria complexa entre certos tipos de variedades complexas e certos tipos de estruturas alg\u00e9bricas",
+    "M\u00e9tricas Kahler-Einstein": "Tipos especiais de m\u00e9tricas em uma variedade complexa que satisfazem uma determinada condi\u00e7\u00e3o"
+}

@@ -1,0 +1,22 @@
+{
+    "pohybu": "Zmena polohy objektu v priebehu \u010dasu",
+    "zr\u00fdchlenie": "R\u00fdchlos\u0165 zmeny r\u00fdchlosti",
+    "r\u00fdchlos\u0165": "R\u00fdchlos\u0165 a smer objektu",
+    "sila": "Stla\u010denie alebo potiahnutie, ktor\u00e9 pohybuje alebo men\u00ed pohyb objektu",
+    "zotrva\u010dnos\u0165": "Tendencia objektu odol\u00e1va\u0165 zmen\u00e1m v pohybe",
+    "sp\u00e1d": "S\u00fa\u010din hmotnosti a r\u00fdchlosti objektu",
+    "gravit\u00e1cia": "Sila, ktor\u00e1 k sebe pri\u0165ahuje predmety s hmotnos\u0165ou",
+    "hmotnos\u0165": "Sila p\u00f4sobiaca na predmet v d\u00f4sledku gravit\u00e1cie",
+    "om\u0161a": "Mno\u017estvo hmoty v objekte",
+    "hustota": "Hmotnos\u0165 na jednotku objemu l\u00e1tky",
+    "pr\u00e1ca": "Prenos energie, ke\u010f sila p\u00f4sob\u00ed na predmet a pohybuje sa n\u00edm",
+    "energie": "Schopnos\u0165 vykon\u00e1va\u0165 pr\u00e1cu",
+    "Kinetick\u00e1 energia": "Energia objektu v d\u00f4sledku jeho pohybu",
+    "potenci\u00e1lna energia": "Ulo\u017een\u00e1 energia v d\u00f4sledku polohy alebo konfigur\u00e1cie objektu",
+    "moc": "Miera, za ktor\u00fa sa pr\u00e1ca vykon\u00e1va",
+    "trenie": "Sila, ktor\u00e1 br\u00e1ni pohybu medzi dvoma povrchmi, ktor\u00e9 s\u00fa v kontakte",
+    "tlak": "Sila vynalo\u017een\u00e1 na jednotku plochy",
+    "atmosf\u00e9ru": "Vrstva plynov obklopuj\u00faca Zem",
+    "vztlak": "Sila smeruj\u00faca nahor na predmet ponoren\u00fd do tekutiny",
+    "zvuk": "Forma energie, ktor\u00e1 sa \u0161\u00edri ako vlny cez m\u00e9dium"
+}

@@ -1,0 +1,18 @@
+{
+    "vinkel": "To linjer, der m\u00f8des for at lave et hj\u00f8rne",
+    "kongruent": "Ens i st\u00f8rrelse og form",
+    "kant": "M\u00f8det af to ansigter p\u00e5 en tredimensionel form",
+    "ansigt": "Overfladeplan af tredimensionelle former",
+    "ligesidet": "Sider der er lige lange",
+    "parallel": "To linjer i et todimensionelt rum, der ikke m\u00f8des",
+    "fly": "En flad todimensionel overflade, hvorp\u00e5 todimensionelle objekter kan ligge",
+    "punkt": "En bestemt position p\u00e5 en linje, et plan eller i rummet",
+    "side": "Linjestykker i geometriske figurer, der udg\u00f8r det ydre af objektet",
+    "lige": "Uden en kurve",
+    "toppunkt": "Det punkt, hvor to sider af en todimensionel figur eller to kanter af en tredimensionel figur m\u00f8des",
+    "cirkel": "En todimensionel form, hvor alle punkter p\u00e5 den buede linje er lige langt fra et midtpunkt",
+    "trekant": "En lukket figur med tre sider",
+    "rektangel": "En todimensionel, lukket, firesidet figur med fire rette vinkler",
+    "firkant": "En speciel type rektangel, der har ligesidede sider og parallelle modst\u00e5ende sider",
+    "terning": "En tredimensionel figur med identiske ligesidede firkanter som ansigter"
+}

@@ -1,0 +1,18 @@
+{
+    "trigonometriko function": "Isang function ng isang anggulo na ipinahayag bilang isang ratio ng haba ng mga gilid ng isang right-angled triangle",
+    "baligtad na pag-andar": "Isang function na nakuha sa pamamagitan ng pagpapahayag ng dependent variable ng isang function bilang independent variable ng isa pa",
+    "arctangent": "Ang inverse function ng tangent",
+    "arcsine": "Ang kabaligtaran na pag-andar ng sine",
+    "arccosine": "Ang inverse function ng cosine",
+    "cosecant": "Ang reciprocal ng sine function, na tinukoy bilang ang ratio ng hypotenuse sa kabaligtaran na bahagi ng isang right-angled triangle",
+    "cotangent": "Ang reciprocal ng tangent function, na tinukoy bilang ratio ng katabi sa tapat na bahagi ng isang right-angled triangle",
+    "trigonometriko pagkakakilanlan": "Isang pagkakapantay-pantay na kinasasangkutan ng mga trigonometric na function na totoo para sa lahat ng mga halaga ng mga variable",
+    "batas ng sines": "Sa isang tatsulok, ang ratio ng haba ng isang gilid sa sine ng kabaligtaran na anggulo nito ay pare-pareho",
+    "batas ng cosine": "Sa isang tatsulok, ang parisukat ng isang panig ay katumbas ng kabuuan ng mga parisukat ng iba pang dalawang panig na binawasan ng dalawang beses ang produkto ng dalawang panig na ito at ang cosine ng kasamang anggulo",
+    "sukat ng radian": "Ang sukat ng isang anggulo sa radians, na siyang ratio ng haba ng isang arko sa radius nito",
+    "angular velocity": "Ang rate ng pagbabago ng isang anggulo na may paggalang sa oras",
+    "haba ng arko": "Ang distansya sa pagitan ng dalawang punto sa isang seksyon ng isang kurba",
+    "sektor": "Ang bahagi ng isang bilog na napapalibutan ng dalawang radii at ang kanilang naharang na arko",
+    "trigonometriko ratio": "Ang ratio ng mga haba ng dalawang panig ng isang tamang tatsulok",
+    "trigonometriko equation": "Isang equation na kinasasangkutan ng isa o ilang trigonometric function ng isang variable"
+}

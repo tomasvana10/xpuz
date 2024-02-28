@@ -1,0 +1,21 @@
+{
+    "harakat": "Vaqt o'tishi bilan ob'ektning holatini o'zgartirish",
+    "tezlashuv": "Tezlikning o'zgarish tezligi",
+    "tezlik": "Ob'ektning tezligi va yo'nalishi",
+    "kuch": "Ishning bajarilish darajasi",
+    "inertsiya": "Ob'ektning harakatdagi o'zgarishlarga qarshilik ko'rsatishga moyilligi",
+    "impuls": "Jismning massasi va tezligining mahsuloti",
+    "tortishish kuchi": "Massali jismlarni bir-biriga tortuvchi kuch",
+    "vazn": "Og'irlik tufayli jismga ta'sir qiladigan kuch",
+    "massa": "Ob'ektdagi moddalar miqdori",
+    "zichligi": "Bir moddaning hajmi birligiga to'g'ri keladigan massa",
+    "ish": "Kuch ob'ektga ta'sir qilganda va harakatlantirganda energiyaning uzatilishi",
+    "energiya": "Ishni bajarish qobiliyati",
+    "kinetik energiya": "Jismning harakati tufayli uning energiyasi",
+    "potentsial energiya": "Ob'ektning joylashuvi yoki konfiguratsiyasi tufayli saqlangan energiya",
+    "ishqalanish": "Aloqada bo'lgan ikki sirt orasidagi harakatga qarshilik ko'rsatadigan kuch",
+    "bosim": "Birlik maydonga ta'sir qiladigan kuch",
+    "atmosfera": "Yer atrofidagi gazlar qatlami",
+    "suzuvchanlik": "Suyuqlikka botgan jismga yuqoriga qarab kuch",
+    "ovoz": "Muhitda to'lqinlar shaklida tarqaladigan energiya shakli"
+}

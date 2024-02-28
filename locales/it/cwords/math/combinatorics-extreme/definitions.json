@@ -1,0 +1,21 @@
+{
+    "combinatoria": "Lo studio del conteggio, della disposizione e della combinazione",
+    "permutazione": "Disposizione degli oggetti in un ordine specifico",
+    "combinazione": "Selezione degli articoli senza considerare l'ordine",
+    "fattoriale": "Prodotto di un numero intero e di tutti i numeri interi sottostanti",
+    "coefficiente binomiale": "Numero di modi per scegliere un sottoinsieme di un insieme",
+    "principio della casella": "Se 'n' articoli vengono inseriti nei contenitori 'm' e n > m, almeno un contenitore deve contenere pi\u00f9 di un articolo",
+    "principio di inclusione ed esclusione": "Per due insiemi finiti qualsiasi, la dimensione della loro unione \u00e8 la somma delle loro dimensioni meno la dimensione della loro intersezione",
+    "prodotto cartesiano": "Prodotto di pi\u00f9 insiemi, risultante nell'insieme di tutte le coppie ordinate",
+    "insieme di potenza": "Insieme di tutti i sottoinsiemi di un insieme",
+    "partizione": "Divisione di un insieme in sottoinsiemi non sovrapposti",
+    "numero del campanello": "Numero di modi per partizionare un set",
+    "numero di stirling": "Numero di modi per suddividere un insieme in sottoinsiemi non vuoti",
+    "numero catalano": "Numero di determinati tipi di percorsi reticolari, permutazioni, alberi binari, ecc",
+    "impostato": "Una raccolta di oggetti distinti, considerati come un oggetto a s\u00e9 stante",
+    "sottoinsieme": "Un insieme che contiene solo elementi trovati in un determinato altro insieme",
+    "unione": "L'insieme di tutti gli elementi distinti in tutti gli insiemi dati",
+    "intersezione": "L'insieme di tutti gli elementi che appartengono a tutti gli insiemi dati",
+    "differenza": "L'insieme di tutti gli elementi di un insieme che non si trovano in un altro insieme",
+    "complemento": "L'insieme di tutti gli elementi che non appartengono ad un dato insieme"
+}

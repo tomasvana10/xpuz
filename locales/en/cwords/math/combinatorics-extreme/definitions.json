@@ -1,0 +1,21 @@
+{
+    "combinatorics": "The study of counting, arrangement, and combination",
+    "permutation": "Arrangement of objects in a specific order",
+    "combination": "Selection of items without considering the order",
+    "factorial": "Product of an integer and all integers below it",
+    "binomial coefficient": "Number of ways to choose a subset of a set",
+    "pigeonhole principle": "If 'n' items are put into 'm' containers and n > m, then at least one container must contain more than one item",
+    "inclusion exclusion principle": "For any two finite sets, the size of their union is the sum of their sizes minus the size of their intersection",
+    "cartesian product": "Product of multiple sets, resulting in set of all ordered pairs",
+    "power set": "Set of all subsets of a set",
+    "partition": "A division of a set into non-overlapping subsets",
+    "bell number": "Number of ways to partition a set",
+    "stirling number": "Number of ways to partition a set into non-empty subsets",
+    "catalan number": "Number of certain types of lattice paths, permutations, binary trees, etc",
+    "set": "A collection of distinct objects, considered as an object in its own right",
+    "subset": "A set that contains only elements found in a certain other set",
+    "union": "The set of all distinct elements in all given sets",
+    "intersection": "The set of all elements that are in all given sets",
+    "difference": "The set of all elements in one set that are not in another set",
+    "complement": "The set of all elements not in a given set"
+}

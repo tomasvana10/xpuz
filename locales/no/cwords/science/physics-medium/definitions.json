@@ -1,0 +1,21 @@
+{
+    "bevegelse": "Endring i posisjon til et objekt over tid",
+    "akselerasjon": "Hastighetsendring av hastighet",
+    "hastighet": "Hastighet og retning for et objekt",
+    "makt": "Sats som arbeidet utf\u00f8res med",
+    "treghet": "Et objekts tendens til \u00e5 motst\u00e5 endringer i bevegelse",
+    "momentum": "Produkt av masse og hastighet til et objekt",
+    "gravitasjon": "Kraft som tiltrekker gjenstander med masse mot hverandre",
+    "vekt": "Kraft som ut\u00f8ves p\u00e5 et objekt p\u00e5 grunn av tyngdekraften",
+    "masse": "Mengde materie i en gjenstand",
+    "tetthet": "Masse per volumenhet av et stoff",
+    "arbeid": "Overf\u00f8ring av energi n\u00e5r en kraft virker p\u00e5 og beveger et objekt",
+    "energi": "Evne til \u00e5 utf\u00f8re arbeid",
+    "kinetisk energi": "Energi til et objekt p\u00e5 grunn av dets bevegelse",
+    "potensiell energi": "Lagret energi p\u00e5 grunn av et objekts posisjon eller konfigurasjon",
+    "friksjon": "Kraft som motsetter bevegelse mellom to flater i kontakt",
+    "press": "Kraft som ut\u00f8ves per arealenhet",
+    "atmosf\u00e6re": "Lag av gasser rundt jorden",
+    "oppdrift": "Kraft oppover p\u00e5 en gjenstand nedsenket i en v\u00e6ske",
+    "lyd": "Form for energi som beveger seg som b\u00f8lger gjennom et medium"
+}

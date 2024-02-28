@@ -1,0 +1,19 @@
+{
+    "plazma": "Vielas st\u0101voklis, kas sast\u0101v no l\u0101d\u0113t\u0101m da\u013ci\u0146\u0101m (joniem un elektroniem)",
+    "jonu": "Saite, kas veidojas pievilk\u0161an\u0101s rezult\u0101t\u0101 starp pret\u0113ji l\u0101d\u0113tiem joniem",
+    "kovalents": "Saite veidojas, daloties elektroniem starp atomiem",
+    "met\u0101lisks": "Saite, kas veidojas, piesaistot pozit\u012bvajiem met\u0101la katjoniem un delokaliz\u0113tiem elektroniem",
+    "balans\u0113\u0161anas vien\u0101dojums": "\u0136\u012bmiskais vien\u0101dojums ar vien\u0101du atomu skaitu katram elementam ab\u0101s pus\u0113s",
+    "kurmis": "Vien\u012bba, ko izmanto vielas daudzuma m\u0113r\u012b\u0161anai (Avogadro da\u013ci\u0146u skaits)",
+    "masas skaitlis": "Protonu un neitronu summa atoma kodol\u0101",
+    "atomskaitlis": "Protonu skaits atoma kodol\u0101 (nosaka elementa identit\u0101ti)",
+    "izotops": "Viena un t\u0101 pa\u0161a elementa atomi ar da\u017e\u0101du neitronu skaitu",
+    "oksid\u0113\u0161an\u0101s": "Elektronu zudums no atoma vai molekulas",
+    "samazin\u0101\u0161ana": "Elektronu pieaugums ar atomu vai molekulu",
+    "redokss": "\u0136\u012bmisk\u0101 reakcija, kas ietver gan oksid\u0101cijas, gan reduc\u0113\u0161anas procesus",
+    "aktiviz\u0101cijas ener\u0123ija": "Minim\u0101l\u0101 ener\u0123ija, kas nepiecie\u0161ama \u0137\u012bmiskai reakcijai",
+    "katalizators": "Viela, kas palielina \u0137\u012bmisk\u0101s reakcijas \u0101trumu, to nelietojot",
+    "termodinamika": "\u0136\u012bmijas nozare, kas saist\u012bta ar siltumu, darbu, temperat\u016bru un ener\u0123iju",
+    "endotermisks": "\u0136\u012bmisk\u0101 reakcija, kas absorb\u0113 siltumu no apk\u0101rt\u0113j\u0101s vides",
+    "eksotermisks": "\u0136\u012bmisk\u0101 reakcija, kas izdala siltumu apk\u0101rt\u0113j\u0101 vid\u0113"
+}

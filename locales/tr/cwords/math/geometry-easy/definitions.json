@@ -1,0 +1,18 @@
+{
+    "a\u00e7\u0131": "Bir k\u00f6\u015fe olu\u015fturmak i\u00e7in bulu\u015fan iki \u00e7izgi",
+    "uyumlu": "Boyut ve \u015fekil olarak ayn\u0131",
+    "kenar": "\u0130ki y\u00fcz\u00fcn \u00fc\u00e7 boyutlu bir \u015fekil \u00fczerinde bulu\u015fmas\u0131",
+    "y\u00fcz": "\u00dc\u00e7 boyutlu \u015fekillerin y\u00fczey d\u00fczlemleri",
+    "e\u015fkenar": "Ayn\u0131 uzunluktaki kenarlar",
+    "paralel": "\u0130ki boyutlu bir uzayda birbiriyle \u00f6rt\u00fc\u015fmeyen iki \u00e7izgi",
+    "u\u00e7ak": "\u00dczerinde iki boyutlu nesnelerin uzanabilece\u011fi iki boyutlu d\u00fcz bir y\u00fczey",
+    "nokta": "Bir \u00e7izgi, d\u00fczlem veya uzayda belirli bir konum",
+    "taraf": "Nesnenin d\u0131\u015f\u0131n\u0131 olu\u015fturan geometrik \u015fekillerdeki \u00e7izgi par\u00e7alar\u0131",
+    "d\u00fcmd\u00fcz": "E\u011fri olmadan",
+    "tepe noktas\u0131": "\u0130ki boyutlu bir \u015feklin iki taraf\u0131n\u0131n veya \u00fc\u00e7 boyutlu bir \u015feklin iki kenar\u0131n\u0131n bulu\u015ftu\u011fu nokta",
+    "daire": "E\u011fri \u00e7izgi \u00fczerindeki t\u00fcm noktalar\u0131n merkez noktadan e\u015fit uzakl\u0131kta oldu\u011fu iki boyutlu \u015fekil",
+    "\u00fc\u00e7gen": "\u00dc\u00e7 taraf\u0131 kapal\u0131 bir \u015fekil",
+    "dikd\u00f6rtgen": "D\u00f6rt dik a\u00e7\u0131l\u0131, iki boyutlu, kapal\u0131, d\u00f6rt kenarl\u0131 bir \u015fekil",
+    "kare": "E\u015fkenar kenarlar\u0131 ve kar\u015f\u0131l\u0131kl\u0131 kenarlar\u0131 paralel olan \u00f6zel bir dikd\u00f6rtgen t\u00fcr\u00fc",
+    "k\u00fcp": "Y\u00fczlerle ayn\u0131 e\u015fkenar karelere sahip \u00fc\u00e7 boyutlu bir \u015fekil"
+}

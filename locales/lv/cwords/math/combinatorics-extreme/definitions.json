@@ -1,0 +1,21 @@
+{
+    "kombinatorika": "Skait\u012b\u0161anas, sak\u0101rto\u0161anas un kombin\u0113\u0161anas m\u0101c\u012bba",
+    "permut\u0101cija": "Objektu izk\u0101rtojums noteikt\u0101 sec\u012bb\u0101",
+    "kombin\u0101cija": "Pre\u010du izv\u0113le, ne\u0146emot v\u0113r\u0101 pas\u016bt\u012bjumu",
+    "faktori\u0101ls": "Produkts no vesela skait\u013ca un visiem veseliem skait\u013ciem zem t\u0101",
+    "binomi\u0101lais koeficients": "Veidu skaits, k\u0101 izv\u0113l\u0113ties kopas apak\u0161kopu",
+    "balo\u017eu cauruma princips": "Ja \u201cn\u201d vien\u012bbas ir ievietotas \u201cm\u201d konteineros un n\u00a0> m, tad vismaz vien\u0101 konteiner\u0101 ir j\u0101b\u016bt vair\u0101k nek\u0101 vienai vien\u012bbai.",
+    "iek\u013cau\u0161anas izsl\u0113g\u0161anas princips": "Jebkur\u0101m div\u0101m ierobe\u017eot\u0101m kop\u0101m to savienojuma lielums ir to izm\u0113ru summa, no kuras at\u0146emtas to krustpunkta lielums",
+    "Dekarta produkts": "Vair\u0101ku komplektu produkts, k\u0101 rezult\u0101t\u0101 tiek ieg\u016bts visu pas\u016bt\u012bto p\u0101ru komplekts",
+    "jaudas komplekts": "Visu kopas apak\u0161kopu kopa",
+    "nodal\u012bjums": "Kopas dal\u012bjums apak\u0161kop\u0101s, kas nep\u0101rkl\u0101jas",
+    "zvana numurs": "Kopas sadal\u012b\u0161anas veidu skaits",
+    "Stirlinga numurs": "To veidu skaits, k\u0101 sadal\u012bt kopu apak\u0161kop\u0101s, kas nav tuk\u0161as",
+    "katal\u0101\u0146u numurs": "Da\u017eu veidu re\u017e\u0123a ce\u013cu skaits, permut\u0101cijas, bin\u0101rie koki utt",
+    "komplekts": "At\u0161\u0137ir\u012bgu objektu kolekcija, kas tiek uzskat\u012bta par atsevi\u0161\u0137u objektu",
+    "apak\u0161kopa": "Kopa, kur\u0101 ir tikai elementi, kas atrodami noteikt\u0101 cit\u0101 kop\u0101",
+    "savien\u012bba": "Visu at\u0161\u0137ir\u012bgo elementu kopa vis\u0101s dotaj\u0101s kop\u0101s",
+    "krustojums": "Visu elementu kopa, kas atrodas vis\u0101s dotaj\u0101s kop\u0101s",
+    "at\u0161\u0137ir\u012bba": "Visu elementu kopa vien\u0101 kop\u0101, kas nav cit\u0101 kop\u0101",
+    "papildin\u0101t": "Visu elementu kopa, kas nav dotaj\u0101 kop\u0101"
+}

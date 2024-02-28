@@ -1,0 +1,19 @@
+{
+    "plasma": "Hali ya jambo inayojumuisha chembe zilizochajiwa (ioni na elektroni)",
+    "ionic": "Mshikamano unaoundwa na mvuto kati ya ioni zilizochajiwa kinyume",
+    "covalent": "Mshikamano unaoundwa kwa kugawana elektroni kati ya atomi",
+    "metali": "Dhamana inayoundwa na mvuto kati ya kao chanya za chuma na elektroni zilizotengwa",
+    "kusawazisha equation": "Mlinganyo wa kemikali wenye idadi sawa ya atomi za kila kipengele pande zote mbili",
+    "mole": "Kipimo kinachotumika kupima kiasi cha dutu (idadi ya chembe za Avogadro)",
+    "idadi ya wingi": "Jumla ya protoni na neutroni katika kiini cha atomi",
+    "nambari ya atomiki": "Idadi ya protoni kwenye kiini cha atomi (huamua utambulisho wa kipengele)",
+    "isotopu": "Atomi za kipengele sawa na nambari tofauti za neutroni",
+    "oxidation": "Kupoteza elektroni kutoka kwa atomi au molekuli",
+    "kupunguza": "Faida ya elektroni kwa atomi au molekuli",
+    "redox": "Mwitikio wa kemikali unaohusisha michakato ya oxidation na kupunguza",
+    "nishati ya uanzishaji": "Kiwango cha chini cha nishati kinachohitajika kwa mmenyuko wa kemikali kutokea",
+    "kichocheo": "Dawa inayoongeza kasi ya mmenyuko wa kemikali bila kuliwa",
+    "thermodynamics": "Tawi la kemia linalohusika na joto, kazi, halijoto na nishati",
+    "endothermic": "Mwitikio wa kemikali ambao huchukua joto kutoka kwa mazingira",
+    "exothermic": "Mwitikio wa kemikali ambao hutoa joto kwa mazingira"
+}

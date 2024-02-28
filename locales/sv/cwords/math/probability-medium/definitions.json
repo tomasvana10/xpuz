@@ -1,0 +1,11 @@
+{
+    "sannolikhet": "M\u00e5tt p\u00e5 sannolikheten att en h\u00e4ndelse intr\u00e4ffar",
+    "provutrymmet": "Upps\u00e4ttningen av alla m\u00f6jliga utfall av ett sannolikhetsexperiment",
+    "h\u00e4ndelse": "En upps\u00e4ttning utfall som en sannolikhet tilldelas",
+    "resultat": "Ett m\u00f6jligt resultat av ett sannolikhetsexperiment",
+    "genomsnitt": "Summan av v\u00e4rden dividerat med antalet v\u00e4rden",
+    "slumpm\u00e4ssigt experiment": "En process d\u00e4r resultatet inte \u00e4r k\u00e4nt f\u00f6rr\u00e4n det observeras",
+    "om\u00f6jlig": "En h\u00e4ndelse utan chans att intr\u00e4ffa",
+    "slumpm\u00e4ssig": "Styrs av eller inneb\u00e4r lika chanser f\u00f6r varje f\u00f6rem\u00e5l",
+    "prov": "En delm\u00e4ngd av en befolkning"
+}

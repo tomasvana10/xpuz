@@ -276,6 +276,12 @@ msgstr "极端"
 msgid "Geography"
 msgstr "地理"
 
+msgid "Math"
+msgstr "数学"
+
+msgid "Science"
+msgstr "科学"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -306,3 +312,6 @@ msgstr "地理"
 
 #~ msgid "Geography"
 #~ msgstr "地理"
+
+#~ msgid "Science"
+#~ msgstr "尺寸"

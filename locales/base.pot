@@ -257,3 +257,9 @@ msgstr ""
 
 msgid "Geography"
 msgstr ""
+
+msgid "Math"
+msgstr ""
+
+msgid "Science"
+msgstr ""

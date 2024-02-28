@@ -284,6 +284,12 @@ msgstr "Ekstreem"
 msgid "Geography"
 msgstr "Aardrykskunde"
 
+msgid "Math"
+msgstr "Wiskunde"
+
+msgid "Science"
+msgstr "Wetenskap"
+
 #~ msgid "Capitals"
 #~ msgstr "Hoofletters"
 
@@ -304,3 +310,6 @@ msgstr "Aardrykskunde"
 
 #~ msgid "Geography"
 #~ msgstr "Aardrykskunde"
+
+#~ msgid "Science"
+#~ msgstr "Grootte"

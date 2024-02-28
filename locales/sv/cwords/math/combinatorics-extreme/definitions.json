@@ -1,0 +1,21 @@
+{
+    "kombinatorik": "Studiet av r\u00e4kning, arrangemang och kombination",
+    "permutation": "Ordning av objekt i en specifik ordning",
+    "kombination": "Val av artiklar utan h\u00e4nsyn till best\u00e4llningen",
+    "faktoriellt": "Produkt av ett heltal och alla heltal under det",
+    "binomial koefficient": "Antal s\u00e4tt att v\u00e4lja en delm\u00e4ngd av en upps\u00e4ttning",
+    "duvh\u00e5lsprincip": "Om 'n' objekt placeras i 'm'-beh\u00e5llare och n > m, m\u00e5ste minst en beh\u00e5llare inneh\u00e5lla mer \u00e4n en artikel",
+    "principen om uteslutning av inkludering": "F\u00f6r tv\u00e5 \u00e4ndliga m\u00e4ngder \u00e4r storleken p\u00e5 deras f\u00f6rening summan av deras storlekar minus storleken p\u00e5 deras sk\u00e4rningspunkt",
+    "kartesisk produkt": "Produkt av flera upps\u00e4ttningar, vilket resulterar i en upps\u00e4ttning av alla best\u00e4llda par",
+    "kraftupps\u00e4ttning": "Upps\u00e4ttning av alla delm\u00e4ngder av en upps\u00e4ttning",
+    "dela": "En uppdelning av en m\u00e4ngd i icke-\u00f6verlappande delm\u00e4ngder",
+    "klocknummer": "Antal s\u00e4tt att partitionera en upps\u00e4ttning",
+    "stirling nummer": "Antal s\u00e4tt att dela upp en upps\u00e4ttning i icke-tomma delm\u00e4ngder",
+    "katalanska nummer": "Antal vissa typer av gitterv\u00e4gar, permutationer, bin\u00e4ra tr\u00e4d, etc",
+    "upps\u00e4ttning": "En samling av distinkta f\u00f6rem\u00e5l, betraktade som ett f\u00f6rem\u00e5l i sig",
+    "delm\u00e4ngd": "En upps\u00e4ttning som bara inneh\u00e5ller element som finns i en viss annan upps\u00e4ttning",
+    "union": "Upps\u00e4ttningen av alla distinkta element i alla givna upps\u00e4ttningar",
+    "genomsk\u00e4rning": "Upps\u00e4ttningen av alla element som finns i alla givna upps\u00e4ttningar",
+    "skillnad": "Upps\u00e4ttningen av alla element i en upps\u00e4ttning som inte finns i en annan upps\u00e4ttning",
+    "komplement": "Upps\u00e4ttningen av alla element som inte ing\u00e5r i en given upps\u00e4ttning"
+}

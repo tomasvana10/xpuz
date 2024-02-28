@@ -1,0 +1,19 @@
+{
+    "plazma": "Agregatno stanje koje se sastoji od nabijenih \u010destica (iona i elektrona)",
+    "ionski": "Veza nastala privla\u010denjem izme\u0111u suprotno nabijenih iona",
+    "kovalentni": "Veza nastala dijeljenjem elektrona izme\u0111u atoma",
+    "metalik": "Veza nastala privla\u010denjem izme\u0111u pozitivnih metalnih kationa i delokaliziranih elektrona",
+    "ravnote\u017ena jednad\u017eba": "Kemijska jednad\u017eba s jednakim brojem atoma svakog elementa na obje strane",
+    "made\u017e": "Jedinica koja se koristi za mjerenje koli\u010dine tvari (Avogadrov broj \u010destica)",
+    "maseni broj": "Zbroj protona i neutrona u jezgri atoma",
+    "atomski broj": "Broj protona u jezgri atoma (odre\u0111uje identitet elementa)",
+    "izotop": "Atomi istog elementa s razli\u010ditim brojem neutrona",
+    "oksidacija": "Gubitak elektrona iz atoma ili molekule",
+    "smanjenje": "Dobivanje elektrona atomom ili molekulom",
+    "redoks": "Kemijska reakcija koja uklju\u010duje procese oksidacije i redukcije",
+    "energija aktivacije": "Minimalna energija potrebna za odvijanje kemijske reakcije",
+    "katalizator": "Tvar koja pove\u0107ava brzinu kemijske reakcije bez konzumiranja",
+    "termodinamika": "Grana kemije koja se bavi toplinom, radom, temperaturom i energijom",
+    "endotermi\u010dki": "Kemijska reakcija koja apsorbira toplinu iz okoline",
+    "egzotermna": "Kemijska reakcija koja osloba\u0111a toplinu u okolinu"
+}

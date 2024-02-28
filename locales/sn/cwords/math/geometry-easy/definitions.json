@@ -1,0 +1,18 @@
+{
+    "angle": "Mitsetse miviri inosangana kuita kona",
+    "conngruent": "Kufanana muhukuru uye chimiro",
+    "kumucheto": "Kusangana kwezviso zviviri pachimiro chetatu-dimensional",
+    "face": "Ndege dzepamusoro dzematatu-dimensional maumbirwo",
+    "equilateral": "Mativi ane hurefu hwakafanana",
+    "parallel": "Mitsetse miviri munzvimbo ine mativi maviri isingasangane",
+    "ndege": "Nzvimbo yakati sandara ine mativi maviri panogona kuzvambarara zvinhu zvine mativi maviri",
+    "point": "Nzvimbo chaiyo pamutsetse, ndege, kana muchadenga",
+    "side": "Mitsetse zvikamu muzvikamu zvejometri zvinoumba kunze kwechinhu",
+    "straight": "Pasina curve",
+    "vertex": "Nzvimbo panosangana mativi maviri echiumbwa chine mativi maviri kana mipendero miviri yemufananidzo une mativi matatu.",
+    "denderedzwa": "Chimiro chemativi maviri umo mapoinzi ese pamutsetse wakakomberedzwa akaenzana kubva panzvimbo yepakati.",
+    "triangle": "Chimiro chakavharwa chine mativi matatu",
+    "rectangle": "A maviri-dimensional, akavharwa, mana-mativi chimiro chine makona mana ekurudyi",
+    "square": "Rudzi rwakakosha rwerectangle ine mativi akaenzana uye mativi akatarisana akapesana",
+    "cube": "Chimiro chine mativi matatu ane masikweya akafanana sezviso"
+}

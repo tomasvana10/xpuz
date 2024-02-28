@@ -1,0 +1,11 @@
+{
+    "vjerojatnost": "Mjera vjerojatnosti da \u0107e se doga\u0111aj dogoditi",
+    "uzorak prostora": "Skup svih mogu\u0107ih ishoda eksperimenta vjerojatnosti",
+    "doga\u0111aj": "Skup ishoda kojima je dodijeljena vjerojatnost",
+    "ishod": "Mogu\u0107i rezultat pokusa vjerojatnosti",
+    "prosjek": "Zbroj vrijednosti podijeljen brojem vrijednosti",
+    "slu\u010dajni eksperiment": "Proces u kojem ishod nije poznat dok se ne promatra",
+    "nemogu\u0107e": "Doga\u0111aj za koji nema \u0161anse da se dogodi",
+    "slu\u010dajan": "Upravlja ili uklju\u010duje jednake \u0161anse za svaku stavku",
+    "uzorak": "Podskup populacije"
+}

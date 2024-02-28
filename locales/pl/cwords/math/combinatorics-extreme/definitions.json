@@ -1,0 +1,21 @@
+{
+    "kombinatoryka": "Nauka liczenia, uk\u0142adania i \u0142\u0105czenia",
+    "permutacja": "Uk\u0142adanie obiekt\u00f3w w okre\u015blonej kolejno\u015bci",
+    "po\u0142\u0105czenie": "Wyb\u00f3r towaru bez uwzgl\u0119dnienia zam\u00f3wienia",
+    "silnia": "Iloczyn liczby ca\u0142kowitej i wszystkich liczb ca\u0142kowitych pod ni\u0105",
+    "wsp\u00f3\u0142czynnik dwumianu": "Liczba sposob\u00f3w wyboru podzbioru zbioru",
+    "zasada szufladki": "Je\u015bli \u201en\u201d artyku\u0142\u00f3w zostanie umieszczonych w \u201em\u201d pojemnikach i n > m, to co najmniej jeden kontener musi zawiera\u0107 wi\u0119cej ni\u017c jeden przedmiot",
+    "zasada wykluczenia w\u0142\u0105czenia": "W przypadku dowolnych dw\u00f3ch sko\u0144czonych zbior\u00f3w rozmiar ich zwi\u0105zku jest sum\u0105 ich rozmiar\u00f3w minus rozmiar ich przeci\u0119cia",
+    "produkt kartezja\u0144ski": "Iloczyn wielu zestaw\u00f3w, w wyniku czego powstaje zbi\u00f3r wszystkich uporz\u0105dkowanych par",
+    "zestaw zasilaj\u0105cy": "Zbi\u00f3r wszystkich podzbior\u00f3w zbioru",
+    "przegroda": "Podzia\u0142 zbioru na niepokrywaj\u0105ce si\u0119 podzbiory",
+    "numer dzwonka": "Liczba sposob\u00f3w podzia\u0142u zbioru",
+    "liczba Stirlinga": "Liczba sposob\u00f3w podzia\u0142u zbioru na niepuste podzbiory",
+    "numer katalo\u0144ski": "Liczba niekt\u00f3rych typ\u00f3w \u015bcie\u017cek sieciowych, permutacji, drzew binarnych itp",
+    "ustawi\u0107": "Zbi\u00f3r odr\u0119bnych obiekt\u00f3w, traktowanych jako obiekt sam w sobie",
+    "podzbi\u00f3r": "Zbi\u00f3r zawieraj\u0105cy tylko elementy znalezione w pewnym innym zestawie",
+    "unia": "Zbi\u00f3r wszystkich odr\u0119bnych element\u00f3w we wszystkich danych zbiorach",
+    "skrzy\u017cowanie": "Zbi\u00f3r wszystkich element\u00f3w znajduj\u0105cych si\u0119 we wszystkich danych zbiorach",
+    "r\u00f3\u017cnica": "Zbi\u00f3r wszystkich element\u00f3w w jednym zestawie, kt\u00f3rych nie ma w innym zestawie",
+    "komplement": "Zbi\u00f3r wszystkich element\u00f3w nie znajduj\u0105cych si\u0119 w danym zbiorze"
+}

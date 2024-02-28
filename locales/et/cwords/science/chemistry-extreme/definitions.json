@@ -1,0 +1,19 @@
+{
+    "plasma": "Laetud osakestest (ioonidest ja elektronidest) koosnev olek",
+    "iooniline": "Vastupidiselt laetud ioonide vahelise t\u00f5mbe m\u00f5jul tekkinud side",
+    "kovalentne": "Side, mis tekib elektronide jagamisel aatomite vahel",
+    "metallist": "Positiivsete metallikatioonide ja delokaliseeritud elektronide vahelise k\u00fclget\u00f5mbe tulemusena moodustuv side",
+    "tasakaalustav v\u00f5rrand": "Keemiline v\u00f5rrand, mille m\u00f5lemal k\u00fcljel on v\u00f5rdne arv aatomeid",
+    "s\u00fcnnim\u00e4rk": "Aine koguse m\u00f5\u00f5tmiseks kasutatav \u00fchik (Avogadro osakeste arv)",
+    "massiarv": "Prootonite ja neutronite summa aatomi tuumas",
+    "aatomnumber": "Prootonite arv aatomi tuumas (m\u00e4\u00e4rab elemendi identiteedi)",
+    "isotoop": "Sama elemendi aatomid erineva neutronite arvuga",
+    "oks\u00fcdatsioon": "Elektronide kadu aatomist v\u00f5i molekulist",
+    "v\u00e4hendamine": "Elektronide v\u00f5imendus aatomi v\u00f5i molekuli poolt",
+    "redoks": "Keemiline reaktsioon, mis h\u00f5lmab nii oks\u00fcdatsiooni kui ka redutseerimisprotsesse",
+    "aktiveerimise energia": "Minimaalne energia, mis on vajalik keemilise reaktsiooni toimumiseks",
+    "katal\u00fcsaator": "Aine, mis suurendab keemilise reaktsiooni kiirust ilma tarbimata",
+    "termod\u00fcnaamika": "Keemia haru, mis on seotud soojuse, t\u00f6\u00f6, temperatuuri ja energiaga",
+    "endotermiline": "Keemiline reaktsioon, mis neelab \u00fcmbritsevast soojust",
+    "eksotermiline": "Keemiline reaktsioon, mis eraldab soojust \u00fcmbritsevasse"
+}

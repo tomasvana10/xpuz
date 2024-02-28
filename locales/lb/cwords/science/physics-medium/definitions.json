@@ -1,0 +1,22 @@
+{
+    "Bewegung": "\u00c4nnerung an der Positioun vun engem Objet iwwer Z\u00e4it",
+    "Beschleunegung": "Taux vun \u00c4nnerung vun Vitesse",
+    "Vitesse": "Geschwindegkeet a Richtung vun engem Objet",
+    "Kraaft": "Push oder z\u00e9ien d\u00e9i d'Bewegung vun engem Objet bewegt oder \u00e4nnert",
+    "Inertie": "Tendenz vun engem Objet fir \u00c4nnerungen an der Bewegung ze widderstoen",
+    "momentum": "Produkt vu Mass a Geschwindegkeet vun engem Objet",
+    "Schw\u00e9ierkraaft": "Kraaft d\u00e9i Objete mat Mass openeen unzitt",
+    "Gewiicht": "Kraaft op en Objet ausge\u00fcbt w\u00e9inst der Schw\u00e9ierkraaft",
+    "mass": "Betrag vun der Mati\u00e8re an engem Objet",
+    "Dicht": "Mass pro Eenheet Volume vun enger Substanz",
+    "schaffen": "Energietransfer wann eng Kraaft op en Objet handelt a bewegt",
+    "Energie": "F\u00e4egkeet Aarbecht ze maachen",
+    "kinetesch Energie": "Energie vun engem Objet w\u00e9inst senger Bewegung",
+    "potenziell Energie": "Gesp\u00e4ichert Energie w\u00e9inst der Positioun oder Konfiguratioun vun engem Objet",
+    "Muecht": "Taux bei deem d'Aarbecht gemaach g\u00ebtt",
+    "Reiwung": "Kraaft d\u00e9i g\u00e9int Bewegung t\u00ebscht zwou Fl\u00e4chen a Kontakt ass",
+    "Drock": "Kraaft ausge\u00fcbt pro Eenheet Ber\u00e4ich",
+    "Atmosph\u00e4r": "Schicht vu Gase ronder\u00ebm d'\u00c4erd",
+    "buoyancy": "Upward Kraaft op en Objet deen an enger Fl\u00ebssegkeet \u00ebnnergeet ass",
+    "kl\u00e9ngt": "Form vun Energie d\u00e9i als Wellen duerch e Medium reest"
+}

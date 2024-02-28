@@ -1,0 +1,19 @@
+{
+    "plasma": "Mamiriro ezvinhu anosanganisira zvikamu zvinochajiswa (maion uye maerekitironi)",
+    "ionic": "Bond inoumbwa nekukwezva pakati pemaion anochajiswa",
+    "covalent": "Bond inoumbwa nekugovana maerekitironi pakati peatomu",
+    "metallic": "Bond inoumbwa nekukwezva pakati yakanaka simbi cations uye delocalised maerekitironi",
+    "balancing equation": "Chemical equation ine maatomu akaenzana echinhu chimwe nechimwe kumativi ese",
+    "mole": "Chikamu chinoshandiswa kuyera huwandu hwechinhu (nhamba yeAvogadro yezvikamu)",
+    "nhamba yakawanda": "Huwandu hwemapurotoni nemanyuturoni mumukati meatomu",
+    "nhamba yeatomu": "Nhamba yemapurotoni ari mukati meatomu (inosarudza kuzivikanwa kwechinhu)",
+    "isotope": "Maatomu echinhu chimwechete ane nhamba dzakasiyana dzemanyuturoni",
+    "oxidation": "Kurasikirwa kwemaerekitironi kubva paatomu kana molecule",
+    "kuderedza": "Kuwana maerekitironi neatomu kana molecule",
+    "redox": "Chemical reaction inosanganisira zvese oxidation uye kuderedza maitiro",
+    "activation simba": "Simba shoma rinodiwa kuti kemikari iite",
+    "catalyst": "Chinhu chinowedzera chiyero chekuita kwemakemikari pasina kudyiwa",
+    "thermodynamics": "Bazi rekemikari rine chekuita nekupisa, basa, tembiricha, uye simba",
+    "endothermic": "Chemical reaction inotora kupisa kubva kune zvakatenderedza",
+    "exothermic": "Chemical reaction inoburitsa kupisa kune zvakatenderedza"
+}

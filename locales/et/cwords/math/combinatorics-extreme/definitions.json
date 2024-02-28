@@ -1,0 +1,21 @@
+{
+    "kombinatoorika": "Loendamise, paigutuse ja kombineerimise uurimine",
+    "permutatsioon": "Objektide paigutus kindlas j\u00e4rjekorras",
+    "kombinatsioon": "Kaupade valik tellimust arvestamata",
+    "faktoriaalne": "T\u00e4isarvu ja k\u00f5igi selle all olevate t\u00e4isarvude korrutis",
+    "binoomkoefitsient": "V\u00f5imaluste arv komplekti alamhulga valimiseks",
+    "tuviaugu p\u00f5him\u00f5te": "Kui 'n' \u00fcksust pannakse 'm' konteineritesse ja n > m, peab v\u00e4hemalt \u00fches konteineris olema rohkem kui \u00fcks \u00fcksus",
+    "kaasamise v\u00e4listamise p\u00f5him\u00f5te": "Kahe l\u00f5pliku hulga puhul on nende \u00fchenduse suurus nende suuruste summa miinus nende ristumiskoha suurus",
+    "karteesia toode": "Mitme komplekti toode, mille tulemuseks on k\u00f5igi tellitud paaride komplekt",
+    "v\u00f5imsuskomplekt": "Hulga k\u00f5igi alamhulkade hulk",
+    "vahesein": "Hulga jagamine mittekattuvateks alamhulkadeks",
+    "kella number": "Komplekti jaotamise viiside arv",
+    "segav number": "V\u00f5imaluste arv komplekti jagamiseks mittet\u00fchjadeks alamhulkadeks",
+    "katalaani number": "Teatud t\u00fc\u00fcpi v\u00f5reteede, permutatsioonide, kahendpuude jne arv",
+    "seatud": "Erinevate objektide kogum, mida peetakse omaette objektiks",
+    "alamhulk": "Hulk, mis sisaldab ainult teatud teises komplektis leiduvaid elemente",
+    "liit": "K\u00f5igi erinevate elementide hulk k\u00f5igis antud komplektides",
+    "ristmik": "K\u00f5igi elementide hulk, mis on k\u00f5igis antud komplektides",
+    "erinevus": "K\u00f5igi \u00fches komplektis olevate elementide hulk, mida teises komplektis ei ole",
+    "t\u00e4iendada": "K\u00f5igi elementide hulk, mis ei kuulu antud hulka"
+}

@@ -1,0 +1,21 @@
+{
+    "kombinatorika": "\u0160t\u00fadium po\u010d\u00edtania, usporiadania a kombinovania",
+    "permut\u00e1cia": "Usporiadanie predmetov v ur\u010ditom porad\u00ed",
+    "kombin\u00e1cia": "V\u00fdber tovaru bez zoh\u013eadnenia objedn\u00e1vky",
+    "faktori\u00e1l": "S\u00fa\u010din cel\u00e9ho \u010d\u00edsla a v\u0161etk\u00fdch cel\u00fdch \u010d\u00edsel pod n\u00edm",
+    "binomick\u00fd koeficient": "Po\u010det sp\u00f4sobov, ako vybra\u0165 podmno\u017einu mno\u017einy",
+    "princ\u00edp za\u0161katu\u013ekovania": "Ak sa polo\u017eky \u201en\u201c vlo\u017eia do kontajnerov \u201em\u201c a n > m, potom aspo\u0148 jeden kontajner mus\u00ed obsahova\u0165 viac ako jednu polo\u017eku",
+    "princ\u00edp inkl\u00fazie a vyl\u00fa\u010denia": "Pre ak\u00e9ko\u013evek dve kone\u010dn\u00e9 mno\u017einy je ve\u013ekos\u0165 ich spojenia s\u00fa\u010dtom ich ve\u013ekost\u00ed m\u00ednus ve\u013ekos\u0165 ich priese\u010dn\u00edka",
+    "kartezi\u00e1nsky s\u00fa\u010din": "S\u00fa\u010din viacer\u00fdch s\u00e1d, v\u00fdsledkom \u010doho je sada v\u0161etk\u00fdch objednan\u00fdch p\u00e1rov",
+    "nap\u00e1jac\u00ed set": "Mno\u017eina v\u0161etk\u00fdch podmno\u017e\u00edn mno\u017einy",
+    "oddiel": "Rozdelenie mno\u017einy na neprekr\u00fdvaj\u00face sa podmno\u017einy",
+    "\u010d\u00edslo zvon\u010deka": "Po\u010det sp\u00f4sobov, ako rozdeli\u0165 sadu",
+    "stirlingovo \u010d\u00edslo": "Po\u010det sp\u00f4sobov, ako rozdeli\u0165 mno\u017einu na nepr\u00e1zdne podmno\u017einy",
+    "katal\u00e1nske \u010d\u00edslo": "Po\u010det ur\u010dit\u00fdch typov mrie\u017ekov\u00fdch dr\u00e1h, permut\u00e1ci\u00ed, bin\u00e1rnych stromov at\u010f",
+    "nastavi\u0165": "S\u00fabor odli\u0161n\u00fdch predmetov pova\u017eovan\u00fdch za samostatn\u00fd objekt",
+    "podmno\u017eina": "Mno\u017eina, ktor\u00e1 obsahuje iba prvky nach\u00e1dzaj\u00face sa v ur\u010ditej inej mno\u017eine",
+    "\u00fanie": "Mno\u017eina v\u0161etk\u00fdch odli\u0161n\u00fdch prvkov vo v\u0161etk\u00fdch dan\u00fdch mno\u017ein\u00e1ch",
+    "kri\u017eovatka": "Mno\u017eina v\u0161etk\u00fdch prvkov, ktor\u00e9 s\u00fa vo v\u0161etk\u00fdch dan\u00fdch mno\u017ein\u00e1ch",
+    "rozdiel": "S\u00fabor v\u0161etk\u00fdch prvkov v jednej mno\u017eine, ktor\u00e9 nie s\u00fa v inej mno\u017eine",
+    "dop\u013a\u0148a\u0165": "Mno\u017eina v\u0161etk\u00fdch prvkov, ktor\u00e9 nie s\u00fa v danej mno\u017eine"
+}

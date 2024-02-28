@@ -1,0 +1,19 @@
+{
+    "plazma": "Agregatno stanje, sestavljeno iz nabitih delcev (ionov in elektronov)",
+    "ionski": "Vez, ki nastane zaradi privla\u010dnosti med nasprotno nabitimi ioni",
+    "kovalentna": "Vez, ki nastane z delitvijo elektronov med atomi",
+    "kovinski": "Vez, ki nastane zaradi privla\u010dnosti med pozitivnimi kovinskimi kationi in delokaliziranimi elektroni",
+    "izravnalna ena\u010dba": "Kemijska ena\u010dba z enakim \u0161tevilom atomov vsakega elementa na obeh straneh",
+    "Krt": "Enota za merjenje koli\u010dine snovi (Avogadrovo \u0161tevilo delcev)",
+    "masno \u0161tevilo": "Vsota protonov in nevtronov v atomskem jedru",
+    "atomsko \u0161tevilo": "\u0160tevilo protonov v atomskem jedru (dolo\u010da identiteto elementa)",
+    "izotop": "Atomi istega elementa z razli\u010dnim \u0161tevilom nevtronov",
+    "oksidacijo": "Izguba elektronov iz atoma ali molekule",
+    "zmanj\u0161anje": "Pridobitev elektronov z atomom ali molekulo",
+    "redoks": "Kemi\u010dna reakcija, ki vklju\u010duje procese oksidacije in redukcije",
+    "aktivacijska energija": "Minimalna energija, potrebna za potek kemi\u010dne reakcije",
+    "katalizator": "Snov, ki pove\u010da hitrost kemi\u010dne reakcije, ne da bi jo porabili",
+    "termodinamika": "Veja kemije, ki se ukvarja s toploto, delom, temperaturo in energijo",
+    "endotermna": "Kemi\u010dna reakcija, ki absorbira toploto iz okolice",
+    "eksotermna": "Kemi\u010dna reakcija, ki spro\u0161\u010da toploto v okolico"
+}

@@ -1,0 +1,22 @@
+{
+    "liikett\u00e4": "Objektin sijainnin muutos ajan my\u00f6t\u00e4",
+    "kiihtyvyys": "Nopeuden muutosnopeus",
+    "nopeus": "Kohteen nopeus ja suunta",
+    "pakottaa": "Ty\u00f6nn\u00e4 tai ved\u00e4, joka siirt\u00e4\u00e4 tai muuttaa kohteen liikett\u00e4",
+    "inertia": "Esineen taipumus vastustaa liikkeen muutoksia",
+    "vauhtia": "Esineen massan ja nopeuden tulo",
+    "painovoima": "Voima, joka houkuttelee massaisia esineit\u00e4 toisiaan kohti",
+    "paino": "Painovoiman vaikutuksesta esineeseen kohdistuva voima",
+    "massa": "Aineen m\u00e4\u00e4r\u00e4 esineess\u00e4",
+    "tiheys": "Massa aineen tilavuusyksikk\u00f6\u00e4 kohti",
+    "tehd\u00e4 ty\u00f6t\u00e4": "Energian siirto, kun voima vaikuttaa esineeseen ja siirt\u00e4\u00e4 sit\u00e4",
+    "energiaa": "Kyky tehd\u00e4 ty\u00f6t\u00e4",
+    "kineettinen energia": "Esineen energia sen liikkeen vuoksi",
+    "Mahdollinen energia": "Varastoitu energia kohteen sijainnin tai konfiguraation vuoksi",
+    "tehoa": "Ty\u00f6n suoritusnopeus",
+    "kitka": "Voima, joka vastustaa liikett\u00e4 kahden kosketuksissa olevan pinnan v\u00e4lill\u00e4",
+    "paine": "K\u00e4ytetty voima pinta-alayksikk\u00f6\u00e4 kohti",
+    "tunnelmaa": "Maata ymp\u00e4r\u00f6iv\u00e4 kaasukerros",
+    "kelluvuus": "Yl\u00f6sp\u00e4in suuntautuva voima nesteeseen upotettuun esineeseen",
+    "\u00e4\u00e4ni": "Energian muoto, joka kulkee aaltoina v\u00e4liaineen l\u00e4pi"
+}

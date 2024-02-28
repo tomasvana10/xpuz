@@ -1,0 +1,18 @@
+{
+    "angolo": "Due linee che si incontrano per formare un angolo",
+    "congruente": "Identico per dimensioni e forma",
+    "bordo": "L'incontro di due volti in una forma tridimensionale",
+    "viso": "Piani di superficie di forme tridimensionali",
+    "equilatero": "Lati della stessa lunghezza",
+    "parallelo": "Due linee in uno spazio bidimensionale che non si incontrano",
+    "aereo": "Una superficie piana bidimensionale su cui possono giacere oggetti bidimensionali",
+    "punto": "Una posizione specifica su una linea, su un piano o nello spazio",
+    "lato": "Segmenti di linea in figure geometriche che compongono l'esterno dell'oggetto",
+    "Dritto": "Senza curva",
+    "vertice": "Il punto in cui si incontrano due lati di una figura bidimensionale o due bordi di una figura tridimensionale",
+    "cerchio": "Una forma bidimensionale in cui tutti i punti sulla linea curva sono equidistanti da un punto centrale",
+    "triangolo": "Una figura chiusa con tre lati",
+    "rettangolo": "Una figura bidimensionale, chiusa, quadrilatera con quattro angoli retti",
+    "piazza": "Un tipo speciale di rettangolo che ha lati equilateri e lati opposti paralleli",
+    "cubo": "Una figura tridimensionale con quadrati equilateri identici come facce"
+}

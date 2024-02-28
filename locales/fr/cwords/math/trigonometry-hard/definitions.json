@@ -1,0 +1,16 @@
+{
+    "trigonom\u00e9trique": "De ou li\u00e9 aux principes de la trigonom\u00e9trie",
+    "fonction": "A quoi sert quelque chose",
+    "angle": "L'espace entre deux lignes ou plans qui se coupent",
+    "adjacent": "Avoir une fronti\u00e8re ou un bord commun",
+    "radian": "Unit\u00e9 d'angle plan \u00e9gale \u00e0 l'angle au centre d'un cercle sous-tendu par un arc de longueur \u00e9gale au rayon",
+    "cercle unitaire": "Un cercle de rayon 1",
+    "sinus": "Le rapport entre la longueur du c\u00f4t\u00e9 oppos\u00e9 \u00e0 l'angle donn\u00e9 et la longueur de l'hypot\u00e9nuse d'un triangle rectangle",
+    "cosinus": "Le rapport du c\u00f4t\u00e9 adjacent \u00e0 l'hypot\u00e9nuse d'un triangle rectangle",
+    "tangente": "Une ligne qui touche une courbe en un seul point",
+    "s\u00e9cante": "Une ligne droite qui coupe une courbe en deux points ou plus",
+    "th\u00e9or\u00e8me de Pythagore": "Une relation fondamentale en g\u00e9om\u00e9trie euclidienne entre les trois c\u00f4t\u00e9s d'un triangle rectangle",
+    "fonction p\u00e9riodique": "Une fonction qui r\u00e9p\u00e8te ses valeurs \u00e0 intervalles ou p\u00e9riodes r\u00e9guli\u00e8res",
+    "amplitude": "Le d\u00e9placement ou la distance maximale d\u00e9plac\u00e9e par un point sur un corps ou une onde vibrante",
+    "mesure de degr\u00e9": "La mesure d'un angle en degr\u00e9s, o\u00f9 un cercle complet est divis\u00e9 en 360 degr\u00e9s"
+}

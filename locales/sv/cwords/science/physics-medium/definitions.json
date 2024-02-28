@@ -1,0 +1,22 @@
+{
+    "r\u00f6relse": "F\u00f6r\u00e4ndring av ett objekts position \u00f6ver tiden",
+    "acceleration": "Hastighetsf\u00f6r\u00e4ndring av hastighet",
+    "hastighet": "Ett f\u00f6rem\u00e5ls hastighet och riktning",
+    "tvinga": "Tryck eller dra som flyttar eller \u00e4ndrar ett objekts r\u00f6relse",
+    "tr\u00f6ghet": "Ett f\u00f6rem\u00e5ls tendens att motst\u00e5 f\u00f6r\u00e4ndringar i r\u00f6relse",
+    "Momentum": "Produkt av ett f\u00f6rem\u00e5ls massa och hastighet",
+    "allvar": "Kraft som attraherar f\u00f6rem\u00e5l med massa mot varandra",
+    "vikt": "Kraft som ut\u00f6vas p\u00e5 ett f\u00f6rem\u00e5l p\u00e5 grund av gravitationen",
+    "massa": "M\u00e4ngden materia i ett f\u00f6rem\u00e5l",
+    "densitet": "Massa per volymenhet av ett \u00e4mne",
+    "arbete": "\u00d6verf\u00f6ring av energi n\u00e4r en kraft verkar p\u00e5 och f\u00f6rflyttar ett f\u00f6rem\u00e5l",
+    "energi": "F\u00f6rm\u00e5ga att utf\u00f6ra arbete",
+    "r\u00f6relseenergi": "Energi hos ett objekt p\u00e5 grund av dess r\u00f6relse",
+    "potentiell energi": "Lagrad energi p\u00e5 grund av ett objekts position eller konfiguration",
+    "kraft": "Takt med vilken arbete utf\u00f6rs",
+    "friktion": "Kraft som motverkar r\u00f6relse mellan tv\u00e5 ytor i kontakt",
+    "tryck": "Kraft som ut\u00f6vas per ytenhet",
+    "atmosf\u00e4r": "Lager av gaser som omger jorden",
+    "b\u00e4righet": "Kraft upp\u00e5t p\u00e5 ett f\u00f6rem\u00e5l neds\u00e4nkt i en v\u00e4tska",
+    "ljud": "Form av energi som f\u00e4rdas som v\u00e5gor genom ett medium"
+}

@@ -1,0 +1,21 @@
+{
+    "combinatoriek": "De studie van tellen, rangschikken en combineren",
+    "permutatie": "Rangschikking van objecten in een specifieke volgorde",
+    "combinatie": "Selectie van artikelen zonder rekening te houden met de bestelling",
+    "faculteit": "Product van een geheel getal en alle gehele getallen daaronder",
+    "binomiale co\u00ebffici\u00ebnt": "Aantal manieren om een subset van een set te kiezen",
+    "duiventilprincipe": "Als 'n' items in 'm'-containers worden geplaatst en n > m, dan moet ten minste \u00e9\u00e9n container meer dan \u00e9\u00e9n item bevatten",
+    "beginsel van insluiting en uitsluiting": "Voor elke twee eindige verzamelingen is de grootte van hun vereniging de som van hun afmetingen minus de grootte van hun snijpunt",
+    "Cartesiaans product": "Product van meerdere sets, resulterend in een set van alle bestelde paren",
+    "vermogen ingesteld": "Verzameling van alle deelverzamelingen van een verzameling",
+    "partitie": "Een verdeling van een set in niet-overlappende subsets",
+    "bel nummer": "Aantal manieren om een set te partitioneren",
+    "Stirling nummer": "Aantal manieren om een set in niet-lege subsets te verdelen",
+    "Catalaans nummer": "Aantal bepaalde soorten roosterpaden, permutaties, binaire bomen, enz",
+    "set": "Een verzameling afzonderlijke objecten, die als een object op zichzelf worden beschouwd",
+    "subgroep": "Een set die alleen elementen bevat die in een bepaalde andere set voorkomen",
+    "unie": "De verzameling van alle afzonderlijke elementen in alle gegeven verzamelingen",
+    "kruispunt": "De verzameling van alle elementen die in alle gegeven verzamelingen voorkomen",
+    "verschil": "De verzameling van alle elementen in de ene set die niet in een andere set voorkomen",
+    "aanvulling": "De verzameling van alle elementen die niet in een bepaalde verzameling voorkomen"
+}

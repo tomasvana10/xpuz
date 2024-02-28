@@ -1,0 +1,15 @@
+{
+    "geometrie complex\u0103": "Studiul structurilor \u0219i construc\u021biilor geometrice care decurg din numerele complexe sau sunt descrise de acestea",
+    "numere complexe": "Numerele de forma a + bi unde a \u0219i b sunt numere reale",
+    "parte real\u0103": "Termenul dintr-un num\u0103r complex care nu con\u021bine unitatea imaginar\u0103 ca factor",
+    "parte imaginar\u0103": "Partea unui num\u0103r complex care are ca factor unitatea imaginar\u0103",
+    "varietati complexe": "Spa\u021bii \u00een geometrie complex\u0103 care sunt generaliz\u0103ri ale curbelor \u0219i suprafe\u021belor",
+    "varietati algebrice complexe": "Spa\u021bii din geometrie complex\u0103 care sunt solu\u021bii ale ecua\u021biilor polinomiale",
+    "construc\u021bii holomorfe": "Construc\u021bii \u00een geometrie complex\u0103 care sunt complex-diferen\u021biabile",
+    "program model minim": "Un program de geometrie complex\u0103 pentru clasificarea variet\u0103\u021bilor complexe \u0219i a variet\u0103\u021bilor algebrice complexe",
+    "spa\u021bii de module": "Spa\u021bii \u00een geometrie complex\u0103 care parametriz\u0103 un tip de obiect geometric",
+    "conjectura calabi": "O presupunere \u00een geometria complex\u0103 dovedit\u0103 de Shing-Tung Yau despre existen\u021ba unui tip special de metric\u0103 pe o varietate complex\u0103",
+    "coresponden\u021ba hitchin-kobayashi": "O coresponden\u021b\u0103 \u00een geometrie complex\u0103 \u00eentre m\u0103nunchiuri de vector holomorf stabil \u0219i solu\u021bii la o anumit\u0103 ecua\u021bie diferen\u021bial\u0103",
+    "coresponden\u021b\u0103 nonabelian hodge": "O coresponden\u021b\u0103 \u00een geometrie complex\u0103 \u00eentre anumite tipuri de variet\u0103\u021bi complexe \u0219i anumite tipuri de structuri algebrice",
+    "metrica kahler-einstein": "Tipuri speciale de metrici pe o varietate complex\u0103 care satisfac o anumit\u0103 condi\u021bie"
+}

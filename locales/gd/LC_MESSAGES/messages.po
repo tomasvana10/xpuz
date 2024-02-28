@@ -292,6 +292,12 @@ msgstr "anabarrach"
 msgid "Geography"
 msgstr "Cruinn-eòlas"
 
+msgid "Math"
+msgstr "Math"
+
+msgid "Science"
+msgstr "Saidheans"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -322,3 +328,6 @@ msgstr "Cruinn-eòlas"
 
 #~ msgid "Geography"
 #~ msgstr "Cruinn-eòlas"
+
+#~ msgid "Science"
+#~ msgstr "Meud"

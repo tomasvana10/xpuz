@@ -1,0 +1,11 @@
+{
+    "probabilidad": "Medida de la probabilidad de que ocurra un evento.",
+    "espacio muestral": "El conjunto de todos los resultados posibles de un experimento de probabilidad.",
+    "evento": "Un conjunto de resultados a los que se les asigna una probabilidad.",
+    "resultado": "Un posible resultado de un experimento de probabilidad.",
+    "promedio": "Suma de valores dividida por n\u00famero de valores",
+    "experimento aleatorio": "Un proceso donde el resultado no se conoce hasta que se observa.",
+    "imposible": "Un evento sin posibilidades de ocurrir.",
+    "aleatorio": "Regido por o que implica oportunidades iguales para cada elemento",
+    "muestra": "Un subconjunto de una poblaci\u00f3n."
+}

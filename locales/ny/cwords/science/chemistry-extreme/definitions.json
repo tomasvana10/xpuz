@@ -1,0 +1,19 @@
+{
+    "plasma": "Mkhalidwe wa zinthu wokhala ndi tinthu tating'onoting'ono (ma ion ndi ma electron)",
+    "ionic": "Mgwirizano wopangidwa ndi kukopa pakati pa ma ions otsutsana",
+    "covalent": "Mgwirizano wopangidwa ndi kugawana ma electron pakati pa ma atomu",
+    "zachitsulo": "Mgwirizano wopangidwa ndi kukopa pakati pa ma cations abwino achitsulo ndi ma elekitironi ochotsedwa",
+    "balancing equation": "Chemical equation yokhala ndi ma atomu ofanana a chinthu chilichonse mbali zonse",
+    "mole": "Chigawo chomwe chimagwiritsidwa ntchito kuyeza kuchuluka kwa chinthu (chiwerengero cha tinthu tating'ono ta Avogadro)",
+    "misa nambala": "Chiwerengero cha ma protoni ndi ma neutroni mu nyukiliyasi ya atomu",
+    "nambala ya atomiki": "Chiwerengero cha ma protoni mu nyukiliyasi ya atomu (amazindikira chinthu)",
+    "isotope": "Ma atomu a chinthu chomwecho okhala ndi manambala osiyanasiyana a neutroni",
+    "okosijeni": "Kutayika kwa ma elekitironi kuchokera ku atomu kapena molekyulu",
+    "kuchepetsa": "Kupeza ma electron ndi atomu kapena molekyulu",
+    "redox": "Chemical reaction yokhudzana ndi makutidwe ndi okosijeni komanso kuchepetsa njira",
+    "activation mphamvu": "Mphamvu zochepa zomwe zimafunikira kuti ma chemical reaction achitike",
+    "chothandizira": "Chinthu chomwe chimawonjezera kuchuluka kwa mankhwala osagwiritsidwa ntchito",
+    "thermodynamics": "Nthambi ya chemistry yokhudzana ndi kutentha, ntchito, kutentha, ndi mphamvu",
+    "endothermic": "Chemical reaction yomwe imatenga kutentha kuchokera kumadera ozungulira",
+    "exothermic": "Chemical reaction yomwe imatulutsa kutentha kumalo ozungulira"
+}

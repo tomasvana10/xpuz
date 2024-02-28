@@ -1,0 +1,22 @@
+{
+    "bev\u00e6gelse": "\u00c6ndring af et objekts position over tid",
+    "acceleration": "Hastighed for \u00e6ndring af hastighed",
+    "hastighed": "Et objekts hastighed og retning",
+    "kraft": "Skub eller tr\u00e6k, der flytter eller \u00e6ndrer et objekts bev\u00e6gelse",
+    "inerti": "Et objekts tendens til at modst\u00e5 \u00e6ndringer i bev\u00e6gelse",
+    "momentum": "Produkt af et objekts masse og hastighed",
+    "tyngdekraft": "Kraft, der tiltr\u00e6kker objekter med masse mod hinanden",
+    "v\u00e6gt": "Kraft, der ud\u00f8ves p\u00e5 et objekt p\u00e5 grund af tyngdekraften",
+    "masse": "M\u00e6ngden af stof i et objekt",
+    "massefylde": "Masse pr volumenhed af et stof",
+    "arbejde": "Overf\u00f8rsel af energi, n\u00e5r en kraft virker p\u00e5 og flytter et objekt",
+    "energi": "Evne til at udf\u00f8re arbejde",
+    "kinetisk energi": "Energi af et objekt p\u00e5 grund af dets bev\u00e6gelse",
+    "potentiel energi": "Lagret energi p\u00e5 grund af et objekts position eller konfiguration",
+    "str\u00f8m": "Takst, hvormed arbejdet udf\u00f8res",
+    "friktion": "Kraft, der modarbejder bev\u00e6gelse mellem to overflader i kontakt",
+    "tryk": "Kraft, der ud\u00f8ves pr. arealenhed",
+    "atmosf\u00e6re": "Lag af gasser omkring Jorden",
+    "opdrift": "Opadg\u00e5ende kraft p\u00e5 en genstand neds\u00e6nket i en v\u00e6ske",
+    "lyd": "Form for energi, der bev\u00e6ger sig som b\u00f8lger gennem et medium"
+}

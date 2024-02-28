@@ -1,0 +1,18 @@
+{
+    "trigonometrisk funktion": "En funktion av en vinkel uttryckt som f\u00f6rh\u00e5llandet mellan l\u00e4ngden p\u00e5 sidorna i en r\u00e4tvinklig triangel",
+    "invers funktion": "En funktion som erh\u00e5lls genom att uttrycka den beroende variabeln f\u00f6r en funktion som den oberoende variabeln f\u00f6r en annan",
+    "arctangens": "Tangentens inversa funktion",
+    "arcsine": "Sinusens inversa funktion",
+    "arccosine": "Den omv\u00e4nda funktionen av cosinus",
+    "cosecant": "Sinusfunktionens reciproka, definierad som f\u00f6rh\u00e5llandet mellan hypotenusan och den motsatta sidan av en r\u00e4tvinklig triangel",
+    "cotangens": "Tangentfunktionens reciproka, definierad som f\u00f6rh\u00e5llandet mellan den intilliggande och motsatta sidan av en r\u00e4tvinklig triangel",
+    "trigonometrisk identitet": "En likhet som involverar trigonometriska funktioner som \u00e4r sann f\u00f6r alla v\u00e4rden p\u00e5 variablerna",
+    "sinuslagen": "I en triangel \u00e4r f\u00f6rh\u00e5llandet mellan l\u00e4ngden p\u00e5 en sida och sinus f\u00f6r dess motsatta vinkel konstant",
+    "cosinuslagen": "I en triangel \u00e4r kvadraten p\u00e5 en sida lika med summan av kvadraterna p\u00e5 de andra tv\u00e5 sidorna minus tv\u00e5 g\u00e5nger produkten av dessa tv\u00e5 sidor och cosinus f\u00f6r den inkluderade vinkeln",
+    "radianm\u00e5tt": "M\u00e5ttet p\u00e5 en vinkel i radianer, vilket \u00e4r f\u00f6rh\u00e5llandet mellan l\u00e4ngden p\u00e5 en b\u00e5ge och dess radie",
+    "vinkelhastighet": "Hastigheten f\u00f6r f\u00f6r\u00e4ndring av en vinkel i f\u00f6rh\u00e5llande till tiden",
+    "b\u00e5gl\u00e4ngd": "Avst\u00e5ndet mellan tv\u00e5 punkter l\u00e4ngs en sektion av en kurva",
+    "sektor": "Den del av en cirkel som omges av tv\u00e5 radier och deras avskurna b\u00e5ge",
+    "trigonometriskt f\u00f6rh\u00e5llande": "F\u00f6rh\u00e5llandet mellan l\u00e4ngderna av tv\u00e5 sidor i en r\u00e4tvinklig triangel",
+    "trigonometrisk ekvation": "En ekvation som involverar en eller flera trigonometriska funktioner hos en variabel"
+}

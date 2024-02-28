@@ -1,0 +1,21 @@
+{
+    "kombinatorika": "Sanoq, tartibga solish va kombinatsiyani o'rganish",
+    "almashtirish": "Ob'ektlarni ma'lum bir tartibda joylashtirish",
+    "kombinatsiya": "Buyurtmani hisobga olmagan holda narsalarni tanlash",
+    "faktorial": "Butun son va uning ostidagi barcha butun sonlarning mahsuloti",
+    "binom koeffitsienti": "To'plamning kichik to'plamini tanlash usullari soni",
+    "kaptar teshigi printsipi": "Agar \u201cn\u201d element \u201cm\u201d konteynerlariga va n > m bo\u2018lsa, kamida bitta konteynerda bir nechta element bo\u2018lishi kerak.",
+    "inklyuziyani istisno qilish printsipi": "Har qanday ikkita chekli to'plam uchun ularning birlashmasining o'lchami ularning o'lchamlari yig'indisi minus kesishmasining o'lchamiga teng.",
+    "kartezyen mahsulot": "Bir nechta to'plamlarning mahsuloti, natijada barcha buyurtma qilingan juftliklar to'plami",
+    "quvvat to'plami": "To'plamning barcha kichik to'plamlari to'plami",
+    "bo'lim": "To\u2018plamning bir-biriga o\u2018xshamaydigan kichik to\u2018plamlarga bo\u2018linishi",
+    "qo'ng'iroq raqami": "To'plamni bo'lish usullari soni",
+    "stirling raqami": "To\u2018plamni bo\u2018sh bo\u2018lmagan kichik to\u2018plamlarga bo\u2018lish usullari soni",
+    "katalon raqami": "Muayyan turdagi panjara yo'llari, almashtirishlar, binar daraxtlar va boshqalar soni",
+    "o'rnatish": "O'ziga xos ob'ekt sifatida qaraladigan alohida ob'ektlar to'plami",
+    "pastki to'plam": "Faqat ma'lum bir boshqa to'plamda topilgan elementlarni o'z ichiga olgan to'plam",
+    "ittifoq": "Berilgan barcha to'plamlardagi barcha farq qiluvchi elementlar to'plami",
+    "chorraha": "Berilgan barcha to'plamlarda bo'lgan barcha elementlar to'plami",
+    "farq": "Bir to'plamdagi boshqa to'plamda bo'lmagan barcha elementlar to'plami",
+    "to'ldiruvchi": "Berilgan to'plamda bo'lmagan barcha elementlar to'plami"
+}

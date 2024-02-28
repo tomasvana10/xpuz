@@ -1,0 +1,18 @@
+{
+    "ongl": "Dwy linell sy'n cyfarfod i wneud cornel",
+    "cyfath": "Yr un fath o ran maint a si\u00e2p",
+    "ymyl": "Cyfarfod dau wyneb ar si\u00e2p tri dimensiwn",
+    "wyneb": "Awyrennau arwyneb o siapiau tri dimensiwn",
+    "hafalochrog": "Ochrau sydd yr un hyd",
+    "cyfochrog": "Dwy linell mewn gofod dau ddimensiwn nad ydynt yn cwrdd",
+    "awyren": "Arwyneb gwastad dau ddimensiwn y gall gwrthrychau dau ddimensiwn orwedd arno",
+    "pwynt": "Safle penodol ar linell, awyren, neu yn y gofod",
+    "ochr": "Segmentau llinell mewn ffigurau geometrig sy'n cyfansoddi tu allan y gwrthrych",
+    "syth": "Heb gromlin",
+    "fertig": "Y pwynt lle mae dwy ochr ffigur dau ddimensiwn neu ddau ymyl ffigur tri dimensiwn yn cwrdd",
+    "cylch": "Si\u00e2p dau ddimensiwn lle mae pob pwynt ar y llinell grwm yn hafal i'r pwynt canol",
+    "triongl": "Ffigur caeedig gyda thair ochr",
+    "petryal": "Ffigur dwy-ddimensiwn, caeedig, pedair ochr gyda phedair ongl sgw\u00e2r",
+    "sgwar": "Math arbennig o betryal sydd ag ochrau hafalochrog ac ochrau cyfochrog cyfochrog",
+    "ciwb": "Ffigur tri dimensiwn gyda sgwariau hafalochrog union yr un fath \u00e2 wynebau"
+}

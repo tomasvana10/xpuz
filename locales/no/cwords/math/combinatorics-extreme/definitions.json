@@ -1,0 +1,21 @@
+{
+    "kombinatorikk": "Studiet av telling, ordning og kombinasjon",
+    "permutasjon": "Ordning av objekter i en bestemt rekkef\u00f8lge",
+    "kombinasjon": "Utvalg av varer uten \u00e5 ta hensyn til bestillingen",
+    "faktoriell": "Produkt av et heltall og alle heltall under det",
+    "binomial koeffisient": "Antall m\u00e5ter \u00e5 velge en delmengde av et sett p\u00e5",
+    "duehullprinsipp": "Hvis 'n' elementer legges i 'm'-beholdere og n > m, m\u00e5 minst \u00e9n beholder inneholde mer enn \u00e9n vare",
+    "inkluderingseksklusjonsprinsipp": "For alle to endelige sett er st\u00f8rrelsen p\u00e5 deres forening summen av st\u00f8rrelsene minus st\u00f8rrelsen p\u00e5 skj\u00e6ringspunktet deres",
+    "Kartesisk produkt": "Produkt av flere sett, noe som resulterer i sett med alle bestilte par",
+    "kraftsett": "Sett med alle delmengder av et sett",
+    "skillevegg": "En inndeling av et sett i ikke-overlappende delmengder",
+    "klokkenummer": "Antall m\u00e5ter \u00e5 partisjonere et sett p\u00e5",
+    "stirling nummer": "Antall m\u00e5ter \u00e5 partisjonere et sett i ikke-tomme undersett",
+    "katalansk nummer": "Antall visse typer gitterbaner, permutasjoner, bin\u00e6re tr\u00e6r, etc",
+    "sett": "En samling av distinkte objekter, betraktet som et objekt i seg selv",
+    "delmengde": "Et sett som bare inneholder elementer som finnes i et bestemt annet sett",
+    "fagforening": "Settet med alle distinkte elementer i alle gitte sett",
+    "kryss": "Settet med alle elementer som er i alle gitte sett",
+    "forskjell": "Settet med alle elementer i ett sett som ikke er i et annet sett",
+    "komplement": "Settet med alle elementer som ikke er i et gitt sett"
+}

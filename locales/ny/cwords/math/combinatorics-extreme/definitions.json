@@ -1,0 +1,21 @@
+{
+    "combinatorics": "Kuphunzira kuwerengera, kukonza, ndi kuphatikiza",
+    "kuvomereza": "Kukonza zinthu mwadongosolo linalake",
+    "kuphatikiza": "Kusankha zinthu popanda kuganizira dongosolo",
+    "mafakitale": "Chogulitsa cha nambala yonse ndi manambala onse pansi pake",
+    "Binomial coefficient": "Chiwerengero cha njira zosankhira kagawo kakang'ono ka seti",
+    "mfundo ya pigeonhole": "Ngati zinthu za 'n' zayikidwa muzotengera za 'm' ndi n > m, ndiye kuti chidebe chimodzi chikuyenera kukhala ndi zinthu zopitilira chimodzi.",
+    "mfundo yochotsera m'gulu": "Pamagulu awiri aliwonse okhala ndi malire, kukula kwa mgwirizano wawo ndi kuchuluka kwa makulidwe awo kuchotsera kukula kwa mphambano yawo.",
+    "mankhwala cartesian": "Zogulitsa zamagulu angapo, zomwe zimapangitsa kuti pakhale magulu onse omwe adayitanidwa",
+    "mphamvu": "Seti ya magawo onse a seti",
+    "kugawa": "Kugawika kwa seti kukhala magawo ang'onoang'ono osadukizana",
+    "nambala ya belu": "Chiwerengero cha njira zogawanitsa seti",
+    "nambala yodabwitsa": "Nambala ya njira zogawira seti kukhala magawo opanda kanthu",
+    "nambala ya chikatalani": "Chiwerengero cha mitundu ina ya njira za lattice, zololeza, mitengo ya binary, ndi zina",
+    "set": "Kusonkhanitsa kwa zinthu zosiyana, zomwe zimaganiziridwa ngati chinthu chokha",
+    "gawo": "Seti yomwe ili ndi zinthu zopezeka mugulu linalake",
+    "mgwirizano": "Seti yazinthu zonse zosiyana mumagulu onse operekedwa",
+    "mphambano": "Seti yazinthu zonse zomwe zili m'magulu onse operekedwa",
+    "kusiyana": "Seti ya zinthu zonse mu seti imodzi zomwe sizili mu seti ina",
+    "wowonjezera": "Seti ya zinthu zonse osati mu seti yoperekedwa"
+}

@@ -1,0 +1,22 @@
+{
+    "Bewegung": "Positions\u00e4nderung eines Objekts im Laufe der Zeit",
+    "Beschleunigung": "Geschwindigkeits\u00e4nderungsrate",
+    "Geschwindigkeit": "Geschwindigkeit und Richtung eines Objekts",
+    "Gewalt": "Dr\u00fccken oder Ziehen, das ein Objekt bewegt oder seine Bewegung \u00e4ndert",
+    "Tr\u00e4gheit": "Tendenz eines Objekts, Bewegungs\u00e4nderungen zu widerstehen",
+    "Schwung": "Produkt aus Masse und Geschwindigkeit eines Objekts",
+    "Schwere": "Kraft, die Objekte mit Masse zueinander anzieht",
+    "Gewicht": "Kraft, die aufgrund der Schwerkraft auf ein Objekt ausge\u00fcbt wird",
+    "Masse": "Materiemenge in einem Objekt",
+    "Dichte": "Masse pro Volumeneinheit eines Stoffes",
+    "arbeiten": "Energie\u00fcbertragung, wenn eine Kraft auf ein Objekt einwirkt und es bewegt",
+    "Energie": "F\u00e4higkeit zur Arbeit",
+    "kinetische Energie": "Energie eines Objekts aufgrund seiner Bewegung",
+    "potenzielle Energie": "Gespeicherte Energie aufgrund der Position oder Konfiguration eines Objekts",
+    "Leistung": "Geschwindigkeit, mit der die Arbeit erledigt wird",
+    "Reibung": "Kraft, die der Bewegung zwischen zwei sich ber\u00fchrenden Oberfl\u00e4chen entgegenwirkt",
+    "Druck": "Pro Fl\u00e4cheneinheit ausge\u00fcbte Kraft",
+    "Atmosph\u00e4re": "Gasschicht, die die Erde umgibt",
+    "Auftrieb": "Aufw\u00e4rtskraft auf ein Objekt, das in eine Fl\u00fcssigkeit eingetaucht ist",
+    "Klang": "Energieform, die sich als Wellen durch ein Medium ausbreitet"
+}

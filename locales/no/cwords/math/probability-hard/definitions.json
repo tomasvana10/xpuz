@@ -1,0 +1,11 @@
+{
+    "sannsynlighetsaksiomer": "Grunnleggende proposisjoner i sannsynlighetsteori",
+    "betinget sannsynlighet": "Sannsynligheten for en hendelse gitt at en annen hendelse har skjedd",
+    "tilfeldige variabler": "En variabel hvis mulige verdier er numeriske utfall av et tilfeldig fenomen",
+    "forskjell": "Forventningen av det kvadrerte avviket til en tilfeldig variabel fra gjennomsnittet",
+    "avhengige hendelser": "To hendelser er avhengige hvis forekomsten av den ene p\u00e5virker sannsynligheten for at den andre inntreffer",
+    "like sannsynlige utfall": "Utfall som har samme sannsynlighet for \u00e5 inntreffe",
+    "standardavvik": "Et m\u00e5l p\u00e5 mengden variasjon eller spredning av et sett med verdier",
+    "statistikk": "Et enkelt m\u00e5l p\u00e5 en attributt til en pr\u00f8ve",
+    "pr\u00f8ve": "Hver observasjon i et sannsynlighetseksperiment"
+}

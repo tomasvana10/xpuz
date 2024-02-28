@@ -1,0 +1,11 @@
+{
+    "Wahrscheinlichkeitsaxiome": "Grundlegende Aussagen der Wahrscheinlichkeitstheorie",
+    "bedingte Wahrscheinlichkeit": "Die Wahrscheinlichkeit eines Ereignisses, vorausgesetzt, dass ein anderes Ereignis eingetreten ist",
+    "zuf\u00e4llige Variablen": "Eine Variable, deren m\u00f6gliche Werte numerische Ergebnisse eines Zufallsph\u00e4nomens sind",
+    "Varianz": "Der Erwartungswert der quadratischen Abweichung einer Zufallsvariablen von ihrem Mittelwert",
+    "abh\u00e4ngige Ereignisse": "Zwei Ereignisse sind abh\u00e4ngig, wenn das Eintreten des einen die Wahrscheinlichkeit des Eintretens des anderen beeinflusst",
+    "gleich wahrscheinliche Ergebnisse": "Ergebnisse, die die gleiche Eintrittswahrscheinlichkeit haben",
+    "Standardabweichung": "Ein Ma\u00df f\u00fcr das Ausma\u00df der Variation oder Streuung einer Reihe von Werten",
+    "Statistik": "Ein einzelnes Ma\u00df f\u00fcr ein Attribut einer Stichprobe",
+    "Versuch": "Jede Beobachtung in einem Wahrscheinlichkeitsexperiment"
+}

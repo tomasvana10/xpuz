@@ -1,0 +1,18 @@
+{
+    "\u00e1ngulo": "Dos l\u00edneas que se encuentran para formar una esquina.",
+    "congruente": "Id\u00e9ntico en tama\u00f1o y forma.",
+    "borde": "El encuentro de dos caras en una forma tridimensional.",
+    "rostro": "Planos de superficie de formas tridimensionales.",
+    "equil\u00e1tero": "Lados que tienen la misma longitud.",
+    "paralelo": "Dos rectas en un espacio bidimensional que no se encuentran",
+    "avi\u00f3n": "Una superficie plana bidimensional sobre la que pueden yacer objetos bidimensionales.",
+    "punto": "Una posici\u00f3n espec\u00edfica en una l\u00ednea, plano o en el espacio.",
+    "lado": "Segmentos de l\u00ednea en figuras geom\u00e9tricas que componen el exterior del objeto.",
+    "derecho": "sin curva",
+    "v\u00e9rtice": "El punto en el que se encuentran dos lados de una figura bidimensional o dos bordes de una figura tridimensional.",
+    "c\u00edrculo": "Una forma bidimensional en la que todos los puntos de la l\u00ednea curva est\u00e1n equidistantes de un punto central.",
+    "tri\u00e1ngulo": "Una figura cerrada con tres lados.",
+    "rect\u00e1ngulo": "Una figura bidimensional, cerrada, de cuatro lados y cuatro \u00e1ngulos rectos.",
+    "cuadrado": "Un tipo especial de rect\u00e1ngulo que tiene lados equil\u00e1teros y lados opuestos paralelos.",
+    "cubo": "Una figura tridimensional con cuadrados equil\u00e1teros id\u00e9nticos como caras."
+}

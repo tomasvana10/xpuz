@@ -1,0 +1,21 @@
+{
+    "kombinatoresch": "D'Studie vum Zielen, Arrangement a Kombinatioun",
+    "permutation": "Arrangement vun Objeten an enger spezifescher Uerdnung",
+    "Kombinatioun": "Auswiel vun Artikelen ouni d'Bestellung ze ber\u00fccksichtegen",
+    "factorial": "Produkt vun engem ganzen Zuel an all ganz Zuelen dr\u00ebnner",
+    "binomial Koeffizient": "Zuel vu Wee\u00ebr fir e Subset vun engem Set ze wielen",
+    "Pigeonhole Prinzip": "Wann 'n' Elementer an 'm' Container an n > m gesat ginn, da muss op d'mannst ee Container m\u00e9i w\u00e9i een Element enthalen",
+    "Inklusioun Ausgrenzung Prinzip": "Fir all zwee endlech S\u00e4tz ass d'Gr\u00e9isst vun hirer Unioun d'Zomm vun hire Gr\u00e9issten minus d'Gr\u00e9isst vun hirer Kr\u00e4izung",
+    "kartesesche Produit": "Produkt vu multiple Sets, result\u00e9iert an engem Set vun alle bestallte Pairen",
+    "Muecht gesat": "Set vun all Subsets vun engem Set",
+    "Partition": "Eng Divisioun vun engem Set an net iwwerlappend \u00cbnners\u00e4tz",
+    "bell Zuel": "Zuel vu Wee\u00ebr fir e Set ze partition\u00e9ieren",
+    "stirling Zuel": "Zuel vu Wee\u00ebr fir e Set an net eidel \u00cbnners\u00e4tz ze partition\u00e9ieren",
+    "katalanesch Zuel": "Zuel vu best\u00ebmmten Aarte vu Gitterwee\u00ebr, Permutatiounen, bin\u00e4re Beem, asw",
+    "setzen": "Eng Sammlung vun \u00ebnnerschiddlechen Objeten, als en Objet a sengem eegene Recht ugesinn",
+    "subset": "E Set deen n\u00ebmmen Elementer enth\u00e4lt, d\u00e9i an engem best\u00ebmmten anere Set fonnt goufen",
+    "Gewerkschaft": "De Set vun allen \u00ebnnerschiddlechen Elementer an all best\u00ebmmte Sets",
+    "Kr\u00e4izung": "De Set vun all Elementer, d\u00e9i an all best\u00ebmmte S\u00e4tze sinn",
+    "\u00cbnnerscheed": "De Set vun all Elementer an engem Set d\u00e9i net an engem aneren Set sinn",
+    "erg\u00e4nzen": "De Set vun all Elementer net an engem best\u00ebmmte Set"
+}

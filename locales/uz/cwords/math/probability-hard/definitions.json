@@ -1,0 +1,11 @@
+{
+    "ehtimollik aksiomalari": "Ehtimollar nazariyasidagi asosli takliflar",
+    "shartli ehtimollik": "Boshqa voqea sodir bo'lganligini hisobga olsak, hodisaning ehtimoli",
+    "tasodifiy o'zgaruvchilar": "Mumkin qiymatlari tasodifiy hodisaning raqamli natijalari bo'lgan o'zgaruvchi",
+    "farq": "Tasodifiy o'zgaruvchining o'rtacha qiymatidan kvadrat og'ishini kutish",
+    "bog'liq hodisalar": "Agar birining sodir bo'lishi ikkinchisining yuzaga kelish ehtimoliga ta'sir qilsa, ikkita hodisa bog'liqdir",
+    "bir xil ehtimoliy natijalar": "Bir xil yuzaga kelish ehtimoli bo'lgan natijalar",
+    "standart og'ish": "Qiymatlar to'plamining o'zgarishi yoki tarqalishi miqdorining o'lchovi",
+    "statistika": "Namunaning ba'zi atributlarining yagona o'lchovi",
+    "sud": "Ehtimollik tajribasidagi har bir kuzatish"
+}

@@ -1,0 +1,18 @@
+{
+    "Winkel": "Zwei Linien, die sich zu einer Ecke treffen",
+    "kongruent": "Identisch in Gr\u00f6\u00dfe und Form",
+    "Rand": "Das Zusammentreffen zweier Gesichter auf einer dreidimensionalen Form",
+    "Gesicht": "Oberfl\u00e4chenebenen dreidimensionaler Formen",
+    "gleichseitig": "Seiten, die gleich lang sind",
+    "parallel": "Zwei Linien in einem zweidimensionalen Raum, die sich nicht treffen",
+    "Flugzeug": "Eine flache zweidimensionale Oberfl\u00e4che, auf der zweidimensionale Objekte liegen k\u00f6nnen",
+    "Punkt": "Eine bestimmte Position auf einer Linie, Ebene oder im Raum",
+    "Seite": "Liniensegmente in geometrischen Figuren, die das \u00c4u\u00dfere des Objekts bilden",
+    "gerade": "Ohne Kurve",
+    "Scheitel": "Der Punkt, an dem sich zwei Seiten einer zweidimensionalen Figur oder zwei Kanten einer dreidimensionalen Figur treffen",
+    "Kreis": "Eine zweidimensionale Form, bei der alle Punkte auf der gekr\u00fcmmten Linie den gleichen Abstand von einem Mittelpunkt haben",
+    "Dreieck": "Eine geschlossene Figur mit drei Seiten",
+    "Rechteck": "Eine zweidimensionale, geschlossene, vierseitige Figur mit vier rechten Winkeln",
+    "Quadrat": "Eine spezielle Art von Rechteck mit gleichseitigen Seiten und parallelen gegen\u00fcberliegenden Seiten",
+    "W\u00fcrfel": "Eine dreidimensionale Figur mit identischen gleichseitigen Quadraten als Fl\u00e4chen"
+}

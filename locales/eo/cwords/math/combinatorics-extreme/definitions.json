@@ -1,0 +1,21 @@
+{
+    "kombinatoriko": "La studo de kalkulado, aran\u011do kaj kombina\u0135o",
+    "permuto": "Aran\u011do de objektoj en specifa ordo",
+    "kombina\u0135o": "Elekto de eroj sen konsideri la ordon",
+    "faktorialo": "Produkto de entjero kaj \u0109iuj entjeroj sub \u011di",
+    "binoma koeficiento": "Nombro da manieroj elekti subaron de aro",
+    "kolomba principo": "Se 'n' eroj estas metitaj en 'm' ujojn kaj n > m, tiam almena\u016d unu ujo devas enhavi pli ol unu objekton",
+    "inkluziva ekskluda principo": "Por iuj du finhavaj aroj, la grandeco de ilia unio estas la sumo de iliaj grandecoj minus la grandeco de ilia intersekco",
+    "kartezia produkto": "Produkto de multoblaj aroj, rezultigante aron de \u0109iuj ordigitaj paroj",
+    "potenco aro": "Aro de \u0109iuj subaroj de aro",
+    "vando": "Divido de aro en ne-interkovrantajn subarojn",
+    "sonorilo nombro": "Nombro da manieroj dividi aron",
+    "stirlinga nombro": "Nombro da manieroj dividi aron en nemalplenajn subarojn",
+    "kataluna nombro": "Nombro de certaj specoj de kradaj vojoj, permuta\u0135oj, binaraj arboj, ktp",
+    "aro": "Kolekto de apartaj objektoj, konsiderataj kiel objekto en sia propra rajto",
+    "subaro": "Aro kiu enhavas nur elementojn trovitajn en certa alia aro",
+    "kuni\u011do": "La aro de \u0109iuj apartaj elementoj en \u0109iuj donitaj aroj",
+    "intersekci\u011do": "La aro de \u0109iuj elementoj kiuj estas en \u0109iuj donitaj aroj",
+    "diferenco": "La aro de \u0109iuj elementoj en unu aro kiuj ne estas en alia aro",
+    "komplemento": "La aro de \u0109iuj elementoj ne en donita aro"
+}

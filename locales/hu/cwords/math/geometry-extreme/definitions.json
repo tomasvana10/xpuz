@@ -1,0 +1,15 @@
+{
+    "\u00f6sszetett geometria": "A geometriai strukt\u00far\u00e1k \u00e9s a komplex sz\u00e1mokb\u00f3l sz\u00e1rmaz\u00f3 vagy \u00e1ltaluk le\u00edrt szerkezetek tanulm\u00e1nyoz\u00e1sa",
+    "komplex sz\u00e1mok": "Az a + bi alak\u00fa sz\u00e1mok, ahol a \u00e9s b val\u00f3s sz\u00e1mok",
+    "val\u00f3di r\u00e9sz": "Az a kifejez\u00e9s egy komplex sz\u00e1mban, amely nem tartalmazza az imagin\u00e1rius egys\u00e9get t\u00e9nyez\u0151k\u00e9nt",
+    "k\u00e9pzeletbeli r\u00e9sz": "Egy komplex sz\u00e1mnak az a r\u00e9sze, amelynek t\u00e9nyez\u0151je a k\u00e9pzeletbeli egys\u00e9g",
+    "\u00f6sszetett eloszt\u00f3k": "Komplex geometri\u00e1j\u00fa terek, amelyek g\u00f6rb\u00e9k \u00e9s fel\u00fcletek \u00e1ltal\u00e1nos\u00edt\u00e1sai",
+    "\u00f6sszetett algebrai v\u00e1ltozatok": "Komplex geometri\u00e1ban l\u00e9v\u0151 terek, amelyek polinomi\u00e1lis egyenletek megold\u00e1sai",
+    "holomorf konstrukci\u00f3k": "\u00d6sszetett geometri\u00e1j\u00fa konstrukci\u00f3k, amelyek komplex-differenci\u00e1lhat\u00f3k",
+    "minim\u00e1lis modellprogram": "Komplex geometriai program komplex sokas\u00e1gok \u00e9s \u00f6sszetett algebrai v\u00e1ltozatok oszt\u00e1lyoz\u00e1s\u00e1ra",
+    "moduli terek": "\u00d6sszetett geometri\u00e1j\u00fa terek, amelyek valamilyen geometriai objektumot param\u00e9tereznek",
+    "calabi sejt\u00e9s": "Shing-Tung Yau \u00e1ltal bizony\u00edtott komplex geometriai sejt\u00e9s egy speci\u00e1lis t\u00edpus\u00fa metrika l\u00e9tez\u00e9s\u00e9r\u0151l egy komplex sokas\u00e1gon",
+    "hitchin-kobayashi levelez\u00e9s": "A stabil holomorf vektork\u00f6tegek \u00e9s egy bizonyos differenci\u00e1legyenlet megold\u00e1sai k\u00f6z\u00f6tti megfelel\u00e9s komplex geometri\u00e1ban",
+    "nonabeli hodge levelez\u00e9s": "\u00d6sszetett geometriai megfelel\u00e9s bizonyos t\u00edpus\u00fa \u00f6sszetett sokas\u00e1gok \u00e9s bizonyos t\u00edpus\u00fa algebrai strukt\u00far\u00e1k k\u00f6z\u00f6tt",
+    "Kahler-Einstein metrik\u00e1k": "Speci\u00e1lis t\u00edpus\u00fa m\u00e9r\u0151sz\u00e1mok \u00f6sszetett eloszt\u00f3n, amelyek egy bizonyos felt\u00e9telt kiel\u00e9g\u00edtenek"
+}

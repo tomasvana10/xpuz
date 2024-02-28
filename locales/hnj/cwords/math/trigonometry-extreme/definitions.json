@@ -1,0 +1,18 @@
+{
+    "trigonometric muaj nuj nqi": "Ib txoj haujlwm ntawm lub kaum sab xis qhia raws li qhov sib piv ntawm qhov ntev ntawm ob sab ntawm daim duab peb sab sab xis",
+    "inverse muaj nuj nqi": "Ib qho kev ua tau los ntawm kev nthuav qhia qhov sib txawv ntawm ib qho kev ua haujlwm raws li qhov sib txawv ntawm lwm tus",
+    "arctangent": "Lub inverse function ntawm lub tangent",
+    "arcsine": "Lub inverse muaj nuj nqi ntawm sine",
+    "arccosine": "Lub inverse muaj nuj nqi ntawm cosine",
+    "cosecant": "Lub reciprocal ntawm lub sine muaj nuj nqi, txhais raws li qhov piv ntawm lub hypotenuse mus rau opposite sab ntawm ib txoj cai-angled daim duab peb sab",
+    "cotangent": "Lub reciprocal ntawm lub tangent muaj nuj nqi, txhais raws li qhov piv ntawm qhov uas nyob ib sab mus rau opposite sab ntawm ib txoj cai-angled daim duab peb sab",
+    "trigonometric tus kheej": "Ib qho kev sib npaug uas muaj cov haujlwm trigonometric uas muaj tseeb rau txhua qhov txiaj ntsig ntawm qhov sib txawv",
+    "txoj cai ntawm sines": "Nyob rau hauv ib daim duab peb sab, qhov piv ntawm qhov ntev ntawm ib sab mus rau lub sine ntawm nws opposite lub kaum sab xis yog tas li",
+    "txoj cai ntawm cosines": "Nyob rau hauv ib daim duab peb sab, lub square ntawm ib sab yog sib npaug rau qhov sib npaug ntawm cov squares ntawm ob sab rho tawm ob zaug ntawm cov khoom ntawm ob sab thiab cov cosine ntawm lub kaum sab xis.",
+    "ntsuas radian": "Qhov ntsuas ntawm lub kaum sab xis hauv radians, uas yog qhov piv ntawm qhov ntev ntawm ib qho arc rau nws lub vojvoog",
+    "angular tshaj tawm": "Tus nqi hloov ntawm lub kaum sab xis nrog rau lub sijhawm",
+    "arc ntev": "Qhov kev ncua deb ntawm ob lub ntsiab lus raws ib ntu ntawm txoj kab nkhaus",
+    "sector": "Ib feem ntawm lub voj voog kaw los ntawm ob lub radii thiab lawv intercepted arc",
+    "trigonometric ratio": "Qhov piv ntawm qhov ntev ntawm ob sab ntawm ib daim duab peb sab",
+    "kev sib npaug trigonometric": "Ib qho kev sib npaug uas muaj ib lossis ntau qhov kev ua haujlwm trigonometric ntawm qhov sib txawv"
+}

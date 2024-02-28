@@ -1,0 +1,15 @@
+{
+    "complex geometry": "The study of geometric structures and constructions arising out of, or described by, the complex numbers",
+    "complex numbers": "Numbers of the form a + bi where a and b are real numbers",
+    "real part": "The term in a complex number that does not contain the imaginary unit as a factor",
+    "imaginary part": "The part of a complex number that has the imaginary unit as a factor",
+    "complex manifolds": "Spaces in complex geometry that are generalisations of curves and surfaces",
+    "complex algebraic varieties": "Spaces in complex geometry that are solutions to polynomial equations",
+    "holomorphic constructions": "Constructions in complex geometry that are complex-differentiable",
+    "minimal model program": "A program in complex geometry for the classification of complex manifolds and complex algebraic varieties",
+    "moduli spaces": "Spaces in complex geometry that parameterise some type of geometric object",
+    "calabi conjecture": "A conjecture in complex geometry proven by Shing-Tung Yau about the existence of a special type of metric on a complex manifold",
+    "hitchin-kobayashi correspondence": "A correspondence in complex geometry between stable holomorphic vector bundles and solutions to a certain differential equation",
+    "nonabelian hodge correspondence": "A correspondence in complex geometry between certain types of complex manifolds and certain types of algebraic structures",
+    "kahler-einstein metrics": "Special types of metrics on a complex manifold that satisfy a certain condition"
+}

@@ -1,0 +1,16 @@
+{
+    "trigonometrikus": "A trigonometria alapelveir\u0151l vagy azokhoz kapcsol\u00f3d\u00f3an",
+    "funkci\u00f3": "Mire haszn\u00e1lnak valamit",
+    "sz\u00f6g": "K\u00e9t egym\u00e1st metsz\u0151 egyenes vagy s\u00edk k\u00f6z\u00f6tti t\u00e9r",
+    "szomsz\u00e9dos": "K\u00f6z\u00f6s hat\u00e1r vagy \u00e9l",
+    "radi\u00e1n": "A s\u00edksz\u00f6g m\u00e9rt\u00e9kegys\u00e9ge, amely megegyezik a sug\u00e1rral egyenl\u0151 hossz\u00fas\u00e1g\u00fa \u00edv \u00e1ltal bez\u00e1rt k\u00f6r k\u00f6z\u00e9ppontj\u00e1ban bez\u00e1rt sz\u00f6ggel",
+    "egys\u00e9gk\u00f6r": "1-es sugar\u00fa k\u00f6r",
+    "szinusz": "Az adott sz\u00f6ggel ellent\u00e9tes oldal hossz\u00e1nak \u00e9s a der\u00e9ksz\u00f6g\u0171 h\u00e1romsz\u00f6g befog\u00f3j\u00e1nak hossz\u00e1nak ar\u00e1nya",
+    "koszinusz": "Egy der\u00e9ksz\u00f6g\u0171 h\u00e1romsz\u00f6g szomsz\u00e9dos oldal\u00e1nak \u00e9s befog\u00f3j\u00e1nak ar\u00e1nya",
+    "tangens": "Egy vonal, amely csak egy pontban \u00e9rinti a g\u00f6rb\u00e9t",
+    "metsz\u0151": "Egy egyenes, amely egy g\u00f6rb\u00e9t k\u00e9t vagy t\u00f6bb pontban metszi",
+    "Pitagorasz t\u00e9tel": "Alapvet\u0151 \u00f6sszef\u00fcgg\u00e9s az euklideszi geometri\u00e1ban a der\u00e9ksz\u00f6g\u0171 h\u00e1romsz\u00f6g h\u00e1rom oldala k\u00f6z\u00f6tt",
+    "periodikus f\u00fcggv\u00e9ny": "Olyan f\u00fcggv\u00e9ny, amely szab\u00e1lyos id\u0151k\u00f6z\u00f6nk\u00e9nt vagy id\u0151szakonk\u00e9nt megism\u00e9tli az \u00e9rt\u00e9keit",
+    "amplit\u00fad\u00f3": "A rezg\u0151 test vagy hull\u00e1m egy pontja \u00e1ltal elmozd\u00edtott maxim\u00e1lis elmozdul\u00e1s vagy t\u00e1vols\u00e1g",
+    "fokm\u00e9r\u0151": "Egy sz\u00f6g m\u00e9rt\u00e9ke fokban, ahol a teljes k\u00f6rt 360 fokra osztj\u00e1k"
+}

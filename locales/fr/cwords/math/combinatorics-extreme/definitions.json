@@ -1,0 +1,21 @@
+{
+    "combinatoire": "L'\u00e9tude du comptage, de l'arrangement et de la combinaison",
+    "permutation": "Disposition des objets dans un ordre pr\u00e9cis",
+    "combinaison": "S\u00e9lection des articles sans tenir compte de la commande",
+    "factorielle": "Produit d'un entier et de tous les entiers inf\u00e9rieurs",
+    "coefficient binomial": "Nombre de fa\u00e7ons de choisir un sous-ensemble d'un ensemble",
+    "principe du casier": "Si \u00ab n \u00bb \u00e9l\u00e9ments sont plac\u00e9s dans \u00ab m \u00bb conteneurs et n > m, alors au moins un conteneur doit contenir plus d'un \u00e9l\u00e9ment",
+    "principe d'inclusion et d'exclusion": "Pour deux ensembles finis quelconques, la taille de leur union est la somme de leurs tailles moins la taille de leur intersection",
+    "produit cart\u00e9sien": "Produit de plusieurs ensembles, r\u00e9sultant en un ensemble de toutes les paires ordonn\u00e9es",
+    "ensemble de puissance": "Ensemble de tous les sous-ensembles d'un ensemble",
+    "cloison": "Une division d'un ensemble en sous-ensembles qui ne se chevauchent pas",
+    "num\u00e9ro de cloche": "Nombre de fa\u00e7ons de partitionner un ensemble",
+    "num\u00e9ro Stirling": "Nombre de fa\u00e7ons de partitionner un ensemble en sous-ensembles non vides",
+    "num\u00e9ro catalan": "Nombre de certains types de chemins de r\u00e9seau, permutations, arbres binaires, etc.",
+    "ensemble": "Un ensemble d'objets distincts, consid\u00e9r\u00e9s comme un objet \u00e0 part enti\u00e8re",
+    "sous-ensemble": "Un ensemble qui contient uniquement des \u00e9l\u00e9ments trouv\u00e9s dans un certain autre ensemble",
+    "syndicat": "L'ensemble de tous les \u00e9l\u00e9ments distincts dans tous les ensembles donn\u00e9s",
+    "intersection": "L'ensemble de tous les \u00e9l\u00e9ments qui se trouvent dans tous les ensembles donn\u00e9s",
+    "diff\u00e9rence": "L'ensemble de tous les \u00e9l\u00e9ments d'un ensemble qui ne se trouvent pas dans un autre ensemble",
+    "compl\u00e9ment": "L'ensemble de tous les \u00e9l\u00e9ments ne faisant pas partie d'un ensemble donn\u00e9"
+}

@@ -1,0 +1,11 @@
+{
+    "axiomes de probabilit\u00e9": "Propositions fondamentales en th\u00e9orie des probabilit\u00e9s",
+    "probabilite conditionnelle": "La probabilit\u00e9 d'un \u00e9v\u00e9nement \u00e9tant donn\u00e9 qu'un autre \u00e9v\u00e9nement s'est produit",
+    "Variables al\u00e9atoires": "Une variable dont les valeurs possibles sont les r\u00e9sultats num\u00e9riques d'un ph\u00e9nom\u00e8ne al\u00e9atoire",
+    "variance": "L'esp\u00e9rance de l'\u00e9cart carr\u00e9 d'une variable al\u00e9atoire par rapport \u00e0 sa moyenne",
+    "\u00e9v\u00e9nements d\u00e9pendants": "Deux \u00e9v\u00e9nements sont d\u00e9pendants si la survenance de l\u2019un affecte la probabilit\u00e9 de survenance de l\u2019autre",
+    "r\u00e9sultats tout aussi probables": "R\u00e9sultats ayant la m\u00eame probabilit\u00e9 de se produire",
+    "\u00e9cart-type": "Une mesure de la quantit\u00e9 de variation ou de dispersion d'un ensemble de valeurs",
+    "statistique": "Une seule mesure d'un attribut d'un \u00e9chantillon",
+    "proc\u00e8s": "Chaque observation dans une exp\u00e9rience probabiliste"
+}

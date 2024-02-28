@@ -285,6 +285,12 @@ msgstr "Öfgafullt"
 msgid "Geography"
 msgstr "Landafræði"
 
+msgid "Math"
+msgstr "Stærðfræði"
+
+msgid "Science"
+msgstr "Vísindi"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -315,3 +321,6 @@ msgstr "Landafræði"
 
 #~ msgid "Geography"
 #~ msgstr "Landafræði"
+
+#~ msgid "Science"
+#~ msgstr "Stærð"

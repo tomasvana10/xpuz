@@ -1,0 +1,21 @@
+{
+    "kombinatorika": "A sz\u00e1mol\u00e1s, az elrendez\u00e9s \u00e9s a kombin\u00e1ci\u00f3 tanulm\u00e1nyoz\u00e1sa",
+    "permut\u00e1ci\u00f3": "T\u00e1rgyak elrendez\u00e9se meghat\u00e1rozott sorrendben",
+    "kombin\u00e1ci\u00f3": "A t\u00e9telek kiv\u00e1laszt\u00e1sa a megrendel\u00e9s figyelembev\u00e9tele n\u00e9lk\u00fcl",
+    "faktori\u00e1lis": "Egy eg\u00e9sz sz\u00e1m \u00e9s az alatta l\u00e9v\u0151 \u00f6sszes sz\u00e1m szorzata",
+    "binomi\u00e1lis egy\u00fctthat\u00f3": "Egy halmaz r\u00e9szhalmaz\u00e1nak kiv\u00e1laszt\u00e1s\u00e1nak m\u00f3djainak sz\u00e1ma",
+    "galamblyuk elv": "Ha \u201en\u201d t\u00e9telt \u201em\u201d t\u00e1rol\u00f3kba tesz\u00fcnk, \u00e9s n > m, akkor legal\u00e1bb egy t\u00e1rol\u00f3nak egyn\u00e9l t\u00f6bb t\u00e9telt kell tartalmaznia",
+    "befogad\u00e1s kiz\u00e1r\u00e1s\u00e1nak elve": "B\u00e1rmely k\u00e9t v\u00e9ges halmaz eset\u00e9ben az egyes\u00fcl\u00e9s m\u00e9rete a m\u00e9ret\u00fck \u00f6sszege m\u00ednusz a metsz\u00e9spontjuk nagys\u00e1ga",
+    "der\u00e9ksz\u00f6g\u0171 term\u00e9k": "T\u00f6bb halmaz szorzata, ami az \u00f6sszes rendezett p\u00e1r halmaz\u00e1t eredm\u00e9nyezi",
+    "teljes\u00edtm\u00e9nyk\u00e9szlet": "Egy halmaz \u00f6sszes r\u00e9szhalmaz\u00e1nak halmaza",
+    "part\u00edci\u00f3": "Egy halmaz feloszt\u00e1sa nem \u00e1tfed\u0151 r\u00e9szhalmazokra",
+    "cseng\u0151 sz\u00e1m": "Egy k\u00e9szlet particion\u00e1l\u00e1s\u00e1nak m\u00f3djainak sz\u00e1ma",
+    "stirling sz\u00e1m": "A halmazok nem \u00fcres r\u00e9szhalmazokra t\u00f6rt\u00e9n\u0151 particion\u00e1l\u00e1s\u00e1nak m\u00f3djainak sz\u00e1ma",
+    "katal\u00e1n sz\u00e1m": "Bizonyos t\u00edpus\u00fa r\u00e1csp\u00e1ly\u00e1k, permut\u00e1ci\u00f3k, bin\u00e1ris f\u00e1k stb. sz\u00e1ma",
+    "k\u00e9szlet": "K\u00fcl\u00f6n\u00e1ll\u00f3 objektumok gy\u0171jtem\u00e9nye, amelyek \u00f6n\u00e1ll\u00f3 t\u00e1rgynak tekinthet\u0151k",
+    "r\u00e9szhalmaz": "Olyan halmaz, amely csak egy bizonyos m\u00e1sik halmazban tal\u00e1lhat\u00f3 elemeket tartalmaz",
+    "uni\u00f3": "Az \u00f6sszes k\u00fcl\u00f6n\u00e1ll\u00f3 elem halmaza az \u00f6sszes adott halmazban",
+    "\u00fatkeresztez\u0151d\u00e9s": "Az \u00f6sszes adott halmazban szerepl\u0151 \u00f6sszes elem halmaza",
+    "k\u00fcl\u00f6nbs\u00e9g": "Az egyik halmazban l\u00e9v\u0151 \u00f6sszes olyan elem halmaza, amelyek nincsenek egy m\u00e1sik halmazban",
+    "kieg\u00e9sz\u00edt\u00e9s": "Egy adott halmazban nem szerepl\u0151 \u00f6sszes elem halmaza"
+}

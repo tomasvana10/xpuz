@@ -1,0 +1,19 @@
+{
+    "plasma": "\u00c9tat de la mati\u00e8re constitu\u00e9 de particules charg\u00e9es (ions et \u00e9lectrons)",
+    "ionique": "Liaison form\u00e9e par attraction entre des ions de charges oppos\u00e9es",
+    "covalent": "Liaison form\u00e9e par le partage d'\u00e9lectrons entre atomes",
+    "m\u00e9tallique": "Liaison form\u00e9e par attraction entre des cations m\u00e9talliques positifs et des \u00e9lectrons d\u00e9localis\u00e9s",
+    "\u00e9quation d'\u00e9quilibrage": "\u00c9quation chimique avec un nombre \u00e9gal d'atomes de chaque \u00e9l\u00e9ment des deux c\u00f4t\u00e9s",
+    "taupe": "Unit\u00e9 utilis\u00e9e pour mesurer la quantit\u00e9 d'une substance (nombre de particules d'Avogadro)",
+    "nombre de masse": "Somme des protons et des neutrons dans le noyau d'un atome",
+    "num\u00e9ro atomique": "Nombre de protons dans le noyau d'un atome (d\u00e9termine l'identit\u00e9 des \u00e9l\u00e9ments)",
+    "isotope": "Atomes du m\u00eame \u00e9l\u00e9ment avec un nombre diff\u00e9rent de neutrons",
+    "oxydation": "Perte d'\u00e9lectrons d'un atome ou d'une mol\u00e9cule",
+    "r\u00e9duction": "Gain d'\u00e9lectrons par un atome ou une mol\u00e9cule",
+    "r\u00e9dox": "R\u00e9action chimique impliquant \u00e0 la fois des processus d'oxydation et de r\u00e9duction",
+    "\u00e9nergie d'activation": "\u00c9nergie minimale requise pour qu'une r\u00e9action chimique se produise",
+    "catalyseur": "Substance qui augmente la vitesse d'une r\u00e9action chimique sans \u00eatre consomm\u00e9e",
+    "thermodynamique": "Branche de la chimie concern\u00e9e par la chaleur, le travail, la temp\u00e9rature et l'\u00e9nergie",
+    "endothermique": "R\u00e9action chimique qui absorbe la chaleur de l'environnement",
+    "exothermique": "R\u00e9action chimique qui lib\u00e8re de la chaleur dans l'environnement"
+}

@@ -1,0 +1,18 @@
+{
+    "trigonometrik funktsiya": "To'g'ri burchakli uchburchak tomonlari uzunligiga nisbati sifatida ifodalangan burchak funktsiyasi",
+    "teskari funktsiya": "Bir funktsiyaning bog'liq o'zgaruvchisini boshqasining mustaqil o'zgaruvchisi sifatida ifodalash orqali olingan funksiya",
+    "arktangent": "Tangensning teskari funksiyasi",
+    "arksinus": "Sinusning teskari funktsiyasi",
+    "arkkosin": "Kosinusning teskari funktsiyasi",
+    "kosekant": "To'g'ri burchakli uchburchakning gipotenuzaning qarama-qarshi tomoniga nisbati sifatida aniqlangan sinus funktsiyasining o'zaro nisbati",
+    "kotangent": "To'g'ri burchakli uchburchakning qo'shni tomonining qarama-qarshi tomoniga nisbati sifatida aniqlangan tangens funktsiyaning o'zaro nisbati",
+    "trigonometrik identifikatsiya": "O'zgaruvchilarning barcha qiymatlari uchun to'g'ri bo'lgan trigonometrik funktsiyalarni o'z ichiga olgan tenglik",
+    "sinuslar qonuni": "Uchburchakda tomon uzunligining qarama-qarshi burchak sinusiga nisbati doimiydir",
+    "kosinuslar qonuni": "Uchburchakda bir tomonning kvadrati boshqa ikki tomonning kvadratlari yig'indisi minus bu ikki tomonning ikki barobar ko'paytmasiga va unga kiritilgan burchakning kosinusiga teng.",
+    "radian o'lchovi": "Burchakning radiandagi o'lchovi, bu yoy uzunligining uning radiusiga nisbati",
+    "burchak tezligi": "Burchakning vaqtga nisbatan o'zgarish tezligi",
+    "yoy uzunligi": "Egri chiziq kesimi bo'ylab ikki nuqta orasidagi masofa",
+    "sektor": "Ikki radius va ularning kesishgan yoyi bilan o'ralgan doiraning qismi",
+    "trigonometrik nisbat": "To'g'ri burchakli uchburchakning ikki tomoni uzunliklarining nisbati",
+    "trigonometrik tenglama": "O'zgaruvchining bir yoki bir nechta trigonometrik funksiyalarini o'z ichiga olgan tenglama"
+}

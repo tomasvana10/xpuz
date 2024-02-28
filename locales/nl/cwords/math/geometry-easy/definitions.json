@@ -1,0 +1,18 @@
+{
+    "hoek": "Twee lijnen die samenkomen om een hoek te maken",
+    "congruent": "Identiek in grootte en vorm",
+    "rand": "De ontmoeting van twee gezichten op een driedimensionale vorm",
+    "gezicht": "Oppervlaktevlakken van driedimensionale vormen",
+    "gelijkzijdig": "Zijden die even lang zijn",
+    "parallel": "Twee lijnen in een tweedimensionale ruimte die elkaar niet ontmoeten",
+    "vliegtuig": "Een plat tweedimensionaal oppervlak waarop tweedimensionale objecten kunnen liggen",
+    "punt": "Een specifieke positie op een lijn, vlak of in de ruimte",
+    "kant": "Lijnsegmenten in geometrische figuren die de buitenkant van het object vormen",
+    "direct": "Zonder bocht",
+    "hoekpunt": "Het punt waarop twee zijden van een tweedimensionale figuur of twee randen van een driedimensionale figuur elkaar ontmoeten",
+    "cirkel": "Een tweedimensionale vorm waarin alle punten op de gebogen lijn op gelijke afstand van een middelpunt liggen",
+    "driehoek": "Een gesloten figuur met drie zijden",
+    "rechthoek": "Een tweedimensionale, gesloten, vierzijdige figuur met vier rechte hoeken",
+    "vierkant": "Een speciaal type rechthoek met gelijkzijdige zijden en parallelle tegenoverliggende zijden",
+    "kubus": "Een driedimensionale figuur met identieke gelijkzijdige vierkanten als gezichten"
+}

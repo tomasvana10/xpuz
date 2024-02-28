@@ -1,0 +1,22 @@
+{
+    "kust\u012bba": "Objekta st\u0101vok\u013ca mai\u0146a laika gait\u0101",
+    "pa\u0101trin\u0101jums": "\u0100truma izmai\u0146u \u0101trums",
+    "\u0101trumu": "Objekta \u0101trums un virziens",
+    "sp\u0113ku": "Spiediet vai velciet, kas p\u0101rvieto vai maina objekta kust\u012bbu",
+    "inerce": "Objekta tendence pretoties kust\u012bbas izmai\u0146\u0101m",
+    "impulss": "Objekta masas un \u0101truma reizin\u0101jums",
+    "smagums": "Sp\u0113ks, kas piesaista objektus ar masu vienu pret otru",
+    "svars": "Sp\u0113ks, kas uz objektu iedarbojas gravit\u0101cijas d\u0113\u013c",
+    "masa": "Vielas daudzums objekt\u0101",
+    "bl\u012bvums": "Masa uz vielas tilpuma vien\u012bbu",
+    "str\u0101d\u0101t": "Ener\u0123ijas p\u0101rne\u0161ana, kad sp\u0113ks iedarbojas uz objektu un p\u0101rvieto to",
+    "ener\u0123iju": "Sp\u0113ja veikt darbu",
+    "kin\u0113tisk\u0101 ener\u0123ija": "Objekta ener\u0123ija t\u0101 kust\u012bbas d\u0113\u013c",
+    "potenci\u0101l\u0101 ener\u0123ija": "Uzkr\u0101t\u0101 ener\u0123ija objekta st\u0101vok\u013ca vai konfigur\u0101cijas d\u0113\u013c",
+    "jauda": "Likme, k\u0101d\u0101 tiek veikts darbs",
+    "berze": "Sp\u0113ks, kas iebilst pret kust\u012bbu starp div\u0101m saskar\u0113 eso\u0161\u0101m virsm\u0101m",
+    "spiedienu": "Sp\u0113ks, kas iedarbojas uz laukuma vien\u012bbu",
+    "atmosf\u0113ra": "G\u0101zu sl\u0101nis, kas ieskauj Zemi",
+    "peldsp\u0113ja": "Uz aug\u0161u v\u0113rsts sp\u0113ks uz objektu, kas iegremd\u0113ts \u0161\u0137idrum\u0101",
+    "ska\u0146u": "Ener\u0123ijas forma, kas vi\u013c\u0146u veid\u0101 p\u0101rvietojas pa vidi"
+}

@@ -1,0 +1,22 @@
+{
+    "pokret": "Promjena polo\u017eaja objekta tijekom vremena",
+    "ubrzanje": "Stopa promjene brzine",
+    "brzina": "Brzina i smjer objekta",
+    "sila": "Guranje ili povla\u010denje koje pomi\u010de ili mijenja kretanje objekta",
+    "inercija": "Tendencija objekta da se odupre promjenama u kretanju",
+    "zamah": "Umno\u017eak mase i brzine tijela",
+    "gravitacija": "Sila koja privla\u010di objekte s masom jedne prema drugima",
+    "te\u017eina": "Sila koja djeluje na objekt zbog gravitacije",
+    "masa": "Koli\u010dina materije u objektu",
+    "gusto\u0107a": "Masa jedinice volumena tvari",
+    "raditi": "Prijenos energije kada sila djeluje na tijelo i pomi\u010de ga",
+    "energije": "Sposobnost obavljanja posla",
+    "kineti\u010dka energija": "Energija tijela uslijed njegovog gibanja",
+    "potencijalna energija": "Pohranjena energija zbog polo\u017eaja ili konfiguracije objekta",
+    "vlast": "Stopa kojom se posao obavlja",
+    "trenje": "Sila koja se suprotstavlja gibanju izme\u0111u dviju dodirnih povr\u0161ina",
+    "pritisak": "Sila koja djeluje po jedinici povr\u0161ine",
+    "atmosfera": "Sloj plinova koji okru\u017euje Zemlju",
+    "uzgon": "Sila usmjerena prema gore na objekt uronjen u teku\u0107inu",
+    "zvuk": "Oblik energije koji putuje kao valovi kroz medij"
+}

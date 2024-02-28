@@ -1,0 +1,21 @@
+{
+    "kombinatorika": "De st\u00fadzje fan tellen, arranzjeminten en kombinaasjes",
+    "permutaasje": "Arrangement fan objekten yn in spesifike folchoarder",
+    "kombinaasje": "Seleksje fan items s\u00fbnder de oarder te besk\u00f4gjen",
+    "factorial": "Produkt fan in hiel getal en alle heule getallen d\u00ear\u00fbnder",
+    "binomiale ko\u00ebffisjint": "Oantal manieren om in subset fan in set te kiezen",
+    "pigeonhole prinsipe": "As 'n' items wurde pleatst yn 'm' konteners en n > m, dan moat op syn minst ien kontener mear as ien item befetsje",
+    "ynklusion \u00fatsluting prinsipe": "Foar elke twa finite sets is de grutte fan har uny de som fan har grutte minus de grutte fan har krusing",
+    "kartesysk produkt": "Produkt fan meardere sets, resultearret yn set fan alle bestelde pearen",
+    "macht set": "Set fan alle subsets fan in set",
+    "partition": "In ferdieling fan in set yn net-oerlappende subsets",
+    "bell n\u00fbmer": "Oantal manieren om in set te dielen",
+    "stirling n\u00fbmer": "Oantal manieren om in set te dielen yn net-lege subsets",
+    "Katalaansk n\u00fbmer": "Oantal bepaalde soarten roosterpaden, permutaasjes, bin\u00eare beammen, ensfh",
+    "set": "In kolleksje fan \u00fbnderskate objekten, besk\u00f4ge as in objekt op himsels",
+    "subset": "In set dy't allinich eleminten befettet f\u00fbn yn in bepaalde oare set",
+    "union": "De set fan alle \u00fbnderskate eleminten yn alle opj\u00fbne sets",
+    "krusing": "De set fan alle eleminten dy't yn alle opj\u00fbne sets binne",
+    "ferskil": "De set fan alle eleminten yn ien set dy't net yn in oare set binne",
+    "oanfolling": "De set fan alle eleminten net yn in opj\u00fbne set"
+}

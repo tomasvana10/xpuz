@@ -1,0 +1,18 @@
+{
+    "kampu": "Dvi linijos, kurios susijungia, kad sudaryt\u0173 kamp\u0105",
+    "sutampa": "Dyd\u017eiu ir forma identi\u0161ki",
+    "kra\u0161tas": "Dviej\u0173 veid\u0173 susitikimas trimat\u0117je formoje",
+    "veidas": "Trima\u010di\u0173 form\u0173 pavir\u0161iaus plok\u0161tumos",
+    "lygiakra\u0161tis": "To paties ilgio \u0161onai",
+    "lygiagre\u010diai": "Dvi linijos dvimat\u0117je erdv\u0117je, kurios nesutampa",
+    "l\u0117ktuvas": "Plok\u0161\u010dias dvimatis pavir\u0161ius, ant kurio gali gul\u0117ti dvima\u010diai objektai",
+    "ta\u0161k\u0105": "Konkreti pad\u0117tis ties\u0117je, plok\u0161tumoje ar erdv\u0117je",
+    "pus\u0117je": "Geometrini\u0173 fig\u016br\u0173 linij\u0173 segmentai, sudarantys objekto i\u0161or\u0119",
+    "tiesiai": "Be kreiv\u0117s",
+    "vir\u0161\u016bn\u0117": "Ta\u0161kas, kuriame susikerta dvi dvimat\u0117s fig\u016bros kra\u0161tin\u0117s arba dvi trimat\u0117s fig\u016bros briaunos",
+    "ratas": "Dvimat\u0117 forma, kurioje visi lenktos linijos ta\u0161kai yra vienodu atstumu nuo centro ta\u0161ko",
+    "trikampis": "U\u017edara fig\u016br\u0117l\u0117 su trimis kra\u0161tais",
+    "sta\u010diakampis": "Dvimat\u0117, u\u017edara, keturkamp\u0117 fig\u016bra su keturiais sta\u010diais kampais",
+    "kvadratas": "Specialus sta\u010diakampio tipas, turintis lygiakra\u0161\u010dius ir lygiagre\u010dias prie\u0161ingas puses",
+    "kubas": "Erdvin\u0117 fig\u016bra su identi\u0161kais lygiakra\u0161\u010diais kvadratais kaip veidai"
+}

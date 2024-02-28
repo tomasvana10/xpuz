@@ -1,0 +1,11 @@
+{
+    "probabilit\u00e9": "Mesure de la probabilit\u00e9 qu'un \u00e9v\u00e9nement se produise",
+    "espace d'\u00e9chantillon": "L'ensemble de tous les r\u00e9sultats possibles d'une exp\u00e9rience probabiliste",
+    "\u00e9v\u00e9nement": "Un ensemble de r\u00e9sultats auxquels une probabilit\u00e9 est attribu\u00e9e",
+    "r\u00e9sultat": "Un r\u00e9sultat possible d'une exp\u00e9rience probabiliste",
+    "moyenne": "Somme des valeurs divis\u00e9e par le nombre de valeurs",
+    "exp\u00e9rience al\u00e9atoire": "Un processus dont le r\u00e9sultat n\u2019est connu que lorsqu\u2019il est observ\u00e9",
+    "impossible": "Un \u00e9v\u00e9nement sans aucune chance de se produire",
+    "al\u00e9atoire": "R\u00e9gi par ou impliquant des chances \u00e9gales pour chaque \u00e9l\u00e9ment",
+    "\u00e9chantillon": "Un sous-ensemble d'une population"
+}

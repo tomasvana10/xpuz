@@ -1,0 +1,21 @@
+{
+    "combinatorics": "Utafiti wa kuhesabu, mpangilio, na mchanganyiko",
+    "ruhusa": "Mpangilio wa vitu kwa mpangilio maalum",
+    "mchanganyiko": "Uteuzi wa vitu bila kuzingatia agizo",
+    "ya kiwandani": "Bidhaa ya nambari kamili na nambari zote chini yake",
+    "mgawo wa binomial": "Idadi ya njia za kuchagua seti ndogo",
+    "kanuni ya njiwa": "Ikiwa vitu vya 'n' vitawekwa kwenye vyombo vya 'm' na n > m, basi angalau chombo kimoja lazima kiwe na zaidi ya kitu kimoja.",
+    "kanuni ya kujumuisha kutengwa": "Kwa seti zozote mbili zenye ukomo, saizi ya muungano wao ni jumla ya saizi zao ukiondoa saizi ya makutano yao.",
+    "bidhaa ya cartesian": "Bidhaa ya seti nyingi, na kusababisha seti ya jozi zote zilizoagizwa",
+    "seti ya nguvu": "Seti ya seti ndogo zote",
+    "kizigeu": "Mgawanyiko wa seti katika vikundi vidogo visivyopishana",
+    "nambari ya kengele": "Idadi ya njia za kugawa seti",
+    "nambari ya kusisimua": "Idadi ya njia za kugawa seti katika vikundi vidogo visivyo tupu",
+    "nambari ya Kikatalani": "Idadi ya aina fulani za njia za kimiani, vibali, miti ya binary, nk",
+    "kuweka": "Mkusanyiko wa vitu tofauti, vinavyozingatiwa kama kitu kwa haki yake yenyewe",
+    "kikundi kidogo": "Seti ambayo ina vipengele vinavyopatikana katika seti fulani fulani pekee",
+    "muungano": "Seti ya vipengele vyote tofauti katika seti zote zilizotolewa",
+    "makutano": "Seti ya vipengele vyote vilivyo katika seti zote zilizotolewa",
+    "tofauti": "Seti ya vipengele vyote katika seti moja ambayo haiko katika seti nyingine",
+    "kamilisha": "Seti ya vipengele vyote visivyo katika seti fulani"
+}

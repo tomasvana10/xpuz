@@ -1,0 +1,11 @@
+{
+    "axiomes de probabilitat": "Proposicions fonamentals en teoria de probabilitats",
+    "probabilitat condicional": "La probabilitat d'un esdeveniment donat que s'ha produ\u00eft un altre esdeveniment",
+    "variables aleat\u00f2ries": "Una variable els valors possibles de la qual s\u00f3n resultats num\u00e8rics d'un fenomen aleatori",
+    "desacord": "L'expectativa de la desviaci\u00f3 al quadrat d'una variable aleat\u00f2ria de la seva mitjana",
+    "esdeveniments dependents": "Dos esdeveniments depenen si l'ocurr\u00e8ncia d'un afecta la probabilitat que es produeixi l'altre",
+    "resultats igualment probables": "Resultats que tenen la mateixa probabilitat de produir-se",
+    "desviaci\u00f3 est\u00e0ndar": "Mesura de la quantitat de variaci\u00f3 o dispersi\u00f3 d'un conjunt de valors",
+    "estad\u00edstica": "Una \u00fanica mesura d'algun atribut d'una mostra",
+    "judici": "Cada observaci\u00f3 en un experiment de probabilitat"
+}

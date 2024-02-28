@@ -289,6 +289,12 @@ msgstr "അങ്ങേയറ്റം"
 msgid "Geography"
 msgstr "ഭൂമിശാസ്ത്രം"
 
+msgid "Math"
+msgstr "ഗണിതം"
+
+msgid "Science"
+msgstr "ശാസ്ത്രം"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -319,3 +325,6 @@ msgstr "ഭൂമിശാസ്ത്രം"
 
 #~ msgid "Geography"
 #~ msgstr "ഭൂമിശാസ്ത്രം"
+
+#~ msgid "Science"
+#~ msgstr "വലിപ്പം"

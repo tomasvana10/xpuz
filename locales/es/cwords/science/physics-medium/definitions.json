@@ -1,0 +1,21 @@
+{
+    "movimiento": "Cambio de posici\u00f3n de un objeto a lo largo del tiempo.",
+    "aceleraci\u00f3n": "Tasa de cambio de velocidad",
+    "velocidad": "Velocidad y direcci\u00f3n de un objeto.",
+    "fuerza": "Velocidad a la que se realiza el trabajo",
+    "inercia": "Tendencia de un objeto a resistir cambios de movimiento.",
+    "impulso": "Producto de la masa y la velocidad de un objeto.",
+    "gravedad": "Fuerza que atrae objetos con masa entre s\u00ed.",
+    "peso": "Fuerza ejercida sobre un objeto debido a la gravedad.",
+    "masa": "Cantidad de materia en un objeto",
+    "densidad": "Masa por unidad de volumen de una sustancia.",
+    "trabajar": "Transferencia de energ\u00eda cuando una fuerza act\u00faa sobre un objeto y lo mueve.",
+    "energ\u00eda": "Capacidad para hacer el trabajo",
+    "energ\u00eda cin\u00e9tica": "Energ\u00eda de un objeto debido a su movimiento.",
+    "energ\u00eda potencial": "Energ\u00eda almacenada debido a la posici\u00f3n o configuraci\u00f3n de un objeto.",
+    "fricci\u00f3n": "Fuerza que se opone al movimiento entre dos superficies en contacto.",
+    "presi\u00f3n": "Fuerza ejercida por unidad de \u00e1rea",
+    "atm\u00f3sfera": "Capa de gases que rodean la Tierra",
+    "flotabilidad": "Fuerza hacia arriba sobre un objeto sumergido en un fluido.",
+    "sonido": "Forma de energ\u00eda que viaja en forma de ondas a trav\u00e9s de un medio."
+}

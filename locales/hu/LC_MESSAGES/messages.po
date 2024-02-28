@@ -287,6 +287,12 @@ msgstr "Szélső"
 msgid "Geography"
 msgstr "Földrajz"
 
+msgid "Math"
+msgstr "Math"
+
+msgid "Science"
+msgstr "Tudomány"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -317,3 +323,6 @@ msgstr "Földrajz"
 
 #~ msgid "Geography"
 #~ msgstr "Földrajz"
+
+#~ msgid "Science"
+#~ msgstr "Méret"

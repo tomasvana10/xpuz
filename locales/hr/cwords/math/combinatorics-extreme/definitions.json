@@ -1,0 +1,21 @@
+{
+    "kombinatorika": "Prou\u010davanje brojanja, slaganja i kombiniranja",
+    "permutacija": "Raspored predmeta odre\u0111enim redoslijedom",
+    "kombinacija": "Odabir artikala bez razmatranja narud\u017ebe",
+    "faktorijel": "Umno\u017eak cijelog broja i svih cijelih brojeva ispod njega",
+    "binomni koeficijent": "Broj na\u010dina za odabir podskupa skupa",
+    "princip goluba": "Ako se 'n' stavki stavi u 'm' spremnika i n > m, tada barem jedan spremnik mora sadr\u017eavati vi\u0161e od jedne stavke",
+    "inclusion princip isklju\u010denja": "Za bilo koja dva kona\u010dna skupa, veli\u010dina njihove unije je zbroj njihovih veli\u010dina minus veli\u010dina njihovog sjeci\u0161ta",
+    "kartezijanski produkt": "Umno\u017eak vi\u0161e skupova, \u0161to rezultira skupom svih poredanih parova",
+    "skup snage": "Skup svih podskupova skupa",
+    "pregrada": "Podjela skupa na podskupove koji se ne preklapaju",
+    "broj zvona": "Broj na\u010dina za dijeljenje skupa",
+    "Stirlingov broj": "Broj na\u010dina za dijeljenje skupa na neprazne podskupove",
+    "katalonski broj": "Broj odre\u0111enih tipova re\u0161etkastih staza, permutacija, binarnih stabala itd",
+    "postaviti": "Zbirka razli\u010ditih objekata, koja se smatra vlastitim objektom",
+    "podskup": "Skup koji sadr\u017ei samo elemente koji se nalaze u nekom drugom skupu",
+    "unija": "Skup svih razli\u010ditih elemenata u svim zadanim skupovima",
+    "kri\u017eanje": "Skup svih elemenata koji se nalaze u svim zadanim skupovima",
+    "razlika": "Skup svih elemenata u jednom skupu koji nisu u drugom skupu",
+    "upotpuniti, dopuna": "Skup svih elemenata koji nisu u datom skupu"
+}

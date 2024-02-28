@@ -1,0 +1,18 @@
+{
+    "trigonomeetriline funktsioon": "Nurga funktsioon, mis on v\u00e4ljendatud t\u00e4isnurkse kolmnurga k\u00fclgede pikkuse suhtena",
+    "p\u00f6\u00f6rdfunktsioon": "Funktsioon, mis saadakse \u00fche funktsiooni s\u00f5ltuva muutuja v\u00e4ljendamisel teise funktsiooni s\u00f5ltumatu muutujana",
+    "arctangent": "Tangensi p\u00f6\u00f6rdfunktsioon",
+    "arcsiin": "Siinuse p\u00f6\u00f6rdfunktsioon",
+    "arkosiin": "Koosinuse p\u00f6\u00f6rdfunktsioon",
+    "kosekant": "Siinusfunktsiooni p\u00f6\u00f6rdv\u00e4\u00e4rtus, mis on defineeritud kui h\u00fcpotenuusi ja t\u00e4isnurkse kolmnurga vastask\u00fclje suhe",
+    "kotangent": "Puutujafunktsiooni p\u00f6\u00f6rdv\u00e4\u00e4rtus, mis on m\u00e4\u00e4ratletud t\u00e4isnurkse kolmnurga k\u00fclgneva ja vastask\u00fclje suhtena",
+    "trigonomeetriline identiteet": "V\u00f5rdsus, mis h\u00f5lmab trigonomeetrilisi funktsioone, mis kehtib muutujate k\u00f5igi v\u00e4\u00e4rtuste kohta",
+    "siinuste seadus": "Kolmnurgas on k\u00fclje pikkuse ja vastasnurga siinuse suhe konstantne",
+    "koosinuste seadus": "Kolmnurgas on k\u00fclje ruut v\u00f5rdne kahe teise k\u00fclje ruutude summaga, millest on lahutatud nende kahe k\u00fclje ja kaasatud nurga koosinus kahekordne korrutis",
+    "radiaani m\u00f5\u00f5t": "Nurga m\u00f5\u00f5t radiaanides, mis on kaare pikkuse ja selle raadiuse suhe",
+    "nurkkiirus": "Nurga muutumise kiirus aja suhtes",
+    "kaare pikkus": "Kahe punkti vaheline kaugus piki k\u00f5vera l\u00f5iku",
+    "sektor": "Kahe raadiusega ja nende l\u00f5ikekaarega \u00fcmbritsetud ringjoone osa",
+    "trigonomeetriline suhe": "T\u00e4isnurkse kolmnurga kahe k\u00fclje pikkuste suhe",
+    "trigonomeetriline v\u00f5rrand": "V\u00f5rrand, mis h\u00f5lmab muutuja \u00fchte v\u00f5i mitut trigonomeetrilist funktsiooni"
+}

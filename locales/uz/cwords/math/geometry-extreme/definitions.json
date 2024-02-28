@@ -1,0 +1,15 @@
+{
+    "murakkab geometriya": "Kompleks sonlardan kelib chiqadigan yoki ular tomonidan tasvirlangan geometrik tuzilmalar va konstruktsiyalarni o'rganish",
+    "murakkab sonlar": "a + bi ko'rinishdagi raqamlar bu erda a va b haqiqiy sonlar",
+    "haqiqiy qismi": "Komitent sifatida xayoliy birlikni o'z ichiga olmagan murakkab sondagi atama",
+    "xayoliy qism": "Komitent sifatida xayoliy birlikka ega bo'lgan kompleks sonning qismi",
+    "murakkab manifoldlar": "Murakkab geometriyadagi bo'shliqlar, ular egri va sirtlarning umumlashtirilishi",
+    "murakkab algebraik navlar": "Murakkab geometriyadagi polinom tenglamalar yechimi bo'lgan bo'shliqlar",
+    "golomorf konstruktsiyalar": "Murakkab-differensiallanuvchi murakkab geometriyadagi konstruksiyalar",
+    "minimal model dasturi": "Murakkab manifoldlar va murakkab algebraik navlarni tasniflash uchun kompleks geometriya bo'yicha dastur",
+    "modul bo'shliqlari": "Geometrik ob'ektning ayrim turlarini parametrlashtirgan murakkab geometriyadagi bo'shliqlar",
+    "kalabi taxmini": "Murakkab kollektorda maxsus turdagi metrikaning mavjudligi haqida Shing-Tung Yau tomonidan tasdiqlangan murakkab geometriyadagi faraz.",
+    "hitchin-kobayashi yozishmalari": "Barqaror golomorf vektor to'plamlari va ma'lum bir differensial tenglama yechimlari o'rtasidagi murakkab geometriyadagi muvofiqlik.",
+    "nonbelian hodge yozishmalar": "Murakkab geometriyadagi ma'lum turdagi murakkab manifoldlar va algebraik tuzilmalarning ayrim turlari o'rtasidagi muvofiqlik",
+    "Kahler-Eynshteyn ko'rsatkichlari": "Muayyan shartni qondiradigan murakkab manifolddagi maxsus ko'rsatkich turlari"
+}

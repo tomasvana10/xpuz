@@ -286,6 +286,12 @@ msgstr "Okudlulele"
 msgid "Geography"
 msgstr "IJografi"
 
+msgid "Math"
+msgstr "Izibalo"
+
+msgid "Science"
+msgstr "Isayensi"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -316,3 +322,6 @@ msgstr "IJografi"
 
 #~ msgid "Geography"
 #~ msgstr "IJografi"
+
+#~ msgid "Science"
+#~ msgstr "Usayizi"

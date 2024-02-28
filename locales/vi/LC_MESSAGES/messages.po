@@ -285,6 +285,12 @@ msgstr "Vô cùng"
 msgid "Geography"
 msgstr "Địa lý"
 
+msgid "Math"
+msgstr "Toán học"
+
+msgid "Science"
+msgstr "Khoa học"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -315,3 +321,6 @@ msgstr "Địa lý"
 
 #~ msgid "Geography"
 #~ msgstr "Địa lý"
+
+#~ msgid "Science"
+#~ msgstr "Kích cỡ"

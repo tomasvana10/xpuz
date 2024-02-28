@@ -1,0 +1,21 @@
+{
+    "kombinatorik": "Ilmu yang mempelajari penghitungan, penyusunan, dan kombinasi",
+    "permutasi": "Susunan benda dalam urutan tertentu",
+    "kombinasi": "Pemilihan barang tanpa mempertimbangkan pesanan",
+    "faktorial": "Hasil kali bilangan bulat dan semua bilangan bulat di bawahnya",
+    "koefisien binomial": "Banyaknya cara untuk memilih subset dari suatu himpunan",
+    "prinsip lubang merpati": "Jika barang 'n' dimasukkan ke dalam wadah 'm' dan n > m, maka paling sedikit satu wadah harus memuat lebih dari satu barang",
+    "prinsip inklusi-eksklusi": "Untuk dua himpunan berhingga, besar gabungan keduanya adalah jumlah dari besarnya dikurangi besar perpotongannya",
+    "produk kartesius": "Produk dari beberapa himpunan, menghasilkan himpunan semua pasangan terurut",
+    "kumpulan daya": "Himpunan semua himpunan bagian dari suatu himpunan",
+    "partisi": "Pembagian suatu himpunan menjadi himpunan bagian yang tidak tumpang tindih",
+    "nomor bel": "Banyaknya cara untuk mempartisi suatu himpunan",
+    "nomor stirling": "Banyaknya cara untuk mempartisi suatu himpunan menjadi himpunan bagian yang tidak kosong",
+    "nomor Catalan": "Jumlah jenis jalur kisi, permutasi, pohon biner tertentu, dll",
+    "mengatur": "Kumpulan objek yang berbeda, dianggap sebagai objek tersendiri",
+    "bagian": "Himpunan yang hanya memuat unsur-unsur yang terdapat pada himpunan tertentu lainnya",
+    "Persatuan": "Himpunan semua elemen berbeda dalam semua himpunan tertentu",
+    "persimpangan": "Himpunan semua elemen yang ada dalam semua himpunan tertentu",
+    "perbedaan": "Himpunan semua elemen dalam suatu himpunan yang tidak terdapat pada himpunan lain",
+    "melengkapi": "Himpunan semua elemen yang tidak berada dalam himpunan tertentu"
+}

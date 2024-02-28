@@ -1,0 +1,18 @@
+{
+    "funtzio trigonometrikoa": "Triangelu angeluzuzen baten aldeen luzeraren ratio gisa adierazten den angelu baten funtzioa",
+    "alderantzizko funtzioa": "Funtzio baten menpeko aldagaia beste baten aldagai independente gisa adieraziz lortzen den funtzioa",
+    "arkutangentea": "Ukitzailearen alderantzizko funtzioa",
+    "arku sinua": "Sinoaren alderantzizko funtzioa",
+    "arkosina": "Kosinuaren alderantzizko funtzioa",
+    "kosekantea": "Sino funtzioaren elkarrekikoa, hipotenusaren triangelu angeluzuzen baten kontrako aldearen arteko erlazioa bezala definitua.",
+    "kotangentea": "Funtzio ukitzailearen alderantzizkoa, triangelu angeluzuzen baten aldameneko aldearekiko erlazioa bezala definitua.",
+    "identitate trigonometrikoa": "Funtzio trigonometrikoak barne hartzen dituen berdintasuna, aldagaien balio guztientzat egiazkoa dena",
+    "sinen legea": "Triangelu batean, alde baten luzeraren eta kontrako angeluaren sinuaren arteko erlazioa konstantea da",
+    "kosinuen legea": "Triangelu batean, alde baten karratua beste bi aldeen karratuen baturaren berdina da ken bi alde horien biderkadura eta barnean dagoen angeluaren kosinua.",
+    "radian neurria": "Angelu baten neurria radianetan, hau da, arku baten luzeraren eta erradioaren arteko erlazioa",
+    "abiadura angeluarra": "Angelu batek denborarekiko duen aldaketa-abiadura",
+    "arku luzera": "Kurba baten sekzio batean bi punturen arteko distantzia",
+    "sektorea": "Bi erradioz eta haien ebakitako arkuz inguratutako zirkulu baten zatia",
+    "erlazio trigonometrikoa": "Triangelu zuzen baten bi aldeen luzeren erlazioa",
+    "ekuazio trigonometrikoa": "Aldagai baten funtzio trigonometriko bat edo batzuk barne hartzen dituen ekuazioa"
+}

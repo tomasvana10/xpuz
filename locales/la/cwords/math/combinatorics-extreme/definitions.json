@@ -1,0 +1,21 @@
+{
+    "combinatorics": "Studium numerandi, dispositionis et compositionis",
+    "permutatio": "Dispositione obiecti in certo ordine",
+    "iunctura": "Electio rerum sine ordine",
+    "factorial": "Productus integer et omnes integri infra",
+    "binomium coefficiens": "Multis modis eligere aliquid copiae",
+    "columbarium principium": "Si res 'n' in vasis 'm' et n> m ponuntur, oportet saltem unum receptaculum plus quam unum contineri.",
+    "inclusio exclusio principium": "Pro duobus quibusvis finibus finitis, magnitudo unionis eorum est summa magnitudinum suarum minus magnitudine intersectionum",
+    "cartesian uber": "Productum multiplex occidit, inde in statuto omnium paria ordinatorum",
+    "potentia set": "Set omnia copia copia",
+    "partitione": "Divisio certae in non-imbricatis copia",
+    "bell numerus": "Multis modis partiri in Statuto",
+    "concursum numero": "Multis modis dividere copia in copia non vacua",
+    "catalan numerus": "Numerus quarundam generum cancellorum, permutationum, arborum binariorum, etc",
+    "set": "Collectio rerum distinctarum, ut obiectum in se ipso",
+    "subset": "Copia quae sola elementa continet in certo quodam alio statuto inventa",
+    "unio": "Omnium elementorum distinctarum in omnibus datis mutationibus",
+    "intersectio": "Constitutio omnium elementorum quae in omnibus positis data sunt",
+    "differentia": "Omnium elementorum in uno statuto non sunt in alio statuto",
+    "complement": "Omnium elementorum non certo certo statuto"
+}

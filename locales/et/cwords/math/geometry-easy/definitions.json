@@ -1,0 +1,18 @@
+{
+    "nurk": "Kaks joont, mis kokku saavad nurga moodustamiseks",
+    "kongruentsed": "Suuruse ja kujuga identne",
+    "serv": "Kahe n\u00e4o kohtumine kolmem\u00f5\u00f5tmelisel kujundil",
+    "n\u00e4gu": "Ruumiliste kujundite pinnatasandid",
+    "v\u00f5rdk\u00fclgsed": "\u00dchepikkused k\u00fcljed",
+    "paralleelselt": "Kaks joont kahem\u00f5\u00f5tmelises ruumis, mis ei kohtu",
+    "lennuk": "Lame kahem\u00f5\u00f5tmeline pind, millel v\u00f5ivad lebada kahem\u00f5\u00f5tmelised objektid",
+    "punkt": "Konkreetne asukoht joonel, tasapinnal v\u00f5i ruumis",
+    "pool": "Geomeetriliste kujundite joonel\u00f5igud, mis moodustavad objekti v\u00e4lisilme",
+    "sirge": "Ilma k\u00f5verata",
+    "tipp": "Punkt, kus kahem\u00f5\u00f5tmelise kujundi kaks k\u00fclge v\u00f5i ruumilise kujundi kaks serva kohtuvad",
+    "ring": "Kahem\u00f5\u00f5tmeline kujund, mille k\u00f5ik punktid k\u00f5verjoonel on keskpunktist v\u00f5rdsel kaugusel",
+    "kolmnurk": "Kolme k\u00fcljega kinnine figuur",
+    "ristk\u00fclik": "Kahem\u00f5\u00f5tmeline suletud neljatahuline nelja t\u00e4isnurgaga kujund",
+    "ruut": "Erit\u00fc\u00fcpi ristk\u00fclik, millel on v\u00f5rdk\u00fclgsed k\u00fcljed ja paralleelsed vastask\u00fcljed",
+    "kuubik": "Kolmem\u00f5\u00f5tmeline kujund, mille n\u00e4gudeks on identsed v\u00f5rdk\u00fclgsed ruudud"
+}

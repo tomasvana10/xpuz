@@ -1,0 +1,22 @@
+{
+    "movo": "\u015can\u011do en pozicio de objekto la\u016dlonge de la tempo",
+    "akcelo": "Rapideco de \u015dan\u011do de rapido",
+    "rapido": "Rapido kaj direkto de objekto",
+    "forto": "Pu\u015do a\u016d tiri, kiu movas a\u016d \u015dan\u011das la movon de objekto",
+    "inercio": "Tendenco de objekto rezisti \u015dan\u011dojn en movi\u011do",
+    "impeto": "Produkto de maso kaj rapideco de objekto",
+    "gravito": "Forto kiu altiras objektojn kun maso unu al la alia",
+    "pezo": "Forto praktikita sur objekto pro gravito",
+    "maso": "Kvanto de materio en objekto",
+    "denseco": "Maso po unuo volumeno de substanco",
+    "laboro": "Transdono de energio kiam forto agas sur kaj movas objekton",
+    "energio": "Kapablo fari laboron",
+    "kinetika energio": "Energio de objekto pro \u011dia movi\u011do",
+    "potenciala energio": "Stokita energio pro la pozicio a\u016d agordo de objekto",
+    "potenco": "Rapido, je kiu laboro estas farita",
+    "frotado": "Forto kiu kontra\u016das movi\u011don inter du surfacoj en kontakto",
+    "premo": "Forto penita per unuo-areo",
+    "atmosfero": "Tavolo de gasoj \u0109irka\u016dantaj la Teron",
+    "flosemo": "Supren forto sur objekto mergita en fluido",
+    "sono": "Formo de energio kiu voja\u011das kiel ondoj tra medio"
+}

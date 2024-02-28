@@ -1,0 +1,22 @@
+{
+    "pohyb": "Zm\u011bna polohy objektu v pr\u016fb\u011bhu \u010dasu",
+    "akcelerace": "Rychlost zm\u011bny rychlosti",
+    "rychlost": "Rychlost a sm\u011br objektu",
+    "platnost": "Zatla\u010den\u00edm nebo vyta\u017een\u00edm se pohybuje nebo m\u011bn\u00ed pohyb objektu",
+    "setrva\u010dnost": "Tendence p\u0159edm\u011btu odol\u00e1vat zm\u011bn\u00e1m v pohybu",
+    "hybnost": "Sou\u010din hmotnosti a rychlosti p\u0159edm\u011btu",
+    "gravitace": "S\u00edla, kter\u00e1 k sob\u011b p\u0159itahuje hmotn\u00e9 p\u0159edm\u011bty",
+    "hmotnost": "S\u00edla p\u016fsob\u00edc\u00ed na p\u0159edm\u011bt v d\u016fsledku gravitace",
+    "Hmotnost": "Mno\u017estv\u00ed hmoty v objektu",
+    "hustota": "Hmotnost na jednotku objemu l\u00e1tky",
+    "pr\u00e1ce": "P\u0159enos energie, kdy\u017e na p\u0159edm\u011bt p\u016fsob\u00ed s\u00edla a pohybuje se j\u00edm",
+    "energie": "Schopnost d\u011blat pr\u00e1ci",
+    "Kinetick\u00e1 energie": "Energie objektu v d\u016fsledku jeho pohybu",
+    "potenci\u00e1ln\u00ed energie": "Ulo\u017een\u00e1 energie v d\u016fsledku polohy nebo konfigurace objektu",
+    "Nap\u00e1jen\u00ed": "M\u00edra, za kterou se pr\u00e1ce prov\u00e1d\u00ed",
+    "t\u0159en\u00ed": "S\u00edla, kter\u00e1 br\u00e1n\u00ed pohybu mezi dv\u011bma povrchy, kter\u00e9 jsou v kontaktu",
+    "tlak": "S\u00edla vynalo\u017een\u00e1 na jednotku plochy",
+    "atmosf\u00e9ra": "Vrstva plyn\u016f obklopuj\u00edc\u00ed Zemi",
+    "vztlak": "S\u00edla sm\u011brem vzh\u016fru na p\u0159edm\u011bt pono\u0159en\u00fd v tekutin\u011b",
+    "zvuk": "Forma energie, kter\u00e1 se \u0161\u00ed\u0159\u00ed jako vlny m\u00e9diem"
+}

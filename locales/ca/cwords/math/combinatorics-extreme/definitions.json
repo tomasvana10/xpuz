@@ -1,0 +1,21 @@
+{
+    "combinat\u00f2ria": "Estudi del recompte, l'ordenaci\u00f3 i la combinaci\u00f3",
+    "permutaci\u00f3": "Disposici\u00f3 dels objectes en un ordre concret",
+    "combinaci\u00f3": "Selecci\u00f3 d'articles sense tenir en compte l'ordre",
+    "factorial": "Producte d'un nombre enter i tots els nombres enters que hi ha per sota",
+    "coeficient binomial": "Nombre de maneres de triar un subconjunt d'un conjunt",
+    "principi encasillat": "Si \"n\" elements es posen en \"m\" contenidors i n > m, almenys un contenidor ha de contenir m\u00e9s d'un element",
+    "principi d'inclusi\u00f3 exclusi\u00f3": "Per a dos conjunts finits qualsevol, la mida de la seva uni\u00f3 \u00e9s la suma de les seves mides menys la mida de la seva intersecci\u00f3",
+    "producte cartesi\u00e0": "Producte de m\u00faltiples conjunts, resultant en un conjunt de tots els parells ordenats",
+    "conjunt de pot\u00e8ncia": "Conjunt de tots els subconjunts d'un conjunt",
+    "partici\u00f3": "Una divisi\u00f3 d'un conjunt en subconjunts no superposats",
+    "n\u00famero de campana": "Nombre de maneres de particionar un conjunt",
+    "n\u00famero Stirling": "Nombre de maneres de dividir un conjunt en subconjunts no buits",
+    "n\u00famero catal\u00e0": "Nombre de certs tipus de camins de gelosia, permutaci\u00f3, arbres binaris, etc",
+    "conjunt": "Col\u00b7lecci\u00f3 d'objectes diferents, considerats com un objecte per dret propi",
+    "subconjunt": "Un conjunt que cont\u00e9 nom\u00e9s elements que es troben en un altre conjunt determinat",
+    "Uni\u00f3": "El conjunt de tots els elements diferents en tots els conjunts donats",
+    "intersecci\u00f3": "El conjunt de tots els elements que es troben en tots els conjunts donats",
+    "difer\u00e8ncia": "El conjunt de tots els elements d'un conjunt que no estan en un altre conjunt",
+    "complement": "El conjunt de tots els elements que no pertanyen a un conjunt determinat"
+}

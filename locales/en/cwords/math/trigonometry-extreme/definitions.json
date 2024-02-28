@@ -1,0 +1,18 @@
+{
+    "trigonometric function": "A function of an angle expressed as a ratio of the length of the sides of a right-angled triangle",
+    "inverse function": "A function obtained by expressing the dependent variable of one function as the independent variable of another",
+    "arctangent": "The inverse function of the tangent",
+    "arcsine": "The inverse function of the sine",
+    "arccosine": "The inverse function of cosine",
+    "cosecant": "The reciprocal of the sine function, defined as the ratio of the hypotenuse to the opposite side of a right-angled triangle",
+    "cotangent": "The reciprocal of the tangent function, defined as the ratio of the adjacent to the opposite side of a right-angled triangle",
+    "trigonometric identity": "An equality involving trigonometric functions that is true for all values of the variables",
+    "law of sines": "In a triangle, the ratio of the length of a side to the sine of its opposite angle is constant",
+    "law of cosines": "In a triangle, the square of a side is equal to the sum of the squares of the other two sides minus twice the product of these two sides and the cosine of the included angle",
+    "radian measure": "The measure of an angle in radians, which is the ratio of the length of an arc to its radius",
+    "angular velocity": "The rate of change of an angle with respect to time",
+    "arc length": "The distance between two points along a section of a curve",
+    "sector": "The portion of a circle enclosed by two radii and their intercepted arc",
+    "trigonometric ratio": "The ratio of the lengths of two sides of a right triangle",
+    "trigonometric equation": "An equation involving one or several trigonometric functions of a variable"
+}

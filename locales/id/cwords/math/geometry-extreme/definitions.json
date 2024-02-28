@@ -1,0 +1,15 @@
+{
+    "geometri yang kompleks": "Studi tentang struktur dan konstruksi geometris yang timbul dari, atau dijelaskan oleh, bilangan kompleks",
+    "bilangan kompleks": "Bilangan berbentuk a + bi dimana a dan b adalah bilangan real",
+    "bagian nyata": "Suku dalam bilangan kompleks yang tidak memuat satuan imajiner sebagai faktornya",
+    "bagian imajiner": "Bagian bilangan kompleks yang mempunyai satuan imajiner sebagai faktornya",
+    "manifold yang kompleks": "Ruang dalam geometri kompleks yang merupakan generalisasi kurva dan permukaan",
+    "varietas aljabar kompleks": "Ruang dalam geometri kompleks yang merupakan solusi persamaan polinomial",
+    "konstruksi holomorfik": "Konstruksi dalam geometri kompleks yang dapat dibedakan secara kompleks",
+    "program model minimal": "Sebuah program dalam geometri kompleks untuk klasifikasi manifold kompleks dan varietas aljabar kompleks",
+    "ruang modulus": "Ruang dalam geometri kompleks yang menjadi parameter beberapa jenis objek geometris",
+    "dugaan calabi": "Dugaan geometri kompleks yang dibuktikan oleh Shing-Tung Yau tentang keberadaan jenis metrik khusus pada manifold kompleks",
+    "korespondensi hitchin-kobayashi": "Korespondensi dalam geometri kompleks antara kumpulan vektor holomorfik stabil dan solusi persamaan diferensial tertentu",
+    "korespondensi hodge nonabelian": "Korespondensi dalam geometri kompleks antara tipe lipatan kompleks tertentu dan tipe struktur aljabar tertentu",
+    "metrik kahler-einstein": "Jenis metrik khusus pada manifold kompleks yang memenuhi kondisi tertentu"
+}

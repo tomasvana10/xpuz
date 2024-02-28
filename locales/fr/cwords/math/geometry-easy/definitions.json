@@ -1,0 +1,18 @@
+{
+    "angle": "Deux lignes qui se rejoignent pour faire un coin",
+    "conforme": "Identique en taille et en forme",
+    "bord": "La rencontre de deux visages sur une forme tridimensionnelle",
+    "affronter": "Plans de surface de formes tridimensionnelles",
+    "\u00e9quilat\u00e9ral": "C\u00f4t\u00e9s de m\u00eame longueur",
+    "parall\u00e8le": "Deux lignes dans un espace bidimensionnel qui ne se rencontrent pas",
+    "avion": "Une surface plane bidimensionnelle sur laquelle des objets bidimensionnels peuvent reposer",
+    "indiquer": "Une position sp\u00e9cifique sur une ligne, un plan ou dans l'espace",
+    "c\u00f4t\u00e9": "Segments de lignes en figures g\u00e9om\u00e9triques qui composent l'ext\u00e9rieur de l'objet",
+    "droit": "Sans courbe",
+    "sommet": "Point auquel deux c\u00f4t\u00e9s d'une figure bidimensionnelle ou deux bords d'une figure tridimensionnelle se rencontrent",
+    "cercle": "Une forme bidimensionnelle dans laquelle tous les points de la ligne courbe sont \u00e9quidistants d'un point central",
+    "Triangle": "Une figure ferm\u00e9e \u00e0 trois c\u00f4t\u00e9s",
+    "rectangle": "Une figure bidimensionnelle, ferm\u00e9e, \u00e0 quatre c\u00f4t\u00e9s avec quatre angles droits",
+    "carr\u00e9": "Un type sp\u00e9cial de rectangle qui a des c\u00f4t\u00e9s \u00e9quilat\u00e9raux et des c\u00f4t\u00e9s oppos\u00e9s parall\u00e8les",
+    "cube": "Une figure tridimensionnelle avec des carr\u00e9s \u00e9quilat\u00e9raux identiques comme faces"
+}

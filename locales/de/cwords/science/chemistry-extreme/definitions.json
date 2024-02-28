@@ -1,0 +1,19 @@
+{
+    "Plasma": "Materiezustand bestehend aus geladenen Teilchen (Ionen und Elektronen)",
+    "ionisch": "Bindung, die durch Anziehung zwischen entgegengesetzt geladenen Ionen entsteht",
+    "kovalent": "Bindung, die durch die gemeinsame Nutzung von Elektronen zwischen Atomen entsteht",
+    "metallisch": "Bindung, die durch Anziehung zwischen positiven Metallkationen und delokalisierten Elektronen entsteht",
+    "Ausgleichsgleichung": "Chemische Gleichung mit gleicher Anzahl von Atomen jedes Elements auf beiden Seiten",
+    "Mol": "Einheit zur Messung der Menge einer Substanz (Avogadro-Partikelzahl)",
+    "Massenzahl": "Summe der Protonen und Neutronen im Atomkern",
+    "Ordnungszahl": "Anzahl der Protonen im Atomkern (bestimmt die Elementidentit\u00e4t)",
+    "Isotop": "Atome desselben Elements mit unterschiedlicher Neutronenzahl",
+    "Oxidation": "Verlust von Elektronen aus einem Atom oder Molek\u00fcl",
+    "die Erm\u00e4\u00dfigung": "Aufnahme von Elektronen durch ein Atom oder Molek\u00fcl",
+    "Redox": "Chemische Reaktion, die sowohl Oxidations- als auch Reduktionsprozesse umfasst",
+    "Aktivierungsenergie": "Mindestenergie, die f\u00fcr die Durchf\u00fchrung einer chemischen Reaktion erforderlich ist",
+    "Katalysator": "Stoff, der die Geschwindigkeit einer chemischen Reaktion erh\u00f6ht, ohne verbraucht zu werden",
+    "Thermodynamik": "Zweig der Chemie, der sich mit W\u00e4rme, Arbeit, Temperatur und Energie befasst",
+    "endothermisch": "Chemische Reaktion, die W\u00e4rme aus der Umgebung aufnimmt",
+    "exotherm": "Chemische Reaktion, die W\u00e4rme an die Umgebung abgibt"
+}

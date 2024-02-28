@@ -288,6 +288,12 @@ msgstr "Heev"
 msgid "Geography"
 msgstr "Geography"
 
+msgid "Math"
+msgstr "lej"
+
+msgid "Science"
+msgstr "Kev tshawb fawb"
+
 #~ msgid "Capitals"
 #~ msgstr "Cov peev"
 
@@ -308,3 +314,6 @@ msgstr "Geography"
 
 #~ msgid "Geography"
 #~ msgstr "Geography"
+
+#~ msgid "Science"
+#~ msgstr "Loj"

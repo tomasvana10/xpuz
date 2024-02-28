@@ -1,0 +1,16 @@
+{
+    "trigonometrik": "Trigonometriya tamoyillariga tegishli yoki ular bilan bog'liq",
+    "funktsiyasi": "Biror narsa nima uchun ishlatiladi",
+    "burchak": "Kesishgan ikki chiziq yoki tekislik orasidagi bo'shliq",
+    "qo'shni": "Umumiy chegara yoki chekkaga ega bo'lish",
+    "radian": "Uzunligi radiusga teng bo'lgan yoy bilan qoplangan aylana markazidagi burchakka teng tekis burchakning birligi",
+    "birlik doirasi": "Radiusi 1 bo'lgan doira",
+    "sinus": "Berilgan burchakka qarama-qarshi tomon uzunligining to'g'ri burchakli uchburchakning gipotenuzasi uzunligiga nisbati",
+    "kosinus": "To'g'ri burchakli uchburchakning qo'shni tomonining gipotenuzasiga nisbati",
+    "tangens": "Egri chiziqqa faqat bir nuqtada tegib turgan chiziq",
+    "sekant": "Ikki yoki undan ortiq nuqtada egri chiziqni kesib o'tuvchi to'g'ri chiziq",
+    "pifagor teoremasi": "To'g'ri burchakli uchburchakning uch tomoni o'rtasidagi Evklid geometriyasining asosiy munosabati",
+    "davriy funktsiya": "O'z qiymatlarini muntazam oraliq yoki davrlarda takrorlaydigan funksiya",
+    "amplituda": "Tebranish jism yoki to'lqin ustidagi nuqta tomonidan harakatlanadigan maksimal siljish yoki masofa",
+    "daraja o'lchovi": "To'liq doira 360 darajaga bo'lingan burchakning gradusdagi o'lchovi"
+}

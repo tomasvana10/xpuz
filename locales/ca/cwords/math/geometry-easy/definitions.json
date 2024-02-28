@@ -1,0 +1,18 @@
+{
+    "angle": "Dues l\u00ednies que es troben per fer un rac\u00f3",
+    "congruent": "Id\u00e8ntics en mida i forma",
+    "vora": "La reuni\u00f3 de dues cares en una forma tridimensional",
+    "cara": "Plans superficials de formes tridimensionals",
+    "equil\u00e0ter": "Costats que tenen la mateixa longitud",
+    "paral\u00b7lel": "Dues l\u00ednies en un espai bidimensional que no es troben",
+    "avi\u00f3": "Una superf\u00edcie plana bidimensional sobre la qual poden estar objectes bidimensionals",
+    "punt": "Una posici\u00f3 espec\u00edfica en una l\u00ednia, pla o espai",
+    "costat": "Segments de l\u00ednia en figures geom\u00e8triques que componen l'exterior de l'objecte",
+    "recte": "Sense corba",
+    "v\u00e8rtex": "El punt en qu\u00e8 dos costats d'una figura bidimensional o dues vores d'una figura tridimensional es troben",
+    "cercle": "Forma bidimensional en qu\u00e8 tots els punts de la l\u00ednia corba s\u00f3n equidistants d'un punt central",
+    "triangle": "Una figura tancada amb tres costats",
+    "rectangle": "Una figura bidimensional, tancada i de quatre cares amb quatre angles rectes",
+    "quadrat": "Un tipus especial de rectangle que t\u00e9 costats equil\u00e0ters i costats oposats paral\u00b7lels",
+    "cub": "Una figura tridimensional amb quadrats equil\u00e0ters id\u00e8ntics com a cares"
+}

@@ -285,6 +285,12 @@ msgstr "Extrem"
 msgid "Geography"
 msgstr "Geografi"
 
+msgid "Math"
+msgstr "Matematik"
+
+msgid "Science"
+msgstr "Vetenskap"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -315,3 +321,6 @@ msgstr "Geografi"
 
 #~ msgid "Geography"
 #~ msgstr "Geografi"
+
+#~ msgid "Science"
+#~ msgstr "Storlek"

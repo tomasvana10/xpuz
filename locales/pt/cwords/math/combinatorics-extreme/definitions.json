@@ -1,0 +1,21 @@
+{
+    "combinat\u00f3ria": "O estudo da contagem, arranjo e combina\u00e7\u00e3o",
+    "permuta\u00e7\u00e3o": "Organiza\u00e7\u00e3o de objetos em uma ordem espec\u00edfica",
+    "combina\u00e7\u00e3o": "Sele\u00e7\u00e3o de itens sem considerar o pedido",
+    "fatorial": "Produto de um n\u00famero inteiro e todos os n\u00fameros inteiros abaixo dele",
+    "coeficiente binomial": "N\u00famero de maneiras de escolher um subconjunto de um conjunto",
+    "princ\u00edpio do pombo": "Se 'n' itens forem colocados em 'm' cont\u00eaineres en > m, ent\u00e3o pelo menos um cont\u00eainer dever\u00e1 conter mais de um item",
+    "princ\u00edpio de exclus\u00e3o de inclus\u00e3o": "Para quaisquer dois conjuntos finitos, o tamanho da sua uni\u00e3o \u00e9 a soma dos seus tamanhos menos o tamanho da sua intersec\u00e7\u00e3o",
+    "produto cartesiano": "Produto de m\u00faltiplos conjuntos, resultando no conjunto de todos os pares ordenados",
+    "conjunto de for\u00e7a": "Conjunto de todos os subconjuntos de um conjunto",
+    "parti\u00e7\u00e3o": "Uma divis\u00e3o de um conjunto em subconjuntos n\u00e3o sobrepostos",
+    "n\u00famero da campainha": "N\u00famero de maneiras de particionar um conjunto",
+    "n\u00famero de Stirling": "N\u00famero de maneiras de particionar um conjunto em subconjuntos n\u00e3o vazios",
+    "n\u00famero catal\u00e3o": "N\u00famero de certos tipos de caminhos de rede, permuta\u00e7\u00f5es, \u00e1rvores bin\u00e1rias, etc.",
+    "definir": "Uma cole\u00e7\u00e3o de objetos distintos, considerados como um objeto em si",
+    "subconjunto": "Um conjunto que cont\u00e9m apenas elementos encontrados em outro conjunto",
+    "Uni\u00e3o": "O conjunto de todos os elementos distintos em todos os conjuntos dados",
+    "interse\u00e7\u00e3o": "O conjunto de todos os elementos que est\u00e3o em todos os conjuntos dados",
+    "diferen\u00e7a": "O conjunto de todos os elementos de um conjunto que n\u00e3o est\u00e3o em outro conjunto",
+    "complemento": "O conjunto de todos os elementos que n\u00e3o est\u00e3o em um determinado conjunto"
+}

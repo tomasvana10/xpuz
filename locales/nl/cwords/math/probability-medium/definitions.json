@@ -1,0 +1,11 @@
+{
+    "waarschijnlijkheid": "Maatstaf voor de waarschijnlijkheid dat een gebeurtenis zal plaatsvinden",
+    "voorbeeldruimte": "De verzameling van alle mogelijke uitkomsten van een waarschijnlijkheidsexperiment",
+    "evenement": "Een reeks uitkomsten waaraan een waarschijnlijkheid wordt toegekend",
+    "resultaat": "Een mogelijk resultaat van een waarschijnlijkheidsexperiment",
+    "gemiddeld": "Som van waarden gedeeld door het aantal waarden",
+    "willekeurig experiment": "Een proces waarbij de uitkomst pas bekend is als deze wordt waargenomen",
+    "onmogelijk": "Een gebeurtenis die geen enkele kans van slagen heeft",
+    "willekeurig": "Geregeld door of met gelijke kansen voor elk item",
+    "steekproef": "Een deelverzameling van een populatie"
+}

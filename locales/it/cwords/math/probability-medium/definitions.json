@@ -1,0 +1,11 @@
+{
+    "probabilit\u00e0": "Misura della probabilit\u00e0 che un evento si verifichi",
+    "spazio campione": "L'insieme di tutti i possibili risultati di un esperimento probabilistico",
+    "evento": "Un insieme di risultati a cui viene assegnata una probabilit\u00e0",
+    "risultato": "Un possibile risultato di un esperimento probabilistico",
+    "media": "Somma di valori divisa per il numero di valori",
+    "esperimento casuale": "Un processo il cui risultato non \u00e8 noto finch\u00e9 non viene osservato",
+    "impossibile": "Un evento senza alcuna possibilit\u00e0 che si verifichi",
+    "casuale": "Governato da o che implica pari possibilit\u00e0 per ciascun elemento",
+    "campione": "Un sottoinsieme di una popolazione"
+}

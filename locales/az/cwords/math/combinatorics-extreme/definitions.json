@@ -1,0 +1,21 @@
+{
+    "kombinatorika": "Sayma, d\u00fcz\u00fclm\u0259 v\u0259 birl\u0259\u015fm\u0259nin \u00f6yr\u0259nilm\u0259si",
+    "d\u0259yi\u015fdirm\u0259": "Obyektl\u0259rin m\u00fc\u0259yy\u0259n bir ard\u0131c\u0131ll\u0131qla d\u00fcz\u00fclm\u0259si",
+    "birl\u0259\u015fm\u0259": "Sifari\u015f n\u0259z\u0259r\u0259 al\u0131nmadan \u0259\u015fyalar\u0131n se\u00e7ilm\u0259si",
+    "faktorial": "Tam \u0259d\u0259din v\u0259 onun alt\u0131ndak\u0131 b\u00fct\u00fcn tam \u0259d\u0259dl\u0259rin hasili",
+    "binom \u0259msal\u0131": "\u00c7oxlu\u011fun alt \u00e7oxlu\u011funu se\u00e7m\u0259k yollar\u0131n\u0131n say\u0131",
+    "g\u00f6y\u0259r\u00e7in d\u0259liyi prinsipi": "\u018fg\u0259r 'n' elementi 'm' konteynerl\u0259rin\u0259 qoyulursa v\u0259 n > m, onda \u0259n az\u0131 bir konteynerd\u0259 bird\u0259n \u00e7ox element olmal\u0131d\u0131r",
+    "daxil olma istisna prinsipi": "\u0130st\u0259nil\u0259n iki sonlu \u00e7oxluq \u00fc\u00e7\u00fcn onlar\u0131n birl\u0259\u015fm\u0259sinin \u00f6l\u00e7\u00fcs\u00fc onlar\u0131n \u00f6l\u00e7\u00fcl\u0259rinin c\u0259mind\u0259n k\u0259si\u015fm\u0259nin \u00f6l\u00e7\u00fcs\u00fcn\u0259 b\u0259rab\u0259rdir.",
+    "kartezyen m\u0259hsul": "\u00c7oxlu d\u0259stl\u0259rin m\u0259hsulu, n\u0259tic\u0259d\u0259 b\u00fct\u00fcn sifari\u015f edilmi\u015f c\u00fctl\u0259rin d\u0259sti",
+    "g\u00fcc d\u0259sti": "\u00c7oxlu\u011fun b\u00fct\u00fcn alt \u00e7oxluqlar\u0131n\u0131n \u00e7oxlu\u011fu",
+    "b\u00f6lm\u0259": "\u00c7oxlu\u011fun \u00fcst-\u00fcst\u0259 d\u00fc\u015fm\u0259y\u0259n alt \u00e7oxluqlara b\u00f6l\u00fcnm\u0259si",
+    "z\u0259ng n\u00f6mr\u0259si": "D\u0259sti b\u00f6lm\u0259k yollar\u0131n\u0131n say\u0131",
+    "stirling n\u00f6mr\u0259si": "\u00c7oxlu\u011fu bo\u015f olmayan alt \u00e7oxluqlara b\u00f6lm\u0259k yollar\u0131n\u0131n say\u0131",
+    "katalan n\u00f6mr\u0259si": "M\u00fc\u0259yy\u0259n n\u00f6v q\u0259f\u0259s yollar\u0131n\u0131n, permutasiyalar\u0131n, binar a\u011faclar\u0131n v\u0259 s",
+    "t\u0259yin edin": "\u00d6z-\u00f6z\u00fcn\u0259 obyekt kimi q\u0259bul edil\u0259n f\u0259rqli obyektl\u0259rin toplusu",
+    "alt \u00e7oxluq": "Yaln\u0131z m\u00fc\u0259yy\u0259n ba\u015fqa \u00e7oxluqda olan elementl\u0259ri ehtiva ed\u0259n \u00e7oxluq",
+    "birlik": "B\u00fct\u00fcn verilmi\u015f \u00e7oxluqlardak\u0131 b\u00fct\u00fcn f\u0259rqli elementl\u0259rin \u00e7oxlu\u011fu",
+    "k\u0259si\u015fm\u0259": "B\u00fct\u00fcn verilmi\u015f \u00e7oxluqlarda olan b\u00fct\u00fcn elementl\u0259rin \u00e7oxlu\u011fu",
+    "f\u0259rq": "Bir \u00e7oxluqdak\u0131 dig\u0259r \u00e7oxluqda olmayan b\u00fct\u00fcn elementl\u0259rin \u00e7oxlu\u011fu",
+    "tamamlay\u0131r": "Verilmi\u015f \u00e7oxluqda olmayan b\u00fct\u00fcn elementl\u0259rin \u00e7oxlu\u011fu"
+}

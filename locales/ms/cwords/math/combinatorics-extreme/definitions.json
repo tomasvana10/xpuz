@@ -1,0 +1,21 @@
+{
+    "kombinatorik": "Kajian mengira, susunan, dan gabungan",
+    "pilih atur": "Susunan objek dalam susunan tertentu",
+    "gabungan": "Pemilihan barang tanpa mengambil kira tempahan",
+    "faktorial": "Hasil darab integer dan semua integer di bawahnya",
+    "pekali binomial": "Bilangan cara untuk memilih subset bagi set",
+    "prinsip lubang merpati": "Jika item 'n' dimasukkan ke dalam bekas 'm' dan n > m, maka sekurang-kurangnya satu bekas mesti mengandungi lebih daripada satu item",
+    "prinsip pengecualian kemasukan": "Untuk mana-mana dua set terhingga, saiz gabungannya ialah jumlah saiznya tolak saiz persilangannya",
+    "produk cartesian": "Produk berbilang set, menghasilkan set semua pasangan yang dipesan",
+    "set kuasa": "Set semua subset bagi set",
+    "partition": "Pembahagian set kepada subset tidak bertindih",
+    "nombor loceng": "Bilangan cara untuk membahagikan set",
+    "nombor stirling": "Bilangan cara untuk membahagikan set kepada subset bukan kosong",
+    "nombor catalan": "Bilangan jenis laluan kekisi tertentu, pilih atur, pokok binari, dsb",
+    "ditetapkan": "Koleksi objek yang berbeza, dianggap sebagai objek dalam haknya sendiri",
+    "subset": "Set yang mengandungi hanya elemen yang terdapat dalam set tertentu yang lain",
+    "kesatuan": "Set semua elemen berbeza dalam semua set yang diberikan",
+    "persimpangan": "Set semua elemen yang terdapat dalam semua set yang diberikan",
+    "beza": "Set semua elemen dalam satu set yang bukan dalam set lain",
+    "pelengkap": "Set semua elemen bukan dalam set tertentu"
+}

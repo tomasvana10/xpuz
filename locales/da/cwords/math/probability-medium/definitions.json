@@ -1,0 +1,11 @@
+{
+    "sandsynlighed": "M\u00e5l for sandsynligheden for, at en h\u00e6ndelse indtr\u00e6ffer",
+    "pr\u00f8verum": "S\u00e6ttet af alle mulige udfald af et sandsynlighedseksperiment",
+    "begivenhed": "Et s\u00e6t af udfald, som en sandsynlighed er tildelt",
+    "resultat": "Et muligt resultat af et sandsynlighedseksperiment",
+    "gennemsnit": "Summen af v\u00e6rdier divideret med antallet af v\u00e6rdier",
+    "tilf\u00e6ldigt eksperiment": "En proces, hvor resultatet ikke er kendt, f\u00f8r det er observeret",
+    "umulig": "En begivenhed uden chance for at indtr\u00e6ffe",
+    "tilf\u00e6ldig": "Styret af eller involverer lige chancer for hver genstand",
+    "pr\u00f8ve": "En delm\u00e6ngde af en befolkning"
+}

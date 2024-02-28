@@ -282,6 +282,12 @@ msgstr "สุดขีด"
 msgid "Geography"
 msgstr "ภูมิศาสตร์"
 
+msgid "Math"
+msgstr "คณิตศาสตร์"
+
+msgid "Science"
+msgstr "ศาสตร์"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -312,3 +318,6 @@ msgstr "ภูมิศาสตร์"
 
 #~ msgid "Geography"
 #~ msgstr "ภูมิศาสตร์"
+
+#~ msgid "Science"
+#~ msgstr "ขนาด"

@@ -1,0 +1,18 @@
+{
+    "vinkel": "Tv\u00e5 linjer som m\u00f6ts f\u00f6r att g\u00f6ra ett h\u00f6rn",
+    "kongruent": "Identiska i storlek och form",
+    "kant": "M\u00f6tet mellan tv\u00e5 ansikten p\u00e5 en tredimensionell form",
+    "ansikte": "Ytplan av tredimensionella former",
+    "liksidig": "Sidor som \u00e4r lika l\u00e5nga",
+    "parallell": "Tv\u00e5 linjer i ett tv\u00e5dimensionellt utrymme som inte m\u00f6ts",
+    "plan": "En platt tv\u00e5dimensionell yta p\u00e5 vilken tv\u00e5dimensionella f\u00f6rem\u00e5l kan ligga",
+    "punkt": "En specifik position p\u00e5 en linje, ett plan eller i rymden",
+    "sida": "Linjesegment i geometriska figurer som utg\u00f6r objektets exteri\u00f6r",
+    "hetero": "Utan en kurva",
+    "vertex": "Den punkt d\u00e4r tv\u00e5 sidor av en tv\u00e5dimensionell figur eller tv\u00e5 kanter av en tredimensionell figur m\u00f6ts",
+    "cirkel": "En tv\u00e5dimensionell form d\u00e4r alla punkter p\u00e5 den kr\u00f6kta linjen \u00e4r lika l\u00e5ngt fr\u00e5n en mittpunkt",
+    "triangel": "En sluten figur med tre sidor",
+    "rektangel": "En tv\u00e5dimensionell, sluten, fyrsidig figur med fyra r\u00e4ta vinklar",
+    "fyrkant": "En speciell typ av rektangel som har liksidiga sidor och parallella motsatta sidor",
+    "kub": "En tredimensionell figur med identiska liksidiga rutor som ansikten"
+}

@@ -1,0 +1,18 @@
+{
+    "trigonometrijska funkcija": "Funkcija kuta izra\u017eena kao omjer duljina stranica pravokutnog trokuta",
+    "inverzna funkcija": "Funkcija dobivena izra\u017eavanjem zavisne varijable jedne funkcije kao nezavisne varijable druge",
+    "arktangens": "Inverzna funkcija tangente",
+    "arcsinus": "Inverzna funkcija sinusa",
+    "arkosinus": "Inverzna funkcija kosinusa",
+    "kosekant": "Recipro\u010dna vrijednost funkcije sinusa, definirana kao omjer hipotenuze i suprotne stranice pravokutnog trokuta",
+    "kotangens": "Recipro\u010dna vrijednost funkcije tangente, definirana kao omjer susjedne i suprotne stranice pravokutnog trokuta",
+    "trigonometrijski identitet": "Jednakost koja uklju\u010duje trigonometrijske funkcije koja vrijedi za sve vrijednosti varijabli",
+    "zakon sinusa": "U trokutu je omjer duljine stranice i sinusa njezinog suprotnog kuta konstantan",
+    "zakon kosinusa": "U trokutu, kvadrat stranice jednak je zbroju kvadrata druge dvije stranice minus dvostruki umno\u017eak tih dviju stranica i kosinusa uklju\u010denog kuta",
+    "radijanska mjera": "Mjera kuta u radijanima, \u0161to je omjer duljine luka i njegovog polumjera",
+    "kutna brzina": "Brzina promjene kuta u odnosu na vrijeme",
+    "du\u017eina luka": "Udaljenost izme\u0111u dviju to\u010daka du\u017e dijela krivulje",
+    "sektor": "Dio kruga ome\u0111en dvama radijusima i njihovim presje\u010denim lukom",
+    "trigonometrijski omjer": "Omjer duljina dviju stranica pravokutnog trokuta",
+    "trigonometrijska jednad\u017eba": "Jednad\u017eba koja uklju\u010duje jednu ili vi\u0161e trigonometrijskih funkcija varijable"
+}

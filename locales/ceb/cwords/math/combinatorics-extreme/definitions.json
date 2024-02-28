@@ -1,0 +1,21 @@
+{
+    "kombinatoriko": "Ang pagtuon sa pag-ihap, paghan-ay, ug kombinasyon",
+    "permutasyon": "Paghan-ay sa mga butang sa usa ka piho nga han-ay",
+    "kombinasyon": "Pagpili sa mga butang nga wala gikonsiderar ang order",
+    "factorial": "Produkto sa usa ka integer ug tanan nga integer sa ubos niini",
+    "binomial nga coefficient": "Gidaghanon sa mga paagi sa pagpili og subset sa usa ka set",
+    "prinsipyo sa pigeonhole": "Kung ang 'n' nga mga butang ibutang sa 'm' nga mga sudlanan ug n> m, nan labing menos usa ka sudlanan kinahanglan adunay labaw sa usa ka butang",
+    "prinsipyo sa dili paglakip sa paglakip": "Alang sa bisan unsang duha ka may kinutuban nga mga set, ang gidak-on sa ilang unyon mao ang sumada sa ilang mga gidak-on minus ang gidak-on sa ilang intersection",
+    "cartesian nga produkto": "Produkto sa daghang mga set, nga miresulta sa set sa tanan nga gi-order nga mga pares",
+    "set sa gahum": "Set sa tanang subset sa usa ka set",
+    "partisyon": "Usa ka pagbahin sa usa ka set ngadto sa dili nagsapaw nga mga subset",
+    "numero sa kampana": "Gidaghanon sa mga paagi sa pagbahin sa usa ka set",
+    "stirling nga numero": "Gidaghanon sa mga paagi sa pagbahin sa usa ka set ngadto sa dili bakante nga mga subset",
+    "numero sa catalan": "Gidaghanon sa pipila ka mga matang sa lattice paths, permutation, binary trees, etc",
+    "gitakda": "Usa ka koleksyon sa lahi nga mga butang, giisip nga usa ka butang sa kaugalingon nga katungod",
+    "subset": "Usa ka set nga adunay sulod lamang nga mga elemento nga makita sa usa ka piho nga lain nga set",
+    "unyon": "Ang set sa tanan nga lahi nga elemento sa tanan nga gihatag nga set",
+    "intersection": "Ang set sa tanang elemento nga anaa sa tanang gihatag nga set",
+    "kalainan": "Ang set sa tanang elemento sa usa ka set nga wala sa laing set",
+    "komplemento": "Ang set sa tanang elemento nga wala sa gihatag nga set"
+}

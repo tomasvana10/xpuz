@@ -1,0 +1,18 @@
+{
+    "angulus": "Duae lineae ad angulum",
+    "congruens": "Identical in magnitudine et figura",
+    "acies": "Conventus duarum facies in figura trium dimensiva",
+    "faciem": "Plana superficiei figurarum trium dimensiva",
+    "aequilaterum": "Partes eiusdem longitudinis",
+    "parallela": "Duae lineae in duas dimensiones non conveniunt",
+    "planum": "Superficies plana duarum dimensivarum in quibus duo dimensiva objecta jacere possunt",
+    "punctum": "Locus specificus in linea, plano, vel in spatio",
+    "latus": "segmenta lineae in figuris geometricis exterioribus obiecti componunt",
+    "recta": "Sine curva",
+    "vertex": "Punctum in quo duo latera figurae duae dimensiva vel duae orae trium dimensivarum figurae conveniunt.",
+    "circulus": "Figura duo dimensiva, in qua omnia puncta in linea curva aequidistant a puncto centri",
+    "triangulus": "A figura clausa tribus lateribus",
+    "rectangulum": "Duo dimensiva, figura occlusa, tetragonum cum quatuor rectis angulis",
+    "quadrata": "Peculiaris species rectanguli quod habet latera aequilatera et latera opposita parallela",
+    "cubus": "A three-dimensiva figure in quadratis aequilateris identicis sicut facies"
+}

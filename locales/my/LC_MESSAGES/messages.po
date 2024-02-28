@@ -288,6 +288,12 @@ msgstr "အလွန်အမင်း"
 msgid "Geography"
 msgstr "ပထဝီဝင်"
 
+msgid "Math"
+msgstr "သင်္ချာ"
+
+msgid "Science"
+msgstr "သိပ္ပံ"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -318,3 +324,6 @@ msgstr "ပထဝီဝင်"
 
 #~ msgid "Geography"
 #~ msgstr "ပထဝီဝင်"
+
+#~ msgid "Science"
+#~ msgstr "အရွယ်အစား"

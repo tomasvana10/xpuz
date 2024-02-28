@@ -1,0 +1,11 @@
+{
+    "kemungkinan": "Ukuran kemungkinan terjadinya suatu peristiwa",
+    "ruang sampel": "Himpunan semua hasil yang mungkin dari suatu eksperimen probabilitas",
+    "peristiwa": "Seperangkat hasil yang diberi probabilitas",
+    "hasil": "Hasil yang mungkin dari eksperimen probabilitas",
+    "rata-rata": "Jumlah nilai dibagi dengan jumlah nilai",
+    "percobaan acak": "Sebuah proses yang hasilnya tidak akan diketahui sampai kita mengamatinya",
+    "mustahil": "Suatu peristiwa yang tidak mungkin terjadi",
+    "acak": "Diatur oleh atau melibatkan peluang yang sama untuk setiap item",
+    "Sampel": "Bagian dari suatu populasi"
+}

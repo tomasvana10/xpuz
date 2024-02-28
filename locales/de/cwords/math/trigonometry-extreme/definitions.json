@@ -1,0 +1,18 @@
+{
+    "Trigonometrische Funktion": "Eine Funktion eines Winkels, ausgedr\u00fcckt als Verh\u00e4ltnis der Seitenl\u00e4ngen eines rechtwinkligen Dreiecks",
+    "Umkehrfunktion": "Eine Funktion, die man erh\u00e4lt, indem man die abh\u00e4ngige Variable einer Funktion als unabh\u00e4ngige Variable einer anderen Funktion ausdr\u00fcckt",
+    "Arkustangens": "Die Umkehrfunktion der Tangente",
+    "Arkussinus": "Die Umkehrfunktion des Sinus",
+    "Arkuskosinus": "Die Umkehrfunktion des Kosinus",
+    "Kosekans": "Der Kehrwert der Sinusfunktion, definiert als das Verh\u00e4ltnis der Hypotenuse zur gegen\u00fcberliegenden Seite eines rechtwinkligen Dreiecks",
+    "Kotangens": "Der Kehrwert der Tangensfunktion, definiert als das Verh\u00e4ltnis der benachbarten zur gegen\u00fcberliegenden Seite eines rechtwinkligen Dreiecks",
+    "trigonometrische Identit\u00e4t": "Eine Gleichheit mit trigonometrischen Funktionen, die f\u00fcr alle Werte der Variablen gilt",
+    "Gesetz der Sinus": "In einem Dreieck ist das Verh\u00e4ltnis der L\u00e4nge einer Seite zum Sinus des gegen\u00fcberliegenden Winkels konstant",
+    "Kosinusgesetz": "In einem Dreieck ist das Quadrat einer Seite gleich der Summe der Quadrate der anderen beiden Seiten minus dem doppelten Produkt dieser beiden Seiten und dem Kosinus des eingeschlossenen Winkels",
+    "Bogenma\u00df": "Das Ma\u00df f\u00fcr einen Winkel im Bogenma\u00df, das das Verh\u00e4ltnis der L\u00e4nge eines Bogens zu seinem Radius darstellt",
+    "Winkelgeschwindigkeit": "Die \u00c4nderungsrate eines Winkels im Zeitverlauf",
+    "Bogenl\u00e4nge": "Der Abstand zwischen zwei Punkten entlang eines Kurvenabschnitts",
+    "Sektor": "Der Teil eines Kreises, der von zwei Radien und ihrem Schnittbogen umschlossen wird",
+    "trigonometrisches Verh\u00e4ltnis": "Das Verh\u00e4ltnis der L\u00e4ngen zweier Seiten eines rechtwinkligen Dreiecks",
+    "trigonometrische Gleichung": "Eine Gleichung, die eine oder mehrere trigonometrische Funktionen einer Variablen beinhaltet"
+}

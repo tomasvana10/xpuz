@@ -1,0 +1,18 @@
+{
+    "trigonometrisk funktion": "En funktion af en vinkel udtrykt som forholdet mellem l\u00e6ngden af siderne i en retvinklet trekant",
+    "omvendt funktion": "En funktion opn\u00e5et ved at udtrykke den afh\u00e6ngige variabel af en funktion som den uafh\u00e6ngige variabel af en anden",
+    "arctangens": "Den omvendte funktion af tangenten",
+    "arcsine": "Sinusens omvendte funktion",
+    "arccosine": "Den omvendte funktion af cosinus",
+    "cosecant": "Det reciproke af sinusfunktionen, defineret som forholdet mellem hypotenusen og den modsatte side af en retvinklet trekant",
+    "cotangens": "Det reciproke af tangentfunktionen, defineret som forholdet mellem den tilst\u00f8dende og den modsatte side af en retvinklet trekant",
+    "trigonometrisk identitet": "En lighed, der involverer trigonometriske funktioner, der er sand for alle v\u00e6rdier af variablerne",
+    "sinusloven": "I en trekant er forholdet mellem l\u00e6ngden af en side og sinus af dens modsatte vinkel konstant",
+    "cosinusloven": "I en trekant er kvadratet af en side lig med summen af kvadraterne p\u00e5 de to andre sider minus to gange produktet af disse to sider og cosinus af den inkluderede vinkel",
+    "radianm\u00e5l": "M\u00e5l for en vinkel i radianer, som er forholdet mellem l\u00e6ngden af en bue og dens radius",
+    "Vinkelhastighed": "\u00c6ndringshastigheden af en vinkel i forhold til tiden",
+    "buel\u00e6ngde": "Afstanden mellem to punkter langs en sektion af en kurve",
+    "sektor": "Den del af en cirkel, der er omsluttet af to radier og deres opsnappede bue",
+    "trigonometrisk forhold": "Forholdet mellem l\u00e6ngderne af to sider af en retvinklet trekant",
+    "trigonometrisk ligning": "En ligning, der involverer en eller flere trigonometriske funktioner af en variabel"
+}

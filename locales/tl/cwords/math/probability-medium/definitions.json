@@ -1,0 +1,11 @@
+{
+    "probabilidad": "Sukat ng posibilidad na mangyari ang isang kaganapan",
+    "sampol na ispasyo": "Ang hanay ng lahat ng posibleng resulta ng isang probabilidad na eksperimento",
+    "kaganapan": "Isang hanay ng mga resulta kung saan itinalaga ang isang posibilidad",
+    "kinalabasan": "Isang posibleng resulta ng isang probabilidad na eksperimento",
+    "karaniwan": "Kabuuan ng mga halaga na hinati sa bilang ng mga halaga",
+    "random na eksperimento": "Isang proseso kung saan hindi malalaman ang kinalabasan hangga't hindi ito naobserbahan",
+    "imposible": "Isang kaganapan na walang pagkakataong mangyari",
+    "random": "Pinamamahalaan ng o kinasasangkutan ng pantay na pagkakataon para sa bawat item",
+    "sample": "Isang subset ng isang populasyon"
+}

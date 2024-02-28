@@ -288,6 +288,12 @@ msgstr "ਅਤਿ"
 msgid "Geography"
 msgstr "ਭੂਗੋਲ"
 
+msgid "Math"
+msgstr "ਗਣਿਤ"
+
+msgid "Science"
+msgstr "ਵਿਗਿਆਨ"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -318,3 +324,6 @@ msgstr "ਭੂਗੋਲ"
 
 #~ msgid "Geography"
 #~ msgstr "ਭੂਗੋਲ"
+
+#~ msgid "Science"
+#~ msgstr "ਆਕਾਰ"

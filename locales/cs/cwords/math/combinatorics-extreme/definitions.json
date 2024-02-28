@@ -1,0 +1,21 @@
+{
+    "kombinatorika": "Studium po\u010d\u00edt\u00e1n\u00ed, uspo\u0159\u00e1d\u00e1n\u00ed a kombinace",
+    "permutace": "Uspo\u0159\u00e1d\u00e1n\u00ed objekt\u016f v ur\u010dit\u00e9m po\u0159ad\u00ed",
+    "kombinace": "V\u00fdb\u011br zbo\u017e\u00ed bez zohledn\u011bn\u00ed objedn\u00e1vky",
+    "faktori\u00e1l": "Sou\u010din cel\u00e9ho \u010d\u00edsla a v\u0161ech cel\u00fdch \u010d\u00edsel pod n\u00edm",
+    "binomick\u00fd koeficient": "Po\u010det zp\u016fsob\u016f, jak vybrat podmno\u017einu mno\u017einy",
+    "princip roz\u0161katulkov\u00e1n\u00ed": "Pokud je 'n' polo\u017eek um\u00edst\u011bno do 'm' kontejner\u016f a n > m, pak alespo\u0148 jeden kontejner mus\u00ed obsahovat v\u00edce ne\u017e jednu polo\u017eku",
+    "princip inkluze a vylou\u010den\u00ed": "Pro jak\u00e9koli dv\u011b kone\u010dn\u00e9 mno\u017einy je velikost jejich sjednocen\u00ed sou\u010dtem jejich velikost\u00ed m\u00ednus velikost jejich pr\u016fniku",
+    "kart\u00e9zsk\u00fd sou\u010din": "Sou\u010din v\u00edce sad, v\u00fdsledkem je sada v\u0161ech objednan\u00fdch p\u00e1r\u016f",
+    "nap\u00e1jec\u00ed sada": "Mno\u017eina v\u0161ech podmno\u017ein mno\u017einy",
+    "rozd\u011blit": "Rozd\u011blen\u00ed mno\u017einy na nep\u0159ekr\u00fdvaj\u00edc\u00ed se podmno\u017einy",
+    "\u010d\u00edslo zvonku": "Po\u010det zp\u016fsob\u016f rozd\u011blen\u00ed sady",
+    "stirling \u010d\u00edslo": "Po\u010det zp\u016fsob\u016f rozd\u011blen\u00ed sady na nepr\u00e1zdn\u00e9 podmno\u017einy",
+    "katal\u00e1nsk\u00e9 \u010d\u00edslo": "Po\u010det ur\u010dit\u00fdch typ\u016f m\u0159\u00ed\u017eov\u00fdch cest, permutac\u00ed, bin\u00e1rn\u00edch strom\u016f atd",
+    "soubor": "Soubor odli\u0161n\u00fdch objekt\u016f pova\u017eovan\u00fdch za samostatn\u00fd objekt",
+    "podmno\u017eina": "Mno\u017eina, kter\u00e1 obsahuje pouze prvky nalezen\u00e9 v ur\u010dit\u00e9 jin\u00e9 mno\u017ein\u011b",
+    "svaz": "Mno\u017eina v\u0161ech z\u0159eteln\u00fdch prvk\u016f ve v\u0161ech dan\u00fdch mno\u017ein\u00e1ch",
+    "pr\u016fse\u010d\u00edk": "Mno\u017eina v\u0161ech prvk\u016f, kter\u00e9 jsou ve v\u0161ech dan\u00fdch mno\u017ein\u00e1ch",
+    "rozd\u00edl": "Mno\u017eina v\u0161ech prvk\u016f v jedn\u00e9 sad\u011b, kter\u00e9 nejsou v jin\u00e9 sad\u011b",
+    "dopln\u011bk": "Mno\u017eina v\u0161ech prvk\u016f, kter\u00e9 nejsou v dan\u00e9 mno\u017ein\u011b"
+}

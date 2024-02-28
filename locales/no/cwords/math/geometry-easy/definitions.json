@@ -1,0 +1,18 @@
+{
+    "vinkel": "To linjer som m\u00f8tes for \u00e5 lage et hj\u00f8rne",
+    "kongruent": "Identisk i st\u00f8rrelse og form",
+    "kant": "M\u00f8tet mellom to ansikter p\u00e5 en tredimensjonal form",
+    "ansikt": "Overflateplan av tredimensjonale former",
+    "likesidet": "Sider som er like lange",
+    "parallell": "To linjer i et todimensjonalt rom som ikke m\u00f8tes",
+    "flyet": "En flat todimensjonal overflate som todimensjonale objekter kan ligge p\u00e5",
+    "punkt": "En spesifikk posisjon p\u00e5 en linje, et plan eller i rommet",
+    "side": "Linjesegmenter i geometriske figurer som utgj\u00f8r det ytre av objektet",
+    "rett": "Uten kurve",
+    "toppunkt": "Punktet der to sider av en todimensjonal figur eller to kanter av en tredimensjonal figur m\u00f8tes",
+    "sirkel": "En todimensjonal form der alle punktene p\u00e5 den buede linjen er like langt fra et midtpunkt",
+    "triangel": "En lukket figur med tre sider",
+    "rektangel": "En todimensjonal, lukket, firesidig figur med fire rette vinkler",
+    "torget": "En spesiell type rektangel som har likesidede sider og parallelle motsatte sider",
+    "kube": "En tredimensjonal figur med identiske likesidede firkanter som ansikter"
+}

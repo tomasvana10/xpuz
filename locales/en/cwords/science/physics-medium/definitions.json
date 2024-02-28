@@ -1,0 +1,22 @@
+{
+    "motion": "Change in position of an object over time",
+    "acceleration": "Rate of change of velocity",
+    "velocity": "Speed and direction of an object",
+    "force": "Push or pull that moves or changes an object's motion",
+    "inertia": "Tendency of an object to resist changes in motion",
+    "momentum": "Product of mass and velocity of an object",
+    "gravity": "Force that attracts objects with mass towards each other",
+    "weight": "Force exerted on an object due to gravity",
+    "mass": "Amount of matter in an object",
+    "density": "Mass per unit volume of a substance",
+    "work": "Transfer of energy when a force acts on and moves an object",
+    "energy": "Ability to do work",
+    "kinetic energy": "Energy of an object due to its motion",
+    "potential energy": "Stored energy due to an object's position or configuration",
+    "power": "Rate at which work is done",
+    "friction": "Force that opposes motion between two surfaces in contact",
+    "pressure": "Force exerted per unit area",
+    "atmosphere": "Layer of gases surrounding Earth",
+    "buoyancy": "Upward force on an object submerged in a fluid",
+    "sound": "Form of energy that travels as waves through a medium"
+}

@@ -1,0 +1,18 @@
+{
+    "Funcion trigonometrica": "Funci\u00f3n de un \u00e1ngulo expresada como la raz\u00f3n de la longitud de los lados de un tri\u00e1ngulo rect\u00e1ngulo",
+    "funci\u00f3n inversa": "Una funci\u00f3n obtenida expresando la variable dependiente de una funci\u00f3n como la variable independiente de otra",
+    "arcangente": "La funci\u00f3n inversa de la tangente.",
+    "arcoseno": "La funci\u00f3n inversa del seno.",
+    "arcocoseno": "La funci\u00f3n inversa del coseno.",
+    "cosecante": "El rec\u00edproco de la funci\u00f3n seno, definido como la relaci\u00f3n entre la hipotenusa y el lado opuesto de un tri\u00e1ngulo rect\u00e1ngulo.",
+    "cotangente": "El rec\u00edproco de la funci\u00f3n tangente, definido como la raz\u00f3n entre el lado adyacente y el lado opuesto de un tri\u00e1ngulo rect\u00e1ngulo",
+    "identidad trigonom\u00e9trica": "Una igualdad que involucra funciones trigonom\u00e9tricas que es verdadera para todos los valores de las variables.",
+    "ley de los senos": "En un tri\u00e1ngulo, la raz\u00f3n entre la longitud de un lado y el seno de su \u00e1ngulo opuesto es constante",
+    "ley de los cosenos": "En un tri\u00e1ngulo, el cuadrado de un lado es igual a la suma de los cuadrados de los otros dos lados menos el doble del producto de estos dos lados y el coseno del \u00e1ngulo incluido.",
+    "medida en radianes": "La medida de un \u00e1ngulo en radianes, que es la relaci\u00f3n entre la longitud de un arco y su radio.",
+    "velocidad angular": "La tasa de cambio de un \u00e1ngulo con respecto al tiempo.",
+    "longitud de arco": "La distancia entre dos puntos a lo largo de una secci\u00f3n de una curva.",
+    "sector": "La porci\u00f3n de un c\u00edrculo encerrada por dos radios y su arco interceptado.",
+    "raz\u00f3n trigonom\u00e9trica": "La raz\u00f3n de las longitudes de dos lados de un tri\u00e1ngulo rect\u00e1ngulo.",
+    "ecuaci\u00f3n trigonom\u00e9trica": "Una ecuaci\u00f3n que involucra una o varias funciones trigonom\u00e9tricas de una variable."
+}

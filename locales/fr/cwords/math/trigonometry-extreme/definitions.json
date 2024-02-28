@@ -1,0 +1,18 @@
+{
+    "fonction trigonom\u00e9trique": "Fonction d'un angle exprim\u00e9 comme le rapport de la longueur des c\u00f4t\u00e9s d'un triangle rectangle",
+    "fonction inverse": "Une fonction obtenue en exprimant la variable d\u00e9pendante d'une fonction comme variable ind\u00e9pendante d'une autre",
+    "arctangente": "La fonction inverse de la tangente",
+    "arc sinus": "La fonction inverse du sinus",
+    "arc cosinus": "La fonction inverse du cosinus",
+    "cos\u00e9cante": "L'inverse de la fonction sinuso\u00efdale, d\u00e9finie comme le rapport de l'hypot\u00e9nuse au c\u00f4t\u00e9 oppos\u00e9 d'un triangle rectangle",
+    "cotangente": "L'inverse de la fonction tangente, d\u00e9finie comme le rapport du c\u00f4t\u00e9 adjacent au c\u00f4t\u00e9 oppos\u00e9 d'un triangle rectangle",
+    "identit\u00e9 trigonom\u00e9trique": "Une \u00e9galit\u00e9 impliquant des fonctions trigonom\u00e9triques qui est vraie pour toutes les valeurs des variables",
+    "loi des sinus": "Dans un triangle, le rapport entre la longueur d'un c\u00f4t\u00e9 et le sinus de son angle oppos\u00e9 est constant",
+    "loi des cosinus": "Dans un triangle, le carr\u00e9 d'un c\u00f4t\u00e9 est \u00e9gal \u00e0 la somme des carr\u00e9s des deux autres c\u00f4t\u00e9s moins le double du produit de ces deux c\u00f4t\u00e9s et le cosinus de l'angle inclus.",
+    "mesure des radians": "La mesure d'un angle en radians, qui est le rapport entre la longueur d'un arc et son rayon.",
+    "vitesse angulaire": "Le taux de changement d'un angle par rapport au temps",
+    "longueur de l'arc": "La distance entre deux points le long d'une section d'une courbe",
+    "secteur": "La partie d'un cercle entour\u00e9e de deux rayons et leur arc intercept\u00e9",
+    "rapport trigonom\u00e9trique": "Le rapport des longueurs de deux c\u00f4t\u00e9s d'un triangle rectangle",
+    "\u00e9quation trigonom\u00e9trique": "Une \u00e9quation impliquant une ou plusieurs fonctions trigonom\u00e9triques d'une variable"
+}

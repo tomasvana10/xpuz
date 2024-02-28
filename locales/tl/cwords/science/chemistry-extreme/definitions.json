@@ -1,0 +1,19 @@
+{
+    "plasma": "Ang estado ng bagay na binubuo ng mga sisingilin na particle (ions at electron)",
+    "ionic": "Bond na nabuo sa pamamagitan ng atraksyon sa pagitan ng magkasalungat na sisingilin na mga ion",
+    "covalent": "Bond na nabuo sa pamamagitan ng pagbabahagi ng mga electron sa pagitan ng mga atomo",
+    "metaliko": "Ang bono na nabuo sa pamamagitan ng atraksyon sa pagitan ng mga positibong metal na kasyon at mga delokalis na electron",
+    "pagbabalanse ng equation": "Chemical equation na may pantay na bilang ng mga atom ng bawat elemento sa magkabilang panig",
+    "nunal": "Yunit na ginagamit upang sukatin ang dami ng isang sangkap (bilang ng mga particle ni Avogadro)",
+    "Pangkalahatang numero": "Kabuuan ng mga proton at neutron sa nucleus ng atom",
+    "atomic number": "Bilang ng mga proton sa nucleus ng atom (tinutukoy ang pagkakakilanlan ng elemento)",
+    "isotope": "Mga atom ng parehong elemento na may iba't ibang bilang ng mga neutron",
+    "oksihenasyon": "Pagkawala ng mga electron mula sa isang atom o molekula",
+    "pagbabawas": "Pagkuha ng mga electron sa pamamagitan ng isang atom o molekula",
+    "redox": "Reaksyon ng kemikal na kinasasangkutan ng parehong proseso ng oksihenasyon at pagbabawas",
+    "activation energy": "Minimum na enerhiya na kinakailangan para mangyari ang isang kemikal na reaksyon",
+    "katalista": "Substansyang nagpapataas ng rate ng isang kemikal na reaksyon nang hindi natupok",
+    "thermodynamics": "Sangay ng kimika na may kinalaman sa init, trabaho, temperatura, at enerhiya",
+    "endothermic": "Reaksyon ng kemikal na sumisipsip ng init mula sa paligid",
+    "exothermic": "Reaksyon ng kemikal na naglalabas ng init sa paligid"
+}

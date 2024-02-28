@@ -1,0 +1,21 @@
+{
+    "combinatorics": "Ranns\u00f3kn \u00e1 talningu, uppr\u00f6\u00f0un og samsetningu",
+    "umbreytingu": "R\u00f6\u00f0un hluta \u00ed \u00e1kve\u00f0inni r\u00f6\u00f0",
+    "samsetning": "Val \u00e1 hlutum \u00e1n tillits til p\u00f6ntunar",
+    "\u00fe\u00e1ttager\u00f0": "Afur\u00f0 heilt\u00f6lu og allra heiltalna fyrir ne\u00f0an hana",
+    "tv\u00ednefnastu\u00f0ull": "Fj\u00f6ldi lei\u00f0a til a\u00f0 velja hlutmengi af mengi",
+    "d\u00fafug\u00f6tureglan": "Ef 'n' hlutir eru settir \u00ed 'm' \u00edl\u00e1t og n > m, \u00fe\u00e1 ver\u00f0ur a\u00f0 minnsta kosti einn \u00edl\u00e1t a\u00f0 innihalda fleiri en einn hlut",
+    "meginreglan um \u00fatilokun \u00e1n a\u00f0greiningar": "Fyrir hva\u00f0a tv\u00f6 endanlegt mengi sem er, er st\u00e6r\u00f0 sameiningarinnar summan af st\u00e6r\u00f0um \u00feeirra a\u00f0 fr\u00e1dregnum st\u00e6r\u00f0 skur\u00f0punkta \u00feeirra",
+    "kartes\u00edsk vara": "Afur\u00f0 \u00far m\u00f6rgum settum, sem lei\u00f0ir til setts af \u00f6llum p\u00f6ntu\u00f0um p\u00f6rum",
+    "kraftsett": "Mengi allra undirmengi mengis",
+    "skipting": "Skipting mengis \u00ed undirmengi sem ekki skarast",
+    "bj\u00f6llun\u00famer": "Fj\u00f6ldi lei\u00f0a til a\u00f0 skipta setti",
+    "stirling tala": "Fj\u00f6ldi lei\u00f0a til a\u00f0 skipta mengi \u00ed \u00f3t\u00f3m undirmengi",
+    "katal\u00f3nska n\u00fameri\u00f0": "Fj\u00f6ldi tiltekinna tegunda grindarbrauta, umbreytinga, tv\u00f6faldra trj\u00e1a o.s.frv",
+    "sett": "Safn a\u00f0greindra hluta, \u00e1litnir sem hlutur \u00ed sj\u00e1lfu s\u00e9r",
+    "undirmengi": "Mengi sem inniheldur a\u00f0eins \u00fe\u00e6tti sem finnast \u00ed \u00e1kve\u00f0nu \u00f6\u00f0ru mengi",
+    "Verkal\u00fd\u00f0sf\u00e9lag": "Mengi allra a\u00f0greindra \u00fe\u00e1tta \u00ed \u00f6llum tilteknum mengum",
+    "gatnam\u00f3t": "Mengi allra \u00fe\u00e1tta sem eru \u00ed \u00f6llum tilteknum mengjum",
+    "munur": "Mengi allra \u00fe\u00e1tta \u00ed einu mengi sem eru ekki \u00ed \u00f6\u00f0ru mengi",
+    "vi\u00f0b\u00f3t": "Mengi allra \u00fe\u00e1tta sem ekki eru \u00ed tilteknu mengi"
+}

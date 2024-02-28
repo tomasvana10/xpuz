@@ -1,0 +1,18 @@
+{
+    "kulma": "Kaksi rivi\u00e4, jotka kohtaavat muodostaen kulman",
+    "yhtenev\u00e4inen": "Samankokoinen ja muodoltaan",
+    "reuna": "Kahden kasvon kohtaaminen kolmiulotteisessa muodossa",
+    "kasvot": "Kolmiulotteisten muotojen pintatasot",
+    "tasasivuinen": "Samanpituiset sivut",
+    "rinnakkain": "Kaksi linjaa kaksiulotteisessa avaruudessa, jotka eiv\u00e4t kohtaa",
+    "kone": "Tasainen kaksiulotteinen pinta, jolla kaksiulotteiset esineet voivat lev\u00e4t\u00e4",
+    "kohta": "Tietty sijainti linjalla, tasossa tai avaruudessa",
+    "puolella": "Geometristen kuvioiden viivasegmentit, jotka muodostavat kohteen ulkopinnan",
+    "suoraan": "Ilman kaarevuutta",
+    "k\u00e4rkipiste": "Piste, jossa kaksiulotteisen hahmon kaksi sivua tai kolmiulotteisen hahmon kaksi reunaa kohtaavat",
+    "ympyr\u00e4": "Kaksiulotteinen muoto, jossa kaikki kaarevan viivan pisteet ovat yht\u00e4 kaukana keskipisteest\u00e4",
+    "kolmio": "Suljettu hahmo, jossa on kolme sivua",
+    "suorakulmio": "Kaksiulotteinen, suljettu, nelisivuinen hahmo, jossa on nelj\u00e4 suoraa kulmaa",
+    "neli\u00f6": "Erityinen suorakulmiotyyppi, jossa on tasasivuiset sivut ja yhdensuuntaiset vastakkaiset sivut",
+    "kuutio": "Kolmiulotteinen hahmo, jossa on identtiset tasasivuiset neli\u00f6t kasvoina"
+}

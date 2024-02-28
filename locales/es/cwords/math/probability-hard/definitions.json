@@ -1,0 +1,11 @@
+{
+    "axiomas de probabilidad": "Proposiciones fundamentales en la teor\u00eda de la probabilidad.",
+    "la probabilidad condicional": "La probabilidad de un evento dado que ha ocurrido otro evento.",
+    "variables aleatorias": "Una variable cuyos valores posibles son resultados num\u00e9ricos de un fen\u00f3meno aleatorio.",
+    "diferencia": "La expectativa de la desviaci\u00f3n al cuadrado de una variable aleatoria de su media",
+    "eventos dependientes": "Dos eventos son dependientes si la ocurrencia de uno afecta la probabilidad de que ocurra el otro.",
+    "resultados igualmente probables": "Resultados que tienen la misma probabilidad de ocurrir",
+    "Desviaci\u00f3n Est\u00e1ndar": "Una medida de la cantidad de variaci\u00f3n o dispersi\u00f3n de un conjunto de valores.",
+    "estad\u00edstica": "Una medida \u00fanica de alg\u00fan atributo de una muestra.",
+    "ensayo": "Cada observaci\u00f3n en un experimento de probabilidad."
+}

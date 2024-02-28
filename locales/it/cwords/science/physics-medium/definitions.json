@@ -1,0 +1,21 @@
+{
+    "movimento": "Cambiamento di posizione di un oggetto nel tempo",
+    "accelerazione": "Tasso di variazione della velocit\u00e0",
+    "velocit\u00e0": "Velocit\u00e0 e direzione di un oggetto",
+    "forza": "Spingere o tirare che sposta o modifica il movimento di un oggetto",
+    "inerzia": "Tendenza di un oggetto a resistere ai cambiamenti di movimento",
+    "quantit\u00e0 di moto": "Prodotto della massa per la velocit\u00e0 di un oggetto",
+    "gravit\u00e0": "Forza che attrae gli oggetti dotati di massa gli uni verso gli altri",
+    "peso": "Forza esercitata su un oggetto a causa della gravit\u00e0",
+    "massa": "Quantit\u00e0 di materia in un oggetto",
+    "densit\u00e0": "Massa per unit\u00e0 di volume di una sostanza",
+    "lavoro": "Trasferimento di energia quando una forza agisce e sposta un oggetto",
+    "energia": "Velocit\u00e0 con cui viene svolto il lavoro",
+    "energia cinetica": "Energia di un oggetto dovuta al suo movimento",
+    "energia potenziale": "Energia immagazzinata a causa della posizione o della configurazione di un oggetto",
+    "attrito": "Forza che si oppone al movimento tra due superfici in contatto",
+    "pressione": "Forza esercitata per unit\u00e0 di superficie",
+    "atmosfera": "Strato di gas che circonda la Terra",
+    "galleggiabilit\u00e0": "Forza verso l'alto esercitata su un oggetto immerso in un fluido",
+    "suono": "Forma di energia che viaggia come onde attraverso un mezzo"
+}

@@ -1,0 +1,21 @@
+{
+    "kombinatorika": "Skai\u010diavimo, i\u0161d\u0117stymo ir derinimo tyrimas",
+    "permutacija": "Objekt\u0173 i\u0161d\u0117stymas tam tikra tvarka",
+    "derinys": "Preki\u0173 pasirinkimas neatsi\u017evelgiant \u012f u\u017esakym\u0105",
+    "faktorinis": "Sveikojo skai\u010diaus ir vis\u0173 po juo esan\u010di\u0173 sveik\u0173j\u0173 skai\u010di\u0173 sandauga",
+    "binominis koeficientas": "B\u016bd\u0173, kaip pasirinkti rinkinio poaib\u012f, skai\u010dius",
+    "karvelio principas": "Jei \u201en\u201c element\u0173 dedama \u012f \u201em\u201c konteinerius, o n > m, tada bent viename konteineryje turi b\u016bti daugiau nei viena prek\u0117",
+    "\u012ftraukimo atmetimo principas": "Bet kuri\u0173 dviej\u0173 baigtini\u0173 aibi\u0173 jungties dydis yra j\u0173 dyd\u017ei\u0173 suma, at\u0117mus j\u0173 sankirtos dyd\u012f",
+    "Dekarto gaminys": "Keli\u0173 rinkini\u0173 produktas, tod\u0117l gaunamas vis\u0173 u\u017esakyt\u0173 por\u0173 rinkinys",
+    "galios rinkinys": "Vis\u0173 aib\u0117s poaibi\u0173 rinkinys",
+    "pertvara": "Aib\u0117s padalijimas \u012f nesutampan\u010dius poaibius",
+    "varpelio numeris": "Rinkinio skaidymo b\u016bd\u0173 skai\u010dius",
+    "stirlingas skai\u010dius": "B\u016bd\u0173, kaip padalinti rinkin\u012f \u012f netu\u0161\u010dius poaibius, skai\u010dius",
+    "katalon\u0173 numeris": "Tam tikr\u0173 tip\u0173 gardel\u0117s tak\u0173, permutacij\u0173, dvejetaini\u0173 med\u017ei\u0173 ir kt. skai\u010dius",
+    "rinkinys": "Skirting\u0173 objekt\u0173 rinkinys, laikomas atskiru objektu",
+    "poaibis": "Rinkinys, kuriame yra tik tam tikrame kitame rinkinyje esantys elementai",
+    "s\u0105junga": "Vis\u0173 atskir\u0173 element\u0173 rinkinys visuose pateiktuose rinkiniuose",
+    "sankry\u017ea": "Vis\u0173 element\u0173, esan\u010di\u0173 visose duotose rinkiniuose, rinkinys",
+    "skirtumas": "Vis\u0173 vieno rinkinio element\u0173, kuri\u0173 n\u0117ra kitame rinkinyje, rinkinys",
+    "papildyti": "Vis\u0173 element\u0173, kurie n\u0117ra nurodytoje aib\u0117je, rinkinys"
+}

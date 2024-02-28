@@ -1,0 +1,18 @@
+{
+    "trigonometri\u010dna funkcija": "Funkcija kota, izra\u017eena kot razmerje med dol\u017einami stranic pravokotnega trikotnika",
+    "inverzna funkcija": "Funkcija, dobljena z izra\u017eanjem odvisne spremenljivke ene funkcije kot neodvisne spremenljivke druge",
+    "arktangens": "Inverzna funkcija tangente",
+    "arcsinus": "Inverzna funkcija sinusa",
+    "arkosinus": "Inverzna funkcija kosinusa",
+    "kosekans": "Recipro\u010dna vrednost funkcije sinusa, definirana kot razmerje med hipotenuzo in nasprotno stranjo pravokotnega trikotnika",
+    "kotangens": "Recipro\u010dna vrednost funkcije tangente, definirana kot razmerje med sosednjo in nasprotno stranico pravokotnega trikotnika",
+    "trigonometri\u010dna identiteta": "Enakost, ki vklju\u010duje trigonometri\u010dne funkcije, ki velja za vse vrednosti spremenljivk",
+    "zakon sinusov": "V trikotniku je razmerje med dol\u017eino stranice in sinusom njenega nasprotnega kota konstantno",
+    "kosinusni zakon": "V trikotniku je kvadrat stranice enak vsoti kvadratov drugih dveh strani minus dvakratni produkt teh dveh stranic in kosinus vklju\u010denega kota",
+    "radianska mera": "Mera kota v radianih, ki je razmerje med dol\u017eino loka in njegovim polmerom",
+    "kotna hitrost": "Hitrost spremembe kota glede na \u010das",
+    "dol\u017eina loka": "Razdalja med dvema to\u010dkama vzdol\u017e odseka krivulje",
+    "sektor": "Del kroga, ki ga oklepata dva polmera in njun prestre\u017eeni lok",
+    "trigonometri\u010dno razmerje": "Razmerje dol\u017ein dveh strani pravokotnega trikotnika",
+    "trigonometri\u010dna ena\u010dba": "Ena\u010dba, ki vklju\u010duje eno ali ve\u010d trigonometri\u010dnih funkcij spremenljivke"
+}

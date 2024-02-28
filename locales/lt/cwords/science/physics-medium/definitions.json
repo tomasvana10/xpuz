@@ -1,0 +1,22 @@
+{
+    "judes\u012f": "Objekto pad\u0117ties pasikeitimas laikui b\u0117gant",
+    "pagreitis": "Grei\u010dio kitimo greitis",
+    "greitis": "Objekto greitis ir kryptis",
+    "j\u0117ga": "St\u016bmimas arba traukimas, kuris judina arba kei\u010dia objekto judes\u012f",
+    "inercija": "Objekto polinkis prie\u0161intis jud\u0117jimo poky\u010diams",
+    "pagreit\u012f": "Daikto mas\u0117s ir grei\u010dio sandauga",
+    "gravitacija": "J\u0117ga, traukianti mas\u0119 turin\u010dius objektus vienas prie kito",
+    "svorio": "J\u0117ga, veikianti objekt\u0105 d\u0117l gravitacijos",
+    "mas\u0117": "Med\u017eiagos kiekis objekte",
+    "tankis": "Med\u017eiagos t\u016brio vieneto mas\u0117",
+    "dirbti": "Energijos perdavimas, kai j\u0117ga veikia ir judina objekt\u0105",
+    "energijos": "Geb\u0117jimas atlikti darb\u0105",
+    "kinetin\u0117 energija": "Objekto energija d\u0117l jo jud\u0117jimo",
+    "potencin\u0117 energija": "Sukaupta energija d\u0117l objekto pad\u0117ties ar konfig\u016bracijos",
+    "galia": "Atlikto darbo norma",
+    "trintis": "J\u0117ga, kuri prie\u0161tarauja judesiui tarp dviej\u0173 besilie\u010dian\u010di\u0173 pavir\u0161i\u0173",
+    "spaudimas": "J\u0117ga, taikoma ploto vienetui",
+    "atmosfera": "\u017dem\u0119 supantis duj\u0173 sluoksnis",
+    "pl\u016bdrumas": "Auk\u0161tyn nukreipta j\u0117ga \u012f skyst\u012f panardint\u0105 objekt\u0105",
+    "garsas": "Energijos forma, kuri terp\u0117je sklinda bangomis"
+}

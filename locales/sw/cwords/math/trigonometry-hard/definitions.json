@@ -1,0 +1,16 @@
+{
+    "trigonometric": "Ya au inayohusiana na kanuni za trigonometry",
+    "kazi": "Kitu gani kinatumika",
+    "pembe": "Nafasi kati ya mistari miwili au ndege zinazopishana",
+    "karibu": "Kuwa na mpaka wa kawaida au makali",
+    "radian": "Sehemu ya pembe ya ndege sawa na pembe katikati ya duara iliyopunguzwa na safu sawa kwa urefu na radius.",
+    "mduara wa kitengo": "Mduara wenye radius ya 1",
+    "sine": "Uwiano wa urefu wa upande ulio kinyume na pembe iliyotolewa na urefu wa hypotenuse ya pembetatu ya kulia",
+    "kosini": "Uwiano wa upande wa karibu na hypotenuse ya pembetatu ya kulia",
+    "tangent": "Mstari unaogusa mkunjo kwa nukta moja tu",
+    "secant": "Mstari wa moja kwa moja unaokatiza mkunjo kwa pointi mbili au zaidi",
+    "nadharia ya pythagorean": "Uhusiano wa kimsingi katika jiometri ya Euclidean kati ya pande tatu za pembetatu ya kulia",
+    "kazi ya mara kwa mara": "Chaguo za kukokotoa ambazo hurudia thamani zake kwa vipindi au vipindi vya kawaida",
+    "amplitude": "Upeo wa juu wa kuhama au umbali unaosogezwa na uhakika kwenye mwili au wimbi linalotetemeka",
+    "kipimo cha shahada": "Kipimo cha pembe katika digrii, ambapo duara kamili imegawanywa katika digrii 360"
+}

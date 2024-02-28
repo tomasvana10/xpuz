@@ -287,6 +287,12 @@ msgstr "Екстрім"
 msgid "Geography"
 msgstr "Географія"
 
+msgid "Math"
+msgstr "математика"
+
+msgid "Science"
+msgstr "Наука"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
@@ -317,3 +323,6 @@ msgstr "Географія"
 
 #~ msgid "Geography"
 #~ msgstr "Географія"
+
+#~ msgid "Science"
+#~ msgstr "Розмір"

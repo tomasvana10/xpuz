@@ -1,0 +1,22 @@
+{
+    "ruch": "Zmiana po\u0142o\u017cenia obiektu w czasie",
+    "przy\u015bpieszenie": "Szybko\u015b\u0107 zmiany pr\u0119dko\u015bci",
+    "pr\u0119dko\u015b\u0107": "Pr\u0119dko\u015b\u0107 i kierunek obiektu",
+    "si\u0142a": "Pchnij lub poci\u0105gnij, co porusza lub zmienia ruch obiektu",
+    "bezw\u0142adno\u015b\u0107": "Tendencja obiektu do przeciwstawiania si\u0119 zmianom ruchu",
+    "p\u0119d": "Iloczyn masy i pr\u0119dko\u015bci obiektu",
+    "powaga": "Si\u0142a przyci\u0105gaj\u0105ca do siebie cia\u0142a posiadaj\u0105ce mas\u0119",
+    "waga": "Si\u0142a wywierana na obiekt pod wp\u0142ywem grawitacji",
+    "masa": "Ilo\u015b\u0107 materii w obiekcie",
+    "g\u0119sto\u015b\u0107": "Masa na jednostk\u0119 obj\u0119to\u015bci substancji",
+    "praca": "Przenoszenie energii, gdy si\u0142a dzia\u0142a na obiekt i porusza go",
+    "energia": "Mo\u017cliwo\u015b\u0107 wykonywania pracy",
+    "energia kinetyczna": "Energia obiektu wynikaj\u0105ca z jego ruchu",
+    "energia potencjalna": "Energia zmagazynowana ze wzgl\u0119du na po\u0142o\u017cenie lub konfiguracj\u0119 obiektu",
+    "moc": "Szybko\u015b\u0107 wykonywania pracy",
+    "tarcie": "Si\u0142a przeciwstawiaj\u0105ca si\u0119 ruchowi pomi\u0119dzy dwiema stykaj\u0105cymi si\u0119 powierzchniami",
+    "ci\u015bnienie": "Si\u0142a wywierana na jednostk\u0119 powierzchni",
+    "atmosfera": "Warstwa gaz\u00f3w otaczaj\u0105ca Ziemi\u0119",
+    "p\u0142awno\u015b\u0107": "Si\u0142a skierowana ku g\u00f3rze na obiekt zanurzony w p\u0142ynie",
+    "d\u017awi\u0119k": "Forma energii rozchodz\u0105ca si\u0119 w o\u015brodku w postaci fal"
+}

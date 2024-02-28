@@ -1,0 +1,21 @@
+{
+    "combinatoric\u0103": "Studiul num\u0103r\u0103rii, aranjamentelor \u0219i combin\u0103rii",
+    "permutare": "Aranjarea obiectelor \u00eentr-o anumit\u0103 ordine",
+    "combina\u0163ie": "Selectarea articolelor f\u0103r\u0103 a lua \u00een considerare comanda",
+    "factorial": "Produsul unui num\u0103r \u00eentreg \u0219i al tuturor numerelor \u00eentregi de sub acesta",
+    "coeficient binomial": "Num\u0103rul de moduri de a alege un subset al unui set",
+    "principiul porumbeilor": "Dac\u0103 \u201en\u201d articole sunt puse \u00een \u201em\u201d containere \u0219i n > m, atunci cel pu\u021bin un container trebuie s\u0103 con\u021bin\u0103 mai mult de un articol",
+    "principiul includerii excluderii": "Pentru oricare dou\u0103 mul\u021bimi finite, dimensiunea unirii lor este suma dimensiunilor lor minus dimensiunea intersec\u021biei lor",
+    "produs cartezian": "Produs din mai multe seturi, rezult\u00e2nd un set de toate perechile ordonate",
+    "set de putere": "Ansamblu de toate subseturile unui set",
+    "compartimentare": "O \u00eemp\u0103r\u021bire a unei mul\u021bimi \u00een submul\u021bimi care nu se suprapun",
+    "num\u0103rul soneriei": "Num\u0103rul de moduri de a parti\u021biona un set",
+    "num\u0103r Stirling": "Num\u0103rul de moduri de a parti\u021biona un set \u00een subseturi nevide",
+    "num\u0103r catalan": "Num\u0103rul anumitor tipuri de c\u0103i de z\u0103brele, permut\u0103ri, arbori binari etc",
+    "a stabilit": "O colec\u021bie de obiecte distincte, considerate ca un obiect \u00een sine",
+    "subset": "O mul\u021bime care con\u021bine doar elemente g\u0103site \u00eentr-un anumit alt set",
+    "uniune": "Mul\u021bimea tuturor elementelor distincte din toate mul\u021bimile date",
+    "intersec\u021bie": "Mul\u021bimea tuturor elementelor care se afl\u0103 \u00een toate seturile date",
+    "diferen\u021b\u0103": "Mul\u021bimea tuturor elementelor dintr-o mul\u021bime care nu sunt \u00eentr-un alt set",
+    "completa": "Mul\u021bimea tuturor elementelor care nu sunt dintr-o mul\u021bime dat\u0103"
+}

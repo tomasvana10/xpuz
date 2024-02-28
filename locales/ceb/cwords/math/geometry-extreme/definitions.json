@@ -1,0 +1,15 @@
+{
+    "komplikado nga geometry": "Ang pagtuon sa geometriko nga mga istruktura ug mga konstruksyon nga naggikan, o gihulagway sa, mga komplikadong numero",
+    "komplikado nga mga numero": "Mga numero sa porma nga a + bi diin ang a ug b tinuod nga mga numero",
+    "tinuod nga bahin": "Ang termino sa usa ka komplikado nga numero nga wala maglangkob sa hinanduraw nga yunit ingon usa ka hinungdan",
+    "hinanduraw nga bahin": "Ang bahin sa usa ka komplikado nga numero nga adunay hinanduraw nga yunit ingon usa ka hinungdan",
+    "komplikado nga mga manifold": "Mga luna sa komplikadong geometry nga mga generalisasyon sa mga kurba ug mga ibabaw",
+    "komplikado nga klase sa algebraic": "Mga luna sa komplikadong geometry nga mga solusyon sa polynomial equation",
+    "holomorphic nga mga konstruksyon": "Mga konstruksyon sa komplikadong geometry nga komplikado-malainlain",
+    "gamay nga modelo nga programa": "Usa ka programa sa komplikadong geometry alang sa klasipikasyon sa mga komplikadong manifold ug komplikadong algebraic nga matang",
+    "moduli nga mga luna": "Mga luna sa komplikadong geometry nga nag-parameter sa pipila ka matang sa geometric nga butang",
+    "pangagpas sa calabi": "Usa ka pangagpas sa komplikadong geometry nga gipamatud-an ni Shing-Tung Yau mahitungod sa paglungtad sa usa ka espesyal nga matang sa metric sa usa ka komplikado nga manifold",
+    "hitchin-kobayashi nga sulat": "Usa ka sulat sa komplikadong geometry tali sa stable nga holomorphic vector bundle ug mga solusyon sa usa ka differential equation",
+    "nonabelian hodge nga mga sulat": "Usa ka sulat sa komplikadong geometry tali sa pipila ka matang sa komplikadong manifold ug pipila ka matang sa algebraic nga istruktura",
+    "kahler-einstein metrics": "Espesyal nga mga matang sa metrics sa usa ka komplikado nga manifold nga makatagbaw sa usa ka piho nga kondisyon"
+}

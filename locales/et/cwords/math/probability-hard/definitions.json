@@ -1,0 +1,11 @@
+{
+    "t\u00f5en\u00e4osusaksioomid": "P\u00f5hilaused t\u00f5en\u00e4osusteoorias",
+    "tingimuslik t\u00f5en\u00e4osus": "S\u00fcndmuse t\u00f5en\u00e4osus, kui on toimunud m\u00f5ni muu s\u00fcndmus",
+    "juhuslikud muutujad": "Muutuja, mille v\u00f5imalikud v\u00e4\u00e4rtused on juhusliku n\u00e4htuse arvulised tulemused",
+    "dispersioon": "Juhusliku suuruse ruudus k\u00f5rvalekalde ootus selle keskmisest",
+    "s\u00f5ltuvad s\u00fcndmused": "Kaks s\u00fcndmust on s\u00f5ltuvad, kui \u00fche toimumine m\u00f5jutab teise toimumise t\u00f5en\u00e4osust",
+    "sama t\u00f5en\u00e4olised tulemused": "Tulemused, mille esinemise t\u00f5en\u00e4osus on sama",
+    "standardh\u00e4lve": "V\u00e4\u00e4rtuste kogumi varieerumise v\u00f5i hajuvuse m\u00f5\u00f5t",
+    "Statistika": "Valimi m\u00f5ne atribuudi \u00fcksik m\u00f5\u00f5t",
+    "kohtuprotsess": "Iga vaatlus t\u00f5en\u00e4osuskatses"
+}

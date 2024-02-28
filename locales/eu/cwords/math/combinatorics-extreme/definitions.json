@@ -1,0 +1,21 @@
+{
+    "konbinatoria": "Zenbaketa, antolaketa eta konbinazioaren azterketa",
+    "permutazioa": "Objektuen ordena zehatz batean antolatzea",
+    "konbinazioa": "Elementuak hautatzea ordena kontuan hartu gabe",
+    "faktoriala": "Zenbaki oso baten eta haren azpian dauden zenbaki osoen produktua",
+    "koefiziente binomiala": "Multzo baten azpimultzo bat aukeratzeko modu kopurua",
+    "usategiaren printzipioa": "'n' elementuak 'm' ontzietan sartzen badira eta n > m, orduan gutxienez edukiontzi batek elementu bat baino gehiago izan behar du",
+    "inklusio-bazterketa printzipioa": "Bi multzo finituetarako, haien batasunaren tamaina haien tamainen batura ken euren ebakiduraren tamaina da.",
+    "produktu kartesiarra": "Multzo anitzen produktua, ordenatutako bikote guztien multzoa lortuz",
+    "potentzia multzoa": "Multzo baten azpimultzo guztien multzoa",
+    "zatiketa": "Multzo baten zatiketa gainjarri gabeko azpimultzoetan",
+    "kanpai zenbakia": "Multzo bat partitzeko modu kopurua",
+    "Stirling zenbakia": "Multzo bat hutsik gabeko azpimultzoetan banatzeko modu kopurua",
+    "katalan zenbakia": "Sare-bide mota jakin batzuen kopurua, permutazioak, zuhaitz bitarrak, etab",
+    "ezarri": "Objektu ezberdinen bilduma, berez objektutzat hartuta",
+    "azpimultzoa": "Beste multzo jakin batean aurkitutako elementuak soilik dituen multzoa",
+    "batasuna": "Emandako multzo guztietan elementu ezberdin guztien multzoa",
+    "bidegurutzea": "Emandako multzo guztietan dauden elementu guztien multzoa",
+    "aldea": "Multzo bateko elementu guztien multzoa, beste multzo batean ez daudenak",
+    "osagarri": "Multzo jakin batean ez dauden elementu guztien multzoa"
+}

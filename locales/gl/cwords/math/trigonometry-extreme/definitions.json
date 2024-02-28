@@ -1,0 +1,17 @@
+{
+    "funci\u00f3n trigonom\u00e9trica": "Unha funci\u00f3n dun \u00e1ngulo expresada como unha raz\u00f3n entre a lonxitude dos lados dun tri\u00e1ngulo rect\u00e1ngulo",
+    "funci\u00f3n inversa": "Funci\u00f3n obtida expresando a variable dependente dunha funci\u00f3n como a variable independente doutra",
+    "arcotanxente": "A funci\u00f3n inversa da tanxente",
+    "arcoseno": "A funci\u00f3n inversa do coseno",
+    "cosecante": "O rec\u00edproco da funci\u00f3n seno, definido como a relaci\u00f3n entre a hipotenusa e o lado oposto dun tri\u00e1ngulo rect\u00e1ngulo",
+    "cotanxente": "O rec\u00edproco da funci\u00f3n tanxente, definido como a raz\u00f3n do lado adxacente ao oposto dun tri\u00e1ngulo rect\u00e1ngulo",
+    "identidade trigonom\u00e9trica": "Unha igualdade que incl\u00fae funci\u00f3ns trigonom\u00e9tricas que \u00e9 verdadeira para todos os valores das variables",
+    "lei dos senos": "Nun tri\u00e1ngulo, a relaci\u00f3n entre a lonxitude dun lado e o seno do seu \u00e1ngulo oposto \u00e9 constante",
+    "lei dos cosenos": "Nun tri\u00e1ngulo, o cadrado dun lado \u00e9 igual \u00e1 suma dos cadrados dos outros dous lados menos o dobre do produto destes dous lados e o coseno do \u00e1ngulo inclu\u00eddo.",
+    "medida en radianes": "A medida dun \u00e1ngulo en radi\u00e1ns, que \u00e9 a relaci\u00f3n entre a lonxitude dun arco e o seu raio",
+    "velocidade angular": "A taxa de variaci\u00f3n dun \u00e1ngulo con respecto ao tempo",
+    "lonxitude do arco": "A distancia entre dous puntos ao longo dunha secci\u00f3n dunha curva",
+    "sector": "A porci\u00f3n dun c\u00edrculo encerrada por dous radios e o seu arco interceptado",
+    "raz\u00f3n trigonom\u00e9trica": "Relaci\u00f3n entre as lonxitudes de dous lados dun tri\u00e1ngulo rect\u00e1ngulo",
+    "ecuaci\u00f3n trigonom\u00e9trica": "Ecuaci\u00f3n que implica unha ou varias funci\u00f3ns trigonom\u00e9tricas dunha variable"
+}

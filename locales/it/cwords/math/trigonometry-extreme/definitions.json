@@ -1,0 +1,18 @@
+{
+    "funzione trigonometrica": "Funzione di un angolo espressa come rapporto tra la lunghezza dei lati di un triangolo rettangolo",
+    "funzione inversa": "Una funzione ottenuta esprimendo la variabile dipendente di una funzione come variabile indipendente di un'altra",
+    "arcotangente": "La funzione inversa della tangente",
+    "arcoseno": "La funzione inversa del seno",
+    "arcocoseno": "La funzione inversa del coseno",
+    "cosecante": "Il reciproco della funzione seno, definita come il rapporto tra l'ipotenusa e il lato opposto di un triangolo rettangolo",
+    "cotangente": "Il reciproco della funzione tangente, definita come il rapporto tra il lato adiacente e quello opposto di un triangolo rettangolo",
+    "identit\u00e0 trigonometrica": "Un'uguaglianza che coinvolge funzioni trigonometriche che \u00e8 vera per tutti i valori delle variabili",
+    "legge dei seni": "In un triangolo il rapporto tra la lunghezza di un lato e il seno dell'angolo opposto \u00e8 costante",
+    "legge dei coseni": "In un triangolo il quadrato di un lato \u00e8 uguale alla somma dei quadrati degli altri due lati meno il doppio del prodotto di questi due lati e il coseno dell'angolo compreso",
+    "misura in radianti": "La misura di un angolo in radianti, che \u00e8 il rapporto tra la lunghezza di un arco e il suo raggio",
+    "velocit\u00e0 angolare": "La velocit\u00e0 di variazione di un angolo rispetto al tempo",
+    "lunghezza dell'arco": "La distanza tra due punti lungo una sezione di una curva",
+    "settore": "La porzione di cerchio racchiusa da due raggi e dal loro arco intercettato",
+    "rapporto trigonometrico": "Il rapporto tra le lunghezze di due lati di un triangolo rettangolo",
+    "equazione trigonometrica": "Un'equazione che coinvolge una o pi\u00f9 funzioni trigonometriche di una variabile"
+}

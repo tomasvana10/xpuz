@@ -1,0 +1,18 @@
+{
+    "munus trigonometicum": "functio anguli expressa pro ratione longitudinis trianguli laterum recti",
+    "munus inversum": "Munus obtinetur exprimendo variabilis functionis dependentis alterius ut independens variabilis",
+    "arctangent": "Munus inversum tangentis",
+    "arcsine": "Munus inversum sinus",
+    "arccosine": "Munus inversum cosini",
+    "cosecant": "Munus reciprocum sinus, definita proportio hypotenusae ad oppositam partem trianguli recti.",
+    "cotangen": "Munus tangentis reciprocum, definitur pro proportio trianguli recti anguli adiacentis ad opposita",
+    "trigonometrica identitatis": "Aequalitas functionum trigonometricarum involventium verarum pro omnibus valoribus variabilium",
+    "lex sinus": "In triangulo est constans proportio longitudinis lateris ad sinum anguli oppositi",
+    "lex cosines": "In triangulo, quadratum lateris aequale est quadratis duorum laterum reliquorum, minus duplo ex duobus lateribus producto ex duobus angulis incluso et cosino incluso.",
+    "radian mensura": "Mensura anguli in radiis, quae est proportio longitudinis arcus ad suum radium",
+    "celeritas angularis": "Ratam mutationem anguli respectu temporis",
+    "arcus longitudinis": "Distantia duorum punctorum secundum sectionem curvae",
+    "pars": "Circuli portio duobus radiis inclusa & arcui eorum intercepto",
+    "Trigonometrica ratio": "Proportio longitudinum duorum laterum trianguli recti",
+    "Trigonometrica aequatio": "Aequatio unam vel plures functiones trigometricas variabilis involvens"
+}

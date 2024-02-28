@@ -1,0 +1,21 @@
+{
+    "Kombinatorik": "Das Studium des Z\u00e4hlens, Ordnens und Kombinierens",
+    "Permutation": "Anordnung von Objekten in einer bestimmten Reihenfolge",
+    "Kombination": "Auswahl von Artikeln ohne Ber\u00fccksichtigung der Bestellung",
+    "Fakult\u00e4t": "Produkt einer ganzen Zahl und aller darunter liegenden ganzen Zahlen",
+    "Binomialkoeffizient": "Anzahl der M\u00f6glichkeiten, eine Teilmenge einer Menge auszuw\u00e4hlen",
+    "Schubladenprinzip": "Wenn \u201en\u201c Artikel in \u201em\u201c Container gelegt werden und n > m ist, muss mindestens ein Container mehr als einen Artikel enthalten",
+    "Inklusions-Ausschluss-Prinzip": "F\u00fcr zwei beliebige endliche Mengen ist die Gr\u00f6\u00dfe ihrer Vereinigung die Summe ihrer Gr\u00f6\u00dfen minus der Gr\u00f6\u00dfe ihres Schnittpunkts",
+    "kartesisches Produkt": "Produkt mehrerer Mengen, was zu einer Menge aller geordneten Paare f\u00fchrt",
+    "Stromsatz": "Menge aller Teilmengen einer Menge",
+    "Partition": "Eine Aufteilung einer Menge in nicht \u00fcberlappende Teilmengen",
+    "Klingelnummer": "Anzahl der M\u00f6glichkeiten, eine Menge zu partitionieren",
+    "Stirlingzahl": "Anzahl der M\u00f6glichkeiten, eine Menge in nicht leere Teilmengen zu unterteilen",
+    "katalanische Nummer": "Anzahl bestimmter Arten von Gitterpfaden, Permutationen, Bin\u00e4rb\u00e4umen usw",
+    "Satz": "Eine Sammlung verschiedener Objekte, die als eigenst\u00e4ndiges Objekt betrachtet werden",
+    "Teilmenge": "Eine Menge, die nur Elemente enth\u00e4lt, die in einer bestimmten anderen Menge vorkommen",
+    "Union": "Die Menge aller unterschiedlichen Elemente in allen gegebenen Mengen",
+    "\u00dcberschneidung": "Die Menge aller Elemente, die in allen gegebenen Mengen enthalten sind",
+    "Unterschied": "Die Menge aller Elemente in einer Menge, die nicht in einer anderen Menge enthalten sind",
+    "erg\u00e4nzen": "Die Menge aller Elemente, die nicht in einer bestimmten Menge enthalten sind"
+}

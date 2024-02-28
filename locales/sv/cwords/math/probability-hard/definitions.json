@@ -1,0 +1,11 @@
+{
+    "sannolikhetsaxiom": "Grundl\u00e4ggande satser i sannolikhetsteori",
+    "betingad sannolikhet": "Sannolikheten f\u00f6r en h\u00e4ndelse givet att en annan h\u00e4ndelse har intr\u00e4ffat",
+    "slumpm\u00e4ssiga variabler": "En variabel vars m\u00f6jliga v\u00e4rden \u00e4r numeriska utfall av ett slumpm\u00e4ssigt fenomen",
+    "variation": "F\u00f6rv\u00e4ntningen p\u00e5 den kvadratiska avvikelsen f\u00f6r en slumpvariabel fr\u00e5n dess medelv\u00e4rde",
+    "beroende h\u00e4ndelser": "Tv\u00e5 h\u00e4ndelser \u00e4r beroende om f\u00f6rekomsten av den ena p\u00e5verkar sannolikheten f\u00f6r att den andra intr\u00e4ffar",
+    "lika troliga utfall": "Utfall som har samma sannolikhet att intr\u00e4ffa",
+    "standardavvikelse": "Ett m\u00e5tt p\u00e5 m\u00e4ngden variation eller spridning av en upps\u00e4ttning v\u00e4rden",
+    "statistisk": "Ett enda m\u00e5tt p\u00e5 n\u00e5got attribut i ett prov",
+    "r\u00e4tteg\u00e5ng": "Varje observation i ett sannolikhetsexperiment"
+}
