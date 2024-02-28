@@ -402,8 +402,11 @@ class CrosswordHelper:
                          language: str = "en",
                          ) -> Dict[str, str]:
         '''Load a definitions json for a given crossword.'''
+        path = os.path.join(Paths.LOCALES_PATH, language, "cwords", category, name, "definitions.json")
+        if not os.path.exists(path): # Fallback to the base crossword 
+            path = os.path.join(Paths.BASE_CWORDS_PATH, category, name, "definitions.json")
         try:
-            with open(os.path.join(Paths.LOCALES_PATH, language, "cwords", category, name, "definitions.json"), "r") as file:
+            with open(path) as file:
                 return json.load(file)
         except json.decoder.JSONDecodeError:
             raise EmptyDefinitions
@@ -413,7 +416,7 @@ class CrosswordHelper:
         '''Load a json that specifies the amount of attempts a crossword should be recreated based 
         on the amount of words that crossword will contain.
         '''
-        with open(Paths.ATTEMPTS_DB_PATH, "r") as file:
+        with open(Paths.ATTEMPTS_DB_PATH) as file: 
             return json.load(file)
 
 

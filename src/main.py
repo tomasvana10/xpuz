@@ -129,11 +129,13 @@ class Home(ctk.CTk):
     def open_cword_browser(self) -> None:
         '''Remove all homescreen widgets and instantiate the `CrosswordBrowser` class'''
         self.container.pack_forget()
+        self.title(_("Crossword Browser"))
         self.cword_browser: object = CrosswordBrowser(self)
 
     def close_cword_browser(self) -> None:
         '''Remove all `CrosswordBrowser` widgets and regenerate the main screen.'''
         self.cword_browser.pack_forget()
+        self.title(_("Crossword Puzzle"))
         self.generate_screen()
     
     def generate_screen(self, inst=None) -> None:
@@ -646,7 +648,7 @@ class CrosswordInfoBlock(ctk.CTkFrame):
         self.category_object = category_object
         self.value = value
         self.info = AppHelper._load_cword_info(self.category, self.name, self.master.master.locale.language)
-        self.translated_name = self.info["translated_name"]
+        self.translated_name = self.info["translated_name"] if self.info["translated_name"] else self.info["name"]
         self.difficulty = _(CrosswordDifficulties.DIFFICULTIES[self.info["difficulty"]])
         
         self._make_content()
@@ -657,7 +659,7 @@ class CrosswordInfoBlock(ctk.CTkFrame):
                                       wrap="word", fg_color=(Colour.Light.SUB, Colour.Dark.SUB),
                                       scrollbar_button_color=(Colour.Light.MAIN, Colour.Dark.MAIN))
         self.tb_name.tag_config("center", justify="center")
-        self.tb_name.insert("end", f"{chr(int(self.info['symbol'], 16))} {self.info['translated_name']}", "center")
+        self.tb_name.insert("end", f"{chr(int(self.info['symbol'], 16))} {self.translated_name}", "center")
         self.tb_name.configure(state="disabled")
 
         self.l_total_words = ctk.CTkLabel(self, font=self.master.master.TEXT_FONT,
@@ -788,7 +790,10 @@ class AppHelper:
                          language: str = "en"
                          ) -> Dict[str, Union[str, int]]:
         '''Load the `info.json` file for a crossword. Called by an instance of `CrosswordInfoBlock`.'''
-        with open(os.path.join(Paths.LOCALES_PATH, language, "cwords", category, name, "info.json")) as file:
+        path = os.path.join(Paths.LOCALES_PATH, language, "cwords", category, name, "info.json")
+        if not os.path.exists(path): # Fallback to base crossword info
+            path = os.path.join(Paths.BASE_CWORDS_PATH, category, name, "info.json")
+        with open(path) as file:
             return json.load(file)
     
     @staticmethod

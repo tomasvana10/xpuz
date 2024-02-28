@@ -181,10 +181,9 @@ class CrosswordTranslatorUtils:
                         ) -> CrosswordData:
         base_cword_path = os.path.join(Paths.BASE_CWORDS_PATH, category, name)
         '''Load the `definitions.json` and `info.json` files from a given base crossword.'''
-        with open(os.path.join(base_cword_path, "definitions.json"), "r") as file:
-            definitions = json.load(file)
-        with open(os.path.join(base_cword_path, "info.json"), "r") as file:
-            info = json.load(file)
+        with open(os.path.join(base_cword_path, "definitions.json"), "r") as def_file, \
+             open(os.path.join(base_cword_path, "info.json"), "r") as info_file:
+            definitions, info = json.load(def_file), json.load(info_file)
             
         return definitions, info
     
@@ -193,10 +192,10 @@ class CrosswordTranslatorUtils:
                                      definitions: Dict[str, str], 
                                      info: Dict[str, Union[str, int]]
                                      ) -> None:
-        with open(os.path.join(path, "definitions.json"), "w") as file:
-            json.dump(definitions, file, indent=4)
-        with open(os.path.join(path, "info.json"), "w") as file:
-            json.dump(info, file, indent=4)
+        with open(os.path.join(path, "definitions.json"), "w") as def_file, \
+             open(os.path.join(path, "info.json"), "w") as info_file:
+            json.dump(definitions, def_file, indent=4)
+            json.dump(info, info_file, indent=4)
                     
         
 if __name__ == "__main__":
