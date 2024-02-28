@@ -2,7 +2,7 @@
 Additionally, this script offers automatic detection of crossword completion, and relays this information to the user. 
 */
 
-let grid, dimensions, empty, colour_palette, intersections, lazy_msgs; // Jinja2 template variables
+let grid, dimensions, empty, colour_palette, intersections, err_msgs; // Jinja2 template variables
 let direction = "ACROSS",
     currentWord = null,
     cellCoords = null,
@@ -10,6 +10,7 @@ let direction = "ACROSS",
     isDown = null;
 const arrowKeys = ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"];
 const spacebarKeys = ["Spacebar", " "];
+const backspaceKeys = ["Backspace", "Delete"];
 
 /* Functions for conditional checks and other minor utilities */
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
@@ -56,53 +57,58 @@ document.addEventListener("DOMContentLoaded", () => { // On page load
 });
 
 
-document.addEventListener("keydown", (event) => {
-    /* Handle user input - either set the value of the current cell to the user's input (if valid),
-    perform cell deletion, or perform special tasks: remove the word/cell focus entirely, alternate
-    direction at an intersection, or move the focus according to the arrow keys a user presses. */
+document.addEventListener("keydown", event => {
+    /* Handle user input; either perform special functions or simply modify the grid based on the input. */
     let inputValue = event.key;
 
-    // This special input has to be detected here to allow the user to close a dropdown
-    if (inputValue === "Escape") { handleEscapePress(event); return; }
-    
-    // Accessibility related input detection relating to tab and tabindex. 
-    if (inputValue === "Enter" && !completionPopupToggled && !onloadPopupToggled) {
-        if (event?.target?.className === "def") { event.target.click(); }
-        return;
-    }
+    if (inputValue === "Enter" && event.target.className !== "def" 
+        && event.target.tagName !== "BUTTON" && cellCoords !== null) { return handleEnterKeybindPress(event); }
+    if (backspaceKeys.includes(inputValue) && event.shiftKey) { return handleClearButtonPress("word", "clear"); }
 
-    if (cellCoords === null) { return; } // User hasn't selected a cell, so normal/special inputs cannot be performed
-    
-    // Special inputs
-    if (arrowKeys.includes(inputValue)) { handleArrowPress(inputValue, event); return; }
-    if (intersections.includes(JSON.stringify(cellCoords)) && spacebarKeys.includes(inputValue)) { handleSpacebarPress(event); return; }
+    if (inputValue === "Enter" && !completionPopupToggled && !onloadPopupToggled) { return handleEnterPress(event); }
+    if (inputValue === "Escape") { return handleEscapePress(event); }
 
-    // Normal inputs
-    let mode = (inputValue === "Backspace" || inputValue === "Delete") ? "del" : "enter";
+    if (cellCoords === null) { return; } // User hasn't selected a cell, so the following inputs cannot be processed
+    if (arrowKeys.includes(inputValue)) { return handleArrowPress(inputValue, event); }
+    if (intersections.includes(JSON.stringify(cellCoords)) && spacebarKeys.includes(inputValue)) { return handleSpacebarPress(event); }
+
+    handleStandardInput(inputValue);
+});
+
+function handleStandardInput(inputValue) {
+    let mode = (backspaceKeys.includes(inputValue)) ? "del" : "enter";
     let currentCell = getCellElement(cellCoords);
-    currentCell.classList.remove("wrong");
 
     if (mode === "enter") {
         if (!(inputValue.length === 1 && (inputValue.match(/\p{L}/u)))) { return; } // Regex matches `letter` characters
         if (!currentCell.classList.contains("lock_in")) { setValue(currentCell, inputValue); }
+        currentCell.classList.remove("wrong"); 
     } else if (mode === "del") {
         if (!isEmpty(currentCell) && !currentCell.classList.contains("lock_in"))
                 return setValue(currentCell, "");  // Focused cell has content, just delete it
         if (!getCellElement(shiftCellCoords(cellCoords, direction, mode)).classList.contains("lock_in")) 
             setValue(getCellElement(shiftCellCoords(cellCoords, direction, mode)), ""); // Perform standard deletion
     }
-    
-    if (isCrosswordComplete()) { 
-        sleep(1).then(() => { 
-            emulateEscapePress();
-            toggleCompletionPopup(); 
-        });
-    }
+    crosswordCompletionHandler();
     
     changeCellFocus(false);
     cellCoords = shiftCellCoords(cellCoords, direction, mode);
     changeWordFocus(true); changeCellFocus(true);
-});
+}
+
+function handleEnterPress(event) {
+    if (event.target.className === "def") { event.target.click(); event.target.blur(); 
+    } else { }
+}
+
+function handleEnterKeybindPress(event) {
+    /* Allow the user to check the current word with "Enter" or reveal it with "Shift + Enter". */
+    document.querySelectorAll("#reveal_button #check_button").forEach((element) =>  element.blur());
+    hideDropdowns();
+    let mode = event.shiftKey ? "reveal" : "check";
+    checkOrRevealWord(mode);
+    crosswordCompletionHandler();
+}
 
 function handleSpacebarPress(event) {
     /* Alternate direction when pressing the spacebar at an intersection. */    
@@ -117,14 +123,15 @@ function handleEscapePress(event) {
     /* Remove focus from everything. */
     event.preventDefault();
     hideDropdowns(); 
-    currentDropdown = null;
-    setFocusMode(false);
-    cellCoords = null; currentWord = null;
+    try {
+        setFocusMode(false);
+        cellCoords = null; currentWord = null;
+    } catch {}
 }
 
 function handleArrowPress(key, event) {
     /* Determine how the program responds to the user pressing an arrow. First, see if a "enter" or
-    "del" shift is performed and in what direction. Then, ensure the user is not shifting into a
+    "del" type shift is performed and in what direction. Then, ensure the user is not shifting into a
     `.empty` cell. Finally, alternate the direction if necessary and refocus. */
     event.preventDefault();
     let mode = (key === "ArrowDown" || key === "ArrowRight") ? "enter" : "del";
@@ -161,6 +168,15 @@ function clearAllCells() {
     });
 }
 
+function crosswordCompletionHandler() {
+    if (isCrosswordComplete()) { 
+        sleep(1).then(() => { 
+            emulateEscapePress(); 
+            toggleCompletionPopup(); 
+        });
+    }
+}
+
 function handleCheckOrRevealButtonPress(magnitude, button) {
     /* Perform reveal/checking operations on a selected cell or word, or, the grid. 
     
@@ -173,66 +189,69 @@ function handleCheckOrRevealButtonPress(magnitude, button) {
     Clear (word/grid) button. */
 
     onDropdownClick(button + "_dropdown"); // Close the dropdown the user just clicked
-    currentDropdown = null;
     if (cellCoords === null && magnitude !== "grid") { return alert(err_msgs[0]); }
 
-    if (magnitude === "cell") { 
-        let cell = getCellElement(cellCoords);
-        if (button === "reveal") {
+    switch (magnitude) {
+        case "cell":
+            checkOrRevealCell(button); break;
+        case "word":
+            checkOrRevealWord(button); break;
+        case "grid":
+            checkOrRevealGrid(button);
+    }
+
+    crosswordCompletionHandler();
+}
+
+function checkOrRevealCell(mode) {
+    let cell = getCellElement(cellCoords);
+    if (mode === "reveal") {
+        cell.classList.remove("wrong");
+        setValue(cell, cell.getAttribute("data-value"));
+        cell.classList.add("lock_in"); // LOCK IN!!!
+
+    } else if (mode === "check") {
+        if (!isEmpty(cell)) {
+            if (cell.hasCorrectValue()) {
+                cell.classList.add("lock_in");
+            } else { cell.classList.add("wrong"); }
+        }
+    }
+}
+
+function checkOrRevealWord(mode) {
+    for (const cell of getWordElements()) {
+        if (mode === "reveal") {
             cell.classList.remove("wrong");
             setValue(cell, cell.getAttribute("data-value"));
-            cell.classList.add("lock_in"); // LOCK IN!!!
+            cell.classList.add("lock_in");
 
-        } else if (button === "check") {
-            if (!isEmpty(cell)) {
-                if (cell.hasCorrectValue()) {
-                    cell.classList.add("lock_in");
-                } else { cell.classList.add("wrong"); }
-            }
+        } else if (mode === "check") {
+            if (cell.hasCorrectValue()) {
+                cell.classList.add("lock_in");
+            } else { cell.classList.add("wrong"); }
         }
     }
+}
 
-    if (magnitude === "word") { 
-        for (const cell of getWordElements()) {
-            if (button === "reveal") {
-                cell.classList.remove("wrong");
-                setValue(cell, cell.getAttribute("data-value"));
+function checkOrRevealGrid(mode) {
+    document.querySelectorAll(".non_empty_cell").forEach((cell) => {
+        if (mode === "reveal") {
+            cell.classList.remove("wrong");
+            setValue(cell, cell.getAttribute("data-value"));
+            cell.classList.add("lock_in");
+
+        } else if (mode === "check") {
+            if (cell.hasCorrectValue()) {
                 cell.classList.add("lock_in");
-
-            } else if (button === "check") {
-                if (cell.hasCorrectValue()) {
-                    cell.classList.add("lock_in");
-                } else { cell.classList.add("wrong"); }
-            }
+            } else { cell.classList.add("wrong"); }
         }
-    }
-
-    if (magnitude === "grid") { 
-        document.querySelectorAll(".non_empty_cell").forEach((cell) => {
-            if (button === "reveal") {
-                cell.classList.remove("wrong");
-                setValue(cell, cell.getAttribute("data-value"));
-                cell.classList.add("lock_in");
-            } else if (button === "check") {
-                if (cell.hasCorrectValue()) {
-                    cell.classList.add("lock_in");
-                } else { cell.classList.add("wrong"); }
-            }
-        });
-    }
-
-    if (isCrosswordComplete()) { 
-        sleep(1).then(() => { 
-            emulateEscapePress(); 
-            toggleCompletionPopup(); 
-        });
-    }
+    });
 }
 
 function handleClearButtonPress(magnitude, button) {
     /* Clear the content and styling classes of a word or the entire grid. */
-    onDropdownClick(button + "_dropdown");
-    currentDropdown = null;
+    if (button + "_dropdown" === currentDropdown) { onDropdownClick(button + "_dropdown"); }
     if (cellCoords === null && magnitude !== "grid") { return alert(err_msgs[1]); }
 
     if (magnitude === "word") {

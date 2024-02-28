@@ -27,6 +27,7 @@ content, as each crossword created by this program is unique (unless you get luc
             --button_text_colour: {{ colour_palette["BUTTON_TEXT_COLOUR"] }};
             --correct_colour: {{ colour_palette["CORRECT"] }};
             --wrong_colour: {{ colour_palette["WRONG"] }};
+            --text_disabled_colour: {{ colour_palette["TEXT_DISABLED"] }};
         }    
     </style>
 
@@ -35,8 +36,23 @@ content, as each crossword created by this program is unique (unless you get luc
         let onloadPopupToggled = false;
         let currentDropdown = null;
 
-        const hideDropdowns = () => document.querySelectorAll(".dropdown").forEach(
-                                                element => element.classList.remove("show_dropdown"));
+        document.addEventListener("click", event => { // Close dropdowns if clicking outside of the dropdown area
+            if (!event.target.closest('.special_button, .dropdown, .dropdown_button')) { 
+                hideDropdowns();
+            }
+        });
+
+        document.addEventListener("focusout", event => { // Hide dropdowns if focusing out of a dropdown
+            if (!event.relatedTarget?.classList.contains("dropdown_button"))
+                hideDropdowns();
+            if (!document.activeElement.classList.contains("special_button")) 
+                currentDropdown = null;
+        });
+
+        const hideDropdowns = () => {
+            document.querySelectorAll(".dropdown").forEach(element => element.classList.remove("show_dropdown"));
+            currentDropdown = null;
+        }
 
         function toggleCompletionPopup() {
             completionPopupToggled = !completionPopupToggled;
@@ -68,126 +84,123 @@ content, as each crossword created by this program is unique (unless you get luc
 </head>
 
 <body 
-data-grid="{{ grid }}" 
-data-dimensions="{{ dimensions }}" 
-data-empty="{{ empty }}"   
-data-colour_palette="{{ json_colour_palette }}"
-data-intersections="{{ intersections }}"
-data-js_err_msgs="{{ js_err_msgs }}">
+    data-grid="{{ grid }}" 
+    data-dimensions="{{ dimensions }}" 
+    data-empty="{{ empty }}"   
+    data-colour_palette="{{ json_colour_palette }}"
+    data-intersections="{{ intersections }}"
+    data-js_err_msgs="{{ js_err_msgs }}">
 
-<div class="container" id="blur">
-
-<div class="grid">
-{% for row in range(dimensions) %} 
-{% for column in range(dimensions) %}
-    <!-- Determine cell content -->
-    {% if grid[row][column] != empty %}  <!-- There is a word in this cell -->
-        <div 
-            onclick="onCellClick(this)" 
-            class="non_empty_cell" 
-            data-row="{{ row }}" 
-            data-column="{{ column }}" 
-            data-value="{{ grid[row][column] }}">
-
-            {% if (row, column) in starting_word_positions %}  <!-- Start of a word -->
+    <div class="container" id="blur">
+        <div class="grid">
+        {% for row in range(dimensions) %} 
+        {% for column in range(dimensions) %}
+            <!-- Determine cell content -->
+            {% if grid[row][column] != empty %}  <!-- There is a word in this cell -->
                 <div 
-                    class="num_label" 
-                    data-num_label="{{ starting_word_matrix[row][column] }}">
-                    {{ starting_word_matrix[row][column] }}
+                    onclick="onCellClick(this)" 
+                    class="non_empty_cell" 
+                    data-row="{{ row }}" 
+                    data-column="{{ column }}" 
+                    data-value="{{ grid[row][column] }}">
+
+                    {% if (row, column) in starting_word_positions %}  <!-- Start of a word -->
+                        <div 
+                            class="num_label" 
+                            data-num_label="{{ starting_word_matrix[row][column] }}">
+                            {{ starting_word_matrix[row][column] }}
+                        </div>
+                    {% endif %}
                 </div>
-            {% endif %}
+
+            {% else %} <!-- This cell will have no characters -->
+                <div 
+                    class="empty_cell" 
+                    data-row="{{ row }}" 
+                    data-column="{{ column }}" 
+                    data-value="None">
+                </div>
+            {% endif %} 
+
+        {% endfor %}  
+        {% endfor %} 
         </div>
 
-    {% else %} <!-- This cell will have no characters -->
-        <div 
-            class="empty_cell" 
-            data-row="{{ row }}" 
-            data-column="{{ column }}" 
-            data-value="None">
+        <div class="definitions">
+            {% set ns = namespace(tab_index_counter = 12) %}
+            <div class="definitions_a"> <!-- Column one for across definitions -->
+                <ul>
+                    <h3 class="def_heading">{{ _('Across') }}</h3>
+                    {% for dict_ in definitions_a %}
+                    {% for num_label, definition in dict_.items()%}
+                        <li 
+                            class="def"
+                            tabindex="{{ ns.tab_index_counter }}"
+                            data-num="{{ num_label }}" 
+                            data-word="{{ definition[0].upper() }}"
+                            onclick="onDefinitionsListItemClick('{{ num_label }}', '{{ directions[0] }}')"><b>{{ num_label }}</b>  {{ definition[1] }}</li>
+                        {% set ns.tab_index_counter = ns.tab_index_counter + 1 %}
+                    {% endfor %}
+                    {% endfor %}
+                </ul>
+            </div>  
+
+            <div class="definitions_d"> <!-- Column two for downward definitions -->
+                <ul>
+                    <h3 class="def_heading">{{ _('Down') }}</h3>
+                    {% for dict_ in definitions_d %}
+                    {% for num_label, definition in dict_.items()%}
+                        <li 
+                            class="def"
+                            tabindex="{{ ns.tab_index_counter }}"
+                            data-num="{{ num_label }}" 
+                            data-word="{{ definition[0].upper() }}"
+                            onclick="onDefinitionsListItemClick('{{ num_label }}', '{{ directions[1] }}')"><b>{{ num_label }}</b>  {{ definition[1] }}</li>
+                        {% set ns.tab_index_counter = ns.tab_index_counter + 1 %}
+                    {% endfor %}
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="top_buttons_container">
+                <button tabindex="1" class="special_button" id="reveal_button" onclick="onDropdownClick('reveal_dropdown')">{{ _('Reveal') }}</button>
+                <div class="dropdown" id="reveal_dropdown">
+                    <button class="dropdown_button" tabindex="2" onclick="handleCheckOrRevealButtonPress('cell', 'reveal')">{{ _('Cell') }}</button>
+                    <button class="dropdown_button" tabindex="3" onclick="handleCheckOrRevealButtonPress('word', 'reveal')">{{ _('Word') }}<span class="keybind_span"> [⇧+↵]</span></button>
+                    <button class="dropdown_button" tabindex="4" onclick="handleCheckOrRevealButtonPress('grid', 'reveal')">{{ _('Grid') }}</button>
+                </div>
+
+                <button tabindex="5" class="special_button" id="check_button" onclick="onDropdownClick('check_dropdown')">{{ _('Check') }}</button>
+                <div class="dropdown" id="check_dropdown">
+                    <button class="dropdown_button" tabindex="6" onclick="handleCheckOrRevealButtonPress('cell', 'check')">{{ _('Cell') }}</button>
+                    <button class="dropdown_button" tabindex="7" onclick="handleCheckOrRevealButtonPress('word', 'check')">{{ _('Word') }}<span class="keybind_span"> [↵]</span></button>
+                    <button class="dropdown_button" tabindex="8" onclick="handleCheckOrRevealButtonPress('grid', 'check')">{{ _('Grid') }}</button>
+                </div>
+
+                <button tabindex="9" class="special_button" id="clear_button" onclick="onDropdownClick('clear_dropdown')">{{ _('Clear') }}</button>
+                <div class="dropdown" id="clear_dropdown">
+                    <button class="dropdown_button" tabindex="10" onclick="handleClearButtonPress('word', 'clear')">{{ _('Word') }}<span class="keybind_span"> [⇧+⌫]</span></button>
+                    <button class="dropdown_button" tabindex="11" onclick="handleClearButtonPress('grid', 'clear')">{{ _('Grid') }}</button>
+                </div>
+            </div>
         </div>
-    {% endif %} 
-
-{% endfor %}  
-{% endfor %} 
-</div>
-
-<div class="definitions">
-{% set ns = namespace(tab_index_counter = 12) %}
-<div class="definitions_a"> <!-- Column one for across definitions -->
-    <ul>
-        <h3 class="def_heading">{{ _('Across') }}</h3>
-        {% for dict_ in definitions_a %}
-        {% for num_label, definition in dict_.items()%}
-            <li 
-                class="def"
-                tabindex="{{ ns.tab_index_counter }}"
-                data-num="{{ num_label }}" 
-                data-word="{{ definition[0].upper() }}"
-                onclick="onDefinitionsListItemClick('{{ num_label }}', '{{ directions[0] }}')"><b>{{ num_label }}</b>  {{ definition[1] }}</li>
-            {% set ns.tab_index_counter = ns.tab_index_counter + 1 %}
-        {% endfor %}
-        {% endfor %}
-    </ul>
-</div>  
-
-<div class="definitions_d"> <!-- Column two for downward definitions -->
-    <ul>
-        <h3 class="def_heading">{{ _('Down') }}</h3>
-        {% for dict_ in definitions_d %}
-        {% for num_label, definition in dict_.items()%}
-            <li 
-                class="def"
-                tabindex="{{ ns.tab_index_counter }}"
-                data-num="{{ num_label }}" 
-                data-word="{{ definition[0].upper() }}"
-                onclick="onDefinitionsListItemClick('{{ num_label }}', '{{ directions[1] }}')"><b>{{ num_label }}</b>  {{ definition[1] }}</li>
-            {% set ns.tab_index_counter = ns.tab_index_counter + 1 %}
-        {% endfor %}
-        {% endfor %}
-    </ul>
-</div>
-
-<div class="top_buttons_container">
-    <button tabindex="1" id="reveal_button" onclick="onDropdownClick('reveal_dropdown')">{{ _('Reveal') }}</button>
-    <div class="dropdown" id="reveal_dropdown">
-        <button tabindex="2" onclick="handleCheckOrRevealButtonPress('cell', 'reveal')">{{ _('Cell') }}</button>
-        <button tabindex="3" onclick="handleCheckOrRevealButtonPress('word', 'reveal')">{{ _('Word') }}</button>
-        <button tabindex="4" onclick="handleCheckOrRevealButtonPress('grid', 'reveal')">{{ _('Grid') }}</button>
     </div>
 
-    <button tabindex="5" id="check_button" onclick="onDropdownClick('check_dropdown')">{{ _('Check') }}</button>
-    <div class="dropdown" id="check_dropdown">
-        <button tabindex="6" onclick="handleCheckOrRevealButtonPress('cell', 'check')">{{ _('Cell') }}</button>
-        <button tabindex="7" onclick="handleCheckOrRevealButtonPress('word', 'check')">{{ _('Word') }}</button>
-        <button tabindex="8" onclick="handleCheckOrRevealButtonPress('grid', 'check')">{{ _('Grid') }}</button>
+    <div id="onload_popup" class="popup">
+        <h2>{{ _('Crossword Puzzle - Game') }}</h2>
+        <p>{{ _('You are viewing') }} {{ name }} ({{ difficulty }}) {{ _('from') }} {{ _(category.title()) }}</p>
+        {% if failed_insertions > 0 %}
+            <p>{{ failed_insertions }} {{ _('word(s) could not be inserted, sorry.') }}</p>
+            <p>{{ _('Word count (adjusted)') }}: {{ word_count - failed_insertions }}</p>
+        {% else %}
+            <p>{{ _('Word count') }}: {{ word_count }}</p>
+        {% endif %}
+        <button id="close_popup_button" class="continue_button" onclick="closeOnloadPopup()">{{ _('Continue') }}</button>
     </div>
 
-    <button tabindex="9" id="clear_button" onclick="onDropdownClick('clear_dropdown')">{{ _('Clear') }}</button>
-    <div class="dropdown" id="clear_dropdown">
-        <button tabindex="10" onclick="handleClearButtonPress('word', 'clear')">{{ _('Word') }}</button>
-        <button tabindex="11" onclick="handleClearButtonPress('grid', 'clear')">{{ _('Grid') }}</button>
+    <div id="completion_popup" class="popup">
+        <h2>{{ _('You completed the crossword!') }}</h2>
+        <button id="close_popup_button" class="close_button" onclick="toggleCompletionPopup()">{{ _('Close') }}</button>
     </div>
-</div>
-</div>
-
-<div id="onload_popup" class="popup">
-    <h2>{{ _('Crossword Puzzle - Game') }}</h2>
-    <p>{{ _('You are viewing') }} {{ name }} ({{ difficulty }}) {{ _('from') }} {{ _(category.title()) }}</p>
-    {% if failed_insertions > 0 %}
-        <p>{{ failed_insertions }} {{ _('word(s) could not be inserted, sorry.') }}</p>
-        <p>{{ _('Word count (adjusted)') }}: {{ word_count - failed_insertions }}</p>
-    {% else %}
-        <p>{{ _('Word count') }}: {{ word_count }}</p>
-    {% endif %}
-    <button id="close_popup_button" class="continue_button" onclick="closeOnloadPopup()">{{ _('Continue') }}</button>
-</div>
-
-<div id="completion_popup" class="popup">
-    <h2>{{ _('You completed the crossword!') }}</h2>
-    <button id="close_popup_button" class="close_button" onclick="toggleCompletionPopup()">{{ _('Close') }}</button>
-</div>
-
-</div>
 </body>
 </html> 
-

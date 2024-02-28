@@ -46,9 +46,14 @@ button:hover {
     text-decoration: none;
 }
 
-.non_empty_cell.lock_in { color: var(--correct_colour) }
+.non_empty_cell.lock_in { color: var(--correct_colour); }
 
-.non_empty_cell.wrong { color: var(--wrong_colour) }
+.non_empty_cell.wrong { color: var(--wrong_colour); }
+
+.keybind_span { 
+    color: var(--text_disabled_colour); 
+
+}
 /* ---------- */
 
 
@@ -181,7 +186,7 @@ li { /* Each definition/clue */
 .definitions > div.top_buttons_container { 
     display: flex;
     position: absolute;
-    transform: translateY(-150%);
+    transform: translateY(-7.5vmin);
 }
 
 .dropdown button:last-child { border-bottom: none; }
@@ -190,12 +195,14 @@ li { /* Each definition/clue */
 
 .show_dropdown { display: block; }
 
-#reveal_button, #check_button, #clear_button { 
-    margin-right: 27px; 
+#reveal_button, #check_button { 
+    margin-right: 4.5vmin; 
     width: 20vmin;
 }
 
-#check_dropdown { left: 33.3%; }
+#clear_button { width: 20vmin; }
 
-#clear_dropdown { left: 66.75% }
+#check_dropdown { left: 24.4vmin; }
+
+#clear_dropdown { left: 49.1vmin }
 /* ---------- */ 
