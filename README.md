@@ -20,7 +20,7 @@ A GUI application built with `CustomTkinter` that allows you to select, configur
 3. Make a virtual environment (recommended)
    - `pip install virtualenv`
    - `python3 -m venv venv`
-   - Windows: `venv\Scripts\activate`, MacOS/Linux: `source venv/bin/activate`
+   - Windows: `venv\Scripts\activate`, Unix/MacOS: `source venv/bin/activate`
 4. `pip install -r requirements.txt`
 5. `python3 src/main.py` (if this doesn't work, try using `python` instead of `python3`)
 <br><br>
@@ -28,6 +28,7 @@ A GUI application built with `CustomTkinter` that allows you to select, configur
 Will create external user documentation and add it to the repository eventually.
 <br><br>
 ## Third-party library acknowledgements
+- [Flask](https://flask.palletsprojects.com/en/3.0.x/) - Web framework for the crossword web application
 - [Babel](https://babel.pocoo.org/en/latest/) - l10n functionality and management of message catalogues
 - [flask-babel](https://python-babel.github.io/flask-babel/) - i18n integration for the Flask web application
 - [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter) - Creation of the main GUI
