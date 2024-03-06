@@ -54,12 +54,9 @@ class Crossword(object):
         self.dimensions: int = self._find_dimensions()
         self.intersections = list() # Will be expanded to store all intersecting word points
         self.data = dict()  # Interpreted by `main.py`; expanded as words are inserted
-        ''' example:
-            self.data = {
-                (1, 2): {"word": "Hello", "direction": "a", 
-                         "intersections": [(1, 5)], "definition": A standard english greeting},
-            }
-        '''
+        # e.x.: self.data = {(1, 2): {"word": "Hello", "direction": "a", 
+        #                             "intersections": [(1, 5)], 
+        #                             "definition": A standard english greeting}}
         
     def __str__(self) -> str:
         '''Display crossword when printing an instance of this class, on which `.generate()` has been called.'''

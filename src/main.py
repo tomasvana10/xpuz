@@ -336,7 +336,7 @@ class CrosswordBrowser(ctk.CTkFrame):
      
     def open_cword_webapp(self) -> None:
         '''Open the crossword web app at a port read from `self.master.cfg`.'''
-        webbrowser.open(f"http://127.0.0.1:{self.master.cfg.get('misc', 'webapp_port')}/")
+        webbrowser.open_new_tab(f"http://127.0.0.1:{self.master.cfg.get('misc', 'webapp_port')}/")
      
     def terminate_cword_webapp(self) -> None:
         '''Appropriately reconfigure the states of the GUIs buttons and terminate the app.'''
@@ -361,8 +361,8 @@ class CrosswordBrowser(ctk.CTkFrame):
         self.word_count_preference.set(-1)
      
     def _configure_cword_launch_options_state(self, 
-                                     state_: str
-                                     ) -> None:
+                                              state_: str
+                                              ) -> None:
         '''Configure all the word_count preference widgets to an either an interactive or disabled
         state (interactive when selecting a crossword, disabled when a crossword has been loaded).
         '''
@@ -434,8 +434,7 @@ class CrosswordBrowser(ctk.CTkFrame):
             grid=crossword.grid,
             definitions_a=self.definitions_a,
             definitions_d=self.definitions_d,
-            js_err_msgs = [_("To check or reveal a cell/word, you must first select a cell"), 
-                         _("To clear the current word, you must first select a cell.")]
+            js_err_msgs = [_("To perform this operation, you must first select a cell.")]
         )
 
     def _interpret_cword_data(self, 
@@ -450,9 +449,8 @@ class CrosswordBrowser(ctk.CTkFrame):
         # e.x. [{1: ("hello", "a standard english greeting)}]'''
         
         self.starting_word_matrix: List[List[int]] = deepcopy(crossword.grid)
-        # example: [[1, 0, 0, 0], [[0, 0, 2, 0]] ... and so on; Each incremented number is the start of a new word.
+        # e.x.: [[1, 0, 0, 0], [[0, 0, 2, 0]] ... and so on; Each incremented number is the start of a new word.
 
-        
         num_label: int = 1 # Incremented whenever the start of a word is found; used to create `starting_word_matrix`.
         for row in range(crossword.dimensions):
             for column in range(crossword.dimensions):
@@ -737,16 +735,16 @@ class AppHelper:
                         first_time_opening_cword_browser: bool = False
                         ) -> None:
         if same_lang:
-            tk.messagebox.showerror(_("Error"), _("This language is already selected."))
+            return tk.messagebox.showerror(_("Error"), _("This language is already selected."))
         
         if same_scale:
-            tk.messagebox.showerror(_("Error"), _("This size is already selected."))
+            return tk.messagebox.showerror(_("Error"), _("This size is already selected."))
         
         if same_appearance:
-            tk.messagebox.showerror(_("Error"), _("This appearance is already selected."))
+            return tk.messagebox.showerror(_("Error"), _("This appearance is already selected."))
         
         if first_time_opening_cword_browser:
-            tk.messagebox.showinfo(_("Info"), 
+            return tk.messagebox.showinfo(_("Info"), 
                 _("First time launch, please read: Once you have loaded a crossword, and wish to load "
                 "another one, you must first terminate the web app. IMPORTANT: If you are on macOS, "
                 "force quitting the application (using cmd+q) while the web app is running will prevent "
