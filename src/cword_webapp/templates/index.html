@@ -35,6 +35,19 @@ content, as each crossword created by this program is unique (unless you get luc
         let completionPopupToggled = false;
         let onloadPopupToggled = false;
         let currentDropdown = null;
+        let toggleCheckBox = document.getElementById("tcb");
+
+        document.addEventListener('DOMContentLoaded', () => {
+            let toggleCheckBox = document.getElementById("tcb");
+
+            toggleCheckBox.addEventListener("change", () => {
+                if (toggleCheckBox.checked) {
+                    document.cookie = "tcbChecked=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; SameSite=Lax";
+                } else {
+                    document.cookie = "tcbChecked=; expires=Fri, 31 Dec 9999 23:59:59 GMT; SameSite=Lax";
+                }
+            });
+        });
 
         document.addEventListener("click", event => { // Close dropdowns if clicking outside of the dropdown area
             if (!event.target.closest('.special_button, .dropdown, .dropdown_button')) { 
@@ -42,12 +55,24 @@ content, as each crossword created by this program is unique (unless you get luc
             }
         });
 
-        document.addEventListener("focusout", event => { // Hide dropdowns if focusing out of a dropdown
-            if (!event.relatedTarget?.classList.contains("dropdown_button"))
+        document.addEventListener("focusout", event => { // Hide dropdowns based on specific conditions
+            /* The following condition evaluates to true if:
+                1. Focusing into something that is not a "dropdown_button" OR
+                2. Focusing out of something that is a "dropdown_button" AND
+                    - You are focusing into something that is a "special_button" AND
+                    - You are focusing into something that has an id that does not match the start of the currentDropdown
+                3. You are focusing out of a "special_button" into something that is either another special button or something that isn't a "dropdown_button"
+            */
+            if ((!event.relatedTarget?.classList.contains("dropdown_button"))
+                || (event.target?.classList.contains("dropdown_button") 
+                    && event.relatedTarget?.classList.contains("special_button") 
+                    && !event.relatedTarget?.id.startsWith(currentDropdown?.substring(0, currentDropdown?.indexOf('_'))))
+                || event.target.id?.endsWith("button") 
+                    && (event.relatedTarget?.id?.endsWith("button") || !event.relatedTarget?.classList?.contains("dropdown_button"))) {
                 hideDropdowns();
-            if (!document.activeElement.classList.contains("special_button")) 
-                currentDropdown = null;
+            }
         });
+
 
         const hideDropdowns = () => {
             document.querySelectorAll(".dropdown").forEach(element => element.classList.remove("show_dropdown"));
@@ -80,6 +105,20 @@ content, as each crossword created by this program is unique (unless you get luc
             document.getElementById("blur").classList.toggle("active");
             document.getElementById("onload_popup").classList.toggle("active");
         }
+
+        function getCookie(cName) {
+            let name = cName + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let cookies = decodedCookie.split(";");
+            for (let i = 0; i < cookies.length; i++) { // Search for the cookie
+                let cookie = cookies[i];
+                if (cookie.indexOf(name) == 0) {
+                    return cookie.substring(name.length, cookie.length);
+                }
+            }
+
+            return "";
+        }
     </script>
 </head>
 
@@ -95,8 +134,7 @@ content, as each crossword created by this program is unique (unless you get luc
         <div class="grid">
         {% for row in range(dimensions) %} 
         {% for column in range(dimensions) %}
-            <!-- Determine cell content -->
-            {% if grid[row][column] != empty %}  <!-- There is a word in this cell -->
+            {% if grid[row][column] != empty %} {# There is a word in this cell #}
                 <div 
                     onclick="onCellClick(this)" 
                     class="non_empty_cell" 
@@ -104,16 +142,15 @@ content, as each crossword created by this program is unique (unless you get luc
                     data-column="{{ column }}" 
                     data-value="{{ grid[row][column] }}">
 
-                    {% if (row, column) in starting_word_positions %}  <!-- Start of a word -->
-                        <div 
+                    {% if (row, column) in starting_word_positions %} {# Start of a word #}
+                        <div
                             class="num_label" 
                             data-num_label="{{ starting_word_matrix[row][column] }}">
                             {{ starting_word_matrix[row][column] }}
                         </div>
                     {% endif %}
                 </div>
-
-            {% else %} <!-- This cell will have no characters -->
+            {% else %} {# This cell will have no characters #}
                 <div 
                     class="empty_cell" 
                     data-row="{{ row }}" 
@@ -121,14 +158,13 @@ content, as each crossword created by this program is unique (unless you get luc
                     data-value="None">
                 </div>
             {% endif %} 
-
         {% endfor %}  
         {% endfor %} 
         </div>
 
         <div class="definitions">
             {% set ns = namespace(tab_index_counter = 12) %}
-            <div class="definitions_a"> <!-- Column one for across definitions -->
+            <div class="definitions_a"> {# Column one for across definitions #}
                 <ul>
                     <h3 class="def_heading">{{ _('Across') }}</h3>
                     {% for dict_ in definitions_a %}
@@ -145,7 +181,7 @@ content, as each crossword created by this program is unique (unless you get luc
                 </ul>
             </div>  
 
-            <div class="definitions_d"> <!-- Column two for downward definitions -->
+            <div class="definitions_d"> {# Column two for downward definitions #}
                 <ul>
                     <h3 class="def_heading">{{ _('Down') }}</h3>
                     {% for dict_ in definitions_d %}
@@ -162,30 +198,38 @@ content, as each crossword created by this program is unique (unless you get luc
                 </ul>
             </div>
 
+            {# Reveal, check, and clear dropdowns and their respective buttons #}
             <div class="top_buttons_container">
                 <button tabindex="1" class="special_button" id="reveal_button" onclick="onDropdownClick('reveal_dropdown')">{{ _('Reveal') }}</button>
                 <div class="dropdown" id="reveal_dropdown">
-                    <button class="dropdown_button" tabindex="2" onclick="handleCheckOrRevealButtonPress('cell', 'reveal')">{{ _('Cell') }}</button>
-                    <button class="dropdown_button" tabindex="3" onclick="handleCheckOrRevealButtonPress('word', 'reveal')">{{ _('Word') }}<span class="keybind_span"> [⇧+↵]</span></button>
-                    <button class="dropdown_button" tabindex="4" onclick="handleCheckOrRevealButtonPress('grid', 'reveal')">{{ _('Grid') }}</button>
+                    <button class="dropdown_button" tabindex="2" onclick="doSpecialButtonAction('cell', 'reveal')">{{ _('Cell') }}</button>
+                    <button class="dropdown_button" tabindex="3" onclick="doSpecialButtonAction('word', 'reveal')">{{ _('Word') }}<span class="keybind_span"> [⇧+↵]</span></button>
+                    <button class="dropdown_button" tabindex="4" onclick="doSpecialButtonAction('grid', 'reveal')">{{ _('Grid') }}</button>
                 </div>
 
                 <button tabindex="5" class="special_button" id="check_button" onclick="onDropdownClick('check_dropdown')">{{ _('Check') }}</button>
                 <div class="dropdown" id="check_dropdown">
-                    <button class="dropdown_button" tabindex="6" onclick="handleCheckOrRevealButtonPress('cell', 'check')">{{ _('Cell') }}</button>
-                    <button class="dropdown_button" tabindex="7" onclick="handleCheckOrRevealButtonPress('word', 'check')">{{ _('Word') }}<span class="keybind_span"> [↵]</span></button>
-                    <button class="dropdown_button" tabindex="8" onclick="handleCheckOrRevealButtonPress('grid', 'check')">{{ _('Grid') }}</button>
+                    <button class="dropdown_button" tabindex="6" onclick="doSpecialButtonAction('cell', 'check')">{{ _('Cell') }}</button>
+                    <button class="dropdown_button" tabindex="7" onclick="doSpecialButtonAction('word', 'check')">{{ _('Word') }}<span class="keybind_span"> [↵]</span></button>
+                    <button class="dropdown_button" tabindex="8" onclick="doSpecialButtonAction('grid', 'check')">{{ _('Grid') }}</button>
                 </div>
 
                 <button tabindex="9" class="special_button" id="clear_button" onclick="onDropdownClick('clear_dropdown')">{{ _('Clear') }}</button>
                 <div class="dropdown" id="clear_dropdown">
-                    <button class="dropdown_button" tabindex="10" onclick="handleClearButtonPress('word', 'clear')">{{ _('Word') }}<span class="keybind_span"> [⇧+⌫]</span></button>
-                    <button class="dropdown_button" tabindex="11" onclick="handleClearButtonPress('grid', 'clear')">{{ _('Grid') }}</button>
+                    <button class="dropdown_button" tabindex="10" onclick="doSpecialButtonAction('word', 'clear')">{{ _('Word') }}<span class="keybind_span"> [⇧+⌫]</span></button>
+                    <button class="dropdown_button" tabindex="11" onclick="doSpecialButtonAction('grid', 'clear')">{{ _('Grid') }}</button>
                 </div>
             </div>
+
+            <label class="toggle">
+                <input class="toggle_checkbox" id="tcb" type="checkbox">
+                <div class="toggle_switch"></div>
+                <span class="toggle_label">{{ _('Smart Skip') }}</span>
+            </label>
         </div>
     </div>
 
+    {# Popup that displays on loading the web app - displays the crossword name, category and word count #}
     <div id="onload_popup" class="popup">
         <h2>{{ _('Crossword Puzzle - Game') }}</h2>
         <p>{{ _('You are viewing') }} {{ name }} ({{ difficulty }}) {{ _('from') }} {{ _(category.title()) }}</p>
@@ -198,6 +242,7 @@ content, as each crossword created by this program is unique (unless you get luc
         <button id="close_popup_button" class="continue_button" onclick="closeOnloadPopup()">{{ _('Continue') }}</button>
     </div>
 
+    {# Popup that displays on completion of the crossword #}
     <div id="completion_popup" class="popup">
         <h2>{{ _('You completed the crossword!') }}</h2>
         <button id="close_popup_button" class="close_button" onclick="toggleCompletionPopup()">{{ _('Close') }}</button>

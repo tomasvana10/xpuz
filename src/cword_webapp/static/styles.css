@@ -27,6 +27,7 @@ body { /* These styles are from https://css-pattern.com */
     align-items: center;
     justify-content: center;
     column-gap: 3em; 
+    position: relative;
 }
 
 button {
@@ -99,10 +100,10 @@ button:hover {
     display: flex;
     background-color: var(--sub_colour);
     justify-content: space-evenly;
-    margin-top: 10vmin;
+    margin-top: 17vmin;
     right: 0;
     overflow-y: auto;
-    max-height: 85vmin;
+    max-height: 78vmin;
     width: 95vmin;
 }
 
@@ -183,7 +184,7 @@ li { /* Each definition/clue */
     border-bottom: 1px solid var(--main_colour);
 }
 
-.definitions > div.top_buttons_container { 
+.definitions > .top_buttons_container { 
     display: flex;
     position: absolute;
     transform: translateY(-7.5vmin);
@@ -206,3 +207,52 @@ li { /* Each definition/clue */
 
 #clear_dropdown { left: 49.1vmin }
 /* ---------- */ 
+
+/* ----- Styling of the smart skip toggle button. The majority of these styles are from https://codepen.io/morgoe/pen/VvzWQg ----- */
+.toggle * { user-select: none; }
+
+.toggle {
+    display: flex;
+    position: absolute;
+    top: 2.75vmin;
+}
+
+.toggle_switch {
+	display: inline-block;
+	background: var(--text_colour);
+	border-radius: 16px;
+	width: 58px;
+	height: 32px;
+	position: relative;
+	vertical-align: middle;
+    transition: right 0.25s;
+}
+
+.toggle_switch::before, .toggle_switch::after { content: ""; }
+
+.toggle_switch::before {
+    background: white;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	transition: left 0.25s;
+}
+
+.toggle_checkbox:checked + .toggle_switch { background: var(--button_colour); }
+
+.toggle_checkbox:checked + .toggle_switch::before { left: 30px; }
+
+.toggle_checkbox { 
+    position: absolute;
+    visibility: hidden; 
+}
+
+.toggle_label {
+	margin-left: 5px;
+	position: relative;
+	top: 7px;
+}
+/* ---------- */

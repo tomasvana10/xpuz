@@ -2,12 +2,13 @@
 Additionally, this script offers automatic detection of crossword completion, and relays this information to the user. 
 */
 
-let grid, dimensions, empty, colour_palette, intersections, err_msgs; // Jinja2 template variables
+let grid, dimensions, empty, colourPalette, intersections, errMsgs; // Jinja2 template variables
 let direction = "ACROSS",
     currentWord = null,
     cellCoords = null,
     staticIndex = null,
-    isDown = null;
+    isDown = null,
+    wasEmpty = null;
 const arrowKeys = ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"];
 const spacebarKeys = ["Spacebar", " "];
 const backspaceKeys = ["Backspace", "Delete"];
@@ -20,12 +21,13 @@ const setValue = (cell, value) => cell.childNodes[0].nodeValue = value; // Using
 const getCellElement = (coords) => document.querySelector(`[data-row="${coords[0]}"][data-column="${coords[1]}"]`);
 const updateCellCoords = (cell) => [parseInt(cell.getAttribute("data-row")), parseInt(cell.getAttribute("data-column"))]; 
 const shouldDirectionBeAlternated = (coords) => shiftCellCoords(coords, direction, "enter").isEqualTo(coords) && shiftCellCoords(coords, direction, "del").isEqualTo(coords); 
-const changeCellFocus = (focus) => { getCellElement(cellCoords).style.backgroundColor = focus ? colour_palette.CELL_FOCUS : colour_palette.SUB; };
+const changeCellFocus = (focus) => { getCellElement(cellCoords).style.backgroundColor = focus ? colourPalette.CELL_FOCUS : colourPalette.SUB; };
 const getDefinitionsListItemFromWord = () => document.querySelector(`[data-word="${currentWord}"]`);
-const changeDefinitionsListItemFocus = (focus) => getDefinitionsListItemFromWord().style.backgroundColor = focus ? colour_palette.WORD_FOCUS : ""; 
+const changeDefinitionsListItemFocus = (focus) => getDefinitionsListItemFromWord().style.backgroundColor = focus ? colourPalette.WORD_FOCUS : ""; 
 const alternateDirection = () => direction = direction === "ACROSS" ? "DOWN" : "ACROSS";
 const emulateEscapePress = () => document.dispatchEvent(new KeyboardEvent("keydown", {"key": "Escape"}));
 const isCrosswordComplete = () => getGrid().isEqualTo(grid);
+const unfocusActiveElement = () => document.activeElement.blur();
 
 Array.prototype.isEqualTo = function(arr) { return JSON.stringify(this) === JSON.stringify(arr); };
 
@@ -41,19 +43,19 @@ document.addEventListener("DOMContentLoaded", () => { // On page load
     grid = eval(body.getAttribute("data-grid")); /* Convert Python array to JS array */
     dimensions = parseInt(body.getAttribute("data-dimensions"));
     empty = body.getAttribute("data-empty");
-    colour_palette = JSON.parse(body.getAttribute("data-colour_palette"));
+    colourPalette = JSON.parse(body.getAttribute("data-colour_palette"));
     intersections = JSON.stringify(eval(body.getAttribute("data-intersections")));
-    err_msgs = eval(body.getAttribute("data-js_err_msgs"));
+    errMsgs = eval(body.getAttribute("data-js_err_msgs"));
 
     onloadPopupToggled = true;
-    sleep(200).then(() => { // So the popup does not immediately load
+    sleep(200).then(() => { // Buffer popup transition
         document.getElementById("blur").classList.toggle("active");
         document.getElementById("onload_popup").classList.toggle("active");
         // Must wait for the transition to finish before focusing the continue button
         sleep(301).then(() => { document.getElementsByClassName("continue_button")[0].focus({ focusVisible: true}); });
     });
 
-    clearAllCells(); // Prevent possible issues with HTML
+    doSpecialButtonAction("grid", "clear", false); // Prevent possible issues with HTML
 });
 
 
@@ -61,9 +63,13 @@ document.addEventListener("keydown", event => {
     /* Handle user input; either perform special functions or simply modify the grid based on the input. */
     let inputValue = event.key;
 
-    if (inputValue === "Enter" && event.target.className !== "def" 
-        && event.target.tagName !== "BUTTON" && cellCoords !== null) { return handleEnterKeybindPress(event); }
-    if (backspaceKeys.includes(inputValue) && event.shiftKey) { return handleClearButtonPress("word", "clear"); }
+    if (inputValue === "Enter" && !completionPopupToggled && !onloadPopupToggled 
+        && (event.target.className !== "def" && event.target.tagName !== "BUTTON" || cellCoords !== null) 
+        && !event.target.classList.contains("special_button") && document.activeElement.className !== "def" 
+        && !event.target.classList.contains("dropdown_button")) { 
+            return handleEnterKeybindPress(event); 
+    }
+    if (backspaceKeys.includes(inputValue) && event.shiftKey) { return doSpecialButtonAction("word", "clear", false); }
 
     if (inputValue === "Enter" && !completionPopupToggled && !onloadPopupToggled) { return handleEnterPress(event); }
     if (inputValue === "Escape") { return handleEscapePress(event); }
@@ -81,7 +87,10 @@ function handleStandardInput(inputValue) {
 
     if (mode === "enter") {
         if (!(inputValue.length === 1 && (inputValue.match(/\p{L}/u)))) { return; } // Regex matches `letter` characters
-        if (!currentCell.classList.contains("lock_in")) { setValue(currentCell, inputValue); }
+        if (!currentCell.classList.contains("lock_in")) { 
+            if (isEmpty(currentCell)) { wasEmpty = true; }
+            setValue(currentCell, inputValue); 
+        }
         currentCell.classList.remove("wrong"); 
     } else if (mode === "del") {
         if (!isEmpty(currentCell) && !currentCell.classList.contains("lock_in"))
@@ -92,22 +101,40 @@ function handleStandardInput(inputValue) {
     crosswordCompletionHandler();
     
     changeCellFocus(false);
-    cellCoords = shiftCellCoords(cellCoords, direction, mode);
+    if (mode === "enter" && document.getElementById("tcb").checked) { 
+        cellCoords = skipCellCoords(cellCoords, direction, mode);
+    } else { cellCoords = shiftCellCoords(cellCoords, direction, mode); }
     changeWordFocus(true); changeCellFocus(true);
 }
 
+function skipCellCoords(coords, direction) {
+    let newCellCoords = shiftCellCoords(coords, direction, "enter");
+    if (newCellCoords.isEqualTo(coords)) { return newCellCoords; }
+    if (!wasEmpty) { return newCellCoords; }
+    wasEmpty = false;
+
+    while (!isEmpty(getCellElement(newCellCoords))) {
+        let oldCellCoords = newCellCoords
+        newCellCoords = shiftCellCoords(newCellCoords, direction, "enter");
+        if (oldCellCoords.isEqualTo(newCellCoords)) { break; }
+    }
+
+    return newCellCoords
+}
+
 function handleEnterPress(event) {
-    if (event.target.className === "def") { event.target.click(); event.target.blur(); 
-    } else { }
+    if (event.target.className === "def") { 
+        event.target.click(); 
+        event.target.blur(); 
+    }
 }
 
 function handleEnterKeybindPress(event) {
     /* Allow the user to check the current word with "Enter" or reveal it with "Shift + Enter". */
-    document.querySelectorAll("#reveal_button #check_button").forEach((element) =>  element.blur());
+    unfocusActiveElement();
     hideDropdowns();
     let mode = event.shiftKey ? "reveal" : "check";
-    checkOrRevealWord(mode);
-    crosswordCompletionHandler();
+    doSpecialButtonAction("word", mode, false);
 }
 
 function handleSpacebarPress(event) {
@@ -122,11 +149,11 @@ function handleSpacebarPress(event) {
 function handleEscapePress(event) { 
     /* Remove focus from everything. */
     event.preventDefault();
+    unfocusActiveElement();
     hideDropdowns(); 
-    try {
-        setFocusMode(false);
-        cellCoords = null; currentWord = null;
-    } catch {}
+    setFocusMode(false);
+    cellCoords = null; 
+    currentWord = null;
 }
 
 function handleArrowPress(key, event) {
@@ -159,15 +186,6 @@ function handleArrowPress(key, event) {
     setFocusMode(true);
 }
 
-function clearAllCells() {
-    /* Remove the content (in the nodeValue) of all non_empty_cells and any additional styling classes. */
-    document.querySelectorAll(".non_empty_cell").forEach(cell => {
-        cell.classList.remove("lock_in");
-        cell.classList.remove("wrong");
-        setValue(cell, "");
-    });
-}
-
 function crosswordCompletionHandler() {
     if (isCrosswordComplete()) { 
         sleep(1).then(() => { 
@@ -177,92 +195,39 @@ function crosswordCompletionHandler() {
     }
 }
 
-function handleCheckOrRevealButtonPress(magnitude, button) {
-    /* Perform reveal/checking operations on a selected cell or word, or, the grid. 
-    
-    Reveal operations immediately set the content of a cell to its true value, and make it green.
-
-    Check operations make the content of a cell (if there is any) either green or red based on 
-    if it is correct or not. 
-    
-    Green cells (with the "lock_in") class cannot be edited unless the user clears them with the 
-    Clear (word/grid) button. */
-
-    onDropdownClick(button + "_dropdown"); // Close the dropdown the user just clicked
-    if (cellCoords === null && magnitude !== "grid") { return alert(err_msgs[0]); }
+function doSpecialButtonAction(magnitude, mode, via_button=true) {
+    /* Perform reveal/check/clear operations on a selected cell, word, or, the grid. */
+    if (via_button) { onDropdownClick(mode + "_dropdown"); }
+    if (cellCoords === null && magnitude !== "grid") { return alert(errMsgs[0]); }
 
     switch (magnitude) {
         case "cell":
-            checkOrRevealCell(button); break;
+            doGridOperation(getCellElement(cellCoords), mode); break;
         case "word":
-            checkOrRevealWord(button); break;
+            for (const cell of getWordElements()) { doGridOperation(cell, mode); } break;
         case "grid":
-            checkOrRevealGrid(button);
+            document.querySelectorAll(".non_empty_cell").forEach(cell => doGridOperation(cell, mode));
     }
 
     crosswordCompletionHandler();
 }
 
-function checkOrRevealCell(mode) {
-    let cell = getCellElement(cellCoords);
+function doGridOperation(cell, mode) {
     if (mode === "reveal") {
         cell.classList.remove("wrong");
         setValue(cell, cell.getAttribute("data-value"));
         cell.classList.add("lock_in"); // LOCK IN!!!
-
     } else if (mode === "check") {
         if (!isEmpty(cell)) {
             if (cell.hasCorrectValue()) {
                 cell.classList.add("lock_in");
             } else { cell.classList.add("wrong"); }
         }
+    } else if (mode === "clear") {
+        cell.classList.remove("lock_in");
+        cell.classList.remove("wrong");
+        setValue(cell, "");
     }
-}
-
-function checkOrRevealWord(mode) {
-    for (const cell of getWordElements()) {
-        if (mode === "reveal") {
-            cell.classList.remove("wrong");
-            setValue(cell, cell.getAttribute("data-value"));
-            cell.classList.add("lock_in");
-
-        } else if (mode === "check") {
-            if (cell.hasCorrectValue()) {
-                cell.classList.add("lock_in");
-            } else { cell.classList.add("wrong"); }
-        }
-    }
-}
-
-function checkOrRevealGrid(mode) {
-    document.querySelectorAll(".non_empty_cell").forEach((cell) => {
-        if (mode === "reveal") {
-            cell.classList.remove("wrong");
-            setValue(cell, cell.getAttribute("data-value"));
-            cell.classList.add("lock_in");
-
-        } else if (mode === "check") {
-            if (cell.hasCorrectValue()) {
-                cell.classList.add("lock_in");
-            } else { cell.classList.add("wrong"); }
-        }
-    });
-}
-
-function handleClearButtonPress(magnitude, button) {
-    /* Clear the content and styling classes of a word or the entire grid. */
-    if (button + "_dropdown" === currentDropdown) { onDropdownClick(button + "_dropdown"); }
-    if (cellCoords === null && magnitude !== "grid") { return alert(err_msgs[1]); }
-
-    if (magnitude === "word") {
-        for (const cell of getWordElements()) {
-            cell.classList.remove("lock_in");
-            cell.classList.remove("wrong");
-            setValue(cell, "");
-        }
-    }
-
-    if (magnitude === "grid") { clearAllCells(); }
 }
 
 function shiftCellCoords(coords, dir, mode, force=false) {
@@ -281,11 +246,10 @@ function shiftCellCoords(coords, dir, mode, force=false) {
 function onDefinitionsListItemClick(numLabel, dir) {
     /* Set user input to the start of a word when they click its definition/clue. */
     setFocusMode(false);
-
-    // Get new cell element from parent of the number label
-    let cell = document.querySelector(`[data-num_label="${numLabel}"]`).parentElement;
+    document.activeElement.blur();
     direction = dir;
-    cellCoords = updateCellCoords(cell);
+    // Retrieve cell from parent element of number label list item
+    cellCoords = updateCellCoords(document.querySelector(`[data-num_label="${numLabel}"]`).parentElement);
     currentWord = updateCurrentWord();
     setFocusMode(true);
 }
@@ -314,12 +278,12 @@ function changeWordFocus(focus) {
     /* Retrieve the starting and ending coordinates of a word and change the colour of the cell elements
     that make up that word to a different colour. */
     for (const element of getWordElements()) {
-        element.style.backgroundColor = focus ? colour_palette.WORD_FOCUS : colour_palette.SUB;
+        element.style.backgroundColor = focus ? colourPalette.WORD_FOCUS : colourPalette.SUB;
     }
 }
 
 function updateCurrentWord() {
-    /* Return the current word in uppercase using `getWordIndices` */
+    /* Return the current word in uppercase. */
     let word = "";
     for (const element of getWordElements()) {
         word += element.getAttribute("data-value");
@@ -332,7 +296,7 @@ function* getWordElements() {
     /* Generator function that yields all the consisting cell elements of the current word. */
     let [startCoords, endCoords] = getWordIndices();
     for (let i = startCoords; i <= endCoords; i++) { 
-        let coords = isDown? [i, staticIndex] : [staticIndex, i];
+        let coords = isDown ? [i, staticIndex] : [staticIndex, i];
         yield getCellElement(coords);
     }
 }
