@@ -1,6 +1,6 @@
-![LICENSE](https://img.shields.io/badge/LICENSE-MIT-green?style=flat)
-![RELEASE](https://img.shields.io/github/release/tomasvana10/crossword_puzzle?style=flat)
-[![ISSUES](https://img.shields.io/github/issues-raw/tomasvana10/crossword_puzzle.svg?maxAge=25000)](https://github.com/tomasvana10/crossword_puzzle/issues)
+![licence](https://img.shields.io/badge/licence-MIT-green?style=flat?logo=licence)
+![release)](https://img.shields.io/github/v/release/tomasvana10/crossword_puzzle?logo=github)
+[![issues](https://img.shields.io/github/issues-raw/tomasvana10/crossword_puzzle.svg?maxAge=25000)](https://github.com/tomasvana10/crossword_puzzle/issues)
 
 # crossword_puzzle
 A GUI application built with `CustomTkinter` that allows you to select, configure and generate a crossword to view, interact with and complete in a `Flask` web application.
