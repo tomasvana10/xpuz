@@ -20,27 +20,7 @@ def _run(*args, **kwargs):
     
     @app.route("/")
     def main():
-        return render_template(
-            "index.html",
-            colour_palette=kwargs["colour_palette"],
-            json_colour_palette=kwargs["json_colour_palette"],
-            cword_data=kwargs["cword_data"],
-            empty=kwargs["empty"],
-            directions=kwargs["directions"],
-            name=kwargs["name"],
-            category=kwargs["category"],
-            difficulty=kwargs["difficulty"],
-            intersections=kwargs["intersections"],
-            word_count=kwargs["word_count"],
-            failed_insertions=kwargs["failed_insertions"],
-            dimensions=kwargs["dimensions"],
-            starting_word_positions=kwargs["starting_word_positions"],
-            starting_word_matrix=kwargs["starting_word_matrix"],
-            grid=kwargs["grid"],
-            definitions_a=kwargs["definitions_a"],
-            definitions_d=kwargs["definitions_d"],
-            js_err_msgs=kwargs["js_err_msgs"]
-        )
+        return render_template("index.html", **kwargs)
         
     app.run(debug=False, port=int(kwargs["port"]))
     

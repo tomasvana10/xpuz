@@ -5,7 +5,6 @@ from typing import Dict, List, Union
 from pathlib import Path
 
 import regex
-from customtkinter import CTkFont
 
 
 class Paths:

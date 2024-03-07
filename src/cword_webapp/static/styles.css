@@ -215,6 +215,7 @@ li { /* Each definition/clue */
     display: flex;
     position: absolute;
     top: 2.75vmin;
+    cursor: pointer;
 }
 
 .toggle_switch {
