@@ -70,7 +70,6 @@ button:hover {
     grid-template-columns: repeat(var(--dimensions), var(--grid_size));
     grid-template-rows: repeat(var(--dimensions), var(--grid_size));
     gap: 0 0; 
-    z-index: 10;
 }
 
 .wrapper_grid {
@@ -115,6 +114,7 @@ button:hover {
     overflow: hidden; 
     max-height: 78vmin;
     width: 95vmin;
+    z-index: 100;
 }
 
 .wrapper_def {
