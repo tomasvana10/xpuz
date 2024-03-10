@@ -125,7 +125,7 @@ content, as each crossword created by this program is unique (unless you get luc
         </div>
 
         <div class="definitions">
-            {% set ns = namespace(tab_index_counter = 12) %}
+            {% set ns = namespace(tab_index_counter = 14) %}
             <div class="wrapper_def zoomViewport" id="no_scroll">
                 <div class="wrapper_def zoomContainer" id="return_def_zoom">
                     <div class="definitions_a"> {# Column one for across definitions #}
@@ -174,35 +174,35 @@ content, as each crossword created by this program is unique (unless you get luc
 
             {# Reveal, check, and clear dropdowns and their respective buttons #}
             <div class="top_buttons_container">
-                <button tabindex="1" class="special_button" id="reveal_button" onclick="onDropdownClick('reveal_dropdown')">{{ _('Reveal') }}</button>
+                <button tabindex="3" class="special_button" id="reveal_button" onclick="onDropdownClick('reveal_dropdown')">{{ _('Reveal') }}</button>
                 <div class="dropdown" id="reveal_dropdown">
-                    <button class="dropdown_button" tabindex="2" onclick="doSpecialButtonAction('cell', 'reveal')">{{ _('Cell') }}</button>
-                    <button class="dropdown_button" tabindex="3" onclick="doSpecialButtonAction('word', 'reveal')">{{ _('Word') }}<span class="keybind_span"> [⇧+↵]</span></button>
-                    <button class="dropdown_button" tabindex="4" onclick="doSpecialButtonAction('grid', 'reveal')">{{ _('Grid') }}</button>
+                    <button class="dropdown_button" tabindex="4" onclick="doSpecialButtonAction('cell', 'reveal')">{{ _('Cell') }}</button>
+                    <button class="dropdown_button" tabindex="5" onclick="doSpecialButtonAction('word', 'reveal')">{{ _('Word') }}<span class="keybind_span"> [⇧+↵]</span></button>
+                    <button class="dropdown_button" tabindex="6" onclick="doSpecialButtonAction('grid', 'reveal')">{{ _('Grid') }}</button>
                 </div>
 
-                <button tabindex="5" class="special_button" id="check_button" onclick="onDropdownClick('check_dropdown')">{{ _('Check') }}</button>
+                <button tabindex="7" class="special_button" id="check_button" onclick="onDropdownClick('check_dropdown')">{{ _('Check') }}</button>
                 <div class="dropdown" id="check_dropdown">
-                    <button class="dropdown_button" tabindex="6" onclick="doSpecialButtonAction('cell', 'check')">{{ _('Cell') }}</button>
-                    <button class="dropdown_button" tabindex="7" onclick="doSpecialButtonAction('word', 'check')">{{ _('Word') }}<span class="keybind_span"> [↵]</span></button>
-                    <button class="dropdown_button" tabindex="8" onclick="doSpecialButtonAction('grid', 'check')">{{ _('Grid') }}</button>
+                    <button class="dropdown_button" tabindex="8" onclick="doSpecialButtonAction('cell', 'check')">{{ _('Cell') }}</button>
+                    <button class="dropdown_button" tabindex="9" onclick="doSpecialButtonAction('word', 'check')">{{ _('Word') }}<span class="keybind_span"> [↵]</span></button>
+                    <button class="dropdown_button" tabindex="10" onclick="doSpecialButtonAction('grid', 'check')">{{ _('Grid') }}</button>
                 </div>
 
-                <button tabindex="9" class="special_button" id="clear_button" onclick="onDropdownClick('clear_dropdown')">{{ _('Clear') }}</button>
+                <button tabindex="11" class="special_button" id="clear_button" onclick="onDropdownClick('clear_dropdown')">{{ _('Clear') }}</button>
                 <div class="dropdown" id="clear_dropdown">
-                    <button class="dropdown_button" tabindex="10" onclick="doSpecialButtonAction('word', 'clear')">{{ _('Word') }}<span class="keybind_span"> [⇧+⌫]</span></button>
-                    <button class="dropdown_button" tabindex="11" onclick="doSpecialButtonAction('grid', 'clear')">{{ _('Grid') }}</button>
+                    <button class="dropdown_button" tabindex="12" onclick="doSpecialButtonAction('word', 'clear')">{{ _('Word') }}<span class="keybind_span"> [⇧+⌫]</span></button>
+                    <button class="dropdown_button" tabindex="13" onclick="doSpecialButtonAction('grid', 'clear')">{{ _('Grid') }}</button>
                 </div>
             </div>
 
             <div class="toggles">
-                <label class="toggle">
+                <label tabindex="1" class="toggle">
                     <input class="toggle_checkbox toggle_skip" id="ts" type="checkbox">
                     <div class="toggle_switch"></div>
                     <span class="toggle_label">{{ _('Smart Skip') }}</span>
                 </label>
 
-                <label class="toggle">
+                <label tabindex="2" class="toggle">
                     <input class="toggle_checkbox toggle_zoom" id="tz" type="checkbox">
                     <div class="toggle_switch"></div>
                     <span class="toggle_label">{{ _('Click To Zoom') }}</span>

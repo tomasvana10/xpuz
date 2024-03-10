@@ -71,8 +71,9 @@ document.addEventListener("keydown", event => {
     let inputValue = event.key;
 
     if (inputValue === "Enter" && !completionPopupToggled && !onloadPopupToggled 
-        && (event.target.className !== "def" && event.target.tagName !== "BUTTON" || cellCoords !== null) 
-        && !event.target.classList.contains("special_button") && document.activeElement.className !== "def" 
+        && (!event.target.classList.contains("def") && event.target.tagName !== "BUTTON") 
+        && !event.target.classList.contains("special_button") && !document.activeElement.classList.contains("def")
+        && !document.activeElement.classList.contains("toggle")
         && !event.target.classList.contains("dropdown_button")) { 
             return handleEnterKeybindPress(event); 
     }
@@ -135,9 +136,11 @@ function preventZoomIfRequired(event) {
 }
 
 function handleEnterPress(event) {
-    if (event.target.className === "def") { 
-        event.target.click(); 
+    if (event.target.classList.contains("def")) { 
+        event.target.click();
         event.target.blur(); 
+    } else if (event.target.classList.contains("toggle")) {
+        event.target.click();
     }
 }
 

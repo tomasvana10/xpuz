@@ -231,7 +231,7 @@ li { /* Each definition/clue */
 /* ---------- */ 
 
 /* ----- Styling of the smart skip toggle button. The majority of these styles are from https://codepen.io/morgoe/pen/VvzWQg ----- */
-.toggle * { user-select: none; }
+.toggle > * { user-select: none; }
 
 .toggles {
     position: absolute;
