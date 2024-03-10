@@ -14,7 +14,7 @@ class Paths:
     BASE_POT_PATH = os.path.join(LOCALES_PATH, "base.pot")
     CWORD_IMG_LIGHT_PATH = Path(__file__).resolve().parents[1] / os.path.join("assets", "images", "cword_light.png")
     CWORD_IMG_DARK_PATH = Path(__file__).resolve().parents[1] / os.path.join("assets", "images", "cword_dark.png")
-    ICONS_PATH = Path(__file__).resolve().parents[1] / os.path.join("assets", "icons")
+    LOGO_PATH = Path(__file__).resolve().parents[1] / os.path.join("assets", "images", "logo.ico")
     BASE_CWORDS_PATH = Path(__file__).resolve().parents[0] / "base_cwords"
     ATTEMPTS_DB_PATH = Path(__file__).resolve().parents[0] / os.path.join("data", "attempts_db.json")
     

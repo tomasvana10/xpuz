@@ -37,6 +37,7 @@ class Home(ctk.CTk):
         self.protocol("WM_DELETE_WINDOW", self._exit_handler)
         self.title(_("Crossword Puzzle"))
         self.geometry("800x600")
+        self.iconbitmap(Paths.LOGO_PATH) # Only works on Windows
         
         ctk.set_appearance_mode(self.cfg.get("m", "appearance"))
         ctk.set_default_color_theme(self.cfg.get("m", "theme"))
@@ -413,6 +414,7 @@ class CrosswordBrowser(ctk.CTkFrame):
         colour_palette: Dict[str, str] = AppHelper._get_colour_palette_for_webapp(ctk.get_appearance_mode())
         app._create_app_process(
             locale=self.master.locale,
+            scaling=self.master._get_widget_scaling(),
             colour_palette=colour_palette,
             json_colour_palette=json.dumps(colour_palette),
             cword_data=crossword.data,
