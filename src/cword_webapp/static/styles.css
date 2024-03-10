@@ -254,13 +254,13 @@ li { /* Each definition/clue */
 }
 
 .toggle_switch {
-	display: inline-block;
-	background: var(--text_colour);
-	border-radius: 16px;
-	width: 58px;
-	height: 32px;
-	position: relative;
-	vertical-align: middle;
+    display: inline-block;
+    background: var(--text_colour);
+    border-radius: 16px;
+    width: 58px;
+    height: 32px;
+    position: relative;
+    vertical-align: middle;
     transition: right 0.25s;
 }
 
@@ -268,13 +268,13 @@ li { /* Each definition/clue */
 
 .toggle_switch::before {
     background: white;
-	border-radius: 50%;
-	width: 24px;
-	height: 24px;
-	position: absolute;
-	top: 4px;
-	left: 4px;
-	transition: left 0.25s;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: left 0.25s;
 }
 
 .toggle_checkbox:checked + .toggle_switch { background: var(--button_colour); }
@@ -287,8 +287,8 @@ li { /* Each definition/clue */
 }
 
 .toggle_label {
-	margin-left: calc(5px * var(--scaling));
-	position: relative;
+    margin-left: calc(5px * var(--scaling));
+    position: relative;
     display: flex;
     align-items: center;
 }

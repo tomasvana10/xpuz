@@ -28,6 +28,8 @@ A GUI application built with `CustomTkinter` that allows you to select, configur
 Will create external user documentation and add it to the repository eventually.
 <br><br>
 ## Third-party library acknowledgements
+- [CSS Pattern](https://css-pattern.com) - Background CSS patterns
+- [Pure CSS Toggle Switch](https://codepen.io/morgoe/pen/VvzWQg) - Toggle switch CSS patterns
 - [Zoomooz.js](https://jaukia.github.io/zoomooz/) - jQuery library for making webpage elements zoomable
 - [Flask](https://flask.palletsprojects.com/en/3.0.x/) - Web framework for the crossword web application
 - [Babel](https://babel.pocoo.org/en/latest/) - l10n functionality and management of message catalogues
