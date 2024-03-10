@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-06 19:11+1100\n"
+"POT-Creation-Date: 2024-03-09 19:25+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: et <LL@li.org>\n"
@@ -19,123 +19,123 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:38 src/main.py:74 src/main.py:138 src/main.py:203
+#: src/main.py:38 src/main.py:75 src/main.py:139 src/main.py:204
 msgid "Crossword Puzzle"
 msgstr "Ristsõna"
 
-#: src/main.py:82
+#: src/main.py:83
 msgid "View crosswords"
 msgstr "Vaadake ristsõnu"
 
-#: src/main.py:86
+#: src/main.py:87
 msgid "Exit the app"
 msgstr "Välju rakendusest"
 
-#: src/main.py:92
+#: src/main.py:93
 msgid "Global Settings"
 msgstr "Globaalsed seaded"
 
-#: src/main.py:96
+#: src/main.py:97
 msgid "Languages"
 msgstr "Keeled"
 
-#: src/main.py:102
+#: src/main.py:103
 msgid "Size"
 msgstr "Suurus"
 
-#: src/main.py:109
+#: src/main.py:110
 msgid "light"
 msgstr "valgus"
 
-#: src/main.py:109
+#: src/main.py:110
 msgid "dark"
 msgstr "tume"
 
-#: src/main.py:109
+#: src/main.py:110
 msgid "system"
 msgstr "süsteem"
 
-#: src/main.py:110
+#: src/main.py:111
 msgid "Appearance"
 msgstr "Välimus"
 
-#: src/main.py:132 src/main.py:258
+#: src/main.py:133 src/main.py:259
 msgid "Crossword Browser"
 msgstr "Ristsõna brauser"
 
-#: src/main.py:260
+#: src/main.py:261
 msgid "Go back"
 msgstr "Mine tagasi"
 
-#: src/main.py:265
+#: src/main.py:266
 msgid "Load crossword"
 msgstr "Laadige ristsõna"
 
-#: src/main.py:269
+#: src/main.py:270
 msgid "Open web app"
 msgstr "Avage veebirakendus"
 
-#: src/main.py:273
+#: src/main.py:274
 msgid "Terminate web app"
 msgstr "Lõpetage veebirakendus"
 
-#: src/main.py:279
+#: src/main.py:280
 msgid "Word count preferences"
 msgstr "Sõnade arvu eelistused"
 
-#: src/main.py:286 src/main.py:328 src/main.py:360 src/main.py:502
+#: src/main.py:287 src/main.py:329 src/main.py:361 src/main.py:504
 msgid "Select word count"
 msgstr "Valige sõnade arv"
 
-#: src/main.py:288 src/main.py:359 src/main.py:514
+#: src/main.py:289 src/main.py:360 src/main.py:516
 msgid "Maximum"
 msgstr "Maksimaalne"
 
-#: src/main.py:294
+#: src/main.py:295
 msgid "Custom"
 msgstr "Kohandatud"
 
-#: src/main.py:437
+#: src/main.py:439
 msgid "To perform this operation, you must first select a cell."
 msgstr "Selle toimingu tegemiseks peate kõigepealt valima lahtri."
 
-#: src/main.py:560
+#: src/main.py:562
 msgid "View"
 msgstr "Vaade"
 
-#: src/cword_webapp/templates/index.html:248 src/main.py:562
+#: src/cword_webapp/templates/index.html:196 src/main.py:564
 msgid "Close"
 msgstr "Sulge"
 
-#: src/main.py:650 src/main.py:667
+#: src/main.py:652 src/main.py:669
 msgid "difficulty"
 msgstr "raskus"
 
-#: src/main.py:664
+#: src/main.py:666
 msgid "Total words"
 msgstr "Sõnu kokku"
 
-#: src/main.py:667
+#: src/main.py:669
 msgid "Difficulty"
 msgstr "Raskus"
 
-#: src/main.py:672
+#: src/main.py:674
 msgid "Select"
 msgstr "Valige"
 
-#: src/main.py:714
+#: src/main.py:716
 msgid "Restart"
 msgstr "Taaskäivita"
 
-#: src/main.py:714
+#: src/main.py:716
 msgid "Are you sure you want to restart the app?"
 msgstr "Kas olete kindel, et soovite rakenduse taaskäivitada?"
 
-#: src/main.py:718
+#: src/main.py:720
 msgid "Exit"
 msgstr "Välju"
 
-#: src/main.py:719
+#: src/main.py:721
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -143,38 +143,38 @@ msgstr ""
 "Kas olete kindel, et soovite rakendusest väljuda? Kui veebirakendus töötab, "
 "siis see lõpetatakse."
 
-#: src/main.py:724
+#: src/main.py:726
 msgid "Back to home"
 msgstr "Tagasi koju"
 
-#: src/main.py:725
+#: src/main.py:727
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
 "Kas olete kindel, et soovite naasta avakuvale? Veebirakendus lõpetatakse."
 
-#: src/main.py:738 src/main.py:741 src/main.py:744
+#: src/main.py:740 src/main.py:743 src/main.py:746
 msgid "Error"
 msgstr "Viga"
 
-#: src/main.py:738
+#: src/main.py:740
 msgid "This language is already selected."
 msgstr "See keel on juba valitud."
 
-#: src/main.py:741
+#: src/main.py:743
 msgid "This size is already selected."
 msgstr "See suurus on juba valitud."
 
-#: src/main.py:744
+#: src/main.py:746
 msgid "This appearance is already selected."
 msgstr "See välimus on juba valitud."
 
-#: src/main.py:747
+#: src/main.py:749
 msgid "Info"
 msgstr "Info"
 
-#: src/main.py:748
+#: src/main.py:750
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -195,76 +195,80 @@ msgstr ""
 "ei saa seda vaadata. Kui see juhtub, taaskäivitage brauser."
 
 #: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:234
+#: src/cword_webapp/templates/index.html:182
 msgid "Crossword Puzzle - Game"
 msgstr "Ristsõna - mäng"
 
-#: src/cword_webapp/templates/index.html:169
+#: src/cword_webapp/templates/index.html:107
 msgid "Across"
 msgstr "Üle"
 
-#: src/cword_webapp/templates/index.html:186
+#: src/cword_webapp/templates/index.html:125
 msgid "Down"
 msgstr "Alla"
 
-#: src/cword_webapp/templates/index.html:203
+#: src/cword_webapp/templates/index.html:143
 msgid "Reveal"
 msgstr "Paljasta"
 
-#: src/cword_webapp/templates/index.html:205
-#: src/cword_webapp/templates/index.html:212
+#: src/cword_webapp/templates/index.html:145
+#: src/cword_webapp/templates/index.html:152
 msgid "Cell"
 msgstr "Kamber"
 
-#: src/cword_webapp/templates/index.html:206
-#: src/cword_webapp/templates/index.html:213
-#: src/cword_webapp/templates/index.html:219
+#: src/cword_webapp/templates/index.html:146
+#: src/cword_webapp/templates/index.html:153
+#: src/cword_webapp/templates/index.html:159
 msgid "Word"
 msgstr "Sõna"
 
-#: src/cword_webapp/templates/index.html:207
-#: src/cword_webapp/templates/index.html:214
-#: src/cword_webapp/templates/index.html:220
+#: src/cword_webapp/templates/index.html:147
+#: src/cword_webapp/templates/index.html:154
+#: src/cword_webapp/templates/index.html:160
 msgid "Grid"
 msgstr "Võre"
 
-#: src/cword_webapp/templates/index.html:210
+#: src/cword_webapp/templates/index.html:150
 msgid "Check"
 msgstr "Kontrollima"
 
-#: src/cword_webapp/templates/index.html:217
+#: src/cword_webapp/templates/index.html:157
 msgid "Clear"
 msgstr "Selge"
 
-#: src/cword_webapp/templates/index.html:227
+#: src/cword_webapp/templates/index.html:168
 msgid "Smart Skip"
 msgstr "Nutikas vahelejätmine"
 
-#: src/cword_webapp/templates/index.html:235
+#: src/cword_webapp/templates/index.html:174
+msgid "Click To Zoom"
+msgstr "Klõpsake suumimiseks"
+
+#: src/cword_webapp/templates/index.html:183
 msgid "You are viewing"
 msgstr "Sa vaatad"
 
-#: src/cword_webapp/templates/index.html:235
+#: src/cword_webapp/templates/index.html:183
 msgid "from"
 msgstr "alates"
 
-#: src/cword_webapp/templates/index.html:237
+#: src/cword_webapp/templates/index.html:185
 msgid "word(s) could not be inserted, sorry."
 msgstr "sõna(sid) ei saanud sisestada, vabandust."
 
-#: src/cword_webapp/templates/index.html:238
+#: src/cword_webapp/templates/index.html:186
 msgid "Word count (adjusted)"
 msgstr "Sõnade arv (kohandatud)"
 
-#: src/cword_webapp/templates/index.html:240
+#: src/cword_webapp/templates/index.html:188
 msgid "Word count"
 msgstr "Sõnade arv"
 
-#: src/cword_webapp/templates/index.html:242
+#: src/cword_webapp/templates/index.html:190
 msgid "Continue"
 msgstr "Jätka"
 
-#: src/cword_webapp/templates/index.html:247
+#: src/cword_webapp/templates/index.html:195
 msgid "You completed the crossword!"
 msgstr "Sa täitsid ristsõna!"
 

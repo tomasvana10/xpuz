@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-06 19:11+1100\n"
+"POT-Creation-Date: 2024-03-09 19:25+1100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,229 +17,233 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:38 src/main.py:74 src/main.py:138 src/main.py:203
+#: src/main.py:38 src/main.py:75 src/main.py:139 src/main.py:204
 msgid "Crossword Puzzle"
 msgstr ""
 
-#: src/main.py:82
+#: src/main.py:83
 msgid "View crosswords"
 msgstr ""
 
-#: src/main.py:86
+#: src/main.py:87
 msgid "Exit the app"
 msgstr ""
 
-#: src/main.py:92
+#: src/main.py:93
 msgid "Global Settings"
 msgstr ""
 
-#: src/main.py:96
+#: src/main.py:97
 msgid "Languages"
 msgstr ""
 
-#: src/main.py:102
+#: src/main.py:103
 msgid "Size"
 msgstr ""
 
-#: src/main.py:109
+#: src/main.py:110
 msgid "light"
 msgstr ""
 
-#: src/main.py:109
+#: src/main.py:110
 msgid "dark"
 msgstr ""
 
-#: src/main.py:109
+#: src/main.py:110
 msgid "system"
 msgstr ""
 
-#: src/main.py:110
+#: src/main.py:111
 msgid "Appearance"
 msgstr ""
 
-#: src/main.py:132 src/main.py:258
+#: src/main.py:133 src/main.py:259
 msgid "Crossword Browser"
 msgstr ""
 
-#: src/main.py:260
+#: src/main.py:261
 msgid "Go back"
 msgstr ""
 
-#: src/main.py:265
+#: src/main.py:266
 msgid "Load crossword"
 msgstr ""
 
-#: src/main.py:269
+#: src/main.py:270
 msgid "Open web app"
 msgstr ""
 
-#: src/main.py:273
+#: src/main.py:274
 msgid "Terminate web app"
 msgstr ""
 
-#: src/main.py:279
+#: src/main.py:280
 msgid "Word count preferences"
 msgstr ""
 
-#: src/main.py:286 src/main.py:328 src/main.py:360 src/main.py:502
+#: src/main.py:287 src/main.py:329 src/main.py:361 src/main.py:504
 msgid "Select word count"
 msgstr ""
 
-#: src/main.py:288 src/main.py:359 src/main.py:514
+#: src/main.py:289 src/main.py:360 src/main.py:516
 msgid "Maximum"
 msgstr ""
 
-#: src/main.py:294
+#: src/main.py:295
 msgid "Custom"
 msgstr ""
 
-#: src/main.py:437
+#: src/main.py:439
 msgid "To perform this operation, you must first select a cell."
 msgstr ""
 
-#: src/main.py:560
+#: src/main.py:562
 msgid "View"
 msgstr ""
 
-#: src/cword_webapp/templates/index.html:248 src/main.py:562
+#: src/cword_webapp/templates/index.html:196 src/main.py:564
 msgid "Close"
 msgstr ""
 
-#: src/main.py:650 src/main.py:667
+#: src/main.py:652 src/main.py:669
 msgid "difficulty"
 msgstr ""
 
-#: src/main.py:664
+#: src/main.py:666
 msgid "Total words"
 msgstr ""
 
-#: src/main.py:667
+#: src/main.py:669
 msgid "Difficulty"
 msgstr ""
 
-#: src/main.py:672
+#: src/main.py:674
 msgid "Select"
 msgstr ""
 
-#: src/main.py:714
+#: src/main.py:716
 msgid "Restart"
 msgstr ""
 
-#: src/main.py:714
+#: src/main.py:716
 msgid "Are you sure you want to restart the app?"
 msgstr ""
 
-#: src/main.py:718
+#: src/main.py:720
 msgid "Exit"
 msgstr ""
 
-#: src/main.py:719
+#: src/main.py:721
 msgid "Are you sure you want to exit the app? If the web app is running, it will be terminated."
 msgstr ""
 
-#: src/main.py:724
+#: src/main.py:726
 msgid "Back to home"
 msgstr ""
 
-#: src/main.py:725
+#: src/main.py:727
 msgid "Are you sure you want to go back to the home screen? The web app will be terminated."
 msgstr ""
 
-#: src/main.py:738 src/main.py:741 src/main.py:744
+#: src/main.py:740 src/main.py:743 src/main.py:746
 msgid "Error"
 msgstr ""
 
-#: src/main.py:738
+#: src/main.py:740
 msgid "This language is already selected."
 msgstr ""
 
-#: src/main.py:741
+#: src/main.py:743
 msgid "This size is already selected."
 msgstr ""
 
-#: src/main.py:744
+#: src/main.py:746
 msgid "This appearance is already selected."
 msgstr ""
 
-#: src/main.py:747
+#: src/main.py:749
 msgid "Info"
 msgstr ""
 
-#: src/main.py:748
+#: src/main.py:750
 msgid "First time launch, please read: Once you have loaded a crossword, and wish to load another one, you must first terminate the web app. IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer. ALSO IMPORTANT: In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
 msgstr ""
 
 #: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:234
+#: src/cword_webapp/templates/index.html:182
 msgid "Crossword Puzzle - Game"
 msgstr ""
 
-#: src/cword_webapp/templates/index.html:169
+#: src/cword_webapp/templates/index.html:107
 msgid "Across"
 msgstr ""
 
-#: src/cword_webapp/templates/index.html:186
+#: src/cword_webapp/templates/index.html:125
 msgid "Down"
 msgstr ""
 
-#: src/cword_webapp/templates/index.html:203
+#: src/cword_webapp/templates/index.html:143
 msgid "Reveal"
 msgstr ""
 
-#: src/cword_webapp/templates/index.html:205
-#: src/cword_webapp/templates/index.html:212
+#: src/cword_webapp/templates/index.html:145
+#: src/cword_webapp/templates/index.html:152
 msgid "Cell"
 msgstr ""
 
-#: src/cword_webapp/templates/index.html:206
-#: src/cword_webapp/templates/index.html:213
-#: src/cword_webapp/templates/index.html:219
+#: src/cword_webapp/templates/index.html:146
+#: src/cword_webapp/templates/index.html:153
+#: src/cword_webapp/templates/index.html:159
 msgid "Word"
 msgstr ""
 
-#: src/cword_webapp/templates/index.html:207
-#: src/cword_webapp/templates/index.html:214
-#: src/cword_webapp/templates/index.html:220
+#: src/cword_webapp/templates/index.html:147
+#: src/cword_webapp/templates/index.html:154
+#: src/cword_webapp/templates/index.html:160
 msgid "Grid"
 msgstr ""
 
-#: src/cword_webapp/templates/index.html:210
+#: src/cword_webapp/templates/index.html:150
 msgid "Check"
 msgstr ""
 
-#: src/cword_webapp/templates/index.html:217
+#: src/cword_webapp/templates/index.html:157
 msgid "Clear"
 msgstr ""
 
-#: src/cword_webapp/templates/index.html:227
+#: src/cword_webapp/templates/index.html:168
 msgid "Smart Skip"
 msgstr ""
 
-#: src/cword_webapp/templates/index.html:235
+#: src/cword_webapp/templates/index.html:174
+msgid "Click To Zoom"
+msgstr ""
+
+#: src/cword_webapp/templates/index.html:183
 msgid "You are viewing"
 msgstr ""
 
-#: src/cword_webapp/templates/index.html:235
+#: src/cword_webapp/templates/index.html:183
 msgid "from"
 msgstr ""
 
-#: src/cword_webapp/templates/index.html:237
+#: src/cword_webapp/templates/index.html:185
 msgid "word(s) could not be inserted, sorry."
 msgstr ""
 
-#: src/cword_webapp/templates/index.html:238
+#: src/cword_webapp/templates/index.html:186
 msgid "Word count (adjusted)"
 msgstr ""
 
-#: src/cword_webapp/templates/index.html:240
+#: src/cword_webapp/templates/index.html:188
 msgid "Word count"
 msgstr ""
 
-#: src/cword_webapp/templates/index.html:242
+#: src/cword_webapp/templates/index.html:190
 msgid "Continue"
 msgstr ""
 
-#: src/cword_webapp/templates/index.html:247
+#: src/cword_webapp/templates/index.html:195
 msgid "You completed the crossword!"
 msgstr ""
 

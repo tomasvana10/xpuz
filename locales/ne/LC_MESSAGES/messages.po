@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-06 19:11+1100\n"
+"POT-Creation-Date: 2024-03-09 19:25+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ne <LL@li.org>\n"
@@ -19,123 +19,123 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:38 src/main.py:74 src/main.py:138 src/main.py:203
+#: src/main.py:38 src/main.py:75 src/main.py:139 src/main.py:204
 msgid "Crossword Puzzle"
 msgstr "क्रसवर्ड पजल"
 
-#: src/main.py:82
+#: src/main.py:83
 msgid "View crosswords"
 msgstr "क्रसवर्डहरू हेर्नुहोस्"
 
-#: src/main.py:86
+#: src/main.py:87
 msgid "Exit the app"
 msgstr "एपबाट बाहिर निस्कनुहोस्"
 
-#: src/main.py:92
+#: src/main.py:93
 msgid "Global Settings"
 msgstr "ग्लोबल सेटिङहरू"
 
-#: src/main.py:96
+#: src/main.py:97
 msgid "Languages"
 msgstr "भाषाहरु"
 
-#: src/main.py:102
+#: src/main.py:103
 msgid "Size"
 msgstr "साइज"
 
-#: src/main.py:109
+#: src/main.py:110
 msgid "light"
 msgstr "प्रकाश"
 
-#: src/main.py:109
+#: src/main.py:110
 msgid "dark"
 msgstr "अँध्यारो"
 
-#: src/main.py:109
+#: src/main.py:110
 msgid "system"
 msgstr "प्रणाली"
 
-#: src/main.py:110
+#: src/main.py:111
 msgid "Appearance"
 msgstr "उपस्थिति"
 
-#: src/main.py:132 src/main.py:258
+#: src/main.py:133 src/main.py:259
 msgid "Crossword Browser"
 msgstr "क्रसवर्ड ब्राउजर"
 
-#: src/main.py:260
+#: src/main.py:261
 msgid "Go back"
 msgstr "पछाडी जाउ"
 
-#: src/main.py:265
+#: src/main.py:266
 msgid "Load crossword"
 msgstr "क्रसवर्ड लोड गर्नुहोस्"
 
-#: src/main.py:269
+#: src/main.py:270
 msgid "Open web app"
 msgstr "वेब एप खोल्नुहोस्"
 
-#: src/main.py:273
+#: src/main.py:274
 msgid "Terminate web app"
 msgstr "वेब एप बन्द गर्नुहोस्"
 
-#: src/main.py:279
+#: src/main.py:280
 msgid "Word count preferences"
 msgstr "शब्द गणना प्राथमिकताहरू"
 
-#: src/main.py:286 src/main.py:328 src/main.py:360 src/main.py:502
+#: src/main.py:287 src/main.py:329 src/main.py:361 src/main.py:504
 msgid "Select word count"
 msgstr "शब्द गणना चयन गर्नुहोस्"
 
-#: src/main.py:288 src/main.py:359 src/main.py:514
+#: src/main.py:289 src/main.py:360 src/main.py:516
 msgid "Maximum"
 msgstr "अधिकतम"
 
-#: src/main.py:294
+#: src/main.py:295
 msgid "Custom"
 msgstr "अनुकूलन"
 
-#: src/main.py:437
+#: src/main.py:439
 msgid "To perform this operation, you must first select a cell."
 msgstr "यो अपरेशन प्रदर्शन गर्न, तपाईंले पहिले एउटा सेल चयन गर्नुपर्नेछ।"
 
-#: src/main.py:560
+#: src/main.py:562
 msgid "View"
 msgstr "हेर्नुहोस्"
 
-#: src/cword_webapp/templates/index.html:248 src/main.py:562
+#: src/cword_webapp/templates/index.html:196 src/main.py:564
 msgid "Close"
 msgstr "बन्द गर्नुहोस्"
 
-#: src/main.py:650 src/main.py:667
+#: src/main.py:652 src/main.py:669
 msgid "difficulty"
 msgstr "कठिनाई"
 
-#: src/main.py:664
+#: src/main.py:666
 msgid "Total words"
 msgstr "कुल शब्दहरू"
 
-#: src/main.py:667
+#: src/main.py:669
 msgid "Difficulty"
 msgstr "कठिनाई"
 
-#: src/main.py:672
+#: src/main.py:674
 msgid "Select"
 msgstr "चयन गर्नुहोस्"
 
-#: src/main.py:714
+#: src/main.py:716
 msgid "Restart"
 msgstr "फेरि शुरु गर्नु"
 
-#: src/main.py:714
+#: src/main.py:716
 msgid "Are you sure you want to restart the app?"
 msgstr "के तपाइँ एप पुन: सुरु गर्न निश्चित हुनुहुन्छ?"
 
-#: src/main.py:718
+#: src/main.py:720
 msgid "Exit"
 msgstr "बाहिर निस्कनुहोस्"
 
-#: src/main.py:719
+#: src/main.py:721
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -143,38 +143,38 @@ msgstr ""
 "के तपाइँ एपबाट बाहिर निस्कन निश्चित हुनुहुन्छ? यदि वेब एप चलिरहेको छ भने, यो"
 " समाप्त हुनेछ।"
 
-#: src/main.py:724
+#: src/main.py:726
 msgid "Back to home"
 msgstr "घर फिर्ता"
 
-#: src/main.py:725
+#: src/main.py:727
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
 "के तपाईं निश्चित रूपमा गृह स्क्रिनमा फर्कन चाहनुहुन्छ? वेब एप खारेज गरिनेछ।"
 
-#: src/main.py:738 src/main.py:741 src/main.py:744
+#: src/main.py:740 src/main.py:743 src/main.py:746
 msgid "Error"
 msgstr "त्रुटि"
 
-#: src/main.py:738
+#: src/main.py:740
 msgid "This language is already selected."
 msgstr "यो भाषा पहिले नै चयन गरिएको छ।"
 
-#: src/main.py:741
+#: src/main.py:743
 msgid "This size is already selected."
 msgstr "यो आकार पहिले नै चयन गरिएको छ।"
 
-#: src/main.py:744
+#: src/main.py:746
 msgid "This appearance is already selected."
 msgstr "यो उपस्थिति पहिले नै चयन गरिएको छ।"
 
-#: src/main.py:747
+#: src/main.py:749
 msgid "Info"
 msgstr "जानकारी"
 
-#: src/main.py:748
+#: src/main.py:750
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -197,76 +197,80 @@ msgstr ""
 "पुन: सुरु गर्नुहोस्।"
 
 #: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:234
+#: src/cword_webapp/templates/index.html:182
 msgid "Crossword Puzzle - Game"
 msgstr "क्रसवर्ड पजल - खेल"
 
-#: src/cword_webapp/templates/index.html:169
+#: src/cword_webapp/templates/index.html:107
 msgid "Across"
 msgstr "पार"
 
-#: src/cword_webapp/templates/index.html:186
+#: src/cword_webapp/templates/index.html:125
 msgid "Down"
 msgstr "तल"
 
-#: src/cword_webapp/templates/index.html:203
+#: src/cword_webapp/templates/index.html:143
 msgid "Reveal"
 msgstr "प्रकट गर्नुहोस्"
 
-#: src/cword_webapp/templates/index.html:205
-#: src/cword_webapp/templates/index.html:212
+#: src/cword_webapp/templates/index.html:145
+#: src/cword_webapp/templates/index.html:152
 msgid "Cell"
 msgstr "सेल"
 
-#: src/cword_webapp/templates/index.html:206
-#: src/cword_webapp/templates/index.html:213
-#: src/cword_webapp/templates/index.html:219
+#: src/cword_webapp/templates/index.html:146
+#: src/cword_webapp/templates/index.html:153
+#: src/cword_webapp/templates/index.html:159
 msgid "Word"
 msgstr "शब्द"
 
-#: src/cword_webapp/templates/index.html:207
-#: src/cword_webapp/templates/index.html:214
-#: src/cword_webapp/templates/index.html:220
+#: src/cword_webapp/templates/index.html:147
+#: src/cword_webapp/templates/index.html:154
+#: src/cword_webapp/templates/index.html:160
 msgid "Grid"
 msgstr "ग्रिड"
 
-#: src/cword_webapp/templates/index.html:210
+#: src/cword_webapp/templates/index.html:150
 msgid "Check"
 msgstr "जाँच गर्नुहोस्"
 
-#: src/cword_webapp/templates/index.html:217
+#: src/cword_webapp/templates/index.html:157
 msgid "Clear"
 msgstr "खाली गर्नुहोस्"
 
-#: src/cword_webapp/templates/index.html:227
+#: src/cword_webapp/templates/index.html:168
 msgid "Smart Skip"
 msgstr "स्मार्ट स्किप"
 
-#: src/cword_webapp/templates/index.html:235
+#: src/cword_webapp/templates/index.html:174
+msgid "Click To Zoom"
+msgstr "जुम गर्न क्लिक गर्नुहोस्"
+
+#: src/cword_webapp/templates/index.html:183
 msgid "You are viewing"
 msgstr "तपाई हेर्दै हुनुहुन्छ"
 
-#: src/cword_webapp/templates/index.html:235
+#: src/cword_webapp/templates/index.html:183
 msgid "from"
 msgstr "बाट"
 
-#: src/cword_webapp/templates/index.html:237
+#: src/cword_webapp/templates/index.html:185
 msgid "word(s) could not be inserted, sorry."
 msgstr "शब्द(हरू) सम्मिलित गर्न सकिएन, माफ गर्नुहोस्।"
 
-#: src/cword_webapp/templates/index.html:238
+#: src/cword_webapp/templates/index.html:186
 msgid "Word count (adjusted)"
 msgstr "शब्द गणना (समायोजित)"
 
-#: src/cword_webapp/templates/index.html:240
+#: src/cword_webapp/templates/index.html:188
 msgid "Word count"
 msgstr "शब्द गणना"
 
-#: src/cword_webapp/templates/index.html:242
+#: src/cword_webapp/templates/index.html:190
 msgid "Continue"
 msgstr "जारी राख्नुहोस्"
 
-#: src/cword_webapp/templates/index.html:247
+#: src/cword_webapp/templates/index.html:195
 msgid "You completed the crossword!"
 msgstr "तपाईंले क्रसवर्ड पूरा गर्नुभयो!"
 

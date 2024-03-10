@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-06 19:11+1100\n"
+"POT-Creation-Date: 2024-03-09 19:25+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: be <LL@li.org>\n"
@@ -19,123 +19,123 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:38 src/main.py:74 src/main.py:138 src/main.py:203
+#: src/main.py:38 src/main.py:75 src/main.py:139 src/main.py:204
 msgid "Crossword Puzzle"
 msgstr "Крыжаванка"
 
-#: src/main.py:82
+#: src/main.py:83
 msgid "View crosswords"
 msgstr "Прагляд крыжаванак"
 
-#: src/main.py:86
+#: src/main.py:87
 msgid "Exit the app"
 msgstr "Выйдзіце з праграмы"
 
-#: src/main.py:92
+#: src/main.py:93
 msgid "Global Settings"
 msgstr "Глабальныя налады"
 
-#: src/main.py:96
+#: src/main.py:97
 msgid "Languages"
 msgstr "Мовы"
 
-#: src/main.py:102
+#: src/main.py:103
 msgid "Size"
 msgstr "Памер"
 
-#: src/main.py:109
+#: src/main.py:110
 msgid "light"
 msgstr "святло"
 
-#: src/main.py:109
+#: src/main.py:110
 msgid "dark"
 msgstr "цёмны"
 
-#: src/main.py:109
+#: src/main.py:110
 msgid "system"
 msgstr "сістэма"
 
-#: src/main.py:110
+#: src/main.py:111
 msgid "Appearance"
 msgstr "Знешні выгляд"
 
-#: src/main.py:132 src/main.py:258
+#: src/main.py:133 src/main.py:259
 msgid "Crossword Browser"
 msgstr "Браўзэр крыжаванак"
 
-#: src/main.py:260
+#: src/main.py:261
 msgid "Go back"
 msgstr "Вяртацца"
 
-#: src/main.py:265
+#: src/main.py:266
 msgid "Load crossword"
 msgstr "Спампаваць крыжаванка"
 
-#: src/main.py:269
+#: src/main.py:270
 msgid "Open web app"
 msgstr "Адкрыйце вэб-прыкладанне"
 
-#: src/main.py:273
+#: src/main.py:274
 msgid "Terminate web app"
 msgstr "Спыніць вэб-праграму"
 
-#: src/main.py:279
+#: src/main.py:280
 msgid "Word count preferences"
 msgstr "Параметры колькасці слоў"
 
-#: src/main.py:286 src/main.py:328 src/main.py:360 src/main.py:502
+#: src/main.py:287 src/main.py:329 src/main.py:361 src/main.py:504
 msgid "Select word count"
 msgstr "Выберыце колькасць слоў"
 
-#: src/main.py:288 src/main.py:359 src/main.py:514
+#: src/main.py:289 src/main.py:360 src/main.py:516
 msgid "Maximum"
 msgstr "Максімум"
 
-#: src/main.py:294
+#: src/main.py:295
 msgid "Custom"
 msgstr "Прыстасаваныя"
 
-#: src/main.py:437
+#: src/main.py:439
 msgid "To perform this operation, you must first select a cell."
 msgstr "Каб выканаць гэтую аперацыю, неабходна спачатку выбраць вочку."
 
-#: src/main.py:560
+#: src/main.py:562
 msgid "View"
 msgstr "Выгляд"
 
-#: src/cword_webapp/templates/index.html:248 src/main.py:562
+#: src/cword_webapp/templates/index.html:196 src/main.py:564
 msgid "Close"
 msgstr "Блізка"
 
-#: src/main.py:650 src/main.py:667
+#: src/main.py:652 src/main.py:669
 msgid "difficulty"
 msgstr "цяжкасць"
 
-#: src/main.py:664
+#: src/main.py:666
 msgid "Total words"
 msgstr "Усяго слоў"
 
-#: src/main.py:667
+#: src/main.py:669
 msgid "Difficulty"
 msgstr "Цяжкасць"
 
-#: src/main.py:672
+#: src/main.py:674
 msgid "Select"
 msgstr "Выберыце"
 
-#: src/main.py:714
+#: src/main.py:716
 msgid "Restart"
 msgstr "Перазапуск"
 
-#: src/main.py:714
+#: src/main.py:716
 msgid "Are you sure you want to restart the app?"
 msgstr "Вы ўпэўнены, што хочаце перазапусціць праграму?"
 
-#: src/main.py:718
+#: src/main.py:720
 msgid "Exit"
 msgstr "Выхад"
 
-#: src/main.py:719
+#: src/main.py:721
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -143,11 +143,11 @@ msgstr ""
 "Вы ўпэўнены, што хочаце выйсці з праграмы? Калі вэб-праграма працуе, яна "
 "будзе спынена."
 
-#: src/main.py:724
+#: src/main.py:726
 msgid "Back to home"
 msgstr "Вярнуцца на галоўную"
 
-#: src/main.py:725
+#: src/main.py:727
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -155,27 +155,27 @@ msgstr ""
 "Вы ўпэўнены, што хочаце вярнуцца на галоўны экран? Вэб-прыкладанне будзе "
 "спынена."
 
-#: src/main.py:738 src/main.py:741 src/main.py:744
+#: src/main.py:740 src/main.py:743 src/main.py:746
 msgid "Error"
 msgstr "Памылка"
 
-#: src/main.py:738
+#: src/main.py:740
 msgid "This language is already selected."
 msgstr "Гэта мова ўжо выбрана."
 
-#: src/main.py:741
+#: src/main.py:743
 msgid "This size is already selected."
 msgstr "Гэты памер ужо выбраны."
 
-#: src/main.py:744
+#: src/main.py:746
 msgid "This appearance is already selected."
 msgstr "Гэты знешні выгляд ужо выбраны."
 
-#: src/main.py:747
+#: src/main.py:749
 msgid "Info"
 msgstr "Інфармацыя"
 
-#: src/main.py:748
+#: src/main.py:750
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -196,76 +196,80 @@ msgstr ""
 "не можа яго праглядзець. Калі гэта адбудзецца, перазапусціце браўзер."
 
 #: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:234
+#: src/cword_webapp/templates/index.html:182
 msgid "Crossword Puzzle - Game"
 msgstr "Крыжаванка - гульня"
 
-#: src/cword_webapp/templates/index.html:169
+#: src/cword_webapp/templates/index.html:107
 msgid "Across"
 msgstr "Папярок"
 
-#: src/cword_webapp/templates/index.html:186
+#: src/cword_webapp/templates/index.html:125
 msgid "Down"
 msgstr "Уніз"
 
-#: src/cword_webapp/templates/index.html:203
+#: src/cword_webapp/templates/index.html:143
 msgid "Reveal"
 msgstr "Раскрыць"
 
-#: src/cword_webapp/templates/index.html:205
-#: src/cword_webapp/templates/index.html:212
+#: src/cword_webapp/templates/index.html:145
+#: src/cword_webapp/templates/index.html:152
 msgid "Cell"
 msgstr "Сотавы"
 
-#: src/cword_webapp/templates/index.html:206
-#: src/cword_webapp/templates/index.html:213
-#: src/cword_webapp/templates/index.html:219
+#: src/cword_webapp/templates/index.html:146
+#: src/cword_webapp/templates/index.html:153
+#: src/cword_webapp/templates/index.html:159
 msgid "Word"
 msgstr "Слова"
 
-#: src/cword_webapp/templates/index.html:207
-#: src/cword_webapp/templates/index.html:214
-#: src/cword_webapp/templates/index.html:220
+#: src/cword_webapp/templates/index.html:147
+#: src/cword_webapp/templates/index.html:154
+#: src/cword_webapp/templates/index.html:160
 msgid "Grid"
 msgstr "Сетка"
 
-#: src/cword_webapp/templates/index.html:210
+#: src/cword_webapp/templates/index.html:150
 msgid "Check"
 msgstr "Праверыць"
 
-#: src/cword_webapp/templates/index.html:217
+#: src/cword_webapp/templates/index.html:157
 msgid "Clear"
 msgstr "Ясна"
 
-#: src/cword_webapp/templates/index.html:227
+#: src/cword_webapp/templates/index.html:168
 msgid "Smart Skip"
 msgstr "Разумны прапуск"
 
-#: src/cword_webapp/templates/index.html:235
+#: src/cword_webapp/templates/index.html:174
+msgid "Click To Zoom"
+msgstr "Націсніце, каб павялічыць маштаб"
+
+#: src/cword_webapp/templates/index.html:183
 msgid "You are viewing"
 msgstr "Вы праглядаеце"
 
-#: src/cword_webapp/templates/index.html:235
+#: src/cword_webapp/templates/index.html:183
 msgid "from"
 msgstr "ад"
 
-#: src/cword_webapp/templates/index.html:237
+#: src/cword_webapp/templates/index.html:185
 msgid "word(s) could not be inserted, sorry."
 msgstr "слова(-ы) не можа быць устаўлена, прабачце."
 
-#: src/cword_webapp/templates/index.html:238
+#: src/cword_webapp/templates/index.html:186
 msgid "Word count (adjusted)"
 msgstr "Колькасць слоў (скарэкціравана)"
 
-#: src/cword_webapp/templates/index.html:240
+#: src/cword_webapp/templates/index.html:188
 msgid "Word count"
 msgstr "Колькасць слоў"
 
-#: src/cword_webapp/templates/index.html:242
+#: src/cword_webapp/templates/index.html:190
 msgid "Continue"
 msgstr "Працягнуць"
 
-#: src/cword_webapp/templates/index.html:247
+#: src/cword_webapp/templates/index.html:195
 msgid "You completed the crossword!"
 msgstr "Вы завяршылі крыжаванку!"
 
