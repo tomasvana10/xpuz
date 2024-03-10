@@ -28,6 +28,7 @@ A GUI application built with `CustomTkinter` that allows you to select, configur
 Will create external user documentation and add it to the repository eventually.
 <br><br>
 ## Third-party library acknowledgements
+- [Zoomooz.js](https://jaukia.github.io/zoomooz/) - jQuery library for making webpage elements zoomable
 - [Flask](https://flask.palletsprojects.com/en/3.0.x/) - Web framework for the crossword web application
 - [Babel](https://babel.pocoo.org/en/latest/) - l10n functionality and management of message catalogues
 - [flask-babel](https://python-babel.github.io/flask-babel/) - i18n integration for the Flask web application
