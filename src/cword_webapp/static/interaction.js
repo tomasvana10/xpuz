@@ -2,8 +2,8 @@
 Additionally, this script offers automatic detection of crossword completion, and relays this information to the user. 
 */
 
-let grid, dimensions, empty, colourPalette, intersections, errMsgs; // Jinja2 template variables
-let direction = "ACROSS",
+let grid, directions, dimensions, empty, colourPalette, intersections, errMsgs; // Jinja2 template variables
+let direction = "ACROSS", 
     currentWord = null,
     cellCoords = null,
     staticIndex = null,
@@ -24,7 +24,7 @@ const shouldDirectionBeAlternated = (coords) => shiftCellCoords(coords, directio
 const changeCellFocus = (focus) => { getCellElement(cellCoords).style.backgroundColor = focus ? colourPalette.CELL_FOCUS : colourPalette.SUB; };
 const getDefinitionsListItemFromWord = () => document.querySelector(`[data-word="${currentWord}"]`);
 const changeDefinitionsListItemFocus = (focus) => getDefinitionsListItemFromWord().style.backgroundColor = focus ? colourPalette.WORD_FOCUS : ""; 
-const alternateDirection = () => direction = direction === "ACROSS" ? "DOWN" : "ACROSS";
+const alternateDirection = () => direction = direction === directions[0] ? directions[1] : directions[0];
 const emulateEscapePress = () => document.dispatchEvent(new KeyboardEvent("keydown", {"key": "Escape"}));
 const isCrosswordComplete = () => getGrid().isEqualTo(grid);
 const unfocusActiveElement = () => document.activeElement.blur();
@@ -39,13 +39,20 @@ Element.prototype.hasCorrectValue = function() {
 
 document.addEventListener("DOMContentLoaded", () => { // On page load
     const body = document.querySelector("body");
-
     grid = eval(body.getAttribute("data-grid")); /* Convert Python array to JS array */
+    directions = eval(body.getAttribute("data-directions"));
     dimensions = parseInt(body.getAttribute("data-dimensions"));
     empty = body.getAttribute("data-empty");
     colourPalette = JSON.parse(body.getAttribute("data-colour_palette"));
     intersections = JSON.stringify(eval(body.getAttribute("data-intersections")));
     errMsgs = eval(body.getAttribute("data-js_err_msgs"));
+
+    document.querySelectorAll(".non_empty_cell").forEach(element => element.addEventListener("click", event => {
+        onCellClick(event, element);
+    }));
+    document.querySelectorAll(".def").forEach(element => element.addEventListener("click", event => {
+        onDefinitionsListItemClick(event, element.getAttribute("data-num"), element.getAttribute("data-direction"));
+    }));
 
     onloadPopupToggled = true;
     sleep(200).then(() => { // Buffer popup transition
@@ -55,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => { // On page load
         sleep(301).then(() => { document.getElementsByClassName("continue_button")[0].focus({ focusVisible: true}); });
     });
 
-    doSpecialButtonAction("grid", "clear", false); // Prevent possible issues with HTML
+    doSpecialButtonAction("grid", "clear", false); // Prevent possible issues with HTML    
 });
 
 
@@ -101,7 +108,7 @@ function handleStandardInput(inputValue) {
     crosswordCompletionHandler();
     
     changeCellFocus(false);
-    if (mode === "enter" && document.getElementById("tcb").checked) { 
+    if (mode === "enter" && document.getElementById("ts").checked) { 
         cellCoords = skipCellCoords(cellCoords, direction, mode);
     } else { cellCoords = shiftCellCoords(cellCoords, direction, mode); }
     changeWordFocus(true); changeCellFocus(true);
@@ -120,6 +127,11 @@ function skipCellCoords(coords, direction) {
     }
 
     return newCellCoords
+}
+
+function preventZoomIfRequired(event) {
+    if (!document.getElementById("tz").checked) // User doesn't have click to zoom enabled
+        event.stopImmediatePropagation(); // Prevent zoomooz from zooming
 }
 
 function handleEnterPress(event) {
@@ -162,7 +174,7 @@ function handleArrowPress(key, event) {
     `.empty` cell. Finally, alternate the direction if necessary and refocus. */
     event.preventDefault();
     let mode = (key === "ArrowDown" || key === "ArrowRight") ? "enter" : "del";
-    let dir = (key === "ArrowDown" || key === "ArrowUp") ? "DOWN" : "ACROSS";
+    let dir = (key === "ArrowDown" || key === "ArrowUp") ? directions[1] : directions[0];
     let newCellCoords = shiftCellCoords(cellCoords, dir, mode, true);
     let skipFlag = false;
 
@@ -234,7 +246,7 @@ function shiftCellCoords(coords, dir, mode, force=false) {
     /* Move the input forward or backward based on the `mode` parameter. If no such cell exists at
     these future coordinates (and the force param is false), the original coordinates are returned. */
     let offset = (mode == "enter") ? 1 : -1;
-    let newCellCoords = (dir == "DOWN") ? [coords[0] + offset, coords[1]] : [coords[0], coords[1] + offset];
+    let newCellCoords = (dir == directions[1]) ? [coords[0] + offset, coords[1]] : [coords[0], coords[1] + offset];
     let newCell = getCellElement(newCellCoords);
 
     return newCell !== null && newCell.classList.contains("non_empty_cell") || force
@@ -243,9 +255,11 @@ function shiftCellCoords(coords, dir, mode, force=false) {
            : coords; // Cell at future coords is empty/black, cannot move to it
 }
 
-function onDefinitionsListItemClick(numLabel, dir) {
+function onDefinitionsListItemClick(event, numLabel, dir) {
     /* Set user input to the start of a word when they click its definition/clue. */
+    preventZoomIfRequired(event);
     setFocusMode(false);
+
     document.activeElement.blur();
     direction = dir;
     // Retrieve cell from parent element of number label list item
@@ -254,10 +268,11 @@ function onDefinitionsListItemClick(numLabel, dir) {
     setFocusMode(true);
 }
 
-function onCellClick(cell) {
+function onCellClick(event, cell) {
     /* Handles how the grid responds to a user clicking on the cell. Ensures the appropriate display
     of the current cell and word focus on cell click, as well as alternating input directions if
     clicking at an intersecting point between two words. */
+    preventZoomIfRequired(event);
     setFocusMode(false); 
 
     let newCellCoords = updateCellCoords(cell);
@@ -304,7 +319,7 @@ function* getWordElements() {
 function getWordIndices() {
     /* Iterate either across or down through the grid to find the starting and ending indices of a word. */
     let [row, col] = cellCoords;
-    isDown = direction === "DOWN";
+    isDown = direction === directions[1];
     staticIndex = isDown ? col : row;
     let [startCoords, endCoords] = isDown ? [row, row] : [col, col];
 

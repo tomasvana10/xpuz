@@ -21,6 +21,14 @@ body { /* These styles are from https://css-pattern.com */
         var(--c);
 }
 
+li, .def_heading, .toggle_label, .special_button, .dropdown_button, h2, button {
+    font-size: calc(1em * var(--scaling));
+}
+
+h2 { font-size: calc(24px * var(--scaling)); }
+
+p { font-size: calc(16px * var(--scaling)); }
+
 .container { /* Holds the crossword grid and the definitions div */
     margin: 1em;
     display: flex;
@@ -51,10 +59,7 @@ button:hover {
 
 .non_empty_cell.wrong { color: var(--wrong_colour); }
 
-.keybind_span { 
-    color: var(--text_disabled_colour); 
-
-}
+.keybind_span { color: var(--text_disabled_colour); }
 /* ---------- */
 
 
@@ -65,6 +70,11 @@ button:hover {
     grid-template-columns: repeat(var(--dimensions), var(--grid_size));
     grid-template-rows: repeat(var(--dimensions), var(--grid_size));
     gap: 0 0; 
+    z-index: 10;
+}
+
+.wrapper_grid {
+    width: 61%;
 }
 
 .grid > div { position: relative; }
@@ -96,16 +106,27 @@ button:hover {
 
 
 /* ----- Styling for the definitions container and its two rows (the definitions) ----- */
-.definitions { /* Contains two divs that display the words that run across/down the grid */
+.definitions {
     display: flex;
     background-color: var(--sub_colour);
     justify-content: space-evenly;
     margin-top: 17vmin;
     right: 0;
-    overflow-y: auto;
+    overflow: hidden; 
     max-height: 78vmin;
     width: 95vmin;
 }
+
+.wrapper_def {
+    display: flex; 
+    flex: 1; 
+    overflow-x: hidden; 
+    overflow-y: auto; 
+}
+
+#return_def_zoom { overflow: hidden; }
+
+#no_scroll { overflow-y: hidden; }
 
 ul { list-style-type: none; } /* Remove bullet points from the unordered list */
 
@@ -119,7 +140,10 @@ li { /* Each definition/clue */
 .def_heading { text-align: center; }
 
 /* Make both columns resize to fill the container. Flex is used to make this resizing equally distributed. */
-.definitions_a, .definitions_d { flex-grow: 1; flex: 1; }
+.definitions_a, .definitions_d { 
+    flex-grow: 1; 
+    flex: 1; 
+}
 
 .definitions_d { padding-right: 7.75%; }
 /* ---------- */
@@ -138,17 +162,15 @@ li { /* Each definition/clue */
     background: var(--sub_colour);
     top: 0%;
     left: 50%;  
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, calc(20% - calc(20% * var(--scaling))));
     transform: 0.5s;
     width: 50vmin;
     padding: 50px;
     box-shadow: 0 5px 30px var(--main_colour);
     visibility: hidden;
     opacity: 0;
+    z-index: 999;
 }
-
-/* This popup needs its own transform property for some reason */
-.popup#onload_popup { transform: translate(-50%, 20%); }
 
 .popup.active {
     top: 25%;
@@ -211,10 +233,23 @@ li { /* Each definition/clue */
 /* ----- Styling of the smart skip toggle button. The majority of these styles are from https://codepen.io/morgoe/pen/VvzWQg ----- */
 .toggle * { user-select: none; }
 
+.toggles {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 2.75vmin;
+}
+
+.toggle {
+    margin-right: 2em;
+}
+
+.toggle:last-child {
+    margin-right: 0; 
+}
+
 .toggle {
     display: flex;
-    position: absolute;
-    top: 2.75vmin;
     cursor: pointer;
 }
 
@@ -252,8 +287,9 @@ li { /* Each definition/clue */
 }
 
 .toggle_label {
-	margin-left: 5px;
+	margin-left: calc(5px * var(--scaling));
 	position: relative;
-	top: 7px;
+    display: flex;
+    align-items: center;
 }
 /* ---------- */

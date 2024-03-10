@@ -12,10 +12,15 @@ content, as each crossword created by this program is unique (unless you get luc
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ _('Crossword Puzzle - Game') }}</title>
     <script src="{{ url_for('static', filename='interaction.js') }}"></script>
+    <script src="{{ url_for('static', filename='utils.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='jquery.zoomooz.js') }}"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <style>
         :root { 
             --dimensions: {{ dimensions }};
+            --scaling: {{ scaling }};
             --cell_font_size: calc(95vmin / calc(var(--dimensions) * 1.7));
             --num_label_font_size: calc(var(--cell_font_size) / 1.79);
             --grid_size: calc(95vmin / var(--dimensions));
@@ -32,170 +37,139 @@ content, as each crossword created by this program is unique (unless you get luc
     </style>
 
     <script type="text/javascript">
-        let completionPopupToggled = false;
-        let onloadPopupToggled = false;
-        let currentDropdown = null;
-        let toggleCheckBox = document.getElementById("tcb");
+        $(document).ready(() => {
+            /* Mix of jquery / vanilla JS to properly handle the zooming functionality of the web app. */
+            let tzCheckbox = document.getElementById("tz");
+            let returnDefZoomElement = document.getElementById("return_def_zoom");
+            let returnGridZoomElement = document.getElementsByClassName("empty_cell")[0]
 
-        document.addEventListener('DOMContentLoaded', () => {
-            let toggleCheckBox = document.getElementById("tcb");
+            $(".non_empty_cell").click(function(event) { // Grid cell zooming
+                if (tzCheckbox.checked)
+                    returnDefZoomElement.click(); // This doesn't really work, but who cares
+                    $(".non_empty_cell").zoomTarget();
+            });
 
-            toggleCheckBox.addEventListener("change", () => {
-                if (toggleCheckBox.checked) {
-                    document.cookie = "tcbChecked=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; SameSite=Lax";
-                } else {
-                    document.cookie = "tcbChecked=; expires=Fri, 31 Dec 9999 23:59:59 GMT; SameSite=Lax";
+            $(".def").click(function(event) { // Definitions list item/clue zooming
+                if (tzCheckbox.checked) {
+                    returnGridZoomElement.click();
+                    $(".def").zoomTarget();
                 }
             });
-        });
-
-        document.addEventListener("click", event => { // Close dropdowns if clicking outside of the dropdown area
-            if (!event.target.closest('.special_button, .dropdown, .dropdown_button')) { 
-                hideDropdowns();
-            }
-        });
-
-        document.addEventListener("focusout", event => { // Hide dropdowns based on specific conditions
-            /* The following condition evaluates to true if:
-                1. Focusing into something that is not a "dropdown_button" OR
-                2. Focusing out of something that is a "dropdown_button" AND
-                    - You are focusing into something that is a "special_button" AND
-                    - You are focusing into something that has an id that does not match the start of the currentDropdown
-                3. You are focusing out of a "special_button" into something that is either another special button or something that isn't a "dropdown_button"
-            */
-            if ((!event.relatedTarget?.classList.contains("dropdown_button"))
-                || (event.target?.classList.contains("dropdown_button") 
-                    && event.relatedTarget?.classList.contains("special_button") 
-                    && !event.relatedTarget?.id.startsWith(currentDropdown?.substring(0, currentDropdown?.indexOf('_'))))
-                || event.target.id?.endsWith("button") 
-                    && (event.relatedTarget?.id?.endsWith("button") || !event.relatedTarget?.classList?.contains("dropdown_button"))) {
-                hideDropdowns();
-            }
-        });
-
-
-        const hideDropdowns = () => {
-            document.querySelectorAll(".dropdown").forEach(element => element.classList.remove("show_dropdown"));
-            currentDropdown = null;
-        }
-
-        function toggleCompletionPopup() {
-            completionPopupToggled = !completionPopupToggled;
-            document.getElementById("blur").classList.toggle("active");
-            document.getElementById("completion_popup").classList.toggle("active");
-            if (completionPopupToggled) { /* Focus the close button */
-                sleep(501).then(() => document.getElementsByClassName("close_button")[0].focus({ focusVisible: true })); }
-        }
-
-        function onDropdownClick(id) {
-            /* Opens the dropdown a user clicks on or closes it if they already have it open. */
-            let dropdown = document.getElementById(id);
-            if (id === currentDropdown) {
-                dropdown.classList.remove("show_dropdown");
-                currentDropdown = null;
-                return;
-            }
-            hideDropdowns();
-            dropdown.classList.add("show_dropdown");
-            currentDropdown = id;
-        }
-
-        function closeOnloadPopup() {
-            onloadPopupToggled = false;
-            document.getElementById("blur").classList.toggle("active");
-            document.getElementById("onload_popup").classList.toggle("active");
-        }
-
-        function getCookie(cName) {
-            let name = cName + "=";
-            let decodedCookie = decodeURIComponent(document.cookie);
-            let cookies = decodedCookie.split(";");
-            for (let i = 0; i < cookies.length; i++) { // Search for the cookie
-                let cookie = cookies[i];
-                if (cookie.indexOf(name) == 0) {
-                    return cookie.substring(name.length, cookie.length);
+            
+            tzCheckbox.addEventListener("change", event => { // Remove zoom when disabling the zoom checkbox
+                if (!event.target.checked) {
+                    // Cheaty way to immediately zoom out when the user disables the zoom checkbox
+                    returnDefZoomElement.click()
+                    returnGridZoomElement.click()
+                    document.querySelectorAll(".non_empty_cell .def").forEach(cell => cell.classList.remove("zoomTarget"));
                 }
-            }
+            });
 
-            return "";
-        }
+            // Configure proper height of the zoomViewport, so zoomooz doesn't shit itself when zooming
+            let definitionsA = document.querySelector(".definitions_a");
+            let definitionsD = document.querySelector(".definitions_d");
+            $("#return_def_zoom").height(Math.max(definitionsA.scrollHeight, definitionsD.scrollHeight) + "px");
+
+            // Prevent the unecessary scrollbar in the zoomContainer 
+            let defZoomContainer = document.getElementById("no_scroll");
+            if (defZoomContainer.scrollHeight - 1 > defZoomContainer.clientHeight) // For some reason the scrollHeight is 1 greater than the clientHeight
+                defZoomContainer.style.overflowY = "auto";
+        });
     </script>
 </head>
 
 <body 
     data-grid="{{ grid }}" 
     data-dimensions="{{ dimensions }}" 
+    data-directions="{{ directions }}"
     data-empty="{{ empty }}"   
     data-colour_palette="{{ json_colour_palette }}"
     data-intersections="{{ intersections }}"
     data-js_err_msgs="{{ js_err_msgs }}">
 
-    <div class="container" id="blur">
-        <div class="grid">
-        {% for row in range(dimensions) %} 
-        {% for column in range(dimensions) %}
-            {% if grid[row][column] != empty %} {# There is a word in this cell #}
-                <div 
-                    onclick="onCellClick(this)" 
-                    class="non_empty_cell" 
-                    data-row="{{ row }}" 
-                    data-column="{{ column }}" 
-                    data-value="{{ grid[row][column] }}">
+    <div class="container" id="blur"> 
+        <div class="wrapper_grid zoomViewport">
+            <div class="wrapper_grid zoomContainer">
+                <div class="grid">
+                {% for row in range(dimensions) %} 
+                {% for column in range(dimensions) %}
+                    {% if grid[row][column] != empty %} {# There is a word in this cell #}
+                        <div 
+                            class="non_empty_cell"
+                            data-targetsize="0.2"
+                            data-closeclick="true"
+                            data-row="{{ row }}" 
+                            data-column="{{ column }}" 
+                            data-value="{{ grid[row][column] }}">
 
-                    {% if (row, column) in starting_word_positions %} {# Start of a word #}
-                        <div
-                            class="num_label" 
-                            data-num_label="{{ starting_word_matrix[row][column] }}">
-                            {{ starting_word_matrix[row][column] }}
+                            {% if (row, column) in starting_word_positions %} {# Start of a word #}
+                                <div
+                                    class="num_label" 
+                                    data-num_label="{{ starting_word_matrix[row][column] }}">
+                                    {{ starting_word_matrix[row][column] }}
+                                </div>
+                            {% endif %}
                         </div>
-                    {% endif %}
+                    {% else %} {# This cell will have no characters #}
+                        <div 
+                            class="empty_cell" 
+                            data-row="{{ row }}" 
+                            data-column="{{ column }}" 
+                            data-value="None">
+                        </div>
+                    {% endif %} 
+                {% endfor %}  
+                {% endfor %} 
                 </div>
-            {% else %} {# This cell will have no characters #}
-                <div 
-                    class="empty_cell" 
-                    data-row="{{ row }}" 
-                    data-column="{{ column }}" 
-                    data-value="None">
-                </div>
-            {% endif %} 
-        {% endfor %}  
-        {% endfor %} 
+            </div>
         </div>
 
         <div class="definitions">
             {% set ns = namespace(tab_index_counter = 12) %}
-            <div class="definitions_a"> {# Column one for across definitions #}
-                <ul>
-                    <h3 class="def_heading">{{ _('Across') }}</h3>
-                    {% for dict_ in definitions_a %}
-                    {% for num_label, definition in dict_.items()%}
-                        <li 
-                            class="def"
-                            tabindex="{{ ns.tab_index_counter }}"
-                            data-num="{{ num_label }}" 
-                            data-word="{{ definition[0].upper() }}"
-                            onclick="onDefinitionsListItemClick('{{ num_label }}', '{{ directions[0] }}')"><b>{{ num_label }}</b>  {{ definition[1] }}</li>
-                        {% set ns.tab_index_counter = ns.tab_index_counter + 1 %}
-                    {% endfor %}
-                    {% endfor %}
-                </ul>
-            </div>  
+            <div class="wrapper_def zoomViewport" id="no_scroll">
+                <div class="wrapper_def zoomContainer" id="return_def_zoom">
+                    <div class="definitions_a"> {# Column one for across definitions #}
+                        <ul>
+                            <h3 class="def_heading">{{ _('Across') }}</h3>
+                            {% for dict_ in definitions_a %}
+                            {% for num_label, definition in dict_.items()%}
+                                <li 
+                                    class="def zoomTarget"
+                                    data-targetsize="0.7"
+                                    data-preservescroll="true"
+                                    data-closeclick="true"
+                                    data-direction="{{ directions[0] }}"
+                                    tabindex="{{ ns.tab_index_counter }}"
+                                    data-num="{{ num_label }}" 
+                                    data-word="{{ definition[0].upper() }}"
+                                    ><b>{{ num_label }}</b>  {{ definition[1] }}</li>
+                                {% set ns.tab_index_counter = ns.tab_index_counter + 1 %}
+                            {% endfor %}
+                            {% endfor %}
+                        </ul>
+                    </div>  
 
-            <div class="definitions_d"> {# Column two for downward definitions #}
-                <ul>
-                    <h3 class="def_heading">{{ _('Down') }}</h3>
-                    {% for dict_ in definitions_d %}
-                    {% for num_label, definition in dict_.items()%}
-                        <li 
-                            class="def"
-                            tabindex="{{ ns.tab_index_counter }}"
-                            data-num="{{ num_label }}" 
-                            data-word="{{ definition[0].upper() }}"
-                            onclick="onDefinitionsListItemClick('{{ num_label }}', '{{ directions[1] }}')"><b>{{ num_label }}</b>  {{ definition[1] }}</li>
-                        {% set ns.tab_index_counter = ns.tab_index_counter + 1 %}
-                    {% endfor %}
-                    {% endfor %}
-                </ul>
+                    <div class="definitions_d"> {# Column two for downward definitions #}
+                        <ul>
+                            <h3 class="def_heading">{{ _('Down') }}</h3>
+                            {% for dict_ in definitions_d %}
+                            {% for num_label, definition in dict_.items()%}
+                                <li 
+                                    class="def zoomTarget"
+                                    data-targetsize="0.7"
+                                    data-preservescroll="true"
+                                    data-closeclick="true"
+                                    data-direction="{{ directions[1] }}"
+                                    tabindex="{{ ns.tab_index_counter }}"
+                                    data-num="{{ num_label }}" 
+                                    data-word="{{ definition[0].upper() }}"
+                                    ><b>{{ num_label }}</b>  {{ definition[1] }}</li>
+                                {% set ns.tab_index_counter = ns.tab_index_counter + 1 %}
+                            {% endfor %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             {# Reveal, check, and clear dropdowns and their respective buttons #}
@@ -221,17 +195,25 @@ content, as each crossword created by this program is unique (unless you get luc
                 </div>
             </div>
 
-            <label class="toggle">
-                <input class="toggle_checkbox" id="tcb" type="checkbox">
-                <div class="toggle_switch"></div>
-                <span class="toggle_label">{{ _('Smart Skip') }}</span>
-            </label>
+            <div class="toggles">
+                <label class="toggle">
+                    <input class="toggle_checkbox toggle_skip" id="ts" type="checkbox">
+                    <div class="toggle_switch"></div>
+                    <span class="toggle_label">{{ _('Smart Skip') }}</span>
+                </label>
+
+                <label class="toggle">
+                    <input class="toggle_checkbox toggle_zoom" id="tz" type="checkbox">
+                    <div class="toggle_switch"></div>
+                    <span class="toggle_label">{{ _('Click To Zoom') }}</span>
+                </label>
+            </div>
         </div>
     </div>
 
     {# Popup that displays on loading the web app - displays the crossword name, category and word count #}
     <div id="onload_popup" class="popup">
-        <h2>{{ _('Crossword Puzzle - Game') }}</h2>
+        <h2 class="heading">{{ _('Crossword Puzzle - Game') }}</h2>
         <p>{{ _('You are viewing') }} {{ name }} ({{ difficulty }}) {{ _('from') }} {{ _(category.title()) }}</p>
         {% if failed_insertions > 0 %}
             <p>{{ failed_insertions }} {{ _('word(s) could not be inserted, sorry.') }}</p>
@@ -244,7 +226,7 @@ content, as each crossword created by this program is unique (unless you get luc
 
     {# Popup that displays on completion of the crossword #}
     <div id="completion_popup" class="popup">
-        <h2>{{ _('You completed the crossword!') }}</h2>
+        <h2 class="heading">{{ _('You completed the crossword!') }}</h2>
         <button id="close_popup_button" class="close_button" onclick="toggleCompletionPopup()">{{ _('Close') }}</button>
     </div>
 </body>
