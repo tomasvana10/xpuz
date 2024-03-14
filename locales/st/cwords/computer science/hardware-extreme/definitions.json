@@ -1,0 +1,20 @@
+{
+    "potoloho ea litaelo": "Mehato eo CPU e e latelang ho phethahatsa taelo e le 'ngoe",
+    "superscalar Architecture": "Moralo oa CPU o ka phethahatsang litaelo tse ngata ka potoloho ea oache",
+    "bolepi ba lekala": "Mokhoa moo CPU e lekang ho hakanya hore na maemo a tla ea ka tsela efe",
+    "northbridge": "Chipset (litsamaiso tsa khale) tse hokahanyang CPU le RAM le libese tse lebelo le holimo",
+    "southbridge": "Chipset (litsamaiso tsa khale) tse neng li sebetsana butle le li-peripherals le I/O",
+    "hyperthreading": "Theknoloji e lumellang CPU e le 'ngoe hore e hlahe e le li-cores tse ngata tse utloahalang",
+    "risc": "Khomphuta e Fokotsoeng ea Taelo - Moralo oa CPU o nang le litaelo tse bonolo",
+    "cisc": "Complex Instruction Set Computer - Moralo oa CPU o nang le litaelo tse matla, tse rarahaneng",
+    "simd": "Taelo e le 'Ngoe ea Multiple Data, mokhoa oa ho sebetsana le data ka ho t\u0161oana",
+    "microarchitecture": "Lintlha tse ikhethileng tsa ts'ebetsong ea sete ea litaelo tsa CPU",
+    "tsamaiso holim'a chip": "Ho kopanya likarolo tse ngata (CPU, GPU, joalo-joalo) ho chip e le 'ngoe",
+    "sistimi e kentsoeng": "Sistimi ea komporo e inehetseng mosebetsing o itseng, hangata ka har'a sesebelisoa se seholoanyane",
+    "firmware": "Software e bolokiloe ka ho sa feleng sesebelisoa sa Hardware (joalo ka BIOS)",
+    "overclocking": "Ho tsamaisa CPU ka lebelo le holimo ho feta litlhaloso tse reriloeng",
+    "khoutu ea ho lokisa phoso": "Mokhoa oa ho bona le ho lokisa liphoso ho RAM",
+    "ts'ebetsong e tsoileng taolong": "Mokhoa moo CPU e phethahatsang litaelo ka tatellano e sebetsang haholoanyane",
+    "quantum computing": "Ho kopanya melaoana ea quantum mechanics bakeng sa ho bala",
+    "khomphutha ea neuromorphic": "Meaho ea komporo e bululetsoeng ke boko e etselitsoeng mesebetsi ea AI"
+}

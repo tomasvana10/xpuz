@@ -1,0 +1,20 @@
+{
+    "mzunguko wa maelekezo": "Hatua ambazo CPU hufuata ili kutekeleza agizo moja",
+    "usanifu wa superscalar": "Muundo wa CPU ambao unaweza kutekeleza maagizo mengi kwa kila mzunguko wa saa",
+    "utabiri wa tawi": "Mbinu ambapo CPU inajaribu kukisia njia ya masharti itaenda",
+    "northbridge": "Chipset (mifumo ya zamani) iliyounganisha CPU kwenye RAM na mabasi ya mwendo kasi",
+    "southbridge": "Chipset (mifumo ya zamani) ambayo ilishughulikia vifaa vya polepole na I/O",
+    "hyperthreading": "Teknolojia inayoruhusu msingi mmoja wa CPU kuonekana kama viini vingi vya kimantiki",
+    "risc": "Kupunguza Maagizo Kuweka Kompyuta - CPU kubuni na maelekezo rahisi",
+    "cisc": "Complex Instruction Set Computer - Ubunifu wa CPU na maagizo yenye nguvu na changamano",
+    "simd": "Data Nyingi ya Maagizo Moja, mbinu ya usindikaji wa data sambamba",
+    "usanifu mdogo": "Maelezo mahususi ya utekelezaji wa seti ya maagizo ya CPU",
+    "mfumo kwenye chip": "Kuunganisha vipengele vingi (CPU, GPU, n.k.) kwenye chip moja",
+    "mfumo uliopachikwa": "Mfumo wa kompyuta unaojitolea kwa kazi maalum, mara nyingi ndani ya kifaa kikubwa",
+    "firmware": "Programu iliyohifadhiwa kabisa kwenye kifaa cha maunzi (kama BIOS)",
+    "overclocking": "Kuendesha CPU kwa kasi ya juu kuliko vipimo vilivyokusudiwa",
+    "msimbo wa kurekebisha makosa": "Mbinu ya kugundua na kusahihisha makosa katika RAM",
+    "utekelezaji nje ya utaratibu": "Mbinu ambapo CPU hutekeleza maagizo kwa utaratibu mzuri zaidi",
+    "kompyuta ya quantum": "Kuunganisha kanuni za mechanics ya quantum kwa kukokotoa",
+    "kompyuta ya neuromorphic": "Usanifu wa kompyuta unaoongozwa na ubongo iliyoundwa kwa ajili ya kazi za AI"
+}

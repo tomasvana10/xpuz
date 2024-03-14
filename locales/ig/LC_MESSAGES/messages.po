@@ -293,6 +293,9 @@ msgstr "mgbakọ na mwepụ"
 msgid "Science"
 msgstr "Sayensị"
 
+msgid "Computer Science"
+msgstr "Kọmputa sayensị"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"

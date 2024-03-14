@@ -293,6 +293,9 @@ msgstr "matemaatika"
 msgid "Science"
 msgstr "Teadus"
 
+msgid "Computer Science"
+msgstr "Arvutiteadus"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"

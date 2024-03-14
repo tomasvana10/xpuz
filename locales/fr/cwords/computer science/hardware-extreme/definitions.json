@@ -1,0 +1,20 @@
+{
+    "cycle d'enseignement": "Les \u00e9tapes suivies par un processeur pour ex\u00e9cuter une seule instruction",
+    "architecture superscalaire": "Conception de processeur capable d'ex\u00e9cuter plusieurs instructions par cycle d'horloge",
+    "pr\u00e9diction de branche": "Technique o\u00f9 le CPU essaie de deviner dans quelle direction ira un conditionnel",
+    "le pont Nord": "Chipset (anciens syst\u00e8mes) qui connectait le processeur \u00e0 la RAM et aux bus \u00e0 grande vitesse",
+    "pont sud": "Chipset (syst\u00e8mes plus anciens) qui g\u00e9rait des p\u00e9riph\u00e9riques et des E/S plus lents",
+    "hyper-Threading": "Technologie permettant \u00e0 un seul c\u0153ur de CPU d'appara\u00eetre comme plusieurs c\u0153urs logiques",
+    "risque": "Ordinateur \u00e0 jeu d'instructions r\u00e9duit - Conception de processeur avec des instructions plus simples",
+    "cisc": "Ordinateur \u00e0 jeu d'instructions complexes - Conception de processeur avec des instructions puissantes et complexes",
+    "simd": "Single Instruction Multiple Data, technique de traitement des donn\u00e9es en parall\u00e8le",
+    "microarchitecture": "Les d\u00e9tails sp\u00e9cifiques de mise en \u0153uvre du jeu d'instructions d'un processeur",
+    "syst\u00e8me sur puce": "Int\u00e9gration de plusieurs composants (CPU, GPU, etc.) sur une seule puce",
+    "syst\u00e8me embarqu\u00e9": "Un syst\u00e8me informatique d\u00e9di\u00e9 \u00e0 une t\u00e2che sp\u00e9cifique, souvent au sein d'un appareil plus grand",
+    "micrologiciel": "Logiciel stock\u00e9 en permanence sur un p\u00e9riph\u00e9rique mat\u00e9riel (comme le BIOS)",
+    "overclocking": "Ex\u00e9cuter un processeur \u00e0 une vitesse sup\u00e9rieure \u00e0 ses sp\u00e9cifications pr\u00e9vues",
+    "code de correction d'erreur": "Technique pour d\u00e9tecter et corriger les erreurs dans la RAM",
+    "ex\u00e9cution dans le d\u00e9sordre": "Technique o\u00f9 un processeur ex\u00e9cute les instructions dans un ordre plus efficace",
+    "l'informatique quantique": "Exploiter les principes de la m\u00e9canique quantique pour le calcul",
+    "informatique neuromorphique": "Architectures informatiques inspir\u00e9es du cerveau con\u00e7ues pour les t\u00e2ches d'IA"
+}

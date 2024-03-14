@@ -1,0 +1,20 @@
+{
+    "instruktionscykel": "Stegen en CPU f\u00f6ljer f\u00f6r att exekvera en enskild instruktion",
+    "superskal\u00e4r arkitektur": "CPU-design som kan utf\u00f6ra flera instruktioner per klockcykel",
+    "grenf\u00f6ruts\u00e4gelse": "Teknik d\u00e4r CPU:n f\u00f6rs\u00f6ker gissa \u00e5t vilket h\u00e5ll en villkorlig kommer att g\u00e5",
+    "norra bron": "Chipset (\u00e4ldre system) som kopplade processorn till RAM och h\u00f6ghastighetsbussar",
+    "sydbron": "Chipset (\u00e4ldre system) som hanterade l\u00e5ngsammare kringutrustning och I/O",
+    "Hyper Threading": "Teknik som g\u00f6r att en enda CPU-k\u00e4rna kan visas som flera logiska k\u00e4rnor",
+    "risk": "Reducerad instruktionsupps\u00e4ttning Dator - CPU-design med enklare instruktioner",
+    "cisc": "Komplex instruktionsupps\u00e4ttning Dator - CPU-design med kraftfulla, komplexa instruktioner",
+    "simd": "Single Instruction Multiple Data, teknik f\u00f6r att behandla data parallellt",
+    "mikroarkitektur": "De specifika implementeringsdetaljerna f\u00f6r en CPU:s instruktionsupps\u00e4ttning",
+    "system p\u00e5 ett chip": "Integrering av flera komponenter (CPU, GPU, etc.) p\u00e5 ett enda chip",
+    "inbyggda system": "Ett datorsystem dedikerat till en specifik uppgift, ofta inom en st\u00f6rre enhet",
+    "firmware": "Programvara som \u00e4r permanent lagrad p\u00e5 en h\u00e5rdvaruenhet (som BIOS)",
+    "\u00f6verklockning": "K\u00f6ra en CPU med h\u00f6gre hastighet \u00e4n dess avsedda specifikationer",
+    "felkorrigeringskod": "Teknik f\u00f6r att uppt\u00e4cka och korrigera fel i RAM",
+    "ur funktion": "Teknik d\u00e4r en CPU exekverar instruktioner i en mer effektiv ordning",
+    "kvantber\u00e4kning": "Utnyttja kvantmekanikens principer f\u00f6r ber\u00e4kning",
+    "neuromorfisk ber\u00e4kning": "Hj\u00e4rninspirerade datorarkitekturer designade f\u00f6r AI-uppgifter"
+}

@@ -1,0 +1,23 @@
+{
+    "lys": "'n Geordende, veranderlike versameling items",
+    "stel": "'n Ongeordende versameling unieke elemente",
+    "woordeboek": "'n JSON-agtige datatipe met sleutel- en waardepare",
+    "tupel": "'n Geordende, ge\u00efndekseerde, onveranderbare skikking datatipe",
+    "geen": "Verteenwoordig die afwesigheid van 'n waarde",
+    "def": "Skep 'n nuwe funksie",
+    "terugkeer": "Stuur 'n waarde terug vanaf 'n funksie",
+    "opbrengs": "Skakel 'n funksie om in 'n generatorfunksie (wat beide 'n iterator en 'n iterable is)",
+    "lambda": "Skep 'n anonieme funksie",
+    "slaag": "'n Plekhouerstelling wat niks doen nie",
+    "breek": "Verlaat 'n lus voortydig",
+    "aanhou": "Slaan oor na die volgende iterasie van 'n lus",
+    "uiteindelik": "Voer uit na 'n drie/behalwe-blok, ongeag of 'n fout opgespoor is of nie",
+    "w\u00eareldwyd": "Verklaar 'n veranderlike om globale omvang te h\u00ea",
+    "nie-plaaslik": "Verklaar 'n veranderlike om aan 'n buitenste funksie te behoort",
+    "probeer": "Begin 'n blok kode met fouthantering",
+    "behalwe": "Vang en hanteer spesifieke uitsonderings",
+    "verhoog": "Dit veroorsaak doelbewus 'n uitsondering",
+    "beweer": "Evalueer 'n uitdrukking en maak 'n fout as dit onwaar is",
+    "met": "Word gebruik vir konteksbestuurders om hulpbronne te bestuur",
+    "klas": "Bloudruk vir die skep van voorwerpe"
+}

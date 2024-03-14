@@ -1,0 +1,16 @@
+{
+    "vera": "Reprezentas logikan valoron de 1 a\u016d 'on'",
+    "malvera": "Reprezentas logikan valoron de 0 a\u016d 'off'",
+    "ne": "Logika operatoro kiu inversigas la veran valoron de esprimo",
+    "kaj": "Logika operatoro, vera nur se amba\u016d esprimoj estas veraj",
+    "a\u016d": "Logika operatoro, vera se almena\u016d unu esprimo estas vera",
+    "xor": "Ekskluziva A\u016c, vera se \u011duste unu esprimo estas vera",
+    "bulea esprimo": "Kombina\u0135o de buleaj variabloj kaj operatoroj",
+    "vertabelo": "Tabelo montranta la produkta\u0135on por \u0109iuj kombina\u0135oj de eniga\u0135oj en bulea esprimo",
+    "kontra\u016ddiro": "Bulea esprimo, kiu \u0109iam estas malvera",
+    "la le\u011doj de de Morgan": "Reguloj por manipuli buleajn esprimojn kun NE, KAJ kaj A\u016c",
+    "kondi\u0109a deklaro": "Kontrolas kodan ekzekuton surbaze de \u0109u kondi\u0109o estas vera",
+    "nand": "NOT kaj - vera nur se amba\u016d esprimoj estas malveraj",
+    "nek": "NE a\u016d - vera nur se amba\u016d esprimoj estas malveraj",
+    "bulea algebro": "La matematika sistemo uzata por modeligi kaj analizi bulean logikon"
+}

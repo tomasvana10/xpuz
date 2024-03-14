@@ -1,0 +1,20 @@
+{
+    "cikli i udh\u00ebzimeve": "Hapat q\u00eb ndjek nj\u00eb CPU p\u00ebr t\u00eb ekzekutuar nj\u00eb instruksion t\u00eb vet\u00ebm",
+    "arkitektur\u00eb superskalare": "Dizajni i CPU-s\u00eb q\u00eb mund t\u00eb ekzekutoj\u00eb udh\u00ebzime t\u00eb shumta p\u00ebr cik\u00ebl or\u00ebsh",
+    "parashikimi i deg\u00ebs": "Teknika ku CPU p\u00ebrpiqet t\u00eb hamend\u00ebsoj\u00eb se n\u00eb cil\u00ebn m\u00ebnyr\u00eb do t\u00eb shkoj\u00eb nj\u00eb kusht",
+    "ur\u00eb veriore": "Chipset (sistemet e vjetra) q\u00eb lidhin CPU-n\u00eb me RAM-in dhe autobus\u00ebt me shpejt\u00ebsi t\u00eb lart\u00eb",
+    "ur\u00eb jugore": "Chipset (sistemet e vjetra) q\u00eb trajtojn\u00eb periferik\u00eb m\u00eb t\u00eb ngadalt\u00eb dhe hyrje/dalje",
+    "hiperthreading": "Teknologjia q\u00eb lejon nj\u00eb b\u00ebrtham\u00eb t\u00eb vetme CPU t\u00eb shfaqet si b\u00ebrthama t\u00eb shumta logjike",
+    "rrezik": "Kompjuter i Kompjuterit t\u00eb Reduktuar t\u00eb Instruksioneve - Dizajni i CPU-s\u00eb me udh\u00ebzime m\u00eb t\u00eb thjeshta",
+    "cisc": "Kompjuter Kompjuter i Kompleksit t\u00eb Instruksioneve - dizajni i CPU-s\u00eb me instruksione t\u00eb fuqishme e komplekse",
+    "simd": "Single Instruction Multiple Data, teknik\u00eb p\u00ebr p\u00ebrpunimin e t\u00eb dh\u00ebnave paralelisht",
+    "mikroarkitektur\u00eb": "Detajet specifike t\u00eb zbatimit t\u00eb grupit t\u00eb udh\u00ebzimeve t\u00eb nj\u00eb CPU",
+    "sistem n\u00eb nj\u00eb \u00e7ip": "Integrimi i shum\u00eb komponent\u00ebve (CPU, GPU, etj.) n\u00eb nj\u00eb \u00e7ip t\u00eb vet\u00ebm",
+    "sistem i ngulitur": "Nj\u00eb sistem kompjuterik i dedikuar p\u00ebr nj\u00eb detyr\u00eb specifike, shpesh brenda nj\u00eb pajisjeje m\u00eb t\u00eb madhe",
+    "firmware": "Softueri i ruajtur p\u00ebrgjithmon\u00eb n\u00eb nj\u00eb pajisje harduerike (si BIOS)",
+    "overclocking": "Drejtimi i nj\u00eb CPU me nj\u00eb shpejt\u00ebsi m\u00eb t\u00eb lart\u00eb se specifikimet e synuara",
+    "kodi i korrigjimit t\u00eb gabimit": "Teknika p\u00ebr t\u00eb zbuluar dhe korrigjuar gabimet n\u00eb RAM",
+    "ekzekutimi jasht\u00eb rendit": "Teknika ku nj\u00eb CPU ekzekuton instruksionet n\u00eb nj\u00eb m\u00ebnyr\u00eb m\u00eb efikase",
+    "llogaritja kuantike": "P\u00ebrdorimi i parimeve t\u00eb mekanik\u00ebs kuantike p\u00ebr llogaritje",
+    "llogaritje neuromorfike": "Arkitekturat informatike t\u00eb frym\u00ebzuara nga truri, t\u00eb dizajnuara p\u00ebr detyrat e AI"
+}

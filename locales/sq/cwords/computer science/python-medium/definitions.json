@@ -1,0 +1,23 @@
+{
+    "list\u00eb": "Nj\u00eb koleksion i porositur, i ndryshuesh\u00ebm i artikujve",
+    "vendosur": "Nj\u00eb koleksion i parregulluar i elementeve unike",
+    "Fjalor": "Nj\u00eb lloj i t\u00eb dh\u00ebnave si JSON me \u00e7ifte \u00e7el\u00ebsash dhe vlerash",
+    "dyfisht\u00eb": "Nj\u00eb lloj i t\u00eb dh\u00ebnave grupi i renditur, i indeksuar, i pandryshuesh\u00ebm",
+    "asnje": "P\u00ebrfaq\u00ebson munges\u00ebn e nj\u00eb vlere",
+    "def": "Krijon nj\u00eb funksion t\u00eb ri",
+    "kthimi": "D\u00ebrgon nj\u00eb vler\u00eb prapa nga nj\u00eb funksion",
+    "rendimenti": "Shnd\u00ebrron nj\u00eb funksion n\u00eb nj\u00eb funksion gjenerues (i cili \u00ebsht\u00eb edhe nj\u00eb p\u00ebrs\u00ebrit\u00ebs dhe nj\u00eb iterable)",
+    "lambda": "Krijon nj\u00eb funksion anonim",
+    "kalojn\u00eb": "Nj\u00eb deklarat\u00eb mbajt\u00ebse vendi q\u00eb nuk b\u00ebn asgj\u00eb",
+    "thyej": "Dilni para kohe nga nj\u00eb lak",
+    "vazhdojn\u00eb": "Kalon n\u00eb p\u00ebrs\u00ebritjen tjet\u00ebr t\u00eb nj\u00eb cikli",
+    "m\u00eb n\u00eb fund": "Ekzekutoni pas nj\u00eb bllokimi t\u00eb provoni/p\u00ebrve\u00e7, pavar\u00ebsisht n\u00ebse nj\u00eb gabim u kap apo jo",
+    "globale": "Deklaron nj\u00eb variab\u00ebl t\u00eb ket\u00eb shtrirje globale",
+    "jolokale": "Deklaron nj\u00eb ndryshore q\u00eb i p\u00ebrket nj\u00eb funksioni t\u00eb jasht\u00ebm",
+    "provoni": "Fillon nj\u00eb bllok kodi me trajtimin e gabimeve",
+    "p\u00ebrve\u00e7": "Kap dhe trajton p\u00ebrjashtime specifike",
+    "ngre": "Shkakton q\u00ebllimisht nj\u00eb p\u00ebrjashtim",
+    "pohojn\u00eb": "Vler\u00ebson nj\u00eb shprehje dhe ngre nj\u00eb gabim n\u00ebse \u00ebsht\u00eb e rreme",
+    "me": "P\u00ebrdoret p\u00ebr menaxher\u00ebt e kontekstit p\u00ebr t\u00eb menaxhuar burimet",
+    "klas\u00ebs": "Plani p\u00ebr krijimin e objekteve"
+}

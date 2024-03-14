@@ -1,0 +1,14 @@
+{
+    "CPU": "Mozak ra\u010dunala, izvr\u0161ava upute",
+    "RAM memorija": "Hlapljiva memorija u kojoj se pohranjuju pokrenuti programi i podaci",
+    "tvrdi disk": "Nehlapljivi ure\u0111aj za pohranu velikog kapaciteta koji koristi magnetske plo\u010de",
+    "SSD disk": "Nepostojana pohrana pomo\u0107u flash memorije, br\u017ea od tvrdih diskova",
+    "autobus": "Put kojim podaci putuju izme\u0111u komponenti",
+    "ulazni ure\u0111aj": "Omogu\u0107uje unos podataka u ra\u010dunalo (poput tipkovnice, mi\u0161a)",
+    "izlazni ure\u0111aj": "Predstavlja rezultate korisniku (poput monitora, pisa\u010da)",
+    "mati\u010dna plo\u010da": "Glavna strujna plo\u010da koja povezuje sve komponente ra\u010dunala",
+    "ra\u010dunalna mre\u017ea": "Zbirka me\u0111usobno povezanih ure\u0111aja koji mogu dijeliti resurse",
+    "IP adresa": "Jedinstveni broj\u010dani identifikator dodijeljen svakom ure\u0111aju na mre\u017ei",
+    "propusnost": "Maksimalna brzina prijenosa podataka kroz mre\u017eni put",
+    "latencija": "Ka\u0161njenje u vremenu za putovanje podataka od izvora do odredi\u0161ta"
+}

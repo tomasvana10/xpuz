@@ -1,0 +1,14 @@
+{
+    "CPU": "Otak komputer, melaksanakan arahan",
+    "memori capaian rawak": "Memori yang tidak menentu di mana atur cara dan data yang dijalankan disimpan",
+    "pemacu cakera keras": "Peranti storan tidak meruap berkapasiti besar menggunakan pinggan magnet",
+    "pemacu keadaan pepejal": "Storan tidak meruap menggunakan memori denyar, lebih pantas daripada HDD",
+    "bas": "Laluan untuk data bergerak antara komponen",
+    "peranti input": "Membenarkan kemasukan data ke dalam komputer (seperti papan kekunci, tetikus)",
+    "peranti keluaran": "Mempersembahkan hasil kepada pengguna (seperti monitor, pencetak)",
+    "papan induk": "Papan litar utama yang menghubungkan semua komponen komputer",
+    "rangkaian komputer": "Koleksi peranti yang saling bersambung yang boleh berkongsi sumber",
+    "alamat IP": "Pengecam berangka unik yang diberikan kepada setiap peranti pada rangkaian",
+    "lebar jalur": "Kadar maksimum pemindahan data merentasi laluan rangkaian",
+    "kependaman": "Kelewatan masa untuk data bergerak dari sumber ke destinasi"
+}

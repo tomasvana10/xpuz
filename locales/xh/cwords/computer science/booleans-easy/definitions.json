@@ -1,0 +1,16 @@
+{
+    "yinyani": "Imele ixabiso elisengqiqweni lika-1 okanye 'kwi'",
+    "bubuxoki": "Imele ixabiso eliqiqileyo lika 0 okanye 'off'",
+    "hayi": "Umsebenzisi onengqondo obuyisela umva ixabiso lenyani lentetho",
+    "kwaye": "Umsebenzisi onengqondo, yinyani kuphela ukuba zombini izivakalisi ziyinyani",
+    "okanye": "Umsebenzisi onengqondo, yinyani ukuba ubuncinci intetho enye iyinyani",
+    "xor": "Kukodwa OKANYE, yinyani ukuba ibinzana elinye liyinyaniso",
+    "imbonakalo ye boolean": "Indibaniselwano yeenguqu ze-boolean kunye nabaqhubi",
+    "itafile inyaniso": "Itheyibhile ebonisa imveliso yazo zonke iindibaniselwano zamagalelo kwintetho ye boolean",
+    "ukuphikisana": "Intetho ye-boolean ehlala ibubuxoki",
+    "de Morgan imithetho": "Imigaqo yokulawula amabinzana e boolean nge NOT, KUNYE, kunye OKANYE",
+    "ingxelo enemiqathango": "Ilawula ukuphunyezwa kwekhowudi ngokusekelwe ekubeni imeko iyinyani",
+    "nand": "HAYI kwaye - yinyani kuphela ukuba zombini iintetho bubuxoki",
+    "nokuba": "AYIKHO okanye - yinyani kuphela ukuba zombini ezi ntetho bubuxoki",
+    "I-algebra ye-boolean": "Inkqubo yemathematika esetyenziselwa ukwenza umzekelo kunye nokuhlalutya ingqiqo ye-boolean"
+}

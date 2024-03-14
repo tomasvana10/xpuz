@@ -1,0 +1,14 @@
+{
+    "CPU": "Otak komputer, ngalaksanakeun par\u00e9ntah",
+    "memori aks\u00e9s acak": "Memori volatile dimana ngajalankeun program sareng data disimpen",
+    "hard disk drive": "Alat panyimpen non-volatile kapasitas ageung nganggo piring magn\u00e9t",
+    "drive kaayaan padet": "Panyimpenan non-volatile nganggo m\u00e9mori flash, langkung gancang tibatan HDD",
+    "beus": "Jalur pikeun data ngarambat antara kompon\u00e9n",
+    "alat input": "Ngidinan asupkeun data kana komputer (sapertos keyboard, mouse)",
+    "alat kaluaran": "Nampilkeun hasil ka pangguna (sapertos monitor, printer)",
+    "motherboard": "Papan sirkuit utama anu nyambungkeun sadaya kompon\u00e9n komputer",
+    "jaringan komputer": "Kumpulan alat anu saling nyambungkeun anu tiasa ngabagi sumber daya",
+    "alamat ip": "A identifier numerik unik ditugaskeun ka unggal alat dina jaringan",
+    "rubakpita": "Laju maksimum mindahkeun data dina jalur jaringan",
+    "lat\u00e9n": "Tunda dina waktosna pikeun ngarambat data ti sumber ka tujuan"
+}

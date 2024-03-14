@@ -1,0 +1,15 @@
+{
+    "iqiniso": "Imele inani eliphusile lika-1 noma 'on'",
+    "amanga": "Imele inani eliphusile lika-0 noma 'cima'",
+    "hhayi": "Umsebenzisi onengqondo ohlehlisa inani leqiniso lenkulumo",
+    "futhi": "Isisebenzisi esinengqondo, siyiqiniso kuphela uma zombili izinkulumo ziyiqiniso",
+    "noma": "AKUKHO noma - iqiniso kuphela uma zombili izinkulumo zingamanga",
+    "xor": "Okukhethekile NOMA, kuyiqiniso uma isisho esisodwa siyiqiniso",
+    "isisho se-boolean": "Inhlanganisela ye-boolean variables nama-opharetha",
+    "Itafula leqiniso": "Ithebula elibonisa okukhiphayo kwakho konke okuhlanganisiwe kokokufaka kusisho se-boolean",
+    "ukuphikisana": "Isisho se-boolean esihlala singamanga",
+    "de Morgan imithetho": "Imithetho yokukhohlisa izinkulumo ze-boolean ngokuthi NOT, AND, kanye noma NOMA",
+    "isitatimende esinemibandela": "Ilawula ukusetshenziswa kwekhodi ngokusekelwe ekutheni umbandela uyiqiniso yini",
+    "nand": "AKUKHO futhi - kuyiqiniso kuphela uma zombili izinkulumo zingamanga",
+    "i-algebra ye-boolean": "Isistimu yezibalo esetshenziswa ukwenza imodeli nokuhlaziya i-boolean logic"
+}

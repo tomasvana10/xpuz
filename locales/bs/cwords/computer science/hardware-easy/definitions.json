@@ -1,0 +1,14 @@
+{
+    "cpu": "Mozak kompjutera, izvr\u0161ava instrukcije",
+    "ram memorija": "Nestalna memorija u kojoj se pohranjuju pokrenuti programi i podaci",
+    "hard disk": "Neisparljivi ure\u0111aj za skladi\u0161tenje velikog kapaciteta koji koristi magnetne plo\u010de",
+    "SSD ure\u0111aj": "Nepostojano skladi\u0161tenje pomo\u0107u fle\u0161 memorije, br\u017ee od HDD-a",
+    "bus": "Putanja podataka izme\u0111u komponenti",
+    "ulazni ure\u0111aj": "Omogu\u0107ava unos podataka u ra\u010dunar (poput tastature, mi\u0161a)",
+    "izlazni ure\u0111aj": "Predstavlja rezultate korisniku (kao monitor, \u0161tampa\u010d)",
+    "mati\u010dna plo\u010da": "Glavna plo\u010da koja povezuje sve komponente ra\u010dunara",
+    "ra\u010dunarsku mre\u017eu": "Kolekcija me\u0111usobno povezanih ure\u0111aja koji mogu dijeliti resurse",
+    "ip adresa": "Jedinstveni numeri\u010dki identifikator dodijeljen svakom ure\u0111aju u mre\u017ei",
+    "propusni opseg": "Maksimalna brzina prijenosa podataka preko mre\u017enog puta",
+    "latencija": "Vremensko ka\u0161njenje da podaci putuju od izvora do odredi\u0161ta"
+}

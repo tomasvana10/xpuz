@@ -1,0 +1,20 @@
+{
+    "opetusjakso": "Vaiheet, joita CPU noudattaa suorittaakseen yhden k\u00e4skyn",
+    "superskalaariarkkitehtuuri": "CPU-rakenne, joka voi suorittaa useita k\u00e4skyj\u00e4 kellojaksoa kohden",
+    "haaran ennustus": "Tekniikka, jossa suoritin yritt\u00e4\u00e4 arvata, mihin suuntaan ehdollinen menee",
+    "pohjoinen silta": "Piirisarja (vanhemmat j\u00e4rjestelm\u00e4t), joka yhdisti CPU:n RAM-muistiin ja nopeisiin v\u00e4yliin",
+    "etel\u00e4silta": "Piirisarja (vanhemmat j\u00e4rjestelm\u00e4t), joka k\u00e4sitteli hitaampia oheislaitteita ja I/O:ta",
+    "hyperketjuttaminen": "Teknologia, joka mahdollistaa yhden CPU-ytimen n\u00e4ytt\u00e4misen useana loogisena ytimen\u00e4",
+    "risc": "Reduced Instruction Set Computer - CPU-suunnittelu yksinkertaisemmilla ohjeilla",
+    "cisc": "Monimutkainen ohjesarjatietokone - CPU-rakenne tehokkailla, monimutkaisilla ohjeilla",
+    "simd": "Single Instruction Multiple Data, tekniikka tietojen rinnakkaiseen k\u00e4sittelyyn",
+    "mikroarkkitehtuuri": "CPU:n k\u00e4skyjoukon erityiset toteutustiedot",
+    "j\u00e4rjestelm\u00e4 sirulla": "Integroi useita komponentteja (CPU, GPU jne.) yhdelle sirulle",
+    "upotettu j\u00e4rjestelm\u00e4": "Tiettyyn teht\u00e4v\u00e4\u00e4n omistettu tietokonej\u00e4rjestelm\u00e4, usein suuremmassa laitteessa",
+    "laiteohjelmisto": "Ohjelmisto, joka on pysyv\u00e4sti tallennettu laitteistolle (kuten BIOS)",
+    "ylikellotus": "Suorittimen k\u00e4ytt\u00e4minen suuremmalla nopeudella kuin sen on suunniteltu",
+    "virheen korjauskoodi": "Tekniikka RAM-muistin virheiden havaitsemiseksi ja korjaamiseksi",
+    "ep\u00e4kunnossa toteutus": "Tekniikka, jossa CPU suorittaa k\u00e4skyt tehokkaammassa j\u00e4rjestyksess\u00e4",
+    "kvanttilaskenta": "Kvanttimekaniikan periaatteiden hy\u00f6dynt\u00e4minen laskennassa",
+    "neuromorfinen laskenta": "Aivojen inspiroimat laskenta-arkkitehtuurit, jotka on suunniteltu teko\u00e4lyteht\u00e4viin"
+}

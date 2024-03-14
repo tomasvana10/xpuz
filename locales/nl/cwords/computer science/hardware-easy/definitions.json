@@ -1,0 +1,14 @@
+{
+    "CPU": "Het brein van de computer voert instructies uit",
+    "werkgeheugen": "Vluchtig geheugen waarin actieve programma's en gegevens worden opgeslagen",
+    "hard disk Drive": "Niet-vluchtig opslagapparaat met grote capaciteit met behulp van magnetische platters",
+    "SSD schijf": "Niet-vluchtige opslag met behulp van flash-geheugen, sneller dan HDD's",
+    "bus": "Pad waarlangs gegevens tussen componenten kunnen reizen",
+    "invoerapparaat": "Maakt gegevensinvoer in de computer mogelijk (zoals toetsenbord, muis)",
+    "uitvoerapparaat": "Presenteert resultaten aan de gebruiker (zoals monitor, printer)",
+    "moederbord": "De hoofdprintplaat die alle componenten van de computer met elkaar verbindt",
+    "computer netwerk": "Een verzameling onderling verbonden apparaten die bronnen kunnen delen",
+    "IP adres": "Een unieke numerieke identificatie die aan elk apparaat in een netwerk wordt toegewezen",
+    "bandbreedte": "De maximale gegevensoverdrachtsnelheid via een netwerkpad",
+    "latentie": "De vertraging in de tijd waarin gegevens van bron naar bestemming reizen"
+}

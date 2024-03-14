@@ -1,0 +1,23 @@
+{
+    "list": "An ordered, changeable collection of items",
+    "set": "An unordered collection of unique elements",
+    "dictionary": "A JSON-like data type with key and value pairs",
+    "tuple": "An ordered, indexed, unchangeable array data type",
+    "none": "Represents the absence of a value",
+    "def": "Creates a new function",
+    "return": "Sends a value back from a function",
+    "yield": "Converts a function into a generator function (which is both an iterator and an iterable)",
+    "lambda": "Creates an anonymous function",
+    "pass": "A placeholder statement that does nothing",
+    "break": "Exit a loop prematurely",
+    "continue": "Skips to the next iteration of a loop",
+    "finally": "Execute after a try/except block regardless of if an error was caught or not",
+    "global": "Declares a variable to have global scope",
+    "nonlocal": "Declares a variable to belong to an outer function",
+    "try": "Starts a block of code with error handling",
+    "except": "Catches and handles specific exceptions",
+    "raise": "Deliberately triggers an exception",
+    "assert": "Evaluates an expression and raises an error if it is false",
+    "with": "Used for context managers to manage resources",
+    "class": "Blueprint for creating objects"
+}

@@ -1,0 +1,15 @@
+{
+    "leres": "Ngawakilan nilai logis tina 1 atanapi 'on'",
+    "palsu": "Ngawakilan nilai logis tina 0 atanapi 'pareum'",
+    "henteu": "Operator logis anu ngabalikeun nilai bebeneran hiji ekspresi",
+    "jeung": "Operator logis, leres ngan upami duanana ekspresi leres",
+    "atawa": "NOT atawa - leres ngan lamun duanana ekspresi palsu",
+    "xor": "Eksklusif ATAWA, leres upami hiji \u00e9kspr\u00e9si leres",
+    "\u00e9kspr\u00e9si boolean": "Kombinasi variabel boolean sareng operator",
+    "m\u00e9ja bebeneran": "M\u00e9ja n\u00e9mbongkeun kaluaran pikeun sakab\u00e9h kombinasi inputs dina ekspresi boolean",
+    "kontradiksi": "Ekspresi boolean anu sok palsu",
+    "hukum de morgan urang": "Aturan pikeun ngamanipulasi ekspresi boolean sareng NOT, AND, sareng OR",
+    "pernyataan kondisional": "Ngadalikeun palaksanaan kode dumasar kana naha kaayaan bener",
+    "nand": "NOT jeung - leres ngan lamun duanana ekspresi palsu",
+    "aljabar boolean": "Sistem mat\u00e9matika anu digunakeun pikeun ngamodelkeun sareng nganalisis logika boolean"
+}

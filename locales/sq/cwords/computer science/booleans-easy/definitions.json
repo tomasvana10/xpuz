@@ -1,0 +1,16 @@
+{
+    "e v\u00ebrtet\u00eb": "P\u00ebrfaq\u00ebson nj\u00eb vler\u00eb logjike prej 1 ose 'on'",
+    "i rrem\u00eb": "P\u00ebrfaq\u00ebson nj\u00eb vler\u00eb logjike prej 0 ose 'off'",
+    "jo": "Operator logjik q\u00eb kthen vler\u00ebn e s\u00eb v\u00ebrtet\u00ebs s\u00eb nj\u00eb shprehjeje",
+    "dhe": "Operator logjik, i v\u00ebrtet\u00eb vet\u00ebm n\u00ebse t\u00eb dyja shprehjet jan\u00eb t\u00eb v\u00ebrteta",
+    "ose": "Operator logjik, i v\u00ebrtet\u00eb n\u00ebse t\u00eb pakt\u00ebn nj\u00eb shprehje \u00ebsht\u00eb e v\u00ebrtet\u00eb",
+    "xor": "Ekskluzive OSE, e v\u00ebrtet\u00eb n\u00ebse sakt\u00ebsisht nj\u00eb shprehje \u00ebsht\u00eb e v\u00ebrtet\u00eb",
+    "shprehje boolean": "Nj\u00eb kombinim i variablave dhe operator\u00ebve boolean",
+    "tabela e s\u00eb v\u00ebrtet\u00ebs": "Tabela q\u00eb tregon daljen p\u00ebr t\u00eb gjitha kombinimet e hyrjeve n\u00eb nj\u00eb shprehje boolean",
+    "kontradikt\u00eb": "Nj\u00eb shprehje boolean q\u00eb \u00ebsht\u00eb gjithmon\u00eb false",
+    "ligjet e de Morganit": "Rregullat p\u00ebr manipulimin e shprehjeve boolean me NOT, AND, dhe OR",
+    "deklarat\u00eb e kusht\u00ebzuar": "Kontrollon ekzekutimin e kodit bazuar n\u00eb faktin n\u00ebse nj\u00eb kusht \u00ebsht\u00eb i v\u00ebrtet\u00eb",
+    "nand": "NOT dhe - e v\u00ebrtet\u00eb vet\u00ebm n\u00ebse t\u00eb dyja shprehjet jan\u00eb false",
+    "as": "JO ose - e v\u00ebrtet\u00eb vet\u00ebm n\u00ebse t\u00eb dyja shprehjet jan\u00eb false",
+    "algjeb\u00ebr boolean": "Sistemi matematikor i p\u00ebrdorur p\u00ebr t\u00eb modeluar dhe analizuar logjik\u00ebn boolean"
+}

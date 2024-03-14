@@ -1,0 +1,14 @@
+{
+    "procesor": "Mo\u017egani ra\u010dunalnika izvajajo navodila",
+    "pomnilnik z naklju\u010dnim dostopom": "Hlapni pomnilnik, kjer so shranjeni teko\u010di programi in podatki",
+    "trdi disk": "Nehlapna naprava za shranjevanje velike zmogljivosti, ki uporablja magnetne plo\u0161\u010de",
+    "SSD": "Nehlapno shranjevanje z bliskovnim pomnilnikom, hitrej\u0161e od trdih diskov",
+    "avtobus": "Pot za potovanje podatkov med komponentami",
+    "vhodna naprava": "Omogo\u010da vnos podatkov v ra\u010dunalnik (npr. tipkovnica, mi\u0161ka)",
+    "izhodna naprava": "Predstavi rezultate uporabniku (na primer monitor, tiskalnik)",
+    "mati\u010dna plo\u0161\u010da": "Glavno vezje, ki povezuje vse komponente ra\u010dunalnika",
+    "ra\u010dunalni\u0161ko omre\u017eje": "Zbirka med seboj povezanih naprav, ki si lahko delijo vire",
+    "IP naslov": "Enoli\u010dni \u0161tevil\u010dni identifikator, dodeljen vsaki napravi v omre\u017eju",
+    "pasovna \u0161irina": "Najve\u010dja hitrost prenosa podatkov po omre\u017eni poti",
+    "zakasnitev": "Zakasnitev v \u010dasu, ko podatki potujejo od vira do cilja"
+}

@@ -1,0 +1,20 @@
+{
+    "kev qhia lub voj voog": "Cov kauj ruam CPU ua raws li kev coj ua ib qho kev qhia",
+    "superscalar architecture": "CPU tsim uas tuaj yeem ua tiav ntau cov lus qhia hauv lub voj voog moos",
+    "ceg twv ua ntej": "Cov txheej txheem qhov twg CPU sim twv seb txoj kev twg yuav mus",
+    "Northbridge": "Chipset (cov txheej txheem qub) uas txuas CPU rau RAM thiab cov tsheb npav ceev",
+    "Southbridge": "Chipset (cov txheej txheem qub) uas ua haujlwm qeeb dua peripherals thiab I / O",
+    "hyperthreading": "Technology tso cai rau ib tug CPU cores los tshwm raws li ntau lub logical cores",
+    "risc": "Txo Cov Lus Qhia Teeb Lub Computer - CPU tsim nrog cov lus qhia yooj yim",
+    "cisc": "Complex Instruction Set Computer - CPU tsim nrog haib, nyuaj cov lus qhia",
+    "simd": "Ib qho Kev Qhia Ntau Cov Ntaub Ntawv, txheej txheem rau kev ua cov ntaub ntawv nyob rau hauv parallel",
+    "microarchitecture": "Cov ntsiab lus siv tshwj xeeb ntawm CPU cov lus qhia",
+    "system ntawm ib tug chip": "Kev koom ua ke ntau yam khoom (CPU, GPU, thiab lwm yam) ntawm ib lub nti",
+    "embedded system": "Lub khoos phis tawj tau mob siab rau ib txoj haujlwm tshwj xeeb, feem ntau nyob rau hauv ib lub cuab yeej loj",
+    "firmware": "Software khaws cia tas mus li ntawm lub cuab yeej kho vajtse (xws li BIOS)",
+    "overclocking": "Khiav CPU ntawm qhov nrawm dua li qhov nws xav tau tshwj xeeb",
+    "yuam kev kho code": "Cov txheej txheem los txheeb xyuas thiab kho qhov yuam kev hauv RAM",
+    "tawm ntawm kev txiav txim": "Cov txheej txheem qhov twg CPU ua cov lus qhia hauv kev txiav txim kom muaj txiaj ntsig zoo dua",
+    "quantum suav": "Siv cov qauv ntawm quantum mechanics rau kev suav",
+    "neuromorphic xam": "Brain-inspired xam architectures tsim rau AI cov haujlwm"
+}

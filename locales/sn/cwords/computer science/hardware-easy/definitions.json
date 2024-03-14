@@ -1,0 +1,14 @@
+{
+    "cpu": "Uropi hwekombuta, hunoita mirairo",
+    "random kuwana ndangariro": "Volatile memory uko kunomhanya zvirongwa uye data zvakachengetwa",
+    "hard disk drive": "Yakakura-inogoneka isiri-inotenderera yekuchengetedza mudziyo uchishandisa magineti ndiro",
+    "solid state drive": "Kuchengetera kusingaite uchishandisa flash memory, nekukurumidza kupfuura HDDs",
+    "bhazi": "Nzira yekuti data ifambe pakati pezvikamu",
+    "mudziyo wekuisa": "Inobvumira data kupinda mukombuta (se keyboard, mbeva)",
+    "mudziyo wekuburitsa": "Inopa mhinduro kumushandisi (senge monitor, printer)",
+    "motherboard": "The main circuit board inobatanidza zvikamu zvose zvekombiyuta",
+    "komputa network": "Muunganidzwa wemidziyo yakabatana inogona kugovera zviwanikwa",
+    "ip kero": "Iyo yakasarudzika nhamba identifier inopihwa kune yega yega mudziyo pane network",
+    "bandwidth": "Iyo yakanyanya mwero wekufambiswa kwedata munzira yetiweki",
+    "latency": "Kunonoka kwenguva yekuti data ifambe kubva kwairi kuenda kwainoenda"
+}

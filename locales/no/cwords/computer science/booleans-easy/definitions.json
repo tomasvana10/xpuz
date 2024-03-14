@@ -1,0 +1,15 @@
+{
+    "ekte": "Representerer en logisk verdi p\u00e5 1 eller \"p\u00e5\"",
+    "falsk": "Representerer en logisk verdi p\u00e5 0 eller \"av\"",
+    "ikke": "Logisk operator som reverserer sannhetsverdien til et uttrykk",
+    "og": "Logisk operator, sann bare hvis begge uttrykkene er sanne",
+    "eller": "NOT eller - sant bare hvis begge uttrykkene er falske",
+    "xor": "Eksklusiv ELLER, sant hvis n\u00f8yaktig ett uttrykk er sant",
+    "boolsk uttrykk": "En kombinasjon av boolske variabler og operatorer",
+    "sannhetstabell": "Tabell som viser utdata for alle kombinasjoner av innganger i et boolsk uttrykk",
+    "motsigelse": "Et boolsk uttrykk som alltid er falskt",
+    "de morgans lover": "Regler for \u00e5 manipulere boolske uttrykk med NOT, AND og OR",
+    "betinget uttalelse": "Styrer kj\u00f8ring av kode basert p\u00e5 om en betingelse er sann",
+    "nand": "NOT og - sant bare hvis begge uttrykkene er falske",
+    "boolsk algebra": "Det matematiske systemet som brukes til \u00e5 modellere og analysere boolsk logikk"
+}

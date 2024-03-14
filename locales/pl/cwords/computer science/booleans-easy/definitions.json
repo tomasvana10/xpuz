@@ -1,0 +1,16 @@
+{
+    "PRAWDA": "Reprezentuje warto\u015b\u0107 logiczn\u0105 1 lub \u201ew\u0142\u0105czon\u0105\u201d",
+    "FA\u0141SZ": "Reprezentuje warto\u015b\u0107 logiczn\u0105 0 lub \u201ewy\u0142\u0105czon\u0105\u201d",
+    "nie": "Operator logiczny odwracaj\u0105cy warto\u015b\u0107 logiczn\u0105 wyra\u017cenia",
+    "I": "Operator logiczny, prawda tylko wtedy, gdy oba wyra\u017cenia s\u0105 prawdziwe",
+    "Lub": "Operator logiczny, prawda, je\u015bli przynajmniej jedno wyra\u017cenie jest prawdziwe",
+    "xor": "Ekskluzywne OR, prawda, je\u015bli dok\u0142adnie jedno wyra\u017cenie jest prawdziwe",
+    "Wyra\u017cenie logiczne": "Kombinacja zmiennych boolowskich i operator\u00f3w",
+    "tabela prawdy": "Tabela przedstawiaj\u0105ca dane wyj\u015bciowe dla wszystkich kombinacji danych wej\u015bciowych w wyra\u017ceniu boolowskim",
+    "sprzeczno\u015b\u0107": "Wyra\u017cenie logiczne, kt\u00f3re zawsze jest fa\u0142szywe",
+    "prawa de Morgana": "Zasady manipulowania wyra\u017ceniami boolowskimi za pomoc\u0105 NOT, AND i OR",
+    "instrukcja warunkowa": "Kontroluje wykonanie kodu na podstawie tego, czy warunek jest prawdziwy",
+    "nand": "NOT i - true tylko wtedy, gdy oba wyra\u017cenia s\u0105 fa\u0142szywe",
+    "ani": "NIE lub - prawda tylko wtedy, gdy oba wyra\u017cenia s\u0105 fa\u0142szywe",
+    "algebra Boole\u2019a": "System matematyczny u\u017cywany do modelowania i analizowania logiki boolowskiej"
+}

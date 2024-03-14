@@ -1,0 +1,14 @@
+{
+    "CPU": "Mozog po\u010d\u00edta\u010da vykon\u00e1va pokyny",
+    "N\u00e1hodn\u00fd vstup do pam\u00e4\u0165e": "Nest\u00e1la pam\u00e4\u0165, kde s\u00fa ulo\u017een\u00e9 spusten\u00e9 programy a d\u00e1ta",
+    "pevn\u00fd disk": "Ve\u013ekokapacitn\u00e9 energeticky nez\u00e1visl\u00e9 \u00falo\u017eisko vyu\u017e\u00edvaj\u00face magnetick\u00e9 platne",
+    "SSD disk": "Trval\u00e9 ukladanie pomocou flash pam\u00e4te, r\u00fdchlej\u0161ie ako HDD",
+    "autobus": "Cesta pre prenos \u00fadajov medzi komponentmi",
+    "vstupn\u00e9 zariadenie": "Umo\u017e\u0148uje zad\u00e1vanie \u00fadajov do po\u010d\u00edta\u010da (ako kl\u00e1vesnica, my\u0161)",
+    "v\u00fdstupn\u00e9 zariadenie": "Prezentuje v\u00fdsledky pou\u017e\u00edvate\u013eovi (ako monitor, tla\u010diare\u0148)",
+    "z\u00e1kladn\u00e1 doska": "Hlavn\u00e1 obvodov\u00e1 doska, ktor\u00e1 sp\u00e1ja v\u0161etky komponenty po\u010d\u00edta\u010da",
+    "po\u010d\u00edta\u010dov\u00e1 sie\u0165": "Kolekcia vz\u00e1jomne prepojen\u00fdch zariaden\u00ed, ktor\u00e9 m\u00f4\u017eu zdie\u013ea\u0165 zdroje",
+    "IP adresa": "Jedine\u010dn\u00fd \u010d\u00edseln\u00fd identifik\u00e1tor priraden\u00fd ku ka\u017ed\u00e9mu zariadeniu v sieti",
+    "\u0161\u00edrku p\u00e1sma": "Maxim\u00e1lna r\u00fdchlos\u0165 prenosu d\u00e1t cez sie\u0165ov\u00fa cestu",
+    "latencia": "\u010casov\u00e9 oneskorenie prenosu \u00fadajov zo zdroja do cie\u013ea"
+}

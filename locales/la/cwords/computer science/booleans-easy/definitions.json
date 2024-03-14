@@ -1,0 +1,16 @@
+{
+    "verum": "Repraesentat valorem logicum de I vel 'on'",
+    "falsus": "Repraesentat valorem rationis 0 vel 'off'",
+    "not": "Operator logicus qui veritatem expressionis valorem adversatur",
+    "et": "Auctor logicus, verus tantum, si utraque dictio vera est",
+    "or *": "Auctor logicus, verus si saltem una dictio vera est",
+    "xor": "Exclusive OR, verum si prorsus una est expressio",
+    "Boolean expressio": "Coniunctio variabilium et operatorium Boolean",
+    "veritas mensa": "Tabula output ostendens pro omnibus combinationibus initibus in expressione boolean",
+    "contradictio": "Boolean expressio quae semper est falsa",
+    "de Morgan leges": "Regulae ad expressiones booleas abusores cum NOT, ET, et OR .",
+    "conditionalis constitutionis": "Imperium codicem exsecutionem secundum utrum condicio sit vera",
+    "nand": "NON et - verum solum si utraque verba falsa sunt",
+    "nor": "NON vel - verum solum si utraque verba sunt falsa",
+    "Boolean Algebrae": "Systema mathematicum ad exemplar et logicam analysim solvendam"
+}

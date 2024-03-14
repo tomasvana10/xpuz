@@ -1,0 +1,15 @@
+{
+    "muaj tseeb": "Sawv cev tus nqi logical ntawm 1 lossis 'on'",
+    "cuav": "Sawv cev tus nqi logical ntawm 0 lossis 'tawm'",
+    "tsis yog": "TSIS los yog - tseeb tsuas yog tias ob qho kev qhia tsis tseeb",
+    "thiab": "Logical tus neeg teb xov tooj, muaj tseeb tsuas yog tias ob qho kev qhia muaj tseeb",
+    "los yog": "Logical tus neeg teb xov tooj, muaj tseeb yog tias tsawg kawg yog ib qho kev qhia tseeb",
+    "xov": "Tshwj xeeb LOSSIS, muaj tseeb yog tias muaj tseeb ib qho kev qhia tseeb",
+    "boolean kev qhia": "Kev sib xyaw ntawm boolean variables thiab tus neeg teb xov tooj",
+    "qhov tseeb rooj": "Cov lus qhia cov zis rau txhua qhov kev sib txuas ntawm cov khoom siv hauv qhov kev qhia boolean",
+    "kev sib cav": "Ib qho kev qhia boolean uas ib txwm tsis muaj tseeb",
+    "de morgan txoj cai": "Cov cai rau kev tswj cov kab lus boolean nrog TSIS TAU, THIAB, thiab LOSSIS",
+    "nqe lus hais": "Tswj cov cai ua raws li seb qhov xwm txheej puas muaj tseeb",
+    "nand": "TSIS thiab - tseeb tsuas yog tias ob qho kev qhia tsis tseeb",
+    "boolean algebra": "Lub tshuab lej siv los ua qauv thiab txheeb xyuas boolean logic"
+}

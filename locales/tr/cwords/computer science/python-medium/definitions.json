@@ -1,0 +1,23 @@
+{
+    "liste": "D\u00fczenli, de\u011fi\u015ftirilebilir bir \u00f6\u011fe koleksiyonu",
+    "ayarlamak": "Benzersiz \u00f6\u011felerin s\u0131ras\u0131z bir koleksiyonu",
+    "s\u00f6zl\u00fck": "Anahtar ve de\u011fer \u00e7iftlerine sahip JSON benzeri bir veri t\u00fcr\u00fc",
+    "demet": "S\u0131ral\u0131, indekslenmi\u015f, de\u011fi\u015ftirilemez bir dizi veri t\u00fcr\u00fc",
+    "hi\u00e7biri": "Bir de\u011ferin yoklu\u011funu temsil eder",
+    "kesinlikle": "Yeni bir i\u015flev olu\u015fturur",
+    "geri d\u00f6nmek": "Bir i\u015flevden bir de\u011feri geri g\u00f6nderir",
+    "teslim olmak": "Bir i\u015flevi bir \u00fcrete\u00e7 i\u015flevine d\u00f6n\u00fc\u015ft\u00fcr\u00fcr (bu hem yineleyici hem de yinelenebilir)",
+    "lambda": "Anonim bir i\u015flev olu\u015fturur",
+    "ge\u00e7mek": "Hi\u00e7bir \u015fey yapmayan yer tutucu ifadesi",
+    "k\u0131rmak": "D\u00f6ng\u00fcden zaman\u0131ndan \u00f6nce \u00e7\u0131kmak",
+    "devam etmek": "D\u00f6ng\u00fcn\u00fcn bir sonraki yinelemesine atlar",
+    "Sonunda": "Bir hatan\u0131n yakalan\u0131p yakalanmad\u0131\u011f\u0131na bak\u0131lmaks\u0131z\u0131n bir try/hari\u00e7 blo\u011fundan sonra \u00e7al\u0131\u015ft\u0131r",
+    "k\u00fcresel": "K\u00fcresel kapsama sahip bir de\u011fi\u015fken bildirir",
+    "yerel olmayan": "Bir de\u011fi\u015fkenin d\u0131\u015f fonksiyona ait oldu\u011funu bildirir",
+    "denemek": "Hata i\u015flemeyle bir kod blo\u011fu ba\u015flat\u0131r",
+    "hari\u00e7": "Belirli istisnalar\u0131 yakalar ve i\u015fler",
+    "art\u0131rmak": "Kas\u0131tl\u0131 olarak bir istisnay\u0131 tetikler",
+    "ileri s\u00fcrmek": "Bir ifadeyi de\u011ferlendirir ve yanl\u0131\u015fsa bir hata olu\u015fturur",
+    "ile": "Kaynaklar\u0131 y\u00f6netmek amac\u0131yla ba\u011flam y\u00f6neticileri i\u00e7in kullan\u0131l\u0131r",
+    "s\u0131n\u0131f": "Nesne olu\u015fturmak i\u00e7in plan"
+}

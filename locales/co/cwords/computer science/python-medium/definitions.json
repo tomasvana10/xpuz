@@ -1,0 +1,23 @@
+{
+    "lista": "Una cullizzioni d'articuli urdinati \u00e8 mudificabili",
+    "set": "Una cullizzioni disordinata di elementi unichi",
+    "dizziunariu": "Un tipu di dati simili \u00e0 JSON c\u00f9 coppie chjave \u00e8 valore",
+    "tupla": "Un tipu di dati di array ordinatu, indexatu, immutable",
+    "nimu": "Rappresenta l'assenza di un valore",
+    "def": "Crea una nova funzione",
+    "torna": "Mandate un valore da una funzione",
+    "renditu": "Cunverte una funzione in una funzione di generatore (ch\u00ec h\u00e8 \u00e0 tempu un iteratore \u00e8 un iterable)",
+    "lambda": "Crea una funzione anonima",
+    "pass\u00e0": "Una dichjarazione di placeholder ch\u00ec \u00f9n face nunda",
+    "ruttura": "Esci da un ciclu prematuremente",
+    "cuntinu\u00e0": "Passa \u00e0 a prossima iterazione di un ciclu",
+    "infine": "Eseguite dopu \u00e0 una prova / eccettu u bloccu, indipendentemente da se un errore h\u00e8 statu catturatu o micca",
+    "glubale": "Dichjara una variabile per av\u00e8 un scopu globale",
+    "micca lucale": "Dichjara una variabile per appartene \u00e0 una funzione esterna",
+    "pruv\u00e0": "Cumincia un bloccu di codice c\u00f9 a gestione di l'errore",
+    "eccettu": "Cattura \u00e8 tratta eccezioni specifiche",
+    "elev\u00e0": "Deliberatamente attiva una eccezzioni",
+    "affirm\u00e0": "Evalua una espressione \u00e8 suscita un errore s'ellu h\u00e8 falsu",
+    "cun": "Adupratu per i gestori di u cuntestu per gestisce e risorse",
+    "classa": "Pianu per cre\u00e0 oggetti"
+}

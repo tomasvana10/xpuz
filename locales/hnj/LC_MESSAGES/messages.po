@@ -296,6 +296,9 @@ msgstr "lej"
 msgid "Science"
 msgstr "Kev tshawb fawb"
 
+msgid "Computer Science"
+msgstr "Computer Science"
+
 #~ msgid "Capitals"
 #~ msgstr "Cov peev"
 

@@ -1,0 +1,14 @@
+{
+    "prosessor": "Hjernen p\u00e5 datamaskinen, utf\u00f8rer instruksjoner",
+    "tilfeldig tilgang minne": "Flyktig minne hvor kj\u00f8rende programmer og data lagres",
+    "harddisk": "Ikke-flyktig lagringsenhet med stor kapasitet som bruker magnetiske tallerkener",
+    "solid state-stasjon": "Ikke-flyktig lagring ved hjelp av flash-minne, raskere enn harddisker",
+    "buss": "Vei for data \u00e5 reise mellom komponenter",
+    "inndataenhet": "Tillater datainntasting p\u00e5 datamaskinen (som tastatur, mus)",
+    "utgangsenhet": "Presenterer resultater for brukeren (som skjerm, skriver)",
+    "hovedkort": "Hovedkretskortet som kobler sammen alle datamaskinens komponenter",
+    "datanettverk": "En samling sammenkoblede enheter som kan dele ressurser",
+    "IP adresse": "En unik numerisk identifikator tilordnet hver enhet p\u00e5 et nettverk",
+    "b\u00e5ndbredde": "Maksimal hastighet for dataoverf\u00f8ring over en nettverksbane",
+    "ventetid": "Forsinkelsen i tid for data \u00e5 reise fra kilde til destinasjon"
+}

@@ -1,0 +1,23 @@
+{
+    "liosta": "Baili\u00fach\u00e1n ordaithe, inathraithe de mh\u00edreanna",
+    "leagtha": "Baili\u00fach\u00e1n neamhord\u00fail d'eilimint\u00ed uath\u00fala",
+    "focl\u00f3ir": "Cine\u00e1l sonra\u00ed cos\u00fail le JSON le p\u00e9ir\u00ed eochair agus luach",
+    "tuple": "Cine\u00e1l sonra\u00ed ordaithe, inn\u00e9acsaithe, do-athraithe",
+    "aon cheann": "L\u00e9ir\u00edonn s\u00e9 easpa luacha",
+    "def": "Crutha\u00edonn feidhm nua",
+    "filleadh": "Seolann luach ar ais \u00f3 fheidhm",
+    "toradh": "Tionta\u00edonn s\u00e9 feidhm go feidhm ghinead\u00f3ra (at\u00e1 ina iterator agus ina hitriail araon)",
+    "lambda": "Crutha\u00edonn feidhm gan ainm",
+    "pas": "R\u00e1iteas sealbh\u00f3ir \u00e1itribh nach nd\u00e9anann faic",
+    "briseadh": "Scoir l\u00fab roimh am",
+    "lean\u00faint ar aghaidh": "Scipeanna go dt\u00ed an ch\u00e9ad atriall eile de l\u00fab",
+    "ar deireadh": "Rith tar \u00e9is triail/seachas bloc beag beann ar tharla earr\u00e1id n\u00f3 n\u00e1r tharla",
+    "domhanda": "Dearbha\u00edonn athr\u00f3g a bhfuil raon feidhme domhanda aici",
+    "neamh\u00e1iti\u00fail": "Dearbha\u00edonn athr\u00f3g a bhaineann le feidhm sheachtrach",
+    "iarracht": "Tosa\u00edonn bloc c\u00f3d le l\u00e1imhse\u00e1il earr\u00e1ide",
+    "seachas": "Gabhann agus l\u00e1imhse\u00e1lann eisceachta\u00ed sonracha",
+    "ard\u00fa": "Spreagann eisceacht d\u2019aon ghn\u00f3",
+    "dearbh\u00fa": "D\u00e9antar slonn a mheas agus arda\u00edonn s\u00e9 earr\u00e1id m\u00e1 t\u00e1 s\u00e9 br\u00e9agach",
+    "le": "\u00das\u00e1idtear \u00e9 le haghaidh bainisteoir\u00ed comhth\u00e9acs chun acmhainn\u00ed a bhainisti\u00fa",
+    "rang": "Blueprint le haghaidh ruda\u00ed a chruth\u00fa"
+}

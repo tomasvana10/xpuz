@@ -1,0 +1,20 @@
+{
+    "Unterrichtszyklus": "Die Schritte, die eine CPU ausf\u00fchrt, um einen einzelnen Befehl auszuf\u00fchren",
+    "Superskalare Architektur": "CPU-Design, das mehrere Anweisungen pro Taktzyklus ausf\u00fchren kann",
+    "Zweigvorhersage": "Technik, bei der die CPU versucht zu erraten, in welche Richtung eine Bedingung gehen wird",
+    "Nord br\u00fccke": "Chipsatz (\u00e4ltere Systeme), der die CPU mit RAM und Hochgeschwindigkeitsbussen verbindet",
+    "S\u00fcdbr\u00fccke": "Chipsatz (\u00e4ltere Systeme), der langsamere Peripherieger\u00e4te und E/A verarbeitet",
+    "Hyperthreading": "Technologie, die es erm\u00f6glicht, dass ein einzelner CPU-Kern als mehrere logische Kerne erscheint",
+    "risiko": "Computer mit reduziertem Befehlssatz \u2013 CPU-Design mit einfacheren Anweisungen",
+    "cisc": "Computer mit komplexem Befehlssatz \u2013 CPU-Design mit leistungsstarken, komplexen Anweisungen",
+    "simd": "Single Instruction Multiple Data, Technik zur parallelen Verarbeitung von Daten",
+    "Mikroarchitektur": "Die spezifischen Implementierungsdetails des Befehlssatzes einer CPU",
+    "System auf einem Chip": "Integration mehrerer Komponenten (CPU, GPU usw.) auf einem einzigen Chip",
+    "Eingebettetes System": "Ein Computersystem, das einer bestimmten Aufgabe gewidmet ist, oft innerhalb eines gr\u00f6\u00dferen Ger\u00e4ts",
+    "Firmware": "Software, die dauerhaft auf einem Hardwareger\u00e4t (wie dem BIOS) gespeichert ist",
+    "\u00dcbertakten": "Betreiben einer CPU mit einer h\u00f6heren Geschwindigkeit als den vorgesehenen Spezifikationen",
+    "Fehlerkorrekturcode": "Technik zur Erkennung und Korrektur von Fehlern im RAM",
+    "Ausf\u00fchrung au\u00dferhalb der Reihenfolge": "Technik, bei der eine CPU Anweisungen in einer effizienteren Reihenfolge ausf\u00fchrt",
+    "Quanten-Computing": "Nutzung der Prinzipien der Quantenmechanik f\u00fcr Berechnungen",
+    "Neuromorphes Rechnen": "Vom Gehirn inspirierte Computerarchitekturen, die f\u00fcr KI-Aufgaben entwickelt wurden"
+}

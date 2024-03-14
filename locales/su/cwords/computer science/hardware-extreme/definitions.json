@@ -1,0 +1,20 @@
+{
+    "siklus instruksi": "L\u00e9ngkah-l\u00e9ngkah anu diturutan ku CPU pikeun ngalaksanakeun hiji par\u00e9ntah",
+    "arsit\u00e9ktur superscalar": "Desain CPU anu tiasa ngalaksanakeun sababaraha par\u00e9ntah per siklus jam",
+    "prediksi cabang": "T\u00e9hnik dimana CPU nyoba nebak mana jalan kondisional bakal balik",
+    "northbridge": "Chipset (sistem heubeul) nu disambungkeun CPU ka RAM na-speed tinggi beus",
+    "sasak kidul": "Chipset (sistem heubeul) nu diatur p\u00e9riferal laun tur I / O",
+    "hyperthreading": "T\u00e9knologi ngamungkinkeun hiji inti CPU tunggal muncul salaku sababaraha inti logis",
+    "risc": "Ngurangan Instruksi Set Komputer - desain CPU jeung parentah basajan",
+    "cisc": "Kompl\u00e9ks Instruksi Set Komputer - Desain CPU kalawan kuat, parentah kompl\u00e9ks",
+    "simd": "Tunggal Instruksi Multiple Data, t\u00e9hnik ngolah data sacara paralel",
+    "mikroarsitektur": "Rincian palaksanaan khusus tina set instruksi CPU",
+    "sistem dina chip": "Ngahijikeun sababaraha kompon\u00e9n (CPU, GPU, jsb) dina chip tunggal",
+    "sistem embedded": "Hiji sistem komputer dedicated ka tugas husus, mindeng dina alat nu leuwih gede",
+    "firmware": "Parangkat lunak disimpen sacara perman\u00e9n dina alat hardware (sapertos BIOS)",
+    "overclocking": "Ngajalankeun CPU dina laju anu langkung luhur tibatan sp\u00e9sifikasi anu dimaksud",
+    "kode koreksi kasalahan": "T\u00e9hnik pikeun ngadeteksi sareng ngabenerkeun kasalahan dina RAM",
+    "kaluar tina urutan palaksanaan": "T\u00e9hnik dimana CPU nga\u00e9ksekusi par\u00e9ntah dina urutan anu langkung \u00e9fisi\u00e9n",
+    "komputasi kuantum": "Mangpaatkeun prinsip m\u00e9kanika kuantum pikeun komputasi",
+    "komputasi neuromorphic": "Arsit\u00e9ktur komputasi anu diideuan otak dirancang pikeun tugas AI"
+}

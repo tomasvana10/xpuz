@@ -1,0 +1,16 @@
+{
+    "rigtigt": "Repr\u00e6senterer en logisk v\u00e6rdi p\u00e5 1 eller 'on'",
+    "falsk": "Repr\u00e6senterer en logisk v\u00e6rdi p\u00e5 0 eller 'fra'",
+    "ikke": "Logisk operator, der vender et udtryks sandhedsv\u00e6rdi",
+    "og": "Logisk operator, kun sand, hvis begge udtryk er sande",
+    "eller": "Logisk operator, sand, hvis mindst \u00e9t udtryk er sandt",
+    "xor": "Eksklusiv ELLER, sand, hvis pr\u00e6cis \u00e9t udtryk er sandt",
+    "boolesk udtryk": "En kombination af booleske variable og operatorer",
+    "sandhedstabel": "Tabel, der viser output for alle kombinationer af input i et boolesk udtryk",
+    "modsigelse": "Et boolsk udtryk, der altid er falsk",
+    "de morgans love": "Regler for at manipulere booleske udtryk med NOT, AND og OR",
+    "betinget erkl\u00e6ring": "Styrer kodeudf\u00f8relse baseret p\u00e5, om en betingelse er sand",
+    "nand": "NOT og - kun sandt, hvis begge udtryk er falske",
+    "heller ikke": "NOT eller - kun sandt, hvis begge udtryk er falske",
+    "boolsk algebra": "Det matematiske system, der bruges til at modellere og analysere boolesk logik"
+}

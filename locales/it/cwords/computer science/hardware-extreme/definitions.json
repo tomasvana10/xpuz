@@ -1,0 +1,20 @@
+{
+    "ciclo di istruzioni": "I passaggi che una CPU segue per eseguire una singola istruzione",
+    "architettura superscalare": "Design della CPU in grado di eseguire pi\u00f9 istruzioni per ciclo di clock",
+    "previsione del ramo": "Tecnica in cui la CPU cerca di indovinare in che direzione andr\u00e0 un condizionale",
+    "ponte Nord": "Chipset (sistemi meno recenti) che collegava la CPU alla RAM e ai bus ad alta velocit\u00e0",
+    "ponte sud": "Chipset (sistemi meno recenti) che gestivano periferiche e I/O pi\u00f9 lenti",
+    "iperthreading": "Tecnologia che consente a un singolo core della CPU di apparire come pi\u00f9 core logici",
+    "risc": "Computer con set di istruzioni ridotto: design della CPU con istruzioni pi\u00f9 semplici",
+    "cisc": "Computer con set di istruzioni complesse: progettazione della CPU con istruzioni potenti e complesse",
+    "simd": "Single Instruction Multiple Data, tecnica per elaborare dati in parallelo",
+    "microarchitettura": "I dettagli di implementazione specifici del set di istruzioni di una CPU",
+    "sistema su un chip": "Integrazione di pi\u00f9 componenti (CPU, GPU, ecc.) su un singolo chip",
+    "sistema incorporato": "Un sistema informatico dedicato a un compito specifico, spesso all'interno di un dispositivo pi\u00f9 grande",
+    "firmware": "Software archiviato in modo permanente su un dispositivo hardware (come il BIOS)",
+    "overclocking": "Esecuzione di una CPU a una velocit\u00e0 superiore rispetto alle specifiche previste",
+    "codice di correzione errori": "Tecnica per rilevare e correggere errori nella RAM",
+    "esecuzione fuori ordine": "Tecnica in cui una CPU esegue le istruzioni in un ordine pi\u00f9 efficiente",
+    "calcolo quantistico": "Sfruttare i principi della meccanica quantistica per il calcolo",
+    "calcolo neuromorfico": "Architetture informatiche ispirate al cervello progettate per attivit\u00e0 di intelligenza artificiale"
+}

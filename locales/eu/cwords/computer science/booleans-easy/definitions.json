@@ -1,0 +1,16 @@
+{
+    "egia": "1 edo 'aktibatuta' balio logikoa adierazten du",
+    "faltsua": "0 edo 'desaktibatuta' balio logikoa adierazten du",
+    "ez": "Adierazpen baten egia-balioa alderantzikatzen duen operadore logikoa",
+    "eta": "Eragile logikoa, egiazkoak bi adierazpenak egia badira bakarrik",
+    "edo": "Eragile logikoa, egia gutxienez adierazpen bat egia bada",
+    "xor": "EDO esklusiboa, egia adierazpide bat egia bada",
+    "adierazpen boolearra": "Aldagai boolearren eta eragileen konbinazioa",
+    "egia-taula": "Adierazpen boolear bateko sarrera-konbinazio guztien irteera erakusten duen taula",
+    "kontraesana": "Beti faltsua den adierazpen boolearra",
+    "de Morganen legeak": "NOT, AND eta OR duten adierazpen boolearrak manipulatzeko arauak",
+    "baldintzapeko adierazpena": "Baldintza bat egia den ala ez kontuan hartuta, kodearen exekuzioa kontrolatzen du",
+    "nand": "NOT eta - egia bi adierazpenak faltsuak badira bakarrik",
+    "ezta": "EZ edo - egia bi adierazpenak faltsuak badira bakarrik",
+    "aljebra boolearra": "Logika boolearra modelatzeko eta aztertzeko erabiltzen den sistema matematikoa"
+}

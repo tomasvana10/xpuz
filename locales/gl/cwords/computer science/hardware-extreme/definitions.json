@@ -1,0 +1,20 @@
+{
+    "ciclo de instruci\u00f3n": "Os pasos que segue unha CPU para executar unha \u00fanica instruci\u00f3n",
+    "arquitectura superescalar": "Dese\u00f1o de CPU que pode executar varias instruci\u00f3ns por ciclo de reloxo",
+    "predici\u00f3n de ramas": "T\u00e9cnica na que a CPU tenta adivi\u00f1ar o cami\u00f1o que ir\u00e1 un condicional",
+    "ponte norte": "Chipset (sistemas m\u00e1is antigos) que conectaba a CPU a RAM e buses de alta velocidade",
+    "ponte sur": "Chipset (sistemas m\u00e1is antigos) que manexaba perif\u00e9ricos e E/S m\u00e1is lentos",
+    "hiperthreading": "Tecnolox\u00eda que permite que un s\u00f3 n\u00facleo de CPU apareza como varios n\u00facleos l\u00f3xicos",
+    "risco": "Conxunto de instruci\u00f3ns reducido Ordenador: dese\u00f1o de CPU con instruci\u00f3ns m\u00e1is sinxelas",
+    "cisc": "Complexo de instruci\u00f3ns Ordenador: dese\u00f1o de CPU con instruci\u00f3ns poderosas e complexas",
+    "simd": "Single Instruction Multiple Data, t\u00e9cnica para procesar datos en paralelo",
+    "microarquitectura": "Os detalles espec\u00edficos de implementaci\u00f3n do conxunto de instruci\u00f3ns dunha CPU",
+    "sistema nun chip": "Integrando varios compo\u00f1entes (CPU, GPU, etc.) nun \u00fanico chip",
+    "sistema integrado": "Un sistema inform\u00e1tico dedicado a unha tarefa espec\u00edfica, moitas veces dentro dun dispositivo m\u00e1is grande",
+    "firmware": "Software almacenado permanentemente nun dispositivo de hardware (como a BIOS)",
+    "overclocking": "Executar unha CPU a unha velocidade superior \u00e1s especificaci\u00f3ns previstas",
+    "c\u00f3digo de correcci\u00f3n de erros": "T\u00e9cnica para detectar e corrixir erros na memoria RAM",
+    "execuci\u00f3n f\u00f3ra de orde": "T\u00e9cnica na que unha CPU executa instruci\u00f3ns nunha orde m\u00e1is eficiente",
+    "computaci\u00f3n cu\u00e1ntica": "Aproveitamento dos principios da mec\u00e1nica cu\u00e1ntica para a computaci\u00f3n",
+    "computaci\u00f3n neurom\u00f3rfica": "Arquitecturas inform\u00e1ticas inspiradas no cerebro dese\u00f1adas para tarefas de IA"
+}

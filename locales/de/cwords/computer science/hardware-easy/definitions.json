@@ -1,0 +1,14 @@
+{
+    "CPU": "Das Gehirn des Computers f\u00fchrt Anweisungen aus",
+    "Arbeitsspeicher": "Fl\u00fcchtiger Speicher, in dem laufende Programme und Daten gespeichert werden",
+    "Festplatte": "Nichtfl\u00fcchtiges Speicherger\u00e4t mit gro\u00dfer Kapazit\u00e4t und magnetischen Platten",
+    "Solid-State-Laufwerk": "Nichtfl\u00fcchtiger Speicher mit Flash-Speicher, schneller als Festplatten",
+    "Bus": "Pfad f\u00fcr die \u00dcbertragung von Daten zwischen Komponenten",
+    "Eingabeger\u00e4t": "Erm\u00f6glicht die Dateneingabe in den Computer (wie Tastatur, Maus)",
+    "Ausgabeger\u00e4t": "Pr\u00e4sentiert dem Benutzer Ergebnisse (wie Monitor, Drucker)",
+    "Hauptplatine": "Die Hauptplatine, die alle Komponenten des Computers verbindet",
+    "Computernetzwerk": "Eine Sammlung miteinander verbundener Ger\u00e4te, die Ressourcen gemeinsam nutzen k\u00f6nnen",
+    "IP Adresse": "Eine eindeutige numerische Kennung, die jedem Ger\u00e4t in einem Netzwerk zugewiesen wird",
+    "Bandbreite": "Die maximale Daten\u00fcbertragungsrate \u00fcber einen Netzwerkpfad",
+    "Latenz": "Die Zeitverz\u00f6gerung, die Daten f\u00fcr die \u00dcbertragung von der Quelle zum Ziel ben\u00f6tigen"
+}

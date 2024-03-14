@@ -1,0 +1,20 @@
+{
+    "ciclu d'istruzione": "I passi ch\u00ec un CPU seguita per eseguisce una sola struzzione",
+    "architettura superscalar": "Disegnu CPU ch\u00ec p\u00f2 eseguisce parechje struzzioni per ciclu di clock",
+    "predizione di ramu": "Tecnica induve u CPU prova \u00e0 indovin\u00e0 in quale modu andr\u00e0 un cundizionale",
+    "ponte di u nordu": "Chipset (sistemi pi\u00f9 antichi) ch\u00ec cunnessu u CPU \u00e0 a RAM \u00e8 \u00e0 l'autobus d'alta veloce",
+    "Southbridge": "Chipset (sistemi pi\u00f9 vechji) ch\u00ec h\u00e0 trattatu periferichi pi\u00f9 lenti \u00e8 I / O",
+    "hyperthreading": "Tecnulugia ch\u00ec permette un unicu core di CPU per apparisce cum'\u00e8 parechje nuclei l\u00f2gichi",
+    "risc": "Set d'istruzioni ridotti Computer - Disegnu CPU c\u00f9 struzzioni pi\u00f9 simplici",
+    "cisc": "Computer Set Instruction Complex - Disegnu CPU c\u00f9 struzzioni putenti \u00e8 cumplessi",
+    "simd": "Single Instruction Multiple Data, tecnica per trasfurm\u00e0 dati in parallelu",
+    "microarchitettura": "I dettagli specifichi di implementazione di un set di istruzioni di CPU",
+    "sistema nantu \u00e0 un chip": "Integrazione di pi\u00f9 cumpunenti (CPU, GPU, etc.) in un unicu chip",
+    "sistema integratu": "Un sistema di computer dedicatu \u00e0 un compitu specificu, spessu in un dispositivu pi\u00f9 grande",
+    "firmware": "U software almacenatu permanentemente in un dispositivu hardware (cum'\u00e8 u BIOS)",
+    "overclocking": "Eseguisce un CPU \u00e0 una velocit\u00e0 pi\u00f9 altu ch'\u00e8 e so specificazioni previste",
+    "codice di correzione di errore": "Tecnica per detect\u00e0 \u00e8 corregge l'errori in RAM",
+    "esecuzione fora di l'ordine": "Tecnica induve un CPU eseguisce struzzioni in un ordine pi\u00f9 efficaci",
+    "l'informatica quantistica": "Utiliz\u00e0 i principii di a meccanica quantistica per u calculu",
+    "l'informatica neuromorfica": "Architetture di computing inspirate da u cervellu pensate per i travaglii di IA"
+}

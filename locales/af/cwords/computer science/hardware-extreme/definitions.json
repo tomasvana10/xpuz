@@ -1,0 +1,20 @@
+{
+    "instruksie siklus": "Die stappe wat 'n SVE volg om 'n enkele instruksie uit te voer",
+    "superskal\u00eare argitektuur": "SVE-ontwerp wat verskeie instruksies per kloksiklus kan uitvoer",
+    "tak voorspelling": "Tegniek waar die SVE probeer raai watter kant toe 'n voorwaardelike sal gaan",
+    "noordbrug": "Chipset (ouer stelsels) wat die SVE aan RAM en ho\u00ebspoedbusse gekoppel het",
+    "suidbrug": "Chipset (ouer stelsels) wat stadiger randapparatuur en I/O hanteer het",
+    "hiperthreading": "Tegnologie wat toelaat dat 'n enkele SVE-kern as veelvuldige logiese kerne verskyn",
+    "risiko": "Verminderde instruksiestel Rekenaar - SVE-ontwerp met eenvoudiger instruksies",
+    "cisc": "Komplekse instruksiestel rekenaar - SVE-ontwerp met kragtige, komplekse instruksies",
+    "simd": "Enkelinstruksie Meervoudige Data, tegniek om data parallel te verwerk",
+    "mikroargitektuur": "Die spesifieke implementeringsbesonderhede van 'n SVE se instruksiestel",
+    "stelsel op 'n skyfie": "Integreer verskeie komponente (CPU, GPU, ens.) op 'n enkele skyfie",
+    "ingebedde stelsel": "'n Rekenaarstelsel wat aan 'n spesifieke taak toegewy is, dikwels binne 'n groter toestel",
+    "firmware": "Sagteware wat permanent op 'n hardeware toestel gestoor word (soos die BIOS)",
+    "oorklok": "Laat 'n SVE teen 'n ho\u00ebr spoed as die beoogde spesifikasies hardloop",
+    "fout regstelling kode": "Tegniek om foute in RAM op te spoor en reg te stel",
+    "buite orde uitvoering": "Tegniek waar 'n SVE instruksies in 'n meer doeltreffende volgorde uitvoer",
+    "kwantumberekening": "Gebruik beginsels van kwantummeganika vir berekening",
+    "neuromorfiese rekenaars": "Brein-ge\u00efnspireerde rekenaarargitekture ontwerp vir KI-take"
+}

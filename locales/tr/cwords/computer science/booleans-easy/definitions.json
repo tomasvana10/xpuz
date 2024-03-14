@@ -1,0 +1,16 @@
+{
+    "do\u011fru": "1 veya 'a\u00e7\u0131k' mant\u0131ksal de\u011ferini temsil eder",
+    "YANLI\u015e": "0 veya 'kapal\u0131' mant\u0131ksal de\u011ferini temsil eder",
+    "Olumsuz": "Bir ifadenin do\u011fruluk de\u011ferini tersine \u00e7eviren mant\u0131ksal operat\u00f6r",
+    "Ve": "Mant\u0131ksal operat\u00f6r, yaln\u0131zca her iki ifadenin de do\u011fru olmas\u0131 durumunda do\u011frudur",
+    "veya": "Mant\u0131ksal operat\u00f6r; en az bir ifade do\u011fruysa do\u011frudur",
+    "xor": "\u00d6zel OR, tam olarak bir ifade do\u011fruysa do\u011frudur",
+    "Boole ifadesi": "Boole de\u011fi\u015fkenleri ve operat\u00f6rlerin birle\u015fimi",
+    "do\u011fruluk tablosu": "Bir boole ifadesindeki t\u00fcm giri\u015f kombinasyonlar\u0131n\u0131n \u00e7\u0131kt\u0131s\u0131n\u0131 g\u00f6steren tablo",
+    "\u00e7eli\u015fki": "Her zaman yanl\u0131\u015f olan bir boolean ifadesi",
+    "de morgan yasalar\u0131": "Boole ifadelerini NOT, AND ve OR ile de\u011fi\u015ftirme kurallar\u0131",
+    "ko\u015fullu ifade": "Bir ko\u015fulun do\u011fru olup olmad\u0131\u011f\u0131na ba\u011fl\u0131 olarak kod y\u00fcr\u00fct\u00fclmesini kontrol eder",
+    "nand": "NOT ve - yaln\u0131zca her iki ifade de yanl\u0131\u015fsa do\u011fru",
+    "ne de": "NOT veya - yaln\u0131zca her iki ifade de yanl\u0131\u015fsa do\u011fru",
+    "boole cebiri": "Boole mant\u0131\u011f\u0131n\u0131 modellemek ve analiz etmek i\u00e7in kullan\u0131lan matematiksel sistem"
+}

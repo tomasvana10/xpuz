@@ -293,6 +293,9 @@ msgstr "ຄະນິດສາດ"
 msgid "Science"
 msgstr "ວິທະຍາສາດ"
 
+msgid "Computer Science"
+msgstr "ວິ​ທະ​ຍາ​ສາດ​ຄອມ​ພິວ​ເຕີ"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"

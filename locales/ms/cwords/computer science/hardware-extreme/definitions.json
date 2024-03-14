@@ -1,0 +1,20 @@
+{
+    "kitaran arahan": "Langkah-langkah yang diikuti oleh CPU untuk melaksanakan satu arahan",
+    "seni bina superscalar": "Reka bentuk CPU yang boleh melaksanakan berbilang arahan bagi setiap kitaran jam",
+    "ramalan cawangan": "Teknik di mana CPU cuba meneka ke arah mana bersyarat akan pergi",
+    "jambatan Utara": "Chipset (sistem lama) yang menyambungkan CPU kepada RAM dan bas berkelajuan tinggi",
+    "jambatan selatan": "Chipset (sistem lama) yang mengendalikan persisian dan I/O yang lebih perlahan",
+    "hyperthreading": "Teknologi membenarkan satu teras CPU muncul sebagai berbilang teras logik",
+    "risc": "Komputer Set Arahan Berkurang - Reka bentuk CPU dengan arahan yang lebih mudah",
+    "cisc": "Komputer Set Arahan Kompleks - Reka bentuk CPU dengan arahan yang kuat dan kompleks",
+    "simd": "Arahan Tunggal Data Berbilang, teknik memproses data secara selari",
+    "seni bina mikro": "Butiran pelaksanaan khusus set arahan CPU",
+    "sistem pada cip": "Mengintegrasikan berbilang komponen (CPU, GPU, dll.) pada satu cip",
+    "sistem terbenam": "Sistem komputer khusus untuk tugas tertentu, selalunya dalam peranti yang lebih besar",
+    "perisian tegar": "Perisian disimpan secara kekal pada peranti perkakasan (seperti BIOS)",
+    "overclocking": "Menjalankan CPU pada kelajuan yang lebih tinggi daripada spesifikasi yang dimaksudkan",
+    "kod pembetulan ralat": "Teknik untuk mengesan dan membetulkan ralat dalam RAM",
+    "pelaksanaan di luar perintah": "Teknik di mana CPU melaksanakan arahan dalam susunan yang lebih cekap",
+    "pengkomputeran kuantum": "Memanfaatkan prinsip mekanik kuantum untuk pengiraan",
+    "pengkomputeran neuromorfik": "Seni bina pengkomputeran yang diilhamkan oleh otak yang direka untuk tugas AI"
+}

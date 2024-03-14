@@ -1,0 +1,16 @@
+{
+    "veritat": "Representa un valor l\u00f2gic d'1 o \"activat\"",
+    "fals": "Representa un valor l\u00f2gic de 0 o \"desactivat\"",
+    "no": "Operador l\u00f2gic que inverteix el valor de veritat d'una expressi\u00f3",
+    "i": "Operador l\u00f2gic, cert nom\u00e9s si les dues expressions s\u00f3n certes",
+    "o": "Operador l\u00f2gic, cert si almenys una expressi\u00f3 \u00e9s certa",
+    "xor": "OR exclusiu, cert si exactament una expressi\u00f3 \u00e9s certa",
+    "expressi\u00f3 booleana": "Una combinaci\u00f3 de variables i operadors booleans",
+    "taula de veritat": "Taula que mostra la sortida de totes les combinacions d'entrades en una expressi\u00f3 booleana",
+    "contradicci\u00f3": "Una expressi\u00f3 booleana que sempre \u00e9s falsa",
+    "les lleis de Morgan": "Regles per manipular expressions booleanes amb NOT, AND i OR",
+    "enunciat condicional": "Controla l'execuci\u00f3 del codi en funci\u00f3 de si una condici\u00f3 \u00e9s certa",
+    "nand": "NOT i - true nom\u00e9s si ambdues expressions s\u00f3n falses",
+    "ni tampoc": "NOT o - true nom\u00e9s si les dues expressions s\u00f3n falses",
+    "\u00e0lgebra booleana": "El sistema matem\u00e0tic utilitzat per modelar i analitzar la l\u00f2gica booleana"
+}

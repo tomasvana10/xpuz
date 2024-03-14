@@ -1,0 +1,23 @@
+{
+    "listo": "Ordigita, \u015dan\u011debla kolekto de eroj",
+    "aro": "Neordigita kolekto de unikaj elementoj",
+    "vortaro": "JSON-simila datumtipo kun \u015dlosilaj kaj valorparoj",
+    "opo": "Ordigita, indeksita, ne\u015dan\u011debla tabeldatumtipo",
+    "neniu": "Reprezentas la foreston de valoro",
+    "def": "Kreas novan funkcion",
+    "reveni": "Resendas valoron de funkcio",
+    "cedi": "Konvertas funkcion en generatoran funkcion (kiu estas kaj iteranto kaj iterebla)",
+    "lambda": "Kreas anoniman funkcion",
+    "pasi": "Loktenilo deklaro kiu faras nenion",
+    "rompi": "Eliru buklon anta\u016dtempe",
+    "da\u016drigi": "Saltas al la sekva ripeto de buklo",
+    "fine": "Efektivigu post provo/krom bloko sendepende de \u0109u eraro estis kaptita a\u016d ne",
+    "tutmonda": "Deklaras variablon havi tutmondan amplekson",
+    "neloka": "Deklaras variablon aparteni al ekstera funkcio",
+    "provu": "Komencas blokon de kodo kun erartraktado",
+    "krom": "Kaptas kaj pritraktas specifajn esceptojn",
+    "levi": "Intencite ekigas escepton",
+    "aserti": "Taksi esprimon kaj levas eraron se \u011di estas malvera",
+    "kun": "Uzita por kuntekstmana\u011deroj por administri rimedojn",
+    "klaso": "Skizo por krei objektojn"
+}

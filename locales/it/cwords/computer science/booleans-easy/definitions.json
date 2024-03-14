@@ -1,0 +1,16 @@
+{
+    "VERO": "Rappresenta un valore logico pari a 1 o \"on\"",
+    "falso": "Rappresenta un valore logico pari a 0 o \"off\"",
+    "non": "Operatore logico che inverte il valore di verit\u00e0 di un'espressione",
+    "E": "Operatore logico, vero solo se entrambe le espressioni sono vere",
+    "O": "Operatore logico, vero se almeno un'espressione \u00e8 vera",
+    "xor": "OR esclusivo, vero se esattamente un'espressione \u00e8 vera",
+    "espressione booleana": "Una combinazione di variabili e operatori booleani",
+    "tavola di verit\u00e0": "Tabella che mostra l'output per tutte le combinazioni di input in un'espressione booleana",
+    "contraddizione": "Un'espressione booleana che \u00e8 sempre falsa",
+    "leggi di de morgan": "Regole per manipolare le espressioni booleane con NOT, AND e OR",
+    "dichiarazione condizionale": "Controlla l'esecuzione del codice in base al fatto che una condizione sia vera",
+    "nand": "NOT e - vero solo se entrambe le espressioni sono false",
+    "n\u00e9": "NOT o - vero solo se entrambe le espressioni sono false",
+    "algebra booleana": "Il sistema matematico utilizzato per modellare e analizzare la logica booleana"
+}

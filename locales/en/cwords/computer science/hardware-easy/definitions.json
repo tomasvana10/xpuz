@@ -1,0 +1,14 @@
+{
+    "cpu": "The brain of the computer, executes instructions",
+    "random access memory": "Volatile memory where running programs and data are stored",
+    "hard disk drive": "Large-capacity non-volatile storage device using magnetic platters",
+    "solid state drive": "Non-volatile storage using flash memory, faster than HDDs",
+    "bus": "Pathway for data to travel between components",
+    "input device": "Allows data entry into the computer (like keyboard, mouse)",
+    "output device": "Presents results to the user (like monitor, printer)",
+    "motherboard": "The main circuit board that connects all the computer's components",
+    "computer network": "A collection of interconnected devices that can share resources",
+    "ip address": "A unique numerical identifier assigned to each device on a network",
+    "bandwidth": "The maximum rate of data transfer across a network path",
+    "latency": "The delay in time for data to travel from source to destination"
+}

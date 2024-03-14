@@ -1,0 +1,20 @@
+{
+    "Instruktiounszyklus": "D'Schr\u00ebtt d\u00e9i eng CPU follegt fir eng eenzeg Instruktioun auszef\u00e9ieren",
+    "superscalar Architektur": "CPU Design dee m\u00e9i Instruktioune pro Auerzyklus ausf\u00e9iere kann",
+    "Branche Pr\u00e9visioun": "Technik wou d'CPU prob\u00e9iert ze roden w\u00e9i eng Konditioun w\u00e4ert goen",
+    "nordbr\u00e9ck": "Chipset (eeler Systemer) datt d'CPU zu RAM an h\u00e9ich-Vitesse Bussen verbonnen",
+    "S\u00fcdbr\u00e9ck": "Chipset (eeler Systemer) d\u00e9i m\u00e9i lues Peripherieger an I / O gehandhabt hunn",
+    "hyperthreading": "Technologie erlaabt engem eenzegen CPU K\u00e4r als multiple logesch K\u00e4ren ze ersch\u00e9ngen",
+    "risc": "Reduz\u00e9iert Instruktiounsset Computer - CPU Design mat m\u00e9i einfachen Instruktiounen",
+    "cisc": "Complex Instruction Set Computer - CPU Design mat m\u00e4chtegen, komplexe Instruktiounen",
+    "simd": "Single Instruction Multiple Data, Technik fir d'Veraarbechtung vun Daten parallel",
+    "Mikroarchitektur": "D\u00e9i spezifesch \u00cbmsetzungsdetailer vun enger CPU Instruktiounsset",
+    "System op engem Chip": "Integratioun vu verschidde Komponenten (CPU, GPU, etc.) Op engem eenzegen Chip",
+    "embedded System": "E Computersystem gewidmet fir eng spezifesch Aufgab, dacks an engem gr\u00e9isseren Apparat",
+    "Firmware": "Software permanent op engem Hardware-Apparat (w\u00e9i de BIOS) gesp\u00e4ichert",
+    "overclocking": "Lafen eng CPU mat enger m\u00e9i h\u00e9ijer Geschwindegkeet w\u00e9i seng virgesinn Spezifikatioune",
+    "Feeler Korrektur Code": "Technik fir Feeler am RAM z'entdecken an ze korrig\u00e9ieren",
+    "aus Uerdnung Ausf\u00e9ierung": "Technik wou eng CPU Instruktiounen an enger m\u00e9i effizienter Uerdnung ausf\u00e9iert",
+    "Quantecomputer": "Benutzen Prinzipien vun der Quantemechanik fir Berechnung",
+    "neuromorphic Informatik": "Gehir-inspir\u00e9iert Rechenarchitekturen entworf fir AI Aufgaben"
+}

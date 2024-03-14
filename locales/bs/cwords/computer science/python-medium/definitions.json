@@ -1,0 +1,23 @@
+{
+    "lista": "Naru\u010dena, promjenjiva kolekcija artikala",
+    "set": "Neure\u0111ena kolekcija jedinstvenih elemenata",
+    "rje\u010dnik": "Tip podataka sli\u010dan JSON-u sa parovima klju\u010deva i vrijednosti",
+    "tuple": "Ure\u0111eni, indeksirani, nepromjenjivi tip podataka niza",
+    "nijedan": "Predstavlja odsustvo vrijednosti",
+    "def": "Kreira novu funkciju",
+    "povratak": "\u0160alje vrijednost natrag iz funkcije",
+    "prinos": "Pretvara funkciju u funkciju generatora (koja je i iterator i iterable)",
+    "lambda": "Kreira anonimnu funkciju",
+    "pass": "Izjava \u010duvara mjesta koja ni\u0161ta ne \u010dini",
+    "break": "Prerano iza\u0111ite iz petlje",
+    "nastaviti": "Preska\u010de na sljede\u0107u iteraciju petlje",
+    "kona\u010dno": "Izvr\u0161iti nakon bloka try/except bez obzira da li je gre\u0161ka uhva\u0107ena ili ne",
+    "globalno": "Deklari\u0161e varijablu da ima globalni opseg",
+    "nelokalni": "Deklari\u0161e varijablu da pripada vanjskoj funkciji",
+    "probaj": "Pokre\u0107e blok koda s rukovanjem gre\u0161kama",
+    "osim": "Hvata i obra\u0111uje specifi\u010dne izuzetke",
+    "podi\u0107i": "Namjerno pokre\u0107e izuzetak",
+    "tvrditi": "Procjenjuje izraz i pokre\u0107e gre\u0161ku ako je neta\u010dan",
+    "sa": "Koristi se za menad\u017eere konteksta za upravljanje resursima",
+    "klasa": "Nacrt za kreiranje objekata"
+}

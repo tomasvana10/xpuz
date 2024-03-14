@@ -1,0 +1,14 @@
+{
+    "cpu": "Die brein van die rekenaar, voer instruksies uit",
+    "ewetoeganklike geheue": "Vlugtige geheue waar lopende programme en data gestoor word",
+    "hardeskyf": "Nie-vlugtige bergingstoestel met groot kapasiteit wat magnetiese plate gebruik",
+    "vastestaataandrywing": "Nie-vlugtige berging met behulp van flitsgeheue, vinniger as HDD's",
+    "bus": "Pad vir data om tussen komponente te reis",
+    "invoer toestel": "Laat data-invoer in die rekenaar toe (soos sleutelbord, muis)",
+    "uitset toestel": "Bied resultate aan die gebruiker (soos monitor, drukker)",
+    "moederbord": "Die hoofstroombaan wat al die rekenaar se komponente verbind",
+    "rekenaar netwerk": "'n Versameling onderling gekoppelde toestelle wat hulpbronne kan deel",
+    "IP adres": "'n Unieke numeriese identifiseerder wat aan elke toestel op 'n netwerk toegewys is",
+    "bandwydte": "Die maksimum tempo van data-oordrag oor 'n netwerkpad",
+    "latency": "Die vertraging in tyd vir data om van bron tot bestemming te reis"
+}

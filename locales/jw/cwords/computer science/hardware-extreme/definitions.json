@@ -1,0 +1,20 @@
+{
+    "siklus instruksi": "Langkah-langkah sing ditindakake CPU kanggo nglakokake instruksi siji",
+    "arsitektur superscalar": "Desain CPU sing bisa nindakake pirang-pirang instruksi saben siklus jam",
+    "ramalan cabang": "Technique ngendi CPU nyoba kanggo guess cara sing kondisional bakal pindhah",
+    "jembatan utara": "Chipset (sistem lawas) sing nyambungake CPU menyang RAM lan bis-kacepetan dhuwur",
+    "jembatan kidul": "Chipset (sistem lawas) sing nangani peripheral alon lan I / O",
+    "hyperthreading": "Teknologi ngidini inti CPU siji katon minangka sawetara intine logis",
+    "risc": "Suda Instruction Set Komputer - desain CPU karo instruksi prasaja",
+    "cisc": "Komplek Instruksi Set Komputer - desain CPU karo kuat, instruksi Komplek",
+    "simd": "Tunggal Instruksi Multiple Data, teknik ngolah data secara paralel",
+    "mikroarsitektur": "Rincian implementasi spesifik saka set instruksi CPU",
+    "sistem ing chip": "Nggabungake sawetara komponen (CPU, GPU, etc.) ing chip siji",
+    "sistem embedded": "Sistem komputer khusus kanggo tugas tartamtu, asring ing piranti sing luwih gedhe",
+    "firmware": "Piranti lunak sing disimpen kanthi permanen ing piranti hardware (kayata BIOS)",
+    "overclocking": "Mlaku CPU ing kacepetan luwih saka specifications dimaksudak\u00e9",
+    "kode koreksi kesalahan": "Technique kanggo ndeteksi lan mbenerake kasalahan ing RAM",
+    "eksekusi metu saka urutan": "Technique ngendi CPU nglakokak\u00e9 instruksi ing urutan luwih efisien",
+    "komputasi kuantum": "Nggunakake prinsip mekanika kuantum kanggo komputasi",
+    "komputasi neuromorfik": "Arsitektur komputasi sing diilhami otak dirancang kanggo tugas AI"
+}

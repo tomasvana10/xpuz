@@ -1,0 +1,23 @@
+{
+    "zerrenda": "Elementu bilduma ordenatua eta aldagarria",
+    "ezarri": "Elementu berezien bilduma ordenatu gabea",
+    "hiztegia": "JSON antzeko datu-mota gako eta balio bikoteekin",
+    "tupla": "Array datu-mota ordenatu, indexatu eta aldaezina",
+    "bat ere ez": "Baliorik eza adierazten du",
+    "def": "Funtzio berri bat sortzen du",
+    "itzuli": "Funtzio batetik balio bat bidaltzen du",
+    "etekina": "Funtzio bat sorgailu-funtzio bihurtzen du (iteratzailea eta iterablea dena)",
+    "lambda": "Funtzio anonimo bat sortzen du",
+    "pasa": "Ezer egiten ez duen leku-markaren adierazpena",
+    "hautsi": "Irten begizta batetik goiz",
+    "jarraitu": "Begizta baten hurrengo iteraziora joaten da",
+    "azkenik": "Saiatu/salbu bloke baten ondoren exekutatu errore bat harrapatu den ala ez kontuan hartu gabe",
+    "globala": "Aldagai bat esparru globala duela deklaratzen du",
+    "tokikoa ez dena": "Aldagai bat kanpoko funtzio batekoa dela deklaratzen du",
+    "saiatu": "Kode bloke bat abiarazten du erroreen kudeaketarekin",
+    "izan ezik": "Salbuespen zehatzak harrapatzen eta kudeatzen ditu",
+    "goratu": "Nahita salbuespena eragiten du",
+    "baieztatzen": "Adierazpen bat ebaluatzen du eta akats bat sortzen du faltsua bada",
+    "rekin": "Testuinguru-kudeatzaileek baliabideak kudeatzeko erabiltzen da",
+    "klasea": "Objektuak sortzeko planoa"
+}

@@ -1,0 +1,23 @@
+{
+    "liste": "En ordnet, udskiftelig samling af varer",
+    "s\u00e6t": "En uordnet samling af unikke elementer",
+    "ordbog": "En JSON-lignende datatype med n\u00f8gle- og v\u00e6rdipar",
+    "tupel": "En ordnet, indekseret, uforanderlig matrixdatatype",
+    "ingen": "Repr\u00e6senterer frav\u00e6ret af en v\u00e6rdi",
+    "def": "Opretter en ny funktion",
+    "Vend tilbage": "Sender en v\u00e6rdi tilbage fra en funktion",
+    "udbytte": "Konverterer en funktion til en generatorfunktion (som b\u00e5de er en iterator og en itererbar)",
+    "lambda": "Opretter en anonym funktion",
+    "passere": "En pladsholderudsagn, der ikke g\u00f8r noget",
+    "pause": "Forlad en l\u00f8kke for tidligt",
+    "Blive ved": "Springer til n\u00e6ste iteration af en l\u00f8kke",
+    "endelig": "Udf\u00f8r efter en try/except-blokering, uanset om en fejl blev fanget eller ej",
+    "global": "Erkl\u00e6rer en variabel for at have globalt omfang",
+    "ikke-lokale": "Erkl\u00e6rer en variabel til at tilh\u00f8re en ydre funktion",
+    "pr\u00f8ve": "Starter en kodeblok med fejlh\u00e5ndtering",
+    "undtagen": "Fanger og h\u00e5ndterer specifikke undtagelser",
+    "h\u00e6ve": "Udl\u00f8ser bevidst en undtagelse",
+    "h\u00e6vde": "Evaluerer et udtryk og rejser en fejl, hvis det er falsk",
+    "med": "Bruges til kontekstadministratorer til at administrere ressourcer",
+    "klasse": "Blueprint til at skabe objekter"
+}

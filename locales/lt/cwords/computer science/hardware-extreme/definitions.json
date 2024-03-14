@@ -1,0 +1,20 @@
+{
+    "instrukcij\u0173 ciklas": "Veiksmai, kuriuos CPU atlieka, kad \u012fvykdyt\u0173 vien\u0105 komand\u0105",
+    "superskaliarin\u0117 architekt\u016bra": "CPU dizainas, galintis vykdyti kelias komandas per laikrod\u017eio cikl\u0105",
+    "\u0161akos prognoz\u0117": "Technika, kai procesorius bando atsp\u0117ti, kuriuo keliu eis s\u0105lygin\u0117 s\u0105lyga",
+    "\u0160iaur\u0117s tiltas": "Lust\u0173 rinkinys (senesn\u0117s sistemos), jungiantis procesori\u0173 su RAM ir didel\u0117s spartos magistral\u0117s",
+    "pietinis tiltas": "Lust\u0173 rinkinys (senesn\u0117s sistemos), kuris tvark\u0117 l\u0117tesnius periferinius \u012frenginius ir I/O",
+    "hipersriegiavimas": "Technologija, leid\u017eianti vienam procesoriaus branduoliui pasirodyti kaip keli loginiai branduoliai",
+    "risc": "Suma\u017eintas instrukcij\u0173 rinkinio kompiuteris \u2013 procesoriaus dizainas su paprastesn\u0117mis instrukcijomis",
+    "cisc": "Kompleksinis instrukcij\u0173 rinkinio kompiuteris \u2013 procesoriaus dizainas su galingomis, sud\u0117tingomis instrukcijomis",
+    "simd": "Single Instruction Multiple Data, lygiagretaus duomen\u0173 apdorojimo technika",
+    "mikroarchitekt\u016bra": "Konkreti procesoriaus instrukcij\u0173 rinkinio \u012fgyvendinimo informacija",
+    "sistema lustoje": "Keli\u0173 komponent\u0173 (CPU, GPU ir kt.) integravimas viename luste",
+    "integruota sistema": "Kompiuterin\u0117 sistema, skirta konkre\u010diai u\u017eduo\u010diai, da\u017enai didesniame \u012frenginyje",
+    "programin\u0117 \u012franga": "Programin\u0117 \u012franga, nuolat saugoma aparat\u016bros \u012frenginyje (pvz., BIOS)",
+    "\u012fsijungimas": "CPU veikimas didesniu grei\u010diu nei numatyta",
+    "klaid\u0173 taisymo kodas": "Technika, leid\u017eianti aptikti ir i\u0161taisyti klaidas RAM",
+    "netvarkingas vykdymas": "Technika, kai procesorius vykdo komandas efektyvesne tvarka",
+    "kvantinis skai\u010diavimas": "Kvantin\u0117s mechanikos princip\u0173 panaudojimas skai\u010diavimams",
+    "neuromorfinis skai\u010diavimas": "Smegen\u0173 \u012fkv\u0117ptos skai\u010diavimo architekt\u016bros, sukurtos dirbtinio intelekto u\u017eduotims atlikti"
+}

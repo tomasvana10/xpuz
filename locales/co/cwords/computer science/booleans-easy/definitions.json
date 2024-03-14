@@ -1,0 +1,16 @@
+{
+    "veru": "Rapprisenta un valore logicu di 1 o \"on\"",
+    "falsu": "Rapprisenta un valore logicu di 0 o 'off'",
+    "micca": "Operatore logicu ch\u00ec inverte u valore di verit\u00e0 di una espressione",
+    "\u00e8": "Operatore logicu, veru solu s'\u00e8 e duie espressioni s\u00f2 vere",
+    "o": "Operatore logicu, veru se almenu una espressione h\u00e8 vera",
+    "xor": "OR esclusiva, vera se esattamente una espressione h\u00e8 vera",
+    "espressione booleana": "Una cumminazione di variabili booleani \u00e8 operatori",
+    "tavula di verit\u00e0": "Tabella ch\u00ec mostra l'output per tutte e cumminazzioni di input in una espressione booleana",
+    "cuntradizzione": "Una espressione booleana ch\u00ec h\u00e8 sempre falsa",
+    "e leggi di de Morgan": "Regoli per manipul\u00e0 l'espressioni booleane c\u00f9 NOT, AND, \u00e8 OR",
+    "dichjarazione cundizionale": "Cuntrolla l'esecuzione di codice basatu nantu \u00e0 se una cundizione h\u00e8 vera",
+    "nand": "NOT \u00e8 - veru solu se e duie espressioni s\u00f2 falsi",
+    "n\u00e8": "NOT o - veru solu se e duie espressioni s\u00f2 falsi",
+    "algebra booleana": "U sistema matematicu utilizatu per mudele \u00e8 analiz\u00e0 a logica booleana"
+}

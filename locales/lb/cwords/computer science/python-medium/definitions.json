@@ -1,0 +1,23 @@
+{
+    "L\u00ebscht": "Eng bestallt, ver\u00e4nnerbar Sammlung vun Artikelen",
+    "setzen": "Eng ongeordnet Sammlung vun eenzegaartegen Elementer",
+    "Wierderbuch": "E JSON-\u00e4hnlechen Datentyp mat Schl\u00ebssel- a W\u00e4ertpaaren",
+    "tuppel": "En bestallt, index\u00e9iert, onver\u00e4nnerbaren Array-Datentyp",
+    "keng": "Stellt d'Feele vun engem W\u00e4ert duer",
+    "def": "Erstellt eng nei Funktioun",
+    "zr\u00e9ck": "Sch\u00e9ckt e W\u00e4ert zr\u00e9ck vun enger Funktioun",
+    "nozeginn": "Konvert\u00e9iert eng Funktioun an eng Generatorfunktioun (wat souwuel en Iterator w\u00e9i och en iterable ass)",
+    "lambda": "Erstellt eng anonym Funktioun",
+    "pass\u00e9ieren": "Eng Plazhalter Ausso d\u00e9i n\u00e4ischt m\u00e9cht",
+    "briechen": "Gitt eng Loop virz\u00e4iteg aus",
+    "weider": "Spr\u00e9ngt op d\u00e9i n\u00e4chst Iteratioun vun enger Loop",
+    "endlech": "Ausf\u00e9ieren no engem Versuch / ausser Block onofh\u00e4ngeg ob e Feeler gefaange gouf oder net",
+    "global": "Deklar\u00e9iert eng Variabel fir global \u00cbmfang ze hunn",
+    "net lokal": "Deklar\u00e9iert eng Variabel fir zu enger \u00e4usserer Funktioun ze geh\u00e9ieren",
+    "prob\u00e9ieren": "F\u00e4nkt e Block vu Code mat Fehlerhandhabung un",
+    "ausser": "Fang a behandelt spezifesch Ausnahmen",
+    "erh\u00e9ijen": "Ausl\u00e9iser bewosst eng Ausnam",
+    "behaapten": "Evalu\u00e9iert en Ausdrock an erh\u00e9icht e Feeler wann et falsch ass",
+    "mat": "Benotzt fir Kontextmanager fir Ressourcen ze managen",
+    "klass": "Blueprint fir Objekter ze kre\u00e9ieren"
+}

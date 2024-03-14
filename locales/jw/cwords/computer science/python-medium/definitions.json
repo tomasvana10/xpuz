@@ -1,0 +1,23 @@
+{
+    "dhaptar": "Koleksi barang sing dipesen lan bisa diganti",
+    "nyetel": "Koleksi unordered saka unsur unik",
+    "kamus": "Jinis data kaya JSON kanthi pasangan kunci lan nilai",
+    "tuple": "Tipe data array sing diurut, diindeks, ora bisa diganti",
+    "ora ana": "Nggantosi anan\u00e9 saka nilai",
+    "def": "Nggawe fungsi anyar",
+    "bali": "Ngirim nilai bali saka fungsi",
+    "ngasilaken": "Ngonversi fungsi dadi fungsi generator (yaiku iterator lan iterable)",
+    "lambda": "Nggawe fungsi anonim",
+    "lulus": "A statement placeholder sing ora nindakake apa-apa",
+    "putus": "Metu puteran prematur",
+    "terus": "Mlumpat menyang pengulangan sabanjure loop",
+    "pungkasane": "Nglakokake sawise nyoba / kajaba pemblokiran preduli saka yen kesalahan kejiret utawa ora",
+    "global": "Nyatakake variabel duwe ruang lingkup global",
+    "non lokal": "Nyatakake variabel dadi kagungane fungsi njaba",
+    "nyoba": "Miwiti blok kode kanthi penanganan kesalahan",
+    "kajaba": "Nyekel lan nangani istim\u00e9wa tartamtu",
+    "mundhakaken": "Sengaja micu pangecualian",
+    "negesake": "Evaluasi ekspresi lan ngunggahake kesalahan yen salah",
+    "karo": "Digunakake kanggo manajer konteks kanggo ngatur sumber daya",
+    "kelas": "Cetak biru kanggo nggawe obyek"
+}

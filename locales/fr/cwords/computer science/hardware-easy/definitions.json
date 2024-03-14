@@ -1,0 +1,13 @@
+{
+    "CPU": "Le cerveau de l'ordinateur ex\u00e9cute les instructions",
+    "m\u00e9moire vive": "M\u00e9moire volatile o\u00f9 les programmes en cours d'ex\u00e9cution et les donn\u00e9es sont stock\u00e9s",
+    "disque dur": "Stockage non volatile utilisant la m\u00e9moire flash, plus rapide que les disques durs",
+    "bus": "Chemin permettant aux donn\u00e9es de voyager entre les composants",
+    "dispositif d'entr\u00e9e": "Permet la saisie de donn\u00e9es dans l'ordinateur (comme le clavier, la souris)",
+    "dispositif de sortie": "Pr\u00e9sente les r\u00e9sultats \u00e0 l'utilisateur (comme le moniteur, l'imprimante)",
+    "carte m\u00e8re": "Le circuit imprim\u00e9 principal qui connecte tous les composants de l'ordinateur",
+    "r\u00e9seau informatique": "Une collection d\u2019appareils interconnect\u00e9s pouvant partager des ressources",
+    "adresse IP": "Un identifiant num\u00e9rique unique attribu\u00e9 \u00e0 chaque appareil sur un r\u00e9seau",
+    "bande passante": "Le taux maximum de transfert de donn\u00e9es sur un chemin r\u00e9seau",
+    "latence": "Le d\u00e9lai n\u00e9cessaire pour que les donn\u00e9es voyagent de la source \u00e0 la destination"
+}

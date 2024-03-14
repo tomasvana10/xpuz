@@ -1,0 +1,23 @@
+{
+    "lista": "Unha colecci\u00f3n ordenada e intercambiable de artigos",
+    "conxunto": "Unha colecci\u00f3n sen ordenar de elementos \u00fanicos",
+    "dicionario": "Un tipo de datos tipo JSON con pares clave e valor",
+    "tupla": "Un tipo de datos de matriz ordenado, indexado e inalterable",
+    "ning\u00fan": "Representa a ausencia dun valor",
+    "def": "Crea unha nova funci\u00f3n",
+    "volver": "Devolve un valor desde unha funci\u00f3n",
+    "rendemento": "Converte unha funci\u00f3n nunha funci\u00f3n xeradora (que \u00e9 tanto un iterador como un iterable)",
+    "lambda": "Crea unha funci\u00f3n an\u00f3nima",
+    "pasar": "Unha declaraci\u00f3n de marcador de posici\u00f3n que non fai nada",
+    "romper": "Sa\u00edr dun bucle antes de tempo",
+    "continuar": "Salta \u00e1 seguinte iteraci\u00f3n dun bucle",
+    "finalmente": "Executar despois dun bloque try/except independentemente de se detectou un erro ou non",
+    "global": "Declara que unha variable ten un alcance global",
+    "non locais": "Declara que unha variable pertence a unha funci\u00f3n externa",
+    "tentar": "Inicia un bloque de c\u00f3digo co tratamento de erros",
+    "excepto": "Captura e xestiona excepci\u00f3ns espec\u00edficas",
+    "elevar": "Activa deliberadamente unha excepci\u00f3n",
+    "afirmar": "Aval\u00eda unha expresi\u00f3n e suscita un erro se \u00e9 falsa",
+    "con": "Usado para xestores de contexto para xestionar recursos",
+    "clase": "Plano para a creaci\u00f3n de obxectos"
+}

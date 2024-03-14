@@ -1,0 +1,23 @@
+{
+    "s\u0105ra\u0161\u0105": "U\u017esakyta, kei\u010diama preki\u0173 kolekcija",
+    "rinkinys": "Netvarkinga unikali\u0173 element\u0173 kolekcija",
+    "\u017eodynas": "\u012e JSON pana\u0161us duomen\u0173 tipas su rakt\u0173 ir reik\u0161mi\u0173 poromis",
+    "kortele": "Sutvarkytas, indeksuotas, nekei\u010diamas masyvo duomen\u0173 tipas",
+    "n\u0117 vienas": "Rei\u0161kia vert\u0117s nebuvim\u0105",
+    "def": "Sukuria nauj\u0105 funkcij\u0105",
+    "gr\u0105\u017einti": "Siun\u010dia atgal reik\u0161m\u0119 i\u0161 funkcijos",
+    "derlius": "Konvertuoja funkcij\u0105 \u012f generatoriaus funkcij\u0105 (kuri yra ir iteratorius, ir kartojamas)",
+    "lambda": "Sukuria anonimin\u0119 funkcij\u0105",
+    "praeiti": "Vietos rezervavimo teiginys, kuris nieko nedaro",
+    "pertrauka": "I\u0161eikite i\u0161 kilpos anks\u010diau laiko",
+    "T\u0119sti": "Pereina \u012f kit\u0105 ciklo iteracij\u0105",
+    "pagaliau": "Vykdykite po bandymo / i\u0161skyrus blok\u0105, neatsi\u017evelgiant \u012f tai, ar klaida buvo u\u017efiksuota, ar ne",
+    "globalus": "Nurodo, kad kintamasis turi visuotin\u0119 apimt\u012f",
+    "nevietinis": "Deklaruoja kintam\u0105j\u012f priklausant\u012f i\u0161orinei funkcijai",
+    "bandyti": "Paleid\u017eia kodo blok\u0105 su klaid\u0173 apdorojimu",
+    "i\u0161skyrus": "Sugauna ir tvarko konkre\u010dias i\u0161imtis",
+    "pakelti": "S\u0105moningai sukelia i\u0161imt\u012f",
+    "tvirtinti": "\u012evertina i\u0161rai\u0161k\u0105 ir pateikia klaid\u0105, jei ji klaidinga",
+    "su": "Naudojamas konteksto tvarkytuv\u0117ms i\u0161tekliams valdyti",
+    "klas\u0117": "Projektas objektams kurti"
+}

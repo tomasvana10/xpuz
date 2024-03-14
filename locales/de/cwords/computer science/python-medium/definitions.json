@@ -1,0 +1,23 @@
+{
+    "Liste": "Eine geordnete, ver\u00e4nderbare Sammlung von Gegenst\u00e4nden",
+    "Satz": "Eine ungeordnete Sammlung einzigartiger Elemente",
+    "W\u00f6rterbuch": "Ein JSON-\u00e4hnlicher Datentyp mit Schl\u00fcssel- und Wertpaaren",
+    "Tupel": "Ein geordneter, indizierter, unver\u00e4nderlicher Array-Datentyp",
+    "keiner": "Stellt das Fehlen eines Werts dar",
+    "def": "Erstellt eine neue Funktion",
+    "zur\u00fcckkehren": "Sendet einen Wert von einer Funktion zur\u00fcck",
+    "Ertrag": "Konvertiert eine Funktion in eine Generatorfunktion (die sowohl ein Iterator als auch eine Iteration ist)",
+    "Lambda": "Erstellt eine anonyme Funktion",
+    "passieren": "Eine Platzhalteranweisung, die nichts bewirkt",
+    "brechen": "Verlassen Sie eine Schleife vorzeitig",
+    "weitermachen": "Springt zur n\u00e4chsten Iteration einer Schleife",
+    "Endlich": "Nach einem Try/Except-Block ausf\u00fchren, unabh\u00e4ngig davon, ob ein Fehler abgefangen wurde oder nicht",
+    "global": "Deklariert eine Variable mit globalem G\u00fcltigkeitsbereich",
+    "nichtlokal": "Deklariert eine Variable als zu einer \u00e4u\u00dferen Funktion geh\u00f6rend",
+    "versuchen": "Startet einen Codeblock mit Fehlerbehandlung",
+    "au\u00dfer": "F\u00e4ngt und behandelt bestimmte Ausnahmen",
+    "erheben": "L\u00f6st absichtlich eine Ausnahme aus",
+    "behaupten": "Wertet einen Ausdruck aus und l\u00f6st einen Fehler aus, wenn er falsch ist",
+    "mit": "Wird f\u00fcr Kontextmanager zum Verwalten von Ressourcen verwendet",
+    "Klasse": "Blaupause zum Erstellen von Objekten"
+}

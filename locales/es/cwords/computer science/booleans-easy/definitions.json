@@ -1,0 +1,16 @@
+{
+    "verdadero": "Representa un valor l\u00f3gico de 1 o 'activado'",
+    "FALSO": "Representa un valor l\u00f3gico de 0 o 'apagado'",
+    "no": "Operador l\u00f3gico que invierte el valor de verdad de una expresi\u00f3n.",
+    "y": "Operador l\u00f3gico, verdadero solo si ambas expresiones son verdaderas",
+    "o": "Operador l\u00f3gico, verdadero si al menos una expresi\u00f3n es verdadera",
+    "xor": "OR exclusivo, verdadero si exactamente una expresi\u00f3n es verdadera",
+    "expresi\u00f3n booleana": "Una combinaci\u00f3n de variables booleanas y operadores.",
+    "mesa de la verdad": "Tabla que muestra el resultado de todas las combinaciones de entradas en una expresi\u00f3n booleana",
+    "contradicci\u00f3n": "Una expresi\u00f3n booleana que siempre es falsa.",
+    "leyes de morgan": "Reglas para manipular expresiones booleanas con NOT, AND y OR",
+    "sentencia condicional": "Controla la ejecuci\u00f3n del c\u00f3digo en funci\u00f3n de si una condici\u00f3n es verdadera",
+    "ny": "NOT y - verdadero solo si ambas expresiones son falsas",
+    "ni": "NOT o - verdadero solo si ambas expresiones son falsas",
+    "\u00e1lgebra de Boole": "El sistema matem\u00e1tico utilizado para modelar y analizar la l\u00f3gica booleana."
+}

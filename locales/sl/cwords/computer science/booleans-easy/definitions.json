@@ -1,0 +1,16 @@
+{
+    "prav": "Predstavlja logi\u010dno vrednost 1 ali 'on'",
+    "la\u017eno": "Predstavlja logi\u010dno vrednost 0 ali 'off'",
+    "ne": "Logi\u010dni operator, ki obrne resni\u010dnostno vrednost izraza",
+    "in": "Logi\u010dni operator, resni\u010den le, \u010de sta oba izraza resni\u010dna",
+    "oz": "Logi\u010dni operator, resni\u010den, \u010de je vsaj en izraz resni\u010den",
+    "xor": "Izklju\u010dni ALI, res, \u010de je to\u010dno en izraz resni\u010den",
+    "logi\u010dni izraz": "Kombinacija logi\u010dnih spremenljivk in operatorjev",
+    "tabela resnice": "Tabela, ki prikazuje izhod za vse kombinacije vhodov v logi\u010dnem izrazu",
+    "protislovje": "Logi\u010dni izraz, ki je vedno napa\u010den",
+    "de morganovi zakoni": "Pravila za manipulacijo logi\u010dnih izrazov z NE, IN in ALI",
+    "pogojna izjava": "Nadzoruje izvajanje kode glede na to, ali je pogoj resni\u010den",
+    "nand": "NE in - res le, \u010de sta oba izraza napa\u010dna",
+    "niti": "NE ali - res le, \u010de sta oba izraza napa\u010dna",
+    "boolovska algebra": "Matemati\u010dni sistem, ki se uporablja za modeliranje in analizo logi\u010dne logike"
+}

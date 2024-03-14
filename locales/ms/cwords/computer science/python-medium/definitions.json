@@ -1,0 +1,23 @@
+{
+    "senarai": "Koleksi item yang dipesan dan boleh ditukar",
+    "ditetapkan": "Koleksi unsur unik yang tidak teratur",
+    "kamus": "Jenis data seperti JSON dengan pasangan kunci dan nilai",
+    "tupel": "Jenis data tatasusunan yang tersusun, diindeks, tidak boleh diubah",
+    "tiada": "Mewakili ketiadaan nilai",
+    "def": "Mencipta fungsi baharu",
+    "kembali": "Menghantar nilai kembali daripada fungsi",
+    "hasil": "Menukar fungsi kepada fungsi penjana (yang merupakan lelaran dan boleh lelar)",
+    "lambda": "Mencipta fungsi tanpa nama",
+    "lulus": "Pernyataan pemegang tempat yang tidak melakukan apa-apa",
+    "rehat": "Keluar dari gelung lebih awal",
+    "teruskan": "Melangkau ke lelaran seterusnya bagi gelung",
+    "akhirnya": "Laksanakan selepas cubaan/kecuali blok tanpa mengira sama ada ralat telah ditangkap atau tidak",
+    "global": "Mengisytiharkan pembolehubah mempunyai skop global",
+    "bukan tempatan": "Mengisytiharkan pembolehubah tergolong dalam fungsi luar",
+    "cubalah": "Memulakan blok kod dengan pengendalian ralat",
+    "kecuali": "Menangkap dan mengendalikan pengecualian khusus",
+    "menaikkan": "Sengaja mencetuskan pengecualian",
+    "tegaskan": "Menilai ungkapan dan menimbulkan ralat jika ia palsu",
+    "dengan": "Digunakan untuk pengurus konteks mengurus sumber",
+    "kelas": "Rangka tindakan untuk mencipta objek"
+}

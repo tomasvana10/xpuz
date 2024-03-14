@@ -1,0 +1,23 @@
+{
+    "lista": "En ordnad, utbytbar samling av f\u00f6rem\u00e5l",
+    "upps\u00e4ttning": "En oordnad samling unika element",
+    "lexikon": "En JSON-liknande datatyp med nyckel- och v\u00e4rdepar",
+    "tupel": "En ordnad, indexerad, of\u00f6r\u00e4nderlig matrisdatatyp",
+    "ingen": "Representerar fr\u00e5nvaron av ett v\u00e4rde",
+    "def": "Skapar en ny funktion",
+    "l\u00e4mna tillbaka": "Skickar ett v\u00e4rde tillbaka fr\u00e5n en funktion",
+    "avkastning": "Konverterar en funktion till en generatorfunktion (som \u00e4r b\u00e5de en iterator och en itererbar)",
+    "lambda": "Skapar en anonym funktion",
+    "passera": "Ett platsh\u00e5llaruttalande som inte g\u00f6r n\u00e5gonting",
+    "ha s\u00f6nder": "L\u00e4mna en loop i f\u00f6rtid",
+    "Forts\u00e4tta": "Hoppar till n\u00e4sta iteration av en loop",
+    "till sist": "K\u00f6r efter ett f\u00f6rs\u00f6k/utom block oavsett om ett fel uppt\u00e4cks eller inte",
+    "global": "Deklarerar att en variabel har globalt omf\u00e5ng",
+    "icke-lokala": "Deklarerar att en variabel tillh\u00f6r en yttre funktion",
+    "Prova": "Startar ett kodblock med felhantering",
+    "bortsett fr\u00e5n": "F\u00e5ngar upp och hanterar specifika undantag",
+    "h\u00f6ja": "Utl\u00f6ser medvetet ett undantag",
+    "h\u00e4vda": "Utv\u00e4rderar ett uttryck och ger upp ett fel om det \u00e4r falskt",
+    "med": "Anv\u00e4nds f\u00f6r sammanhangshanterare f\u00f6r att hantera resurser",
+    "klass": "Ritning f\u00f6r att skapa objekt"
+}

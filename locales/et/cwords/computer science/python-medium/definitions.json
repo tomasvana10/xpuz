@@ -1,0 +1,23 @@
+{
+    "nimekirja": "Tellitud, muudetav esemete kollektsioon",
+    "seatud": "Unikaalsete elementide j\u00e4rjestamata kollektsioon",
+    "s\u00f5nastik": "JSON-sarnane andmet\u00fc\u00fcp v\u00f5tme- ja v\u00e4\u00e4rtusepaaridega",
+    "mitmekordne": "J\u00e4rjestatud, indekseeritud, muutmatu massiivi andmet\u00fc\u00fcp",
+    "mitte \u00fchtegi": "Esindab v\u00e4\u00e4rtuse puudumist",
+    "def": "Loob uue funktsiooni",
+    "tagasi": "Saadab funktsioonist v\u00e4\u00e4rtuse tagasi",
+    "saagikus": "Teisendab funktsiooni generaatorifunktsiooniks (mis on nii iteraator kui ka itereeritav)",
+    "lambda": "Loob anon\u00fc\u00fcmse funktsiooni",
+    "\u00fcle andma": "Kohat\u00e4ide, mis ei tee midagi",
+    "murda": "V\u00e4ljuge ts\u00fcklist enneaegselt",
+    "j\u00e4tka": "Liigub ts\u00fckli j\u00e4rgmise iteratsiooni juurde",
+    "l\u00f5puks": "K\u00e4ivitage p\u00e4rast proovimist/v\u00e4lja arvatud blokeeringut, olenemata sellest, kas viga ilmnes v\u00f5i mitte",
+    "globaalne": "Deklareerib muutuja globaalse ulatusega",
+    "mittelokaalne": "Kuulutab muutuja kuuluvaks v\u00e4lisfunktsiooni",
+    "proovige": "K\u00e4ivitab veak\u00e4sitlusega koodiploki",
+    "v\u00e4lja arvatud": "P\u00fc\u00fcab kinni ja k\u00e4sitleb konkreetseid erandeid",
+    "t\u00f5sta": "Teeb tahtlikult erandi",
+    "v\u00e4ita": "Hindab avaldist ja tekitab vea, kui see on v\u00e4\u00e4r",
+    "koos": "Kasutatakse kontekstihaldurite jaoks ressursside haldamiseks",
+    "klass": "Plaan objektide loomiseks"
+}

@@ -267,3 +267,6 @@ msgstr ""
 
 msgid "Science"
 msgstr ""
+
+msgid "Computer Science"
+msgstr ""

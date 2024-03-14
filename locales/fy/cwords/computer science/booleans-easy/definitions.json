@@ -1,0 +1,16 @@
+{
+    "wier": "Fertsjintwurdet in logyske wearde fan 1 of 'on'",
+    "falsk": "Stelt in logyske wearde fan 0 of '\u00fat' foar",
+    "net": "Logyske operator dy't de wierheidswearde fan in \u00fatdrukking omkeart",
+    "en": "Logyske operator, wier allinich as beide \u00fatdrukkingen wier binne",
+    "of": "Logyske operator, wier as op syn minst ien \u00fatdrukking wier is",
+    "xor": "Exclusive OR, wier as krekt ien \u00fatdrukking wier is",
+    "boolean ekspresje": "In kombinaasje fan Booleaanske fariabelen en operators",
+    "wierheid tafel": "Tabel mei de \u00fatfier foar alle kombinaasjes fan ynputs yn in Booleaanske ekspresje",
+    "tsjinspraak": "In booleaanske \u00fatdrukking dy't altyd falsk is",
+    "de morgan syn wetten": "Regels foar it manipulearjen fan Booleaanske \u00fatdrukkingen mei NOT, AND, en OR",
+    "betingst ferklearring": "Kontrolearret de \u00fatfiering fan koade basearre op oft in betingst wier is",
+    "nand": "NOT en - allinich wier as beide \u00fatdrukkingen falsk binne",
+    "noch": "NOT of - allinich wier as beide \u00fatdrukkingen falsk binne",
+    "boolean algebra": "It wiskundige systeem dat br\u00fbkt wurdt om boolean logika te modellearjen en te analysearjen"
+}

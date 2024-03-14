@@ -1,0 +1,23 @@
+{
+    "daptar": "Kol\u00e9ksi barang anu mar\u00e9ntahkeun, tiasa dirobih",
+    "nyet\u00e9l": "Kumpulan unordered unsur unik",
+    "kamus": "Jinis data sapertos JSON sareng pasangan konci sareng nilai",
+    "tupel": "Hiji tipe data susunan mar\u00e9ntahkeun, ind\u00e9ks, unchangeable",
+    "euweuh": "Ngagambarkeun henteuna hiji nilai",
+    "def": "Nyiptakeun fungsi anyar",
+    "mulang": "Ngirimkeun nilai deui tina fungsi",
+    "Hasil": "Ngarobah fungsi kana fungsi generator (anu mangrupa iterator jeung iterable)",
+    "lambda": "Nyiptakeun fungsi anonim",
+    "ngaliwat": "A pernyataan placeholder nu teu nanaon",
+    "putus": "Kaluar loop prematurely",
+    "nuluykeun": "Skips ka iteration salajengna tina loop a",
+    "tungtungna": "Nga\u00e9ksekusi sanggeus hiji try / iwal blok paduli lamun kasalahan ieu bray atanapi henteu",
+    "global": "Ngad\u00e9klarasikeun variabel boga lingkup global",
+    "nonlokal": "Nyatakeun variabel kagolong kana fungsi luar",
+    "coba": "Ngamimitian blok kode kalayan penanganan kasalahan",
+    "iwal": "Nyekel sarta handles iwal husus",
+    "ngangkat": "Ngahaja micu iwal",
+    "negeskeun": "Evaluates ekspresi jeung raises kasalahan lamun \u00e9ta palsu",
+    "kalawan": "Dipak\u00e9 pikeun manajer konteks pikeun ngatur sumberdaya",
+    "kelas": "Blueprint pikeun nyieun obj\u00e9k"
+}

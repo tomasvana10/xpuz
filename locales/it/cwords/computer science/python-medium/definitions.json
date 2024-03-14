@@ -1,0 +1,23 @@
+{
+    "elenco": "Una raccolta ordinata e mutevole di elementi",
+    "impostato": "Una raccolta disordinata di elementi unici",
+    "dizionario": "Un tipo di dati simile a JSON con coppie chiave-valore",
+    "tupla": "Un tipo di dati di array ordinato, indicizzato e immutabile",
+    "nessuno": "Rappresenta l'assenza di un valore",
+    "def": "Crea una nuova funzione",
+    "ritorno": "Restituisce un valore da una funzione",
+    "prodotto": "Converte una funzione in una funzione generatrice (che \u00e8 sia un iteratore che un iterabile)",
+    "lambda": "Crea una funzione anonima",
+    "passaggio": "Un'istruzione segnaposto che non fa nulla",
+    "rottura": "Uscire prematuramente da un ciclo",
+    "Continua": "Passa alla successiva iterazione di un ciclo",
+    "Finalmente": "Esegui dopo un blocco try/eccetto indipendentemente dal fatto che sia stato rilevato o meno un errore",
+    "globale": "Dichiara che una variabile ha ambito globale",
+    "non locale": "Dichiara che una variabile appartiene a una funzione esterna",
+    "Tentativo": "Avvia un blocco di codice con la gestione degli errori",
+    "tranne": "Rileva e gestisce eccezioni specifiche",
+    "aumentare": "Attiva deliberatamente un'eccezione",
+    "affermare": "Valuta un'espressione e genera un errore se \u00e8 falsa",
+    "con": "Utilizzato dai gestori di contesto per gestire le risorse",
+    "classe": "Progetto per la creazione di oggetti"
+}

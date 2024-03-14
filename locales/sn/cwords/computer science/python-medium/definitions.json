@@ -1,0 +1,23 @@
+{
+    "list": "Muunganidzwa wezvinhu wakarongeka, unochinjika",
+    "set": "Muunganidzwa usina kurongeka wezvinhu zvakasiyana",
+    "duramazwi": "Iyo JSON-yakaita sedhata mhando ine kiyi uye kukosha pairi",
+    "tuple": "Mhando yedata yakarongeka, yakanyorwa, isingachinjiki",
+    "hapana": "Inomiririra kusavapo kwechikoshi",
+    "def": "Inogadzira basa idzva",
+    "return": "Inotumira kukosha kubva kune basa",
+    "goho": "Inoshandura basa kuita jenareta basa (inova zvose iterator uye iterable)",
+    "lambda": "Inogadzira basa risingazivikanwe",
+    "pass": "Chirevo chemubati chisingaiti chinhu",
+    "break": "Buda loop nguva isati yakwana",
+    "enderera": "Svetuka kuenda kunotevera iteration ye loop",
+    "pakupedzisira": "Ita mushure mekuedza/kunze kwechivharo zvisinei nekuti chikanganiso chabatwa kana kuti kwete",
+    "global": "Inozivisa shanduko kuti ive nenzvimbo yepasi rose",
+    "nonlocal": "Inozivisa mutsauko kuva webasa rekunze",
+    "try": "Inotanga bhuroko rekodhi nekubata kukanganisa",
+    "kunze": "Inobata uye inobata chaiyo yakasarudzika",
+    "simudza": "Anoita nemaune kusarudzika",
+    "assert": "Inoongorora chirevo uye inosimudza chikanganiso kana chiri chenhema",
+    "pamwe": "Inoshandiswa kune maneja emamiriro ekugadzirisa zviwanikwa",
+    "class": "Blueprint yekugadzira zvinhu"
+}

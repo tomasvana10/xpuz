@@ -1,0 +1,14 @@
+{
+    "zoona": "Ikuyimira mtengo womveka wa 1 kapena 'pa'",
+    "zabodza": "Imayimira mtengo womveka wa 0 kapena 'off'",
+    "ayi": "Wogwiritsa ntchito mwanzeru yemwe amatembenuza kufunikira kwa mawu",
+    "ndi": "OSATI ndi - zoona pokhapokha ngati mawu onse awiri ali onama",
+    "kapena": "OSATI kapena - zoona pokhapokha ngati mawu onse awiri ali onama",
+    "xor": "Kupatula OR, zoona ngati mawu amodzi ali owona",
+    "mawu a boolean": "Kuphatikiza kwa zosintha za boolean ndi ogwiritsa ntchito",
+    "chowonadi tebulo": "Tebulo lomwe likuwonetsa zotulutsa pazophatikizika zonse zamawu a boolean",
+    "kutsutsana": "Mawu a boolean omwe amakhala abodza nthawi zonse",
+    "de morgan malamulo": "Malamulo osinthira mawu a boolean ndi NOT, NDI, ndi OR",
+    "mawu okhazikika": "Imawongolera kachitidwe ka code potengera ngati vuto liri loona",
+    "algebra ya boolean": "Masamu omwe amagwiritsidwa ntchito poyesa ndi kusanthula malingaliro a boolean"
+}

@@ -1,0 +1,14 @@
+{
+    "prosessori": "Tietokoneen aivot suorittavat k\u00e4skyj\u00e4",
+    "RAM-muisti": "Haihtuva muisti, johon tallennetaan k\u00e4ynniss\u00e4 olevat ohjelmat ja tiedot",
+    "kovalevy": "Suuren kapasiteetin haihtumaton tallennuslaite magneettilevyill\u00e4",
+    "SSD-asema": "Haihtumaton tallennus flash-muistilla, nopeampi kuin kiintolevyt",
+    "linja-auto": "Tiedon kulkureitti komponenttien v\u00e4lill\u00e4",
+    "sy\u00f6tt\u00f6laite": "Sallii tietojen sy\u00f6tt\u00e4misen tietokoneeseen (kuten n\u00e4pp\u00e4imist\u00f6, hiiri)",
+    "l\u00e4ht\u00f6laite": "N\u00e4ytt\u00e4\u00e4 tulokset k\u00e4ytt\u00e4j\u00e4lle (kuten n\u00e4ytt\u00f6, tulostin)",
+    "emolevy": "P\u00e4\u00e4piirilevy, joka yhdist\u00e4\u00e4 kaikki tietokoneen komponentit",
+    "tietokoneverkko": "Joukko toisiinsa yhdistettyj\u00e4 laitteita, jotka voivat jakaa resursseja",
+    "IP-osoite": "Ainutlaatuinen numeerinen tunniste, joka on m\u00e4\u00e4ritetty jokaiselle verkon laitteelle",
+    "kaistanleveys": "Suurin tiedonsiirtonopeus verkkopolun yli",
+    "viive": "Viive tietojen siirtymisess\u00e4 l\u00e4hteest\u00e4 m\u00e4\u00e4r\u00e4np\u00e4\u00e4h\u00e4n"
+}

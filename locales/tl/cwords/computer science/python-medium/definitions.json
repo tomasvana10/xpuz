@@ -1,0 +1,23 @@
+{
+    "listahan": "Isang nakaayos, nababagong koleksyon ng mga item",
+    "itakda": "Isang hindi ayos na koleksyon ng mga natatanging elemento",
+    "diksyunaryo": "Isang uri ng data na tulad ng JSON na may mga pares ng susi at halaga",
+    "tuple": "Isang nakaayos, na-index, hindi nababagong uri ng data ng array",
+    "wala": "Kinakatawan ang kawalan ng isang halaga",
+    "def": "Lumilikha ng bagong function",
+    "bumalik": "Nagpapadala ng halaga pabalik mula sa isang function",
+    "ani": "Kino-convert ang isang function sa isang generator function (na parehong isang iterator at isang iterable)",
+    "lambda": "Lumilikha ng anonymous na function",
+    "pumasa": "Isang placeholder statement na walang ginagawa",
+    "pahinga": "Lumabas sa isang loop nang maaga",
+    "magpatuloy": "Lumaktaw sa susunod na pag-ulit ng isang loop",
+    "sa wakas": "Ipatupad pagkatapos ng isang pagsubok/maliban sa pag-block hindi alintana kung ang isang error ay nahuli o hindi",
+    "global": "Nagdedeklara ng variable na may pandaigdigang saklaw",
+    "hindi lokal": "Nagdedeklara ng variable na kabilang sa isang panlabas na function",
+    "subukan": "Nagsisimula ng isang bloke ng code na may paghawak ng error",
+    "maliban sa": "Nahuhuli at pinangangasiwaan ang mga partikular na pagbubukod",
+    "itaas": "Sadyang nag-trigger ng exception",
+    "igiit": "Sinusuri ang isang expression at nagtataas ng isang error kung ito ay mali",
+    "kasama": "Ginagamit para sa mga tagapamahala ng konteksto upang pamahalaan ang mga mapagkukunan",
+    "klase": "Blueprint para sa paglikha ng mga bagay"
+}

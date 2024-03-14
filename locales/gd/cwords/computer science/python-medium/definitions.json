@@ -1,0 +1,23 @@
+{
+    "liosta": "Cruinneachadh \u00f2rdail, caochlaideach de nithean",
+    "seata": "Cruinneachadh neo-\u00f2rdaichte de eileamaidean s\u00f2nraichte",
+    "faclair": "Se\u00f2rsa d\u00e0ta coltach ri JSON le pr\u00ecomh ch\u00e0raidean agus luach",
+    "tuple": "Se\u00f2rsa d\u00e0ta sreath \u00f2rdaichte, cl\u00e0r-amais nach gabh atharrachadh",
+    "gin": "A\u2019 riochdachadh d\u00ecth luach",
+    "def": "A 'cruthachadh gn\u00ecomh \u00f9r",
+    "tilleadh": "A\u2019 cur luach air ais bho ghn\u00ecomh",
+    "toradh": "Ag atharrachadh gn\u00ecomh gu gn\u00ecomh gineadair (a tha an d\u00e0 chuid na iterator agus a ghabhas atharrachadh)",
+    "lambda": "A 'cruthachadh gn\u00ecomh gun urra",
+    "seachad": "Aithris neach-\u00e0ite nach d\u00e8an dad",
+    "briseadh": "Cuir a-mach l\u00f9b ro-luath",
+    "leantuinn": "A\u2019 leum chun ath chuairt de l\u00f9b",
+    "mu dheireadh": "D\u00e8an an gn\u00ecomh \u00e0s deidh feuchainn / ach a-mh\u00e0in bloc ge bith an deach mearachd a ghlacadh no nach deach",
+    "cruinne": "Ag ainmeachadh caochladair gus farsaingeachd chruinneil a bhith aige",
+    "neo-ionadail": "Ag ainmeachadh caochladair a bhuineas do ghn\u00ecomh a-muigh",
+    "feuch": "T\u00f2isich bloc c\u00f2d le l\u00e0imhseachadh mhearachdan",
+    "ach a-mh\u00e0in": "A 'glacadh agus a' l\u00e0imhseachadh eisgeachdan s\u00f2nraichte",
+    "tog": "A dh\u2019aona ghnothach a\u2019 brosnachadh eisgeachd",
+    "dearbhaich": "A\u2019 measadh abairt agus a\u2019 togail mearachd ma tha e meallta",
+    "le": "Air a chleachdadh airson manaidsearan co-theacsa gus goireasan a riaghladh",
+    "clas": "Blueprint airson a bhith a ' cruthachadh stuthan a"
+}

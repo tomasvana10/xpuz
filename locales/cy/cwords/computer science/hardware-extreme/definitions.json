@@ -1,0 +1,20 @@
+{
+    "cylch cyfarwyddyd": "Y camau y mae CPU yn eu dilyn i weithredu un cyfarwyddyd",
+    "pensaern\u00efaeth superscalar": "Dyluniad CPU a all weithredu cyfarwyddiadau lluosog fesul cylch cloc",
+    "rhagfynegiad cangen": "Techneg lle mae'r CPU yn ceisio dyfalu pa ffordd y bydd amodol yn mynd",
+    "pont ogleddol": "Chipset (systemau h\u0177n) a gysylltodd y CPU \u00e2 RAM a bysiau cyflym",
+    "bont ddeheuol": "Chipset (systemau h\u0177n) a oedd yn trin perifferolion arafach ac I/O",
+    "hyperthreading": "Technoleg sy'n caniat\u00e1u i un craidd CPU ymddangos fel creiddiau rhesymegol lluosog",
+    "risc": "Cyfrifiadur Set Llai o Gyfarwyddiadau - Dyluniad CPU gyda chyfarwyddiadau symlach",
+    "cisc": "Cyfrifiadur Set Cyfarwyddiadau Cymhleth - Dyluniad CPU gyda chyfarwyddiadau pwerus, cymhleth",
+    "simd": "Data Lluosog Cyfarwyddyd Sengl, techneg ar gyfer prosesu data ochr yn ochr",
+    "microbensaern\u00efaeth": "Manylion gweithredu penodol set gyfarwyddiadau CPU",
+    "system ar sglodyn": "Integreiddio cydrannau lluosog (CPU, GPU, ac ati) ar un sglodyn",
+    "system wreiddio": "System gyfrifiadurol sy'n ymroddedig i dasg benodol, yn aml o fewn dyfais fwy",
+    "cadarnwedd": "Meddalwedd sydd wedi'i storio'n barhaol ar ddyfais caledwedd (fel y BIOS)",
+    "gor-glocio": "Rhedeg CPU ar gyflymder uwch na'i fanylebau bwriadedig",
+    "cod cywiro gwall": "Techneg i ganfod a chywiro gwallau mewn RAM",
+    "gweithredu allan o drefn": "Techneg lle mae CPU yn gweithredu cyfarwyddiadau mewn trefn fwy effeithlon",
+    "cyfrifiadura cwantwm": "Harneisio egwyddorion mecaneg cwantwm ar gyfer cyfrifiant",
+    "cyfrifiadura niwromorffig": "Pensaern\u00efaeth gyfrifiadurol wedi'i hysbrydoli gan yr ymennydd wedi'i chynllunio ar gyfer tasgau AI"
+}

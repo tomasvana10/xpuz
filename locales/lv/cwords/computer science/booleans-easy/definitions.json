@@ -1,0 +1,16 @@
+{
+    "taisn\u012bba": "Apz\u012bm\u0113 lo\u0123isku v\u0113rt\u012bbu\u00a01 vai \u201ciesl\u0113gts\u201d",
+    "viltus": "Apz\u012bm\u0113 lo\u0123isku v\u0113rt\u012bbu 0 vai \u201cizsl\u0113gts\u201d",
+    "n\u0113": "Lo\u0123isks operators, kas apv\u0113r\u0161 izteiksmes paties\u012bbas v\u0113rt\u012bbu",
+    "un": "Lo\u0123iskais operators, patiess tikai tad, ja abas izteiksmes ir patiesas",
+    "vai": "Lo\u0123iskais operators, patiess, ja vismaz viena izteiksme ir patiesa",
+    "xor": "Ekskluz\u012bvs VAI, patiess, ja patiesa ir tie\u0161i viena izteiksme",
+    "B\u016bla izteiksme": "B\u016bla main\u012bgo un operatoru kombin\u0101cija",
+    "paties\u012bbas tabula": "Tabula, kur\u0101 par\u0101d\u012bta izvade vis\u0101m ievades kombin\u0101cij\u0101m B\u016bla izteiksm\u0113",
+    "pretruna": "B\u016bla izteiksme, kas vienm\u0113r ir nepatiesa",
+    "de Morgana likumi": "Noteikumi manipul\u0113\u0161anai ar B\u016bla izteiksm\u0113m ar NOT, AND un OR",
+    "nosac\u012bts pazi\u0146ojums": "Kontrol\u0113 koda izpildi, pamatojoties uz to, vai nosac\u012bjums ir patiess",
+    "nand": "NOT un - patiess tikai tad, ja abas izteiksmes ir nepatiesas",
+    "nedz": "NAV vai - patiess tikai tad, ja abas izteiksmes ir nepatiesas",
+    "B\u016bla algebra": "Matem\u0101tisk\u0101 sist\u0113ma, ko izmanto B\u016bla lo\u0123ikas model\u0113\u0161anai un anal\u012bzei"
+}

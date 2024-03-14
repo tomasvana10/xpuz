@@ -1,0 +1,14 @@
+{
+    "cpu": "Mae ymennydd y cyfrifiadur, yn gweithredu cyfarwyddiadau",
+    "cof mynediad ar hap": "Cof cyfnewidiol lle mae rhaglenni rhedeg a data yn cael eu storio",
+    "gyriant disg caled": "Dyfais storio anweddol gallu mawr gan ddefnyddio platiau magnetig",
+    "gyriant cyflwr solet": "Storfa anweddol gan ddefnyddio cof fflach, yn gyflymach na HDDs",
+    "bws": "Llwybr i ddata deithio rhwng cydrannau",
+    "dyfais mewnbwn": "Caniat\u00e1u mewnbynnu data i'r cyfrifiadur (fel bysellfwrdd, llygoden)",
+    "dyfais allbwn": "Cyflwyno canlyniadau i'r defnyddiwr (fel monitor, argraffydd)",
+    "mamfwrdd": "Y prif fwrdd cylched sy'n cysylltu holl gydrannau'r cyfrifiadur",
+    "rhwydwaith cyfrifiadurol": "Casgliad o ddyfeisiadau rhyng-gysylltiedig sy'n gallu rhannu adnoddau",
+    "cyfeiriad ip": "Dynodwr rhifiadol unigryw wedi'i neilltuo i bob dyfais ar rwydwaith",
+    "lled band": "Y gyfradd uchaf o drosglwyddo data ar draws llwybr rhwydwaith",
+    "hwyrni": "Yr oedi o ran amser i ddata deithio o'r ffynhonnell i'r gyrchfan"
+}

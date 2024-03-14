@@ -1,0 +1,16 @@
+{
+    "vrai": "Repr\u00e9sente une valeur logique de 1 ou \u00ab\u00a0on\u00a0\u00bb",
+    "FAUX": "Repr\u00e9sente une valeur logique de 0 ou \u00ab\u00a0off\u00a0\u00bb",
+    "pas": "Op\u00e9rateur logique qui inverse la valeur de v\u00e9rit\u00e9 d'une expression",
+    "et": "Op\u00e9rateur logique, vrai uniquement si les deux expressions sont vraies",
+    "ou": "Op\u00e9rateur logique, vrai si au moins une expression est vraie",
+    "xor": "OU exclusif, vrai si exactement une expression est vraie",
+    "Expression bool\u00e9enne": "Une combinaison de variables bool\u00e9ennes et d'op\u00e9rateurs",
+    "table de v\u00e9rit\u00e9": "Tableau montrant le r\u00e9sultat de toutes les combinaisons d'entr\u00e9es dans une expression bool\u00e9enne",
+    "contradiction": "Une expression bool\u00e9enne toujours fausse",
+    "les lois de Morgan": "R\u00e8gles de manipulation des expressions bool\u00e9ennes avec NOT, AND et OR",
+    "instruction conditionnelle": "Contr\u00f4le l'ex\u00e9cution du code selon qu'une condition est vraie ou non",
+    "nand": "NOT et - vrai uniquement si les deux expressions sont fausses",
+    "ni": "NON ou - vrai uniquement si les deux expressions sont fausses",
+    "Alg\u00e8bre de Boole": "Le syst\u00e8me math\u00e9matique utilis\u00e9 pour mod\u00e9liser et analyser la logique bool\u00e9enne"
+}

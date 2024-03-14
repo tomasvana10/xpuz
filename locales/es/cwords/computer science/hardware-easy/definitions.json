@@ -1,0 +1,14 @@
+{
+    "UPC": "El cerebro de la computadora, ejecuta instrucciones.",
+    "memoria de acceso aleatorio": "Memoria vol\u00e1til donde se almacenan los programas y datos en ejecuci\u00f3n.",
+    "disco duro": "Dispositivo de almacenamiento no vol\u00e1til de gran capacidad que utiliza platos magn\u00e9ticos",
+    "unidad de estado s\u00f3lido": "Almacenamiento no vol\u00e1til mediante memoria flash, m\u00e1s r\u00e1pido que los discos duros",
+    "autob\u00fas": "V\u00eda para que los datos viajen entre componentes",
+    "dispositivo de entrada": "Permite la entrada de datos en la computadora (como teclado, mouse)",
+    "dispositivo de salida": "Presenta resultados al usuario (como monitor, impresora)",
+    "tarjeta madre": "La placa de circuito principal que conecta todos los componentes de la computadora.",
+    "Red de computadoras": "Una colecci\u00f3n de dispositivos interconectados que pueden compartir recursos.",
+    "direcci\u00f3n IP": "Un identificador num\u00e9rico \u00fanico asignado a cada dispositivo en una red.",
+    "banda ancha": "La velocidad m\u00e1xima de transferencia de datos a trav\u00e9s de una ruta de red.",
+    "latencia": "El retraso en el tiempo que tardan los datos en viajar desde el origen al destino"
+}

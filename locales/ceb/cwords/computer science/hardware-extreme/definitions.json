@@ -1,0 +1,20 @@
+{
+    "siklo sa pagtudlo": "Ang mga lakang nga gisunod sa usa ka CPU aron ipatuman ang usa ka panudlo",
+    "superscalar nga arkitektura": "Ang disenyo sa CPU nga makahimo sa daghang mga instruksyon matag siklo sa orasan",
+    "panagna sa sanga": "Teknik diin ang CPU mosulay sa pagtag-an kung asa nga paagi moadto ang usa ka kondisyon",
+    "northbridge": "Chipset (karaan nga mga sistema) nga nagkonektar sa CPU sa RAM ug mga high-speed bus",
+    "southbridge": "Chipset (karaan nga mga sistema) nga nagdumala sa hinay nga mga peripheral ug I/O",
+    "hyperthreading": "Ang teknolohiya nga nagtugot sa usa ka CPU core nga makita isip daghang logical cores",
+    "risc": "Gipamub-an nga Instruksyon Set Computer - Ang disenyo sa CPU nga adunay mas simple nga mga instruksyon",
+    "cisc": "Complex Instruction Set Computer - Ang disenyo sa CPU nga adunay gamhanan, komplikado nga mga instruksyon",
+    "simd": "Usa ka Instruksyon Daghang Data, teknik sa pagproseso sa datos nga managsama",
+    "microarchitecture": "Ang piho nga mga detalye sa pagpatuman sa set sa instruksiyon sa CPU",
+    "sistema sa usa ka chip": "Paghiusa sa daghang mga sangkap (CPU, GPU, ug uban pa) sa usa ka chip",
+    "embedded nga sistema": "Usa ka sistema sa kompyuter nga gipahinungod sa usa ka piho nga buluhaton, kasagaran sulod sa usa ka mas dako nga aparato",
+    "firmware": "Ang software nga permanente nga gitipigan sa usa ka hardware device (sama sa BIOS)",
+    "overclocking": "Pagpadagan sa usa ka CPU sa mas taas nga tulin kaysa sa gituyo nga mga detalye",
+    "kodigo sa pagtul-id sa sayop": "Teknik sa pag-ila ug pagtul-id sa mga sayup sa RAM",
+    "out of order execution": "Teknik diin ang usa ka CPU nagpatuman sa mga instruksyon sa mas episyente nga han-ay",
+    "quantum computing": "Ang paggamit sa mga prinsipyo sa quantum mechanics alang sa pagkuwenta",
+    "neuromorphic computing": "Ang mga arkitektura sa kompyuter nga dinasig sa utok nga gidisenyo alang sa mga buluhaton sa AI"
+}

@@ -1,0 +1,16 @@
+{
+    "gwir": "Yn cynrychioli gwerth rhesymegol o 1 neu 'ymlaen'",
+    "ffug": "Yn cynrychioli gwerth rhesymegol o 0 neu 'i ffwrdd'",
+    "ddim": "Gweithredwr rhesymegol sy'n gwrthdroi gwir werth mynegiant",
+    "a": "Gweithredwr rhesymegol, gwir dim ond os yw'r ddau ymadrodd yn wir",
+    "neu": "Gweithredwr rhesymegol, gwir os yw o leiaf un mynegiant yn wir",
+    "xor": "NEU unigryw, gwir os yw un ymadrodd yn union yn wir",
+    "mynegiant boolaidd": "Cyfuniad o newidynnau a gweithredwyr boolaidd",
+    "gwirlen": "Tabl yn dangos yr allbwn ar gyfer pob cyfuniad o fewnbynnau mewn mynegiad boolaidd",
+    "gwrthddywediad": "Mynegiant boolaidd sydd bob amser yn ffug",
+    "deddfau de morgan": "Rheolau ar gyfer trin mynegiadau boolaidd gyda NOT, AND, a OR",
+    "datganiad amodol": "Yn rheoli gweithredu cod yn seiliedig ar a yw amod yn wir",
+    "nand": "NOT a - yn wir dim ond os yw'r ddau ymadrodd yn ffug",
+    "nac ychwaith": "NID neu - yn wir dim ond os yw'r ddau ymadrodd yn ffug",
+    "algebra boolaidd": "Y system fathemategol a ddefnyddir i fodelu a dadansoddi rhesymeg boolean"
+}

@@ -297,6 +297,9 @@ msgstr "Μαθηματικά"
 msgid "Science"
 msgstr "Επιστήμη"
 
+msgid "Computer Science"
+msgstr "Επιστήμη των υπολογιστών"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"

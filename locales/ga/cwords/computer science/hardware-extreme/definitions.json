@@ -1,0 +1,20 @@
+{
+    "timthriall teagaisc": "Na c\u00e9imeanna a leanann LAP chun treoir amh\u00e1in a fhorghn\u00edomh\u00fa",
+    "ailtireacht superscalar": "Dearadh LAP is f\u00e9idir treoracha iolracha a fhorghn\u00edomh\u00fa in aghaidh an timthrialla clog",
+    "tuar brainse": "Teicn\u00edc ina nd\u00e9anann an LAP iarracht a dh\u00e9anamh buille faoi thuairim c\u00e9n bealach a rachaidh coinn\u00edollach",
+    "droichead thuaidh": "Chipset (c\u00f3rais n\u00edos sine) a cheangail an LAP le RAM agus busanna ardluais",
+    "droichead theas": "Chipset (c\u00f3rais n\u00edos sine) a l\u00e1imhse\u00e1il forimeallaigh n\u00edos moille agus I/O",
+    "hyperthreading": "Teicneola\u00edocht a ligeann do chro\u00edl\u00e1r LAP amh\u00e1in a bheith le feice\u00e1il mar chro\u00edl\u00e1ir iolracha loighci\u00fala",
+    "risc": "R\u00edomhaire Socraithe Treoracha Laghdaithe - dearadh LAP le treoracha n\u00edos simpl\u00ed",
+    "cisc": "R\u00edomhaire Coimpl\u00e9asc Set Teagasc - dearadh LAP le treoracha cumhachtacha, casta",
+    "simd": "Teagasc Aonair Sonra\u00ed Il, teicn\u00edocht chun sonra\u00ed a phr\u00f3ise\u00e1il go comhthreomhar",
+    "micriailtireacht": "Sonra\u00ed sonracha cur chun feidhme thacar treoracha LAP",
+    "c\u00f3ras ar sliseanna": "Comhph\u00e1irteanna iolracha (LAP, GPU, etc.) a chomhth\u00e1th\u00fa ar shlis amh\u00e1in",
+    "c\u00f3ras leabaithe": "C\u00f3ras r\u00edomhaireachta tiomnaithe do thasc ar leith, go minic laistigh de ghl\u00e9as n\u00edos m\u00f3",
+    "firmware": "Bogearra\u00ed at\u00e1 st\u00f3r\u00e1ilte go buan ar ghl\u00e9as crua-earra\u00ed (cos\u00fail leis an BIOS)",
+    "overclocking": "LAP a rith ag luas n\u00edos airde n\u00e1 na sonra\u00edochta\u00ed at\u00e1 beartaithe d\u00f3",
+    "c\u00f3d ceart\u00fach\u00e1in earr\u00e1ide": "Teicn\u00edc chun earr\u00e1id\u00ed i RAM a bhrath agus a cheart\u00fa",
+    "forghn\u00edomh\u00fa as ord\u00fa": "Teicn\u00edc ina nd\u00e9anann CPU treoracha in ord n\u00edos \u00e9ifeachta\u00ed",
+    "r\u00edomhaireacht chandamach": "Prionsabail na meicnic chandamach a \u00fas\u00e1id le haghaidh r\u00edomh",
+    "r\u00edomhaireacht n\u00e9aramorfach": "Ailtireacht r\u00edomhaireachta inchinn-spreagtha at\u00e1 deartha le haghaidh tascanna AI"
+}

@@ -1,0 +1,16 @@
+{
+    "tinuod": "Nagrepresentar sa usa ka lohikal nga kantidad sa 1 o 'on'",
+    "bakak": "Nagrepresentar sa usa ka lohikal nga kantidad sa 0 o 'off'",
+    "dili": "Logical operator nga nagbalikbalik sa kamatuoran nga kantidad sa usa ka ekspresyon",
+    "ug": "Logical operator, tinuod lamang kung ang duha ka ekspresyon tinuod",
+    "o": "Logical operator, tinuod kung labing menos usa ka ekspresyon ang tinuod",
+    "xor": "Eksklusibo O, tinuod kung ang usa ka ekspresyon tinuod",
+    "boolean nga ekspresyon": "Usa ka kombinasyon sa boolean variables ug operators",
+    "lamesa sa kamatuoran": "Talaan nga nagpakita sa output alang sa tanang kombinasyon sa mga input sa usa ka boolean nga ekspresyon",
+    "panagsumpaki": "Usa ka boolean nga ekspresyon nga kanunay bakak",
+    "mga balaod ni de morgan": "Mga lagda alang sa pagmaniobra sa boolean nga mga ekspresyon nga adunay DILI, UG, ug O",
+    "kondisyonal nga pahayag": "Gikontrol ang pagpatuman sa code base sa kung ang usa ka kondisyon tinuod",
+    "nand": "DILI ug - tinuod lamang kung ang duha ka ekspresyon bakak",
+    "ni": "DILI o - tinuod lamang kung ang duha ka ekspresyon bakak",
+    "boolean algebra": "Ang sistema sa matematika nga gigamit sa pagmodelo ug pag-analisar sa boolean nga lohika"
+}

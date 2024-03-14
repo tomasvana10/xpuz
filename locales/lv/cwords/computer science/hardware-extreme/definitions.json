@@ -1,0 +1,20 @@
+{
+    "instrukciju cikls": "Darb\u012bbas, ko CPU veic, lai izpild\u012btu vienu instrukciju",
+    "superskal\u0101r\u0101 arhitekt\u016bra": "CPU dizains, kas vien\u0101 pulkste\u0146a cikl\u0101 var izpild\u012bt vair\u0101kas instrukcijas",
+    "zaru prognoze": "Pa\u0146\u0113miens, kur\u0101 centr\u0101lais procesors m\u0113\u0123ina uzmin\u0113t, uz kuru pusi nosac\u012bti virz\u012bsies",
+    "zieme\u013cu tilts": "Chipset (vec\u0101kas sist\u0113mas), kas savienoja centr\u0101lo procesoru ar RAM un \u0101trgaitas autobusiem",
+    "dienvidu tilts": "Chipset (vec\u0101kas sist\u0113mas), kas apstr\u0101d\u0101ja l\u0113n\u0101kas perif\u0113rijas ier\u012bces un I/O",
+    "hiperv\u012bt\u0146u veido\u0161ana": "Tehnolo\u0123ija, kas \u013cauj vienam CPU kodolam par\u0101d\u012bties k\u0101 vair\u0101kiem lo\u0123iskiem kodoliem",
+    "risc": "Samazin\u0101ta instrukciju komplekta dators \u2014 CPU dizains ar vienk\u0101r\u0161\u0101k\u0101m instrukcij\u0101m",
+    "cisc": "Komplekss instrukciju komplekta dators \u2014 CPU dizains ar jaud\u012bg\u0101m, sare\u017e\u0123\u012bt\u0101m instrukcij\u0101m",
+    "simd": "Single Instruction Multiple Data, pa\u0146\u0113miens datu paral\u0113lai apstr\u0101dei",
+    "mikroarhitekt\u016bra": "CPU instrukciju kopas \u012bpa\u0161\u0101 ievie\u0161anas inform\u0101cija",
+    "sist\u0113ma mikrosh\u0113m\u0101": "Vair\u0101ku komponentu (CPU, GPU utt.) integr\u0113\u0161ana vien\u0101 mikrosh\u0113m\u0101",
+    "iegult\u0101 sist\u0113ma": "Datorsist\u0113ma, kas paredz\u0113ta konkr\u0113tam uzdevumam, bie\u017ei vien liel\u0101k\u0101 ier\u012bc\u0113",
+    "programmaparat\u016bra": "Programmat\u016bra, kas past\u0101v\u012bgi saglab\u0101ta aparat\u016bras ier\u012bc\u0113 (piem\u0113ram, BIOS)",
+    "overclocking": "CPU darbin\u0101\u0161ana ar liel\u0101ku \u0101trumu nek\u0101 paredz\u0113ts",
+    "k\u013c\u016bdu labo\u0161anas kods": "Pa\u0146\u0113miens k\u013c\u016bdu noteik\u0161anai un labo\u0161anai RAM",
+    "\u0101rpus k\u0101rtas izpilde": "Pa\u0146\u0113miens, kur\u0101 centr\u0101lais procesors izpilda instrukcijas efekt\u012bv\u0101k\u0101 sec\u012bb\u0101",
+    "kvantu skait\u013co\u0161ana": "Kvantu meh\u0101nikas principu izmanto\u0161ana apr\u0113\u0137inos",
+    "neiromorf\u0101 skait\u013co\u0161ana": "Smadze\u0146u iedvesmotas skait\u013co\u0161anas arhitekt\u016bras, kas paredz\u0113tas AI uzdevumiem"
+}

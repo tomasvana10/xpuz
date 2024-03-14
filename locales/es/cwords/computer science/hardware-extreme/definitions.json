@@ -1,0 +1,20 @@
+{
+    "ciclo de instrucci\u00f3n": "Los pasos que sigue una CPU para ejecutar una sola instrucci\u00f3n.",
+    "arquitectura superescalar": "Dise\u00f1o de CPU que puede ejecutar m\u00faltiples instrucciones por ciclo de reloj.",
+    "predicci\u00f3n de rama": "T\u00e9cnica en la que la CPU intenta adivinar en qu\u00e9 direcci\u00f3n ir\u00e1 un condicional",
+    "puente norte": "Chipset (sistemas m\u00e1s antiguos) que conectaba la CPU a la RAM y buses de alta velocidad",
+    "puente sur": "Conjunto de chips (sistemas m\u00e1s antiguos) que manejaba perif\u00e9ricos y E/S m\u00e1s lentos.",
+    "hiperproceso": "Tecnolog\u00eda que permite que un solo n\u00facleo de CPU aparezca como m\u00faltiples n\u00facleos l\u00f3gicos",
+    "riesgo": "Computadora con conjunto de instrucciones reducido: dise\u00f1o de CPU con instrucciones m\u00e1s simples",
+    "cisc": "Computadora con conjunto de instrucciones complejas: dise\u00f1o de CPU con instrucciones potentes y complejas",
+    "simd": "Instrucci\u00f3n \u00fanica Datos m\u00faltiples, t\u00e9cnica para procesar datos en paralelo",
+    "microarquitectura": "Los detalles de implementaci\u00f3n espec\u00edficos del conjunto de instrucciones de una CPU",
+    "sistema en un chip": "Integrar m\u00faltiples componentes (CPU, GPU, etc.) en un solo chip",
+    "sistema Integrado": "Un sistema inform\u00e1tico dedicado a una tarea espec\u00edfica, a menudo dentro de un dispositivo m\u00e1s grande.",
+    "firmware": "Software almacenado permanentemente en un dispositivo de hardware (como el BIOS)",
+    "overclocking": "Ejecutar una CPU a una velocidad superior a las especificaciones previstas",
+    "c\u00f3digo de correcci\u00f3n de errores": "T\u00e9cnica para detectar y corregir errores en la RAM",
+    "ejecuci\u00f3n fuera de orden": "T\u00e9cnica en la que una CPU ejecuta instrucciones en un orden m\u00e1s eficiente",
+    "computaci\u00f3n cu\u00e1ntica": "Aprovechar los principios de la mec\u00e1nica cu\u00e1ntica para la computaci\u00f3n",
+    "computaci\u00f3n neurom\u00f3rfica": "Arquitecturas inform\u00e1ticas inspiradas en el cerebro dise\u00f1adas para tareas de IA"
+}

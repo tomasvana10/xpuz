@@ -1,0 +1,20 @@
+{
+    "ciclo de instru\u00e7\u00e3o": "As etapas que uma CPU segue para executar uma \u00fanica instru\u00e7\u00e3o",
+    "arquitetura superescalar": "Design de CPU que pode executar m\u00faltiplas instru\u00e7\u00f5es por ciclo de clock",
+    "previs\u00e3o de ramifica\u00e7\u00e3o": "T\u00e9cnica onde a CPU tenta adivinhar para que lado uma condicional ir\u00e1",
+    "Ponte norte": "Chipset (sistemas mais antigos) que conectava a CPU \u00e0 RAM e barramentos de alta velocidade",
+    "ponte sul": "Chipset (sistemas mais antigos) que lidava com perif\u00e9ricos e E/S mais lentos",
+    "hiperthreading": "Tecnologia que permite que um \u00fanico n\u00facleo de CPU apare\u00e7a como m\u00faltiplos n\u00facleos l\u00f3gicos",
+    "arriscado": "Computador com conjunto de instru\u00e7\u00f5es reduzido - design de CPU com instru\u00e7\u00f5es mais simples",
+    "cisc": "Computador com conjunto de instru\u00e7\u00f5es complexas - design de CPU com instru\u00e7\u00f5es poderosas e complexas",
+    "sim": "Dados m\u00faltiplos de instru\u00e7\u00e3o \u00fanica, t\u00e9cnica para processamento de dados em paralelo",
+    "microarquitetura": "Os detalhes espec\u00edficos de implementa\u00e7\u00e3o do conjunto de instru\u00e7\u00f5es de uma CPU",
+    "sistema em um chip": "Integra\u00e7\u00e3o de v\u00e1rios componentes (CPU, GPU, etc.) em um \u00fanico chip",
+    "sistema embarcado": "Um sistema de computador dedicado a uma tarefa espec\u00edfica, muitas vezes dentro de um dispositivo maior",
+    "firmware": "Software armazenado permanentemente em um dispositivo de hardware (como o BIOS)",
+    "overclock": "Executando uma CPU em uma velocidade maior do que as especifica\u00e7\u00f5es pretendidas",
+    "c\u00f3digo de corre\u00e7\u00e3o de erros": "T\u00e9cnica para detectar e corrigir erros na RAM",
+    "execu\u00e7\u00e3o fora de ordem": "T\u00e9cnica onde uma CPU executa instru\u00e7\u00f5es em uma ordem mais eficiente",
+    "Computa\u00e7\u00e3o qu\u00e2ntica": "Aproveitando princ\u00edpios da mec\u00e2nica qu\u00e2ntica para computa\u00e7\u00e3o",
+    "computa\u00e7\u00e3o neurom\u00f3rfica": "Arquiteturas de computa\u00e7\u00e3o inspiradas no c\u00e9rebro projetadas para tarefas de IA"
+}

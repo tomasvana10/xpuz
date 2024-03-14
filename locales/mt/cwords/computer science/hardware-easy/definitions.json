@@ -1,0 +1,14 @@
+{
+    "CPU": "Il-mo\u0127\u0127 tal-kompjuter, jesegwixxi l-istruzzjonijiet",
+    "memorja b'a\u010b\u010bess ka\u017cwali": "Memorja volatili fejn jin\u0127a\u017cnu programmi u data li qed ja\u0127dmu",
+    "hard disk drive": "Apparat ta '\u0127a\u017cna mhux volatili ta' kapa\u010bit\u00e0 kbira li ju\u017ca platti manjeti\u010bi",
+    "drive stat solidu": "\u0126a\u017cna mhux volatili bl-u\u017cu ta 'memorja flash, aktar mg\u0127a\u0121\u0121la minn HDDs",
+    "xarabank": "Mog\u0127dija g\u0127ad-data biex tivvja\u0121\u0121a bejn il-komponenti",
+    "apparat tad-d\u0127ul": "Jippermetti d-d\u0127ul tad-dejta fil-kompjuter (b\u0127al tastiera, maws)",
+    "apparat tal-\u0127ru\u0121": "Jippre\u017centa r-ri\u017cultati lill-utent (b\u0127al monitor, printer)",
+    "motherboard": "Il-bord ta\u010b-\u010birkwit prin\u010bipali li jg\u0127aqqad il-komponenti kollha tal-kompjuter",
+    "netwerk tal-kompjuter": "\u0120abra ta\u2019 apparati interkonnessi li jistg\u0127u jaqsmu r-ri\u017corsi",
+    "indirizz ip": "Identifikatur numeriku uniku assenjat lil kull apparat fuq netwerk",
+    "bandwidth": "Ir-rata massima ta' trasferiment tad-data fuq mog\u0127dija tan-netwerk",
+    "latenza": "Id-dewmien fil-\u0127in biex id-dejta tivvja\u0121\u0121a mis-sors g\u0127ad-destinazzjoni"
+}

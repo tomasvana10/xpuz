@@ -1,0 +1,20 @@
+{
+    "ikot ng pagtuturo": "Ang mga hakbang na sinusunod ng CPU upang magsagawa ng isang pagtuturo",
+    "superscalar na arkitektura": "Ang disenyo ng CPU na maaaring magsagawa ng maraming mga tagubilin sa bawat ikot ng orasan",
+    "hula ng sangay": "Pamamaraan kung saan sinusubukan ng CPU na hulaan kung saan pupunta ang isang kondisyon",
+    "Hilagang tulay": "Chipset (mas lumang mga system) na nagkonekta sa CPU sa RAM at mga high-speed na bus",
+    "southbridge": "Chipset (mas lumang mga system) na humawak ng mas mabagal na peripheral at I/O",
+    "hyperthreading": "Teknolohiya na nagpapahintulot sa isang core ng CPU na lumitaw bilang maramihang mga lohikal na core",
+    "risc": "Reduced Instruction Set Computer - Disenyo ng CPU na may mas simpleng mga tagubilin",
+    "cisc": "Complex Instruction Set Computer - Disenyo ng CPU na may malakas, kumplikadong mga tagubilin",
+    "simd": "Iisang Instruksyon Maramihang Data, pamamaraan para sa pagproseso ng data nang magkatulad",
+    "microarchitecture": "Ang mga partikular na detalye ng pagpapatupad ng set ng pagtuturo ng CPU",
+    "sistema sa isang chip": "Pagsasama ng maraming bahagi (CPU, GPU, atbp.) sa isang chip",
+    "naka-embed na sistema": "Isang computer system na nakatuon sa isang partikular na gawain, kadalasan sa loob ng mas malaking device",
+    "firmware": "Permanenteng nakaimbak ang software sa isang hardware device (tulad ng BIOS)",
+    "overclocking": "Pagpapatakbo ng CPU sa mas mataas na bilis kaysa sa mga inilaan nitong detalye",
+    "code sa pagwawasto ng error": "Pamamaraan upang makita at itama ang mga error sa RAM",
+    "out of order execution": "Pamamaraan kung saan ang isang CPU ay nagpapatupad ng mga tagubilin sa isang mas mahusay na pagkakasunud-sunod",
+    "quantum computing": "Paggamit ng mga prinsipyo ng quantum mechanics para sa pagtutuos",
+    "neuromorphic computing": "Mga arkitekturang computing na inspirasyon ng utak na idinisenyo para sa mga gawain ng AI"
+}

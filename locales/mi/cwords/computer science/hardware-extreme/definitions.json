@@ -1,0 +1,20 @@
+{
+    "huringa tohutohu": "Ko nga hikoinga e whai ana te PTM ki te whakahaere i tetahi tohutohu",
+    "hoahoanga superscalar": "Hoahoa PTM ka taea te whakahaere i nga tohutohu maha mo ia huringa karaka",
+    "matapae peka": "Hangarau e ngana ana te PTM ki te whakaaro ko tehea huarahi e haere ai te herenga",
+    "piriti tokerau": "Chipset (nga punaha tawhito) e hono ana i te PTM ki te RAM me nga pahi tere-tere",
+    "piriti tonga": "Chipset (p\u016bnaha tawhito) i whakahaere i nga taputapu puhoi me te I/O",
+    "miihiitua": "Hangarau e tuku ana i te uho PTM kotahi kia puta hei uho arorau maha",
+    "risc": "Rorohiko Whakaitinga Tohutohu - Hoahoa PTM me nga tohutohu ngawari ake",
+    "cisc": "Rorohiko Tautuhi Tohutohu Matatini - Hoahoa PTM me nga tohutohu kaha, uaua",
+    "simd": "Tohutohu Takitahi Raraunga Maha, tikanga mo te tukatuka raraunga whakarara",
+    "hangahanga moroiti": "Nga taipitopito whakatinanatanga motuhake o te huinga tohutohu a te PTM",
+    "p\u016bnaha i runga i te maramara": "Te whakauru i nga waahanga maha (CPU, GPU, me etahi atu) i runga i te maramara kotahi",
+    "p\u016bnaha t\u0101mau": "He punaha rorohiko e whakatapua ana ki tetahi mahi motuhake, i te nuinga o te waa kei roto i tetahi taputapu nui ake",
+    "m\u0101r\u014d": "P\u016bmanawa penapena p\u016bmau ki runga taputapu p\u016bm\u0101r\u014d (p\u0113r\u0101 i te BIOS)",
+    "overclocking": "Te whakahaere i te PTM i runga i te tere tere atu i ana whakaritenga",
+    "waehere whakatika hapa": "Hangarau ki te kite me te whakatika hapa i roto i te RAM",
+    "i waho o te ota mahi": "Tikanga ka mahia e te PTM nga tohutohu i runga i te raupapa pai ake",
+    "rorohiko quantum": "Te whakamahi i nga maataapono o te miihini quantum mo te tatau",
+    "rorohiko neuromorphic": "Ko nga hoahoanga rorohiko i whakaawehia e te roro i hangaia mo nga mahi AI"
+}

@@ -1,0 +1,20 @@
+{
+    "irakaskuntza-zikloa": "PUZ batek instrukzio bakarra exekutatzeko jarraitzen dituen urratsak",
+    "arkitektura gaineskalarra": "Erloju-ziklo bakoitzeko hainbat instrukzio exekutatu ditzakeen CPU diseinua",
+    "adar iragarpena": "PUZa baldintzatzaile batek zein bide hartuko duen asmatzen saiatzen den teknika",
+    "iparraldeko zubia": "PUZa RAM eta abiadura handiko busekin konektatzen zuen chipset (sistema zaharragoak).",
+    "hego zubia": "Chipset (sistema zaharragoak) periferiko motelagoak eta I/O maneiatzen zituena",
+    "hiperharia": "PUZaren nukleo bakarra nukleo logiko anitz gisa agertzea ahalbidetzen duen teknologia",
+    "arriskatu": "Instrukzio multzo murriztua Ordenagailua - PUZaren diseinua argibide sinpleagoekin",
+    "zisc": "Complex Instruction Set Computer - PUZaren diseinua argibide indartsu eta konplexuekin",
+    "simd": "Single Instruction Multiple Data, datuak paraleloan prozesatzeko teknika",
+    "mikroarkitektura": "CPU baten instrukzio-multzoaren ezarpen zehatzak",
+    "sistema txip batean": "Osagai anitz (CPU, GPU, etab.) integratzea txip bakarrean",
+    "sistema txertatua": "Zeregin zehatz bati eskainitako sistema informatikoa, askotan gailu handiago baten barruan",
+    "firmwarea": "Hardware gailu batean betirako gordetako softwarea (BIOSan adibidez)",
+    "overclocking": "CPU bat aurreikusitako zehaztapenak baino abiadura handiagoan exekutatzen",
+    "akatsak zuzentzeko kodea": "RAMan akatsak hautemateko eta zuzentzeko teknika",
+    "ordenaz kanpoko exekuzioa": "PUZ batek aginduak ordena eraginkorragoan exekutatzen dituen teknika",
+    "konputazio kuantikoa": "Konputaziorako mekanika kuantikoaren printzipioak aprobetxatzea",
+    "informatika neuromorfikoa": "Burmuinean inspiratutako informatika-arkitekturak AI zereginetarako diseinatuta"
+}

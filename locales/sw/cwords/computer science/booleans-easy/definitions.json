@@ -1,0 +1,15 @@
+{
+    "kweli": "Inawakilisha thamani ya kimantiki ya 1 au 'kuwasha'",
+    "uongo": "Inawakilisha thamani ya kimantiki ya 0 au 'kuzima'",
+    "sivyo": "Opereta wa kimantiki anayebadilisha thamani ya ukweli ya usemi",
+    "na": "SI na - kweli ikiwa tu maneno yote mawili ni ya uwongo",
+    "au": "Opereta wa kimantiki, kweli ikiwa angalau usemi mmoja ni kweli",
+    "xor": "Kipekee AU, kweli ikiwa usemi mmoja ni kweli",
+    "usemi wa boolean": "Mchanganyiko wa vigezo vya boolean na waendeshaji",
+    "meza ya ukweli": "Jedwali linaloonyesha matokeo ya michanganyiko yote ya ingizo katika usemi wa boolean",
+    "utata": "Usemi wa boolean ambao kila wakati ni wa uwongo",
+    "sheria za de morgan": "Sheria za kudhibiti misemo ya boolean na NOT, AND, na AU",
+    "kauli ya masharti": "Hudhibiti utekelezaji wa msimbo kulingana na ikiwa hali ni kweli",
+    "wala": "SI au - kweli ikiwa tu maneno yote mawili ni ya uwongo",
+    "algebra ya boolean": "Mfumo wa hisabati unaotumika kuiga na kuchanganua mantiki ya boolean"
+}

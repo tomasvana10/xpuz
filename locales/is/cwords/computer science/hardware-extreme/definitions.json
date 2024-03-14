@@ -1,0 +1,20 @@
+{
+    "kennslulotu": "Skrefin sem CPU fylgir til a\u00f0 framkv\u00e6ma eina lei\u00f0beiningar",
+    "yfirskala arkitekt\u00far": "CPU h\u00f6nnun sem getur framkv\u00e6mt margar lei\u00f0beiningar \u00e1 hverri klukkulotu",
+    "\u00fatib\u00fassp\u00e1": "T\u00e6kni \u00fear sem \u00f6rgj\u00f6rvinn reynir a\u00f0 giska \u00e1 hva\u00f0a lei\u00f0 skilyrt mun fara",
+    "nor\u00f0urbr\u00fa": "Fl\u00edsasett (eldri kerfi) sem tengdi CPU vi\u00f0 vinnsluminni og h\u00e1hra\u00f0a r\u00fatur",
+    "su\u00f0urbr\u00fa": "Fl\u00edsasett (eldri kerfi) sem h\u00f6ndla\u00f0i h\u00e6gari ja\u00f0art\u00e6ki og I/O",
+    "ofur\u00fer\u00e1\u00f0ur": "T\u00e6kni sem gerir einum CPU kjarna kleift a\u00f0 birtast sem margar r\u00f6kr\u00e9ttar kjarna",
+    "\u00e1h\u00e6tta": "Minnka\u00f0 lei\u00f0beiningasett T\u00f6lva - CPU h\u00f6nnun me\u00f0 einfaldari lei\u00f0beiningum",
+    "cisc": "Complex Instruction Set Computer - CPU h\u00f6nnun me\u00f0 \u00f6flugum, fl\u00f3knum lei\u00f0beiningum",
+    "simd": "Single Instruction Multiple Data, t\u00e6kni til a\u00f0 vinna g\u00f6gn samhli\u00f0a",
+    "\u00f6rarkitekt\u00far": "S\u00e9rstakar \u00fatf\u00e6rsluuppl\u00fdsingar um lei\u00f0beiningasett CPU",
+    "kerfi \u00e1 fl\u00eds": "Sam\u00fe\u00e6ttir marga \u00edhluti (CPU, GPU, osfrv.) \u00e1 einum fl\u00eds",
+    "innbyggt kerfi": "T\u00f6lvukerfi tileinka\u00f0 tilteknu verkefni, oft innan st\u00e6rra t\u00e6kis",
+    "v\u00e9lb\u00fana\u00f0ar": "Hugb\u00fana\u00f0ur varanlega geymdur \u00e1 v\u00e9lb\u00fana\u00f0art\u00e6ki (eins og BIOS)",
+    "yfirklukkun": "A\u00f0 keyra \u00f6rgj\u00f6rva \u00e1 meiri hra\u00f0a en \u00e6tla\u00f0ar eru",
+    "villulei\u00f0r\u00e9ttingark\u00f3\u00f0i": "T\u00e6kni til a\u00f0 greina og lei\u00f0r\u00e9tta villur \u00ed vinnsluminni",
+    "\u00f3reglu framkv\u00e6md": "T\u00e6kni \u00fear sem CPU framkv\u00e6mir lei\u00f0beiningar \u00ed skilvirkari r\u00f6\u00f0",
+    "skammtafr\u00e6\u00f0i": "N\u00fdta meginreglur skammtafr\u00e6\u00f0innar fyrir \u00fatreikninga",
+    "neuromorphic computing": "Heilainnbl\u00e1sinn t\u00f6lvuarkitekt\u00far hanna\u00f0ur fyrir gervigreind verkefni"
+}

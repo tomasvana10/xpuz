@@ -1,0 +1,14 @@
+{
+    "cpu": "Ang utok sa kompyuter, nagpatuman sa mga instruksyon",
+    "random access memory": "Ang dali nga panumduman diin ang nagdagan nga mga programa ug datos gitipigan",
+    "hard disk drive": "Dako nga kapasidad nga non-volatile storage device gamit ang magnetic platters",
+    "solid state drive": "Non-volatile storage gamit ang flash memory, mas paspas kay sa HDDs",
+    "bus": "Pathway alang sa data sa pagbiyahe tali sa mga sangkap",
+    "input device": "Gitugotan ang pagsulod sa datos sa kompyuter (sama sa keyboard, mouse)",
+    "output device": "Nagpresentar sa mga resulta ngadto sa user (sama sa monitor, printer)",
+    "motherboard": "Ang nag-unang circuit board nga nagkonektar sa tanan nga mga sangkap sa kompyuter",
+    "network sa kompyuter": "Usa ka koleksyon sa mga interconnected device nga makapaambit sa mga kapanguhaan",
+    "ip address": "Usa ka talagsaon nga numerical identifier nga gi-assign sa matag device sa usa ka network",
+    "bandwidth": "Ang labing kadaghan nga rate sa pagbalhin sa datos sa usa ka agianan sa network",
+    "latency": "Ang paglangan sa oras alang sa data sa pagbiyahe gikan sa gigikanan ngadto sa destinasyon"
+}

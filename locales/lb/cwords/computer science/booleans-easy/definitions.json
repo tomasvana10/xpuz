@@ -1,0 +1,16 @@
+{
+    "wouer": "Represent\u00e9iert e logesche W\u00e4ert vun 1 oder 'on'",
+    "falsch": "Represent\u00e9iert e logesche W\u00e4ert vun 0 oder 'off'",
+    "net": "Logesche Bedreiwer deen de Wahrheetsw\u00e4ert vun engem Ausdrock \u00ebmgedr\u00e9it",
+    "an": "Logesche Bedreiwer, richteg n\u00ebmme wa b\u00e9id Ausdr\u00e9ck richteg sinn",
+    "oder": "Logesch Bedreiwer, richteg wann op d'mannst een Ausdrock richteg ass",
+    "xor": "Exklusiv ODER, wouer wann genau een Ausdrock richteg ass",
+    "booleschen Ausdrock": "Eng Kombinatioun vu boolesche Ver\u00e4nnerlechen a Betreiber",
+    "Wourecht D\u00ebsch": "D\u00ebsch d\u00e9i den Ausgang fir all Kombinatioune vun Input an engem booleschen Ausdrock weist",
+    "Widdersproch": "E booleschen Ausdrock deen \u00ebmmer falsch ass",
+    "de Morgans Gesetzer": "Regele fir d'Manipulatioun vun booleschen Ausdr\u00e9ck mat NET, AN an ODER",
+    "bedingt Ausso": "Kontroll\u00e9iert d'Ausf\u00e9ierung vum Code bas\u00e9iert op ob eng Bedingung richteg ass",
+    "nand": "NET an - richteg n\u00ebmme wa b\u00e9id Ausdr\u00e9ck falsch sinn",
+    "nach": "NET oder - richteg n\u00ebmme wa b\u00e9id Ausdr\u00e9ck falsch sinn",
+    "boolesch Algebra": "De mathematesche System benotzt fir d'Boolesch Logik ze modell\u00e9ieren an ze analys\u00e9ieren"
+}

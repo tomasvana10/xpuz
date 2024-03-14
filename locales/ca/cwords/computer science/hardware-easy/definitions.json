@@ -1,0 +1,14 @@
+{
+    "CPU": "El cervell de l'ordinador, executa instruccions",
+    "mem\u00f2ria d'acc\u00e9s aleatori": "Mem\u00f2ria vol\u00e0til on s'emmagatzemen els programes en execuci\u00f3 i les dades",
+    "unitat de disc dur": "Dispositiu d'emmagatzematge no vol\u00e0til de gran capacitat amb plats magn\u00e8tics",
+    "unitat d'estat s\u00f2lid": "Emmagatzematge no vol\u00e0til mitjan\u00e7ant mem\u00f2ria flash, m\u00e9s r\u00e0pid que els HDD",
+    "autob\u00fas": "Via de les dades per viatjar entre components",
+    "Dispositiu d'entrada": "Permet l'entrada de dades a l'ordinador (com el teclat, el ratol\u00ed)",
+    "dispositiu de sortida": "Presenta els resultats a l'usuari (com ara monitor, impressora)",
+    "placa base": "La placa de circuit principal que connecta tots els components de l'ordinador",
+    "xarxa inform\u00e0tica": "Una col\u00b7lecci\u00f3 de dispositius interconnectats que poden compartir recursos",
+    "adre\u00e7a IP": "Un identificador num\u00e8ric \u00fanic assignat a cada dispositiu d'una xarxa",
+    "ample de banda": "La velocitat m\u00e0xima de transfer\u00e8ncia de dades a trav\u00e9s d'una ruta de xarxa",
+    "lat\u00e8ncia": "El retard en el temps per a que les dades viatgen de la font a la destinaci\u00f3"
+}

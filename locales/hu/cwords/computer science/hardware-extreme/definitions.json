@@ -1,0 +1,20 @@
+{
+    "oktat\u00e1si ciklus": "Azok a l\u00e9p\u00e9sek, amelyeket a CPU k\u00f6vet egyetlen utas\u00edt\u00e1s v\u00e9grehajt\u00e1s\u00e1hoz",
+    "szuperskal\u00e1ris architekt\u00fara": "CPU kialak\u00edt\u00e1s, amely t\u00f6bb utas\u00edt\u00e1st is v\u00e9grehajthat \u00f3rajelenk\u00e9nt",
+    "\u00e1g el\u0151rejelz\u00e9se": "Technika, ahol a CPU megpr\u00f3b\u00e1lja kital\u00e1lni, hogy a felt\u00e9teles felt\u00e9tel melyik ir\u00e1nyba halad",
+    "\u00e9szaki h\u00edd": "Chipset (r\u00e9gebbi rendszerek), amely a CPU-t RAM-hoz \u00e9s nagy sebess\u00e9g\u0171 buszokhoz k\u00f6t\u00f6tte",
+    "d\u00e9li h\u00edd": "Chipset (r\u00e9gebbi rendszerek), amely lassabb perif\u00e9ri\u00e1kat \u00e9s I/O-t kezelt",
+    "hyperthreading": "Technol\u00f3gia, amely lehet\u0151v\u00e9 teszi, hogy egyetlen CPU mag t\u00f6bb logikai magk\u00e9nt jelenjen meg",
+    "risc": "Cs\u00f6kkentett utas\u00edt\u00e1sk\u00e9szlet\u0171 sz\u00e1m\u00edt\u00f3g\u00e9p \u2013 CPU kialak\u00edt\u00e1s egyszer\u0171bb utas\u00edt\u00e1sokkal",
+    "cisc": "Komplex utas\u00edt\u00e1sk\u00e9szlet\u0171 sz\u00e1m\u00edt\u00f3g\u00e9p \u2013 CPU-kialak\u00edt\u00e1s er\u0151teljes, \u00f6sszetett utas\u00edt\u00e1sokkal",
+    "simd": "Single Instruction Multiple Data, az adatok p\u00e1rhuzamos feldolgoz\u00e1s\u00e1nak technik\u00e1ja",
+    "mikroarchitekt\u00fara": "A CPU utas\u00edt\u00e1sk\u00e9szlet\u00e9nek konkr\u00e9t megval\u00f3s\u00edt\u00e1si r\u00e9szletei",
+    "rendszer egy chipen": "T\u00f6bb komponens (CPU, GPU stb.) integr\u00e1l\u00e1sa egyetlen chipen",
+    "be\u00e1gyazott rendszer": "Egy adott feladatra sz\u00e1nt sz\u00e1m\u00edt\u00f3g\u00e9pes rendszer, gyakran egy nagyobb eszk\u00f6z\u00f6n bel\u00fcl",
+    "firmware": "Egy hardvereszk\u00f6z\u00f6n tart\u00f3san t\u00e1rolt szoftver (p\u00e9ld\u00e1ul a BIOS)",
+    "t\u00falh\u00faz\u00e1s": "CPU futtat\u00e1sa a tervezett specifik\u00e1ci\u00f3n\u00e1l nagyobb sebess\u00e9ggel",
+    "hibajav\u00edt\u00f3 k\u00f3d": "A RAM-ban l\u00e9v\u0151 hib\u00e1k \u00e9szlel\u00e9s\u00e9nek \u00e9s kijav\u00edt\u00e1s\u00e1nak technik\u00e1ja",
+    "soron k\u00edv\u00fcli v\u00e9grehajt\u00e1s": "Technika, ahol a CPU hat\u00e9konyabb sorrendben hajtja v\u00e9gre az utas\u00edt\u00e1sokat",
+    "kvantumsz\u00e1m\u00edt\u00e1s": "A kvantummechanika elveinek felhaszn\u00e1l\u00e1sa a sz\u00e1m\u00edt\u00e1sokhoz",
+    "neuromorf sz\u00e1m\u00edt\u00e1stechnika": "Agy \u00e1ltal ihletett sz\u00e1m\u00edt\u00e1stechnikai architekt\u00far\u00e1k mesters\u00e9ges intelligencia-feladatokhoz"
+}

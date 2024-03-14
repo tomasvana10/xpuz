@@ -1,0 +1,23 @@
+{
+    "daftar": "Koleksi item yang teratur dan dapat diubah",
+    "mengatur": "Kumpulan elemen unik yang tidak berurutan",
+    "kamus": "Tipe data mirip JSON dengan pasangan kunci dan nilai",
+    "tupel": "Tipe data array yang terurut, terindeks, dan tidak dapat diubah",
+    "tidak ada": "Mewakili tidak adanya nilai",
+    "def": "Membuat fungsi baru",
+    "kembali": "Mengirimkan nilai kembali dari suatu fungsi",
+    "menghasilkan": "Mengonversi suatu fungsi menjadi fungsi generator (yang merupakan iterator dan iterable)",
+    "lambda": "Membuat fungsi anonim",
+    "lulus": "Pernyataan placeholder yang tidak melakukan apa pun",
+    "merusak": "Keluar dari loop sebelum waktunya",
+    "melanjutkan": "Lompat ke iterasi loop berikutnya",
+    "Akhirnya": "Jalankan setelah blok coba/kecuali terlepas dari apakah kesalahan tertangkap atau tidak",
+    "global": "Mendeklarasikan variabel memiliki cakupan global",
+    "nonlokal": "Mendeklarasikan variabel menjadi milik fungsi luar",
+    "mencoba": "Memulai blok kode dengan penanganan kesalahan",
+    "kecuali": "Menangkap dan menangani pengecualian tertentu",
+    "mengangkat": "Sengaja memicu pengecualian",
+    "menegaskan": "Mengevaluasi ekspresi dan memunculkan kesalahan jika salah",
+    "dengan": "Digunakan untuk manajer konteks untuk mengelola sumber daya",
+    "kelas": "Cetak biru untuk membuat objek"
+}

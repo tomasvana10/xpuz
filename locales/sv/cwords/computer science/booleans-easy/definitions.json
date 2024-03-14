@@ -1,0 +1,16 @@
+{
+    "Sann": "Representerar ett logiskt v\u00e4rde p\u00e5 1 eller \"p\u00e5\"",
+    "falsk": "Representerar ett logiskt v\u00e4rde p\u00e5 0 eller 'av'",
+    "inte": "Logisk operator som v\u00e4nder p\u00e5 ett uttrycks sanningsv\u00e4rde",
+    "och": "Logisk operator, sann endast om b\u00e5da uttrycken \u00e4r sanna",
+    "eller": "Logisk operator, sant om minst ett uttryck \u00e4r sant",
+    "xor": "Exklusivt ELLER, sant om exakt ett uttryck \u00e4r sant",
+    "booleskt uttryck": "En kombination av booleska variabler och operatorer",
+    "sanningstabell": "Tabell som visar utdata f\u00f6r alla kombinationer av indata i ett booleskt uttryck",
+    "mots\u00e4gelse": "Ett booleskt uttryck som alltid \u00e4r falskt",
+    "de morgans lagar": "Regler f\u00f6r att manipulera booleska uttryck med NOT, AND och OR",
+    "Villkorligt uttalande": "Styr kodexekveringen baserat p\u00e5 om ett villkor \u00e4r sant",
+    "nand": "NOT och - sant endast om b\u00e5da uttrycken \u00e4r falska",
+    "inte heller": "NOT eller - sant endast om b\u00e5da uttrycken \u00e4r falska",
+    "boolesk algebra": "Det matematiska systemet som anv\u00e4nds f\u00f6r att modellera och analysera boolesk logik"
+}

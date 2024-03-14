@@ -295,6 +295,9 @@ msgstr "Toán học"
 msgid "Science"
 msgstr "Khoa học"
 
+msgid "Computer Science"
+msgstr "Khoa học máy tính"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"

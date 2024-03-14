@@ -1,0 +1,23 @@
+{
+    "lista": "Uma cole\u00e7\u00e3o ordenada e mut\u00e1vel de itens",
+    "definir": "Uma cole\u00e7\u00e3o n\u00e3o ordenada de elementos \u00fanicos",
+    "dicion\u00e1rio": "Um tipo de dados semelhante a JSON com pares de chave e valor",
+    "tupla": "Um tipo de dados de array ordenado, indexado e imut\u00e1vel",
+    "nenhum": "Representa a aus\u00eancia de um valor",
+    "defini\u00e7\u00e3o": "Cria uma nova fun\u00e7\u00e3o",
+    "retornar": "Envia um valor de volta de uma fun\u00e7\u00e3o",
+    "colheita": "Converte uma fun\u00e7\u00e3o em uma fun\u00e7\u00e3o geradora (que \u00e9 um iterador e um iter\u00e1vel)",
+    "lambda": "Cria uma fun\u00e7\u00e3o an\u00f4nima",
+    "passar": "Uma declara\u00e7\u00e3o de espa\u00e7o reservado que n\u00e3o faz nada",
+    "quebrar": "Sair de um loop prematuramente",
+    "continuar": "Pula para a pr\u00f3xima itera\u00e7\u00e3o de um loop",
+    "finalmente": "Executar ap\u00f3s um bloco try/except independentemente de um erro ter sido detectado ou n\u00e3o",
+    "global": "Declara uma vari\u00e1vel para ter escopo global",
+    "n\u00e3o local": "Declara que uma vari\u00e1vel pertence a uma fun\u00e7\u00e3o externa",
+    "tentar": "Inicia um bloco de c\u00f3digo com tratamento de erros",
+    "exceto": "Captura e trata exce\u00e7\u00f5es espec\u00edficas",
+    "eleva\u00e7\u00e3o": "Aciona deliberadamente uma exce\u00e7\u00e3o",
+    "afirmar": "Avalia uma express\u00e3o e gera um erro se for falsa",
+    "com": "Usado para gerenciadores de contexto para gerenciar recursos",
+    "aula": "Blueprint para criar objetos"
+}

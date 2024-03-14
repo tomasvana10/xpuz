@@ -1,0 +1,23 @@
+{
+    "ro'yxati": "Buyurtma qilingan, o'zgaruvchan narsalar to'plami",
+    "o'rnatish": "Noyob elementlarning tartibsiz to'plami",
+    "lug'at": "Kalit va qiymat juftlariga ega JSONga o'xshash ma'lumotlar turi",
+    "tuple": "Tartiblangan, indekslangan, o'zgarmas massiv ma'lumotlar turi",
+    "yo'q": "Qiymatning yo'qligini ifodalaydi",
+    "def": "Yangi funksiya yaratadi",
+    "qaytish": "Funktsiyadan qiymatni qaytarib yuboradi",
+    "Yo'l bering": "Funktsiyani generator funksiyasiga aylantiradi (bu ham iterator, ham iterativdir)",
+    "lambda": "Anonim funksiya yaratadi",
+    "o'tish": "Hech narsa qilmaydigan to'ldiruvchi bayonot",
+    "tanaffus": "Loopdan muddatidan oldin chiqing",
+    "davom eting": "Loopning keyingi iteratsiyasiga o'tadi",
+    "nihoyat": "Xato aniqlanganmi yoki yo'qmi, urinish/istisno blokidan keyin bajaring",
+    "global": "O'zgaruvchini global qamrovga ega deb e'lon qiladi",
+    "mahalliy bo'lmagan": "O'zgaruvchini tashqi funktsiyaga tegishli deb e'lon qiladi",
+    "harakat qilib ko'ring": "Xatolarni qayta ishlash bilan kod blokini ishga tushiradi",
+    "bundan mustasno": "Muayyan istisnolarni ushlaydi va boshqaradi",
+    "oshirish": "Istisnoni ataylab ishga soladi",
+    "da'vo qilish": "Ifodani baholaydi va agar u noto'g'ri bo'lsa, xato qiladi",
+    "bilan": "Resurslarni boshqarish uchun kontekst menejerlari uchun foydalaniladi",
+    "sinf": "Ob'ektlarni yaratish uchun sxema"
+}

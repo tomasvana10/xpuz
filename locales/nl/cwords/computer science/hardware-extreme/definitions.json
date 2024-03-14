@@ -1,0 +1,20 @@
+{
+    "instructie cyclus": "De stappen die een CPU volgt om een enkele instructie uit te voeren",
+    "superscalaire architectuur": "CPU-ontwerp dat meerdere instructies per klokcyclus kan uitvoeren",
+    "tak voorspelling": "Techniek waarbij de CPU probeert te raden welke kant een voorwaardelijke opgaat",
+    "noordelijke brug": "Chipset (oudere systemen) die de CPU verbond met RAM en hogesnelheidsbussen",
+    "zuidbrug": "Chipset (oudere systemen) die langzamere randapparatuur en I/O verwerkten",
+    "hyperthreading": "Technologie waardoor een enkele CPU-kern kan verschijnen als meerdere logische kernen",
+    "risico": "Computer met verminderde instructieset - CPU-ontwerp met eenvoudigere instructies",
+    "cisc": "Complexe instructieset Computer - CPU-ontwerp met krachtige, complexe instructies",
+    "simd": "Single Instruction Multiple Data, techniek voor het parallel verwerken van gegevens",
+    "microarchitectuur": "De specifieke implementatiedetails van de instructieset van een CPU",
+    "systeem op een chip": "Integratie van meerdere componenten (CPU, GPU, etc.) op \u00e9\u00e9n chip",
+    "ingebouwd systeem": "Een computersysteem dat zich toelegt op een specifieke taak, vaak binnen een groter apparaat",
+    "firmware": "Software permanent opgeslagen op een hardwareapparaat (zoals het BIOS)",
+    "overklokken": "Een CPU op een hogere snelheid laten draaien dan de beoogde specificaties",
+    "Foutcorrectiecode": "Techniek om fouten in RAM te detecteren en te corrigeren",
+    "buitensporige uitvoering": "Techniek waarbij een CPU instructies in een effici\u00ebntere volgorde uitvoert",
+    "kwantumcomputers": "Het benutten van de principes van de kwantummechanica voor berekeningen",
+    "neuromorf computergebruik": "Op het brein ge\u00efnspireerde computerarchitecturen ontworpen voor AI-taken"
+}

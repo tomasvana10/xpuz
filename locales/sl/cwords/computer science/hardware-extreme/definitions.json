@@ -1,0 +1,20 @@
+{
+    "cikel navodil": "Koraki, ki jim CPE sledi za izvedbo posameznega ukaza",
+    "superskalarno arhitekturo": "Zasnova CPE-ja, ki lahko izvede ve\u010d ukazov na takt",
+    "veja napoved": "Tehnika, pri kateri CPE posku\u0161a uganiti, v katero smer bo \u0161el pogojnik",
+    "severni most": "Nabor \u010dipov (starej\u0161i sistemi), ki povezuje CPE z RAM-om in hitrimi vodili",
+    "ju\u017eni most": "Nabor \u010dipov (starej\u0161i sistemi), ki je upravljal po\u010dasnej\u0161e zunanje naprave in V/I",
+    "hipernitnost": "Tehnologija, ki omogo\u010da, da se eno jedro CPE prika\u017ee kot ve\u010d logi\u010dnih jeder",
+    "tveganje": "Ra\u010dunalnik z zmanj\u0161anim naborom ukazov \u2013 zasnova CPE s preprostej\u0161imi navodili",
+    "cisc": "Ra\u010dunalnik s kompleksnim naborom ukazov - zasnova CPE z zmogljivimi, zapletenimi navodili",
+    "simd": "Eno navodilo Ve\u010d podatkov, tehnika za vzporedno obdelavo podatkov",
+    "mikroarhitektura": "Specifi\u010dne podrobnosti izvedbe nabora ukazov CPE",
+    "sistem na \u010dipu": "Integracija ve\u010d komponent (CPE, GPE itd.) na enem \u010dipu",
+    "vgrajeni sistem": "Ra\u010dunalni\u0161ki sistem, namenjen dolo\u010deni nalogi, pogosto znotraj ve\u010dje naprave",
+    "vdelana programska oprema": "Programska oprema, trajno shranjena v strojni napravi (kot je BIOS)",
+    "overclocking": "Pogon CPE z vi\u0161jo hitrostjo od predvidenih specifikacij",
+    "koda za odpravo napak": "Tehnika za odkrivanje in odpravljanje napak v RAM-u",
+    "izvedba izven reda": "Tehnika, pri kateri CPE izvaja navodila v bolj u\u010dinkovitem vrstnem redu",
+    "kvantno ra\u010dunalni\u0161tvo": "Izkori\u0161\u010danje na\u010del kvantne mehanike za ra\u010dunanje",
+    "nevromorfno ra\u010dunalni\u0161tvo": "Ra\u010dunalni\u0161ke arhitekture, ki jih navdihuje mo\u017egane, zasnovane za naloge umetne inteligence"
+}

@@ -1,0 +1,20 @@
+{
+    "p\u014d\u02bbaiapuni a\u02bbo": "\u02bbO n\u0101 \u02bbanu\u02bbu a CPU e hahai ai e ho\u02bbok\u014d i kahi \u02bb\u014dlelo a\u02bbo",
+    "hale ho\u02bbol\u0101l\u0101 superscalar": "Ho\u02bbol\u0101l\u0101 CPU hiki ke ho\u02bbok\u014d i n\u0101 \u02bb\u014dlelo kuhikuhi he nui i k\u0113l\u0101 me k\u0113ia p\u014d\u02bbai uaki",
+    "w\u0101nana l\u0101l\u0101": "\u02bbenehana kahi e ho\u02bb\u0101\u02bbo ai ka CPU e koho i ke ala e hele ai kahi k\u016blana",
+    "alahaka \u02bb\u0101kau": "Chipset (n\u0101 \u02bb\u014dnaehana kahiko) i ho\u02bbopili i ka CPU me ka RAM a me n\u0101 ka\u02bba ka\u02bba wikiwiki",
+    "alahaka hema": "Chipset (n\u0101 \u02bb\u014dnaehana kahiko) i m\u0101lama i n\u0101 peripheral m\u0101m\u0101 a me I/O",
+    "hyperthreading": "\u02bbO ka \u02bbenehana e \u02bbae ana i kahi core CPU ho\u02bbokahi e \u02bbike \u02bbia ma ke \u02bbano he mau cores logical",
+    "risc": "Ho\u02bboemi Instruction Set Computer - Ho\u02bbol\u0101l\u0101 CPU me n\u0101 \u02bb\u014dlelo ma\u02bbalahi",
+    "cisc": "Kamepiula A\u02bbo Pa\u02bbakik\u012b - Ho\u02bbol\u0101l\u0101 CPU me n\u0101 \u02bb\u014dlelo a\u02bboa\u02bbo ikaika a pa\u02bbakik\u012b",
+    "simd": "Ho\u02bbokahi A\u02bbo Nui \u02bbIkepili, \u02bbenehana no ka ho\u02bboili \u02bbana i ka \u02bbikepili i ka like",
+    "microarchitecture": "\u02bbO n\u0101 kiko\u02bb\u012b ho\u02bbok\u014d kiko\u02bb\u012b o kahi ho\u02bbonohonoho a\u02bboa\u02bbo CPU",
+    "\u02bb\u014dnaehana ma kahi pu\u02bbupu\u02bbu": "Ho\u02bbohui i n\u0101 \u02bb\u0101pana he nui (CPU, GPU, a me n\u0101 mea \u02bb\u0113 a\u02bbe) ma kahi pahu ho\u02bbokahi",
+    "\u02bb\u014dnaehana ho\u02bbokomo": "He \u02bb\u014dnaehana kamepiula i ho\u02bbola\u02bba \u02bbia i kahi hana kiko\u02bb\u012b, pinepine i loko o kahi mea \u02bboi aku ka nui",
+    "firmware": "Ho\u02bbopa\u02bba mau \u02bbia n\u0101 lako polokalamu ma kahi h\u0101me\u02bba (e like me ka BIOS)",
+    "overclocking": "Ke holo nei i kahi CPU ma ka wikiwiki ki\u02bbeki\u02bbe ma mua o k\u0101na mau kiko\u02bb\u012b i mana\u02bbo \u02bbia",
+    "code ho\u02bboponopono hewa": "\u02bbenehana e \u02bbike a ho\u02bboponopono i n\u0101 hewa ma RAM",
+    "ma waho o ka ho\u02bbok\u014d \u02bbana": "\u02bbenehana kahi e ho\u02bbok\u014d ai ka CPU i n\u0101 \u02bb\u014dlelo a\u02bbo ma kahi \u02bboi aku ka maika\u02bbi",
+    "helu helu quantum": "Ho\u02bbohana i n\u0101 loina o ka quantum mechanics no ka helu \u02bbana",
+    "ho\u02bbopili helu neuromorphic": "Ho\u02bbol\u0101l\u0101 \u02bbia ka lolouila ho\u02bbona\u02bbauao no n\u0101 hana AI"
+}

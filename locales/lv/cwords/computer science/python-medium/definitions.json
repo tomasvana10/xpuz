@@ -1,0 +1,23 @@
+{
+    "sarakstu": "Pas\u016bt\u012bta, main\u0101ma priek\u0161metu kolekcija",
+    "komplekts": "Nesak\u0101rtota unik\u0101lu elementu kolekcija",
+    "v\u0101rdn\u012bca": "JSON l\u012bdz\u012bgs datu tips ar atsl\u0113gu un v\u0113rt\u012bbu p\u0101riem",
+    "korts": "Sak\u0101rtots, indeks\u0113ts, nemain\u0101ms mas\u012bva datu tips",
+    "neviens": "Apz\u012bm\u0113 v\u0113rt\u012bbas neesam\u012bbu",
+    "def": "Izveido jaunu funkciju",
+    "atgriezties": "Nos\u016bta v\u0113rt\u012bbu atpaka\u013c no funkcijas",
+    "ra\u017ea": "P\u0101rv\u0113r\u0161 funkciju par \u0123eneratora funkciju (kas ir gan iterators, gan iter\u0113jama)",
+    "lambda": "Izveido anon\u012bmu funkciju",
+    "caurlaide": "Viettura pazi\u0146ojums, kas neko nedara",
+    "p\u0101rtraukums": "Priek\u0161laic\u012bgi izejiet no cilpas",
+    "Turpin\u0101t": "P\u0101riet uz n\u0101kamo cilpas iter\u0101ciju",
+    "beidzot": "Izpild\u012bt p\u0113c m\u0113\u0123in\u0101juma/iz\u0146emot bloku neatkar\u012bgi no t\u0101, vai k\u013c\u016bda tika pie\u0137erta vai n\u0113",
+    "glob\u0101li": "Pazi\u0146o, ka main\u012bgajam ir glob\u0101ls tv\u0113rums",
+    "nelok\u0101ls": "Deklar\u0113 main\u012bgo pieder\u012bbu \u0101r\u0113jai funkcijai",
+    "m\u0113\u0123in\u0101t": "S\u0101k koda bloku ar k\u013c\u016bdu apstr\u0101di",
+    "iz\u0146emot": "No\u0137er un apstr\u0101d\u0101 \u012bpa\u0161us iz\u0146\u0113mumus",
+    "paaugstin\u0101t": "Apzin\u0101ti izraisa iz\u0146\u0113mumu",
+    "apgalvot": "Nov\u0113rt\u0113 izteiksmi un rada k\u013c\u016bdu, ja t\u0101 ir nepatiesa",
+    "ar": "Izmanto konteksta p\u0101rvaldniekiem, lai p\u0101rvald\u012btu resursus",
+    "klas\u0113": "Projekts objektu izveidei"
+}

@@ -1,0 +1,20 @@
+{
+    "sake zagayowar koyarwa": "Matakan da CPU ke bi don aiwatar da umarni guda \u0257aya",
+    "superscalar gine": "Tsarin CPU wanda zai iya aiwatar da umarni da yawa a kowane zagaye na agogo",
+    "tsinkayar reshe": "Dabarar inda CPU ke \u0199o\u0199arin tantance hanyar da sharadi zai bi",
+    "arewabridge": "Chipset (tsofaffin tsarin) wanda ya ha\u0257a CPU zuwa RAM da bas masu sauri",
+    "kudubridge": "Chipset (tsofaffin tsarin) wa\u0257anda ke sarrafa na'urori masu hankali da I/O",
+    "hyperthreading": "Fasaha da ke ba da damar cibiyar CPU guda \u0257aya ta bayyana azaman ma\u0253alli masu ma'ana da yawa",
+    "risc": "Rage Umarni Saita Kwamfuta - \u0199irar CPU tare da umarni mafi sau\u0199i",
+    "cisc": "Saita Kwamfuta Mai Ru\u0257i - Tsarin CPU tare da \u0199a\u0199\u0199arfan umarni masu rikitarwa",
+    "simd": "Umarni Guda Ma\u0257aukaki Data, dabara don sarrafa bayanai a layi daya",
+    "micro Architecture": "Takaitattun bayanan aiwatarwa na saitin umarni na CPU",
+    "tsarin a guntu": "Ha\u0257a abubuwa da yawa (CPU, GPU, da sauransu) akan guntu \u0257aya",
+    "saka tsarin": "Tsarin kwamfuta da aka ke\u0253e don takamaiman aiki, sau da yawa a cikin babbar na'ura",
+    "firmware": "Software na dindindin da aka adana akan na'urar hardware (kamar BIOS)",
+    "overclocking": "Gudun CPU a cikin sauri fiye da \u0199ayyadaddun da aka yi niyya",
+    "lambar gyara kuskure": "Dabarar ganowa da gyara kurakurai a cikin RAM",
+    "daga aiwatar da oda": "Dabarar inda CPU ke aiwatar da umarni cikin tsari mafi inganci",
+    "\u0199ididdigar \u0199ididdiga": "\u0198a'idodin amfani da kayan aikin \u0199ididdiga don \u0199ididdigewa",
+    "neuromorphic kwamfuta": "Gine-ginen \u0199ididdiga na kwakwalwa wanda aka tsara don ayyukan AI"
+}

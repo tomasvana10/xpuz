@@ -294,6 +294,9 @@ msgstr "Wiskunde"
 msgid "Science"
 msgstr "Wetenskap"
 
+msgid "Computer Science"
+msgstr "Rekenaarwetenskap"
+
 #~ msgid "Capitals"
 #~ msgstr "Hoofletters"
 

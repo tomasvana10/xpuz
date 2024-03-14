@@ -1,0 +1,20 @@
+{
+    "ynstruksje syklus": "De stappen dy't in CPU folget om in inkele ynstruksje \u00fat te fieren",
+    "superskal\u00eare arsjitektuer": "CPU-\u00fbntwerp dat meardere ynstruksjes per kloksyklus kin \u00fatfiere",
+    "branch foarsizzing": "Technyk w\u00ear't de CPU besiket te rieden hokker kant in betingst sil gean",
+    "noardlike br\u00eage": "Chipsatz (\u00e2ldere systemen) dy't ferb\u00fbn de CPU oan RAM en hege-snelheid bussen",
+    "s\u00fadbr\u00eage": "Chipsatz (\u00e2ldere systemen) dy't behannele stadiger perifeare apparaten en I / O",
+    "hyperthreading": "Technology w\u00eartroch in inkele CPU-kearn kin ferskine as meardere logyske kearnen",
+    "risc": "Reduced Instruction Set Computer - CPU-\u00fbntwerp mei ienf\u00e2ldiger ynstruksjes",
+    "cisc": "Complex Instruction Set Computer - CPU-\u00fbntwerp mei kr\u00eaftige, komplekse ynstruksjes",
+    "simd": "Single Instruction Meardere Data, technyk foar it ferwurkjen fan gegevens parallel",
+    "mikroarsjitektuer": "De spesifike ymplemintaasje details fan in CPU syn ynstruksje set",
+    "systeem op in chip": "Yntegraasje fan meardere komponinten (CPU, GPU, ensfh.) Op ien chip",
+    "ynb\u00eade systeem": "In kompj\u00fbtersysteem wijd oan in spesifike taak, faak binnen in grutter apparaat",
+    "firmware": "Software permanint opslein op in hardware-apparaat (lykas de BIOS)",
+    "oerklokken": "In CPU \u00fatfiere op in hegere snelheid dan de bedoelde spesifikaasjes",
+    "flater korreksje koade": "Technyk om flaters yn RAM te detektearjen en te korrigearjen",
+    "\u00fat oarder \u00fatfiering": "Technyk d\u00ear't in CPU \u00fatfiert ynstruksjes yn in effisjinter folchoarder",
+    "quantum computing": "De prinsipes fan kwantummeganika br\u00fbke foar berekkening",
+    "neuromorphic computing": "Brain-ynspireare komputerarsjitektuer \u00fbntworpen foar AI-taken"
+}

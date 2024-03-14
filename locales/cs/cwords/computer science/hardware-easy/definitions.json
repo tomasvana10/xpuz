@@ -1,0 +1,14 @@
+{
+    "procesor": "Mozek po\u010d\u00edta\u010de prov\u00e1d\u00ed instrukce",
+    "pam\u011b\u0165 s n\u00e1hodn\u00fdm p\u0159\u00edstupem": "Nest\u00e1l\u00e1 pam\u011b\u0165, kde jsou ulo\u017eeny spu\u0161t\u011bn\u00e9 programy a data",
+    "pevn\u00fd disk": "Velkokapacitn\u00ed energeticky nez\u00e1visl\u00e9 \u00falo\u017ei\u0161t\u011b vyu\u017e\u00edvaj\u00edc\u00ed magnetick\u00e9 plotny",
+    "SSD disk": "Energeticky nez\u00e1visl\u00e9 \u00falo\u017ei\u0161t\u011b pomoc\u00ed flash pam\u011bti, rychlej\u0161\u00ed ne\u017e HDD",
+    "autobus": "Cesta pro p\u0159enos dat mezi komponenty",
+    "vstupn\u00ed za\u0159\u00edzen\u00ed": "Umo\u017e\u0148uje vkl\u00e1d\u00e1n\u00ed dat do po\u010d\u00edta\u010de (jako je kl\u00e1vesnice, my\u0161)",
+    "v\u00fdstupn\u00ed za\u0159\u00edzen\u00ed": "Prezentuje v\u00fdsledky u\u017eivateli (jako monitor, tisk\u00e1rna)",
+    "z\u00e1kladn\u00ed deska": "Hlavn\u00ed obvodov\u00e1 deska, kter\u00e1 spojuje v\u0161echny sou\u010d\u00e1sti po\u010d\u00edta\u010de",
+    "po\u010d\u00edta\u010dov\u00e1 s\u00ed\u0165": "Kolekce vz\u00e1jemn\u011b propojen\u00fdch za\u0159\u00edzen\u00ed, kter\u00e1 mohou sd\u00edlet zdroje",
+    "IP adresa": "Jedine\u010dn\u00fd \u010d\u00edseln\u00fd identifik\u00e1tor p\u0159i\u0159azen\u00fd ka\u017ed\u00e9mu za\u0159\u00edzen\u00ed v s\u00edti",
+    "\u0161\u00ed\u0159ku p\u00e1sma": "Maxim\u00e1ln\u00ed rychlost p\u0159enosu dat p\u0159es s\u00ed\u0165ovou cestu",
+    "latence": "\u010casov\u00e9 zpo\u017ed\u011bn\u00ed pro p\u0159enos dat ze zdroje do c\u00edle"
+}

@@ -1,0 +1,16 @@
+{
+    "pravi": "Predstavlja logi\u010dku vrijednost 1 ili 'on'",
+    "la\u017eno": "Predstavlja logi\u010dku vrijednost 0 ili 'isklju\u010deno'",
+    "ne": "Logi\u010dki operator koji preokre\u0107e vrijednost istine izraza",
+    "i": "Logi\u010dki operator, istinit samo ako su oba izraza istinita",
+    "ili": "Logi\u010dki operator, istinit ako je barem jedan izraz istinit",
+    "xor": "Isklju\u010divo ILI, istinito ako je to\u010dno jedan izraz istinit",
+    "booleov izraz": "Kombinacija Booleovih varijabli i operatora",
+    "tablica istine": "Tablica koja prikazuje izlaz za sve kombinacije ulaza u Booleovom izrazu",
+    "kontradikcija": "Booleov izraz koji je uvijek la\u017ean",
+    "de morganovi zakoni": "Pravila za rukovanje Booleovim izrazima s NE, I i ILI",
+    "uvjetna izjava": "Kontrolira izvr\u0161avanje koda na temelju toga je li uvjet istinit",
+    "nand": "NIJE i - istinito samo ako su oba izraza la\u017ena",
+    "ni": "NIJE ili - to\u010dno samo ako su oba izraza la\u017ena",
+    "Booleova algebra": "Matemati\u010dki sustav koji se koristi za modeliranje i analizu Booleove logike"
+}

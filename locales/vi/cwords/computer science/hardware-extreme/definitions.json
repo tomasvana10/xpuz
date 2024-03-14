@@ -1,0 +1,20 @@
+{
+    "chu k\u1ef3 h\u01b0\u1edbng d\u1eabn": "C\u00e1c b\u01b0\u1edbc CPU tu\u00e2n theo \u0111\u1ec3 th\u1ef1c hi\u1ec7n m\u1ed9t l\u1ec7nh",
+    "ki\u1ebfn tr\u00fac si\u00eau v\u00f4 h\u01b0\u1edbng": "Thi\u1ebft k\u1ebf CPU c\u00f3 th\u1ec3 th\u1ef1c thi nhi\u1ec1u l\u1ec7nh trong m\u1ed7i chu k\u1ef3 xung nh\u1ecbp",
+    "d\u1ef1 \u0111o\u00e1n nh\u00e1nh": "K\u1ef9 thu\u1eadt m\u00e0 CPU c\u1ed1 g\u1eafng \u0111o\u00e1n xem m\u1ed9t \u0111i\u1ec1u ki\u1ec7n s\u1ebd \u0111i theo h\u01b0\u1edbng n\u00e0o",
+    "c\u00e2y c\u1ea7u \u1edf ph\u00eda B\u1eafc": "Chipset (h\u1ec7 th\u1ed1ng c\u0169 h\u01a1n) k\u1ebft n\u1ed1i CPU v\u1edbi RAM v\u00e0 bus t\u1ed1c \u0111\u1ed9 cao",
+    "c\u1ea7u nam": "Chipset (h\u1ec7 th\u1ed1ng c\u0169 h\u01a1n) x\u1eed l\u00fd c\u00e1c thi\u1ebft b\u1ecb ngo\u1ea1i vi v\u00e0 I/O ch\u1eadm h\u01a1n",
+    "si\u00eau ph\u00e2n lu\u1ed3ng": "C\u00f4ng ngh\u1ec7 cho ph\u00e9p m\u1ed9t l\u00f5i CPU xu\u1ea5t hi\u1ec7n d\u01b0\u1edbi d\u1ea1ng nhi\u1ec1u l\u00f5i logic",
+    "li\u1ec1u l\u0129nh": "M\u00e1y t\u00ednh t\u1eadp l\u1ec7nh gi\u1ea3m - Thi\u1ebft k\u1ebf CPU v\u1edbi c\u00e1c l\u1ec7nh \u0111\u01a1n gi\u1ea3n h\u01a1n",
+    "cisc": "M\u00e1y t\u00ednh t\u1eadp l\u1ec7nh ph\u1ee9c t\u1ea1p - Thi\u1ebft k\u1ebf CPU v\u1edbi c\u00e1c l\u1ec7nh ph\u1ee9c t\u1ea1p, m\u1ea1nh m\u1ebd",
+    "sim": "L\u1ec7nh \u0111\u01a1n Nhi\u1ec1u d\u1eef li\u1ec7u, k\u1ef9 thu\u1eadt x\u1eed l\u00fd d\u1eef li\u1ec7u song song",
+    "vi ki\u1ebfn tr\u00fac": "Chi ti\u1ebft tri\u1ec3n khai c\u1ee5 th\u1ec3 c\u1ee7a t\u1eadp l\u1ec7nh c\u1ee7a CPU",
+    "h\u1ec7 th\u1ed1ng tr\u00ean chip": "T\u00edch h\u1ee3p nhi\u1ec1u th\u00e0nh ph\u1ea7n (CPU, GPU, v.v.) tr\u00ean m\u1ed9t chip duy nh\u1ea5t",
+    "h\u1ec7 th\u1ed1ng nh\u00fang": "M\u1ed9t h\u1ec7 th\u1ed1ng m\u00e1y t\u00ednh d\u00e0nh ri\u00eang cho m\u1ed9t nhi\u1ec7m v\u1ee5 c\u1ee5 th\u1ec3, th\u01b0\u1eddng n\u1eb1m trong m\u1ed9t thi\u1ebft b\u1ecb l\u1edbn h\u01a1n",
+    "ph\u1ea7n s\u1ee5n": "Ph\u1ea7n m\u1ec1m \u0111\u01b0\u1ee3c l\u01b0u tr\u1eef v\u0129nh vi\u1ec5n tr\u00ean thi\u1ebft b\u1ecb ph\u1ea7n c\u1ee9ng (nh\u01b0 BIOS)",
+    "\u00e9p xung": "Ch\u1ea1y CPU \u1edf t\u1ed1c \u0111\u1ed9 cao h\u01a1n th\u00f4ng s\u1ed1 k\u1ef9 thu\u1eadt d\u1ef1 \u0111\u1ecbnh c\u1ee7a n\u00f3",
+    "m\u00e3 s\u1eeda l\u1ed7i": "K\u1ef9 thu\u1eadt ph\u00e1t hi\u1ec7n v\u00e0 s\u1eeda l\u1ed7i trong RAM",
+    "th\u1ef1c hi\u1ec7n kh\u00f4ng theo th\u1ee9 t\u1ef1": "K\u1ef9 thu\u1eadt trong \u0111\u00f3 CPU th\u1ef1c thi c\u00e1c l\u1ec7nh theo th\u1ee9 t\u1ef1 hi\u1ec7u qu\u1ea3 h\u01a1n",
+    "T\u00ednh to\u00e1n l\u01b0\u1ee3ng t\u1eed": "Khai th\u00e1c c\u00e1c nguy\u00ean l\u00fd c\u1ee7a c\u01a1 h\u1ecdc l\u01b0\u1ee3ng t\u1eed \u0111\u1ec3 t\u00ednh to\u00e1n",
+    "t\u00ednh to\u00e1n th\u1ea7n kinh": "Ki\u1ebfn tr\u00fac \u0111i\u1ec7n to\u00e1n l\u1ea5y c\u1ea3m h\u1ee9ng t\u1eeb b\u1ed9 n\u00e3o \u0111\u01b0\u1ee3c thi\u1ebft k\u1ebf cho c\u00e1c nhi\u1ec7m v\u1ee5 AI"
+}

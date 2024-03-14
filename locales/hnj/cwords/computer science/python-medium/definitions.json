@@ -1,0 +1,23 @@
+{
+    "lis": "Ib qho kev txiav txim, hloov pauv ntawm cov khoom",
+    "teeb": "Ib qho unordered sau ntawm cov cim tshwj xeeb",
+    "phau ntawv txhais lus": "Ib hom ntaub ntawv zoo li JSON nrog qhov tseem ceeb thiab tus nqi khub",
+    "tuple": "Ib qho kev txiav txim, indexed, unchangeable array data type",
+    "tsis muaj": "Sawv cev qhov tsis muaj nqi",
+    "def": "Tsim ib txoj haujlwm tshiab",
+    "rov qab los": "Xa tus nqi rov qab los ntawm kev ua haujlwm",
+    "tawm los": "Hloov ua haujlwm rau hauv lub tshuab hluav taws xob muaj nuj nqi (uas yog ob qho tib si iterator thiab ib qho iterable)",
+    "lambda": "Tsim cov haujlwm tsis qhia npe",
+    "hla": "Ib daim ntawv qhia chaw uas tsis muaj dab tsi",
+    "tawg": "Tawm ntawm lub voj voog ua ntej",
+    "txuas ntxiv": "Hla mus rau qhov iteration tom ntej ntawm ib lub voj",
+    "thaum kawg": "Ua tom qab sim / tshwj tsis yog thaiv txawm tias qhov yuam kev raug ntes lossis tsis tau",
+    "ntiaj teb no": "Tshaj tawm qhov sib txawv kom muaj lub ntiaj teb Scope",
+    "nonlocal": "Tshaj tawm qhov hloov pauv mus rau qhov ua haujlwm sab nraud",
+    "sim": "Pib ib qho thaiv ntawm code nrog kev ua yuam kev",
+    "tsuas yog": "Catch thiab tuav cov kev zam tshwj xeeb",
+    "tsa": "txhob txwm ua kom muaj kev zam",
+    "hais": "Ntsuas ib qho kev qhia thiab tsa qhov yuam kev yog tias nws tsis tseeb",
+    "nrog": "Siv rau cov neeg saib xyuas cov ntsiab lus los tswj cov peev txheej",
+    "chav kawm": "Daim phiaj xwm tsim khoom"
+}

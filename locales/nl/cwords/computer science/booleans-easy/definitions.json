@@ -1,0 +1,16 @@
+{
+    "WAAR": "Vertegenwoordigt een logische waarde van 1 of 'aan'",
+    "vals": "Vertegenwoordigt een logische waarde van 0 of 'uit'",
+    "niet": "Logische operator die de waarheidswaarde van een uitdrukking omkeert",
+    "En": "Logische operator, alleen waar als beide expressies waar zijn",
+    "of": "Logische operator, waar als ten minste \u00e9\u00e9n expressie waar is",
+    "xor": "Exclusieve OR, waar als precies \u00e9\u00e9n uitdrukking waar is",
+    "Booleaanse expressie": "Een combinatie van Booleaanse variabelen en operatoren",
+    "waarheidstabel": "Tabel met de uitvoer voor alle combinaties van invoer in een Booleaanse expressie",
+    "tegenspraak": "Een Booleaanse expressie die altijd onwaar is",
+    "de wetten van de Morgan": "Regels voor het manipuleren van Booleaanse expressies met NOT, AND en OR",
+    "voorwaardelijke verklaring": "Controleert de uitvoering van code op basis van de vraag of een voorwaarde waar is",
+    "na": "NOT en - alleen waar als beide expressies onwaar zijn",
+    "noch": "NOT of - alleen waar als beide expressies onwaar zijn",
+    "Booleaanse algebra": "Het wiskundige systeem dat wordt gebruikt om Booleaanse logica te modelleren en analyseren"
+}

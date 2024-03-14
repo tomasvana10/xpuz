@@ -1,0 +1,16 @@
+{
+    "f\u00ecor": "A\u2019 riochdachadh luach loidsigeach de 1 no \u2018air\u2019",
+    "breugach": "A\u2019 riochdachadh luach loidsigeach de 0 no \u2018dheth\u2019",
+    "chan eil": "Gn\u00ecomhaiche loidsigeach a chuireas c\u00f9l ri luach f\u00ecrinn abairt",
+    "agus": "Gn\u00ecomhaiche loidsigeach, f\u00ecor a-mh\u00e0in ma tha an d\u00e0 abairt f\u00ecor",
+    "neo": "Gn\u00ecomhaiche loidsigeach, f\u00ecor ma tha co-dhi\u00f9 aon abairt f\u00ecor",
+    "xor": "Exclusive NO, f\u00ecor ma tha d\u00ecreach aon abairt f\u00ecor",
+    "abairt boolean": "Cothlamadh de chaochladairean boolean agus gn\u00ecomhaichean",
+    "cl\u00e0r na f\u00ecrinn": "Cl\u00e0r a\u2019 sealltainn toradh airson a h-uile measgachadh de chuir a-steach ann an abairt boolean",
+    "contrarrachd": "Abairt boolean a tha an-c\u00f2mhnaidh meallta",
+    "laghan morgan": "Riaghailtean airson a bhith a\u2019 l\u00e0imhseachadh abairtean boolean le NOT, AND, agus OR",
+    "aithris chumha": "Bidh smachd air coileanadh c\u00f2d st\u00e8idhichte air co-dhi\u00f9 a tha suidheachadh f\u00ecor",
+    "nannd": "NOT agus - f\u00ecor a-mh\u00e0in ma tha an d\u00e0 abairt ce\u00e0rr",
+    "ni m\u00f2": "NOT no - f\u00ecor a-mh\u00e0in ma tha an d\u00e0 abairt ce\u00e0rr",
+    "ailseabra boolean": "An siostam matamataigeach a thathar a\u2019 cleachdadh gus loidsig boolean a mhodaladh agus a sgr\u00f9dadh"
+}

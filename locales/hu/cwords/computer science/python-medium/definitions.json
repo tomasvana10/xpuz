@@ -1,0 +1,23 @@
+{
+    "lista": "Rendezett, cser\u00e9lhet\u0151 \u00e1rugy\u0171jtem\u00e9ny",
+    "k\u00e9szlet": "Egyedi elemek rendezetlen gy\u0171jtem\u00e9nye",
+    "sz\u00f3t\u00e1r": "JSON-szer\u0171 adatt\u00edpus kulcs- \u00e9s \u00e9rt\u00e9kp\u00e1rokkal",
+    "tuple": "Rendezett, indexelt, nem m\u00f3dos\u00edthat\u00f3 t\u00f6mb adatt\u00edpus",
+    "egyik sem": "\u00c9rt\u00e9k hi\u00e1ny\u00e1t jelzi",
+    "def": "\u00daj funkci\u00f3t hoz l\u00e9tre",
+    "Visszat\u00e9r\u00e9s": "\u00c9rt\u00e9ket k\u00fcld vissza egy f\u00fcggv\u00e9nyb\u0151l",
+    "hozam": "Egy f\u00fcggv\u00e9nyt gener\u00e1torf\u00fcggv\u00e9nnyel alak\u00edt \u00e1t (amely egyszerre iter\u00e1tor \u00e9s iter\u00e1lhat\u00f3)",
+    "lambda": "N\u00e9vtelen f\u00fcggv\u00e9nyt hoz l\u00e9tre",
+    "pass": "Hely\u0151rz\u0151 utas\u00edt\u00e1s, amely nem tesz semmit",
+    "sz\u00fcnet": "Id\u0151 el\u0151tt l\u00e9pjen ki egy hurokb\u00f3l",
+    "folytatni": "Ugr\u00e1s a ciklus k\u00f6vetkez\u0151 iter\u00e1ci\u00f3j\u00e1ra",
+    "v\u00e9g\u00fcl": "V\u00e9grehajt\u00e1s egy try/except blokk ut\u00e1n, f\u00fcggetlen\u00fcl att\u00f3l, hogy hib\u00e1t \u00e9szleltek-e vagy sem",
+    "glob\u00e1lis": "Egy v\u00e1ltoz\u00f3t glob\u00e1lis hat\u00f3k\u00f6r\u0171nek deklar\u00e1l",
+    "nem helyi": "Kijelenti, hogy egy v\u00e1ltoz\u00f3 egy k\u00fcls\u0151 f\u00fcggv\u00e9nyhez tartozik",
+    "pr\u00f3b\u00e1ld ki": "Elind\u00edt egy k\u00f3dblokkot hibakezel\u00e9ssel",
+    "kiv\u00e9ve": "Elkapja \u00e9s kezeli az egyes kiv\u00e9teleket",
+    "emel": "Sz\u00e1nd\u00e9kosan v\u00e1lt ki kiv\u00e9telt",
+    "\u00e1ll\u00edtja": "Ki\u00e9rt\u00e9keli a kifejez\u00e9st, \u00e9s hib\u00e1t jelez, ha az hamis",
+    "val vel": "K\u00f6rnyezetkezel\u0151k sz\u00e1m\u00e1ra haszn\u00e1lj\u00e1k az er\u0151forr\u00e1sok kezel\u00e9s\u00e9re",
+    "oszt\u00e1ly": "Tervrajz objektumok l\u00e9trehoz\u00e1s\u00e1hoz"
+}

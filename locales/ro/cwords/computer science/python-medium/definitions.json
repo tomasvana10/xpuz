@@ -1,0 +1,23 @@
+{
+    "list\u0103": "O colec\u021bie de articole ordonat\u0103 \u0219i schimbabil\u0103",
+    "a stabilit": "O colec\u021bie neordonat\u0103 de elemente unice",
+    "dic\u0163ionar": "Un tip de date asem\u0103n\u0103tor JSON cu perechi cheie \u0219i valoare",
+    "tuplu": "Un tip de date matrice ordonat, indexat, neschimbabil",
+    "nici unul": "Reprezint\u0103 absen\u021ba unei valori",
+    "def": "Creeaz\u0103 o nou\u0103 func\u021bie",
+    "\u00eentoarcere": "Trimite o valoare \u00eenapoi de la o func\u021bie",
+    "Randament": "Converte\u0219te o func\u021bie \u00eentr-o func\u021bie generatoare (care este at\u00e2t un iterator, c\u00e2t \u0219i un iterabil)",
+    "lambda": "Creeaz\u0103 o func\u021bie anonim\u0103",
+    "trece": "O declara\u021bie de substituent care nu face nimic",
+    "pauz\u0103": "Ie\u0219i\u021bi prematur dintr-o bucl\u0103",
+    "continua": "Trece la urm\u0103toarea itera\u021bie a unei bucle",
+    "in cele din urma": "Executa\u021bi dup\u0103 un bloc try/except, indiferent dac\u0103 o eroare a fost detectat\u0103 sau nu",
+    "global": "Declara ca o variabila are un domeniu de aplicare global",
+    "nelocal\u0103": "Declara ca o variabila apartine unei functii exterioare",
+    "\u00eencerca": "Porne\u0219te un bloc de cod cu gestionarea erorilor",
+    "cu exceptia": "Capteaz\u0103 \u0219i gestioneaz\u0103 excep\u021bii specifice",
+    "a ridica": "Declan\u0219eaz\u0103 \u00een mod deliberat o excep\u021bie",
+    "afirma": "Evalueaz\u0103 o expresie \u0219i genereaz\u0103 o eroare dac\u0103 este fals\u0103",
+    "cu": "Folosit pentru managerii de context pentru a gestiona resurse",
+    "clas\u0103": "Plan pentru crearea obiectelor"
+}

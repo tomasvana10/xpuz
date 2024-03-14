@@ -1,0 +1,23 @@
+{
+    "liste": "Une collection d\u2019\u00e9l\u00e9ments ordonn\u00e9e et modifiable",
+    "ensemble": "Une collection d\u00e9sordonn\u00e9e d'\u00e9l\u00e9ments uniques",
+    "dictionnaire": "Un type de donn\u00e9es de type JSON avec des paires cl\u00e9 et valeur",
+    "tuple": "Un type de donn\u00e9es tableau ordonn\u00e9, index\u00e9 et immuable",
+    "aucun": "Repr\u00e9sente l'absence de valeur",
+    "d\u00e9f": "Cr\u00e9e une nouvelle fonction",
+    "retour": "Renvoie une valeur \u00e0 partir d'une fonction",
+    "rendement": "Convertit une fonction en fonction g\u00e9n\u00e9ratrice (qui est \u00e0 la fois un it\u00e9rateur et un it\u00e9rable)",
+    "lambda": "Cr\u00e9e une fonction anonyme",
+    "passer": "Une instruction d'espace r\u00e9serv\u00e9 qui ne fait rien",
+    "casser": "Quitter une boucle pr\u00e9matur\u00e9ment",
+    "continuer": "Passe \u00e0 l'it\u00e9ration suivante d'une boucle",
+    "enfin": "Ex\u00e9cuter apr\u00e8s un bloc try/sauf, qu'une erreur ait \u00e9t\u00e9 d\u00e9tect\u00e9e ou non",
+    "mondial": "D\u00e9clare qu'une variable a une port\u00e9e globale",
+    "non local": "D\u00e9clare qu'une variable appartient \u00e0 une fonction externe",
+    "essayer": "D\u00e9marre un bloc de code avec gestion des erreurs",
+    "sauf": "D\u00e9tecte et g\u00e8re les exceptions sp\u00e9cifiques",
+    "augmenter": "D\u00e9clenche d\u00e9lib\u00e9r\u00e9ment une exception",
+    "affirmer": "\u00c9value une expression et g\u00e9n\u00e8re une erreur si elle est fausse",
+    "avec": "Utilis\u00e9 par les gestionnaires de contexte pour g\u00e9rer les ressources",
+    "classe": "Plan de cr\u00e9ation d'objets"
+}

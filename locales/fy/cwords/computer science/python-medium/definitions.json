@@ -1,0 +1,23 @@
+{
+    "list": "In oardere, feroarjende kolleksje fan items",
+    "set": "In unorderde kolleksje unike eleminten",
+    "wurdboek": "In JSON-lykas gegevenstype mei kaai- en weardepearen",
+    "tuple": "In oardere, yndeksearre, net te feroarjen arraygegevenstype",
+    "gjin": "Fertsjintwurdet it \u00fbntbrekken fan in wearde",
+    "def": "Meitsje in nije funksje",
+    "weromkomme": "Stjoert in wearde werom fan in funksje",
+    "opbringst": "Konvertearret in funksje yn in generatorfunksje (dat is sawol in iterator as in iterable)",
+    "lambda": "Meitsje in anonime funksje",
+    "pas": "In plakh\u00e2lder statement dy't neat docht",
+    "brekke": "Ut in loop te betiid",
+    "trochgean": "Gean nei de folgjende iteraasje fan in loop",
+    "\u00fateinlik": "Utfiere nei in besykjen / \u00fatsein blok nettsjinsteande oft in flater waard fongen of net",
+    "mondiaal": "Ferklearret in fariabele om globale omfang te hawwen",
+    "net-lokaal": "Ferklearret in fariabele ta in eksterne funksje",
+    "Besykje": "Begjint in blok fan koade mei flater \u00f4fhanneling",
+    "\u00fatsein": "Fangst en behannelet spesifike \u00fats\u00fbnderings",
+    "opslach": "Opsetsin triggert in \u00fats\u00fbndering",
+    "beweare": "Evaluearret in \u00fatdrukking en bringt in flater op as it falsk is",
+    "mei": "Wurdt br\u00fbkt foar kontekstbehearders om boarnen te behearjen",
+    "klasse": "Blauprint foar it meitsjen fan objekten"
+}

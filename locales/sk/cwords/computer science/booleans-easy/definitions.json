@@ -1,0 +1,16 @@
+{
+    "pravda": "Predstavuje logick\u00fa hodnotu 1 alebo \u201ezapnut\u00e9\u201c",
+    "falo\u0161n\u00fd": "Predstavuje logick\u00fa hodnotu 0 alebo \u201evypnut\u00e9\u201c",
+    "nie": "Logick\u00fd oper\u00e1tor, ktor\u00fd obr\u00e1ti pravdivostn\u00fa hodnotu v\u00fdrazu",
+    "a": "Logick\u00fd oper\u00e1tor, pravdiv\u00fd iba vtedy, ak s\u00fa oba v\u00fdrazy pravdiv\u00e9",
+    "alebo": "Logick\u00fd oper\u00e1tor, true, ak je aspo\u0148 jeden v\u00fdraz pravdiv\u00fd",
+    "xor": "Exkluz\u00edvne OR, pravda, ak je pravdiv\u00fd pr\u00e1ve jeden v\u00fdraz",
+    "booleovsk\u00fd v\u00fdraz": "Kombin\u00e1cia boolovsk\u00fdch premenn\u00fdch a oper\u00e1torov",
+    "pravdivostn\u00e1 tabu\u013eka": "Tabu\u013eka zobrazuj\u00faca v\u00fdstup pre v\u0161etky kombin\u00e1cie vstupov v boolovskom v\u00fdraze",
+    "rozpor": "Booleovsk\u00fd v\u00fdraz, ktor\u00fd je v\u017edy nepravdiv\u00fd",
+    "de morganove z\u00e1kony": "Pravidl\u00e1 pre manipul\u00e1ciu s booleovsk\u00fdmi v\u00fdrazmi pomocou NOT, AND a OR",
+    "podmiene\u010dn\u00fd v\u00fdrok": "Riadi spustenie k\u00f3du na z\u00e1klade toho, \u010di je podmienka pravdiv\u00e1",
+    "nand": "NOT a - true iba vtedy, ak s\u00fa oba v\u00fdrazy nepravdiv\u00e9",
+    "ani": "NOT alebo - true iba vtedy, ak s\u00fa oba v\u00fdrazy nepravdiv\u00e9",
+    "booleovsk\u00e1 algebra": "Matematick\u00fd syst\u00e9m pou\u017e\u00edvan\u00fd na modelovanie a anal\u00fdzu booleovskej logiky"
+}

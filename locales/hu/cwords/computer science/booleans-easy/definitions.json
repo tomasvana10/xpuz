@@ -1,0 +1,16 @@
+{
+    "igaz": "Logikai \u00e9rt\u00e9ke 1 vagy \"on\"",
+    "hamis": "Logikai \u00e9rt\u00e9ke 0 vagy \"ki\"",
+    "nem": "Logikai oper\u00e1tor, amely megford\u00edtja egy kifejez\u00e9s igazs\u00e1g\u00e9rt\u00e9k\u00e9t",
+    "\u00e9s": "Logikai oper\u00e1tor, csak akkor igaz, ha mindk\u00e9t kifejez\u00e9s igaz",
+    "vagy": "Logikai oper\u00e1tor, igaz, ha legal\u00e1bb egy kifejez\u00e9s igaz",
+    "xor": "Kiz\u00e1r\u00f3lagos VAGY, igaz, ha pontosan egy kifejez\u00e9s igaz",
+    "logikai kifejez\u00e9s": "Logikai v\u00e1ltoz\u00f3k \u00e9s oper\u00e1torok kombin\u00e1ci\u00f3ja",
+    "igazs\u00e1gt\u00e1bl\u00e1zat": "T\u00e1bl\u00e1zat, amely a logikai kifejez\u00e9s \u00f6sszes bemeneti kombin\u00e1ci\u00f3j\u00e1nak kimenet\u00e9t mutatja",
+    "ellentmond\u00e1s": "Logikai kifejez\u00e9s, amely mindig hamis",
+    "de morgan t\u00f6rv\u00e9nyei": "Szab\u00e1lyok a logikai kifejez\u00e9sek NEM, \u00c9S \u00e9s VAGY param\u00e9terekkel t\u00f6rt\u00e9n\u0151 manipul\u00e1l\u00e1s\u00e1ra",
+    "felt\u00e9teles kijelent\u00e9s": "A k\u00f3dv\u00e9grehajt\u00e1st az alapj\u00e1n vez\u00e9rli, hogy egy felt\u00e9tel igaz-e",
+    "nand": "NEM \u00e9s - igaz csak akkor, ha mindk\u00e9t kifejez\u00e9s hamis",
+    "sem": "NEM vagy - igaz csak akkor, ha mindk\u00e9t kifejez\u00e9s hamis",
+    "logikai algebra": "A logikai logika modellez\u00e9s\u00e9re \u00e9s elemz\u00e9s\u00e9re haszn\u00e1lt matematikai rendszer"
+}

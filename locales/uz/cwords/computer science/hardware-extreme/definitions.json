@@ -1,0 +1,20 @@
+{
+    "ko'rsatma aylanishi": "Bitta buyruqni bajarish uchun protsessor bajaradigan qadamlar",
+    "superskalyar arxitektura": "Bir soat siklida bir nechta ko'rsatmalarni bajara oladigan protsessor dizayni",
+    "filialni bashorat qilish": "Protsessor shartli qaysi tomonga borishini taxmin qilishga harakat qiladigan texnika",
+    "shimoliy ko'prik": "Protsessorni operativ xotiraga va yuqori tezlikdagi avtobuslarga ulagan chipset (eski tizimlar).",
+    "janubiy ko'prik": "Sekinroq atrof-muhit birliklari va kiritish-chiqarish bilan ishlaydigan chipset (eski tizimlar).",
+    "hyperthreading": "Bitta protsessor yadrosi bir nechta mantiqiy yadro sifatida paydo bo'lishiga imkon beruvchi texnologiya",
+    "xavfli": "Qisqartirilgan ko'rsatmalar to'plami Kompyuter - oddiyroq ko'rsatmalar bilan protsessor dizayni",
+    "cisc": "Kompleks ko'rsatmalar to'plami Kompyuter - kuchli, murakkab ko'rsatmalarga ega CPU dizayni",
+    "simd": "Yagona ko'rsatma Bir nechta ma'lumotlar, ma'lumotlarni parallel ravishda qayta ishlash texnikasi",
+    "mikroarxitektura": "CPU ko'rsatmalar to'plamini amalga oshirishning o'ziga xos tafsilotlari",
+    "chipdagi tizim": "Bitta chipda bir nechta komponentlarni (CPU, GPU va boshqalar) integratsiyalash",
+    "o'rnatilgan tizim": "Ko'pincha kattaroq qurilma ichida muayyan vazifaga bag'ishlangan kompyuter tizimi",
+    "proshivka": "Uskuna qurilmasida doimiy saqlanadigan dasturiy ta'minot (masalan, BIOS)",
+    "overclocking": "Protsessorni mo'ljallangan spetsifikatsiyadan yuqori tezlikda ishga tushirish",
+    "xato tuzatish kodi": "RAMdagi xatolarni aniqlash va tuzatish texnikasi",
+    "tartibsiz bajarilishi": "Protsessor ko'rsatmalarni yanada samaraliroq tartibda bajaradigan texnika",
+    "kvant hisoblash": "Hisoblash uchun kvant mexanikasi tamoyillaridan foydalanish",
+    "neyromorfik hisoblash": "AI vazifalari uchun mo'ljallangan, miyadan ilhomlangan hisoblash arxitekturalari"
+}

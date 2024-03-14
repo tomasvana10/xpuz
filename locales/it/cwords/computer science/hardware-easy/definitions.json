@@ -1,0 +1,14 @@
+{
+    "processore": "Il cervello del computer esegue istruzioni",
+    "memoria ad accesso casuale": "Memoria volatile in cui vengono archiviati i programmi e i dati in esecuzione",
+    "disco rigido": "Dispositivo di memorizzazione non volatile di grande capacit\u00e0 che utilizza piatti magnetici",
+    "disco a stato solido": "Archiviazione non volatile che utilizza memoria flash, pi\u00f9 veloce degli HDD",
+    "autobus": "Percorso attraverso il quale i dati viaggiano tra i componenti",
+    "dispositivo di input": "Consente l'immissione di dati nel computer (come tastiera, mouse)",
+    "Dispositivo di uscita": "Presenta i risultati all'utente (come monitor, stampante)",
+    "scheda madre": "Il circuito principale che collega tutti i componenti del computer",
+    "rete di computer": "Una raccolta di dispositivi interconnessi che possono condividere risorse",
+    "indirizzo IP": "Un identificatore numerico univoco assegnato a ciascun dispositivo su una rete",
+    "larghezza di banda": "La velocit\u00e0 massima di trasferimento dei dati attraverso un percorso di rete",
+    "latenza": "Il ritardo nel tempo impiegato dai dati per viaggiare dall'origine alla destinazione"
+}

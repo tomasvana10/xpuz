@@ -1,0 +1,20 @@
+{
+    "\u010biklu ta' struzzjoni": "Il-passi li CPU jsegwi biex tesegwixxi istruzzjoni wa\u0127da",
+    "arkitettura superskalari": "Disinn ta 'CPU li jista' jesegwixxi struzzjonijiet multipli g\u0127al kull \u010biklu ta 'arlo\u0121\u0121",
+    "tbassir tal-ferg\u0127a": "Teknika fejn is-CPU jipprova raden f'liema mod se jmur kondizzjonali",
+    "Northbridge": "Chipset (sistemi eqdem) li qabbad is-CPU ma' RAM u xarabanks b'velo\u010bit\u00e0 g\u0127olja",
+    "Southbridge": "Chipset (sistemi eqdem) li jimmani\u0121\u0121jaw periferali aktar bil-mod u I/O",
+    "hyperthreading": "Teknolo\u0121ija li tippermetti qalba wa\u0127da ta 'CPU tidher b\u0127ala qlub lo\u0121i\u010bi multipli",
+    "risc": "Sett Istruzzjoni mnaqqsa Kompjuter - Disinn tas-CPU b'istruzzjonijiet aktar sempli\u010bi",
+    "cisc": "Kompjuter tas-Sett Istruzzjoni Kumpless - Disinn tas-CPU b'struzzjonijiet qawwija u kumplessi",
+    "simd": "Istruzzjoni Unika Dejta Multipla, teknika g\u0127all-ippro\u010bessar tad-data b'mod parallel",
+    "mikroarkitettura": "Id-dettalji spe\u010bifi\u010bi ta' implimentazzjoni ta' sett ta' struzzjonijiet ta' CPU",
+    "sistema fuq \u010bippa": "L-integrazzjoni ta 'komponenti multipli (CPU, GPU, e\u010b\u010b.) fuq \u010bippa wa\u0127da",
+    "sistema inkorporata": "Sistema tal-kompjuter iddedikata g\u0127al kompitu spe\u010bifiku, \u0127afna drabi f'apparat akbar",
+    "Firmware": "Software ma\u0127\u017cun b'mod permanenti fuq apparat tal-\u0127ardwer (b\u0127all-BIOS)",
+    "overclocking": "Tmexxi CPU b'velo\u010bit\u00e0 og\u0127la mill-ispe\u010bifikazzjonijiet ma\u0127suba tieg\u0127u",
+    "kodi\u010bi ta 'korrezzjoni ta' \u017cball": "Teknika biex tiskopri u tikkore\u0121i \u017cbalji fir-RAM",
+    "e\u017cekuzzjoni barra mill-ordni": "Teknika fejn CPU tesegwixxi struzzjonijiet f'ordni aktar effi\u010bjenti",
+    "komputazzjoni kwantistika": "L-u\u017cu tal-prin\u010bipji tal-mekkanika kwantistika g\u0127all-komputazzjoni",
+    "kompjuters newromorfi\u010bi": "Arkitetturi tal-kompjuters ispirati mill-mo\u0127\u0127 iddisinjati g\u0127all-kompiti tal-IA"
+}

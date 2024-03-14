@@ -1,0 +1,23 @@
+{
+    "lista": "Uporz\u0105dkowany, zmienny zbi\u00f3r przedmiot\u00f3w",
+    "ustawi\u0107": "Nieuporz\u0105dkowana kolekcja unikalnych element\u00f3w",
+    "s\u0142ownik": "Typ danych podobny do JSON z parami kluczy i warto\u015bci",
+    "krotka": "Uporz\u0105dkowany, indeksowany, niezmienny typ danych tablicowych",
+    "nic": "Reprezentuje brak warto\u015bci",
+    "def": "Tworzy now\u0105 funkcj\u0119",
+    "powr\u00f3t": "Wysy\u0142a warto\u015b\u0107 z powrotem z funkcji",
+    "dawa\u0107": "Konwertuje funkcj\u0119 na funkcj\u0119 generatora (kt\u00f3ra jest zar\u00f3wno iteratorem, jak i iterowalnym)",
+    "lambda": "Tworzy funkcj\u0119 anonimow\u0105",
+    "przechodzi\u0107": "O\u015bwiadczenie zast\u0119pcze, kt\u00f3re nic nie robi",
+    "przerwa": "Wyjd\u017a z p\u0119tli przedwcze\u015bnie",
+    "Kontynuowa\u0107": "Przechodzi do nast\u0119pnej iteracji p\u0119tli",
+    "Wreszcie": "Wykonaj po bloku try/except niezale\u017cnie od tego, czy wykryto b\u0142\u0105d, czy nie",
+    "\u015bwiatowy": "Deklaruje zmienn\u0105 o zasi\u0119gu globalnym",
+    "nielokalny": "Deklaruje zmienn\u0105 nale\u017c\u0105c\u0105 do funkcji zewn\u0119trznej",
+    "pr\u00f3bowa\u0107": "Uruchamia blok kodu z obs\u0142ug\u0105 b\u0142\u0119d\u00f3w",
+    "z wyj\u0105tkiem": "Przechwytuje i obs\u0142uguje okre\u015blone wyj\u0105tki",
+    "wznosi\u0107": "Celowo wyzwala wyj\u0105tek",
+    "zapewnia\u0107": "Oblicza wyra\u017cenie i zg\u0142asza b\u0142\u0105d, je\u015bli jest fa\u0142szywe",
+    "z": "U\u017cywany przez mened\u017cer\u00f3w kontekstu do zarz\u0105dzania zasobami",
+    "klasa": "Schemat tworzenia obiekt\u00f3w"
+}

@@ -1,0 +1,23 @@
+{
+    "seznam": "Urejena, spremenljiva zbirka predmetov",
+    "set": "Neurejena zbirka edinstvenih elementov",
+    "slovar": "JSON podoben podatkovni tip s pari klju\u010dev in vrednosti",
+    "tuple": "Urejen, indeksiran, nespremenljiv matri\u010dni podatkovni tip",
+    "ni\u010d": "Predstavlja odsotnost vrednosti",
+    "def": "Ustvari novo funkcijo",
+    "vrnitev": "Po\u0161lje vrednost nazaj iz funkcije",
+    "donos": "Pretvori funkcijo v generatorsko funkcijo (ki je hkrati iterator in iterable)",
+    "lambda": "Ustvari anonimno funkcijo",
+    "prehod": "Nadomestni stavek, ki ne naredi ni\u010desar",
+    "odmor": "Pred\u010dasno zapustite zanko",
+    "nadaljevati": "Presko\u010di na naslednjo ponovitev zanke",
+    "kon\u010dno": "Izvedi po bloku poskusi/razen, ne glede na to, ali je bila napaka ulovljena ali ne",
+    "globalno": "Razglasi, da ima spremenljivka globalni obseg",
+    "nelokalno": "Razglasi, da spremenljivka pripada zunanji funkciji",
+    "poskusi": "Za\u017eene blok kode z obravnavanjem napak",
+    "razen": "Ujame in obravnava posebne izjeme",
+    "dvigniti": "Namerno spro\u017ei izjemo",
+    "trditi": "Oceni izraz in spro\u017ei napako, \u010de je napa\u010den",
+    "z": "Uporablja se za upravitelje konteksta za upravljanje virov",
+    "razred": "Na\u010drt za ustvarjanje predmetov"
+}

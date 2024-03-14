@@ -1,0 +1,14 @@
+{
+    "CPU": "Ordenagailuaren garunak argibideak exekutatzen ditu",
+    "ausazko sarbide memoria": "Memoria lurrunkorra non martxan dauden programak eta datuak gordetzen diren",
+    "disko gogorra": "Edukiera handiko biltegiratze-gailu ez-hegazkorra plater magnetikoak erabiliz",
+    "egoera solidoko diskoa": "Biltegiratze ez-hegazkorra flash memoria erabiliz, HDDak baino azkarrago",
+    "autobusa": "Datuak osagaien artean bidaiatzeko bidea",
+    "sarrerako gailua": "Ordenagailuan datuak sartzeko aukera ematen du (teklatua, sagua, adibidez)",
+    "irteera gailua": "Emaitzak erabiltzaileari aurkezten dizkio (adibidez, monitorea, inprimagailua)",
+    "plaka nagusia": "Ordenagailuaren osagai guztiak lotzen dituen zirkuitu-plaka nagusia",
+    "sarea informatikoa": "Baliabideak parteka ditzaketen interkonektatutako gailuen bilduma",
+    "ip helbidea": "Sare bateko gailu bakoitzari esleitutako zenbakizko identifikatzaile bakarra",
+    "banda zabalera": "Sare-bide batean zehar datu-transferentzia-tasa maximoa",
+    "latentzia": "Datuak iturritik helmugara bidaiatzeko denboraren atzerapena"
+}

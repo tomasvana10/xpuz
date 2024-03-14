@@ -1,0 +1,14 @@
+{
+    "cpu": "Computerens hjerne udf\u00f8rer instruktioner",
+    "Random Access Memory": "Flygtig hukommelse, hvor k\u00f8rende programmer og data gemmes",
+    "harddiskdrev": "Ikke-flygtig lagerenhed med stor kapacitet ved hj\u00e6lp af magnetiske plader",
+    "Solid State Drive": "Ikke-flygtigt lager ved hj\u00e6lp af flash-hukommelse, hurtigere end HDD'er",
+    "bus": "Vej for data til at rejse mellem komponenter",
+    "input-enhed": "Tillader dataindtastning i computeren (som tastatur, mus)",
+    "outputenhed": "Pr\u00e6senterer resultater for brugeren (som sk\u00e6rm, printer)",
+    "bundkort": "Hovedkredsl\u00f8bet, der forbinder alle computerens komponenter",
+    "computer netv\u00e6rk": "En samling af sammenkoblede enheder, der kan dele ressourcer",
+    "IP-adresse": "En unik numerisk identifikator tildelt hver enhed p\u00e5 et netv\u00e6rk",
+    "b\u00e5ndbredde": "Den maksimale hastighed for dataoverf\u00f8rsel over en netv\u00e6rkssti",
+    "reaktionstid": "Forsinkelsen i tid for data at rejse fra kilde til destination"
+}

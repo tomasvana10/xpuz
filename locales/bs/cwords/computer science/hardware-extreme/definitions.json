@@ -1,0 +1,20 @@
+{
+    "ciklus instrukcija": "Koraci koje CPU slijedi da izvr\u0161i jednu instrukciju",
+    "superskalarna arhitektura": "Dizajn CPU-a koji mo\u017ee izvr\u0161iti vi\u0161e instrukcija po taktu",
+    "predvi\u0111anje grana": "Tehnika u kojoj CPU poku\u0161ava pogoditi u kom pravcu \u0107e i\u0107i kondicional",
+    "sjeverni most": "\u010cipset (stariji sistemi) koji je povezivao CPU sa RAM-om i sabirnicama velike brzine",
+    "ju\u017eni most": "\u010cipset (stariji sistemi) koji je radio sa sporijim perifernim ure\u0111ajima i I/O",
+    "hyperthreading": "Tehnologija koja omogu\u0107ava da se jedna CPU jezgra pojavljuje kao vi\u0161e logi\u010dkih jezgara",
+    "risc": "Smanjeni set instrukcija Ra\u010dunar - dizajn procesora sa jednostavnijim uputstvima",
+    "cisc": "Kompleksni set instrukcija Ra\u010dunar - CPU dizajn sa mo\u0107nim, slo\u017eenim uputstvima",
+    "simd": "Jedna instrukcija Vi\u0161e podataka, tehnika za paralelnu obradu podataka",
+    "mikroarhitektura": "Specifi\u010dni detalji implementacije skupa instrukcija CPU-a",
+    "sistem na \u010dipu": "Integracija vi\u0161e komponenti (CPU, GPU, itd.) na jednom \u010dipu",
+    "ugra\u0111eni sistem": "Ra\u010dunarski sistem posve\u0107en odre\u0111enom zadatku, \u010desto unutar ve\u0107eg ure\u0111aja",
+    "firmware": "Softver trajno pohranjen na hardverskom ure\u0111aju (kao \u0161to je BIOS)",
+    "overclocking": "Pokretanje CPU-a pri ve\u0107oj brzini od predvi\u0111enih specifikacija",
+    "kod za ispravku gre\u0161ke": "Tehnika otkrivanja i ispravljanja gre\u0161aka u RAM-u",
+    "van reda izvr\u0161enja": "Tehnika u kojoj CPU izvr\u0161ava instrukcije efikasnijim redoslijedom",
+    "kvantno ra\u010dunarstvo": "Iskori\u0161tavanje principa kvantne mehanike za ra\u010dunanje",
+    "neuromorfno ra\u010dunarstvo": "Arhitekture ra\u010dunara inspirisane mozgom dizajnirane za AI zadatke"
+}

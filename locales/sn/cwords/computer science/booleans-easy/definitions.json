@@ -1,0 +1,15 @@
+{
+    "chokwadi": "Inomiririra kukosha kunonzwisisika kwe1 kana 'on'",
+    "nhema": "Inomiririra kukosha kunonzwisisika kwe0 kana 'off'",
+    "kwete": "Mushandisi ane musoro anodzosera ukoshi hwechokwadi hwechirevo",
+    "uye": "Mushandisi ane musoro, ichokwadi chete kana mataurirwo ese ari echokwadi",
+    "kana": "KWETE kana - chokwadi chete kana mazwi ese ari emanyepo",
+    "xor": "Exclusive OR, ichokwadi kana kutaura kumwe kuri kwechokwadi",
+    "boolean kutaura": "Kusanganiswa kwe boolean variables uye vashandisi",
+    "tafura yechokwadi": "Tafura inoratidza zvinobuda pamisanganiswa yese yezvekushandisa mukutaura kwe boolean",
+    "kupokana": "Kutaura kwe boolean kunogara kuri manyepo",
+    "de morgan mitemo": "Mitemo yekushandura mataurirwo e boolean ne NOT, UYE, uye OR",
+    "conditional statement": "Inodzora kuurayiwa kwekodhi zvichienderana nekuti mamiriro ari echokwadi",
+    "nand": "KWETE uye - chokwadi chete kana mazwi ese ari emanyepo",
+    "boolean algebra": "Iyo masvomhu sisitimu inoshandiswa kuenzanisira uye kuongorora boolean logic"
+}

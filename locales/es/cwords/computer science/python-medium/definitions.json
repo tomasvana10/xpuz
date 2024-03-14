@@ -1,0 +1,23 @@
+{
+    "lista": "Una colecci\u00f3n ordenada y cambiante de elementos.",
+    "colocar": "Una colecci\u00f3n desordenada de elementos \u00fanicos.",
+    "diccionario": "Un tipo de datos tipo JSON con pares de clave y valor",
+    "tupla": "Un tipo de datos de matriz ordenado, indexado e inmutable",
+    "ninguno": "Representa la ausencia de un valor.",
+    "definici\u00f3n": "Crea una nueva funci\u00f3n",
+    "devolver": "Devuelve un valor desde una funci\u00f3n",
+    "producir": "Convierte una funci\u00f3n en una funci\u00f3n generadora (que es a la vez iteradora e iterable)",
+    "lambda": "Crea una funci\u00f3n an\u00f3nima",
+    "aprobar": "Una declaraci\u00f3n de marcador de posici\u00f3n que no hace nada",
+    "romper": "Salir de un bucle prematuramente",
+    "continuar": "Salta a la siguiente iteraci\u00f3n de un bucle.",
+    "finalmente": "Ejecutar despu\u00e9s de un bloqueo try/except independientemente de si se detect\u00f3 un error o no",
+    "global": "Declara que una variable tiene alcance global",
+    "no local": "Declara que una variable pertenece a una funci\u00f3n externa",
+    "intentar": "Inicia un bloque de c\u00f3digo con manejo de errores.",
+    "excepto": "Capta y maneja excepciones espec\u00edficas",
+    "aumentar": "Activa deliberadamente una excepci\u00f3n",
+    "afirmar": "Eval\u00faa una expresi\u00f3n y genera un error si es falsa",
+    "con": "Se utiliza para que los administradores de contexto administren recursos.",
+    "clase": "Plano para crear objetos."
+}

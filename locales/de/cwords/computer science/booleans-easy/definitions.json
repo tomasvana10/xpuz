@@ -1,0 +1,16 @@
+{
+    "WAHR": "Stellt einen logischen Wert von 1 oder \u201eein\u201c dar.",
+    "FALSCH": "Stellt einen logischen Wert von 0 oder \u201eaus\u201c dar.",
+    "nicht": "Logischer Operator, der den Wahrheitswert eines Ausdrucks umkehrt",
+    "Und": "Logischer Operator, nur wahr, wenn beide Ausdr\u00fccke wahr sind",
+    "oder": "Logischer Operator, wahr, wenn mindestens ein Ausdruck wahr ist",
+    "xor": "Exklusives ODER, wahr, wenn genau ein Ausdruck wahr ist",
+    "Boolescher Ausdruck": "Eine Kombination aus booleschen Variablen und Operatoren",
+    "Wahrheitstabelle": "Tabelle mit der Ausgabe f\u00fcr alle Kombinationen von Eingaben in einem booleschen Ausdruck",
+    "Widerspruch": "Ein boolescher Ausdruck, der immer falsch ist",
+    "De Morgans Gesetze": "Regeln f\u00fcr die Bearbeitung boolescher Ausdr\u00fccke mit NOT, AND und OR",
+    "bedingte Anweisung": "Steuert die Codeausf\u00fchrung basierend darauf, ob eine Bedingung wahr ist",
+    "nand": "NOT und - true nur, wenn beide Ausdr\u00fccke falsch sind",
+    "noch": "NOT oder - nur wahr, wenn beide Ausdr\u00fccke falsch sind",
+    "boolsche Algebra": "Das mathematische System zur Modellierung und Analyse der booleschen Logik"
+}

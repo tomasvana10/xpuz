@@ -1,0 +1,23 @@
+{
+    "listahan": "Usa ka gimando, mausab nga koleksyon sa mga butang",
+    "gitakda": "Usa ka dili han-ay nga koleksyon sa talagsaon nga mga elemento",
+    "diksiyonaryo": "Usa ka tipo sa datos nga sama sa JSON nga adunay mga pares nga yawe ug kantidad",
+    "tuple": "Usa ka ordered, indexed, dili mausab nga array data type",
+    "wala": "Nagrepresentar sa pagkawala sa usa ka bili",
+    "def": "Naghimo og bag-ong function",
+    "pagbalik": "Nagpadala og bili balik gikan sa usa ka function",
+    "abot": "Nag-convert sa usa ka function ngadto sa usa ka generator function (nga usa ka iterator ug usa ka iterable)",
+    "lambda": "Naghimo usa ka anonymous nga function",
+    "pasado": "Usa ka pahayag sa placeholder nga wala\u2019y mahimo",
+    "buwag": "Paggawas sa usa ka loop sa wala pa sa panahon",
+    "magpadayon": "Molaktaw ngadto sa sunod nga pag-uli sa usa ka loop",
+    "sa katapusan": "Ipatuman human sa usa ka pagsulay/gawas sa block bisag unsa pa ang nasakpan nga sayop o wala",
+    "global": "Nagpahayag sa usa ka variable nga adunay global nga sakup",
+    "dili lokal": "Nagpahayag sa usa ka variable nga nahisakop sa usa ka outer function",
+    "pagsulay": "Nagsugod sa usa ka bloke sa code nga adunay pagdumala sa sayup",
+    "gawas": "Pagdakop ug pagdumala sa piho nga mga eksepsiyon",
+    "pagpataas sa": "Tinuyo nga nagpahinabog eksepsiyon",
+    "ipahayag": "Pagtimbang-timbang sa usa ka ekspresyon ug pagpataas sa usa ka sayup kung kini sayup",
+    "uban sa": "Gigamit alang sa mga tagdumala sa konteksto sa pagdumala sa mga kapanguhaan",
+    "klase": "Blueprint alang sa paghimo og mga butang"
+}

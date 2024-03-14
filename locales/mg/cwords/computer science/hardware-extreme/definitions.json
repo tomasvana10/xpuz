@@ -1,0 +1,20 @@
+{
+    "tsingerin'ny fampianarana": "Ny dingana arahin'ny CPU amin'ny fanatanterahana torol\u00e0lana tokana",
+    "maritrano superscalar": "Ny famolavolana CPU izay afaka manatanteraka toromarika maromaro isaky ny tsingerin'ny famantaranandro",
+    "faminaniana sampana": "Teknika izay andehanan'ny CPU hamantatra izay lalana halehan'ny fepetra iray",
+    "northbridge": "Chipset (rafitra tranainy) izay mampifandray ny CPU amin'ny RAM sy ny fiara fitateram-bahoaka haingam-pandeha",
+    "southbridge": "Chipset (rafitra tranainy) izay nitantana periferika miadana kokoa sy I/O",
+    "hyperthreading": "Teknolojia mamela ny fototra CPU tokana hiseho ho core lojika maromaro",
+    "risc": "Computer Set Instructions - Famolavolana CPU miaraka amin'ny torol\u00e0lana tsotra kokoa",
+    "cisc": "Computer Instruction Set Computer - famolavolana CPU miaraka amin'ny toromarika mahery vaika",
+    "simd": "Instruction Single Data Multiple, teknika fanodinana data mifanitsy",
+    "microarchitecture": "Ny antsipirian'ny fampiharana manokana amin'ny andiana torol\u00e0lana CPU",
+    "rafitra amin'ny puce": "Fampidirana singa maromaro (CPU, GPU, sns.) amin'ny puce tokana",
+    "rafitra napetraka": "Rafitra informatika natokana ho an'ny asa manokana, matetika ao anaty fitaovana lehibe kokoa",
+    "mikirao praogramanao": "Lozisialy voatahiry maharitra amin'ny fitaovana hardware (toy ny BIOS)",
+    "overclocking": "Mandeha CPU amin'ny hafainganam-pandeha ambony kokoa noho ny toromarika nokasainy",
+    "kaody fanitsiana diso": "Teknika hamantarana sy hanitsiana ny lesoka ao amin'ny RAM",
+    "tsy misy baiko famonoana": "Teknika izay ahafahan'ny CPU manatanteraka toromarika amin'ny filaharana mahomby kokoa",
+    "computing quantum": "Fampiasana ny fitsipiky ny mekanika quantum ho an'ny kajy",
+    "informatika neuromorphic": "Ireo maritrano informatika avy amin'ny ati-doha natao ho an'ny asa AI"
+}

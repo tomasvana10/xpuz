@@ -1,0 +1,20 @@
+{
+    "cykl instrukcji": "Kroki, kt\u00f3re wykonuje procesor, aby wykona\u0107 pojedyncz\u0105 instrukcj\u0119",
+    "architektura superskalarna": "Konstrukcja procesora umo\u017cliwiaj\u0105ca wykonanie wielu instrukcji w cyklu zegara",
+    "przewidywanie ga\u0142\u0119zi": "Technika, w kt\u00f3rej procesor pr\u00f3buje odgadn\u0105\u0107, w kt\u00f3r\u0105 stron\u0119 p\u00f3jdzie warunek",
+    "most P\u00f3\u0142nocny": "Chipset (starsze systemy), kt\u00f3ry \u0142\u0105czy\u0142 procesor z pami\u0119ci\u0105 RAM i szybkimi magistralami",
+    "most po\u0142udniowy": "Chipset (starsze systemy) obs\u0142uguj\u0105cy wolniejsze urz\u0105dzenia peryferyjne i wej\u015bcia/wyj\u015bcia",
+    "Hyper Threading": "Technologia umo\u017cliwiaj\u0105ca wy\u015bwietlanie pojedynczego rdzenia procesora jako wielu rdzeni logicznych",
+    "ryzykowne": "Komputer ze zredukowanym zestawem instrukcji \u2014 konstrukcja procesora z prostszymi instrukcjami",
+    "cisc": "Komputer ze z\u0142o\u017conym zestawem instrukcji \u2014 projekt procesora z pot\u0119\u017cnymi, z\u0142o\u017conymi instrukcjami",
+    "sim": "Pojedyncza instrukcja Wiele danych, technika przetwarzania danych r\u00f3wnolegle",
+    "mikroarchitektura": "Konkretne szczeg\u00f3\u0142y implementacji zestawu instrukcji procesora",
+    "system na chipie": "Integracja wielu komponent\u00f3w (CPU, GPU itp.) w jednym chipie",
+    "Wbudowany system": "System komputerowy dedykowany do konkretnego zadania, cz\u0119sto w ramach wi\u0119kszego urz\u0105dzenia",
+    "oprogramowanie sprz\u0119towe": "Oprogramowanie trwale przechowywane na urz\u0105dzeniu sprz\u0119towym (takim jak BIOS)",
+    "podkr\u0119canie": "Uruchamianie procesora z wy\u017csz\u0105 szybko\u015bci\u0105 ni\u017c zamierzona specyfikacja",
+    "kod korekcji b\u0142\u0119d\u00f3w": "Technika wykrywania i korygowania b\u0142\u0119d\u00f3w w pami\u0119ci RAM",
+    "wykonanie poza kolejno\u015bci\u0105": "Technika, w kt\u00f3rej procesor wykonuje instrukcje w bardziej wydajnej kolejno\u015bci",
+    "obliczenia kwantowe": "Wykorzystanie zasad mechaniki kwantowej do oblicze\u0144",
+    "obliczenia neuromorficzne": "Architektury obliczeniowe inspirowane m\u00f3zgiem, zaprojektowane do zada\u0144 AI"
+}

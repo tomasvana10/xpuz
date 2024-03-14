@@ -1,0 +1,16 @@
+{
+    "BENAR": "Mewakili nilai logika 1 atau 'on'",
+    "PALSU": "Mewakili nilai logis 0 atau 'mati'",
+    "bukan": "Operator logika yang membalikkan nilai kebenaran suatu ekspresi",
+    "Dan": "Operator logika, benar hanya jika kedua ekspresi benar",
+    "atau": "Operator logika, benar jika setidaknya satu ekspresi benar",
+    "xor": "Eksklusif OR, benar jika tepat satu ekspresi benar",
+    "ekspresi boolean": "Kombinasi variabel dan operator boolean",
+    "meja kebenaran": "Tabel yang menunjukkan keluaran untuk semua kombinasi masukan dalam ekspresi boolean",
+    "kontradiksi": "Ekspresi boolean yang selalu salah",
+    "hukum de morgan": "Aturan untuk memanipulasi ekspresi boolean dengan NOT, AND, dan OR",
+    "pernyataan bersyarat": "Mengontrol eksekusi kode berdasarkan apakah suatu kondisi benar atau tidak",
+    "nand": "BUKAN dan - benar hanya jika kedua ekspresi salah",
+    "juga bukan": "TIDAK atau - benar hanya jika kedua ekspresi salah",
+    "aljabar Boolean": "Sistem matematika yang digunakan untuk memodelkan dan menganalisis logika boolean"
+}

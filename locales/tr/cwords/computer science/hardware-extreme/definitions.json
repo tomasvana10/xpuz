@@ -1,0 +1,20 @@
+{
+    "talimat d\u00f6ng\u00fcs\u00fc": "Bir CPU'nun tek bir talimat\u0131 y\u00fcr\u00fctmek i\u00e7in izledi\u011fi ad\u0131mlar",
+    "s\u00fcperskalar mimari": "Saat d\u00f6ng\u00fcs\u00fc ba\u015f\u0131na birden fazla talimat\u0131 y\u00fcr\u00fctebilen CPU tasar\u0131m\u0131",
+    "\u015fube tahmini": "CPU'nun bir ko\u015fulun hangi y\u00f6ne gidece\u011fini tahmin etmeye \u00e7al\u0131\u015ft\u0131\u011f\u0131 teknik",
+    "Kuzey k\u00f6pr\u00fcs\u00fc": "CPU'yu RAM'e ve y\u00fcksek h\u0131zl\u0131 veri yollar\u0131na ba\u011flayan yonga seti (eski sistemler)",
+    "g\u00fcney k\u00f6pr\u00fcs\u00fc": "Daha yava\u015f \u00e7evre birimlerini ve G/\u00c7'yi i\u015fleyen yonga seti (eski sistemler)",
+    "hiper i\u015f par\u00e7ac\u0131\u011f\u0131": "Tek bir CPU \u00e7ekirde\u011finin birden fazla mant\u0131ksal \u00e7ekirdek olarak g\u00f6r\u00fcnmesine olanak tan\u0131yan teknoloji",
+    "risk": "Azalt\u0131lm\u0131\u015f Komut Seti Bilgisayar\u0131 - Daha basit talimatlara sahip CPU tasar\u0131m\u0131",
+    "cisc": "Karma\u015f\u0131k Komut Seti Bilgisayar\u0131 - G\u00fc\u00e7l\u00fc, karma\u015f\u0131k talimatlara sahip CPU tasar\u0131m\u0131",
+    "simd": "Tek Talimat \u00c7oklu Veri, verileri paralel olarak i\u015fleme tekni\u011fi",
+    "mikro mimari": "Bir CPU'nun talimat setinin \u00f6zel uygulama ayr\u0131nt\u0131lar\u0131",
+    "\u00e7ip \u00fczerindeki sistem": "Birden fazla bile\u015feni (CPU, GPU vb.) tek bir \u00e7ip \u00fczerinde entegre etme",
+    "yerle\u015fik sistem": "Genellikle daha b\u00fcy\u00fck bir cihazda, belirli bir g\u00f6reve adanm\u0131\u015f bir bilgisayar sistemi",
+    "donan\u0131m yaz\u0131l\u0131m\u0131": "Bir donan\u0131m ayg\u0131t\u0131nda (BIOS gibi) kal\u0131c\u0131 olarak saklanan yaz\u0131l\u0131m",
+    "h\u0131z a\u015f\u0131rtma": "Bir CPU'yu ama\u00e7lanan spesifikasyonlardan daha y\u00fcksek bir h\u0131zda \u00e7al\u0131\u015ft\u0131rmak",
+    "hata d\u00fczeltme kodu": "RAM'deki hatalar\u0131 tespit etme ve d\u00fczeltme tekni\u011fi",
+    "s\u0131ra d\u0131\u015f\u0131 infaz": "CPU'nun talimatlar\u0131 daha verimli bir s\u0131rayla y\u00fcr\u00fctt\u00fc\u011f\u00fc teknik",
+    "kuantum hesaplama": "Hesaplama i\u00e7in kuantum mekani\u011finin ilkelerinden yararlanma",
+    "n\u00f6romorfik hesaplama": "Yapay zeka g\u00f6revleri i\u00e7in tasarlanm\u0131\u015f, beyinden ilham alan bilgi i\u015flem mimarileri"
+}

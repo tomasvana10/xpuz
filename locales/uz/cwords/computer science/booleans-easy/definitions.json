@@ -1,0 +1,16 @@
+{
+    "rost": "1 yoki 'yoqish' mantiqiy qiymatini ifodalaydi",
+    "yolg'on": "0 yoki \"o'chirilgan\" mantiqiy qiymatini ifodalaydi",
+    "emas": "Ifodaning haqiqat qiymatini o'zgartiruvchi mantiqiy operator",
+    "va": "Mantiqiy operator, agar ikkala ifoda ham to'g'ri bo'lsa, true",
+    "yoki": "Mantiqiy operator, agar kamida bitta ifoda rost bo'lsa, true",
+    "xor": "Eksklyuziv OR, to'g'ri, agar aniq bir ifoda to'g'ri bo'lsa",
+    "mantiqiy ifoda": "Mantiqiy o'zgaruvchilar va operatorlarning kombinatsiyasi",
+    "haqiqat jadvali": "Boolean ifodadagi barcha kirish kombinatsiyalari uchun chiqishni ko'rsatadigan jadval",
+    "qarama-qarshilik": "Har doim noto'g'ri bo'lgan mantiqiy ifoda",
+    "de Morgan qonunlari": "NO, AND va OR bilan mantiqiy ifodalarni manipulyatsiya qilish qoidalari",
+    "shartli bayonot": "Shartning to'g'ri yoki yo'qligiga qarab kod bajarilishini boshqaradi",
+    "nand": "EMAS va - rost, agar ikkala ifoda ham yolg'on bo'lsa",
+    "na": "EMAS yoki - rost, agar ikkala ifoda noto'g'ri bo'lsa",
+    "mantiqiy algebra": "Mantiqiy mantiqni modellashtirish va tahlil qilish uchun ishlatiladigan matematik tizim"
+}

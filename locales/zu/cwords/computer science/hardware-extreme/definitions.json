@@ -1,0 +1,20 @@
+{
+    "umjikelezo wokufundisa": "Izinyathelo ezilandelwa yi-CPU ukuze isebenzise umyalo owodwa",
+    "superscalar architecture": "Idizayini ye-CPU engasebenzisa imiyalo eminingi ngomjikelezo wewashi ngamunye",
+    "isibikezelo segatsha": "Isu lapho i-CPU izama ukuqagela ukuthi okunemibandela kuzoya ngaphi",
+    "northbridge": "I-chipset (amasistimu amadala) axhume i-CPU ku-RAM namabhasi anesivinini esikhulu",
+    "southbridge": "I-Chipset (amasistimu amadala) abephethe amapheripheral ahamba kancane kanye ne-I/O",
+    "i-hyperthreading": "Ubuchwepheshe obuvumela umongo we-CPU owodwa ukuthi uvele njengamakhora anengqondo amaningi",
+    "risc": "Eyehlisiwe I-Instruction Set Computer - idizayini ye-CPU enemiyalo elula",
+    "cisc": "I-Complex Instruction Set Computer - idizayini ye-CPU enemiyalo enamandla, eyinkimbinkimbi",
+    "simd": "I-Single Instruction Multiple Data, indlela yokucubungula idatha ngokuhambisana",
+    "microarchitecture": "Imininingwane ethile yokusebenzisa yesethi yemiyalo ye-CPU",
+    "uhlelo ku-chip": "Ukuhlanganisa izingxenye eziningi (CPU, GPU, njll.) ku-chip eyodwa",
+    "uhlelo olushumekiwe": "Isistimu yekhompyutha enikelwe emsebenzini othile, ngokuvamile ngaphakathi kwedivayisi enkulu",
+    "i-firmware": "Isofthiwe egcinwe unomphela kudivayisi yehadiwe (njenge-BIOS)",
+    "overclocking": "Isebenzisa i-CPU ngesivinini esiphezulu kunokucaciswa kwayo okuhlosiwe",
+    "ikhodi yokulungisa iphutha": "Isu lokuthola nokulungisa amaphutha ku-RAM",
+    "ukwenziwa ngaphandle kwe-oda": "Isu lapho i-CPU yenza imiyalelo ngendlela esebenza kahle kakhulu",
+    "i-quantum computing": "Izimiso zokuhlanganisa ze-quantum mechanics zokubala",
+    "i-neuromorphic computing": "Izakhiwo zekhompuyutha eziphefumulelwe ingqondo ezidizayinelwe imisebenzi ye-AI"
+}

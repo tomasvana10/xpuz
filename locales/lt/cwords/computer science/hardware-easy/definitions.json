@@ -1,0 +1,14 @@
+{
+    "cpu": "Kompiuterio smegenys vykdo instrukcijas",
+    "laisvosios kreipties atmintis": "Nepastovi atmintis, kurioje saugomos veikian\u010dios programos ir duomenys",
+    "kietasis diskas": "Didel\u0117s talpos nepastovios atminties \u012ftaisas naudojant magnetines plok\u0161teles",
+    "kietojo k\u016bno diskas": "Nekintama saugykla naudojant \u201eflash\u201c atmint\u012f, greitesn\u0117 nei HDD",
+    "autobusas": "Duomen\u0173 jud\u0117jimo tarp komponent\u0173 kelias",
+    "\u012fvesties \u012frenginys": "Leid\u017eia \u012fvesti duomenis \u012f kompiuter\u012f (pvz., klaviat\u016br\u0105, pel\u0119)",
+    "i\u0161vesties \u012frenginys": "Pateikiami rezultatai vartotojui (pvz., monitorius, spausdintuvas)",
+    "pagrindin\u0117 plok\u0161t\u0117": "Pagrindin\u0117 plok\u0161t\u0117, jungianti visus kompiuterio komponentus",
+    "kompiuterinis tinklas": "Sujungt\u0173 \u012frengini\u0173, galin\u010di\u0173 dalytis i\u0161tekliais, rinkinys",
+    "IP adresas": "Unikalus skaitmeninis identifikatorius, priskirtas kiekvienam tinklo \u012frenginiui",
+    "pralaidumo": "Did\u017eiausia duomen\u0173 perdavimo tinklo keliu sparta",
+    "delsos laikas": "V\u0117lavimas, per kur\u012f duomenys nukeliaus i\u0161 \u0161altinio \u012f paskirties viet\u0105"
+}

@@ -1,0 +1,16 @@
+{
+    "satt": "T\u00e1knar r\u00f6kr\u00e9tt gildi 1 e\u00f0a 'on'",
+    "rangt": "T\u00e1knar r\u00f6kr\u00e9tt gildi 0 e\u00f0a 'off'",
+    "ekki": "R\u00f6klegur rekstrara\u00f0ili sem sn\u00fdr vi\u00f0 sannleikagildi tj\u00e1ningar",
+    "og": "R\u00f6klegur rekstrara\u00f0ili, satt a\u00f0eins ef b\u00e1\u00f0ar tj\u00e1ningar eru sannar",
+    "e\u00f0a": "R\u00f6klegur rekstrara\u00f0ili, satt ef a\u00f0 minnsta kosti ein tj\u00e1ning er s\u00f6nn",
+    "xor": "Exclusive OR, satt ef n\u00e1kv\u00e6mlega ein tj\u00e1ning er s\u00f6nn",
+    "boolesk tj\u00e1ning": "Sambland af Boole breytum og rekstrara\u00f0ilum",
+    "sannleikat\u00f6flu": "Tafla sem s\u00fdnir \u00fattaki\u00f0 fyrir allar samsetningar inntaks \u00ed boolean tj\u00e1ningu",
+    "m\u00f3ts\u00f6gn": "Boolean tj\u00e1ning sem er alltaf r\u00f6ng",
+    "l\u00f6g de Morgan": "Reglur til a\u00f0 me\u00f0h\u00f6ndla boolesk or\u00f0asamb\u00f6nd me\u00f0 NOT, AND og OR",
+    "skilyrt yfirl\u00fdsing": "St\u00fdrir keyrslu k\u00f3\u00f0a byggt \u00e1 \u00fev\u00ed hvort skilyr\u00f0i s\u00e9 satt",
+    "nand": "EKKI og - satt a\u00f0eins ef b\u00e1\u00f0ar tj\u00e1ningar eru rangar",
+    "n\u00e9": "EKKI e\u00f0a - satt a\u00f0eins ef b\u00e1\u00f0ar tj\u00e1ningar eru rangar",
+    "boolesk algebru": "St\u00e6r\u00f0fr\u00e6\u00f0ilega kerfi\u00f0 sem nota\u00f0 er til a\u00f0 l\u00edkana og greina Boolean r\u00f6kfr\u00e6\u00f0i"
+}

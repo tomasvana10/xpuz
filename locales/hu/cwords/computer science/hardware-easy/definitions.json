@@ -1,0 +1,14 @@
+{
+    "CPU": "A sz\u00e1m\u00edt\u00f3g\u00e9p agya utas\u00edt\u00e1sokat hajt v\u00e9gre",
+    "v\u00e9letlen hozz\u00e1f\u00e9r\u00e9s\u0171 mem\u00f3ria": "Ill\u00e9kony mem\u00f3ria, ahol a fut\u00f3 programok \u00e9s adatok t\u00e1rol\u00f3dnak",
+    "merevlemez": "Nagy kapacit\u00e1s\u00fa, nem felejt\u0151 t\u00e1rol\u00f3eszk\u00f6z m\u00e1gneses t\u00e1lc\u00e1kkal",
+    "Solid State Drive": "Nem felejt\u0151 t\u00e1rhely flash mem\u00f3ri\u00e1val, gyorsabb, mint a HDD-k",
+    "busz": "\u00datvonal az adatoknak az \u00f6sszetev\u0151k k\u00f6z\u00f6tt t\u00f6rt\u00e9n\u0151 utaz\u00e1s\u00e1hoz",
+    "beviteli eszk\u00f6z": "Lehet\u0151v\u00e9 teszi az adatbevitelt a sz\u00e1m\u00edt\u00f3g\u00e9pbe (p\u00e9ld\u00e1ul billenty\u0171zet, eg\u00e9r)",
+    "kimeneti eszk\u00f6z": "Az eredm\u00e9nyeket bemutatja a felhaszn\u00e1l\u00f3nak (p\u00e9ld\u00e1ul monitor, nyomtat\u00f3)",
+    "alaplap": "A f\u0151 \u00e1ramk\u00f6ri lap, amely a sz\u00e1m\u00edt\u00f3g\u00e9p \u00f6sszes alkatr\u00e9sz\u00e9t \u00f6sszek\u00f6ti",
+    "sz\u00e1m\u00edt\u00f3g\u00e9p h\u00e1l\u00f3zat": "\u00d6sszekapcsolt eszk\u00f6z\u00f6k gy\u0171jtem\u00e9nye, amelyek k\u00e9pesek megosztani az er\u0151forr\u00e1sokat",
+    "IP-c\u00edm": "Egyedi numerikus azonos\u00edt\u00f3, amely a h\u00e1l\u00f3zat minden eszk\u00f6z\u00e9hez van hozz\u00e1rendelve",
+    "s\u00e1vsz\u00e9less\u00e9g": "Az adat\u00e1tvitel maxim\u00e1lis sebess\u00e9ge egy h\u00e1l\u00f3zati \u00faton",
+    "k\u00e9sleltet\u00e9s": "Az adatok k\u00e9sleltet\u00e9se a forr\u00e1st\u00f3l a c\u00e9l\u00e1llom\u00e1sig"
+}

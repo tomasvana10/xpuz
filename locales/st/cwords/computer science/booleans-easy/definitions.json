@@ -1,0 +1,16 @@
+{
+    "'nete": "E emela boleng bo utloahalang ba 1 kapa 'on'",
+    "bohata": "E emela boleng bo utloahalang ba 0 kapa 'off'",
+    "eseng": "Moetsi oa mantsoe a utloahalang a fetolang boleng ba 'nete ba polelo",
+    "le": "Moetsi oa kelello, 'nete hafeela lipolelo tseo ka bobeli e le' nete",
+    "kapa": "logical operator, 'nete haeba bonyane polelo e le' ngoe e le 'nete",
+    "xor": "E ikhethang KAPA, 'nete haeba polelo e le 'ngoe e le 'nete",
+    "polelo ea boolean": "Motsoako oa mefuta e fapaneng ea boolean le basebelisi",
+    "tafole ea 'nete": "Tafole e bonts'ang tlhahiso bakeng sa metsoako eohle ea lintho tse kentsoeng ka polelo ea boolean",
+    "kganyetsano": "Polelo ea boolean eo kamehla e leng leshano",
+    "de morgan melao": "Melao ea ho fetola mantsoe a boolean ka NOT, LE, le OR",
+    "polelo e nang le maemo": "E laola ts'ebetso ea khoutu ho latela hore na boemo ke 'nete",
+    "nand": "HASE 'me -' nete ha feela lipolelo tseo ka bobeli e le bohata",
+    "leha e le": "E SE kapa - 'nete ha feela lipolelo tseo ka bobeli e le leshano",
+    "algebra ea boolean": "Sistimi ea lipalo e sebelisoang ho etsa mohlala le ho sekaseka mohopolo oa boolean"
+}

@@ -1,0 +1,14 @@
+{
+    "CPU": "Otak komputer, menjalankan instruksi",
+    "memori akses acak": "Memori volatil tempat menyimpan program dan data yang sedang berjalan",
+    "hard disk drive": "Perangkat penyimpanan non-volatil berkapasitas besar menggunakan piringan magnet",
+    "penggerak solid state": "Penyimpanan non-volatile menggunakan memori flash, lebih cepat dibandingkan HDD",
+    "bis": "Jalur bagi data untuk berpindah antar komponen",
+    "alat input": "Memungkinkan entri data ke komputer (seperti keyboard, mouse)",
+    "perangkat keluaran": "Menyajikan hasil kepada pengguna (seperti monitor, printer)",
+    "papan utama": "Papan sirkuit utama yang menghubungkan semua komponen komputer",
+    "jaringan komputer": "Kumpulan perangkat yang saling terhubung yang dapat berbagi sumber daya",
+    "alamat IP": "Pengidentifikasi numerik unik yang ditetapkan untuk setiap perangkat di jaringan",
+    "lebar pita": "Kecepatan maksimum transfer data melintasi jalur jaringan",
+    "latensi": "Penundaan waktu perjalanan data dari sumber ke tujuan"
+}

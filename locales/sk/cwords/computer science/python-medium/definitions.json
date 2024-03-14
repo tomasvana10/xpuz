@@ -1,0 +1,23 @@
+{
+    "zoznam": "Objednan\u00e1, vymenite\u013en\u00e1 kolekcia polo\u017eiek",
+    "nastavi\u0165": "Neusporiadan\u00e1 zbierka jedine\u010dn\u00fdch prvkov",
+    "slovn\u00edk": "D\u00e1tov\u00fd typ podobn\u00fd JSON s p\u00e1rmi k\u013e\u00fa\u010da a hodnoty",
+    "n\u00e1sobn\u00fd": "Usporiadan\u00fd, indexovan\u00fd, nemenn\u00fd typ \u00fadajov po\u013ea",
+    "\u017eiadny": "Predstavuje absenciu hodnoty",
+    "def": "Vytvor\u00ed nov\u00fa funkciu",
+    "vr\u00e1ti\u0165": "Odo\u0161le hodnotu sp\u00e4\u0165 z funkcie",
+    "v\u00fdnos": "Konvertuje funkciu na funkciu gener\u00e1tora (ktor\u00e1 je iter\u00e1torom aj iterovate\u013en\u00fdm)",
+    "lambda": "Vytv\u00e1ra anonymn\u00fa funkciu",
+    "prejs\u0165": "Z\u00e1stupn\u00fd v\u00fdraz, ktor\u00fd ni\u010d nerob\u00ed",
+    "prest\u00e1vka": "Pred\u010dasne ukon\u010dite slu\u010dku",
+    "\u010falej": "Presko\u010d\u00ed na \u010fal\u0161iu iter\u00e1ciu cyklu",
+    "kone\u010dne": "Spusti\u0165 po pokuse/okrem bloku bez oh\u013eadu na to, \u010di bola chyba zachyten\u00e1 alebo nie",
+    "glob\u00e1lne": "Deklaruje, \u017ee premenn\u00e1 m\u00e1 glob\u00e1lny rozsah",
+    "nemiestne": "Deklaruje, \u017ee premenn\u00e1 patr\u00ed do vonkaj\u0161ej funkcie",
+    "sk\u00faste": "Spust\u00ed blok k\u00f3du so spracovan\u00edm ch\u00fdb",
+    "okrem": "Zachyt\u00e1va a spracov\u00e1va \u0161pecifick\u00e9 v\u00fdnimky",
+    "zv\u00fd\u0161i\u0165": "Z\u00e1merne sp\u00fa\u0161\u0165a v\u00fdnimku",
+    "tvrdi\u0165": "Vyhodnot\u00ed v\u00fdraz a ak je nepravdiv\u00fd, vyvol\u00e1 chybu",
+    "s": "Pou\u017e\u00edva sa pre kontextov\u00fdch mana\u017e\u00e9rov na spr\u00e1vu zdrojov",
+    "trieda": "Pl\u00e1n na vytv\u00e1ranie objektov"
+}

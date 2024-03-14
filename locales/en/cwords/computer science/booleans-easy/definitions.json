@@ -1,0 +1,16 @@
+{
+    "true": "Represents a logical value of 1 or 'on'",
+    "false": "Represents a logical value of 0 or 'off'",
+    "not": "Logical operator that reverses the truth value of an expression",
+    "and": "Logical operator, true only if both expressions are true",
+    "or": "Logical operator, true if at least one expression is true",
+    "xor": "Exclusive OR, true if exactly one expression is true",
+    "boolean expression": "A combination of boolean variables and operators",
+    "truth table": "Table showing the output for all combinations of inputs in a boolean expression",
+    "contradiction": "A boolean expression that is always false",
+    "de morgan's laws": "Rules for manipulating boolean expressions with NOT, AND, and OR",
+    "conditional statement": "Controls code execution based on whether a condition is true",
+    "nand": "NOT and - true only if both expressions are false",
+    "nor": "NOT or - true only if both expressions are false",
+    "boolean algebra": "The mathematical system used to model and analyze boolean logic"
+}

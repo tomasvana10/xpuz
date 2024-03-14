@@ -1,0 +1,16 @@
+{
+    "run": "Waxay ka dhigan tahay qiimaha macquulka ah ee 1 ama 'on'",
+    "been ah": "Waxay ka dhigan tahay qiimaha macquulka ah ee 0 ama 'off'",
+    "maaha": "Hawlwadeen macquul ah oo beddela qiimaha runta ee odhaahda",
+    "iyo": "Hawlwadeen macquul ah, run kaliya haddii labada tibaaxood run yihiin",
+    "ama": "Hawlwadeen macquul ah, run haddii ugu yaraan hal odhaah run tahay",
+    "xor": "Gaar ah AMA, run haddii dhab ahaan hal tibaax run tahay",
+    "hadal boolean": "Isku-dhafka doorsoomayaasha boolean iyo hawl-wadeennada",
+    "miiska runta": "Jadwalka muujinaya wax-soo-saarka dhammaan isku-darka wax-soo-gelinta ee odhaahda boolean",
+    "khilaafid": "Hadal boolean ah oo had iyo jeer been abuur ah",
+    "sharciyada de Morgan": "Xeerarka lagu maamulayo tibaaxaha booleeyada ee MAYA, IYO, iyo AMA",
+    "bayaan shuruudaysan": "Waxay xakameysaa fulinta koodka iyadoo ku saleysan in xaaladdu run tahay iyo in kale",
+    "naand": "MA iyo - run kaliya haddii labada tibaaxood ay been yihiin",
+    "sidoo kale": "MA ama - run kaliya haddii labada tibaaxood ay been yihiin",
+    "aljebrada boolean": "Nidaamka xisaabeed ee loo adeegsaday qaabaynta iyo falanqaynta caqliga boolean"
+}

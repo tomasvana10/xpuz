@@ -1,0 +1,16 @@
+{
+    "waar": "Verteenwoordig 'n logiese waarde van 1 of 'aan'",
+    "onwaar": "Verteenwoordig 'n logiese waarde van 0 of 'af'",
+    "nie": "Logiese operateur wat die waarheidswaarde van 'n uitdrukking omkeer",
+    "en": "Logiese operateur, waar slegs as beide uitdrukkings waar is",
+    "of": "Logiese operateur, waar as ten minste een uitdrukking waar is",
+    "xor": "Eksklusief OF, waar as presies een uitdrukking waar is",
+    "Boolese uitdrukking": "'n Kombinasie van Boolese veranderlikes en operateurs",
+    "waarheidstabel": "Tabel wat die uitvoer toon vir alle kombinasies van insette in 'n Boolese uitdrukking",
+    "teenstrydigheid": "'n Boolese uitdrukking wat altyd vals is",
+    "de Morgan se wette": "Re\u00ebls vir die manipulering van Boolese uitdrukkings met NOT, AND en OR",
+    "voorwaardelike verklaring": "Beheer kode-uitvoering gebaseer op of 'n voorwaarde waar is",
+    "nand": "NIE en - waar slegs as beide uitdrukkings onwaar is",
+    "ook nie": "NIE of - waar slegs as beide uitdrukkings onwaar is",
+    "Boolese algebra": "Die wiskundige stelsel wat gebruik word om Boolese logika te modelleer en te ontleed"
+}

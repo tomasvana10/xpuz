@@ -1,0 +1,23 @@
+{
+    "siyah\u0131": "Sifari\u015fli, d\u0259yi\u015fdiril\u0259 bil\u0259n \u0259\u015fyalar toplusu",
+    "t\u0259yin edin": "Unikal elementl\u0259rin nizams\u0131z kolleksiyas\u0131",
+    "l\u00fc\u011f\u0259t": "A\u00e7ar v\u0259 d\u0259y\u0259r c\u00fctl\u0259ri il\u0259 JSON kimi m\u0259lumat n\u00f6v\u00fc",
+    "tuple": "Sifari\u015fli, indeksl\u0259nmi\u015f, d\u0259yi\u015fm\u0259z massiv m\u0259lumat n\u00f6v\u00fc",
+    "he\u00e7 biri": "D\u0259y\u0259rin olmamas\u0131n\u0131 ifad\u0259 edir",
+    "def": "Yeni funksiya yarad\u0131r",
+    "qay\u0131tmaq": "Funksiyadan d\u0259y\u0259ri geri g\u00f6nd\u0259rir",
+    "m\u0259hsuldarl\u0131q": "Funksiyan\u0131 generator funksiyas\u0131na \u00e7evirir (h\u0259m iterator, h\u0259m d\u0259 t\u0259krarlana bil\u0259ndir)",
+    "lambda": "Anonim funksiya yarad\u0131r",
+    "ke\u00e7m\u0259k": "He\u00e7 bir \u015fey etm\u0259y\u0259n yer tutucu ifad\u0259si",
+    "fasil\u0259": "D\u00f6ng\u0259d\u0259n vaxt\u0131ndan \u0259vv\u0259l \u00e7\u0131x\u0131n",
+    "davam et": "D\u00f6ng\u0259nin n\u00f6vb\u0259ti iterasiyas\u0131na ke\u00e7ir",
+    "n\u0259hay\u0259t": "X\u0259tan\u0131n a\u015fkar edilib-edilm\u0259m\u0259sind\u0259n as\u0131l\u0131 olmayaraq c\u0259hd/istisna blokundan sonra icra edin",
+    "qlobal": "Qlobal \u0259hat\u0259 dair\u0259sin\u0259 malik olan d\u0259yi\u015f\u0259ni elan edir",
+    "qeyri-yerli": "D\u0259yi\u015f\u0259nin xarici funksiyaya aid oldu\u011funu elan edir",
+    "c\u0259hd edin": "S\u0259hvl\u0259rin idar\u0259 edilm\u0259si il\u0259 kod blokunu i\u015f\u0259 sal\u0131r",
+    "istisna olmaqla": "X\u00fcsusi istisnalar\u0131 tutur v\u0259 idar\u0259 edir",
+    "qald\u0131rmaq": "Q\u0259sd\u0259n bir istisnaya s\u0259b\u0259b olur",
+    "iddia etm\u0259k": "\u0130fad\u0259ni qiym\u0259tl\u0259ndirir v\u0259 yalan olduqda x\u0259ta yarad\u0131r",
+    "il\u0259": "Resurslar\u0131 idar\u0259 etm\u0259k \u00fc\u00e7\u00fcn kontekst menecerl\u0259ri \u00fc\u00e7\u00fcn istifad\u0259 olunur",
+    "sinif": "Obyektl\u0259rin yarad\u0131lmas\u0131 \u00fc\u00e7\u00fcn plan"
+}

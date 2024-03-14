@@ -1,0 +1,20 @@
+{
+    "wareegga waxbarashada": "Talaabooyinka uu CPU raaco si uu u fuliyo hal tilmaam",
+    "naqshadaha superscalar": "Naqshadaynta CPU oo fulin karta tilmaamo badan saacaddiiba",
+    "saadaasha laanta": "Farsamada halka CPU-gu isku dayo inuu qiyaaso dariiqa shuruuduhu u socon doono",
+    "Northbridge": "Chipset (nidaamyadii hore) ee CPU-ga ku xidhay RAM iyo basaska xawaaraha sare leh",
+    "southbridge": "Chipset (nidaamyadii qadiimka ahaa) ee gacanta ku hayay meelaha gaabinaya iyo I/O",
+    "hyperthreading": "Tiknoolajiyada u oggolaanaysa hal xudunta CPU inay u muuqato sida koorayaal badan oo macquul ah",
+    "khatar": "Kumbuyuutar habeeya tilmaamaha hoos u dhaca - Nakhshad CPU oo leh tilmaamo ka fudud",
+    "cisc": "Tilmaanta Isku-dhafan ee Deji Kombiyuutar - Nakhshad CPU oo leh tilmaamo adag oo adag",
+    "simd": "Tilmaamaha Hal-ku-dhigga Xogta Badan, Farsamada habaynta xogta si barbar socda",
+    "dhismaha yar yar": "Faahfaahinta fulinta ee gaarka ah ee jaantuska tilmaamaha CPU",
+    "nidaamka on chip ah": "Isku dhafka qaybaha kala duwan (CPU, GPU, iwm.) ee hal chip",
+    "nidaamka gundhig": "Nidaam kombuyuutar oo loogu talagalay hawl gaar ah, oo badanaa ku dhex jira qalab weyn",
+    "firmware": "Software-ka si joogto ah ugu kaydsan qalabka hardware (sida BIOS)",
+    "xad dhaafka": "Ku socodsiinta CPU xawaarihiisa ka sarreeya sifooyinkii loogu talagalay",
+    "code sixitaanka qaladka": "Farsamada lagu ogaado oo lagu saxo khaladaadka RAM-ka",
+    "ka baxsan fulinta": "Farsamo uu CPU-gu u fuliyo hab-raaca hab-dhaqanka badan",
+    "xisaabinta tirada": "Mabaadi'da ka faa'iidaysiga makaanikada quantum ee xisaabinta",
+    "xisaabinta neuromorphic": "Qaab dhismeedka xisaabinta maskaxda ee loo habeeyay hawlaha AI"
+}

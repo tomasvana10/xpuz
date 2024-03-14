@@ -1,0 +1,14 @@
+{
+    "CPU": "Creierul computerului execut\u0103 instruc\u021biuni",
+    "memorie cu acces aleator": "Memorie volatil\u0103 \u00een care sunt stocate programele \u0219i datele care ruleaz\u0103",
+    "unitate hard disk": "Dispozitiv de stocare nevolatil de mare capacitate, folosind platouri magnetice",
+    "unitate SSD": "Stocare nevolatil\u0103 folosind memorie flash, mai rapid\u0103 dec\u00e2t HDD-urile",
+    "autobuz": "Calea de c\u0103l\u0103torie a datelor \u00eentre componente",
+    "dispozitiv de intrare": "Permite introducerea datelor \u00een computer (cum ar fi tastatura, mouse-ul)",
+    "dispozitiv de ie\u0219ire": "Prezint\u0103 rezultate utilizatorului (cum ar fi monitor, imprimant\u0103)",
+    "placa de baza": "Placa de circuite principale care conecteaz\u0103 toate componentele computerului",
+    "re\u021bea de calculatoare": "O colec\u021bie de dispozitive interconectate care pot partaja resurse",
+    "adresa IP": "Un identificator numeric unic atribuit fiec\u0103rui dispozitiv dintr-o re\u021bea",
+    "l\u0103\u021bime de band\u0103": "Rata maxim\u0103 de transfer de date pe o cale de re\u021bea",
+    "latenta": "\u00cent\u00e2rzierea \u00een timp pentru ca datele s\u0103 circule de la surs\u0103 la destina\u021bie"
+}

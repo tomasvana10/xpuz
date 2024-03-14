@@ -1,0 +1,16 @@
+{
+    "skute\u010dn\u00fd": "P\u0159edstavuje logickou hodnotu 1 nebo \u201eon\u201c",
+    "Nepravdiv\u00e9": "P\u0159edstavuje logickou hodnotu 0 nebo \u201evypnuto\u201c",
+    "ne": "Logick\u00fd oper\u00e1tor, kter\u00fd obrac\u00ed pravdivostn\u00ed hodnotu v\u00fdrazu",
+    "a": "Logick\u00fd oper\u00e1tor, true pouze v p\u0159\u00edpad\u011b, \u017ee oba v\u00fdrazy jsou pravdiv\u00e9",
+    "nebo": "Logick\u00fd oper\u00e1tor, true, pokud je alespo\u0148 jeden v\u00fdraz pravdiv\u00fd",
+    "xor": "Exkluzivn\u00ed OR, true, pokud je pravdiv\u00fd pr\u00e1v\u011b jeden v\u00fdraz",
+    "booleovsk\u00fd v\u00fdraz": "Kombinace booleovsk\u00fdch prom\u011bnn\u00fdch a oper\u00e1tor\u016f",
+    "pravdivostn\u00ed tabulka": "Tabulka zobrazuj\u00edc\u00ed v\u00fdstup pro v\u0161echny kombinace vstup\u016f v booleovsk\u00e9m v\u00fdrazu",
+    "rozpor": "Booleovsk\u00fd v\u00fdraz, kter\u00fd je v\u017edy nepravdiv\u00fd",
+    "de morganovy z\u00e1kony": "Pravidla pro manipulaci s booleovsk\u00fdmi v\u00fdrazy pomoc\u00ed NOT, AND a OR",
+    "podm\u00edn\u011bn\u00fd p\u0159\u00edkaz": "\u0158\u00edd\u00ed prov\u00e1d\u011bn\u00ed k\u00f3du na z\u00e1klad\u011b toho, zda je podm\u00ednka pravdiv\u00e1",
+    "nand": "NOT a - true pouze v p\u0159\u00edpad\u011b, \u017ee oba v\u00fdrazy jsou nepravdiv\u00e9",
+    "ani": "NOT nebo - true, pouze pokud jsou oba v\u00fdrazy nepravdiv\u00e9",
+    "booleovsk\u00e1 algebra": "Matematick\u00fd syst\u00e9m pou\u017e\u00edvan\u00fd k modelov\u00e1n\u00ed a anal\u00fdze booleovsk\u00e9 logiky"
+}

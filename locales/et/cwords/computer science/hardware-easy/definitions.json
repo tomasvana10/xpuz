@@ -1,0 +1,14 @@
+{
+    "Protsessor": "Arvuti aju t\u00e4idab juhiseid",
+    "muutm\u00e4lu": "Lenduv m\u00e4lu, kuhu salvestatakse t\u00f6\u00f6tavad programmid ja andmed",
+    "k\u00f5vaketas": "Suure mahutavusega mittelenduv salvestusseade, mis kasutab magnetplaate",
+    "pooljuhtketas": "P\u00fcsim\u00e4lu, mis kasutab v\u00e4lkm\u00e4lu, kiirem kui k\u00f5vakettad",
+    "buss": "Rada andmetele komponentide vahel liikumiseks",
+    "sisendseade": "V\u00f5imaldab andmete sisestamist arvutisse (nagu klaviatuur, hiir)",
+    "v\u00e4ljundseade": "Esitab kasutajale tulemused (nt monitor, printer)",
+    "emaplaat": "Peamine tr\u00fckkplaat, mis \u00fchendab k\u00f5ik arvuti komponendid",
+    "arvutiv\u00f5rk": "Kogumik omavahel \u00fchendatud seadmeid, mis v\u00f5ivad ressursse jagada",
+    "IP-aadress": "Igale v\u00f5rgus olevale seadmele m\u00e4\u00e4ratud kordumatu numbriline identifikaator",
+    "ribalaius": "Maksimaalne andmeedastuskiirus v\u00f5rgu kaudu",
+    "latentsus": "Andmete allikast sihtkohta liikumise viivitus"
+}

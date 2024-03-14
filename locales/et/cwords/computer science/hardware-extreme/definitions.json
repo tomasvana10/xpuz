@@ -1,0 +1,20 @@
+{
+    "juhendamise ts\u00fckkel": "Toimingud, mida CPU j\u00e4rgib \u00fche k\u00e4su t\u00e4itmiseks",
+    "superskalaarne arhitektuur": "Protsessori disain, mis suudab \u00fche taktits\u00fckli jooksul t\u00e4ita mitu k\u00e4sku",
+    "haru ennustus": "Tehnika, mille puhul protsessor proovib \u00e4ra arvata, millises suunas tingimuslause liigub",
+    "p\u00f5hjasild": "Kiibistik (vanemad s\u00fcsteemid), mis \u00fchendas protsessori RAM-i ja kiirete siinidega",
+    "l\u00f5unasild": "Kiibistik (vanemad s\u00fcsteemid), mis k\u00e4sitles aeglasemaid v\u00e4lisseadmeid ja I/O-d",
+    "h\u00fcperkeermestamine": "Tehnoloogia, mis v\u00f5imaldab \u00fchel CPU tuumal kuvada mitu loogilist tuuma",
+    "risc": "V\u00e4hendatud juhistega arvuti \u2013 protsessori disain lihtsamate juhistega",
+    "cisc": "Kompleksne juhiskomplekti arvuti \u2013 CPU disain v\u00f5imsate ja keerukate juhistega",
+    "simd": "Single Instruction Multiple Data, meetod andmete paralleelseks t\u00f6\u00f6tlemiseks",
+    "mikroarhitektuur": "Protsessori k\u00e4sukomplekti konkreetsed rakenduse \u00fcksikasjad",
+    "s\u00fcsteem kiibil": "Mitme komponendi (CPU, GPU jne) integreerimine \u00fchele kiibile",
+    "sisseehitatud s\u00fcsteem": "Arvutis\u00fcsteem, mis on p\u00fchendatud konkreetsele \u00fclesandele, sageli suuremas seadmes",
+    "p\u00fcsivara": "Tarkvara, mis on p\u00fcsivalt salvestatud riistvaraseadmesse (nt BIOS)",
+    "\u00fclekiirendamine": "Protsessori t\u00f6\u00f6tamine etten\u00e4htud spetsifikatsioonidest suurema kiirusega",
+    "veaparanduskood": "RAM-i vigade tuvastamise ja parandamise tehnika",
+    "korrast \u00e4ra t\u00e4itmine": "Tehnika, mille puhul CPU t\u00e4idab k\u00e4ske t\u00f5husamas j\u00e4rjekorras",
+    "kvantarvutus": "Kvantmehaanika p\u00f5him\u00f5tete kasutamine arvutamisel",
+    "neuromorfne andmet\u00f6\u00f6tlus": "Ajust inspireeritud andmet\u00f6\u00f6tlusarhitektuurid, mis on loodud tehisintellekti \u00fclesannete jaoks"
+}

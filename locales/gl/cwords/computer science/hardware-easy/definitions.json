@@ -1,0 +1,14 @@
+{
+    "CPU": "O cerebro do ordenador, executa instruci\u00f3ns",
+    "memoria de acceso aleatorio": "Memoria vol\u00e1til onde se almacenan os programas e os datos en execuci\u00f3n",
+    "unidade de disco duro": "Dispositivo de almacenamento non vol\u00e1til de gran capacidade mediante placas magn\u00e9ticas",
+    "unidade de estado s\u00f3lido": "Almacenamento non vol\u00e1til mediante memoria flash, m\u00e1is r\u00e1pido que os discos duros",
+    "autob\u00fas": "V\u00eda para viaxar os datos entre os compo\u00f1entes",
+    "dispositivo de entrada": "Permite a entrada de datos no ordenador (como teclado, rato)",
+    "dispositivo de sa\u00edda": "Presenta os resultados ao usuario (como monitor, impresora)",
+    "placa base": "A placa de circu\u00edto principal que conecta todos os compo\u00f1entes do ordenador",
+    "rede inform\u00e1tica": "Unha colecci\u00f3n de dispositivos interconectados que poden compartir recursos",
+    "enderezo IP": "Un identificador num\u00e9rico \u00fanico asignado a cada dispositivo nunha rede",
+    "ancho de banda": "A taxa m\u00e1xima de transferencia de datos a trav\u00e9s dunha ruta de rede",
+    "latencia": "O atraso no tempo para que os datos viaxan de orixe a destino"
+}

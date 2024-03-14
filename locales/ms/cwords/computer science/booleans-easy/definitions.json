@@ -1,0 +1,16 @@
+{
+    "benar": "Mewakili nilai logik 1 atau 'on'",
+    "salah": "Mewakili nilai logik 0 atau 'mati'",
+    "bukan": "Operator logik yang membalikkan nilai kebenaran ungkapan",
+    "dan": "Operator logik, benar hanya jika kedua-dua ungkapan adalah benar",
+    "atau": "Operator logik, benar jika sekurang-kurangnya satu ungkapan adalah benar",
+    "xor": "Eksklusif ATAU, benar jika betul-betul satu ungkapan adalah benar",
+    "ungkapan boolean": "Gabungan pembolehubah boolean dan pengendali",
+    "jadual kebenaran": "Jadual menunjukkan output untuk semua gabungan input dalam ungkapan boolean",
+    "percanggahan": "Ungkapan boolean yang sentiasa palsu",
+    "undang-undang de morgan": "Peraturan untuk memanipulasi ungkapan boolean dengan NOT, AND, dan OR",
+    "pernyataan bersyarat": "Mengawal pelaksanaan kod berdasarkan sama ada keadaan adalah benar",
+    "nand": "TIDAK dan - benar hanya jika kedua-dua ungkapan adalah palsu",
+    "mahupun": "TIDAK atau - benar hanya jika kedua-dua ungkapan adalah palsu",
+    "algebra boolean": "Sistem matematik yang digunakan untuk memodelkan dan menganalisis logik boolean"
+}

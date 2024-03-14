@@ -1,0 +1,20 @@
+{
+    "instruction cycle": "Matanho eCPU anotevera kuita kuraira kumwe chete",
+    "superscalar architecture": "CPU dhizaini inogona kuita akawanda mirairo pawachi kutenderera",
+    "kufanotaura kwebazi": "Tekinoroji uko iyo CPU inoedza kufungidzira kuti inzira ipi ichaenda",
+    "northbridge": "Chipset (masisitimu echikuru) akabatanidza iyo CPU kuRAM uye mabhazi anomhanya kwazvo",
+    "southbridge": "Chipset (masisitimu ekare) aibata zvishoma nezvishoma peripherals uye I/O",
+    "hyperthreading": "Tekinoroji inobvumira imwechete CPU musimboti kuti iite seakawanda anonzwisisika cores",
+    "risc": "Yakaderedzwa Yekuraira Seta Kombuta - CPU dhizaini ine mirairo iri nyore",
+    "cisc": "Complex Instruction Set Computer - CPU dhizaini ine simba, yakaoma mirairo",
+    "simd": "Imwe Instruction Multiple Data, nzira yekugadzirisa data yakafanana",
+    "microarchitecture": "Iwo chaiwo maitiro ekuita eCPU's kuraira set",
+    "system pane chip": "Kubatanidza akawanda macomputer (CPU, GPU, nezvimwewo) pane imwechete chip",
+    "embedded system": "Kombiyuta system yakatsaurirwa kune rimwe basa, kazhinji mukati memudziyo mukuru",
+    "firmware": "Software yakachengetwa zvachose pane hardware mudziyo (seBIOS)",
+    "overclocking": "Kumhanyisa CPU nekumhanya kwakanyanya kupfuura zvayakada",
+    "kodhi yekugadzirisa kukanganisa": "Tekinoroji yekuona uye kugadzirisa zvikanganiso mu RAM",
+    "kunze kwehurongwa": "Tekinoroji uko CPU inoita mirairo mune yakanyatsorongeka",
+    "quantum computing": "Kubatanidza misimboti ye quantum mechanics yekuverengera",
+    "neuromorphic computing": "Brain-yakafuridzirwa komputa zvivakwa zvakagadzirirwa AI mabasa"
+}

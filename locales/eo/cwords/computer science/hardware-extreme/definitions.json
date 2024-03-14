@@ -1,0 +1,20 @@
+{
+    "instrua ciklo": "La pa\u015doj kiujn CPU sekvas por efektivigi ununuran instrukcion",
+    "superskala arkitekturo": "CPU-dezajno, kiu povas efektivigi plurajn instrukciojn per horlo\u011da ciklo",
+    "bran\u0109o prognozo": "Tekniko kie la CPU provas diveni kiun vojon iros kondi\u0109o",
+    "norda ponto": "Chipset (pli malnovaj sistemoj) kiu ligis la CPU al RAM kaj altrapidaj busoj",
+    "suda ponto": "Chipset (pli malnovaj sistemoj) kiu pritraktis pli malrapidajn periferiojn kaj I/O",
+    "hiperfadenado": "Teknologio permesanta al ununura CPU-kerno aperi kiel multoblaj logikaj kernoj",
+    "risc": "Reduktita Instrukcia Aro Komputilo - CPU-dezajno kun pli simplaj instrukcioj",
+    "cisc": "Kompleksa Instrukcio Komputilo - CPU-dezajno kun potencaj, kompleksaj instrukcioj",
+    "simd": "Single Instruction Multiple Data, tekniko por prilaborado de datumoj paralele",
+    "mikroarkitekturo": "La specifaj efektivigdetaloj de la instrukcia\u0135o de CPU",
+    "sistemo sur blato": "Integri multoblajn komponentojn (CPU, GPU, ktp.) sur ununura blato",
+    "enigita sistemo": "Komputila sistemo dedi\u0109ita al specifa tasko, ofte ene de pli granda aparato",
+    "firmvaro": "Programaro konstante stokita sur aparataro (kiel la BIOS)",
+    "overclocking": "Kurante CPU kun pli alta rapideco ol \u011diaj celitaj specifoj",
+    "erarkorekta kodo": "Tekniko por detekti kaj korekti erarojn en RAM",
+    "ekster orda ekzekuto": "Tekniko kie CPU plenumas instrukciojn en pli efika ordo",
+    "kvantuma komputado": "Utiligante principojn de kvantuma mekaniko por komputado",
+    "ne\u016dromorfa komputado": "Komputilarkitekturoj inspiritaj de cerbo desegnitaj por taskoj de AI"
+}

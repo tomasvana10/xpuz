@@ -1,0 +1,14 @@
+{
+    "cpu": "La cerbo de la komputilo, ekzekutas instrukciojn",
+    "memoro de hazarda aliro": "Volatila memoro kie rulantaj programoj kaj datumoj estas stokitaj",
+    "malmola disko": "Grandkapacita ne-volatila stokaparato uzante magnetajn pladojn",
+    "solidstata disko": "Ne-volatila stokado uzante fulmmemoron, pli rapide ol HDD-oj",
+    "buso": "Vojo por datumoj por voja\u011di inter komponantoj",
+    "eniga aparato": "Permesas eniron de datumoj en la komputilon (kiel klavaro, muso)",
+    "eligo aparato": "Prezentas rezultojn al la uzanto (kiel monitoro, presilo)",
+    "baztabulo": "La \u0109efa cirkvito, kiu ligas \u0109iujn komponentojn de la komputilo",
+    "komputila reto": "Kolekto de interligitaj aparatoj, kiuj povas kunhavi rimedojn",
+    "IP-adreso": "Unika nombra identigilo asignita al \u0109iu aparato en reto",
+    "bendolar\u011do": "La maksimuma indico de transdono de datumoj tra reto-vojo",
+    "latenteco": "La prokrasto en tempo por datumoj por voja\u011di de fonto al celloko"
+}

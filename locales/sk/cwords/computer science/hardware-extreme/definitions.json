@@ -1,0 +1,20 @@
+{
+    "in\u0161trukt\u00e1\u017eny cyklus": "Kroky, ktor\u00e9 CPU vykon\u00e1, aby vykonal jednu in\u0161trukciu",
+    "superskal\u00e1rnu architekt\u00faru": "Dizajn CPU, ktor\u00fd dok\u00e1\u017ee vykon\u00e1va\u0165 viacero in\u0161trukci\u00ed za cyklus hod\u00edn",
+    "predikcia vetvy": "Technika, pri ktorej sa CPU sna\u017e\u00ed uh\u00e1dnu\u0165, ktor\u00fdm smerom sa podmie\u0148uje",
+    "severn\u00fd most": "\u010cipov\u00e1 s\u00faprava (star\u0161ie syst\u00e9my), ktor\u00e1 sp\u00e1jala CPU s RAM a vysokor\u00fdchlostn\u00fdmi zbernicami",
+    "ju\u017en\u00fd most": "\u010cipov\u00e1 s\u00faprava (star\u0161ie syst\u00e9my), ktor\u00e1 zvl\u00e1dala pomal\u0161ie perif\u00e9rie a I/O",
+    "hyperthreading": "Technol\u00f3gia umo\u017e\u0148uj\u00faca, aby sa jedno jadro CPU javilo ako viacero logick\u00fdch jadier",
+    "risc": "Redukovan\u00e1 in\u0161truk\u010dn\u00e1 sada Computer - CPU design s jednoduch\u0161\u00edmi in\u0161trukciami",
+    "cisc": "Po\u010d\u00edta\u010d so s\u00fapravou komplexn\u00fdch in\u0161trukci\u00ed \u2013 dizajn CPU s v\u00fdkonn\u00fdmi a komplexn\u00fdmi pokynmi",
+    "simd": "Single Instruction Multiple Data, technika na paraleln\u00e9 spracovanie \u00fadajov",
+    "mikroarchitekt\u00fara": "\u0160pecifick\u00e9 detaily implement\u00e1cie in\u0161truk\u010dnej sady CPU",
+    "syst\u00e9m na \u010dipe": "Integr\u00e1cia viacer\u00fdch komponentov (CPU, GPU at\u010f.) na jeden \u010dip",
+    "vstavan\u00fd syst\u00e9m": "Po\u010d\u00edta\u010dov\u00fd syst\u00e9m ur\u010den\u00fd na konkr\u00e9tnu \u00falohu, \u010dasto v r\u00e1mci v\u00e4\u010d\u0161ieho zariadenia",
+    "firmv\u00e9ru": "Softv\u00e9r trvalo ulo\u017een\u00fd na hardv\u00e9rovom zariaden\u00ed (ako je BIOS)",
+    "pretaktovanie": "Spustenie CPU pri vy\u0161\u0161ej r\u00fdchlosti, ne\u017e je jeho zam\u00fd\u0161\u013ean\u00e9 \u0161pecifik\u00e1cie",
+    "k\u00f3d opravy ch\u00fdb": "Technika detekcie a opravy ch\u00fdb v pam\u00e4ti RAM",
+    "vykonanie mimo poradia": "Technika, pri ktorej CPU vykon\u00e1va in\u0161trukcie v efekt\u00edvnej\u0161om porad\u00ed",
+    "kvantov\u00e9 v\u00fdpo\u010dty": "Vyu\u017eitie princ\u00edpov kvantovej mechaniky pre v\u00fdpo\u010dty",
+    "neuromorfn\u00e9 v\u00fdpo\u010dty": "V\u00fdpo\u010dtov\u00e9 architekt\u00fary in\u0161pirovan\u00e9 mozgom navrhnut\u00e9 pre \u00falohy AI"
+}

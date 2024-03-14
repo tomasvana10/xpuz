@@ -1,0 +1,16 @@
+{
+    "f\u00edor": "Is ionann \u00e9 agus luach loighci\u00fail 1 n\u00f3 'ar'",
+    "br\u00e9agach": "Is ionann \u00e9 agus luach loighci\u00fail 0 n\u00f3 'as'",
+    "n\u00ed": "Oibreoir loighci\u00fail a aisiompa\u00edonn luach f\u00edrinne slonn",
+    "agus": "Oibreoir loighci\u00fail, f\u00edor ach amh\u00e1in m\u00e1 t\u00e1 an d\u00e1 shloinneadh f\u00edor",
+    "n\u00f3": "Oibreoir loighci\u00fail, f\u00edor m\u00e1 t\u00e1 slonn amh\u00e1in ar a laghad f\u00edor",
+    "xor": "Eisiach N\u00d3, f\u00edor m\u00e1s f\u00edor go beacht slonn amh\u00e1in",
+    "abairt boolean": "Measc\u00e1n d'athr\u00f3ga agus oibreoir\u00ed boolean",
+    "t\u00e1bla f\u00edrinne": "T\u00e1bla a thaispe\u00e1nann an t-aschur do gach teaglaim ionchuir i slonn Boole",
+    "contr\u00e1rtha": "L\u00e9iri\u00fa boolean at\u00e1 br\u00e9agach i gc\u00f3na\u00ed",
+    "dl\u00edthe de morgan": "Rialacha chun nathanna boolean a ionramh\u00e1il le NOT, AND, agus OR",
+    "r\u00e1iteas coinn\u00edollach": "Riala\u00edonn s\u00e9 forghn\u00edomh\u00fa c\u00f3d bunaithe ar cib\u00e9 an bhfuil coinn\u00edoll f\u00edor",
+    "nannd": "N\u00cdL agus - f\u00edor ach amh\u00e1in m\u00e1 t\u00e1 an d\u00e1 shloinneadh br\u00e9agach",
+    "n\u00e1": "N\u00cdL n\u00f3 - f\u00edor ach amh\u00e1in m\u00e1 t\u00e1 an d\u00e1 shloinneadh br\u00e9agach",
+    "ailg\u00e9abar boolean": "An c\u00f3ras matamaitice a \u00fas\u00e1idtear chun loighic Boole a shamhalt\u00fa agus a anail\u00edsi\u00fa"
+}

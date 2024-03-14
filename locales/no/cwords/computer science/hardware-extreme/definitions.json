@@ -1,0 +1,20 @@
+{
+    "instruksjonssyklus": "Trinnene en CPU f\u00f8lger for \u00e5 utf\u00f8re en enkelt instruksjon",
+    "superskal\u00e6r arkitektur": "CPU-design som kan utf\u00f8re flere instruksjoner per klokkesyklus",
+    "gren prediksjon": "Teknikk der CPU pr\u00f8ver \u00e5 gjette hvilken vei en betinget vil g\u00e5",
+    "nordbro": "Brikkesett (eldre systemer) som koblet CPU til RAM og h\u00f8yhastighetsbusser",
+    "s\u00f8rbro": "Brikkesett (eldre systemer) som h\u00e5ndterte tregere periferiutstyr og I/O",
+    "hyperthreading": "Teknologi som lar en enkelt CPU-kjerne vises som flere logiske kjerner",
+    "risc": "Redusert instruksjonssett Datamaskin - CPU-design med enklere instruksjoner",
+    "cisc": "Complex Instruction Set Computer - CPU-design med kraftige, komplekse instruksjoner",
+    "simd": "Single Instruction Multiple Data, teknikk for \u00e5 behandle data parallelt",
+    "mikroarkitektur": "De spesifikke implementeringsdetaljene til en CPUs instruksjonssett",
+    "system p\u00e5 en brikke": "Integrering av flere komponenter (CPU, GPU, etc.) p\u00e5 en enkelt brikke",
+    "integrert system": "Et datasystem dedikert til en spesifikk oppgave, ofte innenfor en st\u00f8rre enhet",
+    "fastvare": "Programvare permanent lagret p\u00e5 en maskinvareenhet (som BIOS)",
+    "overklokking": "Kj\u00f8rer en CPU med h\u00f8yere hastighet enn dens tiltenkte spesifikasjoner",
+    "feilrettingskode": "Teknikk for \u00e5 oppdage og rette feil i RAM",
+    "ute av drift": "Teknikk der en CPU utf\u00f8rer instruksjoner i en mer effektiv rekkef\u00f8lge",
+    "kvanteberegning": "Utnytte prinsipper for kvantemekanikk for beregning",
+    "nevromorf databehandling": "Hjerneinspirerte dataarkitekturer designet for AI-oppgaver"
+}

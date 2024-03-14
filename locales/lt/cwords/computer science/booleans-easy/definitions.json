@@ -1,0 +1,16 @@
+{
+    "tiesa": "Nurodo login\u0119 reik\u0161m\u0119 1 arba \u201e\u012fjungta\u201c",
+    "klaidinga": "Nurodo login\u0119 reik\u0161m\u0119 0 arba \u201ei\u0161jungta\u201c",
+    "ne": "Loginis operatorius, apver\u010diantis i\u0161rai\u0161kos tiesos reik\u0161m\u0119",
+    "ir": "Loginis operatorius, tiesa, tik jei abi i\u0161rai\u0161kos yra teisingos",
+    "arba": "Loginis operatorius, tiesa, jei bent viena i\u0161rai\u0161ka yra teisinga",
+    "xor": "I\u0161skirtinis ARBA, tiesa, jei teisinga tiksliai viena i\u0161rai\u0161ka",
+    "B\u016blio i\u0161rai\u0161ka": "B\u016blio kintam\u0173j\u0173 ir operatori\u0173 derinys",
+    "tiesos lentel\u0117": "Lentel\u0117, kurioje rodoma vis\u0173 login\u0117s i\u0161rai\u0161kos \u012fvesties derini\u0173 i\u0161vestis",
+    "prie\u0161taravimas": "B\u016blio i\u0161rai\u0161ka, kuri visada yra klaidinga",
+    "de Morgano d\u0117sniai": "Taisykl\u0117s, kaip manipuliuoti login\u0117mis i\u0161rai\u0161komis su NOT, AND ir OR",
+    "s\u0105lyginis teiginys": "Valdo kodo vykdym\u0105 pagal tai, ar s\u0105lyga yra teisinga",
+    "nand": "NE ir - tiesa, tik jei abi i\u0161rai\u0161kos yra klaidingos",
+    "nei": "NE arba - tiesa, tik jei abi i\u0161rai\u0161kos yra klaidingos",
+    "B\u016blio algebra": "Matematin\u0117 sistema, naudojama loginei logikai modeliuoti ir analizuoti"
+}

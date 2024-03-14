@@ -1,0 +1,16 @@
+{
+    "veru": "Jirrappre\u017centa valur lo\u0121iku ta' 1 jew 'on'",
+    "falza": "Jirrappre\u017centa valur lo\u0121iku ta' 0 jew 'off'",
+    "le": "Operatur lo\u0121iku li jre\u0121\u0121a' lura l-valur tal-verit\u00e0 ta' espressjoni",
+    "u": "Operatur lo\u0121iku, veru biss jekk i\u017c-\u017cew\u0121 espressjonijiet huma veri",
+    "jew": "Operatur lo\u0121iku, veru jekk mill-inqas espressjoni wa\u0127da hija vera",
+    "xor": "JEW esklussivi, veru jekk e\u017cattament espressjoni wa\u0127da hija vera",
+    "espressjoni booleana": "Ta\u0127lita ta 'varjabbli boolean u operaturi",
+    "tabella tal-verit\u00e0": "Tabella li turi l-output g\u0127all-kombinazzjonijiet kollha ta' inputs f'espressjoni booleana",
+    "kontradizzjoni": "Espressjoni booleana li hija dejjem falza",
+    "il-li\u0121ijiet ta' de Morgan": "Regoli g\u0127all-manipulazzjoni ta' espressjonijiet booleani b'NO, AND, u JEW",
+    "dikjarazzjoni kundizzjonali": "Jikkontrolla l-e\u017cekuzzjoni tal-kodi\u010bi bba\u017cata fuq jekk kundizzjoni hijiex vera",
+    "nand": "MHUX u - veru biss jekk i\u017c-\u017cew\u0121 espressjonijiet huma foloz",
+    "lanqas": "MHUX jew - veru biss jekk i\u017c-\u017cew\u0121 espressjonijiet huma foloz",
+    "al\u0121ebra booleana": "Is-sistema matematika u\u017cata biex timmudella u tanalizza l-lo\u0121ika booleana"
+}

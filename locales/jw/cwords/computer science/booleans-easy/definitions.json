@@ -1,0 +1,15 @@
+{
+    "bener": "Makili nilai logis saka 1 utawa 'on'",
+    "palsu": "Makili nilai logis 0 utawa 'mati'",
+    "ora": "Operator logis sing mbalikke nilai bebener saka ekspresi",
+    "lan": "Operator logis, bener mung yen loro ekspresi bener",
+    "utawa": "NOT utawa - bener mung yen loro ungkapan iku salah",
+    "xor": "Eksklusif UTAWA, bener yen salah siji ekspresi bener",
+    "ekspresi boolean": "Kombinasi variabel lan operator boolean",
+    "tabel bebener": "Tabel nuduhake output kanggo kabeh kombinasi input ing ekspresi boolean",
+    "kontradiksi": "Ekspresi boolean sing tansah palsu",
+    "hukum de morgan": "Aturan kanggo manipulasi ekspresi boolean nganggo NOT, AND, lan OR",
+    "statement kondisional": "Ngontrol eksekusi kode adhedhasar apa kondisi bener",
+    "nand": "NOT lan - bener mung yen loro ekspresi palsu",
+    "aljabar boolean": "Sistem matematika sing digunakake kanggo model lan nganalisis logika boolean"
+}

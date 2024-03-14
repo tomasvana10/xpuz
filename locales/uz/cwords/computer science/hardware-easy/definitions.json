@@ -1,0 +1,14 @@
+{
+    "Markaziy protsessor": "Kompyuterning miyasi ko'rsatmalarni bajaradi",
+    "tasodifiy kirish xotirasi": "Ishlayotgan dasturlar va ma'lumotlar saqlanadigan o'zgaruvchan xotira",
+    "qattiq disk drayveri": "Magnit plastinalardan foydalangan holda katta hajmli uchuvchan bo'lmagan saqlash moslamasi",
+    "qattiq holatdagi haydovchi": "Fleshli xotira yordamida o'zgaruvchan bo'lmagan saqlash, HDDlardan tezroq",
+    "avtobus": "Ma'lumotlarning komponentlar o'rtasida harakatlanish yo'li",
+    "kiritish qurilmasi": "Kompyuterga ma'lumotlarni kiritish imkonini beradi (masalan, klaviatura, sichqoncha)",
+    "chiqish qurilmasi": "Natijalarni foydalanuvchiga taqdim etadi (masalan, monitor, printer)",
+    "anakart": "Kompyuterning barcha komponentlarini birlashtiruvchi asosiy elektron plata",
+    "kompyuter tarmog'i": "Resurslarni almashishi mumkin bo'lgan o'zaro bog'langan qurilmalar to'plami",
+    "IP manzili": "Tarmoqdagi har bir qurilmaga tayinlangan noyob raqamli identifikator",
+    "tarmoqli kengligi": "Tarmoq yo'li bo'ylab ma'lumotlarni uzatishning maksimal tezligi",
+    "kechikish": "Ma'lumotlarning manbadan manzilga o'tishi uchun kechikish"
+}

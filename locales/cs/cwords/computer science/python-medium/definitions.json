@@ -1,0 +1,23 @@
+{
+    "seznam": "Objednan\u00e1, m\u011bniteln\u00e1 sb\u00edrka polo\u017eek",
+    "soubor": "Neuspo\u0159\u00e1dan\u00e1 sb\u00edrka jedine\u010dn\u00fdch prvk\u016f",
+    "slovn\u00edk": "Datov\u00fd typ podobn\u00fd JSON s p\u00e1ry kl\u00ed\u010d\u016f a hodnot",
+    "tuple": "Se\u0159azen\u00fd, indexovan\u00fd, nem\u011bnn\u00fd datov\u00fd typ pole",
+    "\u017e\u00e1dn\u00fd": "P\u0159edstavuje absenci hodnoty",
+    "def": "Vytvo\u0159\u00ed novou funkci",
+    "vr\u00e1tit se": "Ode\u0161le hodnotu zp\u011bt z funkce",
+    "v\u00fdt\u011b\u017eek": "P\u0159evede funkci na funkci gener\u00e1toru (co\u017e je jak iter\u00e1tor, tak iterovateln\u00fd)",
+    "lambda": "Vytvo\u0159\u00ed anonymn\u00ed funkci",
+    "slo\u017eit": "Z\u00e1stupn\u00fd p\u0159\u00edkaz, kter\u00fd nic ned\u011bl\u00e1",
+    "p\u0159est\u00e1vka": "P\u0159ed\u010dasn\u011b opus\u0165te smy\u010dku",
+    "pokra\u010dovat": "P\u0159esko\u010d\u00ed na dal\u0161\u00ed iteraci smy\u010dky",
+    "Kone\u010dn\u011b": "Spustit po bloku pokus/vyjma bez ohledu na to, zda byla chyba zachycena nebo ne",
+    "glob\u00e1ln\u00ed": "Deklaruje, \u017ee prom\u011bnn\u00e1 m\u00e1 glob\u00e1ln\u00ed rozsah",
+    "nem\u00edstn\u00ed": "Deklaruje, \u017ee prom\u011bnn\u00e1 pat\u0159\u00ed k vn\u011bj\u0161\u00ed funkci",
+    "Sna\u017e se": "Spust\u00ed blok k\u00f3du se zpracov\u00e1n\u00edm chyb",
+    "a\u017e na": "Chyt\u00e1 a zpracov\u00e1v\u00e1 specifick\u00e9 v\u00fdjimky",
+    "vyzdvihnout": "Z\u00e1m\u011brn\u011b vyvol\u00e1 v\u00fdjimku",
+    "tvrdit": "Vyhodnot\u00ed v\u00fdraz a vyvol\u00e1 chybu, pokud je nepravdiv\u00e1",
+    "s": "Pou\u017e\u00edv\u00e1 se pro kontextov\u00e9 mana\u017eery ke spr\u00e1v\u011b zdroj\u016f",
+    "t\u0159\u00edda": "Pl\u00e1n pro vytv\u00e1\u0159en\u00ed objekt\u016f"
+}

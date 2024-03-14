@@ -1,0 +1,16 @@
+{
+    "gaskiya": "Yana wakiltar \u0199imar ma'ana ta 1 ko 'on'",
+    "karya": "Yana wakiltar \u0199imar ma'ana ta 0 ko 'kashe'",
+    "ba": "Ma'aikacin ma'ana wanda ke juyar da \u0199imar gaskiyar magana",
+    "kuma": "Mai aiki mai ma'ana, gaskiya ne kawai idan duka maganganun duka gaskiya ne",
+    "ko": "Mai aiki da hankali, gaskiya idan a\u0199alla magana \u0257aya gaskiya ne",
+    "xor": "Ke\u0253a\u0253\u0253e KO, gaskiya idan ainihin magana \u0257aya gaskiya ne",
+    "maganganun boolean": "Ha\u0257in masu canjin boolean da masu aiki",
+    "teburin gaskiya": "Tebur yana nuna fitarwa don duk ha\u0257in abubuwan da aka ha\u0257a a cikin furcin boolean",
+    "sabani": "Maganar boolean wacce koyaushe karya ce",
+    "de Morgan's dokokin": "Dokoki don sarrafa maganganun boolean tare da BA, DA, da KO",
+    "bayanin sharadi": "Yana sarrafa aiwatar da lambar bisa ko yanayin gaskiya ne",
+    "nanda": "BA kuma - gaskiya ne kawai idan duka maganganun \u0199arya ne",
+    "kuma ba": "BA ko - gaskiya ne kawai idan duka maganganun \u0199arya ne",
+    "boolean algebra": "Tsarin lissafin da aka yi amfani da shi don \u0199ira da kuma nazarin dabaru na boolean"
+}

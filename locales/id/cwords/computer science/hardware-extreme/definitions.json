@@ -1,0 +1,20 @@
+{
+    "siklus instruksi": "Langkah-langkah yang diikuti CPU untuk menjalankan satu instruksi",
+    "arsitektur superskalar": "Desain CPU yang dapat mengeksekusi banyak instruksi per siklus jam",
+    "prediksi cabang": "Teknik di mana CPU mencoba menebak ke arah mana suatu kondisi akan berjalan",
+    "jembatan utara": "Chipset (sistem lama) yang menghubungkan CPU ke RAM dan bus berkecepatan tinggi",
+    "jembatan selatan": "Chipset (sistem lama) yang menangani periferal dan I/O yang lebih lambat",
+    "hiperthreading": "Teknologi yang memungkinkan satu inti CPU muncul sebagai beberapa inti logis",
+    "risiko": "Komputer Set Instruksi yang Dikurangi - Desain CPU dengan instruksi yang lebih sederhana",
+    "cisc": "Komputer Set Instruksi Kompleks - Desain CPU dengan instruksi yang kuat dan kompleks",
+    "simd": "Single Instruksi Multiple Data, teknik pengolahan data secara paralel",
+    "mikroarsitektur": "Detail implementasi spesifik dari set instruksi CPU",
+    "sistem pada sebuah chip": "Mengintegrasikan beberapa komponen (CPU, GPU, dll.) dalam satu chip",
+    "sistem tertanam": "Sebuah sistem komputer yang didedikasikan untuk tugas tertentu, seringkali dalam perangkat yang lebih besar",
+    "firmware": "Perangkat lunak disimpan secara permanen di perangkat keras (seperti BIOS)",
+    "overclocking": "Menjalankan CPU dengan kecepatan lebih tinggi dari spesifikasi yang dimaksudkan",
+    "kode koreksi kesalahan": "Teknik untuk mendeteksi dan memperbaiki kesalahan pada RAM",
+    "eksekusi di luar urutan": "Teknik di mana CPU mengeksekusi instruksi dalam urutan yang lebih efisien",
+    "komputasi kuantum": "Memanfaatkan prinsip mekanika kuantum untuk komputasi",
+    "komputasi neuromorfik": "Arsitektur komputasi yang terinspirasi dari otak yang dirancang untuk tugas-tugas AI"
+}

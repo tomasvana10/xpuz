@@ -1,0 +1,20 @@
+{
+    "instrukt\u00e1\u017en\u00ed cyklus": "Kroky, kter\u00e9 CPU n\u00e1sleduje, aby provedl jednu instrukci",
+    "superskal\u00e1rn\u00ed architektura": "Konstrukce CPU, kter\u00e1 m\u016f\u017ee prov\u00e1d\u011bt v\u00edce instrukc\u00ed za cyklus hodin",
+    "p\u0159edpov\u011b\u010f v\u011btve": "Technika, kdy se CPU sna\u017e\u00ed uhodnout, jakou cestou se podm\u00ednka vyd\u00e1",
+    "Severn\u00ed most": "\u010cipov\u00e1 sada (star\u0161\u00ed syst\u00e9my), kter\u00e1 propojovala CPU s RAM a vysokorychlostn\u00edmi sb\u011brnicemi",
+    "ji\u017en\u00ed m\u016fstek": "\u010cipov\u00e1 sada (star\u0161\u00ed syst\u00e9my), kter\u00e1 zvl\u00e1dala pomalej\u0161\u00ed periferie a I/O",
+    "hyperthreading": "Technologie umo\u017e\u0148uj\u00edc\u00ed, aby se jedno j\u00e1dro CPU jevilo jako v\u00edce logick\u00fdch jader",
+    "risc": "Po\u010d\u00edta\u010d s omezenou instruk\u010dn\u00ed sadou \u2013 design CPU s jednodu\u0161\u0161\u00edmi instrukcemi",
+    "cisc": "Complex Instruction Set Computer - CPU design s v\u00fdkonn\u00fdmi, komplexn\u00edmi instrukcemi",
+    "simd": "Single Instruction Multiple Data, technika pro paraleln\u00ed zpracov\u00e1n\u00ed dat",
+    "mikroarchitektura": "Konkr\u00e9tn\u00ed podrobnosti implementace instruk\u010dn\u00ed sady CPU",
+    "syst\u00e9m na \u010dipu": "Integrace v\u00edce komponent (CPU, GPU atd.) na jeden \u010dip",
+    "vestav\u011bn\u00fd syst\u00e9m": "Po\u010d\u00edta\u010dov\u00fd syst\u00e9m ur\u010den\u00fd pro konkr\u00e9tn\u00ed \u00fakol, \u010dasto v r\u00e1mci v\u011bt\u0161\u00edho za\u0159\u00edzen\u00ed",
+    "firmware": "Software trvale ulo\u017een\u00fd na hardwarov\u00e9m za\u0159\u00edzen\u00ed (jako je BIOS)",
+    "p\u0159etaktov\u00e1n\u00ed": "Provoz CPU p\u0159i vy\u0161\u0161\u00ed rychlosti, ne\u017e je jeho zam\u00fd\u0161len\u00e1 specifikace",
+    "k\u00f3d opravy chyb": "Technika pro detekci a opravu chyb v pam\u011bti RAM",
+    "proveden\u00ed mimo po\u0159ad\u00ed": "Technika, kdy CPU prov\u00e1d\u00ed instrukce v efektivn\u011bj\u0161\u00edm po\u0159ad\u00ed",
+    "kvantov\u00e9 po\u010d\u00edt\u00e1n\u00ed": "Vyu\u017eit\u00ed princip\u016f kvantov\u00e9 mechaniky pro v\u00fdpo\u010dty",
+    "neuromorfn\u00ed po\u010d\u00edt\u00e1n\u00ed": "V\u00fdpo\u010detn\u00ed architektury inspirovan\u00e9 mozkem navr\u017een\u00e9 pro \u00falohy um\u011bl\u00e9 inteligence"
+}

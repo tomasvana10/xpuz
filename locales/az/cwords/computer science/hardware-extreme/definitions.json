@@ -1,0 +1,20 @@
+{
+    "t\u0259limat d\u00f6vr\u00fc": "Bir \u0259mri yerin\u0259 yetirm\u0259k \u00fc\u00e7\u00fcn CPU-nun izl\u0259diyi add\u0131mlar",
+    "superskalar memarl\u0131q": "Saat d\u00f6vr\u00fc \u00fc\u00e7\u00fcn bird\u0259n \u00e7ox t\u0259limat\u0131 yerin\u0259 yetir\u0259 bil\u0259n CPU dizayn\u0131",
+    "filial proqnozu": "CPU-nun \u015f\u0259rti olan\u0131n hans\u0131 t\u0259r\u0259f\u0259 ged\u0259c\u0259yini t\u0259xmin etm\u0259y\u0259 \u00e7al\u0131\u015fd\u0131\u011f\u0131 texnika",
+    "\u015fimal k\u00f6rp\u00fcs\u00fc": "CPU-nu RAM v\u0259 y\u00fcks\u0259k s\u00fcr\u0259tli avtobuslara birl\u0259\u015fdir\u0259n \u00e7ipset (k\u00f6hn\u0259 sisteml\u0259r).",
+    "c\u0259nub k\u00f6rp\u00fcs\u00fc": "Daha yava\u015f periferik qur\u011fular\u0131 v\u0259 giri\u015f/\u00e7\u0131x\u0131\u015f\u0131 idar\u0259 ed\u0259n \u00e7ipset (k\u00f6hn\u0259 sisteml\u0259r).",
+    "hyperthreading": "T\u0259k CPU n\u00fcv\u0259sinin \u00e7oxsayl\u0131 m\u0259ntiqi n\u00fcv\u0259l\u0259r kimi g\u00f6r\u00fcnm\u0259sin\u0259 imkan ver\u0259n texnologiya",
+    "risk": "Azald\u0131lm\u0131\u015f T\u0259limat Seti Komp\u00fcter - daha sad\u0259 t\u0259limatlarla CPU dizayn\u0131",
+    "cisc": "Kompleks T\u0259limat D\u0259sti Komp\u00fcter - g\u00fccl\u00fc, m\u00fcr\u0259kk\u0259b t\u0259limatlarla CPU dizayn\u0131",
+    "simd": "T\u0259k T\u0259limat Bird\u0259n \u00e7ox veril\u0259nl\u0259r, veril\u0259nl\u0259rin paralel olaraq i\u015fl\u0259nm\u0259si texnikas\u0131",
+    "mikroarxitektura": "CPU-nun t\u0259limat d\u0259stinin x\u00fcsusi icra detallar\u0131",
+    "\u00e7ip \u00fcz\u0259rind\u0259 sistem": "Bir \u00e7ipd\u0259 \u00e7oxlu komponentl\u0259rin (CPU, GPU v\u0259 s.) inteqrasiyas\u0131",
+    "qura\u015fd\u0131r\u0131lm\u0131\u015f sistem": "\u00c7ox vaxt daha b\u00f6y\u00fck bir cihaz daxilind\u0259 m\u00fc\u0259yy\u0259n bir v\u0259zif\u0259y\u0259 h\u0259sr olunmu\u015f komp\u00fcter sistemi",
+    "proqram t\u0259minat\u0131": "Aparat cihaz\u0131nda daimi olaraq saxlan\u0131lan proqram t\u0259minat\u0131 (BIOS kimi)",
+    "overclock": "CPU-nun n\u0259z\u0259rd\u0259 tutuldu\u011fundan daha y\u00fcks\u0259k s\u00fcr\u0259tl\u0259 i\u015fl\u0259dilm\u0259si",
+    "s\u0259hv d\u00fcz\u0259li\u015f kodu": "RAM-da s\u0259hvl\u0259ri a\u015fkar etm\u0259k v\u0259 d\u00fcz\u0259ltm\u0259k \u00fc\u00e7\u00fcn texnika",
+    "s\u0131radank\u0259nar icra": "CPU-nun t\u0259limatlar\u0131 daha s\u0259m\u0259r\u0259li qaydada yerin\u0259 yetirdiyi texnika",
+    "kvant hesablama": "Hesablama \u00fc\u00e7\u00fcn kvant mexanikas\u0131n\u0131n prinsipl\u0259rind\u0259n istifad\u0259",
+    "neyromorfik hesablama": "AI tap\u015f\u0131r\u0131qlar\u0131 \u00fc\u00e7\u00fcn n\u0259z\u0259rd\u0259 tutulmu\u015f beyind\u0259n ilham alan hesablama arxitekturalar\u0131"
+}

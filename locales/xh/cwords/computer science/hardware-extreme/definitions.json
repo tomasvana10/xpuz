@@ -1,0 +1,20 @@
+{
+    "umjikelo womyalelo": "Amanyathelo alandelwa yi-CPU ukwenza umyalelo omnye",
+    "superscalar architecture": "Uyilo lwe-CPU olunokuphumeza imiyalelo emininzi kumjikelo wewotshi nganye",
+    "uqikelelo lwesebe": "Ubuchwephesha apho i-CPU izama ukuqikelela ukuba yeyiphi na indlela umqathango oya kuhamba ngayo",
+    "northbridge": "I-Chipset (iinkqubo ezindala) ezidibanise i-CPU kwi-RAM kunye neebhasi ezihamba ngesantya esiphezulu",
+    "southbridge": "I-Chipset (iinkqubo ezindala) eziphethe iiperipherals ezicothayo kunye ne-I/O",
+    "hyperthreading": "Itekhnoloji evumela undoqo we-CPU ukuba ubonakale njengeecores ezininzi ezinengqiqo",
+    "risc": "Umyalelo oNcitshisiweyo weSeti yeKhompyutha- uyilo lwe-CPU enemiyalelo elula",
+    "cisc": "IComplex Instruction Instruction Seti yeKhompyutha- uyilo lwe-CPU enemiyalelo enamandla, entsonkothileyo",
+    "simd": "Umyalelo omnye weData ezininzi, ubuchule bokucubungula idatha ngokuhambelanayo",
+    "microarchitecture": "Iinkcukacha zomiliselo ezithe ngqo zeseti yemiyalelo ye-CPU",
+    "inkqubo kwitshiphu": "Ukudibanisa amacandelo amaninzi (CPU, GPU, njl.) kwi-chip enye",
+    "inkqubo elungisiweyo": "Inkqubo yekhompyuter enikezelwe kumsebenzi othile, rhoqo ngaphakathi kwesixhobo esikhulu",
+    "i-firmware": "Isoftware egcinwe ngokusisigxina kwisixhobo sehardware (njengeBIOS)",
+    "overclocking": "Ukuqhuba i-CPU ngesantya esiphezulu kunoko kuchaziweyo",
+    "ikhowudi yokulungisa impazamo": "Ubuchwephesha bokubona kunye nokulungisa iimpazamo kwi-RAM",
+    "ukuphunyezwa ngaphandle komyalelo": "Ubuchwephesha apho i-CPU iphumeza imiyalelo ngolandelelwano olunempumelelo ngakumbi",
+    "i-quantum computing": "Imigaqo yokuqinisa i-quantum mechanics yokubala",
+    "i-neuromorphic computing": "Uyilo lwekhompyuter oluphefumlelweyo lwenzelwe imisebenzi ye-AI"
+}

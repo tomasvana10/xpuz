@@ -1,0 +1,20 @@
+{
+    "ciclu de instruire": "Pa\u0219ii pe care \u00eei urmeaz\u0103 un CPU pentru a executa o singur\u0103 instruc\u021biune",
+    "arhitectura suprascalar\u0103": "Design CPU care poate executa mai multe instruc\u021biuni pe ciclu de ceas",
+    "predic\u021bie de ramur\u0103": "Tehnica \u00een care procesorul \u00eencearc\u0103 s\u0103 ghiceasc\u0103 \u00een ce direc\u021bie va merge un condi\u021bionat",
+    "podul de Nord": "Chipset (sisteme mai vechi) care conecta procesorul la RAM \u0219i magistralele de mare vitez\u0103",
+    "podul de sud": "Chipset (sisteme mai vechi) care gestiona periferice mai lente \u0219i I/O",
+    "hiperthreading": "Tehnologie care permite unui singur nucleu CPU s\u0103 apar\u0103 ca mai multe nuclee logice",
+    "risc": "Set de instruc\u021biuni redus Computer - design CPU cu instruc\u021biuni mai simple",
+    "cisc": "Set de instruc\u021biuni complexe Computer - design CPU cu instruc\u021biuni puternice \u0219i complexe",
+    "simd": "Single Instruction Multiple Data, tehnic\u0103 de prelucrare a datelor \u00een paralel",
+    "microarhitectura": "Detaliile specifice de implementare ale unui set de instruc\u021biuni ale CPU",
+    "sistem pe un cip": "Integrarea mai multor componente (CPU, GPU etc.) pe un singur cip",
+    "sistem incorporat": "Un sistem informatic dedicat unei sarcini specifice, adesea \u00eentr-un dispozitiv mai mare",
+    "firmware": "Software stocat permanent pe un dispozitiv hardware (cum ar fi BIOS-ul)",
+    "overclocking": "Rularea unui procesor la o vitez\u0103 mai mare dec\u00e2t specifica\u021biile prev\u0103zute",
+    "cod de corectare a erorilor": "Tehnica de detectare \u0219i corectare a erorilor din RAM",
+    "executare \u00een afara ordinului": "Tehnica \u00een care un procesor execut\u0103 instruc\u021biuni \u00eentr-o ordine mai eficient\u0103",
+    "calculul cuantic": "Valorificarea principiilor mecanicii cuantice pentru calcul",
+    "calcul neuromorf": "Arhitecturi de calcul inspirate de creier concepute pentru sarcini AI"
+}

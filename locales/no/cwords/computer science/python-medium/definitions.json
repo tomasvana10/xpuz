@@ -1,0 +1,23 @@
+{
+    "liste": "En ordnet, utskiftbar samling av varer",
+    "sett": "En uordnet samling unike elementer",
+    "ordbok": "En JSON-lignende datatype med n\u00f8kkel- og verdipar",
+    "tuppel": "En ordnet, indeksert, uforanderlig matrisedatatype",
+    "ingen": "Representerer frav\u00e6ret av en verdi",
+    "def": "Oppretter en ny funksjon",
+    "komme tilbake": "Sender en verdi tilbake fra en funksjon",
+    "utbytte": "Konverterer en funksjon til en generatorfunksjon (som er b\u00e5de en iterator og en itererbar)",
+    "lambda": "Oppretter en anonym funksjon",
+    "sende": "En plassholderutsagn som ikke gj\u00f8r noe",
+    "g\u00e5 i stykker": "G\u00e5 ut av en l\u00f8kke for tidlig",
+    "Fortsette": "Hopp til neste iterasjon av en l\u00f8kke",
+    "endelig": "Utf\u00f8r etter en fors\u00f8k/unntatt blokkering uavhengig av om en feil ble fanget eller ikke",
+    "global": "Erkl\u00e6rer at en variabel har globalt omfang",
+    "ikke-lokale": "Erkl\u00e6rer at en variabel tilh\u00f8rer en ytre funksjon",
+    "pr\u00f8ve": "Starter en kodeblokk med feilh\u00e5ndtering",
+    "unntatt": "Fanger og h\u00e5ndterer spesifikke unntak",
+    "heve": "Utl\u00f8ser bevisst et unntak",
+    "hevde": "Evaluerer et uttrykk og reiser en feil hvis det er usant",
+    "med": "Brukes for kontekstledere for \u00e5 administrere ressurser",
+    "klasse": "Bl\u00e5kopi for \u00e5 lage objekter"
+}

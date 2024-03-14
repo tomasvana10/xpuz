@@ -1,0 +1,20 @@
+{
+    "malangizo kuzungulira": "Masitepe omwe CPU amatsata kuti achite malangizo amodzi",
+    "superscalar zomangamanga": "Mapangidwe a CPU omwe amatha kutsata malangizo angapo pa wotchi iliyonse",
+    "kuneneratu kwa nthambi": "Njira pomwe CPU imayesa kuganiza kuti chotsatira chidzapita",
+    "northbridge": "Chipset (makina akale) omwe adalumikiza CPU ku RAM ndi mabasi othamanga kwambiri",
+    "southbridge": "Chipset (makina akale) omwe ankagwira zotumphukira pang'onopang'ono ndi I/O",
+    "hyperthreading": "Tekinoloje yolola kuti CPU imodzi core kuwoneka ngati ma cores angapo omveka",
+    "risc": "Kuchepetsa Malangizo Set Computer - kapangidwe ka CPU ndi malangizo osavuta",
+    "cisc": "Complex Instruction Set Computer - Mapangidwe a CPU okhala ndi malangizo amphamvu, ovuta",
+    "simd": "Single Instruction Multiple Data, njira yosinthira deta mogwirizana",
+    "microarchitecture": "Tsatanetsatane wa kukhazikitsidwa kwa malangizo a CPU",
+    "dongosolo pa chip": "Kuphatikiza zigawo zingapo (CPU, GPU, ndi zina) pa chip chimodzi",
+    "dongosolo lophatikizidwa": "Makina apakompyuta odzipereka ku ntchito inayake, nthawi zambiri mkati mwa chipangizo chokulirapo",
+    "firmware": "Mapulogalamu osungidwa mpaka kalekale pa chipangizo cha hardware (monga BIOS)",
+    "overclocking": "Kuthamanga kwa CPU pa liwiro lalikulu kuposa momwe amafunira",
+    "khodi yokonza zolakwika": "Njira yodziwira ndi kukonza zolakwika mu RAM",
+    "kuphedwa mwadongosolo": "Njira pomwe CPU imagwiritsa ntchito malangizo m'njira yabwino kwambiri",
+    "quantum computing": "Kugwiritsa ntchito mfundo za quantum mechanics pakuwerengera",
+    "neuromorphic computing": "Zomangamanga zoyendetsedwa ndi ubongo zopangidwira ntchito za AI"
+}

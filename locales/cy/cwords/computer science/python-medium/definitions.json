@@ -1,0 +1,23 @@
+{
+    "rhestr": "Casgliad trefniadol, cyfnewidiol o eitemau",
+    "set": "Casgliad heb ei drefnu o elfennau unigryw",
+    "geiriadur": "Math o ddata tebyg i JSON gyda pharau allwedd a gwerth",
+    "tuple": "Math o ddata arae drefnus, wedi'i fynegeio, na ellir ei newid",
+    "dim": "Yn cynrychioli absenoldeb gwerth",
+    "def": "Yn creu swyddogaeth newydd",
+    "dychwelyd": "Yn anfon gwerth yn \u00f4l o swyddogaeth",
+    "cnwd": "Yn trosi ffwythiant yn ffwythiant generadur (sy'n iterator ac yn ailadroddadwy)",
+    "lambda": "Yn creu swyddogaeth ddienw",
+    "pasio": "Datganiad dalfan nad yw'n gwneud dim",
+    "torri": "Gadael dolen yn gynamserol",
+    "parhau": "Sgipio i iteriad nesaf dolen",
+    "yn olaf": "Gweithredu ar \u00f4l cais / ac eithrio bloc p'un a yw gwall wedi'i ddal ai peidio",
+    "byd-eang": "Yn datgan newidyn i fod \u00e2 chwmpas byd-eang",
+    "anlleol": "Yn datgan bod newidyn yn perthyn i ffwythiant allanol",
+    "ceisio": "Yn dechrau bloc o god gyda thrin gwall",
+    "heblaw": "Dal ac ymdrin ag eithriadau penodol",
+    "codi": "Yn fwriadol yn sbarduno eithriad",
+    "haeru": "Yn gwerthuso mynegiant ac yn codi gwall os yw'n ffug",
+    "gyda": "Fe'i defnyddir ar gyfer rheolwyr cyd-destun i reoli adnoddau",
+    "dosbarth": "Glasbrint ar gyfer creu gwrthrychau"
+}

@@ -293,6 +293,9 @@ msgstr "Matemàtiques"
 msgid "Science"
 msgstr "Ciència"
 
+msgid "Computer Science"
+msgstr "Ciències de la Computació"
+
 #~ msgid "Capitals"
 #~ msgstr "Capitals"
 

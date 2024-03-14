@@ -1,0 +1,14 @@
+{
+    "cpu": "Datorns hj\u00e4rna, utf\u00f6r instruktioner",
+    "random access minne": "Flyktigt minne d\u00e4r p\u00e5g\u00e5ende program och data lagras",
+    "h\u00e5rddisk": "Icke-flyktig lagringsenhet med stor kapacitet som anv\u00e4nder magnetiska plattor",
+    "solid state-enhet": "Icke-flyktig lagring med flashminne, snabbare \u00e4n h\u00e5rddiskar",
+    "buss": "V\u00e4g f\u00f6r data att f\u00e4rdas mellan komponenter",
+    "inmatningsapparat": "Till\u00e5ter datainmatning i datorn (som tangentbord, mus)",
+    "utmatningsanordning": "Presenterar resultat f\u00f6r anv\u00e4ndaren (som bildsk\u00e4rm, skrivare)",
+    "moderkort": "Huvudkretskortet som ansluter alla datorns komponenter",
+    "datorn\u00e4tverk": "En samling sammankopplade enheter som kan dela resurser",
+    "IP-adress": "En unik numerisk identifierare som tilldelas varje enhet i ett n\u00e4tverk",
+    "bandbredd": "Den maximala hastigheten f\u00f6r data\u00f6verf\u00f6ring \u00f6ver en n\u00e4tverksv\u00e4g",
+    "latens": "F\u00f6rdr\u00f6jningen i tid f\u00f6r data att f\u00e4rdas fr\u00e5n k\u00e4lla till destination"
+}

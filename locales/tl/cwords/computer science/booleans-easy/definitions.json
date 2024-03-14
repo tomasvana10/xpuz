@@ -1,0 +1,16 @@
+{
+    "totoo": "Kinakatawan ang isang lohikal na halaga ng 1 o 'on'",
+    "mali": "Kinakatawan ang isang lohikal na halaga ng 0 o 'off'",
+    "hindi": "Logical operator na binabaligtad ang truth value ng isang expression",
+    "at": "Logical operator, true lang kung ang parehong expression ay totoo",
+    "o": "Logical operator, true kung kahit isang expression ay totoo",
+    "xor": "Eksklusibo O, totoo kung eksaktong isang expression ang totoo",
+    "pagpapahayag ng boolean": "Isang kumbinasyon ng mga boolean na variable at operator",
+    "talahanayan ng katotohanan": "Talahanayan na nagpapakita ng output para sa lahat ng kumbinasyon ng mga input sa isang boolean expression",
+    "kontradiksyon": "Isang boolean na expression na palaging mali",
+    "mga batas ni de morgan": "Mga panuntunan para sa pagmamanipula ng mga boolean na expression na may HINDI, AT, at O",
+    "kondisyon na pahayag": "Kinokontrol ang pagpapatupad ng code batay sa kung totoo ang isang kundisyon",
+    "nand": "HINDI at - totoo lamang kung ang parehong mga expression ay mali",
+    "hindi rin": "HINDI o - totoo lamang kung ang parehong mga expression ay mali",
+    "boolean algebra": "Ang mathematical system na ginamit upang magmodelo at magsuri ng boolean logic"
+}

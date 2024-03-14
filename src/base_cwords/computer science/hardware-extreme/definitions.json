@@ -1,0 +1,20 @@
+{
+    "instruction cycle": "The steps a CPU follows to execute a single instruction",
+    "superscalar architecture": "CPU design that can execute multiple instructions per clock cycle",
+    "branch prediction": "Technique where the CPU tries to guess which way a conditional will go",
+    "northbridge": "Chipset (older systems) that connected the CPU to RAM and high-speed buses", 
+    "southbridge": "Chipset (older systems) that handled slower peripherals and I/O",
+    "hyperthreading": "Technology allowing a single CPU core to appear as multiple logical cores",
+    "risc": "Reduced Instruction Set Computer - CPU design with simpler instructions",
+    "cisc": "Complex Instruction Set Computer - CPU design with  powerful, complex instructions",
+    "simd": "Single Instruction Multiple Data, technique for processing data in parallel", 
+    "microarchitecture": "The specific implementation details of a CPU's instruction set", 
+    "system on a chip": "Integrating multiple components (CPU, GPU, etc.) on a single chip",
+    "embedded system": "A computer system dedicated to a specific task, often within a larger device",
+    "firmware": "Software permanently stored on a hardware device (like the BIOS)",
+    "overclocking": "Running a CPU at a higher speed than its intended specifications",  
+    "error correction code": "Technique to detect and correct errors in RAM",
+    "out of order execution": "Technique where a CPU executes instructions in a more efficient order",
+    "quantum computing": "Harnessing principles of quantum mechanics for computation", 
+    "neuromorphic computing": "Brain-inspired computing architectures designed for AI tasks" 
+}

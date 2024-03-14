@@ -1,0 +1,14 @@
+{
+    "CPU": "O c\u00e9rebro do computador executa instru\u00e7\u00f5es",
+    "mem\u00f3ria de acesso aleat\u00f3rio": "Mem\u00f3ria vol\u00e1til onde s\u00e3o armazenados programas e dados em execu\u00e7\u00e3o",
+    "drive de disco r\u00edgido": "Dispositivo de armazenamento n\u00e3o vol\u00e1til de grande capacidade usando pratos magn\u00e9ticos",
+    "Disco de Estado S\u00f3lido": "Armazenamento n\u00e3o vol\u00e1til usando mem\u00f3ria flash, mais r\u00e1pido que HDDs",
+    "\u00f4nibus": "Caminho para os dados viajarem entre componentes",
+    "dispositivo de entrada": "Permite a entrada de dados no computador (como teclado, mouse)",
+    "dispositivo de sa\u00edda": "Apresenta resultados ao usu\u00e1rio (como monitor, impressora)",
+    "placa-m\u00e3e": "A placa de circuito principal que conecta todos os componentes do computador",
+    "rede de computadores": "Uma cole\u00e7\u00e3o de dispositivos interconectados que podem compartilhar recursos",
+    "endere\u00e7o de IP": "Um identificador num\u00e9rico exclusivo atribu\u00eddo a cada dispositivo em uma rede",
+    "largura de banda": "A taxa m\u00e1xima de transfer\u00eancia de dados atrav\u00e9s de um caminho de rede",
+    "lat\u00eancia": "O atraso no tempo para os dados viajarem da origem ao destino"
+}

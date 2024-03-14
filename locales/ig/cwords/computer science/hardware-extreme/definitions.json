@@ -1,0 +1,20 @@
+{
+    "okirikiri nt\u1ee5ziaka": "Usoro CPU na-eso iji mezuo otu nt\u1ee5ziaka",
+    "superscalar architecture": "Nhazi CPU nke nwere ike ime \u1ecdt\u1ee5t\u1ee5 ntuziaka kwa okirikiri elekere",
+    "am\u1ee5ma alaka": "Usoro ebe CPU na-agbal\u1ecb \u1ecbk\u1ecd \u1ee5z\u1ecd nke \u1ecdn\u1ecdd\u1ee5 ga-esi gaa",
+    "Northbridge": "Chipset (sistem\u1ee5 ochie) jik\u1ecdtara CPU na RAM yana \u1ee5gb\u1ecd ala na-agba \u1ecds\u1ecd",
+    "southbridge": "Chipset (sistem\u1ee5 ochie) nke jikwaa mp\u1ee5ta nway\u1ecd nway\u1ecd yana I/O",
+    "hyperthreading": "Tekn\u1ee5z\u1ee5 na-enye ohere ka otu isi CPU p\u1ee5ta d\u1ecb ka \u1ecdt\u1ee5t\u1ee5 cores ezi uche d\u1ecb na ya",
+    "risc": "T\u1ecd\u1ecd K\u1ecdmputa nt\u1ee5ziaka belatara - imewe CPU nwere ntuziaka d\u1ecb mfe",
+    "cisc": "Nt\u1ee5ziaka d\u1ecb mgbagwoju anya T\u1ecd\u1ecd K\u1ecdmputa - imewe CPU nwere ntuziaka siri ike ma d\u1ecb mgbagwoju anya",
+    "simd": "Otu Ntuziaka Otutu Data, Usoro maka nhazi data n'otu oge",
+    "microarchitecture": "Nk\u1ecdwap\u1ee5ta kp\u1ecdmkwem mmejuputa iwu nke usoro nt\u1ee5ziaka CPU",
+    "usoro na mgbawa": "Na-ejik\u1ecdta \u1ecdt\u1ee5t\u1ee5 ak\u1ee5r\u1ee5ngwa (CPU, GPU, wdg) na otu mgbawa",
+    "agbakwunyere usoro": "Sistemu k\u1ecdmputa nke a raara nye otu \u1ecdr\u1ee5, na-ab\u1ee5kar\u1ecb n'ime nnukwu ngwa\u1ecdr\u1ee5",
+    "ngwa ngwa": "Ak\u1ee5r\u1ee5ngwa echekwara na ngwaike kpamkpam (d\u1ecb ka BIOS)",
+    "overclocking": "Na-agba \u1ecds\u1ecd CPU n'\u1ecds\u1ecd d\u1ecb elu kar\u1ecba nk\u1ecdwap\u1ee5ta ya",
+    "koodu mgbazi njehie": "Usoro iji ch\u1ecdp\u1ee5ta na mezie mperi na RAM",
+    "n'usoro igbu": "Usoro ebe CPU na-eme ntuziaka n'usoro d\u1ecb mma kar\u1ecb",
+    "mgbak\u1ecd na mwep\u1ee5 quantum": "\u1ee4kp\u1ee5r\u1ee5 njide nke igwe \u1ecdr\u1ee5 quantum maka mgbak\u1ecd",
+    "neuromorphic k\u1ecdmputa": "Nr\u1ee5m\u1ecdr\u1ee5 k\u1ecdmp\u1ee5ta sitere n'\u1ee5b\u1ee5r\u1ee5 emebere maka \u1ecdr\u1ee5 AI"
+}

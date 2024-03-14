@@ -1,0 +1,14 @@
+{
+    "cpu ua": "Lub hlwb ntawm lub computer, executes cov lus qhia",
+    "random access nco": "Volatile nco qhov uas khiav cov kev pab cuam thiab cov ntaub ntawv khaws cia",
+    "hard disk tsav": "Loj-muaj peev xwm tsis-volatile cia khoom siv sib nqus platters",
+    "solid state tsav": "Tsis-volatile cia siv flash nco, sai dua HDDs",
+    "tsheb npav": "Txoj kev rau cov ntaub ntawv mus ncig ntawm cov khoom",
+    "input ntaus ntawv": "Tso cai rau cov ntaub ntawv nkag mus rau hauv lub computer (xws li keyboard, nas)",
+    "tso zis ntaus ntawv": "Muab cov txiaj ntsig rau tus neeg siv (xws li saib, tshuab luam ntawv)",
+    "niam ntawv": "Lub ntsiab Circuit Court board uas txuas tag nrho cov computer cov khoom",
+    "computer network": "Ib qho kev sib sau ntawm cov cuab yeej sib txuas uas tuaj yeem faib cov peev txheej",
+    "ip chaw": "Ib tus lej cim tshwj xeeb uas muab rau txhua lub cuab yeej ntawm lub network",
+    "bandwidth": "Qhov siab tshaj plaws ntawm cov ntaub ntawv hloov mus thoob ib txoj hauv kev network",
+    "latency": "Kev ncua sijhawm rau cov ntaub ntawv taug kev los ntawm qhov chaw mus rau qhov chaw"
+}

@@ -1,0 +1,20 @@
+{
+    "cearcall sti\u00f9iridh": "Na ceumannan a leanas CPU gus aon sti\u00f9ireadh a chuir an gn\u00ecomh",
+    "ailtireachd superscalar": "Dealbhadh CPU as urrainn iomadh sti\u00f9ireadh a chuir an gn\u00ecomh gach cearcall cloc",
+    "ro-innse meur": "Teicnigeach far a bheil an CPU a 'feuchainn ri tomhas d\u00e8 an d\u00f2igh anns an t\u00e8id c\u00f9mhnant",
+    "drochaid a tuath": "Chipset (siostaman nas sine) a cheangail an CPU ri RAM agus busaichean aig astar luath",
+    "drochaid a deas": "Chipset (siostaman nas sine) a l\u00e0imhsich iomaill nas slaodaiche agus I/O",
+    "hyperthreading": "Teicne\u00f2las a leigeas le aon chridhe CPU nochdadh mar ioma-chridhe loidsigeach",
+    "risc": "Coimpiutair Seata Sti\u00f9ireadh L\u00f9ghdaichte - dealbhadh CPU le sti\u00f9ireadh nas s\u00ecmplidh",
+    "cisc": "Sti\u00f9ireadh iom-fhillte seata coimpiutair - dealbhadh CPU le sti\u00f9ireadh cumhachdach, iom-fhillte",
+    "simd": "Sti\u00f9ireadh Singilte D\u00e0ta Ioma, innleachd airson d\u00e0ta a ghiullachd ann an co-sh\u00ecnte",
+    "meanbh-ailtireachd": "Mion-fhiosrachadh gn\u00ecomhachaidh s\u00f2nraichte mu sheata sti\u00f9iridh CPU",
+    "siostam air chip": "A \u2019toirt a-steach grunn ph\u00e0irtean (CPU, GPU, msaa) air aon chip",
+    "siostam freumhaichte": "Siostam coimpiutair a tha coisrigte do ghn\u00ecomh s\u00f2nraichte, gu tric taobh a-staigh inneal nas motha",
+    "firmware": "Bathar-bog air a st\u00f2radh gu buan air inneal bathar-cruaidh (mar am BIOS)",
+    "overclocking": "A\u2019 ruith CPU aig astar nas \u00e0irde na na s\u00f2nrachaidhean a bha san amharc",
+    "c\u00f2d ceartachaidh mearachd": "Teicne\u00f2las gus mearachdan ann an RAM a lorg agus a cheartachadh",
+    "cur an gn\u00ecomh a-mach \u00e0 \u00f2rdugh": "Teicnigeach far a bheil CPU a 'cur an gn\u00ecomh sti\u00f9ireadh ann an \u00f2rdugh nas \u00e8ifeachdaiche",
+    "coimpiutaireachd cuantamach": "Luchdaich a-nuas phrionnsabalan quantum mechanics airson a ' choimpiutair",
+    "coimpiutaireachd neuromorphic": "Ailtireachd coimpiutaireachd air a bhrosnachadh le eanchainn air a dhealbhadh airson gn\u00ecomhan AI"
+}

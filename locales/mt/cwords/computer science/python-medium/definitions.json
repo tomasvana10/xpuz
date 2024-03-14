@@ -1,0 +1,23 @@
+{
+    "lista": "Kollezzjoni ta' o\u0121\u0121etti ordnata u li tista' tinbidel",
+    "sett": "Kollezzjoni mhux ordnata ta' elementi uni\u010bi",
+    "dizzjunarju": "Tip ta 'dejta b\u0127al JSON b'pari ta' \u010bavetta u valur",
+    "tuplu": "Tip ta' data ta' array ordnat, indi\u010bjat u li ma jinbidilx",
+    "xejn": "Jirrappre\u017centa n-nuqqas ta' valur",
+    "def": "Jo\u0127loq funzjoni \u0121dida",
+    "ritorn": "Tibg\u0127at valur lura minn funzjoni",
+    "rendiment": "Tikkonverti funzjoni f'funzjoni ta' \u0121eneratur (li hija kemm iteratur kif ukoll iterable)",
+    "lambda": "Jo\u0127loq funzjoni anonima",
+    "jg\u0127addi": "Dikjarazzjoni ta' placeholder li ma tag\u0127mel xejn",
+    "waqfa": "\u0126ru\u0121 minn loop qabel i\u017c-\u017cmien",
+    "kompli": "Jaqbe\u017c g\u0127all-iterazzjoni li jmiss ta 'linja",
+    "finalment": "E\u017cegwixxi wara blokk try/except irrispettivament minn jekk \u017cball inqabadx jew le",
+    "globali": "Jiddikjara varjabbli li g\u0127andu skop globali",
+    "mhux lokali": "Jiddikjara varjabbli li jappartjeni g\u0127al funzjoni esterna",
+    "Ipprova": "Jibda blokk ta 'kodi\u010bi bl-immani\u0121\u0121jar ta' \u017cbalji",
+    "\u0127lief": "Qabdiet u jimmani\u0121\u0121jaw e\u010b\u010bezzjonijiet spe\u010bifi\u010bi",
+    "tqajjem": "Deliberatament iqajjem e\u010b\u010bezzjoni",
+    "jasserixxu": "Jevalwa espressjoni u jqajjem \u017cball jekk ikun falz",
+    "ma": "U\u017cat g\u0127all-mani\u0121ers tal-kuntest biex jimmani\u0121\u0121jaw ir-ri\u017corsi",
+    "klassi": "Blueprint g\u0127all-\u0127olqien ta 'o\u0121\u0121etti"
+}

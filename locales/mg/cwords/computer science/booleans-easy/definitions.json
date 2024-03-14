@@ -1,0 +1,15 @@
+{
+    "marina": "Maneho sanda lojika 1 na 'on'",
+    "DISO": "Maneho sanda lojika 0 na 'efa'",
+    "tsy": "Operator lojika izay mamadika ny sandan'ny fahamarinana amin'ny fiteny iray",
+    "SY": "Op\u00e9rateur lojika, marina raha samy marina ny teny roa",
+    "na": "TSY na - marina raha samy diso ny teny roa",
+    "xor": "Exclusive OR, marina raha marina ny fomba fiteny iray",
+    "fomba fiteny boolean": "Fiaraha-miombon'antoka boolean sy op\u00e9rateur",
+    "latabatra fahamarinana": "Tabilao mampiseho ny vokatra ho an'ny fitambaran'ny fampidirana rehetra amin'ny fomba fiteny boolean",
+    "fanoherana": "Fiteny boolean izay diso foana",
+    "ny lal\u00e0n'i morgan": "Fitsipika momba ny fanodinkodinana ny teny boolean miaraka amin'ny NOT, AND, ary OR",
+    "fanambarana misy fepetra": "Manara-maso ny fanatanterahana kaody mifototra amin'ny hoe marina ny fepetra iray",
+    "nand": "TSY ary - marina raha diso ny teny roa",
+    "algebra booleana": "Ny rafitra matematika ampiasaina hamolavola sy hamakafaka ny lojika boolean"
+}

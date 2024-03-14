@@ -1,0 +1,20 @@
+{
+    "instruktionscyklus": "De trin, en CPU f\u00f8lger for at udf\u00f8re en enkelt instruktion",
+    "superskal\u00e6r arkitektur": "CPU-design, der kan udf\u00f8re flere instruktioner pr. clock-cyklus",
+    "gren forudsigelse": "Teknik, hvor CPU'en fors\u00f8ger at g\u00e6tte, hvilken vej en betinget vil g\u00e5",
+    "nordbro": "Chipset (\u00e6ldre systemer), der sluttede CPU'en til RAM og h\u00f8jhastighedsbusser",
+    "sydbro": "Chipset (\u00e6ldre systemer), der h\u00e5ndterede langsommere periferiudstyr og I/O",
+    "hyperthreading": "Teknologi, der tillader en enkelt CPU-kerne at fremst\u00e5 som flere logiske kerner",
+    "risc": "Reduceret instruktionss\u00e6t Computer - CPU-design med enklere instruktioner",
+    "cisc": "Complex Instruction Set Computer - CPU-design med kraftfulde, komplekse instruktioner",
+    "simd": "Single Instruction Multiple Data, teknik til at behandle data parallelt",
+    "mikroarkitektur": "De specifikke implementeringsdetaljer for en CPU's instruktionss\u00e6t",
+    "system p\u00e5 en chip": "Integrering af flere komponenter (CPU, GPU osv.) p\u00e5 en enkelt chip",
+    "indlejret system": "Et computersystem dedikeret til en specifik opgave, ofte inden for en st\u00f8rre enhed",
+    "firmware": "Software permanent gemt p\u00e5 en hardwareenhed (som BIOS)",
+    "overclocking": "At k\u00f8re en CPU ved en h\u00f8jere hastighed end dens tilsigtede specifikationer",
+    "fejlrettelseskode": "Teknik til at opdage og rette fejl i RAM",
+    "udelukket udf\u00f8relse": "Teknik, hvor en CPU udf\u00f8rer instruktioner i en mere effektiv r\u00e6kkef\u00f8lge",
+    "kvanteberegning": "Udnyttelse af kvantemekanikkens principper til beregning",
+    "neuromorfisk databehandling": "Hjerneinspirerede computerarkitekturer designet til AI-opgaver"
+}

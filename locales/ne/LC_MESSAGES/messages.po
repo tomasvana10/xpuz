@@ -295,6 +295,9 @@ msgstr "गणित"
 msgid "Science"
 msgstr "विज्ञान"
 
+msgid "Computer Science"
+msgstr "कम्प्युटर विज्ञान"
+
 #~ msgid ""
 #~ "First time launch, please read:\n"
 #~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"

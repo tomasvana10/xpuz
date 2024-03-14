@@ -1,0 +1,16 @@
+{
+    "verdadeiro": "Representa um valor l\u00f3gico de 1 ou 'on'",
+    "falso": "Representa um valor l\u00f3gico de 0 ou 'off'",
+    "n\u00e3o": "Operador l\u00f3gico que inverte o valor verdade de uma express\u00e3o",
+    "e": "Operador l\u00f3gico, verdadeiro apenas se ambas as express\u00f5es forem verdadeiras",
+    "ou": "Operador l\u00f3gico, verdadeiro se pelo menos uma express\u00e3o for verdadeira",
+    "xor": "OR exclusivo, verdadeiro se exatamente uma express\u00e3o for verdadeira",
+    "express\u00e3o booleana": "Uma combina\u00e7\u00e3o de vari\u00e1veis e operadores booleanos",
+    "tabela verdade": "Tabela mostrando a sa\u00edda para todas as combina\u00e7\u00f5es de entradas em uma express\u00e3o booleana",
+    "contradi\u00e7\u00e3o": "Uma express\u00e3o booleana que \u00e9 sempre falsa",
+    "leis de morgan": "Regras para manipular express\u00f5es booleanas com NOT, AND e OR",
+    "afirma\u00e7\u00e3o condicional": "Controla a execu\u00e7\u00e3o do c\u00f3digo com base no fato de uma condi\u00e7\u00e3o ser verdadeira",
+    "nand": "NOT e - verdadeiro somente se ambas as express\u00f5es forem falsas",
+    "nem": "NOT ou - verdadeiro apenas se ambas as express\u00f5es forem falsas",
+    "\u00e1lgebra booleana": "O sistema matem\u00e1tico usado para modelar e analisar a l\u00f3gica booleana"
+}

@@ -1,0 +1,23 @@
+{
+    "popis": "Ure\u0111ena, promjenjiva zbirka predmeta",
+    "postaviti": "Nesre\u0111ena zbirka jedinstvenih elemenata",
+    "rje\u010dnik": "Tip podataka sli\u010dan JSON-u s parovima klju\u010deva i vrijednosti",
+    "tuple": "Ure\u0111ena, indeksirana, nepromjenjiva vrsta podataka niza",
+    "nikakav": "Predstavlja odsutnost vrijednosti",
+    "def": "Stvara novu funkciju",
+    "povratak": "\u0160alje vrijednost natrag iz funkcije",
+    "prinos": "Pretvara funkciju u funkciju generatora (koja je i iterator i iterable)",
+    "lambda": "Stvara anonimnu funkciju",
+    "pro\u0107i": "Izjava rezerviranog mjesta koja ne radi ni\u0161ta",
+    "pauza": "Prerano iza\u0111ite iz petlje",
+    "nastaviti": "Preska\u010de na sljede\u0107u iteraciju petlje",
+    "kona\u010dno": "Izvr\u0161i nakon bloka try/except bez obzira na to je li pogre\u0161ka uhva\u0107ena ili ne",
+    "globalno": "Deklari\u0161e varijablu da ima globalni opseg",
+    "nelokalni": "Deklari\u0161e varijablu koja pripada vanjskoj funkciji",
+    "probati": "Pokre\u0107e blok koda s obradom pogre\u0161aka",
+    "osim": "Hvata i obra\u0111uje specifi\u010dne iznimke",
+    "podi\u0107i": "Namjerno pokre\u0107e iznimku",
+    "tvrditi": "Procjenjuje izraz i javlja pogre\u0161ku ako je la\u017ean",
+    "s": "Koristi se za upravitelje konteksta za upravljanje resursima",
+    "razreda": "Nacrt za stvaranje objekata"
+}

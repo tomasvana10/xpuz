@@ -1,0 +1,16 @@
+{
+    "istinito": "Predstavlja logi\u010dku vrijednost 1 ili 'on'",
+    "false": "Predstavlja logi\u010dku vrijednost 0 ili 'isklju\u010deno'",
+    "ne": "Logi\u010dki operator koji preokre\u0107e istinitost izraza",
+    "i": "Logi\u010dki operator, istinit samo ako su oba izraza ta\u010dna",
+    "ili": "Logi\u010dki operator, ta\u010dan ako je barem jedan izraz istinit",
+    "xor": "Isklju\u010divo OR, ta\u010dno ako je ta\u010dno jedan izraz ta\u010dan",
+    "boolean izraz": "Kombinacija logi\u010dkih varijabli i operatora",
+    "tabela istine": "Tabela koja prikazuje izlaz za sve kombinacije ulaza u logi\u010dkom izrazu",
+    "kontradikcija": "Logi\u010dki izraz koji je uvijek la\u017ean",
+    "de Morganovi zakoni": "Pravila za manipulaciju logi\u010dkim izrazima sa NOT, AND i OR",
+    "uslovna izjava": "Kontrolira izvr\u0161avanje koda na osnovu toga da li je uvjet istinit",
+    "nand": "NOT i - istinito samo ako su oba izraza la\u017ena",
+    "niti": "NOT ili - istinito samo ako su oba izraza la\u017ena",
+    "boolean algebra": "Matemati\u010dki sistem koji se koristi za modeliranje i analizu booleove logike"
+}

@@ -1,0 +1,14 @@
+{
+    "cpu": "Ang utak ng computer, nagsasagawa ng mga tagubilin",
+    "random access memory": "Pabagu-bagong memorya kung saan naka-imbak ang mga tumatakbong programa at data",
+    "hard disk drive": "Malaking kapasidad na non-volatile na storage device gamit ang magnetic platters",
+    "solid state drive": "Non-volatile storage gamit ang flash memory, mas mabilis kaysa sa mga HDD",
+    "bus": "Pathway para sa paglalakbay ng data sa pagitan ng mga bahagi",
+    "input device": "Pinapayagan ang pagpasok ng data sa computer (tulad ng keyboard, mouse)",
+    "aparatong output": "Nagpapakita ng mga resulta sa user (tulad ng monitor, printer)",
+    "motherboard": "Ang pangunahing circuit board na nag-uugnay sa lahat ng mga bahagi ng computer",
+    "network ng kompyuter": "Isang koleksyon ng mga magkakaugnay na device na maaaring magbahagi ng mga mapagkukunan",
+    "IP address": "Isang natatanging numerical identifier na nakatalaga sa bawat device sa isang network",
+    "bandwidth": "Ang maximum na rate ng paglipat ng data sa isang landas ng network",
+    "latency": "Ang pagkaantala sa oras para sa paglalakbay ng data mula sa pinagmulan patungo sa patutunguhan"
+}

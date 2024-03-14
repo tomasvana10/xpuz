@@ -1,0 +1,22 @@
+{
+    "lijst": "Een geordende, veranderlijke verzameling items",
+    "set": "Een ongeordende verzameling unieke elementen",
+    "woordenboek": "Een JSON-achtig gegevenstype met sleutel- en waardeparen",
+    "tupel": "Een geordend, ge\u00efndexeerd, onveranderlijk arraygegevenstype",
+    "geen": "Vertegenwoordigt de afwezigheid van een waarde",
+    "zeker": "Cre\u00ebert een nieuwe functie",
+    "opbrengst": "Converteert een functie naar een generatorfunctie (die zowel een iterator als een iterabele is)",
+    "lambda": "Cre\u00ebert een anonieme functie",
+    "doorgang ": "Een tijdelijke verklaring die niets doet",
+    "pauze ": "Verlaat een lus voortijdig",
+    "doorgaan": "Gaat naar de volgende iteratie van een lus",
+    "Eindelijk": "Uitvoeren na een try/except-blok, ongeacht of er een fout is opgemerkt of niet",
+    "globaal": "Declareert dat een variabele een globaal bereik heeft",
+    "niet-lokaal": "Declareert dat een variabele tot een externe functie behoort",
+    "poging": "Start een codeblok met foutafhandeling",
+    "behalve": "Vangt en handelt specifieke uitzonderingen af",
+    "salarisverhoging": "Activeert opzettelijk een uitzondering",
+    "beweren": "Evalueert een expressie en genereert een fout als deze onwaar is",
+    "met": "Gebruikt voor contextmanagers om bronnen te beheren",
+    "klas": "Blauwdruk voor het maken van objecten"
+}

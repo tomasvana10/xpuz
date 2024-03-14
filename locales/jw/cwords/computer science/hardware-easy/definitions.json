@@ -1,0 +1,14 @@
+{
+    "cpu": "Otak komputer, nindakake instruksi",
+    "memori akses acak": "Memori molah malih ngendi program mlaku lan data disimpen",
+    "hard disk drive": "Piranti panyimpenan non-molah malih kapasitas gedhe nggunakake piring magnetik",
+    "drive negara ngalangi": "Panyimpenan non-molah malih nggunakake memori lampu kilat, luwih cepet tinimbang HDD",
+    "bis": "Pathway kanggo data kanggo lelungan antarane komponen",
+    "piranti input": "Ngidini entri data menyang komputer (kayata keyboard, mouse)",
+    "piranti output": "Nampilake asil kanggo pangguna (kayata monitor, printer)",
+    "motherboard": "Papan sirkuit utama sing nyambungake kabeh komponen komputer",
+    "jaringan komputer": "Koleksi piranti sing saling nyambungake sing bisa nuduhake sumber daya",
+    "alamat ip": "Pengenal numerik unik sing ditugasake kanggo saben piranti ing jaringan",
+    "bandwidth": "Tingkat maksimum transfer data ngliwati jalur jaringan",
+    "latensi": "Wektu tundha kanggo data kanggo lelungan saka sumber menyang panggonan sing dituju"
+}

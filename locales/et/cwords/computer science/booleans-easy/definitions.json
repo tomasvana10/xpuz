@@ -1,0 +1,16 @@
+{
+    "t\u00f5si": "Esindab loogilist v\u00e4\u00e4rtust 1 v\u00f5i 'sees'",
+    "vale": "Esindab loogilist v\u00e4\u00e4rtust 0 v\u00f5i \"v\u00e4ljas\"",
+    "mitte": "Loogiline operaator, mis p\u00f6\u00f6rab avaldise t\u00f5ev\u00e4\u00e4rtuse \u00fcmber",
+    "ja": "Loogiline operaator, t\u00f5ene ainult siis, kui m\u00f5lemad avaldised on t\u00f5esed",
+    "v\u00f5i": "Loogiline operaator, t\u00f5ene, kui v\u00e4hemalt \u00fcks avaldis on t\u00f5ene",
+    "xor": "Eksklusiivne V\u00d5I, t\u00f5ene, kui t\u00e4pselt \u00fcks avaldis on t\u00f5ene",
+    "boole avaldis": "Boole'i muutujate ja operaatorite kombinatsioon",
+    "t\u00f5etabel": "Tabel, mis n\u00e4itab v\u00e4ljundit k\u00f5igi t\u00f5ev\u00e4\u00e4rtusavaldise sisendite kombinatsioonide jaoks",
+    "vastuolu": "Boolean avaldis, mis on alati v\u00e4\u00e4r",
+    "de morgani seadused": "Reeglid Boolean avaldiste manipuleerimiseks EI, JA ja V\u00d5I",
+    "tingimuslik v\u00e4ide": "Juhib koodi t\u00e4itmist selle alusel, kas tingimus on t\u00f5ene",
+    "nand": "EI ja - t\u00f5ene ainult siis, kui m\u00f5lemad avaldised on v\u00e4\u00e4rad",
+    "ega": "EI v\u00f5i - t\u00f5ene ainult siis, kui m\u00f5lemad avaldised on v\u00e4\u00e4rad",
+    "Boole'i algebra": "Matemaatiline s\u00fcsteem, mida kasutatakse Boole'i loogika modelleerimiseks ja anal\u00fc\u00fcsimiseks"
+}

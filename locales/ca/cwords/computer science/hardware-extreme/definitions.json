@@ -1,0 +1,20 @@
+{
+    "cicle d'instrucci\u00f3": "Els passos que segueix una CPU per executar una \u00fanica instrucci\u00f3",
+    "arquitectura superescalar": "Disseny de CPU que pot executar diverses instruccions per cicle de rellotge",
+    "predicci\u00f3 de branques": "T\u00e8cnica en qu\u00e8 la CPU intenta endevinar per quina direcci\u00f3 anir\u00e0 un condicional",
+    "pont del nord": "Chipset (sistemes m\u00e9s antics) que connectava la CPU a la mem\u00f2ria RAM i als busos d'alta velocitat",
+    "pont sud": "Chipset (sistemes m\u00e9s antics) que gestionava perif\u00e8rics i E/S m\u00e9s lents",
+    "hiperfilatge": "Tecnologia que permet que un sol nucli de CPU aparegui com a m\u00faltiples nuclis l\u00f2gics",
+    "risc": "Conjunt d'instruccions redu\u00eft Ordinador - Disseny de CPU amb instruccions m\u00e9s senzilles",
+    "cisc": "Conjunt d'instruccions complexos Ordinador: disseny de CPU amb instruccions potents i complexes",
+    "simd": "Single Instruction Multiple Data, t\u00e8cnica per processar dades en paral\u00b7lel",
+    "microarquitectura": "Els detalls espec\u00edfics d'implementaci\u00f3 del conjunt d'instruccions d'una CPU",
+    "sistema en un xip": "Integraci\u00f3 de m\u00faltiples components (CPU, GPU, etc.) en un sol xip",
+    "sistema incrustat": "Un sistema inform\u00e0tic dedicat a una tasca espec\u00edfica, sovint dins d'un dispositiu m\u00e9s gran",
+    "firmware": "Programari emmagatzemat permanentment en un dispositiu de maquinari (com la BIOS)",
+    "overclocking": "Executar una CPU a una velocitat superior a les especificacions previstes",
+    "codi de correcci\u00f3 d'errors": "T\u00e8cnica per detectar i corregir errors a la mem\u00f2ria RAM",
+    "execuci\u00f3 fora d'ordre": "T\u00e8cnica on una CPU executa instruccions en un ordre m\u00e9s eficient",
+    "inform\u00e0tica qu\u00e0ntica": "Aprofitament dels principis de la mec\u00e0nica qu\u00e0ntica per a la computaci\u00f3",
+    "inform\u00e0tica neurom\u00f2rfica": "Arquitectures inform\u00e0tiques inspirades en el cervell dissenyades per a tasques d'IA"
+}

@@ -1,0 +1,16 @@
+{
+    "do\u011fru": "1 v\u0259 ya 'on' m\u0259ntiqi d\u0259y\u0259rini t\u0259msil edir",
+    "yalan": "0 v\u0259 ya \"off\" m\u0259ntiqi d\u0259y\u0259rini t\u0259msil edir",
+    "yox": "\u0130fad\u0259nin h\u0259qiq\u0259t d\u0259y\u0259rini \u0259ks etdir\u0259n m\u0259ntiqi operator",
+    "v\u0259": "M\u0259ntiqi operator, yaln\u0131z h\u0259r iki ifad\u0259 do\u011fru olduqda do\u011frudur",
+    "v\u0259 ya": "M\u0259ntiqi operator, \u0259n az\u0131 bir ifad\u0259 do\u011frudursa, do\u011frudur",
+    "xor": "Ekskl\u00fcziv OR, \u0259g\u0259r d\u0259qiq bir ifad\u0259 do\u011frudursa, do\u011frudur",
+    "boolean ifad\u0259si": "Boolean d\u0259yi\u015f\u0259nl\u0259rin v\u0259 operatorlar\u0131n birl\u0259\u015fm\u0259si",
+    "h\u0259qiq\u0259t c\u0259dv\u0259li": "Boolean ifad\u0259sind\u0259ki b\u00fct\u00fcn giri\u015f birl\u0259\u015fm\u0259l\u0259ri \u00fc\u00e7\u00fcn \u00e7\u0131x\u0131\u015f\u0131 g\u00f6st\u0259r\u0259n c\u0259dv\u0259l",
+    "ziddiyy\u0259t": "H\u0259mi\u015f\u0259 yalan olan bir mantiq ifad\u0259si",
+    "de morgan qanunlar\u0131": "NOT, AND v\u0259 OR il\u0259 boolean ifad\u0259l\u0259ri manipulyasiya etm\u0259k qaydalar\u0131",
+    "\u015f\u0259rti ifad\u0259": "\u015e\u0259rtin do\u011fru olub-olmamas\u0131na \u0259saslanaraq kodun icras\u0131na n\u0259zar\u0259t edir",
+    "nand": "NOT v\u0259 - yaln\u0131z h\u0259r iki ifad\u0259 yalan olduqda do\u011frudur",
+    "n\u0259 d\u0259": "DEY\u0130L v\u0259 ya - yaln\u0131z h\u0259r iki ifad\u0259 yalan olduqda do\u011frudur",
+    "boolean c\u0259bri": "Boolean m\u0259ntiqini modell\u0259\u015fdirm\u0259k v\u0259 t\u0259hlil etm\u0259k \u00fc\u00e7\u00fcn istifad\u0259 olunan riyazi sistem"
+}

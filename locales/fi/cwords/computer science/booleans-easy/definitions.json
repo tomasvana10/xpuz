@@ -1,0 +1,16 @@
+{
+    "totta": "Edustaa loogista arvoa 1 tai \"on\"",
+    "v\u00e4\u00e4r\u00e4": "Edustaa loogista arvoa 0 tai 'pois'",
+    "ei": "Looginen operaattori, joka k\u00e4\u00e4nt\u00e4\u00e4 lausekkeen totuusarvon",
+    "ja": "Looginen operaattori, tosi vain jos molemmat lausekkeet ovat tosi",
+    "tai": "Looginen operaattori, tosi, jos ainakin yksi lauseke on tosi",
+    "xor": "Yksinomainen TAI, tosi, jos t\u00e4sm\u00e4lleen yksi lauseke on tosi",
+    "boolen lauseke": "Boolen muuttujien ja operaattoreiden yhdistelm\u00e4",
+    "totuustaulukko": "Taulukko, jossa n\u00e4kyy tulos kaikille loogisen lausekkeen sy\u00f6tteiden yhdistelmille",
+    "ristiriita": "Boolen lauseke, joka on aina ep\u00e4tosi",
+    "de morganin lakeja": "S\u00e4\u00e4nn\u00f6t loogisten lausekkeiden k\u00e4sittelemiseksi EI-, AND- ja OR-funktioiden kanssa",
+    "ehdollinen lausunto": "Ohjaa koodin suorittamista sen perusteella, onko ehto tosi",
+    "nand": "EI ja - tosi vain jos molemmat lausekkeet ovat ep\u00e4tosi",
+    "ei my\u00f6sk\u00e4\u00e4n": "EI tai - tosi vain jos molemmat lausekkeet ovat ep\u00e4tosi",
+    "boolen algebra": "Matemaattinen j\u00e4rjestelm\u00e4, jota k\u00e4ytet\u00e4\u00e4n loogisen logiikan mallintamiseen ja analysointiin"
+}

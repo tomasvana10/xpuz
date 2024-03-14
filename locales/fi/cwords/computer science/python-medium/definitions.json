@@ -1,0 +1,23 @@
+{
+    "lista": "Tilattu, vaihdettava tavarakokoelma",
+    "aseta": "J\u00e4rjest\u00e4m\u00e4t\u00f6n kokoelma ainutlaatuisia elementtej\u00e4",
+    "sanakirja": "JSON-tyyppinen tietotyyppi avain- ja arvopareilla",
+    "monikko": "J\u00e4rjestetty, indeksoitu, muuttumaton taulukkotietotyyppi",
+    "ei mit\u00e4\u00e4n": "Edustaa arvon puuttumista",
+    "def": "Luo uuden toiminnon",
+    "palata": "L\u00e4hett\u00e4\u00e4 arvon takaisin funktiosta",
+    "tuotto": "Muuntaa funktion generaattorifunktioksi (joka on sek\u00e4 iteraattori ett\u00e4 iteroitava)",
+    "lambda": "Luo anonyymin funktion",
+    "kulkea": "Paikkamerkkilause, joka ei tee mit\u00e4\u00e4n",
+    "tauko": "Poistu silmukasta ennenaikaisesti",
+    "jatkaa": "Siirtyy silmukan seuraavaan iteraatioon",
+    "vihdoinkin": "Suorita try/paitsi lohkon j\u00e4lkeen riippumatta siit\u00e4, havaittiinko virhe vai ei",
+    "maailmanlaajuisesti": "Ilmoittaa muuttujan globaaliksi laajuudeksi",
+    "ei-paikallinen": "Ilmoittaa muuttujan kuuluvan ulkoiseen funktioon",
+    "yritt\u00e4\u00e4": "K\u00e4ynnist\u00e4\u00e4 koodilohkon virheenk\u00e4sittelyll\u00e4",
+    "paitsi": "Saa kiinni ja k\u00e4sittelee erityisi\u00e4 poikkeuksia",
+    "nostaa": "Aiheuttaa tarkoituksella poikkeuksen",
+    "v\u00e4itt\u00e4\u00e4": "Arvioi lausekkeen ja aiheuttaa virheen, jos se on ep\u00e4tosi",
+    "kanssa": "K\u00e4ytet\u00e4\u00e4n kontekstinhallinnassa resurssien hallintaan",
+    "luokkaa": "Suunnitelma objektien luomiseen"
+}
