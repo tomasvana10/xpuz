@@ -15,17 +15,19 @@ A GUI application built with `CustomTkinter` that allows you to select, configur
 `regex==2023.6.3`
 <br><br>
 ## Installation
+Requires [pip](https://pip.pypa.io/en/stable/installation/) and [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 1. `git clone https://github.com/tomasvana10/crossword_puzzle.git`
 2. `cd crossword_puzzle`
-3. Make a virtual environment (recommended)
+3. Make a virtual environment with [virtualenv](https://virtualenv.pypa.io/en/latest/) (recommended)
    - `pip install virtualenv`
    - `python3 -m venv venv`
-   - Windows: `venv\Scripts\activate`, Unix/MacOS: `source venv/bin/activate`
+   - Windows: `venv\Scripts\activate`
+   - Unix/MacOS: `source venv/bin/activate`
 4. `pip install -r requirements.txt`
 5. `python3 src/main.py` (if this doesn't work, try using `python` instead of `python3`)
 <br><br>
-## Usage
-Will create external user documentation and add it to the repository eventually.
+## Documentation
+Check out the wiki [here](https://github.com/tomasvana10/crossword_puzzle/wiki)
 <br><br>
 ## Third-party library acknowledgements
 - [CSS Pattern](https://css-pattern.com) - Background CSS patterns
