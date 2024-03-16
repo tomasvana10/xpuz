@@ -4,7 +4,7 @@ import os
 from typing import Dict, List, Union
 from pathlib import Path
 
-import regex
+from regex import compile as regex_compile
 
 
 class Paths:
@@ -93,7 +93,7 @@ class CrosswordRestrictions:
     '''Used in `definitions_parser.py` to remove all non-language characters from the words/keys of 
     a definitions dictionary.
     '''
-    KEEP_LANGUAGES_PATTERN = regex.compile(r"\PL") # The opposite of \p{l} which matches characters from any language
+    KEEP_LANGUAGES_PATTERN = regex_compile(r"\PL") # The opposite of \p{l} which matches characters from any language
 
 
 class DimensionsCalculation:
