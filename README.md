@@ -12,10 +12,11 @@ A GUI application built with `CustomTkinter` that allows you to select, configur
 `Flask==3.0.1`<br>
 `flask_babel==4.0.0`<br>
 `Pillow==10.2.0`<br>
-`regex==2023.6.3`
+`regex==2023.12.25`
 <br><br>
 ## Installation
-Requires [pip](https://pip.pypa.io/en/stable/installation/) and [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+Requires [pip](https://pip.pypa.io/en/stable/installation/) and [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+If using `python3` doesn't work, try using `python` instead.
 1. `git clone https://github.com/tomasvana10/crossword_puzzle.git`
 2. `cd crossword_puzzle`
 3. Make a virtual environment with [virtualenv](https://virtualenv.pypa.io/en/latest/) (recommended)
@@ -24,7 +25,7 @@ Requires [pip](https://pip.pypa.io/en/stable/installation/) and [git](https://gi
    - Windows: `venv\Scripts\activate`
    - Unix/MacOS: `source venv/bin/activate`
 4. `pip install -r requirements.txt`
-5. `python3 src/main.py` (if this doesn't work, try using `python` instead of `python3`)
+5. `python3 src/main.py`
 <br><br>
 ## Documentation
 Check out the wiki [here](https://github.com/tomasvana10/crossword_puzzle/wiki)
@@ -42,7 +43,10 @@ Check out the wiki [here](https://github.com/tomasvana10/crossword_puzzle/wiki)
 - [regex](https://github.com/mrabarnett/mrab-regex) - Alternative to the standard `re` module, required for some functionality
 <br><br>
 ## Gallery
-<img width="683" alt="home page" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/38783814-148f-470f-b08a-aeea51e75a24">
-<img width="872" alt="browser page" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/6b9705a1-e9ae-4505-8c48-e18ccbe7f586">
+<img width="683" alt="home gui" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/38783814-148f-470f-b08a-aeea51e75a24">
+<hr>
+<img width="872" alt="crossword browser gui" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/6b9705a1-e9ae-4505-8c48-e18ccbe7f586">
+<hr>
 <img width="1240" alt="game english" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/6c313430-58df-4075-a417-b0150968be82">
+<hr>
 <img width="1240" alt="game japanese" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/92e84095-05ff-413f-b397-0c407e71d713">
