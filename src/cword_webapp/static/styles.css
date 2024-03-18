@@ -59,7 +59,7 @@ button:hover {
 
 .non_empty_cell.wrong { color: var(--wrong_colour); }
 
-.keybind_span { color: var(--text_disabled_colour); }
+.keybind_span { color: var(--correct_colour); }
 /* ---------- */
 
 

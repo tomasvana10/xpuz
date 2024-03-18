@@ -17,6 +17,7 @@ from customtkinter import (
     set_default_color_theme
 )
 
+import errors
 import cword_gen as cwg
 import cword_webapp.app as app
 from constants import (
@@ -349,6 +350,8 @@ class CrosswordBrowser(CTkFrame):
     def terminate_cword_webapp(self) -> None:
         '''Appropriately reconfigure the states of the GUIs buttons and terminate the app.'''
         self._rollback_states()
+        self.b_open_cword_webapp.configure(fg_color=Colour.Global.BUTTON, 
+                                           hover_color=Colour.Global.BUTTON_HOVER)
         self.cword_launch_options_enabled: bool = False
         self.webapp_running: bool = False
         try: 
@@ -410,7 +413,8 @@ class CrosswordBrowser(CTkFrame):
         
         self._init_webapp(crossword)
         
-        self.b_open_cword_webapp.configure(state="normal")
+        self.b_open_cword_webapp.configure(state="normal", fg_color=Colour.Global.GREEN_BUTTON, 
+                                           hover_color=Colour.Global.GREEN_BUTTON_HOVER)
         self.b_terminate_cword_webapp.configure(state="normal")
         
     def _init_webapp(self, 

@@ -26,6 +26,8 @@ class Colour:
         BUTTON_HOVER = "#13385F"
         EXIT_BUTTON = "#ED3B4D"
         EXIT_BUTTON_HOVER = "#BF0013"
+        GREEN_BUTTON = "#20D44A"
+        GREEN_BUTTON_HOVER = "#259c41"
         BUTTON_TEXT_COLOUR = "#DDE3ED"
         DIFFICULTIES: List[str] = ["#089E19", "#FCBA03", "#E01C07", "#6408A6"]
         
