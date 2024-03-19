@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-09 19:25+1100\n"
+"POT-Creation-Date: 2024-03-19 12:02+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ta <LL@li.org>\n"
@@ -19,125 +19,125 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:38 src/main.py:75 src/main.py:139 src/main.py:204
+#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
 msgid "Crossword Puzzle"
 msgstr "குறுக்கெழுத்து போட்டி"
 
-#: src/main.py:83
+#: src/main.py:88
 msgid "View crosswords"
 msgstr "குறுக்கெழுத்துக்களைப் பார்க்கவும்"
 
-#: src/main.py:87
+#: src/main.py:92
 msgid "Exit the app"
 msgstr "பயன்பாட்டிலிருந்து வெளியேறு"
 
-#: src/main.py:93
+#: src/main.py:98
 msgid "Global Settings"
 msgstr "உலகளாவிய அமைப்புகள்"
 
-#: src/main.py:97
+#: src/main.py:102
 msgid "Languages"
 msgstr "மொழிகள்"
 
-#: src/main.py:103
+#: src/main.py:108
 msgid "Size"
 msgstr "அளவு"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "light"
 msgstr "ஒளி"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "dark"
 msgstr "இருள்"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "system"
 msgstr "அமைப்பு"
 
-#: src/main.py:111
+#: src/main.py:116
 msgid "Appearance"
 msgstr "தோற்றம்"
 
-#: src/main.py:133 src/main.py:259
+#: src/main.py:138 src/main.py:267
 msgid "Crossword Browser"
 msgstr "குறுக்கெழுத்து உலாவி"
 
-#: src/main.py:261
+#: src/main.py:269
 msgid "Go back"
 msgstr "திரும்பி போ"
 
-#: src/main.py:266
+#: src/main.py:274
 msgid "Load crossword"
 msgstr "குறுக்கெழுத்து ஏற்றவும்"
 
-#: src/main.py:270
+#: src/main.py:278
 msgid "Open web app"
 msgstr "இணைய பயன்பாட்டைத் திறக்கவும்"
 
-#: src/main.py:274
+#: src/main.py:282
 msgid "Terminate web app"
 msgstr "இணைய பயன்பாட்டை நிறுத்தவும்"
 
-#: src/main.py:280
+#: src/main.py:288
 msgid "Word count preferences"
 msgstr "வார்த்தை எண்ணிக்கை விருப்பத்தேர்வுகள்"
 
-#: src/main.py:287 src/main.py:329 src/main.py:361 src/main.py:504
+#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
 msgid "Select word count"
 msgstr "வார்த்தை எண்ணிக்கையைத் தேர்ந்தெடுக்கவும்"
 
-#: src/main.py:289 src/main.py:360 src/main.py:516
+#: src/main.py:297 src/main.py:371 src/main.py:542
 msgid "Maximum"
 msgstr "அதிகபட்சம்"
 
-#: src/main.py:295
+#: src/main.py:303
 msgid "Custom"
 msgstr "தனிப்பயன்"
 
-#: src/main.py:439
+#: src/main.py:462
 msgid "To perform this operation, you must first select a cell."
 msgstr ""
 "இந்த செயல்பாட்டைச் செய்ய, நீங்கள் முதலில் ஒரு கலத்தைத் தேர்ந்தெடுக்க "
 "வேண்டும்."
 
-#: src/main.py:562
+#: src/main.py:589
 msgid "View"
 msgstr "காண்க"
 
-#: src/cword_webapp/templates/index.html:196 src/main.py:564
+#: src/cword_webapp/templates/index.html:230 src/main.py:591
 msgid "Close"
 msgstr "நெருக்கமான"
 
-#: src/main.py:652 src/main.py:669
+#: src/main.py:681 src/main.py:705
 msgid "difficulty"
 msgstr "சிரமம்"
 
-#: src/main.py:666
+#: src/main.py:702
 msgid "Total words"
 msgstr "மொத்த வார்த்தைகள்"
 
-#: src/main.py:669
+#: src/main.py:705
 msgid "Difficulty"
 msgstr "சிரமம்"
 
-#: src/main.py:674
+#: src/main.py:710
 msgid "Select"
 msgstr "தேர்ந்தெடு"
 
-#: src/main.py:716
+#: src/main.py:745
 msgid "Restart"
 msgstr "மறுதொடக்கம்"
 
-#: src/main.py:716
+#: src/main.py:745
 msgid "Are you sure you want to restart the app?"
 msgstr "பயன்பாட்டை மறுதொடக்கம் செய்ய விரும்புகிறீர்களா?"
 
-#: src/main.py:720
+#: src/main.py:749
 msgid "Exit"
 msgstr "வெளியேறு"
 
-#: src/main.py:721
+#: src/main.py:750
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -145,11 +145,11 @@ msgstr ""
 "பயன்பாட்டிலிருந்து நிச்சயமாக வெளியேற விரும்புகிறீர்களா? இணைய பயன்பாடு "
 "இயங்கினால், அது நிறுத்தப்படும்."
 
-#: src/main.py:726
+#: src/main.py:755
 msgid "Back to home"
 msgstr "வீட்டுக்குத் திரும்பு"
 
-#: src/main.py:727
+#: src/main.py:756
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -157,123 +157,145 @@ msgstr ""
 "முகப்புத் திரைக்கு நிச்சயமாகச் செல்ல விரும்புகிறீர்களா? இணைய பயன்பாடு "
 "நிறுத்தப்படும்."
 
-#: src/main.py:740 src/main.py:743 src/main.py:746
+#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
+#: src/main.py:797
 msgid "Error"
 msgstr "பிழை"
 
-#: src/main.py:740
+#: src/main.py:772
 msgid "This language is already selected."
 msgstr "இந்த மொழி ஏற்கனவே தேர்ந்தெடுக்கப்பட்டது."
 
-#: src/main.py:743
+#: src/main.py:775
 msgid "This size is already selected."
 msgstr "இந்த அளவு ஏற்கனவே தேர்ந்தெடுக்கப்பட்டது."
 
-#: src/main.py:746
+#: src/main.py:778
 msgid "This appearance is already selected."
 msgstr "இந்த தோற்றம் ஏற்கனவே தேர்ந்தெடுக்கப்பட்டது."
 
-#: src/main.py:749
+#: src/main.py:781
 msgid "Info"
 msgstr "தகவல்"
 
-#: src/main.py:750
+#: src/main.py:782
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
 " are on macOS, force quitting the application (using cmd+q) while the web "
 "app is running will prevent it from properly terminating. If you mistakenly "
-"do this, either find the Flask app process and terminate it, change the "
-"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
-"IMPORTANT: In some cases, you may have launched the web app yet your browser"
-" cannot view it. If this happens, please restart your browser."
+"do this, the program will run new web apps with a different port. "
+"Alternatively, you can manually change the port in the program's config "
+"file. All app processes that have not been properly terminated can be "
+"terminated through Activity Monitor on MacOS, or, simply restart your "
+"computer to terminate them."
 msgstr ""
 "முதல் முறை துவக்கம், தயவுசெய்து படிக்கவும்: நீங்கள் ஒரு குறுக்கெழுத்தை "
 "ஏற்றியதும், மற்றொன்றை ஏற்ற விரும்பினால், முதலில் இணைய பயன்பாட்டை நிறுத்த "
 "வேண்டும். முக்கியமானது: நீங்கள் macOS இல் இருந்தால், வலைப் பயன்பாடு இயங்கும்"
 " போது பயன்பாட்டிலிருந்து (cmd+q ஐப் பயன்படுத்தி) கட்டாயமாக வெளியேறினால், அது"
-" சரியாக நிறுத்தப்படுவதைத் தடுக்கும். நீங்கள் தவறுதலாக இதைச் செய்தால், Flask "
-"ஆப்ஸ் செயல்முறையைக் கண்டறிந்து அதை நிறுத்தவும், src/config.ini இல் "
-"`webapp_port` எண்ணை மாற்றவும் அல்லது உங்கள் கணினியை மறுதொடக்கம் செய்யவும். "
-"மேலும் முக்கியமானது: சில சமயங்களில், நீங்கள் இணைய பயன்பாட்டைத் "
-"தொடங்கியிருக்கலாம், ஆனால் உங்கள் உலாவி அதைப் பார்க்க முடியாது. இது நடந்தால்,"
-" உங்கள் உலாவியை மறுதொடக்கம் செய்யவும்."
+" சரியாக நிறுத்தப்படுவதைத் தடுக்கும். நீங்கள் தவறுதலாக இதைச் செய்தால், நிரல் "
+"புதிய வலை பயன்பாடுகளை வேறு போர்ட்டுடன் இயக்கும். மாற்றாக, நிரலின் கட்டமைப்பு"
+" கோப்பில் உள்ள போர்ட்டை கைமுறையாக மாற்றலாம். சரியாக நிறுத்தப்படாத அனைத்து "
+"பயன்பாட்டு செயல்முறைகளும் MacOS இல் செயல்பாட்டு கண்காணிப்பு மூலம் "
+"நிறுத்தப்படலாம் அல்லது அவற்றை நிறுத்த உங்கள் கணினியை மறுதொடக்கம் "
+"செய்யுங்கள்."
+
+#: src/main.py:792
+msgid ""
+"An error occured while loading this crossword's definitions. Ensure that its"
+" definitions JSON file exists in the base cwords directory. NOTE: Base "
+"crossword data is only accessed when its translated version is not present "
+"in the locales directory."
+msgstr ""
+"இந்த குறுக்கெழுத்து வரையறைகளை ஏற்றும்போது பிழை ஏற்பட்டது. அதன் வரையறைகள் "
+"JSON கோப்பு அடிப்படை cwords கோப்பகத்தில் இருப்பதை உறுதிசெய்யவும். குறிப்பு: "
+"அடிப்படை குறுக்கெழுத்து தரவு அதன் மொழிபெயர்க்கப்பட்ட பதிப்பு லோக்கல்ஸ் "
+"கோப்பகத்தில் இல்லாதபோது மட்டுமே அணுகப்படும்."
+
+#: src/main.py:798
+msgid ""
+"An error occured in crossword generation. Please see further information in "
+"the console"
+msgstr ""
+"குறுக்கெழுத்து உருவாக்கத்தில் பிழை ஏற்பட்டது. கன்சோலில் கூடுதல் தகவலைப் "
+"பார்க்கவும்"
 
 #: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:182
+#: src/cword_webapp/templates/index.html:216
 msgid "Crossword Puzzle - Game"
 msgstr "குறுக்கெழுத்து புதிர் - விளையாட்டு"
 
-#: src/cword_webapp/templates/index.html:107
+#: src/cword_webapp/templates/index.html:133
 msgid "Across"
 msgstr "முழுவதும்"
 
-#: src/cword_webapp/templates/index.html:125
+#: src/cword_webapp/templates/index.html:154
 msgid "Down"
 msgstr "கீழ்"
 
-#: src/cword_webapp/templates/index.html:143
+#: src/cword_webapp/templates/index.html:177
 msgid "Reveal"
 msgstr "வெளிப்படுத்து"
 
-#: src/cword_webapp/templates/index.html:145
-#: src/cword_webapp/templates/index.html:152
+#: src/cword_webapp/templates/index.html:179
+#: src/cword_webapp/templates/index.html:186
 msgid "Cell"
 msgstr "செல்"
 
-#: src/cword_webapp/templates/index.html:146
-#: src/cword_webapp/templates/index.html:153
-#: src/cword_webapp/templates/index.html:159
+#: src/cword_webapp/templates/index.html:180
+#: src/cword_webapp/templates/index.html:187
+#: src/cword_webapp/templates/index.html:193
 msgid "Word"
 msgstr "சொல்"
 
-#: src/cword_webapp/templates/index.html:147
-#: src/cword_webapp/templates/index.html:154
-#: src/cword_webapp/templates/index.html:160
+#: src/cword_webapp/templates/index.html:181
+#: src/cword_webapp/templates/index.html:188
+#: src/cword_webapp/templates/index.html:194
 msgid "Grid"
 msgstr "கட்டம்"
 
-#: src/cword_webapp/templates/index.html:150
+#: src/cword_webapp/templates/index.html:184
 msgid "Check"
 msgstr "காசோலை"
 
-#: src/cword_webapp/templates/index.html:157
+#: src/cword_webapp/templates/index.html:191
 msgid "Clear"
 msgstr "தெளிவு"
 
-#: src/cword_webapp/templates/index.html:168
+#: src/cword_webapp/templates/index.html:202
 msgid "Smart Skip"
 msgstr "ஸ்மார்ட் ஸ்கிப்"
 
-#: src/cword_webapp/templates/index.html:174
+#: src/cword_webapp/templates/index.html:208
 msgid "Click To Zoom"
 msgstr "பெரிதாக்க கிளிக் செய்க"
 
-#: src/cword_webapp/templates/index.html:183
+#: src/cword_webapp/templates/index.html:217
 msgid "You are viewing"
 msgstr "நீங்கள் பார்க்கிறீர்கள்"
 
-#: src/cword_webapp/templates/index.html:183
+#: src/cword_webapp/templates/index.html:217
 msgid "from"
 msgstr "இருந்து"
 
-#: src/cword_webapp/templates/index.html:185
+#: src/cword_webapp/templates/index.html:219
 msgid "word(s) could not be inserted, sorry."
 msgstr "வார்த்தை(களை) செருக முடியவில்லை, மன்னிக்கவும்."
 
-#: src/cword_webapp/templates/index.html:186
+#: src/cword_webapp/templates/index.html:220
 msgid "Word count (adjusted)"
 msgstr "வார்த்தை எண்ணிக்கை (சரிசெய்யப்பட்டது)"
 
-#: src/cword_webapp/templates/index.html:188
+#: src/cword_webapp/templates/index.html:222
 msgid "Word count"
 msgstr "சொல் எண்ணிக்கை"
 
-#: src/cword_webapp/templates/index.html:190
+#: src/cword_webapp/templates/index.html:224
 msgid "Continue"
 msgstr "தொடரவும்"
 
-#: src/cword_webapp/templates/index.html:195
+#: src/cword_webapp/templates/index.html:229
 msgid "You completed the crossword!"
 msgstr "நீங்கள் குறுக்கெழுத்து முடித்தீர்கள்!"
 

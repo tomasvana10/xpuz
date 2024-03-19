@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-09 19:25+1100\n"
+"POT-Creation-Date: 2024-03-19 12:02+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: su <LL@li.org>\n"
@@ -19,123 +19,123 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:38 src/main.py:75 src/main.py:139 src/main.py:204
+#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
 msgid "Crossword Puzzle"
 msgstr "Teka-teki silang"
 
-#: src/main.py:83
+#: src/main.py:88
 msgid "View crosswords"
 msgstr "Témbongkeun crosswords"
 
-#: src/main.py:87
+#: src/main.py:92
 msgid "Exit the app"
 msgstr "Kaluar tina aplikasi"
 
-#: src/main.py:93
+#: src/main.py:98
 msgid "Global Settings"
 msgstr "Setélan Global"
 
-#: src/main.py:97
+#: src/main.py:102
 msgid "Languages"
 msgstr "Basa"
 
-#: src/main.py:103
+#: src/main.py:108
 msgid "Size"
 msgstr "Ukuran"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "light"
 msgstr "cahayaan"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "dark"
 msgstr "poek"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "system"
 msgstr "sistem"
 
-#: src/main.py:111
+#: src/main.py:116
 msgid "Appearance"
 msgstr "Penampilan"
 
-#: src/main.py:133 src/main.py:259
+#: src/main.py:138 src/main.py:267
 msgid "Crossword Browser"
 msgstr "Crossword Browser"
 
-#: src/main.py:261
+#: src/main.py:269
 msgid "Go back"
 msgstr "Uih deui"
 
-#: src/main.py:266
+#: src/main.py:274
 msgid "Load crossword"
 msgstr "Ngamuat crossword"
 
-#: src/main.py:270
+#: src/main.py:278
 msgid "Open web app"
 msgstr "Buka aplikasi wéb"
 
-#: src/main.py:274
+#: src/main.py:282
 msgid "Terminate web app"
 msgstr "Pareuman aplikasi wéb"
 
-#: src/main.py:280
+#: src/main.py:288
 msgid "Word count preferences"
 msgstr "Preferensi cacah kecap"
 
-#: src/main.py:287 src/main.py:329 src/main.py:361 src/main.py:504
+#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
 msgid "Select word count"
 msgstr "Pilih jumlah kecap"
 
-#: src/main.py:289 src/main.py:360 src/main.py:516
+#: src/main.py:297 src/main.py:371 src/main.py:542
 msgid "Maximum"
 msgstr "maksimal"
 
-#: src/main.py:295
+#: src/main.py:303
 msgid "Custom"
 msgstr "Adat"
 
-#: src/main.py:439
+#: src/main.py:462
 msgid "To perform this operation, you must first select a cell."
 msgstr "Pikeun ngalakukeun operasi ieu, anjeun kedah milih sél."
 
-#: src/main.py:562
+#: src/main.py:589
 msgid "View"
 msgstr "Témbongkeun"
 
-#: src/cword_webapp/templates/index.html:196 src/main.py:564
+#: src/cword_webapp/templates/index.html:230 src/main.py:591
 msgid "Close"
 msgstr "Tutup"
 
-#: src/main.py:652 src/main.py:669
+#: src/main.py:681 src/main.py:705
 msgid "difficulty"
 msgstr "kasusah"
 
-#: src/main.py:666
+#: src/main.py:702
 msgid "Total words"
 msgstr "Jumlah kecap"
 
-#: src/main.py:669
+#: src/main.py:705
 msgid "Difficulty"
 msgstr "Kasusah"
 
-#: src/main.py:674
+#: src/main.py:710
 msgid "Select"
 msgstr "Pilih"
 
-#: src/main.py:716
+#: src/main.py:745
 msgid "Restart"
 msgstr "Uihan deui"
 
-#: src/main.py:716
+#: src/main.py:745
 msgid "Are you sure you want to restart the app?"
 msgstr "Naha anjeun yakin hoyong ngabalikan deui aplikasi?"
 
-#: src/main.py:720
+#: src/main.py:749
 msgid "Exit"
 msgstr "Kaluar"
 
-#: src/main.py:721
+#: src/main.py:750
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -143,11 +143,11 @@ msgstr ""
 "Naha anjeun yakin hoyong kaluar tina aplikasi? Upami aplikasi wéb "
 "dijalankeun, éta bakal dileungitkeun."
 
-#: src/main.py:726
+#: src/main.py:755
 msgid "Back to home"
 msgstr "Balik ka imah"
 
-#: src/main.py:727
+#: src/main.py:756
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -155,123 +155,144 @@ msgstr ""
 "Naha anjeun yakin rék balik deui ka layar utama? Aplikasi wéb bakal "
 "dipareuman."
 
-#: src/main.py:740 src/main.py:743 src/main.py:746
+#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
+#: src/main.py:797
 msgid "Error"
 msgstr "Kasalahan"
 
-#: src/main.py:740
+#: src/main.py:772
 msgid "This language is already selected."
 msgstr "Basa ieu geus dipilih."
 
-#: src/main.py:743
+#: src/main.py:775
 msgid "This size is already selected."
 msgstr "Ukuran ieu geus dipilih."
 
-#: src/main.py:746
+#: src/main.py:778
 msgid "This appearance is already selected."
 msgstr "Penampilan ieu parantos dipilih."
 
-#: src/main.py:749
+#: src/main.py:781
 msgid "Info"
 msgstr "Inpo"
 
-#: src/main.py:750
+#: src/main.py:782
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
 " are on macOS, force quitting the application (using cmd+q) while the web "
 "app is running will prevent it from properly terminating. If you mistakenly "
-"do this, either find the Flask app process and terminate it, change the "
-"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
-"IMPORTANT: In some cases, you may have launched the web app yet your browser"
-" cannot view it. If this happens, please restart your browser."
+"do this, the program will run new web apps with a different port. "
+"Alternatively, you can manually change the port in the program's config "
+"file. All app processes that have not been properly terminated can be "
+"terminated through Activity Monitor on MacOS, or, simply restart your "
+"computer to terminate them."
 msgstr ""
 "Peluncuran pertama kali, mangga baca: Sakali anjeun parantos ngamuat silang,"
 " sareng hoyong ngamuat anu sanés, anjeun kedah ngeureunkeun heula aplikasi "
-"wéb. PENTING: Upami anjeun nganggo macOS, maksakeun kaluar aplikasina "
+"wéb. PENTING: Upami anjeun nganggo macOS, maksakeun kaluar tina aplikasina "
 "(nganggo cmd+q) nalika aplikasi wéb dijalankeun bakal nyegah éta "
-"ngeureunkeunana leres. Upami anjeun lepat ngalakukeun ieu, boh milarian "
-"prosés aplikasi Flask sareng ngeureunkeunana, ganti nomer `webapp_port` dina"
-" src/config.ini, atanapi balikan deui komputer anjeun. PENTING OGE: Dina "
-"sababaraha kasus, anjeun tiasa ngaluncurkeun aplikasi wéb tapi panyungsi "
-"anjeun henteu tiasa ningali éta. Upami ieu kajadian, mangga balikan deui "
-"panyungsi anjeun."
+"ngeureunkeunana leres. Upami anjeun salah ngalakukeun ieu, program bakal "
+"ngajalankeun aplikasi wéb énggal sareng port anu béda. Alternatipna, anjeun "
+"tiasa sacara manual ngarobih port dina file config program. Sadaya prosés "
+"aplikasi anu henteu leres-leres ditungtungan tiasa ditungtungan ku Activity "
+"Monitor dina MacOS, atanapi, ngan saukur balikan deui komputer anjeun pikeun"
+" ngeureunkeunana."
+
+#: src/main.py:792
+msgid ""
+"An error occured while loading this crossword's definitions. Ensure that its"
+" definitions JSON file exists in the base cwords directory. NOTE: Base "
+"crossword data is only accessed when its translated version is not present "
+"in the locales directory."
+msgstr ""
+"Aya kasalahan nalika ngamuat definisi silang ieu. Pastikeun yén file JSON "
+"definisina aya dina diréktori cwords dasar. CATETAN: Data crossword dasar "
+"ngan diaksés nalika versi tarjamah na teu aya dina diréktori lokal."
+
+#: src/main.py:798
+msgid ""
+"An error occured in crossword generation. Please see further information in "
+"the console"
+msgstr ""
+"Kasalahan lumangsung dina generasi crossword. Mangga tingali informasi "
+"salajengna dina konsol nu"
 
 #: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:182
+#: src/cword_webapp/templates/index.html:216
 msgid "Crossword Puzzle - Game"
 msgstr "Crossword Puzzle - Kaulinan"
 
-#: src/cword_webapp/templates/index.html:107
+#: src/cword_webapp/templates/index.html:133
 msgid "Across"
 msgstr "Meuntas"
 
-#: src/cword_webapp/templates/index.html:125
+#: src/cword_webapp/templates/index.html:154
 msgid "Down"
 msgstr "Turun"
 
-#: src/cword_webapp/templates/index.html:143
+#: src/cword_webapp/templates/index.html:177
 msgid "Reveal"
 msgstr "Nyilakakeun"
 
-#: src/cword_webapp/templates/index.html:145
-#: src/cword_webapp/templates/index.html:152
+#: src/cword_webapp/templates/index.html:179
+#: src/cword_webapp/templates/index.html:186
 msgid "Cell"
 msgstr "Sél"
 
-#: src/cword_webapp/templates/index.html:146
-#: src/cword_webapp/templates/index.html:153
-#: src/cword_webapp/templates/index.html:159
+#: src/cword_webapp/templates/index.html:180
+#: src/cword_webapp/templates/index.html:187
+#: src/cword_webapp/templates/index.html:193
 msgid "Word"
 msgstr "Kecap"
 
-#: src/cword_webapp/templates/index.html:147
-#: src/cword_webapp/templates/index.html:154
-#: src/cword_webapp/templates/index.html:160
+#: src/cword_webapp/templates/index.html:181
+#: src/cword_webapp/templates/index.html:188
+#: src/cword_webapp/templates/index.html:194
 msgid "Grid"
 msgstr "Grid"
 
-#: src/cword_webapp/templates/index.html:150
+#: src/cword_webapp/templates/index.html:184
 msgid "Check"
 msgstr "Cék"
 
-#: src/cword_webapp/templates/index.html:157
+#: src/cword_webapp/templates/index.html:191
 msgid "Clear"
 msgstr "Jelas"
 
-#: src/cword_webapp/templates/index.html:168
+#: src/cword_webapp/templates/index.html:202
 msgid "Smart Skip"
 msgstr "Luncat pinter"
 
-#: src/cword_webapp/templates/index.html:174
+#: src/cword_webapp/templates/index.html:208
 msgid "Click To Zoom"
 msgstr "Pencét pikeun ngazum"
 
-#: src/cword_webapp/templates/index.html:183
+#: src/cword_webapp/templates/index.html:217
 msgid "You are viewing"
 msgstr "Anjeun keur nempo"
 
-#: src/cword_webapp/templates/index.html:183
+#: src/cword_webapp/templates/index.html:217
 msgid "from"
 msgstr "ti"
 
-#: src/cword_webapp/templates/index.html:185
+#: src/cword_webapp/templates/index.html:219
 msgid "word(s) could not be inserted, sorry."
 msgstr "kecap (s) teu bisa diselapkeun, punten."
 
-#: src/cword_webapp/templates/index.html:186
+#: src/cword_webapp/templates/index.html:220
 msgid "Word count (adjusted)"
 msgstr "Jumlah kecap (disaluyukeun)"
 
-#: src/cword_webapp/templates/index.html:188
+#: src/cword_webapp/templates/index.html:222
 msgid "Word count"
 msgstr "Jumlah kecap"
 
-#: src/cword_webapp/templates/index.html:190
+#: src/cword_webapp/templates/index.html:224
 msgid "Continue"
 msgstr "Teraskeun"
 
-#: src/cword_webapp/templates/index.html:195
+#: src/cword_webapp/templates/index.html:229
 msgid "You completed the crossword!"
 msgstr "Anjeun ngalengkepan crossword!"
 

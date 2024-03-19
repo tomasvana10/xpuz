@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-09 19:25+1100\n"
+"POT-Creation-Date: 2024-03-19 12:02+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: mi <LL@li.org>\n"
@@ -19,123 +19,123 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:38 src/main.py:75 src/main.py:139 src/main.py:204
+#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
 msgid "Crossword Puzzle"
 msgstr "Whakawhiti Kupu"
 
-#: src/main.py:83
+#: src/main.py:88
 msgid "View crosswords"
 msgstr "Tirohia nga kupu whakawhiti"
 
-#: src/main.py:87
+#: src/main.py:92
 msgid "Exit the app"
 msgstr "Puta atu i te taupānga"
 
-#: src/main.py:93
+#: src/main.py:98
 msgid "Global Settings"
 msgstr "Tautuhinga Ao"
 
-#: src/main.py:97
+#: src/main.py:102
 msgid "Languages"
 msgstr "Nga reo"
 
-#: src/main.py:103
+#: src/main.py:108
 msgid "Size"
 msgstr "Rahi"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "light"
 msgstr "marama"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "dark"
 msgstr "pouri"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "system"
 msgstr "pūnaha"
 
-#: src/main.py:111
+#: src/main.py:116
 msgid "Appearance"
 msgstr "Te ahua"
 
-#: src/main.py:133 src/main.py:259
+#: src/main.py:138 src/main.py:267
 msgid "Crossword Browser"
 msgstr "Pūtirotiro Crossword"
 
-#: src/main.py:261
+#: src/main.py:269
 msgid "Go back"
 msgstr "Hoki atu"
 
-#: src/main.py:266
+#: src/main.py:274
 msgid "Load crossword"
 msgstr "Utaina te kupu whakawhiti"
 
-#: src/main.py:270
+#: src/main.py:278
 msgid "Open web app"
 msgstr "Tuwhera te taupānga tukutuku"
 
-#: src/main.py:274
+#: src/main.py:282
 msgid "Terminate web app"
 msgstr "Whakamutua te taupānga tukutuku"
 
-#: src/main.py:280
+#: src/main.py:288
 msgid "Word count preferences"
 msgstr "Nga manakohanga tatau kupu"
 
-#: src/main.py:287 src/main.py:329 src/main.py:361 src/main.py:504
+#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
 msgid "Select word count"
 msgstr "Tīpakohia te tatau kupu"
 
-#: src/main.py:289 src/main.py:360 src/main.py:516
+#: src/main.py:297 src/main.py:371 src/main.py:542
 msgid "Maximum"
 msgstr "Mōrahi"
 
-#: src/main.py:295
+#: src/main.py:303
 msgid "Custom"
 msgstr "Ritenga"
 
-#: src/main.py:439
+#: src/main.py:462
 msgid "To perform this operation, you must first select a cell."
 msgstr "Ki te mahi i tenei mahinga, me matua whiriwhiri koe i tetahi pūtau."
 
-#: src/main.py:562
+#: src/main.py:589
 msgid "View"
 msgstr "Tirohanga"
 
-#: src/cword_webapp/templates/index.html:196 src/main.py:564
+#: src/cword_webapp/templates/index.html:230 src/main.py:591
 msgid "Close"
 msgstr "Katia"
 
-#: src/main.py:652 src/main.py:669
+#: src/main.py:681 src/main.py:705
 msgid "difficulty"
 msgstr "uaua"
 
-#: src/main.py:666
+#: src/main.py:702
 msgid "Total words"
 msgstr "Kupu katoa"
 
-#: src/main.py:669
+#: src/main.py:705
 msgid "Difficulty"
 msgstr "Te uaua"
 
-#: src/main.py:674
+#: src/main.py:710
 msgid "Select"
 msgstr "Tīpakohia"
 
-#: src/main.py:716
+#: src/main.py:745
 msgid "Restart"
 msgstr "Tīmata anō"
 
-#: src/main.py:716
+#: src/main.py:745
 msgid "Are you sure you want to restart the app?"
 msgstr "Kei te tino hiahia koe ki te whakaara ano i te taupānga?"
 
-#: src/main.py:720
+#: src/main.py:749
 msgid "Exit"
 msgstr "Putaatu"
 
-#: src/main.py:721
+#: src/main.py:750
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -143,11 +143,11 @@ msgstr ""
 "Kei te tino hiahia koe ki te puta atu i te taupānga? Mena kei te rere te "
 "taupānga tukutuku, ka mutu."
 
-#: src/main.py:726
+#: src/main.py:755
 msgid "Back to home"
 msgstr "Hoki ki te kainga"
 
-#: src/main.py:727
+#: src/main.py:756
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -155,122 +155,145 @@ msgstr ""
 "Kei te tino hiahia koe ki te hoki ki te mata o te kainga? Ka whakamutua te "
 "taupānga tukutuku."
 
-#: src/main.py:740 src/main.py:743 src/main.py:746
+#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
+#: src/main.py:797
 msgid "Error"
 msgstr "Hapa"
 
-#: src/main.py:740
+#: src/main.py:772
 msgid "This language is already selected."
 msgstr "Kua tohua kē tēnei reo."
 
-#: src/main.py:743
+#: src/main.py:775
 msgid "This size is already selected."
 msgstr "Kua tohua kē tēnei rahi."
 
-#: src/main.py:746
+#: src/main.py:778
 msgid "This appearance is already selected."
 msgstr "Kua tohua kē tēnei ahua."
 
-#: src/main.py:749
+#: src/main.py:781
 msgid "Info"
 msgstr "Nga korero"
 
-#: src/main.py:750
+#: src/main.py:782
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
 " are on macOS, force quitting the application (using cmd+q) while the web "
 "app is running will prevent it from properly terminating. If you mistakenly "
-"do this, either find the Flask app process and terminate it, change the "
-"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
-"IMPORTANT: In some cases, you may have launched the web app yet your browser"
-" cannot view it. If this happens, please restart your browser."
+"do this, the program will run new web apps with a different port. "
+"Alternatively, you can manually change the port in the program's config "
+"file. All app processes that have not been properly terminated can be "
+"terminated through Activity Monitor on MacOS, or, simply restart your "
+"computer to terminate them."
 msgstr ""
-"Ko te whakarewatanga tuatahi, panuihia: Ina utaina e koe he kupu whakawhiti,"
-" me te hiahia ki te uta i tetahi atu, me whakamutu i te taupānga tukutuku. "
-"HE MEA NUI: Mena kei runga koe i te macOS, tohe ki te whakamutu i te tono "
-"(ma te whakamahi cmd+q) i te wa e rere ana te taupānga tukutuku ka kore e "
-"mutu tika. Ki te pohehe koe i tenei mahi, kimihia te tukanga taupānga Flask "
-"ka whakamutua, hurihia te nama `webapp_port` i src/config.ini, ka whakaara "
-"ano ranei i to rorohiko. HE WHAKANUI HOKI: I etahi wa, kua whakarewahia pea "
-"e koe te taupānga tukutuku engari kaore e taea e to kaitirotiro te tiro. "
-"Mena ka pa mai tenei, me whakaara ano to kaitirotiro."
+"I te wa tuatahi ka whakarewahia, panuihia: Kia utaina e koe he kupu "
+"whakawhiti, me te hiahia ki te uta i tetahi atu, me whakamutu e koe te "
+"taupānga tukutuku. HE MEA NUI: Mena kei runga koe i te macOS, tohe ki te "
+"whakamutu i te tono (ma te whakamahi cmd+q) i te wa e rere ana te taupānga "
+"tukutuku ka kore e mutu tika. Mena ka pohehe koe i tenei, ka whakahaere te "
+"papatono i nga taupānga tukutuku hou me tetahi tauranga rereke. Ka taea e "
+"koe te huri i te tauranga ki te konae whirihora o te papatono. Ko nga "
+"tukanga taupānga katoa kaore i tika te whakamutu ka taea te whakamutu ma te "
+"Aroturuki Mahi i runga i te MacOS, me whakaara ano ranei i to rorohiko ki te"
+" whakamutu."
+
+#: src/main.py:792
+msgid ""
+"An error occured while loading this crossword's definitions. Ensure that its"
+" definitions JSON file exists in the base cwords directory. NOTE: Base "
+"crossword data is only accessed when its translated version is not present "
+"in the locales directory."
+msgstr ""
+"I puta he hapa i te utaina o nga whakamaramatanga kupu whakawhiti. Me "
+"whakarite kei te noho tonu ona whakamaaramatanga JSON ki te raarangi kupu "
+"cwords. FAKATOKANGA: Ka uru noa nga raraunga kupu whakawhiti i te wa kaore "
+"tana putanga kua whakamaoritia i roto i te raarangi rohe."
+
+#: src/main.py:798
+msgid ""
+"An error occured in crossword generation. Please see further information in "
+"the console"
+msgstr ""
+"I puta he hapa i te whakaputa kupu whakawhiti. Tirohia etahi atu korero kei "
+"roto i te papatohu"
 
 #: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:182
+#: src/cword_webapp/templates/index.html:216
 msgid "Crossword Puzzle - Game"
 msgstr "Whakawhiti Kupu - Kemu"
 
-#: src/cword_webapp/templates/index.html:107
+#: src/cword_webapp/templates/index.html:133
 msgid "Across"
 msgstr "Puta noa"
 
-#: src/cword_webapp/templates/index.html:125
+#: src/cword_webapp/templates/index.html:154
 msgid "Down"
 msgstr "Ki raro"
 
-#: src/cword_webapp/templates/index.html:143
+#: src/cword_webapp/templates/index.html:177
 msgid "Reveal"
 msgstr "Whakakitea"
 
-#: src/cword_webapp/templates/index.html:145
-#: src/cword_webapp/templates/index.html:152
+#: src/cword_webapp/templates/index.html:179
+#: src/cword_webapp/templates/index.html:186
 msgid "Cell"
 msgstr "Pūtau"
 
-#: src/cword_webapp/templates/index.html:146
-#: src/cword_webapp/templates/index.html:153
-#: src/cword_webapp/templates/index.html:159
+#: src/cword_webapp/templates/index.html:180
+#: src/cword_webapp/templates/index.html:187
+#: src/cword_webapp/templates/index.html:193
 msgid "Word"
 msgstr "Kupu"
 
-#: src/cword_webapp/templates/index.html:147
-#: src/cword_webapp/templates/index.html:154
-#: src/cword_webapp/templates/index.html:160
+#: src/cword_webapp/templates/index.html:181
+#: src/cword_webapp/templates/index.html:188
+#: src/cword_webapp/templates/index.html:194
 msgid "Grid"
 msgstr "Mātiti"
 
-#: src/cword_webapp/templates/index.html:150
+#: src/cword_webapp/templates/index.html:184
 msgid "Check"
 msgstr "Takitaki"
 
-#: src/cword_webapp/templates/index.html:157
+#: src/cword_webapp/templates/index.html:191
 msgid "Clear"
 msgstr "Maamaa"
 
-#: src/cword_webapp/templates/index.html:168
+#: src/cword_webapp/templates/index.html:202
 msgid "Smart Skip"
 msgstr "Smart smart"
 
-#: src/cword_webapp/templates/index.html:174
+#: src/cword_webapp/templates/index.html:208
 msgid "Click To Zoom"
 msgstr "Patohia ki te whakauru"
 
-#: src/cword_webapp/templates/index.html:183
+#: src/cword_webapp/templates/index.html:217
 msgid "You are viewing"
 msgstr "Kei te matakitaki koe"
 
-#: src/cword_webapp/templates/index.html:183
+#: src/cword_webapp/templates/index.html:217
 msgid "from"
 msgstr "mai"
 
-#: src/cword_webapp/templates/index.html:185
+#: src/cword_webapp/templates/index.html:219
 msgid "word(s) could not be inserted, sorry."
 msgstr "kore e taea te whakauru kupu, aroha mai."
 
-#: src/cword_webapp/templates/index.html:186
+#: src/cword_webapp/templates/index.html:220
 msgid "Word count (adjusted)"
 msgstr "Tatau kupu (kua whakatikatika)"
 
-#: src/cword_webapp/templates/index.html:188
+#: src/cword_webapp/templates/index.html:222
 msgid "Word count"
 msgstr "Tatau kupu"
 
-#: src/cword_webapp/templates/index.html:190
+#: src/cword_webapp/templates/index.html:224
 msgid "Continue"
 msgstr "Haere tonu"
 
-#: src/cword_webapp/templates/index.html:195
+#: src/cword_webapp/templates/index.html:229
 msgid "You completed the crossword!"
 msgstr "Kua oti i a koe te kupu whakawhiti!"
 

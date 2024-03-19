@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-09 19:25+1100\n"
+"POT-Creation-Date: 2024-03-19 12:02+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: nl <LL@li.org>\n"
@@ -19,123 +19,123 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:38 src/main.py:75 src/main.py:139 src/main.py:204
+#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
 msgid "Crossword Puzzle"
 msgstr "Kruiswoord puzzel"
 
-#: src/main.py:83
+#: src/main.py:88
 msgid "View crosswords"
 msgstr "Kruiswoordraadsels bekijken"
 
-#: src/main.py:87
+#: src/main.py:92
 msgid "Exit the app"
 msgstr "Sluit de app"
 
-#: src/main.py:93
+#: src/main.py:98
 msgid "Global Settings"
 msgstr "Algemene instellingen"
 
-#: src/main.py:97
+#: src/main.py:102
 msgid "Languages"
 msgstr "Talen"
 
-#: src/main.py:103
+#: src/main.py:108
 msgid "Size"
 msgstr "Maat"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "light"
 msgstr "licht"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "dark"
 msgstr "donker"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "system"
 msgstr "systeem"
 
-#: src/main.py:111
+#: src/main.py:116
 msgid "Appearance"
 msgstr "Verschijning"
 
-#: src/main.py:133 src/main.py:259
+#: src/main.py:138 src/main.py:267
 msgid "Crossword Browser"
 msgstr "Kruiswoordraadselbrowser"
 
-#: src/main.py:261
+#: src/main.py:269
 msgid "Go back"
 msgstr "Ga terug"
 
-#: src/main.py:266
+#: src/main.py:274
 msgid "Load crossword"
 msgstr "Kruiswoordraadsel laden"
 
-#: src/main.py:270
+#: src/main.py:278
 msgid "Open web app"
 msgstr "Web-app openen"
 
-#: src/main.py:274
+#: src/main.py:282
 msgid "Terminate web app"
 msgstr "Web-app beëindigen"
 
-#: src/main.py:280
+#: src/main.py:288
 msgid "Word count preferences"
 msgstr "Voorkeuren voor het aantal woorden"
 
-#: src/main.py:287 src/main.py:329 src/main.py:361 src/main.py:504
+#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
 msgid "Select word count"
 msgstr "Selecteer het aantal woorden"
 
-#: src/main.py:289 src/main.py:360 src/main.py:516
+#: src/main.py:297 src/main.py:371 src/main.py:542
 msgid "Maximum"
 msgstr "Maximaal"
 
-#: src/main.py:295
+#: src/main.py:303
 msgid "Custom"
 msgstr "Aangepast"
 
-#: src/main.py:439
+#: src/main.py:462
 msgid "To perform this operation, you must first select a cell."
 msgstr "Om deze bewerking uit te voeren, moet u eerst een cel selecteren."
 
-#: src/main.py:562
+#: src/main.py:589
 msgid "View"
 msgstr "Weergave"
 
-#: src/cword_webapp/templates/index.html:196 src/main.py:564
+#: src/cword_webapp/templates/index.html:230 src/main.py:591
 msgid "Close"
 msgstr "Dichtbij"
 
-#: src/main.py:652 src/main.py:669
+#: src/main.py:681 src/main.py:705
 msgid "difficulty"
 msgstr "moeilijkheid"
 
-#: src/main.py:666
+#: src/main.py:702
 msgid "Total words"
 msgstr "Totaal woorden"
 
-#: src/main.py:669
+#: src/main.py:705
 msgid "Difficulty"
 msgstr "Moeilijkheidsgraad"
 
-#: src/main.py:674
+#: src/main.py:710
 msgid "Select"
 msgstr "Selecteer"
 
-#: src/main.py:716
+#: src/main.py:745
 msgid "Restart"
 msgstr "Herstarten"
 
-#: src/main.py:716
+#: src/main.py:745
 msgid "Are you sure you want to restart the app?"
 msgstr "Weet u zeker dat u de app opnieuw wilt starten?"
 
-#: src/main.py:720
+#: src/main.py:749
 msgid "Exit"
 msgstr "Uitgang"
 
-#: src/main.py:721
+#: src/main.py:750
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -143,11 +143,11 @@ msgstr ""
 "Weet u zeker dat u de app wilt afsluiten? Als de web-app actief is, wordt "
 "deze beëindigd."
 
-#: src/main.py:726
+#: src/main.py:755
 msgid "Back to home"
 msgstr "Terug naar huis"
 
-#: src/main.py:727
+#: src/main.py:756
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -155,123 +155,146 @@ msgstr ""
 "Weet je zeker dat je terug wilt naar het startscherm? De webapp wordt "
 "beëindigd."
 
-#: src/main.py:740 src/main.py:743 src/main.py:746
+#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
+#: src/main.py:797
 msgid "Error"
 msgstr "Fout"
 
-#: src/main.py:740
+#: src/main.py:772
 msgid "This language is already selected."
 msgstr "Deze taal is al geselecteerd."
 
-#: src/main.py:743
+#: src/main.py:775
 msgid "This size is already selected."
 msgstr "Deze maat is al geselecteerd."
 
-#: src/main.py:746
+#: src/main.py:778
 msgid "This appearance is already selected."
 msgstr "Deze verschijning is al geselecteerd."
 
-#: src/main.py:749
+#: src/main.py:781
 msgid "Info"
 msgstr "Info"
 
-#: src/main.py:750
+#: src/main.py:782
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
 " are on macOS, force quitting the application (using cmd+q) while the web "
 "app is running will prevent it from properly terminating. If you mistakenly "
-"do this, either find the Flask app process and terminate it, change the "
-"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
-"IMPORTANT: In some cases, you may have launched the web app yet your browser"
-" cannot view it. If this happens, please restart your browser."
+"do this, the program will run new web apps with a different port. "
+"Alternatively, you can manually change the port in the program's config "
+"file. All app processes that have not been properly terminated can be "
+"terminated through Activity Monitor on MacOS, or, simply restart your "
+"computer to terminate them."
 msgstr ""
 "Als u de app voor de eerste keer opstart, lees dan: Nadat u een "
 "kruiswoordraadsel heeft geladen en er nog een wilt laden, moet u eerst de "
 "webapp beëindigen. BELANGRIJK: Als u macOS gebruikt, kunt u door het "
 "geforceerd afsluiten van de applicatie (met cmd+q) terwijl de webapp actief "
 "is, voorkomen dat deze correct wordt afgesloten. Als u dit per ongeluk doet,"
-" zoek dan het proces van de Flask-app op en beëindig het, wijzig het "
-"`webapp_port`-nummer in src/config.ini, of start uw computer opnieuw op. OOK"
-" BELANGRIJK: In sommige gevallen heeft u de webapp mogelijk geopend, maar "
-"kan uw browser deze niet bekijken. Als dit gebeurt, start dan uw browser "
-"opnieuw op."
+" voert het programma nieuwe webapps uit met een andere poort. Als "
+"alternatief kunt u de poort handmatig wijzigen in het configuratiebestand "
+"van het programma. Alle app-processen die niet correct zijn beëindigd, "
+"kunnen worden beëindigd via Activity Monitor op MacOS, of u kunt "
+"eenvoudigweg uw computer opnieuw opstarten om ze te beëindigen."
+
+#: src/main.py:792
+msgid ""
+"An error occured while loading this crossword's definitions. Ensure that its"
+" definitions JSON file exists in the base cwords directory. NOTE: Base "
+"crossword data is only accessed when its translated version is not present "
+"in the locales directory."
+msgstr ""
+"Er is een fout opgetreden bij het laden van de definities van dit "
+"kruiswoordraadsel. Zorg ervoor dat het JSON-definitiebestand aanwezig is in "
+"de basismap cwords. OPMERKING: Basiskruiswoordraadselgegevens zijn alleen "
+"toegankelijk als de vertaalde versie ervan niet aanwezig is in de map met "
+"landinstellingen."
+
+#: src/main.py:798
+msgid ""
+"An error occured in crossword generation. Please see further information in "
+"the console"
+msgstr ""
+"Er is een fout opgetreden bij het genereren van kruiswoordraadsels. Zie meer"
+" informatie in de console"
 
 #: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:182
+#: src/cword_webapp/templates/index.html:216
 msgid "Crossword Puzzle - Game"
 msgstr "Kruiswoordraadsel - Spel"
 
-#: src/cword_webapp/templates/index.html:107
+#: src/cword_webapp/templates/index.html:133
 msgid "Across"
 msgstr "Over"
 
-#: src/cword_webapp/templates/index.html:125
+#: src/cword_webapp/templates/index.html:154
 msgid "Down"
 msgstr "Omlaag"
 
-#: src/cword_webapp/templates/index.html:143
+#: src/cword_webapp/templates/index.html:177
 msgid "Reveal"
 msgstr "Onthullen"
 
-#: src/cword_webapp/templates/index.html:145
-#: src/cword_webapp/templates/index.html:152
+#: src/cword_webapp/templates/index.html:179
+#: src/cword_webapp/templates/index.html:186
 msgid "Cell"
 msgstr "Cel"
 
-#: src/cword_webapp/templates/index.html:146
-#: src/cword_webapp/templates/index.html:153
-#: src/cword_webapp/templates/index.html:159
+#: src/cword_webapp/templates/index.html:180
+#: src/cword_webapp/templates/index.html:187
+#: src/cword_webapp/templates/index.html:193
 msgid "Word"
 msgstr "Woord"
 
-#: src/cword_webapp/templates/index.html:147
-#: src/cword_webapp/templates/index.html:154
-#: src/cword_webapp/templates/index.html:160
+#: src/cword_webapp/templates/index.html:181
+#: src/cword_webapp/templates/index.html:188
+#: src/cword_webapp/templates/index.html:194
 msgid "Grid"
 msgstr "Rooster"
 
-#: src/cword_webapp/templates/index.html:150
+#: src/cword_webapp/templates/index.html:184
 msgid "Check"
 msgstr "Rekening"
 
-#: src/cword_webapp/templates/index.html:157
+#: src/cword_webapp/templates/index.html:191
 msgid "Clear"
 msgstr "Duidelijk"
 
-#: src/cword_webapp/templates/index.html:168
+#: src/cword_webapp/templates/index.html:202
 msgid "Smart Skip"
 msgstr "Slim Skip"
 
-#: src/cword_webapp/templates/index.html:174
+#: src/cword_webapp/templates/index.html:208
 msgid "Click To Zoom"
 msgstr "Klik om te zoomen"
 
-#: src/cword_webapp/templates/index.html:183
+#: src/cword_webapp/templates/index.html:217
 msgid "You are viewing"
 msgstr "Je bekijkt"
 
-#: src/cword_webapp/templates/index.html:183
+#: src/cword_webapp/templates/index.html:217
 msgid "from"
 msgstr "van"
 
-#: src/cword_webapp/templates/index.html:185
+#: src/cword_webapp/templates/index.html:219
 msgid "word(s) could not be inserted, sorry."
 msgstr "woord(en) konden niet worden ingevoegd, sorry."
 
-#: src/cword_webapp/templates/index.html:186
+#: src/cword_webapp/templates/index.html:220
 msgid "Word count (adjusted)"
 msgstr "Aantal woorden (aangepast)"
 
-#: src/cword_webapp/templates/index.html:188
+#: src/cword_webapp/templates/index.html:222
 msgid "Word count"
 msgstr "Aantal woorden"
 
-#: src/cword_webapp/templates/index.html:190
+#: src/cword_webapp/templates/index.html:224
 msgid "Continue"
 msgstr "Doorgaan"
 
-#: src/cword_webapp/templates/index.html:195
+#: src/cword_webapp/templates/index.html:229
 msgid "You completed the crossword!"
 msgstr "Je hebt het kruiswoordraadsel voltooid!"
 

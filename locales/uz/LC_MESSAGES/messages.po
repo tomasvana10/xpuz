@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-09 19:25+1100\n"
+"POT-Creation-Date: 2024-03-19 12:02+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: uz <LL@li.org>\n"
@@ -19,124 +19,124 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:38 src/main.py:75 src/main.py:139 src/main.py:204
+#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
 msgid "Crossword Puzzle"
 msgstr "Krossvord"
 
-#: src/main.py:83
+#: src/main.py:88
 msgid "View crosswords"
 msgstr "Krossvordlarni ko'rish"
 
-#: src/main.py:87
+#: src/main.py:92
 msgid "Exit the app"
 msgstr "Ilovadan chiqing"
 
-#: src/main.py:93
+#: src/main.py:98
 msgid "Global Settings"
 msgstr "Global sozlamalar"
 
-#: src/main.py:97
+#: src/main.py:102
 msgid "Languages"
 msgstr "Tillar"
 
-#: src/main.py:103
+#: src/main.py:108
 msgid "Size"
 msgstr "Hajmi"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "light"
 msgstr "yorug'lik"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "dark"
 msgstr "qorong'i"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "system"
 msgstr "tizimi"
 
-#: src/main.py:111
+#: src/main.py:116
 msgid "Appearance"
 msgstr "Tashqi ko'rinish"
 
-#: src/main.py:133 src/main.py:259
+#: src/main.py:138 src/main.py:267
 msgid "Crossword Browser"
 msgstr "Krossvord brauzer"
 
-#: src/main.py:261
+#: src/main.py:269
 msgid "Go back"
 msgstr "Ortga qaytish"
 
-#: src/main.py:266
+#: src/main.py:274
 msgid "Load crossword"
 msgstr "Krossvordni yuklab oling"
 
-#: src/main.py:270
+#: src/main.py:278
 msgid "Open web app"
 msgstr "Veb-ilovani oching"
 
-#: src/main.py:274
+#: src/main.py:282
 msgid "Terminate web app"
 msgstr "Veb-ilovani tugatish"
 
-#: src/main.py:280
+#: src/main.py:288
 msgid "Word count preferences"
 msgstr "So'zlarni hisoblash sozlamalari"
 
-#: src/main.py:287 src/main.py:329 src/main.py:361 src/main.py:504
+#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
 msgid "Select word count"
 msgstr "So'z sonini tanlang"
 
-#: src/main.py:289 src/main.py:360 src/main.py:516
+#: src/main.py:297 src/main.py:371 src/main.py:542
 msgid "Maximum"
 msgstr "Maksimal"
 
-#: src/main.py:295
+#: src/main.py:303
 msgid "Custom"
 msgstr "Maxsus"
 
-#: src/main.py:439
+#: src/main.py:462
 msgid "To perform this operation, you must first select a cell."
 msgstr ""
 "Ushbu operatsiyani bajarish uchun avval katakchani tanlashingiz kerak."
 
-#: src/main.py:562
+#: src/main.py:589
 msgid "View"
 msgstr "Ko'rinish"
 
-#: src/cword_webapp/templates/index.html:196 src/main.py:564
+#: src/cword_webapp/templates/index.html:230 src/main.py:591
 msgid "Close"
 msgstr "Yopish"
 
-#: src/main.py:652 src/main.py:669
+#: src/main.py:681 src/main.py:705
 msgid "difficulty"
 msgstr "qiyinchilik"
 
-#: src/main.py:666
+#: src/main.py:702
 msgid "Total words"
 msgstr "Jami so'zlar"
 
-#: src/main.py:669
+#: src/main.py:705
 msgid "Difficulty"
 msgstr "Qiyinchilik"
 
-#: src/main.py:674
+#: src/main.py:710
 msgid "Select"
 msgstr "Tanlang"
 
-#: src/main.py:716
+#: src/main.py:745
 msgid "Restart"
 msgstr "Qayta ishga tushirish"
 
-#: src/main.py:716
+#: src/main.py:745
 msgid "Are you sure you want to restart the app?"
 msgstr "Haqiqatan ham ilovani qayta ishga tushirmoqchimisiz?"
 
-#: src/main.py:720
+#: src/main.py:749
 msgid "Exit"
 msgstr "Chiqish"
 
-#: src/main.py:721
+#: src/main.py:750
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -144,133 +144,155 @@ msgstr ""
 "Haqiqatan ham ilovadan chiqmoqchimisiz? Agar veb-ilova ishlayotgan bo'lsa, u"
 " tugatiladi."
 
-#: src/main.py:726
+#: src/main.py:755
 msgid "Back to home"
 msgstr "Uyga qaytish"
 
-#: src/main.py:727
+#: src/main.py:756
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr "Haqiqatan ham bosh ekranga qaytmoqchimisiz? Veb-ilova tugatiladi."
 
-#: src/main.py:740 src/main.py:743 src/main.py:746
+#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
+#: src/main.py:797
 msgid "Error"
 msgstr "Xato"
 
-#: src/main.py:740
+#: src/main.py:772
 msgid "This language is already selected."
 msgstr "Bu til allaqachon tanlangan."
 
-#: src/main.py:743
+#: src/main.py:775
 msgid "This size is already selected."
 msgstr "Bu oʻlcham allaqachon tanlangan."
 
-#: src/main.py:746
+#: src/main.py:778
 msgid "This appearance is already selected."
 msgstr "Bu ko'rinish allaqachon tanlangan."
 
-#: src/main.py:749
+#: src/main.py:781
 msgid "Info"
 msgstr "Ma'lumot"
 
-#: src/main.py:750
+#: src/main.py:782
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
 " are on macOS, force quitting the application (using cmd+q) while the web "
 "app is running will prevent it from properly terminating. If you mistakenly "
-"do this, either find the Flask app process and terminate it, change the "
-"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
-"IMPORTANT: In some cases, you may have launched the web app yet your browser"
-" cannot view it. If this happens, please restart your browser."
+"do this, the program will run new web apps with a different port. "
+"Alternatively, you can manually change the port in the program's config "
+"file. All app processes that have not been properly terminated can be "
+"terminated through Activity Monitor on MacOS, or, simply restart your "
+"computer to terminate them."
 msgstr ""
 "Birinchi marta ishga tushirilganda, o'qing: Krossvordni yuklaganingizdan "
 "so'ng va boshqasini yuklamoqchi bo'lsangiz, avval veb-ilovani tugatishingiz "
 "kerak. MUHIM: Agar siz macOS operatsion tizimida bo'lsangiz, veb-ilova "
 "ishlayotgan vaqtda (cmd+q yordamida) ilovani majburan o'chirib qo'ysangiz, "
-"uning to'g'ri tugatilishi oldini oladi. Agar buni xato qilsangiz, Flask "
-"ilova jarayonini toping va uni tugating, src/config.ini sahifasida "
-"`webapp_port` raqamini o'zgartiring yoki kompyuteringizni qayta ishga "
-"tushiring. HAM MUHIM: Ba'zi hollarda siz veb-ilovani ishga tushirgan "
-"bo'lishingiz mumkin, ammo brauzeringiz uni ko'ra olmaydi. Agar shunday "
-"bo'lsa, brauzeringizni qayta ishga tushiring."
+"uning to'g'ri tugatilishi oldini oladi. Agar buni xato qilsangiz, dastur "
+"boshqa portga ega yangi veb-ilovalarni ishga tushiradi. Shu bilan bir "
+"qatorda, dasturning konfiguratsiya faylidagi portni qo'lda o'zgartirishingiz"
+" mumkin. To'g'ri tugatilmagan barcha ilovalar jarayonlari MacOS'dagi "
+"Activity Monitor orqali tugatilishi mumkin yoki ularni tugatish uchun "
+"kompyuteringizni qayta ishga tushirishingiz mumkin."
+
+#: src/main.py:792
+msgid ""
+"An error occured while loading this crossword's definitions. Ensure that its"
+" definitions JSON file exists in the base cwords directory. NOTE: Base "
+"crossword data is only accessed when its translated version is not present "
+"in the locales directory."
+msgstr ""
+"Bu krossvord taʼriflarini yuklashda xatolik yuz berdi. Uning ta'riflari JSON"
+" fayli asosiy cwords katalogida mavjudligiga ishonch hosil qiling. QAYD: "
+"Asosiy krossvord ma'lumotlariga faqat uning tarjima qilingan versiyasi "
+"mahalliy tillar katalogida mavjud bo'lmaganda kirish mumkin."
+
+#: src/main.py:798
+msgid ""
+"An error occured in crossword generation. Please see further information in "
+"the console"
+msgstr ""
+"Krossvord yaratishda xatolik yuz berdi. Iltimos, qo'shimcha ma'lumotni "
+"konsolda ko'ring"
 
 #: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:182
+#: src/cword_webapp/templates/index.html:216
 msgid "Crossword Puzzle - Game"
 msgstr "Krossvord - o'yin"
 
-#: src/cword_webapp/templates/index.html:107
+#: src/cword_webapp/templates/index.html:133
 msgid "Across"
 msgstr "Bo'ylab"
 
-#: src/cword_webapp/templates/index.html:125
+#: src/cword_webapp/templates/index.html:154
 msgid "Down"
 msgstr "Pastga"
 
-#: src/cword_webapp/templates/index.html:143
+#: src/cword_webapp/templates/index.html:177
 msgid "Reveal"
 msgstr "Oshkor qilish"
 
-#: src/cword_webapp/templates/index.html:145
-#: src/cword_webapp/templates/index.html:152
+#: src/cword_webapp/templates/index.html:179
+#: src/cword_webapp/templates/index.html:186
 msgid "Cell"
 msgstr "Hujayra"
 
-#: src/cword_webapp/templates/index.html:146
-#: src/cword_webapp/templates/index.html:153
-#: src/cword_webapp/templates/index.html:159
+#: src/cword_webapp/templates/index.html:180
+#: src/cword_webapp/templates/index.html:187
+#: src/cword_webapp/templates/index.html:193
 msgid "Word"
 msgstr "So'z"
 
-#: src/cword_webapp/templates/index.html:147
-#: src/cword_webapp/templates/index.html:154
-#: src/cword_webapp/templates/index.html:160
+#: src/cword_webapp/templates/index.html:181
+#: src/cword_webapp/templates/index.html:188
+#: src/cword_webapp/templates/index.html:194
 msgid "Grid"
 msgstr "To‘r"
 
-#: src/cword_webapp/templates/index.html:150
+#: src/cword_webapp/templates/index.html:184
 msgid "Check"
 msgstr "Tekshirish"
 
-#: src/cword_webapp/templates/index.html:157
+#: src/cword_webapp/templates/index.html:191
 msgid "Clear"
 msgstr "Toza"
 
-#: src/cword_webapp/templates/index.html:168
+#: src/cword_webapp/templates/index.html:202
 msgid "Smart Skip"
 msgstr "Smart O'tkazib yuborish"
 
-#: src/cword_webapp/templates/index.html:174
+#: src/cword_webapp/templates/index.html:208
 msgid "Click To Zoom"
 msgstr "Kattalashtirish uchun bosing"
 
-#: src/cword_webapp/templates/index.html:183
+#: src/cword_webapp/templates/index.html:217
 msgid "You are viewing"
 msgstr "Siz tomosha qilyapsiz"
 
-#: src/cword_webapp/templates/index.html:183
+#: src/cword_webapp/templates/index.html:217
 msgid "from"
 msgstr "dan"
 
-#: src/cword_webapp/templates/index.html:185
+#: src/cword_webapp/templates/index.html:219
 msgid "word(s) could not be inserted, sorry."
 msgstr "so'z(lar)ni kiritib bo'lmadi, uzr."
 
-#: src/cword_webapp/templates/index.html:186
+#: src/cword_webapp/templates/index.html:220
 msgid "Word count (adjusted)"
 msgstr "So'zlar soni (sozlangan)"
 
-#: src/cword_webapp/templates/index.html:188
+#: src/cword_webapp/templates/index.html:222
 msgid "Word count"
 msgstr "So'zlar soni"
 
-#: src/cword_webapp/templates/index.html:190
+#: src/cword_webapp/templates/index.html:224
 msgid "Continue"
 msgstr "Davom eting"
 
-#: src/cword_webapp/templates/index.html:195
+#: src/cword_webapp/templates/index.html:229
 msgid "You completed the crossword!"
 msgstr "Siz krossvordni tugatdingiz!"
 

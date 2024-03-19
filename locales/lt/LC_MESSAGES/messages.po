@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-09 19:25+1100\n"
+"POT-Creation-Date: 2024-03-19 12:02+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: lt <LL@li.org>\n"
@@ -19,123 +19,123 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:38 src/main.py:75 src/main.py:139 src/main.py:204
+#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
 msgid "Crossword Puzzle"
 msgstr "Kryžiažodis"
 
-#: src/main.py:83
+#: src/main.py:88
 msgid "View crosswords"
 msgstr "Peržiūrėkite kryžiažodžius"
 
-#: src/main.py:87
+#: src/main.py:92
 msgid "Exit the app"
 msgstr "Išeikite iš programos"
 
-#: src/main.py:93
+#: src/main.py:98
 msgid "Global Settings"
 msgstr "Visuotiniai nustatymai"
 
-#: src/main.py:97
+#: src/main.py:102
 msgid "Languages"
 msgstr "Kalbos"
 
-#: src/main.py:103
+#: src/main.py:108
 msgid "Size"
 msgstr "Dydis"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "light"
 msgstr "šviesos"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "dark"
 msgstr "tamsus"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "system"
 msgstr "sistema"
 
-#: src/main.py:111
+#: src/main.py:116
 msgid "Appearance"
 msgstr "Išvaizda"
 
-#: src/main.py:133 src/main.py:259
+#: src/main.py:138 src/main.py:267
 msgid "Crossword Browser"
 msgstr "Kryžiažodžių naršyklė"
 
-#: src/main.py:261
+#: src/main.py:269
 msgid "Go back"
 msgstr "Eik atgal"
 
-#: src/main.py:266
+#: src/main.py:274
 msgid "Load crossword"
 msgstr "Įkelti kryžiažodį"
 
-#: src/main.py:270
+#: src/main.py:278
 msgid "Open web app"
 msgstr "Atidarykite žiniatinklio programą"
 
-#: src/main.py:274
+#: src/main.py:282
 msgid "Terminate web app"
 msgstr "Nutraukti žiniatinklio programą"
 
-#: src/main.py:280
+#: src/main.py:288
 msgid "Word count preferences"
 msgstr "Žodžių skaičiaus nuostatos"
 
-#: src/main.py:287 src/main.py:329 src/main.py:361 src/main.py:504
+#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
 msgid "Select word count"
 msgstr "Pasirinkite žodžių skaičių"
 
-#: src/main.py:289 src/main.py:360 src/main.py:516
+#: src/main.py:297 src/main.py:371 src/main.py:542
 msgid "Maximum"
 msgstr "Maksimalus"
 
-#: src/main.py:295
+#: src/main.py:303
 msgid "Custom"
 msgstr "Pasirinktinis"
 
-#: src/main.py:439
+#: src/main.py:462
 msgid "To perform this operation, you must first select a cell."
 msgstr "Norėdami atlikti šią operaciją, pirmiausia turite pasirinkti langelį."
 
-#: src/main.py:562
+#: src/main.py:589
 msgid "View"
 msgstr "Žiūrėti"
 
-#: src/cword_webapp/templates/index.html:196 src/main.py:564
+#: src/cword_webapp/templates/index.html:230 src/main.py:591
 msgid "Close"
 msgstr "Uždaryti"
 
-#: src/main.py:652 src/main.py:669
+#: src/main.py:681 src/main.py:705
 msgid "difficulty"
 msgstr "sunkumas"
 
-#: src/main.py:666
+#: src/main.py:702
 msgid "Total words"
 msgstr "Iš viso žodžių"
 
-#: src/main.py:669
+#: src/main.py:705
 msgid "Difficulty"
 msgstr "Sunkumas"
 
-#: src/main.py:674
+#: src/main.py:710
 msgid "Select"
 msgstr "Pasirinkite"
 
-#: src/main.py:716
+#: src/main.py:745
 msgid "Restart"
 msgstr "Perkrauti"
 
-#: src/main.py:716
+#: src/main.py:745
 msgid "Are you sure you want to restart the app?"
 msgstr "Ar tikrai norite iš naujo paleisti programą?"
 
-#: src/main.py:720
+#: src/main.py:749
 msgid "Exit"
 msgstr "Išeiti"
 
-#: src/main.py:721
+#: src/main.py:750
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -143,11 +143,11 @@ msgstr ""
 "Ar tikrai norite išeiti iš programos? Jei žiniatinklio programa veikia, ji "
 "bus nutraukta."
 
-#: src/main.py:726
+#: src/main.py:755
 msgid "Back to home"
 msgstr "Grįžti namo"
 
-#: src/main.py:727
+#: src/main.py:756
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -155,122 +155,143 @@ msgstr ""
 "Ar tikrai norite grįžti į pagrindinį ekraną? Žiniatinklio programa bus "
 "nutraukta."
 
-#: src/main.py:740 src/main.py:743 src/main.py:746
+#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
+#: src/main.py:797
 msgid "Error"
 msgstr "Klaida"
 
-#: src/main.py:740
+#: src/main.py:772
 msgid "This language is already selected."
 msgstr "Ši kalba jau pasirinkta."
 
-#: src/main.py:743
+#: src/main.py:775
 msgid "This size is already selected."
 msgstr "Šis dydis jau pasirinktas."
 
-#: src/main.py:746
+#: src/main.py:778
 msgid "This appearance is already selected."
 msgstr "Ši išvaizda jau pasirinkta."
 
-#: src/main.py:749
+#: src/main.py:781
 msgid "Info"
 msgstr "Informacija"
 
-#: src/main.py:750
+#: src/main.py:782
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
 " are on macOS, force quitting the application (using cmd+q) while the web "
 "app is running will prevent it from properly terminating. If you mistakenly "
-"do this, either find the Flask app process and terminate it, change the "
-"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
-"IMPORTANT: In some cases, you may have launched the web app yet your browser"
-" cannot view it. If this happens, please restart your browser."
+"do this, the program will run new web apps with a different port. "
+"Alternatively, you can manually change the port in the program's config "
+"file. All app processes that have not been properly terminated can be "
+"terminated through Activity Monitor on MacOS, or, simply restart your "
+"computer to terminate them."
 msgstr ""
 "Pirmą kartą paleidus, perskaitykite: Įkėlę kryžiažodį ir norėdami įkelti "
 "kitą, pirmiausia turite nutraukti žiniatinklio programą. SVARBU: jei "
 "naudojate „MacOS“, priverstinai uždarydami programą (naudodami cmd+q), kol "
 "žiniatinklio programa veikia, ji negalės tinkamai nutraukti. Jei tai "
-"padarėte per klaidą, suraskite Flask programos procesą ir jį nutraukite, "
-"pakeiskite „webapp_port“ numerį src/config.ini arba iš naujo paleiskite "
-"kompiuterį. TAIP PAT SVARBU: kai kuriais atvejais galbūt paleidote "
-"žiniatinklio programą, tačiau naršyklė negali jos peržiūrėti. Jei taip "
-"atsitiks, iš naujo paleiskite naršyklę."
+"padarysite per klaidą, programa paleis naujas žiniatinklio programas su kitu"
+" prievadu. Arba galite rankiniu būdu pakeisti prievadą programos "
+"konfigūracijos faile. Visi netinkamai nutraukti programų procesai gali būti "
+"nutraukti naudojant „Activity Monitor“ sistemoje „MacOS“ arba tiesiog iš "
+"naujo paleiskite kompiuterį, kad juos nutrauktumėte."
+
+#: src/main.py:792
+msgid ""
+"An error occured while loading this crossword's definitions. Ensure that its"
+" definitions JSON file exists in the base cwords directory. NOTE: Base "
+"crossword data is only accessed when its translated version is not present "
+"in the locales directory."
+msgstr ""
+"Įkeliant šio kryžiažodžio apibrėžimus įvyko klaida. Įsitikinkite, kad jo "
+"apibrėžimų JSON failas yra baziniame cwords kataloge. PASTABA: Pagrindiniai "
+"kryžiažodžių duomenys pasiekiami tik tada, kai jų išverstos versijos nėra "
+"lokalių kataloge."
+
+#: src/main.py:798
+msgid ""
+"An error occured in crossword generation. Please see further information in "
+"the console"
+msgstr ""
+"Kuriant kryžiažodžius įvyko klaida. Daugiau informacijos rasite konsolėje"
 
 #: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:182
+#: src/cword_webapp/templates/index.html:216
 msgid "Crossword Puzzle - Game"
 msgstr "Kryžiažodis – žaidimas"
 
-#: src/cword_webapp/templates/index.html:107
+#: src/cword_webapp/templates/index.html:133
 msgid "Across"
 msgstr "Skersai"
 
-#: src/cword_webapp/templates/index.html:125
+#: src/cword_webapp/templates/index.html:154
 msgid "Down"
 msgstr "Žemyn"
 
-#: src/cword_webapp/templates/index.html:143
+#: src/cword_webapp/templates/index.html:177
 msgid "Reveal"
 msgstr "Atskleisti"
 
-#: src/cword_webapp/templates/index.html:145
-#: src/cword_webapp/templates/index.html:152
+#: src/cword_webapp/templates/index.html:179
+#: src/cword_webapp/templates/index.html:186
 msgid "Cell"
 msgstr "Ląstelė"
 
-#: src/cword_webapp/templates/index.html:146
-#: src/cword_webapp/templates/index.html:153
-#: src/cword_webapp/templates/index.html:159
+#: src/cword_webapp/templates/index.html:180
+#: src/cword_webapp/templates/index.html:187
+#: src/cword_webapp/templates/index.html:193
 msgid "Word"
 msgstr "Žodis"
 
-#: src/cword_webapp/templates/index.html:147
-#: src/cword_webapp/templates/index.html:154
-#: src/cword_webapp/templates/index.html:160
+#: src/cword_webapp/templates/index.html:181
+#: src/cword_webapp/templates/index.html:188
+#: src/cword_webapp/templates/index.html:194
 msgid "Grid"
 msgstr "Tinklelis"
 
-#: src/cword_webapp/templates/index.html:150
+#: src/cword_webapp/templates/index.html:184
 msgid "Check"
 msgstr "Patikrinti"
 
-#: src/cword_webapp/templates/index.html:157
+#: src/cword_webapp/templates/index.html:191
 msgid "Clear"
 msgstr "Aišku"
 
-#: src/cword_webapp/templates/index.html:168
+#: src/cword_webapp/templates/index.html:202
 msgid "Smart Skip"
 msgstr "Protingas praleidimas"
 
-#: src/cword_webapp/templates/index.html:174
+#: src/cword_webapp/templates/index.html:208
 msgid "Click To Zoom"
 msgstr "Spustelėkite, kad padidintumėte mastelį"
 
-#: src/cword_webapp/templates/index.html:183
+#: src/cword_webapp/templates/index.html:217
 msgid "You are viewing"
 msgstr "Jūs žiūrite"
 
-#: src/cword_webapp/templates/index.html:183
+#: src/cword_webapp/templates/index.html:217
 msgid "from"
 msgstr "iš"
 
-#: src/cword_webapp/templates/index.html:185
+#: src/cword_webapp/templates/index.html:219
 msgid "word(s) could not be inserted, sorry."
 msgstr "žodžio (-ių) įterpti nepavyko, atsiprašome."
 
-#: src/cword_webapp/templates/index.html:186
+#: src/cword_webapp/templates/index.html:220
 msgid "Word count (adjusted)"
 msgstr "Žodžių skaičius (koreguotas)"
 
-#: src/cword_webapp/templates/index.html:188
+#: src/cword_webapp/templates/index.html:222
 msgid "Word count"
 msgstr "Žodžių skaičius"
 
-#: src/cword_webapp/templates/index.html:190
+#: src/cword_webapp/templates/index.html:224
 msgid "Continue"
 msgstr "Tęsti"
 
-#: src/cword_webapp/templates/index.html:195
+#: src/cword_webapp/templates/index.html:229
 msgid "You completed the crossword!"
 msgstr "Jūs užbaigėte kryžiažodį!"
 

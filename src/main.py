@@ -41,7 +41,7 @@ class Home(CTk):
         self.localised_lang_db, self.localised_langs = lang_info 
         self.protocol("WM_DELETE_WINDOW", self._exit_handler)
         self.title(_("Crossword Puzzle"))
-        self.geometry("800x600")
+        self.geometry("840x600")
         if system() == "Windows": self.iconbitmap(Paths.LOGO_PATH)
         
         set_appearance_mode(self.cfg.get("m", "appearance"))
@@ -345,6 +345,7 @@ class CrosswordBrowser(CTkFrame):
      
     def open_cword_webapp(self) -> None:
         '''Open the crossword web app at a port read from `self.master.cfg`.'''
+        self.master.cfg.read(Paths.CONFIG_PATH)
         open_new_tab(f"http://127.0.0.1:{self.master.cfg.get('misc', 'webapp_port')}/")
      
     def terminate_cword_webapp(self) -> None:
@@ -392,24 +393,35 @@ class CrosswordBrowser(CTkFrame):
         The crossword information that this function accesses is saved whenever a new crossword
         block is selected (by the `_on_cword_selection` function).
         '''
+        # Max word count / custom word count
+        chosen_word_count: int = self.cword_word_count if self.word_count_preference.get() == 0 \
+                                 else int(self.opts_custom_word_count.get())
+
+        try:
+            # Load definitions, instantiate a crossword, then find the best crossword using that instance
+            definitions: Dict[str, str] = cwg.CrosswordHelper.load_definitions(self.cword_category, 
+                                                                                self.cword_name, 
+                                                                                self.master.locale.language)
+        except Exception as ex: 
+            print(f"{type(ex).__name__}: {ex}")
+            return AppHelper.show_messagebox(definitions_loading_err=True)
+            
+        try:
+            crossword: object = cwg.CrosswordHelper.find_best_crossword(
+                                    cwg.Crossword(definitions=definitions, word_count=chosen_word_count,
+                                                name=self.cword_name))
+        except Exception as ex:
+            if issubclass(type(ex), errors.CrosswordBaseError):
+                print(f"{type(ex).__name__}: {ex}")
+                return AppHelper.show_messagebox(cword_gen_err=True)
+        
+        # Only modify states after error checking has been conducted
         self.b_load_selected_cword.configure(state="disabled")
         self.selected_category_object.b_close_category.configure(state="disabled")
         self.selected_category_object._configure_cword_blocks_state("disabled")
         self._configure_cword_launch_options_state("disabled")
         self.selected_category_object.selected_block.set(-1)
-        self.webapp_running: bool = True
-        
-        # Max word count / custom word count
-        chosen_word_count: int = self.cword_word_count if self.word_count_preference.get() == 0 \
-                                 else int(self.opts_custom_word_count.get())
-
-        # Load definitions, instantiate a crossword, then find the best crossword using that instance
-        definitions: Dict[str, str] = cwg.CrosswordHelper.load_definitions(self.cword_category, 
-                                                                           self.cword_name, 
-                                                                           self.master.locale.language)
-        crossword: object = cwg.CrosswordHelper.find_best_crossword(
-                                cwg.Crossword(definitions=definitions, word_count=chosen_word_count,
-                                              name=self.cword_name))
+        self.webapp_running: bool = True    
         
         self._init_webapp(crossword)
         
@@ -618,9 +630,11 @@ class CrosswordCategoryBlock(CTkFrame):
         
         # Create the blocks for the crosswords in the selected category
         self.cword_block_objects: List[CrosswordInfoBlock] = list() 
+        # Gather all crossword directories with an info.json file. 
+        crosswords = [f.name for f in os.scandir(os.path.join(Paths.BASE_CWORDS_PATH, self.category)) \
+                      if f.is_dir() and "info.json" in os.listdir(f.path)]
         i: int = 1
-        for cword in self._sort_category_content([f.name for f in os.scandir(
-                                os.path.join(Paths.BASE_CWORDS_PATH, self.category)) if f.is_dir()]):
+        for cword in self._sort_category_content(crosswords):
             block = CrosswordInfoBlock(self.master.info_block_container, self.master, cword, 
                                        self.category, self, i)
             block.pack(side="left", padx=5, pady=(5, 0)) 
@@ -749,7 +763,10 @@ class AppHelper:
     def show_messagebox(same_lang: bool = False, 
                         same_scale: bool = False, 
                         same_appearance: bool = False,
-                        first_time_opening_cword_browser: bool = False
+                        first_time_opening_cword_browser: bool = False,
+                        definitions_loading_err: bool = False,
+                        cword_gen_err: bool = False,
+                        unavailable_port: bool = False,
                         ) -> None:
         if same_lang:
             return messagebox.showerror(_("Error"), _("This language is already selected."))
@@ -765,10 +782,20 @@ class AppHelper:
                 _("First time launch, please read: Once you have loaded a crossword, and wish to load "
                 "another one, you must first terminate the web app. IMPORTANT: If you are on macOS, "
                 "force quitting the application (using cmd+q) while the web app is running will prevent "
-                "it from properly terminating. If you mistakenly do this, either find the Flask app "
-                "process and terminate it, change the `webapp_port` number in src/config.ini, or "
-                "restart your computer. ALSO IMPORTANT: In some cases, you may have launched "
-                "the web app yet your browser cannot view it. If this happens, please restart your browser."))
+                "it from properly terminating. If you mistakenly do this, the program will run new web apps "
+                "with a different port. Alternatively, you can manually change the port in the program's "
+                "config file. All app processes that have not been properly terminated can be terminated "
+                "through Activity Monitor on MacOS, or, simply restart your computer to terminate them."))
+        
+        if definitions_loading_err:
+            return messagebox.showerror(_("Error"), 
+                _("An error occured while loading this crossword's definitions. Ensure that its "
+                "definitions JSON file exists in the base cwords directory. NOTE: Base crossword data "
+                "is only accessed when its translated version is not present in the locales directory."))
+        
+        if cword_gen_err:
+            return messagebox.showerror(_("Error"), 
+                _("An error occured in crossword generation. Please see further information in the console"))
     
     @staticmethod
     def _update_config(cfg: ConfigParser, 

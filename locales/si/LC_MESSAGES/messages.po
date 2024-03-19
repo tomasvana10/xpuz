@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-09 19:25+1100\n"
+"POT-Creation-Date: 2024-03-19 12:02+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: si <LL@li.org>\n"
@@ -19,123 +19,123 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:38 src/main.py:75 src/main.py:139 src/main.py:204
+#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
 msgid "Crossword Puzzle"
 msgstr "හරස්පද ප්රහේලිකාව"
 
-#: src/main.py:83
+#: src/main.py:88
 msgid "View crosswords"
 msgstr "හරස්පද බලන්න"
 
-#: src/main.py:87
+#: src/main.py:92
 msgid "Exit the app"
 msgstr "යෙදුමෙන් පිටවන්න"
 
-#: src/main.py:93
+#: src/main.py:98
 msgid "Global Settings"
 msgstr "ගෝලීය සැකසුම්"
 
-#: src/main.py:97
+#: src/main.py:102
 msgid "Languages"
 msgstr "භාෂා"
 
-#: src/main.py:103
+#: src/main.py:108
 msgid "Size"
 msgstr "ප්රමාණය"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "light"
 msgstr "ආලෝකය"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "dark"
 msgstr "අඳුරු"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "system"
 msgstr "පද්ධති"
 
-#: src/main.py:111
+#: src/main.py:116
 msgid "Appearance"
 msgstr "පෙනුම"
 
-#: src/main.py:133 src/main.py:259
+#: src/main.py:138 src/main.py:267
 msgid "Crossword Browser"
 msgstr "හරස්පද බ්‍රව්සරය"
 
-#: src/main.py:261
+#: src/main.py:269
 msgid "Go back"
 msgstr "ආපසු යන්න"
 
-#: src/main.py:266
+#: src/main.py:274
 msgid "Load crossword"
 msgstr "හරස්පද පැටවීම"
 
-#: src/main.py:270
+#: src/main.py:278
 msgid "Open web app"
 msgstr "වෙබ් යෙදුම විවෘත කරන්න"
 
-#: src/main.py:274
+#: src/main.py:282
 msgid "Terminate web app"
 msgstr "වෙබ් යෙදුම අවසන් කරන්න"
 
-#: src/main.py:280
+#: src/main.py:288
 msgid "Word count preferences"
 msgstr "වචන ගණන් කිරීමේ මනාපයන්"
 
-#: src/main.py:287 src/main.py:329 src/main.py:361 src/main.py:504
+#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
 msgid "Select word count"
 msgstr "වචන ගණන තෝරන්න"
 
-#: src/main.py:289 src/main.py:360 src/main.py:516
+#: src/main.py:297 src/main.py:371 src/main.py:542
 msgid "Maximum"
 msgstr "උපරිම"
 
-#: src/main.py:295
+#: src/main.py:303
 msgid "Custom"
 msgstr "අභිරුචි"
 
-#: src/main.py:439
+#: src/main.py:462
 msgid "To perform this operation, you must first select a cell."
 msgstr "මෙම මෙහෙයුම සිදු කිරීම සඳහා, ඔබ මුලින්ම කොටුවක් තෝරා ගත යුතුය."
 
-#: src/main.py:562
+#: src/main.py:589
 msgid "View"
 msgstr "දැක්ම"
 
-#: src/cword_webapp/templates/index.html:196 src/main.py:564
+#: src/cword_webapp/templates/index.html:230 src/main.py:591
 msgid "Close"
 msgstr "වසන්න"
 
-#: src/main.py:652 src/main.py:669
+#: src/main.py:681 src/main.py:705
 msgid "difficulty"
 msgstr "දුෂ්කරතාව"
 
-#: src/main.py:666
+#: src/main.py:702
 msgid "Total words"
 msgstr "සම්පූර්ණ වචන"
 
-#: src/main.py:669
+#: src/main.py:705
 msgid "Difficulty"
 msgstr "දුෂ්කරතාව"
 
-#: src/main.py:674
+#: src/main.py:710
 msgid "Select"
 msgstr "තෝරන්න"
 
-#: src/main.py:716
+#: src/main.py:745
 msgid "Restart"
 msgstr "යළි අරඹන්න"
 
-#: src/main.py:716
+#: src/main.py:745
 msgid "Are you sure you want to restart the app?"
 msgstr "ඔබට යෙදුම නැවත ආරම්භ කිරීමට අවශ්‍ය බව විශ්වාසද?"
 
-#: src/main.py:720
+#: src/main.py:749
 msgid "Exit"
 msgstr "පිටවීම"
 
-#: src/main.py:721
+#: src/main.py:750
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -143,133 +143,154 @@ msgstr ""
 "ඔබට යෙදුමෙන් පිටවීමට අවශ්‍ය බව විශ්වාසද? වෙබ් යෙදුම ක්‍රියාත්මක වන්නේ නම්, "
 "එය අවසන් වේ."
 
-#: src/main.py:726
+#: src/main.py:755
 msgid "Back to home"
 msgstr "ආපසු නිවසට"
 
-#: src/main.py:727
+#: src/main.py:756
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
 "ඔබට මුල් තිරය වෙත ආපසු යාමට අවශ්‍ය බව විශ්වාසද? වෙබ් යෙදුම අවසන් වනු ඇත."
 
-#: src/main.py:740 src/main.py:743 src/main.py:746
+#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
+#: src/main.py:797
 msgid "Error"
 msgstr "දෝෂයකි"
 
-#: src/main.py:740
+#: src/main.py:772
 msgid "This language is already selected."
 msgstr "මෙම භාෂාව දැනටමත් තෝරා ඇත."
 
-#: src/main.py:743
+#: src/main.py:775
 msgid "This size is already selected."
 msgstr "මෙම ප්රමාණය දැනටමත් තෝරා ඇත."
 
-#: src/main.py:746
+#: src/main.py:778
 msgid "This appearance is already selected."
 msgstr "මෙම පෙනුම දැනටමත් තෝරා ඇත."
 
-#: src/main.py:749
+#: src/main.py:781
 msgid "Info"
 msgstr "තොරතුරු"
 
-#: src/main.py:750
+#: src/main.py:782
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
 " are on macOS, force quitting the application (using cmd+q) while the web "
 "app is running will prevent it from properly terminating. If you mistakenly "
-"do this, either find the Flask app process and terminate it, change the "
-"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
-"IMPORTANT: In some cases, you may have launched the web app yet your browser"
-" cannot view it. If this happens, please restart your browser."
+"do this, the program will run new web apps with a different port. "
+"Alternatively, you can manually change the port in the program's config "
+"file. All app processes that have not been properly terminated can be "
+"terminated through Activity Monitor on MacOS, or, simply restart your "
+"computer to terminate them."
 msgstr ""
 "පළමු වරට දියත් කිරීම, කරුණාකර කියවන්න: ඔබ හරස්පදයක් පූරණය කළ පසු, තවත් එකක් "
 "පූරණය කිරීමට අවශ්‍ය නම්, ඔබ ප්‍රථමයෙන් වෙබ් යෙදුම අවසන් කළ යුතුය. වැදගත්: ඔබ"
 " macOS හි සිටී නම්, වෙබ් යෙදුම ක්‍රියාත්මක වන අතරතුර (cmd+q භාවිතයෙන්) "
-"යෙදුමෙන් ඉවත් වීමට බල කිරීමෙන් එය නිසි ලෙස අවසන් වීම වළක්වනු ඇත. ඔබ "
-"වැරදීමකින් මෙය කරන්නේ නම්, Flask යෙදුම් ක්‍රියාවලිය සොයාගෙන එය අවසන් කරන්න, "
-"src/config.ini හි 'webapp_port' අංකය වෙනස් කරන්න, නැතහොත් ඔබේ පරිගණකය නැවත "
-"ආරම්භ කරන්න. එසේම වැදගත්: සමහර අවස්ථාවලදී, ඔබ වෙබ් යෙදුම දියත් කර ඇති නමුත් "
-"ඔබේ බ්‍රවුසරයට එය බැලිය නොහැක. මෙය සිදුවුවහොත්, කරුණාකර ඔබගේ බ්‍රවුසරය නැවත "
-"අරඹන්න."
+"යෙදුමෙන් ඉවත් වීමට බල කිරීමෙන් එය නිසි ලෙස අවසන් වීම වළක්වනු ඇත. ඔබ මෙය "
+"වැරදීමකින් කරන්නේ නම්, වැඩසටහන වෙනත් වරායක් සමඟ නව වෙබ් යෙදුම් ධාවනය කරයි. "
+"විකල්පයක් ලෙස, ඔබට වැඩසටහනේ වින්‍යාස ගොනුවේ ඇති වරාය අතින් වෙනස් කළ හැකිය. "
+"නිසි ලෙස අවසන් කර නොමැති සියලුම යෙදුම් ක්‍රියාවලි MacOS හි ක්‍රියාකාරකම් "
+"මොනිටරය හරහා අවසන් කළ හැකිය, නැතහොත්, ඒවා අවසන් කිරීමට ඔබේ පරිගණකය නැවත "
+"ආරම්භ කරන්න."
+
+#: src/main.py:792
+msgid ""
+"An error occured while loading this crossword's definitions. Ensure that its"
+" definitions JSON file exists in the base cwords directory. NOTE: Base "
+"crossword data is only accessed when its translated version is not present "
+"in the locales directory."
+msgstr ""
+"මෙම හරස්පදයේ අර්ථ දැක්වීම් පූරණය කිරීමේදී දෝෂයක් ඇති විය. එහි නිර්වචන JSON "
+"ගොනුව මූලික cwords නාමාවලියෙහි පවතින බව සහතික කර ගන්න. සටහන: මූලික හරස්පද "
+"දත්ත ප්‍රවේශ වන්නේ එහි පරිවර්තිත අනුවාදය ස්ථාන නාමාවලියෙහි නොමැති විට පමණි."
+
+#: src/main.py:798
+msgid ""
+"An error occured in crossword generation. Please see further information in "
+"the console"
+msgstr ""
+"හරස්පද උත්පාදනය කිරීමේදී දෝෂයක් සිදු විය. කරුණාකර කොන්සෝලයේ වැඩිදුර තොරතුරු "
+"බලන්න"
 
 #: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:182
+#: src/cword_webapp/templates/index.html:216
 msgid "Crossword Puzzle - Game"
 msgstr "හරස්පද ප්‍රහේලිකාව - ක්‍රීඩාව"
 
-#: src/cword_webapp/templates/index.html:107
+#: src/cword_webapp/templates/index.html:133
 msgid "Across"
 msgstr "හරහා"
 
-#: src/cword_webapp/templates/index.html:125
+#: src/cword_webapp/templates/index.html:154
 msgid "Down"
 msgstr "පහළ"
 
-#: src/cword_webapp/templates/index.html:143
+#: src/cword_webapp/templates/index.html:177
 msgid "Reveal"
 msgstr "හෙළි කරන්න"
 
-#: src/cword_webapp/templates/index.html:145
-#: src/cword_webapp/templates/index.html:152
+#: src/cword_webapp/templates/index.html:179
+#: src/cword_webapp/templates/index.html:186
 msgid "Cell"
 msgstr "සෛලය"
 
-#: src/cword_webapp/templates/index.html:146
-#: src/cword_webapp/templates/index.html:153
-#: src/cword_webapp/templates/index.html:159
+#: src/cword_webapp/templates/index.html:180
+#: src/cword_webapp/templates/index.html:187
+#: src/cword_webapp/templates/index.html:193
 msgid "Word"
 msgstr "වචනය"
 
-#: src/cword_webapp/templates/index.html:147
-#: src/cword_webapp/templates/index.html:154
-#: src/cword_webapp/templates/index.html:160
+#: src/cword_webapp/templates/index.html:181
+#: src/cword_webapp/templates/index.html:188
+#: src/cword_webapp/templates/index.html:194
 msgid "Grid"
 msgstr "ජාලකය"
 
-#: src/cword_webapp/templates/index.html:150
+#: src/cword_webapp/templates/index.html:184
 msgid "Check"
 msgstr "චෙක් පත"
 
-#: src/cword_webapp/templates/index.html:157
+#: src/cword_webapp/templates/index.html:191
 msgid "Clear"
 msgstr "පැහැදිලිව"
 
-#: src/cword_webapp/templates/index.html:168
+#: src/cword_webapp/templates/index.html:202
 msgid "Smart Skip"
 msgstr "ස්මාර්ට් මඟ හැරීම"
 
-#: src/cword_webapp/templates/index.html:174
+#: src/cword_webapp/templates/index.html:208
 msgid "Click To Zoom"
 msgstr "විශාලනය කිරීමට ක්ලික් කරන්න"
 
-#: src/cword_webapp/templates/index.html:183
+#: src/cword_webapp/templates/index.html:217
 msgid "You are viewing"
 msgstr "ඔබ නරඹමින් සිටී"
 
-#: src/cword_webapp/templates/index.html:183
+#: src/cword_webapp/templates/index.html:217
 msgid "from"
 msgstr "සිට"
 
-#: src/cword_webapp/templates/index.html:185
+#: src/cword_webapp/templates/index.html:219
 msgid "word(s) could not be inserted, sorry."
 msgstr "වචනය(ය) ඇතුලත් කල නොහැක, සමාවන්න."
 
-#: src/cword_webapp/templates/index.html:186
+#: src/cword_webapp/templates/index.html:220
 msgid "Word count (adjusted)"
 msgstr "වචන ගණන (ගැලපුම්)"
 
-#: src/cword_webapp/templates/index.html:188
+#: src/cword_webapp/templates/index.html:222
 msgid "Word count"
 msgstr "වචන ගණන"
 
-#: src/cword_webapp/templates/index.html:190
+#: src/cword_webapp/templates/index.html:224
 msgid "Continue"
 msgstr "දිගටම කරගෙන යන්න"
 
-#: src/cword_webapp/templates/index.html:195
+#: src/cword_webapp/templates/index.html:229
 msgid "You completed the crossword!"
 msgstr "ඔබ හරස්පද සම්පූර්ණ කළා!"
 

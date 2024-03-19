@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-09 19:25+1100\n"
+"POT-Creation-Date: 2024-03-19 12:02+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: mk <LL@li.org>\n"
@@ -19,123 +19,123 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:38 src/main.py:75 src/main.py:139 src/main.py:204
+#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
 msgid "Crossword Puzzle"
 msgstr "Крстозбор"
 
-#: src/main.py:83
+#: src/main.py:88
 msgid "View crosswords"
 msgstr "Погледнете ги крстозборите"
 
-#: src/main.py:87
+#: src/main.py:92
 msgid "Exit the app"
 msgstr "Излезете од апликацијата"
 
-#: src/main.py:93
+#: src/main.py:98
 msgid "Global Settings"
 msgstr "Глобални поставки"
 
-#: src/main.py:97
+#: src/main.py:102
 msgid "Languages"
 msgstr "Јазици"
 
-#: src/main.py:103
+#: src/main.py:108
 msgid "Size"
 msgstr "Големина"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "light"
 msgstr "светлина"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "dark"
 msgstr "темно"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "system"
 msgstr "систем"
 
-#: src/main.py:111
+#: src/main.py:116
 msgid "Appearance"
 msgstr "Изглед"
 
-#: src/main.py:133 src/main.py:259
+#: src/main.py:138 src/main.py:267
 msgid "Crossword Browser"
 msgstr "Прелистувач на крстозбори"
 
-#: src/main.py:261
+#: src/main.py:269
 msgid "Go back"
 msgstr "Врати се назад"
 
-#: src/main.py:266
+#: src/main.py:274
 msgid "Load crossword"
 msgstr "Вчитај крстозбор"
 
-#: src/main.py:270
+#: src/main.py:278
 msgid "Open web app"
 msgstr "Отворете веб-апликација"
 
-#: src/main.py:274
+#: src/main.py:282
 msgid "Terminate web app"
 msgstr "Прекинете ја веб-апликацијата"
 
-#: src/main.py:280
+#: src/main.py:288
 msgid "Word count preferences"
 msgstr "Преференци за броење зборови"
 
-#: src/main.py:287 src/main.py:329 src/main.py:361 src/main.py:504
+#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
 msgid "Select word count"
 msgstr "Изберете број на зборови"
 
-#: src/main.py:289 src/main.py:360 src/main.py:516
+#: src/main.py:297 src/main.py:371 src/main.py:542
 msgid "Maximum"
 msgstr "Максимум"
 
-#: src/main.py:295
+#: src/main.py:303
 msgid "Custom"
 msgstr "Прилагодено"
 
-#: src/main.py:439
+#: src/main.py:462
 msgid "To perform this operation, you must first select a cell."
 msgstr "За да ја извршите оваа операција, прво мора да изберете ќелија."
 
-#: src/main.py:562
+#: src/main.py:589
 msgid "View"
 msgstr "Прикажи"
 
-#: src/cword_webapp/templates/index.html:196 src/main.py:564
+#: src/cword_webapp/templates/index.html:230 src/main.py:591
 msgid "Close"
 msgstr "Затвори"
 
-#: src/main.py:652 src/main.py:669
+#: src/main.py:681 src/main.py:705
 msgid "difficulty"
 msgstr "тешкотија"
 
-#: src/main.py:666
+#: src/main.py:702
 msgid "Total words"
 msgstr "Вкупно зборови"
 
-#: src/main.py:669
+#: src/main.py:705
 msgid "Difficulty"
 msgstr "Тешкотија"
 
-#: src/main.py:674
+#: src/main.py:710
 msgid "Select"
 msgstr "Изберете"
 
-#: src/main.py:716
+#: src/main.py:745
 msgid "Restart"
 msgstr "Рестарт"
 
-#: src/main.py:716
+#: src/main.py:745
 msgid "Are you sure you want to restart the app?"
 msgstr "Дали сте сигурни дека сакате да ја рестартирате апликацијата?"
 
-#: src/main.py:720
+#: src/main.py:749
 msgid "Exit"
 msgstr "Излезете"
 
-#: src/main.py:721
+#: src/main.py:750
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -143,11 +143,11 @@ msgstr ""
 "Дали сте сигурни дека сакате да излезете од апликацијата? Ако веб-"
 "апликацијата работи, таа ќе се прекине."
 
-#: src/main.py:726
+#: src/main.py:755
 msgid "Back to home"
 msgstr "Назад до дома"
 
-#: src/main.py:727
+#: src/main.py:756
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -155,122 +155,145 @@ msgstr ""
 "Дали сте сигурни дека сакате да се вратите на почетниот екран? Веб-"
 "апликацијата ќе се прекине."
 
-#: src/main.py:740 src/main.py:743 src/main.py:746
+#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
+#: src/main.py:797
 msgid "Error"
 msgstr "Грешка"
 
-#: src/main.py:740
+#: src/main.py:772
 msgid "This language is already selected."
 msgstr "Овој јазик е веќе избран."
 
-#: src/main.py:743
+#: src/main.py:775
 msgid "This size is already selected."
 msgstr "Оваа големина е веќе избрана."
 
-#: src/main.py:746
+#: src/main.py:778
 msgid "This appearance is already selected."
 msgstr "Овој изглед е веќе избран."
 
-#: src/main.py:749
+#: src/main.py:781
 msgid "Info"
 msgstr "Инфо"
 
-#: src/main.py:750
+#: src/main.py:782
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
 " are on macOS, force quitting the application (using cmd+q) while the web "
 "app is running will prevent it from properly terminating. If you mistakenly "
-"do this, either find the Flask app process and terminate it, change the "
-"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
-"IMPORTANT: In some cases, you may have launched the web app yet your browser"
-" cannot view it. If this happens, please restart your browser."
+"do this, the program will run new web apps with a different port. "
+"Alternatively, you can manually change the port in the program's config "
+"file. All app processes that have not been properly terminated can be "
+"terminated through Activity Monitor on MacOS, or, simply restart your "
+"computer to terminate them."
 msgstr ""
 "За прв пат стартувајте, прочитајте: Откако ќе вчитате крстозбор и сакате да "
 "вчитате друг, прво мора да ја прекинете веб-апликацијата. ВАЖНО: Ако сте на "
 "macOS, присилното напуштање на апликацијата (со користење на cmd+q) додека "
 "работи веб-апликацијата, ќе го спречи правилното прекинување. Ако погрешно "
-"го направите ова, пронајдете го процесот на апликацијата Flask и прекинете "
-"го, променете го бројот на `webapp_port` во src/config.ini или рестартирајте"
-" го компјутерот. ИСТО ВАЖНО: Во некои случаи, можеби сте ја стартувале веб-"
-"апликацијата, но вашиот прелистувач не може да ја прегледа. Ако тоа се "
-"случи, рестартирајте го прелистувачот."
+"го направите ова, програмата ќе стартува нови веб-апликации со различна "
+"порта. Алтернативно, можете рачно да ја смените портата во конфигурациската "
+"датотека на програмата. Сите процеси на апликации кои не се правилно "
+"прекинати може да се прекинат преку Activity Monitor на MacOS или едноставно"
+" рестартирајте го компјутерот за да ги прекинете."
+
+#: src/main.py:792
+msgid ""
+"An error occured while loading this crossword's definitions. Ensure that its"
+" definitions JSON file exists in the base cwords directory. NOTE: Base "
+"crossword data is only accessed when its translated version is not present "
+"in the locales directory."
+msgstr ""
+"Настана грешка при вчитувањето на дефинициите на овој крстозбор. Осигурете "
+"се дека неговата датотека JSON за дефиниции постои во основниот директориум "
+"на cwords. ЗАБЕЛЕШКА: Податоците за основните крстозбори се пристапуваат "
+"само кога нивната преведена верзија не е присутна во директориумот за "
+"локалитети."
+
+#: src/main.py:798
+msgid ""
+"An error occured in crossword generation. Please see further information in "
+"the console"
+msgstr ""
+"Настана грешка при генерирањето крстозбор. Погледнете повеќе информации во "
+"конзолата"
 
 #: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:182
+#: src/cword_webapp/templates/index.html:216
 msgid "Crossword Puzzle - Game"
 msgstr "Крстозбор загатка - игра"
 
-#: src/cword_webapp/templates/index.html:107
+#: src/cword_webapp/templates/index.html:133
 msgid "Across"
 msgstr "Преку"
 
-#: src/cword_webapp/templates/index.html:125
+#: src/cword_webapp/templates/index.html:154
 msgid "Down"
 msgstr "Долу"
 
-#: src/cword_webapp/templates/index.html:143
+#: src/cword_webapp/templates/index.html:177
 msgid "Reveal"
 msgstr "Открива"
 
-#: src/cword_webapp/templates/index.html:145
-#: src/cword_webapp/templates/index.html:152
+#: src/cword_webapp/templates/index.html:179
+#: src/cword_webapp/templates/index.html:186
 msgid "Cell"
 msgstr "Ќелија"
 
-#: src/cword_webapp/templates/index.html:146
-#: src/cword_webapp/templates/index.html:153
-#: src/cword_webapp/templates/index.html:159
+#: src/cword_webapp/templates/index.html:180
+#: src/cword_webapp/templates/index.html:187
+#: src/cword_webapp/templates/index.html:193
 msgid "Word"
 msgstr "збор"
 
-#: src/cword_webapp/templates/index.html:147
-#: src/cword_webapp/templates/index.html:154
-#: src/cword_webapp/templates/index.html:160
+#: src/cword_webapp/templates/index.html:181
+#: src/cword_webapp/templates/index.html:188
+#: src/cword_webapp/templates/index.html:194
 msgid "Grid"
 msgstr "Мрежа"
 
-#: src/cword_webapp/templates/index.html:150
+#: src/cword_webapp/templates/index.html:184
 msgid "Check"
 msgstr "Проверете"
 
-#: src/cword_webapp/templates/index.html:157
+#: src/cword_webapp/templates/index.html:191
 msgid "Clear"
 msgstr "Јасно"
 
-#: src/cword_webapp/templates/index.html:168
+#: src/cword_webapp/templates/index.html:202
 msgid "Smart Skip"
 msgstr "Паметно прескокнување"
 
-#: src/cword_webapp/templates/index.html:174
+#: src/cword_webapp/templates/index.html:208
 msgid "Click To Zoom"
 msgstr "Кликнете за да зумирате"
 
-#: src/cword_webapp/templates/index.html:183
+#: src/cword_webapp/templates/index.html:217
 msgid "You are viewing"
 msgstr "Вие гледате"
 
-#: src/cword_webapp/templates/index.html:183
+#: src/cword_webapp/templates/index.html:217
 msgid "from"
 msgstr "од"
 
-#: src/cword_webapp/templates/index.html:185
+#: src/cword_webapp/templates/index.html:219
 msgid "word(s) could not be inserted, sorry."
 msgstr "збор(и) не можеше да се вметне, извинете."
 
-#: src/cword_webapp/templates/index.html:186
+#: src/cword_webapp/templates/index.html:220
 msgid "Word count (adjusted)"
 msgstr "Број на зборови (прилагоден)"
 
-#: src/cword_webapp/templates/index.html:188
+#: src/cword_webapp/templates/index.html:222
 msgid "Word count"
 msgstr "Бројот на зборови"
 
-#: src/cword_webapp/templates/index.html:190
+#: src/cword_webapp/templates/index.html:224
 msgid "Continue"
 msgstr "Продолжи"
 
-#: src/cword_webapp/templates/index.html:195
+#: src/cword_webapp/templates/index.html:229
 msgid "You completed the crossword!"
 msgstr "Го завршивте крстозборот!"
 

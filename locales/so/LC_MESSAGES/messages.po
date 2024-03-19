@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-09 19:25+1100\n"
+"POT-Creation-Date: 2024-03-19 12:02+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: so <LL@li.org>\n"
@@ -19,123 +19,123 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:38 src/main.py:75 src/main.py:139 src/main.py:204
+#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
 msgid "Crossword Puzzle"
 msgstr "Halxiraalaha Ereyga"
 
-#: src/main.py:83
+#: src/main.py:88
 msgid "View crosswords"
 msgstr "Eeg ereyada isdhaafka ah"
 
-#: src/main.py:87
+#: src/main.py:92
 msgid "Exit the app"
 msgstr "Ka bax abka"
 
-#: src/main.py:93
+#: src/main.py:98
 msgid "Global Settings"
 msgstr "Goobaha Caalamiga ah"
 
-#: src/main.py:97
+#: src/main.py:102
 msgid "Languages"
 msgstr "Luuqadaha"
 
-#: src/main.py:103
+#: src/main.py:108
 msgid "Size"
 msgstr "Cabbirka"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "light"
 msgstr "iftiin"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "dark"
 msgstr "madow"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "system"
 msgstr "nidaamka"
 
-#: src/main.py:111
+#: src/main.py:116
 msgid "Appearance"
 msgstr "Muuqashada"
 
-#: src/main.py:133 src/main.py:259
+#: src/main.py:138 src/main.py:267
 msgid "Crossword Browser"
 msgstr "Browser-ka-hadalka"
 
-#: src/main.py:261
+#: src/main.py:269
 msgid "Go back"
 msgstr "Dib ugu noqo"
 
-#: src/main.py:266
+#: src/main.py:274
 msgid "Load crossword"
 msgstr "Soo rar kelmadda isdhaafka"
 
-#: src/main.py:270
+#: src/main.py:278
 msgid "Open web app"
 msgstr "Fur shabakada internetka"
 
-#: src/main.py:274
+#: src/main.py:282
 msgid "Terminate web app"
 msgstr "Jooji abka shabakada"
 
-#: src/main.py:280
+#: src/main.py:288
 msgid "Word count preferences"
 msgstr "Dookhyada tirinta kelmadda"
 
-#: src/main.py:287 src/main.py:329 src/main.py:361 src/main.py:504
+#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
 msgid "Select word count"
 msgstr "Dooro tirinta kelmadda"
 
-#: src/main.py:289 src/main.py:360 src/main.py:516
+#: src/main.py:297 src/main.py:371 src/main.py:542
 msgid "Maximum"
 msgstr "Ugu badnaan"
 
-#: src/main.py:295
+#: src/main.py:303
 msgid "Custom"
 msgstr "Caadiyan"
 
-#: src/main.py:439
+#: src/main.py:462
 msgid "To perform this operation, you must first select a cell."
 msgstr "Si aad u fuliso howshaan, waa inaad marka hore doorataa unug."
 
-#: src/main.py:562
+#: src/main.py:589
 msgid "View"
 msgstr "Daawo"
 
-#: src/cword_webapp/templates/index.html:196 src/main.py:564
+#: src/cword_webapp/templates/index.html:230 src/main.py:591
 msgid "Close"
 msgstr "Xir"
 
-#: src/main.py:652 src/main.py:669
+#: src/main.py:681 src/main.py:705
 msgid "difficulty"
 msgstr "dhib"
 
-#: src/main.py:666
+#: src/main.py:702
 msgid "Total words"
 msgstr "Wadarta erayada"
 
-#: src/main.py:669
+#: src/main.py:705
 msgid "Difficulty"
 msgstr "Dhib"
 
-#: src/main.py:674
+#: src/main.py:710
 msgid "Select"
 msgstr "Dooro"
 
-#: src/main.py:716
+#: src/main.py:745
 msgid "Restart"
 msgstr "Dib u bilow"
 
-#: src/main.py:716
+#: src/main.py:745
 msgid "Are you sure you want to restart the app?"
 msgstr "Ma hubtaa inaad rabto inaad dib u bilowdo abka?"
 
-#: src/main.py:720
+#: src/main.py:749
 msgid "Exit"
 msgstr "Ka bax"
 
-#: src/main.py:721
+#: src/main.py:750
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -143,11 +143,11 @@ msgstr ""
 "Ma hubtaa inaad doonayso inaad ka baxdo abka? Haddii abka webku uu socdo, "
 "waa la joojin doonaa."
 
-#: src/main.py:726
+#: src/main.py:755
 msgid "Back to home"
 msgstr "Ku noqo guriga"
 
-#: src/main.py:727
+#: src/main.py:756
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -155,123 +155,145 @@ msgstr ""
 "Ma hubtaa inaad doonayso inaad ku laabato shaashadda guriga? Abka shabakada "
 "waa la joojin doonaa"
 
-#: src/main.py:740 src/main.py:743 src/main.py:746
+#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
+#: src/main.py:797
 msgid "Error"
 msgstr "Khalad"
 
-#: src/main.py:740
+#: src/main.py:772
 msgid "This language is already selected."
 msgstr "Luqadan mar hore ayaa la doortay."
 
-#: src/main.py:743
+#: src/main.py:775
 msgid "This size is already selected."
 msgstr "Xajmigan mar hore ayaa la doortay."
 
-#: src/main.py:746
+#: src/main.py:778
 msgid "This appearance is already selected."
 msgstr "Muuqaalkan mar hore ayaa la doortay."
 
-#: src/main.py:749
+#: src/main.py:781
 msgid "Info"
 msgstr "Xog"
 
-#: src/main.py:750
+#: src/main.py:782
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
 " are on macOS, force quitting the application (using cmd+q) while the web "
 "app is running will prevent it from properly terminating. If you mistakenly "
-"do this, either find the Flask app process and terminate it, change the "
-"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
-"IMPORTANT: In some cases, you may have launched the web app yet your browser"
-" cannot view it. If this happens, please restart your browser."
+"do this, the program will run new web apps with a different port. "
+"Alternatively, you can manually change the port in the program's config "
+"file. All app processes that have not been properly terminated can be "
+"terminated through Activity Monitor on MacOS, or, simply restart your "
+"computer to terminate them."
 msgstr ""
 "Marka ugu horeysa ee la bilaabo, fadlan akhri: Marka aad soo shubto ereyada "
 "isdhaafsiga, oo aad rabto inaad mid kale ku shubto, waa inaad marka hore "
 "joojisaa abka shabakadda. MUHIIM: Haddii aad ku jirto macOS, ku qas ka "
 "joojinta codsiga (adoo isticmaalaya cmd + q) inta uu abka webku socdo ayaa "
-"ka hortagaya inuu si sax ah u joojiyo. Haddii aad si qalad ah sidan u "
-"sameyso, ama hel nidaamka abka Flask oo jooji, beddel lambarka `webapp_port`"
-" ee src/config.ini, ama dib u bilow kombayutarkaga. SIDOO KALE MUHIIM: "
-"Xaaladaha qaarkood, waxaa laga yaabaa inaad soo saartay abka webka wali "
-"browserkaagu ma arki karo. Hadday tani dhacdo, fadlan dib u billow "
-"browserkaga"
+"ka hortagaya inuu si sax ah u joojiyo. Haddii aad si qalad ah sidaan u "
+"sameyso, barnaamijku wuxuu maamuli doonaa apps web cusub oo leh deked kale. "
+"Haddii kale, waxaad gacanta ku beddeli kartaa dekedda faylka habaynta "
+"barnaamijka. Dhammaan hababka abka ee aan si sax ah loo joojin waxa lagu "
+"joojin karaa iyada oo loo marayo Kormeerka Hawsha ee MacOS, ama, si fudud "
+"dib u bilaw kombiyuutarkaaga si aad u joojiso."
+
+#: src/main.py:792
+msgid ""
+"An error occured while loading this crossword's definitions. Ensure that its"
+" definitions JSON file exists in the base cwords directory. NOTE: Base "
+"crossword data is only accessed when its translated version is not present "
+"in the locales directory."
+msgstr ""
+"Khalad ayaa dhacay markii la soo gelinayay qeexitaannada kelmad-dhaafka. "
+"Hubi in qeexitaankeeda faylka JSON uu ku jiro tusaha cwords-ka. FIIRO GAAR "
+"AH: Xogta kelmadda sal-ku-galka ah waxa la galaa kaliya marka nooca la "
+"turjumay aanu ku jirin tusaha xaafadaha."
+
+#: src/main.py:798
+msgid ""
+"An error occured in crossword generation. Please see further information in "
+"the console"
+msgstr ""
+"Khalad ayaa ka dhacay jiilka ereyada isdhaafka ah. Fadlan ka eeg macluumaad "
+"dheeraad ah console-ka"
 
 #: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:182
+#: src/cword_webapp/templates/index.html:216
 msgid "Crossword Puzzle - Game"
 msgstr "Halxiraalaha Ereyga-Ciyaarta"
 
-#: src/cword_webapp/templates/index.html:107
+#: src/cword_webapp/templates/index.html:133
 msgid "Across"
 msgstr "Dhanka kale"
 
-#: src/cword_webapp/templates/index.html:125
+#: src/cword_webapp/templates/index.html:154
 msgid "Down"
 msgstr "Hoos"
 
-#: src/cword_webapp/templates/index.html:143
+#: src/cword_webapp/templates/index.html:177
 msgid "Reveal"
 msgstr "Muujin"
 
-#: src/cword_webapp/templates/index.html:145
-#: src/cword_webapp/templates/index.html:152
+#: src/cword_webapp/templates/index.html:179
+#: src/cword_webapp/templates/index.html:186
 msgid "Cell"
 msgstr "Unug"
 
-#: src/cword_webapp/templates/index.html:146
-#: src/cword_webapp/templates/index.html:153
-#: src/cword_webapp/templates/index.html:159
+#: src/cword_webapp/templates/index.html:180
+#: src/cword_webapp/templates/index.html:187
+#: src/cword_webapp/templates/index.html:193
 msgid "Word"
 msgstr "Eray"
 
-#: src/cword_webapp/templates/index.html:147
-#: src/cword_webapp/templates/index.html:154
-#: src/cword_webapp/templates/index.html:160
+#: src/cword_webapp/templates/index.html:181
+#: src/cword_webapp/templates/index.html:188
+#: src/cword_webapp/templates/index.html:194
 msgid "Grid"
 msgstr "Xarig"
 
-#: src/cword_webapp/templates/index.html:150
+#: src/cword_webapp/templates/index.html:184
 msgid "Check"
 msgstr "Hubi"
 
-#: src/cword_webapp/templates/index.html:157
+#: src/cword_webapp/templates/index.html:191
 msgid "Clear"
 msgstr "Cad"
 
-#: src/cword_webapp/templates/index.html:168
+#: src/cword_webapp/templates/index.html:202
 msgid "Smart Skip"
 msgstr "Swip Smart"
 
-#: src/cword_webapp/templates/index.html:174
+#: src/cword_webapp/templates/index.html:208
 msgid "Click To Zoom"
 msgstr "Guji si aad u weyso"
 
-#: src/cword_webapp/templates/index.html:183
+#: src/cword_webapp/templates/index.html:217
 msgid "You are viewing"
 msgstr "Waad daawanaysaa"
 
-#: src/cword_webapp/templates/index.html:183
+#: src/cword_webapp/templates/index.html:217
 msgid "from"
 msgstr "ka"
 
-#: src/cword_webapp/templates/index.html:185
+#: src/cword_webapp/templates/index.html:219
 msgid "word(s) could not be inserted, sorry."
 msgstr "kelmad lama gelin karo, waan ka xumahay."
 
-#: src/cword_webapp/templates/index.html:186
+#: src/cword_webapp/templates/index.html:220
 msgid "Word count (adjusted)"
 msgstr "Tirada kelmadda (la hagaajiyay)"
 
-#: src/cword_webapp/templates/index.html:188
+#: src/cword_webapp/templates/index.html:222
 msgid "Word count"
 msgstr "Tirada erayada"
 
-#: src/cword_webapp/templates/index.html:190
+#: src/cword_webapp/templates/index.html:224
 msgid "Continue"
 msgstr "Sii wad"
 
-#: src/cword_webapp/templates/index.html:195
+#: src/cword_webapp/templates/index.html:229
 msgid "You completed the crossword!"
 msgstr "Waxaad dhammaysay is-dhaafsiga!"
 

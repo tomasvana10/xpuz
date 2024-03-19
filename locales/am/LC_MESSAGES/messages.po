@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-09 19:25+1100\n"
+"POT-Creation-Date: 2024-03-19 12:02+1100\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: am <LL@li.org>\n"
@@ -19,251 +19,270 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:38 src/main.py:75 src/main.py:139 src/main.py:204
+#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
 msgid "Crossword Puzzle"
 msgstr "የቃላት አቋራጭ እንቆቅልሽ"
 
-#: src/main.py:83
+#: src/main.py:88
 msgid "View crosswords"
 msgstr "መስቀለኛ ቃላትን ተመልከት"
 
-#: src/main.py:87
+#: src/main.py:92
 msgid "Exit the app"
 msgstr "ከመተግበሪያው ውጣ"
 
-#: src/main.py:93
+#: src/main.py:98
 msgid "Global Settings"
 msgstr "ዓለም አቀፍ ቅንብሮች"
 
-#: src/main.py:97
+#: src/main.py:102
 msgid "Languages"
 msgstr "ቋንቋዎች"
 
-#: src/main.py:103
+#: src/main.py:108
 msgid "Size"
 msgstr "መጠን"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "light"
 msgstr "ብርሃን"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "dark"
 msgstr "ጨለማ"
 
-#: src/main.py:110
+#: src/main.py:115
 msgid "system"
 msgstr "ስርዓት"
 
-#: src/main.py:111
+#: src/main.py:116
 msgid "Appearance"
 msgstr "መልክ"
 
-#: src/main.py:133 src/main.py:259
+#: src/main.py:138 src/main.py:267
 msgid "Crossword Browser"
 msgstr "የመስቀል ቃል አሳሽ"
 
-#: src/main.py:261
+#: src/main.py:269
 msgid "Go back"
 msgstr "ተመለስ"
 
-#: src/main.py:266
+#: src/main.py:274
 msgid "Load crossword"
 msgstr "መስቀለኛ ቃል ጫን"
 
-#: src/main.py:270
+#: src/main.py:278
 msgid "Open web app"
 msgstr "የድር መተግበሪያን ይክፈቱ"
 
-#: src/main.py:274
+#: src/main.py:282
 msgid "Terminate web app"
 msgstr "የድር መተግበሪያን ያቋርጡ"
 
-#: src/main.py:280
+#: src/main.py:288
 msgid "Word count preferences"
 msgstr "የቃላት ብዛት ምርጫዎች"
 
-#: src/main.py:287 src/main.py:329 src/main.py:361 src/main.py:504
+#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
 msgid "Select word count"
 msgstr "የቃላት ብዛትን ይምረጡ"
 
-#: src/main.py:289 src/main.py:360 src/main.py:516
+#: src/main.py:297 src/main.py:371 src/main.py:542
 msgid "Maximum"
 msgstr "ከፍተኛ"
 
-#: src/main.py:295
+#: src/main.py:303
 msgid "Custom"
 msgstr "ብጁ"
 
-#: src/main.py:439
+#: src/main.py:462
 msgid "To perform this operation, you must first select a cell."
 msgstr "ይህንን ክዋኔ ለማከናወን በመጀመሪያ ሴል መምረጥ አለብዎት."
 
-#: src/main.py:562
+#: src/main.py:589
 msgid "View"
 msgstr "ይመልከቱ"
 
-#: src/cword_webapp/templates/index.html:196 src/main.py:564
+#: src/cword_webapp/templates/index.html:230 src/main.py:591
 msgid "Close"
 msgstr "ገጠመ"
 
-#: src/main.py:652 src/main.py:669
+#: src/main.py:681 src/main.py:705
 msgid "difficulty"
 msgstr "ችግር"
 
-#: src/main.py:666
+#: src/main.py:702
 msgid "Total words"
 msgstr "ጠቅላላ ቃላት"
 
-#: src/main.py:669
+#: src/main.py:705
 msgid "Difficulty"
 msgstr "አስቸጋሪ"
 
-#: src/main.py:674
+#: src/main.py:710
 msgid "Select"
 msgstr "ይምረጡ"
 
-#: src/main.py:716
+#: src/main.py:745
 msgid "Restart"
 msgstr "እንደገና ጀምር"
 
-#: src/main.py:716
+#: src/main.py:745
 msgid "Are you sure you want to restart the app?"
 msgstr "እርግጠኛ ነዎት መተግበሪያውን እንደገና ማስጀመር ይፈልጋሉ?"
 
-#: src/main.py:720
+#: src/main.py:749
 msgid "Exit"
 msgstr "ውጣ"
 
-#: src/main.py:721
+#: src/main.py:750
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr "እርግጠኛ ነህ ከመተግበሪያው መውጣት ትፈልጋለህ? የድር መተግበሪያ እየሰራ ከሆነ ይቋረጣል።"
 
-#: src/main.py:726
+#: src/main.py:755
 msgid "Back to home"
 msgstr "ወደ ቤት መመለስ"
 
-#: src/main.py:727
+#: src/main.py:756
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr "እርግጠኛ ነህ ወደ መነሻ ስክሪን መመለስ ትፈልጋለህ? የድር መተግበሪያ ይቋረጣል።"
 
-#: src/main.py:740 src/main.py:743 src/main.py:746
+#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
+#: src/main.py:797
 msgid "Error"
 msgstr "ስህተት"
 
-#: src/main.py:740
+#: src/main.py:772
 msgid "This language is already selected."
 msgstr "ይህ ቋንቋ አስቀድሞ ተመርጧል።"
 
-#: src/main.py:743
+#: src/main.py:775
 msgid "This size is already selected."
 msgstr "ይህ መጠን አስቀድሞ ተመርጧል።"
 
-#: src/main.py:746
+#: src/main.py:778
 msgid "This appearance is already selected."
 msgstr "ይህ መልክ አስቀድሞ ተመርጧል።"
 
-#: src/main.py:749
+#: src/main.py:781
 msgid "Info"
 msgstr "መረጃ"
 
-#: src/main.py:750
+#: src/main.py:782
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
 " are on macOS, force quitting the application (using cmd+q) while the web "
 "app is running will prevent it from properly terminating. If you mistakenly "
-"do this, either find the Flask app process and terminate it, change the "
-"`webapp_port` number in src/config.ini, or restart your computer. ALSO "
-"IMPORTANT: In some cases, you may have launched the web app yet your browser"
-" cannot view it. If this happens, please restart your browser."
+"do this, the program will run new web apps with a different port. "
+"Alternatively, you can manually change the port in the program's config "
+"file. All app processes that have not been properly terminated can be "
+"terminated through Activity Monitor on MacOS, or, simply restart your "
+"computer to terminate them."
 msgstr ""
 "ለመጀመሪያ ጊዜ ሲጀመር፣ እባክዎን ያንብቡ፡ አንዴ መስቀለኛ ቃል ከጫኑ እና ሌላ ለመጫን ከፈለጉ፣ መጀመሪያ የድር "
 "መተግበሪያን ማቋረጥ አለብዎት። አስፈላጊ፡ በ macOS ላይ ከሆኑ ዌብ አፕሊኬሽኑን በግድ (cmd+q ን በመጠቀም) "
-"እንዲያቆም ያስገድዱት። ይህንን በስህተት ካደረጉት ወይም የፍላስክ አፕ ሂደቱን ያግኙ እና ያቋርጡት፣ በ "
-"src/config.ini ውስጥ ያለውን የ‹webapp_port` ቁጥር ይቀይሩ ወይም ኮምፒተርዎን እንደገና ያስጀምሩ። "
-"በተጨማሪም አስፈላጊ፡ በአንዳንድ አጋጣሚዎች የድር መተግበሪያን ከፍተው ሊሆን ይችላል ነገር ግን አሳሽዎ ማየት አልቻለም።"
-" ይህ ከተከሰተ እባክዎን አሳሽዎን እንደገና ያስጀምሩ።"
+"እንዲያቆም ያስገድዱት። ይህንን በስህተት ካደረጉት, ፕሮግራሙ የተለየ ወደብ ያላቸው አዲስ የድር መተግበሪያዎችን ይሰራል."
+" በአማራጭ ፣ በፕሮግራሙ ውቅር ፋይል ውስጥ ያለውን ወደብ እራስዎ መለወጥ ይችላሉ። በትክክል ያልተቋረጡ ሁሉም "
+"የመተግበሪያ ሂደቶች በማክኦኤስ ላይ በእንቅስቃሴ መቆጣጠሪያ በኩል ሊቋረጥ ወይም በቀላሉ ኮምፒተርዎን ለማቋረጥ እንደገና "
+"ማስጀመር ይችላሉ።"
+
+#: src/main.py:792
+msgid ""
+"An error occured while loading this crossword's definitions. Ensure that its"
+" definitions JSON file exists in the base cwords directory. NOTE: Base "
+"crossword data is only accessed when its translated version is not present "
+"in the locales directory."
+msgstr ""
+"የዚህን መስቀለኛ ቃል ፍቺዎች በመጫን ላይ ስህተት ተፈጥሯል። የ JSON ፋይል ፍቺዎቹ በመሠረታዊ cwords ማውጫ ውስጥ"
+" መኖሩን ያረጋግጡ። ማሳሰቢያ፡- የመሠረት መስቀለኛ ቃል ውሂብ የሚደረሰው የተተረጎመው ሥሪት በአካባቢ ማውጫዎች ውስጥ "
+"ከሌለ ብቻ ነው።"
+
+#: src/main.py:798
+msgid ""
+"An error occured in crossword generation. Please see further information in "
+"the console"
+msgstr "በቃላት አቋራጭ ትውልድ ላይ ስህተት ተከስቷል። እባክዎ ተጨማሪ መረጃ በኮንሶሉ ውስጥ ይመልከቱ"
 
 #: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:182
+#: src/cword_webapp/templates/index.html:216
 msgid "Crossword Puzzle - Game"
 msgstr "እንቆቅልሽ - ጨዋታ"
 
-#: src/cword_webapp/templates/index.html:107
+#: src/cword_webapp/templates/index.html:133
 msgid "Across"
 msgstr "ማዶ"
 
-#: src/cword_webapp/templates/index.html:125
+#: src/cword_webapp/templates/index.html:154
 msgid "Down"
 msgstr "ወደታች"
 
-#: src/cword_webapp/templates/index.html:143
+#: src/cword_webapp/templates/index.html:177
 msgid "Reveal"
 msgstr "መግለጥ"
 
-#: src/cword_webapp/templates/index.html:145
-#: src/cword_webapp/templates/index.html:152
+#: src/cword_webapp/templates/index.html:179
+#: src/cword_webapp/templates/index.html:186
 msgid "Cell"
 msgstr "ሕዋስ"
 
-#: src/cword_webapp/templates/index.html:146
-#: src/cword_webapp/templates/index.html:153
-#: src/cword_webapp/templates/index.html:159
+#: src/cword_webapp/templates/index.html:180
+#: src/cword_webapp/templates/index.html:187
+#: src/cword_webapp/templates/index.html:193
 msgid "Word"
 msgstr "ቃል"
 
-#: src/cword_webapp/templates/index.html:147
-#: src/cword_webapp/templates/index.html:154
-#: src/cword_webapp/templates/index.html:160
+#: src/cword_webapp/templates/index.html:181
+#: src/cword_webapp/templates/index.html:188
+#: src/cword_webapp/templates/index.html:194
 msgid "Grid"
 msgstr "ፍርግርግ"
 
-#: src/cword_webapp/templates/index.html:150
+#: src/cword_webapp/templates/index.html:184
 msgid "Check"
 msgstr "ይፈትሹ"
 
-#: src/cword_webapp/templates/index.html:157
+#: src/cword_webapp/templates/index.html:191
 msgid "Clear"
 msgstr "ግልጽ"
 
-#: src/cword_webapp/templates/index.html:168
+#: src/cword_webapp/templates/index.html:202
 msgid "Smart Skip"
 msgstr "ብልህ ዝለል"
 
-#: src/cword_webapp/templates/index.html:174
+#: src/cword_webapp/templates/index.html:208
 msgid "Click To Zoom"
 msgstr "ለማጉላት ጠቅ ያድርጉ"
 
-#: src/cword_webapp/templates/index.html:183
+#: src/cword_webapp/templates/index.html:217
 msgid "You are viewing"
 msgstr "እየተመለከቱ ነው።"
 
-#: src/cword_webapp/templates/index.html:183
+#: src/cword_webapp/templates/index.html:217
 msgid "from"
 msgstr "ከ"
 
-#: src/cword_webapp/templates/index.html:185
+#: src/cword_webapp/templates/index.html:219
 msgid "word(s) could not be inserted, sorry."
 msgstr "ቃል(ቶች) ማስገባት አልተቻለም፣ ይቅርታ።"
 
-#: src/cword_webapp/templates/index.html:186
+#: src/cword_webapp/templates/index.html:220
 msgid "Word count (adjusted)"
 msgstr "የቃላት ብዛት (የተስተካከለ)"
 
-#: src/cword_webapp/templates/index.html:188
+#: src/cword_webapp/templates/index.html:222
 msgid "Word count"
 msgstr "የቃላት ብዛት"
 
-#: src/cword_webapp/templates/index.html:190
+#: src/cword_webapp/templates/index.html:224
 msgid "Continue"
 msgstr "ቀጥል"
 
-#: src/cword_webapp/templates/index.html:195
+#: src/cword_webapp/templates/index.html:229
 msgid "You completed the crossword!"
 msgstr "መስቀለኛ ቃሉን ጨርሰሃል!"
 
