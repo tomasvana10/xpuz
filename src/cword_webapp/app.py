@@ -37,7 +37,7 @@ def _run(*args, **kwargs):
         _write_config()
         app.run(debug=False, port=int(kwargs["port"]))
     except:
-        print(f"\nPort {kwargs["port"]} is not available, finding available port...")
+        print(f"\nPort {kwargs['port']} is not available, finding available port...")
         s = socket()
         s.bind(("", 0))
         sock_name = s.getsockname()[1]
