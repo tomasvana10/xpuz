@@ -8,7 +8,7 @@ class Placement(TypedDict):
     word: str
     direction: str
     pos: Tuple[int]
-    intersections: Union[List[...], List[Tuple[int]]]
+    intersections: Union[List[None], List[Tuple[int]]]
 
 class CrosswordData(TypedDict):
     '''The JSON serialised definitions and info of a base crossword.'''

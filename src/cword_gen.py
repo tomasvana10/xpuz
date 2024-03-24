@@ -148,7 +148,7 @@ class Crossword(object):
                             direction: str, 
                             row: int, 
                             column: int
-                            ) -> Union[Tuple[...], Tuple[int]]:
+                            ) -> Union[Tuple[None], Tuple[int]]:
         '''Find the row and column of all points of intersection that the `word` has with the `self.grid`.'''
         intersections = list()
 
