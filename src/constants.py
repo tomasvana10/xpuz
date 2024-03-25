@@ -38,7 +38,7 @@ class Colour:
         TEXT_DISABLED = "#999999"
         WORD_FOCUS = "#A7D8FF"
         CELL_FOCUS = "#FFDA03"
-        CORRECT = "#20D44A"
+        CORRECT = "#2f9e49"
         WRONG = "#FC0A2A"
 
     class Dark:
