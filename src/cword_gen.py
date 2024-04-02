@@ -369,7 +369,10 @@ class CrosswordHelper:
         word_count: int = crossword.word_count
         
         attempts_db: Dict[str, int] = CrosswordHelper._load_attempts_db()
-        max_attempts: int = attempts_db[str(word_count)] # Get amount of attempts based on word count
+        try:
+            max_attempts: int = attempts_db[str(word_count)] # Get amount of attempts based on word count
+        except KeyError:
+            max_attempts = 1
         attempts: int = 0
 
         reinsert_definitions: Dict[str, str] = crossword.definitions
@@ -418,7 +421,7 @@ class CrosswordHelper:
 
 
 if __name__ == "__main__": # Example usage – this module is normally used in the executional context of `main.py`
-    definitions = CrosswordHelper.load_definitions("geography", "capitals-easy", "en")
+    definitions = CrosswordHelper.load_definitions("computer science", "booleans-easy", "en")
     
     crossword = Crossword(definitions=definitions, word_count=3, name="Capitals")
     crossword = CrosswordHelper.find_best_crossword(crossword)   

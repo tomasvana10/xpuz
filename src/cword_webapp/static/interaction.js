@@ -28,6 +28,7 @@ const alternateDirection = () => direction = direction === directions[0] ? direc
 const emulateEscapePress = () => document.dispatchEvent(new KeyboardEvent("keydown", {"key": "Escape"}));
 const isCrosswordComplete = () => getGrid().isEqualTo(grid);
 const unfocusActiveElement = () => document.activeElement.blur();
+const updateDefinitionsListPos = () => { getDefinitionsListItemFromWord(currentWord).focus(); getDefinitionsListItemFromWord(currentWord).blur() }
 
 Array.prototype.isEqualTo = function(arr) { return JSON.stringify(this) === JSON.stringify(arr); };
 
@@ -159,6 +160,7 @@ function handleSpacebarPress(event) {
     alternateDirection();
     currentWord = updateCurrentWord();
     setFocusMode(true);
+    updateDefinitionsListPos()
 }
 
 function handleEscapePress(event) { 
@@ -199,6 +201,7 @@ function handleArrowPress(key, event) {
     } else { cellCoords = newCellCoords; }
     currentWord = updateCurrentWord();
     setFocusMode(true);
+    updateDefinitionsListPos()
 }
 
 function crosswordCompletionHandler() {
@@ -290,6 +293,7 @@ function onCellClick(event, cell) {
     cellCoords = newCellCoords;
     currentWord = updateCurrentWord();
     setFocusMode(true);
+    updateDefinitionsListPos()
 }
 
 function changeWordFocus(focus) {
