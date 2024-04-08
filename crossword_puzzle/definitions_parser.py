@@ -3,11 +3,11 @@ from typing import Dict
 
 from regex import sub # Similar to "re" module but with more functionality
 
-from errors import (
+from .errors import (
     EmptyDefinitions, InsufficientDefinitionsAndOrWordCount, ShorterDefinitionsThanWordCount, 
     InsufficientWordLength, EscapeCharacterInWord
 )
-from constants import CrosswordRestrictions
+from .constants import CrosswordRestrictions
 
 
 class DefinitionsParser:

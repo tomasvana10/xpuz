@@ -14,3 +14,8 @@ tempCodeRunnerFile.python
 
 # macos hidden file
 **/.DS_Store
+
+# pypi
+build
+crossword_puzzle.egg-info
+dist

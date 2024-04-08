@@ -10,11 +10,11 @@ from regex import compile as regex_compile
 class Paths:
     '''Absolute paths used across the source code.'''
     CONFIG_PATH = Path(__file__).resolve().parents[0] / "config.ini"
-    LOCALES_PATH = Path(__file__).resolve().parents[1] / "locales"
+    LOCALES_PATH = Path(__file__).resolve().parents[0] / "locales"
     BASE_POT_PATH = os.path.join(LOCALES_PATH, "base.pot")
-    CWORD_IMG_LIGHT_PATH = Path(__file__).resolve().parents[1] / os.path.join("assets", "images", "cword_light.png")
-    CWORD_IMG_DARK_PATH = Path(__file__).resolve().parents[1] / os.path.join("assets", "images", "cword_dark.png")
-    LOGO_PATH = Path(__file__).resolve().parents[1] / os.path.join("assets", "images", "logo.ico")
+    CWORD_IMG_LIGHT_PATH = Path(__file__).resolve().parents[0] / os.path.join("assets", "images", "cword_light.png")
+    CWORD_IMG_DARK_PATH = Path(__file__).resolve().parents[0] / os.path.join("assets", "images", "cword_dark.png")
+    LOGO_PATH = Path(__file__).resolve().parents[0] / os.path.join("assets", "images", "logo.ico")
     BASE_CWORDS_PATH = Path(__file__).resolve().parents[0] / "base_cwords"
     ATTEMPTS_DB_PATH = Path(__file__).resolve().parents[0] / os.path.join("data", "attempts_db.json")
     

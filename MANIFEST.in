@@ -1,0 +1,8 @@
+recursive-include crossword_puzzle/locales *
+recursive-include crossword_puzzle/cword_webapp/static *
+recursive-include crossword_puzzle/cword_webapp/templates *
+recursive-include crossword_puzzle/base_cwords *
+recursive-include crossword_puzzle/assets *
+recursive-include crossword_puzzle/data *
+include crossword_puzzle/babel.cfg
+include crossword_puzzle/config.ini

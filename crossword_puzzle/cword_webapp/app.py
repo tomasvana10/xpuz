@@ -15,8 +15,7 @@ from flask_babel import Babel
 path.append(os.path.dirname(Path(__file__).resolve().parents[0]))
 app = Flask(__name__)
 cfg = ConfigParser()
-from constants import Paths
-from main import AppHelper
+from ..constants import Paths
 
 def _run(*args, **kwargs):
     '''Ran as a new Process using the `multiprocessing` module. kwargs are forwarded from

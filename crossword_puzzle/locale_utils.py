@@ -12,7 +12,7 @@ from typing import Dict
 
 import googletrans
 
-from constants import LanguageReplacementsForPybabel
+from .constants import LanguageReplacementsForPybabel
 
 
 class LocaleUtils:

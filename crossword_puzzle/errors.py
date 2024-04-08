@@ -1,5 +1,6 @@
 '''Custom error classes used in `definitions_parser.py` and `cword_gen.py`.'''
 
+
 class CrosswordBaseError(Exception): ...
 
 class EmptyDefinitions(CrosswordBaseError):

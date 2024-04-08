@@ -17,10 +17,10 @@ from customtkinter import (
     set_default_color_theme
 )
 
-import errors
-import cword_gen as cwg
-import cword_webapp.app as app
-from constants import (
+from .errors import CrosswordBaseError
+from .cword_gen import Crossword, CrosswordHelper
+from .cword_webapp.app import _create_app_process, terminate_app
+from .constants import (
     Paths, Colour, CrosswordDifficulties, CrosswordStyle, CrosswordDirections, BaseEngStrings
 )
 
@@ -162,7 +162,7 @@ class Home(CTk):
         if AppHelper.confirm_with_messagebox(exit_=True, restart=restart): # If user wants to exit/restart
             try:
                 if self.cword_browser.webapp_running: # Web app must be terminated when going to home screen
-                    app.terminate_app()
+                    terminate_app()
             except: ...
             self.quit()
             
@@ -356,7 +356,7 @@ class CrosswordBrowser(CTkFrame):
         self.cword_launch_options_enabled: bool = False
         self.webapp_running: bool = False
         try: 
-            app.terminate_app() 
+            terminate_app() 
         except: ...
             
     def _rollback_states(self) -> None:
@@ -399,19 +399,19 @@ class CrosswordBrowser(CTkFrame):
 
         try:
             # Load definitions, instantiate a crossword, then find the best crossword using that instance
-            definitions: Dict[str, str] = cwg.CrosswordHelper.load_definitions(self.cword_category, 
-                                                                                self.cword_name, 
-                                                                                self.master.locale.language)
+            definitions: Dict[str, str] = CrosswordHelper.load_definitions(self.cword_category, 
+                                                                           self.cword_name, 
+                                                                           self.master.locale.language)
         except Exception as ex: 
             print(f"{type(ex).__name__}: {ex}")
             return AppHelper.show_messagebox(definitions_loading_err=True)
             
         try:
-            crossword: object = cwg.CrosswordHelper.find_best_crossword(
-                                    cwg.Crossword(definitions=definitions, word_count=chosen_word_count,
-                                                name=self.cword_name))
+            crossword: object = CrosswordHelper.find_best_crossword(
+                Crossword(definitions=definitions, word_count=chosen_word_count,
+                          name=self.cword_name))
         except Exception as ex:
-            if issubclass(type(ex), errors.CrosswordBaseError):
+            if issubclass(type(ex), CrosswordBaseError):
                 print(f"{type(ex).__name__}: {ex}")
                 return AppHelper.show_messagebox(cword_gen_err=True)
         
@@ -430,12 +430,12 @@ class CrosswordBrowser(CTkFrame):
         self.b_terminate_cword_webapp.configure(state="normal")
         
     def _init_webapp(self, 
-                    crossword: cwg.Crossword
+                    crossword: Crossword
                     ) -> None:
         '''Start the flask web app with information from the crossword and other interpreted data'''
         self._interpret_cword_data(crossword)
         colour_palette: Dict[str, str] = AppHelper._get_colour_palette_for_webapp(get_appearance_mode())
-        app._create_app_process(
+        _create_app_process(
             locale=self.master.locale,
             scaling=self.master._get_widget_scaling(),
             colour_palette=colour_palette,
@@ -463,7 +463,7 @@ class CrosswordBrowser(CTkFrame):
         )
 
     def _interpret_cword_data(self, 
-                              crossword: cwg.Crossword
+                              crossword: Crossword
                               ) ->  None:
         '''Gather data to help with the templated creation of the crossword web application.'''
         self.starting_word_positions: List[Tuple[int]] = list(crossword.data.keys()) 
@@ -845,6 +845,9 @@ class AppHelper:
         return {key: value for attr in [sub_class.__dict__, Colour.Global.__dict__]
                 for key, value in attr.items() if key[0] != "_" or key.startswith("BUTTON")}
 
+
+def start():
+    AppHelper.start_app()
 
 if __name__ == "__main__":
     AppHelper.start_app()
