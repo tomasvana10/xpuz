@@ -15,7 +15,8 @@ A GUI package built with `CustomTkinter` that allows you to select, configure an
 `regex==2023.12.25`
 <br><br>
 ## Installation
-Requires [pip](https://pip.pypa.io/en/stable/installation/) and [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).<br>
+**Requires [pip](https://pip.pypa.io/en/stable/installation/)**
+<br>
 Run `pip install crossword_puzzle` or `pip3 install crossword_puzzle`<br>
 To view the GUI, run `crossword-ctk`
 <br><br>
