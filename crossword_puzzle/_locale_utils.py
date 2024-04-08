@@ -1,7 +1,5 @@
-'''The `LocaleUtils` class uses `_parse_locales` to parse `googletrans` langcodes to remove any 
-inconsistencies with the locale naming conventions of Babel's `Locales` class. 
-
-The class uses `_write_locales` to initialise all of the locale folders based on the parsed locales.
+'''Module to remove any inconsistencies with the locale naming conventions of 
+Babel's ``Locales`` class. 
 
 NOTE: `_write_locales` only works on macOS currently.
 NOTE: Requires the googletrans module, which is not listed in `requirements.txt`.
@@ -18,8 +16,9 @@ from .constants import LanguageReplacementsForPybabel
 class LocaleUtils:
     @staticmethod
     def _parse_locales(langcodes: Dict[str, str]) -> Dict[str, str]:
-        '''Replace all googletrans langcodes as specified by `LanguageReplacementsForPyBabel` if the
-        value of the langcode isn't falsy. If it is a None value, it is removed entirely.
+        '''Replace all googletrans langcodes as specified by 
+        ``LanguageReplacementsForPyBabel`` if the value of the langcode isn't 
+        falsy. If it is a None value, it is removed entirely.
         '''
         parsed_langcodes = langcodes
         for replacement in LanguageReplacementsForPybabel.REPLACEMENTS:
@@ -33,8 +32,8 @@ class LocaleUtils:
 
     @staticmethod
     def _write_locales(langcodes: Dict[str, str]) -> None:
-        '''Runs the pybabel `init` command to create approximately 104 locale files within
-        `crossword_puzzle/locales` based on the parsed langcodes.
+        '''Runs the ``pybabel init`` command to create ~100 locale files within
+        ``crossword_puzzle/locales`` based on the parsed langcodes.
         '''
         for code in langcodes:
             try: 
