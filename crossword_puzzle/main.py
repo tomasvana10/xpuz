@@ -790,13 +790,11 @@ class CrosswordInfoBlock(CTkFrame):
 
         self.l_total_words = CTkLabel(self, font=self.master.master.TEXT_FONT,
             text=f"{_('Total words')}: "
-                 f"{numbers.format_decimal(self.info['total_definitions'], 
-                                           locale=self.master.master.locale)}")
+                 f"{numbers.format_decimal(self.info['total_definitions'], locale=self.master.master.locale)}")
         
         self.l_difficulty = CTkLabel(self, font=self.master.master.TEXT_FONT,
             text=f"{_('Difficulty')}: "
-                 f"{_(CrosswordDifficulties.DIFFICULTIES[
-                                                   self.info['difficulty']])}")
+                 f"{_(CrosswordDifficulties.DIFFICULTIES[self.info['difficulty']])}")
         
         self.bottom_colour_tag = CTkLabel(self, text="", 
             fg_color=Colour.Global.DIFFICULTIES[self.info["difficulty"]],
