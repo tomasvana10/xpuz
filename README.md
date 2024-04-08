@@ -1,9 +1,9 @@
 ![licence](https://img.shields.io/badge/licence-MIT-green?style=flat?logo=licence)
+[![PyPI version](https://img.shields.io/pypi/v/crossword_puzzle?style=flat-square)](https://pypi.org/project/crossword_puzzle/)
 [![release)](https://img.shields.io/github/v/release/tomasvana10/crossword_puzzle?logo=github)](https://github.com/tomasvana10/crossword_puzzle/releases/latest)
 [![issues](https://img.shields.io/github/issues-raw/tomasvana10/crossword_puzzle.svg?maxAge=25000)](https://github.com/tomasvana10/crossword_puzzle/issues)
-
 # crossword_puzzle
-A GUI application built with `CustomTkinter` that allows you to select, configure and generate a crossword to view, interact with and complete in a `Flask` web application.
+A GUI package built with `CustomTkinter` that allows you to select, configure and generate a crossword to view, interact with and complete in a `Flask` web application.
 - Download the latest version: [click here](https://github.com/tomasvana10/crossword_puzzle/releases/latest)
 <br><br>
 ## Dependencies
@@ -15,17 +15,9 @@ A GUI application built with `CustomTkinter` that allows you to select, configur
 `regex==2023.12.25`
 <br><br>
 ## Installation
-Requires [pip](https://pip.pypa.io/en/stable/installation/) and [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-If using `python3` doesn't work, try using `python` instead.
-1. `git clone https://github.com/tomasvana10/crossword_puzzle.git`
-2. `cd crossword_puzzle`
-3. Make a virtual environment with [virtualenv](https://virtualenv.pypa.io/en/latest/) (recommended)
-   - `pip install virtualenv`
-   - `python3 -m venv venv`
-   - Windows: `venv\Scripts\activate`
-   - Unix/MacOS: `source venv/bin/activate`
-4. `pip install -r requirements.txt`
-5. `python3 src/main.py`
+Requires [pip](https://pip.pypa.io/en/stable/installation/) and [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).<br>
+Run `pip install crossword_puzzle` or `pip3 install crossword_puzzle`<br>
+To view the GUI, run `crossword-ctk`
 <br><br>
 ## Documentation
 Check out the wiki [here](https://github.com/tomasvana10/crossword_puzzle/wiki)
