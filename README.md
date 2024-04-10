@@ -4,7 +4,7 @@
 [![issues](https://img.shields.io/github/issues-raw/tomasvana10/crossword_puzzle.svg?maxAge=25000)](https://github.com/tomasvana10/crossword_puzzle/issues)
 # crossword_puzzle
 A GUI package built with `CustomTkinter` that allows you to select, configure and generate a crossword to view, interact with and complete in a `Flask` web application.
-- Download the latest version: [click here](https://github.com/tomasvana10/crossword_puzzle/releases/latest)
+- Download the latest source code: [click here](https://github.com/tomasvana10/crossword_puzzle/releases/latest)
 <br><br>
 ## Dependencies
 `Babel==2.14.0`<br>
@@ -17,9 +17,20 @@ A GUI package built with `CustomTkinter` that allows you to select, configure an
 ## Installation
 **Requires [pip](https://pip.pypa.io/en/stable/installation/)**
 <br>
-Run `pip install crossword_puzzle` or `pip3 install crossword_puzzle`<br>
-To view the GUI, run `crossword-ctk`
-<br><br>
+Make a virtual environment (recommended)
+```
+pip install virtualenv OR pip3 install virtualenv
+python -m venv venv OR python3 -m venv venv
+ON MACOS/UNIX: source venv/bin/activate
+ON WINDOW: venv\scripts\activate
+```
+
+Install the package and run the gui script:
+```
+pip install crossword_puzzle OR pip3 install crossword_puzzle
+crossword-ctk
+```
+
 ## Documentation
 Check out the wiki [here](https://github.com/tomasvana10/crossword_puzzle/wiki)
 <br><br>
