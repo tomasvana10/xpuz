@@ -9,8 +9,8 @@ from typing import List, Tuple, Dict, Union, Callable
 import polib
 from google.cloud import translate_v2
 
-from .constants import Paths, LangReplacements
-from .custom_types import CrosswordData
+from crossword_puzzle.constants import Paths, LangReplacements
+from crossword_puzzle.custom_types import CrosswordData
 
 
 class LocaleTranslatorUtils:

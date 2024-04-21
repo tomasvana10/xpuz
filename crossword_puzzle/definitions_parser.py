@@ -3,12 +3,12 @@ from typing import Dict
 
 from regex import sub # Similar to "re" module but with more functionality
 
-from .errors import (
+from crossword_puzzle.errors import (
     EmptyDefinitions, InsufficientDefinitionsAndOrWordCount, 
     ShorterDefinitionsThanWordCount, InsufficientWordLength, 
     EscapeCharacterInWord
 )
-from .constants import CrosswordRestrictions
+from crossword_puzzle.constants import CrosswordRestrictions
 
 
 class DefinitionsParser:

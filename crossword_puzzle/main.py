@@ -17,10 +17,10 @@ from customtkinter import (
     get_appearance_mode, set_widget_scaling, set_default_color_theme
 )
 
-from .errors import CrosswordBaseError
-from .cword_gen import Crossword, CrosswordHelper
-from .cword_webapp.app import _create_app_process, terminate_app
-from .constants import (
+from crossword_puzzle.errors import CrosswordBaseError
+from crossword_puzzle.cword_gen import Crossword, CrosswordHelper
+from crossword_puzzle.cword_webapp.app import _create_app_process, terminate_app
+from crossword_puzzle.constants import (
     Paths, Colour, CrosswordDifficulties, CrosswordStyle, CrosswordDirections, 
     BaseEngStrings
 )
@@ -158,7 +158,9 @@ class Home(CTk):
         self.title(_("Crossword Puzzle"))
         self.generate_screen()
     
-    def generate_screen(self, inst=None) -> None:
+    def generate_screen(self, 
+                        inst=None
+                        ) -> None:
         """Run the methods to create the containers and content for an instance."""
         instance = self if not inst else inst
         instance._make_containers()

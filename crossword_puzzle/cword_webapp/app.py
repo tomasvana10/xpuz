@@ -11,7 +11,7 @@ from pathlib import Path
 from flask import Flask, render_template
 from flask_babel import Babel
 
-from ..constants import Paths
+from crossword_puzzle.constants import Paths
 app = Flask(__name__)
 cfg = ConfigParser()
 

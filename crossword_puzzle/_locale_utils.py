@@ -10,7 +10,7 @@ from typing import Dict
 
 import googletrans
 
-from .constants import LanguageReplacementsForPybabel
+from crossword_puzzle.constants import LanguageReplacementsForPybabel
 
 
 class LocaleUtils:
