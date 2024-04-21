@@ -1,4 +1,5 @@
-recursive-include crossword_puzzle/locales *
+recursive-include crossword_puzzle/locales/*/LC_MESSAGES *.mo
+recursive-include crossword_puzzle/locales/*/cwords *
 recursive-include crossword_puzzle/cword_webapp/static *
 recursive-include crossword_puzzle/cword_webapp/templates *
 recursive-include crossword_puzzle/base_cwords *

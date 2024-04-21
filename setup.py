@@ -1,17 +1,17 @@
-from setuptools import setup, find_packages
+from setuptools import setup, find_namespace_packages
 
 with open("README.md") as f:
     LONG_DESCRIPTION = f.read()
 
 setup(
     name="crossword_puzzle",
-    version="1.2.48",
+    version="1.2.49",
     author="Tomas Vana",
     url="https://github.com/tomasvana10/crossword_puzzle",
-    description="Select, generate and play always-unique crosswords ",
+    description="Select, generate and play always-unique crosswords.",
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
-    packages=find_packages(),
+    packages=find_namespace_packages(exclude=["venv", "venv.*"]),
     license="MIT",
     platforms="any",
     include_package_data=True,
