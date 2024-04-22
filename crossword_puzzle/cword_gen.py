@@ -4,14 +4,14 @@ from random import sample, choice
 from math import ceil, sqrt
 from typing import Dict, Tuple, List, Union
 
-from crossword_puzzle.definitions_parser import DefinitionsParser
-from crossword_puzzle.constants import (
+from definitions_parser import DefinitionsParser
+from constants import (
     CrosswordDirections, CrosswordStyle, DimensionsCalculation, Paths
 )
-from crossword_puzzle.errors import (
+from errors import (
     AlreadyGeneratedCrossword, PrintingCrosswordObjectBeforeGeneration
 )
-from crossword_puzzle.custom_types import Placement
+from custom_types import Placement
 
 
 class Crossword(object):
@@ -401,8 +401,6 @@ class Crossword(object):
                 else: # Reinsertion didn't help much, just pick a random placement
                     placement: Placement = choice(sorted_placements)
             else: 
-                if word == "OR":
-                    print(f"adding {word} helped")
                 placement: Placement = sorted_placements[0]
 
             self._place_word(placement["word"], placement["direction"], 
@@ -465,7 +463,6 @@ class CrosswordHelper:
             # "less than" is too strict and results in a poor "best" crossword.
             if (crossword.total_intersections > best_crossword.total_intersections) \
                     and (crossword.fails <= best_crossword.fails): 
-                print(f"new best crossword after a total of {attempts} attempts")
                 best_crossword = crossword
             attempts += 1
         
