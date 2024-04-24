@@ -38,5 +38,3 @@ git push remote origin
    - Go to pull requests
    - Set the "compare" option to your new branch name
    - Add some information and submit your changes
-
-
