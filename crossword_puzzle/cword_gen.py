@@ -4,14 +4,14 @@ from random import sample, choice
 from math import ceil, sqrt
 from typing import Dict, Tuple, List, Union
 
-from definitions_parser import DefinitionsParser
-from constants import (
+from crossword_puzzle.definitions_parser import DefinitionsParser
+from crossword_puzzle.constants import (
     CrosswordDirections, CrosswordStyle, DimensionsCalculation, Paths
 )
-from errors import (
+from crossword_puzzle.errors import (
     AlreadyGeneratedCrossword, PrintingCrosswordObjectBeforeGeneration
 )
-from custom_types import Placement
+from crossword_puzzle.custom_types import Placement
 
 
 class Crossword(object):
