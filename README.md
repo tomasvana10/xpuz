@@ -1,7 +1,9 @@
 ![licence](https://img.shields.io/badge/licence-MIT-green?style=flat?logo=licence)
 [![PyPI version](https://img.shields.io/pypi/v/crossword_puzzle?style=flat-square)](https://pypi.org/project/crossword_puzzle/)
+[![Publish to PyPI.org](https://github.com/tomasvana10/crossword_puzzle/actions/workflows/publish.yml/badge.svg)](https://github.com/tomasvana10/crossword_puzzle/actions/workflows/publish.yml)
 [![release)](https://img.shields.io/github/v/release/tomasvana10/crossword_puzzle?logo=github)](https://github.com/tomasvana10/crossword_puzzle/releases/latest)
 [![issues](https://img.shields.io/github/issues-raw/tomasvana10/crossword_puzzle.svg?maxAge=25000)](https://github.com/tomasvana10/crossword_puzzle/issues)
+
 # crossword_puzzle
 A GUI package built with `CustomTkinter` that allows you to select, configure and generate a crossword to view, interact with and complete in a `Flask` web application.
 - Download the latest source code: [click here](https://github.com/tomasvana10/crossword_puzzle/releases/latest)
