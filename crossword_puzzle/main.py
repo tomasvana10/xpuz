@@ -1,5 +1,5 @@
-import json
-import os
+from json import load, dumps
+from os import listdir, scandir, path
 from platform import system
 from tkinter import IntVar, Event, messagebox
 from webbrowser import open_new_tab
@@ -7,6 +7,7 @@ from gettext import translation
 from time import sleep
 from copy import deepcopy
 from configparser import ConfigParser
+from typing import Union
 
 from PIL import Image
 from babel import Locale, numbers
@@ -17,11 +18,15 @@ from customtkinter import (
 )
 
 from crossword_puzzle.errors import CrosswordBaseError
-from crossword_puzzle.cword_gen import Crossword, CrosswordHelper
+from crossword_puzzle.cword_gen import Crossword
 from crossword_puzzle.cword_webapp.app import _create_app_process, terminate_app
 from crossword_puzzle.constants import (
     Paths, Colour, CrosswordDifficulties, CrosswordStyle, CrosswordDirections, 
     BaseEngStrings
+)
+from crossword_puzzle.utils import (
+    _update_config, _get_language_options, _load_cword_info, 
+    _get_colour_palette_for_webapp, load_definitions, find_best_crossword
 )
 
 
@@ -202,7 +207,7 @@ class Home(CTk):
             return AppHelper.show_messagebox(same_appearance=True)
 
         set_appearance_mode(eng_appearance_name)
-        AppHelper._update_config(self.cfg, "m", "appearance", eng_appearance_name)
+        _update_config(self.cfg, "m", "appearance", eng_appearance_name)
 
     def change_scale(self, 
                      scale: str
@@ -213,7 +218,7 @@ class Home(CTk):
             return AppHelper.show_messagebox(same_scale=True)
         
         set_widget_scaling(scale)
-        AppHelper._update_config(self.cfg, "m", "scale", str(scale))
+        _update_config(self.cfg, "m", "scale", str(scale))
         
     def switch_lang(self, 
                     lang: str
@@ -230,7 +235,7 @@ class Home(CTk):
         self.locale: Locale = Locale.parse(self.localised_lang_db[lang])
         translation("messages", localedir=Paths.LOCALES_PATH, 
                     languages=[self.locale.language]).install()
-        AppHelper._update_config(self.cfg, "m", "language", 
+        _update_config(self.cfg, "m", "language", 
                                  self.localised_lang_db[lang])
         self.title(_("Crossword Puzzle"))
         self.container.pack_forget()
@@ -263,7 +268,7 @@ class CrosswordBrowser(CTkFrame):
     
         if self.master.cfg.get("misc", "cword_browser_opened") == "0": 
             AppHelper.show_messagebox(first_time_opening_cword_browser=True)
-            AppHelper._update_config(self.master.cfg, "misc", 
+            _update_config(self.master.cfg, "misc", 
                                      "cword_browser_opened", "1")
     
     def _make_containers(self) -> None:
@@ -429,7 +434,7 @@ class CrosswordBrowser(CTkFrame):
         (retrieved from the ``word_count_preference`` IntVar). This method then 
         loads the definitions based on the current crosswords name, instantiates 
         a crossword object, finds the best crossword using 
-        ``CrosswordHelper.find_best_crossword``, and launches the interactive 
+        ``utils.find_best_crossword``, and launches the interactive 
         web app via ``init_webapp`` using data retrieved from the crossword 
         instance's attributes.
         
@@ -445,14 +450,14 @@ class CrosswordBrowser(CTkFrame):
         try:
             # Load definitions, instantiate a crossword, then find the best 
             # crossword using that instance
-            definitions: dict[str, str] = CrosswordHelper.load_definitions(
+            definitions: dict[str, str] = load_definitions(
                 self.cword_category, self.cword_name, self.master.locale.language)
         except Exception as ex: 
             print(f"{type(ex).__name__}: {ex}")
             return AppHelper.show_messagebox(definitions_loading_err=True)
             
         try:
-            crossword: object = CrosswordHelper.find_best_crossword(
+            crossword: object = find_best_crossword(
                 Crossword(definitions=definitions, word_count=chosen_word_count,
                           name=self.cword_name))
         except Exception as ex:
@@ -483,12 +488,12 @@ class CrosswordBrowser(CTkFrame):
         """
         self._interpret_cword_data(crossword)
         colour_palette: dict[str, str] = \
-            AppHelper._get_colour_palette_for_webapp(get_appearance_mode())
+            _get_colour_palette_for_webapp(get_appearance_mode())
         _create_app_process(
             locale=self.master.locale,
             scaling=self.master._get_widget_scaling(),
             colour_palette=colour_palette,
-            json_colour_palette=json.dumps(colour_palette),
+            json_colour_palette=dumps(colour_palette),
             cword_data=crossword.data,
             port=self.master.cfg.get("misc", "webapp_port"), 
             empty=CrosswordStyle.EMPTY,
@@ -556,7 +561,7 @@ class CrosswordBrowser(CTkFrame):
     def _generate_crossword_category_blocks(self) -> None:
         self.category_block_objects: list[CrosswordCategoryBlock] = list()
         i: int = 0
-        for category in [f for f in os.scandir(Paths.BASE_CWORDS_PATH) \
+        for category in [f for f in scandir(Paths.BASE_CWORDS_PATH) \
                          if f.is_dir()]:
             block = CrosswordCategoryBlock(self.info_block_container, self, 
                                            category.name, i)
@@ -673,9 +678,9 @@ class CrosswordCategoryBlock(CTkFrame):
                                      relwidth=0.75, relheight=0.06)
 
     def _get_colour_tag_hex(self) -> str:
-        with open(os.path.join(Paths.BASE_CWORDS_PATH, self.category, 
+        with open(path.join(Paths.BASE_CWORDS_PATH, self.category, 
                                "info.json")) as file:
-            return json.load(file)["bottom_tag_colour"]
+            return load(file)["bottom_tag_colour"]
     
     def _sort_category_content(self,
                                arr: list[str]
@@ -691,7 +696,7 @@ class CrosswordCategoryBlock(CTkFrame):
             return arr
     
     def _configure_cword_blocks_state(self, 
-                                      state_: "disabled" | "normal"
+                                      state_: Union["disabled", "normal"]
                                       ) -> None:
         """Toggle the crossword info block radiobutton (for selection) to either 
         "disabled" or "normal".
@@ -712,9 +717,9 @@ class CrosswordCategoryBlock(CTkFrame):
         # Create the blocks for the crosswords in the selected category
         self.cword_block_objects: list[CrosswordInfoBlock] = list() 
         # Gather all crossword directories with an info.json file. 
-        crosswords = [f.name for f in os.scandir(os.path.join(
+        crosswords = [f.name for f in scandir(path.join(
                                     Paths.BASE_CWORDS_PATH, self.category)) \
-                      if f.is_dir() and "info.json" in os.listdir(f.path)]
+                      if f.is_dir() and "info.json" in listdir(f.path)]
         i: int = 1
         for cword in self._sort_category_content(crosswords):
             block = CrosswordInfoBlock(self.master.info_block_container, 
@@ -760,7 +765,7 @@ class CrosswordInfoBlock(CTkFrame):
         self.category = category
         self.category_object = category_object
         self.value = value
-        self.info = AppHelper._load_cword_info(self.category, self.name, 
+        self.info = _load_cword_info(self.category, self.name, 
                                                self.master.master.locale.language)
         self.translated_name = self.info["translated_name"] \
                                 if self.info["translated_name"] \
@@ -829,10 +834,10 @@ class AppHelper:
         locale: Locale = Locale.parse(language)
         translation("messages", localedir=Paths.LOCALES_PATH, 
                     languages=[locale.language]).install()
-        AppHelper._update_config(cfg, "misc", "launches", 
+        _update_config(cfg, "misc", "launches", 
                                  str(int(cfg.get("misc", "launches")) + 1))
         
-        app = Home(AppHelper._get_language_options(), locale, cfg)
+        app = Home(_get_language_options(), locale, cfg)
         app.mainloop()
     
     @staticmethod
@@ -906,65 +911,6 @@ class AppHelper:
             return messagebox.showerror(_("Error"), 
                 _("An error occured in crossword generation. Please see further "
                   "information in the console"))
-    
-    @staticmethod
-    def _update_config(cfg: ConfigParser, 
-                       section: str, 
-                       option: str, 
-                       value: str
-                       ) -> None:
-        """Update ``cfg`` at the given section, option and value, then write it 
-        to ``config.ini``.
-        """
-        cfg[section][option] = value
-        
-        with open(Paths.CONFIG_PATH, "w") as f:
-            cfg.write(f)
-            
-    @staticmethod
-    def _get_language_options() -> None:
-        """Gather a dictionary that maps each localised language name to its 
-        english acronym, and a list that contains all of the localised language 
-        names. This data is derived from ``Paths.LOCALES_PATH``."""
-        localised_lang_db: dict[str, str] = dict() # Used to retrieve the language 
-                                                # code for the selected language
-        # e.x. {"አማርኛ": "am",}
-        localised_langs: dict[str, str] = list() # Used in the language selection 
-                                                 # optionmenu
-        # e.x. ["አማርኛ", "عربي"]
-        
-        i: int = 0
-        for locale in sorted([f.name for f in os.scandir(Paths.LOCALES_PATH) \
-                              if f.is_dir()]):
-            localised_langs.append(Locale.parse(locale).language_name)
-            localised_lang_db[localised_langs[i]] = locale
-            i += 1
-        
-        return [localised_lang_db, localised_langs]
-
-    @staticmethod
-    def _load_cword_info(category: str,
-                         name: str, 
-                         language: str = "en"
-                         ) -> dict[str, str | int]:
-        """Load the ``info.json`` file for a crossword. Called by an instance 
-        of ``CrosswordInfoBlock``.
-        """
-        path = os.path.join(Paths.LOCALES_PATH, language, "cwords", category, 
-                            name, "info.json")
-        if not os.path.exists(path): # Fallback to base crossword info
-            path = os.path.join(Paths.BASE_CWORDS_PATH, category, name, 
-                                "info.json")
-        with open(path) as file:
-            return json.load(file)
-    
-    @staticmethod
-    def _get_colour_palette_for_webapp(appearance_mode: str) -> dict[str, str]:
-        """Create a dictionary based on ``constants.Colour``for the web app."""
-        sub_class = Colour.Light if appearance_mode == "Light" else Colour.Dark
-        return {key: value for attr in [sub_class.__dict__, Colour.Global.__dict__]
-                for key, value in attr.items() if key[0] != "_" \
-                or key.startswith("BUTTON")}
 
 
 def start():

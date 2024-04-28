@@ -11,6 +11,9 @@ from crossword_puzzle.errors import (
     AlreadyGeneratedCrossword, PrintingCrosswordObjectBeforeGeneration
 )
 from crossword_puzzle.custom_types import Placement
+from crossword_puzzle.utils import (
+    find_best_crossword, load_definitions, _load_attempts_db
+)
 
 
 class Crossword:
@@ -20,7 +23,7 @@ class Crossword:
 
     Usage information:
     To begin, assign a definitions JSON to a variable by running 
-    >>> Crossword.load_definitions("geography", "capitals-easy", "en")
+    >>> load_definitions("geography", "capitals-easy", "en")
     
     
     For simple use, instantiate the class with the required parameters and call 
@@ -30,12 +33,12 @@ class Crossword:
     >>> print(crossword)
     
     
-    For more advanced use, use CrosswordHelper.find_best_crossword, which takes 
+    For more advanced use, use ``utils.find_best_crossword``, which takes 
     an ungenerated instance of the Crossword class. This will return a crossword 
     object that is already has a populated grid and has more intersections than 
     a crossword generated with only a single attempt.
     >>> crossword = Crossword("Capitals", definitions=definitions, word_count=10)
-    >>> crossword = CrosswordHelper.find_best_crossword(crossword)
+    >>> crossword = find_best_crossword(crossword)
     >>> print(crossword)
     
     NOTE: When inserting large amounts of words, fails with insertion may occur.
@@ -48,7 +51,7 @@ class Crossword:
                  retry: bool = False
                  ) -> None:
         self.retry = retry # Flag to reattempt insertions when generating through
-                           # ``CrosswordHelper.find_best_crossword``.
+                           # ``utils.find_best_crossword``.
         if self.retry: 
             self.definitions = self._randomise_definitions(definitions)
         else: # Randomly sample ``word_count`` amount of definitions and ensure 
@@ -418,91 +421,13 @@ class Crossword:
             self.backlog_has_been_inserted = True
             # Recurse ``_populate_grid`` with ``uninserted_words_backlog``
             self._populate_grid(self.uninserted_words_backlog, insert_backlog=True) 
-      
-  
-class CrosswordHelper:
-    """Contains methods to help with the loading of crossword-related JSON files 
-    and for performing optimised crossword creation with ``find_best_crossword``.
-    """
-    @staticmethod
-    def find_best_crossword(crossword: Crossword) -> Crossword:
-        """Determine the best crossword out of a amount of instantiated 
-        crosswords based on the largest amount of total intersections and 
-        smallest amount of fails.
-        """
-        name: str = crossword.name
-        word_count: int = crossword.word_count
-        
-        attempts_db: dict[str, int] = CrosswordHelper._load_attempts_db()
-        try:
-            max_attempts: int = attempts_db[str(word_count)] # Get amount of attempts 
-                                                             # based on word count
-        except KeyError: # Fallback to only a single generation attempt
-            max_attempts = 1
-        attempts: int = 0 # Track current amount of attempts
-
-        reinsert_definitions: dict[str, str] = crossword.definitions
-        try: 
-            crossword.generate()
-        except: ... # The crossword is already generated for some reason
-        best_crossword = crossword # Assume the best crossword is the first crossword
-        
-        while attempts <= max_attempts:
-            # Setting the "retry" param to True will make the Crossword class 
-            # only randomise the definitions it is given, not sample new random 
-            # ones, for reasons explained in the ``_randomise_definitions``
-            # method.
-            crossword = Crossword(name=name, definitions=reinsert_definitions, 
-                                  word_count=word_count, retry=True)
-            crossword.generate()
-            
-            # Update the new best crossword if it has more intersections than 
-            # the current crossword and its fails are less than or equal to the
-            # current crossword's fails. Changing the fails comparison to simply
-            # "less than" is too strict and results in a poor "best" crossword.
-            if (crossword.total_intersections > best_crossword.total_intersections) \
-                    and (crossword.fails <= best_crossword.fails): 
-                best_crossword = crossword
-            attempts += 1
-        
-        return best_crossword # NOTE: ``generate()`` has already been called 
-                              # on this crossword instance.
-
-    @staticmethod
-    def load_definitions(category: str, 
-                         name: str,
-                         language: str = "en",
-                         ) -> dict[str, str]:
-        """Load a definitions json for a given crossword."""
-        # Attempt to access the localised crossword
-        path = os.path.join(Paths.LOCALES_PATH, language, "cwords", category, 
-                            name, "definitions.json")
-        if not os.path.exists(path): # Fallback to the base crossword 
-            path = os.path.join(Paths.BASE_CWORDS_PATH, category, name, 
-                                "definitions.json")
-        try:
-            with open(path) as file:
-                return json.load(file)
-        except json.decoder.JSONDecodeError: # Should never happen, but who knows
-            raise EmptyDefinitions
-
-    @staticmethod
-    def _load_attempts_db() -> dict[str, int]:
-        """Load ``attempts_db.json``, which specifies how many generation attempts
-        should be conducted for a crossword based on its word count. This is 
-        integral to the crossword optimisation process, as crossword generation
-        time scales logarithmically with word count.
-        """
-        with open(Paths.ATTEMPTS_DB_PATH) as file: 
-            return json.load(file)
 
 
 if __name__ == "__main__": # Example usage – this module is normally used in 
                            # the executional context of ``main.py``
-    definitions = CrosswordHelper.load_definitions("computer science",
-                                                   "booleans-easy", "en")
+    definitions = load_definitions("computer science", "booleans-easy", "en")
     
     crossword = Crossword(definitions=definitions, word_count=3, name="booleans")
-    crossword = CrosswordHelper.find_best_crossword(crossword)
+    crossword = find_best_crossword(crossword)
 
     print(crossword)
