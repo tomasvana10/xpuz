@@ -41,7 +41,6 @@ from crossword_puzzle.constants import (
 )
 from crossword_puzzle.cword_gen import Crossword
 from crossword_puzzle.cword_webapp.app import _create_app_process, terminate_app
-from crossword_puzzle.errors import CrosswordBaseError
 from crossword_puzzle.utils import (
     _get_colour_palette_for_webapp,
     _get_language_options,
@@ -49,6 +48,8 @@ from crossword_puzzle.utils import (
     _update_config,
     find_best_crossword,
     load_definitions,
+    _make_cword_info_json,
+    _make_category_info_json
 )
 
 
@@ -525,7 +526,7 @@ class CrosswordBrowser(CTkFrame):
         terminate_app()
 
     def _rollback_states(self) -> None:
-        # User might not have selected a crossword within their category, so 
+        # User might not have selected a crossword within their category, so
         # this if condition is requried.
         if hasattr(self, "selected_category_object"):
             self.selected_category_object.b_close_category.configure(
@@ -593,11 +594,8 @@ class CrosswordBrowser(CTkFrame):
                 )
             )
         except Exception as ex:
-            if issubclass(type(ex), CrosswordBaseError):
-                print(f"{type(ex).__name__}: {ex}")
-                return AppHelper.show_messagebox(cword_gen_err=True)
-            else:
-                return print(f"{type(ex).__name__}: {ex}")
+            print(f"{type(ex).__name__}: {ex}")
+            return AppHelper.show_messagebox(cword_gen_err=True)
 
         # Only modify states after error checking has been conducted
         self.b_load_selected_cword.configure(state="disabled")
@@ -724,6 +722,13 @@ class CrosswordBrowser(CTkFrame):
         for category in [
             f for f in scandir(Paths.BASE_CWORDS_PATH) if f.is_dir()
         ]:
+            # Make the ``info.json`` file if it doesn't exist already
+            if (
+                "info.json" not in listdir(category.path)
+                or path.getsize(path.join(category.path, "info.json")) <= 0
+            ):
+                _make_category_info_json(path.join(category.path, "info.json"))
+
             block = CrosswordCategoryBlock(
                 self.info_block_container, self, category.name, i
             )
@@ -816,6 +821,8 @@ class CrosswordCategoryBlock(CTkFrame):
         self.category = category
         self.value = value
 
+        # Represents the currently selected crossword radiobutton selector
+        # within the crosswords of this category (once open)
         self.selected_block = IntVar()
         self.selected_block.set(-1)
 
@@ -867,10 +874,15 @@ class CrosswordCategoryBlock(CTkFrame):
         )
 
     def _get_colour_tag_hex(self) -> str:
+        """Get the hex colour of the bottom tag of this category, read from
+        its ``info.json`` file."""
         with open(
             path.join(Paths.BASE_CWORDS_PATH, self.category, "info.json")
         ) as file:
-            return load(file)["bottom_tag_colour"]
+            try:
+                return load(file)["bottom_tag_colour"]
+            except: 
+                return "#abcdef"
 
     def _sort_category_content(self, arr: list[str]) -> list[str]:
         """Sort the cword content of a category by the cword suffixes (-easy
@@ -880,10 +892,11 @@ class CrosswordCategoryBlock(CTkFrame):
             return sorted(
                 arr,
                 key=lambda i: CrosswordDifficulties.DIFFICULTIES.index(
-                    i.split("-")[-1].capitalize()
+                    i.name.split("-")[-1].capitalize()
                 ),
             )
-        except Exception:
+        except Exception: # Could not find the "-" in the crossword name, so
+                          # don't sort this category
             return arr
 
     def _configure_cword_blocks_state(
@@ -898,6 +911,8 @@ class CrosswordCategoryBlock(CTkFrame):
     def _view_category(self) -> None:
         """View all crossword info blocks for a specific category."""
         self.b_view_category.configure(state="disabled")
+        # Reset crossword canvas xview so it is at the beginning
+        self.master.info_block_container._parent_canvas.xview("moveto", 0.0)
         for block in self.master.category_block_objects:  # Remove all category
                                                           # blocks
             block.pack_forget()
@@ -909,16 +924,24 @@ class CrosswordCategoryBlock(CTkFrame):
         self.cword_block_objects: list[CrosswordInfoBlock] = []
         # Gather all crossword directories with an info.json file.
         crosswords = [
-            f.name
+            f
             for f in scandir(path.join(Paths.BASE_CWORDS_PATH, self.category))
-            if f.is_dir() and "info.json" in listdir(f.path)
+            if f.is_dir()
+            and "definitions.json" in listdir(f.path)
+            and path.getsize(path.join(f.path, "definitions.json")) > 0
         ]
+        
         i: int = 1
         for cword in self._sort_category_content(crosswords):
+            # Make the ``info.json`` file if it doesn't exist already
+            info_path = path.join(cword.path, "info.json")
+            if not path.exists(info_path) or path.getsize(info_path) <= 0:
+                _make_cword_info_json(cword.path, cword.name, self.category)
+
             block = CrosswordInfoBlock(
                 self.master.info_block_container,
                 self.master,
-                cword,
+                cword.name,
                 self.category,
                 self,
                 i,

@@ -1,6 +1,4 @@
-class CrosswordBaseError(Exception): ...  # Useful in error handling to see if
-                                          # an error is related to crossword
-                                          # generation
+class CrosswordBaseError(Exception): ...  
 
 
 class EmptyDefinitions(CrosswordBaseError):

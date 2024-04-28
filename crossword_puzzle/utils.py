@@ -3,12 +3,13 @@
 from __future__ import annotations
 
 from configparser import ConfigParser
-from json import load
+from json import load, dump
 from os import path, scandir
+from random import randint
 
 from babel import Locale
 
-from crossword_puzzle.constants import Colour, Paths
+from crossword_puzzle.constants import Colour, Paths, CrosswordDifficulties
 
 
 def _update_config(
@@ -154,5 +155,50 @@ def _load_attempts_db() -> dict[str, int]:
     integral to the crossword optimisation process, as crossword generation
     time scales logarithmically with word count.
     """
+
     with open(Paths.ATTEMPTS_DB_PATH) as file:
         return load(file)
+
+
+def _make_cword_info_json(path_, cword_name, category) -> None:
+    """Make an info.json file for a given crossword since it does not exist.
+    Makes it easier for the end-user to make their own crossword if they
+    really want to.
+    """
+
+    with open(path.join(path_, "info.json"), "w") as info_obj, \
+         open(path.join(path_, "definitions.json"), "r") as def_obj:
+        total_definitions: int = len(load(def_obj))
+
+        # Infer the difficulty and crossword name if possible
+        try:
+            parsed_cword_name_components = path.basename(path_).split("-")
+            difficulty: int = CrosswordDifficulties.DIFFICULTIES.index(
+                parsed_cword_name_components[-1].title()
+            )
+            adjusted_cword_name = "-".join(parsed_cword_name_components[0:-1])
+        except Exception:
+            difficulty: int = 0
+            adjusted_cword_name = cword_name
+
+        return dump(
+            {
+                "total_definitions": total_definitions,
+                "difficulty": difficulty,
+                "symbol": "0x2717",
+                "name": adjusted_cword_name,
+                "translated_name": "",
+                "category": category,
+            },
+            info_obj,
+            indent=4,
+        )
+
+
+def _make_category_info_json(path_) -> None:
+    """Write a new info.json to a category since it does not exist in the a
+    category's directory.
+    """
+    hex_ = "#%06X" % randint(0, 0xFFFFFF)  
+    with open(path_, "w") as f:
+        return dump({"bottom_tag_colour": hex_}, f, indent=4)
