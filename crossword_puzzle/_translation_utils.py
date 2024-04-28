@@ -4,7 +4,6 @@ import os
 import shutil
 import json
 import numpy as np
-from typing import List, Tuple, Dict, Union, Callable
 
 import polib
 from google.cloud import translate_v2
@@ -45,14 +44,14 @@ class LocaleTranslatorUtils:
             messages.save(newline=None)
             
     @staticmethod
-    def _get_locales_and_lang_codes() -> List[List[str]]:
+    def _get_locales_and_lang_codes() -> list[list[str]]:
         """Get all the locale directory names, as well as the google translate 
         language codes, which are mostly the same. 
         """
-        locales: List[str] = sorted([f.name for f in os.scandir(Paths.LOCALES_PATH) \
+        locales: list[str] = sorted([f.name for f in os.scandir(Paths.LOCALES_PATH) \
                                      if f.is_dir()])
         
-        lang_codes: List[str] = [LangReplacements.REVERSE[locale] if locale \
+        lang_codes: list[str] = [LangReplacements.REVERSE[locale] if locale \
                                  in LangReplacements.REPLACEMENTS.values() \
                                  else locale for locale in locales]
 
@@ -122,8 +121,8 @@ class CrosswordTranslatorUtils:
                 
     @staticmethod
     def _format_and_translate_cword_data(language: str,
-                                         definitions: Dict[str, str], 
-                                         info: Dict[str, Union[str, int, None]]
+                                         definitions: dict[str, str], 
+                                         info: dict[str, str | int | None]
                                          ) -> CrosswordData:
         """Facilitates the efficient translation of a dictionary of definitions 
         through bulk translation, ensuring that each translation made does not 
@@ -157,9 +156,9 @@ class CrosswordTranslatorUtils:
         return formatted_definitions, info
     
     @staticmethod
-    def _translate_parts(definitions: List[np.array], 
+    def _translate_parts(definitions: list[np.array], 
                          language: str
-                         ) -> List[Dict]:
+                         ) -> list[dict]:
         """Translate the parts of a split definitions array and return a new 
         array of those translated parts.
         """
@@ -195,11 +194,11 @@ class CrosswordTranslatorUtils:
         return _reduce(length, parts)
     
     @staticmethod
-    def _get_base_cword_category_tree() -> Dict[str, List[str]]:
-        category_tree: Dict[str, List[str]] = dict()
+    def _get_base_cword_category_tree() -> dict[str, list[str]]:
+        category_tree: dict[str, list[str]] = dict()
         for category in [f for f in os.scandir(Paths.BASE_CWORDS_PATH) \
                          if f.is_dir()]:
-            cwords: List[str] = list()
+            cwords: list[str] = list()
             for cword in [f.name for f in os.scandir(category.path) \
                           if f.is_dir()]:
                 cwords.append(cword)
@@ -223,8 +222,8 @@ class CrosswordTranslatorUtils:
     
     @staticmethod
     def _write_translated_cword_data(path: str, 
-                                     definitions: Dict[str, str], 
-                                     info: Dict[str, Union[str, int]]
+                                     definitions: dict[str, str], 
+                                     info: dict[str, str | int]
                                      ) -> None:
         with open(os.path.join(path, "definitions.json"), "w") as def_file, \
              open(os.path.join(path, "info.json"), "w") as info_file:

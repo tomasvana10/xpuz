@@ -6,7 +6,6 @@ NOTE: Requires the googletrans module, which is not listed in `requirements.txt`
 '''
 
 import subprocess
-from typing import Dict
 
 import googletrans
 
@@ -15,7 +14,7 @@ from crossword_puzzle.constants import LanguageReplacementsForPybabel
 
 class LocaleUtils:
     @staticmethod
-    def _parse_locales(langcodes: Dict[str, str]) -> Dict[str, str]:
+    def _parse_locales(langcodes: dict[str, str]) -> dict[str, str]:
         '''Replace all googletrans langcodes as specified by 
         ``LanguageReplacementsForPyBabel`` if the value of the langcode isn't 
         falsy. If it is a None value, it is removed entirely.
@@ -31,7 +30,7 @@ class LocaleUtils:
         return parsed_langcodes
 
     @staticmethod
-    def _write_locales(langcodes: Dict[str, str]) -> None:
+    def _write_locales(langcodes: dict[str, str]) -> None:
         '''Runs the ``pybabel init`` command to create ~100 locale files within
         ``crossword_puzzle/locales`` based on the parsed langcodes.
         '''

@@ -1,5 +1,4 @@
 from os import path
-from typing import Dict, List, Union
 from pathlib import Path
 
 from regex import compile as regex_compile
@@ -30,7 +29,7 @@ class Colour:
         GREEN_BUTTON = "#20D44A"
         GREEN_BUTTON_HOVER = "#259c41"
         BUTTON_TEXT_COLOUR = "#DDE3ED"
-        DIFFICULTIES: List[str] = ["#089E19", "#FCBA03", "#E01C07", "#6408A6"]
+        DIFFICULTIES: list[str] = ["#089E19", "#FCBA03", "#E01C07", "#6408A6"]
         
     class Light:
         MAIN = "#C7D0D4"
@@ -57,12 +56,12 @@ class CrosswordDifficulties:
     """Generic difficulty names for crosswords. In a crossword directory's 
     ``info.json`` file, they are specified as indexes and not strings.
     """
-    DIFFICULTIES: List[str] = ["Easy", "Medium", "Hard", "Extreme"]
+    DIFFICULTIES: list[str] = ["Easy", "Medium", "Hard", "Extreme"]
 
 
 class LangReplacements:
     """See information about this class in ``_locale_utils.py``."""
-    REPLACEMENTS: Dict[str, Union[str, None]] = {
+    REPLACEMENTS: dict[str, str | None] = {
         "zh-cn": "zh",
         "zh-tw": None,
         "ht": None,
@@ -112,4 +111,4 @@ class DimensionsCalculation:
     
 
 class BaseEngStrings:
-    BASE_ENG_APPEARANCES: List[str] = ["light", "dark", "system"]
+    BASE_ENG_APPEARANCES: list[str] = ["light", "dark", "system"]

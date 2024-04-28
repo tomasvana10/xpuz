@@ -1,6 +1,6 @@
 """Custom types for type annotation in the source code of crossword_puzzle."""
 
-from typing import List, Tuple, Union, TypedDict, Dict
+from typing import TypedDict
 
 
 class Placement(TypedDict):
@@ -9,10 +9,10 @@ class Placement(TypedDict):
     """
     word: str
     direction: str
-    pos: Tuple[int]
-    intersections: Union[List[None], List[Tuple[int]]]
+    pos: tuple[int]
+    intersections: list[None] | list[tuple[int]]
 
 class CrosswordData(TypedDict):
     """The JSON serialised definitions and info of a base crossword."""
-    definitions: Dict[str, str]
-    info: Dict[str, Union[str, int, None]]
+    definitions: dict[str, str]
+    info: dict[str, str | int | None]

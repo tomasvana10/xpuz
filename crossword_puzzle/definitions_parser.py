@@ -1,5 +1,4 @@
 from random import sample
-from typing import Dict
 
 from regex import sub # Similar to "re" module but with more functionality
 
@@ -14,9 +13,9 @@ from crossword_puzzle.constants import CrosswordRestrictions
 class DefinitionsParser:
     """Serves methods to ensure a crossword's definitions are valid."""
     @staticmethod
-    def _parse_definitions(definitions: Dict[str, str], 
+    def _parse_definitions(definitions: dict[str, str], 
                            word_count: int
-                           ) -> Dict[str, str]:
+                           ) -> dict[str, str]:
         """Process a dictionary of definitions through statements to raise 
         errors for particular edge cases in a definitions dictionary. This 
         method also uses ``_format_definitions`` to randomly sample a specified
@@ -44,9 +43,9 @@ class DefinitionsParser:
         return DefinitionsParser._format_definitions(definitions, word_count)
     
     @staticmethod
-    def _format_definitions(definitions: Dict[str, str],
+    def _format_definitions(definitions: dict[str, str],
                             word_count: int
-                            ) -> Dict[str, str]:
+                            ) -> dict[str, str]:
         """Randomly pick definitions from a larger sample, then prune 
         everythingexcept the language characters from the words (the keys of 
         the definitions).

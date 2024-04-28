@@ -6,7 +6,6 @@ from webbrowser import open_new_tab
 from gettext import translation
 from time import sleep
 from copy import deepcopy
-from typing import List, Dict, Tuple, Union
 from configparser import ConfigParser
 
 from PIL import Image
@@ -32,7 +31,7 @@ class Home(CTk):
     currently available crossword puzzles.
     """
     def __init__(self, 
-                 lang_info: List[Union[Dict[str, str], List[str]]], 
+                 lang_info: list[dict[str, str] | list[str]], 
                  locale: Locale, 
                  cfg: ConfigParser
                  ) -> None:
@@ -55,7 +54,7 @@ class Home(CTk):
         self._make_fonts()
         self.generate_screen()
 
-    def _make_fonts(self):
+    def _make_fonts(self) -> None:
         self.TITLE_FONT = CTkFont(size=31, weight="bold", slant="roman")
         self.SUBHEADING_FONT = CTkFont(size=24, weight="normal", slant="italic")
         self.TEXT_FONT = CTkFont(size=15, weight="normal", slant="roman")
@@ -121,7 +120,7 @@ class Home(CTk):
         self.opts_scale.set(numbers.format_decimal(self.cfg.get("m", "scale"), 
                                                    locale=self.locale))
         
-        self.appearances: List[str] = [_("light"), _("dark"), _("system")]
+        self.appearances: list[str] = [_("light"), _("dark"), _("system")]
         self.l_appearance_opts = CTkLabel(self.settings_container, 
             text=_("Appearance"), bg_color="transparent", font=self.BOLD_TEXT_FONT)
         self.opts_appearance = CTkOptionMenu(self.settings_container, 
@@ -446,7 +445,7 @@ class CrosswordBrowser(CTkFrame):
         try:
             # Load definitions, instantiate a crossword, then find the best 
             # crossword using that instance
-            definitions: Dict[str, str] = CrosswordHelper.load_definitions(
+            definitions: dict[str, str] = CrosswordHelper.load_definitions(
                 self.cword_category, self.cword_name, self.master.locale.language)
         except Exception as ex: 
             print(f"{type(ex).__name__}: {ex}")
@@ -483,7 +482,7 @@ class CrosswordBrowser(CTkFrame):
         other interpreted data.
         """
         self._interpret_cword_data(crossword)
-        colour_palette: Dict[str, str] = \
+        colour_palette: dict[str, str] = \
             AppHelper._get_colour_palette_for_webapp(get_appearance_mode())
         _create_app_process(
             locale=self.master.locale,
@@ -519,15 +518,15 @@ class CrosswordBrowser(CTkFrame):
         """Gather data to help with the templated creation of the crossword 
         web application.
         """
-        self.starting_word_positions: List[Tuple[int]] = list(
+        self.starting_word_positions: list[tuple[int]] = list(
                                                         crossword.data.keys()) 
         # e.x. [(1, 2), (4, 6)]
         
-        self.definitions_a: List[Dict[int, Tuple[str]]] = list() 
+        self.definitions_a: list[dict[int, tuple[str]]] = list() 
         self.definitions_d = list()
         # e.x. [{1: ("hello", "a standard english greeting")}]"""
         
-        self.starting_word_matrix: List[List[int]] = deepcopy(crossword.grid)
+        self.starting_word_matrix: list[list[int]] = deepcopy(crossword.grid)
         # e.x.: [[1, 0, 0, 0], [[0, 0, 2, 0]] ... and so on; Each incremented 
         # number is the start of a new word.
 
@@ -555,7 +554,7 @@ class CrosswordBrowser(CTkFrame):
                     self.starting_word_matrix[row][column] = 0 
     
     def _generate_crossword_category_blocks(self) -> None:
-        self.category_block_objects: List[CrosswordCategoryBlock] = list()
+        self.category_block_objects: list[CrosswordCategoryBlock] = list()
         i: int = 0
         for category in [f for f in os.scandir(Paths.BASE_CWORDS_PATH) \
                          if f.is_dir()]:
@@ -679,8 +678,8 @@ class CrosswordCategoryBlock(CTkFrame):
             return json.load(file)["bottom_tag_colour"]
     
     def _sort_category_content(self,
-                               arr: List[str]
-                               ) -> List[str]:
+                               arr: list[str]
+                               ) -> list[str]:
         """Sort the cword content of a category by the cword suffixes (-easy 
         to -extreme), if possible.
         """
@@ -692,7 +691,7 @@ class CrosswordCategoryBlock(CTkFrame):
             return arr
     
     def _configure_cword_blocks_state(self, 
-                                      state_: Union["disabled", "normal"]
+                                      state_: "disabled" | "normal"
                                       ) -> None:
         """Toggle the crossword info block radiobutton (for selection) to either 
         "disabled" or "normal".
@@ -711,7 +710,7 @@ class CrosswordCategoryBlock(CTkFrame):
                                                     # category) back in
         
         # Create the blocks for the crosswords in the selected category
-        self.cword_block_objects: List[CrosswordInfoBlock] = list() 
+        self.cword_block_objects: list[CrosswordInfoBlock] = list() 
         # Gather all crossword directories with an info.json file. 
         crosswords = [f.name for f in os.scandir(os.path.join(
                                     Paths.BASE_CWORDS_PATH, self.category)) \
@@ -927,10 +926,10 @@ class AppHelper:
         """Gather a dictionary that maps each localised language name to its 
         english acronym, and a list that contains all of the localised language 
         names. This data is derived from ``Paths.LOCALES_PATH``."""
-        localised_lang_db: Dict[str, str] = dict() # Used to retrieve the language 
+        localised_lang_db: dict[str, str] = dict() # Used to retrieve the language 
                                                 # code for the selected language
         # e.x. {"አማርኛ": "am",}
-        localised_langs: Dict[str, str] = list() # Used in the language selection 
+        localised_langs: dict[str, str] = list() # Used in the language selection 
                                                  # optionmenu
         # e.x. ["አማርኛ", "عربي"]
         
@@ -947,7 +946,7 @@ class AppHelper:
     def _load_cword_info(category: str,
                          name: str, 
                          language: str = "en"
-                         ) -> Dict[str, Union[str, int]]:
+                         ) -> dict[str, str | int]:
         """Load the ``info.json`` file for a crossword. Called by an instance 
         of ``CrosswordInfoBlock``.
         """
@@ -960,7 +959,7 @@ class AppHelper:
             return json.load(file)
     
     @staticmethod
-    def _get_colour_palette_for_webapp(appearance_mode: str) -> Dict[str, str]:
+    def _get_colour_palette_for_webapp(appearance_mode: str) -> dict[str, str]:
         """Create a dictionary based on ``constants.Colour``for the web app."""
         sub_class = Colour.Light if appearance_mode == "Light" else Colour.Dark
         return {key: value for attr in [sub_class.__dict__, Colour.Global.__dict__]
