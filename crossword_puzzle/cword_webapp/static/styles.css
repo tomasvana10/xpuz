@@ -1,40 +1,53 @@
 /* ----- Misc styling, as well as generalised styling (e.g. buttons) ----- */
-html { 
-    font-family: Arial, Helvetica, sans-serif; 
+html {
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--text_colour);
 }
 
-body { /* These styles are from https://css-pattern.com */
+body {
+    /* These styles are from https://css-pattern.com */
     --s: 70px; /* the size */
     --c: var(--main_colour);
-    
-    --_s: calc(2*var(--s)) calc(2*var(--s));
+
+    --_s: calc(2 * var(--s)) calc(2 * var(--s));
     --_g: 35.36% 35.36% at;
-    --_c: #0000 66%, var(--sub_colour) 68% 70%,#0000 72%;
-    background:
-        radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s),
-        radial-gradient(var(--_g) 0    75%,var(--_c)) var(--s) var(--s)/var(--_s),
-        radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s),
-        radial-gradient(var(--_g) 0    75%,var(--_c)) 0 0/var(--_s),
-        repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s),
-        radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s)
-        var(--c);
+    --_c: #0000 66%, var(--sub_colour) 68% 70%, #0000 72%;
+    background: radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s) var(--s) /
+            var(--_s),
+        radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s) /
+            var(--_s),
+        radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0 / var(--_s),
+        radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0 / var(--_s),
+        repeating-conic-gradient(var(--c) 0 25%, #0000 0 50%) 0 0 / var(--_s),
+        radial-gradient(var(--_c)) 0 calc(var(--s) / 2) / var(--s) var(--s)
+            var(--c);
 }
 
-li, .def_heading, .toggle_label, .special_button, .dropdown_button, h2, button {
+li,
+.def_heading,
+.toggle_label,
+.special_button,
+.dropdown_button,
+h2,
+button {
     font-size: calc(1em * var(--scaling));
 }
 
-h2 { font-size: calc(24px * var(--scaling)); }
+h2 {
+    font-size: calc(24px * var(--scaling));
+}
 
-p { font-size: calc(16px * var(--scaling)); }
+p {
+    font-size: calc(16px * var(--scaling));
+}
 
-.container { /* Holds the crossword grid and the definitions div */
+.container {
+    /* Holds the crossword grid and the definitions div */
     margin: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 3em; 
+    column-gap: 3em;
     position: relative;
 }
 
@@ -55,34 +68,44 @@ button:hover {
     text-decoration: none;
 }
 
-.non_empty_cell.lock_in { color: var(--correct_colour); }
+.non_empty_cell.lock_in {
+    color: var(--correct_colour);
+}
 
-.non_empty_cell.wrong { color: var(--wrong_colour); }
+.non_empty_cell.wrong {
+    color: var(--wrong_colour);
+}
 
-.keybind_span { color: var(--correct_colour); }
+.keybind_span {
+    color: var(--correct_colour);
+}
 /* ---------- */
-
 
 /* ----- Styling for the crossword grid and its cells ----- */
 .grid {
     display: grid;
-    /* Configure `--dimensions` amount of rows/columns with a size of `95vmin / --dimensions` */
+    /* Configure `--dimensions` amount of rows/columns with a size of 
+    ``95vmin / --dimensions`` */
     grid-template-columns: repeat(var(--dimensions), var(--grid_size));
     grid-template-rows: repeat(var(--dimensions), var(--grid_size));
-    gap: 0 0; 
+    gap: 0 0;
 }
 
 .wrapper_grid {
     width: 61%;
 }
 
-.grid > div { position: relative; }
+.grid > div {
+    position: relative;
+}
 
-.grid > div.empty_cell { background: black; }
+.grid > div.empty_cell {
+    background: black;
+}
 
 .grid > div.non_empty_cell {
     background: var(--sub_colour);
-    text-transform: uppercase; 
+    text-transform: uppercase;
     font-size: var(--cell_font_size);
     display: flex;
     justify-content: center;
@@ -92,65 +115,80 @@ button:hover {
     -webkit-user-select: none;
 }
 
-.num_label { /* Labels the start of a word */
+.num_label {
+    /* Labels the start of a word */
     position: absolute;
     top: 1%;
     left: 5%;
     user-select: none;
     -webkit-user-select: none;
     color: var(--text_colour);
-    font-size: var(--num_label_font_size); 
+    font-size: var(--num_label_font_size);
 }
 /* ---------- */
 
-
-/* ----- Styling for the definitions container and its two rows (the definitions) ----- */
+/* ----- Styling for the definitions container and its two rows 
+(the definitions) ----- */
 .definitions {
     display: flex;
     background-color: var(--sub_colour);
     justify-content: space-evenly;
     margin-top: 17vmin;
     right: 0;
-    overflow: hidden; 
+    overflow: hidden;
     max-height: 78vmin;
     width: 95vmin;
     z-index: 100;
 }
 
 .wrapper_def {
-    display: flex; 
-    flex: 1; 
-    overflow-x: hidden; 
-    overflow-y: auto; 
+    display: flex;
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-#return_def_zoom { overflow: hidden; }
+#return_def_zoom {
+    overflow: hidden;
+}
 
-#no_scroll { overflow-y: hidden; }
+#no_scroll {
+    overflow-y: hidden;
+}
 
-ul { list-style-type: none; } /* Remove bullet points from the unordered list */
-
-li { /* Each definition/clue */
-    margin-bottom: 10px; 
-    white-space: pre-wrap; /* Helps html recognise more whitespace for the definitions list */
-    padding: 4.5%;
-    cursor: pointer;
+ul { /* Remove bullet points from the unordered list */
+    list-style-type: none;
 } 
 
-.def_heading { text-align: center; }
-
-/* Make both columns resize to fill the container. Flex is used to make this resizing equally distributed. */
-.definitions_a, .definitions_d { 
-    flex-grow: 1; 
-    flex: 1; 
+li {
+    /* Each definition/clue */
+    margin-bottom: 10px;
+    white-space: pre-wrap; /* Helps html recognise more whitespace for the 
+                           definitions list */
+    padding: 4.5%;
+    cursor: pointer;
 }
 
-.definitions_d { padding-right: 7.75%; }
+.def_heading {
+    text-align: center;
+}
+
+/* Make both columns resize to fill the container. Flex is used to make this 
+resizing equally distributed. */
+.definitions_a,
+.definitions_d {
+    flex-grow: 1;
+    flex: 1;
+}
+
+.definitions_d {
+    padding-right: 7.75%;
+}
 /* ---------- */
 
-
 /* ----- Styling for the popups ----- */
-#blur.active > :not(.popup) { /* Blur everything but the popup */
+#blur.active > :not(.popup) {
+    /* Blur everything but the popup */
     filter: blur(20px);
     pointer-events: none;
     user-select: none;
@@ -161,7 +199,7 @@ li { /* Each definition/clue */
     text-align: center;
     background: var(--sub_colour);
     top: 0%;
-    left: 50%;  
+    left: 50%;
     transform: translate(-50%, calc(20% - calc(20% * var(--scaling))));
     transform: 0.5s;
     width: 50vmin;
@@ -179,7 +217,6 @@ li { /* Each definition/clue */
     transition: 0.5s;
 }
 /* ---------- */
-
 
 /* ----- Styling of the dropdowns, their buttons and other related elements ----- */
 .dropdown {
@@ -206,32 +243,48 @@ li { /* Each definition/clue */
     border-bottom: 1px solid var(--main_colour);
 }
 
-.definitions > .top_buttons_container { 
+.definitions > .top_buttons_container {
     display: flex;
     position: absolute;
     transform: translateY(-7.5vmin);
 }
 
-.dropdown button:last-child { border-bottom: none; }
+.dropdown button:last-child {
+    border-bottom: none;
+}
 
-.dropdown button:hover { background-color: var(--main_colour); }
+.dropdown button:hover {
+    background-color: var(--main_colour);
+}
 
-.show_dropdown { display: block; }
+.show_dropdown {
+    display: block;
+}
 
-#reveal_button, #check_button { 
-    margin-right: 4.5vmin; 
+#reveal_button,
+#check_button {
+    margin-right: 4.5vmin;
     width: 20vmin;
 }
 
-#clear_button { width: 20vmin; }
+#clear_button {
+    width: 20vmin;
+}
 
-#check_dropdown { left: 24.4vmin; }
+#check_dropdown {
+    left: 24.4vmin;
+}
 
-#clear_dropdown { left: 49.1vmin }
-/* ---------- */ 
+#clear_dropdown {
+    left: 49.1vmin;
+}
+/* ---------- */
 
-/* ----- Styling of the smart skip toggle button. The majority of these styles are from https://codepen.io/morgoe/pen/VvzWQg ----- */
-.toggle > * { user-select: none; }
+/* ----- Styling of the smart skip toggle button. The majority of these styles 
+are from https://codepen.io/morgoe/pen/VvzWQg ----- */
+.toggle > * {
+    user-select: none;
+}
 
 .toggles {
     position: absolute;
@@ -245,7 +298,7 @@ li { /* Each definition/clue */
 }
 
 .toggle:last-child {
-    margin-right: 0; 
+    margin-right: 0;
 }
 
 .toggle {
@@ -264,7 +317,10 @@ li { /* Each definition/clue */
     transition: right 0.25s;
 }
 
-.toggle_switch::before, .toggle_switch::after { content: ""; }
+.toggle_switch::before,
+.toggle_switch::after {
+    content: "";
+}
 
 .toggle_switch::before {
     background: white;
@@ -277,13 +333,17 @@ li { /* Each definition/clue */
     transition: left 0.25s;
 }
 
-.toggle_checkbox:checked + .toggle_switch { background: var(--button_colour); }
+.toggle_checkbox:checked + .toggle_switch {
+    background: var(--button_colour);
+}
 
-.toggle_checkbox:checked + .toggle_switch::before { left: 30px; }
+.toggle_checkbox:checked + .toggle_switch::before {
+    left: 30px;
+}
 
-.toggle_checkbox { 
+.toggle_checkbox {
     position: absolute;
-    visibility: hidden; 
+    visibility: hidden;
 }
 
 .toggle_label {
