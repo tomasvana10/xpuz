@@ -95,7 +95,7 @@ def find_best_crossword(crossword: Crossword) -> Crossword:
         crossword  # Assume the best crossword is the first crossword
     )
 
-    from cword_gen import Crossword
+    from crossword_puzzle.cword_gen import Crossword
 
     while attempts <= max_attempts:
         # Setting the "retry" param to True will make the Crossword class
