@@ -33,9 +33,13 @@ Install the package in your system directory/virtual environment:
 ```
 pip install -U crossword-puzzle OR pip3 install -U crossword-puzzle
 ```
-OR, install the package in your home directory (good if you aren't using a virtual environment):
+OR, install the package in your home directory if you aren't using a virtual environment:
 ```
 pip install --user -U crossword-puzzle
+```
+Then, run the GUI script:
+```
+crossword-ctk
 ```
 
 ## Documentation
