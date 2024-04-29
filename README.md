@@ -3,6 +3,8 @@
 [![Publish to PyPI.org](https://github.com/tomasvana10/crossword_puzzle/actions/workflows/publish.yml/badge.svg)](https://github.com/tomasvana10/crossword_puzzle/actions/workflows/publish.yml)
 [![release)](https://img.shields.io/github/v/release/tomasvana10/crossword_puzzle?logo=github)](https://github.com/tomasvana10/crossword_puzzle/releases/latest)
 [![issues](https://img.shields.io/github/issues-raw/tomasvana10/crossword_puzzle.svg?maxAge=25000)](https://github.com/tomasvana10/crossword_puzzle/issues)
+[![CodeQL](https://github.com/tomasvana10/crossword_puzzle/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/tomasvana10/crossword_puzzle/actions/workflows/github-code-scanning/codeql)
+[![Tests](https://github.com/tomasvana10/crossword_puzzle/actions/workflows/tox-tests.yml/badge.svg)](https://github.com/tomasvana10/crossword_puzzle/actions/workflows/tox-tests.yml)
 
 # crossword_puzzle
 A GUI package built with `CustomTkinter` that allows you to select, configure and generate a crossword to view, interact with and complete in a `Flask` web application.
@@ -18,19 +20,22 @@ A GUI package built with `CustomTkinter` that allows you to select, configure an
 <br><br>
 ## Installation
 **Requires [pip](https://pip.pypa.io/en/stable/installation/)**
-<br>
+
 Make a virtual environment (recommended)
 ```
 pip install virtualenv OR pip3 install virtualenv
 python -m venv venv OR python3 -m venv venv
 ON MACOS/UNIX: source venv/bin/activate
-ON WINDOW: venv\scripts\activate
+ON WINDOWS: venv\scripts\activate
 ```
 
-Install the package and run the gui script:
+Install the package in your system directory/virtual environment:
 ```
-pip install crossword_puzzle OR pip3 install crossword_puzzle
-crossword-ctk
+pip install -U crossword-puzzle OR pip3 install -U crossword-puzzle
+```
+OR, install the package in your home directory (good if you aren't using a virtual environment):
+```
+pip install --user -U crossword-puzzle
 ```
 
 ## Documentation
