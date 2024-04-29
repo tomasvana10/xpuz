@@ -21,7 +21,7 @@ jobs:
           - ubuntu-latest  # ubuntu-22.04
           - macos-latest  # macOS-12
           - windows-latest  # windows-2022
-        python-version: [3.7, 3.8, 3.9, '3.10', 3.11, 3.12, pypy-3.7, pypy-3.8, pypy-3.9, pypy-3.10]
+        python-version: [3.7, 3.8, 3.9, '3.10', 3.11, 3.12, pypy-3.9, pypy-3.10]
 
     steps:
     - uses: actions/checkout@v3
