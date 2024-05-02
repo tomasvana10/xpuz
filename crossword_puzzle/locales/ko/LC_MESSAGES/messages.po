@@ -59,7 +59,8 @@ msgstr "시스템"
 
 #: src/main.py:116
 msgid "Appearance"
-msgstr "환경" #better to use 환경
+msgstr "환경" 
+#: better to use 환경
 
 #: src/main.py:138 src/main.py:267
 msgid "Crossword Browser"
@@ -200,11 +201,11 @@ msgid ""
 "computer to terminate them."
 msgstr ""
 "처음 실행 시 다음 내용을 읽어 주십시오. 크로스워드를 로드한 후 다른 크로스워드를 로드하려면 먼저 웹앱을 종료해야 합니다. 중요: "
-#: 웹 앱 to 웹앱
 "macOS를 사용하는 경우 웹 앱이 실행되는 동안 응용 프로그램을 강제 종료(cmd+q 사용)하면 응용 프로그램이 제대로 종료되지 "
 "않습니다. 실수로 이 작업을 수행하면 프로그램이 다른 포트를 사용하여 새 웹앱을 실행합니다. 또는 프로그램의 구성 파일에서 포트를 "
 "수동으로 변경할 수 있습니다. 제대로 종료되지 않은 모든 앱 프로세스는 MacOS의 Activity Monitor를 통해 종료하거나 "
 "컴퓨터를 다시 시작하여 종료할 수 있습니다."
+#: 웹 앱 to 웹앱
 
 #: src/main.py:792
 msgid ""
@@ -214,8 +215,8 @@ msgid ""
 "in the locales directory."
 msgstr ""
 "이 크로스워드의 설명을 로드하는 동안 오류가 발생했습니다. 해당 정의 JSON 파일이 기본 cwords 디렉터리에 있는지 확인하세요. "
-#: 설명 is better to use in this case
 "참고: 기본 크로스워드 데이터는 번역된 버전이 로케일 디렉토리에 없을 때만 액세스됩니다."
+#: 설명 is better to use in this case
 
 #: src/main.py:798
 msgid ""
@@ -277,8 +278,7 @@ msgstr "스마트 스킵"
 
 #: src/cword_webapp/templates/index.html:208
 msgid "Click To Zoom"
-msgstr "클릭하여 줌"
-#: that was translated to "click the zoom"
+msgstr "확대하려면 클릭하세요"
 
 #: src/cword_webapp/templates/index.html:217
 msgid "You are viewing"
