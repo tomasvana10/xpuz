@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-19 12:02+1100\n"
+"POT-Creation-Date: 2024-05-06 11:46+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: gd <LL@li.org>\n"
@@ -19,125 +19,149 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
+#: main.py:78 main.py:129 main.py:270 main.py:338
 msgid "Crossword Puzzle"
 msgstr "Tòimhseachan Crois-fhacal"
 
-#: src/main.py:88
+#: main.py:145
 msgid "View crosswords"
 msgstr "Seall crois-fhacal"
 
-#: src/main.py:92
+#: main.py:154
 msgid "Exit the app"
 msgstr "Cuir a-mach an aplacaid"
 
-#: src/main.py:98
+#: main.py:165
 msgid "Global Settings"
 msgstr "Roghainnean cruinne"
 
-#: src/main.py:102
+#: main.py:172
 msgid "Languages"
 msgstr "Cànanan"
 
-#: src/main.py:108
+#: main.py:184
 msgid "Size"
 msgstr "Meud"
 
-#: src/main.py:115
+#: main.py:203
 msgid "light"
 msgstr "aotrom"
 
-#: src/main.py:115
+#: main.py:203
 msgid "dark"
 msgstr "dorcha"
 
-#: src/main.py:115
+#: main.py:203
 msgid "system"
 msgstr "siostam"
 
-#: src/main.py:116
+#: main.py:206 main.py:220
 msgid "Appearance"
 msgstr "Coltas"
 
-#: src/main.py:138 src/main.py:267
+#: main.py:226
+msgid "terrible"
+msgstr "uamhasach"
+
+#: main.py:226
+msgid "poor"
+msgstr "bochd"
+
+#: main.py:226
+msgid "average"
+msgstr "cuibheasach"
+
+#: main.py:226
+msgid "great"
+msgstr "sgoinneil"
+
+#: main.py:226
+msgid "perfect"
+msgstr "foirfe"
+
+#: main.py:230
+msgid "Crossword Quality"
+msgstr "Càileachd Crossford"
+
+#: main.py:262 main.py:415
 msgid "Crossword Browser"
 msgstr "Brabhsair crois-fhacal"
 
-#: src/main.py:269
+#: main.py:420
 msgid "Go back"
 msgstr "Theirig air ais"
 
-#: src/main.py:274
+#: main.py:431
 msgid "Load crossword"
 msgstr "Luchdaich a-nuas crossword"
 
-#: src/main.py:278
+#: main.py:440
 msgid "Open web app"
 msgstr "Fosgail app lìn"
 
-#: src/main.py:282
+#: main.py:449
 msgid "Terminate web app"
 msgstr "Cuir crìoch air an aplacaid lìn"
 
-#: src/main.py:288
+#: main.py:460
 msgid "Word count preferences"
 msgstr "Roghainnean àireamh fhaclan"
 
-#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
+#: main.py:474 main.py:536 main.py:582 main.py:802
 msgid "Select word count"
 msgstr "Tagh àireamh facal"
 
-#: src/main.py:297 src/main.py:371 src/main.py:542
+#: main.py:478 main.py:581 main.py:820
 msgid "Maximum"
 msgstr "As àirde"
 
-#: src/main.py:303
+#: main.py:489
 msgid "Custom"
 msgstr "Gnàthach"
 
-#: src/main.py:462
+#: main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr ""
 "Gus an obair seo a choileanadh, feumaidh tu cealla a thaghadh an toiseach."
 
-#: src/main.py:589
+#: main.py:886
 msgid "View"
 msgstr "Sealladh"
 
-#: src/cword_webapp/templates/index.html:230 src/main.py:591
+#: main.py:893
 msgid "Close"
 msgstr "Dùin"
 
-#: src/main.py:681 src/main.py:705
+#: main.py:1042 main.py:1086
 msgid "difficulty"
 msgstr "duilgheadas"
 
-#: src/main.py:702
+#: main.py:1078
 msgid "Total words"
 msgstr "Faclan iomlan"
 
-#: src/main.py:705
+#: main.py:1085
 msgid "Difficulty"
 msgstr "Duilgheadas"
 
-#: src/main.py:710
+#: main.py:1098
 msgid "Select"
 msgstr "Tagh"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Restart"
 msgstr "Ath-thòisich"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr ""
 "A bheil thu cinnteach gu bheil thu airson an aplacaid ath-thòiseachadh?"
 
-#: src/main.py:749
+#: main.py:1156
 msgid "Exit"
 msgstr "Ar-a-mach"
 
-#: src/main.py:750
+#: main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -145,11 +169,11 @@ msgstr ""
 "A bheil thu cinnteach gu bheil thu airson an aplacaid fhàgail? Ma tha an "
 "aplacaid lìn a 'ruith, thèid a thoirt gu crìch."
 
-#: src/main.py:755
+#: main.py:1166
 msgid "Back to home"
 msgstr "Air ais dhan dachaigh"
 
-#: src/main.py:756
+#: main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -157,28 +181,32 @@ msgstr ""
 "A bheil thu cinnteach gu bheil thu airson a dhol air ais chun sgrion "
 "dachaigh? Thèid an app lìn a thoirt gu crìch."
 
-#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
-#: src/main.py:797
+#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
+#: main.py:1240
 msgid "Error"
 msgstr "Mearachd"
 
-#: src/main.py:772
+#: main.py:1190
 msgid "This language is already selected."
 msgstr "Tha an cànan seo air a thaghadh mu thràth."
 
-#: src/main.py:775
+#: main.py:1195
 msgid "This size is already selected."
 msgstr "Tha am meud seo air a thaghadh mu thràth."
 
-#: src/main.py:778
+#: main.py:1200
 msgid "This appearance is already selected."
 msgstr "Tha an coltas seo air a thaghadh mar-thà."
 
-#: src/main.py:781
+#: main.py:1205
+msgid "This quality is already selected."
+msgstr "Tha an càileachd seo air a thaghadh mar-thà."
+
+#: main.py:1210
 msgid "Info"
 msgstr "Fiosrachadh"
 
-#: src/main.py:782
+#: main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -202,7 +230,7 @@ msgstr ""
 "Activity Monitor air MacOS, no, dìreach ath-thòisich do choimpiutair gus an "
 "crìochnachadh."
 
-#: src/main.py:792
+#: main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -215,91 +243,13 @@ msgstr ""
 "fhacal bunaiteach ach nuair nach eil an dreach eadar-theangaichte aige an "
 "làthair anns an eòlaire locales."
 
-#: src/main.py:798
+#: main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr ""
 "Thachair mearachd ann an gineadh crois-fhacal. Feuch an toir thu sùil air "
 "tuilleadh fiosrachaidh anns a’ chonsail"
-
-#: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:216
-msgid "Crossword Puzzle - Game"
-msgstr "Tòimhseachan Crois-fhacal - Gèam"
-
-#: src/cword_webapp/templates/index.html:133
-msgid "Across"
-msgstr "Tarsainn"
-
-#: src/cword_webapp/templates/index.html:154
-msgid "Down"
-msgstr "Sìos"
-
-#: src/cword_webapp/templates/index.html:177
-msgid "Reveal"
-msgstr "Nochd"
-
-#: src/cword_webapp/templates/index.html:179
-#: src/cword_webapp/templates/index.html:186
-msgid "Cell"
-msgstr "cill"
-
-#: src/cword_webapp/templates/index.html:180
-#: src/cword_webapp/templates/index.html:187
-#: src/cword_webapp/templates/index.html:193
-msgid "Word"
-msgstr "Facal"
-
-#: src/cword_webapp/templates/index.html:181
-#: src/cword_webapp/templates/index.html:188
-#: src/cword_webapp/templates/index.html:194
-msgid "Grid"
-msgstr "Clèithe"
-
-#: src/cword_webapp/templates/index.html:184
-msgid "Check"
-msgstr "Thoir sùil"
-
-#: src/cword_webapp/templates/index.html:191
-msgid "Clear"
-msgstr "Soilleir"
-
-#: src/cword_webapp/templates/index.html:202
-msgid "Smart Skip"
-msgstr "Sgeama Smart"
-
-#: src/cword_webapp/templates/index.html:208
-msgid "Click To Zoom"
-msgstr "Cliog gus gluasad"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "You are viewing"
-msgstr "Tha thu a’ coimhead"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "from"
-msgstr "bho"
-
-#: src/cword_webapp/templates/index.html:219
-msgid "word(s) could not be inserted, sorry."
-msgstr "cha b’ urrainn dhuinn facal(ean) a chuir a-steach, tha mi duilich."
-
-#: src/cword_webapp/templates/index.html:220
-msgid "Word count (adjusted)"
-msgstr "Cunntas fhaclan (air atharrachadh)"
-
-#: src/cword_webapp/templates/index.html:222
-msgid "Word count"
-msgstr "Cunntas fhaclan"
-
-#: src/cword_webapp/templates/index.html:224
-msgid "Continue"
-msgstr "Lean air adhart"
-
-#: src/cword_webapp/templates/index.html:229
-msgid "You completed the crossword!"
-msgstr "Chrìochnaich thu an crois-fhacal!"
 
 msgid "Easy"
 msgstr "Furasta"
@@ -363,3 +313,57 @@ msgstr "Saidheans Coimpiutaireachd"
 #~ msgstr ""
 #~ "Gus cill/facal a sgrùdadh no fhoillseachadh, feumaidh tu cealla a thaghadh "
 #~ "an-toiseach"
+
+#~ msgid "Crossword Puzzle - Game"
+#~ msgstr "Tòimhseachan Crois-fhacal - Gèam"
+
+#~ msgid "Across"
+#~ msgstr "Tarsainn"
+
+#~ msgid "Down"
+#~ msgstr "Sìos"
+
+#~ msgid "Reveal"
+#~ msgstr "Nochd"
+
+#~ msgid "Cell"
+#~ msgstr "cill"
+
+#~ msgid "Word"
+#~ msgstr "Facal"
+
+#~ msgid "Grid"
+#~ msgstr "Clèithe"
+
+#~ msgid "Check"
+#~ msgstr "Thoir sùil"
+
+#~ msgid "Clear"
+#~ msgstr "Soilleir"
+
+#~ msgid "Smart Skip"
+#~ msgstr "Sgeama Smart"
+
+#~ msgid "Click To Zoom"
+#~ msgstr "Cliog gus gluasad"
+
+#~ msgid "You are viewing"
+#~ msgstr "Tha thu a’ coimhead"
+
+#~ msgid "from"
+#~ msgstr "bho"
+
+#~ msgid "word(s) could not be inserted, sorry."
+#~ msgstr "cha b’ urrainn dhuinn facal(ean) a chuir a-steach, tha mi duilich."
+
+#~ msgid "Word count (adjusted)"
+#~ msgstr "Cunntas fhaclan (air atharrachadh)"
+
+#~ msgid "Word count"
+#~ msgstr "Cunntas fhaclan"
+
+#~ msgid "Continue"
+#~ msgstr "Lean air adhart"
+
+#~ msgid "You completed the crossword!"
+#~ msgstr "Chrìochnaich thu an crois-fhacal!"

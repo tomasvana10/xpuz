@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-19 12:02+1100\n"
+"POT-Creation-Date: 2024-05-06 11:46+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: sq <LL@li.org>\n"
@@ -19,123 +19,147 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
+#: main.py:78 main.py:129 main.py:270 main.py:338
 msgid "Crossword Puzzle"
 msgstr "Fjalekryq"
 
-#: src/main.py:88
+#: main.py:145
 msgid "View crosswords"
 msgstr "Shikoni fjalëkryqet"
 
-#: src/main.py:92
+#: main.py:154
 msgid "Exit the app"
 msgstr "Dilni nga aplikacioni"
 
-#: src/main.py:98
+#: main.py:165
 msgid "Global Settings"
 msgstr "Parametrat globale"
 
-#: src/main.py:102
+#: main.py:172
 msgid "Languages"
 msgstr "Gjuhët"
 
-#: src/main.py:108
+#: main.py:184
 msgid "Size"
 msgstr "Madhësia"
 
-#: src/main.py:115
+#: main.py:203
 msgid "light"
 msgstr "dritë"
 
-#: src/main.py:115
+#: main.py:203
 msgid "dark"
 msgstr "errët"
 
-#: src/main.py:115
+#: main.py:203
 msgid "system"
 msgstr "sistemi"
 
-#: src/main.py:116
+#: main.py:206 main.py:220
 msgid "Appearance"
 msgstr "Pamja e jashtme"
 
-#: src/main.py:138 src/main.py:267
+#: main.py:226
+msgid "terrible"
+msgstr "i tmerrshëm"
+
+#: main.py:226
+msgid "poor"
+msgstr "i varfër"
+
+#: main.py:226
+msgid "average"
+msgstr "mesatare"
+
+#: main.py:226
+msgid "great"
+msgstr "i madh"
+
+#: main.py:226
+msgid "perfect"
+msgstr "i përkryer"
+
+#: main.py:230
+msgid "Crossword Quality"
+msgstr "Cilësia e fjalëkryqit"
+
+#: main.py:262 main.py:415
 msgid "Crossword Browser"
 msgstr "Shfletuesi i fjalëkryqeve"
 
-#: src/main.py:269
+#: main.py:420
 msgid "Go back"
 msgstr "Kthehu mbrapa"
 
-#: src/main.py:274
+#: main.py:431
 msgid "Load crossword"
 msgstr "Ngarko fjalëkryq"
 
-#: src/main.py:278
+#: main.py:440
 msgid "Open web app"
 msgstr "Hap aplikacionin në internet"
 
-#: src/main.py:282
+#: main.py:449
 msgid "Terminate web app"
 msgstr "Përfundoni aplikacionin në internet"
 
-#: src/main.py:288
+#: main.py:460
 msgid "Word count preferences"
 msgstr "Preferencat e numrit të fjalëve"
 
-#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
+#: main.py:474 main.py:536 main.py:582 main.py:802
 msgid "Select word count"
 msgstr "Zgjidhni numrin e fjalëve"
 
-#: src/main.py:297 src/main.py:371 src/main.py:542
+#: main.py:478 main.py:581 main.py:820
 msgid "Maximum"
 msgstr "Maksimumi"
 
-#: src/main.py:303
+#: main.py:489
 msgid "Custom"
 msgstr "Me porosi"
 
-#: src/main.py:462
+#: main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr "Për të kryer këtë operacion, së pari duhet të zgjidhni një qelizë."
 
-#: src/main.py:589
+#: main.py:886
 msgid "View"
 msgstr "Pamje"
 
-#: src/cword_webapp/templates/index.html:230 src/main.py:591
+#: main.py:893
 msgid "Close"
 msgstr "Mbylle"
 
-#: src/main.py:681 src/main.py:705
+#: main.py:1042 main.py:1086
 msgid "difficulty"
 msgstr "vështirësi"
 
-#: src/main.py:702
+#: main.py:1078
 msgid "Total words"
 msgstr "Gjithsej fjalë"
 
-#: src/main.py:705
+#: main.py:1085
 msgid "Difficulty"
 msgstr "Vështirësi"
 
-#: src/main.py:710
+#: main.py:1098
 msgid "Select"
 msgstr "Zgjidhni"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Restart"
 msgstr "Rifillo, fillo përsëri"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "Jeni i sigurt që dëshironi të rinisni aplikacionin?"
 
-#: src/main.py:749
+#: main.py:1156
 msgid "Exit"
 msgstr "Dilni"
 
-#: src/main.py:750
+#: main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -143,11 +167,11 @@ msgstr ""
 "Je i sigurt që dëshiron të dalësh nga aplikacioni? Nëse aplikacioni i uebit "
 "po funksionon, ai do të mbyllet."
 
-#: src/main.py:755
+#: main.py:1166
 msgid "Back to home"
 msgstr "Përsëri në shtëpi"
 
-#: src/main.py:756
+#: main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -155,28 +179,32 @@ msgstr ""
 "Jeni i sigurt që dëshironi të ktheheni në ekranin bazë? Aplikacioni i uebit "
 "do të mbyllet."
 
-#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
-#: src/main.py:797
+#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
+#: main.py:1240
 msgid "Error"
 msgstr "Gabim"
 
-#: src/main.py:772
+#: main.py:1190
 msgid "This language is already selected."
 msgstr "Kjo gjuhë është zgjedhur tashmë."
 
-#: src/main.py:775
+#: main.py:1195
 msgid "This size is already selected."
 msgstr "Kjo madhësi është zgjedhur tashmë."
 
-#: src/main.py:778
+#: main.py:1200
 msgid "This appearance is already selected."
 msgstr "Kjo pamje është përzgjedhur tashmë."
 
-#: src/main.py:781
+#: main.py:1205
+msgid "This quality is already selected."
+msgstr "Kjo cilësi është zgjedhur tashmë."
+
+#: main.py:1210
 msgid "Info"
 msgstr "Informacion"
 
-#: src/main.py:782
+#: main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -200,7 +228,7 @@ msgstr ""
 "aktivitetit në MacOS ose thjesht rinisni kompjuterin tuaj për t'i përfunduar"
 " ato."
 
-#: src/main.py:792
+#: main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -212,91 +240,13 @@ msgstr ""
 "bazë cwords. SHËNIM: Të dhënat bazë të fjalëkryqit aksesohen vetëm kur "
 "versioni i përkthyer i tyre nuk është i pranishëm në direktorinë e lokaleve."
 
-#: src/main.py:798
+#: main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr ""
 "Ndodhi një gabim në gjenerimin e fjalëkryqit. Ju lutemi shikoni informacione"
 " të mëtejshme në tastierë"
-
-#: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:216
-msgid "Crossword Puzzle - Game"
-msgstr "Fjalëkryq Puzzle - Lojë"
-
-#: src/cword_webapp/templates/index.html:133
-msgid "Across"
-msgstr "Përtej"
-
-#: src/cword_webapp/templates/index.html:154
-msgid "Down"
-msgstr "Poshtë"
-
-#: src/cword_webapp/templates/index.html:177
-msgid "Reveal"
-msgstr "Zbuloni"
-
-#: src/cword_webapp/templates/index.html:179
-#: src/cword_webapp/templates/index.html:186
-msgid "Cell"
-msgstr "Qelizë"
-
-#: src/cword_webapp/templates/index.html:180
-#: src/cword_webapp/templates/index.html:187
-#: src/cword_webapp/templates/index.html:193
-msgid "Word"
-msgstr "fjalë"
-
-#: src/cword_webapp/templates/index.html:181
-#: src/cword_webapp/templates/index.html:188
-#: src/cword_webapp/templates/index.html:194
-msgid "Grid"
-msgstr "Rrjeti"
-
-#: src/cword_webapp/templates/index.html:184
-msgid "Check"
-msgstr "Kontrollo"
-
-#: src/cword_webapp/templates/index.html:191
-msgid "Clear"
-msgstr "Qartë"
-
-#: src/cword_webapp/templates/index.html:202
-msgid "Smart Skip"
-msgstr "Kalim i zgjuar"
-
-#: src/cword_webapp/templates/index.html:208
-msgid "Click To Zoom"
-msgstr "Klikoni për të zmadhuar"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "You are viewing"
-msgstr "Ju jeni duke parë"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "from"
-msgstr "nga"
-
-#: src/cword_webapp/templates/index.html:219
-msgid "word(s) could not be inserted, sorry."
-msgstr "fjala(at) nuk mund të futej, më falni."
-
-#: src/cword_webapp/templates/index.html:220
-msgid "Word count (adjusted)"
-msgstr "Numri i fjalëve (i rregulluar)"
-
-#: src/cword_webapp/templates/index.html:222
-msgid "Word count"
-msgstr "Numërimi i fjalëve"
-
-#: src/cword_webapp/templates/index.html:224
-msgid "Continue"
-msgstr "Vazhdoni"
-
-#: src/cword_webapp/templates/index.html:229
-msgid "You completed the crossword!"
-msgstr "E plotësove fjalëkryqin!"
 
 msgid "Easy"
 msgstr "Lehtë"
@@ -360,3 +310,57 @@ msgstr "Shkenca Kompjuterike"
 #~ msgstr ""
 #~ "Për të kontrolluar ose zbuluar një qelizë/fjalë, fillimisht duhet të "
 #~ "zgjidhni një qelizë"
+
+#~ msgid "Crossword Puzzle - Game"
+#~ msgstr "Fjalëkryq Puzzle - Lojë"
+
+#~ msgid "Across"
+#~ msgstr "Përtej"
+
+#~ msgid "Down"
+#~ msgstr "Poshtë"
+
+#~ msgid "Reveal"
+#~ msgstr "Zbuloni"
+
+#~ msgid "Cell"
+#~ msgstr "Qelizë"
+
+#~ msgid "Word"
+#~ msgstr "fjalë"
+
+#~ msgid "Grid"
+#~ msgstr "Rrjeti"
+
+#~ msgid "Check"
+#~ msgstr "Kontrollo"
+
+#~ msgid "Clear"
+#~ msgstr "Qartë"
+
+#~ msgid "Smart Skip"
+#~ msgstr "Kalim i zgjuar"
+
+#~ msgid "Click To Zoom"
+#~ msgstr "Klikoni për të zmadhuar"
+
+#~ msgid "You are viewing"
+#~ msgstr "Ju jeni duke parë"
+
+#~ msgid "from"
+#~ msgstr "nga"
+
+#~ msgid "word(s) could not be inserted, sorry."
+#~ msgstr "fjala(at) nuk mund të futej, më falni."
+
+#~ msgid "Word count (adjusted)"
+#~ msgstr "Numri i fjalëve (i rregulluar)"
+
+#~ msgid "Word count"
+#~ msgstr "Numërimi i fjalëve"
+
+#~ msgid "Continue"
+#~ msgstr "Vazhdoni"
+
+#~ msgid "You completed the crossword!"
+#~ msgstr "E plotësove fjalëkryqin!"

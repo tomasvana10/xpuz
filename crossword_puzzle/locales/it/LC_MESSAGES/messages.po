@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-19 12:02+1100\n"
+"POT-Creation-Date: 2024-05-06 11:46+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: it <LL@li.org>\n"
@@ -19,124 +19,148 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
+#: main.py:78 main.py:129 main.py:270 main.py:338
 msgid "Crossword Puzzle"
 msgstr "Parole crociate"
 
-#: src/main.py:88
+#: main.py:145
 msgid "View crosswords"
 msgstr "Visualizza i cruciverba"
 
-#: src/main.py:92
+#: main.py:154
 msgid "Exit the app"
 msgstr "Esci dall'app"
 
-#: src/main.py:98
+#: main.py:165
 msgid "Global Settings"
 msgstr "Impostazioni globali"
 
-#: src/main.py:102
+#: main.py:172
 msgid "Languages"
 msgstr "Le lingue"
 
-#: src/main.py:108
+#: main.py:184
 msgid "Size"
 msgstr "Misurare"
 
-#: src/main.py:115
+#: main.py:203
 msgid "light"
 msgstr "leggero"
 
-#: src/main.py:115
+#: main.py:203
 msgid "dark"
 msgstr "buio"
 
-#: src/main.py:115
+#: main.py:203
 msgid "system"
 msgstr "sistema"
 
-#: src/main.py:116
+#: main.py:206 main.py:220
 msgid "Appearance"
 msgstr "Aspetto"
 
-#: src/main.py:138 src/main.py:267
+#: main.py:226
+msgid "terrible"
+msgstr "terribile"
+
+#: main.py:226
+msgid "poor"
+msgstr "povero"
+
+#: main.py:226
+msgid "average"
+msgstr "nella media"
+
+#: main.py:226
+msgid "great"
+msgstr "fantastico"
+
+#: main.py:226
+msgid "perfect"
+msgstr "perfetto"
+
+#: main.py:230
+msgid "Crossword Quality"
+msgstr "Qualità dei cruciverba"
+
+#: main.py:262 main.py:415
 msgid "Crossword Browser"
 msgstr "Navigatore di cruciverba"
 
-#: src/main.py:269
+#: main.py:420
 msgid "Go back"
 msgstr "Torna indietro"
 
-#: src/main.py:274
+#: main.py:431
 msgid "Load crossword"
 msgstr "Carica il cruciverba"
 
-#: src/main.py:278
+#: main.py:440
 msgid "Open web app"
 msgstr "Apri l'app Web"
 
-#: src/main.py:282
+#: main.py:449
 msgid "Terminate web app"
 msgstr "Termina l'app Web"
 
-#: src/main.py:288
+#: main.py:460
 msgid "Word count preferences"
 msgstr "Preferenze sul conteggio delle parole"
 
-#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
+#: main.py:474 main.py:536 main.py:582 main.py:802
 msgid "Select word count"
 msgstr "Seleziona il conteggio delle parole"
 
-#: src/main.py:297 src/main.py:371 src/main.py:542
+#: main.py:478 main.py:581 main.py:820
 msgid "Maximum"
 msgstr "Massimo"
 
-#: src/main.py:303
+#: main.py:489
 msgid "Custom"
 msgstr "Costume"
 
-#: src/main.py:462
+#: main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr ""
 "Per eseguire questa operazione, è necessario prima selezionare una cella."
 
-#: src/main.py:589
+#: main.py:886
 msgid "View"
 msgstr "Visualizzazione"
 
-#: src/cword_webapp/templates/index.html:230 src/main.py:591
+#: main.py:893
 msgid "Close"
 msgstr "Vicino"
 
-#: src/main.py:681 src/main.py:705
+#: main.py:1042 main.py:1086
 msgid "difficulty"
 msgstr "difficoltà"
 
-#: src/main.py:702
+#: main.py:1078
 msgid "Total words"
 msgstr "Parole totali"
 
-#: src/main.py:705
+#: main.py:1085
 msgid "Difficulty"
 msgstr "Difficoltà"
 
-#: src/main.py:710
+#: main.py:1098
 msgid "Select"
 msgstr "Selezionare"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Restart"
 msgstr "Ricomincia"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "Sei sicuro di voler riavviare l'app?"
 
-#: src/main.py:749
+#: main.py:1156
 msgid "Exit"
 msgstr "Uscita"
 
-#: src/main.py:750
+#: main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -144,11 +168,11 @@ msgstr ""
 "Sei sicuro di voler uscire dall'app? Se l'app Web è in esecuzione, verrà "
 "terminata."
 
-#: src/main.py:755
+#: main.py:1166
 msgid "Back to home"
 msgstr "Tornare a casa"
 
-#: src/main.py:756
+#: main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -156,28 +180,32 @@ msgstr ""
 "Sei sicuro di voler tornare alla schermata principale? L'app Web verrà "
 "terminata."
 
-#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
-#: src/main.py:797
+#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
+#: main.py:1240
 msgid "Error"
 msgstr "Errore"
 
-#: src/main.py:772
+#: main.py:1190
 msgid "This language is already selected."
 msgstr "Questa lingua è già selezionata."
 
-#: src/main.py:775
+#: main.py:1195
 msgid "This size is already selected."
 msgstr "Questa dimensione è già selezionata."
 
-#: src/main.py:778
+#: main.py:1200
 msgid "This appearance is already selected."
 msgstr "Questo aspetto è già selezionato."
 
-#: src/main.py:781
+#: main.py:1205
+msgid "This quality is already selected."
+msgstr "Questa qualità è già selezionata."
+
+#: main.py:1210
 msgid "Info"
 msgstr "Informazioni"
 
-#: src/main.py:782
+#: main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -199,7 +227,7 @@ msgstr ""
 "possono essere terminati tramite Activity Monitor su MacOS o semplicemente "
 "riavviando il computer per terminarli."
 
-#: src/main.py:792
+#: main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -212,91 +240,13 @@ msgstr ""
 "base solo quando la versione tradotta non è presente nella directory "
 "locales."
 
-#: src/main.py:798
+#: main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr ""
 "Si è verificato un errore durante la generazione del cruciverba. Si prega di"
 " consultare ulteriori informazioni nella console"
-
-#: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:216
-msgid "Crossword Puzzle - Game"
-msgstr "Cruciverba - Gioco"
-
-#: src/cword_webapp/templates/index.html:133
-msgid "Across"
-msgstr "Attraverso"
-
-#: src/cword_webapp/templates/index.html:154
-msgid "Down"
-msgstr "Giù"
-
-#: src/cword_webapp/templates/index.html:177
-msgid "Reveal"
-msgstr "Svelare"
-
-#: src/cword_webapp/templates/index.html:179
-#: src/cword_webapp/templates/index.html:186
-msgid "Cell"
-msgstr "Cellula"
-
-#: src/cword_webapp/templates/index.html:180
-#: src/cword_webapp/templates/index.html:187
-#: src/cword_webapp/templates/index.html:193
-msgid "Word"
-msgstr "Parola"
-
-#: src/cword_webapp/templates/index.html:181
-#: src/cword_webapp/templates/index.html:188
-#: src/cword_webapp/templates/index.html:194
-msgid "Grid"
-msgstr "Griglia"
-
-#: src/cword_webapp/templates/index.html:184
-msgid "Check"
-msgstr "Controllo"
-
-#: src/cword_webapp/templates/index.html:191
-msgid "Clear"
-msgstr "Chiaro"
-
-#: src/cword_webapp/templates/index.html:202
-msgid "Smart Skip"
-msgstr "Salta intelligente"
-
-#: src/cword_webapp/templates/index.html:208
-msgid "Click To Zoom"
-msgstr "Fai clic per zoom"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "You are viewing"
-msgstr "Stai visualizzando"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "from"
-msgstr "da"
-
-#: src/cword_webapp/templates/index.html:219
-msgid "word(s) could not be inserted, sorry."
-msgstr "Impossibile inserire la parola, siamo spiacenti."
-
-#: src/cword_webapp/templates/index.html:220
-msgid "Word count (adjusted)"
-msgstr "Conteggio parole (aggiustato)"
-
-#: src/cword_webapp/templates/index.html:222
-msgid "Word count"
-msgstr "Conteggio delle parole"
-
-#: src/cword_webapp/templates/index.html:224
-msgid "Continue"
-msgstr "Continua"
-
-#: src/cword_webapp/templates/index.html:229
-msgid "You completed the crossword!"
-msgstr "Hai completato il cruciverba!"
 
 msgid "Easy"
 msgstr "Facile"
@@ -360,3 +310,57 @@ msgstr "Informatica"
 #~ msgstr ""
 #~ "Per controllare o rivelare una cella/parola, devi prima selezionare una "
 #~ "cella"
+
+#~ msgid "Crossword Puzzle - Game"
+#~ msgstr "Cruciverba - Gioco"
+
+#~ msgid "Across"
+#~ msgstr "Attraverso"
+
+#~ msgid "Down"
+#~ msgstr "Giù"
+
+#~ msgid "Reveal"
+#~ msgstr "Svelare"
+
+#~ msgid "Cell"
+#~ msgstr "Cellula"
+
+#~ msgid "Word"
+#~ msgstr "Parola"
+
+#~ msgid "Grid"
+#~ msgstr "Griglia"
+
+#~ msgid "Check"
+#~ msgstr "Controllo"
+
+#~ msgid "Clear"
+#~ msgstr "Chiaro"
+
+#~ msgid "Smart Skip"
+#~ msgstr "Salta intelligente"
+
+#~ msgid "Click To Zoom"
+#~ msgstr "Fai clic per zoom"
+
+#~ msgid "You are viewing"
+#~ msgstr "Stai visualizzando"
+
+#~ msgid "from"
+#~ msgstr "da"
+
+#~ msgid "word(s) could not be inserted, sorry."
+#~ msgstr "Impossibile inserire la parola, siamo spiacenti."
+
+#~ msgid "Word count (adjusted)"
+#~ msgstr "Conteggio parole (aggiustato)"
+
+#~ msgid "Word count"
+#~ msgstr "Conteggio delle parole"
+
+#~ msgid "Continue"
+#~ msgstr "Continua"
+
+#~ msgid "You completed the crossword!"
+#~ msgstr "Hai completato il cruciverba!"

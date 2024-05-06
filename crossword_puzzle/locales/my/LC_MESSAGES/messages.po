@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-19 12:02+1100\n"
+"POT-Creation-Date: 2024-05-06 11:46+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: my <LL@li.org>\n"
@@ -19,123 +19,147 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
+#: main.py:78 main.py:129 main.py:270 main.py:338
 msgid "Crossword Puzzle"
 msgstr "Crossword ပဟေဋ္ဌိ"
 
-#: src/main.py:88
+#: main.py:145
 msgid "View crosswords"
 msgstr "စကားဝှက်များကိုကြည့်ပါ။"
 
-#: src/main.py:92
+#: main.py:154
 msgid "Exit the app"
 msgstr "အက်ပ်မှထွက်ပါ။"
 
-#: src/main.py:98
+#: main.py:165
 msgid "Global Settings"
 msgstr "ကမ္ဘာလုံးဆိုင်ရာ ဆက်တင်များ"
 
-#: src/main.py:102
+#: main.py:172
 msgid "Languages"
 msgstr "ဘာသာစကားများ"
 
-#: src/main.py:108
+#: main.py:184
 msgid "Size"
 msgstr "အရွယ်အစား"
 
-#: src/main.py:115
+#: main.py:203
 msgid "light"
 msgstr "အလင်း"
 
-#: src/main.py:115
+#: main.py:203
 msgid "dark"
 msgstr "မှောငျမိုကျသော"
 
-#: src/main.py:115
+#: main.py:203
 msgid "system"
 msgstr "စနစ်"
 
-#: src/main.py:116
+#: main.py:206 main.py:220
 msgid "Appearance"
 msgstr "အသွင်အပြင်"
 
-#: src/main.py:138 src/main.py:267
+#: main.py:226
+msgid "terrible"
+msgstr "ကေြာက်လန့်ဘွယ်သော"
+
+#: main.py:226
+msgid "poor"
+msgstr "ဆင်းရဲသော"
+
+#: main.py:226
+msgid "average"
+msgstr "ပျမ်းမှျမှု"
+
+#: main.py:226
+msgid "great"
+msgstr "ကြီးမားသော"
+
+#: main.py:226
+msgid "perfect"
+msgstr "စုံလင်သော"
+
+#: main.py:230
+msgid "Crossword Quality"
+msgstr "စကားလုံးအရည်အသွေး"
+
+#: main.py:262 main.py:415
 msgid "Crossword Browser"
 msgstr "Crossword Browser"
 
-#: src/main.py:269
+#: main.py:420
 msgid "Go back"
 msgstr "ပြန်သွားသည်"
 
-#: src/main.py:274
+#: main.py:431
 msgid "Load crossword"
 msgstr "စကားဝှက်ကို တင်ပါ။"
 
-#: src/main.py:278
+#: main.py:440
 msgid "Open web app"
 msgstr "ဝဘ်အက်ပ်ကိုဖွင့်ပါ။"
 
-#: src/main.py:282
+#: main.py:449
 msgid "Terminate web app"
 msgstr "ဝဘ်အက်ပ်ကို ပိတ်ပါ။"
 
-#: src/main.py:288
+#: main.py:460
 msgid "Word count preferences"
 msgstr "စကားလုံးရေတွက်မှု ဦးစားပေး"
 
-#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
+#: main.py:474 main.py:536 main.py:582 main.py:802
 msgid "Select word count"
 msgstr "စကားလုံးအရေအတွက်ကို ရွေးပါ။"
 
-#: src/main.py:297 src/main.py:371 src/main.py:542
+#: main.py:478 main.py:581 main.py:820
 msgid "Maximum"
 msgstr "အများဆုံး"
 
-#: src/main.py:303
+#: main.py:489
 msgid "Custom"
 msgstr "စိတ်ကြိုက်"
 
-#: src/main.py:462
+#: main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr "ဒီစစ်ဆင်ရေးကိုလုပ်ဆောင်ရန်သင်ပထမ ဦး ဆုံးဆဲလ်ကိုရွေးချယ်ရမည်။"
 
-#: src/main.py:589
+#: main.py:886
 msgid "View"
 msgstr "အမြင်"
 
-#: src/cword_webapp/templates/index.html:230 src/main.py:591
+#: main.py:893
 msgid "Close"
 msgstr "ပိတ်လိုက်"
 
-#: src/main.py:681 src/main.py:705
+#: main.py:1042 main.py:1086
 msgid "difficulty"
 msgstr "အခက်အခဲ"
 
-#: src/main.py:702
+#: main.py:1078
 msgid "Total words"
 msgstr "စုစုပေါင်းစကားလုံးများ"
 
-#: src/main.py:705
+#: main.py:1085
 msgid "Difficulty"
 msgstr "အခက်အခဲ"
 
-#: src/main.py:710
+#: main.py:1098
 msgid "Select"
 msgstr "ရွေးချယ်ပါ။"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Restart"
 msgstr "ပြန်စတင်သည်"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "အက်ပ်ကို ပြန်လည်စတင်လိုသည်မှာ သေချာပါသလား။"
 
-#: src/main.py:749
+#: main.py:1156
 msgid "Exit"
 msgstr "ထွက်ပေါက်"
 
-#: src/main.py:750
+#: main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -143,38 +167,42 @@ msgstr ""
 "အက်ပ်မှ ထွက်လိုသည်မှာ သေချာပါသလား။ ဝဘ်အက်ပ်ကို အသုံးပြုနေပါက ၎င်းကို "
 "ရပ်စဲသွားမည်ဖြစ်သည်။"
 
-#: src/main.py:755
+#: main.py:1166
 msgid "Back to home"
 msgstr "အိမ်ပြန်"
 
-#: src/main.py:756
+#: main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr "ပင်မစခရင်သို့ ပြန်သွားလိုသည်မှာ သေချာပါသလား။ ဝဘ်အက်ပ်ကို ရပ်စဲပါမည်။"
 
-#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
-#: src/main.py:797
+#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
+#: main.py:1240
 msgid "Error"
 msgstr "အမှား"
 
-#: src/main.py:772
+#: main.py:1190
 msgid "This language is already selected."
 msgstr "ဤဘာသာစကားကို ရွေးထားပြီးဖြစ်သည်။"
 
-#: src/main.py:775
+#: main.py:1195
 msgid "This size is already selected."
 msgstr "ဤအရွယ်အစားကို ရွေးထားပြီးဖြစ်သည်။"
 
-#: src/main.py:778
+#: main.py:1200
 msgid "This appearance is already selected."
 msgstr "ဤအသွင်အပြင်ကို ရွေးထားပြီးဖြစ်သည်။"
 
-#: src/main.py:781
+#: main.py:1205
+msgid "This quality is already selected."
+msgstr "ဒီအရည်အသွေးကိုရွေးချယ်ပြီးဖြစ်သည်။"
+
+#: main.py:1210
 msgid "Info"
 msgstr "အချက်အလက်"
 
-#: src/main.py:782
+#: main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -199,7 +227,7 @@ msgstr ""
 "ပိတ်ပစ်နိုင်သည် သို့မဟုတ် ၎င်းတို့ကို ရပ်တန့်ရန်အတွက် သင့်ကွန်ပျူတာကို "
 "ပြန်လည်စတင်ပါ။"
 
-#: src/main.py:792
+#: main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -212,91 +240,13 @@ msgstr ""
 "ဒေသန္တရလမ်းညွှန်တွင် မတွေ့ရသောအခါတွင်သာ အခြေခံစကားဝှက်ဒေတာကို "
 "ဝင်ရောက်ကြည့်ရှုနိုင်မည်ဖြစ်သည်။"
 
-#: src/main.py:798
+#: main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr ""
 "စကားဝှက်မျိုးဆက်တွင် အမှားအယွင်းတစ်ခု ဖြစ်ပေါ်ခဲ့သည်။ ကျေးဇူးပြု၍ "
 "ကွန်ဆိုးလ်တွင် နောက်ထပ်အချက်အလက်များကို ကြည့်ပါ။"
-
-#: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:216
-msgid "Crossword Puzzle - Game"
-msgstr "Crossword Puzzle - ဂိမ်း"
-
-#: src/cword_webapp/templates/index.html:133
-msgid "Across"
-msgstr "တစ်ဖက်မှာ"
-
-#: src/cword_webapp/templates/index.html:154
-msgid "Down"
-msgstr "ဆင်းတယ်။"
-
-#: src/cword_webapp/templates/index.html:177
-msgid "Reveal"
-msgstr "ထုတ်ဖေါ်"
-
-#: src/cword_webapp/templates/index.html:179
-#: src/cword_webapp/templates/index.html:186
-msgid "Cell"
-msgstr "ဆဲလ်"
-
-#: src/cword_webapp/templates/index.html:180
-#: src/cword_webapp/templates/index.html:187
-#: src/cword_webapp/templates/index.html:193
-msgid "Word"
-msgstr "စကားလုံး"
-
-#: src/cword_webapp/templates/index.html:181
-#: src/cword_webapp/templates/index.html:188
-#: src/cword_webapp/templates/index.html:194
-msgid "Grid"
-msgstr "ဂရစ်"
-
-#: src/cword_webapp/templates/index.html:184
-msgid "Check"
-msgstr "စစ်ဆေးပါ။"
-
-#: src/cword_webapp/templates/index.html:191
-msgid "Clear"
-msgstr "ရှင်းလင်းသော"
-
-#: src/cword_webapp/templates/index.html:202
-msgid "Smart Skip"
-msgstr "စမတ် skip skip"
-
-#: src/cword_webapp/templates/index.html:208
-msgid "Click To Zoom"
-msgstr "ချဲ့ရန်နှိပ်ပါ"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "You are viewing"
-msgstr "မင်းကြည့်နေတယ်။"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "from"
-msgstr "ထံမှ"
-
-#: src/cword_webapp/templates/index.html:219
-msgid "word(s) could not be inserted, sorry."
-msgstr "စကားလုံး(များ) မထည့်နိုင်ခဲ့ပါ။ တောင်းပန်ပါတယ်။"
-
-#: src/cword_webapp/templates/index.html:220
-msgid "Word count (adjusted)"
-msgstr "စကားလုံးအရေအတွက် (ချိန်ညှိထားသည်)"
-
-#: src/cword_webapp/templates/index.html:222
-msgid "Word count"
-msgstr "စကားလုံးအရေအတွက်"
-
-#: src/cword_webapp/templates/index.html:224
-msgid "Continue"
-msgstr "ဆက်လက်"
-
-#: src/cword_webapp/templates/index.html:229
-msgid "You completed the crossword!"
-msgstr "သင်သည် စကားဝှက်ကို ပြီးမြောက်ခဲ့သည်။"
 
 msgid "Easy"
 msgstr "လွယ်ပါတယ်။"
@@ -360,3 +310,57 @@ msgstr "ကွန်ပျူတာသိပ္ပံ"
 #~ msgstr ""
 #~ "ဆဲလ်/စကားလုံးတစ်လုံးကို စစ်ဆေးရန် သို့မဟုတ် ဖော်ထုတ်ရန်၊ သင်သည် ဆဲလ်တစ်ခုကို"
 #~ " ဦးစွာရွေးချယ်ရပါမည်။"
+
+#~ msgid "Crossword Puzzle - Game"
+#~ msgstr "Crossword Puzzle - ဂိမ်း"
+
+#~ msgid "Across"
+#~ msgstr "တစ်ဖက်မှာ"
+
+#~ msgid "Down"
+#~ msgstr "ဆင်းတယ်။"
+
+#~ msgid "Reveal"
+#~ msgstr "ထုတ်ဖေါ်"
+
+#~ msgid "Cell"
+#~ msgstr "ဆဲလ်"
+
+#~ msgid "Word"
+#~ msgstr "စကားလုံး"
+
+#~ msgid "Grid"
+#~ msgstr "ဂရစ်"
+
+#~ msgid "Check"
+#~ msgstr "စစ်ဆေးပါ။"
+
+#~ msgid "Clear"
+#~ msgstr "ရှင်းလင်းသော"
+
+#~ msgid "Smart Skip"
+#~ msgstr "စမတ် skip skip"
+
+#~ msgid "Click To Zoom"
+#~ msgstr "ချဲ့ရန်နှိပ်ပါ"
+
+#~ msgid "You are viewing"
+#~ msgstr "မင်းကြည့်နေတယ်။"
+
+#~ msgid "from"
+#~ msgstr "ထံမှ"
+
+#~ msgid "word(s) could not be inserted, sorry."
+#~ msgstr "စကားလုံး(များ) မထည့်နိုင်ခဲ့ပါ။ တောင်းပန်ပါတယ်။"
+
+#~ msgid "Word count (adjusted)"
+#~ msgstr "စကားလုံးအရေအတွက် (ချိန်ညှိထားသည်)"
+
+#~ msgid "Word count"
+#~ msgstr "စကားလုံးအရေအတွက်"
+
+#~ msgid "Continue"
+#~ msgstr "ဆက်လက်"
+
+#~ msgid "You completed the crossword!"
+#~ msgstr "သင်သည် စကားဝှက်ကို ပြီးမြောက်ခဲ့သည်။"

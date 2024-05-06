@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-19 12:02+1100\n"
+"POT-Creation-Date: 2024-05-06 11:46+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ro <LL@li.org>\n"
@@ -19,124 +19,148 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
+#: main.py:78 main.py:129 main.py:270 main.py:338
 msgid "Crossword Puzzle"
 msgstr "Cuvinte încrucișate"
 
-#: src/main.py:88
+#: main.py:145
 msgid "View crosswords"
 msgstr "Vizualizați cuvinte încrucișate"
 
-#: src/main.py:92
+#: main.py:154
 msgid "Exit the app"
 msgstr "Ieșiți din aplicație"
 
-#: src/main.py:98
+#: main.py:165
 msgid "Global Settings"
 msgstr "Setări globale"
 
-#: src/main.py:102
+#: main.py:172
 msgid "Languages"
 msgstr "Limbi"
 
-#: src/main.py:108
+#: main.py:184
 msgid "Size"
 msgstr "mărimea"
 
-#: src/main.py:115
+#: main.py:203
 msgid "light"
 msgstr "ușoară"
 
-#: src/main.py:115
+#: main.py:203
 msgid "dark"
 msgstr "întuneric"
 
-#: src/main.py:115
+#: main.py:203
 msgid "system"
 msgstr "sistem"
 
-#: src/main.py:116
+#: main.py:206 main.py:220
 msgid "Appearance"
 msgstr "Aspect"
 
-#: src/main.py:138 src/main.py:267
+#: main.py:226
+msgid "terrible"
+msgstr "teribil"
+
+#: main.py:226
+msgid "poor"
+msgstr "sărac"
+
+#: main.py:226
+msgid "average"
+msgstr "in medie"
+
+#: main.py:226
+msgid "great"
+msgstr "Grozav"
+
+#: main.py:226
+msgid "perfect"
+msgstr "perfect"
+
+#: main.py:230
+msgid "Crossword Quality"
+msgstr "Calitatea de cuvinte încrucișate"
+
+#: main.py:262 main.py:415
 msgid "Crossword Browser"
 msgstr "Browser de cuvinte încrucișate"
 
-#: src/main.py:269
+#: main.py:420
 msgid "Go back"
 msgstr "Întoarce-te"
 
-#: src/main.py:274
+#: main.py:431
 msgid "Load crossword"
 msgstr "Încarcă cuvinte încrucișate"
 
-#: src/main.py:278
+#: main.py:440
 msgid "Open web app"
 msgstr "Deschideți aplicația web"
 
-#: src/main.py:282
+#: main.py:449
 msgid "Terminate web app"
 msgstr "Închideți aplicația web"
 
-#: src/main.py:288
+#: main.py:460
 msgid "Word count preferences"
 msgstr "Preferințe pentru numărul de cuvinte"
 
-#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
+#: main.py:474 main.py:536 main.py:582 main.py:802
 msgid "Select word count"
 msgstr "Selectați numărul de cuvinte"
 
-#: src/main.py:297 src/main.py:371 src/main.py:542
+#: main.py:478 main.py:581 main.py:820
 msgid "Maximum"
 msgstr "Maxim"
 
-#: src/main.py:303
+#: main.py:489
 msgid "Custom"
 msgstr "Personalizat"
 
-#: src/main.py:462
+#: main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr ""
 "Pentru a efectua această operație, trebuie să selectați mai întâi o celulă."
 
-#: src/main.py:589
+#: main.py:886
 msgid "View"
 msgstr "Vedere"
 
-#: src/cword_webapp/templates/index.html:230 src/main.py:591
+#: main.py:893
 msgid "Close"
 msgstr "Închide"
 
-#: src/main.py:681 src/main.py:705
+#: main.py:1042 main.py:1086
 msgid "difficulty"
 msgstr "dificultate"
 
-#: src/main.py:702
+#: main.py:1078
 msgid "Total words"
 msgstr "Cuvinte în total"
 
-#: src/main.py:705
+#: main.py:1085
 msgid "Difficulty"
 msgstr "Dificultate"
 
-#: src/main.py:710
+#: main.py:1098
 msgid "Select"
 msgstr "Selectați"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Restart"
 msgstr "Repornire"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "Sigur doriți să reporniți aplicația?"
 
-#: src/main.py:749
+#: main.py:1156
 msgid "Exit"
 msgstr "Ieșire"
 
-#: src/main.py:750
+#: main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -144,39 +168,43 @@ msgstr ""
 "Sigur doriți să părăsiți aplicația? Dacă aplicația web rulează, aceasta va "
 "fi oprită."
 
-#: src/main.py:755
+#: main.py:1166
 msgid "Back to home"
 msgstr "Înapoi acasă"
 
-#: src/main.py:756
+#: main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
 "Sigur doriți să reveniți la ecranul de pornire? Aplicația web va fi închisă."
 
-#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
-#: src/main.py:797
+#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
+#: main.py:1240
 msgid "Error"
 msgstr "Eroare"
 
-#: src/main.py:772
+#: main.py:1190
 msgid "This language is already selected."
 msgstr "Această limbă este deja selectată."
 
-#: src/main.py:775
+#: main.py:1195
 msgid "This size is already selected."
 msgstr "Această dimensiune este deja selectată."
 
-#: src/main.py:778
+#: main.py:1200
 msgid "This appearance is already selected."
 msgstr "Acest aspect este deja selectat."
 
-#: src/main.py:781
+#: main.py:1205
+msgid "This quality is already selected."
+msgstr "Această calitate este deja selectată."
+
+#: main.py:1210
 msgid "Info"
 msgstr "Info"
 
-#: src/main.py:782
+#: main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -198,7 +226,7 @@ msgstr ""
 "au fost încheiate în mod corespunzător pot fi încheiate prin Activity "
 "Monitor pe MacOS sau pur și simplu reporniți computerul pentru a le închide."
 
-#: src/main.py:792
+#: main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -210,91 +238,13 @@ msgstr ""
 "cwords. NOTĂ: Datele de bază ale cuvintelor încrucișate sunt accesate numai "
 "atunci când versiunea sa tradusă nu este prezentă în directorul locale."
 
-#: src/main.py:798
+#: main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr ""
 "A apărut o eroare la generarea cuvintelor încrucișate. Vă rugăm să vedeți "
 "mai multe informații în consolă"
-
-#: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:216
-msgid "Crossword Puzzle - Game"
-msgstr "Cuvinte încrucișate - Joc"
-
-#: src/cword_webapp/templates/index.html:133
-msgid "Across"
-msgstr "Peste tot"
-
-#: src/cword_webapp/templates/index.html:154
-msgid "Down"
-msgstr "Jos"
-
-#: src/cword_webapp/templates/index.html:177
-msgid "Reveal"
-msgstr "Dezvălui"
-
-#: src/cword_webapp/templates/index.html:179
-#: src/cword_webapp/templates/index.html:186
-msgid "Cell"
-msgstr "Celulă"
-
-#: src/cword_webapp/templates/index.html:180
-#: src/cword_webapp/templates/index.html:187
-#: src/cword_webapp/templates/index.html:193
-msgid "Word"
-msgstr "Cuvânt"
-
-#: src/cword_webapp/templates/index.html:181
-#: src/cword_webapp/templates/index.html:188
-#: src/cword_webapp/templates/index.html:194
-msgid "Grid"
-msgstr "Grilă"
-
-#: src/cword_webapp/templates/index.html:184
-msgid "Check"
-msgstr "Verifica"
-
-#: src/cword_webapp/templates/index.html:191
-msgid "Clear"
-msgstr "clar"
-
-#: src/cword_webapp/templates/index.html:202
-msgid "Smart Skip"
-msgstr "Skip inteligent"
-
-#: src/cword_webapp/templates/index.html:208
-msgid "Click To Zoom"
-msgstr "Faceți clic pentru a mări"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "You are viewing"
-msgstr "Vizionați"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "from"
-msgstr "din"
-
-#: src/cword_webapp/templates/index.html:219
-msgid "word(s) could not be inserted, sorry."
-msgstr "cuvintele nu au putut fi inserate, scuze."
-
-#: src/cword_webapp/templates/index.html:220
-msgid "Word count (adjusted)"
-msgstr "Număr de cuvinte (ajustat)"
-
-#: src/cword_webapp/templates/index.html:222
-msgid "Word count"
-msgstr "Număr de cuvinte"
-
-#: src/cword_webapp/templates/index.html:224
-msgid "Continue"
-msgstr "Continua"
-
-#: src/cword_webapp/templates/index.html:229
-msgid "You completed the crossword!"
-msgstr "Ai completat cuvintele încrucișate!"
 
 msgid "Easy"
 msgstr "Uşor"
@@ -358,3 +308,57 @@ msgstr "Informatică"
 #~ msgstr ""
 #~ "Pentru a verifica sau dezvălui o celulă/cuvânt, trebuie mai întâi să "
 #~ "selectați o celulă"
+
+#~ msgid "Crossword Puzzle - Game"
+#~ msgstr "Cuvinte încrucișate - Joc"
+
+#~ msgid "Across"
+#~ msgstr "Peste tot"
+
+#~ msgid "Down"
+#~ msgstr "Jos"
+
+#~ msgid "Reveal"
+#~ msgstr "Dezvălui"
+
+#~ msgid "Cell"
+#~ msgstr "Celulă"
+
+#~ msgid "Word"
+#~ msgstr "Cuvânt"
+
+#~ msgid "Grid"
+#~ msgstr "Grilă"
+
+#~ msgid "Check"
+#~ msgstr "Verifica"
+
+#~ msgid "Clear"
+#~ msgstr "clar"
+
+#~ msgid "Smart Skip"
+#~ msgstr "Skip inteligent"
+
+#~ msgid "Click To Zoom"
+#~ msgstr "Faceți clic pentru a mări"
+
+#~ msgid "You are viewing"
+#~ msgstr "Vizionați"
+
+#~ msgid "from"
+#~ msgstr "din"
+
+#~ msgid "word(s) could not be inserted, sorry."
+#~ msgstr "cuvintele nu au putut fi inserate, scuze."
+
+#~ msgid "Word count (adjusted)"
+#~ msgstr "Număr de cuvinte (ajustat)"
+
+#~ msgid "Word count"
+#~ msgstr "Număr de cuvinte"
+
+#~ msgid "Continue"
+#~ msgstr "Continua"
+
+#~ msgid "You completed the crossword!"
+#~ msgstr "Ai completat cuvintele încrucișate!"

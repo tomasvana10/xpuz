@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-19 12:02+1100\n"
+"POT-Creation-Date: 2024-05-06 11:46+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: tr <LL@li.org>\n"
@@ -19,123 +19,147 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
+#: main.py:78 main.py:129 main.py:270 main.py:338
 msgid "Crossword Puzzle"
 msgstr "Çapraz bulmaca"
 
-#: src/main.py:88
+#: main.py:145
 msgid "View crosswords"
 msgstr "Bulmacaları görüntüle"
 
-#: src/main.py:92
+#: main.py:154
 msgid "Exit the app"
 msgstr "Uygulamadan çık"
 
-#: src/main.py:98
+#: main.py:165
 msgid "Global Settings"
 msgstr "Genel Ayarlar"
 
-#: src/main.py:102
+#: main.py:172
 msgid "Languages"
 msgstr "Diller"
 
-#: src/main.py:108
+#: main.py:184
 msgid "Size"
 msgstr "Boyut"
 
-#: src/main.py:115
+#: main.py:203
 msgid "light"
 msgstr "ışık"
 
-#: src/main.py:115
+#: main.py:203
 msgid "dark"
 msgstr "karanlık"
 
-#: src/main.py:115
+#: main.py:203
 msgid "system"
 msgstr "sistem"
 
-#: src/main.py:116
+#: main.py:206 main.py:220
 msgid "Appearance"
 msgstr "Dış görünüş"
 
-#: src/main.py:138 src/main.py:267
+#: main.py:226
+msgid "terrible"
+msgstr "korkunç"
+
+#: main.py:226
+msgid "poor"
+msgstr "fakir"
+
+#: main.py:226
+msgid "average"
+msgstr "ortalama"
+
+#: main.py:226
+msgid "great"
+msgstr "Harika"
+
+#: main.py:226
+msgid "perfect"
+msgstr "mükemmel"
+
+#: main.py:230
+msgid "Crossword Quality"
+msgstr "Bulmaca kalitesi"
+
+#: main.py:262 main.py:415
 msgid "Crossword Browser"
 msgstr "Bulmaca Tarayıcı"
 
-#: src/main.py:269
+#: main.py:420
 msgid "Go back"
 msgstr "Geri gitmek"
 
-#: src/main.py:274
+#: main.py:431
 msgid "Load crossword"
 msgstr "Bulmaca yükle"
 
-#: src/main.py:278
+#: main.py:440
 msgid "Open web app"
 msgstr "Web uygulamasını aç"
 
-#: src/main.py:282
+#: main.py:449
 msgid "Terminate web app"
 msgstr "Web uygulamasını sonlandır"
 
-#: src/main.py:288
+#: main.py:460
 msgid "Word count preferences"
 msgstr "Kelime sayısı tercihleri"
 
-#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
+#: main.py:474 main.py:536 main.py:582 main.py:802
 msgid "Select word count"
 msgstr "Kelime sayısını seçin"
 
-#: src/main.py:297 src/main.py:371 src/main.py:542
+#: main.py:478 main.py:581 main.py:820
 msgid "Maximum"
 msgstr "Maksimum"
 
-#: src/main.py:303
+#: main.py:489
 msgid "Custom"
 msgstr "Gelenek"
 
-#: src/main.py:462
+#: main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr "Bu işlemi gerçekleştirmek için önce bir hücre seçmelisiniz."
 
-#: src/main.py:589
+#: main.py:886
 msgid "View"
 msgstr "Görüş"
 
-#: src/cword_webapp/templates/index.html:230 src/main.py:591
+#: main.py:893
 msgid "Close"
 msgstr "Kapalı"
 
-#: src/main.py:681 src/main.py:705
+#: main.py:1042 main.py:1086
 msgid "difficulty"
 msgstr "zorluk"
 
-#: src/main.py:702
+#: main.py:1078
 msgid "Total words"
 msgstr "Toplam kelime"
 
-#: src/main.py:705
+#: main.py:1085
 msgid "Difficulty"
 msgstr "Zorluk"
 
-#: src/main.py:710
+#: main.py:1098
 msgid "Select"
 msgstr "Seçme"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Restart"
 msgstr "Tekrar başlat"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "Uygulamayı yeniden başlatmak istediğinizden emin misiniz?"
 
-#: src/main.py:749
+#: main.py:1156
 msgid "Exit"
 msgstr "çıkış"
 
-#: src/main.py:750
+#: main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -143,11 +167,11 @@ msgstr ""
 "Uygulamadan çıkmak istediğinizden emin misiniz? Web uygulaması çalışıyorsa "
 "sonlandırılacaktır."
 
-#: src/main.py:755
+#: main.py:1166
 msgid "Back to home"
 msgstr "Eve geri dön"
 
-#: src/main.py:756
+#: main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -155,28 +179,32 @@ msgstr ""
 "Ana ekrana dönmek istediğinizden emin misiniz? Web uygulaması "
 "sonlandırılacak."
 
-#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
-#: src/main.py:797
+#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
+#: main.py:1240
 msgid "Error"
 msgstr "Hata"
 
-#: src/main.py:772
+#: main.py:1190
 msgid "This language is already selected."
 msgstr "Bu dil zaten seçili."
 
-#: src/main.py:775
+#: main.py:1195
 msgid "This size is already selected."
 msgstr "Bu boyut zaten seçili."
 
-#: src/main.py:778
+#: main.py:1200
 msgid "This appearance is already selected."
 msgstr "Bu görünüm zaten seçili."
 
-#: src/main.py:781
+#: main.py:1205
+msgid "This quality is already selected."
+msgstr "Bu kalite zaten seçildi."
+
+#: main.py:1210
 msgid "Info"
 msgstr "Bilgi"
 
-#: src/main.py:782
+#: main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -200,7 +228,7 @@ msgstr ""
 "sonlandırılabilir veya bunları sonlandırmak için bilgisayarınızı yeniden "
 "başlatmanız yeterlidir."
 
-#: src/main.py:792
+#: main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -212,91 +240,13 @@ msgstr ""
 "verilerine yalnızca çevrilmiş sürümü yerel ayarlar dizininde mevcut "
 "olmadığında erişilir."
 
-#: src/main.py:798
+#: main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr ""
 "Bulmaca oluşturmada bir hata oluştu. Lütfen konsoldaki daha fazla bilgiye "
 "bakın"
-
-#: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:216
-msgid "Crossword Puzzle - Game"
-msgstr "Bulmaca - Oyun"
-
-#: src/cword_webapp/templates/index.html:133
-msgid "Across"
-msgstr "Karşısında"
-
-#: src/cword_webapp/templates/index.html:154
-msgid "Down"
-msgstr "Aşağı"
-
-#: src/cword_webapp/templates/index.html:177
-msgid "Reveal"
-msgstr "Ortaya çıkarmak"
-
-#: src/cword_webapp/templates/index.html:179
-#: src/cword_webapp/templates/index.html:186
-msgid "Cell"
-msgstr "Hücre"
-
-#: src/cword_webapp/templates/index.html:180
-#: src/cword_webapp/templates/index.html:187
-#: src/cword_webapp/templates/index.html:193
-msgid "Word"
-msgstr "Kelime"
-
-#: src/cword_webapp/templates/index.html:181
-#: src/cword_webapp/templates/index.html:188
-#: src/cword_webapp/templates/index.html:194
-msgid "Grid"
-msgstr "Kafes"
-
-#: src/cword_webapp/templates/index.html:184
-msgid "Check"
-msgstr "Kontrol etmek"
-
-#: src/cword_webapp/templates/index.html:191
-msgid "Clear"
-msgstr "Temizlemek"
-
-#: src/cword_webapp/templates/index.html:202
-msgid "Smart Skip"
-msgstr "Akıllı atlama"
-
-#: src/cword_webapp/templates/index.html:208
-msgid "Click To Zoom"
-msgstr "Yakınlaştırmak için tıklayın"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "You are viewing"
-msgstr "İzliyorsun"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "from"
-msgstr "itibaren"
-
-#: src/cword_webapp/templates/index.html:219
-msgid "word(s) could not be inserted, sorry."
-msgstr "kelime(ler) eklenemedi, kusura bakmayın."
-
-#: src/cword_webapp/templates/index.html:220
-msgid "Word count (adjusted)"
-msgstr "Kelime sayısı (düzeltildi)"
-
-#: src/cword_webapp/templates/index.html:222
-msgid "Word count"
-msgstr "Sözcük sayısı"
-
-#: src/cword_webapp/templates/index.html:224
-msgid "Continue"
-msgstr "Devam etmek"
-
-#: src/cword_webapp/templates/index.html:229
-msgid "You completed the crossword!"
-msgstr "Bulmacayı tamamladınız!"
 
 msgid "Easy"
 msgstr "Kolay"
@@ -360,3 +310,57 @@ msgstr "Bilgisayar Bilimi"
 #~ msgstr ""
 #~ "Bir hücreyi/kelimeyi kontrol etmek veya ortaya çıkarmak için önce bir hücre "
 #~ "seçmelisiniz"
+
+#~ msgid "Crossword Puzzle - Game"
+#~ msgstr "Bulmaca - Oyun"
+
+#~ msgid "Across"
+#~ msgstr "Karşısında"
+
+#~ msgid "Down"
+#~ msgstr "Aşağı"
+
+#~ msgid "Reveal"
+#~ msgstr "Ortaya çıkarmak"
+
+#~ msgid "Cell"
+#~ msgstr "Hücre"
+
+#~ msgid "Word"
+#~ msgstr "Kelime"
+
+#~ msgid "Grid"
+#~ msgstr "Kafes"
+
+#~ msgid "Check"
+#~ msgstr "Kontrol etmek"
+
+#~ msgid "Clear"
+#~ msgstr "Temizlemek"
+
+#~ msgid "Smart Skip"
+#~ msgstr "Akıllı atlama"
+
+#~ msgid "Click To Zoom"
+#~ msgstr "Yakınlaştırmak için tıklayın"
+
+#~ msgid "You are viewing"
+#~ msgstr "İzliyorsun"
+
+#~ msgid "from"
+#~ msgstr "itibaren"
+
+#~ msgid "word(s) could not be inserted, sorry."
+#~ msgstr "kelime(ler) eklenemedi, kusura bakmayın."
+
+#~ msgid "Word count (adjusted)"
+#~ msgstr "Kelime sayısı (düzeltildi)"
+
+#~ msgid "Word count"
+#~ msgstr "Sözcük sayısı"
+
+#~ msgid "Continue"
+#~ msgstr "Devam etmek"
+
+#~ msgid "You completed the crossword!"
+#~ msgstr "Bulmacayı tamamladınız!"

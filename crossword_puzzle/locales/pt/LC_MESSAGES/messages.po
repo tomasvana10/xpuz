@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-19 12:02+1100\n"
+"POT-Creation-Date: 2024-05-06 11:46+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: pt <LL@li.org>\n"
@@ -19,124 +19,148 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
+#: main.py:78 main.py:129 main.py:270 main.py:338
 msgid "Crossword Puzzle"
 msgstr "Palavras cruzadas"
 
-#: src/main.py:88
+#: main.py:145
 msgid "View crosswords"
 msgstr "Ver palavras cruzadas"
 
-#: src/main.py:92
+#: main.py:154
 msgid "Exit the app"
 msgstr "Saia do aplicativo"
 
-#: src/main.py:98
+#: main.py:165
 msgid "Global Settings"
 msgstr "Configurações globais"
 
-#: src/main.py:102
+#: main.py:172
 msgid "Languages"
 msgstr "línguas"
 
-#: src/main.py:108
+#: main.py:184
 msgid "Size"
 msgstr "Tamanho"
 
-#: src/main.py:115
+#: main.py:203
 msgid "light"
 msgstr "luz"
 
-#: src/main.py:115
+#: main.py:203
 msgid "dark"
 msgstr "escuro"
 
-#: src/main.py:115
+#: main.py:203
 msgid "system"
 msgstr "sistema"
 
-#: src/main.py:116
+#: main.py:206 main.py:220
 msgid "Appearance"
 msgstr "Aparência"
 
-#: src/main.py:138 src/main.py:267
+#: main.py:226
+msgid "terrible"
+msgstr "terrível"
+
+#: main.py:226
+msgid "poor"
+msgstr "pobre"
+
+#: main.py:226
+msgid "average"
+msgstr "média"
+
+#: main.py:226
+msgid "great"
+msgstr "ótimo"
+
+#: main.py:226
+msgid "perfect"
+msgstr "perfeito"
+
+#: main.py:230
+msgid "Crossword Quality"
+msgstr "Qualidade de palavras cruzadas"
+
+#: main.py:262 main.py:415
 msgid "Crossword Browser"
 msgstr "Navegador de palavras cruzadas"
 
-#: src/main.py:269
+#: main.py:420
 msgid "Go back"
 msgstr "Volte"
 
-#: src/main.py:274
+#: main.py:431
 msgid "Load crossword"
 msgstr "Carregar palavras cruzadas"
 
-#: src/main.py:278
+#: main.py:440
 msgid "Open web app"
 msgstr "Abra o aplicativo da web"
 
-#: src/main.py:282
+#: main.py:449
 msgid "Terminate web app"
 msgstr "Encerrar aplicativo da web"
 
-#: src/main.py:288
+#: main.py:460
 msgid "Word count preferences"
 msgstr "Preferências de contagem de palavras"
 
-#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
+#: main.py:474 main.py:536 main.py:582 main.py:802
 msgid "Select word count"
 msgstr "Selecione a contagem de palavras"
 
-#: src/main.py:297 src/main.py:371 src/main.py:542
+#: main.py:478 main.py:581 main.py:820
 msgid "Maximum"
 msgstr "Máximo"
 
-#: src/main.py:303
+#: main.py:489
 msgid "Custom"
 msgstr "Personalizado"
 
-#: src/main.py:462
+#: main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr ""
 "Para executar esta operação, você deve primeiro selecionar uma célula."
 
-#: src/main.py:589
+#: main.py:886
 msgid "View"
 msgstr "Visualizar"
 
-#: src/cword_webapp/templates/index.html:230 src/main.py:591
+#: main.py:893
 msgid "Close"
 msgstr "Fechar"
 
-#: src/main.py:681 src/main.py:705
+#: main.py:1042 main.py:1086
 msgid "difficulty"
 msgstr "dificuldade"
 
-#: src/main.py:702
+#: main.py:1078
 msgid "Total words"
 msgstr "Total de palavras"
 
-#: src/main.py:705
+#: main.py:1085
 msgid "Difficulty"
 msgstr "Dificuldade"
 
-#: src/main.py:710
+#: main.py:1098
 msgid "Select"
 msgstr "Selecione"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Restart"
 msgstr "Reiniciar"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "Tem certeza de que deseja reiniciar o aplicativo?"
 
-#: src/main.py:749
+#: main.py:1156
 msgid "Exit"
 msgstr "Saída"
 
-#: src/main.py:750
+#: main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -144,11 +168,11 @@ msgstr ""
 "Tem certeza de que deseja sair do aplicativo? Se o aplicativo da web estiver"
 " em execução, ele será encerrado."
 
-#: src/main.py:755
+#: main.py:1166
 msgid "Back to home"
 msgstr "De volta para casa"
 
-#: src/main.py:756
+#: main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -156,28 +180,32 @@ msgstr ""
 "Tem certeza de que deseja voltar para a tela inicial? O aplicativo da web "
 "será encerrado."
 
-#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
-#: src/main.py:797
+#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
+#: main.py:1240
 msgid "Error"
 msgstr "Erro"
 
-#: src/main.py:772
+#: main.py:1190
 msgid "This language is already selected."
 msgstr "Este idioma já está selecionado."
 
-#: src/main.py:775
+#: main.py:1195
 msgid "This size is already selected."
 msgstr "Este tamanho já está selecionado."
 
-#: src/main.py:778
+#: main.py:1200
 msgid "This appearance is already selected."
 msgstr "Esta aparência já está selecionada."
 
-#: src/main.py:781
+#: main.py:1205
+msgid "This quality is already selected."
+msgstr "Esta qualidade já está selecionada."
+
+#: main.py:1210
 msgid "Info"
 msgstr "Informações"
 
-#: src/main.py:782
+#: main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -200,7 +228,7 @@ msgstr ""
 "encerrados corretamente podem ser encerrados por meio do Activity Monitor no"
 " MacOS ou simplesmente reiniciar o computador para encerrá-los."
 
-#: src/main.py:792
+#: main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -212,91 +240,13 @@ msgstr ""
 "NOTA: Os dados básicos das palavras cruzadas só são acessados quando sua "
 "versão traduzida não está presente no diretório locales."
 
-#: src/main.py:798
+#: main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr ""
 "Ocorreu um erro na geração de palavras cruzadas. Por favor, veja mais "
 "informações no console"
-
-#: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:216
-msgid "Crossword Puzzle - Game"
-msgstr "Palavras Cruzadas - Jogo"
-
-#: src/cword_webapp/templates/index.html:133
-msgid "Across"
-msgstr "Entre"
-
-#: src/cword_webapp/templates/index.html:154
-msgid "Down"
-msgstr "Abaixo"
-
-#: src/cword_webapp/templates/index.html:177
-msgid "Reveal"
-msgstr "Revelar"
-
-#: src/cword_webapp/templates/index.html:179
-#: src/cword_webapp/templates/index.html:186
-msgid "Cell"
-msgstr "Célula"
-
-#: src/cword_webapp/templates/index.html:180
-#: src/cword_webapp/templates/index.html:187
-#: src/cword_webapp/templates/index.html:193
-msgid "Word"
-msgstr "Palavra"
-
-#: src/cword_webapp/templates/index.html:181
-#: src/cword_webapp/templates/index.html:188
-#: src/cword_webapp/templates/index.html:194
-msgid "Grid"
-msgstr "Grade"
-
-#: src/cword_webapp/templates/index.html:184
-msgid "Check"
-msgstr "Verificar"
-
-#: src/cword_webapp/templates/index.html:191
-msgid "Clear"
-msgstr "Claro"
-
-#: src/cword_webapp/templates/index.html:202
-msgid "Smart Skip"
-msgstr "Skip Smart"
-
-#: src/cword_webapp/templates/index.html:208
-msgid "Click To Zoom"
-msgstr "Clique para aumentar o zoom"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "You are viewing"
-msgstr "Você está visualizando"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "from"
-msgstr "de"
-
-#: src/cword_webapp/templates/index.html:219
-msgid "word(s) could not be inserted, sorry."
-msgstr "palavra(s) não pôde(m) ser inserida(s), desculpe."
-
-#: src/cword_webapp/templates/index.html:220
-msgid "Word count (adjusted)"
-msgstr "Contagem de palavras (ajustada)"
-
-#: src/cword_webapp/templates/index.html:222
-msgid "Word count"
-msgstr "Contagem de palavras"
-
-#: src/cword_webapp/templates/index.html:224
-msgid "Continue"
-msgstr "Continuar"
-
-#: src/cword_webapp/templates/index.html:229
-msgid "You completed the crossword!"
-msgstr "Você completou as palavras cruzadas!"
 
 msgid "Easy"
 msgstr "Fácil"
@@ -360,3 +310,57 @@ msgstr "Ciência da Computação"
 #~ msgstr ""
 #~ "Para verificar ou revelar uma célula/palavra, você deve primeiro selecionar "
 #~ "uma célula"
+
+#~ msgid "Crossword Puzzle - Game"
+#~ msgstr "Palavras Cruzadas - Jogo"
+
+#~ msgid "Across"
+#~ msgstr "Entre"
+
+#~ msgid "Down"
+#~ msgstr "Abaixo"
+
+#~ msgid "Reveal"
+#~ msgstr "Revelar"
+
+#~ msgid "Cell"
+#~ msgstr "Célula"
+
+#~ msgid "Word"
+#~ msgstr "Palavra"
+
+#~ msgid "Grid"
+#~ msgstr "Grade"
+
+#~ msgid "Check"
+#~ msgstr "Verificar"
+
+#~ msgid "Clear"
+#~ msgstr "Claro"
+
+#~ msgid "Smart Skip"
+#~ msgstr "Skip Smart"
+
+#~ msgid "Click To Zoom"
+#~ msgstr "Clique para aumentar o zoom"
+
+#~ msgid "You are viewing"
+#~ msgstr "Você está visualizando"
+
+#~ msgid "from"
+#~ msgstr "de"
+
+#~ msgid "word(s) could not be inserted, sorry."
+#~ msgstr "palavra(s) não pôde(m) ser inserida(s), desculpe."
+
+#~ msgid "Word count (adjusted)"
+#~ msgstr "Contagem de palavras (ajustada)"
+
+#~ msgid "Word count"
+#~ msgstr "Contagem de palavras"
+
+#~ msgid "Continue"
+#~ msgstr "Continuar"
+
+#~ msgid "You completed the crossword!"
+#~ msgstr "Você completou as palavras cruzadas!"

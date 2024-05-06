@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-19 12:02+1100\n"
+"POT-Creation-Date: 2024-05-06 11:46+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ja <LL@li.org>\n"
@@ -19,160 +19,188 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
+#: main.py:78 main.py:129 main.py:270 main.py:338
 msgid "Crossword Puzzle"
 msgstr "クロスワードパズル"
 
-#: src/main.py:88
+#: main.py:145
 msgid "View crosswords"
 msgstr "クロスワードを表示する"
 
-#: src/main.py:92
+#: main.py:154
 msgid "Exit the app"
 msgstr "アプリを終了する"
 
-#: src/main.py:98
+#: main.py:165
 msgid "Global Settings"
 msgstr "全体設定"
 
-#: src/main.py:102
+#: main.py:172
 msgid "Languages"
 msgstr "言語"
 
-#: src/main.py:108
+#: main.py:184
 msgid "Size"
 msgstr "サイズ"
 
-#: src/main.py:115
+#: main.py:203
 msgid "light"
 msgstr "ライト"
 
-#: src/main.py:115
+#: main.py:203
 msgid "dark"
 msgstr "暗い"
 
-#: src/main.py:115
+#: main.py:203
 msgid "system"
 msgstr "システム"
 
-#: src/main.py:116
+#: main.py:206 main.py:220
 msgid "Appearance"
 msgstr "外観"
 
-#: src/main.py:138 src/main.py:267
+#: main.py:226
+msgid "terrible"
+msgstr "ひどい"
+
+#: main.py:226
+msgid "poor"
+msgstr "貧しい"
+
+#: main.py:226
+msgid "average"
+msgstr "平均"
+
+#: main.py:226
+msgid "great"
+msgstr "素晴らしい"
+
+#: main.py:226
+msgid "perfect"
+msgstr "完璧"
+
+#: main.py:230
+msgid "Crossword Quality"
+msgstr "クロスワード品質"
+
+#: main.py:262 main.py:415
 msgid "Crossword Browser"
 msgstr "クロスワードブラウザ"
 
-#: src/main.py:269
+#: main.py:420
 msgid "Go back"
 msgstr "戻る"
 
-#: src/main.py:274
+#: main.py:431
 msgid "Load crossword"
 msgstr "クロスワードをロードする"
 
-#: src/main.py:278
+#: main.py:440
 msgid "Open web app"
 msgstr "ウェブアプリを開く"
 
-#: src/main.py:282
+#: main.py:449
 msgid "Terminate web app"
 msgstr "Webアプリを終了する"
 
-#: src/main.py:288
+#: main.py:460
 msgid "Word count preferences"
 msgstr "文字数の設定"
 
-#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
+#: main.py:474 main.py:536 main.py:582 main.py:802
 msgid "Select word count"
 msgstr "文字数を選択してください"
 
-#: src/main.py:297 src/main.py:371 src/main.py:542
+#: main.py:478 main.py:581 main.py:820
 msgid "Maximum"
 msgstr "最大"
 
-#: src/main.py:303
+#: main.py:489
 msgid "Custom"
 msgstr "カスタム"
 
-#: src/main.py:462
+#: main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr "この操作を実行するには、最初にセルを選択する必要があります。"
 
-#: src/main.py:589
+#: main.py:886
 msgid "View"
 msgstr "ビュー"
 
-#: src/cword_webapp/templates/index.html:230 src/main.py:591
+#: main.py:893
 msgid "Close"
 msgstr "近い"
 
-#: src/main.py:681 src/main.py:705
+#: main.py:1042 main.py:1086
 msgid "difficulty"
 msgstr "困難"
 
-#: src/main.py:702
+#: main.py:1078
 msgid "Total words"
 msgstr "総単語数"
 
-#: src/main.py:705
+#: main.py:1085
 msgid "Difficulty"
 msgstr "困難"
 
-#: src/main.py:710
+#: main.py:1098
 msgid "Select"
 msgstr "選択する"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Restart"
 msgstr "再起動"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "アプリを再起動してもよろしいですか?"
 
-#: src/main.py:749
+#: main.py:1156
 msgid "Exit"
 msgstr "出口"
 
-#: src/main.py:750
+#: main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr "アプリを終了してもよろしいですか? Web アプリが実行中の場合は終了します。"
 
-#: src/main.py:755
+#: main.py:1166
 msgid "Back to home"
 msgstr "家に帰る"
 
-#: src/main.py:756
+#: main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr "ホーム画面に戻ってもよろしいですか? Webアプリが終了します。"
 
-#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
-#: src/main.py:797
+#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
+#: main.py:1240
 msgid "Error"
 msgstr "エラー"
 
-#: src/main.py:772
+#: main.py:1190
 msgid "This language is already selected."
 msgstr "この言語はすでに選択されています。"
 
-#: src/main.py:775
+#: main.py:1195
 msgid "This size is already selected."
 msgstr "このサイズはすでに選択されています。"
 
-#: src/main.py:778
+#: main.py:1200
 msgid "This appearance is already selected."
 msgstr "この外観はすでに選択されています。"
 
-#: src/main.py:781
+#: main.py:1205
+msgid "This quality is already selected."
+msgstr "この品質はすでに選択されています。"
+
+#: main.py:1210
 msgid "Info"
 msgstr "情報"
 
-#: src/main.py:782
+#: main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -190,7 +218,7 @@ msgstr ""
 "アプリを実行します。あるいは、プログラムの構成ファイル内のポートを手動で変更することもできます。適切に終了されていないすべてのアプリ "
 "プロセスは、MacOS のアクティビティ モニターを通じて終了するか、コンピュータを再起動するだけで終了できます。"
 
-#: src/main.py:792
+#: main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -201,89 +229,11 @@ msgstr ""
 "ディレクトリに存在することを確認してください。注: 基本クロスワード データは、その翻訳バージョンがロケール "
 "ディレクトリに存在しない場合にのみアクセスされます。"
 
-#: src/main.py:798
+#: main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr "クロスワード生成でエラーが発生しました。コンソールで詳細を確認してください"
-
-#: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:216
-msgid "Crossword Puzzle - Game"
-msgstr "クロスワード パズル - ゲーム"
-
-#: src/cword_webapp/templates/index.html:133
-msgid "Across"
-msgstr "横切って"
-
-#: src/cword_webapp/templates/index.html:154
-msgid "Down"
-msgstr "下"
-
-#: src/cword_webapp/templates/index.html:177
-msgid "Reveal"
-msgstr "明らかにする"
-
-#: src/cword_webapp/templates/index.html:179
-#: src/cword_webapp/templates/index.html:186
-msgid "Cell"
-msgstr "細胞"
-
-#: src/cword_webapp/templates/index.html:180
-#: src/cword_webapp/templates/index.html:187
-#: src/cword_webapp/templates/index.html:193
-msgid "Word"
-msgstr "言葉"
-
-#: src/cword_webapp/templates/index.html:181
-#: src/cword_webapp/templates/index.html:188
-#: src/cword_webapp/templates/index.html:194
-msgid "Grid"
-msgstr "グリッド"
-
-#: src/cword_webapp/templates/index.html:184
-msgid "Check"
-msgstr "チェック"
-
-#: src/cword_webapp/templates/index.html:191
-msgid "Clear"
-msgstr "クリア"
-
-#: src/cword_webapp/templates/index.html:202
-msgid "Smart Skip"
-msgstr "スマートスキップ"
-
-#: src/cword_webapp/templates/index.html:208
-msgid "Click To Zoom"
-msgstr "クリックしてズームします"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "You are viewing"
-msgstr "あなたは閲覧しています"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "from"
-msgstr "から"
-
-#: src/cword_webapp/templates/index.html:219
-msgid "word(s) could not be inserted, sorry."
-msgstr "単語を挿入できませんでした。申し訳ありません。"
-
-#: src/cword_webapp/templates/index.html:220
-msgid "Word count (adjusted)"
-msgstr "文字数（調整済み）"
-
-#: src/cword_webapp/templates/index.html:222
-msgid "Word count"
-msgstr "単語数"
-
-#: src/cword_webapp/templates/index.html:224
-msgid "Continue"
-msgstr "続く"
-
-#: src/cword_webapp/templates/index.html:229
-msgid "You completed the crossword!"
-msgstr "クロスワードを完成させました!"
 
 msgid "Easy"
 msgstr "簡単"
@@ -345,3 +295,57 @@ msgstr "コンピュータサイエンス"
 
 #~ msgid "To check or reveal a cell/word, you must first select a cell"
 #~ msgstr "セル/単語をチェックまたは表示するには、まずセルを選択する必要があります"
+
+#~ msgid "Crossword Puzzle - Game"
+#~ msgstr "クロスワード パズル - ゲーム"
+
+#~ msgid "Across"
+#~ msgstr "横切って"
+
+#~ msgid "Down"
+#~ msgstr "下"
+
+#~ msgid "Reveal"
+#~ msgstr "明らかにする"
+
+#~ msgid "Cell"
+#~ msgstr "細胞"
+
+#~ msgid "Word"
+#~ msgstr "言葉"
+
+#~ msgid "Grid"
+#~ msgstr "グリッド"
+
+#~ msgid "Check"
+#~ msgstr "チェック"
+
+#~ msgid "Clear"
+#~ msgstr "クリア"
+
+#~ msgid "Smart Skip"
+#~ msgstr "スマートスキップ"
+
+#~ msgid "Click To Zoom"
+#~ msgstr "クリックしてズームします"
+
+#~ msgid "You are viewing"
+#~ msgstr "あなたは閲覧しています"
+
+#~ msgid "from"
+#~ msgstr "から"
+
+#~ msgid "word(s) could not be inserted, sorry."
+#~ msgstr "単語を挿入できませんでした。申し訳ありません。"
+
+#~ msgid "Word count (adjusted)"
+#~ msgstr "文字数（調整済み）"
+
+#~ msgid "Word count"
+#~ msgstr "単語数"
+
+#~ msgid "Continue"
+#~ msgstr "続く"
+
+#~ msgid "You completed the crossword!"
+#~ msgstr "クロスワードを完成させました!"

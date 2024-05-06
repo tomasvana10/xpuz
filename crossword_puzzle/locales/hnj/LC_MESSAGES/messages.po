@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-19 12:02+1100\n"
+"POT-Creation-Date: 2024-05-06 11:46+1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: hnj <LL@li.org>\n"
@@ -18,125 +18,149 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
+#: main.py:78 main.py:129 main.py:270 main.py:338
 msgid "Crossword Puzzle"
 msgstr "Crossword Puzzle"
 
-#: src/main.py:88
+#: main.py:145
 msgid "View crosswords"
 msgstr "Saib crosswords"
 
-#: src/main.py:92
+#: main.py:154
 msgid "Exit the app"
 msgstr "Tawm ntawm lub app"
 
-#: src/main.py:98
+#: main.py:165
 msgid "Global Settings"
 msgstr "Ntiaj teb no chaw"
 
-#: src/main.py:102
+#: main.py:172
 msgid "Languages"
 msgstr "Lus"
 
-#: src/main.py:108
+#: main.py:184
 msgid "Size"
 msgstr "Loj"
 
-#: src/main.py:115
+#: main.py:203
 msgid "light"
 msgstr "teeb"
 
-#: src/main.py:115
+#: main.py:203
 msgid "dark"
 msgstr "tsaus ntuj"
 
-#: src/main.py:115
+#: main.py:203
 msgid "system"
 msgstr "qhov system"
 
-#: src/main.py:116
+#: main.py:206 main.py:220
 msgid "Appearance"
 msgstr "Qhov tshwm sim"
 
-#: src/main.py:138 src/main.py:267
+#: main.py:226
+msgid "terrible"
+msgstr "phem"
+
+#: main.py:226
+msgid "poor"
+msgstr "pluag"
+
+#: main.py:226
+msgid "average"
+msgstr "xws luag"
+
+#: main.py:226
+msgid "great"
+msgstr "loj kawg"
+
+#: main.py:226
+msgid "perfect"
+msgstr "zoo tag nrho"
+
+#: main.py:230
+msgid "Crossword Quality"
+msgstr "Crossword Zoo"
+
+#: main.py:262 main.py:415
 msgid "Crossword Browser"
 msgstr "Crossword Browser"
 
-#: src/main.py:269
+#: main.py:420
 msgid "Go back"
 msgstr "Rov qab mus"
 
-#: src/main.py:274
+#: main.py:431
 msgid "Load crossword"
 msgstr "Load crossword"
 
-#: src/main.py:278
+#: main.py:440
 msgid "Open web app"
 msgstr "Qhib web app"
 
-#: src/main.py:282
+#: main.py:449
 msgid "Terminate web app"
 msgstr "Terminate web app"
 
-#: src/main.py:288
+#: main.py:460
 msgid "Word count preferences"
 msgstr "Xaiv cov lus suav"
 
-#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
+#: main.py:474 main.py:536 main.py:582 main.py:802
 msgid "Select word count"
 msgstr "Xaiv cov lus suav"
 
-#: src/main.py:297 src/main.py:371 src/main.py:542
+#: main.py:478 main.py:581 main.py:820
 msgid "Maximum"
 msgstr "Qhov siab tshaj plaws"
 
-#: src/main.py:303
+#: main.py:489
 msgid "Custom"
 msgstr "Kev cai"
 
-#: src/main.py:462
+#: main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr ""
 "Ua haujlwm ua haujlwm no, koj yuav tsum xub xaiv ntawm lub xov tooj ntawm "
 "tes."
 
-#: src/main.py:589
+#: main.py:886
 msgid "View"
 msgstr "Saib"
 
-#: src/cword_webapp/templates/index.html:230 src/main.py:591
+#: main.py:893
 msgid "Close"
 msgstr "Kaw"
 
-#: src/main.py:681 src/main.py:705
+#: main.py:1042 main.py:1086
 msgid "difficulty"
 msgstr "nyuaj"
 
-#: src/main.py:702
+#: main.py:1078
 msgid "Total words"
 msgstr "Tag nrho cov lus"
 
-#: src/main.py:705
+#: main.py:1085
 msgid "Difficulty"
 msgstr "Nyuaj"
 
-#: src/main.py:710
+#: main.py:1098
 msgid "Select"
 msgstr "Xaiv"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Restart"
 msgstr "Rov pib dua"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "Koj puas paub tseeb tias koj xav rov pib dua lub app?"
 
-#: src/main.py:749
+#: main.py:1156
 msgid "Exit"
 msgstr "Tawm"
 
-#: src/main.py:750
+#: main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -144,11 +168,11 @@ msgstr ""
 "Koj puas paub tseeb tias koj xav tawm ntawm lub app? Yog tias lub vev xaib "
 "app tab tom khiav, nws yuav raug txiav tawm."
 
-#: src/main.py:755
+#: main.py:1166
 msgid "Back to home"
 msgstr "Rov qab mus tsev"
 
-#: src/main.py:756
+#: main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -156,28 +180,32 @@ msgstr ""
 "Koj puas paub tseeb tias koj xav rov qab mus rau qhov screen tsev? Lub vev "
 "xaib app yuav raug txiav tawm."
 
-#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
-#: src/main.py:797
+#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
+#: main.py:1240
 msgid "Error"
 msgstr "yuam kev"
 
-#: src/main.py:772
+#: main.py:1190
 msgid "This language is already selected."
 msgstr "Cov lus no twb xaiv lawm."
 
-#: src/main.py:775
+#: main.py:1195
 msgid "This size is already selected."
 msgstr "Qhov loj me no twb xaiv lawm."
 
-#: src/main.py:778
+#: main.py:1200
 msgid "This appearance is already selected."
 msgstr "Cov tsos no twb xaiv lawm."
 
-#: src/main.py:781
+#: main.py:1205
+msgid "This quality is already selected."
+msgstr "Qhov zoo no yog twb tau xaiv."
+
+#: main.py:1210
 msgid "Info"
 msgstr "Cov ntaub ntawv"
 
-#: src/main.py:782
+#: main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -200,7 +228,7 @@ msgstr ""
 "ntawm Kev Saib Xyuas Kev Ua Haujlwm ntawm macOS, lossis, tsuas yog rov pib "
 "dua koj lub khoos phis tawm kom tshem tawm lawv."
 
-#: src/main.py:792
+#: main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -213,91 +241,13 @@ msgstr ""
 "tau thaum nws cov lus txhais tsis muaj nyob rau hauv cov ntawv teev npe hauv"
 " zos."
 
-#: src/main.py:798
+#: main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr ""
 "Ib qho yuam kev tshwm sim hauv crossword tiam. Thov saib cov ntaub ntawv "
 "ntxiv hauv console"
-
-#: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:216
-msgid "Crossword Puzzle - Game"
-msgstr "Crossword Puzzle - Kev ua si"
-
-#: src/cword_webapp/templates/index.html:133
-msgid "Across"
-msgstr "Hla"
-
-#: src/cword_webapp/templates/index.html:154
-msgid "Down"
-msgstr "nqes"
-
-#: src/cword_webapp/templates/index.html:177
-msgid "Reveal"
-msgstr "Qhia tawm"
-
-#: src/cword_webapp/templates/index.html:179
-#: src/cword_webapp/templates/index.html:186
-msgid "Cell"
-msgstr "Cell"
-
-#: src/cword_webapp/templates/index.html:180
-#: src/cword_webapp/templates/index.html:187
-#: src/cword_webapp/templates/index.html:193
-msgid "Word"
-msgstr "Lo lus"
-
-#: src/cword_webapp/templates/index.html:181
-#: src/cword_webapp/templates/index.html:188
-#: src/cword_webapp/templates/index.html:194
-msgid "Grid"
-msgstr "Daim phiaj"
-
-#: src/cword_webapp/templates/index.html:184
-msgid "Check"
-msgstr "Tshawb xyuas"
-
-#: src/cword_webapp/templates/index.html:191
-msgid "Clear"
-msgstr "Ntshiab"
-
-#: src/cword_webapp/templates/index.html:202
-msgid "Smart Skip"
-msgstr "Ntse Hla"
-
-#: src/cword_webapp/templates/index.html:208
-msgid "Click To Zoom"
-msgstr "Nyem rau zoom"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "You are viewing"
-msgstr "Koj saib"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "from"
-msgstr "los ntawm"
-
-#: src/cword_webapp/templates/index.html:219
-msgid "word(s) could not be inserted, sorry."
-msgstr "lo lus (s) tsis tuaj yeem muab tso, thov txim."
-
-#: src/cword_webapp/templates/index.html:220
-msgid "Word count (adjusted)"
-msgstr "Lo lus suav (hloov)"
-
-#: src/cword_webapp/templates/index.html:222
-msgid "Word count"
-msgstr "suav lo lus"
-
-#: src/cword_webapp/templates/index.html:224
-msgid "Continue"
-msgstr "Txuas ntxiv"
-
-#: src/cword_webapp/templates/index.html:229
-msgid "You completed the crossword!"
-msgstr "Koj ua tiav qhov crossword!"
 
 msgid "Easy"
 msgstr "Yooj yim"
@@ -351,3 +301,57 @@ msgstr "Computer Science"
 #~ msgstr ""
 #~ "Txhawm rau txheeb xyuas lossis nthuav tawm lub xov tooj / lo lus, koj yuav "
 #~ "tsum xub xaiv lub xov tooj ntawm tes"
+
+#~ msgid "Crossword Puzzle - Game"
+#~ msgstr "Crossword Puzzle - Kev ua si"
+
+#~ msgid "Across"
+#~ msgstr "Hla"
+
+#~ msgid "Down"
+#~ msgstr "nqes"
+
+#~ msgid "Reveal"
+#~ msgstr "Qhia tawm"
+
+#~ msgid "Cell"
+#~ msgstr "Cell"
+
+#~ msgid "Word"
+#~ msgstr "Lo lus"
+
+#~ msgid "Grid"
+#~ msgstr "Daim phiaj"
+
+#~ msgid "Check"
+#~ msgstr "Tshawb xyuas"
+
+#~ msgid "Clear"
+#~ msgstr "Ntshiab"
+
+#~ msgid "Smart Skip"
+#~ msgstr "Ntse Hla"
+
+#~ msgid "Click To Zoom"
+#~ msgstr "Nyem rau zoom"
+
+#~ msgid "You are viewing"
+#~ msgstr "Koj saib"
+
+#~ msgid "from"
+#~ msgstr "los ntawm"
+
+#~ msgid "word(s) could not be inserted, sorry."
+#~ msgstr "lo lus (s) tsis tuaj yeem muab tso, thov txim."
+
+#~ msgid "Word count (adjusted)"
+#~ msgstr "Lo lus suav (hloov)"
+
+#~ msgid "Word count"
+#~ msgstr "suav lo lus"
+
+#~ msgid "Continue"
+#~ msgstr "Txuas ntxiv"
+
+#~ msgid "You completed the crossword!"
+#~ msgstr "Koj ua tiav qhov crossword!"

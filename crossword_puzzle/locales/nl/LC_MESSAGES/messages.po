@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-19 12:02+1100\n"
+"POT-Creation-Date: 2024-05-06 11:46+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: nl <LL@li.org>\n"
@@ -19,123 +19,147 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
+#: main.py:78 main.py:129 main.py:270 main.py:338
 msgid "Crossword Puzzle"
 msgstr "Kruiswoord puzzel"
 
-#: src/main.py:88
+#: main.py:145
 msgid "View crosswords"
 msgstr "Kruiswoordraadsels bekijken"
 
-#: src/main.py:92
+#: main.py:154
 msgid "Exit the app"
 msgstr "Sluit de app"
 
-#: src/main.py:98
+#: main.py:165
 msgid "Global Settings"
 msgstr "Algemene instellingen"
 
-#: src/main.py:102
+#: main.py:172
 msgid "Languages"
 msgstr "Talen"
 
-#: src/main.py:108
+#: main.py:184
 msgid "Size"
 msgstr "Maat"
 
-#: src/main.py:115
+#: main.py:203
 msgid "light"
 msgstr "licht"
 
-#: src/main.py:115
+#: main.py:203
 msgid "dark"
 msgstr "donker"
 
-#: src/main.py:115
+#: main.py:203
 msgid "system"
 msgstr "systeem"
 
-#: src/main.py:116
+#: main.py:206 main.py:220
 msgid "Appearance"
 msgstr "Verschijning"
 
-#: src/main.py:138 src/main.py:267
+#: main.py:226
+msgid "terrible"
+msgstr "vreselijk"
+
+#: main.py:226
+msgid "poor"
+msgstr "arm"
+
+#: main.py:226
+msgid "average"
+msgstr "gemiddeld"
+
+#: main.py:226
+msgid "great"
+msgstr "Geweldig"
+
+#: main.py:226
+msgid "perfect"
+msgstr "perfect"
+
+#: main.py:230
+msgid "Crossword Quality"
+msgstr "Kruiswoordraadselkwaliteit"
+
+#: main.py:262 main.py:415
 msgid "Crossword Browser"
 msgstr "Kruiswoordraadselbrowser"
 
-#: src/main.py:269
+#: main.py:420
 msgid "Go back"
 msgstr "Ga terug"
 
-#: src/main.py:274
+#: main.py:431
 msgid "Load crossword"
 msgstr "Kruiswoordraadsel laden"
 
-#: src/main.py:278
+#: main.py:440
 msgid "Open web app"
 msgstr "Web-app openen"
 
-#: src/main.py:282
+#: main.py:449
 msgid "Terminate web app"
 msgstr "Web-app beëindigen"
 
-#: src/main.py:288
+#: main.py:460
 msgid "Word count preferences"
 msgstr "Voorkeuren voor het aantal woorden"
 
-#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
+#: main.py:474 main.py:536 main.py:582 main.py:802
 msgid "Select word count"
 msgstr "Selecteer het aantal woorden"
 
-#: src/main.py:297 src/main.py:371 src/main.py:542
+#: main.py:478 main.py:581 main.py:820
 msgid "Maximum"
 msgstr "Maximaal"
 
-#: src/main.py:303
+#: main.py:489
 msgid "Custom"
 msgstr "Aangepast"
 
-#: src/main.py:462
+#: main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr "Om deze bewerking uit te voeren, moet u eerst een cel selecteren."
 
-#: src/main.py:589
+#: main.py:886
 msgid "View"
 msgstr "Weergave"
 
-#: src/cword_webapp/templates/index.html:230 src/main.py:591
+#: main.py:893
 msgid "Close"
 msgstr "Dichtbij"
 
-#: src/main.py:681 src/main.py:705
+#: main.py:1042 main.py:1086
 msgid "difficulty"
 msgstr "moeilijkheid"
 
-#: src/main.py:702
+#: main.py:1078
 msgid "Total words"
 msgstr "Totaal woorden"
 
-#: src/main.py:705
+#: main.py:1085
 msgid "Difficulty"
 msgstr "Moeilijkheidsgraad"
 
-#: src/main.py:710
+#: main.py:1098
 msgid "Select"
 msgstr "Selecteer"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Restart"
 msgstr "Herstarten"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "Weet u zeker dat u de app opnieuw wilt starten?"
 
-#: src/main.py:749
+#: main.py:1156
 msgid "Exit"
 msgstr "Uitgang"
 
-#: src/main.py:750
+#: main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -143,11 +167,11 @@ msgstr ""
 "Weet u zeker dat u de app wilt afsluiten? Als de web-app actief is, wordt "
 "deze beëindigd."
 
-#: src/main.py:755
+#: main.py:1166
 msgid "Back to home"
 msgstr "Terug naar huis"
 
-#: src/main.py:756
+#: main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -155,28 +179,32 @@ msgstr ""
 "Weet je zeker dat je terug wilt naar het startscherm? De webapp wordt "
 "beëindigd."
 
-#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
-#: src/main.py:797
+#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
+#: main.py:1240
 msgid "Error"
 msgstr "Fout"
 
-#: src/main.py:772
+#: main.py:1190
 msgid "This language is already selected."
 msgstr "Deze taal is al geselecteerd."
 
-#: src/main.py:775
+#: main.py:1195
 msgid "This size is already selected."
 msgstr "Deze maat is al geselecteerd."
 
-#: src/main.py:778
+#: main.py:1200
 msgid "This appearance is already selected."
 msgstr "Deze verschijning is al geselecteerd."
 
-#: src/main.py:781
+#: main.py:1205
+msgid "This quality is already selected."
+msgstr "Deze kwaliteit is al geselecteerd."
+
+#: main.py:1210
 msgid "Info"
 msgstr "Info"
 
-#: src/main.py:782
+#: main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -199,7 +227,7 @@ msgstr ""
 "kunnen worden beëindigd via Activity Monitor op MacOS, of u kunt "
 "eenvoudigweg uw computer opnieuw opstarten om ze te beëindigen."
 
-#: src/main.py:792
+#: main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -212,91 +240,13 @@ msgstr ""
 "toegankelijk als de vertaalde versie ervan niet aanwezig is in de map met "
 "landinstellingen."
 
-#: src/main.py:798
+#: main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr ""
 "Er is een fout opgetreden bij het genereren van kruiswoordraadsels. Zie meer"
 " informatie in de console"
-
-#: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:216
-msgid "Crossword Puzzle - Game"
-msgstr "Kruiswoordraadsel - Spel"
-
-#: src/cword_webapp/templates/index.html:133
-msgid "Across"
-msgstr "Over"
-
-#: src/cword_webapp/templates/index.html:154
-msgid "Down"
-msgstr "Omlaag"
-
-#: src/cword_webapp/templates/index.html:177
-msgid "Reveal"
-msgstr "Onthullen"
-
-#: src/cword_webapp/templates/index.html:179
-#: src/cword_webapp/templates/index.html:186
-msgid "Cell"
-msgstr "Cel"
-
-#: src/cword_webapp/templates/index.html:180
-#: src/cword_webapp/templates/index.html:187
-#: src/cword_webapp/templates/index.html:193
-msgid "Word"
-msgstr "Woord"
-
-#: src/cword_webapp/templates/index.html:181
-#: src/cword_webapp/templates/index.html:188
-#: src/cword_webapp/templates/index.html:194
-msgid "Grid"
-msgstr "Rooster"
-
-#: src/cword_webapp/templates/index.html:184
-msgid "Check"
-msgstr "Rekening"
-
-#: src/cword_webapp/templates/index.html:191
-msgid "Clear"
-msgstr "Duidelijk"
-
-#: src/cword_webapp/templates/index.html:202
-msgid "Smart Skip"
-msgstr "Slim Skip"
-
-#: src/cword_webapp/templates/index.html:208
-msgid "Click To Zoom"
-msgstr "Klik om te zoomen"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "You are viewing"
-msgstr "Je bekijkt"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "from"
-msgstr "van"
-
-#: src/cword_webapp/templates/index.html:219
-msgid "word(s) could not be inserted, sorry."
-msgstr "woord(en) konden niet worden ingevoegd, sorry."
-
-#: src/cword_webapp/templates/index.html:220
-msgid "Word count (adjusted)"
-msgstr "Aantal woorden (aangepast)"
-
-#: src/cword_webapp/templates/index.html:222
-msgid "Word count"
-msgstr "Aantal woorden"
-
-#: src/cword_webapp/templates/index.html:224
-msgid "Continue"
-msgstr "Doorgaan"
-
-#: src/cword_webapp/templates/index.html:229
-msgid "You completed the crossword!"
-msgstr "Je hebt het kruiswoordraadsel voltooid!"
 
 msgid "Easy"
 msgstr "Eenvoudig"
@@ -360,3 +310,57 @@ msgstr "Computertechnologie"
 #~ msgstr ""
 #~ "Om een cel/woord te controleren of zichtbaar te maken, moet u eerst een cel "
 #~ "selecteren"
+
+#~ msgid "Crossword Puzzle - Game"
+#~ msgstr "Kruiswoordraadsel - Spel"
+
+#~ msgid "Across"
+#~ msgstr "Over"
+
+#~ msgid "Down"
+#~ msgstr "Omlaag"
+
+#~ msgid "Reveal"
+#~ msgstr "Onthullen"
+
+#~ msgid "Cell"
+#~ msgstr "Cel"
+
+#~ msgid "Word"
+#~ msgstr "Woord"
+
+#~ msgid "Grid"
+#~ msgstr "Rooster"
+
+#~ msgid "Check"
+#~ msgstr "Rekening"
+
+#~ msgid "Clear"
+#~ msgstr "Duidelijk"
+
+#~ msgid "Smart Skip"
+#~ msgstr "Slim Skip"
+
+#~ msgid "Click To Zoom"
+#~ msgstr "Klik om te zoomen"
+
+#~ msgid "You are viewing"
+#~ msgstr "Je bekijkt"
+
+#~ msgid "from"
+#~ msgstr "van"
+
+#~ msgid "word(s) could not be inserted, sorry."
+#~ msgstr "woord(en) konden niet worden ingevoegd, sorry."
+
+#~ msgid "Word count (adjusted)"
+#~ msgstr "Aantal woorden (aangepast)"
+
+#~ msgid "Word count"
+#~ msgstr "Aantal woorden"
+
+#~ msgid "Continue"
+#~ msgstr "Doorgaan"
+
+#~ msgid "You completed the crossword!"
+#~ msgstr "Je hebt het kruiswoordraadsel voltooid!"

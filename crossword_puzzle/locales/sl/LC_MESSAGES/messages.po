@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-19 12:02+1100\n"
+"POT-Creation-Date: 2024-05-06 11:46+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: sl <LL@li.org>\n"
@@ -19,123 +19,147 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
+#: main.py:78 main.py:129 main.py:270 main.py:338
 msgid "Crossword Puzzle"
 msgstr "Križanka"
 
-#: src/main.py:88
+#: main.py:145
 msgid "View crosswords"
 msgstr "Oglejte si križanke"
 
-#: src/main.py:92
+#: main.py:154
 msgid "Exit the app"
 msgstr "Zapustite aplikacijo"
 
-#: src/main.py:98
+#: main.py:165
 msgid "Global Settings"
 msgstr "Globalne nastavitve"
 
-#: src/main.py:102
+#: main.py:172
 msgid "Languages"
 msgstr "Jeziki"
 
-#: src/main.py:108
+#: main.py:184
 msgid "Size"
 msgstr "Velikost"
 
-#: src/main.py:115
+#: main.py:203
 msgid "light"
 msgstr "svetloba"
 
-#: src/main.py:115
+#: main.py:203
 msgid "dark"
 msgstr "temno"
 
-#: src/main.py:115
+#: main.py:203
 msgid "system"
 msgstr "sistem"
 
-#: src/main.py:116
+#: main.py:206 main.py:220
 msgid "Appearance"
 msgstr "Videz"
 
-#: src/main.py:138 src/main.py:267
+#: main.py:226
+msgid "terrible"
+msgstr "strašno"
+
+#: main.py:226
+msgid "poor"
+msgstr "revni"
+
+#: main.py:226
+msgid "average"
+msgstr "povprečje"
+
+#: main.py:226
+msgid "great"
+msgstr "Super"
+
+#: main.py:226
+msgid "perfect"
+msgstr "popoln"
+
+#: main.py:230
+msgid "Crossword Quality"
+msgstr "Kakovost križanja"
+
+#: main.py:262 main.py:415
 msgid "Crossword Browser"
 msgstr "Brskalnik križank"
 
-#: src/main.py:269
+#: main.py:420
 msgid "Go back"
 msgstr "Pojdi nazaj"
 
-#: src/main.py:274
+#: main.py:431
 msgid "Load crossword"
 msgstr "Naloži križanko"
 
-#: src/main.py:278
+#: main.py:440
 msgid "Open web app"
 msgstr "Odprite spletno aplikacijo"
 
-#: src/main.py:282
+#: main.py:449
 msgid "Terminate web app"
 msgstr "Prekini spletno aplikacijo"
 
-#: src/main.py:288
+#: main.py:460
 msgid "Word count preferences"
 msgstr "Nastavitve števila besed"
 
-#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
+#: main.py:474 main.py:536 main.py:582 main.py:802
 msgid "Select word count"
 msgstr "Izberite število besed"
 
-#: src/main.py:297 src/main.py:371 src/main.py:542
+#: main.py:478 main.py:581 main.py:820
 msgid "Maximum"
 msgstr "Največ"
 
-#: src/main.py:303
+#: main.py:489
 msgid "Custom"
 msgstr "Po meri"
 
-#: src/main.py:462
+#: main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr "Če želite izvesti to operacijo, morate najprej izbrati celico."
 
-#: src/main.py:589
+#: main.py:886
 msgid "View"
 msgstr "Pogled"
 
-#: src/cword_webapp/templates/index.html:230 src/main.py:591
+#: main.py:893
 msgid "Close"
 msgstr "Zapri"
 
-#: src/main.py:681 src/main.py:705
+#: main.py:1042 main.py:1086
 msgid "difficulty"
 msgstr "težavnost"
 
-#: src/main.py:702
+#: main.py:1078
 msgid "Total words"
 msgstr "Skupaj besed"
 
-#: src/main.py:705
+#: main.py:1085
 msgid "Difficulty"
 msgstr "Težavnost"
 
-#: src/main.py:710
+#: main.py:1098
 msgid "Select"
 msgstr "Izberite"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Restart"
 msgstr "Ponovni zagon"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "Ali ste prepričani, da želite znova zagnati aplikacijo?"
 
-#: src/main.py:749
+#: main.py:1156
 msgid "Exit"
 msgstr "Izhod"
 
-#: src/main.py:750
+#: main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -143,11 +167,11 @@ msgstr ""
 "Ali ste prepričani, da želite zapreti aplikacijo? Če se spletna aplikacija "
 "izvaja, bo prekinjena."
 
-#: src/main.py:755
+#: main.py:1166
 msgid "Back to home"
 msgstr "Nazaj domov"
 
-#: src/main.py:756
+#: main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -155,28 +179,32 @@ msgstr ""
 "Ali ste prepričani, da se želite vrniti na začetni zaslon? Spletna "
 "aplikacija bo ukinjena."
 
-#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
-#: src/main.py:797
+#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
+#: main.py:1240
 msgid "Error"
 msgstr "Napaka"
 
-#: src/main.py:772
+#: main.py:1190
 msgid "This language is already selected."
 msgstr "Ta jezik je že izbran."
 
-#: src/main.py:775
+#: main.py:1195
 msgid "This size is already selected."
 msgstr "Ta velikost je že izbrana."
 
-#: src/main.py:778
+#: main.py:1200
 msgid "This appearance is already selected."
 msgstr "Ta videz je že izbran."
 
-#: src/main.py:781
+#: main.py:1205
+msgid "This quality is already selected."
+msgstr "Ta kakovost je že izbrana."
+
+#: main.py:1210
 msgid "Info"
 msgstr "Informacije"
 
-#: src/main.py:782
+#: main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -198,7 +226,7 @@ msgstr ""
 " prek Activity Monitorja v sistemu MacOS ali preprosto znova zaženite "
 "računalnik, da jih prekinete."
 
-#: src/main.py:792
+#: main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -210,91 +238,13 @@ msgstr ""
 "Podatki o osnovni križanki so dostopni le, če njene prevedene različice ni v"
 " imeniku področij."
 
-#: src/main.py:798
+#: main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr ""
 "Pri ustvarjanju križanke je prišlo do napake. Več informacij najdete v "
 "konzoli"
-
-#: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:216
-msgid "Crossword Puzzle - Game"
-msgstr "Križanka - igra"
-
-#: src/cword_webapp/templates/index.html:133
-msgid "Across"
-msgstr "Čez"
-
-#: src/cword_webapp/templates/index.html:154
-msgid "Down"
-msgstr "Dol"
-
-#: src/cword_webapp/templates/index.html:177
-msgid "Reveal"
-msgstr "Razkrij"
-
-#: src/cword_webapp/templates/index.html:179
-#: src/cword_webapp/templates/index.html:186
-msgid "Cell"
-msgstr "Celica"
-
-#: src/cword_webapp/templates/index.html:180
-#: src/cword_webapp/templates/index.html:187
-#: src/cword_webapp/templates/index.html:193
-msgid "Word"
-msgstr "Beseda"
-
-#: src/cword_webapp/templates/index.html:181
-#: src/cword_webapp/templates/index.html:188
-#: src/cword_webapp/templates/index.html:194
-msgid "Grid"
-msgstr "Mreža"
-
-#: src/cword_webapp/templates/index.html:184
-msgid "Check"
-msgstr "Preverite"
-
-#: src/cword_webapp/templates/index.html:191
-msgid "Clear"
-msgstr "jasno"
-
-#: src/cword_webapp/templates/index.html:202
-msgid "Smart Skip"
-msgstr "Pametni preskok"
-
-#: src/cword_webapp/templates/index.html:208
-msgid "Click To Zoom"
-msgstr "Kliknite za povečavo"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "You are viewing"
-msgstr "Gledate"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "from"
-msgstr "od"
-
-#: src/cword_webapp/templates/index.html:219
-msgid "word(s) could not be inserted, sorry."
-msgstr "besede ni bilo mogoče vstaviti, žal."
-
-#: src/cword_webapp/templates/index.html:220
-msgid "Word count (adjusted)"
-msgstr "Število besed (prilagojeno)"
-
-#: src/cword_webapp/templates/index.html:222
-msgid "Word count"
-msgstr "Število besed"
-
-#: src/cword_webapp/templates/index.html:224
-msgid "Continue"
-msgstr "Nadaljuj"
-
-#: src/cword_webapp/templates/index.html:229
-msgid "You completed the crossword!"
-msgstr "Rešili ste križanko!"
 
 msgid "Easy"
 msgstr "enostavno"
@@ -357,3 +307,57 @@ msgstr "Računalništvo"
 #~ msgid "To check or reveal a cell/word, you must first select a cell"
 #~ msgstr ""
 #~ "Če želite preveriti ali razkriti celico/besedo, jo morate najprej izbrati"
+
+#~ msgid "Crossword Puzzle - Game"
+#~ msgstr "Križanka - igra"
+
+#~ msgid "Across"
+#~ msgstr "Čez"
+
+#~ msgid "Down"
+#~ msgstr "Dol"
+
+#~ msgid "Reveal"
+#~ msgstr "Razkrij"
+
+#~ msgid "Cell"
+#~ msgstr "Celica"
+
+#~ msgid "Word"
+#~ msgstr "Beseda"
+
+#~ msgid "Grid"
+#~ msgstr "Mreža"
+
+#~ msgid "Check"
+#~ msgstr "Preverite"
+
+#~ msgid "Clear"
+#~ msgstr "jasno"
+
+#~ msgid "Smart Skip"
+#~ msgstr "Pametni preskok"
+
+#~ msgid "Click To Zoom"
+#~ msgstr "Kliknite za povečavo"
+
+#~ msgid "You are viewing"
+#~ msgstr "Gledate"
+
+#~ msgid "from"
+#~ msgstr "od"
+
+#~ msgid "word(s) could not be inserted, sorry."
+#~ msgstr "besede ni bilo mogoče vstaviti, žal."
+
+#~ msgid "Word count (adjusted)"
+#~ msgstr "Število besed (prilagojeno)"
+
+#~ msgid "Word count"
+#~ msgstr "Število besed"
+
+#~ msgid "Continue"
+#~ msgstr "Nadaljuj"
+
+#~ msgid "You completed the crossword!"
+#~ msgstr "Rešili ste križanko!"

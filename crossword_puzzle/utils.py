@@ -4,12 +4,15 @@ from __future__ import annotations
 
 from configparser import ConfigParser
 from json import load, dump
+from math import ceil
 from os import path, scandir
 from random import randint
 
 from babel import Locale
 
-from crossword_puzzle.constants import Colour, Paths, CrosswordDifficulties
+from crossword_puzzle.constants import (
+    Colour, Paths, CrosswordDifficulties, CrosswordQuality
+)
 
 
 def _update_config(
@@ -77,6 +80,8 @@ def find_best_crossword(crossword: Crossword) -> Crossword:
     crosswords based on the largest amount of total intersections and
     smallest amount of fails.
     """
+    cfg: ConfigParser = ConfigParser()
+    cfg.read(Paths.CONFIG_PATH)
     name: str = crossword.name
     word_count: int = crossword.word_count
 
@@ -84,8 +89,12 @@ def find_best_crossword(crossword: Crossword) -> Crossword:
     try:
         max_attempts: int = attempts_db[
             str(word_count)
-        ]  # Get amount of attempts
-        # based on word count
+        ]  # Get amount of attempts based on word count
+        max_attempts *= CrosswordQuality.QUALITY_MAP[ # Scale max attempts based
+                                                      # on crossword quality
+            cfg.get("misc", "cword_quality")
+        ]
+        max_attempts = int(ceil(max_attempts))
     except KeyError:  # Fallback to only a single generation attempt
         max_attempts = 1
     attempts: int = 0  # Track current amount of attempts

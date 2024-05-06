@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-19 12:02+1100\n"
+"POT-Creation-Date: 2024-05-06 11:46+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: mt <LL@li.org>\n"
@@ -19,123 +19,147 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==0 || ( n%100>=1 && n%100<=10) ? 1 : (n%100>10 && n%100<20 ) ? 2 : 3);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
+#: main.py:78 main.py:129 main.py:270 main.py:338
 msgid "Crossword Puzzle"
 msgstr "Tisliba"
 
-#: src/main.py:88
+#: main.py:145
 msgid "View crosswords"
 msgstr "Ara tisliba"
 
-#: src/main.py:92
+#: main.py:154
 msgid "Exit the app"
 msgstr "Ħruġ mill-app"
 
-#: src/main.py:98
+#: main.py:165
 msgid "Global Settings"
 msgstr "Settings Globali"
 
-#: src/main.py:102
+#: main.py:172
 msgid "Languages"
 msgstr "Lingwi"
 
-#: src/main.py:108
+#: main.py:184
 msgid "Size"
 msgstr "Daqs"
 
-#: src/main.py:115
+#: main.py:203
 msgid "light"
 msgstr "dawl"
 
-#: src/main.py:115
+#: main.py:203
 msgid "dark"
 msgstr "skur"
 
-#: src/main.py:115
+#: main.py:203
 msgid "system"
 msgstr "sistema"
 
-#: src/main.py:116
+#: main.py:206 main.py:220
 msgid "Appearance"
 msgstr "Dehra"
 
-#: src/main.py:138 src/main.py:267
+#: main.py:226
+msgid "terrible"
+msgstr "terribbli"
+
+#: main.py:226
+msgid "poor"
+msgstr "fqir"
+
+#: main.py:226
+msgid "average"
+msgstr "medja"
+
+#: main.py:226
+msgid "great"
+msgstr "Kbira"
+
+#: main.py:226
+msgid "perfect"
+msgstr "perfetta"
+
+#: main.py:230
+msgid "Crossword Quality"
+msgstr "Kwalità tat-tisliba"
+
+#: main.py:262 main.py:415
 msgid "Crossword Browser"
 msgstr "Tisliba Browser"
 
-#: src/main.py:269
+#: main.py:420
 msgid "Go back"
 msgstr "Mur lura"
 
-#: src/main.py:274
+#: main.py:431
 msgid "Load crossword"
 msgstr "Tagħbija tisliba"
 
-#: src/main.py:278
+#: main.py:440
 msgid "Open web app"
 msgstr "Iftaħ l-app tal-web"
 
-#: src/main.py:282
+#: main.py:449
 msgid "Terminate web app"
 msgstr "Ittemm l-app tal-web"
 
-#: src/main.py:288
+#: main.py:460
 msgid "Word count preferences"
 msgstr "Preferenzi tal-għadd tal-kliem"
 
-#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
+#: main.py:474 main.py:536 main.py:582 main.py:802
 msgid "Select word count"
 msgstr "Agħżel l-għadd tal-kliem"
 
-#: src/main.py:297 src/main.py:371 src/main.py:542
+#: main.py:478 main.py:581 main.py:820
 msgid "Maximum"
 msgstr "Massimu"
 
-#: src/main.py:303
+#: main.py:489
 msgid "Custom"
 msgstr "Custom"
 
-#: src/main.py:462
+#: main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr "Biex twettaq din l-operazzjoni, l-ewwel trid tagħżel ċellola."
 
-#: src/main.py:589
+#: main.py:886
 msgid "View"
 msgstr "Ara"
 
-#: src/cword_webapp/templates/index.html:230 src/main.py:591
+#: main.py:893
 msgid "Close"
 msgstr "Agħlaq"
 
-#: src/main.py:681 src/main.py:705
+#: main.py:1042 main.py:1086
 msgid "difficulty"
 msgstr "diffikultà"
 
-#: src/main.py:702
+#: main.py:1078
 msgid "Total words"
 msgstr "Kliem totali"
 
-#: src/main.py:705
+#: main.py:1085
 msgid "Difficulty"
 msgstr "Diffikultà"
 
-#: src/main.py:710
+#: main.py:1098
 msgid "Select"
 msgstr "Agħżel"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Restart"
 msgstr "Erġa ibda"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "Int żgur li trid terġa' tibda l-app?"
 
-#: src/main.py:749
+#: main.py:1156
 msgid "Exit"
 msgstr "Ħruġ"
 
-#: src/main.py:750
+#: main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -143,39 +167,43 @@ msgstr ""
 "Int żgur li trid toħroġ mill-app? Jekk l-app tal-web tkun qed taħdem, tiġi "
 "mitmuma."
 
-#: src/main.py:755
+#: main.py:1166
 msgid "Back to home"
 msgstr "Lura d-dar"
 
-#: src/main.py:756
+#: main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
 "Int żgur li trid tmur lura għall-iskrin tad-dar? Il-web app se tiġi mitmuma."
 
-#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
-#: src/main.py:797
+#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
+#: main.py:1240
 msgid "Error"
 msgstr "Żball"
 
-#: src/main.py:772
+#: main.py:1190
 msgid "This language is already selected."
 msgstr "Din il-lingwa hija diġà magħżula."
 
-#: src/main.py:775
+#: main.py:1195
 msgid "This size is already selected."
 msgstr "Dan id-daqs huwa diġà magħżul."
 
-#: src/main.py:778
+#: main.py:1200
 msgid "This appearance is already selected."
 msgstr "Din id-dehra hija diġà magħżula."
 
-#: src/main.py:781
+#: main.py:1205
+msgid "This quality is already selected."
+msgstr "Din il-kwalità hija diġà magħżula."
+
+#: main.py:1210
 msgid "Info"
 msgstr "Info"
 
-#: src/main.py:782
+#: main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -198,7 +226,7 @@ msgstr ""
 "Attività fuq MacOS, jew, sempliċement ibda mill-ġdid il-kompjuter tiegħek "
 "biex ittemmhom."
 
-#: src/main.py:792
+#: main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -210,91 +238,13 @@ msgstr ""
 "cwords. NOTA: Data tisliba bażi hija aċċessata biss meta l-verżjoni tradotta"
 " tagħha ma tkunx preżenti fid-direttorju lokali."
 
-#: src/main.py:798
+#: main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr ""
 "Sar żball fil-ġenerazzjoni tat-tisliba. Jekk jogħġbok ara aktar "
 "informazzjoni fil-console"
-
-#: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:216
-msgid "Crossword Puzzle - Game"
-msgstr "Tisliba - Logħba"
-
-#: src/cword_webapp/templates/index.html:133
-msgid "Across"
-msgstr "Madwar"
-
-#: src/cword_webapp/templates/index.html:154
-msgid "Down"
-msgstr "Down"
-
-#: src/cword_webapp/templates/index.html:177
-msgid "Reveal"
-msgstr "Ikxef"
-
-#: src/cword_webapp/templates/index.html:179
-#: src/cword_webapp/templates/index.html:186
-msgid "Cell"
-msgstr "Ċellula"
-
-#: src/cword_webapp/templates/index.html:180
-#: src/cword_webapp/templates/index.html:187
-#: src/cword_webapp/templates/index.html:193
-msgid "Word"
-msgstr "Kelma"
-
-#: src/cword_webapp/templates/index.html:181
-#: src/cword_webapp/templates/index.html:188
-#: src/cword_webapp/templates/index.html:194
-msgid "Grid"
-msgstr "Grid"
-
-#: src/cword_webapp/templates/index.html:184
-msgid "Check"
-msgstr "Iċċekkja"
-
-#: src/cword_webapp/templates/index.html:191
-msgid "Clear"
-msgstr "Ċara"
-
-#: src/cword_webapp/templates/index.html:202
-msgid "Smart Skip"
-msgstr "Skip intelliġenti"
-
-#: src/cword_webapp/templates/index.html:208
-msgid "Click To Zoom"
-msgstr "Ikklikkja biex zoom"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "You are viewing"
-msgstr "Qed tara"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "from"
-msgstr "minn"
-
-#: src/cword_webapp/templates/index.html:219
-msgid "word(s) could not be inserted, sorry."
-msgstr "kelma(i) ma setgħetx tiddaħħal, sorry."
-
-#: src/cword_webapp/templates/index.html:220
-msgid "Word count (adjusted)"
-msgstr "Għadd ta' kliem (aġġustat)"
-
-#: src/cword_webapp/templates/index.html:222
-msgid "Word count"
-msgstr "Għadd tal-kliem"
-
-#: src/cword_webapp/templates/index.html:224
-msgid "Continue"
-msgstr "Kompli"
-
-#: src/cword_webapp/templates/index.html:229
-msgid "You completed the crossword!"
-msgstr "Imlejt it-tisliba!"
 
 msgid "Easy"
 msgstr "Faċli"
@@ -356,3 +306,57 @@ msgstr "Xjenza tal-kompjuter"
 
 #~ msgid "To check or reveal a cell/word, you must first select a cell"
 #~ msgstr "Biex tiċċekkja jew tikxef ċellula/kelma, l-ewwel trid tagħżel ċellula"
+
+#~ msgid "Crossword Puzzle - Game"
+#~ msgstr "Tisliba - Logħba"
+
+#~ msgid "Across"
+#~ msgstr "Madwar"
+
+#~ msgid "Down"
+#~ msgstr "Down"
+
+#~ msgid "Reveal"
+#~ msgstr "Ikxef"
+
+#~ msgid "Cell"
+#~ msgstr "Ċellula"
+
+#~ msgid "Word"
+#~ msgstr "Kelma"
+
+#~ msgid "Grid"
+#~ msgstr "Grid"
+
+#~ msgid "Check"
+#~ msgstr "Iċċekkja"
+
+#~ msgid "Clear"
+#~ msgstr "Ċara"
+
+#~ msgid "Smart Skip"
+#~ msgstr "Skip intelliġenti"
+
+#~ msgid "Click To Zoom"
+#~ msgstr "Ikklikkja biex zoom"
+
+#~ msgid "You are viewing"
+#~ msgstr "Qed tara"
+
+#~ msgid "from"
+#~ msgstr "minn"
+
+#~ msgid "word(s) could not be inserted, sorry."
+#~ msgstr "kelma(i) ma setgħetx tiddaħħal, sorry."
+
+#~ msgid "Word count (adjusted)"
+#~ msgstr "Għadd ta' kliem (aġġustat)"
+
+#~ msgid "Word count"
+#~ msgstr "Għadd tal-kliem"
+
+#~ msgid "Continue"
+#~ msgstr "Kompli"
+
+#~ msgid "You completed the crossword!"
+#~ msgstr "Imlejt it-tisliba!"

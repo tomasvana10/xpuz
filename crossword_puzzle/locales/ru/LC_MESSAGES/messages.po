@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-19 12:02+1100\n"
+"POT-Creation-Date: 2024-05-06 11:46+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ru <LL@li.org>\n"
@@ -19,123 +19,147 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
+#: main.py:78 main.py:129 main.py:270 main.py:338
 msgid "Crossword Puzzle"
 msgstr "Кроссворд"
 
-#: src/main.py:88
+#: main.py:145
 msgid "View crosswords"
 msgstr "Посмотреть кроссворды"
 
-#: src/main.py:92
+#: main.py:154
 msgid "Exit the app"
 msgstr "Выйти из приложения"
 
-#: src/main.py:98
+#: main.py:165
 msgid "Global Settings"
 msgstr "Глобальные настройки"
 
-#: src/main.py:102
+#: main.py:172
 msgid "Languages"
 msgstr "Языки"
 
-#: src/main.py:108
+#: main.py:184
 msgid "Size"
 msgstr "Размер"
 
-#: src/main.py:115
+#: main.py:203
 msgid "light"
 msgstr "свет"
 
-#: src/main.py:115
+#: main.py:203
 msgid "dark"
 msgstr "темный"
 
-#: src/main.py:115
+#: main.py:203
 msgid "system"
 msgstr "система"
 
-#: src/main.py:116
+#: main.py:206 main.py:220
 msgid "Appearance"
 msgstr "Появление"
 
-#: src/main.py:138 src/main.py:267
+#: main.py:226
+msgid "terrible"
+msgstr "ужасный"
+
+#: main.py:226
+msgid "poor"
+msgstr "бедный"
+
+#: main.py:226
+msgid "average"
+msgstr "средний"
+
+#: main.py:226
+msgid "great"
+msgstr "большой"
+
+#: main.py:226
+msgid "perfect"
+msgstr "идеальный"
+
+#: main.py:230
+msgid "Crossword Quality"
+msgstr "Качество кроссворда"
+
+#: main.py:262 main.py:415
 msgid "Crossword Browser"
 msgstr "Браузер кроссвордов"
 
-#: src/main.py:269
+#: main.py:420
 msgid "Go back"
 msgstr "Возвращаться"
 
-#: src/main.py:274
+#: main.py:431
 msgid "Load crossword"
 msgstr "Загрузить кроссворд"
 
-#: src/main.py:278
+#: main.py:440
 msgid "Open web app"
 msgstr "Открыть веб-приложение"
 
-#: src/main.py:282
+#: main.py:449
 msgid "Terminate web app"
 msgstr "Завершить веб-приложение"
 
-#: src/main.py:288
+#: main.py:460
 msgid "Word count preferences"
 msgstr "Настройки количества слов"
 
-#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
+#: main.py:474 main.py:536 main.py:582 main.py:802
 msgid "Select word count"
 msgstr "Выберите количество слов"
 
-#: src/main.py:297 src/main.py:371 src/main.py:542
+#: main.py:478 main.py:581 main.py:820
 msgid "Maximum"
 msgstr "Максимум"
 
-#: src/main.py:303
+#: main.py:489
 msgid "Custom"
 msgstr "Обычай"
 
-#: src/main.py:462
+#: main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr "Чтобы выполнить эту операцию, вы должны сначала выбрать ячейку."
 
-#: src/main.py:589
+#: main.py:886
 msgid "View"
 msgstr "Вид"
 
-#: src/cword_webapp/templates/index.html:230 src/main.py:591
+#: main.py:893
 msgid "Close"
 msgstr "Закрывать"
 
-#: src/main.py:681 src/main.py:705
+#: main.py:1042 main.py:1086
 msgid "difficulty"
 msgstr "трудность"
 
-#: src/main.py:702
+#: main.py:1078
 msgid "Total words"
 msgstr "Всего слов"
 
-#: src/main.py:705
+#: main.py:1085
 msgid "Difficulty"
 msgstr "Сложность"
 
-#: src/main.py:710
+#: main.py:1098
 msgid "Select"
 msgstr "Выбирать"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Restart"
 msgstr "Перезапуск"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "Вы уверены, что хотите перезапустить приложение?"
 
-#: src/main.py:749
+#: main.py:1156
 msgid "Exit"
 msgstr "Выход"
 
-#: src/main.py:750
+#: main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -143,11 +167,11 @@ msgstr ""
 "Вы уверены, что хотите выйти из приложения? Если веб-приложение запущено, "
 "оно будет прекращено."
 
-#: src/main.py:755
+#: main.py:1166
 msgid "Back to home"
 msgstr "Вернуться домой"
 
-#: src/main.py:756
+#: main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -155,28 +179,32 @@ msgstr ""
 "Вы уверены, что хотите вернуться на главный экран? Веб-приложение будет "
 "прекращено."
 
-#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
-#: src/main.py:797
+#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
+#: main.py:1240
 msgid "Error"
 msgstr "Ошибка"
 
-#: src/main.py:772
+#: main.py:1190
 msgid "This language is already selected."
 msgstr "Этот язык уже выбран."
 
-#: src/main.py:775
+#: main.py:1195
 msgid "This size is already selected."
 msgstr "Этот размер уже выбран."
 
-#: src/main.py:778
+#: main.py:1200
 msgid "This appearance is already selected."
 msgstr "Этот внешний вид уже выбран."
 
-#: src/main.py:781
+#: main.py:1205
+msgid "This quality is already selected."
+msgstr "Это качество уже выбрано."
+
+#: main.py:1210
 msgid "Info"
 msgstr "Информация"
 
-#: src/main.py:782
+#: main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -198,7 +226,7 @@ msgstr ""
 "были завершены должным образом, можно завершить с помощью Монитора "
 "активности в MacOS или просто перезагрузить компьютер, чтобы завершить их."
 
-#: src/main.py:792
+#: main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -210,91 +238,13 @@ msgstr ""
 "Доступ к базовым данным кроссворда возможен только в том случае, если его "
 "переведенная версия отсутствует в каталоге локалей."
 
-#: src/main.py:798
+#: main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr ""
 "Произошла ошибка при создании кроссворда. Дополнительную информацию смотрите"
 " в консоли."
-
-#: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:216
-msgid "Crossword Puzzle - Game"
-msgstr "Кроссворд - игра"
-
-#: src/cword_webapp/templates/index.html:133
-msgid "Across"
-msgstr "Через"
-
-#: src/cword_webapp/templates/index.html:154
-msgid "Down"
-msgstr "Вниз"
-
-#: src/cword_webapp/templates/index.html:177
-msgid "Reveal"
-msgstr "Раскрывать"
-
-#: src/cword_webapp/templates/index.html:179
-#: src/cword_webapp/templates/index.html:186
-msgid "Cell"
-msgstr "Клетка"
-
-#: src/cword_webapp/templates/index.html:180
-#: src/cword_webapp/templates/index.html:187
-#: src/cword_webapp/templates/index.html:193
-msgid "Word"
-msgstr "Слово"
-
-#: src/cword_webapp/templates/index.html:181
-#: src/cword_webapp/templates/index.html:188
-#: src/cword_webapp/templates/index.html:194
-msgid "Grid"
-msgstr "Сетка"
-
-#: src/cword_webapp/templates/index.html:184
-msgid "Check"
-msgstr "Проверять"
-
-#: src/cword_webapp/templates/index.html:191
-msgid "Clear"
-msgstr "Прозрачный"
-
-#: src/cword_webapp/templates/index.html:202
-msgid "Smart Skip"
-msgstr "Умный пропуск"
-
-#: src/cword_webapp/templates/index.html:208
-msgid "Click To Zoom"
-msgstr "Нажмите, чтобы увеличить"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "You are viewing"
-msgstr "Вы просматриваете"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "from"
-msgstr "от"
-
-#: src/cword_webapp/templates/index.html:219
-msgid "word(s) could not be inserted, sorry."
-msgstr "слово(а) не удалось вставить, извините."
-
-#: src/cword_webapp/templates/index.html:220
-msgid "Word count (adjusted)"
-msgstr "Количество слов (скорректировано)"
-
-#: src/cword_webapp/templates/index.html:222
-msgid "Word count"
-msgstr "Количество слов"
-
-#: src/cword_webapp/templates/index.html:224
-msgid "Continue"
-msgstr "Продолжать"
-
-#: src/cword_webapp/templates/index.html:229
-msgid "You completed the crossword!"
-msgstr "Вы разгадали кроссворд!"
 
 msgid "Easy"
 msgstr "Легкий"
@@ -357,3 +307,57 @@ msgstr "Информатика"
 #~ msgid "To check or reveal a cell/word, you must first select a cell"
 #~ msgstr ""
 #~ "Чтобы проверить или раскрыть ячейку/слово, сначала необходимо выбрать ячейку"
+
+#~ msgid "Crossword Puzzle - Game"
+#~ msgstr "Кроссворд - игра"
+
+#~ msgid "Across"
+#~ msgstr "Через"
+
+#~ msgid "Down"
+#~ msgstr "Вниз"
+
+#~ msgid "Reveal"
+#~ msgstr "Раскрывать"
+
+#~ msgid "Cell"
+#~ msgstr "Клетка"
+
+#~ msgid "Word"
+#~ msgstr "Слово"
+
+#~ msgid "Grid"
+#~ msgstr "Сетка"
+
+#~ msgid "Check"
+#~ msgstr "Проверять"
+
+#~ msgid "Clear"
+#~ msgstr "Прозрачный"
+
+#~ msgid "Smart Skip"
+#~ msgstr "Умный пропуск"
+
+#~ msgid "Click To Zoom"
+#~ msgstr "Нажмите, чтобы увеличить"
+
+#~ msgid "You are viewing"
+#~ msgstr "Вы просматриваете"
+
+#~ msgid "from"
+#~ msgstr "от"
+
+#~ msgid "word(s) could not be inserted, sorry."
+#~ msgstr "слово(а) не удалось вставить, извините."
+
+#~ msgid "Word count (adjusted)"
+#~ msgstr "Количество слов (скорректировано)"
+
+#~ msgid "Word count"
+#~ msgstr "Количество слов"
+
+#~ msgid "Continue"
+#~ msgstr "Продолжать"
+
+#~ msgid "You completed the crossword!"
+#~ msgstr "Вы разгадали кроссворд!"

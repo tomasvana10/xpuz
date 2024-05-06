@@ -37,6 +37,7 @@ from crossword_puzzle.constants import (
     CrosswordDifficulties,
     CrosswordDirection,
     CrosswordStyle,
+    CrosswordQuality,
     Paths,
 )
 from crossword_puzzle.cword_gen import Crossword
@@ -213,6 +214,30 @@ class Home(CTk):
             font=self.TEXT_FONT,
         )
         self.opts_appearance.set(_(self.cfg.get("m", "appearance")))
+        
+        self.l_appearance_opts = CTkLabel(
+            self.settings_container,
+            text=_("Appearance"),
+            bg_color="transparent",
+            font=self.BOLD_TEXT_FONT,
+        )
+        
+        self.cword_qualities: list[str] = [
+            _("terrible"), _("poor"), _("average"), _("great"), _("perfect")
+        ]
+        self.l_cword_quality = CTkLabel(
+            self.settings_container,
+            text=_("Crossword Quality"),
+            bg_color="transparent",
+            font=self.BOLD_TEXT_FONT,
+        )
+        self.opts_cword_quality= CTkOptionMenu(
+            self.settings_container,
+            values=self.cword_qualities,
+            command=self.change_crossword_quality,
+            font=self.TEXT_FONT,
+        )
+        self.opts_cword_quality.set(_(self.cfg.get("misc", "cword_quality")))
 
     def _place_content(self) -> None:
         self.l_title.place(relx=0.5, rely=0.1, anchor="c")
@@ -220,12 +245,14 @@ class Home(CTk):
         self.b_open_cword_browser.place(relx=0.5, rely=0.65, anchor="c")
         self.b_close_app.place(relx=0.5, rely=0.76, anchor="c")
         self.l_settings.place(relx=0.5, rely=0.1, anchor="c")
-        self.l_language_opts.place(relx=0.5, rely=0.24, anchor="c")
-        self.opts_language.place(relx=0.5, rely=0.30, anchor="c")
-        self.l_scale_opts.place(relx=0.5, rely=0.44, anchor="c")
-        self.opts_scale.place(relx=0.5, rely=0.5, anchor="c")
-        self.l_appearance_opts.place(relx=0.5, rely=0.64, anchor="c")
-        self.opts_appearance.place(relx=0.5, rely=0.7, anchor="c")
+        self.l_language_opts.place(relx=0.5, rely=0.21, anchor="c")
+        self.opts_language.place(relx=0.5, rely=0.27, anchor="c")
+        self.l_scale_opts.place(relx=0.5, rely=0.41, anchor="c")
+        self.opts_scale.place(relx=0.5, rely=0.47, anchor="c")
+        self.l_appearance_opts.place(relx=0.5, rely=0.61, anchor="c")
+        self.opts_appearance.place(relx=0.5, rely=0.67, anchor="c")
+        self.l_cword_quality.place(relx=0.5, rely=0.81, anchor="c")
+        self.opts_cword_quality.place(relx=0.5, rely=0.87, anchor="c")
 
     def open_cword_browser(self) -> None:
         """Remove all homescreen widgets and instantiate the ``CrosswordBrowser``
@@ -311,6 +338,18 @@ class Home(CTk):
         self.title(_("Crossword Puzzle"))
         self.container.pack_forget()
         self.generate_screen()
+
+    def change_crossword_quality(self, quality: str) -> None:
+        """Ensures the user is not selecting the same crossword quality, then 
+        updates the crossword quality in ``config.ini``.
+        """
+        eng_quality_name: str = BaseEngStrings.BASE_ENG_CWORD_QUALITIES[
+            self.cword_qualities.index(quality)
+        ]
+        if eng_quality_name == self.cfg.get("misc", "cword_quality"):
+            return AppHelper.show_messagebox(same_quality=True)
+
+        _update_config(self.cfg, "misc", "cword_quality", eng_quality_name)
 
 
 class CrosswordBrowser(CTkFrame):
@@ -1139,6 +1178,7 @@ class AppHelper:
         same_lang: bool = False,
         same_scale: bool = False,
         same_appearance: bool = False,
+        same_quality: bool = False,
         first_time_opening_cword_browser: bool = False,
         definitions_loading_err: bool = False,
         cword_gen_err: bool = False,
@@ -1158,6 +1198,11 @@ class AppHelper:
         if same_appearance:
             return messagebox.showerror(
                 _("Error"), _("This appearance is already selected.")
+            )
+        
+        if same_quality: 
+            return messagebox.showerror(
+                _("Error"), _("This quality is already selected.")
             )
 
         if first_time_opening_cword_browser:

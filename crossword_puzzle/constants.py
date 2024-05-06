@@ -111,6 +111,16 @@ class CrosswordRestrictions:
                                                # language
 
 
+class CrosswordQuality:
+    QUALITY_MAP: dict[int, str] = {
+        "terrible": 0.05,
+        "poor": 0.25,
+        "average": 0.5,
+        "great": 0.7,
+        "perfect": 1.05,
+    }
+
+
 class DimensionsCalculation:
     """Values that aid with scaling whitespace and providing an appropriate
     side length for the grid. Do not modify.
@@ -118,7 +128,10 @@ class DimensionsCalculation:
 
     WHITESPACE_SCALAR: float = 1.9
     DIMENSIONS_CONSTANT: int = 1
-
+    
 
 class BaseEngStrings:
     BASE_ENG_APPEARANCES: list[str] = ["light", "dark", "system"]
+    BASE_ENG_CWORD_QUALITIES: list[str] = [
+        "terrible", "poor", "average", "great", "perfect"
+    ]

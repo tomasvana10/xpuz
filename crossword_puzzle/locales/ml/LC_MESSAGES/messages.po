@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-19 12:02+1100\n"
+"POT-Creation-Date: 2024-05-06 11:46+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ml <LL@li.org>\n"
@@ -19,123 +19,147 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
+#: main.py:78 main.py:129 main.py:270 main.py:338
 msgid "Crossword Puzzle"
 msgstr "ക്രോസ്വേഡ് പസിൽ"
 
-#: src/main.py:88
+#: main.py:145
 msgid "View crosswords"
 msgstr "ക്രോസ്വേഡുകൾ കാണുക"
 
-#: src/main.py:92
+#: main.py:154
 msgid "Exit the app"
 msgstr "ആപ്പിൽ നിന്ന് പുറത്തുകടക്കുക"
 
-#: src/main.py:98
+#: main.py:165
 msgid "Global Settings"
 msgstr "ആഗോള ക്രമീകരണങ്ങൾ"
 
-#: src/main.py:102
+#: main.py:172
 msgid "Languages"
 msgstr "ഭാഷകൾ"
 
-#: src/main.py:108
+#: main.py:184
 msgid "Size"
 msgstr "വലിപ്പം"
 
-#: src/main.py:115
+#: main.py:203
 msgid "light"
 msgstr "വെളിച്ചം"
 
-#: src/main.py:115
+#: main.py:203
 msgid "dark"
 msgstr "ഇരുണ്ട"
 
-#: src/main.py:115
+#: main.py:203
 msgid "system"
 msgstr "സിസ്റ്റം"
 
-#: src/main.py:116
+#: main.py:206 main.py:220
 msgid "Appearance"
 msgstr "രൂപഭാവം"
 
-#: src/main.py:138 src/main.py:267
+#: main.py:226
+msgid "terrible"
+msgstr "ദാരുണമായ"
+
+#: main.py:226
+msgid "poor"
+msgstr "ദരിദനായ"
+
+#: main.py:226
+msgid "average"
+msgstr "ശരാശരി"
+
+#: main.py:226
+msgid "great"
+msgstr "മഹത്തായ"
+
+#: main.py:226
+msgid "perfect"
+msgstr "പൂര്ണ്ണമാക്കുക"
+
+#: main.py:230
+msgid "Crossword Quality"
+msgstr "ക്രോസ്വേഡ് ഗുണമേന്മ"
+
+#: main.py:262 main.py:415
 msgid "Crossword Browser"
 msgstr "ക്രോസ്വേഡ് ബ്രൗസർ"
 
-#: src/main.py:269
+#: main.py:420
 msgid "Go back"
 msgstr "മടങ്ങിപ്പോവുക"
 
-#: src/main.py:274
+#: main.py:431
 msgid "Load crossword"
 msgstr "ക്രോസ്വേഡ് ലോഡ് ചെയ്യുക"
 
-#: src/main.py:278
+#: main.py:440
 msgid "Open web app"
 msgstr "വെബ് ആപ്പ് തുറക്കുക"
 
-#: src/main.py:282
+#: main.py:449
 msgid "Terminate web app"
 msgstr "വെബ് ആപ്പ് അവസാനിപ്പിക്കുക"
 
-#: src/main.py:288
+#: main.py:460
 msgid "Word count preferences"
 msgstr "വാക്കുകളുടെ എണ്ണം മുൻഗണനകൾ"
 
-#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
+#: main.py:474 main.py:536 main.py:582 main.py:802
 msgid "Select word count"
 msgstr "വാക്കുകളുടെ എണ്ണം തിരഞ്ഞെടുക്കുക"
 
-#: src/main.py:297 src/main.py:371 src/main.py:542
+#: main.py:478 main.py:581 main.py:820
 msgid "Maximum"
 msgstr "പരമാവധി"
 
-#: src/main.py:303
+#: main.py:489
 msgid "Custom"
 msgstr "കസ്റ്റം"
 
-#: src/main.py:462
+#: main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr "ഈ പ്രവർത്തനം നടത്താൻ, നിങ്ങൾ ആദ്യം ഒരു സെൽ തിരഞ്ഞെടുക്കണം."
 
-#: src/main.py:589
+#: main.py:886
 msgid "View"
 msgstr "കാണുക"
 
-#: src/cword_webapp/templates/index.html:230 src/main.py:591
+#: main.py:893
 msgid "Close"
 msgstr "അടയ്ക്കുക"
 
-#: src/main.py:681 src/main.py:705
+#: main.py:1042 main.py:1086
 msgid "difficulty"
 msgstr "ബുദ്ധിമുട്ട്"
 
-#: src/main.py:702
+#: main.py:1078
 msgid "Total words"
 msgstr "ആകെ വാക്കുകൾ"
 
-#: src/main.py:705
+#: main.py:1085
 msgid "Difficulty"
 msgstr "ബുദ്ധിമുട്ട്"
 
-#: src/main.py:710
+#: main.py:1098
 msgid "Select"
 msgstr "തിരഞ്ഞെടുക്കുക"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Restart"
 msgstr "പുനരാരംഭിക്കുക"
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "ആപ്പ് പുനരാരംഭിക്കണമെന്ന് തീർച്ചയാണോ?"
 
-#: src/main.py:749
+#: main.py:1156
 msgid "Exit"
 msgstr "പുറത്ത്"
 
-#: src/main.py:750
+#: main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -143,11 +167,11 @@ msgstr ""
 "ആപ്പിൽ നിന്ന് പുറത്തുകടക്കണമെന്ന് തീർച്ചയാണോ? വെബ് ആപ്പ് "
 "പ്രവർത്തിക്കുകയാണെങ്കിൽ, അത് അവസാനിപ്പിക്കും."
 
-#: src/main.py:755
+#: main.py:1166
 msgid "Back to home"
 msgstr "തിരികെ വീട്ടിലേക്ക്"
 
-#: src/main.py:756
+#: main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -155,28 +179,32 @@ msgstr ""
 "ഹോം സ്‌ക്രീനിലേക്ക് തിരികെ പോകണമെന്ന് തീർച്ചയാണോ? വെബ് ആപ്പ് "
 "അവസാനിപ്പിക്കും."
 
-#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
-#: src/main.py:797
+#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
+#: main.py:1240
 msgid "Error"
 msgstr "പിശക്"
 
-#: src/main.py:772
+#: main.py:1190
 msgid "This language is already selected."
 msgstr "ഈ ഭാഷ ഇതിനകം തിരഞ്ഞെടുത്തു."
 
-#: src/main.py:775
+#: main.py:1195
 msgid "This size is already selected."
 msgstr "ഈ വലുപ്പം ഇതിനകം തിരഞ്ഞെടുത്തു."
 
-#: src/main.py:778
+#: main.py:1200
 msgid "This appearance is already selected."
 msgstr "ഈ രൂപം ഇതിനകം തിരഞ്ഞെടുത്തു."
 
-#: src/main.py:781
+#: main.py:1205
+msgid "This quality is already selected."
+msgstr "ഈ ഗുണനിലവാരം ഇതിനകം തിരഞ്ഞെടുത്തു."
+
+#: main.py:1210
 msgid "Info"
 msgstr "വിവരം"
 
-#: src/main.py:782
+#: main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -199,7 +227,7 @@ msgstr ""
 "പ്രോസസ്സുകളും MacOS-ലെ ആക്റ്റിവിറ്റി മോണിറ്റർ വഴി അവസാനിപ്പിക്കാം, "
 "അല്ലെങ്കിൽ അവ അവസാനിപ്പിക്കാൻ നിങ്ങളുടെ കമ്പ്യൂട്ടർ പുനരാരംഭിക്കുക."
 
-#: src/main.py:792
+#: main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -211,91 +239,13 @@ msgstr ""
 "ശ്രദ്ധിക്കുക: വിവർത്തനം ചെയ്ത പതിപ്പ് ലൊക്കേൽസ് ഡയറക്‌ടറിയിൽ ഇല്ലെങ്കിൽ "
 "മാത്രമേ അടിസ്ഥാന ക്രോസ്‌വേഡ് ഡാറ്റ ആക്‌സസ്സുചെയ്യൂ."
 
-#: src/main.py:798
+#: main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr ""
 "ക്രോസ്വേഡ് സൃഷ്ടിക്കുന്നതിൽ ഒരു പിശക് സംഭവിച്ചു. കൂടുതൽ വിവരങ്ങൾ കൺസോളിൽ "
 "കാണുക"
-
-#: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:216
-msgid "Crossword Puzzle - Game"
-msgstr "ക്രോസ്വേഡ് പസിൽ - ഗെയിം"
-
-#: src/cword_webapp/templates/index.html:133
-msgid "Across"
-msgstr "ഉടനീളം"
-
-#: src/cword_webapp/templates/index.html:154
-msgid "Down"
-msgstr "താഴേക്ക്"
-
-#: src/cword_webapp/templates/index.html:177
-msgid "Reveal"
-msgstr "വെളിപ്പെടുത്തുക"
-
-#: src/cword_webapp/templates/index.html:179
-#: src/cword_webapp/templates/index.html:186
-msgid "Cell"
-msgstr "സെൽ"
-
-#: src/cword_webapp/templates/index.html:180
-#: src/cword_webapp/templates/index.html:187
-#: src/cword_webapp/templates/index.html:193
-msgid "Word"
-msgstr "വാക്ക്"
-
-#: src/cword_webapp/templates/index.html:181
-#: src/cword_webapp/templates/index.html:188
-#: src/cword_webapp/templates/index.html:194
-msgid "Grid"
-msgstr "ഗ്രിഡ്"
-
-#: src/cword_webapp/templates/index.html:184
-msgid "Check"
-msgstr "ചെക്ക്"
-
-#: src/cword_webapp/templates/index.html:191
-msgid "Clear"
-msgstr "ക്ലിയർ"
-
-#: src/cword_webapp/templates/index.html:202
-msgid "Smart Skip"
-msgstr "സ്മാർട്ട് ഒഴിവാക്കുക"
-
-#: src/cword_webapp/templates/index.html:208
-msgid "Click To Zoom"
-msgstr "സൂം ചെയ്യാൻ ക്ലിക്കുചെയ്യുക"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "You are viewing"
-msgstr "നിങ്ങൾ കാണുന്നു"
-
-#: src/cword_webapp/templates/index.html:217
-msgid "from"
-msgstr "നിന്ന്"
-
-#: src/cword_webapp/templates/index.html:219
-msgid "word(s) could not be inserted, sorry."
-msgstr "വാക്ക്(കൾ) ചേർക്കാൻ കഴിഞ്ഞില്ല, ക്ഷമിക്കണം."
-
-#: src/cword_webapp/templates/index.html:220
-msgid "Word count (adjusted)"
-msgstr "വാക്കുകളുടെ എണ്ണം (ക്രമീകരിച്ചത്)"
-
-#: src/cword_webapp/templates/index.html:222
-msgid "Word count"
-msgstr "വാക്കുകളുടെ എണ്ണം"
-
-#: src/cword_webapp/templates/index.html:224
-msgid "Continue"
-msgstr "തുടരുക"
-
-#: src/cword_webapp/templates/index.html:229
-msgid "You completed the crossword!"
-msgstr "നിങ്ങൾ ക്രോസ്വേഡ് പൂർത്തിയാക്കി!"
 
 msgid "Easy"
 msgstr "എളുപ്പം"
@@ -359,3 +309,57 @@ msgstr "കമ്പ്യൂട്ടർ സയൻസ്"
 #~ msgstr ""
 #~ "ഒരു സെൽ/വാക്ക് പരിശോധിക്കുന്നതിനോ വെളിപ്പെടുത്തുന്നതിനോ, നിങ്ങൾ ആദ്യം ഒരു "
 #~ "സെൽ തിരഞ്ഞെടുക്കണം"
+
+#~ msgid "Crossword Puzzle - Game"
+#~ msgstr "ക്രോസ്വേഡ് പസിൽ - ഗെയിം"
+
+#~ msgid "Across"
+#~ msgstr "ഉടനീളം"
+
+#~ msgid "Down"
+#~ msgstr "താഴേക്ക്"
+
+#~ msgid "Reveal"
+#~ msgstr "വെളിപ്പെടുത്തുക"
+
+#~ msgid "Cell"
+#~ msgstr "സെൽ"
+
+#~ msgid "Word"
+#~ msgstr "വാക്ക്"
+
+#~ msgid "Grid"
+#~ msgstr "ഗ്രിഡ്"
+
+#~ msgid "Check"
+#~ msgstr "ചെക്ക്"
+
+#~ msgid "Clear"
+#~ msgstr "ക്ലിയർ"
+
+#~ msgid "Smart Skip"
+#~ msgstr "സ്മാർട്ട് ഒഴിവാക്കുക"
+
+#~ msgid "Click To Zoom"
+#~ msgstr "സൂം ചെയ്യാൻ ക്ലിക്കുചെയ്യുക"
+
+#~ msgid "You are viewing"
+#~ msgstr "നിങ്ങൾ കാണുന്നു"
+
+#~ msgid "from"
+#~ msgstr "നിന്ന്"
+
+#~ msgid "word(s) could not be inserted, sorry."
+#~ msgstr "വാക്ക്(കൾ) ചേർക്കാൻ കഴിഞ്ഞില്ല, ക്ഷമിക്കണം."
+
+#~ msgid "Word count (adjusted)"
+#~ msgstr "വാക്കുകളുടെ എണ്ണം (ക്രമീകരിച്ചത്)"
+
+#~ msgid "Word count"
+#~ msgstr "വാക്കുകളുടെ എണ്ണം"
+
+#~ msgid "Continue"
+#~ msgstr "തുടരുക"
+
+#~ msgid "You completed the crossword!"
+#~ msgstr "നിങ്ങൾ ക്രോസ്വേഡ് പൂർത്തിയാക്കി!"

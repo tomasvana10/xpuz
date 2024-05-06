@@ -1,6 +1,6 @@
-# Translations template for crossword_puzzle.
-# Copyright (C) 2024 Tomas Vana
-# This file is distributed under the same license as the crossword_puzzle project.
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 #, fuzzy
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-19 12:02+1100\n"
+"POT-Creation-Date: 2024-05-06 11:46+1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,243 +17,212 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
+#: main.py:78 main.py:129 main.py:270 main.py:338
 msgid "Crossword Puzzle"
 msgstr ""
 
-#: src/main.py:88
+#: main.py:145
 msgid "View crosswords"
 msgstr ""
 
-#: src/main.py:92
+#: main.py:154
 msgid "Exit the app"
 msgstr ""
 
-#: src/main.py:98
+#: main.py:165
 msgid "Global Settings"
 msgstr ""
 
-#: src/main.py:102
+#: main.py:172
 msgid "Languages"
 msgstr ""
 
-#: src/main.py:108
+#: main.py:184
 msgid "Size"
 msgstr ""
 
-#: src/main.py:115
+#: main.py:203
 msgid "light"
 msgstr ""
 
-#: src/main.py:115
+#: main.py:203
 msgid "dark"
 msgstr ""
 
-#: src/main.py:115
+#: main.py:203
 msgid "system"
 msgstr ""
 
-#: src/main.py:116
+#: main.py:206 main.py:220
 msgid "Appearance"
 msgstr ""
 
-#: src/main.py:138 src/main.py:267
+#: main.py:226
+msgid "terrible"
+msgstr ""
+
+#: main.py:226
+msgid "poor"
+msgstr ""
+
+#: main.py:226
+msgid "average"
+msgstr ""
+
+#: main.py:226
+msgid "great"
+msgstr ""
+
+#: main.py:226
+msgid "perfect"
+msgstr ""
+
+#: main.py:230
+msgid "Crossword Quality"
+msgstr ""
+
+#: main.py:262 main.py:415
 msgid "Crossword Browser"
 msgstr ""
 
-#: src/main.py:269
+#: main.py:420
 msgid "Go back"
 msgstr ""
 
-#: src/main.py:274
+#: main.py:431
 msgid "Load crossword"
 msgstr ""
 
-#: src/main.py:278
+#: main.py:440
 msgid "Open web app"
 msgstr ""
 
-#: src/main.py:282
+#: main.py:449
 msgid "Terminate web app"
 msgstr ""
 
-#: src/main.py:288
+#: main.py:460
 msgid "Word count preferences"
 msgstr ""
 
-#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
+#: main.py:474 main.py:536 main.py:582 main.py:802
 msgid "Select word count"
 msgstr ""
 
-#: src/main.py:297 src/main.py:371 src/main.py:542
+#: main.py:478 main.py:581 main.py:820
 msgid "Maximum"
 msgstr ""
 
-#: src/main.py:303
+#: main.py:489
 msgid "Custom"
 msgstr ""
 
-#: src/main.py:462
+#: main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr ""
 
-#: src/main.py:589
+#: main.py:886
 msgid "View"
 msgstr ""
 
-#: src/cword_webapp/templates/index.html:230 src/main.py:591
+#: main.py:893
 msgid "Close"
 msgstr ""
 
-#: src/main.py:681 src/main.py:705
+#: main.py:1042 main.py:1086
 msgid "difficulty"
 msgstr ""
 
-#: src/main.py:702
+#: main.py:1078
 msgid "Total words"
 msgstr ""
 
-#: src/main.py:705
+#: main.py:1085
 msgid "Difficulty"
 msgstr ""
 
-#: src/main.py:710
+#: main.py:1098
 msgid "Select"
 msgstr ""
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Restart"
 msgstr ""
 
-#: src/main.py:745
+#: main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr ""
 
-#: src/main.py:749
+#: main.py:1156
 msgid "Exit"
 msgstr ""
 
-#: src/main.py:750
-msgid "Are you sure you want to exit the app? If the web app is running, it will be terminated."
+#: main.py:1157
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will"
+" be terminated."
 msgstr ""
 
-#: src/main.py:755
+#: main.py:1166
 msgid "Back to home"
 msgstr ""
 
-#: src/main.py:756
-msgid "Are you sure you want to go back to the home screen? The web app will be terminated."
+#: main.py:1167
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
 msgstr ""
 
-#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
-#: src/main.py:797
+#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
+#: main.py:1240
 msgid "Error"
 msgstr ""
 
-#: src/main.py:772
+#: main.py:1190
 msgid "This language is already selected."
 msgstr ""
 
-#: src/main.py:775
+#: main.py:1195
 msgid "This size is already selected."
 msgstr ""
 
-#: src/main.py:778
+#: main.py:1200
 msgid "This appearance is already selected."
 msgstr ""
 
-#: src/main.py:781
+#: main.py:1205
+msgid "This quality is already selected."
+msgstr ""
+
+#: main.py:1210
 msgid "Info"
 msgstr ""
 
-#: src/main.py:782
-msgid "First time launch, please read: Once you have loaded a crossword, and wish to load another one, you must first terminate the web app. IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, the program will run new web apps with a different port. Alternatively, you can manually change the port in the program's config file. All app processes that have not been properly terminated can be terminated through Activity Monitor on MacOS, or, simply restart your computer to terminate them."
+#: main.py:1211
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and "
+"wish to load another one, you must first terminate the web app. "
+"IMPORTANT: If you are on macOS, force quitting the application (using "
+"cmd+q) while the web app is running will prevent it from properly "
+"terminating. If you mistakenly do this, the program will run new web apps"
+" with a different port. Alternatively, you can manually change the port "
+"in the program's config file. All app processes that have not been "
+"properly terminated can be terminated through Activity Monitor on MacOS, "
+"or, simply restart your computer to terminate them."
 msgstr ""
 
-#: src/main.py:792
-msgid "An error occured while loading this crossword's definitions. Ensure that its definitions JSON file exists in the base cwords directory. NOTE: Base crossword data is only accessed when its translated version is not present in the locales directory."
+#: main.py:1229
+msgid ""
+"An error occured while loading this crossword's definitions. Ensure that "
+"its definitions JSON file exists in the base cwords directory. NOTE: Base"
+" crossword data is only accessed when its translated version is not "
+"present in the locales directory."
 msgstr ""
 
-#: src/main.py:798
-msgid "An error occured in crossword generation. Please see further information in the console"
-msgstr ""
-
-#: src/cword_webapp/templates/index.html:13
-#: src/cword_webapp/templates/index.html:216
-msgid "Crossword Puzzle - Game"
-msgstr ""
-
-#: src/cword_webapp/templates/index.html:133
-msgid "Across"
-msgstr ""
-
-#: src/cword_webapp/templates/index.html:154
-msgid "Down"
-msgstr ""
-
-#: src/cword_webapp/templates/index.html:177
-msgid "Reveal"
-msgstr ""
-
-#: src/cword_webapp/templates/index.html:179
-#: src/cword_webapp/templates/index.html:186
-msgid "Cell"
-msgstr ""
-
-#: src/cword_webapp/templates/index.html:180
-#: src/cword_webapp/templates/index.html:187
-#: src/cword_webapp/templates/index.html:193
-msgid "Word"
-msgstr ""
-
-#: src/cword_webapp/templates/index.html:181
-#: src/cword_webapp/templates/index.html:188
-#: src/cword_webapp/templates/index.html:194
-msgid "Grid"
-msgstr ""
-
-#: src/cword_webapp/templates/index.html:184
-msgid "Check"
-msgstr ""
-
-#: src/cword_webapp/templates/index.html:191
-msgid "Clear"
-msgstr ""
-
-#: src/cword_webapp/templates/index.html:202
-msgid "Smart Skip"
-msgstr ""
-
-#: src/cword_webapp/templates/index.html:208
-msgid "Click To Zoom"
-msgstr ""
-
-#: src/cword_webapp/templates/index.html:217
-msgid "You are viewing"
-msgstr ""
-
-#: src/cword_webapp/templates/index.html:217
-msgid "from"
-msgstr ""
-
-#: src/cword_webapp/templates/index.html:219
-msgid "word(s) could not be inserted, sorry."
-msgstr ""
-
-#: src/cword_webapp/templates/index.html:220
-msgid "Word count (adjusted)"
-msgstr ""
-
-#: src/cword_webapp/templates/index.html:222
-msgid "Word count"
-msgstr ""
-
-#: src/cword_webapp/templates/index.html:224
-msgid "Continue"
-msgstr ""
-
-#: src/cword_webapp/templates/index.html:229
-msgid "You completed the crossword!"
+#: main.py:1241
+msgid ""
+"An error occured in crossword generation. Please see further information "
+"in the console"
 msgstr ""
 
 msgid "Easy"
