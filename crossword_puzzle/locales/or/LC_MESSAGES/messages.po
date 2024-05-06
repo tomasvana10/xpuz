@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-06 11:46+1000\n"
+"POT-Creation-Date: 2024-05-06 14:57+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: or <LL@li.org>\n"
@@ -19,147 +19,138 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: main.py:78 main.py:129 main.py:270 main.py:338
+#: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
+#: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
 msgid "Crossword Puzzle"
 msgstr "କ୍ରସ୍ ୱାର୍ଡ ପଜଲ୍ |"
 
-#: main.py:145
+#: crossword_puzzle/main.py:145
 msgid "View crosswords"
 msgstr "କ୍ରସ୍ ୱାର୍ଡଗୁଡିକ ଦେଖନ୍ତୁ |"
 
-#: main.py:154
+#: crossword_puzzle/main.py:154
 msgid "Exit the app"
 msgstr "ଆପ୍ ଛାଡନ୍ତୁ |"
 
-#: main.py:165
+#: crossword_puzzle/main.py:165
 msgid "Global Settings"
 msgstr "ଗ୍ଲୋବାଲ୍ ସେଟିଂସମୂହ |"
 
-#: main.py:172
+#: crossword_puzzle/main.py:172
 msgid "Languages"
 msgstr "ଭାଷା"
 
-#: main.py:184
+#: crossword_puzzle/main.py:184
 msgid "Size"
 msgstr "ଆକାର |"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "light"
 msgstr "ଆଲୋକ"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "dark"
 msgstr "ଅନ୍ଧାର"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "system"
 msgstr "ସିଷ୍ଟମ୍"
 
-#: main.py:206 main.py:220
+#: crossword_puzzle/main.py:206 crossword_puzzle/main.py:220
 msgid "Appearance"
 msgstr "ଦୃଶ୍ୟ"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "terrible"
 msgstr "ଭୟଙ୍କର"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "poor"
 msgstr "ଗରିବ"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "average"
 msgstr "ହାରାହାରି"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "great"
 msgstr "ବହୁତ ଭଲ"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "perfect"
 msgstr "ସଂପୂର୍ଣ୍ଣ"
 
-#: main.py:230
+#: crossword_puzzle/main.py:230
 msgid "Crossword Quality"
 msgstr "କ୍ରସ୍ ୱାର୍ଡ ଗୁଣବତ୍ତା |"
 
-#: main.py:262 main.py:415
+#: crossword_puzzle/main.py:262 crossword_puzzle/main.py:415
 msgid "Crossword Browser"
 msgstr "କ୍ରସ୍ ୱାର୍ଡ ବ୍ରାଉଜର୍ |"
 
-#: main.py:420
+#: crossword_puzzle/main.py:420
 msgid "Go back"
 msgstr "ଫେରିଯାଅ"
 
-#: main.py:431
+#: crossword_puzzle/main.py:431
 msgid "Load crossword"
 msgstr "କ୍ରସ୍ ୱାର୍ଡ ଲୋଡ୍ କରନ୍ତୁ |"
 
-#: main.py:440
+#: crossword_puzzle/main.py:440
 msgid "Open web app"
 msgstr "ୱେବ୍ ଆପ୍ ଖୋଲନ୍ତୁ |"
 
-#: main.py:449
+#: crossword_puzzle/main.py:449
 msgid "Terminate web app"
 msgstr "ୱେବ୍ ଆପ୍ ସମାପ୍ତ କରନ୍ତୁ |"
 
-#: main.py:460
+#: crossword_puzzle/main.py:460
 msgid "Word count preferences"
 msgstr "ଶବ୍ଦ ଗଣନା ପସନ୍ଦ"
 
-#: main.py:474 main.py:536 main.py:582 main.py:802
+#: crossword_puzzle/main.py:474 crossword_puzzle/main.py:536
+#: crossword_puzzle/main.py:582 crossword_puzzle/main.py:802
 msgid "Select word count"
 msgstr "ଶବ୍ଦ ଗଣନା ଚୟନ କରନ୍ତୁ |"
 
-#: main.py:478 main.py:581 main.py:820
-msgid "Maximum"
-msgstr "ସର୍ବାଧିକ"
-
-#: main.py:489
+#: crossword_puzzle/main.py:489
 msgid "Custom"
 msgstr "କଷ୍ଟମ୍"
 
-#: main.py:694
+#: crossword_puzzle/main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr "ଏହି ଅପରେସନ୍ କରିବାକୁ, ଆପଣଙ୍କୁ ପ୍ରଥମେ ଏକ କକ୍ଷ ଚୟନ କରିବାକୁ ପଡିବ |"
 
-#: main.py:886
+#: crossword_puzzle/main.py:886
 msgid "View"
 msgstr "ଦର୍ଶନ କରନ୍ତୁ |"
 
-#: main.py:893
+#: crossword_puzzle/cword_webapp/templates/index.html:383
+#: crossword_puzzle/main.py:893
 msgid "Close"
 msgstr "ବନ୍ଦ"
 
-#: main.py:1042 main.py:1086
+#: crossword_puzzle/main.py:1042
 msgid "difficulty"
 msgstr "ଅସୁବିଧା"
 
-#: main.py:1078
-msgid "Total words"
-msgstr "ସମୁଦାୟ ଶବ୍ଦ |"
-
-#: main.py:1085
-msgid "Difficulty"
-msgstr "ଅସୁବିଧା"
-
-#: main.py:1098
+#: crossword_puzzle/main.py:1098
 msgid "Select"
 msgstr "ଚୟନ କରନ୍ତୁ |"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Restart"
 msgstr "ପୁନଃପ୍ରାରମ୍ଭ"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "ଆପଣ ନିଶ୍ଚିତ କି ଆପଣ ଆପ୍ ପୁନ rest ଆରମ୍ଭ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?"
 
-#: main.py:1156
+#: crossword_puzzle/main.py:1156
 msgid "Exit"
 msgstr "ପ୍ରସ୍ଥାନ"
 
-#: main.py:1157
+#: crossword_puzzle/main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -167,11 +158,11 @@ msgstr ""
 "ଆପଣ ନିଶ୍ଚିତ କି ଆପଣ ଆପ୍ ଛାଡିବାକୁ ଚାହୁଁଛନ୍ତି କି? ଯଦି ୱେବ୍ ଆପ୍ ଚାଲୁଛି, ତେବେ "
 "ଏହାକୁ ବନ୍ଦ କରିଦିଆଯିବ |"
 
-#: main.py:1166
+#: crossword_puzzle/main.py:1166
 msgid "Back to home"
 msgstr "ଘରକୁ ଫେରନ୍ତୁ |"
 
-#: main.py:1167
+#: crossword_puzzle/main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -179,32 +170,33 @@ msgstr ""
 "ଆପଣ ନିଶ୍ଚିତ କି ଆପଣ ହୋମ ସ୍କ୍ରିନକୁ ଫେରିବାକୁ ଚାହୁଁଛନ୍ତି କି? ୱେବ୍ ଆପ୍ ସମାପ୍ତ ହେବ"
 " |"
 
-#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
-#: main.py:1240
+#: crossword_puzzle/main.py:1190 crossword_puzzle/main.py:1195
+#: crossword_puzzle/main.py:1200 crossword_puzzle/main.py:1205
+#: crossword_puzzle/main.py:1228 crossword_puzzle/main.py:1240
 msgid "Error"
 msgstr "ତ୍ରୁଟି |"
 
-#: main.py:1190
+#: crossword_puzzle/main.py:1190
 msgid "This language is already selected."
 msgstr "ଏହି ଭାଷା ପୂର୍ବରୁ ମନୋନୀତ ହୋଇଛି |"
 
-#: main.py:1195
+#: crossword_puzzle/main.py:1195
 msgid "This size is already selected."
 msgstr "ଏହି ଆକାର ପୂର୍ବରୁ ସିଲେକ୍ଟ ହୋଇସାରିଛି |"
 
-#: main.py:1200
+#: crossword_puzzle/main.py:1200
 msgid "This appearance is already selected."
 msgstr "ଏହି ଦୃଶ୍ୟଟି ସିଲେକ୍ଟ ହୋଇସାରିଛି |"
 
-#: main.py:1205
+#: crossword_puzzle/main.py:1205
 msgid "This quality is already selected."
 msgstr "ଏହି ଗୁଣବତ୍ତା ପୂର୍ବରୁ ଚୟନ କରାଯାଇଛି |"
 
-#: main.py:1210
+#: crossword_puzzle/main.py:1210
 msgid "Info"
 msgstr "ସୂଚନା"
 
-#: main.py:1211
+#: crossword_puzzle/main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -227,7 +219,7 @@ msgstr ""
 "କିମ୍ବା ସେଗୁଡ଼ିକୁ ବନ୍ଦ କରିବା ପାଇଁ କେବଳ ଆପଣଙ୍କ କମ୍ପ୍ୟୁଟରକୁ ପୁନ rest ଆରମ୍ଭ "
 "କରନ୍ତୁ |"
 
-#: main.py:1229
+#: crossword_puzzle/main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -239,12 +231,90 @@ msgstr ""
 "ୱାର୍ଡ ଡାଟା କେବଳ ଆକ୍ସେସ୍ ହୁଏ ଯେତେବେଳେ ଏହାର ଅନୁବାଦିତ ସଂସ୍କରଣ ଲୋକାଲ୍ "
 "ଡିରେକ୍ଟୋରୀରେ ନଥାଏ |"
 
-#: main.py:1241
+#: crossword_puzzle/main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr ""
 "କ୍ରସ୍ ୱାର୍ଡ ଉତ୍ପାଦନରେ ଏକ ତ୍ରୁଟି ଘଟିଲା | ଦୟାକରି କନସୋଲରେ ଅଧିକ ସୂଚନା ଦେଖନ୍ତୁ |"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:13
+#: crossword_puzzle/cword_webapp/templates/index.html:350
+msgid "Crossword Puzzle - Game"
+msgstr "କ୍ରସ୍ ୱାର୍ଡ ପଜଲ୍ - ଖେଳ |"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:173
+msgid "Across"
+msgstr "ପାର୍ଶ୍ୱରେ |"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:196
+msgid "Down"
+msgstr "ତଳକୁ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:228
+msgid "Reveal"
+msgstr "ପ୍ରକାଶ କର |"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:236
+#: crossword_puzzle/cword_webapp/templates/index.html:271
+msgid "Cell"
+msgstr "କକ୍ଷ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:243
+#: crossword_puzzle/cword_webapp/templates/index.html:278
+#: crossword_puzzle/cword_webapp/templates/index.html:306
+msgid "Word"
+msgstr "ଶବ୍ଦ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:252
+#: crossword_puzzle/cword_webapp/templates/index.html:287
+#: crossword_puzzle/cword_webapp/templates/index.html:315
+msgid "Grid"
+msgstr "ଗ୍ରୀଡ୍"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:263
+msgid "Check"
+msgstr "ଯାଞ୍ଚ କରନ୍ତୁ |"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:298
+msgid "Clear"
+msgstr "ସଫା"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:329
+msgid "Smart Skip"
+msgstr "ଣାନ୍ତ ସ୍କିପ୍ କର |"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:340
+msgid "Click To Zoom"
+msgstr "ଜୁମ୍ କରିବାକୁ କ୍ଲିକ୍ କରନ୍ତୁ |"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:352
+msgid "You are viewing"
+msgstr "ତୁମେ ଦେଖୁଛ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:353
+msgid "from"
+msgstr "ଠାରୁ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:357
+msgid "word(s) could not be inserted, sorry."
+msgstr "ଶବ୍ଦ (ଗୁଡିକ) ସନ୍ନିବେଶ କରାଯାଇପାରିବ ନାହିଁ, ଦୁ sorry ଖିତ |"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:360
+msgid "Word count (adjusted)"
+msgstr "ଶବ୍ଦ ଗଣନା (ଆଡଜଷ୍ଟ ହୋଇଛି)"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:364
+msgid "Word count"
+msgstr "ୱାର୍ଡ ଗଣନା |"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:371
+msgid "Continue"
+msgstr "ଜାରି ରଖ |"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:377
+msgid "You completed the crossword!"
+msgstr "ତୁମେ କ୍ରସ୍ ୱାର୍ଡ ସମାପ୍ତ କରିଛ!"
 
 msgid "Easy"
 msgstr "ସହଜ"
@@ -269,96 +339,3 @@ msgstr "ବିଜ୍ଞାନ |"
 
 msgid "Computer Science"
 msgstr "କମ୍ପ୍ୟୁଟର ବିଜ୍ଞାନ"
-
-#~ msgid ""
-#~ "First time launch, please read:\n"
-#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
-#~ "\n"
-#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
-#~ "\n"
-#~ "Also important to know:\n"
-#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
-#~ msgstr ""
-
-#~ msgid "Capitals"
-#~ msgstr "ରାଜଧାନୀ"
-
-#~ msgid "Countries"
-#~ msgstr "ଦେଶଗୁଡିକ |"
-
-#~ msgid "Easy"
-#~ msgstr "ସହଜ"
-
-#~ msgid "Medium"
-#~ msgstr "ମଧ୍ୟମ"
-
-#~ msgid "Hard"
-#~ msgstr "କଠିନ |"
-
-#~ msgid "Extreme"
-#~ msgstr "ଅତ୍ୟଧିକ"
-
-#~ msgid "Geography"
-#~ msgstr "ଭୂଗୋଳ"
-
-#~ msgid "Science"
-#~ msgstr "ଆକାର |"
-
-#~ msgid "To check or reveal a cell/word, you must first select a cell"
-#~ msgstr ""
-#~ "ଏକ କକ୍ଷ / ଶବ୍ଦ ଯାଞ୍ଚ କିମ୍ବା ପ୍ରକାଶ କରିବାକୁ, ଆପଣଙ୍କୁ ପ୍ରଥମେ ଏକ କକ୍ଷ ଚୟନ "
-#~ "କରିବାକୁ ପଡିବ |"
-
-#~ msgid "Crossword Puzzle - Game"
-#~ msgstr "କ୍ରସ୍ ୱାର୍ଡ ପଜଲ୍ - ଖେଳ |"
-
-#~ msgid "Across"
-#~ msgstr "ସମଗ୍ର"
-
-#~ msgid "Down"
-#~ msgstr "ତଳକୁ |"
-
-#~ msgid "Reveal"
-#~ msgstr "ପ୍ରକାଶ କରନ୍ତୁ |"
-
-#~ msgid "Cell"
-#~ msgstr "କକ୍ଷ"
-
-#~ msgid "Word"
-#~ msgstr "ଶବ୍ଦ"
-
-#~ msgid "Grid"
-#~ msgstr "ଗ୍ରୀଡ୍"
-
-#~ msgid "Check"
-#~ msgstr "ଯାଞ୍ଚ କରନ୍ତୁ |"
-
-#~ msgid "Clear"
-#~ msgstr "ସଫା"
-
-#~ msgid "Smart Skip"
-#~ msgstr "ଣାନ୍ତ ସ୍କିପ୍ କର |"
-
-#~ msgid "Click To Zoom"
-#~ msgstr "ଜୁମ୍ କରିବାକୁ କ୍ଲିକ୍ କରନ୍ତୁ |"
-
-#~ msgid "You are viewing"
-#~ msgstr "ଆପଣ ଦେଖୁଛନ୍ତି |"
-
-#~ msgid "from"
-#~ msgstr "ଠାରୁ"
-
-#~ msgid "word(s) could not be inserted, sorry."
-#~ msgstr "ଶବ୍ଦ (ଗୁଡିକ) ସନ୍ନିବେଶ କରାଯାଇପାରିବ ନାହିଁ, ଦୁ sorry ଖିତ।"
-
-#~ msgid "Word count (adjusted)"
-#~ msgstr "ଶବ୍ଦ ଗଣନା (ସଂଶୋଧିତ)"
-
-#~ msgid "Word count"
-#~ msgstr "ଶବ୍ଦ ଗଣନା |"
-
-#~ msgid "Continue"
-#~ msgstr "ଜାରି ରଖ |"
-
-#~ msgid "You completed the crossword!"
-#~ msgstr "ଆପଣ କ୍ରସ୍ ୱାର୍ଡ ସମାପ୍ତ କରିଛନ୍ତି!"

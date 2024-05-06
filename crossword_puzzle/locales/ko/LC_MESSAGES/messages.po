@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-06 11:46+1000\n"
+"POT-Creation-Date: 2024-05-06 14:57+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ko <LL@li.org>\n"
@@ -19,188 +19,204 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: main.py:78 main.py:129 main.py:270 main.py:338
+#: src/main.py:43 src/main.py:80 src/main.py:144 src/main.py:212
 msgid "Crossword Puzzle"
 msgstr "크로스워드 퍼즐"
 
-#: main.py:145
+#: src/main.py:88
 msgid "View crosswords"
 msgstr "크로스워드 보기"
 
-#: main.py:154
+#: src/main.py:92
 msgid "Exit the app"
 msgstr "앱 종료"
 
-#: main.py:165
+#: src/main.py:98
 msgid "Global Settings"
 msgstr "전역 설정"
 
-#: main.py:172
+#: src/main.py:102
 msgid "Languages"
 msgstr "언어"
 
-#: main.py:184
+#: src/main.py:108
 msgid "Size"
 msgstr "크기"
 
-#: main.py:203
+#: src/main.py:115
 msgid "light"
 msgstr "밝은"
+#: It was translated to 빛 which means the light (comming from sun or LED, lemp and so on)
 
-#: main.py:203
+#: src/main.py:115
 msgid "dark"
 msgstr "어두운"
 
-#: main.py:203
+#: src/main.py:115
 msgid "system"
-msgstr "시스템"
+msgstr "시스템" 
+#: 체계 means system but it's very odd to use in this case
 
-#: main.py:206 main.py:220
+#: src/main.py:116
 msgid "Appearance"
-msgstr "환경"
+msgstr "환경" 
+#: better to use 환경
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "terrible"
 msgstr "끔찍한"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "poor"
 msgstr "가난한"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "average"
 msgstr "평균"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "great"
 msgstr "엄청난"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "perfect"
 msgstr "완벽한"
 
-#: main.py:230
+#: crossword_puzzle/main.py:230
 msgid "Crossword Quality"
 msgstr "크로스 워드 품질"
 
-#: main.py:262 main.py:415
+#: src/main.py:138 src/main.py:267
 msgid "Crossword Browser"
 msgstr "크로스워드 브라우저"
 
-#: main.py:420
+#: src/main.py:269
 msgid "Go back"
 msgstr "돌아가기"
 
-#: main.py:431
+#: src/main.py:274
 msgid "Load crossword"
 msgstr "크로스워드 불러오기"
+#: 불러오기 is more often used tnan 로드
 
-#: main.py:440
+#: src/main.py:278
 msgid "Open web app"
 msgstr "웹앱 열기"
+#: you don't need space in between web and app
 
-#: main.py:449
+#: src/main.py:282
 msgid "Terminate web app"
 msgstr "웹앱 종료"
 
-#: main.py:460
+#: src/main.py:288
 msgid "Word count preferences"
 msgstr "단어 수 설정"
+#: you don't need the word 환경(whuch means environment) in this case
 
-#: main.py:474 main.py:536 main.py:582 main.py:802
+#: src/main.py:295 src/main.py:337 src/main.py:372 src/main.py:527
 msgid "Select word count"
 msgstr "단어 수 선택"
 
-#: main.py:478 main.py:581 main.py:820
+#: src/main.py:297 src/main.py:371 src/main.py:542
 msgid "Maximum"
 msgstr "최대"
+#: 최고 sounds more like best
 
-#: main.py:489
+#: src/main.py:303
 msgid "Custom"
 msgstr "커스텀"
+#: 관습 means tradition
 
-#: main.py:694
+#: src/main.py:462
 msgid "To perform this operation, you must first select a cell."
 msgstr "이 작업을 수행하려면 먼저 칸을 선택해야합니다."
+#: it is better to use 칸(cell) than using 셀(cell)
 
-#: main.py:886
+#: src/main.py:589
 msgid "View"
 msgstr "보기"
+#: verb form sounds bad in this case
 
-#: main.py:893
+#: src/cword_webapp/templates/index.html:230 src/main.py:591
 msgid "Close"
 msgstr "닫기"
+#: same as privious
 
-#: main.py:1042 main.py:1086
+#: src/main.py:681 src/main.py:705
 msgid "difficulty"
 msgstr "난이도"
+#: 어려움 means hard or hardness
 
-#: main.py:1078
+#: src/main.py:702
 msgid "Total words"
 msgstr "총 단어수"
 
-#: main.py:1085
+#: src/main.py:705
 msgid "Difficulty"
 msgstr "난이도"
+#: difficulty not hard
 
-#: main.py:1098
+#: src/main.py:710
 msgid "Select"
 msgstr "선택하기"
+#: verbs sounds bad
 
-#: main.py:1150
+#: src/main.py:745
 msgid "Restart"
 msgstr "재시작"
 
-#: main.py:1150
+#: src/main.py:745
 msgid "Are you sure you want to restart the app?"
 msgstr "앱을 다시 시작하시겠습니까?"
 
-#: main.py:1156
+#: src/main.py:749
 msgid "Exit"
 msgstr "나가기"
+#: 출구 is exit but usually means "exit door/gate/path"
 
-#: main.py:1157
+#: src/main.py:750
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr "앱을 종료하시겠습니까? 웹앱이 실행 중이면 종료됩니다."
 
-#: main.py:1166
+#: src/main.py:755
 msgid "Back to home"
 msgstr "홈으로"
 
-#: main.py:1167
+#: src/main.py:756
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr "홈 화면으로 돌아가시겠습니까? 웹앱이 종료됩니다."
 
-#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
-#: main.py:1240
+#: src/main.py:772 src/main.py:775 src/main.py:778 src/main.py:791
+#: src/main.py:797
 msgid "Error"
 msgstr "오류"
 
-#: main.py:1190
+#: src/main.py:772
 msgid "This language is already selected."
 msgstr "이 언어는 이미 선택되어 있습니다."
 
-#: main.py:1195
+#: src/main.py:775
 msgid "This size is already selected."
 msgstr "이 크기는 이미 선택되었습니다."
 
-#: main.py:1200
+#: src/main.py:778
 msgid "This appearance is already selected."
 msgstr "이 환경은 이미 선택되어 있습니다."
+#: it is better to use 모양세 or 디자인(design) 환경(environment), I guess 환경 is the best option here 
 
-#: main.py:1205
+#: crossword_puzzle/main.py:1205
 msgid "This quality is already selected."
 msgstr "이 품질은 이미 선택되었습니다."
 
-#: main.py:1210
+#: src/main.py:781
 msgid "Info"
 msgstr "정보"
 
-#: main.py:1211
+#: src/main.py:782
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -217,8 +233,9 @@ msgstr ""
 "않습니다. 실수로 이 작업을 수행하면 프로그램이 다른 포트를 사용하여 새 웹앱을 실행합니다. 또는 프로그램의 구성 파일에서 포트를 "
 "수동으로 변경할 수 있습니다. 제대로 종료되지 않은 모든 앱 프로세스는 MacOS의 Activity Monitor를 통해 종료하거나 "
 "컴퓨터를 다시 시작하여 종료할 수 있습니다."
+#: 웹 앱 to 웹앱
 
-#: main.py:1229
+#: src/main.py:792
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -227,12 +244,101 @@ msgid ""
 msgstr ""
 "이 크로스워드의 설명을 로드하는 동안 오류가 발생했습니다. 해당 정의 JSON 파일이 기본 cwords 디렉터리에 있는지 확인하세요. "
 "참고: 기본 크로스워드 데이터는 번역된 버전이 로케일 디렉토리에 없을 때만 액세스됩니다."
+#: 설명 is better to use in this case
 
-#: main.py:1241
+#: src/main.py:798
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr "크로스워드 생성 중 오류가 발생했습니다. 자세한 내용은 콘솔에서 확인하세요."
+
+#: src/cword_webapp/templates/index.html:13
+#: src/cword_webapp/templates/index.html:216
+msgid "Crossword Puzzle - Game"
+msgstr "크로스워드 퍼즐 - 게임"
+
+#: src/cword_webapp/templates/index.html:133
+msgid "Across"
+msgstr "가로"
+#: if you ment Across to the Horizontal direction it is "가로"
+
+#: src/cword_webapp/templates/index.html:154
+msgid "Down"
+msgstr "세로"
+#: if you ment vertical, it is "세로"
+
+#: src/cword_webapp/templates/index.html:177
+msgid "Reveal"
+msgstr "드러내기"
+#: What the...?
+
+#: src/cword_webapp/templates/index.html:179
+#: src/cword_webapp/templates/index.html:186
+msgid "Cell"
+msgstr "칸"
+#: 칸 sounds better
+
+#: src/cword_webapp/templates/index.html:180
+#: src/cword_webapp/templates/index.html:187
+#: src/cword_webapp/templates/index.html:193
+msgid "Word"
+msgstr "단어"
+
+#: src/cword_webapp/templates/index.html:181
+#: src/cword_webapp/templates/index.html:188
+#: src/cword_webapp/templates/index.html:194
+msgid "Grid"
+msgstr "그리드"
+
+#: src/cword_webapp/templates/index.html:184
+msgid "Check"
+msgstr "확인하다"
+
+#: src/cword_webapp/templates/index.html:191
+msgid "Clear"
+msgstr "클리어"
+#: it's better to use 클리어
+
+#: src/cword_webapp/templates/index.html:202
+msgid "Smart Skip"
+msgstr "스마트 스킵"
+#: 스킵 is better
+
+#: src/cword_webapp/templates/index.html:208
+msgid "Click To Zoom"
+msgstr "확대하려면 클릭하세요"
+
+#: src/cword_webapp/templates/index.html:217
+msgid "You are viewing"
+msgstr "이미 보고있습니다"
+#: that was rude
+
+#: src/cword_webapp/templates/index.html:217
+msgid "from"
+msgstr "~에서"
+
+#: src/cword_webapp/templates/index.html:219
+msgid "word(s) could not be inserted, sorry."
+msgstr "죄송합니다. 단어를 입력할 수 없습니다."
+#: it's better to use 입력
+
+#: src/cword_webapp/templates/index.html:220
+msgid "Word count (adjusted)"
+msgstr "단어 수(조정됨)"
+
+#: src/cword_webapp/templates/index.html:222
+msgid "Word count"
+msgstr "단어 수"
+
+#: src/cword_webapp/templates/index.html:224
+msgid "Continue"
+msgstr "계속하기"
+#: verbs not suitable
+
+#: src/cword_webapp/templates/index.html:229
+msgid "You completed the crossword!"
+msgstr "크로스워드(십자말 풀이)를 완료했습니다!"
+#: crossword = 십자말 풀이 but not usually used word
 
 msgid "Easy"
 msgstr "쉬움"
@@ -242,9 +348,11 @@ msgstr "중간"
 
 msgid "Hard"
 msgstr "어려움"
+#: not the hard as solid...
 
 msgid "Extreme"
 msgstr "쌈@뽕함"
+#: Z-gen lang, kinda meme
 
 msgid "Geography"
 msgstr "지리학"
@@ -257,94 +365,3 @@ msgstr "과학"
 
 msgid "Computer Science"
 msgstr "컴퓨터 과학"
-
-#~ msgid ""
-#~ "First time launch, please read:\n"
-#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
-#~ "\n"
-#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
-#~ "\n"
-#~ "Also important to know:\n"
-#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
-#~ msgstr ""
-
-#~ msgid "Capitals"
-#~ msgstr "수도"
-
-#~ msgid "Countries"
-#~ msgstr "국가"
-
-#~ msgid "Easy"
-#~ msgstr "쉬운"
-
-#~ msgid "Medium"
-#~ msgstr "중간"
-
-#~ msgid "Hard"
-#~ msgstr "딱딱한"
-
-#~ msgid "Extreme"
-#~ msgstr "극심한"
-
-#~ msgid "Geography"
-#~ msgstr "지리학"
-
-#~ msgid "Science"
-#~ msgstr "과학"
-
-#~ msgid "To check or reveal a cell/word, you must first select a cell"
-#~ msgstr "셀/단어를 확인하거나 표시하려면 먼저 셀을 선택해야 합니다."
-
-#~ msgid "Crossword Puzzle - Game"
-#~ msgstr "크로스워드 퍼즐 - 게임"
-
-#~ msgid "Across"
-#~ msgstr "가로"
-
-#~ msgid "Down"
-#~ msgstr "세로"
-
-#~ msgid "Reveal"
-#~ msgstr "드러내기"
-
-#~ msgid "Cell"
-#~ msgstr "칸"
-
-#~ msgid "Word"
-#~ msgstr "단어"
-
-#~ msgid "Grid"
-#~ msgstr "그리드"
-
-#~ msgid "Check"
-#~ msgstr "확인하다"
-
-#~ msgid "Clear"
-#~ msgstr "클리어"
-
-#~ msgid "Smart Skip"
-#~ msgstr "스마트 스킵"
-
-#~ msgid "Click To Zoom"
-#~ msgstr "확대하려면 클릭하세요"
-
-#~ msgid "You are viewing"
-#~ msgstr "이미 보고있습니다"
-
-#~ msgid "from"
-#~ msgstr "~에서"
-
-#~ msgid "word(s) could not be inserted, sorry."
-#~ msgstr "죄송합니다. 단어를 입력할 수 없습니다."
-
-#~ msgid "Word count (adjusted)"
-#~ msgstr "단어 수(조정됨)"
-
-#~ msgid "Word count"
-#~ msgstr "단어 수"
-
-#~ msgid "Continue"
-#~ msgstr "계속하기"
-
-#~ msgid "You completed the crossword!"
-#~ msgstr "크로스워드(십자말 풀이)를 완료했습니다!"

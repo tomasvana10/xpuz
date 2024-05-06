@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-06 11:46+1000\n"
+"POT-Creation-Date: 2024-05-06 14:57+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: hu <LL@li.org>\n"
@@ -19,147 +19,138 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: main.py:78 main.py:129 main.py:270 main.py:338
+#: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
+#: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
 msgid "Crossword Puzzle"
 msgstr "Keresztrejtvény"
 
-#: main.py:145
+#: crossword_puzzle/main.py:145
 msgid "View crosswords"
 msgstr "Keresztrejtvények megtekintése"
 
-#: main.py:154
+#: crossword_puzzle/main.py:154
 msgid "Exit the app"
 msgstr "Lépjen ki az alkalmazásból"
 
-#: main.py:165
+#: crossword_puzzle/main.py:165
 msgid "Global Settings"
 msgstr "Általános beállítások"
 
-#: main.py:172
+#: crossword_puzzle/main.py:172
 msgid "Languages"
 msgstr "Nyelvek"
 
-#: main.py:184
+#: crossword_puzzle/main.py:184
 msgid "Size"
 msgstr "Méret"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "light"
 msgstr "fény"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "dark"
 msgstr "sötét"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "system"
 msgstr "rendszer"
 
-#: main.py:206 main.py:220
+#: crossword_puzzle/main.py:206 crossword_puzzle/main.py:220
 msgid "Appearance"
 msgstr "Kinézet"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "terrible"
 msgstr "szörnyű"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "poor"
 msgstr "szegény"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "average"
 msgstr "átlagos"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "great"
 msgstr "nagy"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "perfect"
 msgstr "tökéletes"
 
-#: main.py:230
+#: crossword_puzzle/main.py:230
 msgid "Crossword Quality"
 msgstr "Keresztrejtvényminőség"
 
-#: main.py:262 main.py:415
+#: crossword_puzzle/main.py:262 crossword_puzzle/main.py:415
 msgid "Crossword Browser"
 msgstr "Keresztrejtvény böngésző"
 
-#: main.py:420
+#: crossword_puzzle/main.py:420
 msgid "Go back"
 msgstr "Menjen vissza"
 
-#: main.py:431
+#: crossword_puzzle/main.py:431
 msgid "Load crossword"
 msgstr "Töltsön be keresztrejtvényt"
 
-#: main.py:440
+#: crossword_puzzle/main.py:440
 msgid "Open web app"
 msgstr "Nyissa meg a webalkalmazást"
 
-#: main.py:449
+#: crossword_puzzle/main.py:449
 msgid "Terminate web app"
 msgstr "A webalkalmazás megszüntetése"
 
-#: main.py:460
+#: crossword_puzzle/main.py:460
 msgid "Word count preferences"
 msgstr "Szószám-beállítások"
 
-#: main.py:474 main.py:536 main.py:582 main.py:802
+#: crossword_puzzle/main.py:474 crossword_puzzle/main.py:536
+#: crossword_puzzle/main.py:582 crossword_puzzle/main.py:802
 msgid "Select word count"
 msgstr "Válassza ki a szavak számát"
 
-#: main.py:478 main.py:581 main.py:820
-msgid "Maximum"
-msgstr "Maximális"
-
-#: main.py:489
+#: crossword_puzzle/main.py:489
 msgid "Custom"
 msgstr "Egyedi"
 
-#: main.py:694
+#: crossword_puzzle/main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr "A művelet végrehajtásához először ki kell választania egy cellát."
 
-#: main.py:886
+#: crossword_puzzle/main.py:886
 msgid "View"
 msgstr "Kilátás"
 
-#: main.py:893
+#: crossword_puzzle/cword_webapp/templates/index.html:383
+#: crossword_puzzle/main.py:893
 msgid "Close"
 msgstr "Bezárás"
 
-#: main.py:1042 main.py:1086
+#: crossword_puzzle/main.py:1042
 msgid "difficulty"
 msgstr "nehézség"
 
-#: main.py:1078
-msgid "Total words"
-msgstr "Összes szó"
-
-#: main.py:1085
-msgid "Difficulty"
-msgstr "Nehézség"
-
-#: main.py:1098
+#: crossword_puzzle/main.py:1098
 msgid "Select"
 msgstr "Válassza ki"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Restart"
 msgstr "Újrakezd"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "Biztosan újra akarja indítani az alkalmazást?"
 
-#: main.py:1156
+#: crossword_puzzle/main.py:1156
 msgid "Exit"
 msgstr "Kijárat"
 
-#: main.py:1157
+#: crossword_puzzle/main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -167,43 +158,44 @@ msgstr ""
 "Biztosan ki akar lépni az alkalmazásból? Ha a webalkalmazás fut, akkor "
 "leáll."
 
-#: main.py:1166
+#: crossword_puzzle/main.py:1166
 msgid "Back to home"
 msgstr "Vissza a főoldalra"
 
-#: main.py:1167
+#: crossword_puzzle/main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
 "Biztosan vissza akar térni a kezdőképernyőre? A webalkalmazás megszűnik."
 
-#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
-#: main.py:1240
+#: crossword_puzzle/main.py:1190 crossword_puzzle/main.py:1195
+#: crossword_puzzle/main.py:1200 crossword_puzzle/main.py:1205
+#: crossword_puzzle/main.py:1228 crossword_puzzle/main.py:1240
 msgid "Error"
 msgstr "Hiba"
 
-#: main.py:1190
+#: crossword_puzzle/main.py:1190
 msgid "This language is already selected."
 msgstr "Ez a nyelv már ki van választva."
 
-#: main.py:1195
+#: crossword_puzzle/main.py:1195
 msgid "This size is already selected."
 msgstr "Ez a méret már ki van választva."
 
-#: main.py:1200
+#: crossword_puzzle/main.py:1200
 msgid "This appearance is already selected."
 msgstr "Ez a megjelenés már ki van választva."
 
-#: main.py:1205
+#: crossword_puzzle/main.py:1205
 msgid "This quality is already selected."
 msgstr "Ezt a minőséget már kiválasztották."
 
-#: main.py:1210
+#: crossword_puzzle/main.py:1210
 msgid "Info"
 msgstr "Info"
 
-#: main.py:1211
+#: crossword_puzzle/main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -226,7 +218,7 @@ msgstr ""
 "segítségével MacOS rendszeren, vagy egyszerűen indítsa újra a számítógépet a"
 " leállításukhoz."
 
-#: main.py:1229
+#: crossword_puzzle/main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -238,13 +230,91 @@ msgstr ""
 "MEGJEGYZÉS: Az alap keresztrejtvényadatokhoz csak akkor lehet hozzáférni, ha"
 " a lefordított verzió nem szerepel a locales könyvtárban."
 
-#: main.py:1241
+#: crossword_puzzle/main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr ""
 "Hiba történt a keresztrejtvény generálása során. További információkat a "
 "konzolon talál"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:13
+#: crossword_puzzle/cword_webapp/templates/index.html:350
+msgid "Crossword Puzzle - Game"
+msgstr "Keresztrejtvény - játék"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:173
+msgid "Across"
+msgstr "Át"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:196
+msgid "Down"
+msgstr "Le"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:228
+msgid "Reveal"
+msgstr "felfed"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:236
+#: crossword_puzzle/cword_webapp/templates/index.html:271
+msgid "Cell"
+msgstr "Sejt"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:243
+#: crossword_puzzle/cword_webapp/templates/index.html:278
+#: crossword_puzzle/cword_webapp/templates/index.html:306
+msgid "Word"
+msgstr "Szó"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:252
+#: crossword_puzzle/cword_webapp/templates/index.html:287
+#: crossword_puzzle/cword_webapp/templates/index.html:315
+msgid "Grid"
+msgstr "Rács"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:263
+msgid "Check"
+msgstr "Jelölje be"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:298
+msgid "Clear"
+msgstr "Egyértelmű"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:329
+msgid "Smart Skip"
+msgstr "Intelligens kihagyás"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:340
+msgid "Click To Zoom"
+msgstr "Kattintson a Zoomra"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:352
+msgid "You are viewing"
+msgstr "Te nézel"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:353
+msgid "from"
+msgstr "tól től"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:357
+msgid "word(s) could not be inserted, sorry."
+msgstr "A szót (ek) nem lehetett beilleszteni, sajnálom."
+
+#: crossword_puzzle/cword_webapp/templates/index.html:360
+msgid "Word count (adjusted)"
+msgstr "Szószám (beállított)"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:364
+msgid "Word count"
+msgstr "Szavak száma"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:371
+msgid "Continue"
+msgstr "Folytatni"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:377
+msgid "You completed the crossword!"
+msgstr "Befejezte a keresztrejtvényt!"
 
 msgid "Easy"
 msgstr "Könnyen"
@@ -269,96 +339,3 @@ msgstr "Tudomány"
 
 msgid "Computer Science"
 msgstr "Számítástechnika"
-
-#~ msgid ""
-#~ "First time launch, please read:\n"
-#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
-#~ "\n"
-#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
-#~ "\n"
-#~ "Also important to know:\n"
-#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
-#~ msgstr ""
-
-#~ msgid "Capitals"
-#~ msgstr "Tőkék"
-
-#~ msgid "Countries"
-#~ msgstr "Országok"
-
-#~ msgid "Easy"
-#~ msgstr "Könnyen"
-
-#~ msgid "Medium"
-#~ msgstr "Közepes"
-
-#~ msgid "Hard"
-#~ msgstr "Kemény"
-
-#~ msgid "Extreme"
-#~ msgstr "Szélső"
-
-#~ msgid "Geography"
-#~ msgstr "Földrajz"
-
-#~ msgid "Science"
-#~ msgstr "Méret"
-
-#~ msgid "To check or reveal a cell/word, you must first select a cell"
-#~ msgstr ""
-#~ "Egy cella/szó ellenőrzéséhez vagy felfedéséhez először ki kell választania "
-#~ "egy cellát"
-
-#~ msgid "Crossword Puzzle - Game"
-#~ msgstr "Keresztrejtvény - Játék"
-
-#~ msgid "Across"
-#~ msgstr "Át"
-
-#~ msgid "Down"
-#~ msgstr "Le"
-
-#~ msgid "Reveal"
-#~ msgstr "felfed"
-
-#~ msgid "Cell"
-#~ msgstr "Sejt"
-
-#~ msgid "Word"
-#~ msgstr "Szó"
-
-#~ msgid "Grid"
-#~ msgstr "Rács"
-
-#~ msgid "Check"
-#~ msgstr "Jelölje be"
-
-#~ msgid "Clear"
-#~ msgstr "Egyértelmű"
-
-#~ msgid "Smart Skip"
-#~ msgstr "Intelligens kihagyás"
-
-#~ msgid "Click To Zoom"
-#~ msgstr "Kattintson a ZOOM gombra"
-
-#~ msgid "You are viewing"
-#~ msgstr "Ön nézi"
-
-#~ msgid "from"
-#~ msgstr "tól től"
-
-#~ msgid "word(s) could not be inserted, sorry."
-#~ msgstr "szó(k) beszúrása nem sikerült, sajnálom."
-
-#~ msgid "Word count (adjusted)"
-#~ msgstr "Szószám (korrigált)"
-
-#~ msgid "Word count"
-#~ msgstr "Szavak száma"
-
-#~ msgid "Continue"
-#~ msgstr "Folytatni"
-
-#~ msgid "You completed the crossword!"
-#~ msgstr "Kitöltötted a keresztrejtvényt!"

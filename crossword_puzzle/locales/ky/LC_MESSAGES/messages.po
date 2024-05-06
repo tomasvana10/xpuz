@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-06 11:46+1000\n"
+"POT-Creation-Date: 2024-05-06 14:57+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ky <LL@li.org>\n"
@@ -19,147 +19,138 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: main.py:78 main.py:129 main.py:270 main.py:338
+#: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
+#: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
 msgid "Crossword Puzzle"
 msgstr "Crossword Puzzle"
 
-#: main.py:145
+#: crossword_puzzle/main.py:145
 msgid "View crosswords"
 msgstr "Кроссворддорду көрүү"
 
-#: main.py:154
+#: crossword_puzzle/main.py:154
 msgid "Exit the app"
 msgstr "Колдонмодон чыгуу"
 
-#: main.py:165
+#: crossword_puzzle/main.py:165
 msgid "Global Settings"
 msgstr "Глобалдык орнотуулар"
 
-#: main.py:172
+#: crossword_puzzle/main.py:172
 msgid "Languages"
 msgstr "Тилдер"
 
-#: main.py:184
+#: crossword_puzzle/main.py:184
 msgid "Size"
 msgstr "Өлчөмү"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "light"
 msgstr "жарык"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "dark"
 msgstr "караңгы"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "system"
 msgstr "системасы"
 
-#: main.py:206 main.py:220
+#: crossword_puzzle/main.py:206 crossword_puzzle/main.py:220
 msgid "Appearance"
 msgstr "Көрүнүш"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "terrible"
 msgstr "коркунучтуу"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "poor"
 msgstr "начар"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "average"
 msgstr "орточо"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "great"
 msgstr "абдан жакшы"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "perfect"
 msgstr "кемчиликсиз"
 
-#: main.py:230
+#: crossword_puzzle/main.py:230
 msgid "Crossword Quality"
 msgstr "Кроссворддун сапаты"
 
-#: main.py:262 main.py:415
+#: crossword_puzzle/main.py:262 crossword_puzzle/main.py:415
 msgid "Crossword Browser"
 msgstr "Crossword Browser"
 
-#: main.py:420
+#: crossword_puzzle/main.py:420
 msgid "Go back"
 msgstr "Артка кайрыл"
 
-#: main.py:431
+#: crossword_puzzle/main.py:431
 msgid "Load crossword"
 msgstr "Кроссворд жүктөө"
 
-#: main.py:440
+#: crossword_puzzle/main.py:440
 msgid "Open web app"
 msgstr "Веб колдонмосун ачыңыз"
 
-#: main.py:449
+#: crossword_puzzle/main.py:449
 msgid "Terminate web app"
 msgstr "Веб колдонмосун токтотуу"
 
-#: main.py:460
+#: crossword_puzzle/main.py:460
 msgid "Word count preferences"
 msgstr "Сөздөрдүн санынын артыкчылыктары"
 
-#: main.py:474 main.py:536 main.py:582 main.py:802
+#: crossword_puzzle/main.py:474 crossword_puzzle/main.py:536
+#: crossword_puzzle/main.py:582 crossword_puzzle/main.py:802
 msgid "Select word count"
 msgstr "Сөздөрдүн санын тандаңыз"
 
-#: main.py:478 main.py:581 main.py:820
-msgid "Maximum"
-msgstr "Максималдуу"
-
-#: main.py:489
+#: crossword_puzzle/main.py:489
 msgid "Custom"
 msgstr "Ыңгайлаштырылган"
 
-#: main.py:694
+#: crossword_puzzle/main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr "Бул операцияны аткаруу үчүн, алгач бир клетканы тандаңыз."
 
-#: main.py:886
+#: crossword_puzzle/main.py:886
 msgid "View"
 msgstr "Көрүү"
 
-#: main.py:893
+#: crossword_puzzle/cword_webapp/templates/index.html:383
+#: crossword_puzzle/main.py:893
 msgid "Close"
 msgstr "Жабуу"
 
-#: main.py:1042 main.py:1086
+#: crossword_puzzle/main.py:1042
 msgid "difficulty"
 msgstr "кыйынчылык"
 
-#: main.py:1078
-msgid "Total words"
-msgstr "Жалпы сөздөр"
-
-#: main.py:1085
-msgid "Difficulty"
-msgstr "Кыйынчылык"
-
-#: main.py:1098
+#: crossword_puzzle/main.py:1098
 msgid "Select"
 msgstr "Тандоо"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Restart"
 msgstr "Кайра жүргүзүү"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "Колдонмону чын эле өчүрүп күйгүзгүңүз келеби?"
 
-#: main.py:1156
+#: crossword_puzzle/main.py:1156
 msgid "Exit"
 msgstr "Чыгыңыз"
 
-#: main.py:1157
+#: crossword_puzzle/main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -167,42 +158,43 @@ msgstr ""
 "Колдонмодон чын эле чыккыңыз келеби? Веб колдонмо иштеп жатса, ал "
 "токтотулат."
 
-#: main.py:1166
+#: crossword_puzzle/main.py:1166
 msgid "Back to home"
 msgstr "Үйгө кайтуу"
 
-#: main.py:1167
+#: crossword_puzzle/main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr "Чын эле башкы экранга кайткыңыз келеби? Веб колдонмо токтотулат."
 
-#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
-#: main.py:1240
+#: crossword_puzzle/main.py:1190 crossword_puzzle/main.py:1195
+#: crossword_puzzle/main.py:1200 crossword_puzzle/main.py:1205
+#: crossword_puzzle/main.py:1228 crossword_puzzle/main.py:1240
 msgid "Error"
 msgstr "Ката"
 
-#: main.py:1190
+#: crossword_puzzle/main.py:1190
 msgid "This language is already selected."
 msgstr "Бул тил мурунтан эле тандалган."
 
-#: main.py:1195
+#: crossword_puzzle/main.py:1195
 msgid "This size is already selected."
 msgstr "Бул өлчөм мурунтан эле тандалган."
 
-#: main.py:1200
+#: crossword_puzzle/main.py:1200
 msgid "This appearance is already selected."
 msgstr "Бул көрүнүш мурунтан эле тандалган."
 
-#: main.py:1205
+#: crossword_puzzle/main.py:1205
 msgid "This quality is already selected."
 msgstr "Бул сапат мурунтан эле тандалып алынган."
 
-#: main.py:1210
+#: crossword_puzzle/main.py:1210
 msgid "Info"
 msgstr "Маалымат"
 
-#: main.py:1211
+#: crossword_puzzle/main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -224,7 +216,7 @@ msgstr ""
 "колдонмо процесстери MacOS'тун Activity Monitor аркылуу токтотулушу мүмкүн, "
 "же аларды токтотуу үчүн жөн гана компьютериңизди өчүрүп күйгүзүңүз."
 
-#: main.py:1229
+#: crossword_puzzle/main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -236,12 +228,90 @@ msgstr ""
 "кроссворд маалыматтарына анын которулган версиясы тилдер каталогунда жок "
 "болгондо гана жеткиликтүү болот."
 
-#: main.py:1241
+#: crossword_puzzle/main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr ""
 "Кроссворд түзүүдө ката кетти. Сураныч, консолдон кошумча маалыматты караңыз"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:13
+#: crossword_puzzle/cword_webapp/templates/index.html:350
+msgid "Crossword Puzzle - Game"
+msgstr "Crossword Puzzle - Оюн"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:173
+msgid "Across"
+msgstr "Аркылуу"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:196
+msgid "Down"
+msgstr "Ылдый"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:228
+msgid "Reveal"
+msgstr "Ачып"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:236
+#: crossword_puzzle/cword_webapp/templates/index.html:271
+msgid "Cell"
+msgstr "Клетка"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:243
+#: crossword_puzzle/cword_webapp/templates/index.html:278
+#: crossword_puzzle/cword_webapp/templates/index.html:306
+msgid "Word"
+msgstr "Сөз"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:252
+#: crossword_puzzle/cword_webapp/templates/index.html:287
+#: crossword_puzzle/cword_webapp/templates/index.html:315
+msgid "Grid"
+msgstr "Тор"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:263
+msgid "Check"
+msgstr "Текшерүү"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:298
+msgid "Clear"
+msgstr "Тазалоо"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:329
+msgid "Smart Skip"
+msgstr "Smart Skip"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:340
+msgid "Click To Zoom"
+msgstr "Чоңойтуу үчүн чыкылдатыңыз"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:352
+msgid "You are viewing"
+msgstr "Сиз көрүп жатасыз"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:353
+msgid "from"
+msgstr "from"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:357
+msgid "word(s) could not be inserted, sorry."
+msgstr "сөз (лар) киргизүү мүмкүн эмес, кечиресиз."
+
+#: crossword_puzzle/cword_webapp/templates/index.html:360
+msgid "Word count (adjusted)"
+msgstr "Сөз саноо (такталган)"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:364
+msgid "Word count"
+msgstr "Сөз саноо"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:371
+msgid "Continue"
+msgstr "Улантыңыз"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:377
+msgid "You completed the crossword!"
+msgstr "Сиз кроссвордду толтурдуңуз!"
 
 msgid "Easy"
 msgstr "Оңой"
@@ -266,94 +336,3 @@ msgstr "Илим"
 
 msgid "Computer Science"
 msgstr "Компьютердик илим"
-
-#~ msgid ""
-#~ "First time launch, please read:\n"
-#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
-#~ "\n"
-#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
-#~ "\n"
-#~ "Also important to know:\n"
-#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
-#~ msgstr ""
-
-#~ msgid "Capitals"
-#~ msgstr "Капиталдар"
-
-#~ msgid "Countries"
-#~ msgstr "Өлкөлөр"
-
-#~ msgid "Easy"
-#~ msgstr "Оңой"
-
-#~ msgid "Medium"
-#~ msgstr "Орто"
-
-#~ msgid "Hard"
-#~ msgstr "Катуу"
-
-#~ msgid "Extreme"
-#~ msgstr "Экстремалдуу"
-
-#~ msgid "Geography"
-#~ msgstr "География"
-
-#~ msgid "Science"
-#~ msgstr "Өлчөмү"
-
-#~ msgid "To check or reveal a cell/word, you must first select a cell"
-#~ msgstr "Клетканы/сөздү текшерүү же ачуу үчүн адегенде уячаны тандоо керек"
-
-#~ msgid "Crossword Puzzle - Game"
-#~ msgstr "Crossword Puzzle - Оюн"
-
-#~ msgid "Across"
-#~ msgstr "Арасында"
-
-#~ msgid "Down"
-#~ msgstr "Төмөн"
-
-#~ msgid "Reveal"
-#~ msgstr "ачуу"
-
-#~ msgid "Cell"
-#~ msgstr "Клетка"
-
-#~ msgid "Word"
-#~ msgstr "Сөз"
-
-#~ msgid "Grid"
-#~ msgstr "Тор"
-
-#~ msgid "Check"
-#~ msgstr "Текшерүү"
-
-#~ msgid "Clear"
-#~ msgstr "Таза"
-
-#~ msgid "Smart Skip"
-#~ msgstr "Smart Skip"
-
-#~ msgid "Click To Zoom"
-#~ msgstr "Чоңойтуу үчүн чыкылдатыңыз"
-
-#~ msgid "You are viewing"
-#~ msgstr "Сиз карап жатасыз"
-
-#~ msgid "from"
-#~ msgstr "тартып"
-
-#~ msgid "word(s) could not be inserted, sorry."
-#~ msgstr "сөз(дер) киргизилбей койду, кечиресиз."
-
-#~ msgid "Word count (adjusted)"
-#~ msgstr "Сөздөрдүн саны (түзөтүлгөн)"
-
-#~ msgid "Word count"
-#~ msgstr "Сөздөрдүн саны"
-
-#~ msgid "Continue"
-#~ msgstr "Улантуу"
-
-#~ msgid "You completed the crossword!"
-#~ msgstr "Сиз кроссвордду бүтүрдүңүз!"

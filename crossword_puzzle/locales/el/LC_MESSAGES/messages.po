@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-06 11:46+1000\n"
+"POT-Creation-Date: 2024-05-06 14:57+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: el <LL@li.org>\n"
@@ -19,148 +19,139 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: main.py:78 main.py:129 main.py:270 main.py:338
+#: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
+#: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
 msgid "Crossword Puzzle"
 msgstr "Σταυρόλεξο"
 
-#: main.py:145
+#: crossword_puzzle/main.py:145
 msgid "View crosswords"
 msgstr "Δείτε σταυρόλεξα"
 
-#: main.py:154
+#: crossword_puzzle/main.py:154
 msgid "Exit the app"
 msgstr "Έξοδος από την εφαρμογή"
 
-#: main.py:165
+#: crossword_puzzle/main.py:165
 msgid "Global Settings"
 msgstr "Γενικές ρυθμίσεις"
 
-#: main.py:172
+#: crossword_puzzle/main.py:172
 msgid "Languages"
 msgstr "Γλώσσες"
 
-#: main.py:184
+#: crossword_puzzle/main.py:184
 msgid "Size"
 msgstr "Μέγεθος"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "light"
 msgstr "φως"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "dark"
 msgstr "σκοτάδι"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "system"
 msgstr "Σύστημα"
 
-#: main.py:206 main.py:220
+#: crossword_puzzle/main.py:206 crossword_puzzle/main.py:220
 msgid "Appearance"
 msgstr "Εμφάνιση"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "terrible"
 msgstr "τρομερός"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "poor"
 msgstr "Φτωχός"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "average"
 msgstr "μέση τιμή"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "great"
 msgstr "εξαιρετική"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "perfect"
 msgstr "τέλειος"
 
-#: main.py:230
+#: crossword_puzzle/main.py:230
 msgid "Crossword Quality"
 msgstr "Ποιότητα δράσης"
 
-#: main.py:262 main.py:415
+#: crossword_puzzle/main.py:262 crossword_puzzle/main.py:415
 msgid "Crossword Browser"
 msgstr "Πρόγραμμα περιήγησης σταυρόλεξων"
 
-#: main.py:420
+#: crossword_puzzle/main.py:420
 msgid "Go back"
 msgstr "Πήγαινε πίσω"
 
-#: main.py:431
+#: crossword_puzzle/main.py:431
 msgid "Load crossword"
 msgstr "Φόρτωση σταυρόλεξου"
 
-#: main.py:440
+#: crossword_puzzle/main.py:440
 msgid "Open web app"
 msgstr "Ανοίξτε την εφαρμογή Ιστού"
 
-#: main.py:449
+#: crossword_puzzle/main.py:449
 msgid "Terminate web app"
 msgstr "Τερματισμός εφαρμογής Ιστού"
 
-#: main.py:460
+#: crossword_puzzle/main.py:460
 msgid "Word count preferences"
 msgstr "Προτιμήσεις καταμέτρησης λέξεων"
 
-#: main.py:474 main.py:536 main.py:582 main.py:802
+#: crossword_puzzle/main.py:474 crossword_puzzle/main.py:536
+#: crossword_puzzle/main.py:582 crossword_puzzle/main.py:802
 msgid "Select word count"
 msgstr "Επιλέξτε μέτρηση λέξεων"
 
-#: main.py:478 main.py:581 main.py:820
-msgid "Maximum"
-msgstr "Ανώτατο όριο"
-
-#: main.py:489
+#: crossword_puzzle/main.py:489
 msgid "Custom"
 msgstr "Εθιμο"
 
-#: main.py:694
+#: crossword_puzzle/main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr ""
 "Για να εκτελέσετε αυτήν τη λειτουργία, πρέπει πρώτα να επιλέξετε ένα κελί."
 
-#: main.py:886
+#: crossword_puzzle/main.py:886
 msgid "View"
 msgstr "Θέα"
 
-#: main.py:893
+#: crossword_puzzle/cword_webapp/templates/index.html:383
+#: crossword_puzzle/main.py:893
 msgid "Close"
 msgstr "Κλείσε"
 
-#: main.py:1042 main.py:1086
+#: crossword_puzzle/main.py:1042
 msgid "difficulty"
 msgstr "δυσκολία"
 
-#: main.py:1078
-msgid "Total words"
-msgstr "Σύνολο λέξεων"
-
-#: main.py:1085
-msgid "Difficulty"
-msgstr "Δυσκολία"
-
-#: main.py:1098
+#: crossword_puzzle/main.py:1098
 msgid "Select"
 msgstr "Επιλέγω"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Restart"
 msgstr "Επανεκκίνηση"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "Είστε βέβαιοι ότι θέλετε να επανεκκινήσετε την εφαρμογή;"
 
-#: main.py:1156
+#: crossword_puzzle/main.py:1156
 msgid "Exit"
 msgstr "Εξοδος"
 
-#: main.py:1157
+#: crossword_puzzle/main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -168,11 +159,11 @@ msgstr ""
 "Είστε βέβαιοι ότι θέλετε να βγείτε από την εφαρμογή; Εάν η εφαρμογή Ιστού "
 "εκτελείται, θα τερματιστεί."
 
-#: main.py:1166
+#: crossword_puzzle/main.py:1166
 msgid "Back to home"
 msgstr "Πίσω στο σπίτι"
 
-#: main.py:1167
+#: crossword_puzzle/main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -180,32 +171,33 @@ msgstr ""
 "Είστε βέβαιοι ότι θέλετε να επιστρέψετε στην αρχική οθόνη; Η εφαρμογή Ιστού "
 "θα τερματιστεί."
 
-#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
-#: main.py:1240
+#: crossword_puzzle/main.py:1190 crossword_puzzle/main.py:1195
+#: crossword_puzzle/main.py:1200 crossword_puzzle/main.py:1205
+#: crossword_puzzle/main.py:1228 crossword_puzzle/main.py:1240
 msgid "Error"
 msgstr "Λάθος"
 
-#: main.py:1190
+#: crossword_puzzle/main.py:1190
 msgid "This language is already selected."
 msgstr "Αυτή η γλώσσα είναι ήδη επιλεγμένη."
 
-#: main.py:1195
+#: crossword_puzzle/main.py:1195
 msgid "This size is already selected."
 msgstr "Αυτό το μέγεθος είναι ήδη επιλεγμένο."
 
-#: main.py:1200
+#: crossword_puzzle/main.py:1200
 msgid "This appearance is already selected."
 msgstr "Αυτή η εμφάνιση είναι ήδη επιλεγμένη."
 
-#: main.py:1205
+#: crossword_puzzle/main.py:1205
 msgid "This quality is already selected."
 msgstr "Αυτή η ποιότητα έχει ήδη επιλεγεί."
 
-#: main.py:1210
+#: crossword_puzzle/main.py:1210
 msgid "Info"
 msgstr "Πληροφορίες"
 
-#: main.py:1211
+#: crossword_puzzle/main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -228,7 +220,7 @@ msgstr ""
 "τερματιστούν μέσω του Activity Monitor σε MacOS ή απλά επανεκκινήστε τον "
 "υπολογιστή σας για να τις τερματίσετε."
 
-#: main.py:1229
+#: crossword_puzzle/main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -240,13 +232,91 @@ msgstr ""
 "cwords. ΣΗΜΕΙΩΣΗ: Η πρόσβαση στα βασικά σταυρόλεξα γίνεται μόνο όταν η "
 "μεταφρασμένη τους έκδοση δεν υπάρχει στον κατάλογο τοπικών ρυθμίσεων."
 
-#: main.py:1241
+#: crossword_puzzle/main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr ""
 "Παρουσιάστηκε σφάλμα στη δημιουργία σταυρόλεξων. Δείτε περισσότερες "
 "πληροφορίες στην κονσόλα"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:13
+#: crossword_puzzle/cword_webapp/templates/index.html:350
+msgid "Crossword Puzzle - Game"
+msgstr "Σταυρώνα παζλ - Παιχνίδι"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:173
+msgid "Across"
+msgstr "Απέναντι"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:196
+msgid "Down"
+msgstr "Κάτω"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:228
+msgid "Reveal"
+msgstr "Αποκαλύπτω"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:236
+#: crossword_puzzle/cword_webapp/templates/index.html:271
+msgid "Cell"
+msgstr "Κύτταρο"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:243
+#: crossword_puzzle/cword_webapp/templates/index.html:278
+#: crossword_puzzle/cword_webapp/templates/index.html:306
+msgid "Word"
+msgstr "Λέξη"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:252
+#: crossword_puzzle/cword_webapp/templates/index.html:287
+#: crossword_puzzle/cword_webapp/templates/index.html:315
+msgid "Grid"
+msgstr "Πλέγμα"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:263
+msgid "Check"
+msgstr "Ελεγχος"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:298
+msgid "Clear"
+msgstr "Σαφή"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:329
+msgid "Smart Skip"
+msgstr "Έξυπνο"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:340
+msgid "Click To Zoom"
+msgstr "Κάντε κλικ για μεγέθυνση"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:352
+msgid "You are viewing"
+msgstr "Βλέπετε"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:353
+msgid "from"
+msgstr "από"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:357
+msgid "word(s) could not be inserted, sorry."
+msgstr "Οι λέξη δεν μπόρεσαν να εισαχθούν, συγνώμη."
+
+#: crossword_puzzle/cword_webapp/templates/index.html:360
+msgid "Word count (adjusted)"
+msgstr "Μέτρηση λέξεων (προσαρμοσμένη)"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:364
+msgid "Word count"
+msgstr "Καταμέτρηση λέξεων"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:371
+msgid "Continue"
+msgstr "Να συνεχίσει"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:377
+msgid "You completed the crossword!"
+msgstr "Ολοκληρώσατε το σταυρόλεξο!"
 
 msgid "Easy"
 msgstr "Ανετα"
@@ -271,96 +341,3 @@ msgstr "Επιστήμη"
 
 msgid "Computer Science"
 msgstr "Επιστήμη των υπολογιστών"
-
-#~ msgid ""
-#~ "First time launch, please read:\n"
-#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
-#~ "\n"
-#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
-#~ "\n"
-#~ "Also important to know:\n"
-#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
-#~ msgstr ""
-
-#~ msgid "Capitals"
-#~ msgstr "Κεφάλαια"
-
-#~ msgid "Countries"
-#~ msgstr "Χώρες"
-
-#~ msgid "Easy"
-#~ msgstr "Ανετα"
-
-#~ msgid "Medium"
-#~ msgstr "Μεσαίο"
-
-#~ msgid "Hard"
-#~ msgstr "Σκληρά"
-
-#~ msgid "Extreme"
-#~ msgstr "Ακρο"
-
-#~ msgid "Geography"
-#~ msgstr "Γεωγραφία"
-
-#~ msgid "Science"
-#~ msgstr "Μέγεθος"
-
-#~ msgid "To check or reveal a cell/word, you must first select a cell"
-#~ msgstr ""
-#~ "Για να ελέγξετε ή να αποκαλύψετε ένα κελί/λέξη, πρέπει πρώτα να επιλέξετε "
-#~ "ένα κελί"
-
-#~ msgid "Crossword Puzzle - Game"
-#~ msgstr "Σταυρόλεξο - Παιχνίδι"
-
-#~ msgid "Across"
-#~ msgstr "Απέναντι"
-
-#~ msgid "Down"
-#~ msgstr "Κάτω"
-
-#~ msgid "Reveal"
-#~ msgstr "Αποκαλύπτω"
-
-#~ msgid "Cell"
-#~ msgstr "Κύτταρο"
-
-#~ msgid "Word"
-#~ msgstr "Λέξη"
-
-#~ msgid "Grid"
-#~ msgstr "Πλέγμα"
-
-#~ msgid "Check"
-#~ msgstr "Ελεγχος"
-
-#~ msgid "Clear"
-#~ msgstr "Σαφή"
-
-#~ msgid "Smart Skip"
-#~ msgstr "Έξυπνο"
-
-#~ msgid "Click To Zoom"
-#~ msgstr "Κάντε κλικ για μεγέθυνση"
-
-#~ msgid "You are viewing"
-#~ msgstr "Βλέπετε"
-
-#~ msgid "from"
-#~ msgstr "από"
-
-#~ msgid "word(s) could not be inserted, sorry."
-#~ msgstr "Δεν μπόρεσε να εισαχθεί λέξη(εις), συγγνώμη."
-
-#~ msgid "Word count (adjusted)"
-#~ msgstr "Πλήθος λέξεων (προσαρμοσμένο)"
-
-#~ msgid "Word count"
-#~ msgstr "Καταμέτρηση λέξεων"
-
-#~ msgid "Continue"
-#~ msgstr "Να συνεχίσει"
-
-#~ msgid "You completed the crossword!"
-#~ msgstr "Συμπλήρωσες το σταυρόλεξο!"

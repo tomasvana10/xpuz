@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-06 11:46+1000\n"
+"POT-Creation-Date: 2024-05-06 14:57+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ig <LL@li.org>\n"
@@ -19,147 +19,138 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: main.py:78 main.py:129 main.py:270 main.py:338
+#: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
+#: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
 msgid "Crossword Puzzle"
 msgstr "Okwu mgbagwoju anya"
 
-#: main.py:145
+#: crossword_puzzle/main.py:145
 msgid "View crosswords"
 msgstr "Lelee okwu mkparịta ụka"
 
-#: main.py:154
+#: crossword_puzzle/main.py:154
 msgid "Exit the app"
 msgstr "Wepụ ngwa ahụ"
 
-#: main.py:165
+#: crossword_puzzle/main.py:165
 msgid "Global Settings"
 msgstr "Ntọala zuru ụwa ọnụ"
 
-#: main.py:172
+#: crossword_puzzle/main.py:172
 msgid "Languages"
 msgstr "Asụsụ"
 
-#: main.py:184
+#: crossword_puzzle/main.py:184
 msgid "Size"
 msgstr "Nha"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "light"
 msgstr "ìhè"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "dark"
 msgstr "ọchịchịrị"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "system"
 msgstr "usoro"
 
-#: main.py:206 main.py:220
+#: crossword_puzzle/main.py:206 crossword_puzzle/main.py:220
 msgid "Appearance"
 msgstr "Ọdịdị"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "terrible"
 msgstr "kemmenyeujo"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "poor"
 msgstr "emezighi"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "average"
 msgstr "agbaetiti"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "great"
 msgstr "keuwu"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "perfect"
 msgstr "zuruoke"
 
-#: main.py:230
+#: crossword_puzzle/main.py:230
 msgid "Crossword Quality"
 msgstr "Ogo Crossword"
 
-#: main.py:262 main.py:415
+#: crossword_puzzle/main.py:262 crossword_puzzle/main.py:415
 msgid "Crossword Browser"
 msgstr "Ihe nchọgharị okwu crossword"
 
-#: main.py:420
+#: crossword_puzzle/main.py:420
 msgid "Go back"
 msgstr "Laghachi azụ"
 
-#: main.py:431
+#: crossword_puzzle/main.py:431
 msgid "Load crossword"
 msgstr "Ibu okwu ntughari"
 
-#: main.py:440
+#: crossword_puzzle/main.py:440
 msgid "Open web app"
 msgstr "Mepee ngwa weebụ"
 
-#: main.py:449
+#: crossword_puzzle/main.py:449
 msgid "Terminate web app"
 msgstr "Kwụsị ngwa weebụ"
 
-#: main.py:460
+#: crossword_puzzle/main.py:460
 msgid "Word count preferences"
 msgstr "Mmasị ọnụọgụ okwu"
 
-#: main.py:474 main.py:536 main.py:582 main.py:802
+#: crossword_puzzle/main.py:474 crossword_puzzle/main.py:536
+#: crossword_puzzle/main.py:582 crossword_puzzle/main.py:802
 msgid "Select word count"
 msgstr "Họrọ ọnụ ọgụgụ okwu"
 
-#: main.py:478 main.py:581 main.py:820
-msgid "Maximum"
-msgstr "Kachasị"
-
-#: main.py:489
+#: crossword_puzzle/main.py:489
 msgid "Custom"
 msgstr "Omenala"
 
-#: main.py:694
+#: crossword_puzzle/main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr "Iji rụọ ọrụ a, ị ga-ebu ụzọ họrọ sel."
 
-#: main.py:886
+#: crossword_puzzle/main.py:886
 msgid "View"
 msgstr "Lelee"
 
-#: main.py:893
+#: crossword_puzzle/cword_webapp/templates/index.html:383
+#: crossword_puzzle/main.py:893
 msgid "Close"
 msgstr "Mechie"
 
-#: main.py:1042 main.py:1086
+#: crossword_puzzle/main.py:1042
 msgid "difficulty"
 msgstr "ike"
 
-#: main.py:1078
-msgid "Total words"
-msgstr "Mkpokọta okwu"
-
-#: main.py:1085
-msgid "Difficulty"
-msgstr "Ihe isi ike"
-
-#: main.py:1098
+#: crossword_puzzle/main.py:1098
 msgid "Select"
 msgstr "Họrọ"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Restart"
 msgstr "Malitegharịa ekwentị"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "Ị ji n'aka na ịchọrọ ịmalitegharị ngwa ahụ?"
 
-#: main.py:1156
+#: crossword_puzzle/main.py:1156
 msgid "Exit"
 msgstr "Ụzọ ọpụpụ"
 
-#: main.py:1157
+#: crossword_puzzle/main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -167,43 +158,44 @@ msgstr ""
 "Ị ji n'aka na ịchọrọ ịpụ na ngwa ahụ? Ọ bụrụ na ngwa weebụ na-agba ọsọ, a "
 "ga-akwụsị ya."
 
-#: main.py:1166
+#: crossword_puzzle/main.py:1166
 msgid "Back to home"
 msgstr "Laghachi n'ụlọ"
 
-#: main.py:1167
+#: crossword_puzzle/main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
 "Ị ji n'aka na ịchọrọ ịlaghachi na ihuenyo ụlọ? A ga-akwụsị ngwa weebụ."
 
-#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
-#: main.py:1240
+#: crossword_puzzle/main.py:1190 crossword_puzzle/main.py:1195
+#: crossword_puzzle/main.py:1200 crossword_puzzle/main.py:1205
+#: crossword_puzzle/main.py:1228 crossword_puzzle/main.py:1240
 msgid "Error"
 msgstr "Njehie"
 
-#: main.py:1190
+#: crossword_puzzle/main.py:1190
 msgid "This language is already selected."
 msgstr "Asụsụ a ahọpụtalarị."
 
-#: main.py:1195
+#: crossword_puzzle/main.py:1195
 msgid "This size is already selected."
 msgstr "Ahọpụtala nha a."
 
-#: main.py:1200
+#: crossword_puzzle/main.py:1200
 msgid "This appearance is already selected."
 msgstr "Ahọpụtalarị ọdịdị a."
 
-#: main.py:1205
+#: crossword_puzzle/main.py:1205
 msgid "This quality is already selected."
 msgstr "Ahọrọla ogo a."
 
-#: main.py:1210
+#: crossword_puzzle/main.py:1210
 msgid "Info"
 msgstr "Ozi"
 
-#: main.py:1211
+#: crossword_puzzle/main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -224,7 +216,7 @@ msgstr ""
 "akwụsịbeghị nke ọma site na Monitor Activity na MacOS, ma ọ bụ, malitegharịa"
 " kọmputa gị naanị ka ịkwụsị ya."
 
-#: main.py:1229
+#: crossword_puzzle/main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -235,11 +227,89 @@ msgstr ""
 "nkọwapụta ya faịlụ JSON dị na akwụkwọ ndekọ aha ntọala. IHE: A na-enweta "
 "data crossword base naanị mgbe ụdị ntụgharị ya adịghị na ndekọ mpaghara."
 
-#: main.py:1241
+#: crossword_puzzle/main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr "Njehie mere na ọgbọ okwu. Biko hụ ozi ndị ọzọ na njikwa"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:13
+#: crossword_puzzle/cword_webapp/templates/index.html:350
+msgid "Crossword Puzzle - Game"
+msgstr "Egwuregwu Crossword - Ga egwuregwu"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:173
+msgid "Across"
+msgstr "Uhie"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:196
+msgid "Down"
+msgstr "Ala"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:228
+msgid "Reveal"
+msgstr "Ikpugbe"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:236
+#: crossword_puzzle/cword_webapp/templates/index.html:271
+msgid "Cell"
+msgstr "Seelu"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:243
+#: crossword_puzzle/cword_webapp/templates/index.html:278
+#: crossword_puzzle/cword_webapp/templates/index.html:306
+msgid "Word"
+msgstr "Mkpuruokwu"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:252
+#: crossword_puzzle/cword_webapp/templates/index.html:287
+#: crossword_puzzle/cword_webapp/templates/index.html:315
+msgid "Grid"
+msgstr "Guo"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:263
+msgid "Check"
+msgstr "Nleru anya"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:298
+msgid "Clear"
+msgstr "Agwa idiocha"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:329
+msgid "Smart Skip"
+msgstr "Smart Skill"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:340
+msgid "Click To Zoom"
+msgstr "Pịa ka ị bia"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:352
+msgid "You are viewing"
+msgstr "Ị na-elele"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:353
+msgid "from"
+msgstr "site na"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:357
+msgid "word(s) could not be inserted, sorry."
+msgstr "Enweghị ike itinye okwu (s), ndo."
+
+#: crossword_puzzle/cword_webapp/templates/index.html:360
+msgid "Word count (adjusted)"
+msgstr "Guagn Gua (Gbanwee)"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:364
+msgid "Word count"
+msgstr "Guage"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:371
+msgid "Continue"
+msgstr "Isochi"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:377
+msgid "You completed the crossword!"
+msgstr "I zuru oke!"
 
 msgid "Easy"
 msgstr "Mfe"
@@ -264,94 +334,3 @@ msgstr "Sayensị"
 
 msgid "Computer Science"
 msgstr "Kọmputa sayensị"
-
-#~ msgid ""
-#~ "First time launch, please read:\n"
-#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
-#~ "\n"
-#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
-#~ "\n"
-#~ "Also important to know:\n"
-#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
-#~ msgstr ""
-
-#~ msgid "Capitals"
-#~ msgstr "Isi obodo"
-
-#~ msgid "Countries"
-#~ msgstr "Mba"
-
-#~ msgid "Easy"
-#~ msgstr "Mfe"
-
-#~ msgid "Medium"
-#~ msgstr "Ọkara"
-
-#~ msgid "Hard"
-#~ msgstr "siri ike"
-
-#~ msgid "Extreme"
-#~ msgstr "Oke"
-
-#~ msgid "Geography"
-#~ msgstr "Geography"
-
-#~ msgid "Science"
-#~ msgstr "Nha"
-
-#~ msgid "To check or reveal a cell/word, you must first select a cell"
-#~ msgstr "Ka ịlele ma ọ bụ ikpughe cell/okwu, ị ga-ebu ụzọ họrọ cell"
-
-#~ msgid "Crossword Puzzle - Game"
-#~ msgstr "Okwu mgbagwoju anya - Egwuregwu"
-
-#~ msgid "Across"
-#~ msgstr "N'ofe"
-
-#~ msgid "Down"
-#~ msgstr "Ala"
-
-#~ msgid "Reveal"
-#~ msgstr "kpughere"
-
-#~ msgid "Cell"
-#~ msgstr "Cell"
-
-#~ msgid "Word"
-#~ msgstr "Okwu"
-
-#~ msgid "Grid"
-#~ msgstr "Grid"
-
-#~ msgid "Check"
-#~ msgstr "Lelee"
-
-#~ msgid "Clear"
-#~ msgstr "Kpochapụ"
-
-#~ msgid "Smart Skip"
-#~ msgstr "Smart Skill"
-
-#~ msgid "Click To Zoom"
-#~ msgstr "Pịa ka ị bia"
-
-#~ msgid "You are viewing"
-#~ msgstr "Ị na-ekiri"
-
-#~ msgid "from"
-#~ msgstr "si"
-
-#~ msgid "word(s) could not be inserted, sorry."
-#~ msgstr "enweghị ike itinye okwu(s), ndo."
-
-#~ msgid "Word count (adjusted)"
-#~ msgstr "Ọnụọgụ okwu (gbanwere)"
-
-#~ msgid "Word count"
-#~ msgstr "Ọnụ okwu"
-
-#~ msgid "Continue"
-#~ msgstr "Gaa n'ihu"
-
-#~ msgid "You completed the crossword!"
-#~ msgstr "Ị mechaala okwu mkparịta ụka!"

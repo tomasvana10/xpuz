@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-06 11:46+1000\n"
+"POT-Creation-Date: 2024-05-06 14:57+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ga <LL@li.org>\n"
@@ -19,147 +19,138 @@ msgstr ""
 "Plural-Forms: nplurals=5; plural=(n==1 ? 0 : n==2 ? 1 : n>=3 && n<=6 ? 2 : n>=7 && n<=10 ? 3 : 4);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: main.py:78 main.py:129 main.py:270 main.py:338
+#: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
+#: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
 msgid "Crossword Puzzle"
 msgstr "Bhfreagra crossword"
 
-#: main.py:145
+#: crossword_puzzle/main.py:145
 msgid "View crosswords"
 msgstr "Féach ar chrosfhocail"
 
-#: main.py:154
+#: crossword_puzzle/main.py:154
 msgid "Exit the app"
 msgstr "Scoir an app"
 
-#: main.py:165
+#: crossword_puzzle/main.py:165
 msgid "Global Settings"
 msgstr "Socruithe Domhanda"
 
-#: main.py:172
+#: crossword_puzzle/main.py:172
 msgid "Languages"
 msgstr "Teangacha"
 
-#: main.py:184
+#: crossword_puzzle/main.py:184
 msgid "Size"
 msgstr "Méid"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "light"
 msgstr "éadrom"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "dark"
 msgstr "dorcha"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "system"
 msgstr "córas"
 
-#: main.py:206 main.py:220
+#: crossword_puzzle/main.py:206 crossword_puzzle/main.py:220
 msgid "Appearance"
 msgstr "Dealramh"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "terrible"
 msgstr "uafásach"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "poor"
 msgstr "droch-"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "average"
 msgstr "ar an meán"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "great"
 msgstr "mór-"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "perfect"
 msgstr "cuir isteach ar"
 
-#: main.py:230
+#: crossword_puzzle/main.py:230
 msgid "Crossword Quality"
 msgstr "Caighdeán crosfhocal"
 
-#: main.py:262 main.py:415
+#: crossword_puzzle/main.py:262 crossword_puzzle/main.py:415
 msgid "Crossword Browser"
 msgstr "Brabhsálaí Crosfhocal"
 
-#: main.py:420
+#: crossword_puzzle/main.py:420
 msgid "Go back"
 msgstr "Dul ar ais"
 
-#: main.py:431
+#: crossword_puzzle/main.py:431
 msgid "Load crossword"
 msgstr "Íoslódáil crosfhocal"
 
-#: main.py:440
+#: crossword_puzzle/main.py:440
 msgid "Open web app"
 msgstr "Oscail app gréasáin"
 
-#: main.py:449
+#: crossword_puzzle/main.py:449
 msgid "Terminate web app"
 msgstr "Deireadh a chur le app gréasáin"
 
-#: main.py:460
+#: crossword_puzzle/main.py:460
 msgid "Word count preferences"
 msgstr "Roghanna comhaireamh focal"
 
-#: main.py:474 main.py:536 main.py:582 main.py:802
+#: crossword_puzzle/main.py:474 crossword_puzzle/main.py:536
+#: crossword_puzzle/main.py:582 crossword_puzzle/main.py:802
 msgid "Select word count"
 msgstr "Roghnaigh líon na bhfocal"
 
-#: main.py:478 main.py:581 main.py:820
-msgid "Maximum"
-msgstr "Uasmhéid"
-
-#: main.py:489
+#: crossword_puzzle/main.py:489
 msgid "Custom"
 msgstr "Saincheaptha"
 
-#: main.py:694
+#: crossword_puzzle/main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr "Chun an oibríocht seo a dhéanamh, ní mór duit cill a roghnú ar dtús."
 
-#: main.py:886
+#: crossword_puzzle/main.py:886
 msgid "View"
 msgstr "Amharc"
 
-#: main.py:893
+#: crossword_puzzle/cword_webapp/templates/index.html:383
+#: crossword_puzzle/main.py:893
 msgid "Close"
 msgstr "Dún"
 
-#: main.py:1042 main.py:1086
+#: crossword_puzzle/main.py:1042
 msgid "difficulty"
 msgstr "deacracht"
 
-#: main.py:1078
-msgid "Total words"
-msgstr "Focail iomlána"
-
-#: main.py:1085
-msgid "Difficulty"
-msgstr "Deacracht"
-
-#: main.py:1098
+#: crossword_puzzle/main.py:1098
 msgid "Select"
 msgstr "Roghnaigh"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Restart"
 msgstr "Tosaigh arís"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "An bhfuil tú cinnte gur mhaith leat an aip a atosú?"
 
-#: main.py:1156
+#: crossword_puzzle/main.py:1156
 msgid "Exit"
 msgstr "An slí amach"
 
-#: main.py:1157
+#: crossword_puzzle/main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -167,11 +158,11 @@ msgstr ""
 "An bhfuil tú cinnte gur mhaith leat éirí as an aip? Má tá an app gréasáin ag"
 " rith, cuirfear deireadh leis."
 
-#: main.py:1166
+#: crossword_puzzle/main.py:1166
 msgid "Back to home"
 msgstr "Ar ais go dtí Baile"
 
-#: main.py:1167
+#: crossword_puzzle/main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -179,32 +170,33 @@ msgstr ""
 "An bhfuil tú cinnte gur mhaith leat dul ar ais go dtí an scáileán baile? "
 "Cuirfear deireadh leis an app gréasáin."
 
-#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
-#: main.py:1240
+#: crossword_puzzle/main.py:1190 crossword_puzzle/main.py:1195
+#: crossword_puzzle/main.py:1200 crossword_puzzle/main.py:1205
+#: crossword_puzzle/main.py:1228 crossword_puzzle/main.py:1240
 msgid "Error"
 msgstr "Earráid"
 
-#: main.py:1190
+#: crossword_puzzle/main.py:1190
 msgid "This language is already selected."
 msgstr "Tá an teanga seo roghnaithe cheana féin."
 
-#: main.py:1195
+#: crossword_puzzle/main.py:1195
 msgid "This size is already selected."
 msgstr "Tá an méid seo roghnaithe cheana féin."
 
-#: main.py:1200
+#: crossword_puzzle/main.py:1200
 msgid "This appearance is already selected."
 msgstr "Tá an chuma seo roghnaithe cheana féin."
 
-#: main.py:1205
+#: crossword_puzzle/main.py:1205
 msgid "This quality is already selected."
 msgstr "Roghnaítear an caighdeán seo cheana féin."
 
-#: main.py:1210
+#: crossword_puzzle/main.py:1210
 msgid "Info"
 msgstr "Eolas"
 
-#: main.py:1211
+#: crossword_puzzle/main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -227,7 +219,7 @@ msgstr ""
 "curtha i gceart a fhoirceannadh trí Gníomhaíocht Monatóireacht a dhéanamh ar"
 " MacOS, nó, go simplí atosú do ríomhaire chun deireadh a chur leo."
 
-#: main.py:1229
+#: crossword_puzzle/main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -239,12 +231,90 @@ msgstr ""
 "DEARA: Ní fhaightear rochtain ar bhunshonraí crosfhocail ach amháin nuair "
 "nach bhfuil a leagan aistrithe i láthair san eolaire locales."
 
-#: main.py:1241
+#: crossword_puzzle/main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr ""
 "Tharla earráid i nginiúint crosfhocail. Féach tuilleadh eolais sa chonsól"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:13
+#: crossword_puzzle/cword_webapp/templates/index.html:350
+msgid "Crossword Puzzle - Game"
+msgstr "Crosfhocal Puzal - Cluiche"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:173
+msgid "Across"
+msgstr "Ar fud"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:196
+msgid "Down"
+msgstr "In íochtar"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:228
+msgid "Reveal"
+msgstr "Nocht"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:236
+#: crossword_puzzle/cword_webapp/templates/index.html:271
+msgid "Cell"
+msgstr "Guthán póca"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:243
+#: crossword_puzzle/cword_webapp/templates/index.html:278
+#: crossword_puzzle/cword_webapp/templates/index.html:306
+msgid "Word"
+msgstr "Scéal"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:252
+#: crossword_puzzle/cword_webapp/templates/index.html:287
+#: crossword_puzzle/cword_webapp/templates/index.html:315
+msgid "Grid"
+msgstr "Eangach"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:263
+msgid "Check"
+msgstr "Seic"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:298
+msgid "Clear"
+msgstr "Glan amach"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:329
+msgid "Smart Skip"
+msgstr "Scip cliste"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:340
+msgid "Click To Zoom"
+msgstr "Cliceáil chun súmáil isteach"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:352
+msgid "You are viewing"
+msgstr "Tá tú ag breathnú"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:353
+msgid "from"
+msgstr "ó"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:357
+msgid "word(s) could not be inserted, sorry."
+msgstr "Níorbh fhéidir focal (í) a chur isteach, tá brón orm."
+
+#: crossword_puzzle/cword_webapp/templates/index.html:360
+msgid "Word count (adjusted)"
+msgstr "Comhaireamh focal (coigeartaithe)"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:364
+msgid "Word count"
+msgstr "Comhaireamh focal"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:371
+msgid "Continue"
+msgstr "Leanúint ar aghaidh"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:377
+msgid "You completed the crossword!"
+msgstr "Chríochnaigh tú an crosfhocal!"
 
 msgid "Easy"
 msgstr "Éasca"
@@ -269,95 +339,3 @@ msgstr "Eolaíocht"
 
 msgid "Computer Science"
 msgstr "Eolaíocht Ríomhaireachta"
-
-#~ msgid ""
-#~ "First time launch, please read:\n"
-#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
-#~ "\n"
-#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
-#~ "\n"
-#~ "Also important to know:\n"
-#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
-#~ msgstr ""
-
-#~ msgid "Capitals"
-#~ msgstr "Príomhchathracha"
-
-#~ msgid "Countries"
-#~ msgstr "Tíortha"
-
-#~ msgid "Easy"
-#~ msgstr "Éasca"
-
-#~ msgid "Medium"
-#~ msgstr "Mheán"
-
-#~ msgid "Hard"
-#~ msgstr "Deacair"
-
-#~ msgid "Extreme"
-#~ msgstr "mhór"
-
-#~ msgid "Geography"
-#~ msgstr "Tíreolaíocht"
-
-#~ msgid "Science"
-#~ msgstr "Méid"
-
-#~ msgid "To check or reveal a cell/word, you must first select a cell"
-#~ msgstr ""
-#~ "Chun cill/focal a sheiceáil nó a nochtadh, ní mór duit cill a roghnú ar dtús"
-
-#~ msgid "Crossword Puzzle - Game"
-#~ msgstr "Puzal Crosfhocal - Cluiche"
-
-#~ msgid "Across"
-#~ msgstr "trasna"
-
-#~ msgid "Down"
-#~ msgstr "an Dúin"
-
-#~ msgid "Reveal"
-#~ msgstr "Nocht"
-
-#~ msgid "Cell"
-#~ msgstr "cill"
-
-#~ msgid "Word"
-#~ msgstr "Focal"
-
-#~ msgid "Grid"
-#~ msgstr "Greille"
-
-#~ msgid "Check"
-#~ msgstr "Seiceáil"
-
-#~ msgid "Clear"
-#~ msgstr "Glan"
-
-#~ msgid "Smart Skip"
-#~ msgstr "Scip cliste"
-
-#~ msgid "Click To Zoom"
-#~ msgstr "Cliceáil chun súmáil isteach"
-
-#~ msgid "You are viewing"
-#~ msgstr "Tá tú ag breathnú"
-
-#~ msgid "from"
-#~ msgstr "ó"
-
-#~ msgid "word(s) could not be inserted, sorry."
-#~ msgstr "níorbh fhéidir focal (focail) a chur isteach, faraor."
-
-#~ msgid "Word count (adjusted)"
-#~ msgstr "Líon na bhfocal (coigeartaithe)"
-
-#~ msgid "Word count"
-#~ msgstr "Comhaireamh focal"
-
-#~ msgid "Continue"
-#~ msgstr "Leanúint ar aghaidh"
-
-#~ msgid "You completed the crossword!"
-#~ msgstr "Chríochnaigh tú an crosfhocal!"

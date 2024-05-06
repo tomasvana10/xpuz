@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-06 11:46+1000\n"
+"POT-Creation-Date: 2024-05-06 14:57+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: sw <LL@li.org>\n"
@@ -19,147 +19,138 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: main.py:78 main.py:129 main.py:270 main.py:338
+#: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
+#: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
 msgid "Crossword Puzzle"
 msgstr "Fumbo la maneno"
 
-#: main.py:145
+#: crossword_puzzle/main.py:145
 msgid "View crosswords"
 msgstr "Tazama maneno mseto"
 
-#: main.py:154
+#: crossword_puzzle/main.py:154
 msgid "Exit the app"
 msgstr "Ondoka kwenye programu"
 
-#: main.py:165
+#: crossword_puzzle/main.py:165
 msgid "Global Settings"
 msgstr "Mipangilio ya Ulimwenguni"
 
-#: main.py:172
+#: crossword_puzzle/main.py:172
 msgid "Languages"
 msgstr "Lugha"
 
-#: main.py:184
+#: crossword_puzzle/main.py:184
 msgid "Size"
 msgstr "Ukubwa"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "light"
 msgstr "mwanga"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "dark"
 msgstr "giza"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "system"
 msgstr "mfumo"
 
-#: main.py:206 main.py:220
+#: crossword_puzzle/main.py:206 crossword_puzzle/main.py:220
 msgid "Appearance"
 msgstr "Mwonekano"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "terrible"
 msgstr "ya kutisha"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "poor"
 msgstr "maskini"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "average"
 msgstr "wastani"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "great"
 msgstr "kubwa"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "perfect"
 msgstr "Kamili"
 
-#: main.py:230
+#: crossword_puzzle/main.py:230
 msgid "Crossword Quality"
 msgstr "Ubora wa maneno"
 
-#: main.py:262 main.py:415
+#: crossword_puzzle/main.py:262 crossword_puzzle/main.py:415
 msgid "Crossword Browser"
 msgstr "Kivinjari cha Maneno"
 
-#: main.py:420
+#: crossword_puzzle/main.py:420
 msgid "Go back"
 msgstr "Rudi nyuma"
 
-#: main.py:431
+#: crossword_puzzle/main.py:431
 msgid "Load crossword"
 msgstr "Pakia neno mseto"
 
-#: main.py:440
+#: crossword_puzzle/main.py:440
 msgid "Open web app"
 msgstr "Fungua programu ya wavuti"
 
-#: main.py:449
+#: crossword_puzzle/main.py:449
 msgid "Terminate web app"
 msgstr "Sitisha programu ya wavuti"
 
-#: main.py:460
+#: crossword_puzzle/main.py:460
 msgid "Word count preferences"
 msgstr "Mapendeleo ya kuhesabu maneno"
 
-#: main.py:474 main.py:536 main.py:582 main.py:802
+#: crossword_puzzle/main.py:474 crossword_puzzle/main.py:536
+#: crossword_puzzle/main.py:582 crossword_puzzle/main.py:802
 msgid "Select word count"
 msgstr "Chagua hesabu ya maneno"
 
-#: main.py:478 main.py:581 main.py:820
-msgid "Maximum"
-msgstr "Upeo wa juu"
-
-#: main.py:489
+#: crossword_puzzle/main.py:489
 msgid "Custom"
 msgstr "Desturi"
 
-#: main.py:694
+#: crossword_puzzle/main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr "Ili kufanya operesheni hii, lazima kwanza uchague kiini."
 
-#: main.py:886
+#: crossword_puzzle/main.py:886
 msgid "View"
 msgstr "Tazama"
 
-#: main.py:893
+#: crossword_puzzle/cword_webapp/templates/index.html:383
+#: crossword_puzzle/main.py:893
 msgid "Close"
 msgstr "Funga"
 
-#: main.py:1042 main.py:1086
+#: crossword_puzzle/main.py:1042
 msgid "difficulty"
 msgstr "ugumu"
 
-#: main.py:1078
-msgid "Total words"
-msgstr "Jumla ya maneno"
-
-#: main.py:1085
-msgid "Difficulty"
-msgstr "Ugumu"
-
-#: main.py:1098
+#: crossword_puzzle/main.py:1098
 msgid "Select"
 msgstr "Chagua"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Restart"
 msgstr "Anzisha tena"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "Je, una uhakika unataka kuanzisha upya programu?"
 
-#: main.py:1156
+#: crossword_puzzle/main.py:1156
 msgid "Exit"
 msgstr "Utgång"
 
-#: main.py:1157
+#: crossword_puzzle/main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -167,11 +158,11 @@ msgstr ""
 "Je, una uhakika unataka kuondoka kwenye programu? Ikiwa programu ya wavuti "
 "inaendeshwa, itasitishwa."
 
-#: main.py:1166
+#: crossword_puzzle/main.py:1166
 msgid "Back to home"
 msgstr "Rudi nyumbani"
 
-#: main.py:1167
+#: crossword_puzzle/main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -179,32 +170,33 @@ msgstr ""
 "Je, una uhakika unataka kurudi kwenye skrini ya kwanza? Programu ya wavuti "
 "itakatishwa."
 
-#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
-#: main.py:1240
+#: crossword_puzzle/main.py:1190 crossword_puzzle/main.py:1195
+#: crossword_puzzle/main.py:1200 crossword_puzzle/main.py:1205
+#: crossword_puzzle/main.py:1228 crossword_puzzle/main.py:1240
 msgid "Error"
 msgstr "Hitilafu"
 
-#: main.py:1190
+#: crossword_puzzle/main.py:1190
 msgid "This language is already selected."
 msgstr "Lugha hii tayari imechaguliwa."
 
-#: main.py:1195
+#: crossword_puzzle/main.py:1195
 msgid "This size is already selected."
 msgstr "Ukubwa huu tayari umechaguliwa."
 
-#: main.py:1200
+#: crossword_puzzle/main.py:1200
 msgid "This appearance is already selected."
 msgstr "Mwonekano huu tayari umechaguliwa."
 
-#: main.py:1205
+#: crossword_puzzle/main.py:1205
 msgid "This quality is already selected."
 msgstr "Ubora huu tayari umechaguliwa."
 
-#: main.py:1210
+#: crossword_puzzle/main.py:1210
 msgid "Info"
 msgstr "Habari"
 
-#: main.py:1211
+#: crossword_puzzle/main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -226,7 +218,7 @@ msgstr ""
 "ambayo haijakatishwa ipasavyo inaweza kusitishwa kupitia Kifuatiliaji cha "
 "Shughuli kwenye MacOS, au, anzisha upya kompyuta yako ili kuizima."
 
-#: main.py:1229
+#: crossword_puzzle/main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -238,13 +230,91 @@ msgstr ""
 "ya maneno. KUMBUKA: Data ya maneno msingi hupatikana tu wakati toleo lake "
 "lililotafsiriwa halipo kwenye saraka ya lugha."
 
-#: main.py:1241
+#: crossword_puzzle/main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr ""
 "Hitilafu imetokea katika utengenezaji wa maneno mtambuka. Tafadhali tazama "
 "maelezo zaidi kwenye koni"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:13
+#: crossword_puzzle/cword_webapp/templates/index.html:350
+msgid "Crossword Puzzle - Game"
+msgstr "Crossword Puzzle - Mchezo"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:173
+msgid "Across"
+msgstr "Kote"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:196
+msgid "Down"
+msgstr "Chini"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:228
+msgid "Reveal"
+msgstr "Onyesha"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:236
+#: crossword_puzzle/cword_webapp/templates/index.html:271
+msgid "Cell"
+msgstr "Seli"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:243
+#: crossword_puzzle/cword_webapp/templates/index.html:278
+#: crossword_puzzle/cword_webapp/templates/index.html:306
+msgid "Word"
+msgstr "Neno"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:252
+#: crossword_puzzle/cword_webapp/templates/index.html:287
+#: crossword_puzzle/cword_webapp/templates/index.html:315
+msgid "Grid"
+msgstr "Gridi ya taifa"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:263
+msgid "Check"
+msgstr "Angalia"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:298
+msgid "Clear"
+msgstr "Wazi"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:329
+msgid "Smart Skip"
+msgstr "Smart Skip"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:340
+msgid "Click To Zoom"
+msgstr "Bonyeza kwa Zoom"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:352
+msgid "You are viewing"
+msgstr "Unaangalia"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:353
+msgid "from"
+msgstr "kutoka"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:357
+msgid "word(s) could not be inserted, sorry."
+msgstr "Neno (s) halikuweza kuingizwa, samahani."
+
+#: crossword_puzzle/cword_webapp/templates/index.html:360
+msgid "Word count (adjusted)"
+msgstr "Hesabu ya maneno (iliyorekebishwa)"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:364
+msgid "Word count"
+msgstr "Hesabu ya maneno"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:371
+msgid "Continue"
+msgstr "Endelea"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:377
+msgid "You completed the crossword!"
+msgstr "Ulikamilisha neno la msalaba!"
 
 msgid "Easy"
 msgstr "Rahisi"
@@ -269,94 +339,3 @@ msgstr "Sayansi"
 
 msgid "Computer Science"
 msgstr "Sayansi ya Kompyuta"
-
-#~ msgid ""
-#~ "First time launch, please read:\n"
-#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
-#~ "\n"
-#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
-#~ "\n"
-#~ "Also important to know:\n"
-#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
-#~ msgstr ""
-
-#~ msgid "Capitals"
-#~ msgstr "Miji mikuu"
-
-#~ msgid "Countries"
-#~ msgstr "Nchi"
-
-#~ msgid "Easy"
-#~ msgstr "Rahisi"
-
-#~ msgid "Medium"
-#~ msgstr "Kati"
-
-#~ msgid "Hard"
-#~ msgstr "Ngumu"
-
-#~ msgid "Extreme"
-#~ msgstr "Uliokithiri"
-
-#~ msgid "Geography"
-#~ msgstr "Jiografia"
-
-#~ msgid "Science"
-#~ msgstr "Ukubwa"
-
-#~ msgid "To check or reveal a cell/word, you must first select a cell"
-#~ msgstr "Kuangalia au kufichua seli/neno, lazima kwanza uchague seli"
-
-#~ msgid "Crossword Puzzle - Game"
-#~ msgstr "Mafumbo ya Maneno - Mchezo"
-
-#~ msgid "Across"
-#~ msgstr "Kuvuka"
-
-#~ msgid "Down"
-#~ msgstr "Chini"
-
-#~ msgid "Reveal"
-#~ msgstr "Onyesha"
-
-#~ msgid "Cell"
-#~ msgstr "Kiini"
-
-#~ msgid "Word"
-#~ msgstr "Neno"
-
-#~ msgid "Grid"
-#~ msgstr "Gridi"
-
-#~ msgid "Check"
-#~ msgstr "Angalia"
-
-#~ msgid "Clear"
-#~ msgstr "Wazi"
-
-#~ msgid "Smart Skip"
-#~ msgstr "Smart Skip"
-
-#~ msgid "Click To Zoom"
-#~ msgstr "Bonyeza kwa Zoom"
-
-#~ msgid "You are viewing"
-#~ msgstr "Unatazama"
-
-#~ msgid "from"
-#~ msgstr "kutoka"
-
-#~ msgid "word(s) could not be inserted, sorry."
-#~ msgstr "neno(ma)haikuweza kuingizwa, samahani."
-
-#~ msgid "Word count (adjusted)"
-#~ msgstr "Idadi ya maneno (iliyorekebishwa)"
-
-#~ msgid "Word count"
-#~ msgstr "Idadi ya maneno"
-
-#~ msgid "Continue"
-#~ msgstr "Endelea"
-
-#~ msgid "You completed the crossword!"
-#~ msgstr "Umekamilisha neno mseto!"

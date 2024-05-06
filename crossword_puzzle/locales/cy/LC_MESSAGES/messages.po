@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-06 11:46+1000\n"
+"POT-Creation-Date: 2024-05-06 14:57+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: cy <LL@li.org>\n"
@@ -19,147 +19,138 @@ msgstr ""
 "Plural-Forms: nplurals=5; plural=(n==1 ? 1 : n==2 ? 2 : n==3 ? 3 : n==6 ? 4 : 0);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: main.py:78 main.py:129 main.py:270 main.py:338
+#: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
+#: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
 msgid "Crossword Puzzle"
 msgstr "Pos croesair"
 
-#: main.py:145
+#: crossword_puzzle/main.py:145
 msgid "View crosswords"
 msgstr "Gweld croeseiriau"
 
-#: main.py:154
+#: crossword_puzzle/main.py:154
 msgid "Exit the app"
 msgstr "Gadael yr app"
 
-#: main.py:165
+#: crossword_puzzle/main.py:165
 msgid "Global Settings"
 msgstr "Gosodiadau Byd-eang"
 
-#: main.py:172
+#: crossword_puzzle/main.py:172
 msgid "Languages"
 msgstr "Ieithoedd"
 
-#: main.py:184
+#: crossword_puzzle/main.py:184
 msgid "Size"
 msgstr "Maint"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "light"
 msgstr "golau"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "dark"
 msgstr "tywyll"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "system"
 msgstr "system"
 
-#: main.py:206 main.py:220
+#: crossword_puzzle/main.py:206 crossword_puzzle/main.py:220
 msgid "Appearance"
 msgstr "Ymddangosiad"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "terrible"
 msgstr "ofnadwy"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "poor"
 msgstr "druanaf"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "average"
 msgstr "chyfartaleddwch"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "great"
 msgstr "mawr"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "perfect"
 msgstr "perffeithion"
 
-#: main.py:230
+#: crossword_puzzle/main.py:230
 msgid "Crossword Quality"
 msgstr "Ansawdd croesair"
 
-#: main.py:262 main.py:415
+#: crossword_puzzle/main.py:262 crossword_puzzle/main.py:415
 msgid "Crossword Browser"
 msgstr "Porwr Croesair"
 
-#: main.py:420
+#: crossword_puzzle/main.py:420
 msgid "Go back"
 msgstr "Mynd yn ôl"
 
-#: main.py:431
+#: crossword_puzzle/main.py:431
 msgid "Load crossword"
 msgstr "Llwytho croesair"
 
-#: main.py:440
+#: crossword_puzzle/main.py:440
 msgid "Open web app"
 msgstr "Agor app gwe"
 
-#: main.py:449
+#: crossword_puzzle/main.py:449
 msgid "Terminate web app"
 msgstr "Terfynu ap gwe"
 
-#: main.py:460
+#: crossword_puzzle/main.py:460
 msgid "Word count preferences"
 msgstr "Dewisiadau cyfrif geiriau"
 
-#: main.py:474 main.py:536 main.py:582 main.py:802
+#: crossword_puzzle/main.py:474 crossword_puzzle/main.py:536
+#: crossword_puzzle/main.py:582 crossword_puzzle/main.py:802
 msgid "Select word count"
 msgstr "Dewiswch nifer geiriau"
 
-#: main.py:478 main.py:581 main.py:820
-msgid "Maximum"
-msgstr "Uchafswm"
-
-#: main.py:489
+#: crossword_puzzle/main.py:489
 msgid "Custom"
 msgstr "Custom"
 
-#: main.py:694
+#: crossword_puzzle/main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr "I gyflawni'r llawdriniaeth hon, yn gyntaf rhaid i chi ddewis cell."
 
-#: main.py:886
+#: crossword_puzzle/main.py:886
 msgid "View"
 msgstr "Golwg"
 
-#: main.py:893
+#: crossword_puzzle/cword_webapp/templates/index.html:383
+#: crossword_puzzle/main.py:893
 msgid "Close"
 msgstr "Cau"
 
-#: main.py:1042 main.py:1086
+#: crossword_puzzle/main.py:1042
 msgid "difficulty"
 msgstr "anhawster"
 
-#: main.py:1078
-msgid "Total words"
-msgstr "Cyfanswm geiriau"
-
-#: main.py:1085
-msgid "Difficulty"
-msgstr "Anhawster"
-
-#: main.py:1098
+#: crossword_puzzle/main.py:1098
 msgid "Select"
 msgstr "Dewiswch"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Restart"
 msgstr "Ail-ddechrau"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "Ydych chi'n siŵr eich bod am ailgychwyn yr ap?"
 
-#: main.py:1156
+#: crossword_puzzle/main.py:1156
 msgid "Exit"
 msgstr "Ymadael"
 
-#: main.py:1157
+#: crossword_puzzle/main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -167,11 +158,11 @@ msgstr ""
 "Ydych chi'n siŵr eich bod am adael yr ap? Os yw'r app gwe yn rhedeg, bydd yn"
 " cael ei derfynu."
 
-#: main.py:1166
+#: crossword_puzzle/main.py:1166
 msgid "Back to home"
 msgstr "Yn ôl adref"
 
-#: main.py:1167
+#: crossword_puzzle/main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -179,32 +170,33 @@ msgstr ""
 "Ydych chi'n siŵr eich bod am fynd yn ôl i'r sgrin gartref? Bydd yr ap gwe yn"
 " cael ei derfynu."
 
-#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
-#: main.py:1240
+#: crossword_puzzle/main.py:1190 crossword_puzzle/main.py:1195
+#: crossword_puzzle/main.py:1200 crossword_puzzle/main.py:1205
+#: crossword_puzzle/main.py:1228 crossword_puzzle/main.py:1240
 msgid "Error"
 msgstr "Gwall"
 
-#: main.py:1190
+#: crossword_puzzle/main.py:1190
 msgid "This language is already selected."
 msgstr "Mae'r iaith hon eisoes wedi'i dewis."
 
-#: main.py:1195
+#: crossword_puzzle/main.py:1195
 msgid "This size is already selected."
 msgstr "Mae'r maint hwn eisoes wedi'i ddewis."
 
-#: main.py:1200
+#: crossword_puzzle/main.py:1200
 msgid "This appearance is already selected."
 msgstr "Mae'r ymddangosiad hwn eisoes wedi'i ddewis."
 
-#: main.py:1205
+#: crossword_puzzle/main.py:1205
 msgid "This quality is already selected."
 msgstr "Mae'r ansawdd hwn eisoes wedi'i ddewis."
 
-#: main.py:1210
+#: crossword_puzzle/main.py:1210
 msgid "Info"
 msgstr "Gwybodaeth"
 
-#: main.py:1211
+#: crossword_puzzle/main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -226,7 +218,7 @@ msgstr ""
 "wedi'u terfynu'n iawn trwy Activity Monitor ar MacOS, neu, yn syml "
 "ailgychwyn eich cyfrifiadur i'w terfynu."
 
-#: main.py:1229
+#: crossword_puzzle/main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -238,13 +230,91 @@ msgstr ""
 "Dim ond pan nad yw ei fersiwn wedi'i chyfieithu yn bresennol yn y "
 "cyfeiriadur locales y ceir mynediad i ddata croesair sylfaenol."
 
-#: main.py:1241
+#: crossword_puzzle/main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr ""
 "Digwyddodd gwall wrth gynhyrchu croesair. Gweler rhagor o wybodaeth yn y "
 "consol"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:13
+#: crossword_puzzle/cword_webapp/templates/index.html:350
+msgid "Crossword Puzzle - Game"
+msgstr "Pos Croesair - Gêm"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:173
+msgid "Across"
+msgstr "Drosodd"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:196
+msgid "Down"
+msgstr "I lawr"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:228
+msgid "Reveal"
+msgstr "Amlyger"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:236
+#: crossword_puzzle/cword_webapp/templates/index.html:271
+msgid "Cell"
+msgstr "Gell"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:243
+#: crossword_puzzle/cword_webapp/templates/index.html:278
+#: crossword_puzzle/cword_webapp/templates/index.html:306
+msgid "Word"
+msgstr "Eirion"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:252
+#: crossword_puzzle/cword_webapp/templates/index.html:287
+#: crossword_puzzle/cword_webapp/templates/index.html:315
+msgid "Grid"
+msgstr "Grid"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:263
+msgid "Check"
+msgstr "Wirion"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:298
+msgid "Clear"
+msgstr "Gliria ’"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:329
+msgid "Smart Skip"
+msgstr "Sgip craff"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:340
+msgid "Click To Zoom"
+msgstr "Cliciwch i chwyddo"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:352
+msgid "You are viewing"
+msgstr "Rydych chi'n gwylio"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:353
+msgid "from"
+msgstr "oddi wrth"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:357
+msgid "word(s) could not be inserted, sorry."
+msgstr "Ni ellid mewnosod gair (au), mae'n ddrwg gennyf."
+
+#: crossword_puzzle/cword_webapp/templates/index.html:360
+msgid "Word count (adjusted)"
+msgstr "Cyfrif geiriau (wedi'i addasu)"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:364
+msgid "Word count"
+msgstr "Cyfrif geiriau"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:371
+msgid "Continue"
+msgstr "Parhawn"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:377
+msgid "You completed the crossword!"
+msgstr "Fe wnaethoch chi gwblhau'r croesair!"
 
 msgid "Easy"
 msgstr "Hawdd"
@@ -269,94 +339,3 @@ msgstr "Gwyddoniaeth"
 
 msgid "Computer Science"
 msgstr "Cyfrifiadureg"
-
-#~ msgid ""
-#~ "First time launch, please read:\n"
-#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
-#~ "\n"
-#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
-#~ "\n"
-#~ "Also important to know:\n"
-#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
-#~ msgstr ""
-
-#~ msgid "Capitals"
-#~ msgstr "Prifddinasoedd"
-
-#~ msgid "Countries"
-#~ msgstr "Gwledydd"
-
-#~ msgid "Easy"
-#~ msgstr "Hawdd"
-
-#~ msgid "Medium"
-#~ msgstr "Canolig"
-
-#~ msgid "Hard"
-#~ msgstr "Caled"
-
-#~ msgid "Extreme"
-#~ msgstr "Eithafol"
-
-#~ msgid "Geography"
-#~ msgstr "Daearyddiaeth"
-
-#~ msgid "Science"
-#~ msgstr "Maint"
-
-#~ msgid "To check or reveal a cell/word, you must first select a cell"
-#~ msgstr "I wirio neu ddatgelu cell / gair, rhaid i chi ddewis cell yn gyntaf"
-
-#~ msgid "Crossword Puzzle - Game"
-#~ msgstr "Pos Croesair - Gêm"
-
-#~ msgid "Across"
-#~ msgstr "Ar draws"
-
-#~ msgid "Down"
-#~ msgstr "I lawr"
-
-#~ msgid "Reveal"
-#~ msgstr "Datguddia"
-
-#~ msgid "Cell"
-#~ msgstr "Cell"
-
-#~ msgid "Word"
-#~ msgstr "Gair"
-
-#~ msgid "Grid"
-#~ msgstr "Grid"
-
-#~ msgid "Check"
-#~ msgstr "Gwirio"
-
-#~ msgid "Clear"
-#~ msgstr "Clir"
-
-#~ msgid "Smart Skip"
-#~ msgstr "Sgip craff"
-
-#~ msgid "Click To Zoom"
-#~ msgstr "Cliciwch i chwyddo"
-
-#~ msgid "You are viewing"
-#~ msgstr "Rydych chi'n gwylio"
-
-#~ msgid "from"
-#~ msgstr "rhag"
-
-#~ msgid "word(s) could not be inserted, sorry."
-#~ msgstr "ni ellid mewnosod gair(geiriau), mae'n ddrwg gennyf."
-
-#~ msgid "Word count (adjusted)"
-#~ msgstr "Nifer geiriau (wedi'i addasu)"
-
-#~ msgid "Word count"
-#~ msgstr "Cyfrif geiriau"
-
-#~ msgid "Continue"
-#~ msgstr "Parhau"
-
-#~ msgid "You completed the crossword!"
-#~ msgstr "Fe wnaethoch chi gwblhau'r croesair!"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-06 11:46+1000\n"
+"POT-Creation-Date: 2024-05-06 14:57+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: tg <LL@li.org>\n"
@@ -19,147 +19,138 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: main.py:78 main.py:129 main.py:270 main.py:338
+#: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
+#: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
 msgid "Crossword Puzzle"
 msgstr "Кроссворд"
 
-#: main.py:145
+#: crossword_puzzle/main.py:145
 msgid "View crosswords"
 msgstr "Кроссвордҳоро тамошо кунед"
 
-#: main.py:154
+#: crossword_puzzle/main.py:154
 msgid "Exit the app"
 msgstr "Аз барнома хориҷ шавед"
 
-#: main.py:165
+#: crossword_puzzle/main.py:165
 msgid "Global Settings"
 msgstr "Танзимоти глобалӣ"
 
-#: main.py:172
+#: crossword_puzzle/main.py:172
 msgid "Languages"
 msgstr "Забонҳо"
 
-#: main.py:184
+#: crossword_puzzle/main.py:184
 msgid "Size"
 msgstr "Андоза"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "light"
 msgstr "нур"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "dark"
 msgstr "торик"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "system"
 msgstr "система"
 
-#: main.py:206 main.py:220
+#: crossword_puzzle/main.py:206 crossword_puzzle/main.py:220
 msgid "Appearance"
 msgstr "Намуди зоҳирӣ"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "terrible"
 msgstr "воҳиманок"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "poor"
 msgstr "бечора"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "average"
 msgstr "миёна"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "great"
 msgstr "бузург"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "perfect"
 msgstr "пурра"
 
-#: main.py:230
+#: crossword_puzzle/main.py:230
 msgid "Crossword Quality"
 msgstr "Сифати кроссворд"
 
-#: main.py:262 main.py:415
+#: crossword_puzzle/main.py:262 crossword_puzzle/main.py:415
 msgid "Crossword Browser"
 msgstr "Браузери кроссворд"
 
-#: main.py:420
+#: crossword_puzzle/main.py:420
 msgid "Go back"
 msgstr "Баргаштан"
 
-#: main.py:431
+#: crossword_puzzle/main.py:431
 msgid "Load crossword"
 msgstr "Кроссвордро бор кунед"
 
-#: main.py:440
+#: crossword_puzzle/main.py:440
 msgid "Open web app"
 msgstr "Барномаи вебро кушоед"
 
-#: main.py:449
+#: crossword_puzzle/main.py:449
 msgid "Terminate web app"
 msgstr "Қатъи барномаи веб"
 
-#: main.py:460
+#: crossword_puzzle/main.py:460
 msgid "Word count preferences"
 msgstr "Афзалиятҳои ҳисобкунии калимаҳо"
 
-#: main.py:474 main.py:536 main.py:582 main.py:802
+#: crossword_puzzle/main.py:474 crossword_puzzle/main.py:536
+#: crossword_puzzle/main.py:582 crossword_puzzle/main.py:802
 msgid "Select word count"
 msgstr "Шумораи калимаҳоро интихоб кунед"
 
-#: main.py:478 main.py:581 main.py:820
-msgid "Maximum"
-msgstr "Максимум"
-
-#: main.py:489
+#: crossword_puzzle/main.py:489
 msgid "Custom"
 msgstr "Фармоишгар"
 
-#: main.py:694
+#: crossword_puzzle/main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr "Барои иҷрои ин амалиёт, шумо бояд як чашмакро интихоб кунед."
 
-#: main.py:886
+#: crossword_puzzle/main.py:886
 msgid "View"
 msgstr "Намоиш"
 
-#: main.py:893
+#: crossword_puzzle/cword_webapp/templates/index.html:383
+#: crossword_puzzle/main.py:893
 msgid "Close"
 msgstr "Пӯшед"
 
-#: main.py:1042 main.py:1086
+#: crossword_puzzle/main.py:1042
 msgid "difficulty"
 msgstr "душворӣ"
 
-#: main.py:1078
-msgid "Total words"
-msgstr "Ҳама калимаҳо"
-
-#: main.py:1085
-msgid "Difficulty"
-msgstr "Мушкилот"
-
-#: main.py:1098
+#: crossword_puzzle/main.py:1098
 msgid "Select"
 msgstr "Интихоб кунед"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Restart"
 msgstr "Оғози дубора"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "Шумо мутмаин ҳастед, ки мехоҳед барномаро аз нав оғоз кунед?"
 
-#: main.py:1156
+#: crossword_puzzle/main.py:1156
 msgid "Exit"
 msgstr "Баромадгоҳ"
 
-#: main.py:1157
+#: crossword_puzzle/main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -167,11 +158,11 @@ msgstr ""
 "Шумо мутмаин ҳастед, ки мехоҳед аз барнома хориҷ шавед? Агар барномаи веб "
 "кор кунад, он қатъ карда мешавад."
 
-#: main.py:1166
+#: crossword_puzzle/main.py:1166
 msgid "Back to home"
 msgstr "Бозгашт ба хона"
 
-#: main.py:1167
+#: crossword_puzzle/main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -179,32 +170,33 @@ msgstr ""
 "Шумо мутмаин ҳастед, ки мехоҳед ба экрани асосӣ баргардед? Барномаи веб қатъ"
 " карда мешавад."
 
-#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
-#: main.py:1240
+#: crossword_puzzle/main.py:1190 crossword_puzzle/main.py:1195
+#: crossword_puzzle/main.py:1200 crossword_puzzle/main.py:1205
+#: crossword_puzzle/main.py:1228 crossword_puzzle/main.py:1240
 msgid "Error"
 msgstr "Хатогӣ"
 
-#: main.py:1190
+#: crossword_puzzle/main.py:1190
 msgid "This language is already selected."
 msgstr "Ин забон аллакай интихоб шудааст."
 
-#: main.py:1195
+#: crossword_puzzle/main.py:1195
 msgid "This size is already selected."
 msgstr "Ин андоза аллакай интихоб шудааст."
 
-#: main.py:1200
+#: crossword_puzzle/main.py:1200
 msgid "This appearance is already selected."
 msgstr "Ин намуди зоҳирӣ аллакай интихоб шудааст."
 
-#: main.py:1205
+#: crossword_puzzle/main.py:1205
 msgid "This quality is already selected."
 msgstr "Ин сифат аллакай интихоб шудааст."
 
-#: main.py:1210
+#: crossword_puzzle/main.py:1210
 msgid "Info"
 msgstr "Маълумот"
 
-#: main.py:1211
+#: crossword_puzzle/main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -226,7 +218,7 @@ msgstr ""
 "карда нашудаанд, метавонанд тавассути Monitor Activity дар MacOS қатъ карда "
 "шаванд ё танҳо барои қатъ кардани онҳо компютери худро бозоғоз намоед."
 
-#: main.py:1229
+#: crossword_puzzle/main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -238,13 +230,91 @@ msgstr ""
 "Маълумоти кроссворди асосӣ танҳо вақте дастрас мешавад, ки версияи "
 "тарҷумашудаи он дар феҳристи забонҳо мавҷуд набошад."
 
-#: main.py:1241
+#: crossword_puzzle/main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr ""
 "Ҳангоми тавлиди кроссворд хатогӣ рух дод. Лутфан маълумоти бештарро дар "
 "консол бубинед"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:13
+#: crossword_puzzle/cword_webapp/templates/index.html:350
+msgid "Crossword Puzzle - Game"
+msgstr "Муаммои кроссворд - бозӣ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:173
+msgid "Across"
+msgstr "Дар саросари"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:196
+msgid "Down"
+msgstr "Поён"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:228
+msgid "Reveal"
+msgstr "Нишон додан"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:236
+#: crossword_puzzle/cword_webapp/templates/index.html:271
+msgid "Cell"
+msgstr "Ҳуҷайра"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:243
+#: crossword_puzzle/cword_webapp/templates/index.html:278
+#: crossword_puzzle/cword_webapp/templates/index.html:306
+msgid "Word"
+msgstr "Сухан"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:252
+#: crossword_puzzle/cword_webapp/templates/index.html:287
+#: crossword_puzzle/cword_webapp/templates/index.html:315
+msgid "Grid"
+msgstr "Шабака"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:263
+msgid "Check"
+msgstr "Саньидан"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:298
+msgid "Clear"
+msgstr "Равшан"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:329
+msgid "Smart Skip"
+msgstr "Swip Stip"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:340
+msgid "Click To Zoom"
+msgstr "Барои калон шудан клик кунед"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:352
+msgid "You are viewing"
+msgstr "Шумо мебинед"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:353
+msgid "from"
+msgstr "аз"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:357
+msgid "word(s) could not be inserted, sorry."
+msgstr "Сухан (ҳо) гузоштан мумкин нест, бубахшед."
+
+#: crossword_puzzle/cword_webapp/templates/index.html:360
+msgid "Word count (adjusted)"
+msgstr "Ҳисобкунии калима (тасҳеҳшуда)"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:364
+msgid "Word count"
+msgstr "Ҳисоботи калима"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:371
+msgid "Continue"
+msgstr "Давом додан"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:377
+msgid "You completed the crossword!"
+msgstr "Шумо кроссвордро анҷом додед!"
 
 msgid "Easy"
 msgstr "Осон"
@@ -269,96 +339,3 @@ msgstr "Илм"
 
 msgid "Computer Science"
 msgstr "Улуми компютерӣ"
-
-#~ msgid ""
-#~ "First time launch, please read:\n"
-#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
-#~ "\n"
-#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
-#~ "\n"
-#~ "Also important to know:\n"
-#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
-#~ msgstr ""
-
-#~ msgid "Capitals"
-#~ msgstr "Пойтахтҳо"
-
-#~ msgid "Countries"
-#~ msgstr "Кишварҳо"
-
-#~ msgid "Easy"
-#~ msgstr "Осон"
-
-#~ msgid "Medium"
-#~ msgstr "Миёна"
-
-#~ msgid "Hard"
-#~ msgstr "Сахт"
-
-#~ msgid "Extreme"
-#~ msgstr "Аз ҳад зиёд"
-
-#~ msgid "Geography"
-#~ msgstr "География"
-
-#~ msgid "Science"
-#~ msgstr "Андоза"
-
-#~ msgid "To check or reveal a cell/word, you must first select a cell"
-#~ msgstr ""
-#~ "Барои тафтиш ё ошкор кардани ячейка/калима, шумо бояд аввал ячейкаро интихоб"
-#~ " кунед"
-
-#~ msgid "Crossword Puzzle - Game"
-#~ msgstr "Кроссворд - Бозӣ"
-
-#~ msgid "Across"
-#~ msgstr "Дар саросари"
-
-#~ msgid "Down"
-#~ msgstr "Поён"
-
-#~ msgid "Reveal"
-#~ msgstr "Ошкор кардан"
-
-#~ msgid "Cell"
-#~ msgstr "Ҳуҷайра"
-
-#~ msgid "Word"
-#~ msgstr "Калом"
-
-#~ msgid "Grid"
-#~ msgstr "Шабака"
-
-#~ msgid "Check"
-#~ msgstr "Санҷед"
-
-#~ msgid "Clear"
-#~ msgstr "Тоза"
-
-#~ msgid "Smart Skip"
-#~ msgstr "Swip Stip"
-
-#~ msgid "Click To Zoom"
-#~ msgstr "Барои калон шудан клик кунед"
-
-#~ msgid "You are viewing"
-#~ msgstr "Шумо тамошо карда истодаед"
-
-#~ msgid "from"
-#~ msgstr "аз"
-
-#~ msgid "word(s) could not be inserted, sorry."
-#~ msgstr "калима(ҳо)-ро ворид кардан мумкин нест, бахшиш."
-
-#~ msgid "Word count (adjusted)"
-#~ msgstr "Шумораи калимаҳо (тасҳеҳ)"
-
-#~ msgid "Word count"
-#~ msgstr "Шумораи калимаҳо"
-
-#~ msgid "Continue"
-#~ msgstr "Давом додан"
-
-#~ msgid "You completed the crossword!"
-#~ msgstr "Шумо кроссвордро анҷом додед!"

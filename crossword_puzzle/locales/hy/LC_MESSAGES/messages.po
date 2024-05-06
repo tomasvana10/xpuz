@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-06 11:46+1000\n"
+"POT-Creation-Date: 2024-05-06 14:57+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: hy <LL@li.org>\n"
@@ -19,147 +19,138 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: main.py:78 main.py:129 main.py:270 main.py:338
+#: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
+#: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
 msgid "Crossword Puzzle"
 msgstr "Խաչբառ"
 
-#: main.py:145
+#: crossword_puzzle/main.py:145
 msgid "View crosswords"
 msgstr "Դիտեք խաչբառերը"
 
-#: main.py:154
+#: crossword_puzzle/main.py:154
 msgid "Exit the app"
 msgstr "Դուրս եկեք հավելվածից"
 
-#: main.py:165
+#: crossword_puzzle/main.py:165
 msgid "Global Settings"
 msgstr "Համաշխարհային կարգավորումներ"
 
-#: main.py:172
+#: crossword_puzzle/main.py:172
 msgid "Languages"
 msgstr "Լեզուներ"
 
-#: main.py:184
+#: crossword_puzzle/main.py:184
 msgid "Size"
 msgstr "Չափը"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "light"
 msgstr "լույս"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "dark"
 msgstr "մութ"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "system"
 msgstr "համակարգ"
 
-#: main.py:206 main.py:220
+#: crossword_puzzle/main.py:206 crossword_puzzle/main.py:220
 msgid "Appearance"
 msgstr "Արտաքին տեսք"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "terrible"
 msgstr "սարսափելի"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "poor"
 msgstr "աղքատ"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "average"
 msgstr "միջին"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "great"
 msgstr "հիանալի"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "perfect"
 msgstr "կատարյալ"
 
-#: main.py:230
+#: crossword_puzzle/main.py:230
 msgid "Crossword Quality"
 msgstr "Խաչբառերի որակ"
 
-#: main.py:262 main.py:415
+#: crossword_puzzle/main.py:262 crossword_puzzle/main.py:415
 msgid "Crossword Browser"
 msgstr "Խաչբառ զննարկիչ"
 
-#: main.py:420
+#: crossword_puzzle/main.py:420
 msgid "Go back"
 msgstr "Վերադառնալ"
 
-#: main.py:431
+#: crossword_puzzle/main.py:431
 msgid "Load crossword"
 msgstr "Բեռնել խաչբառ"
 
-#: main.py:440
+#: crossword_puzzle/main.py:440
 msgid "Open web app"
 msgstr "Բացեք վեբ հավելվածը"
 
-#: main.py:449
+#: crossword_puzzle/main.py:449
 msgid "Terminate web app"
 msgstr "Դադարեցրեք վեբ հավելվածը"
 
-#: main.py:460
+#: crossword_puzzle/main.py:460
 msgid "Word count preferences"
 msgstr "Բառերի քանակի նախապատվություններ"
 
-#: main.py:474 main.py:536 main.py:582 main.py:802
+#: crossword_puzzle/main.py:474 crossword_puzzle/main.py:536
+#: crossword_puzzle/main.py:582 crossword_puzzle/main.py:802
 msgid "Select word count"
 msgstr "Ընտրեք բառերի քանակը"
 
-#: main.py:478 main.py:581 main.py:820
-msgid "Maximum"
-msgstr "Առավելագույնը"
-
-#: main.py:489
+#: crossword_puzzle/main.py:489
 msgid "Custom"
 msgstr "Պատվերով"
 
-#: main.py:694
+#: crossword_puzzle/main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr "Այս գործողությունը կատարելու համար նախ պետք է բջիջ ընտրեք:"
 
-#: main.py:886
+#: crossword_puzzle/main.py:886
 msgid "View"
 msgstr "Դիտել"
 
-#: main.py:893
+#: crossword_puzzle/cword_webapp/templates/index.html:383
+#: crossword_puzzle/main.py:893
 msgid "Close"
 msgstr "փակել"
 
-#: main.py:1042 main.py:1086
+#: crossword_puzzle/main.py:1042
 msgid "difficulty"
 msgstr "դժվարություն"
 
-#: main.py:1078
-msgid "Total words"
-msgstr "Ընդհանուր բառեր"
-
-#: main.py:1085
-msgid "Difficulty"
-msgstr "Դժվարություն"
-
-#: main.py:1098
+#: crossword_puzzle/main.py:1098
 msgid "Select"
 msgstr "Ընտրել"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Restart"
 msgstr "Վերսկսել"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "Իսկապե՞ս ուզում եք վերագործարկել հավելվածը:"
 
-#: main.py:1156
+#: crossword_puzzle/main.py:1156
 msgid "Exit"
 msgstr "Ելք"
 
-#: main.py:1157
+#: crossword_puzzle/main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -167,43 +158,44 @@ msgstr ""
 "Իսկապե՞ս ուզում եք դուրս գալ հավելվածից: Եթե վեբ հավելվածն աշխատում է, այն "
 "կդադարեցվի:"
 
-#: main.py:1166
+#: crossword_puzzle/main.py:1166
 msgid "Back to home"
 msgstr "Վերադարձ դեպի տուն"
 
-#: main.py:1167
+#: crossword_puzzle/main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
 "Իսկապե՞ս ուզում եք վերադառնալ հիմնական էկրան: Վեբ հավելվածը կդադարեցվի:"
 
-#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
-#: main.py:1240
+#: crossword_puzzle/main.py:1190 crossword_puzzle/main.py:1195
+#: crossword_puzzle/main.py:1200 crossword_puzzle/main.py:1205
+#: crossword_puzzle/main.py:1228 crossword_puzzle/main.py:1240
 msgid "Error"
 msgstr "Սխալ"
 
-#: main.py:1190
+#: crossword_puzzle/main.py:1190
 msgid "This language is already selected."
 msgstr "Այս լեզուն արդեն ընտրված է:"
 
-#: main.py:1195
+#: crossword_puzzle/main.py:1195
 msgid "This size is already selected."
 msgstr "Այս չափն արդեն ընտրված է։"
 
-#: main.py:1200
+#: crossword_puzzle/main.py:1200
 msgid "This appearance is already selected."
 msgstr "Այս տեսքն արդեն ընտրված է:"
 
-#: main.py:1205
+#: crossword_puzzle/main.py:1205
 msgid "This quality is already selected."
 msgstr "Այս որակը արդեն ընտրված է:"
 
-#: main.py:1210
+#: crossword_puzzle/main.py:1210
 msgid "Info"
 msgstr "Ինֆո"
 
-#: main.py:1211
+#: crossword_puzzle/main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -225,7 +217,7 @@ msgstr ""
 " դադարեցվել MacOS-ում Activity Monitor-ի միջոցով կամ պարզապես վերագործարկեք "
 "ձեր համակարգիչը՝ դրանք դադարեցնելու համար:"
 
-#: main.py:1229
+#: crossword_puzzle/main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -237,13 +229,91 @@ msgstr ""
 "ԾԱՆՈԹՈՒԹՅՈՒՆ. Հիմնական խաչբառի տվյալները հասանելի են միայն այն դեպքում, երբ "
 "դրանց թարգմանված տարբերակը բացակայում է տեղանքների գրացուցակում:"
 
-#: main.py:1241
+#: crossword_puzzle/main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr ""
 "Խաչբառի ստեղծման ժամանակ սխալ է տեղի ունեցել: Խնդրում ենք տեսնել լրացուցիչ "
 "տեղեկություններ վահանակում"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:13
+#: crossword_puzzle/cword_webapp/templates/index.html:350
+msgid "Crossword Puzzle - Game"
+msgstr "Խաչբառ հանելուկ - խաղ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:173
+msgid "Across"
+msgstr "Միջով"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:196
+msgid "Down"
+msgstr "Ներքեվ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:228
+msgid "Reveal"
+msgstr "Բացահայտել"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:236
+#: crossword_puzzle/cword_webapp/templates/index.html:271
+msgid "Cell"
+msgstr "Բջիջ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:243
+#: crossword_puzzle/cword_webapp/templates/index.html:278
+#: crossword_puzzle/cword_webapp/templates/index.html:306
+msgid "Word"
+msgstr "Բանաձեվ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:252
+#: crossword_puzzle/cword_webapp/templates/index.html:287
+#: crossword_puzzle/cword_webapp/templates/index.html:315
+msgid "Grid"
+msgstr "Ցանց"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:263
+msgid "Check"
+msgstr "Ստուգում"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:298
+msgid "Clear"
+msgstr "Պարզ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:329
+msgid "Smart Skip"
+msgstr "Smart Skip"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:340
+msgid "Click To Zoom"
+msgstr "Կտտացրեք մեծացնելու համար"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:352
+msgid "You are viewing"
+msgstr "Դուք դիտում եք"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:353
+msgid "from"
+msgstr "դեպի"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:357
+msgid "word(s) could not be inserted, sorry."
+msgstr "Բառ (ներ) ը հնարավոր չէ տեղադրել, կներեք:"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:360
+msgid "Word count (adjusted)"
+msgstr "Բառի հաշվարկ (ճշգրտված)"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:364
+msgid "Word count"
+msgstr "Բառի հաշվիչ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:371
+msgid "Continue"
+msgstr "Շարունակել"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:377
+msgid "You completed the crossword!"
+msgstr "Դուք ավարտեցիք խաչբառ:"
 
 msgid "Easy"
 msgstr "Հեշտ"
@@ -268,94 +338,3 @@ msgstr "Գիտություն"
 
 msgid "Computer Science"
 msgstr "Համակարգչային գիտություն"
-
-#~ msgid ""
-#~ "First time launch, please read:\n"
-#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
-#~ "\n"
-#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
-#~ "\n"
-#~ "Also important to know:\n"
-#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
-#~ msgstr ""
-
-#~ msgid "Capitals"
-#~ msgstr "Մայրաքաղաքներ"
-
-#~ msgid "Countries"
-#~ msgstr "Երկրներ"
-
-#~ msgid "Easy"
-#~ msgstr "Հեշտ"
-
-#~ msgid "Medium"
-#~ msgstr "Միջին"
-
-#~ msgid "Hard"
-#~ msgstr "Դժվար"
-
-#~ msgid "Extreme"
-#~ msgstr "Ծայրահեղ"
-
-#~ msgid "Geography"
-#~ msgstr "Աշխարհագրություն"
-
-#~ msgid "Science"
-#~ msgstr "Չափը"
-
-#~ msgid "To check or reveal a cell/word, you must first select a cell"
-#~ msgstr "Բջիջ/բառ ստուգելու կամ բացահայտելու համար նախ պետք է բջիջ ընտրել"
-
-#~ msgid "Crossword Puzzle - Game"
-#~ msgstr "Խաչբառ հանելուկ - Խաղ"
-
-#~ msgid "Across"
-#~ msgstr "Ողջ"
-
-#~ msgid "Down"
-#~ msgstr "Ներքև"
-
-#~ msgid "Reveal"
-#~ msgstr "Բացահայտել"
-
-#~ msgid "Cell"
-#~ msgstr "Բջջ"
-
-#~ msgid "Word"
-#~ msgstr "Խոսք"
-
-#~ msgid "Grid"
-#~ msgstr "Ցանց"
-
-#~ msgid "Check"
-#~ msgstr "Ստուգեք"
-
-#~ msgid "Clear"
-#~ msgstr "Պարզ"
-
-#~ msgid "Smart Skip"
-#~ msgstr "Smart Skip"
-
-#~ msgid "Click To Zoom"
-#~ msgstr "Կտտացրեք մեծացնելու համար"
-
-#~ msgid "You are viewing"
-#~ msgstr "Դուք դիտում եք"
-
-#~ msgid "from"
-#~ msgstr "-ից"
-
-#~ msgid "word(s) could not be inserted, sorry."
-#~ msgstr "բառ(եր) չհաջողվեց տեղադրել, կներեք:"
-
-#~ msgid "Word count (adjusted)"
-#~ msgstr "Բառերի հաշվարկ (ճշգրտված)"
-
-#~ msgid "Word count"
-#~ msgstr "Բառի հաշվիչ"
-
-#~ msgid "Continue"
-#~ msgstr "Շարունակել"
-
-#~ msgid "You completed the crossword!"
-#~ msgstr "Դուք լրացրեցիք խաչբառը:"

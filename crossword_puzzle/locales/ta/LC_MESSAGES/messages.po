@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-06 11:46+1000\n"
+"POT-Creation-Date: 2024-05-06 14:57+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ta <LL@li.org>\n"
@@ -19,149 +19,140 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: main.py:78 main.py:129 main.py:270 main.py:338
+#: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
+#: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
 msgid "Crossword Puzzle"
 msgstr "குறுக்கெழுத்து போட்டி"
 
-#: main.py:145
+#: crossword_puzzle/main.py:145
 msgid "View crosswords"
 msgstr "குறுக்கெழுத்துக்களைப் பார்க்கவும்"
 
-#: main.py:154
+#: crossword_puzzle/main.py:154
 msgid "Exit the app"
 msgstr "பயன்பாட்டிலிருந்து வெளியேறு"
 
-#: main.py:165
+#: crossword_puzzle/main.py:165
 msgid "Global Settings"
 msgstr "உலகளாவிய அமைப்புகள்"
 
-#: main.py:172
+#: crossword_puzzle/main.py:172
 msgid "Languages"
 msgstr "மொழிகள்"
 
-#: main.py:184
+#: crossword_puzzle/main.py:184
 msgid "Size"
 msgstr "அளவு"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "light"
 msgstr "ஒளி"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "dark"
 msgstr "இருள்"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "system"
 msgstr "அமைப்பு"
 
-#: main.py:206 main.py:220
+#: crossword_puzzle/main.py:206 crossword_puzzle/main.py:220
 msgid "Appearance"
 msgstr "தோற்றம்"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "terrible"
 msgstr "பயங்கரமான"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "poor"
 msgstr "ஏழை"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "average"
 msgstr "சராசரி"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "great"
 msgstr "நன்று"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "perfect"
 msgstr "சரியான"
 
-#: main.py:230
+#: crossword_puzzle/main.py:230
 msgid "Crossword Quality"
 msgstr "குறுக்கெழுத்து தரம்"
 
-#: main.py:262 main.py:415
+#: crossword_puzzle/main.py:262 crossword_puzzle/main.py:415
 msgid "Crossword Browser"
 msgstr "குறுக்கெழுத்து உலாவி"
 
-#: main.py:420
+#: crossword_puzzle/main.py:420
 msgid "Go back"
 msgstr "திரும்பி போ"
 
-#: main.py:431
+#: crossword_puzzle/main.py:431
 msgid "Load crossword"
 msgstr "குறுக்கெழுத்து ஏற்றவும்"
 
-#: main.py:440
+#: crossword_puzzle/main.py:440
 msgid "Open web app"
 msgstr "இணைய பயன்பாட்டைத் திறக்கவும்"
 
-#: main.py:449
+#: crossword_puzzle/main.py:449
 msgid "Terminate web app"
 msgstr "இணைய பயன்பாட்டை நிறுத்தவும்"
 
-#: main.py:460
+#: crossword_puzzle/main.py:460
 msgid "Word count preferences"
 msgstr "வார்த்தை எண்ணிக்கை விருப்பத்தேர்வுகள்"
 
-#: main.py:474 main.py:536 main.py:582 main.py:802
+#: crossword_puzzle/main.py:474 crossword_puzzle/main.py:536
+#: crossword_puzzle/main.py:582 crossword_puzzle/main.py:802
 msgid "Select word count"
 msgstr "வார்த்தை எண்ணிக்கையைத் தேர்ந்தெடுக்கவும்"
 
-#: main.py:478 main.py:581 main.py:820
-msgid "Maximum"
-msgstr "அதிகபட்சம்"
-
-#: main.py:489
+#: crossword_puzzle/main.py:489
 msgid "Custom"
 msgstr "தனிப்பயன்"
 
-#: main.py:694
+#: crossword_puzzle/main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr ""
 "இந்த செயல்பாட்டைச் செய்ய, நீங்கள் முதலில் ஒரு கலத்தைத் தேர்ந்தெடுக்க "
 "வேண்டும்."
 
-#: main.py:886
+#: crossword_puzzle/main.py:886
 msgid "View"
 msgstr "காண்க"
 
-#: main.py:893
+#: crossword_puzzle/cword_webapp/templates/index.html:383
+#: crossword_puzzle/main.py:893
 msgid "Close"
 msgstr "நெருக்கமான"
 
-#: main.py:1042 main.py:1086
+#: crossword_puzzle/main.py:1042
 msgid "difficulty"
 msgstr "சிரமம்"
 
-#: main.py:1078
-msgid "Total words"
-msgstr "மொத்த வார்த்தைகள்"
-
-#: main.py:1085
-msgid "Difficulty"
-msgstr "சிரமம்"
-
-#: main.py:1098
+#: crossword_puzzle/main.py:1098
 msgid "Select"
 msgstr "தேர்ந்தெடு"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Restart"
 msgstr "மறுதொடக்கம்"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "பயன்பாட்டை மறுதொடக்கம் செய்ய விரும்புகிறீர்களா?"
 
-#: main.py:1156
+#: crossword_puzzle/main.py:1156
 msgid "Exit"
 msgstr "வெளியேறு"
 
-#: main.py:1157
+#: crossword_puzzle/main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -169,11 +160,11 @@ msgstr ""
 "பயன்பாட்டிலிருந்து நிச்சயமாக வெளியேற விரும்புகிறீர்களா? இணைய பயன்பாடு "
 "இயங்கினால், அது நிறுத்தப்படும்."
 
-#: main.py:1166
+#: crossword_puzzle/main.py:1166
 msgid "Back to home"
 msgstr "வீட்டுக்குத் திரும்பு"
 
-#: main.py:1167
+#: crossword_puzzle/main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -181,32 +172,33 @@ msgstr ""
 "முகப்புத் திரைக்கு நிச்சயமாகச் செல்ல விரும்புகிறீர்களா? இணைய பயன்பாடு "
 "நிறுத்தப்படும்."
 
-#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
-#: main.py:1240
+#: crossword_puzzle/main.py:1190 crossword_puzzle/main.py:1195
+#: crossword_puzzle/main.py:1200 crossword_puzzle/main.py:1205
+#: crossword_puzzle/main.py:1228 crossword_puzzle/main.py:1240
 msgid "Error"
 msgstr "பிழை"
 
-#: main.py:1190
+#: crossword_puzzle/main.py:1190
 msgid "This language is already selected."
 msgstr "இந்த மொழி ஏற்கனவே தேர்ந்தெடுக்கப்பட்டது."
 
-#: main.py:1195
+#: crossword_puzzle/main.py:1195
 msgid "This size is already selected."
 msgstr "இந்த அளவு ஏற்கனவே தேர்ந்தெடுக்கப்பட்டது."
 
-#: main.py:1200
+#: crossword_puzzle/main.py:1200
 msgid "This appearance is already selected."
 msgstr "இந்த தோற்றம் ஏற்கனவே தேர்ந்தெடுக்கப்பட்டது."
 
-#: main.py:1205
+#: crossword_puzzle/main.py:1205
 msgid "This quality is already selected."
 msgstr "இந்த தரம் ஏற்கனவே தேர்ந்தெடுக்கப்பட்டுள்ளது."
 
-#: main.py:1210
+#: crossword_puzzle/main.py:1210
 msgid "Info"
 msgstr "தகவல்"
 
-#: main.py:1211
+#: crossword_puzzle/main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -229,7 +221,7 @@ msgstr ""
 "நிறுத்தப்படலாம் அல்லது அவற்றை நிறுத்த உங்கள் கணினியை மறுதொடக்கம் "
 "செய்யுங்கள்."
 
-#: main.py:1229
+#: crossword_puzzle/main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -241,13 +233,91 @@ msgstr ""
 "அடிப்படை குறுக்கெழுத்து தரவு அதன் மொழிபெயர்க்கப்பட்ட பதிப்பு லோக்கல்ஸ் "
 "கோப்பகத்தில் இல்லாதபோது மட்டுமே அணுகப்படும்."
 
-#: main.py:1241
+#: crossword_puzzle/main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr ""
 "குறுக்கெழுத்து உருவாக்கத்தில் பிழை ஏற்பட்டது. கன்சோலில் கூடுதல் தகவலைப் "
 "பார்க்கவும்"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:13
+#: crossword_puzzle/cword_webapp/templates/index.html:350
+msgid "Crossword Puzzle - Game"
+msgstr "குறுக்கெழுத்து புதிர் - விளையாட்டு"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:173
+msgid "Across"
+msgstr "முழுவதும்"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:196
+msgid "Down"
+msgstr "கீழ்"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:228
+msgid "Reveal"
+msgstr "வெளிப்படுத்துங்கள்"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:236
+#: crossword_puzzle/cword_webapp/templates/index.html:271
+msgid "Cell"
+msgstr "செல்"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:243
+#: crossword_puzzle/cword_webapp/templates/index.html:278
+#: crossword_puzzle/cword_webapp/templates/index.html:306
+msgid "Word"
+msgstr "சொல்"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:252
+#: crossword_puzzle/cword_webapp/templates/index.html:287
+#: crossword_puzzle/cword_webapp/templates/index.html:315
+msgid "Grid"
+msgstr "கட்டம்"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:263
+msgid "Check"
+msgstr "காசோலை"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:298
+msgid "Clear"
+msgstr "தெளிவான"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:329
+msgid "Smart Skip"
+msgstr "ஸ்மார்ட் ஸ்கிப்"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:340
+msgid "Click To Zoom"
+msgstr "பெரிதாக்க கிளிக் செய்க"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:352
+msgid "You are viewing"
+msgstr "நீங்கள் பார்க்கிறீர்கள்"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:353
+msgid "from"
+msgstr "இருந்து"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:357
+msgid "word(s) could not be inserted, sorry."
+msgstr "சொல் (களை) செருக முடியவில்லை, மன்னிக்கவும்."
+
+#: crossword_puzzle/cword_webapp/templates/index.html:360
+msgid "Word count (adjusted)"
+msgstr "சொல் எண்ணிக்கை (சரிசெய்யப்பட்டது)"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:364
+msgid "Word count"
+msgstr "சொல் எண்ணிக்கை"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:371
+msgid "Continue"
+msgstr "தொடரவும்"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:377
+msgid "You completed the crossword!"
+msgstr "நீங்கள் குறுக்கெழுத்து முடித்தீர்கள்!"
 
 msgid "Easy"
 msgstr "சுலபம்"
@@ -272,96 +342,3 @@ msgstr "அறிவியல்"
 
 msgid "Computer Science"
 msgstr "கணினி அறிவியல்"
-
-#~ msgid ""
-#~ "First time launch, please read:\n"
-#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
-#~ "\n"
-#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
-#~ "\n"
-#~ "Also important to know:\n"
-#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
-#~ msgstr ""
-
-#~ msgid "Capitals"
-#~ msgstr "தலைநகரங்கள்"
-
-#~ msgid "Countries"
-#~ msgstr "நாடுகள்"
-
-#~ msgid "Easy"
-#~ msgstr "சுலபம்"
-
-#~ msgid "Medium"
-#~ msgstr "நடுத்தர"
-
-#~ msgid "Hard"
-#~ msgstr "கடினமான"
-
-#~ msgid "Extreme"
-#~ msgstr "தீவிர"
-
-#~ msgid "Geography"
-#~ msgstr "நிலவியல்"
-
-#~ msgid "Science"
-#~ msgstr "அளவு"
-
-#~ msgid "To check or reveal a cell/word, you must first select a cell"
-#~ msgstr ""
-#~ "செல்/வார்த்தையைச் சரிபார்க்க அல்லது வெளிப்படுத்த, முதலில் ஒரு கலத்தைத் "
-#~ "தேர்ந்தெடுக்க வேண்டும்"
-
-#~ msgid "Crossword Puzzle - Game"
-#~ msgstr "குறுக்கெழுத்து புதிர் - விளையாட்டு"
-
-#~ msgid "Across"
-#~ msgstr "முழுவதும்"
-
-#~ msgid "Down"
-#~ msgstr "கீழ்"
-
-#~ msgid "Reveal"
-#~ msgstr "வெளிப்படுத்து"
-
-#~ msgid "Cell"
-#~ msgstr "செல்"
-
-#~ msgid "Word"
-#~ msgstr "சொல்"
-
-#~ msgid "Grid"
-#~ msgstr "கட்டம்"
-
-#~ msgid "Check"
-#~ msgstr "காசோலை"
-
-#~ msgid "Clear"
-#~ msgstr "தெளிவு"
-
-#~ msgid "Smart Skip"
-#~ msgstr "ஸ்மார்ட் ஸ்கிப்"
-
-#~ msgid "Click To Zoom"
-#~ msgstr "பெரிதாக்க கிளிக் செய்க"
-
-#~ msgid "You are viewing"
-#~ msgstr "நீங்கள் பார்க்கிறீர்கள்"
-
-#~ msgid "from"
-#~ msgstr "இருந்து"
-
-#~ msgid "word(s) could not be inserted, sorry."
-#~ msgstr "வார்த்தை(களை) செருக முடியவில்லை, மன்னிக்கவும்."
-
-#~ msgid "Word count (adjusted)"
-#~ msgstr "வார்த்தை எண்ணிக்கை (சரிசெய்யப்பட்டது)"
-
-#~ msgid "Word count"
-#~ msgstr "சொல் எண்ணிக்கை"
-
-#~ msgid "Continue"
-#~ msgstr "தொடரவும்"
-
-#~ msgid "You completed the crossword!"
-#~ msgstr "நீங்கள் குறுக்கெழுத்து முடித்தீர்கள்!"

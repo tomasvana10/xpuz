@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-06 11:46+1000\n"
+"POT-Creation-Date: 2024-05-06 14:57+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: am <LL@li.org>\n"
@@ -19,188 +19,180 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: main.py:78 main.py:129 main.py:270 main.py:338
+#: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
+#: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
 msgid "Crossword Puzzle"
 msgstr "የቃላት አቋራጭ እንቆቅልሽ"
 
-#: main.py:145
+#: crossword_puzzle/main.py:145
 msgid "View crosswords"
 msgstr "መስቀለኛ ቃላትን ተመልከት"
 
-#: main.py:154
+#: crossword_puzzle/main.py:154
 msgid "Exit the app"
 msgstr "ከመተግበሪያው ውጣ"
 
-#: main.py:165
+#: crossword_puzzle/main.py:165
 msgid "Global Settings"
 msgstr "ዓለም አቀፍ ቅንብሮች"
 
-#: main.py:172
+#: crossword_puzzle/main.py:172
 msgid "Languages"
 msgstr "ቋንቋዎች"
 
-#: main.py:184
+#: crossword_puzzle/main.py:184
 msgid "Size"
 msgstr "መጠን"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "light"
 msgstr "ብርሃን"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "dark"
 msgstr "ጨለማ"
 
-#: main.py:203
+#: crossword_puzzle/main.py:203
 msgid "system"
 msgstr "ስርዓት"
 
-#: main.py:206 main.py:220
+#: crossword_puzzle/main.py:206 crossword_puzzle/main.py:220
 msgid "Appearance"
 msgstr "መልክ"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "terrible"
 msgstr "አስከፊ"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "poor"
 msgstr "ድሃ"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "average"
 msgstr "አማካይ"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "great"
 msgstr "በጣም ጥሩ"
 
-#: main.py:226
+#: crossword_puzzle/main.py:226
 msgid "perfect"
 msgstr "ፍጹም"
 
-#: main.py:230
+#: crossword_puzzle/main.py:230
 msgid "Crossword Quality"
 msgstr "የቃላት ቃል ጥራት"
 
-#: main.py:262 main.py:415
+#: crossword_puzzle/main.py:262 crossword_puzzle/main.py:415
 msgid "Crossword Browser"
 msgstr "የመስቀል ቃል አሳሽ"
 
-#: main.py:420
+#: crossword_puzzle/main.py:420
 msgid "Go back"
 msgstr "ተመለስ"
 
-#: main.py:431
+#: crossword_puzzle/main.py:431
 msgid "Load crossword"
 msgstr "መስቀለኛ ቃል ጫን"
 
-#: main.py:440
+#: crossword_puzzle/main.py:440
 msgid "Open web app"
 msgstr "የድር መተግበሪያን ይክፈቱ"
 
-#: main.py:449
+#: crossword_puzzle/main.py:449
 msgid "Terminate web app"
 msgstr "የድር መተግበሪያን ያቋርጡ"
 
-#: main.py:460
+#: crossword_puzzle/main.py:460
 msgid "Word count preferences"
 msgstr "የቃላት ብዛት ምርጫዎች"
 
-#: main.py:474 main.py:536 main.py:582 main.py:802
+#: crossword_puzzle/main.py:474 crossword_puzzle/main.py:536
+#: crossword_puzzle/main.py:582 crossword_puzzle/main.py:802
 msgid "Select word count"
 msgstr "የቃላት ብዛትን ይምረጡ"
 
-#: main.py:478 main.py:581 main.py:820
-msgid "Maximum"
-msgstr "ከፍተኛ"
-
-#: main.py:489
+#: crossword_puzzle/main.py:489
 msgid "Custom"
 msgstr "ብጁ"
 
-#: main.py:694
+#: crossword_puzzle/main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr "ይህንን ክዋኔ ለማከናወን በመጀመሪያ ሴል መምረጥ አለብዎት."
 
-#: main.py:886
+#: crossword_puzzle/main.py:886
 msgid "View"
 msgstr "ይመልከቱ"
 
-#: main.py:893
+#: crossword_puzzle/cword_webapp/templates/index.html:383
+#: crossword_puzzle/main.py:893
 msgid "Close"
 msgstr "ገጠመ"
 
-#: main.py:1042 main.py:1086
+#: crossword_puzzle/main.py:1042
 msgid "difficulty"
 msgstr "ችግር"
 
-#: main.py:1078
-msgid "Total words"
-msgstr "ጠቅላላ ቃላት"
-
-#: main.py:1085
-msgid "Difficulty"
-msgstr "አስቸጋሪ"
-
-#: main.py:1098
+#: crossword_puzzle/main.py:1098
 msgid "Select"
 msgstr "ይምረጡ"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Restart"
 msgstr "እንደገና ጀምር"
 
-#: main.py:1150
+#: crossword_puzzle/main.py:1150
 msgid "Are you sure you want to restart the app?"
 msgstr "እርግጠኛ ነዎት መተግበሪያውን እንደገና ማስጀመር ይፈልጋሉ?"
 
-#: main.py:1156
+#: crossword_puzzle/main.py:1156
 msgid "Exit"
 msgstr "ውጣ"
 
-#: main.py:1157
+#: crossword_puzzle/main.py:1157
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr "እርግጠኛ ነህ ከመተግበሪያው መውጣት ትፈልጋለህ? የድር መተግበሪያ እየሰራ ከሆነ ይቋረጣል።"
 
-#: main.py:1166
+#: crossword_puzzle/main.py:1166
 msgid "Back to home"
 msgstr "ወደ ቤት መመለስ"
 
-#: main.py:1167
+#: crossword_puzzle/main.py:1167
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr "እርግጠኛ ነህ ወደ መነሻ ስክሪን መመለስ ትፈልጋለህ? የድር መተግበሪያ ይቋረጣል።"
 
-#: main.py:1190 main.py:1195 main.py:1200 main.py:1205 main.py:1228
-#: main.py:1240
+#: crossword_puzzle/main.py:1190 crossword_puzzle/main.py:1195
+#: crossword_puzzle/main.py:1200 crossword_puzzle/main.py:1205
+#: crossword_puzzle/main.py:1228 crossword_puzzle/main.py:1240
 msgid "Error"
 msgstr "ስህተት"
 
-#: main.py:1190
+#: crossword_puzzle/main.py:1190
 msgid "This language is already selected."
 msgstr "ይህ ቋንቋ አስቀድሞ ተመርጧል።"
 
-#: main.py:1195
+#: crossword_puzzle/main.py:1195
 msgid "This size is already selected."
 msgstr "ይህ መጠን አስቀድሞ ተመርጧል።"
 
-#: main.py:1200
+#: crossword_puzzle/main.py:1200
 msgid "This appearance is already selected."
 msgstr "ይህ መልክ አስቀድሞ ተመርጧል።"
 
-#: main.py:1205
+#: crossword_puzzle/main.py:1205
 msgid "This quality is already selected."
 msgstr "ይህ ጥራት አስቀድሞ ተመር is ል."
 
-#: main.py:1210
+#: crossword_puzzle/main.py:1210
 msgid "Info"
 msgstr "መረጃ"
 
-#: main.py:1211
+#: crossword_puzzle/main.py:1211
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -219,7 +211,7 @@ msgstr ""
 "የመተግበሪያ ሂደቶች በማክኦኤስ ላይ በእንቅስቃሴ መቆጣጠሪያ በኩል ሊቋረጥ ወይም በቀላሉ ኮምፒተርዎን ለማቋረጥ እንደገና "
 "ማስጀመር ይችላሉ።"
 
-#: main.py:1229
+#: crossword_puzzle/main.py:1229
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -230,11 +222,89 @@ msgstr ""
 " መኖሩን ያረጋግጡ። ማሳሰቢያ፡- የመሠረት መስቀለኛ ቃል ውሂብ የሚደረሰው የተተረጎመው ሥሪት በአካባቢ ማውጫዎች ውስጥ "
 "ከሌለ ብቻ ነው።"
 
-#: main.py:1241
+#: crossword_puzzle/main.py:1241
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr "በቃላት አቋራጭ ትውልድ ላይ ስህተት ተከስቷል። እባክዎ ተጨማሪ መረጃ በኮንሶሉ ውስጥ ይመልከቱ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:13
+#: crossword_puzzle/cword_webapp/templates/index.html:350
+msgid "Crossword Puzzle - Game"
+msgstr "መሻገሪያ እንቆቅልሽ - ጨዋታ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:173
+msgid "Across"
+msgstr "ማዶ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:196
+msgid "Down"
+msgstr "ወደታች"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:228
+msgid "Reveal"
+msgstr "መግለጥ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:236
+#: crossword_puzzle/cword_webapp/templates/index.html:271
+msgid "Cell"
+msgstr "ህዋስ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:243
+#: crossword_puzzle/cword_webapp/templates/index.html:278
+#: crossword_puzzle/cword_webapp/templates/index.html:306
+msgid "Word"
+msgstr "ቃል"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:252
+#: crossword_puzzle/cword_webapp/templates/index.html:287
+#: crossword_puzzle/cword_webapp/templates/index.html:315
+msgid "Grid"
+msgstr "ፍርግርግ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:263
+msgid "Check"
+msgstr "ቼክ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:298
+msgid "Clear"
+msgstr "ማጽዳት"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:329
+msgid "Smart Skip"
+msgstr "ብልህ ዝለል"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:340
+msgid "Click To Zoom"
+msgstr "ለማጉላት ጠቅ ያድርጉ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:352
+msgid "You are viewing"
+msgstr "እያዩ ነው"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:353
+msgid "from"
+msgstr "ከ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:357
+msgid "word(s) could not be inserted, sorry."
+msgstr "ቃል (ቶች) ማስገባት, ይቅርታ."
+
+#: crossword_puzzle/cword_webapp/templates/index.html:360
+msgid "Word count (adjusted)"
+msgstr "የቃል ቆጠራ (የተስተካከለ)"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:364
+msgid "Word count"
+msgstr "የቃል ቆጠራ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:371
+msgid "Continue"
+msgstr "ቀጥል"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:377
+msgid "You completed the crossword!"
+msgstr "የመቀረት ቃል አጠናቅቀዋል!"
 
 msgid "Easy"
 msgstr "ቀላል"
@@ -259,94 +329,3 @@ msgstr "ሳይንስ"
 
 msgid "Computer Science"
 msgstr "የኮምፒውተር ሳይንስ"
-
-#~ msgid ""
-#~ "First time launch, please read:\n"
-#~ "Once you have loaded a crossword, and wish to load another one, you must first terminate the web app.\n"
-#~ "\n"
-#~ "IMPORTANT: If you are on macOS, force quitting the application (using cmd+q) while the web app is running will prevent it from properly terminating. If you mistakenly do this, either find the Flask app process and terminate it, change the `webapp_port` number in src/config.ini, or restart your computer.\n"
-#~ "\n"
-#~ "Also important to know:\n"
-#~ "In some cases, you may have launched the web app yet your browser cannot view it. If this happens, please restart your browser."
-#~ msgstr ""
-
-#~ msgid "Capitals"
-#~ msgstr "ዋና ከተማዎች"
-
-#~ msgid "Countries"
-#~ msgstr "አገሮች"
-
-#~ msgid "Easy"
-#~ msgstr "ቀላል"
-
-#~ msgid "Medium"
-#~ msgstr "መካከለኛ"
-
-#~ msgid "Hard"
-#~ msgstr "ከባድ"
-
-#~ msgid "Extreme"
-#~ msgstr "ጽንፍ"
-
-#~ msgid "Geography"
-#~ msgstr "ጂኦግራፊ"
-
-#~ msgid "Science"
-#~ msgstr "መጠን"
-
-#~ msgid "To check or reveal a cell/word, you must first select a cell"
-#~ msgstr "ሕዋስ/ቃልን ለመፈተሽ ወይም ለመግለጥ መጀመሪያ ሕዋስ መምረጥ አለቦት"
-
-#~ msgid "Crossword Puzzle - Game"
-#~ msgstr "እንቆቅልሽ - ጨዋታ"
-
-#~ msgid "Across"
-#~ msgstr "ማዶ"
-
-#~ msgid "Down"
-#~ msgstr "ወደታች"
-
-#~ msgid "Reveal"
-#~ msgstr "መግለጥ"
-
-#~ msgid "Cell"
-#~ msgstr "ሕዋስ"
-
-#~ msgid "Word"
-#~ msgstr "ቃል"
-
-#~ msgid "Grid"
-#~ msgstr "ፍርግርግ"
-
-#~ msgid "Check"
-#~ msgstr "ይፈትሹ"
-
-#~ msgid "Clear"
-#~ msgstr "ግልጽ"
-
-#~ msgid "Smart Skip"
-#~ msgstr "ብልህ ዝለል"
-
-#~ msgid "Click To Zoom"
-#~ msgstr "ለማጉላት ጠቅ ያድርጉ"
-
-#~ msgid "You are viewing"
-#~ msgstr "እየተመለከቱ ነው።"
-
-#~ msgid "from"
-#~ msgstr "ከ"
-
-#~ msgid "word(s) could not be inserted, sorry."
-#~ msgstr "ቃል(ቶች) ማስገባት አልተቻለም፣ ይቅርታ።"
-
-#~ msgid "Word count (adjusted)"
-#~ msgstr "የቃላት ብዛት (የተስተካከለ)"
-
-#~ msgid "Word count"
-#~ msgstr "የቃላት ብዛት"
-
-#~ msgid "Continue"
-#~ msgstr "ቀጥል"
-
-#~ msgid "You completed the crossword!"
-#~ msgstr "መስቀለኛ ቃሉን ጨርሰሃል!"
