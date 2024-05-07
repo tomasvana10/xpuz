@@ -58,10 +58,10 @@ Check out the wiki [here](https://github.com/tomasvana10/crossword_puzzle/wiki)
 - [regex](https://github.com/mrabarnett/mrab-regex) - Alternative to the standard `re` module, required for some functionality
 <br><br>
 ## Gallery
-<img width="683" alt="home gui" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/38783814-148f-470f-b08a-aeea51e75a24">
+![home](https://github.com/tomasvana10/crossword_puzzle/assets/124552709/b7472342-5cfe-418b-bdf1-cd7ab0389ace)
 <hr>
-<img width="872" alt="crossword browser gui" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/6b9705a1-e9ae-4505-8c48-e18ccbe7f586">
+![browser](https://github.com/tomasvana10/crossword_puzzle/assets/124552709/b3be1965-3847-45c8-99fd-b2ad284b46d9)
 <hr>
-<img width="1240" alt="game english" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/6c313430-58df-4075-a417-b0150968be82">
+![game-eng](https://github.com/tomasvana10/crossword_puzzle/assets/124552709/40c74282-8981-4b90-a29e-b4787d3ea134)
 <hr>
-<img width="1240" alt="game japanese" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/92e84095-05ff-413f-b397-0c407e71d713">
+![game-jp](https://github.com/tomasvana10/crossword_puzzle/assets/124552709/e892e74d-fa45-4866-8483-27b950cf152c)

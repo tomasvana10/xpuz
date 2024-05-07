@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Generated-By: Babel 2.15.0\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
 #: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
@@ -340,3 +340,9 @@ msgstr "ວິທະຍາສາດ"
 
 msgid "Computer Science"
 msgstr "ວິ​ທະ​ຍາ​ສາດ​ຄອມ​ພິວ​ເຕີ"
+
+msgid "Difficulty"
+msgstr "ຄວາມຫຍຸ້ງຍາກ"
+
+msgid "Total words"
+msgstr "ຄໍາສັບ"

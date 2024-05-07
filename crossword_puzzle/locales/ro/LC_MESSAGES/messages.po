@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2);\n"
-"Generated-By: Babel 2.15.0\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
 #: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
@@ -343,3 +343,9 @@ msgstr "Ştiinţă"
 
 msgid "Computer Science"
 msgstr "Informatică"
+
+msgid "Difficulty"
+msgstr "Dificultate"
+
+msgid "Total words"
+msgstr "Cuvinte totale"

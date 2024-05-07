@@ -322,3 +322,9 @@ msgstr ""
 
 msgid "Computer Science"
 msgstr ""
+
+msgid "Difficulty"
+msgstr ""
+
+msgid "Total words"
+msgstr ""

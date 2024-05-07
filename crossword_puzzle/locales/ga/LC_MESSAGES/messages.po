@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=5; plural=(n==1 ? 0 : n==2 ? 1 : n>=3 && n<=6 ? 2 : n>=7 && n<=10 ? 3 : 4);\n"
-"Generated-By: Babel 2.15.0\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
 #: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
@@ -343,3 +343,9 @@ msgstr "Eolaíocht"
 
 msgid "Computer Science"
 msgstr "Eolaíocht Ríomhaireachta"
+
+msgid "Difficulty"
+msgstr "Stró"
+
+msgid "Total words"
+msgstr "Focail Iomlán"

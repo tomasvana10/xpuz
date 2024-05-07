@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Generated-By: Babel 2.15.0\n"
+"Generated-By: Babel 2.14.0\n"
 
 #: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
 #: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
@@ -340,3 +340,9 @@ msgstr "Илим"
 
 msgid "Computer Science"
 msgstr "Компьютердик илим"
+
+msgid "Difficulty"
+msgstr "Кыйынчылык"
+
+msgid "Total words"
+msgstr "Жалпы сөздөр"
