@@ -58,10 +58,10 @@ Check out the wiki [here](https://github.com/tomasvana10/crossword_puzzle/wiki)
 - [regex](https://github.com/mrabarnett/mrab-regex) - Alternative to the standard `re` module, required for some functionality
 <br><br>
 ## Gallery
-![home](https://github.com/tomasvana10/crossword_puzzle/assets/124552709/b7472342-5cfe-418b-bdf1-cd7ab0389ace)
+<img alt="crossword puzzle home" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/b7472342-5cfe-418b-bdf1-cd7ab0389ace">
 <hr>
-![browser](https://github.com/tomasvana10/crossword_puzzle/assets/124552709/b3be1965-3847-45c8-99fd-b2ad284b46d9)
+<img alt="crossword puzzle browser" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/b3be1965-3847-45c8-99fd-b2ad284b46d9">
 <hr>
-![game-eng](https://github.com/tomasvana10/crossword_puzzle/assets/124552709/40c74282-8981-4b90-a29e-b4787d3ea134)
+<img alt="crossword puzzle game english" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/40c74282-8981-4b90-a29e-b4787d3ea134">
 <hr>
-![game-jp](https://github.com/tomasvana10/crossword_puzzle/assets/124552709/e892e74d-fa45-4866-8483-27b950cf152c)
+<img alt="crossword puzzle game japanese" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/e892e74d-fa45-4866-8483-27b950cf152c">
