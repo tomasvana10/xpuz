@@ -6,17 +6,87 @@ detection of crossword completion, and relays this information to the user.
 /* Variables/constants */
 
 // Jinja2 template variables
-let grid, directions, dimensions, empty, colourPalette, intersections, errMsgs; 
+let grid, directions, dimensions, empty, colourPalette, intersections, errMsgs;
 let direction = "ACROSS",
     currentWord = null,
     cellCoords = null,
     staticIndex = null,
     isDown = null,
-    wasEmpty = null;
+    wasEmpty = null,
+    compoundInputActive = false;
 const arrowKeys = ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"];
 const spacebarKeys = ["Spacebar", " "];
 const backspaceKeys = ["Backspace", "Delete"];
+const compoundInputPlaceholders = [
+    "ㅇ", "+", "ㅏ", "=", "아", "क​", "+", "इ","=", "कै",
+];
+let currentPlaceholder = 0;
 
+function dummyCellClick(event) {
+    return event.stopImmediatePropagation();
+}
+
+function setCompoundInput(priorValue) {
+    compoundInputActive = true;
+    let currentCell = getCellElement(cellCoords);
+    currentCell.onclick = (event) => dummyCellClick(event);
+    setValue(currentCell, "");
+
+    let compoundInput = document.createElement("input");
+    compoundInput.value = priorValue;
+    compoundInput.type = "text";
+    compoundInput.classList.add("compound_input");
+    currentCell.appendChild(compoundInput);
+    compoundInput.focus();
+}
+
+function cycleCompoundInputPlaceholderText() {
+    let compoundInput = document.getElementsByClassName("compound_input")[0];
+    if (compoundInput === undefined) {
+        return;
+    }
+    compoundInput.placeholder = compoundInputPlaceholders[currentPlaceholder];
+    if (currentPlaceholder === compoundInputPlaceholders.length - 1) {
+        currentPlaceholder = 0;
+    } else {
+        currentPlaceholder += 1;
+    }
+}
+setInterval(cycleCompoundInputPlaceholderText, 750);
+
+function removeCompoundInput() {
+    if (!compoundInputActive) {
+        return;
+    } // failsafe
+    let compoundInput = document.getElementsByClassName("compound_input")[0];
+    let cellOfCompoundInput = compoundInput.parentElement;
+    let enteredText = compoundInput.value;
+    try {
+        if (!enteredText[0].match(/\p{L}/u)) {
+            enteredText = "";
+        }
+    } catch (err) {
+        enteredText = "";
+    }
+    compoundInput.remove();
+    cellOfCompoundInput.childNodes[0].nodeValue = enteredText[0];
+    cellOfCompoundInput.onclick = (event) =>
+        onCellClick(event, cellOfCompoundInput);
+    cellOfCompoundInput.classList.remove("lock_in", "wrong");
+    compoundInputActive = false;
+    currentPlaceholder = 0;
+}
+
+function handleSetCompoundInput() {
+    if (cellCoords === null) {
+        return alert(errMsgs[0]);
+    }
+    if (document.getElementsByClassName("compound_input")[0]) {
+        return removeCompoundInput();
+    }
+    let priorValue = getCellElement(cellCoords).childNodes[0].nodeValue;
+    setCompoundInput(priorValue);
+}
 
 /* Functions for conditional checks and other minor utilities */
 
@@ -36,7 +106,7 @@ const setFocusMode = (bool) => {
 
 // Modify the value of a cell. Uses nodes to prevent any number label elements
 // from being deleted
-const setValue = (cell, value) => (cell.childNodes[0].nodeValue = value); 
+const setValue = (cell, value) => (cell.childNodes[0].nodeValue = value);
 
 // Get the element of a cell by querying the DOM for an element with a specified
 // ``data-row`` and ``data-column`` attribute.
@@ -45,7 +115,7 @@ const getCellElement = (coords) =>
         `[data-row="${coords[0]}"][data-column="${coords[1]}"]`
     );
 
-// Get the new coordinates for a cell by extracting its ``data-row`` and 
+// Get the new coordinates for a cell by extracting its ``data-row`` and
 // ``data-column`` attributes into an array
 const updateCellCoords = (cell) => [
     parseInt(cell.getAttribute("data-row")),
@@ -86,7 +156,7 @@ const isCrosswordComplete = () => getGrid().isEqualTo(grid);
 
 const unfocusActiveElement = () => document.activeElement.blur();
 
-// Ensure the user can always see their currently selected word in the definitions 
+// Ensure the user can always see their currently selected word in the definitions
 // list
 const updateDefinitionsListPos = () => {
     getDefinitionsListItemFromWord(currentWord).focus();
@@ -97,7 +167,7 @@ Array.prototype.isEqualTo = function (arr) {
     return JSON.stringify(this) === JSON.stringify(arr);
 };
 
-// Used on cell elements to check if their nodeValue (what the user typed) is 
+// Used on cell elements to check if their nodeValue (what the user typed) is
 // equal to the data-value attribute (the true value)
 Element.prototype.hasCorrectValue = function () {
     return (
@@ -109,9 +179,7 @@ Element.prototype.hasCorrectValue = function () {
 document.addEventListener("DOMContentLoaded", () => {
     // On page load
     const body = document.querySelector("body");
-    grid = eval(
-        body.getAttribute("data-grid")
-    ); // Convert Python array to JS array.
+    grid = eval(body.getAttribute("data-grid")); // Convert Python array to JS array.
     directions = eval(body.getAttribute("data-directions"));
     dimensions = parseInt(body.getAttribute("data-dimensions"));
     empty = body.getAttribute("data-empty");
@@ -123,25 +191,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Detect the user clicking either a non empty cell or a definitions list
     // item by modifying the onclick attribute of all the aforementioned elements
-    document.querySelectorAll(".non_empty_cell").forEach((element) =>
-        element.onclick = (event) => {
-            onCellClick(event, element);
-        }
+    document.querySelectorAll(".non_empty_cell").forEach(
+        (element) =>
+            (element.onclick = (event) => {
+                onCellClick(event, element);
+            })
     );
-    document.querySelectorAll(".def").forEach((element) =>
-        element.onclick = (event) => {
-            onDefinitionsListItemClick(
-                event,
-                element.getAttribute("data-num"),
-                element.getAttribute("data-direction")
-            );
-        }
+    document.querySelectorAll(".def").forEach(
+        (element) =>
+            (element.onclick = (event) => {
+                onDefinitionsListItemClick(
+                    event,
+                    element.getAttribute("data-num"),
+                    element.getAttribute("data-direction")
+                );
+            })
     );
+    document.getElementById("compound_button").onclick = () => {
+        handleSetCompoundInput();
+    };
 
     // Display the onload popup
     onloadPopupToggled = true; // Modifying this flag earlier prevents the user
-                               // from messing with the crossword while the
-                               // CSS transition is happening
+    // from messing with the crossword while the
+    // CSS transition is happening
     sleep(200).then(() => {
         // Buffer popup transition
         document.getElementById("blur").classList.toggle("active");
@@ -154,8 +227,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    doSpecialButtonAction("grid", "clear", false); // Prevent possible issues 
-                                                   // with HTML
+    doSpecialButtonAction("grid", "clear", false); // Prevent possible issues
+    // with HTML
 });
 
 document.addEventListener("keydown", (event) => {
@@ -163,6 +236,23 @@ document.addEventListener("keydown", (event) => {
     grid based on the input. */
 
     let inputValue = event.key;
+
+    if (inputValue === "!" && event.shiftKey && cellCoords !== null) {
+        event.preventDefault();
+        return handleSetCompoundInput();
+    }
+
+    if (compoundInputActive) {
+        // User is performing compound input
+        if (
+            inputValue === "Enter" ||
+            inputValue === "Escape" ||
+            (inputValue === "!" && event.shiftKey)
+        ) {
+            removeCompoundInput();
+        }
+        return;
+    }
 
     // This god awful condition ensures the proper handling of the enter keybind
     if (
@@ -200,7 +290,7 @@ document.addEventListener("keydown", (event) => {
     // User hasn't selected a cell, so the upcoming inputs cannot be processed
     if (cellCoords === null) {
         return;
-    } 
+    }
 
     // Move the user's cell focus since they have pressed an arrow key
     if (arrowKeys.includes(inputValue)) {
@@ -241,13 +331,12 @@ function handleStandardInput(inputValue) {
         // If the cell is wrong/red in colour, it must be reverted as the user
         // has just typed in it
         currentCell.classList.remove("wrong");
-
     } else if (mode === "del") {
         // The focused cell has content, just delete it
         if (!isEmpty(currentCell) && !currentCell.classList.contains("lock_in"))
-            return setValue(currentCell, ""); 
+            return setValue(currentCell, "");
 
-        // Perform standard deletion, whereby the content of the cell to the 
+        // Perform standard deletion, whereby the content of the cell to the
         // right/top of the current cell is deleted, then the focus is shifted
         // to that cell
         if (
@@ -267,8 +356,8 @@ function handleStandardInput(inputValue) {
     // User has the "smart skip" button toggled, so perform a cell skip
     if (mode === "enter" && document.getElementById("ts").checked) {
         cellCoords = skipCellCoords(cellCoords, direction, mode);
-    
-    // Just do a normal cell shift
+
+        // Just do a normal cell shift
     } else {
         cellCoords = shiftCellCoords(cellCoords, direction, mode);
     }
@@ -296,7 +385,7 @@ function skipCellCoords(coords, direction) {
     if (!wasEmpty) {
         return newCellCoords;
     }
-    wasEmpty = false; 
+    wasEmpty = false;
 
     // Continue skipping cells until the current cell has content
     while (!isEmpty(getCellElement(newCellCoords))) {
@@ -317,7 +406,8 @@ function preventZoomIfRequired(event) {
     button toggled on. This must be handled as the zoom functions from zoomooz.js
     must always be in the HTML structure. */
 
-    if (!document.getElementById("tz").checked) // Button isn't checked
+    if (!document.getElementById("tz").checked)
+        // Button isn't checked
         event.stopImmediatePropagation(); // Prevent zoomooz from zooming
 }
 
@@ -379,23 +469,24 @@ function handleArrowPress(key, event) {
     let newCellCoords = shiftCellCoords(cellCoords, dir, mode, true);
     let skipFlag = false;
 
-    // Attempt to find an unfilled cell in the direction of the arrow press 
+    // Attempt to find an unfilled cell in the direction of the arrow press
     // (if shifting into an empty cell)
     try {
         while (getCellElement(newCellCoords).classList.contains("empty_cell")) {
             newCellCoords = shiftCellCoords(newCellCoords, dir, mode, true);
             skipFlag = true;
         }
-    } catch (err) { // Couldn't find any unfilled cells
+    } catch (err) {
+        // Couldn't find any unfilled cells
         newCellCoords = cellCoords;
     }
 
     setFocusMode(false);
-    // If moving perpendicular to an intersection, only alternate the direction 
+    // If moving perpendicular to an intersection, only alternate the direction
     // and retain the prior ``cellCoords``
     if (shouldDirectionBeAlternated(newCellCoords)) {
         alternateDirection();
-        // Cells were skipped to reach these new coordinates, so update 
+        // Cells were skipped to reach these new coordinates, so update
         // ``cellCoords``
         if (skipFlag) {
             cellCoords = newCellCoords;
@@ -411,21 +502,22 @@ function handleArrowPress(key, event) {
 
 function crosswordCompletionHandler() {
     if (isCrosswordComplete()) {
-        sleep(1).then(() => { // Allow the input the user just made to be 
-                              // shown by the DOM
+        sleep(1).then(() => {
+            // Allow the input the user just made to be
+            // shown by the DOM
             emulateEscapePress();
             toggleCompletionPopup();
         });
     }
 }
 
-function doSpecialButtonAction(magnitude, mode, via_button=true) {
+function doSpecialButtonAction(magnitude, mode, via_button = true) {
     /* Perform reveal/check/clear operations on a selected cell, word, or, the 
     grid. */
 
-    // Since the user is running the function from a dropdown button, close the 
+    // Since the user is running the function from a dropdown button, close the
     // dropdown that the button belongs to
-    if (via_button) { 
+    if (via_button) {
         onDropdownClick(mode + "_dropdown");
     }
 
@@ -460,17 +552,16 @@ function doGridOperation(cell, mode) {
         cell.classList.remove("wrong");
         setValue(cell, cell.getAttribute("data-value"));
         cell.classList.add("lock_in"); // This cell must now be correct, so lock
-                                       // it in 
-
+        // it in
     } else if (mode === "check") {
         if (!isEmpty(cell)) {
-            if (cell.hasCorrectValue()) { // This cell is correct, lock it in 
+            if (cell.hasCorrectValue()) {
+                // This cell is correct, lock it in
                 cell.classList.add("lock_in");
             } else {
                 cell.classList.add("wrong");
             }
         }
-
     } else if (mode === "clear") {
         cell.classList.remove("lock_in");
         cell.classList.remove("wrong");
@@ -478,7 +569,7 @@ function doGridOperation(cell, mode) {
     }
 }
 
-function shiftCellCoords(coords, dir, mode, force=false) {
+function shiftCellCoords(coords, dir, mode, force = false) {
     /* Move the input forward or backward based on the ``mode`` parameter. If no 
     such cell exists at these future coordinates (and the force parameter is 
     false), the original coordinates are returned. 
@@ -521,6 +612,10 @@ function onCellClick(event, cell) {
     the appropriate display of the current cell and word focus on cell click, 
     as well as alternating input directions if clicking at an intersecting point 
     between two words. */
+    // User is performing compound input
+    if (compoundInputActive && cell !== getCellElement(cellCoords)) {
+        removeCompoundInput();
+    }
 
     preventZoomIfRequired(event);
     setFocusMode(false);
@@ -582,7 +677,7 @@ function getWordIndices() {
     let [row, col] = cellCoords;
     isDown = direction === directions[1];
     staticIndex = isDown ? col : row; // The index that never changes (the row
-                                      // if direction is across, etc)
+    // if direction is across, etc)
     let [startCoords, endCoords] = isDown ? [row, row] : [col, col];
 
     // Find starting coords of the word
@@ -607,7 +702,7 @@ function getWordIndices() {
 function getGrid() {
     /* Create an empty replica of the crossword grid, then update it according 
     to the web app grid */
-    
+
     let webAppGrid = Array.from({ length: dimensions }, () =>
         Array(dimensions).fill(empty)
     );

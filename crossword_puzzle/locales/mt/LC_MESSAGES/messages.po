@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-06 14:57+1000\n"
+"POT-Creation-Date: 2024-05-07 20:47+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: mt <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==0 || ( n%100>=1 && n%100<=10) ? 1 : (n%100>10 && n%100<20 ) ? 2 : 3);\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.15.0\n"
 
 #: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
 #: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
@@ -125,7 +125,7 @@ msgstr "Biex twettaq din l-operazzjoni, l-ewwel trid tagħżel ċellola."
 msgid "View"
 msgstr "Ara"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:383
+#: crossword_puzzle/cword_webapp/templates/index.html:388
 #: crossword_puzzle/main.py:893
 msgid "Close"
 msgstr "Agħlaq"
@@ -239,7 +239,7 @@ msgstr ""
 "informazzjoni fil-console"
 
 #: crossword_puzzle/cword_webapp/templates/index.html:13
-#: crossword_puzzle/cword_webapp/templates/index.html:350
+#: crossword_puzzle/cword_webapp/templates/index.html:355
 msgid "Crossword Puzzle - Game"
 msgstr "Puzzle Crossword - Logħba"
 
@@ -280,39 +280,43 @@ msgstr "Iċċekkja"
 msgid "Clear"
 msgstr "Ċar"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:329
+#: crossword_puzzle/cword_webapp/templates/index.html:322
+msgid "Compound"
+msgstr "Kompost"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:334
 msgid "Smart Skip"
 msgstr "Skip intelliġenti"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:340
+#: crossword_puzzle/cword_webapp/templates/index.html:345
 msgid "Click To Zoom"
 msgstr "Ikklikkja biex zoom"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:352
+#: crossword_puzzle/cword_webapp/templates/index.html:357
 msgid "You are viewing"
 msgstr "Qed tara"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:353
+#: crossword_puzzle/cword_webapp/templates/index.html:358
 msgid "from"
 msgstr "minn"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:357
+#: crossword_puzzle/cword_webapp/templates/index.html:362
 msgid "word(s) could not be inserted, sorry."
 msgstr "Kelma (i) ma setgħetx tiddaħħal, jiddispjaċini."
 
-#: crossword_puzzle/cword_webapp/templates/index.html:360
+#: crossword_puzzle/cword_webapp/templates/index.html:365
 msgid "Word count (adjusted)"
 msgstr "Għadd tal-Kelma (Aġġustat)"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:364
+#: crossword_puzzle/cword_webapp/templates/index.html:369
 msgid "Word count"
 msgstr "Għadd tal-kliem"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:371
+#: crossword_puzzle/cword_webapp/templates/index.html:376
 msgid "Continue"
 msgstr "Kompli"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:377
+#: crossword_puzzle/cword_webapp/templates/index.html:382
 msgid "You completed the crossword!"
 msgstr "Int imlejt it-tisliba!"
 

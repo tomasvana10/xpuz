@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-06 14:57+1000\n"
+"POT-Creation-Date: 2024-05-07 20:47+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: gd <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.15.0\n"
 
 #: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
 #: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
@@ -126,7 +126,7 @@ msgstr ""
 msgid "View"
 msgstr "Sealladh"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:383
+#: crossword_puzzle/cword_webapp/templates/index.html:388
 #: crossword_puzzle/main.py:893
 msgid "Close"
 msgstr "Dùin"
@@ -244,7 +244,7 @@ msgstr ""
 "tuilleadh fiosrachaidh anns a’ chonsail"
 
 #: crossword_puzzle/cword_webapp/templates/index.html:13
-#: crossword_puzzle/cword_webapp/templates/index.html:350
+#: crossword_puzzle/cword_webapp/templates/index.html:355
 msgid "Crossword Puzzle - Game"
 msgstr "Tòimhseachan Crossword - Gèam"
 
@@ -285,39 +285,43 @@ msgstr "Thoir sùil"
 msgid "Clear"
 msgstr "Soilleir"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:329
+#: crossword_puzzle/cword_webapp/templates/index.html:322
+msgid "Compound"
+msgstr "Todhar"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:334
 msgid "Smart Skip"
 msgstr "Sgeama Smart"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:340
+#: crossword_puzzle/cword_webapp/templates/index.html:345
 msgid "Click To Zoom"
 msgstr "Cliog gus gluasad"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:352
+#: crossword_puzzle/cword_webapp/templates/index.html:357
 msgid "You are viewing"
 msgstr "Tha thu a 'coimhead"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:353
+#: crossword_puzzle/cword_webapp/templates/index.html:358
 msgid "from"
 msgstr "bho"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:357
+#: crossword_puzzle/cword_webapp/templates/index.html:362
 msgid "word(s) could not be inserted, sorry."
 msgstr "Cha b 'urrainnear facal (ean) a chuir a-steach, duilich."
 
-#: crossword_puzzle/cword_webapp/templates/index.html:360
+#: crossword_puzzle/cword_webapp/templates/index.html:365
 msgid "Word count (adjusted)"
 msgstr "Cunntas fhaclan (air atharrachadh)"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:364
+#: crossword_puzzle/cword_webapp/templates/index.html:369
 msgid "Word count"
 msgstr "Cunntas fhaclan"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:371
+#: crossword_puzzle/cword_webapp/templates/index.html:376
 msgid "Continue"
 msgstr "Lean air adhart"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:377
+#: crossword_puzzle/cword_webapp/templates/index.html:382
 msgid "You completed the crossword!"
 msgstr "Chuir thu crìoch air a 'chrois-fhacal!"
 

@@ -1,13 +1,14 @@
 # Catalan translations for crossword_puzzle.
 # Copyright (C) 2024 Tomas Vana
-# This file is distributed under the same license as the crossword_puzzle project.
+# This file is distributed under the same license as the crossword_puzzle
+# project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-06 14:57+1000\n"
+"POT-Creation-Date: 2024-05-07 20:47+1000\n"
 "PO-Revision-Date: 2024-02-19 10:20+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ca <LL@li.org>\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.15.0\n"
 
 #: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
 #: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
@@ -124,7 +125,7 @@ msgstr "Per realitzar aquesta operació, primer heu de seleccionar una cel·la."
 msgid "View"
 msgstr "Veure"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:383
+#: crossword_puzzle/cword_webapp/templates/index.html:388
 #: crossword_puzzle/main.py:893
 msgid "Close"
 msgstr "Tanca"
@@ -237,7 +238,7 @@ msgstr ""
 "informació a la consola"
 
 #: crossword_puzzle/cword_webapp/templates/index.html:13
-#: crossword_puzzle/cword_webapp/templates/index.html:350
+#: crossword_puzzle/cword_webapp/templates/index.html:355
 msgid "Crossword Puzzle - Game"
 msgstr "Trencaclosques de mots encreuats: joc"
 
@@ -278,39 +279,43 @@ msgstr "Compta"
 msgid "Clear"
 msgstr "Clar"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:329
+#: crossword_puzzle/cword_webapp/templates/index.html:322
+msgid "Compound"
+msgstr "Compost"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:334
 msgid "Smart Skip"
 msgstr "Smart Skip"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:340
+#: crossword_puzzle/cword_webapp/templates/index.html:345
 msgid "Click To Zoom"
 msgstr "Feu clic per fer zoom"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:352
+#: crossword_puzzle/cword_webapp/templates/index.html:357
 msgid "You are viewing"
 msgstr "Esteu veient"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:353
+#: crossword_puzzle/cword_webapp/templates/index.html:358
 msgid "from"
 msgstr "des de"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:357
+#: crossword_puzzle/cword_webapp/templates/index.html:362
 msgid "word(s) could not be inserted, sorry."
 msgstr "No es va poder inserir la paraula (s), ho sento."
 
-#: crossword_puzzle/cword_webapp/templates/index.html:360
+#: crossword_puzzle/cword_webapp/templates/index.html:365
 msgid "Word count (adjusted)"
 msgstr "Recompte de paraules (ajustat)"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:364
+#: crossword_puzzle/cword_webapp/templates/index.html:369
 msgid "Word count"
 msgstr "Nombre de paraules"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:371
+#: crossword_puzzle/cword_webapp/templates/index.html:376
 msgid "Continue"
 msgstr "Continuar"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:377
+#: crossword_puzzle/cword_webapp/templates/index.html:382
 msgid "You completed the crossword!"
 msgstr "Has completat el mots encreuats!"
 

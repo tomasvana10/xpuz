@@ -38,8 +38,12 @@ document.addEventListener("focusout", (event) => {
 const hideDropdowns = () => {
     document
         .querySelectorAll(".dropdown")
-        .forEach((element) => element.classList.remove("show_dropdown"));
+        .forEach(element => element.classList.remove("show_dropdown"));
+    document
+        .querySelectorAll(".special_button")
+        .forEach(element => element.innerHTML = element.innerHTML.replace("▲", "▼"))
     currentDropdown = null;
+
 };
 
 function toggleCompletionPopup() {
@@ -61,15 +65,18 @@ function toggleCompletionPopup() {
 function onDropdownClick(id) {
     /* Opens the dropdown a user clicks on or closes it if they already have it 
     open. */
-
+    removeCompoundInput();
     let dropdown = document.getElementById(id);
+    
     if (id === currentDropdown) {
-        dropdown.classList.remove("show_dropdown");
+        hideDropdowns();
         currentDropdown = null;
         return;
     }
 
     hideDropdowns();
+    let dropdownButton = document.getElementById(id.replace("_dropdown", "_button"));
+    dropdownButton.innerHTML = dropdownButton.innerHTML.replace("▼", "▲")
     dropdown.classList.add("show_dropdown");
     currentDropdown = id;
 }

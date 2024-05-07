@@ -99,11 +99,11 @@ button:hover {
     position: relative;
 }
 
-.grid > div.empty_cell {
+.empty_cell {
     background: black;
 }
 
-.grid > div.non_empty_cell {
+.non_empty_cell {
     background: var(--sub_colour);
     text-transform: uppercase;
     font-size: var(--cell_font_size);
@@ -113,6 +113,10 @@ button:hover {
     border: 0.1px solid black;
     user-select: none;
     -webkit-user-select: none;
+}
+
+.non_empty_cell:hover {
+    cursor: pointer;
 }
 
 .num_label {
@@ -125,6 +129,25 @@ button:hover {
     color: var(--text_colour);
     font-size: var(--num_label_font_size);
 }
+
+.compound_input {
+    /* Allows users with alphabet systems such as Hangul to combine characters
+    before inserting them into a cell. */
+    background-color: var(--text_colour);
+    border: none;
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 0.75em;
+    outline: none;
+}
+
+.compound_input::placeholder {
+    text-align: center;
+}
+
 /* ---------- */
 
 /* ----- Styling for the definitions container and its two rows 
@@ -133,10 +156,10 @@ button:hover {
     display: flex;
     background-color: var(--sub_colour);
     justify-content: space-evenly;
-    margin-top: 17vmin;
+    margin-top: 21vmin;
     right: 0;
     overflow: hidden;
-    max-height: 78vmin;
+    max-height: 72vmin;
     width: 95vmin;
     z-index: 100;
 }
@@ -156,9 +179,10 @@ button:hover {
     overflow-y: hidden;
 }
 
-ul { /* Remove bullet points from the unordered list */
+ul {
+    /* Remove bullet points from the unordered list */
     list-style-type: none;
-} 
+}
 
 li {
     /* Each definition/clue */
@@ -246,7 +270,7 @@ resizing equally distributed. */
 .definitions > .top_buttons_container {
     display: flex;
     position: absolute;
-    transform: translateY(-7.5vmin);
+    transform: translateY(-8.25vmin);
 }
 
 .dropdown button:last-child {
@@ -280,6 +304,21 @@ resizing equally distributed. */
 }
 /* ---------- */
 
+/* ----- Styling the compound button ----- */
+.compound {
+    position: absolute;
+    display: flex;
+    top: 1.355vmin;
+    justify-content: space-around;
+}
+
+#compound_button {
+    justify-content: center;
+    width: 20vmin;
+    overflow: hidden;
+}
+/* ---------- */
+
 /* ----- Styling of the smart skip toggle button. The majority of these styles 
 are from https://codepen.io/morgoe/pen/VvzWQg ----- */
 .toggle > * {
@@ -290,11 +329,11 @@ are from https://codepen.io/morgoe/pen/VvzWQg ----- */
     position: absolute;
     display: flex;
     justify-content: space-around;
-    top: 2.75vmin;
+    top: 8vmin;
 }
 
 .toggle {
-    margin-right: 2em;
+    margin-right: 4vmin;
 }
 
 .toggle:last-child {

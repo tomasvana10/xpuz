@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-06 14:57+1000\n"
+"POT-Creation-Date: 2024-05-07 20:47+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.15.0\n"
 
 #: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
 #: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
@@ -120,13 +120,14 @@ msgstr "Coutume"
 #: crossword_puzzle/main.py:694
 msgid "To perform this operation, you must first select a cell."
 msgstr ""
-"Pour effectuer cette opération, vous devez d'abord sélectionner une cellule."
+"Pour effectuer cette opération, vous devez d'abord sélectionner une "
+"cellule."
 
 #: crossword_puzzle/main.py:886
 msgid "View"
 msgstr "Voir"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:383
+#: crossword_puzzle/cword_webapp/templates/index.html:388
 #: crossword_puzzle/main.py:893
 msgid "Close"
 msgstr "Fermer"
@@ -153,11 +154,11 @@ msgstr "Sortie"
 
 #: crossword_puzzle/main.py:1157
 msgid ""
-"Are you sure you want to exit the app? If the web app is running, it will be"
-" terminated."
+"Are you sure you want to exit the app? If the web app is running, it will"
+" be terminated."
 msgstr ""
-"Êtes-vous sûr de vouloir quitter l'application ? Si l'application Web est en"
-" cours d'exécution, elle sera terminée."
+"Êtes-vous sûr de vouloir quitter l'application ? Si l'application Web est"
+" en cours d'exécution, elle sera terminée."
 
 #: crossword_puzzle/main.py:1166
 msgid "Back to home"
@@ -199,51 +200,51 @@ msgstr "Info"
 
 #: crossword_puzzle/main.py:1211
 msgid ""
-"First time launch, please read: Once you have loaded a crossword, and wish "
-"to load another one, you must first terminate the web app. IMPORTANT: If you"
-" are on macOS, force quitting the application (using cmd+q) while the web "
-"app is running will prevent it from properly terminating. If you mistakenly "
-"do this, the program will run new web apps with a different port. "
-"Alternatively, you can manually change the port in the program's config "
-"file. All app processes that have not been properly terminated can be "
-"terminated through Activity Monitor on MacOS, or, simply restart your "
-"computer to terminate them."
+"First time launch, please read: Once you have loaded a crossword, and "
+"wish to load another one, you must first terminate the web app. "
+"IMPORTANT: If you are on macOS, force quitting the application (using "
+"cmd+q) while the web app is running will prevent it from properly "
+"terminating. If you mistakenly do this, the program will run new web apps"
+" with a different port. Alternatively, you can manually change the port "
+"in the program's config file. All app processes that have not been "
+"properly terminated can be terminated through Activity Monitor on MacOS, "
+"or, simply restart your computer to terminate them."
 msgstr ""
-"Lors du premier lancement, veuillez lire : Une fois que vous avez chargé un "
-"mot croisé et que vous souhaitez en charger un autre, vous devez d'abord "
-"terminer l'application Web. IMPORTANT : si vous utilisez macOS, forcer la "
-"fermeture de l'application (à l'aide de cmd+q) pendant que l'application Web"
-" est en cours d'exécution l'empêchera de se terminer correctement. Si vous "
-"faites cela par erreur, le programme exécutera de nouvelles applications Web"
-" avec un port différent. Alternativement, vous pouvez modifier manuellement "
-"le port dans le fichier de configuration du programme. Tous les processus "
-"d'application qui n'ont pas été correctement terminés peuvent être "
-"interrompus via Activity Monitor sur MacOS ou redémarrez simplement votre "
-"ordinateur pour y mettre fin."
+"Lors du premier lancement, veuillez lire : Une fois que vous avez chargé "
+"un mot croisé et que vous souhaitez en charger un autre, vous devez "
+"d'abord terminer l'application Web. IMPORTANT : si vous utilisez macOS, "
+"forcer la fermeture de l'application (à l'aide de cmd+q) pendant que "
+"l'application Web est en cours d'exécution l'empêchera de se terminer "
+"correctement. Si vous faites cela par erreur, le programme exécutera de "
+"nouvelles applications Web avec un port différent. Alternativement, vous "
+"pouvez modifier manuellement le port dans le fichier de configuration du "
+"programme. Tous les processus d'application qui n'ont pas été "
+"correctement terminés peuvent être interrompus via Activity Monitor sur "
+"MacOS ou redémarrez simplement votre ordinateur pour y mettre fin."
 
 #: crossword_puzzle/main.py:1229
 msgid ""
-"An error occured while loading this crossword's definitions. Ensure that its"
-" definitions JSON file exists in the base cwords directory. NOTE: Base "
-"crossword data is only accessed when its translated version is not present "
-"in the locales directory."
+"An error occured while loading this crossword's definitions. Ensure that "
+"its definitions JSON file exists in the base cwords directory. NOTE: Base"
+" crossword data is only accessed when its translated version is not "
+"present in the locales directory."
 msgstr ""
 "Une erreur s'est produite lors du chargement des définitions de ces mots "
 "croisés. Assurez-vous que son fichier JSON de définitions existe dans le "
-"répertoire de base cwords. REMARQUE : Les données de mots croisés de base ne"
-" sont accessibles que lorsque leur version traduite n'est pas présente dans "
-"le répertoire locales."
+"répertoire de base cwords. REMARQUE : Les données de mots croisés de base"
+" ne sont accessibles que lorsque leur version traduite n'est pas présente"
+" dans le répertoire locales."
 
 #: crossword_puzzle/main.py:1241
 msgid ""
-"An error occured in crossword generation. Please see further information in "
-"the console"
+"An error occured in crossword generation. Please see further information "
+"in the console"
 msgstr ""
-"Une erreur s'est produite lors de la génération des mots croisés. Veuillez "
-"consulter plus d'informations dans la console"
+"Une erreur s'est produite lors de la génération des mots croisés. "
+"Veuillez consulter plus d'informations dans la console"
 
 #: crossword_puzzle/cword_webapp/templates/index.html:13
-#: crossword_puzzle/cword_webapp/templates/index.html:350
+#: crossword_puzzle/cword_webapp/templates/index.html:355
 msgid "Crossword Puzzle - Game"
 msgstr "Mots croisés - Jeu"
 
@@ -284,39 +285,43 @@ msgstr "Vérifier"
 msgid "Clear"
 msgstr "Effacer"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:329
+#: crossword_puzzle/cword_webapp/templates/index.html:322
+msgid "Compound"
+msgstr "Composé"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:334
 msgid "Smart Skip"
 msgstr "Saut intelligent"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:340
+#: crossword_puzzle/cword_webapp/templates/index.html:345
 msgid "Click To Zoom"
 msgstr "Cliquez pour zoomer"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:352
+#: crossword_puzzle/cword_webapp/templates/index.html:357
 msgid "You are viewing"
 msgstr "Vous regardez"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:353
+#: crossword_puzzle/cword_webapp/templates/index.html:358
 msgid "from"
 msgstr "de"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:357
+#: crossword_puzzle/cword_webapp/templates/index.html:362
 msgid "word(s) could not be inserted, sorry."
 msgstr "le(s) mot(s) n'ont pas pu être insérés, désolé."
 
-#: crossword_puzzle/cword_webapp/templates/index.html:360
+#: crossword_puzzle/cword_webapp/templates/index.html:365
 msgid "Word count (adjusted)"
 msgstr "nombre de mots (ajusté)"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:364
+#: crossword_puzzle/cword_webapp/templates/index.html:369
 msgid "Word count"
 msgstr "nombre de mots"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:371
+#: crossword_puzzle/cword_webapp/templates/index.html:376
 msgid "Continue"
 msgstr "Continuer"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:377
+#: crossword_puzzle/cword_webapp/templates/index.html:382
 msgid "You completed the crossword!"
 msgstr "Vous avez terminé les mots croisés !"
 
@@ -343,3 +348,4 @@ msgstr "Science"
 
 msgid "Computer Science"
 msgstr "L'informatique"
+

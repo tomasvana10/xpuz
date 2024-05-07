@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-06 14:57+1000\n"
+"POT-Creation-Date: 2024-05-07 20:47+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: sr <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.15.0\n"
 
 #: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
 #: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
@@ -125,7 +125,7 @@ msgstr "Да бисте извршили ову операцију, прво м�
 msgid "View"
 msgstr "Поглед"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:383
+#: crossword_puzzle/cword_webapp/templates/index.html:388
 #: crossword_puzzle/main.py:893
 msgid "Close"
 msgstr "Близу"
@@ -238,7 +238,7 @@ msgstr ""
 "информације у конзоли"
 
 #: crossword_puzzle/cword_webapp/templates/index.html:13
-#: crossword_puzzle/cword_webapp/templates/index.html:350
+#: crossword_puzzle/cword_webapp/templates/index.html:355
 msgid "Crossword Puzzle - Game"
 msgstr "Цроссворд Пуззле - Гаме"
 
@@ -279,39 +279,43 @@ msgstr "Проверавати"
 msgid "Clear"
 msgstr "Јасно"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:329
+#: crossword_puzzle/cword_webapp/templates/index.html:322
+msgid "Compound"
+msgstr "Једињење"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:334
 msgid "Smart Skip"
 msgstr "Смарт Скип"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:340
+#: crossword_puzzle/cword_webapp/templates/index.html:345
 msgid "Click To Zoom"
 msgstr "Кликните за увећање"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:352
+#: crossword_puzzle/cword_webapp/templates/index.html:357
 msgid "You are viewing"
 msgstr "Гледате"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:353
+#: crossword_puzzle/cword_webapp/templates/index.html:358
 msgid "from"
 msgstr "од"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:357
+#: crossword_puzzle/cword_webapp/templates/index.html:362
 msgid "word(s) could not be inserted, sorry."
 msgstr "Реч (и) нису могле да се убацују, извини."
 
-#: crossword_puzzle/cword_webapp/templates/index.html:360
+#: crossword_puzzle/cword_webapp/templates/index.html:365
 msgid "Word count (adjusted)"
 msgstr "Број речи (подешено)"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:364
+#: crossword_puzzle/cword_webapp/templates/index.html:369
 msgid "Word count"
 msgstr "Број речи"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:371
+#: crossword_puzzle/cword_webapp/templates/index.html:376
 msgid "Continue"
 msgstr "Настави"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:377
+#: crossword_puzzle/cword_webapp/templates/index.html:382
 msgid "You completed the crossword!"
 msgstr "Завршили сте укрштену реч!"
 
