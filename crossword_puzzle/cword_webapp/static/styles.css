@@ -259,8 +259,10 @@ resizing equally distributed. */
     -moz-border-radius: 0;
     border-radius: 0px;
     display: block;
-    width: 100%;
     padding: 10px;
+    width: 100%;
+    min-width: fit-content;
+    white-space: nowrap;
     border: none;
     background: var(--sub_colour);
     color: var(--text_colour);
@@ -288,11 +290,13 @@ resizing equally distributed. */
 #reveal_button,
 #check_button {
     margin-right: 4.5vmin;
-    width: 20vmin;
+    min-width: 20vmin;
+    white-space: nowrap;
 }
 
 #clear_button {
-    width: 20vmin;
+    min-width: 20vmin;
+    white-space: nowrap;
 }
 
 #check_dropdown {
@@ -309,13 +313,13 @@ resizing equally distributed. */
     position: absolute;
     display: flex;
     top: 1.355vmin;
-    justify-content: space-around;
 }
 
 #compound_button {
     justify-content: center;
-    width: 20vmin;
-    overflow: hidden;
+    min-width: 20vmin;
+    white-space: nowrap;
+    overflow: auto;
 }
 /* ---------- */
 
