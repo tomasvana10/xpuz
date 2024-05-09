@@ -214,9 +214,12 @@ button:hover {
 resizing equally distributed. */
 .definitions_a,
 .definitions_d {
-    border-right: 0.1px solid var(--text_colour);
     flex-grow: 1;
     flex: 1;
+}
+
+.definitions_a {
+    border-right: 0.1px solid var(--text_colour);
 }
 /* ---------- */
 

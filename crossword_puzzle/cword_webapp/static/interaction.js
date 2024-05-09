@@ -75,7 +75,8 @@ class Interaction {
         })
     );
 
-    document.getElementById("compound_button").onclick = () => {
+    document.getElementById("compound_button").onclick = event => {
+      event.stopPropagation();
       this.handleSetCompoundInput();
     };
 
