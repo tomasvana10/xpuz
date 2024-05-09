@@ -23,14 +23,18 @@ body {
             var(--c);
 }
 
+/* Integration of scaling from the tkinter GUI. */
 li,
-.def_heading,
 .toggle_label,
 .special_button,
 .dropdown_button,
 h2,
 button {
     font-size: calc(1em * var(--scaling));
+}
+
+.def_heading {
+    font-size: calc(1.1em * var(--scaling));
 }
 
 h2 {
@@ -52,6 +56,7 @@ p {
 }
 
 button {
+    /* Standard button design. */
     -webkit-border-radius: 5;
     -moz-border-radius: 5;
     border-radius: 5px;
@@ -164,6 +169,10 @@ button:hover {
     z-index: 100;
 }
 
+#return_def_zoom {
+    padding: 3% 0 3%;
+}
+
 .wrapper_def {
     display: flex;
     flex: 1;
@@ -179,18 +188,22 @@ button:hover {
     overflow-y: hidden;
 }
 
-ul {
+.wrapper_def ul {
     /* Remove bullet points from the unordered list */
     list-style-type: none;
 }
 
-li {
+.wrapper_def li {
     /* Each definition/clue */
     margin-bottom: 10px;
     white-space: pre-wrap; /* Helps html recognise more whitespace for the 
                            definitions list */
-    padding: 4.5%;
+    padding: 5.5%;
     cursor: pointer;
+    /* Prevent the user from missing their click by clicking in the small area
+    between definitions list items. */
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .def_heading {
@@ -201,12 +214,9 @@ li {
 resizing equally distributed. */
 .definitions_a,
 .definitions_d {
+    border-right: 0.1px solid var(--text_colour);
     flex-grow: 1;
     flex: 1;
-}
-
-.definitions_d {
-    padding-right: 7.75%;
 }
 /* ---------- */
 
@@ -248,10 +258,10 @@ resizing equally distributed. */
     display: none;
     top: 100%;
     left: 0;
-    width: 18.73vmin;
+    width: 20vmin;
     background-color: var(--sub_colour);
     box-shadow: 6px 6px 10px 1px var(--main_colour);
-    padding: 5px;
+    padding: 0;
 }
 
 .dropdown button {
@@ -300,11 +310,11 @@ resizing equally distributed. */
 }
 
 #check_dropdown {
-    left: 24.4vmin;
+    left: 35.522%;
 }
 
 #clear_dropdown {
-    left: 49.1vmin;
+    left: 71.21%;
 }
 /* ---------- */
 
@@ -333,7 +343,7 @@ are from https://codepen.io/morgoe/pen/VvzWQg ----- */
     position: absolute;
     display: flex;
     justify-content: space-around;
-    top: 8vmin;
+    top: 8.225vmin;
 }
 
 .toggle {
