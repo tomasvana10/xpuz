@@ -24,6 +24,7 @@ generate dynamic content, as each crossword created by this program is unique
       rel="shortcut icon"
       type="image/x-icon"
       href="{{ url_for('static', filename='favicon.ico') }}" />
+
     <style>
       :root {
           --dimensions: {{ dimensions }};
@@ -46,7 +47,8 @@ generate dynamic content, as each crossword created by this program is unique
     <script type="text/javascript">
       $(document).ready(() => {
         /* Mix of jquery / vanilla JS to properly handle the zooming 
-                functionality of the web app. */
+        functionality of the web app. 
+        */
 
         let tzCheckbox = document.getElementById("tz");
         let returnDefZoomElement = document.getElementById("return_def_zoom");
@@ -54,19 +56,11 @@ generate dynamic content, as each crossword created by this program is unique
           document.getElementsByClassName("empty_cell")[0];
 
         $(".non_empty_cell").click(function (event) {
-          // Grid cell zooming
-
-          // This doesn't really work, but who cares
-          if (tzCheckbox.checked) returnDefZoomElement.click();
           $(".non_empty_cell").zoomTarget();
         });
 
         $(".def").click(function (event) {
-          // Definitions list item/clue zooming
-          if (tzCheckbox.checked) {
-            returnGridZoomElement.click();
-            $(".def").zoomTarget();
-          }
+          $(".def").zoomTarget();
         });
 
         tzCheckbox.addEventListener("change", event => {
@@ -106,201 +100,207 @@ generate dynamic content, as each crossword created by this program is unique
     data-empty="{{ empty }}"
     data-colour_palette="{{ json_colour_palette }}"
     data-intersections="{{ intersections }}"
-    data-js_err_msgs="{{ js_err_msgs }}">
+    data-js_err_msgs="{{ js_err_msgs }}"
+    data-word_count="{{ starting_word_positions|length }}">
     <div class="container" id="blur">
-      <div class="wrapper_grid zoomViewport">
-        <div class="wrapper_grid zoomContainer">
-          <div class="grid">
-            {% for row in range(dimensions) %} {% for column in
-            range(dimensions) %} {% if grid[row][column] != empty %} {# There is
-            a word in this cell #}
-            <div
-              class="non_empty_cell"
-              data-targetsize="0.2"
-              data-closeclick="true"
-              data-row="{{ row }}"
-              data-column="{{ column }}"
-              data-value="{{ grid[row][column] }}">
-              {% if (row, column) in starting_word_positions %} {# Start of a
-              word #}
+      <div class="left_side">
+        <div class="wrapper_grid zoomViewport">
+          <div class="wrapper_grid zoomContainer">
+            <div class="grid">
+              {% for row in range(dimensions) %} {% for column in
+              range(dimensions) %} {% if grid[row][column] != empty %} {# There is
+              a word in this cell #}
               <div
-                class="num_label"
-                data-num_label="{{ starting_word_matrix[row][column] }}">
-                {{ starting_word_matrix[row][column] }}
+                class="non_empty_cell"
+                data-targetsize="0.2"
+                data-closeclick="true"
+                data-row="{{ row }}"
+                data-column="{{ column }}"
+                data-value="{{ grid[row][column] }}">
+                {% if (row, column) in starting_word_positions %} {# Start of a
+                word #}
+                <div
+                  class="num_label"
+                  data-num_label="{{ starting_word_matrix[row][column] }}">
+                  {{ starting_word_matrix[row][column] }}
+                </div>
+                {% endif %}
               </div>
-              {% endif %}
-            </div>
 
-            {% else %} {# This cell will have no characters #}
-            <div
-              class="empty_cell"
-              data-row="{{ row }}"
-              data-column="{{ column }}"
-              data-value="None"></div>
-            {% endif %} {% endfor %} {% endfor %}
+              {% else %} {# This cell will have no characters #}
+              <div
+                class="empty_cell"
+                data-row="{{ row }}"
+                data-column="{{ column }}"
+                data-value="None"></div>
+              {% endif %} {% endfor %} {% endfor %}
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="definitions">
-        {% set ns = namespace(tab_index_counter = 15) %}
-        <div class="wrapper_def zoomViewport" id="no_scroll">
-          <div class="wrapper_def zoomContainer" id="return_def_zoom">
-            <div class="definitions_a">
-              {# Column one for across definitions #}
-              <ul>
-                <h3 class="def_heading">{{ _('Across') }}</h3>
-                {% for dict_ in definitions_a %} {% for num_label, definition in
-                dict_.items()%}
-                <li
-                  class="def zoomTarget"
-                  data-targetsize="0.725"
-                  data-preservescroll="true"
-                  data-closeclick="true"
-                  data-direction="{{ directions[0] }}"
-                  tabindex="{{ ns.tab_index_counter }}"
-                  data-num="{{ num_label }}"
-                  data-word="{{ definition[0].upper() }}"
-                  ><b>{{ num_label }}</b> {{ definition[1] }}</li
-                >
-                {% set ns.tab_index_counter = ns.tab_index_counter + 1 %} {%
-                endfor %} {% endfor %}
-              </ul>
+      <div class="right_side">
+        <div class="definitions">
+          {% set ns = namespace(tab_index_counter = 15) %}
+          <div class="wrapper_def zoomViewport" id="no_scroll">
+            <div class="wrapper_def zoomContainer" id="return_def_zoom">
+              <div class="definitions_a">
+                {# Column one for across definitions #}
+                <ul>
+                  <h3 class="def_heading">{{ _('Across') }}</h3>
+                  {% for dict_ in definitions_a %} {% for num_label, definition in
+                  dict_.items()%}
+                  <li
+                    class="def zoomTarget"
+                    data-targetsize="0.725"
+                    data-preservescroll="true"
+                    data-closeclick="true"
+                    data-direction="{{ directions[0] }}"
+                    tabindex="{{ ns.tab_index_counter }}"
+                    data-num="{{ num_label }}"
+                    data-word="{{ definition[0].upper() }}"
+                    ><b>{{ num_label }}</b> {{ definition[1] }}</li
+                  >
+                  {% set ns.tab_index_counter = ns.tab_index_counter + 1 %} {%
+                  endfor %} {% endfor %}
+                </ul>
+              </div>
+
+              <div class="definitions_d">
+                {# Column two for downward definitions #}
+                <ul>
+                  <h3 class="def_heading">{{ _('Down') }}</h3>
+                  {% for dict_ in definitions_d %} {% for num_label, definition in
+                  dict_.items() %}
+                  <li
+                    class="def zoomTarget"
+                    data-targetsize="0.725"
+                    data-preservescroll="true"
+                    data-closeclick="true"
+                    data-direction="{{ directions[1] }}"
+                    tabindex="{{ ns.tab_index_counter }}"
+                    data-num="{{ num_label }}"
+                    data-word="{{ definition[0].upper() }}"
+                    ><b>{{ num_label }}</b> {{ definition[1] }}</li
+                  >
+                  {% set ns.tab_index_counter = ns.tab_index_counter + 1 %} {%
+                  endfor %} {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {# Compound button #}
+          <div class="compound">
+            <button tabindex="1" id="compound_button"
+              >{{ _('Compound') }} <span class="keybind_span">[⇧+1]</span></button
+            >
+          </div>
+
+          {# Reveal, check, and clear dropdowns and their respective buttons #}
+          <div class="top_buttons_container">
+            {# Reveal buttons #}
+            <button
+              tabindex="4"
+              class="special_button"
+              id="reveal_button"
+              onclick="interaction.onDropdownClick('reveal_dropdown')">
+              {{ _('Reveal') }} ▼
+            </button>
+            <div class="dropdown" id="reveal_dropdown">
+              <button
+                class="dropdown_button"
+                tabindex="5"
+                onclick="interaction.doSpecialButtonAction('cell', 'reveal')">
+                {{ _('Cell') }}
+              </button>
+              <button
+                class="dropdown_button"
+                tabindex="6"
+                onclick="interaction.doSpecialButtonAction('word', 'reveal')">
+                {{ _('Word') }}<span class="keybind_span"> [⇧+↵]</span>
+              </button>
+              <button
+                class="dropdown_button"
+                tabindex="7"
+                onclick="interaction.doSpecialButtonAction('grid', 'reveal')">
+                {{ _('Grid') }}
+              </button>
             </div>
 
-            <div class="definitions_d">
-              {# Column two for downward definitions #}
-              <ul>
-                <h3 class="def_heading">{{ _('Down') }}</h3>
-                {% for dict_ in definitions_d %} {% for num_label, definition in
-                dict_.items() %}
-                <li
-                  class="def zoomTarget"
-                  data-targetsize="0.725"
-                  data-preservescroll="true"
-                  data-closeclick="true"
-                  data-direction="{{ directions[1] }}"
-                  tabindex="{{ ns.tab_index_counter }}"
-                  data-num="{{ num_label }}"
-                  data-word="{{ definition[0].upper() }}"
-                  ><b>{{ num_label }}</b> {{ definition[1] }}</li
-                >
-                {% set ns.tab_index_counter = ns.tab_index_counter + 1 %} {%
-                endfor %} {% endfor %}
-              </ul>
+            {# Check buttons #}
+            <button
+              tabindex="8"
+              class="special_button"
+              id="check_button"
+              onclick="interaction.onDropdownClick('check_dropdown')">
+              {{ _('Check') }} ▼
+            </button>
+            <div class="dropdown" id="check_dropdown">
+              <button
+                class="dropdown_button"
+                tabindex="9"
+                onclick="interaction.doSpecialButtonAction('cell', 'check')">
+                {{ _('Cell') }}
+              </button>
+              <button
+                class="dropdown_button"
+                tabindex="10"
+                onclick="interaction.doSpecialButtonAction('word', 'check')">
+                {{ _('Word') }}<span class="keybind_span"> [↵]</span>
+              </button>
+              <button
+                class="dropdown_button"
+                tabindex="11"
+                onclick="interaction.doSpecialButtonAction('grid', 'check')">
+                {{ _('Grid') }}
+              </button>
+            </div>
+
+            {# Clear buttons #}
+            <button
+              tabindex="12"
+              class="special_button"
+              id="clear_button"
+              onclick="interaction.onDropdownClick('clear_dropdown')">
+              {{ _('Clear') }} ▼
+            </button>
+            <div class="dropdown" id="clear_dropdown">
+              <button
+                class="dropdown_button"
+                tabindex="13"
+                onclick="interaction.doSpecialButtonAction('word', 'clear')">
+                {{ _('Word') }}<span class="keybind_span"> [⇧+⌫]</span>
+              </button>
+              <button
+                class="dropdown_button"
+                tabindex="14"
+                onclick="interaction.doSpecialButtonAction('grid', 'clear')">
+                {{ _('Grid') }}
+              </button>
             </div>
           </div>
-        </div>
-        {# Compound button #}
-        <div class="compound">
-          <button tabindex="1" id="compound_button"
-            >{{ _('Compound') }} <span class="keybind_span">[⇧+1]</span></button
-          >
-        </div>
 
-        {# Reveal, check, and clear dropdowns and their respective buttons #}
-        <div class="top_buttons_container">
-          {# Reveal buttons #}
-          <button
-            tabindex="4"
-            class="special_button"
-            id="reveal_button"
-            onclick="interaction.onDropdownClick('reveal_dropdown')">
-            {{ _('Reveal') }} ▼
-          </button>
-          <div class="dropdown" id="reveal_dropdown">
-            <button
-              class="dropdown_button"
-              tabindex="5"
-              onclick="interaction.doSpecialButtonAction('cell', 'reveal')">
-              {{ _('Cell') }}
-            </button>
-            <button
-              class="dropdown_button"
-              tabindex="6"
-              onclick="interaction.doSpecialButtonAction('word', 'reveal')">
-              {{ _('Word') }}<span class="keybind_span"> [⇧+↵]</span>
-            </button>
-            <button
-              class="dropdown_button"
-              tabindex="7"
-              onclick="interaction.doSpecialButtonAction('grid', 'reveal')">
-              {{ _('Grid') }}
-            </button>
+          {# Toggle buttons #}
+          <div class="toggles">
+            <label tabindex="2" class="toggle">
+              <input
+                class="toggle_checkbox toggle_skip"
+                id="ts"
+                type="checkbox" />
+              <div class="toggle_switch"></div>
+              <span class="toggle_label">{{ _('Smart Skip') }}</span>
+            </label>
+
+            <label tabindex="3" class="toggle">
+              <input
+                class="toggle_checkbox toggle_zoom"
+                id="tz"
+                type="checkbox" />
+              <div class="toggle_switch"></div>
+              <span class="toggle_label">{{ _('Click To Zoom') }}</span>
+            </label>
           </div>
-
-          {# Check buttons #}
-          <button
-            tabindex="8"
-            class="special_button"
-            id="check_button"
-            onclick="interaction.onDropdownClick('check_dropdown')">
-            {{ _('Check') }} ▼
-          </button>
-          <div class="dropdown" id="check_dropdown">
-            <button
-              class="dropdown_button"
-              tabindex="9"
-              onclick="interaction.doSpecialButtonAction('cell', 'check')">
-              {{ _('Cell') }}
-            </button>
-            <button
-              class="dropdown_button"
-              tabindex="10"
-              onclick="interaction.doSpecialButtonAction('word', 'check')">
-              {{ _('Word') }}<span class="keybind_span"> [↵]</span>
-            </button>
-            <button
-              class="dropdown_button"
-              tabindex="11"
-              onclick="interaction.doSpecialButtonAction('grid', 'check')">
-              {{ _('Grid') }}
-            </button>
-          </div>
-
-          {# Clear buttons #}
-          <button
-            tabindex="12"
-            class="special_button"
-            id="clear_button"
-            onclick="interaction.onDropdownClick('clear_dropdown')">
-            {{ _('Clear') }} ▼
-          </button>
-          <div class="dropdown" id="clear_dropdown">
-            <button
-              class="dropdown_button"
-              tabindex="13"
-              onclick="interaction.doSpecialButtonAction('word', 'clear')">
-              {{ _('Word') }}<span class="keybind_span"> [⇧+⌫]</span>
-            </button>
-            <button
-              class="dropdown_button"
-              tabindex="14"
-              onclick="interaction.doSpecialButtonAction('grid', 'clear')">
-              {{ _('Grid') }}
-            </button>
-          </div>
-        </div>
-
-        {# Toggle buttons #}
-        <div class="toggles">
-          <label tabindex="2" class="toggle">
-            <input
-              class="toggle_checkbox toggle_skip"
-              id="ts"
-              type="checkbox" />
-            <div class="toggle_switch"></div>
-            <span class="toggle_label">{{ _('Smart Skip') }}</span>
-          </label>
-
-          <label tabindex="3" class="toggle">
-            <input
-              class="toggle_checkbox toggle_zoom"
-              id="tz"
-              type="checkbox" />
-            <div class="toggle_switch"></div>
-            <span class="toggle_label">{{ _('Click To Zoom') }}</span>
-          </label>
         </div>
       </div>
     </div>

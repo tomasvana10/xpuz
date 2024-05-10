@@ -97,7 +97,7 @@ button:hover {
 }
 
 .wrapper_grid {
-    width: 61%;
+    width: 100%;
 }
 
 .grid > div {
@@ -142,7 +142,7 @@ button:hover {
     border: none;
     width: 100%;
     height: 100%;
-    color: black;
+    color: var(--sub_colour);
     text-align: center;
     box-sizing: border-box;
     font-size: 0.75em;
@@ -152,11 +152,15 @@ button:hover {
 .compound_input::placeholder {
     text-align: center;
 }
-
 /* ---------- */
 
 /* ----- Styling for the definitions container and its two rows 
 (the definitions) ----- */
+.right_side {
+    width: 90vmin;
+    overflow: auto;
+}
+
 .definitions {
     display: flex;
     background-color: var(--sub_colour);
@@ -167,6 +171,7 @@ button:hover {
     max-height: 72vmin;
     width: 95vmin;
     z-index: 100;
+    max-width: 100%;
 }
 
 #return_def_zoom {
@@ -198,7 +203,7 @@ button:hover {
     margin-bottom: 10px;
     white-space: pre-wrap; /* Helps html recognise more whitespace for the 
                            definitions list */
-    padding: 5.5%;
+    padding: 6%;
     cursor: pointer;
     /* Prevent the user from missing their click by clicking in the small area
     between definitions list items. */
@@ -286,6 +291,7 @@ resizing equally distributed. */
     display: flex;
     position: absolute;
     transform: translateY(-8.25vmin);
+    justify-content: center;
 }
 
 .dropdown button:last-child {
@@ -303,12 +309,10 @@ resizing equally distributed. */
 #reveal_button,
 #check_button {
     margin-right: 4.5vmin;
-    min-width: 20vmin;
     white-space: nowrap;
 }
 
 #clear_button {
-    min-width: 20vmin;
     white-space: nowrap;
 }
 
@@ -318,6 +322,10 @@ resizing equally distributed. */
 
 #clear_dropdown {
     left: 71.21%;
+}
+
+.top_buttons_container .special_button {
+    min-width: 20vmin;
 }
 /* ---------- */
 
@@ -349,10 +357,6 @@ are from https://codepen.io/morgoe/pen/VvzWQg ----- */
     top: 8.225vmin;
 }
 
-.toggle {
-    margin-right: 4vmin;
-}
-
 .toggle:last-child {
     margin-right: 0;
 }
@@ -360,6 +364,8 @@ are from https://codepen.io/morgoe/pen/VvzWQg ----- */
 .toggle {
     display: flex;
     cursor: pointer;
+    margin-right: 4vmin;
+    white-space: nowrap;
 }
 
 .toggle_switch {

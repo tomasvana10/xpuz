@@ -14,7 +14,7 @@ class Interaction {
 
   constructor() {
     this.direction = "ACROSS"; // Default direction when first clicking (if the
-                               // first click is at an intersection).
+    // first click is at an intersection).
     this.currentWord = null; // e.x. "HELLO"
     this.cellCoords = null; // e.x. [0, 5]
     this.staticIndex = null; // e.x. 5
@@ -26,6 +26,9 @@ class Interaction {
     this.onloadPopupToggled = false;
     this.currentDropdown = null;
     this.currentPlaceholder = 0;
+    this.doNotHandleStandardCellClick = false;
+    this.doubleClickOnFirstCellClick = true;
+    this.doubleClickOnFirstDefClick = true;
 
     // When the DOM is ready, trigger the ``onLoad`` method
     document.addEventListener("DOMContentLoaded", this.onLoad.bind(this));
@@ -45,6 +48,7 @@ class Interaction {
       eval(this.body.getAttribute("data-intersections"))
     );
     this.errMsgs = eval(this.body.getAttribute("data-js_err_msgs"));
+    this.wordCount = this.body.getAttribute("data-word_count");
 
     this.setListeners();
     this.displayOnloadPopup();
@@ -77,16 +81,14 @@ class Interaction {
 
     document.getElementById("compound_button").onclick = event => {
       event.stopPropagation();
-      this.handleSetCompoundInput();
+      this.handleSetCompoundInput(false);
     };
 
     document.addEventListener("keydown", event =>
       this.handleSpecialInput(event)
     );
 
-    document.addEventListener("click", event =>
-      this.handleClickForDropdowns(event)
-    );
+    document.addEventListener("click", event => this.handleClick(event));
 
     document.addEventListener("focusout", event =>
       this.handleDropdownFocusOut(event)
@@ -159,6 +161,13 @@ class Interaction {
       return;
     }
 
+    if (
+      [...Interaction.arrowKeys.slice(2, 4)].includes(inputValue) &&
+      event.shiftKey
+    ) {
+      return this.shiftWordSelection(event, inputValue);
+    }
+
     // Move the user's cell focus since they have pressed an arrow key
     if (Interaction.arrowKeys.includes(inputValue)) {
       return this.handleArrowPress(inputValue, event);
@@ -203,7 +212,6 @@ class Interaction {
       // If the cell is wrong/red in colour, it must be reverted as the user
       // has just typed in it
       currentCell.classList.remove("wrong");
-
     } else if (mode === "del") {
       // The focused cell has content, just delete it and do nothing
       if (
@@ -230,10 +238,10 @@ class Interaction {
 
     // Detect possible crossword completion after the grid has been modified
     this.crosswordCompletionHandler();
-    this.handleCellShift(mode);
+    this.handleCellShift(mode, currentCell);
   }
 
-  handleCellShift(mode) {
+  handleCellShift(mode, currentCell) {
     /* Determines how the focus of a cell within a word is shifted. */
 
     this.changeCellFocus(false);
@@ -244,7 +252,6 @@ class Interaction {
         this.direction,
         mode
       );
-
     } else {
       // Just do a normal cell shift
       this.cellCoords = this.shiftCellCoords(
@@ -254,11 +261,31 @@ class Interaction {
       );
     }
 
+    this.autoReZoomIfPossible(currentCell);
+
     // Refocus the entire word, then set the focus of the cell that has just
     // been shifted/skipped to. No need to update the current word as the current
     // word can never change with a standard keyboard input.
     this.changeWordFocus(true);
     this.changeCellFocus(true);
+  }
+
+  shiftWordSelection(event, arrow) {
+    /* Cycle to the next word based on the sequence in which the words are placed
+    on the grid. 
+    */
+    event.preventDefault();
+    let offset = arrow === Interaction.arrowKeys[2] ? -1 : 1;
+    let def = this.getDefinitionsListItemFromWord();
+    let newWordNum = Number(def.getAttribute("data-num")) + offset;
+    let newDef = document.querySelector(`[data-num="${newWordNum}"`);
+    if (!newDef) { // Go to either the start or end
+      let num = offset === 1 ? "1" : this.wordCount;
+      newDef = document.querySelector(`[data-num="${num}"]`);
+    }
+    newDef.focus();
+    newDef.click();
+    newDef.blur();
   }
 
   skipCellCoords(coords, direction) {
@@ -305,7 +332,7 @@ class Interaction {
       */
 
     let offset = mode == "enter" ? 1 : -1;
-    let newCellCoords = 
+    let newCellCoords =
       dir === this.directions[1]
         ? [coords[0] + offset, coords[1]]
         : [coords[0], coords[1] + offset];
@@ -323,8 +350,10 @@ class Interaction {
 
     // Retrieve cell from parent element of number label list item
     let currentCell = document.querySelector(
-      `[data-num_label="${numLabel}"]`).parentElement
+      `[data-num_label="${numLabel}"]`
+    ).parentElement;
 
+    this.handleDoubleClickForZoom(event);
     Interaction.preventZoomIfRequired(event);
     this.removeCompoundInputIfRequired(currentCell);
 
@@ -347,9 +376,12 @@ class Interaction {
       as well as alternating input directions if clicking at an intersecting point 
       between two words. 
     */
-
+    if (this.doNotHandleStandardCellClick) {
+      return this.doNotHandleStandardCellClick = false;
+    }
+    this.handleDoubleClickForZoom(event);
     Interaction.preventZoomIfRequired(event);
-    this.removeCompoundInputIfRequired(cell)
+    this.removeCompoundInputIfRequired(cell);
 
     this.setFocusMode(false);
     let newCellCoords = Interaction.updateCellCoords(cell);
@@ -383,6 +415,7 @@ class Interaction {
       key === "ArrowDown" || key === "ArrowUp"
         ? this.directions[1]
         : this.directions[0];
+    let oldCellCoords = Interaction.getCellElement(this.cellCoords);
     let newCellCoords = this.shiftCellCoords(this.cellCoords, dir, mode, true);
     let skipFlag = false;
 
@@ -416,6 +449,7 @@ class Interaction {
     } else {
       this.cellCoords = newCellCoords;
     }
+    this.autoReZoomIfPossible(oldCellCoords);
     this.currentWord = this.updateCurrentWord();
     this.setFocusMode(true);
     this.updateDefinitionsListPos();
@@ -517,7 +551,7 @@ class Interaction {
       cell.classList.remove("wrong");
       Interaction.setValue(cell, cell.getAttribute("data-value"));
       cell.classList.add("lock_in"); // This cell must now be correct, so lock
-                                     // it in
+      // it in
     } else if (mode === "check") {
       if (!Interaction.isEmpty(cell)) {
         if (cell.hasCorrectValue()) {
@@ -645,8 +679,9 @@ class Interaction {
   }
 
   updateDefinitionsListPos() {
-    this.getDefinitionsListItemFromWord(this.currentWord).focus();
-    this.getDefinitionsListItemFromWord(this.currentWord).blur();
+    let def = this.getDefinitionsListItemFromWord(this.currentWord);
+    def.focus();
+    def.blur();
   }
 
   isCrosswordComplete() {
@@ -676,7 +711,9 @@ class Interaction {
     children.
     */
     this.compoundInputActive = true;
-    if (!priorValue) { this.wasEmpty = true; }
+    if (!priorValue) {
+      this.wasEmpty = true;
+    }
     let currentCell = Interaction.getCellElement(this.cellCoords);
     currentCell.onclick = event => Interaction.dummyCellClick(event);
     Interaction.setValue(currentCell, "");
@@ -689,21 +726,24 @@ class Interaction {
     compoundInput.focus();
   }
 
-  handleSetCompoundInput() {
-    if (this.cellCoords === null) { // User must select a cell
+  handleSetCompoundInput(andShiftForwarder = true) {
+    if (this.cellCoords === null) {
+      // User must select a cell
       return alert(this.errMsgs[0]);
     }
     // User already has a compound input selected, so they want to remove it
     if (document.getElementsByClassName("compound_input")[0]) {
-      return this.removeCompoundInput();
+      return this.removeCompoundInput(andShiftForwarder);
     }
     let priorValue = Interaction.getCellElement(this.cellCoords).childNodes[0]
       .nodeValue;
     this.setCompoundInput(priorValue);
   }
 
-  removeCompoundInput(andShift=true) {
-    if (!this.compoundInputActive) { return; } // failsafe
+  removeCompoundInput(andShift = true) {
+    if (!this.compoundInputActive) {
+      return;
+    } // failsafe
     let compoundInput = document.getElementsByClassName("compound_input")[0];
     let cellOfCompoundInput = compoundInput.parentElement;
     let enteredText = compoundInput.value;
@@ -722,7 +762,7 @@ class Interaction {
     this.compoundInputActive = false;
     this.currentPlaceholder = 0;
     if (andShift) {
-      this.handleCellShift("enter"); // Shift focus for ease of use
+      this.handleCellShift("enter", cellOfCompoundInput); // Shift focus for ease of use
     }
   }
 
@@ -756,7 +796,41 @@ class Interaction {
     }
   }
 
-  handleClickForDropdowns(event) {
+  autoReZoomIfPossible(priorCell) {
+    /* If the priorCell was zoomed too, then now zoom to the current cell. */
+    if (
+      document.querySelectorAll(".non_empty_cell.selectedZoomTarget").length ===
+      1
+    ) {
+      let currentCell = Interaction.getCellElement(this.cellCoords);
+      if (currentCell !== priorCell) {
+        this.doNotHandleStandardCellClick = true;
+        return currentCell.click();
+      }
+    }
+  }
+
+  handleDoubleClickForZoom(event) {
+    /* Since a first click on any ``zoomTarget`` element doesn't activate the
+    zoom, this function performs a double click.
+    */
+    if (!document.getElementById("tz").checked) {
+      return;
+    }
+
+    if (this.doubleClickOnFirstDefClick) {
+      this.doubleClickOnFirstDefClick = false;
+      event.target.click();
+    }
+
+    if (this.doubleClickOnFirstCellClick) {
+      this.doubleClickOnFirstCellClick = false;
+      event.target.click();
+      event.target.click();
+    }
+  }
+
+  handleClick(event) {
     /* Close dropdowns and remove compound input (if possible) when clicking 
     outside of the dropdown area. 
     */
@@ -776,7 +850,7 @@ class Interaction {
               the start of the currentDropdown
         3. You are focusing out of a "special_button" into something that is 
            either another special button or something that isn't a "dropdown_button"
-        */
+    */
     if (
       !event.relatedTarget?.classList.contains("dropdown_button") ||
       (event.target?.classList.contains("dropdown_button") &&
@@ -849,8 +923,7 @@ class Interaction {
         () =>
           document
             .getElementsByClassName("close_button")[0]
-            .focus({ focusVisible: true }) // Ensure the user can see
-        // the focus
+            .focus({ focusVisible: true }) // Ensure the user can see the focus
       );
     }
   }
@@ -910,7 +983,6 @@ class Interaction {
       event.stopImmediatePropagation(); // Prevent zoomooz from zooming
   }
 }
-
 
 Array.prototype.isEqualTo = function (arr) {
   return JSON.stringify(this) === JSON.stringify(arr);
