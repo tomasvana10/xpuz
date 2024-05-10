@@ -100,6 +100,7 @@ class Interaction {
     a keybind. If this is the case, this function will process it and prevent
     ``this.handleStandardInput`` from running. 
     */
+    if (this.onloadPopupToggled || this.completionPopupToggled) { return; }
 
     let inputValue = event.key;
 
@@ -126,8 +127,6 @@ class Interaction {
     // Ensure proper handling of the enter keybind
     if (
       inputValue === "Enter" &&
-      !this.completionPopupToggled &&
-      !this.onloadPopupToggled &&
       !event.target.classList.contains("def") &&
       event.target.tagName !== "BUTTON" &&
       !event.target.classList.contains("special_button") &&
