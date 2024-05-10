@@ -105,7 +105,7 @@ class Interaction {
     let inputValue = event.key;
 
     // Handle the setting of a compound input element when pressing [Shift + 1]
-    if (inputValue === "!" && event.shiftKey && this.cellCoords !== null) {
+    if (inputValue === "!" && event.shiftKey) {
       event.preventDefault();
       return this.handleSetCompoundInput();
     }
