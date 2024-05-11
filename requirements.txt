@@ -3,4 +3,4 @@ customtkinter==5.2.2
 Flask==3.0.3
 flask_babel==4.0.0
 Pillow==10.3.0
-regex==2023.12.25
+regex==2024.5.10
