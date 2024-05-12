@@ -11,12 +11,12 @@ A GUI package built with `CustomTkinter` that allows you to select, configure an
 - Download the latest source code: [click here](https://github.com/tomasvana10/crossword_puzzle/releases/latest)
 <br><br>
 ## Dependencies
-`Babel==2.14.0`<br>
-`customtkinter==5.2.2`<br>
-`Flask==3.0.1`<br>
-`flask_babel==4.0.0`<br>
-`Pillow==10.2.0`<br>
-`regex==2023.12.25`
+`Babel`
+`customtkinter`
+`Flask`
+`flask_babel`
+`Pillow`
+`regex`
 <br><br>
 ## Installation
 **Requires [pip](https://pip.pypa.io/en/stable/installation/)**
