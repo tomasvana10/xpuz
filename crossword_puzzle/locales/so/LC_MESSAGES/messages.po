@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-07 20:47+1000\n"
+"POT-Creation-Date: 2024-05-13 21:45+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: so <LL@li.org>\n"
@@ -17,140 +17,140 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.15.0\n"
 
-#: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
-#: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
+#: crossword_puzzle/main.py:79 crossword_puzzle/main.py:130
+#: crossword_puzzle/main.py:275 crossword_puzzle/main.py:343
 msgid "Crossword Puzzle"
 msgstr "Halxiraalaha Ereyga"
 
-#: crossword_puzzle/main.py:145
+#: crossword_puzzle/main.py:146
 msgid "View crosswords"
 msgstr "Eeg ereyada isdhaafka ah"
 
-#: crossword_puzzle/main.py:154
+#: crossword_puzzle/main.py:155
 msgid "Exit the app"
 msgstr "Ka bax abka"
 
-#: crossword_puzzle/main.py:165
+#: crossword_puzzle/main.py:166
 msgid "Global Settings"
 msgstr "Goobaha Caalamiga ah"
 
-#: crossword_puzzle/main.py:172
+#: crossword_puzzle/main.py:173
 msgid "Languages"
 msgstr "Luuqadaha"
 
-#: crossword_puzzle/main.py:184
+#: crossword_puzzle/main.py:185
 msgid "Size"
 msgstr "Cabbirka"
 
-#: crossword_puzzle/main.py:203
+#: crossword_puzzle/main.py:204
 msgid "light"
 msgstr "iftiin"
 
-#: crossword_puzzle/main.py:203
+#: crossword_puzzle/main.py:204
 msgid "dark"
 msgstr "madow"
 
-#: crossword_puzzle/main.py:203
+#: crossword_puzzle/main.py:204
 msgid "system"
 msgstr "nidaamka"
 
-#: crossword_puzzle/main.py:206 crossword_puzzle/main.py:220
+#: crossword_puzzle/main.py:207 crossword_puzzle/main.py:221
 msgid "Appearance"
 msgstr "Muuqashada"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:227
 msgid "terrible"
 msgstr "aad u daran"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:228
 msgid "poor"
 msgstr "fakhri ah"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:229
 msgid "average"
 msgstr "dhexdhexaad ah"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:230
 msgid "great"
 msgstr "weyn"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:231
 msgid "perfect"
 msgstr "fiican"
 
-#: crossword_puzzle/main.py:230
+#: crossword_puzzle/main.py:235
 msgid "Crossword Quality"
 msgstr "Tayada ereyga"
 
-#: crossword_puzzle/main.py:262 crossword_puzzle/main.py:415
+#: crossword_puzzle/main.py:267 crossword_puzzle/main.py:420
 msgid "Crossword Browser"
 msgstr "Browser-ka-hadalka"
 
-#: crossword_puzzle/main.py:420
+#: crossword_puzzle/main.py:425
 msgid "Go back"
 msgstr "Dib ugu noqo"
 
-#: crossword_puzzle/main.py:431
+#: crossword_puzzle/main.py:436
 msgid "Load crossword"
 msgstr "Soo rar kelmadda isdhaafka"
 
-#: crossword_puzzle/main.py:440
+#: crossword_puzzle/main.py:445
 msgid "Open web app"
 msgstr "Fur shabakada internetka"
 
-#: crossword_puzzle/main.py:449
+#: crossword_puzzle/main.py:454
 msgid "Terminate web app"
 msgstr "Jooji abka shabakada"
 
-#: crossword_puzzle/main.py:460
+#: crossword_puzzle/main.py:465
 msgid "Word count preferences"
 msgstr "Dookhyada tirinta kelmadda"
 
-#: crossword_puzzle/main.py:474 crossword_puzzle/main.py:536
-#: crossword_puzzle/main.py:582 crossword_puzzle/main.py:802
+#: crossword_puzzle/main.py:479 crossword_puzzle/main.py:541
+#: crossword_puzzle/main.py:587 crossword_puzzle/main.py:808
 msgid "Select word count"
 msgstr "Dooro tirinta kelmadda"
 
-#: crossword_puzzle/main.py:489
+#: crossword_puzzle/main.py:494
 msgid "Custom"
 msgstr "Caadiyan"
 
-#: crossword_puzzle/main.py:694
+#: crossword_puzzle/main.py:699
 msgid "To perform this operation, you must first select a cell."
 msgstr "Si aad u fuliso howshaan, waa inaad marka hore doorataa unug."
 
-#: crossword_puzzle/main.py:886
+#: crossword_puzzle/main.py:892
 msgid "View"
 msgstr "Daawo"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:388
-#: crossword_puzzle/main.py:893
+#: crossword_puzzle/cword_webapp/templates/index.html:373
+#: crossword_puzzle/main.py:899
 msgid "Close"
 msgstr "Xir"
 
-#: crossword_puzzle/main.py:1042
+#: crossword_puzzle/main.py:1046
 msgid "difficulty"
 msgstr "dhib"
 
-#: crossword_puzzle/main.py:1098
+#: crossword_puzzle/main.py:1102
 msgid "Select"
 msgstr "Dooro"
 
-#: crossword_puzzle/main.py:1150
+#: crossword_puzzle/main.py:1154
 msgid "Restart"
 msgstr "Dib u bilow"
 
-#: crossword_puzzle/main.py:1150
+#: crossword_puzzle/main.py:1154
 msgid "Are you sure you want to restart the app?"
 msgstr "Ma hubtaa inaad rabto inaad dib u bilowdo abka?"
 
-#: crossword_puzzle/main.py:1156
+#: crossword_puzzle/main.py:1160
 msgid "Exit"
 msgstr "Ka bax"
 
-#: crossword_puzzle/main.py:1157
+#: crossword_puzzle/main.py:1161
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -158,11 +158,11 @@ msgstr ""
 "Ma hubtaa inaad doonayso inaad ka baxdo abka? Haddii abka webku uu socdo, "
 "waa la joojin doonaa."
 
-#: crossword_puzzle/main.py:1166
+#: crossword_puzzle/main.py:1170
 msgid "Back to home"
 msgstr "Ku noqo guriga"
 
-#: crossword_puzzle/main.py:1167
+#: crossword_puzzle/main.py:1171
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -170,33 +170,33 @@ msgstr ""
 "Ma hubtaa inaad doonayso inaad ku laabato shaashadda guriga? Abka shabakada "
 "waa la joojin doonaa"
 
-#: crossword_puzzle/main.py:1190 crossword_puzzle/main.py:1195
-#: crossword_puzzle/main.py:1200 crossword_puzzle/main.py:1205
-#: crossword_puzzle/main.py:1228 crossword_puzzle/main.py:1240
+#: crossword_puzzle/main.py:1194 crossword_puzzle/main.py:1199
+#: crossword_puzzle/main.py:1204 crossword_puzzle/main.py:1209
+#: crossword_puzzle/main.py:1232 crossword_puzzle/main.py:1244
 msgid "Error"
 msgstr "Khalad"
 
-#: crossword_puzzle/main.py:1190
+#: crossword_puzzle/main.py:1194
 msgid "This language is already selected."
 msgstr "Luqadan mar hore ayaa la doortay."
 
-#: crossword_puzzle/main.py:1195
+#: crossword_puzzle/main.py:1199
 msgid "This size is already selected."
 msgstr "Xajmigan mar hore ayaa la doortay."
 
-#: crossword_puzzle/main.py:1200
+#: crossword_puzzle/main.py:1204
 msgid "This appearance is already selected."
 msgstr "Muuqaalkan mar hore ayaa la doortay."
 
-#: crossword_puzzle/main.py:1205
+#: crossword_puzzle/main.py:1209
 msgid "This quality is already selected."
 msgstr "Tayadan mar hore ayaa la doortay."
 
-#: crossword_puzzle/main.py:1210
+#: crossword_puzzle/main.py:1214
 msgid "Info"
 msgstr "Xog"
 
-#: crossword_puzzle/main.py:1211
+#: crossword_puzzle/main.py:1215
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -219,7 +219,7 @@ msgstr ""
 "joojin karaa iyada oo loo marayo Kormeerka Hawsha ee MacOS, ama, si fudud "
 "dib u bilaw kombiyuutarkaaga si aad u joojiso."
 
-#: crossword_puzzle/main.py:1229
+#: crossword_puzzle/main.py:1233
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -231,7 +231,7 @@ msgstr ""
 "AH: Xogta kelmadda sal-ku-galka ah waxa la galaa kaliya marka nooca la "
 "turjumay aanu ku jirin tusaha xaafadaha."
 
-#: crossword_puzzle/main.py:1241
+#: crossword_puzzle/main.py:1245
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
@@ -240,84 +240,96 @@ msgstr ""
 "dheeraad ah console-ka"
 
 #: crossword_puzzle/cword_webapp/templates/index.html:13
-#: crossword_puzzle/cword_webapp/templates/index.html:355
+#: crossword_puzzle/cword_webapp/templates/index.html:343
 msgid "Crossword Puzzle - Game"
 msgstr "Hal-abuurka ereyga - ciyaarta"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:173
+#: crossword_puzzle/cword_webapp/templates/index.html:155
 msgid "Across"
 msgstr "Ka gudbid"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:196
+#: crossword_puzzle/cword_webapp/templates/index.html:178
 msgid "Down"
 msgstr "Hoose"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:228
-msgid "Reveal"
-msgstr "Muujin"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:236
-#: crossword_puzzle/cword_webapp/templates/index.html:271
-msgid "Cell"
-msgstr "Unug"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:243
-#: crossword_puzzle/cword_webapp/templates/index.html:278
-#: crossword_puzzle/cword_webapp/templates/index.html:306
-msgid "Word"
-msgstr "Erey"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:252
-#: crossword_puzzle/cword_webapp/templates/index.html:287
-#: crossword_puzzle/cword_webapp/templates/index.html:315
-msgid "Grid"
-msgstr "Shiirid"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:263
-msgid "Check"
-msgstr "Hubin"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:298
-msgid "Clear"
-msgstr "Waadixin ah"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:322
+#: crossword_puzzle/cword_webapp/templates/index.html:203
 msgid "Compound"
 msgstr "Xirfad"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:334
-msgid "Smart Skip"
-msgstr "Swip Smart"
+#: crossword_puzzle/cword_webapp/templates/index.html:216
+msgid "Reveal"
+msgstr "Muujin"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:223
+#: crossword_puzzle/cword_webapp/templates/index.html:252
+msgid "Cell"
+msgstr "Unug"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:229
+#: crossword_puzzle/cword_webapp/templates/index.html:258
+#: crossword_puzzle/cword_webapp/templates/index.html:281
+msgid "Word"
+msgstr "Erey"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:235
+#: crossword_puzzle/cword_webapp/templates/index.html:264
+#: crossword_puzzle/cword_webapp/templates/index.html:287
+msgid "Grid"
+msgstr "Shiirid"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:245
+msgid "Check"
+msgstr "Hubin"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:274
+msgid "Clear"
+msgstr "Waadixin ah"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:293
+msgid "Unrevealed"
+msgstr "Aan laga soo bixin"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:306
+msgid "Auto-skip"
+msgstr "Is-bood-ka-dhig"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:315
+msgid "Auto-word"
+msgstr "Auto-ereyga"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:324
+msgid "Auto-check"
+msgstr "Baadhitaan"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:333
+msgid "Zoom"
+msgstr "Soo dhowaanid"
 
 #: crossword_puzzle/cword_webapp/templates/index.html:345
-msgid "Click To Zoom"
-msgstr "Guji si aad u weyso"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:357
 msgid "You are viewing"
 msgstr "Waad fiirineysaa"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:358
+#: crossword_puzzle/cword_webapp/templates/index.html:345
 msgid "from"
 msgstr "ka"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:362
+#: crossword_puzzle/cword_webapp/templates/index.html:350
 msgid "word(s) could not be inserted, sorry."
 msgstr "Ereyga (yaasha) lama galin karo, waan ka xumahay."
 
-#: crossword_puzzle/cword_webapp/templates/index.html:365
+#: crossword_puzzle/cword_webapp/templates/index.html:353
 msgid "Word count (adjusted)"
 msgstr "Tirinta ereyga (la hagaajiyay)"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:369
+#: crossword_puzzle/cword_webapp/templates/index.html:356
 msgid "Word count"
 msgstr "Ereyga tirinta"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:376
+#: crossword_puzzle/cword_webapp/templates/index.html:362
 msgid "Continue"
 msgstr "Socon"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:382
+#: crossword_puzzle/cword_webapp/templates/index.html:368
 msgid "You completed the crossword!"
 msgstr "Waxaad dhammaystirtay ereyga iskutallaabta!"
 

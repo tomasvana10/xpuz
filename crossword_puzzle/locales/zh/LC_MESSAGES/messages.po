@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-07 20:47+1000\n"
+"POT-Creation-Date: 2024-05-13 21:45+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zh <LL@li.org>\n"
@@ -17,182 +17,182 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.15.0\n"
 
-#: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
-#: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
+#: crossword_puzzle/main.py:79 crossword_puzzle/main.py:130
+#: crossword_puzzle/main.py:275 crossword_puzzle/main.py:343
 msgid "Crossword Puzzle"
 msgstr "填字游戏"
 
-#: crossword_puzzle/main.py:145
+#: crossword_puzzle/main.py:146
 msgid "View crosswords"
 msgstr "查看填字游戏"
 
-#: crossword_puzzle/main.py:154
+#: crossword_puzzle/main.py:155
 msgid "Exit the app"
 msgstr "退出应用程序"
 
-#: crossword_puzzle/main.py:165
+#: crossword_puzzle/main.py:166
 msgid "Global Settings"
 msgstr "全局设置"
 
-#: crossword_puzzle/main.py:172
+#: crossword_puzzle/main.py:173
 msgid "Languages"
 msgstr "语言"
 
-#: crossword_puzzle/main.py:184
+#: crossword_puzzle/main.py:185
 msgid "Size"
 msgstr "尺寸"
 
-#: crossword_puzzle/main.py:203
+#: crossword_puzzle/main.py:204
 msgid "light"
 msgstr "光"
 
-#: crossword_puzzle/main.py:203
+#: crossword_puzzle/main.py:204
 msgid "dark"
 msgstr "黑暗的"
 
-#: crossword_puzzle/main.py:203
+#: crossword_puzzle/main.py:204
 msgid "system"
 msgstr "系统"
 
-#: crossword_puzzle/main.py:206 crossword_puzzle/main.py:220
+#: crossword_puzzle/main.py:207 crossword_puzzle/main.py:221
 msgid "Appearance"
 msgstr "外貌"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:227
 msgid "terrible"
 msgstr "糟糕的"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:228
 msgid "poor"
 msgstr "贫穷的"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:229
 msgid "average"
 msgstr "平均的"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:230
 msgid "great"
 msgstr "伟大的"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:231
 msgid "perfect"
 msgstr "完美的"
 
-#: crossword_puzzle/main.py:230
+#: crossword_puzzle/main.py:235
 msgid "Crossword Quality"
 msgstr "填字游戏质量"
 
-#: crossword_puzzle/main.py:262 crossword_puzzle/main.py:415
+#: crossword_puzzle/main.py:267 crossword_puzzle/main.py:420
 msgid "Crossword Browser"
 msgstr "填字游戏浏览器"
 
-#: crossword_puzzle/main.py:420
+#: crossword_puzzle/main.py:425
 msgid "Go back"
 msgstr "回去"
 
-#: crossword_puzzle/main.py:431
+#: crossword_puzzle/main.py:436
 msgid "Load crossword"
 msgstr "加载填字游戏"
 
-#: crossword_puzzle/main.py:440
+#: crossword_puzzle/main.py:445
 msgid "Open web app"
 msgstr "打开网络应用程序"
 
-#: crossword_puzzle/main.py:449
+#: crossword_puzzle/main.py:454
 msgid "Terminate web app"
 msgstr "终止网络应用程序"
 
-#: crossword_puzzle/main.py:460
+#: crossword_puzzle/main.py:465
 msgid "Word count preferences"
 msgstr "字数统计偏好"
 
-#: crossword_puzzle/main.py:474 crossword_puzzle/main.py:536
-#: crossword_puzzle/main.py:582 crossword_puzzle/main.py:802
+#: crossword_puzzle/main.py:479 crossword_puzzle/main.py:541
+#: crossword_puzzle/main.py:587 crossword_puzzle/main.py:808
 msgid "Select word count"
 msgstr "选择字数统计"
 
-#: crossword_puzzle/main.py:489
+#: crossword_puzzle/main.py:494
 msgid "Custom"
 msgstr "风俗"
 
-#: crossword_puzzle/main.py:694
+#: crossword_puzzle/main.py:699
 msgid "To perform this operation, you must first select a cell."
 msgstr "要执行此操作，您必须首先选择一个单元格。"
 
-#: crossword_puzzle/main.py:886
+#: crossword_puzzle/main.py:892
 msgid "View"
 msgstr "看法"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:388
-#: crossword_puzzle/main.py:893
+#: crossword_puzzle/cword_webapp/templates/index.html:373
+#: crossword_puzzle/main.py:899
 msgid "Close"
 msgstr "关闭"
 
-#: crossword_puzzle/main.py:1042
+#: crossword_puzzle/main.py:1046
 msgid "difficulty"
 msgstr "困难"
 
-#: crossword_puzzle/main.py:1098
+#: crossword_puzzle/main.py:1102
 msgid "Select"
 msgstr "选择"
 
-#: crossword_puzzle/main.py:1150
+#: crossword_puzzle/main.py:1154
 msgid "Restart"
 msgstr "重新开始"
 
-#: crossword_puzzle/main.py:1150
+#: crossword_puzzle/main.py:1154
 msgid "Are you sure you want to restart the app?"
 msgstr "您确定要重新启动应用程序吗？"
 
-#: crossword_puzzle/main.py:1156
+#: crossword_puzzle/main.py:1160
 msgid "Exit"
 msgstr "出口"
 
-#: crossword_puzzle/main.py:1157
+#: crossword_puzzle/main.py:1161
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr "您确定要退出该应用程序吗？如果 Web 应用程序正在运行，它将被终止。"
 
-#: crossword_puzzle/main.py:1166
+#: crossword_puzzle/main.py:1170
 msgid "Back to home"
 msgstr "回到家"
 
-#: crossword_puzzle/main.py:1167
+#: crossword_puzzle/main.py:1171
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr "您确定要返回主屏幕吗？ Web 应用程序将被终止。"
 
-#: crossword_puzzle/main.py:1190 crossword_puzzle/main.py:1195
-#: crossword_puzzle/main.py:1200 crossword_puzzle/main.py:1205
-#: crossword_puzzle/main.py:1228 crossword_puzzle/main.py:1240
+#: crossword_puzzle/main.py:1194 crossword_puzzle/main.py:1199
+#: crossword_puzzle/main.py:1204 crossword_puzzle/main.py:1209
+#: crossword_puzzle/main.py:1232 crossword_puzzle/main.py:1244
 msgid "Error"
 msgstr "错误"
 
-#: crossword_puzzle/main.py:1190
+#: crossword_puzzle/main.py:1194
 msgid "This language is already selected."
 msgstr "该语言已被选择。"
 
-#: crossword_puzzle/main.py:1195
+#: crossword_puzzle/main.py:1199
 msgid "This size is already selected."
 msgstr "该尺寸已选定。"
 
-#: crossword_puzzle/main.py:1200
+#: crossword_puzzle/main.py:1204
 msgid "This appearance is already selected."
 msgstr "此外观已选定。"
 
-#: crossword_puzzle/main.py:1205
+#: crossword_puzzle/main.py:1209
 msgid "This quality is already selected."
 msgstr "该质量已经选择。"
 
-#: crossword_puzzle/main.py:1210
+#: crossword_puzzle/main.py:1214
 msgid "Info"
 msgstr "信息"
 
-#: crossword_puzzle/main.py:1211
+#: crossword_puzzle/main.py:1215
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -209,7 +209,7 @@ msgstr ""
 "应用程序。或者，您可以手动更改程序配置文件中的端口。所有未正确终止的应用程序进程都可以通过 MacOS "
 "上的活动监视器终止，或者只需重新启动计算机即可终止它们。"
 
-#: crossword_puzzle/main.py:1229
+#: crossword_puzzle/main.py:1233
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -219,91 +219,103 @@ msgstr ""
 "加载此填字游戏的定义时出错。确保其定义 JSON 文件存在于基本 cwords "
 "目录中。注意：仅当语言环境目录中不存在其翻译版本时，才会访问基本填字游戏数据。"
 
-#: crossword_puzzle/main.py:1241
+#: crossword_puzzle/main.py:1245
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr "填字游戏生成时发生错误。请在控制台中查看更多信息"
 
 #: crossword_puzzle/cword_webapp/templates/index.html:13
-#: crossword_puzzle/cword_webapp/templates/index.html:355
+#: crossword_puzzle/cword_webapp/templates/index.html:343
 msgid "Crossword Puzzle - Game"
 msgstr "填字游戏 - 游戏"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:173
+#: crossword_puzzle/cword_webapp/templates/index.html:155
 msgid "Across"
 msgstr "穿过"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:196
+#: crossword_puzzle/cword_webapp/templates/index.html:178
 msgid "Down"
 msgstr "向下"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:228
-msgid "Reveal"
-msgstr "揭示"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:236
-#: crossword_puzzle/cword_webapp/templates/index.html:271
-msgid "Cell"
-msgstr "细胞"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:243
-#: crossword_puzzle/cword_webapp/templates/index.html:278
-#: crossword_puzzle/cword_webapp/templates/index.html:306
-msgid "Word"
-msgstr "单词"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:252
-#: crossword_puzzle/cword_webapp/templates/index.html:287
-#: crossword_puzzle/cword_webapp/templates/index.html:315
-msgid "Grid"
-msgstr "网格"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:263
-msgid "Check"
-msgstr "查看"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:298
-msgid "Clear"
-msgstr "清除"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:322
+#: crossword_puzzle/cword_webapp/templates/index.html:203
 msgid "Compound"
 msgstr "化合物"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:334
-msgid "Smart Skip"
-msgstr "聪明的跳过"
+#: crossword_puzzle/cword_webapp/templates/index.html:216
+msgid "Reveal"
+msgstr "揭示"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:223
+#: crossword_puzzle/cword_webapp/templates/index.html:252
+msgid "Cell"
+msgstr "细胞"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:229
+#: crossword_puzzle/cword_webapp/templates/index.html:258
+#: crossword_puzzle/cword_webapp/templates/index.html:281
+msgid "Word"
+msgstr "单词"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:235
+#: crossword_puzzle/cword_webapp/templates/index.html:264
+#: crossword_puzzle/cword_webapp/templates/index.html:287
+msgid "Grid"
+msgstr "网格"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:245
+msgid "Check"
+msgstr "查看"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:274
+msgid "Clear"
+msgstr "清除"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:293
+msgid "Unrevealed"
+msgstr "未透露"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:306
+msgid "Auto-skip"
+msgstr "自动滑动"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:315
+msgid "Auto-word"
+msgstr "自动字"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:324
+msgid "Auto-check"
+msgstr "自动检查"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:333
+msgid "Zoom"
+msgstr "飞涨"
 
 #: crossword_puzzle/cword_webapp/templates/index.html:345
-msgid "Click To Zoom"
-msgstr "单击缩放"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:357
 msgid "You are viewing"
 msgstr "您正在查看"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:358
+#: crossword_puzzle/cword_webapp/templates/index.html:345
 msgid "from"
 msgstr "从"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:362
+#: crossword_puzzle/cword_webapp/templates/index.html:350
 msgid "word(s) could not be inserted, sorry."
 msgstr "对不起，无法插入单词。"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:365
+#: crossword_puzzle/cword_webapp/templates/index.html:353
 msgid "Word count (adjusted)"
 msgstr "单词计数（调整后）"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:369
+#: crossword_puzzle/cword_webapp/templates/index.html:356
 msgid "Word count"
 msgstr "字数"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:376
+#: crossword_puzzle/cword_webapp/templates/index.html:362
 msgid "Continue"
 msgstr "继续"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:382
+#: crossword_puzzle/cword_webapp/templates/index.html:368
 msgid "You completed the crossword!"
 msgstr "您完成了填字游戏！"
 

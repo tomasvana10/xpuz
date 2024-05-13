@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-07 20:47+1000\n"
+"POT-Creation-Date: 2024-05-13 21:45+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fil_PH <LL@li.org>\n"
@@ -17,142 +17,142 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.15.0\n"
 
-#: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
-#: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
+#: crossword_puzzle/main.py:79 crossword_puzzle/main.py:130
+#: crossword_puzzle/main.py:275 crossword_puzzle/main.py:343
 msgid "Crossword Puzzle"
 msgstr "Palaisipan"
 
-#: crossword_puzzle/main.py:145
+#: crossword_puzzle/main.py:146
 msgid "View crosswords"
 msgstr "Tingnan ang mga crossword"
 
-#: crossword_puzzle/main.py:154
+#: crossword_puzzle/main.py:155
 msgid "Exit the app"
 msgstr "Lumabas sa app"
 
-#: crossword_puzzle/main.py:165
+#: crossword_puzzle/main.py:166
 msgid "Global Settings"
 msgstr "Mga Pandaigdigang Setting"
 
-#: crossword_puzzle/main.py:172
+#: crossword_puzzle/main.py:173
 msgid "Languages"
 msgstr "Mga wika"
 
-#: crossword_puzzle/main.py:184
+#: crossword_puzzle/main.py:185
 msgid "Size"
 msgstr "Sukat"
 
-#: crossword_puzzle/main.py:203
+#: crossword_puzzle/main.py:204
 msgid "light"
 msgstr "liwanag"
 
-#: crossword_puzzle/main.py:203
+#: crossword_puzzle/main.py:204
 msgid "dark"
 msgstr "madilim"
 
-#: crossword_puzzle/main.py:203
+#: crossword_puzzle/main.py:204
 msgid "system"
 msgstr "sistema"
 
-#: crossword_puzzle/main.py:206 crossword_puzzle/main.py:220
+#: crossword_puzzle/main.py:207 crossword_puzzle/main.py:221
 msgid "Appearance"
 msgstr "Hitsura"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:227
 msgid "terrible"
 msgstr "kakila -kilabot"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:228
 msgid "poor"
 msgstr "Mahina"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:229
 msgid "average"
 msgstr "average"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:230
 msgid "great"
 msgstr "malaki"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:231
 msgid "perfect"
 msgstr "perpekto"
 
-#: crossword_puzzle/main.py:230
+#: crossword_puzzle/main.py:235
 msgid "Crossword Quality"
 msgstr "Kalidad ng crossword"
 
-#: crossword_puzzle/main.py:262 crossword_puzzle/main.py:415
+#: crossword_puzzle/main.py:267 crossword_puzzle/main.py:420
 msgid "Crossword Browser"
 msgstr "Crossword Browser"
 
-#: crossword_puzzle/main.py:420
+#: crossword_puzzle/main.py:425
 msgid "Go back"
 msgstr "Bumalik ka"
 
-#: crossword_puzzle/main.py:431
+#: crossword_puzzle/main.py:436
 msgid "Load crossword"
 msgstr "Mag-load ng crossword"
 
-#: crossword_puzzle/main.py:440
+#: crossword_puzzle/main.py:445
 msgid "Open web app"
 msgstr "Buksan ang web app"
 
-#: crossword_puzzle/main.py:449
+#: crossword_puzzle/main.py:454
 msgid "Terminate web app"
 msgstr "Wakasan ang web app"
 
-#: crossword_puzzle/main.py:460
+#: crossword_puzzle/main.py:465
 msgid "Word count preferences"
 msgstr "Mga kagustuhan sa bilang ng salita"
 
-#: crossword_puzzle/main.py:474 crossword_puzzle/main.py:536
-#: crossword_puzzle/main.py:582 crossword_puzzle/main.py:802
+#: crossword_puzzle/main.py:479 crossword_puzzle/main.py:541
+#: crossword_puzzle/main.py:587 crossword_puzzle/main.py:808
 msgid "Select word count"
 msgstr "Pumili ng bilang ng salita"
 
-#: crossword_puzzle/main.py:489
+#: crossword_puzzle/main.py:494
 msgid "Custom"
 msgstr "Custom"
 
-#: crossword_puzzle/main.py:694
+#: crossword_puzzle/main.py:699
 msgid "To perform this operation, you must first select a cell."
 msgstr ""
 "Upang maisagawa ang operasyon na ito, kailangan mo munang pumili ng isang "
 "cell."
 
-#: crossword_puzzle/main.py:886
+#: crossword_puzzle/main.py:892
 msgid "View"
 msgstr "Tingnan"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:388
-#: crossword_puzzle/main.py:893
+#: crossword_puzzle/cword_webapp/templates/index.html:373
+#: crossword_puzzle/main.py:899
 msgid "Close"
 msgstr "Isara"
 
-#: crossword_puzzle/main.py:1042
+#: crossword_puzzle/main.py:1046
 msgid "difficulty"
 msgstr "kahirapan"
 
-#: crossword_puzzle/main.py:1098
+#: crossword_puzzle/main.py:1102
 msgid "Select"
 msgstr "Pumili"
 
-#: crossword_puzzle/main.py:1150
+#: crossword_puzzle/main.py:1154
 msgid "Restart"
 msgstr "I-restart"
 
-#: crossword_puzzle/main.py:1150
+#: crossword_puzzle/main.py:1154
 msgid "Are you sure you want to restart the app?"
 msgstr "Sigurado ka bang gusto mong i-restart ang app?"
 
-#: crossword_puzzle/main.py:1156
+#: crossword_puzzle/main.py:1160
 msgid "Exit"
 msgstr "Lumabas"
 
-#: crossword_puzzle/main.py:1157
+#: crossword_puzzle/main.py:1161
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -160,11 +160,11 @@ msgstr ""
 "Sigurado ka bang gusto mong lumabas sa app? Kung tumatakbo ang web app, "
 "wawakasan ito."
 
-#: crossword_puzzle/main.py:1166
+#: crossword_puzzle/main.py:1170
 msgid "Back to home"
 msgstr "Bumalik sa bahay"
 
-#: crossword_puzzle/main.py:1167
+#: crossword_puzzle/main.py:1171
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -172,33 +172,33 @@ msgstr ""
 "Sigurado ka bang gusto mong bumalik sa home screen? Ang web app ay "
 "wawakasan."
 
-#: crossword_puzzle/main.py:1190 crossword_puzzle/main.py:1195
-#: crossword_puzzle/main.py:1200 crossword_puzzle/main.py:1205
-#: crossword_puzzle/main.py:1228 crossword_puzzle/main.py:1240
+#: crossword_puzzle/main.py:1194 crossword_puzzle/main.py:1199
+#: crossword_puzzle/main.py:1204 crossword_puzzle/main.py:1209
+#: crossword_puzzle/main.py:1232 crossword_puzzle/main.py:1244
 msgid "Error"
 msgstr "Error"
 
-#: crossword_puzzle/main.py:1190
+#: crossword_puzzle/main.py:1194
 msgid "This language is already selected."
 msgstr "Napili na ang wikang ito."
 
-#: crossword_puzzle/main.py:1195
+#: crossword_puzzle/main.py:1199
 msgid "This size is already selected."
 msgstr "Napili na ang laki na ito."
 
-#: crossword_puzzle/main.py:1200
+#: crossword_puzzle/main.py:1204
 msgid "This appearance is already selected."
 msgstr "Ang hitsura na ito ay napili na."
 
-#: crossword_puzzle/main.py:1205
+#: crossword_puzzle/main.py:1209
 msgid "This quality is already selected."
 msgstr "Napili na ang kalidad na ito."
 
-#: crossword_puzzle/main.py:1210
+#: crossword_puzzle/main.py:1214
 msgid "Info"
 msgstr "Impormasyon"
 
-#: crossword_puzzle/main.py:1211
+#: crossword_puzzle/main.py:1215
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -220,7 +220,7 @@ msgstr ""
 " natapos ay maaaring wakasan sa pamamagitan ng Activity Monitor sa MacOS, o,"
 " i-restart lang ang iyong computer upang wakasan ang mga ito."
 
-#: crossword_puzzle/main.py:1229
+#: crossword_puzzle/main.py:1233
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -232,7 +232,7 @@ msgstr ""
 "directory. TANDAAN: Ang base crossword data ay ina-access lamang kapag ang "
 "isinaling bersyon nito ay wala sa direktoryo ng mga lokal."
 
-#: crossword_puzzle/main.py:1241
+#: crossword_puzzle/main.py:1245
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
@@ -241,84 +241,96 @@ msgstr ""
 "karagdagang impormasyon sa console"
 
 #: crossword_puzzle/cword_webapp/templates/index.html:13
-#: crossword_puzzle/cword_webapp/templates/index.html:355
+#: crossword_puzzle/cword_webapp/templates/index.html:343
 msgid "Crossword Puzzle - Game"
 msgstr "Crossword Puzzle - Game"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:173
+#: crossword_puzzle/cword_webapp/templates/index.html:155
 msgid "Across"
 msgstr "Sa kabuuan"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:196
+#: crossword_puzzle/cword_webapp/templates/index.html:178
 msgid "Down"
 msgstr "Pababa"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:228
-msgid "Reveal"
-msgstr "Ibunyag"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:236
-#: crossword_puzzle/cword_webapp/templates/index.html:271
-msgid "Cell"
-msgstr "Cell"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:243
-#: crossword_puzzle/cword_webapp/templates/index.html:278
-#: crossword_puzzle/cword_webapp/templates/index.html:306
-msgid "Word"
-msgstr "Salita"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:252
-#: crossword_puzzle/cword_webapp/templates/index.html:287
-#: crossword_puzzle/cword_webapp/templates/index.html:315
-msgid "Grid"
-msgstr "Grid"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:263
-msgid "Check"
-msgstr "Suriin"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:298
-msgid "Clear"
-msgstr "Malinaw"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:322
+#: crossword_puzzle/cword_webapp/templates/index.html:203
 msgid "Compound"
 msgstr "Tambalan"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:334
-msgid "Smart Skip"
-msgstr "Smart Skip"
+#: crossword_puzzle/cword_webapp/templates/index.html:216
+msgid "Reveal"
+msgstr "Ibunyag"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:223
+#: crossword_puzzle/cword_webapp/templates/index.html:252
+msgid "Cell"
+msgstr "Cell"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:229
+#: crossword_puzzle/cword_webapp/templates/index.html:258
+#: crossword_puzzle/cword_webapp/templates/index.html:281
+msgid "Word"
+msgstr "Salita"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:235
+#: crossword_puzzle/cword_webapp/templates/index.html:264
+#: crossword_puzzle/cword_webapp/templates/index.html:287
+msgid "Grid"
+msgstr "Grid"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:245
+msgid "Check"
+msgstr "Suriin"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:274
+msgid "Clear"
+msgstr "Malinaw"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:293
+msgid "Unrevealed"
+msgstr "Hindi nabigkas"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:306
+msgid "Auto-skip"
+msgstr "Auto-skip"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:315
+msgid "Auto-word"
+msgstr "Auto-word"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:324
+msgid "Auto-check"
+msgstr "Auto-check"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:333
+msgid "Zoom"
+msgstr "Mag -zoom"
 
 #: crossword_puzzle/cword_webapp/templates/index.html:345
-msgid "Click To Zoom"
-msgstr "Mag -click upang mag -zoom"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:357
 msgid "You are viewing"
 msgstr "Tinitingnan mo"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:358
+#: crossword_puzzle/cword_webapp/templates/index.html:345
 msgid "from"
 msgstr "mula sa"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:362
+#: crossword_puzzle/cword_webapp/templates/index.html:350
 msgid "word(s) could not be inserted, sorry."
 msgstr "Ang mga (mga) salita ay hindi maipasok, paumanhin."
 
-#: crossword_puzzle/cword_webapp/templates/index.html:365
+#: crossword_puzzle/cword_webapp/templates/index.html:353
 msgid "Word count (adjusted)"
 msgstr "Bilang ng salita (nababagay)"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:369
+#: crossword_puzzle/cword_webapp/templates/index.html:356
 msgid "Word count"
 msgstr "Bilang ng salita"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:376
+#: crossword_puzzle/cword_webapp/templates/index.html:362
 msgid "Continue"
 msgstr "Magpatuloy"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:382
+#: crossword_puzzle/cword_webapp/templates/index.html:368
 msgid "You completed the crossword!"
 msgstr "Natapos mo ang crossword!"
 

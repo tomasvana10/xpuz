@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-07 20:47+1000\n"
+"POT-Creation-Date: 2024-05-13 21:45+1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: af <LL@li.org>\n"
@@ -17,140 +17,140 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.15.0\n"
 
-#: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
-#: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
+#: crossword_puzzle/main.py:79 crossword_puzzle/main.py:130
+#: crossword_puzzle/main.py:275 crossword_puzzle/main.py:343
 msgid "Crossword Puzzle"
 msgstr "Blokkiesraaisel"
 
-#: crossword_puzzle/main.py:145
+#: crossword_puzzle/main.py:146
 msgid "View crosswords"
 msgstr "Kyk blokkiesraaisels"
 
-#: crossword_puzzle/main.py:154
+#: crossword_puzzle/main.py:155
 msgid "Exit the app"
 msgstr "Verlaat die toepassing"
 
-#: crossword_puzzle/main.py:165
+#: crossword_puzzle/main.py:166
 msgid "Global Settings"
 msgstr "Globale instellings"
 
-#: crossword_puzzle/main.py:172
+#: crossword_puzzle/main.py:173
 msgid "Languages"
 msgstr "Tale"
 
-#: crossword_puzzle/main.py:184
+#: crossword_puzzle/main.py:185
 msgid "Size"
 msgstr "Grootte"
 
-#: crossword_puzzle/main.py:203
+#: crossword_puzzle/main.py:204
 msgid "light"
 msgstr "lig"
 
-#: crossword_puzzle/main.py:203
+#: crossword_puzzle/main.py:204
 msgid "dark"
 msgstr "donker"
 
-#: crossword_puzzle/main.py:203
+#: crossword_puzzle/main.py:204
 msgid "system"
 msgstr "stelsel"
 
-#: crossword_puzzle/main.py:206 crossword_puzzle/main.py:220
+#: crossword_puzzle/main.py:207 crossword_puzzle/main.py:221
 msgid "Appearance"
 msgstr "Voorkoms"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:227
 msgid "terrible"
 msgstr "verskriklik"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:228
 msgid "poor"
 msgstr "arm"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:229
 msgid "average"
 msgstr "gemiddeld"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:230
 msgid "great"
 msgstr "groot"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:231
 msgid "perfect"
 msgstr "voltooi"
 
-#: crossword_puzzle/main.py:230
+#: crossword_puzzle/main.py:235
 msgid "Crossword Quality"
 msgstr "Blokkiesraaiselkwaliteit"
 
-#: crossword_puzzle/main.py:262 crossword_puzzle/main.py:415
+#: crossword_puzzle/main.py:267 crossword_puzzle/main.py:420
 msgid "Crossword Browser"
 msgstr "Blokkiesraaiselblaaier"
 
-#: crossword_puzzle/main.py:420
+#: crossword_puzzle/main.py:425
 msgid "Go back"
 msgstr "Gaan terug"
 
-#: crossword_puzzle/main.py:431
+#: crossword_puzzle/main.py:436
 msgid "Load crossword"
 msgstr "Laai blokkiesraaisels"
 
-#: crossword_puzzle/main.py:440
+#: crossword_puzzle/main.py:445
 msgid "Open web app"
 msgstr "Maak webtoepassing oop"
 
-#: crossword_puzzle/main.py:449
+#: crossword_puzzle/main.py:454
 msgid "Terminate web app"
 msgstr "Beëindig webtoepassing"
 
-#: crossword_puzzle/main.py:460
+#: crossword_puzzle/main.py:465
 msgid "Word count preferences"
 msgstr "Woordtelling voorkeure"
 
-#: crossword_puzzle/main.py:474 crossword_puzzle/main.py:536
-#: crossword_puzzle/main.py:582 crossword_puzzle/main.py:802
+#: crossword_puzzle/main.py:479 crossword_puzzle/main.py:541
+#: crossword_puzzle/main.py:587 crossword_puzzle/main.py:808
 msgid "Select word count"
 msgstr "Kies woordtelling"
 
-#: crossword_puzzle/main.py:489
+#: crossword_puzzle/main.py:494
 msgid "Custom"
 msgstr "Pasgemaak"
 
-#: crossword_puzzle/main.py:694
+#: crossword_puzzle/main.py:699
 msgid "To perform this operation, you must first select a cell."
 msgstr "Om hierdie bewerking uit te voer, moet u eers 'n sel kies."
 
-#: crossword_puzzle/main.py:886
+#: crossword_puzzle/main.py:892
 msgid "View"
 msgstr "Beskou"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:388
-#: crossword_puzzle/main.py:893
+#: crossword_puzzle/cword_webapp/templates/index.html:373
+#: crossword_puzzle/main.py:899
 msgid "Close"
 msgstr "Naby"
 
-#: crossword_puzzle/main.py:1042
+#: crossword_puzzle/main.py:1046
 msgid "difficulty"
 msgstr "moeilikheid"
 
-#: crossword_puzzle/main.py:1098
+#: crossword_puzzle/main.py:1102
 msgid "Select"
 msgstr "Kies"
 
-#: crossword_puzzle/main.py:1150
+#: crossword_puzzle/main.py:1154
 msgid "Restart"
 msgstr "Begin oor"
 
-#: crossword_puzzle/main.py:1150
+#: crossword_puzzle/main.py:1154
 msgid "Are you sure you want to restart the app?"
 msgstr "Is jy seker jy wil die toepassing herbegin?"
 
-#: crossword_puzzle/main.py:1156
+#: crossword_puzzle/main.py:1160
 msgid "Exit"
 msgstr "Verlaat"
 
-#: crossword_puzzle/main.py:1157
+#: crossword_puzzle/main.py:1161
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -158,11 +158,11 @@ msgstr ""
 "Is jy seker jy wil die program verlaat? As die webtoepassing loop, sal dit "
 "beëindig word."
 
-#: crossword_puzzle/main.py:1166
+#: crossword_puzzle/main.py:1170
 msgid "Back to home"
 msgstr "Terug huistoe"
 
-#: crossword_puzzle/main.py:1167
+#: crossword_puzzle/main.py:1171
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -170,33 +170,33 @@ msgstr ""
 "Is jy seker jy wil teruggaan na die tuisskerm? Die webtoepassing sal "
 "beëindig word."
 
-#: crossword_puzzle/main.py:1190 crossword_puzzle/main.py:1195
-#: crossword_puzzle/main.py:1200 crossword_puzzle/main.py:1205
-#: crossword_puzzle/main.py:1228 crossword_puzzle/main.py:1240
+#: crossword_puzzle/main.py:1194 crossword_puzzle/main.py:1199
+#: crossword_puzzle/main.py:1204 crossword_puzzle/main.py:1209
+#: crossword_puzzle/main.py:1232 crossword_puzzle/main.py:1244
 msgid "Error"
 msgstr "Fout"
 
-#: crossword_puzzle/main.py:1190
+#: crossword_puzzle/main.py:1194
 msgid "This language is already selected."
 msgstr "Hierdie taal is reeds gekies."
 
-#: crossword_puzzle/main.py:1195
+#: crossword_puzzle/main.py:1199
 msgid "This size is already selected."
 msgstr "Hierdie grootte is reeds gekies."
 
-#: crossword_puzzle/main.py:1200
+#: crossword_puzzle/main.py:1204
 msgid "This appearance is already selected."
 msgstr "Hierdie voorkoms is reeds gekies."
 
-#: crossword_puzzle/main.py:1205
+#: crossword_puzzle/main.py:1209
 msgid "This quality is already selected."
 msgstr "Hierdie kwaliteit is reeds gekies."
 
-#: crossword_puzzle/main.py:1210
+#: crossword_puzzle/main.py:1214
 msgid "Info"
 msgstr "Inligting"
 
-#: crossword_puzzle/main.py:1211
+#: crossword_puzzle/main.py:1215
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -218,7 +218,7 @@ msgstr ""
 "behoorlik beëindig is nie, kan deur Activity Monitor op MacOS beëindig word,"
 " of, herbegin eenvoudig jou rekenaar om dit te beëindig."
 
-#: crossword_puzzle/main.py:1229
+#: crossword_puzzle/main.py:1233
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -230,7 +230,7 @@ msgstr ""
 "bestaan. LET WEL: Basiese blokkiesraaiseldata word slegs verkry wanneer die "
 "vertaalde weergawe daarvan nie in die locales-gids voorkom nie."
 
-#: crossword_puzzle/main.py:1241
+#: crossword_puzzle/main.py:1245
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
@@ -239,84 +239,96 @@ msgstr ""
 "inligting in die konsole"
 
 #: crossword_puzzle/cword_webapp/templates/index.html:13
-#: crossword_puzzle/cword_webapp/templates/index.html:355
+#: crossword_puzzle/cword_webapp/templates/index.html:343
 msgid "Crossword Puzzle - Game"
 msgstr "Blokkiesraaisel - spel"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:173
+#: crossword_puzzle/cword_webapp/templates/index.html:155
 msgid "Across"
 msgstr "Oor"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:196
+#: crossword_puzzle/cword_webapp/templates/index.html:178
 msgid "Down"
 msgstr "Af"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:228
-msgid "Reveal"
-msgstr "Onthul"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:236
-#: crossword_puzzle/cword_webapp/templates/index.html:271
-msgid "Cell"
-msgstr "Sel"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:243
-#: crossword_puzzle/cword_webapp/templates/index.html:278
-#: crossword_puzzle/cword_webapp/templates/index.html:306
-msgid "Word"
-msgstr "Woord"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:252
-#: crossword_puzzle/cword_webapp/templates/index.html:287
-#: crossword_puzzle/cword_webapp/templates/index.html:315
-msgid "Grid"
-msgstr "Rooster"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:263
-msgid "Check"
-msgstr "Tjek"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:298
-msgid "Clear"
-msgstr "Helder"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:322
+#: crossword_puzzle/cword_webapp/templates/index.html:203
 msgid "Compound"
 msgstr "Samesteld"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:334
-msgid "Smart Skip"
-msgstr "Slim skip"
+#: crossword_puzzle/cword_webapp/templates/index.html:216
+msgid "Reveal"
+msgstr "Onthul"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:223
+#: crossword_puzzle/cword_webapp/templates/index.html:252
+msgid "Cell"
+msgstr "Sel"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:229
+#: crossword_puzzle/cword_webapp/templates/index.html:258
+#: crossword_puzzle/cword_webapp/templates/index.html:281
+msgid "Word"
+msgstr "Woord"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:235
+#: crossword_puzzle/cword_webapp/templates/index.html:264
+#: crossword_puzzle/cword_webapp/templates/index.html:287
+msgid "Grid"
+msgstr "Rooster"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:245
+msgid "Check"
+msgstr "Tjek"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:274
+msgid "Clear"
+msgstr "Helder"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:293
+msgid "Unrevealed"
+msgstr "Ongeoorloof"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:306
+msgid "Auto-skip"
+msgstr "Outo-skip"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:315
+msgid "Auto-word"
+msgstr "Outo-woord"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:324
+msgid "Auto-check"
+msgstr "Outo-tjek"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:333
+msgid "Zoom"
+msgstr "Zoem"
 
 #: crossword_puzzle/cword_webapp/templates/index.html:345
-msgid "Click To Zoom"
-msgstr "Klik om te zoem"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:357
 msgid "You are viewing"
 msgstr "U kyk na"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:358
+#: crossword_puzzle/cword_webapp/templates/index.html:345
 msgid "from"
 msgstr "van"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:362
+#: crossword_puzzle/cword_webapp/templates/index.html:350
 msgid "word(s) could not be inserted, sorry."
 msgstr "Woord (s) kon nie ingevoeg word nie, jammer."
 
-#: crossword_puzzle/cword_webapp/templates/index.html:365
+#: crossword_puzzle/cword_webapp/templates/index.html:353
 msgid "Word count (adjusted)"
 msgstr "Woordtelling (aangepas)"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:369
+#: crossword_puzzle/cword_webapp/templates/index.html:356
 msgid "Word count"
 msgstr "Woord telling"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:376
+#: crossword_puzzle/cword_webapp/templates/index.html:362
 msgid "Continue"
 msgstr "Aanhou"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:382
+#: crossword_puzzle/cword_webapp/templates/index.html:368
 msgid "You completed the crossword!"
 msgstr "U het die blokkiesraaisel voltooi!"
 

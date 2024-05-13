@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-07 20:47+1000\n"
+"POT-Creation-Date: 2024-05-13 21:45+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: th <LL@li.org>\n"
@@ -17,183 +17,183 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Generated-By: Babel 2.14.0\n"
+"Generated-By: Babel 2.15.0\n"
 
-#: crossword_puzzle/main.py:78 crossword_puzzle/main.py:129
-#: crossword_puzzle/main.py:270 crossword_puzzle/main.py:338
+#: crossword_puzzle/main.py:79 crossword_puzzle/main.py:130
+#: crossword_puzzle/main.py:275 crossword_puzzle/main.py:343
 msgid "Crossword Puzzle"
 msgstr "ปริศนาอักษรไขว้"
 
-#: crossword_puzzle/main.py:145
+#: crossword_puzzle/main.py:146
 msgid "View crosswords"
 msgstr "ดูปริศนาอักษรไขว้"
 
-#: crossword_puzzle/main.py:154
+#: crossword_puzzle/main.py:155
 msgid "Exit the app"
 msgstr "ออกจากแอป"
 
-#: crossword_puzzle/main.py:165
+#: crossword_puzzle/main.py:166
 msgid "Global Settings"
 msgstr "การตั้งค่าส่วนกลาง"
 
-#: crossword_puzzle/main.py:172
+#: crossword_puzzle/main.py:173
 msgid "Languages"
 msgstr "ภาษา"
 
-#: crossword_puzzle/main.py:184
+#: crossword_puzzle/main.py:185
 msgid "Size"
 msgstr "ขนาด"
 
-#: crossword_puzzle/main.py:203
+#: crossword_puzzle/main.py:204
 msgid "light"
 msgstr "แสงสว่าง"
 
-#: crossword_puzzle/main.py:203
+#: crossword_puzzle/main.py:204
 msgid "dark"
 msgstr "มืด"
 
-#: crossword_puzzle/main.py:203
+#: crossword_puzzle/main.py:204
 msgid "system"
 msgstr "ระบบ"
 
-#: crossword_puzzle/main.py:206 crossword_puzzle/main.py:220
+#: crossword_puzzle/main.py:207 crossword_puzzle/main.py:221
 msgid "Appearance"
 msgstr "รูปร่าง"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:227
 msgid "terrible"
 msgstr "ย่ำแย่"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:228
 msgid "poor"
 msgstr "ยากจน"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:229
 msgid "average"
 msgstr "เฉลี่ย"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:230
 msgid "great"
 msgstr "ยอดเยี่ยม"
 
-#: crossword_puzzle/main.py:226
+#: crossword_puzzle/main.py:231
 msgid "perfect"
 msgstr "สมบูรณ์แบบ"
 
-#: crossword_puzzle/main.py:230
+#: crossword_puzzle/main.py:235
 msgid "Crossword Quality"
 msgstr "คุณภาพของคำไขว้"
 
-#: crossword_puzzle/main.py:262 crossword_puzzle/main.py:415
+#: crossword_puzzle/main.py:267 crossword_puzzle/main.py:420
 msgid "Crossword Browser"
 msgstr "เบราว์เซอร์ Crossword"
 
-#: crossword_puzzle/main.py:420
+#: crossword_puzzle/main.py:425
 msgid "Go back"
 msgstr "กลับไป"
 
-#: crossword_puzzle/main.py:431
+#: crossword_puzzle/main.py:436
 msgid "Load crossword"
 msgstr "โหลดคำไขว้"
 
-#: crossword_puzzle/main.py:440
+#: crossword_puzzle/main.py:445
 msgid "Open web app"
 msgstr "เปิดเว็บแอป"
 
-#: crossword_puzzle/main.py:449
+#: crossword_puzzle/main.py:454
 msgid "Terminate web app"
 msgstr "ยุติแอปพลิเคชันเว็บ"
 
-#: crossword_puzzle/main.py:460
+#: crossword_puzzle/main.py:465
 msgid "Word count preferences"
 msgstr "การตั้งค่าการนับจำนวนคำ"
 
-#: crossword_puzzle/main.py:474 crossword_puzzle/main.py:536
-#: crossword_puzzle/main.py:582 crossword_puzzle/main.py:802
+#: crossword_puzzle/main.py:479 crossword_puzzle/main.py:541
+#: crossword_puzzle/main.py:587 crossword_puzzle/main.py:808
 msgid "Select word count"
 msgstr "เลือกจำนวนคำ"
 
-#: crossword_puzzle/main.py:489
+#: crossword_puzzle/main.py:494
 msgid "Custom"
 msgstr "กำหนดเอง"
 
-#: crossword_puzzle/main.py:694
+#: crossword_puzzle/main.py:699
 msgid "To perform this operation, you must first select a cell."
 msgstr "ในการดำเนินการนี้คุณต้องเลือกเซลล์ก่อน"
 
-#: crossword_puzzle/main.py:886
+#: crossword_puzzle/main.py:892
 msgid "View"
 msgstr "ดู"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:388
-#: crossword_puzzle/main.py:893
+#: crossword_puzzle/cword_webapp/templates/index.html:373
+#: crossword_puzzle/main.py:899
 msgid "Close"
 msgstr "ปิด"
 
-#: crossword_puzzle/main.py:1042
+#: crossword_puzzle/main.py:1046
 msgid "difficulty"
 msgstr "ความยากลำบาก"
 
-#: crossword_puzzle/main.py:1098
+#: crossword_puzzle/main.py:1102
 msgid "Select"
 msgstr "เลือก"
 
-#: crossword_puzzle/main.py:1150
+#: crossword_puzzle/main.py:1154
 msgid "Restart"
 msgstr "เริ่มต้นใหม่"
 
-#: crossword_puzzle/main.py:1150
+#: crossword_puzzle/main.py:1154
 msgid "Are you sure you want to restart the app?"
 msgstr "คุณแน่ใจหรือไม่ว่าต้องการรีสตาร์ทแอป"
 
-#: crossword_puzzle/main.py:1156
+#: crossword_puzzle/main.py:1160
 msgid "Exit"
 msgstr "ออก"
 
-#: crossword_puzzle/main.py:1157
+#: crossword_puzzle/main.py:1161
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr ""
 "คุณแน่ใจหรือไม่ว่าต้องการออกจากแอป หากเว็บแอปทำงานอยู่ แอปนั้นจะถูกยกเลิก"
 
-#: crossword_puzzle/main.py:1166
+#: crossword_puzzle/main.py:1170
 msgid "Back to home"
 msgstr "กลับไปที่บ้าน"
 
-#: crossword_puzzle/main.py:1167
+#: crossword_puzzle/main.py:1171
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr "คุณแน่ใจหรือไม่ว่าต้องการกลับไปที่หน้าจอหลัก เว็บแอปจะถูกยกเลิก"
 
-#: crossword_puzzle/main.py:1190 crossword_puzzle/main.py:1195
-#: crossword_puzzle/main.py:1200 crossword_puzzle/main.py:1205
-#: crossword_puzzle/main.py:1228 crossword_puzzle/main.py:1240
+#: crossword_puzzle/main.py:1194 crossword_puzzle/main.py:1199
+#: crossword_puzzle/main.py:1204 crossword_puzzle/main.py:1209
+#: crossword_puzzle/main.py:1232 crossword_puzzle/main.py:1244
 msgid "Error"
 msgstr "ข้อผิดพลาด"
 
-#: crossword_puzzle/main.py:1190
+#: crossword_puzzle/main.py:1194
 msgid "This language is already selected."
 msgstr "ภาษานี้ถูกเลือกไว้แล้ว"
 
-#: crossword_puzzle/main.py:1195
+#: crossword_puzzle/main.py:1199
 msgid "This size is already selected."
 msgstr "ขนาดนี้ถูกเลือกไว้แล้ว"
 
-#: crossword_puzzle/main.py:1200
+#: crossword_puzzle/main.py:1204
 msgid "This appearance is already selected."
 msgstr "ลักษณะที่ปรากฏนี้ถูกเลือกไว้แล้ว"
 
-#: crossword_puzzle/main.py:1205
+#: crossword_puzzle/main.py:1209
 msgid "This quality is already selected."
 msgstr "คุณภาพนี้ถูกเลือกแล้ว"
 
-#: crossword_puzzle/main.py:1210
+#: crossword_puzzle/main.py:1214
 msgid "Info"
 msgstr "ข้อมูล"
 
-#: crossword_puzzle/main.py:1211
+#: crossword_puzzle/main.py:1215
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -214,7 +214,7 @@ msgstr ""
 "กระบวนการแอพทั้งหมดที่ยังไม่ถูกยกเลิกอย่างถูกต้องสามารถยุติได้ผ่านตัวตรวจสอบกิจกรรมบน"
 " MacOS หรือเพียงแค่รีสตาร์ทคอมพิวเตอร์เพื่อยุติกระบวนการเหล่านั้น"
 
-#: crossword_puzzle/main.py:1229
+#: crossword_puzzle/main.py:1233
 msgid ""
 "An error occured while loading this crossword's definitions. Ensure that its"
 " definitions JSON file exists in the base cwords directory. NOTE: Base "
@@ -225,91 +225,103 @@ msgstr ""
 "คำจำกัดความมีอยู่ในไดเร็กทอรี cwords ฐาน หมายเหตุ: "
 "ข้อมูลคำไขว้พื้นฐานจะเข้าถึงได้ก็ต่อเมื่อเวอร์ชันที่แปลแล้วไม่ปรากฏในไดเรกทอรีสถานที่"
 
-#: crossword_puzzle/main.py:1241
+#: crossword_puzzle/main.py:1245
 msgid ""
 "An error occured in crossword generation. Please see further information in "
 "the console"
 msgstr "เกิดข้อผิดพลาดในการสร้างคำไขว้ โปรดดูข้อมูลเพิ่มเติมในคอนโซล"
 
 #: crossword_puzzle/cword_webapp/templates/index.html:13
-#: crossword_puzzle/cword_webapp/templates/index.html:355
+#: crossword_puzzle/cword_webapp/templates/index.html:343
 msgid "Crossword Puzzle - Game"
 msgstr "ปริศนาคำไขว้ - เกม"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:173
+#: crossword_puzzle/cword_webapp/templates/index.html:155
 msgid "Across"
 msgstr "ข้าม"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:196
+#: crossword_puzzle/cword_webapp/templates/index.html:178
 msgid "Down"
 msgstr "ลง"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:228
-msgid "Reveal"
-msgstr "เปิดเผย"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:236
-#: crossword_puzzle/cword_webapp/templates/index.html:271
-msgid "Cell"
-msgstr "ห้องขัง"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:243
-#: crossword_puzzle/cword_webapp/templates/index.html:278
-#: crossword_puzzle/cword_webapp/templates/index.html:306
-msgid "Word"
-msgstr "คำ"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:252
-#: crossword_puzzle/cword_webapp/templates/index.html:287
-#: crossword_puzzle/cword_webapp/templates/index.html:315
-msgid "Grid"
-msgstr "กริด"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:263
-msgid "Check"
-msgstr "ตรวจสอบ"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:298
-msgid "Clear"
-msgstr "ชัดเจน"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:322
+#: crossword_puzzle/cword_webapp/templates/index.html:203
 msgid "Compound"
 msgstr "สารประกอบ"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:334
-msgid "Smart Skip"
-msgstr "Smart Skip"
+#: crossword_puzzle/cword_webapp/templates/index.html:216
+msgid "Reveal"
+msgstr "เปิดเผย"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:223
+#: crossword_puzzle/cword_webapp/templates/index.html:252
+msgid "Cell"
+msgstr "ห้องขัง"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:229
+#: crossword_puzzle/cword_webapp/templates/index.html:258
+#: crossword_puzzle/cword_webapp/templates/index.html:281
+msgid "Word"
+msgstr "คำ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:235
+#: crossword_puzzle/cword_webapp/templates/index.html:264
+#: crossword_puzzle/cword_webapp/templates/index.html:287
+msgid "Grid"
+msgstr "กริด"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:245
+msgid "Check"
+msgstr "ตรวจสอบ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:274
+msgid "Clear"
+msgstr "ชัดเจน"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:293
+msgid "Unrevealed"
+msgstr "ไม่เปิดเผย"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:306
+msgid "Auto-skip"
+msgstr "การตัดอัตโนมัติ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:315
+msgid "Auto-word"
+msgstr "คำอัตโนมัติ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:324
+msgid "Auto-check"
+msgstr "ตรวจสอบอัตโนมัติ"
+
+#: crossword_puzzle/cword_webapp/templates/index.html:333
+msgid "Zoom"
+msgstr "ซูม"
 
 #: crossword_puzzle/cword_webapp/templates/index.html:345
-msgid "Click To Zoom"
-msgstr "คลิกเพื่อซูม"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:357
 msgid "You are viewing"
 msgstr "คุณกำลังดู"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:358
+#: crossword_puzzle/cword_webapp/templates/index.html:345
 msgid "from"
 msgstr "จาก"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:362
+#: crossword_puzzle/cword_webapp/templates/index.html:350
 msgid "word(s) could not be inserted, sorry."
 msgstr "ไม่สามารถแทรกคำได้ขออภัย"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:365
+#: crossword_puzzle/cword_webapp/templates/index.html:353
 msgid "Word count (adjusted)"
 msgstr "จำนวนคำ (ปรับ)"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:369
+#: crossword_puzzle/cword_webapp/templates/index.html:356
 msgid "Word count"
 msgstr "การนับจำนวนคำ"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:376
+#: crossword_puzzle/cword_webapp/templates/index.html:362
 msgid "Continue"
 msgstr "ดำเนินการต่อ"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:382
+#: crossword_puzzle/cword_webapp/templates/index.html:368
 msgid "You completed the crossword!"
 msgstr "คุณทำไขว้เสร็จแล้ว!"
 
