@@ -1,12 +1,8 @@
 from math import ceil, sqrt
 from random import choice, sample
-from typing import Union
+from typing import Dict, List, Tuple, Union
 
-from crossword_puzzle.constants import (
-    CrosswordDirection,
-    CrosswordStyle,
-    DimensionsCalculation,
-)
+from crossword_puzzle.constants import CrosswordDirection, CrosswordStyle, DimensionsCalculation
 from crossword_puzzle.custom_types import Placement
 from crossword_puzzle.definitions_parser import DefinitionsParser
 from crossword_puzzle.errors import PrintingCrosswordObjectBeforeGeneration
@@ -42,13 +38,12 @@ class Crossword:
     def __init__(
         self,
         name: str,
-        definitions: dict[str, str],
+        definitions: Dict[str, str],
         word_count: int,
         retry: bool = False,
     ) -> None:
-        self.retry = (
-            retry  # Flag to reattempt insertions when generating through
-        )          # ``utils.find_best_crossword``.
+        self.retry = retry  # Flag to reattempt insertions when generating through  
+                            # ``utils.find_best_crossword``.
 
         if self.retry:
             self.definitions = self._randomise_definitions(definitions)
@@ -63,7 +58,7 @@ class Crossword:
         )
         self.word_count = word_count  # Amount of words to be inserted
         self.generated: bool = False  # Flag to prevent duplicate generation
-        self.dimensions: int = self._get_dimensions()  # Side length of square grid
+        self.dimensions: int = (self._get_dimensions())  # Side length of square grid
         self.intersections = []  # Store intersection word indices
         self.data = {}  # Interpreted by ``main.py`` as words are inserted.
         # Example:
@@ -87,22 +82,24 @@ class Crossword:
             + "\n".join(" ".join(cell for cell in row) for row in self.grid)
         )
 
-    def generate(self) -> bool | None:
+    def generate(self) -> Union[bool, None]:
         """Create a two-dimensional array (filled with ``CrosswordStyle.EMPTY``
         characters).
         """
         if not self.generated:
-            self.grid: list[list[str]] = self._init_grid()
+            self.grid: List[List[str]] = self._init_grid()
             self._populate_grid(
-                list(self.definitions.keys()) # Keys of definitions are the words
-            ) 
+                list(
+                    self.definitions.keys()
+                )  # Keys of definitions are the words
+            )
             self.generated: bool = True
         else:
             return False
 
     def _randomise_definitions(
-        self, definitions: dict[str, str]
-    ) -> dict[str, str]:
+        self, definitions: Dict[str, str]
+    ) -> Dict[str, str]:
         """Randomises the existing definitions when attempting reinsertion,
         which prevents ``find_best_crossword`` from favouring certain word
         groups with intrinsically higher intersections.
@@ -132,7 +129,7 @@ class Crossword:
 
         return dimensions
 
-    def _init_grid(self) -> list[list[str]]:
+    def _init_grid(self) -> List[List[str]]:
         """Make a two-dimensional array of ``CrosswordStyle.EMPTY`` characters."""
         return [
             [CrosswordStyle.EMPTY for column in range(self.dimensions)]
@@ -187,11 +184,11 @@ class Crossword:
         direction: Union[CrosswordDirection.ACROSS, CrosswordDirection.DOWN],
         row: int,
         column: int,
-    ) -> tuple[None] | tuple[int]:
+    ) -> Union[Tuple[None], Tuple[int]]:
         """Find the row and column of all points of intersection that ``word``
         has with ``self.grid``.
         """
-        intersections = []  # Elements are stored in tuple[row, column] form
+        intersections = []  # Elements are stored in Tuple[row, column] form
 
         if direction == CrosswordDirection.ACROSS:
             for i, letter in enumerate(word):
@@ -224,7 +221,7 @@ class Crossword:
         """
         if direction == CrosswordDirection.ACROSS:
             # Case 1
-            if column + len(word) > self.dimensions:  
+            if column + len(word) > self.dimensions:
                 return False
 
             # Case 2
@@ -288,8 +285,8 @@ class Crossword:
         return True
 
     def _prune_unreadable_placements(
-        self, placements: list[Placement]
-    ) -> list[Placement]:
+        self, placements: List[Placement]
+    ) -> List[Placement]:
         """Remove all placements that will result in the word being directly
         adjacent to another word,
         e.x.          or:
@@ -374,12 +371,12 @@ class Crossword:
                             break
 
             if not readability_flag:  # No flags were made, so this placement
-                # can be used
+                                      # can be used
                 pruned_placements.append(placement)
 
         return pruned_placements
 
-    def _get_placements(self, word: str) -> list[Placement]:
+    def _get_placements(self, word: str) -> List[Placement]:
         """Find all placements for a given word (across and down), if valid."""
         placements = []
         for direction in [
@@ -415,7 +412,7 @@ class Crossword:
         }
 
     def _populate_grid(
-        self, words: list[str], insert_backlog: bool = False
+        self, words: List[str], insert_backlog: bool = False
     ) -> None:
         """Attempt to all the words in the grid, recursing once to retry the
         placement of words with no intersections.
@@ -424,7 +421,7 @@ class Crossword:
             not insert_backlog
         ):  # First time execution, attempt to insert all words
             self.backlog_has_been_inserted: bool = False
-            self.uninserted_words_backlog: list[str] = []
+            self.uninserted_words_backlog: List[str] = []
             self.inserts: int = 0
             self.fails: int = 0
             self.total_intersections: int = 0
@@ -445,9 +442,11 @@ class Crossword:
 
         for word in words:  # Insert remaining words after the middle placement
                             # is complete
-            placements: list[Placement] = self._get_placements(word)
+            placements: List[Placement] = self._get_placements(word)
             placements = self._prune_unreadable_placements(placements)
-            if not placements:  # Could not find any placements, go to next word
+            if (
+                not placements
+            ):  # Could not find any placements, go to next word
                 self.fails += 1
                 continue
 
@@ -456,8 +455,10 @@ class Crossword:
                 placements, key=lambda k: k["intersections"], reverse=True
             )
             if not sorted_placements[0]["intersections"]:  # No intersections
-                if not insert_backlog: # First time execution; append words here
-                                       # for eventual reinsertion
+                if (
+                    not insert_backlog
+                ):  # First time execution; append words here
+                    # for eventual reinsertion
                     self.uninserted_words_backlog.append(word)
                     continue
                 else:  # Reinsertion didn't help much, just pick a random placement

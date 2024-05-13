@@ -1,5 +1,6 @@
 from os import path
 from pathlib import Path
+from typing import Dict, List, Tuple, Union
 
 from regex import compile as compile_
 
@@ -33,7 +34,7 @@ class Colour:
         GREEN_BUTTON = "#20D44A"
         GREEN_BUTTON_HOVER = "#259c41"
         BUTTON_TEXT_COLOUR = "#DDE3ED"
-        DIFFICULTIES: list[str] = ["#089E19", "#FCBA03", "#E01C07", "#6408A6"]
+        DIFFICULTIES: List[str] = ["#089E19", "#FCBA03", "#E01C07", "#6408A6"]
 
     class Light:
         MAIN = "#C7D0D4"
@@ -61,13 +62,13 @@ class CrosswordDifficulties:
     ``info.json`` file, they are specified as indexes and not strings.
     """
 
-    DIFFICULTIES: list[str] = ["Easy", "Medium", "Hard", "Extreme"]
+    DIFFICULTIES: List[str] = ["Easy", "Medium", "Hard", "Extreme"]
 
 
 class LangReplacements:
     """See information about this class in ``_locale_utils.py``."""
 
-    REPLACEMENTS: dict[str, str | None] = {
+    REPLACEMENTS: Dict[str, Union[str, None]] = {
         "zh-cn": "zh",
         "zh-tw": None,
         "ht": None,
@@ -112,7 +113,7 @@ class CrosswordRestrictions:
 
 
 class CrosswordQuality:
-    QUALITY_MAP: dict[int, str] = {
+    QUALITY_MAP: Dict[int, str] = {
         "terrible": 0.05,
         "poor": 0.25,
         "average": 0.5,
@@ -128,10 +129,14 @@ class DimensionsCalculation:
 
     WHITESPACE_SCALAR: float = 1.9
     DIMENSIONS_CONSTANT: int = 1
-    
+
 
 class BaseEngStrings:
-    BASE_ENG_APPEARANCES: list[str] = ["light", "dark", "system"]
-    BASE_ENG_CWORD_QUALITIES: list[str] = [
-        "terrible", "poor", "average", "great", "perfect"
+    BASE_ENG_APPEARANCES: List[str] = ["light", "dark", "system"]
+    BASE_ENG_CWORD_QUALITIES: List[str] = [
+        "terrible",
+        "poor",
+        "average",
+        "great",
+        "perfect",
     ]

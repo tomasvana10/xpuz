@@ -10,6 +10,7 @@ from json import dumps, load
 from os import listdir, path, scandir
 from platform import system
 from tkinter import Event, IntVar, messagebox
+from typing import Dict, List, Tuple, Union
 from webbrowser import open_new_tab
 
 from babel import Locale, numbers
@@ -36,8 +37,8 @@ from crossword_puzzle.constants import (
     Colour,
     CrosswordDifficulties,
     CrosswordDirection,
-    CrosswordStyle,
     CrosswordQuality,
+    CrosswordStyle,
     Paths,
 )
 from crossword_puzzle.cword_gen import Crossword
@@ -46,11 +47,11 @@ from crossword_puzzle.utils import (
     _get_colour_palette_for_webapp,
     _get_language_options,
     _load_cword_info,
+    _make_category_info_json,
+    _make_cword_info_json,
     _update_config,
     find_best_crossword,
     load_definitions,
-    _make_cword_info_json,
-    _make_category_info_json
 )
 
 
@@ -62,7 +63,7 @@ class Home(CTk):
 
     def __init__(
         self,
-        lang_info: list[dict[str, str] | list[str]],
+        lang_info: List[Union[Dict[str, str], List[str]]],
         locale: Locale,
         cfg: ConfigParser,
     ) -> None:
@@ -200,7 +201,7 @@ class Home(CTk):
             )
         )
 
-        self.appearances: list[str] = [_("light"), _("dark"), _("system")]
+        self.appearances: List[str] = [_("light"), _("dark"), _("system")]
         self.l_appearance_opts = CTkLabel(
             self.settings_container,
             text=_("Appearance"),
@@ -214,16 +215,20 @@ class Home(CTk):
             font=self.TEXT_FONT,
         )
         self.opts_appearance.set(_(self.cfg.get("m", "appearance")))
-        
+
         self.l_appearance_opts = CTkLabel(
             self.settings_container,
             text=_("Appearance"),
             bg_color="transparent",
             font=self.BOLD_TEXT_FONT,
         )
-        
-        self.cword_qualities: list[str] = [
-            _("terrible"), _("poor"), _("average"), _("great"), _("perfect")
+
+        self.cword_qualities: List[str] = [
+            _("terrible"),
+            _("poor"),
+            _("average"),
+            _("great"),
+            _("perfect"),
         ]
         self.l_cword_quality = CTkLabel(
             self.settings_container,
@@ -231,7 +236,7 @@ class Home(CTk):
             bg_color="transparent",
             font=self.BOLD_TEXT_FONT,
         )
-        self.opts_cword_quality= CTkOptionMenu(
+        self.opts_cword_quality = CTkOptionMenu(
             self.settings_container,
             values=self.cword_qualities,
             command=self.change_crossword_quality,
@@ -340,7 +345,7 @@ class Home(CTk):
         self.generate_screen()
 
     def change_crossword_quality(self, quality: str) -> None:
-        """Ensures the user is not selecting the same crossword quality, then 
+        """Ensures the user is not selecting the same crossword quality, then
         updates the crossword quality in ``config.ini``.
         """
         eng_quality_name: str = BaseEngStrings.BASE_ENG_CWORD_QUALITIES[
@@ -532,7 +537,7 @@ class CrosswordBrowser(CTkFrame):
     def _on_word_count_rb_selection(self, button_name: str) -> None:
         """Configure custom word count optionmenu based on radiobutton selection."""
         if button_name == "max":  # User wants max word count, don't let them
-            # select custom word count.
+                                  # select custom word count.
             self.opts_custom_word_count.set(_("Select word count"))
             self.opts_custom_word_count.configure(state="disabled")
         else:  # User wants custom word count, don't let them select max word count.
@@ -615,7 +620,7 @@ class CrosswordBrowser(CTkFrame):
         try:
             # Load definitions, instantiate a crossword, then find the best
             # crossword using that instance
-            definitions: dict[str, str] = load_definitions(
+            definitions: Dict[str, str] = load_definitions(
                 self.cword_category,
                 self.cword_name,
                 self.master.locale.language,
@@ -660,7 +665,7 @@ class CrosswordBrowser(CTkFrame):
         other interpreted data.
         """
         self._interpret_cword_data(crossword)
-        colour_palette: dict[str, str] = _get_colour_palette_for_webapp(
+        colour_palette: Dict[str, str] = _get_colour_palette_for_webapp(
             get_appearance_mode()
         )
         _create_app_process(
@@ -699,22 +704,23 @@ class CrosswordBrowser(CTkFrame):
         """Gather data to help with the templated creation of the crossword
         web application.
         """
-        self.starting_word_positions: list[tuple[int]] = list(
+        self.starting_word_positions: List[Tuple[int]] = list(
             crossword.data.keys()
         )
         # e.x. [(1, 2), (4, 6)]
 
-        self.definitions_a: list[dict[int, tuple[str]]] = []
+        self.definitions_a: List[Dict[int, Tuple[str]]] = []
         self.definitions_d = []
         # e.x. [{1: ("hello", "a standard english greeting")}]"""
 
-        self.starting_word_matrix: list[list[int]] = deepcopy(crossword.grid)
+        self.starting_word_matrix: List[List[int]] = deepcopy(crossword.grid)
         # e.x.: [[1, 0, 0, 0], [[0, 0, 2, 0]] ... and so on; Each incremented
         # number is the start of a new word.
 
         num_label: int = (
-            1  # Incremented whenever the start of a word is found;
-        )      # used to create ``starting_word_matrix``.
+            1  # Incremented whenever the start of a word is found;  
+               # used to create ``starting_word_matrix``.
+        )
         for row in range(crossword.dimensions):
             for column in range(crossword.dimensions):
                 if (row, column) in self.starting_word_positions:
@@ -756,7 +762,7 @@ class CrosswordBrowser(CTkFrame):
         """Create a variable amount of crossword category blocks based on how
         many categories are present in the base cwords directory.
         """
-        self.category_block_objects: list[CrosswordCategoryBlock] = []
+        self.category_block_objects: List[CrosswordCategoryBlock] = []
         i: int = 0
         for category in [
             f for f in scandir(Paths.BASE_CWORDS_PATH) if f.is_dir()
@@ -920,10 +926,10 @@ class CrosswordCategoryBlock(CTkFrame):
         ) as file:
             try:
                 return load(file)["bottom_tag_colour"]
-            except: 
+            except:
                 return "#abcdef"
 
-    def _sort_category_content(self, arr: list[str]) -> list[str]:
+    def _sort_category_content(self, arr: List[str]) -> List[str]:
         """Sort the cword content of a category by the cword suffixes (-easy
         to -extreme), if possible.
         """
@@ -934,13 +940,11 @@ class CrosswordCategoryBlock(CTkFrame):
                     i.name.split("-")[-1].capitalize()
                 ),
             )
-        except Exception: # Could not find the "-" in the crossword name, so
-                          # don't sort this category
+        except Exception:  # Could not find the "-" in the crossword name, so
+                           # don't sort this category
             return arr
 
-    def _configure_cword_blocks_state(
-        self, state_: str
-    ) -> None:
+    def _configure_cword_blocks_state(self, state_: str) -> None:
         """Toggle the crossword info block radiobutton (for selection) to either
         "disabled" or "normal".
         """
@@ -960,7 +964,7 @@ class CrosswordCategoryBlock(CTkFrame):
                                                      # category) back in
 
         # Create the blocks for the crosswords in the selected category
-        self.cword_block_objects: list[CrosswordInfoBlock] = []
+        self.cword_block_objects: List[CrosswordInfoBlock] = []
         # Gather all crossword directories with an info.json file.
         crosswords = [
             f
@@ -969,7 +973,7 @@ class CrosswordCategoryBlock(CTkFrame):
             and "definitions.json" in listdir(f.path)
             and path.getsize(path.join(f.path, "definitions.json")) > 0
         ]
-        
+
         i: int = 1
         for cword in self._sort_category_content(crosswords):
             # Make the ``info.json`` file if it doesn't exist already
@@ -1199,8 +1203,8 @@ class AppHelper:
             return messagebox.showerror(
                 _("Error"), _("This appearance is already selected.")
             )
-        
-        if same_quality: 
+
+        if same_quality:
             return messagebox.showerror(
                 _("Error"), _("This quality is already selected.")
             )

@@ -3,6 +3,7 @@
 import json
 import os
 import shutil
+from typing import Dict, List, Union
 
 import numpy as np
 import polib
@@ -54,15 +55,15 @@ class LocaleTranslatorUtils:
             messages.save(newline=None)
 
     @staticmethod
-    def _get_locales_and_lang_codes() -> list[list[str]]:
+    def _get_locales_and_lang_codes() -> List[List[str]]:
         """Get all the locale directory names, as well as the google translate
         language codes, which are mostly the same.
         """
-        locales: list[str] = sorted(
+        locales: List[str] = sorted(
             [f.name for f in os.scandir(Paths.LOCALES_PATH) if f.is_dir()]
         )
 
-        lang_codes: list[str] = [
+        lang_codes: List[str] = [
             (
                 LangReplacements.REVERSE[locale]
                 if locale in LangReplacements.REPLACEMENTS.values()
@@ -116,13 +117,13 @@ class CrosswordTranslatorUtils:
                         )
 
                 for cword in cwords:  # Make and translate (if required) all
-                                      # crosswords in the current category
+                    # crosswords in the current category
                     cword_path = os.path.join(category_path, cword)
                     if not os.path.exists(cword_path):
                         os.mkdir(cword_path)
 
                     if os.listdir(cword_path):
-                        continue  # Probably made translations already 
+                        continue  # Probably made translations already
 
                     definitions, info = (
                         CrosswordTranslatorUtils._get_cword_data(
@@ -130,7 +131,7 @@ class CrosswordTranslatorUtils:
                         )
                     )
                     if locale == "en":  # Just write the non-translated
-                                        # definitions and info
+                        # definitions and info
                         info["translated_name"] = info["name"]
                         CrosswordTranslatorUtils._write_translated_cword_data(
                             cword_path, definitions, info
@@ -155,8 +156,8 @@ class CrosswordTranslatorUtils:
     @staticmethod
     def _format_and_translate_cword_data(
         language: str,
-        definitions: dict[str, str],
-        info: dict[str, str | int | None],
+        definitions: Dict[str, str],
+        info: Dict[str, Union[str, int, None]],
     ) -> CrosswordData:
         """Facilitates the efficient translation of a dictionary of definitions
         through bulk translation, ensuring that each translation made does not
@@ -201,8 +202,8 @@ class CrosswordTranslatorUtils:
 
     @staticmethod
     def _translate_parts(
-        definitions: list[np.array], language: str
-    ) -> list[dict]:
+        definitions: List[np.array], language: str
+    ) -> List[dict]:
         """Translate the parts of a split definitions array and return a new
         array of those translated parts.
         """
@@ -242,12 +243,12 @@ class CrosswordTranslatorUtils:
         return _reduce(length, parts)
 
     @staticmethod
-    def _get_base_cword_category_tree() -> dict[str, list[str]]:
-        category_tree: dict[str, list[str]] = dict()
+    def _get_base_cword_category_tree() -> Dict[str, List[str]]:
+        category_tree: Dict[str, List[str]] = dict()
         for category in [
             f for f in os.scandir(Paths.BASE_CWORDS_PATH) if f.is_dir()
         ]:
-            cwords: list[str] = list()
+            cwords: List[str] = list()
             for cword in [
                 f.name for f in os.scandir(category.path) if f.is_dir()
             ]:
@@ -273,7 +274,9 @@ class CrosswordTranslatorUtils:
 
     @staticmethod
     def _write_translated_cword_data(
-        path: str, definitions: dict[str, str], info: dict[str, str | int]
+        path: str,
+        definitions: Dict[str, str],
+        info: Dict[str, Union[str, int]],
     ) -> None:
         with open(
             os.path.join(path, "definitions.json"), "w"

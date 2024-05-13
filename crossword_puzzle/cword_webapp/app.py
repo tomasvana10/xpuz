@@ -33,7 +33,7 @@ def _server_process(*args, **kwargs) -> None:
     app.config["BABEL_TRANSLATION_DIRECTORIES"] = path.normpath(
         Paths.LOCALES_PATH
     )
-    babel: Babel = Babel(app) 
+    babel: Babel = Babel(app)
 
     cfg.read(Paths.CONFIG_PATH)
     try:

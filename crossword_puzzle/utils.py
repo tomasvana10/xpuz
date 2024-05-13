@@ -3,16 +3,15 @@
 from __future__ import annotations
 
 from configparser import ConfigParser
-from json import load, dump
+from json import dump, load
 from math import ceil
 from os import path, scandir
 from random import randint
+from typing import Dict, Union
 
 from babel import Locale
 
-from crossword_puzzle.constants import (
-    Colour, Paths, CrosswordDifficulties, CrosswordQuality
-)
+from crossword_puzzle.constants import Colour, CrosswordDifficulties, CrosswordQuality, Paths
 
 
 def _update_config(
@@ -31,12 +30,12 @@ def _get_language_options() -> None:
     """Gather a dictionary that maps each localised language name to its
     english acronym, and a list that contains all of the localised language
     names. This data is derived from ``Paths.LOCALES_PATH``."""
-    localised_lang_db: dict[str, str] = dict()  # Used to retrieve the language
-    # code for the selected language
-    # e.x. {"አማርኛ": "am",}
-    localised_langs: dict[str, str] = list()  # Used in the language selection
-    # optionmenu
-    # e.x. ["አማርኛ", "عربي"]
+    localised_lang_db: Dict[str, str] = dict()  # Used to retrieve the language
+                                                # code for the selected language
+                                                # e.x. {"አማርኛ": "am",}
+    localised_langs: Dict[str, str] = list()  # Used in the language selection
+                                              # optionmenu
+                                              # e.x. ["አማርኛ", "عربي"]
 
     i: int = 0
     for locale in sorted(
@@ -51,7 +50,7 @@ def _get_language_options() -> None:
 
 def _load_cword_info(
     category: str, name: str, language: str = "en"
-) -> dict[str, str | int]:
+) -> Dict[str, Union[str, int]]:
     """Load the ``info.json`` file for a crossword. Called by an instance
     of ``main.CrosswordInfoBlock``.
     """
@@ -64,7 +63,7 @@ def _load_cword_info(
         return load(file)
 
 
-def _get_colour_palette_for_webapp(appearance_mode: str) -> dict[str, str]:
+def _get_colour_palette_for_webapp(appearance_mode: str) -> Dict[str, str]:
     """Create a dictionary based on ``constants.Colour``for the web app."""
     sub_class = Colour.Light if appearance_mode == "Light" else Colour.Dark
     return {
@@ -85,13 +84,12 @@ def find_best_crossword(crossword: Crossword) -> Crossword:
     name: str = crossword.name
     word_count: int = crossword.word_count
 
-    attempts_db: dict[str, int] = _load_attempts_db()
+    attempts_db: Dict[str, int] = _load_attempts_db()
     try:
-        max_attempts: int = attempts_db[
-            str(word_count)
-        ]  # Get amount of attempts based on word count
-        max_attempts *= CrosswordQuality.QUALITY_MAP[ # Scale max attempts based
-                                                      # on crossword quality
+        max_attempts: int = attempts_db[str(word_count)]  # Get amount of attempts
+                                                          # based on word count
+        max_attempts *= CrosswordQuality.QUALITY_MAP[  # Scale max attempts based
+            # on crossword quality
             cfg.get("misc", "cword_quality")
         ]
         max_attempts = int(ceil(max_attempts))
@@ -99,7 +97,7 @@ def find_best_crossword(crossword: Crossword) -> Crossword:
         max_attempts = 1
     attempts: int = 0  # Track current amount of attempts
 
-    reinsert_definitions: dict[str, str] = crossword.definitions
+    reinsert_definitions: Dict[str, str] = crossword.definitions
     crossword.generate()
     best_crossword = (
         crossword  # Assume the best crossword is the first crossword
@@ -138,7 +136,7 @@ def load_definitions(
     category: str,
     name: str,
     language: str = "en",
-) -> dict[str, str]:
+) -> Dict[str, str]:
     """Load a definitions json for a given crossword."""
     # Attempt to access the localised crossword
     path_ = path.join(
@@ -158,7 +156,7 @@ def load_definitions(
         return load(file)
 
 
-def _load_attempts_db() -> dict[str, int]:
+def _load_attempts_db() -> Dict[str, int]:
     """Load ``attempts_db.json``, which specifies how many generation attempts
     should be conducted for a crossword based on its word count. This is
     integral to the crossword optimisation process, as crossword generation
@@ -175,8 +173,9 @@ def _make_cword_info_json(path_, cword_name, category) -> None:
     really want to.
     """
 
-    with open(path.join(path_, "info.json"), "w") as info_obj, \
-         open(path.join(path_, "definitions.json"), "r") as def_obj:
+    with open(path.join(path_, "info.json"), "w") as info_obj, open(
+        path.join(path_, "definitions.json"), "r"
+    ) as def_obj:
         total_definitions: int = len(load(def_obj))
 
         # Infer the difficulty and crossword name if possible
@@ -208,6 +207,6 @@ def _make_category_info_json(path_) -> None:
     """Write a new info.json to a category since it does not exist in the a
     category's directory.
     """
-    hex_ = "#%06X" % randint(0, 0xFFFFFF)  
+    hex_ = "#%06X" % randint(0, 0xFFFFFF)
     with open(path_, "w") as f:
         return dump({"bottom_tag_colour": hex_}, f, indent=4)
