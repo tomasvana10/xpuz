@@ -14,8 +14,7 @@ generate dynamic content, as each crossword created by this program is unique
     <script src="{{ url_for('static', filename='interaction.js') }}"></script>
     <script
       src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
-      type="text/javascript"
-    ></script>
+      type="text/javascript"></script>
     <script src="{{ url_for('static', filename='jquery.zoomooz.min.js') }}"></script>
     <link
       rel="stylesheet"
@@ -102,14 +101,19 @@ generate dynamic content, as each crossword created by this program is unique
     data-intersections="{{ intersections }}"
     data-js_err_msgs="{{ js_err_msgs }}"
     data-word_count="{{ starting_word_positions|length }}">
+    <audio
+      id="jazz" 
+      src="{{ url_for('static', filename='jazz.wav') }}">
+    </audio>
+    
     <div class="container" id="blur">
       <div class="left_side">
         <div class="wrapper_grid zoomViewport">
           <div class="wrapper_grid zoomContainer">
             <div class="grid">
-              {% for row in range(dimensions) %} {% for column in
-              range(dimensions) %} {% if grid[row][column] != empty %} {# There is
-              a word in this cell #}
+              {% for row in range(dimensions) %} 
+              {% for column in range(dimensions) %} 
+              {% if grid[row][column] != empty %} {# There is a word in this cell #}
               <div
                 class="non_empty_cell"
                 data-targetsize="0.2"
@@ -117,8 +121,7 @@ generate dynamic content, as each crossword created by this program is unique
                 data-row="{{ row }}"
                 data-column="{{ column }}"
                 data-value="{{ grid[row][column] }}">
-                {% if (row, column) in starting_word_positions %} {# Start of a
-                word #}
+                {% if (row, column) in starting_word_positions %} {# Start of a word #}
                 <div
                   class="num_label"
                   data-num_label="{{ starting_word_matrix[row][column] }}">
@@ -133,7 +136,9 @@ generate dynamic content, as each crossword created by this program is unique
                 data-row="{{ row }}"
                 data-column="{{ column }}"
                 data-value="None"></div>
-              {% endif %} {% endfor %} {% endfor %}
+              {% endif %} 
+              {% endfor %} 
+              {% endfor %}
             </div>
           </div>
         </div>
@@ -141,15 +146,15 @@ generate dynamic content, as each crossword created by this program is unique
 
       <div class="right_side">
         <div class="definitions">
-          {% set ns = namespace(tab_index_counter = 15) %}
+          {% set ns = namespace(tab_index_counter = 18) %}
           <div class="wrapper_def zoomViewport" id="no_scroll">
             <div class="wrapper_def zoomContainer" id="return_def_zoom">
               <div class="definitions_a">
                 {# Column one for across definitions #}
                 <ul>
                   <h3 class="def_heading">{{ _('Across') }}</h3>
-                  {% for dict_ in definitions_a %} {% for num_label, definition in
-                  dict_.items()%}
+                  {% for dict_ in definitions_a %} 
+                  {% for num_label, definition in dict_.items() %}
                   <li
                     class="def zoomTarget"
                     data-targetsize="0.725"
@@ -161,8 +166,9 @@ generate dynamic content, as each crossword created by this program is unique
                     data-word="{{ definition[0].upper() }}"
                     ><b>{{ num_label }}</b> {{ definition[1] }}</li
                   >
-                  {% set ns.tab_index_counter = ns.tab_index_counter + 1 %} {%
-                  endfor %} {% endfor %}
+                  {% set ns.tab_index_counter = ns.tab_index_counter + 1 %} 
+                  {% endfor %} 
+                  {% endfor %}
                 </ul>
               </div>
 
@@ -170,8 +176,8 @@ generate dynamic content, as each crossword created by this program is unique
                 {# Column two for downward definitions #}
                 <ul>
                   <h3 class="def_heading">{{ _('Down') }}</h3>
-                  {% for dict_ in definitions_d %} {% for num_label, definition in
-                  dict_.items() %}
+                  {% for dict_ in definitions_d %} 
+                  {% for num_label, definition in dict_.items() %}
                   <li
                     class="def zoomTarget"
                     data-targetsize="0.725"
@@ -183,8 +189,9 @@ generate dynamic content, as each crossword created by this program is unique
                     data-word="{{ definition[0].upper() }}"
                     ><b>{{ num_label }}</b> {{ definition[1] }}</li
                   >
-                  {% set ns.tab_index_counter = ns.tab_index_counter + 1 %} {%
-                  endfor %} {% endfor %}
+                  {% set ns.tab_index_counter = ns.tab_index_counter + 1 %} 
+                  {% endfor %} 
+                  {% endfor %}
                 </ul>
               </div>
             </div>
@@ -193,7 +200,8 @@ generate dynamic content, as each crossword created by this program is unique
           {# Compound button #}
           <div class="compound">
             <button tabindex="1" id="compound_button"
-              >{{ _('Compound') }} <span class="keybind_span">[⇧+1]</span></button
+              >{{ _('Compound') }}
+              <span class="keybind_span">[⇧+1]</span></button
             >
           </div>
 
@@ -201,7 +209,7 @@ generate dynamic content, as each crossword created by this program is unique
           <div class="top_buttons_container">
             {# Reveal buttons #}
             <button
-              tabindex="4"
+              tabindex="6"
               class="special_button"
               id="reveal_button"
               onclick="interaction.onDropdownClick('reveal_dropdown')">
@@ -210,19 +218,19 @@ generate dynamic content, as each crossword created by this program is unique
             <div class="dropdown" id="reveal_dropdown">
               <button
                 class="dropdown_button"
-                tabindex="5"
+                tabindex="7"
                 onclick="interaction.doSpecialButtonAction('cell', 'reveal')">
                 {{ _('Cell') }}
               </button>
               <button
                 class="dropdown_button"
-                tabindex="6"
+                tabindex="8"
                 onclick="interaction.doSpecialButtonAction('word', 'reveal')">
                 {{ _('Word') }}<span class="keybind_span"> [⇧+↵]</span>
               </button>
               <button
                 class="dropdown_button"
-                tabindex="7"
+                tabindex="9"
                 onclick="interaction.doSpecialButtonAction('grid', 'reveal')">
                 {{ _('Grid') }}
               </button>
@@ -230,7 +238,7 @@ generate dynamic content, as each crossword created by this program is unique
 
             {# Check buttons #}
             <button
-              tabindex="8"
+              tabindex="10"
               class="special_button"
               id="check_button"
               onclick="interaction.onDropdownClick('check_dropdown')">
@@ -239,19 +247,19 @@ generate dynamic content, as each crossword created by this program is unique
             <div class="dropdown" id="check_dropdown">
               <button
                 class="dropdown_button"
-                tabindex="9"
+                tabindex="11"
                 onclick="interaction.doSpecialButtonAction('cell', 'check')">
                 {{ _('Cell') }}
               </button>
               <button
                 class="dropdown_button"
-                tabindex="10"
+                tabindex="12"
                 onclick="interaction.doSpecialButtonAction('word', 'check')">
                 {{ _('Word') }}<span class="keybind_span"> [↵]</span>
               </button>
               <button
                 class="dropdown_button"
-                tabindex="11"
+                tabindex="13"
                 onclick="interaction.doSpecialButtonAction('grid', 'check')">
                 {{ _('Grid') }}
               </button>
@@ -259,7 +267,7 @@ generate dynamic content, as each crossword created by this program is unique
 
             {# Clear buttons #}
             <button
-              tabindex="12"
+              tabindex="14"
               class="special_button"
               id="clear_button"
               onclick="interaction.onDropdownClick('clear_dropdown')">
@@ -268,15 +276,21 @@ generate dynamic content, as each crossword created by this program is unique
             <div class="dropdown" id="clear_dropdown">
               <button
                 class="dropdown_button"
-                tabindex="13"
+                tabindex="15"
                 onclick="interaction.doSpecialButtonAction('word', 'clear')">
                 {{ _('Word') }}<span class="keybind_span"> [⇧+⌫]</span>
               </button>
               <button
                 class="dropdown_button"
-                tabindex="14"
+                tabindex="16"
                 onclick="interaction.doSpecialButtonAction('grid', 'clear')">
                 {{ _('Grid') }}
+              </button>
+              <button
+                class="dropdown_button"
+                tabindex="17"
+                onclick="interaction.doSpecialButtonAction('grid', 'clear', true, true)">
+                {{ _('Unrevealed') }}
               </button>
             </div>
           </div>
@@ -289,16 +303,34 @@ generate dynamic content, as each crossword created by this program is unique
                 id="ts"
                 type="checkbox" />
               <div class="toggle_switch"></div>
-              <span class="toggle_label">{{ _('Smart Skip') }}</span>
+              <span class="toggle_label">{{ _('Auto-skip') }}</span>
             </label>
 
             <label tabindex="3" class="toggle">
+              <input
+                class="toggle_checkbox toggle_word"
+                id="tw"
+                type="checkbox" />
+              <div class="toggle_switch"></div>
+              <span class="toggle_label">{{ _('Auto-word') }}</span>
+            </label>
+
+            <label tabindex="4" class="toggle">
+              <input
+                class="toggle_checkbox toggle_check"
+                id="tc"
+                type="checkbox" />
+              <div class="toggle_switch"></div>
+              <span class="toggle_label">{{ _('Auto-check') }}</span>
+            </label>
+
+            <label tabindex="5" class="toggle">
               <input
                 class="toggle_checkbox toggle_zoom"
                 id="tz"
                 type="checkbox" />
               <div class="toggle_switch"></div>
-              <span class="toggle_label">{{ _('Click To Zoom') }}</span>
+              <span class="toggle_label">{{ _('Zoom') }}</span>
             </label>
           </div>
         </div>

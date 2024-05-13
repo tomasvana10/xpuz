@@ -353,8 +353,10 @@ are from https://codepen.io/morgoe/pen/VvzWQg ----- */
 .toggles {
     position: absolute;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     top: 8.225vmin;
+    flex-wrap: wrap;
+    gap: 0.5em
 }
 
 .toggle:last-child {
@@ -364,7 +366,7 @@ are from https://codepen.io/morgoe/pen/VvzWQg ----- */
 .toggle {
     display: flex;
     cursor: pointer;
-    margin-right: 4vmin;
+    margin-right: 1em;
     white-space: nowrap;
 }
 

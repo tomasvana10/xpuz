@@ -8,7 +8,16 @@ class Interaction {
   static spacebarKeys = ["Spacebar", " "];
   static backspaceKeys = ["Backspace", "Delete"];
   static compoundInputPlaceholders = [
-    "ㅇ", "+", "ㅏ", "=", "아", "क​", "+", "इ", "=", "कै",
+    "ㅇ",
+    "+",
+    "ㅏ",
+    "=",
+    "아",
+    "क​",
+    "+",
+    "इ",
+    "=",
+    "कै",
   ];
   static onlyLangRegex = /\p{L}/u; // Ensure user only types language characters
 
@@ -49,6 +58,13 @@ class Interaction {
     );
     this.errMsgs = eval(this.body.getAttribute("data-js_err_msgs"));
     this.wordCount = this.body.getAttribute("data-word_count");
+
+    this.skipToggle = document.getElementById("ts");
+    this.zoomToggle = document.getElementById("tz");
+    this.wordToggle = document.getElementById("tw");
+    this.checkToggle = document.getElementById("tc");
+    this.jazz = document.getElementById("jazz");
+    this.jazz.volume = 0.125;
 
     this.setListeners();
     this.displayOnloadPopup();
@@ -100,7 +116,9 @@ class Interaction {
     a keybind. If this is the case, this function will process it and prevent
     ``this.handleStandardInput`` from running. 
     */
-    if (this.onloadPopupToggled || this.completionPopupToggled) { return; }
+    if (this.onloadPopupToggled || this.completionPopupToggled) {
+      return;
+    }
 
     let inputValue = event.key;
 
@@ -207,32 +225,36 @@ class Interaction {
           this.wasEmpty = true; // Ensures skipCellCoords functions properly
         }
         Interaction.setValue(currentCell, inputValue);
+        if (this.checkToggle.checked) {
+          currentCell.classList.remove("wrong");
+          this.doGridOperation(currentCell, "check");
+        }
       }
       // If the cell is wrong/red in colour, it must be reverted as the user
       // has just typed in it
-      currentCell.classList.remove("wrong");
+      if (!this.checkToggle.checked) {
+        currentCell.classList.remove("wrong");
+      }
     } else if (mode === "del") {
       // The focused cell has content, just delete it and do nothing
       if (
         !Interaction.isEmpty(currentCell) &&
         !currentCell.classList.contains("lock_in")
-      )
+      ) {
+        currentCell.classList.remove("wrong");
         return Interaction.setValue(currentCell, "");
+      }
 
       // Perform standard deletion, whereby the content of the cell to the
       // right/top of the current cell is deleted, then the focus is shifted
-      // to that cell
-      if (
-        !Interaction.getCellElement(
-          this.shiftCellCoords(this.cellCoords, this.direction, mode)
-        ).classList.contains("lock_in")
-      )
-        Interaction.setValue(
-          Interaction.getCellElement(
-            this.shiftCellCoords(this.cellCoords, this.direction, mode)
-          ),
-          ""
-        );
+      // to that cell (``priorCell``)
+      let priorCell = Interaction.getCellElement(
+        this.shiftCellCoords(this.cellCoords, this.direction, mode)
+      );
+      if (!priorCell.classList.contains("lock_in")) {
+        Interaction.setValue(priorCell, "");
+        priorCell.classList.remove("wrong");
+      }
     }
 
     // Detect possible crossword completion after the grid has been modified
@@ -245,7 +267,7 @@ class Interaction {
 
     this.changeCellFocus(false);
     // User has the "smart skip" button toggled, so perform a cell skip
-    if (mode === "enter" && document.getElementById("ts").checked) {
+    if (mode === "enter" && this.skipToggle.checked) {
       this.cellCoords = this.skipCellCoords(
         this.cellCoords,
         this.direction,
@@ -260,6 +282,7 @@ class Interaction {
       );
     }
 
+    this.autoShiftWordIfPossible(mode);
     this.autoReZoomIfPossible(currentCell);
 
     // Refocus the entire word, then set the focus of the cell that has just
@@ -269,16 +292,37 @@ class Interaction {
     this.changeCellFocus(true);
   }
 
-  shiftWordSelection(event, arrow) {
+  autoShiftWordIfPossible(mode) {
+    /* Automatically shift to the next word if the user has completed their
+    current word (and they have the auto-word button toggled). 
+    */
+    if (this.wordToggle.checked) {
+      let newCellCoords = this.shiftCellCoords(
+        this.cellCoords,
+        this.direction,
+        mode
+      );
+
+      if (
+        newCellCoords === this.cellCoords &&
+        !Interaction.isEmpty(Interaction.getCellElement(newCellCoords))
+      ) {
+        this.shiftWordSelection(null, "ArrowDown");
+      }
+    }
+  }
+
+  shiftWordSelection(event = null, arrow) {
     /* Cycle to the next word based on the sequence in which the words are placed
     on the grid. 
     */
-    event.preventDefault();
+    event?.preventDefault();
     let offset = arrow === Interaction.arrowKeys[2] ? -1 : 1;
     let def = this.getDefinitionsListItemFromWord();
     let newWordNum = Number(def.getAttribute("data-num")) + offset;
     let newDef = document.querySelector(`[data-num="${newWordNum}"`);
-    if (!newDef) { // Go to either the start or end
+    if (!newDef) {
+      // Go to either the start or end
       let num = offset === 1 ? "1" : this.wordCount;
       newDef = document.querySelector(`[data-num="${num}"]`);
     }
@@ -311,13 +355,19 @@ class Interaction {
       let oldCellCoords = newCellCoords;
       newCellCoords = this.shiftCellCoords(newCellCoords, direction, "enter");
       // As soon as the old cell coords are equal to the new ones, we can
-      // no longer skip, so exit the while loop
+      // no longer skip, so exit the while loop (or else everything will die)
       if (oldCellCoords.isEqualTo(newCellCoords)) {
         break;
       }
     }
 
-    return newCellCoords;
+    // Account for a case like this:  [ <Focus> ] [ H ] [ I ]
+    // Whereby we prevent [ I ] from being focused to when skipping
+    if (!Interaction.isEmpty(Interaction.getCellElement(newCellCoords))) {
+      return coords;
+    } else {
+      return newCellCoords;
+    }
   }
 
   shiftCellCoords(coords, dir, mode, force = false) {
@@ -376,7 +426,7 @@ class Interaction {
       between two words. 
     */
     if (this.doNotHandleStandardCellClick) {
-      return this.doNotHandleStandardCellClick = false;
+      return (this.doNotHandleStandardCellClick = false);
     }
     this.handleDoubleClickForZoom(event);
     Interaction.preventZoomIfRequired(event);
@@ -504,11 +554,17 @@ class Interaction {
         // Allow the input the user just made to be shown by the DOM
         Interaction.emulateEscapePress();
         this.toggleCompletionPopup();
+        this.jazz.play();
       });
     }
   }
 
-  doSpecialButtonAction(magnitude, mode, viaButton = true) {
+  doSpecialButtonAction(
+    magnitude,
+    mode,
+    viaButton = true,
+    onlyUnchecked = false
+  ) {
     /* Perform reveal/check/clear operations on a selected cell, word, or, the 
       grid. 
     */
@@ -537,13 +593,13 @@ class Interaction {
       case "grid": // Do a grid operation on each non empty cell of the grid
         document
           .querySelectorAll(".non_empty_cell")
-          .forEach(cell => this.doGridOperation(cell, mode));
+          .forEach(cell => this.doGridOperation(cell, mode, onlyUnchecked));
     }
 
     this.crosswordCompletionHandler();
   }
 
-  doGridOperation(cell, mode) {
+  doGridOperation(cell, mode, onlyUnchecked = false) {
     /* Perform either a reveal, check or clear action on a single cell. */
 
     if (mode === "reveal") {
@@ -561,9 +617,14 @@ class Interaction {
         }
       }
     } else if (mode === "clear") {
-      cell.classList.remove("lock_in");
-      cell.classList.remove("wrong");
-      Interaction.setValue(cell, "");
+      if (
+        (onlyUnchecked && !cell.classList.contains("lock_in")) ||
+        !onlyUnchecked
+      ) {
+        cell.classList.remove("lock_in");
+        cell.classList.remove("wrong");
+        Interaction.setValue(cell, "");
+      }
     }
   }
 
@@ -813,7 +874,7 @@ class Interaction {
     /* Since a first click on any ``zoomTarget`` element doesn't activate the
     zoom, this function performs a double click.
     */
-    if (!document.getElementById("tz").checked) {
+    if (!this.zoomToggle.checked) {
       return;
     }
 
