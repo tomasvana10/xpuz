@@ -10,7 +10,7 @@
   <a href="">![licence](https://img.shields.io/badge/licence-MIT-green?style=flat?logo=licence)</a>
   <a href="">[![PyPI version](https://img.shields.io/pypi/v/crossword_puzzle?style=flat-square)](https://pypi.org/project/crossword_puzzle/)</a>
   <a href="">[![Publish to PyPI.org](https://github.com/tomasvana10/crossword_puzzle/actions/workflows/publish.yml/badge.svg)](https://github.com/tomasvana10/crossword_puzzle/actions/workflows/publish.yml)</a>
-  <a href="">[![release)](https://img.shields.io/github/v/release/tomasvana10/crossword_puzzle?logo=github)](https://github.com/tomasvana10/crossword_puzzle/releases/latest)</a>
+  <a href="">[![release](https://img.shields.io/github/v/release/tomasvana10/crossword_puzzle?logo=github)](https://github.com/tomasvana10/crossword_puzzle/releases/latest)</a>
   <a href="">[![issues](https://img.shields.io/github/issues-raw/tomasvana10/crossword_puzzle.svg?maxAge=25000)](https://github.com/tomasvana10/crossword_puzzle/issues)</a>
   <a href="">[![CodeQL](https://github.com/tomasvana10/crossword_puzzle/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/tomasvana10/crossword_puzzle/actions/workflows/github-code-scanning/codeql)</a>
   <a href="">[![Tests](https://github.com/tomasvana10/crossword_puzzle/actions/workflows/tox-tests.yml/badge.svg)](https://github.com/tomasvana10/crossword_puzzle/actions/workflows/tox-tests.yml)</a>
@@ -31,32 +31,36 @@ An educational GUI package built with `CustomTkinter` that allows you to select,
 ## Installation
 **requires [pip](https://pip.pypa.io/en/stable/installation/)**
 
+If using `python` or `pip` doesn't work, try using `python3` or `pip3`
+
 - Make a virtual environment and activate it (recommended):
 ```
-pip install virtualenv OR pip3 install virtualenv
-python -m venv venv OR python3 -m venv venv
+pip install virtualenv
+python -m venv venv
 MacOS/Unix: source venv/bin/activate
 Windows: venv\scripts\activate
 ```
 - Install the package in your system directory/virtual environment:
 ```
-pip install -U crossword-puzzle OR pip3 install -U crossword-puzzle
+pip install -U crossword-puzzle
 ```
 or, install the package in your home directory if you aren't using a virtual environment:
 ```
 pip install --user -U crossword-puzzle
 ```
-- Then, run the GUI script:
+- Initialise the GUI through the entry point:
 ```
 crossword-ctk
+```
+- You can deactivate your virtual environment when you are done:
+```
+deactivate
 ```
 
 ## Documentation
 Check out the wiki [here](https://github.com/tomasvana10/crossword_puzzle/wiki)
 
 ## Third-party library acknowledgements
-- [CSS Pattern](https://css-pattern.com) - Background CSS patterns
-- [Pure CSS Toggle Switch](https://codepen.io/morgoe/pen/VvzWQg) - Toggle switch CSS patterns
 - [Zoomooz.js](https://jaukia.github.io/zoomooz/) - jQuery library for making webpage elements zoomable
 - [Flask](https://flask.palletsprojects.com/en/3.0.x/) - Web framework for the crossword web application
 - [Babel](https://babel.pocoo.org/en/latest/) - l10n functionality and management of message catalogues
@@ -68,6 +72,10 @@ Check out the wiki [here](https://github.com/tomasvana10/crossword_puzzle/wiki)
 
 ## Other acknowledgements
 - [NYTimes Mini Crossword](https://www.nytimes.com/crosswords/game/mini) - Heavily inspired the design of the web application
+- [CSS Pattern](https://css-pattern.com) - Background CSS patterns
+- [Pure CSS Toggle Switch](https://codepen.io/morgoe/pen/VvzWQg) - Toggle switch CSS patterns
+- Crossword completion sound effect (CC attribution):
+  - Jazzy Chords by NenadSimic -- https://freesound.org/s/150879/ -- License: Creative Commons 0
 
 ## Gallery
 <img alt="crossword puzzle home" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/b7472342-5cfe-418b-bdf1-cd7ab0389ace">
