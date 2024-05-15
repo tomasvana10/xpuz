@@ -37,7 +37,6 @@ from crossword_puzzle.constants import (
     Colour,
     CrosswordDifficulties,
     CrosswordDirection,
-    CrosswordQuality,
     CrosswordStyle,
     Paths,
 )
@@ -926,7 +925,7 @@ class CrosswordCategoryBlock(CTkFrame):
         ) as file:
             try:
                 return load(file)["bottom_tag_colour"]
-            except:
+            except Exception:
                 return "#abcdef"
 
     def _sort_category_content(self, arr: List[str]) -> List[str]:

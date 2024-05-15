@@ -1,6 +1,6 @@
 from os import path
 from pathlib import Path
-from typing import Dict, List, Tuple, Union
+from typing import Dict, List, Union
 
 from regex import compile as compile_
 

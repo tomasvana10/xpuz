@@ -6,6 +6,7 @@ NOTE: Requires the googletrans module, which is not listed in `requirements.txt`
 """
 
 import subprocess
+from typing import Dict
 
 import googletrans
 
