@@ -358,3 +358,6 @@ msgstr "Raskus"
 
 msgid "Total words"
 msgstr "Kogusõnad"
+
+msgid "Maximum"
+msgstr "Maksimum"

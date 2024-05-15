@@ -360,3 +360,6 @@ msgstr "Vanskelighet"
 
 msgid "Total words"
 msgstr "Totalt ord"
+
+msgid "Maximum"
+msgstr "Maksimum"

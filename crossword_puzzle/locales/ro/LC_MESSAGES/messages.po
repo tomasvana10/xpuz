@@ -361,3 +361,6 @@ msgstr "Dificultate"
 
 msgid "Total words"
 msgstr "Cuvinte totale"
+
+msgid "Maximum"
+msgstr "Maxim"

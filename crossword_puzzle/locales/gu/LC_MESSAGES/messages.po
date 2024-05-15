@@ -359,3 +359,6 @@ msgstr "મુશ્કેલી"
 
 msgid "Total words"
 msgstr "કુલ શબ્દો"
+
+msgid "Maximum"
+msgstr "મહત્તમ"

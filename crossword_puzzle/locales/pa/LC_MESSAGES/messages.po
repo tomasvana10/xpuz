@@ -360,3 +360,6 @@ msgstr "ਮੁਸ਼ਕਲ"
 
 msgid "Total words"
 msgstr "ਕੁੱਲ ਸ਼ਬਦ"
+
+msgid "Maximum"
+msgstr "ਵੱਧ ਤੋਂ ਵੱਧ"

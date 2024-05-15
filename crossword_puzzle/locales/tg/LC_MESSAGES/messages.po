@@ -361,3 +361,6 @@ msgstr "Мушкилӣ"
 
 msgid "Total words"
 msgstr "Калимаҳои умумӣ"
+
+msgid "Maximum"
+msgstr "Максимум"

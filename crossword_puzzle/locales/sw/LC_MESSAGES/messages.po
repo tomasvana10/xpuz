@@ -361,3 +361,6 @@ msgstr "Ugumu"
 
 msgid "Total words"
 msgstr "Jumla ya maneno"
+
+msgid "Maximum"
+msgstr "Upeo"

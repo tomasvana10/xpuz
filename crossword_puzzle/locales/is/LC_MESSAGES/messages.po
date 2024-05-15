@@ -361,3 +361,6 @@ msgstr "Erfiðleikar"
 
 msgid "Total words"
 msgstr "Alls orð"
+
+msgid "Maximum"
+msgstr "Hámark"

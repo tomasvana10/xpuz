@@ -356,3 +356,6 @@ msgstr "Nsiike"
 
 msgid "Total words"
 msgstr "Okwu niile"
+
+msgid "Maximum"
+msgstr "Nkacha"

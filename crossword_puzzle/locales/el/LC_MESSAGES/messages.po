@@ -363,3 +363,6 @@ msgstr "Δυσκολία"
 
 msgid "Total words"
 msgstr "Συνολικές λέξεις"
+
+msgid "Maximum"
+msgstr "Ανώτατο όριο"

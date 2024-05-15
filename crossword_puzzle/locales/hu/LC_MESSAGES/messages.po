@@ -361,3 +361,6 @@ msgstr "Nehézség"
 
 msgid "Total words"
 msgstr "Összes szavak"
+
+msgid "Maximum"
+msgstr "Maximális"

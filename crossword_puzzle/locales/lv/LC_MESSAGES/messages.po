@@ -360,3 +360,6 @@ msgstr "Grūtības"
 
 msgid "Total words"
 msgstr "Kopējie vārdi"
+
+msgid "Maximum"
+msgstr "Maksimums"

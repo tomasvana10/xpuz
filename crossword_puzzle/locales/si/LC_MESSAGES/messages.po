@@ -359,3 +359,6 @@ msgstr "දුෂ්කරතා"
 
 msgid "Total words"
 msgstr "මුළු වචන"
+
+msgid "Maximum"
+msgstr "උපරිම"

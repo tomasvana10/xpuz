@@ -360,3 +360,6 @@ msgstr "Қиындық"
 
 msgid "Total words"
 msgstr "Жалпы сөздер"
+
+msgid "Maximum"
+msgstr "Максимум"

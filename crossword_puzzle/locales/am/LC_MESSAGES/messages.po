@@ -351,3 +351,6 @@ msgstr "ችግር"
 
 msgid "Total words"
 msgstr "ጠቅላላ ቃላት"
+
+msgid "Maximum"
+msgstr "ከፍተኛ"

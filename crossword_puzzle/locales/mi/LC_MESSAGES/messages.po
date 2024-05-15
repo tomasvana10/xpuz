@@ -362,3 +362,6 @@ msgstr "Mea uaua"
 
 msgid "Total words"
 msgstr "Tapeke kupu"
+
+msgid "Maximum"
+msgstr "Mutunga rawa"

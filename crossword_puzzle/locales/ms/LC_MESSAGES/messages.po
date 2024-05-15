@@ -362,3 +362,6 @@ msgstr "Kesukaran"
 
 msgid "Total words"
 msgstr "Jumlah perkataan"
+
+msgid "Maximum"
+msgstr "Maksimum"

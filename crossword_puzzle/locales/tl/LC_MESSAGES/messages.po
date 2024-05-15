@@ -363,3 +363,6 @@ msgstr "Kahirapan"
 
 msgid "Total words"
 msgstr "Kabuuang mga salita"
+
+msgid "Maximum"
+msgstr "Pinakamataas"

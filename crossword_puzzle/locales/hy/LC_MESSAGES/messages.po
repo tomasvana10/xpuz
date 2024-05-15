@@ -360,3 +360,6 @@ msgstr "Դժվարություն"
 
 msgid "Total words"
 msgstr "Ընդհանուր բառեր"
+
+msgid "Maximum"
+msgstr "Առավելագույն"

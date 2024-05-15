@@ -363,3 +363,6 @@ msgstr "အခက်"
 
 msgid "Total words"
 msgstr "စုစုပေါင်းစကားလုံးများ"
+
+msgid "Maximum"
+msgstr "အများဆုံး"

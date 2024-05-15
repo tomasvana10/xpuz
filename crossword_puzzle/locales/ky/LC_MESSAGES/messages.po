@@ -358,3 +358,6 @@ msgstr "Кыйынчылык"
 
 msgid "Total words"
 msgstr "Жалпы сөздөр"
+
+msgid "Maximum"
+msgstr "Максимум"

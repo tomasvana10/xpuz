@@ -366,3 +366,6 @@ msgstr "Duilgheadas"
 
 msgid "Total words"
 msgstr "Faclan iomlan"
+
+msgid "Maximum"
+msgstr "As àirde"

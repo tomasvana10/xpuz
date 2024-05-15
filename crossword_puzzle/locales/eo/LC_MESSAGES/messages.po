@@ -360,3 +360,6 @@ msgstr "Malfacilaĵo"
 
 msgid "Total words"
 msgstr "Totalaj Vortoj"
+
+msgid "Maximum"
+msgstr "Maksimumo"

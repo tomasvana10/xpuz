@@ -361,3 +361,6 @@ msgstr "Khó khăn"
 
 msgid "Total words"
 msgstr "Tổng số từ"
+
+msgid "Maximum"
+msgstr "Tối đa"

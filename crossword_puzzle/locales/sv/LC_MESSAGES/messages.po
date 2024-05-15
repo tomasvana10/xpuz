@@ -359,3 +359,6 @@ msgstr "Svårighet"
 
 msgid "Total words"
 msgstr "Totala ord"
+
+msgid "Maximum"
+msgstr "Maximal"

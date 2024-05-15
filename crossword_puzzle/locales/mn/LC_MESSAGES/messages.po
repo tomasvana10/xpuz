@@ -360,3 +360,6 @@ msgstr "Бэрхшээл"
 
 msgid "Total words"
 msgstr "Нийт үгс"
+
+msgid "Maximum"
+msgstr "Дээд хэмжээ"

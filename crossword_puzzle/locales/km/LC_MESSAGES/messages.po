@@ -360,3 +360,6 @@ msgstr "ផាបលមបាក"
 
 msgid "Total words"
 msgstr "ពាក្យសរុប"
+
+msgid "Maximum"
+msgstr "អតិបរិមា"

@@ -361,3 +361,6 @@ msgstr "Kuoma"
 
 msgid "Total words"
 msgstr "Mazwi ese"
+
+msgid "Maximum"
+msgstr "Kukwana"

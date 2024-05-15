@@ -361,3 +361,6 @@ msgstr "Stró"
 
 msgid "Total words"
 msgstr "Focail Iomlán"
+
+msgid "Maximum"
+msgstr "Uas-"

@@ -360,3 +360,6 @@ msgstr "DIFULTITÀ"
 
 msgid "Total words"
 msgstr "Parolle totale"
+
+msgid "Maximum"
+msgstr "Massimu"

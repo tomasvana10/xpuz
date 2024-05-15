@@ -358,3 +358,6 @@ msgstr "ຄວາມຫຍຸ້ງຍາກ"
 
 msgid "Total words"
 msgstr "ຄໍາສັບ"
+
+msgid "Maximum"
+msgstr "ສູງສຸດ"

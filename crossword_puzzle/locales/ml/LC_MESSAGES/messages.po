@@ -362,3 +362,6 @@ msgstr "വൈഷമം"
 
 msgid "Total words"
 msgstr "ആകെ വാക്കുകൾ"
+
+msgid "Maximum"
+msgstr "പരമാവധി"

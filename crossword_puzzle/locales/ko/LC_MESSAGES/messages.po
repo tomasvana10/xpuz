@@ -349,3 +349,6 @@ msgstr "어려움"
 
 msgid "Total words"
 msgstr "총 단어"
+
+msgid "Maximum"
+msgstr "최고"

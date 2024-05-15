@@ -361,3 +361,6 @@ msgstr "Kangelan"
 
 msgid "Total words"
 msgstr "Total tembung"
+
+msgid "Maximum"
+msgstr "Maksimal"

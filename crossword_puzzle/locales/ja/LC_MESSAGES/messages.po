@@ -350,3 +350,6 @@ msgstr "困難"
 
 msgid "Total words"
 msgstr "合計単語"
+
+msgid "Maximum"
+msgstr "最大"

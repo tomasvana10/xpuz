@@ -356,3 +356,6 @@ msgstr "Ida iṣoro"
 
 msgid "Total words"
 msgstr "Lapapọ awọn ọrọ"
+
+msgid "Maximum"
+msgstr "O pọju"

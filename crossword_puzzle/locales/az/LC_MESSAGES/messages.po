@@ -360,3 +360,6 @@ msgstr "Çətinlik"
 
 msgid "Total words"
 msgstr "Ümumi sözlər"
+
+msgid "Maximum"
+msgstr "Maksimal"

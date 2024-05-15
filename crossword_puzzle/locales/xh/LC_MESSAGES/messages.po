@@ -362,3 +362,6 @@ msgstr "Ubunzima"
 
 msgid "Total words"
 msgstr "Amagama apheleleyo"
+
+msgid "Maximum"
+msgstr "Ubuninzi"

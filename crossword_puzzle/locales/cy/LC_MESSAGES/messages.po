@@ -361,3 +361,6 @@ msgstr "Anhawster"
 
 msgid "Total words"
 msgstr "Cyfanswm geiriau"
+
+msgid "Maximum"
+msgstr "Uchafswm"

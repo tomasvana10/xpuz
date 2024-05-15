@@ -361,3 +361,6 @@ msgstr "ఇబ్బంది"
 
 msgid "Total words"
 msgstr "మొత్తం పదాలు"
+
+msgid "Maximum"
+msgstr "గరిష్టంగా"

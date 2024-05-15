@@ -348,3 +348,6 @@ msgstr "困难"
 
 msgid "Total words"
 msgstr "总词"
+
+msgid "Maximum"
+msgstr "最大限度"

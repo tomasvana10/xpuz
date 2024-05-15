@@ -361,3 +361,6 @@ msgstr "Bothata"
 
 msgid "Total words"
 msgstr "Mantsoe a felletseng"
+
+msgid "Maximum"
+msgstr "Boholo"

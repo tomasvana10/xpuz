@@ -342,3 +342,6 @@ msgstr ""
 
 msgid "Total words"
 msgstr ""
+
+msgid "Maximum"
+msgstr "Maximum"

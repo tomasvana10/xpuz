@@ -362,3 +362,6 @@ msgstr "Trudność"
 
 msgid "Total words"
 msgstr "Całkowite słowa"
+
+msgid "Maximum"
+msgstr "Maksymalny"

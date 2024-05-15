@@ -361,3 +361,6 @@ msgstr "Vanskelighed"
 
 msgid "Total words"
 msgstr "Samlede ord"
+
+msgid "Maximum"
+msgstr "Maksimum"

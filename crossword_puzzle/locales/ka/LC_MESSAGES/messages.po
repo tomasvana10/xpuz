@@ -360,3 +360,6 @@ msgstr "სირთულე"
 
 msgid "Total words"
 msgstr "სულ სიტყვები"
+
+msgid "Maximum"
+msgstr "მაქსიმუმი"

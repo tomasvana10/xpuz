@@ -361,3 +361,6 @@ msgstr "Kuvuta"
 
 msgid "Total words"
 msgstr "Mawu Onse"
+
+msgid "Maximum"
+msgstr "Kuchuluka"

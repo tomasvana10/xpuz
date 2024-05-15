@@ -361,3 +361,6 @@ msgstr "Moeite"
 
 msgid "Total words"
 msgstr "Totale woorde"
+
+msgid "Maximum"
+msgstr "Maksimum"

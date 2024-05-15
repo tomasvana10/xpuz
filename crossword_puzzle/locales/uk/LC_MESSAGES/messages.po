@@ -361,3 +361,6 @@ msgstr "Труднощі"
 
 msgid "Total words"
 msgstr "Загальні слова"
+
+msgid "Maximum"
+msgstr "Максимум"

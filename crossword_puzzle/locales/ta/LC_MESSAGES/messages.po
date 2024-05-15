@@ -364,3 +364,6 @@ msgstr "சிரமம்"
 
 msgid "Total words"
 msgstr "மொத்த சொற்கள்"
+
+msgid "Maximum"
+msgstr "அதிகபட்சம்"

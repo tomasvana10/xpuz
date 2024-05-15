@@ -366,3 +366,6 @@ msgstr "fahasarotana"
 
 msgid "Total words"
 msgstr "Total"
+
+msgid "Maximum"
+msgstr "Faratampony"

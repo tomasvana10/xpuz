@@ -354,3 +354,6 @@ msgstr "ความยากลำบาก"
 
 msgid "Total words"
 msgstr "คำทั้งหมด"
+
+msgid "Maximum"
+msgstr "ขีดสุด"

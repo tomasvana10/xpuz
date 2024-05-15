@@ -363,3 +363,6 @@ msgstr "Moeilijkheid"
 
 msgid "Total words"
 msgstr "Totale woorden"
+
+msgid "Maximum"
+msgstr "Maximaal"

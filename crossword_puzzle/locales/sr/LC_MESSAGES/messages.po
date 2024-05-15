@@ -360,3 +360,6 @@ msgstr "Потешкоће"
 
 msgid "Total words"
 msgstr "Укупно речи"
+
+msgid "Maximum"
+msgstr "Максимум"

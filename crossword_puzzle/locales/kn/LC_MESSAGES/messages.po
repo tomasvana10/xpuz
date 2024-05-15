@@ -362,3 +362,6 @@ msgstr "ತೊಂದರೆ"
 
 msgid "Total words"
 msgstr "ಒಟ್ಟು ಪದಗಳು"
+
+msgid "Maximum"
+msgstr "ಗರಿಷ್ಠ"

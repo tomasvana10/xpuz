@@ -361,3 +361,6 @@ msgstr "Pilikia"
 
 msgid "Total words"
 msgstr "Nā hua'ōlelo"
+
+msgid "Maximum"
+msgstr "Loa"

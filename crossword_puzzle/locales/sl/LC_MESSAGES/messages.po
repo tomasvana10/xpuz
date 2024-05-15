@@ -361,3 +361,6 @@ msgstr "Težave"
 
 msgid "Total words"
 msgstr "Skupne besede"
+
+msgid "Maximum"
+msgstr "Največ"

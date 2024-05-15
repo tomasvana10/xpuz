@@ -361,3 +361,6 @@ msgstr "Цяжкасць"
 
 msgid "Total words"
 msgstr "Усяго словы"
+
+msgid "Maximum"
+msgstr "Максімум"

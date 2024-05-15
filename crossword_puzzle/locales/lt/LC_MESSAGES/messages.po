@@ -360,3 +360,6 @@ msgstr "Sunkumas"
 
 msgid "Total words"
 msgstr "Iš viso žodžiai"
+
+msgid "Maximum"
+msgstr "Maksimalus"

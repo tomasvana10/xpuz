@@ -361,3 +361,6 @@ msgstr "Zailtasun"
 
 msgid "Total words"
 msgstr "Hitz guztira"
+
+msgid "Maximum"
+msgstr "Gehienezko"

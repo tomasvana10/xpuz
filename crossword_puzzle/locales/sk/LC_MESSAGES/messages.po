@@ -360,3 +360,6 @@ msgstr "Obtiažnosť"
 
 msgid "Total words"
 msgstr "Celkové slová"
+
+msgid "Maximum"
+msgstr "Maximálny"

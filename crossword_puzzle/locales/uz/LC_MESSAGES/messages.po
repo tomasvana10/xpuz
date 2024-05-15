@@ -361,3 +361,6 @@ msgstr "Qiyinchilik"
 
 msgid "Total words"
 msgstr "Umumiy so'zlar"
+
+msgid "Maximum"
+msgstr "Maksimal"

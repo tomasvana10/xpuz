@@ -360,3 +360,6 @@ msgstr "অসুবিধা"
 
 msgid "Total words"
 msgstr "মোট শব্দ"
+
+msgid "Maximum"
+msgstr "সর্বাধিক"

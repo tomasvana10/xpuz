@@ -362,3 +362,6 @@ msgstr "Dhibaato"
 
 msgid "Total words"
 msgstr "Wadarta ereyada"
+
+msgid "Maximum"
+msgstr "Heer ugu badan"

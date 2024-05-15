@@ -362,3 +362,6 @@ msgstr "Тешкотии"
 
 msgid "Total words"
 msgstr "Тотални зборови"
+
+msgid "Maximum"
+msgstr "Максимум"

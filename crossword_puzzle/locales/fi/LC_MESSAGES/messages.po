@@ -357,3 +357,6 @@ msgstr "Vaikeus"
 
 msgid "Total words"
 msgstr "Kokonais sanat"
+
+msgid "Maximum"
+msgstr "Enimmäismäärä"

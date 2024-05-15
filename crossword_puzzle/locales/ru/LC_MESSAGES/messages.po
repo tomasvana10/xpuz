@@ -361,3 +361,6 @@ msgstr "Сложность"
 
 msgid "Total words"
 msgstr "Всего слов"
+
+msgid "Maximum"
+msgstr "Максимум"

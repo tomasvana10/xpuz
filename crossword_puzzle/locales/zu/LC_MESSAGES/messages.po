@@ -362,3 +362,6 @@ msgstr "Ubulukhuni"
 
 msgid "Total words"
 msgstr "Amagama aphelele"
+
+msgid "Maximum"
+msgstr "Okusekugcineni"

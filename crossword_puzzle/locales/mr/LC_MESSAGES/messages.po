@@ -360,3 +360,6 @@ msgstr "अडचण"
 
 msgid "Total words"
 msgstr "एकूण शब्द"
+
+msgid "Maximum"
+msgstr "जास्तीत जास्त"

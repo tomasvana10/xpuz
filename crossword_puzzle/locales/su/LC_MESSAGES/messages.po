@@ -361,3 +361,6 @@ msgstr "Hésé"
 
 msgid "Total words"
 msgstr "Total kecap"
+
+msgid "Maximum"
+msgstr "Maksimum"

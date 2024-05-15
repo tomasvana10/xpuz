@@ -359,3 +359,6 @@ msgstr "Obtížnost"
 
 msgid "Total words"
 msgstr "Celkem slova"
+
+msgid "Maximum"
+msgstr "Maximum"

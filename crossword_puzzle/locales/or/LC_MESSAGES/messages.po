@@ -361,3 +361,6 @@ msgstr "ଅସୁବିଧା"
 
 msgid "Total words"
 msgstr "ମୋଟ ଶବ୍ଦ |"
+
+msgid "Maximum"
+msgstr "ସର୍ବାଧିକ"

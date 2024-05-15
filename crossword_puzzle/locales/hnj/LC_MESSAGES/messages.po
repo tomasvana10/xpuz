@@ -365,3 +365,6 @@ msgstr "Qho nyuaj"
 
 msgid "Total words"
 msgstr "Tag Nrho Cov Lus"
+
+msgid "Maximum"
+msgstr "Ntau tshaj plaws"

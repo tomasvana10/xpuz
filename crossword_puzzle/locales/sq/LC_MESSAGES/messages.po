@@ -363,3 +363,6 @@ msgstr "Vështirësi"
 
 msgid "Total words"
 msgstr "Fjalë totale"
+
+msgid "Maximum"
+msgstr "Maksimum"

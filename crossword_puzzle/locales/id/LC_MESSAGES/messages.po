@@ -361,3 +361,6 @@ msgstr "Kesulitan"
 
 msgid "Total words"
 msgstr "Kata total"
+
+msgid "Maximum"
+msgstr "Maksimum"

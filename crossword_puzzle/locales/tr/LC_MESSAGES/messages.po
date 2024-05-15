@@ -363,3 +363,6 @@ msgstr "Zorluk"
 
 msgid "Total words"
 msgstr "Toplam kelimeler"
+
+msgid "Maximum"
+msgstr "Maksimum"

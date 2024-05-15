@@ -363,3 +363,6 @@ msgstr "Dificuldade"
 
 msgid "Total words"
 msgstr "Palavras totais"
+
+msgid "Maximum"
+msgstr "Máximo"

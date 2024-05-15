@@ -361,3 +361,6 @@ msgstr "कठिनाई"
 
 msgid "Total words"
 msgstr "कुल शब्द"
+
+msgid "Maximum"
+msgstr "अधिकतम"

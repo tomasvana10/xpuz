@@ -362,3 +362,6 @@ msgstr "Wahala"
 
 msgid "Total words"
 msgstr "Jimlar kalmomi"
+
+msgid "Maximum"
+msgstr "M"
