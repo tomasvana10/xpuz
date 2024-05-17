@@ -106,6 +106,7 @@ button:hover {
 
 .empty_cell {
     background: black;
+    cursor: default;
 }
 
 .non_empty_cell {
@@ -117,11 +118,8 @@ button:hover {
     align-items: flex-end;
     border: 0.1px solid black;
     user-select: none;
-    -webkit-user-select: none;
-}
-
-.non_empty_cell:hover {
     cursor: pointer;
+    -webkit-user-select: none;
 }
 
 .num_label {

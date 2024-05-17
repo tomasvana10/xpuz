@@ -8,22 +8,13 @@ class Interaction {
   static spacebarKeys = ["Spacebar", " "];
   static backspaceKeys = ["Backspace", "Delete"];
   static compoundInputPlaceholders = [
-    "ㅇ",
-    "+",
-    "ㅏ",
-    "=",
-    "아",
-    "क​",
-    "+",
-    "इ",
-    "=",
-    "कै",
+    "ㅇ", "+", "ㅏ", "=", "아", "क​", "+", "इ", "=", "कै",
   ];
   static onlyLangRegex = /\p{L}/u; // Ensure user only types language characters
 
   constructor() {
     this.direction = "ACROSS"; // Default direction when first clicking (if the
-    // first click is at an intersection).
+                               // first click is at an intersection).
     this.currentWord = null; // e.x. "HELLO"
     this.cellCoords = null; // e.x. [0, 5]
     this.staticIndex = null; // e.x. 5
@@ -36,8 +27,7 @@ class Interaction {
     this.currentDropdown = null;
     this.currentPlaceholder = 0;
     this.doNotHandleStandardCellClick = false;
-    this.doubleClickOnFirstCellClick = true;
-    this.doubleClickOnFirstDefClick = true;
+    this.preventInitialLIZoom = true;
 
     // When the DOM is ready, trigger the ``onLoad`` method
     document.addEventListener("DOMContentLoaded", this.onLoad.bind(this));
@@ -63,10 +53,15 @@ class Interaction {
     this.zoomToggle = document.getElementById("tz");
     this.wordToggle = document.getElementById("tw");
     this.checkToggle = document.getElementById("tc");
+    this.returnDefZoomElement = document.getElementById("return_def_zoom");
+    this.returnGridZoomElement =
+      document.getElementsByClassName("empty_cell")[0];
+
     this.jazz = document.getElementById("jazz");
     this.jazz.volume = 0.125;
 
     this.setListeners();
+    Interaction.configureScrollHeights();
     this.displayOnloadPopup();
     // Clear the grid to prevent possible issues with HTML
     this.doSpecialButtonAction("grid", "clear", false);
@@ -77,11 +72,11 @@ class Interaction {
   setListeners() {
     /* Add listeners and onclick functions. */
 
-    document
-      .querySelectorAll(".non_empty_cell")
-      .forEach(
-        element => (element.onclick = event => this.onCellClick(event, element))
-      );
+    document.querySelectorAll(".non_empty_cell").forEach(element => {
+      element.onclick = event => this.onCellClick(event, element);
+      element.classList.add("zoomTarget"); // Prevents the user from having
+      // to click twice to zoom initially
+    });
 
     // Detect the user clicking on a word's definition
     document.querySelectorAll(".def").forEach(
@@ -94,6 +89,13 @@ class Interaction {
           );
         })
     );
+
+    // Remove zoom when disabling the zoom checkbox
+    this.zoomToggle.addEventListener("change", event => {
+      if (!event.target.checked) {
+        this.zoomOut();
+      }
+    });
 
     document.getElementById("compound_button").onclick = event => {
       event.stopPropagation();
@@ -109,6 +111,14 @@ class Interaction {
     document.addEventListener("focusout", event =>
       this.handleDropdownFocusOut(event)
     );
+  }
+
+  zoomOut() {
+    if (document.querySelector(".non_empty_cell.selectedZoomTarget")) {
+      this.returnGridZoomElement.click();
+    } else if (document.querySelector(".def.selectedZoomTarget")) {
+      this.returnDefZoomElement.click();
+    }
   }
 
   handleSpecialInput(event) {
@@ -283,7 +293,7 @@ class Interaction {
     }
 
     this.autoShiftWordIfPossible(mode);
-    this.autoReZoomIfPossible(currentCell);
+    this.followCellZoom(currentCell);
 
     // Refocus the entire word, then set the focus of the cell that has just
     // been shifted/skipped to. No need to update the current word as the current
@@ -326,15 +336,17 @@ class Interaction {
       let num = offset === 1 ? "1" : this.wordCount;
       newDef = document.querySelector(`[data-num="${num}"]`);
     }
+    let oldCellCoords = this.cellCoords;
     newDef.focus();
     newDef.click();
     newDef.blur();
+    this.followCellZoom(oldCellCoords);
   }
 
   skipCellCoords(coords, direction) {
     /* Skip to the next empty cell if the current cell is empty and there is an
-      empty cell in front of the current cell somewhere along the current word
-      (that is separated by filled cells).
+    empty cell in front of the current cell somewhere along the current word
+    (that is separated by filled cells).
     */
 
     let newCellCoords = this.shiftCellCoords(coords, direction, "enter");
@@ -372,13 +384,12 @@ class Interaction {
 
   shiftCellCoords(coords, dir, mode, force = false) {
     /* Move the input forward or backward based on the ``mode`` parameter. If no 
-      such cell exists at these future coordinates (and the force parameter is 
-      false), the original coordinates are returned. 
+    such cell exists at these future coordinates (and the force parameter is 
+    false), the original coordinates are returned. 
       
-      The aforementioned force parameter allows the cell coordinates to be shifted
-      into a cell that may be a void cell. 
-    
-      */
+    The aforementioned force parameter allows the cell coordinates to be shifted
+    into a cell that may be a void cell. 
+    */
 
     let offset = mode == "enter" ? 1 : -1;
     let newCellCoords =
@@ -402,8 +413,7 @@ class Interaction {
       `[data-num_label="${numLabel}"]`
     ).parentElement;
 
-    this.handleDoubleClickForZoom(event);
-    Interaction.preventZoomIfRequired(event);
+    this.preventZoomIfRequired(event);
     this.removeCompoundInputIfRequired(currentCell);
 
     this.setFocusMode(false);
@@ -421,15 +431,15 @@ class Interaction {
 
   onCellClick(event, cell) {
     /* Handles how the grid responds to a user clicking on the cell. Ensures 
-      the appropriate display of the current cell and word focus on cell click, 
-      as well as alternating input directions if clicking at an intersecting point 
-      between two words. 
+    the appropriate display of the current cell and word focus on cell click, 
+    as well as alternating input directions if clicking at an intersecting point 
+    between two words. 
     */
     if (this.doNotHandleStandardCellClick) {
       return (this.doNotHandleStandardCellClick = false);
     }
-    this.handleDoubleClickForZoom(event);
-    Interaction.preventZoomIfRequired(event);
+
+    this.preventZoomIfRequired(event);
     this.removeCompoundInputIfRequired(cell);
 
     this.setFocusMode(false);
@@ -453,9 +463,9 @@ class Interaction {
 
   handleArrowPress(key, event) {
     /* Determine how the program responds to the user pressing an arrow. First, 
-      see if a "enter" or "del" type shift is performed and in what direction. 
-      Then, ensure the user is not shifting into a ``.empty`` cell. Finally, 
-      alternate the direction if necessary and refocus. 
+    see if a "enter" or "del" type shift is performed and in what direction. 
+    Then, ensure the user is not shifting into a ``.empty`` cell. Finally, 
+    alternate the direction if necessary and refocus. 
     */
 
     event.preventDefault();
@@ -498,7 +508,7 @@ class Interaction {
     } else {
       this.cellCoords = newCellCoords;
     }
-    this.autoReZoomIfPossible(oldCellCoords);
+    this.followCellZoom(oldCellCoords);
     this.currentWord = this.updateCurrentWord();
     this.setFocusMode(true);
     this.updateDefinitionsListPos();
@@ -506,11 +516,18 @@ class Interaction {
 
   handleEnterPress(event) {
     /* Handle a tab-related enter press to either select a new definitions list
-      item or invoke and close the dropdown of a dropdown button. */
+    item or invoke and close the dropdown of a dropdown button. 
+    */
 
     if (event.target.classList.contains("def")) {
       event.target.click();
       event.target.blur();
+      if (this.zoomToggle.checked) {
+        // Allow users with no keyboard to initiate
+        // zooming via pressing enter on a definition
+        this.doNotHandleStandardCellClick = true;
+        Interaction.getCellElement(this.cellCoords).click();
+      }
     } else if (event.target.classList.contains("toggle")) {
       event.target.click();
     }
@@ -518,7 +535,8 @@ class Interaction {
 
   handleEnterKeybindPress(event) {
     /* Allow the user to check the current word with "Enter" or reveal it with 
-      [Shift + Enter]. */
+    [Shift + Enter]. 
+    */
 
     Interaction.unfocusActiveElement();
     this.hideDropdowns();
@@ -540,10 +558,11 @@ class Interaction {
   handleEscapePress(event) {
     /* Remove focus from everything. */
 
-    event.preventDefault();
+    event?.preventDefault();
     Interaction.unfocusActiveElement();
     this.hideDropdowns();
     this.setFocusMode(false);
+    this.zoomOut();
     this.cellCoords = null;
     this.currentWord = null;
   }
@@ -551,8 +570,9 @@ class Interaction {
   crosswordCompletionHandler() {
     if (this.isCrosswordComplete()) {
       Interaction.sleep(1).then(() => {
-        // Allow the input the user just made to be shown by the DOM
-        Interaction.emulateEscapePress();
+        // Allow the input the user just made
+        // to be shown by the DOM
+        this.handleEscapePress(null);
         this.toggleCompletionPopup();
         this.jazz.play();
       });
@@ -566,7 +586,7 @@ class Interaction {
     onlyUnchecked = false
   ) {
     /* Perform reveal/check/clear operations on a selected cell, word, or, the 
-      grid. 
+    grid. 
     */
 
     // Since the user is running the function from a dropdown button, close the
@@ -583,11 +603,20 @@ class Interaction {
 
     switch (magnitude) {
       case "cell": // Just do a single grid operation on the current cell
-        this.doGridOperation(Interaction.getCellElement(this.cellCoords), mode);
+        let currentCell = Interaction.getCellElement(this.cellCoords);
+        this.doGridOperation(currentCell, mode);
+        if (mode === "reveal") {
+          // Automatically go to the next cell
+          this.handleCellShift("enter", currentCell);
+        }
         break;
       case "word": // Do a grid operation on each element of the word
         for (const cell of this.getWordElements()) {
           this.doGridOperation(cell, mode);
+        }
+        if (mode === "reveal") {
+          // Automatically go to the next word
+          this.shiftWordSelection(null, "ArrowDown");
         }
         break;
       case "grid": // Do a grid operation on each non empty cell of the grid
@@ -618,8 +647,9 @@ class Interaction {
       }
     } else if (mode === "clear") {
       if (
+        // Clearing unrevealed
         (onlyUnchecked && !cell.classList.contains("lock_in")) ||
-        !onlyUnchecked
+        !onlyUnchecked // < Normal clear
       ) {
         cell.classList.remove("lock_in");
         cell.classList.remove("wrong");
@@ -652,8 +682,8 @@ class Interaction {
 
   changeWordFocus(focus) {
     /* Retrieve the starting and ending coordinates of a word and change the 
-      colour of the cell elements that make up that word to either blue (focused)
-      or white/black (unfocused).
+    colour of the cell elements that make up that word to either blue (focused)
+    or white/black (unfocused).
     */
 
     for (const element of this.getWordElements()) {
@@ -687,7 +717,8 @@ class Interaction {
 
   *getWordElements() {
     /* Generator function that yields all the consisting cell elements of the 
-      current word. */
+    current word. 
+    */
 
     let [startCoords, endCoords] = this.getWordIndices();
     for (let i = startCoords; i <= endCoords; i++) {
@@ -698,7 +729,8 @@ class Interaction {
 
   getWordIndices() {
     /* Iterate either across or down through the grid to find the starting and 
-      ending indices of a word. */
+    ending indices of a word. 
+    */
 
     let [row, col] = this.cellCoords;
     this.isDown = this.direction === this.directions[1];
@@ -750,7 +782,8 @@ class Interaction {
 
   getGrid() {
     /* Create an empty replica of the crossword grid, then update it according 
-      to the web app grid */
+    to the web app grid 
+    */
 
     let webAppGrid = Array.from({ length: this.dimensions }, () =>
       Array(this.dimensions).fill(this.empty)
@@ -856,7 +889,7 @@ class Interaction {
     }
   }
 
-  autoReZoomIfPossible(priorCell) {
+  followCellZoom(priorCell) {
     /* If the priorCell was zoomed too, then now zoom to the current cell. */
     if (
       document.querySelectorAll(".non_empty_cell.selectedZoomTarget").length ===
@@ -867,26 +900,6 @@ class Interaction {
         this.doNotHandleStandardCellClick = true;
         return currentCell.click();
       }
-    }
-  }
-
-  handleDoubleClickForZoom(event) {
-    /* Since a first click on any ``zoomTarget`` element doesn't activate the
-    zoom, this function performs a double click.
-    */
-    if (!this.zoomToggle.checked) {
-      return;
-    }
-
-    if (this.doubleClickOnFirstDefClick) {
-      this.doubleClickOnFirstDefClick = false;
-      event.target.click();
-    }
-
-    if (this.doubleClickOnFirstCellClick) {
-      this.doubleClickOnFirstCellClick = false;
-      event.target.click();
-      event.target.click();
     }
   }
 
@@ -940,7 +953,8 @@ class Interaction {
 
   onDropdownClick(id) {
     /* Opens the dropdown a user clicks on or closes it if they already have it 
-    open. */
+    open. 
+    */
     this.removeCompoundInput(false);
     let dropdown = document.getElementById(id);
 
@@ -988,10 +1002,24 @@ class Interaction {
     }
   }
 
-  closeOnloadPopup() {
+  closeOnloadPopup(firstTime = false) {
     this.onloadPopupToggled = false;
     document.getElementById("blur").classList.toggle("active");
     document.getElementById("onload_popup").classList.toggle("active");
+    if (firstTime) {
+      document.querySelector(`[data-num="1"`).click();
+    }
+  }
+
+  preventZoomIfRequired(event) {
+    /* Prevent the user from zooming if they do not have the "click to zoom"
+      button toggled on. This must be handled as the zoom functions from zoomooz.js
+      must always be in the HTML structure. */
+
+    if (!document.getElementById("tz").checked || this.preventInitialLIZoom) {
+      this.preventInitialLIZoom = false;
+      event.stopImmediatePropagation(); // Prevent ``zoomooz`` from zooming
+    }
   }
 
   static dummyCellClick(event) {
@@ -1033,14 +1061,21 @@ class Interaction {
     ];
   }
 
-  static preventZoomIfRequired(event) {
-    /* Prevent the user from zooming if they do not have the "click to zoom"
-      button toggled on. This must be handled as the zoom functions from zoomooz.js
-      must always be in the HTML structure. */
+  static configureScrollHeights() {
+    /* Configure proper heights of ``zoomooz`` zoom viewports as well as 
+    bugged overflow content in the definitions zoom container. 
+    */
 
-    if (!document.getElementById("tz").checked)
-      // Button isn't checked
-      event.stopImmediatePropagation(); // Prevent zoomooz from zooming
+    let definitionsA = document.querySelector(".definitions_a");
+    let definitionsD = document.querySelector(".definitions_d");
+    document.getElementById("return_def_zoom").style.height =
+      Math.max(definitionsA.scrollHeight, definitionsD.scrollHeight) + "px";
+
+    // Prevent the unecessary scrollbar in the zoomContainer
+    let defZoomContainer = document.getElementById("no_scroll");
+    if (defZoomContainer.scrollHeight - 1 > defZoomContainer.clientHeight)
+      // For some reason the scrollHeight is 1 greater than the clientHeight
+      defZoomContainer.style.overflowY = "auto";
   }
 }
 

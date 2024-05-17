@@ -45,15 +45,7 @@ generate dynamic content, as each crossword created by this program is unique
 
     <script type="text/javascript">
       $(document).ready(() => {
-        /* Mix of jquery / vanilla JS to properly handle the zooming 
-        functionality of the web app. 
-        */
-
-        let tzCheckbox = document.getElementById("tz");
-        let returnDefZoomElement = document.getElementById("return_def_zoom");
-        let returnGridZoomElement =
-          document.getElementsByClassName("empty_cell")[0];
-
+        /* zoomooz.js implementation. */
         $(".non_empty_cell").click(function (event) {
           $(".non_empty_cell").zoomTarget();
         });
@@ -61,33 +53,6 @@ generate dynamic content, as each crossword created by this program is unique
         $(".def").click(function (event) {
           $(".def").zoomTarget();
         });
-
-        tzCheckbox.addEventListener("change", event => {
-          // Remove zoom when disabling the zoom checkbox
-          if (!event.target.checked) {
-            // Cheaty way to immediately zoom out when the user disables
-            // the zoom checkbox
-            returnDefZoomElement.click();
-            returnGridZoomElement.click();
-            document
-              .querySelectorAll(".non_empty_cell .def")
-              .forEach(cell => cell.classList.remove("zoomTarget"));
-          }
-        });
-
-        // Configure proper height of the zoomViewport, so zoomooz
-        // doesn't shit itself when zooming
-        let definitionsA = document.querySelector(".definitions_a");
-        let definitionsD = document.querySelector(".definitions_d");
-        $("#return_def_zoom").height(
-          Math.max(definitionsA.scrollHeight, definitionsD.scrollHeight) + "px"
-        );
-
-        // Prevent the unecessary scrollbar in the zoomContainer
-        let defZoomContainer = document.getElementById("no_scroll");
-        if (defZoomContainer.scrollHeight - 1 > defZoomContainer.clientHeight)
-          // For some reason the scrollHeight is 1 greater than the clientHeight
-          defZoomContainer.style.overflowY = "auto";
       });
     </script>
   </head>
@@ -358,7 +323,7 @@ generate dynamic content, as each crossword created by this program is unique
       <button
         id="close_popup_button"
         class="continue_button"
-        onclick="interaction.closeOnloadPopup()">
+        onclick="interaction.closeOnloadPopup(true)">
         {{ _('Continue') }}
       </button>
     </div>
