@@ -5,7 +5,7 @@ The app is run when the user presses the "Load crossword" button in the main GUI
 from configparser import ConfigParser
 from multiprocessing import Process
 from os import path
-from socket import socket
+from socket import socket, AF_INET, SOCK_STREAM
 
 from flask import Flask, render_template
 from flask_babel import Babel
@@ -36,19 +36,31 @@ def _server_process(*args, **kwargs) -> None:
     babel: Babel = Babel(app)
 
     cfg.read(Paths.CONFIG_PATH)
+    port = int(kwargs["port"])
+    retry = False
     try:
-        _update_config(cfg, "misc", "webapp_port", str(kwargs["port"]))
-        app.run(debug=False, port=int(kwargs["port"]))
-    except:  # Find an available port, since the current one is not available.
-        print(
-            f"\nPort {kwargs['port']} is not available, finding available "
-            f"port..."
-        )
-        s: socket = socket()
-        s.bind(("", 0))
-        sock_name: int = s.getsockname()[1]
-        _update_config(cfg, "misc", "webapp_port", str(sock_name))
-        app.run(debug=False, port=sock_name)
+        if not _is_port_in_use(port):
+            app.run(debug=False, port=port)
+        else:
+            retry = True
+    except Exception: # Can be flask or socket related
+        retry = True
+
+    finally:
+        if retry:
+            print(
+                f"\nPort {port} is not available, finding available port."
+            )
+            s: socket = socket()
+            s.bind(("", 0))
+            sock_name: int = s.getsockname()[1]
+            _update_config(cfg, "misc", "webapp_port", str(sock_name))
+            app.run(debug=False, port=sock_name)
+
+
+def _is_port_in_use(port: int) -> bool:
+    with socket(AF_INET, SOCK_STREAM) as s:
+        return s.connect_ex(("localhost", port)) == 0
 
 
 def _create_app_process(**kwargs) -> None:
