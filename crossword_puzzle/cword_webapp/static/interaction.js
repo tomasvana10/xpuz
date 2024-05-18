@@ -1,5 +1,6 @@
 class Interaction {
-  /* Class to handle all forms of interaction with the web app.
+  /* Class to handle all forms of interaction with the web app, as well as to
+  implement ergonomic features to improve the user experience.
   
   Also contains utility functions to perform cell-related calculations.
 	*/
@@ -13,14 +14,16 @@ class Interaction {
   static onlyLangRegex = /\p{L}/u; // Ensure user only types language characters
 
   constructor() {
-    this.direction = "ACROSS"; // Default direction when first clicking (if the
-                               // first click is at an intersection).
+    this.direction = "ACROSS"; // The default direction to choose, if possible
     this.currentWord = null; // e.x. "HELLO"
-    this.cellCoords = null; // e.x. [0, 5]
-    this.staticIndex = null; // e.x. 5
-
-    this.isDown = null;
+    this.cellCoords = null; // e.x. [0, 5] (row, column)
     this.wasEmpty = null;
+
+    // Variables modified by every call of ``getWordIndices``
+    this.staticIndex = null; // e.x. 5 (if ``direction`` is "ACROSS")
+    this.isDown = null;
+
+    // Misc variables
     this.compoundInputActive = null;
     this.completionPopupToggled = false;
     this.onloadPopupToggled = false;
@@ -34,7 +37,7 @@ class Interaction {
   }
 
   onLoad() {
-    // Get data from HTML body
+    /* Get crossword-related data from HTML body, provided by Flask. */
     this.body = document.querySelector("body");
     this.grid = eval(this.body.getAttribute("data-grid"));
     this.directions = eval(this.body.getAttribute("data-directions"));
@@ -53,10 +56,14 @@ class Interaction {
     this.zoomToggle = document.getElementById("tz");
     this.wordToggle = document.getElementById("tw");
     this.checkToggle = document.getElementById("tc");
+
+    // These elements, when clicked on (with ``.click()``) will force ``zoomooz``
+    // to unzoom the most recently zoomed-on element
     this.returnDefZoomElement = document.getElementById("return_def_zoom");
     this.returnGridZoomElement =
       document.getElementsByClassName("empty_cell")[0];
 
+    // Check README.md for this audios CC attribution
     this.jazz = document.getElementById("jazz");
     this.jazz.volume = 0.125;
 
@@ -76,6 +83,10 @@ class Interaction {
       element.onclick = event => this.onCellClick(event, element);
       element.classList.add("zoomTarget"); // Prevents the user from having
       // to click twice to zoom initially
+    });
+
+    document.querySelectorAll(".empty_cell").forEach(element => {
+      element.onclick = () => this.removeCompoundInput(false)
     });
 
     // Detect the user clicking on a word's definition
@@ -276,6 +287,7 @@ class Interaction {
     /* Determines how the focus of a cell within a word is shifted. */
 
     this.changeCellFocus(false);
+    let oldCellCoords = this.cellCoords;
     // User has the "smart skip" button toggled, so perform a cell skip
     if (mode === "enter" && this.skipToggle.checked) {
       this.cellCoords = this.skipCellCoords(
@@ -292,7 +304,7 @@ class Interaction {
       );
     }
 
-    this.autoShiftWordIfPossible(mode);
+    this.autoShiftWordIfPossible(mode, oldCellCoords);
     this.followCellZoom(currentCell);
 
     // Refocus the entire word, then set the focus of the cell that has just
@@ -302,22 +314,27 @@ class Interaction {
     this.changeCellFocus(true);
   }
 
-  autoShiftWordIfPossible(mode) {
-    /* Automatically shift to the next word if the user has completed their
-    current word (and they have the auto-word button toggled). 
+  autoShiftWordIfPossible(mode, oldCellCoords) {
+    /* Automatically shift to the next word if the user is performing a deletion/
+    insertion action that will not move them anywhere, for example:
+
+    [ A ] [ B ] [ ...C ] - After the C has been typed, ``shiftWordSelection`` 
+    will automatically shift forwards to the next word. If the user shifts onto
+    an already filled cell, they must type in it once more in order to shift to
+    the next word.
+
+    [ A ] [ ] [ ] - After the A has been deleted, the user must press enter once
+    more in order to shift backwards to the previous word.
     */
     if (this.wordToggle.checked) {
-      let newCellCoords = this.shiftCellCoords(
-        this.cellCoords,
-        this.direction,
-        mode
-      );
-
+      let arrow =
+        mode === "del" ? Interaction.arrowKeys[2] : Interaction.arrowKeys[3];
       if (
-        newCellCoords === this.cellCoords &&
-        !Interaction.isEmpty(Interaction.getCellElement(newCellCoords))
+        oldCellCoords.isEqualTo(this.cellCoords) &&
+        (!Interaction.isEmpty(Interaction.getCellElement(this.cellCoords)) ||
+          mode === "del")
       ) {
-        this.shiftWordSelection(null, "ArrowDown");
+        this.shiftWordSelection(null, arrow);
       }
     }
   }
@@ -326,13 +343,15 @@ class Interaction {
     /* Cycle to the next word based on the sequence in which the words are placed
     on the grid. 
     */
-    event?.preventDefault();
+    event?.preventDefault(); // This method is not always called by a listener,
+    // so optional chaining is used
     let offset = arrow === Interaction.arrowKeys[2] ? -1 : 1;
     let def = this.getDefinitionsListItemFromWord();
     let newWordNum = Number(def.getAttribute("data-num")) + offset;
     let newDef = document.querySelector(`[data-num="${newWordNum}"`);
     if (!newDef) {
-      // Go to either the start or end
+      // User is at the first or last word, so go to either the last
+      // word (if deleting) or the first word (if inserting)
       let num = offset === 1 ? "1" : this.wordCount;
       newDef = document.querySelector(`[data-num="${num}"]`);
     }
@@ -374,9 +393,10 @@ class Interaction {
     }
 
     // Account for a case like this:  [ <Focus> ] [ H ] [ I ]
-    // Whereby we prevent [ I ] from being focused to when skipping
+    // Whereby we prevent [ I ] (the end of the word) from being focused to
+    // when skipping (instead we just shift the cell coords once).
     if (!Interaction.isEmpty(Interaction.getCellElement(newCellCoords))) {
-      return coords;
+      return this.shiftCellCoords(coords, direction, "enter");
     } else {
       return newCellCoords;
     }
@@ -573,7 +593,7 @@ class Interaction {
         // Allow the input the user just made
         // to be shown by the DOM
         this.handleEscapePress(null);
-        this.toggleCompletionPopup();
+        this.displayCompletionPopup();
         this.jazz.play();
       });
     }
@@ -614,7 +634,7 @@ class Interaction {
         for (const cell of this.getWordElements()) {
           this.doGridOperation(cell, mode);
         }
-        if (mode === "reveal") {
+        if (mode === "reveal" && this.wordToggle.checked) {
           // Automatically go to the next word
           this.shiftWordSelection(null, "ArrowDown");
         }
@@ -828,15 +848,19 @@ class Interaction {
     if (document.getElementsByClassName("compound_input")[0]) {
       return this.removeCompoundInput(andShiftForwarder);
     }
-    let priorValue = Interaction.getCellElement(this.cellCoords).childNodes[0]
-      .nodeValue;
+    let nodes = Interaction.getCellElement(this.cellCoords).childNodes
+    let priorValue = nodes[0].nodeValue;
+    if (nodes.length > 1) {
+      nodes[1].style.display = "none"; // Hide number label if possible
+    }
     this.setCompoundInput(priorValue);
   }
 
   removeCompoundInput(andShift = true) {
     if (!this.compoundInputActive) {
       return;
-    } // failsafe
+    } // Maybe the user triggered this method with a click but no compound input
+      // element exists
     let compoundInput = document.getElementsByClassName("compound_input")[0];
     let cellOfCompoundInput = compoundInput.parentElement;
     let enteredText = compoundInput.value;
@@ -848,14 +872,24 @@ class Interaction {
       enteredText = "";
     }
     compoundInput.remove();
-    cellOfCompoundInput.childNodes[0].nodeValue = enteredText[0];
+    let nodes = cellOfCompoundInput.childNodes
+    nodes[0].nodeValue = enteredText[0];
+    if (nodes.length > 1) {
+      nodes[1].style.display = "inline"; // Reset number label display 
+    }
     cellOfCompoundInput.onclick = event =>
       this.onCellClick(event, cellOfCompoundInput);
     cellOfCompoundInput.classList.remove("lock_in", "wrong");
+
     this.compoundInputActive = false;
     this.currentPlaceholder = 0;
+
+    if (this.checkToggle.checked) {
+      this.doGridOperation(cellOfCompoundInput, "check")
+    }
     if (andShift) {
-      this.handleCellShift("enter", cellOfCompoundInput); // Shift focus for ease of use
+      this.handleCellShift("enter", cellOfCompoundInput); // Shift focus for 
+                                                          // ease of use
     }
   }
 
@@ -987,7 +1021,7 @@ class Interaction {
     });
   }
 
-  toggleCompletionPopup() {
+  displayCompletionPopup() {
     this.completionPopupToggled = !this.completionPopupToggled;
     document.getElementById("blur").classList.toggle("active");
     document.getElementById("completion_popup").classList.toggle("active");
