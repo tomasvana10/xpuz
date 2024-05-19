@@ -31,6 +31,7 @@ class Interaction {
     this.currentPlaceholder = 0;
     this.doNotHandleStandardCellClick = false;
     this.preventInitialLIZoom = true;
+    this.setCoordsToEndOfWord = false;
 
     // When the DOM is ready, trigger the ``onLoad`` method
     document.addEventListener("DOMContentLoaded", this.onLoad.bind(this));
@@ -131,7 +132,11 @@ class Interaction {
 
   playClick() {
     if (this.playClicks) {
-      return this.clicks[Math.floor(Math.random() * this.clicks.length)].play();
+      try {
+        return this.clicks[Math.floor(Math.random() * this.clicks.length)].play();
+      } catch (err) { } // This error detection prevents an error that I observed
+                        // only once, and I forgot what it was, so this handling
+                        // will be left empty.
     }
   }
 
@@ -153,7 +158,7 @@ class Interaction {
     }
 
     let inputValue = event.key;
-    this.playClick();
+    this.playClick()
 
     // Handle the setting of a compound input element when pressing [Shift + 1]
     if (inputValue === "!" && event.shiftKey) {
@@ -368,6 +373,9 @@ class Interaction {
       newDef = document.querySelector(`[data-num="${num}"]`);
     }
     let oldCellCoords = this.cellCoords;
+    if (offset === -1) {
+      this.setCoordsToEndOfWord = true;
+    }
     newDef.focus();
     newDef.click();
     newDef.blur();
@@ -457,6 +465,12 @@ class Interaction {
     }
     this.direction = dir;
     this.cellCoords = Interaction.updateCellCoords(currentCell);
+    if (this.setCoordsToEndOfWord) { // When user is deleting with auto-word on.
+      this.cellCoords = Interaction.updateCellCoords(
+        [...this.getWordElements()].slice(-1)[0]
+      )
+      this.setCoordsToEndOfWord = false;
+    }
     this.currentWord = this.updateCurrentWord();
     this.setFocusMode(true);
   }
@@ -1138,4 +1152,11 @@ Element.prototype.hasCorrectValue = function () {
 let interaction = new Interaction();
 
 // Enable easter egg through console
-const egg = () => interaction.playClicks = true;
+function egg() {
+  interaction.playClicks = !interaction.playClicks;
+  if (interaction.playClicks) {
+    return "EASTER EGG ON";
+  } else {
+    return "EASTER EGG OFF";
+  }
+}
