@@ -1,17 +1,17 @@
+const arrowKeys = ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"];
+const spacebarKeys = ["Spacebar", " "];
+const backspaceKeys = ["Backspace", "Delete"];
+const compoundInputPlaceholders = [
+  "ㅇ", "+", "ㅏ", "=", "아", "क​", "+", "इ", "=", "कै",
+];
+const onlyLangRegex = /\p{L}/u; // Ensure user only types language characters
+
 class Interaction {
   /* Class to handle all forms of interaction with the web app, as well as to
   implement ergonomic features to improve the user experience.
   
   Also contains utility functions to perform cell-related calculations.
 	*/
-
-  static arrowKeys = ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"];
-  static spacebarKeys = ["Spacebar", " "];
-  static backspaceKeys = ["Backspace", "Delete"];
-  static compoundInputPlaceholders = [
-    "ㅇ", "+", "ㅏ", "=", "아", "क​", "+", "इ", "=", "कै",
-  ];
-  static onlyLangRegex = /\p{L}/u; // Ensure user only types language characters
 
   constructor() {
     this.direction = "ACROSS"; // The default direction to choose, if possible
@@ -82,11 +82,11 @@ class Interaction {
     document.querySelectorAll(".non_empty_cell").forEach(element => {
       element.onclick = event => this.onCellClick(event, element);
       element.classList.add("zoomTarget"); // Prevents the user from having
-      // to click twice to zoom initially
+                                           // to click twice to zoom initially
     });
 
     document.querySelectorAll(".empty_cell").forEach(element => {
-      element.onclick = () => this.removeCompoundInput(false)
+      element.onclick = () => this.removeCompoundInput(false);
     });
 
     // Detect the user clicking on a word's definition
@@ -177,7 +177,7 @@ class Interaction {
     }
 
     // User wants to clear the current word with [Shift + Backspace]
-    if (Interaction.backspaceKeys.includes(inputValue) && event.shiftKey) {
+    if (backspaceKeys.includes(inputValue) && event.shiftKey) {
       return this.doSpecialButtonAction("word", "clear", false);
     }
 
@@ -200,21 +200,21 @@ class Interaction {
     }
 
     if (
-      [...Interaction.arrowKeys.slice(2, 4)].includes(inputValue) &&
+      [...arrowKeys.slice(2, 4)].includes(inputValue) &&
       event.shiftKey
     ) {
       return this.shiftWordSelection(event, inputValue);
     }
 
     // Move the user's cell focus since they have pressed an arrow key
-    if (Interaction.arrowKeys.includes(inputValue)) {
+    if (arrowKeys.includes(inputValue)) {
       return this.handleArrowPress(inputValue, event);
     }
 
     // Alternate the user's direction since they are at an intersection
     if (
       this.intersections.includes(JSON.stringify(this.cellCoords)) &&
-      Interaction.spacebarKeys.includes(inputValue) // Pressing "Spacebar"
+      spacebarKeys.includes(inputValue) // Pressing "Spacebar"
     ) {
       return this.handleSpacebarPress(event);
     }
@@ -226,7 +226,7 @@ class Interaction {
   handleStandardInput(inputValue) {
     /* Handle a normal keyboard input from the user. */
 
-    let mode = Interaction.backspaceKeys.includes(inputValue) ? "del" : "enter";
+    let mode = backspaceKeys.includes(inputValue) ? "del" : "enter";
     let currentCell = Interaction.getCellElement(this.cellCoords);
 
     if (mode === "enter") {
@@ -234,7 +234,7 @@ class Interaction {
       // than 1 character
       if (
         !(
-          inputValue.length === 1 && inputValue.match(Interaction.onlyLangRegex)
+          inputValue.length === 1 && inputValue.match(onlyLangRegex)
         )
       ) {
         return;
@@ -328,7 +328,7 @@ class Interaction {
     */
     if (this.wordToggle.checked) {
       let arrow =
-        mode === "del" ? Interaction.arrowKeys[2] : Interaction.arrowKeys[3];
+        mode === "del" ? arrowKeys[2] : arrowKeys[3];
       if (
         oldCellCoords.isEqualTo(this.cellCoords) &&
         (!Interaction.isEmpty(Interaction.getCellElement(this.cellCoords)) ||
@@ -344,8 +344,8 @@ class Interaction {
     on the grid. 
     */
     event?.preventDefault(); // This method is not always called by a listener,
-    // so optional chaining is used
-    let offset = arrow === Interaction.arrowKeys[2] ? -1 : 1;
+                             // so optional chaining is used
+    let offset = arrow === arrowKeys[2] ? -1 : 1;
     let def = this.getDefinitionsListItemFromWord();
     let newWordNum = Number(def.getAttribute("data-num")) + offset;
     let newDef = document.querySelector(`[data-num="${newWordNum}"`);
@@ -655,7 +655,7 @@ class Interaction {
       cell.classList.remove("wrong");
       Interaction.setValue(cell, cell.getAttribute("data-value"));
       cell.classList.add("lock_in"); // This cell must now be correct, so lock
-      // it in
+                                     // it in
     } else if (mode === "check") {
       if (!Interaction.isEmpty(cell)) {
         if (cell.hasCorrectValue()) {
@@ -755,7 +755,7 @@ class Interaction {
     let [row, col] = this.cellCoords;
     this.isDown = this.direction === this.directions[1];
     this.staticIndex = this.isDown ? col : row; // The index that never changes (the row
-    // if direction is across, etc)
+                                                // if direction is across, etc)
     let [startCoords, endCoords] = this.isDown ? [row, row] : [col, col];
 
     // Find starting coords of the word
@@ -848,7 +848,7 @@ class Interaction {
     if (document.getElementsByClassName("compound_input")[0]) {
       return this.removeCompoundInput(andShiftForwarder);
     }
-    let nodes = Interaction.getCellElement(this.cellCoords).childNodes
+    let nodes = Interaction.getCellElement(this.cellCoords).childNodes;
     let priorValue = nodes[0].nodeValue;
     if (nodes.length > 1) {
       nodes[1].style.display = "none"; // Hide number label if possible
@@ -860,22 +860,22 @@ class Interaction {
     if (!this.compoundInputActive) {
       return;
     } // Maybe the user triggered this method with a click but no compound input
-      // element exists
+    // element exists
     let compoundInput = document.getElementsByClassName("compound_input")[0];
     let cellOfCompoundInput = compoundInput.parentElement;
     let enteredText = compoundInput.value;
     try {
-      if (!enteredText[0].match(Interaction.onlyLangRegex)) {
+      if (!enteredText[0].match(onlyLangRegex)) {
         enteredText = "";
       }
     } catch (err) {
       enteredText = "";
     }
     compoundInput.remove();
-    let nodes = cellOfCompoundInput.childNodes
+    let nodes = cellOfCompoundInput.childNodes;
     nodes[0].nodeValue = enteredText[0];
     if (nodes.length > 1) {
-      nodes[1].style.display = "inline"; // Reset number label display 
+      nodes[1].style.display = "inline"; // Reset number label display
     }
     cellOfCompoundInput.onclick = event =>
       this.onCellClick(event, cellOfCompoundInput);
@@ -885,10 +885,10 @@ class Interaction {
     this.currentPlaceholder = 0;
 
     if (this.checkToggle.checked) {
-      this.doGridOperation(cellOfCompoundInput, "check")
+      this.doGridOperation(cellOfCompoundInput, "check");
     }
     if (andShift) {
-      this.handleCellShift("enter", cellOfCompoundInput); // Shift focus for 
+      this.handleCellShift("enter", cellOfCompoundInput); // Shift focus for
                                                           // ease of use
     }
   }
@@ -900,10 +900,10 @@ class Interaction {
       return;
     }
     compoundInput.placeholder =
-      Interaction.compoundInputPlaceholders[this.currentPlaceholder];
+      compoundInputPlaceholders[this.currentPlaceholder];
     if (
       this.currentPlaceholder ===
-      Interaction.compoundInputPlaceholders.length - 1
+      compoundInputPlaceholders.length - 1
     ) {
       this.currentPlaceholder = 0;
     } else {

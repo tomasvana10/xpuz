@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "gulp": "^5.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-terser": "^2.1.0",
+    "terser": "^5.31.0"
+  }
+}

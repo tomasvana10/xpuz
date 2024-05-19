@@ -22,3 +22,7 @@ dist
 
 # dev tools
 .ruff_cache
+
+# npm
+node_modules
+yarn.lock
