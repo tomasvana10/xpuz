@@ -68,8 +68,25 @@ generate dynamic content, as each crossword created by this program is unique
     data-word_count="{{ starting_word_positions|length }}">
     <audio
       id="jazz" 
-      src="{{ url_for('static', filename='jazz.wav') }}">
+      src="{{ url_for('static', filename='sound/jazz.wav') }}">
     </audio>
+    <audio
+      class="click" 
+      src="{{ url_for('static', filename='sound/click1.wav') }}">
+    </audio>
+    <audio
+    class="click"  
+      src="{{ url_for('static', filename='sound/click2.wav') }}">
+    </audio>
+    <audio
+      class="click" 
+      src="{{ url_for('static', filename='sound/click3.wav') }}">
+    </audio>
+    <audio
+      class="click" 
+      src="{{ url_for('static', filename='sound/click4.wav') }}">
+    </audio>
+    
     
     <div class="container" id="blur">
       <div class="left_side">

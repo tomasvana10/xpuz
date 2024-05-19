@@ -3,6 +3,7 @@ The app is run when the user presses the "Load crossword" button in the main GUI
 """
 
 from configparser import ConfigParser
+from logging import getLogger, ERROR
 from multiprocessing import Process
 from os import path
 from socket import socket, AF_INET, SOCK_STREAM
@@ -14,6 +15,9 @@ from crossword_puzzle.constants import Paths
 from crossword_puzzle.utils import _update_config
 
 app: Flask = Flask(__name__)
+# Suppress info from Flask such as ``GET`` requests
+log = getLogger("werkzeug") 
+log.setLevel(ERROR)
 cfg: ConfigParser = ConfigParser()
 
 

@@ -67,6 +67,11 @@ class Interaction {
     this.jazz = document.getElementById("jazz");
     this.jazz.volume = 0.125;
 
+    // Easter egg typing sounds - licensed under Mixkit Sound Effects Free License
+    this.clicks = [...document.getElementsByClassName("click")];
+    this.clicks.forEach(click => click.volume = 0.175);
+    this.playClicks = false;
+
     this.setListeners();
     Interaction.configureScrollHeights();
     this.displayOnloadPopup();
@@ -124,6 +129,12 @@ class Interaction {
     );
   }
 
+  playClick() {
+    if (this.playClicks) {
+      return this.clicks[Math.floor(Math.random() * this.clicks.length)].play();
+    }
+  }
+
   zoomOut() {
     if (document.querySelector(".non_empty_cell.selectedZoomTarget")) {
       this.returnGridZoomElement.click();
@@ -142,6 +153,7 @@ class Interaction {
     }
 
     let inputValue = event.key;
+    this.playClick();
 
     // Handle the setting of a compound input element when pressing [Shift + 1]
     if (inputValue === "!" && event.shiftKey) {
@@ -1124,3 +1136,6 @@ Element.prototype.hasCorrectValue = function () {
 };
 
 let interaction = new Interaction();
+
+// Enable easter egg through console
+const egg = () => interaction.playClicks = true;
