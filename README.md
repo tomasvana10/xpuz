@@ -61,7 +61,6 @@ deactivate
 Check out the wiki [here](https://github.com/tomasvana10/crossword_puzzle/wiki)
 
 ## Third-party library acknowledgements
-- [Zoomooz.js](https://jaukia.github.io/zoomooz/) - jQuery library for making webpage elements zoomable
 - [Flask](https://flask.palletsprojects.com/en/3.0.x/) - Web framework for the crossword web application
 - [Babel](https://babel.pocoo.org/en/latest/) - l10n functionality and management of message catalogues
 - [flask-babel](https://python-babel.github.io/flask-babel/) - i18n integration for the Flask web application
@@ -69,6 +68,10 @@ Check out the wiki [here](https://github.com/tomasvana10/crossword_puzzle/wiki)
 - [Google.Cloud.Translation.V2](https://cloud.google.com/dotnet/docs/reference/Google.Cloud.Translation.V2/latest) - Translation of locales 
 - [Pillow](https://pillow.readthedocs.io/en/stable/) - Image processing services
 - [regex](https://github.com/mrabarnett/mrab-regex) - Alternative to the standard `re` module, required for some functionality
+- [Zoomooz.js](https://jaukia.github.io/zoomooz/) - jQuery library for making webpage elements zoomable
+- [gulp.js](https://gulpjs.com/) - Toolkit to help automate the web app's JavaScript transpilation
+- [Babel.js](https://babeljs.io/) - JavaScript transpiler
+- [Terser](https://terser.org/) - JavaScript minifier
 
 ## Other acknowledgements
 - [NYTimes Mini Crossword](https://www.nytimes.com/crosswords/game/mini) - Heavily inspired the design of the web application
