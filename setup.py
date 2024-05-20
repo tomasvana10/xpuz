@@ -5,7 +5,7 @@ with open("README.md") as f:
 
 setup(
     name="crossword_puzzle",
-    version="1.2.75",
+    version="1.2.76",
     author="Tomas Vana",
     url="https://github.com/tomasvana10/crossword_puzzle",
     description="Select, generate and play always-unique crosswords.",
