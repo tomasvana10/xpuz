@@ -2,7 +2,9 @@ from math import ceil, sqrt
 from random import choice, sample
 from typing import Dict, List, Tuple, Union
 
-from crossword_puzzle.constants import CrosswordDirection, CrosswordStyle, DimensionsCalculation
+from crossword_puzzle.constants import (
+    CrosswordDirection, CrosswordStyle, DimensionsCalculation,
+)
 from crossword_puzzle.custom_types import Placement
 from crossword_puzzle.definitions_parser import DefinitionsParser
 from crossword_puzzle.errors import PrintingCrosswordObjectBeforeGeneration

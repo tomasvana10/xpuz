@@ -763,9 +763,9 @@ class CrosswordBrowser(CTkFrame):
         """
         self.category_block_objects: List[CrosswordCategoryBlock] = []
         i: int = 0
-        for category in [
+        for category in sorted([
             f for f in scandir(Paths.BASE_CWORDS_PATH) if f.is_dir()
-        ]:
+        ], key=lambda cat: cat.name):
             # Make the ``info.json`` file if it doesn't exist already
             if (
                 "info.json" not in listdir(category.path)
