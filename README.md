@@ -31,7 +31,8 @@ An educational GUI package built with `CustomTkinter` that allows you to select,
 ## Installation
 **requires [pip](https://pip.pypa.io/en/stable/installation/)**
 
-If using `python` or `pip` doesn't work, try using `python3` or `pip3`
+> [!TIP]
+> If using `python` or `pip` doesn't work, try using `python3` or `pip3`
 
 - Make a virtual environment and activate it (recommended):
 ```
