@@ -1,7 +1,9 @@
 /* To begin transpiling the javascript:
-1. npm install --global yarn
+1. npm install -g yarn
 2. yarn install
 3. gulp
+
+If the gulp version is unsupported, run: npm install -g gulp (with sudo if possible)
 */
 
 const gulp = require("gulp");

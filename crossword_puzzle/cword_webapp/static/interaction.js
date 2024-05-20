@@ -5,6 +5,10 @@ const compoundInputPlaceholders = [
   "ㅇ", "+", "ㅏ", "=", "아", "क​", "+", "इ", "=", "कै",
 ];
 const onlyLangRegex = /\p{L}/u; // Ensure user only types language characters
+const modes = { // Cell manipulation directives
+  ENTER: "enter",
+  DEL: "del",
+};
 
 class Interaction {
   /* Class to handle all forms of interaction with the web app, as well as to
@@ -32,6 +36,7 @@ class Interaction {
     this.doNotHandleStandardCellClick = false;
     this.preventInitialLIZoom = true;
     this.setCoordsToEndOfWord = false;
+    this.bypassPostCellShiftActions = false;
 
     // When the DOM is ready, trigger the ``onLoad`` method
     document.addEventListener("DOMContentLoaded", this.onLoad.bind(this));
@@ -70,7 +75,7 @@ class Interaction {
 
     // Easter egg typing sounds - licensed under Mixkit Sound Effects Free License
     this.clicks = [...document.getElementsByClassName("click")];
-    this.clicks.forEach(click => click.volume = 0.175);
+    this.clicks.forEach(click => (click.volume = 0.175));
     this.playClicks = false;
 
     this.setListeners();
@@ -78,19 +83,19 @@ class Interaction {
     this.displayOnloadPopup();
     // Clear the grid to prevent possible issues with HTML
     this.doSpecialButtonAction("grid", "clear", false);
-    // Cycle placeholder text if a compound input element is available
+    // Cycle placeholder text of a compound input element
     setInterval(this.cycleCompoundInputPlaceholderText.bind(this), 750);
   }
 
   setListeners() {
     /* Add listeners and onclick functions. */
-
     document.querySelectorAll(".non_empty_cell").forEach(element => {
       element.onclick = event => this.onCellClick(event, element);
       element.classList.add("zoomTarget"); // Prevents the user from having
                                            // to click twice to zoom initially
     });
 
+    // Allow user to remove a compound input by clicking on a "void" cell
     document.querySelectorAll(".empty_cell").forEach(element => {
       element.onclick = () => this.removeCompoundInput(false);
     });
@@ -114,33 +119,46 @@ class Interaction {
       }
     });
 
+    // Compound input button
     document.getElementById("compound_button").onclick = event => {
-      event.stopPropagation();
+      event.stopPropagation(); // If we allow this event to propagate, it will be
+                               // registered after the compound input is set, 
+                               // therefore closing it automatically due to the 
+                               // click listener
       this.handleSetCompoundInput(false);
     };
 
+    // Special inputs such as keybinds, escape and spacebar
     document.addEventListener("keydown", event =>
       this.handleSpecialInput(event)
     );
 
+    // General clicks anywhere, mainly to close dropdowns/compound input elements
     document.addEventListener("click", event => this.handleClick(event));
 
+    // Handles when a dropdown should close if using tab
     document.addEventListener("focusout", event =>
       this.handleDropdownFocusOut(event)
     );
   }
 
   playClick() {
+    /* Keyboard sound effects (easter egg). */
     if (this.playClicks) {
       try {
-        return this.clicks[Math.floor(Math.random() * this.clicks.length)].play();
-      } catch (err) { } // This error detection prevents an error that I observed
-                        // only once, and I forgot what it was, so this handling
-                        // will be left empty.
+        return this.clicks[
+          Math.floor(Math.random() * this.clicks.length) // Random choice
+        ].play();
+      } catch (err) {} // This error detection prevents an error that I observed
+                       // only once, and I forgot what it was, so this handling
+                       // will be left empty.
     }
   }
 
   zoomOut() {
+    /* Zoom out from the most recently zoomed element if the user is disabling
+    the zoom button or they pressed escape. 
+    */
     if (document.querySelector(".non_empty_cell.selectedZoomTarget")) {
       this.returnGridZoomElement.click();
     } else if (document.querySelector(".def.selectedZoomTarget")) {
@@ -153,12 +171,13 @@ class Interaction {
     a keybind. If this is the case, this function will process it and prevent
     ``this.handleStandardInput`` from running. 
     */
+    // Prevent input when a popup is toggled
     if (this.onloadPopupToggled || this.completionPopupToggled) {
       return;
     }
 
     let inputValue = event.key;
-    this.playClick()
+    this.playClick();
 
     // Handle the setting of a compound input element when pressing [Shift + 1]
     if (inputValue === "!" && event.shiftKey) {
@@ -216,10 +235,9 @@ class Interaction {
       return;
     }
 
-    if (
-      [...arrowKeys.slice(2, 4)].includes(inputValue) &&
-      event.shiftKey
-    ) {
+    // Shift word selection forwards if pressing [Shift + ArrowDown], or
+    // backwards if pressing [Shift + ArrowUp]
+    if ([...arrowKeys.slice(2, 4)].includes(inputValue) && event.shiftKey) {
       return this.shiftWordSelection(event, inputValue);
     }
 
@@ -228,10 +246,11 @@ class Interaction {
       return this.handleArrowPress(inputValue, event);
     }
 
-    // Alternate the user's direction since they are at an intersection
+    // Alternate the user's direction since they are at an intersection and are
+    // pressing the spacebar
     if (
       this.intersections.includes(JSON.stringify(this.cellCoords)) &&
-      spacebarKeys.includes(inputValue) // Pressing "Spacebar"
+      spacebarKeys.includes(inputValue)
     ) {
       return this.handleSpacebarPress(event);
     }
@@ -243,17 +262,13 @@ class Interaction {
   handleStandardInput(inputValue) {
     /* Handle a normal keyboard input from the user. */
 
-    let mode = backspaceKeys.includes(inputValue) ? "del" : "enter";
+    let mode = backspaceKeys.includes(inputValue) ? modes.DEL : modes.ENTER;
     let currentCell = Interaction.getCellElement(this.cellCoords);
 
-    if (mode === "enter") {
+    if (mode === modes.ENTER) {
       // Ensure the user is typing a language character that is not longer
       // than 1 character
-      if (
-        !(
-          inputValue.length === 1 && inputValue.match(onlyLangRegex)
-        )
-      ) {
+      if (!(inputValue.length === 1 && inputValue.match(onlyLangRegex))) {
         return;
       }
 
@@ -273,7 +288,8 @@ class Interaction {
       if (!this.checkToggle.checked) {
         currentCell.classList.remove("wrong");
       }
-    } else if (mode === "del") {
+      
+    } else if (mode === modes.DEL) {
       // The focused cell has content, just delete it and do nothing
       if (
         !Interaction.isEmpty(currentCell) &&
@@ -305,8 +321,8 @@ class Interaction {
 
     this.changeCellFocus(false);
     let oldCellCoords = this.cellCoords;
-    // User has the "smart skip" button toggled, so perform a cell skip
-    if (mode === "enter" && this.skipToggle.checked) {
+    // User has the auto-skip button toggled, so perform a cell skip
+    if (mode === modes.ENTER && this.skipToggle.checked) {
       this.cellCoords = this.skipCellCoords(
         this.cellCoords,
         this.direction,
@@ -319,6 +335,16 @@ class Interaction {
         this.direction,
         mode
       );
+    }
+
+    // ``skipCellCoords`` realised it cannot skip anywhere, and the user has
+    // auto-word enabled. So, instead of leaving this function to handle the
+    // cell shift, it called ``shiftWordSelection`` and set this boolean
+    // true to prevent ``handleCellShift`` from finishing its job, as it doesn't
+    // need it to.
+    if (this.bypassPostCellShiftActions) {
+      this.bypassPostCellShiftActions = false;
+      return;
     }
 
     this.autoShiftWordIfPossible(mode, oldCellCoords);
@@ -344,25 +370,33 @@ class Interaction {
     more in order to shift backwards to the previous word.
     */
     if (this.wordToggle.checked) {
-      let arrow =
-        mode === "del" ? arrowKeys[2] : arrowKeys[3];
+      let arrow = mode === modes.DEL ? arrowKeys[2] : arrowKeys[3];
       if (
         oldCellCoords.isEqualTo(this.cellCoords) &&
         (!Interaction.isEmpty(Interaction.getCellElement(this.cellCoords)) ||
-          mode === "del")
+          mode === modes.DEL)
       ) {
-        this.shiftWordSelection(null, arrow);
+        this.shiftWordSelection(null, arrow, true);
       }
     }
   }
 
-  shiftWordSelection(event = null, arrow) {
+  shiftWordSelection(event = null, arrow, setToEnd = false) {
     /* Cycle to the next word based on the sequence in which the words are placed
     on the grid. 
+
+    Since this method can be called by either deleting at the start of a word
+    with 'auto-word' on, or by pressing [Shift + ArrowUp] or [Shift + ArrowDown],
+    the method must know whether to shift the selection of the prior word to the
+    start or end. If deleting, it is logical to set it to the end. However, if 
+    shifting with the latter methods, it is more logical to set it to the
+    beginning, as this form of word shifting is more explicit. This is achieved
+    through the ``setToEnd`` parameter.
     */
     event?.preventDefault(); // This method is not always called by a listener,
-                             // so optional chaining is used
-    let offset = arrow === arrowKeys[2] ? -1 : 1;
+    // so optional chaining is used
+    let offset = arrow === arrowKeys[2] ? -1 : 1; // You could argue it should
+    // be the other way
     let def = this.getDefinitionsListItemFromWord();
     let newWordNum = Number(def.getAttribute("data-num")) + offset;
     let newDef = document.querySelector(`[data-num="${newWordNum}"`);
@@ -373,8 +407,9 @@ class Interaction {
       newDef = document.querySelector(`[data-num="${num}"]`);
     }
     let oldCellCoords = this.cellCoords;
-    if (offset === -1) {
-      this.setCoordsToEndOfWord = true;
+    if (offset === -1 && setToEnd) {
+      this.setCoordsToEndOfWord = true; // Picked up by
+      // ``onDefinitionsListItemClick``
     }
     newDef.focus();
     newDef.click();
@@ -388,7 +423,7 @@ class Interaction {
     (that is separated by filled cells).
     */
 
-    let newCellCoords = this.shiftCellCoords(coords, direction, "enter");
+    let newCellCoords = this.shiftCellCoords(coords, direction, modes.ENTER);
     // The next cell is a void/empty cell, so just return the shifted coordinates.
     if (newCellCoords.isEqualTo(coords)) {
       return newCellCoords;
@@ -404,7 +439,11 @@ class Interaction {
     // Continue skipping cells until the current cell has content
     while (!Interaction.isEmpty(Interaction.getCellElement(newCellCoords))) {
       let oldCellCoords = newCellCoords;
-      newCellCoords = this.shiftCellCoords(newCellCoords, direction, "enter");
+      newCellCoords = this.shiftCellCoords(
+        newCellCoords,
+        direction,
+        modes.ENTER
+      );
       // As soon as the old cell coords are equal to the new ones, we can
       // no longer skip, so exit the while loop (or else everything will die)
       if (oldCellCoords.isEqualTo(newCellCoords)) {
@@ -416,7 +455,13 @@ class Interaction {
     // Whereby we prevent [ I ] (the end of the word) from being focused to
     // when skipping (instead we just shift the cell coords once).
     if (!Interaction.isEmpty(Interaction.getCellElement(newCellCoords))) {
-      return this.shiftCellCoords(coords, direction, "enter");
+      if (this.wordToggle.checked) {
+        this.shiftWordSelection(null, "ArrowDown");
+        this.bypassPostCellShiftActions = true;
+        return this.cellCoords;
+      } else {
+        return this.shiftCellCoords(coords, direction, modes.ENTER);
+      }
     } else {
       return newCellCoords;
     }
@@ -431,7 +476,7 @@ class Interaction {
     into a cell that may be a void cell. 
     */
 
-    let offset = mode == "enter" ? 1 : -1;
+    let offset = mode == modes.ENTER ? 1 : -1;
     let newCellCoords =
       dir === this.directions[1]
         ? [coords[0] + offset, coords[1]]
@@ -459,16 +504,18 @@ class Interaction {
     this.setFocusMode(false);
     document.activeElement.blur();
     // User has compound input set at, say, 26 down, and they have just clicked
-    // on the definition for 26 down, so refocus their compound input
+    // on the definition for 26 down, so refocus their compound input instead of
+    // removing it.
     if (this.compoundInputActive) {
       document.getElementsByClassName("compound_input")[0].focus();
     }
     this.direction = dir;
     this.cellCoords = Interaction.updateCellCoords(currentCell);
-    if (this.setCoordsToEndOfWord) { // When user is deleting with auto-word on.
+    if (this.setCoordsToEndOfWord) {
+      // When user is deleting with auto-word on.
       this.cellCoords = Interaction.updateCellCoords(
-        [...this.getWordElements()].slice(-1)[0]
-      )
+        [...this.getWordElements()].slice(-1)[0] // Acquire the last cell element
+      );
       this.setCoordsToEndOfWord = false;
     }
     this.currentWord = this.updateCurrentWord();
@@ -515,9 +562,10 @@ class Interaction {
     */
 
     event.preventDefault();
-    let mode = key === "ArrowDown" || key === "ArrowRight" ? "enter" : "del";
+    let mode =
+      key === arrowKeys[3] || key === arrowKeys[1] ? modes.ENTER : modes.DEL;
     let dir =
-      key === "ArrowDown" || key === "ArrowUp"
+      key === arrowKeys[3] || key === arrowKeys[2]
         ? this.directions[1]
         : this.directions[0];
     let oldCellCoords = Interaction.getCellElement(this.cellCoords);
@@ -576,6 +624,7 @@ class Interaction {
       }
     } else if (event.target.classList.contains("toggle")) {
       event.target.click();
+      event.target.blur();
     }
   }
 
@@ -653,7 +702,7 @@ class Interaction {
         this.doGridOperation(currentCell, mode);
         if (mode === "reveal") {
           // Automatically go to the next cell
-          this.handleCellShift("enter", currentCell);
+          this.handleCellShift(modes.ENTER, currentCell);
         }
         break;
       case "word": // Do a grid operation on each element of the word
@@ -662,7 +711,7 @@ class Interaction {
         }
         if (mode === "reveal" && this.wordToggle.checked) {
           // Automatically go to the next word
-          this.shiftWordSelection(null, "ArrowDown");
+          this.shiftWordSelection(null, arrowKeys[3]);
         }
         break;
       case "grid": // Do a grid operation on each non empty cell of the grid
@@ -681,7 +730,7 @@ class Interaction {
       cell.classList.remove("wrong");
       Interaction.setValue(cell, cell.getAttribute("data-value"));
       cell.classList.add("lock_in"); // This cell must now be correct, so lock
-                                     // it in
+      // it in
     } else if (mode === "check") {
       if (!Interaction.isEmpty(cell)) {
         if (cell.hasCorrectValue()) {
@@ -713,8 +762,10 @@ class Interaction {
     */
 
     return (
-      this.shiftCellCoords(coords, this.direction, "enter").isEqualTo(coords) &&
-      this.shiftCellCoords(coords, this.direction, "del").isEqualTo(coords)
+      this.shiftCellCoords(coords, this.direction, modes.ENTER).isEqualTo(
+        coords
+      ) &&
+      this.shiftCellCoords(coords, this.direction, modes.DEL).isEqualTo(coords)
     );
   }
 
@@ -914,8 +965,8 @@ class Interaction {
       this.doGridOperation(cellOfCompoundInput, "check");
     }
     if (andShift) {
-      this.handleCellShift("enter", cellOfCompoundInput); // Shift focus for
-                                                          // ease of use
+      this.handleCellShift(modes.ENTER, cellOfCompoundInput); // Shift focus for
+                                                              // ease of use
     }
   }
 
@@ -927,10 +978,7 @@ class Interaction {
     }
     compoundInput.placeholder =
       compoundInputPlaceholders[this.currentPlaceholder];
-    if (
-      this.currentPlaceholder ===
-      compoundInputPlaceholders.length - 1
-    ) {
+    if (this.currentPlaceholder === compoundInputPlaceholders.length - 1) {
       this.currentPlaceholder = 0;
     } else {
       this.currentPlaceholder += 1;
