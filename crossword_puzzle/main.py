@@ -11,6 +11,7 @@ from os import listdir, path, scandir
 from platform import system
 from tkinter import Event, IntVar, messagebox
 from typing import Dict, List, Tuple, Union
+from uuid import uuid4
 from webbrowser import open_new_tab
 
 from babel import Locale, numbers
@@ -697,6 +698,7 @@ class CrosswordBrowser(CTkFrame):
             js_err_msgs=[
                 _("To perform this operation, you must first select a cell.")
             ],
+            uuid=str(uuid4()),
         )
 
     def _interpret_cword_data(self, crossword: Crossword) -> None:

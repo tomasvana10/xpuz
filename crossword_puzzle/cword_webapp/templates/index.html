@@ -65,7 +65,8 @@ generate dynamic content, as each crossword created by this program is unique
     data-colour_palette="{{ json_colour_palette }}"
     data-intersections="{{ intersections }}"
     data-js_err_msgs="{{ js_err_msgs }}"
-    data-word_count="{{ starting_word_positions|length }}">
+    data-word_count="{{ starting_word_positions|length }}"
+    data-uuid="{{ uuid }}">
     <audio
       id="jazz" 
       src="{{ url_for('static', filename='sound/jazz.wav') }}">
@@ -340,7 +341,7 @@ generate dynamic content, as each crossword created by this program is unique
       <button
         id="close_popup_button"
         class="continue_button"
-        onclick="interaction.closeOnloadPopup(true)">
+        onclick="interaction.closeOnloadPopup()">
         {{ _('Continue') }}
       </button>
     </div>
