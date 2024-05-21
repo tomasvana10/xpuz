@@ -9,6 +9,17 @@ const modes = { // Cell manipulation directives
   ENTER: "enter",
   DEL: "del",
 };
+const gridOp = { // Grid operation directives
+  REVEAL: "reveal",
+  CHECK: "check",
+  CLEAR: "clear",
+};
+const opMagnitude = { // The scale to which a grid operation is performed 
+  CELL: "cell",
+  WORD: "word",
+  GRID: "grid",
+}
+const toggleIds = ["ts", "tw", "tc", "tz"];
 
 class Interaction {
   /* Class to handle all forms of interaction with the web app, as well as to
@@ -37,13 +48,15 @@ class Interaction {
     this.preventInitialLIZoom = true;
     this.setCoordsToEndOfWord = false;
     this.bypassPostCellShiftActions = false;
+    this.doNotSaveToggleState = true;
 
     // When the DOM is ready, trigger the ``onLoad`` method
     document.addEventListener("DOMContentLoaded", this.onLoad.bind(this));
   }
 
   onLoad() {
-    /* Get crossword-related data from HTML body, provided by Flask. */
+    /* Perform tasks that require the DOM content to be loaded. */
+
     this.body = document.querySelector("body");
     this.grid = eval(this.body.getAttribute("data-grid"));
     this.directions = eval(this.body.getAttribute("data-directions"));
@@ -57,6 +70,7 @@ class Interaction {
     );
     this.errMsgs = eval(this.body.getAttribute("data-js_err_msgs"));
     this.wordCount = this.body.getAttribute("data-word_count");
+    this.uuid = this.body.getAttribute("data-uuid");
 
     this.skipToggle = document.getElementById("ts");
     this.zoomToggle = document.getElementById("tz");
@@ -78,17 +92,31 @@ class Interaction {
     this.clicks.forEach(click => (click.volume = 0.175));
     this.playClicks = false;
 
-    this.setListeners();
+    this.setListeners(); 
     Interaction.configureScrollHeights();
+
+    this.doNotSaveGridState = true; // Must use this flag to prevent the ``gridState``
+                                    // cookie being overridden.
+    // Wipe the grid to prevent issues with the cell's node values, such as the
+    // newline character.
+    this.doSpecialButtonAction(opMagnitude.GRID, gridOp.CLEAR, false);
+    this.doNotSaveGridState = false;
+
+    this.applyCookieData(); // Update grid and toggles
     this.displayOnloadPopup();
-    // Clear the grid to prevent possible issues with HTML
-    this.doSpecialButtonAction("grid", "clear", false);
-    // Cycle placeholder text of a compound input element
+
+    // This flag was initially toggled to true, as by default, the toggles are
+    // automatically turned off, thus overriding the toggle's cookies. It should
+    // be safe to make it false now.
+    this.doNotSaveToggleState = false;
+
+    // Cycle placeholder text of a compound input element (if possible)
     setInterval(this.cycleCompoundInputPlaceholderText.bind(this), 750);
   }
 
   setListeners() {
     /* Add listeners and onclick functions. */
+
     document.querySelectorAll(".non_empty_cell").forEach(element => {
       element.onclick = event => this.onCellClick(event, element);
       element.classList.add("zoomTarget"); // Prevents the user from having
@@ -119,11 +147,18 @@ class Interaction {
       }
     });
 
+    // Detect checkboxes being modified 
+    document
+      .querySelectorAll(".toggle_checkbox")
+      .forEach(element =>
+        element.addEventListener("click", () => this.saveToggleState(element))
+      );
+
     // Compound input button
     document.getElementById("compound_button").onclick = event => {
       event.stopPropagation(); // If we allow this event to propagate, it will be
-                               // registered after the compound input is set, 
-                               // therefore closing it automatically due to the 
+                               // registered after the compound input is set,
+                               // therefore closing it automatically due to the
                                // click listener
       this.handleSetCompoundInput(false);
     };
@@ -142,8 +177,76 @@ class Interaction {
     );
   }
 
+  saveGridState() {
+    /* Save the current grid values, classes (locked in/revealed and wrong), 
+    cell focus position, and direction whenever modifying the grid. I could 
+    have sprinkled this method around within the I/O related methods, but 
+    instead, it is called whenever ``setValue`` is called or a check/reveal 
+    special button action is completed.
+
+    Additionally, the session's UUID is saved. Each crossword comes with its 
+    own unique identifier, so if the user generates a new crossword, the web 
+    app will notice that the UUID is different, therefore it will not attempt 
+    to load the existing ``gridState`` cookie (if it even exists).
+    */
+
+    let [gridState, gridClassState] = this.getGrid(true);
+    Cookies.setCookie(
+      "gridState",
+      JSON.stringify([
+        this.uuid,
+        gridState,
+        gridClassState,
+        this.cellCoords,
+        this.direction,
+      ]),
+      1 // Expiry in days
+    );
+  }
+
+  saveToggleState(toggle) {
+    /* Update the toggle cookie to "1" if it is being turned on, or "0" if it is
+    being turned off. 
+    */
+
+    if (this.doNotSaveToggleState) {
+      return;
+    }
+    Cookies.setCookie(toggle.id, toggle.checked ? "1" : "0", 100);
+  }
+
+  applyCookieData() {
+    /* Apply all available cookie data to the web app, restoring the UI from a
+    prior state. 
+    */
+
+    let state = Cookies.getCookie("gridState");
+    let parsedState;
+
+    try {
+      parsedState = JSON.parse(state);
+      this.direction = parsedState[4];
+    } catch (err) { // The cookie doesn't exist, just select the first word
+      Interaction.getDefByNumber(1, true);
+    }
+
+    if (state && parsedState[0] === this.uuid) { // Same crossword is being viewed
+      this.setGrid(parsedState[1], parsedState[2]); // Apply grid value and classes
+      Interaction.getCellElement(parsedState[3]).click(); // Select the stored cell
+    }
+
+    toggleIds.forEach(id => { // Turn on the toggles if possible
+      let toggle = document.getElementById(id);
+      let toggleState = Cookies.getCookie(id);
+      if (toggleState) {
+        toggle.checked = Boolean(Number(toggleState));
+      }
+    });
+  }
+
   playClick() {
     /* Keyboard sound effects (easter egg). */
+
     if (this.playClicks) {
       try {
         return this.clicks[
@@ -159,6 +262,7 @@ class Interaction {
     /* Zoom out from the most recently zoomed element if the user is disabling
     the zoom button or they pressed escape. 
     */
+
     if (document.querySelector(".non_empty_cell.selectedZoomTarget")) {
       this.returnGridZoomElement.click();
     } else if (document.querySelector(".def.selectedZoomTarget")) {
@@ -171,6 +275,7 @@ class Interaction {
     a keybind. If this is the case, this function will process it and prevent
     ``this.handleStandardInput`` from running. 
     */
+
     // Prevent input when a popup is toggled
     if (this.onloadPopupToggled || this.completionPopupToggled) {
       return;
@@ -214,7 +319,7 @@ class Interaction {
 
     // User wants to clear the current word with [Shift + Backspace]
     if (backspaceKeys.includes(inputValue) && event.shiftKey) {
-      return this.doSpecialButtonAction("word", "clear", false);
+      return this.doSpecialButtonAction(opMagnitude.WORD, gridOp.CLEAR, false);
     }
 
     // User wants to select a definitions list item or a dropdown button
@@ -277,7 +382,7 @@ class Interaction {
         if (Interaction.isEmpty(currentCell)) {
           this.wasEmpty = true; // Ensures skipCellCoords functions properly
         }
-        Interaction.setValue(currentCell, inputValue);
+        this.setValue(currentCell, inputValue);
         if (this.checkToggle.checked) {
           currentCell.classList.remove("wrong");
           this.doGridOperation(currentCell, "check");
@@ -288,7 +393,7 @@ class Interaction {
       if (!this.checkToggle.checked) {
         currentCell.classList.remove("wrong");
       }
-      
+
     } else if (mode === modes.DEL) {
       // The focused cell has content, just delete it and do nothing
       if (
@@ -296,7 +401,7 @@ class Interaction {
         !currentCell.classList.contains("lock_in")
       ) {
         currentCell.classList.remove("wrong");
-        return Interaction.setValue(currentCell, "");
+        return this.setValue(currentCell, "");
       }
 
       // Perform standard deletion, whereby the content of the cell to the
@@ -306,7 +411,7 @@ class Interaction {
         this.shiftCellCoords(this.cellCoords, this.direction, mode)
       );
       if (!priorCell.classList.contains("lock_in")) {
-        Interaction.setValue(priorCell, "");
+        this.setValue(priorCell, "");
         priorCell.classList.remove("wrong");
       }
     }
@@ -369,6 +474,7 @@ class Interaction {
     [ A ] [ ] [ ] - After the A has been deleted, the user must press enter once
     more in order to shift backwards to the previous word.
     */
+
     if (this.wordToggle.checked) {
       let arrow = mode === modes.DEL ? arrowKeys[2] : arrowKeys[3];
       if (
@@ -393,23 +499,23 @@ class Interaction {
     beginning, as this form of word shifting is more explicit. This is achieved
     through the ``setToEnd`` parameter.
     */
+
     event?.preventDefault(); // This method is not always called by a listener,
-    // so optional chaining is used
+                             // so optional chaining is used
     let offset = arrow === arrowKeys[2] ? -1 : 1; // You could argue it should
-    // be the other way
+                                                  // be the other way
     let def = this.getDefinitionsListItemFromWord();
     let newWordNum = Number(def.getAttribute("data-num")) + offset;
-    let newDef = document.querySelector(`[data-num="${newWordNum}"`);
+    let newDef = Interaction.getDefByNumber(newWordNum);
     if (!newDef) {
       // User is at the first or last word, so go to either the last
       // word (if deleting) or the first word (if inserting)
       let num = offset === 1 ? "1" : this.wordCount;
-      newDef = document.querySelector(`[data-num="${num}"]`);
+      newDef = Interaction.getDefByNumber(num);
     }
     let oldCellCoords = this.cellCoords;
     if (offset === -1 && setToEnd) {
-      this.setCoordsToEndOfWord = true; // Picked up by
-      // ``onDefinitionsListItemClick``
+      this.setCoordsToEndOfWord = true; // Picked up by ``onDefinitionsListItemClick``
     }
     newDef.focus();
     newDef.click();
@@ -528,6 +634,7 @@ class Interaction {
     as well as alternating input directions if clicking at an intersecting point 
     between two words. 
     */
+
     if (this.doNotHandleStandardCellClick) {
       return (this.doNotHandleStandardCellClick = false);
     }
@@ -635,8 +742,8 @@ class Interaction {
 
     Interaction.unfocusActiveElement();
     this.hideDropdowns();
-    let mode = event.shiftKey ? "reveal" : "check";
-    this.doSpecialButtonAction("word", mode, false);
+    let mode = event.shiftKey ? gridOp.REVEAL : "check";
+    this.doSpecialButtonAction(opMagnitude.WORD, mode, false);
   }
 
   handleSpacebarPress(event) {
@@ -665,8 +772,7 @@ class Interaction {
   crosswordCompletionHandler() {
     if (this.isCrosswordComplete()) {
       Interaction.sleep(1).then(() => {
-        // Allow the input the user just made
-        // to be shown by the DOM
+        // Allow the input the user just made to be shown by the DOM
         this.handleEscapePress(null);
         this.displayCompletionPopup();
         this.jazz.play();
@@ -692,46 +798,60 @@ class Interaction {
 
     // The user must have a word selected to be able to check/reveal the
     // current cell/word
-    if (this.cellCoords === null && magnitude !== "grid") {
+    if (this.cellCoords === null && magnitude !== opMagnitude.GRID) {
       return alert(this.errMsgs[0]);
     }
 
     switch (magnitude) {
-      case "cell": // Just do a single grid operation on the current cell
+      case opMagnitude.CELL: // Just do a single grid operation on the current cell
         let currentCell = Interaction.getCellElement(this.cellCoords);
         this.doGridOperation(currentCell, mode);
-        if (mode === "reveal") {
+        if (mode === gridOp.REVEAL) {
           // Automatically go to the next cell
           this.handleCellShift(modes.ENTER, currentCell);
         }
         break;
-      case "word": // Do a grid operation on each element of the word
+      case opMagnitude.WORD: // Do a grid operation on each element of the word
+        let wasWordEmpty = this.isWordEmpty(); // Remember if word was empty before
+                                               // clearing so we can shift the
+                                               // word selection if possible
         for (const cell of this.getWordElements()) {
           this.doGridOperation(cell, mode);
         }
-        if (mode === "reveal" && this.wordToggle.checked) {
-          // Automatically go to the next word
-          this.shiftWordSelection(null, arrowKeys[3]);
+        if (this.wordToggle.checked) {
+          if (mode === gridOp.REVEAL) {
+            this.shiftWordSelection(null, arrowKeys[3]);
+          } else if (mode === gridOp.CLEAR) {
+            if (wasWordEmpty) {
+              this.shiftWordSelection(null, arrowKeys[2]);
+            }
+          }
         }
         break;
-      case "grid": // Do a grid operation on each non empty cell of the grid
+      case opMagnitude.GRID: // Do a grid operation on each non empty cell of the grid
         document
           .querySelectorAll(".non_empty_cell")
           .forEach(cell => this.doGridOperation(cell, mode, onlyUnchecked));
     }
 
-    this.crosswordCompletionHandler();
+    if (mode !== gridOp.CLEAR) {
+      if (mode === gridOp.REVEAL) {
+        this.crosswordCompletionHandler();
+      }
+      this.saveGridState(); // For any new ``lock_in`` or ``wrong`` classes that
+                            // were just added
+    }
   }
 
   doGridOperation(cell, mode, onlyUnchecked = false) {
     /* Perform either a reveal, check or clear action on a single cell. */
 
-    if (mode === "reveal") {
+    if (mode === gridOp.REVEAL) {
       cell.classList.remove("wrong");
-      Interaction.setValue(cell, cell.getAttribute("data-value"));
+      this.setValue(cell, cell.getAttribute("data-value"));
       cell.classList.add("lock_in"); // This cell must now be correct, so lock
       // it in
-    } else if (mode === "check") {
+    } else if (mode === gridOp.CHECK) {
       if (!Interaction.isEmpty(cell)) {
         if (cell.hasCorrectValue()) {
           // This cell is correct, lock it in
@@ -740,7 +860,7 @@ class Interaction {
           cell.classList.add("wrong");
         }
       }
-    } else if (mode === "clear") {
+    } else if (mode === gridOp.CLEAR) {
       if (
         // Clearing unrevealed
         (onlyUnchecked && !cell.classList.contains("lock_in")) ||
@@ -748,7 +868,7 @@ class Interaction {
       ) {
         cell.classList.remove("lock_in");
         cell.classList.remove("wrong");
-        Interaction.setValue(cell, "");
+        this.setValue(cell, "", this.doNotSaveGridState);
       }
     }
   }
@@ -791,6 +911,7 @@ class Interaction {
   }
 
   changeCellFocus(focus) {
+    this.saveGridState();
     return (Interaction.getCellElement(this.cellCoords).style.backgroundColor =
       focus ? this.colourPalette.CELL_FOCUS : this.colourPalette.SUB);
   }
@@ -832,7 +953,7 @@ class Interaction {
     let [row, col] = this.cellCoords;
     this.isDown = this.direction === this.directions[1];
     this.staticIndex = this.isDown ? col : row; // The index that never changes (the row
-                                                // if direction is across, etc)
+    // if direction is across, etc)
     let [startCoords, endCoords] = this.isDown ? [row, row] : [col, col];
 
     // Find starting coords of the word
@@ -856,6 +977,10 @@ class Interaction {
     return [startCoords, endCoords];
   }
 
+  isWordEmpty() {
+    return [...this.getWordElements()].every(cell => Interaction.isEmpty(cell));
+  }
+
   alternateDirection() {
     return (this.direction =
       this.direction === this.directions[0]
@@ -877,7 +1002,23 @@ class Interaction {
     return this.getGrid().isEqualTo(this.grid);
   }
 
-  getGrid() {
+  setGrid(state, classes) {
+    for (let row = 0; row <= this.dimensions - 1; row++) {
+      for (let column = 0; column <= this.dimensions - 1; column++) {
+        let coords = [row, column];
+        let cell = Interaction.getCellElement(coords);
+        if (cell.classList.contains("non_empty_cell")) {
+          this.setValue(cell, state[row][column]);
+          let class_ = classes[row][column];
+          if (class_) {
+            cell.classList.add(class_);
+          }
+        }
+      }
+    }
+  }
+
+  getGrid(withClasses = false) {
     /* Create an empty replica of the crossword grid, then update it according 
     to the web app grid 
     */
@@ -885,28 +1026,39 @@ class Interaction {
     let webAppGrid = Array.from({ length: this.dimensions }, () =>
       Array(this.dimensions).fill(this.empty)
     );
+    let classGrid = structuredClone(webAppGrid);
 
     document.querySelectorAll(".non_empty_cell").forEach(cell => {
       let row = parseInt(cell.getAttribute("data-row"));
       let column = parseInt(cell.getAttribute("data-column"));
       let value = cell.childNodes[0].nodeValue.toUpperCase();
       webAppGrid[row][column] = value;
+      if (withClasses) {
+        let class_ = "";
+        if (cell.classList.contains("wrong")) {
+          class_ = "wrong";
+        } else if (cell.classList.contains("lock_in")) {
+          class_ = "lock_in";
+        }
+        classGrid[row][column] = class_;
+      }
     });
 
-    return webAppGrid;
+    return withClasses ? [webAppGrid, classGrid] : webAppGrid;
   }
 
   setCompoundInput(priorValue) {
     /* Remove the value of the current cell and add an input element to its
     children.
     */
+
     this.compoundInputActive = true;
     if (!priorValue) {
       this.wasEmpty = true;
     }
     let currentCell = Interaction.getCellElement(this.cellCoords);
     currentCell.onclick = event => Interaction.dummyCellClick(event);
-    Interaction.setValue(currentCell, "");
+    this.setValue(currentCell, "");
 
     let compoundInput = document.createElement("input");
     compoundInput.value = priorValue;
@@ -917,6 +1069,8 @@ class Interaction {
   }
 
   handleSetCompoundInput(andShiftForwarder = true) {
+    /* Perform steps prior to setting a compound input. */
+
     if (this.cellCoords === null) {
       // User must select a cell
       return alert(this.errMsgs[0]);
@@ -937,20 +1091,17 @@ class Interaction {
     if (!this.compoundInputActive) {
       return;
     } // Maybe the user triggered this method with a click but no compound input
-    // element exists
+      // element exists
     let compoundInput = document.getElementsByClassName("compound_input")[0];
     let cellOfCompoundInput = compoundInput.parentElement;
     let enteredText = compoundInput.value;
-    try {
-      if (!enteredText[0].match(onlyLangRegex)) {
-        enteredText = "";
-      }
-    } catch (err) {
-      enteredText = "";
+    if (enteredText.length === 0 || !enteredText[0].match(onlyLangRegex)) {
+      enteredText = ""; // Not a language character or is an empty string
     }
+
     compoundInput.remove();
+    this.setValue(cellOfCompoundInput, enteredText[0]);
     let nodes = cellOfCompoundInput.childNodes;
-    nodes[0].nodeValue = enteredText[0];
     if (nodes.length > 1) {
       nodes[1].style.display = "inline"; // Reset number label display
     }
@@ -962,16 +1113,17 @@ class Interaction {
     this.currentPlaceholder = 0;
 
     if (this.checkToggle.checked) {
-      this.doGridOperation(cellOfCompoundInput, "check");
+      this.doGridOperation(cellOfCompoundInput, gridOp.CHECK);
     }
     if (andShift) {
       this.handleCellShift(modes.ENTER, cellOfCompoundInput); // Shift focus for
-                                                              // ease of use
+      // ease of use
     }
   }
 
   cycleCompoundInputPlaceholderText() {
     /* Cycle placeholder text whenever a compound input element is active. */
+
     let compoundInput = document.getElementsByClassName("compound_input")[0];
     if (compoundInput === undefined) {
       return;
@@ -989,6 +1141,7 @@ class Interaction {
     /* Remove the compound input if it is already active and the ``cell`` element
     is not equal to the current cell.
     */
+
     if (
       this.compoundInputActive &&
       cell !== Interaction.getCellElement(this.cellCoords)
@@ -998,7 +1151,8 @@ class Interaction {
   }
 
   followCellZoom(priorCell) {
-    /* If the priorCell was zoomed too, then now zoom to the current cell. */
+    /* If ``priorCell`` was zoomed too, then zoom to the current cell. */
+
     if (
       document.querySelectorAll(".non_empty_cell.selectedZoomTarget").length ===
       1
@@ -1015,6 +1169,7 @@ class Interaction {
     /* Close dropdowns and remove compound input (if possible) when clicking 
     outside of the dropdown area. 
     */
+
     if (!event.target.closest(".special_button, .dropdown, .dropdown_button")) {
       this.hideDropdowns();
       this.removeCompoundInput(false);
@@ -1032,6 +1187,7 @@ class Interaction {
         3. You are focusing out of a "special_button" into something that is 
            either another special button or something that isn't a "dropdown_button"
     */
+
     if (
       !event.relatedTarget?.classList.contains("dropdown_button") ||
       (event.target?.classList.contains("dropdown_button") &&
@@ -1063,6 +1219,7 @@ class Interaction {
     /* Opens the dropdown a user clicks on or closes it if they already have it 
     open. 
     */
+
     this.removeCompoundInput(false);
     let dropdown = document.getElementById(id);
 
@@ -1110,24 +1267,37 @@ class Interaction {
     }
   }
 
-  closeOnloadPopup(firstTime = false) {
+  closeOnloadPopup() {
     this.onloadPopupToggled = false;
     document.getElementById("blur").classList.toggle("active");
     document.getElementById("onload_popup").classList.toggle("active");
-    if (firstTime) {
-      document.querySelector(`[data-num="1"`).click();
-    }
   }
 
   preventZoomIfRequired(event) {
     /* Prevent the user from zooming if they do not have the "click to zoom"
-      button toggled on. This must be handled as the zoom functions from zoomooz.js
-      must always be in the HTML structure. */
+    button toggled on. This must be handled as the zoom functions from zoomooz.js
+    must always be in the HTML structure. 
+    */
 
     if (!document.getElementById("tz").checked || this.preventInitialLIZoom) {
       this.preventInitialLIZoom = false;
       event.stopImmediatePropagation(); // Prevent ``zoomooz`` from zooming
     }
+  }
+
+  setValue(cell, value, wait = false) {
+    cell.childNodes[0].nodeValue = value;
+    if (!wait) {
+      this.saveGridState();
+    }
+  }
+
+  static getDefByNumber(num, andClick = false) {
+    let cell = document.querySelector(`[data-num="${num}"`);
+    if (andClick) {
+      cell.click();
+    }
+    return cell;
   }
 
   static dummyCellClick(event) {
@@ -1138,22 +1308,12 @@ class Interaction {
     document.activeElement.blur();
   }
 
-  static emulateEscapePress() {
-    return document.dispatchEvent(
-      new KeyboardEvent("keyboard", { key: "Escape" })
-    );
-  }
-
   static sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
 
   static isEmpty(cell) {
     return !cell?.childNodes[0]?.nodeValue;
-  }
-
-  static setValue(cell, value) {
-    return (cell.childNodes[0].nodeValue = value);
   }
 
   static getCellElement(coords) {
@@ -1187,6 +1347,34 @@ class Interaction {
   }
 }
 
+class Cookies {
+  /* Cookie-related methods to save the grid and checkbox states.
+  Code is from W3Schools (https://www.w3schools.com/js/js_cookies.asp).
+  */
+
+  static setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = `${cname}=${cvalue};${expires};path=/;SameSite=Lax`;
+  }
+
+  static getCookie(cname) {
+    let name = cname + "=";
+    let ca = document.cookie.split(";");
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == " ") {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+}
+
 Array.prototype.isEqualTo = function (arr) {
   return JSON.stringify(this) === JSON.stringify(arr);
 };
@@ -1197,8 +1385,6 @@ Element.prototype.hasCorrectValue = function () {
   );
 };
 
-let interaction = new Interaction();
-
 // Enable easter egg through console
 function egg() {
   interaction.playClicks = !interaction.playClicks;
@@ -1208,3 +1394,5 @@ function egg() {
     return "EASTER EGG OFF";
   }
 }
+
+let interaction = new Interaction();
