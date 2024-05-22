@@ -29,10 +29,13 @@ An educational GUI package built with `CustomTkinter` that allows you to select,
 `regex`
 
 ## Installation
-**requires [pip](https://pip.pypa.io/en/stable/installation/)**
+> [!IMPORTANT]
+> Installing `crossword_puzzle` requires Python and pip.
+> If you have Python installed without pip, click **[here](https://pip.pypa.io/en/stable/installation/)** to install it.<br><br>
+> If you do not have Python installed, download the installer **[here](https://www.python.org/downloads/)**, then refer to the previous link on how to install pip.
 
 > [!TIP]
-> If using `python` or `pip` doesn't work, try using `python3` or `pip3`
+> If using `python` or `pip` doesn't work, try using `python3` or `pip3`.
 
 - Make a virtual environment and activate it (recommended):
 ```
@@ -59,7 +62,7 @@ deactivate
 ```
 
 ## Documentation
-Check out the wiki [here](https://github.com/tomasvana10/crossword_puzzle/wiki)
+Check out the wiki [here](https://github.com/tomasvana10/crossword_puzzle/wiki) for information on usage, troubleshooting, FAQ, and more.
 
 ## Third-party library acknowledgements
 - [Flask](https://flask.palletsprojects.com/en/3.0.x/) - Web framework for the crossword web application
