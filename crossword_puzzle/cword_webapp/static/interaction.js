@@ -173,7 +173,7 @@ class Interaction {
 
     // Handles when a dropdown should close if using tab
     document.addEventListener("focusout", event =>
-      this.handleDropdownFocusOut(event)
+      this.handleFocusOut(event)
     );
   }
 
@@ -190,18 +190,17 @@ class Interaction {
     to load the existing ``gridState`` cookie (if it even exists).
     */
 
-    let [gridState, gridClassState] = this.getGrid(true);
+    let [grid, gridClasses] = this.getGrid(true);
     Cookies.setCookie(
-      "gridState",
+      "gridData",
       JSON.stringify([
         this.uuid,
-        gridState,
-        gridClassState,
         this.cellCoords,
         this.direction,
       ]),
-      1 // Expiry in days
+      10 // Expiry in days
     );
+    localStorage.setItem("grid", JSON.stringify([grid, gridClasses]))
   }
 
   saveToggleState(toggle) {
@@ -220,19 +219,24 @@ class Interaction {
     prior state. 
     */
 
-    let state = Cookies.getCookie("gridState");
-    let parsedState;
+    let gridDataCookie = Cookies.getCookie("gridData");
+    let gridData;
 
     try {
-      parsedState = JSON.parse(state);
-      this.direction = parsedState[4];
+      gridData = JSON.parse(gridDataCookie);
+      this.direction = gridData[2];
     } catch (err) { // The cookie doesn't exist, just select the first word
       Interaction.getDefByNumber(1, true);
     }
 
-    if (state && parsedState[0] === this.uuid) { // Same crossword is being viewed
-      this.setGrid(parsedState[1], parsedState[2]); // Apply grid value and classes
-      Interaction.getCellElement(parsedState[3]).click(); // Select the stored cell
+    if (gridDataCookie && gridData[0] === this.uuid) { // Same crossword is being viewed
+      try {
+        let [grid, gridClasses] = JSON.parse(localStorage.getItem("grid"));
+        this.setGrid(grid, gridClasses); // Apply grid value and classes
+        Interaction.getCellElement(gridData[1]).click(); // Select the stored cell
+      } catch (err) {
+        Interaction.getDefByNumber(1, true);
+      }
     }
 
     toggleIds.forEach(id => { // Turn on the toggles if possible
@@ -312,7 +316,9 @@ class Interaction {
       !event.target.classList.contains("special_button") &&
       !document.activeElement.classList.contains("def") &&
       !document.activeElement.classList.contains("toggle") &&
-      !event.target.classList.contains("dropdown_button")
+      !document.activeElement.classList.contains("non_empty_cell") &&
+      !event.target.classList.contains("dropdown_button") && 
+      !event.target.classList.contains("grid")
     ) {
       return this.handleEnterKeybindPress(event);
     }
@@ -720,7 +726,8 @@ class Interaction {
     item or invoke and close the dropdown of a dropdown button. 
     */
 
-    if (event.target.classList.contains("def")) {
+    let classList = event.target.classList
+    if (classList.contains("def")) { // Select word definition
       event.target.click();
       event.target.blur();
       if (this.zoomToggle.checked) {
@@ -729,9 +736,13 @@ class Interaction {
         this.doNotHandleStandardCellClick = true;
         Interaction.getCellElement(this.cellCoords).click();
       }
-    } else if (event.target.classList.contains("toggle")) {
+    } else if (classList.contains("toggle")) { // Toggle a checkbox
       event.target.click();
       event.target.blur();
+    } else if (classList.contains("grid")) { // Allow user to focus on grid cells
+      Interaction.toggleCellTabIndices(true);
+    } else if (classList.contains("non_empty_cell")) {
+      event.target.click();
     }
   }
 
@@ -1176,8 +1187,16 @@ class Interaction {
     }
   }
 
-  handleDropdownFocusOut(event) {
-    /* Hide dropdowns based on specific conditions. */
+  handleFocusOut(event) {
+    /* Focusing out of the grid, so remove the tab indexes of all the cells. */
+    if (
+      event.relatedTarget?.classList.contains("grid") ||
+      (event.target?.classList.contains("non_empty_cell") &&
+        !event.relatedTarget?.classList.contains("non_empty_cell"))
+    ) { 
+      Interaction.toggleCellTabIndices(false); 
+    }
+
     /* The following condition evaluates to true if:
         1. Focusing into something that is not a "dropdown_button" OR
         2. Focusing out of something that is a "dropdown_button" AND
@@ -1187,7 +1206,6 @@ class Interaction {
         3. You are focusing out of a "special_button" into something that is 
            either another special button or something that isn't a "dropdown_button"
     */
-
     if (
       !event.relatedTarget?.classList.contains("dropdown_button") ||
       (event.target?.classList.contains("dropdown_button") &&
@@ -1292,12 +1310,23 @@ class Interaction {
     }
   }
 
-  static getDefByNumber(num, andClick = false) {
-    let cell = document.querySelector(`[data-num="${num}"`);
-    if (andClick) {
-      cell.click();
+  static toggleCellTabIndices(mode) {
+    let cellToFocus;
+    document.querySelectorAll(".non_empty_cell").forEach((cell, i) => {
+      cell.tabIndex = mode ? "0" : "-1";
+      if (i === 0) { cellToFocus = cell; }
+    }) 
+    if (mode) {
+      cellToFocus.focus({ focusVisible: true });
     }
-    return cell;
+  }
+
+  static getDefByNumber(num, andClick = false) {
+    let def = document.querySelector(`[data-num="${num}"`);
+    if (andClick) {
+      def.click();
+    }
+    return def;
   }
 
   static dummyCellClick(event) {

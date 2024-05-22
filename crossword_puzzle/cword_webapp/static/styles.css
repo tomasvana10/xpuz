@@ -88,6 +88,7 @@ button:hover {
 
 /* ----- Styling for the crossword grid and its cells ----- */
 .grid {
+    display: -ms-grid;
     display: grid;
     /* Configure `--dimensions` amount of rows/columns with a size of 
     ``95vmin / --dimensions`` */
@@ -117,9 +118,9 @@ button:hover {
     justify-content: center;
     align-items: flex-end;
     border: 0.1px solid black;
+    -webkit-user-select: none;
     user-select: none;
     cursor: pointer;
-    -webkit-user-select: none;
 }
 
 .num_label {
@@ -127,8 +128,8 @@ button:hover {
     position: absolute;
     top: 1%;
     left: 5%;
-    user-select: none;
     -webkit-user-select: none;
+    user-select: none;
     color: var(--text_colour);
     font-size: var(--num_label_font_size);
 }
@@ -168,7 +169,7 @@ button:hover {
     overflow: hidden;
     max-height: 72vmin;
     width: 95vmin;
-    z-index: 100;
+    z-index: 998;
     max-width: 100%;
 }
 
@@ -247,7 +248,7 @@ resizing equally distributed. */
     box-shadow: 0 5px 30px var(--main_colour);
     visibility: hidden;
     opacity: 0;
-    z-index: 999;
+    z-index: 999999;
 }
 
 .popup.active {
@@ -277,6 +278,7 @@ resizing equally distributed. */
     display: block;
     padding: 10px;
     width: 100%;
+    min-width: -moz-fit-content;
     min-width: fit-content;
     white-space: nowrap;
     border: none;
@@ -290,6 +292,7 @@ resizing equally distributed. */
     position: absolute;
     transform: translateY(-8.25vmin);
     justify-content: center;
+    z-index: 999;
 }
 
 .dropdown button:last-child {
