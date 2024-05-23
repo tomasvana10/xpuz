@@ -20,6 +20,10 @@ const opMagnitude = { // The scale to which a grid operation is performed
   GRID: "grid",
 }
 const toggleIds = ["ts", "tw", "tc", "tz"];
+const popupData = {
+  ONLOAD: ["onload_popup", "continue_button"],
+  COMPLETION: ["completion_popup", "close_button"],
+}
 
 class Interaction {
   /* Class to handle all forms of interaction with the web app, as well as to
@@ -103,7 +107,7 @@ class Interaction {
     this.doNotSaveGridState = false;
 
     this.applyCookieData(); // Update grid and toggles
-    this.displayOnloadPopup();
+    this.togglePopup("onload_popup");
 
     // This flag was initially toggled to true, as by default, the toggles are
     // automatically turned off, thus overriding the toggle's cookies. It should
@@ -785,7 +789,7 @@ class Interaction {
       Interaction.sleep(1).then(() => {
         // Allow the input the user just made to be shown by the DOM
         this.handleEscapePress(null);
-        this.displayCompletionPopup();
+        this.togglePopup("completion_popup");
         this.jazz.play();
       });
     }
@@ -1256,39 +1260,34 @@ class Interaction {
     this.currentDropdown = id;
   }
 
-  displayOnloadPopup() {
-    this.onloadPopupToggled = true;
+  togglePopup(popupClass) {
+    let state;
+    let buttonClass =
+      popupClass === popupData.COMPLETION[0]
+        ? popupData.COMPLETION[1]
+        : popupData.ONLOAD[1];
+    if (popupClass === popupData.COMPLETION[0]) {
+      this.completionPopupToggled = !this.completionPopupToggled;
+      state = this.completionPopupToggled;
+    } else if (popupClass === popupData.ONLOAD[0]) {
+      this.onloadPopupToggled = !this.onloadPopupToggled;
+      state = this.onloadPopupToggled;
+    }
 
-    Interaction.sleep(200).then(() => {
-      document.getElementById("blur").classList.toggle("active");
-      document.getElementById("onload_popup").classList.toggle("active");
-      Interaction.sleep(301).then(() => {
-        document
-          .getElementsByClassName("continue_button")[0]
-          .focus({ focusVisible: true });
-      });
-    });
-  }
-
-  displayCompletionPopup() {
-    this.completionPopupToggled = !this.completionPopupToggled;
     document.getElementById("blur").classList.toggle("active");
-    document.getElementById("completion_popup").classList.toggle("active");
-    if (this.completionPopupToggled) {
-      // Focus the close button
+    document.getElementById(popupClass).classList.toggle("active");
+    if (state) {
+      Interaction.toggleAllTabIndices(false);
+
       Interaction.sleep(501).then(
         () =>
           document
-            .getElementsByClassName("close_button")[0]
+            .getElementsByClassName(buttonClass)[0]
             .focus({ focusVisible: true }) // Ensure the user can see the focus
       );
+    } else {
+      Interaction.toggleAllTabIndices(true);
     }
-  }
-
-  closeOnloadPopup() {
-    this.onloadPopupToggled = false;
-    document.getElementById("blur").classList.toggle("active");
-    document.getElementById("onload_popup").classList.toggle("active");
   }
 
   preventZoomIfRequired(event) {
@@ -1319,6 +1318,12 @@ class Interaction {
     if (mode) {
       cellToFocus.focus({ focusVisible: true });
     }
+  }
+
+  static toggleAllTabIndices(mode) {
+    document.querySelectorAll(`[tabindex="${mode ? "-1": "0"}"]:not(.non_empty_cell):not(.right_side)`).forEach(element => {
+      element.tabIndex = mode ? "0" : "-1";
+    });
   }
 
   static getDefByNumber(num, andClick = false) {

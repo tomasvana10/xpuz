@@ -117,7 +117,6 @@ generate dynamic content, as each crossword created by this program is unique
               {% else %} {# This cell will have no characters #}
               <div
                 class="empty_cell"
-                tabindex="-1"
                 data-row="{{ row }}"
                 data-column="{{ column }}"
                 data-value="None"></div>
@@ -129,7 +128,7 @@ generate dynamic content, as each crossword created by this program is unique
         </div>
       </div>
 
-      <div class="right_side">
+      <div class="right_side" tabindex="-1">
         <div class="definitions">
           {# Compound button #}
           <div class="compound">
@@ -354,7 +353,7 @@ generate dynamic content, as each crossword created by this program is unique
       <button
         type="button"
         class="continue_button"
-        onclick="interaction.closeOnloadPopup()">
+        onclick="interaction.togglePopup('onload_popup')">
         {{ _('Continue') }}
       </button>
     </div>
@@ -365,7 +364,7 @@ generate dynamic content, as each crossword created by this program is unique
       <button
         type="button"
         class="close_button"
-        onclick="interaction.displayCompletionPopup()">
+        onclick="interaction.togglePopup('completion_popup')">
         {{ _('Close') }}
       </button>
     </div>
