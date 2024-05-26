@@ -62,7 +62,7 @@ deactivate
 ```
 
 ## Documentation
-Check out the wiki [here](https://github.com/tomasvana10/crossword_puzzle/wiki) for information on usage, troubleshooting, FAQ, and more.
+Check out the wiki **[here](https://github.com/tomasvana10/crossword_puzzle/wiki)** for information on usage, troubleshooting, FAQ, and more.
 
 ## Third-party library acknowledgements
 - [Flask](https://flask.palletsprojects.com/en/3.0.x/) - Web framework for the crossword web application
