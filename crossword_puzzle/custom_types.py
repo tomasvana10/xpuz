@@ -11,7 +11,7 @@ class Placement(TypedDict):
     word: str
     direction: str
     pos: Tuple[int]
-    intersections: List[None] | List[Tuple[int]]
+    intersections: Union[List[None], List[Tuple[int]]]
 
 
 class CrosswordData(TypedDict):
