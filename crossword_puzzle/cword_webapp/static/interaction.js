@@ -151,6 +151,12 @@ class Interaction {
       }
     });
 
+    this.checkToggle.addEventListener("change", event => {
+      if (event.target.checked) {
+        this.doSpecialButtonAction(opMagnitude.GRID, gridOp.CHECK, false);
+      }
+    })
+
     // Detect checkboxes being modified 
     document
       .querySelectorAll(".toggle_checkbox")
