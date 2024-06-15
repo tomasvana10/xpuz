@@ -241,6 +241,8 @@ class Interaction {
       } catch (err) {
         Interaction.getDefByNumber(1, true);
       }
+    } else { // First time viewing, just select the first word
+      Interaction.getDefByNumber(1, true);
     }
 
     toggleIds.forEach(id => { // Turn on the toggles if possible
@@ -291,6 +293,11 @@ class Interaction {
 
     let inputValue = event.key;
     this.playClick();
+  
+    // Return if user is pressing CTRL or CMD + R (reloading the page)
+    if (inputValue.toLowerCase() === "r" && (event.ctrlKey || event.metaKey)) { 
+      return; 
+    }
 
     // Handle the setting of a compound input element when pressing [Shift + 1]
     if (inputValue === "!" && event.shiftKey) {
@@ -1382,30 +1389,14 @@ class Interaction {
 }
 
 class Cookies {
-  /* Cookie-related methods to save the grid and checkbox states.
-  Code is from W3Schools (https://www.w3schools.com/js/js_cookies.asp).
-  */
-
-  static setCookie(cname, cvalue, exdays) {
-    const d = new Date();
-    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
-    let expires = "expires=" + d.toUTCString();
-    document.cookie = `${cname}=${cvalue};${expires};path=/;SameSite=Lax`;
+  static setCookie(name, value, days) {
+    let d = new Date();
+    d.setDate(d.getDate() + (days || 365));
+    document.cookie = `${name}=${value};expires=${d.toUTCString()};path=/;SameSite=Lax`;
   }
 
-  static getCookie(cname) {
-    let name = cname + "=";
-    let ca = document.cookie.split(";");
-    for (let i = 0; i < ca.length; i++) {
-      let c = ca[i];
-      while (c.charAt(0) == " ") {
-        c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-      }
-    }
-    return "";
+  static getCookie(name) {
+    return document.cookie.match("(^|;)\\s*" + name + "\\s*=\\s*([^;]+)")?.pop() || ""
   }
 }
 
