@@ -1,17 +1,68 @@
-"""General/specialised utility functions to aid ``main`` and ``cword_gen``."""
+"""General/specialised utility functions."""
 
 from __future__ import annotations
 
 from configparser import ConfigParser
+from copy import deepcopy
 from json import dump, load
 from math import ceil
-from os import path, scandir
-from random import randint
-from typing import Dict, Union
+from os import DirEntry, listdir, path, PathLike, scandir
+from random import randint, sample
+from typing import Dict, Iterable, List, Tuple, Union
 
 from babel import Locale
+from babel.core import UnknownLocaleError
+from regex import sub
 
-from crossword_puzzle.constants import Colour, CrosswordDifficulties, CrosswordQuality, Paths
+from constants import (
+    ACROSS,
+    ATTEMPTS_DB_PATH,
+    BASE_CWORDS_PATH,
+    CONFIG_PATH,
+    DIFFICULTIES,
+    DOWN,
+    KEEP_LANGUAGES_PATTERN,
+    LOCALES_PATH,
+    QUALITY_MAP,
+    Colour,
+)
+from errors import DefinitionsParsingError
+from td import CrosswordInfo
+
+
+class BlockUtils:
+    @classmethod
+    def _put_block(cls, block: object) -> None:
+        """Pack ``block`` in its parent container and append it to the available
+        blocks in ``cls``.
+        """
+        block.pack(side="left", padx=5, pady=(5, 0))
+        cls.blocks.append(block)
+
+    @classmethod
+    def _remove_block(cls, block: object) -> None:
+        """Remove ``block`` from its parent container and the available blocks
+        in ``cls``.
+        """
+        block.pack_forget()
+        cls.blocks.remove(block)
+
+    @classmethod
+    def _set_all(
+        cls, 
+        func: Union[BlockUtils._put_block, BlockUtils._remove_block]
+    ) -> None:
+        """Put or remove all of a classes blocks."""
+        for block in [*cls.blocks]:  # Must iterate over a shallow copy here, as
+                                     # you cannot modify an array you iterate
+                                     # over (with ``func``)
+            func(block)
+
+    @classmethod
+    def _config_selectors(cls, **kwargs) -> None:
+        """Enable or disable all the crossword block radiobutton selectors."""
+        for block in cls.blocks:
+            block.rb_selector.configure(**kwargs)
 
 
 def _update_config(
@@ -22,14 +73,14 @@ def _update_config(
     """
     cfg[section][option] = value
 
-    with open(Paths.CONFIG_PATH, "w") as f:
+    with open(CONFIG_PATH, "w") as f:
         cfg.write(f)
 
 
-def _get_language_options() -> None:
+def _get_language_options() -> Tuple[Dict[str, str], Dict[str, str]]:
     """Gather a dictionary that maps each localised language name to its
     english acronym, and a list that contains all of the localised language
-    names. This data is derived from ``Paths.LOCALES_PATH``."""
+    names. This data is derived from ``LOCALES_PATH``."""
     localised_lang_db: Dict[str, str] = dict()  # Used to retrieve the language
                                                 # code for the selected language
                                                 # e.x. {"አማርኛ": "am",}
@@ -39,155 +90,83 @@ def _get_language_options() -> None:
 
     i: int = 0
     for locale in sorted(
-        [f.name for f in scandir(Paths.LOCALES_PATH) if f.is_dir()]
+        [
+            f.name
+            for f in scandir(LOCALES_PATH)
+            if f.is_dir() and "LC_MESSAGES" in listdir(f.path)
+        ]
     ):
-        localised_langs.append(Locale.parse(locale).language_name)
-        localised_lang_db[localised_langs[i]] = locale
-        i += 1
+        try:
+            localised_langs.append(Locale.parse(locale).language_name)
+            localised_lang_db[localised_langs[i]] = locale
+            i += 1
+        except UnknownLocaleError:
+            pass
 
     return [localised_lang_db, localised_langs]
 
 
-def _load_cword_info(
-    category: str, name: str, language: str = "en"
-) -> Dict[str, Union[str, int]]:
-    """Load the ``info.json`` file for a crossword. Called by an instance
-    of ``main.CrosswordInfoBlock``.
-    """
-    path_ = path.join(
-        Paths.LOCALES_PATH, language, "cwords", category, name, "info.json"
+def _get_crossword_categories() -> Iterable[DirEntry]:
+    """Get all the available crossword categories sorted alphabetically."""
+    return sorted(
+        [cat for cat in scandir(BASE_CWORDS_PATH) if cat.is_dir()],
+        key=lambda cat: cat.name,
     )
-    if not path.exists(path_):  # Fallback to base crossword info
-        path_ = path.join(Paths.BASE_CWORDS_PATH, category, name, "info.json")
-    with open(path_) as file:
-        return load(file)
 
 
-def _get_colour_palette_for_webapp(appearance_mode: str) -> Dict[str, str]:
-    """Create a dictionary based on ``constants.Colour``for the web app."""
-    sub_class = Colour.Light if appearance_mode == "Light" else Colour.Dark
-    return {
-        key: value
-        for attr in [sub_class.__dict__, Colour.Global.__dict__]
-        for key, value in attr.items()
-        if key[0] != "_" or key.startswith("BUTTON")
-    }
-
-
-def find_best_crossword(crossword: Crossword) -> Crossword:
-    """Determine the best crossword out of a amount of instantiated
-    crosswords based on the largest amount of total intersections and
-    smallest amount of fails.
+def _get_base_crosswords(category) -> Iterable[DirEntry]:
+    """Get all the available crosswords from the base crossword directory if
+    they have valid ``definitions.json`` files.
     """
-    cfg: ConfigParser = ConfigParser()
-    cfg.read(Paths.CONFIG_PATH)
-    name: str = crossword.name
-    word_count: int = crossword.word_count
+    return [
+        f
+        for f in scandir(path.join(BASE_CWORDS_PATH, category))
+        if f.is_dir()
+        and "definitions.json" in listdir(f.path)
+        and path.getsize(path.join(f.path, "definitions.json")) > 0
+    ]
 
-    attempts_db: Dict[str, int] = _load_attempts_db()
+
+def _sort_crosswords_by_suffix(cwords: List[str]) -> List[str]:
+    """Sort the cword content of a category by the cword suffixes (-easy
+    to -extreme), if possible.
+    """
     try:
-        max_attempts: int = attempts_db[str(word_count)]  # Get amount of attempts
-                                                          # based on word count
-        max_attempts *= CrosswordQuality.QUALITY_MAP[  # Scale max attempts based
-            # on crossword quality
-            cfg.get("misc", "cword_quality")
-        ]
-        max_attempts = int(ceil(max_attempts))
-    except KeyError:  # Fallback to only a single generation attempt
-        max_attempts = 1
-    attempts: int = 0  # Track current amount of attempts
-
-    reinsert_definitions: Dict[str, str] = crossword.definitions
-    crossword.generate()
-    best_crossword = (
-        crossword  # Assume the best crossword is the first crossword
-    )
-
-    from crossword_puzzle.cword_gen import Crossword
-
-    while attempts <= max_attempts:
-        # Setting the "retry" param to True will make the Crossword class
-        # only randomise the definitions it is given, not sample new random
-        # ones, for reasons explained in the ``_randomise_definitions``
-        # method.
-        crossword = Crossword(
-            name=name,
-            definitions=reinsert_definitions,
-            word_count=word_count,
-            retry=True,
+        return sorted(
+            cwords,
+            key=lambda cword: DIFFICULTIES.index(
+                cword.name.split("-")[-1].capitalize()
+            ),
         )
-        crossword.generate()
-
-        # Update the new best crossword if it has more intersections than
-        # the current crossword and its fails are less than or equal to the
-        # current crossword's fails. Changing the fails comparison to simply
-        # "less than" is too strict and results in a poor "best" crossword.
-        if (
-            crossword.total_intersections > best_crossword.total_intersections
-        ) and (crossword.fails <= best_crossword.fails):
-            best_crossword = crossword
-        attempts += 1
-
-    assert best_crossword.generated
-    return best_crossword
+    except Exception:  # Could not find the "-" in the crossword name, so
+                       # don't sort this category
+        return cwords
 
 
-def load_definitions(
-    category: str,
-    name: str,
-    language: str = "en",
-) -> Dict[str, str]:
-    """Load a definitions json for a given crossword."""
-    # Attempt to access the localised crossword
-    path_ = path.join(
-        Paths.LOCALES_PATH,
-        language,
-        "cwords",
-        category,
-        name,
-        "definitions.json",
-    )
-    if not path.exists(path_):  # Fallback to the base crossword
-        path_ = path.join(
-            Paths.BASE_CWORDS_PATH, category, name, "definitions.json"
-        )
+def _make_cword_info_json(
+    fp: PathLike, cword_name: str, category: str
+) -> None:
+    """Make an info.json file for a given crossword since it does not exist."""
 
-    with open(path_) as file:
-        return load(file)
-
-
-def _load_attempts_db() -> Dict[str, int]:
-    """Load ``attempts_db.json``, which specifies how many generation attempts
-    should be conducted for a crossword based on its word count. This is
-    integral to the crossword optimisation process, as crossword generation
-    time scales logarithmically with word count.
-    """
-
-    with open(Paths.ATTEMPTS_DB_PATH) as file:
-        return load(file)
-
-
-def _make_cword_info_json(path_, cword_name, category) -> None:
-    """Make an info.json file for a given crossword since it does not exist.
-    Makes it easier for the end-user to make their own crossword if they
-    really want to.
-    """
-
-    with open(path.join(path_, "info.json"), "w") as info_obj, open(
-        path.join(path_, "definitions.json"), "r"
+    with open(path.join(fp, "info.json"), "w") as info_obj, open(
+        path.join(fp, "definitions.json"), "r"
     ) as def_obj:
         total_definitions: int = len(load(def_obj))
 
         # Infer the difficulty and crossword name if possible
         try:
-            parsed_cword_name_components = path.basename(path_).split("-")
-            difficulty: int = CrosswordDifficulties.DIFFICULTIES.index(
+            parsed_cword_name_components: List[str] = path.basename(fp).split(
+                "-"
+            )
+            difficulty: int = DIFFICULTIES.index(
                 parsed_cword_name_components[-1].title()
             )
-            adjusted_cword_name = "-".join(parsed_cword_name_components[0:-1])
+            adjusted_cword_name: str = " ".join(
+                parsed_cword_name_components[0:-1]
+            ).title()
         except Exception:
             difficulty: int = 0
-            adjusted_cword_name = cword_name
+            adjusted_cword_name: str = cword_name
 
         return dump(
             {
@@ -203,10 +182,218 @@ def _make_cword_info_json(path_, cword_name, category) -> None:
         )
 
 
-def _make_category_info_json(path_) -> None:
+def _update_cword_info_word_count(
+    fp: PathLike, info: CrosswordInfo, total_definitions: int
+) -> None:
+    with open(path.join(fp, "info.json"), "w") as f:
+        info["total_definitions"]: int = total_definitions
+        return dump(info, f, indent=4)
+
+
+def _make_category_info_json(fp: PathLike) -> None:
     """Write a new info.json to a category since it does not exist in the a
     category's directory.
     """
-    hex_ = "#%06X" % randint(0, 0xFFFFFF)
-    with open(path_, "w") as f:
+    hex_: str = "#%06X" % randint(0, 0xFFFFFF)
+    with open(fp, "w") as f:
         return dump({"bottom_tag_colour": hex_}, f, indent=4)
+
+
+def _load_attempts_db() -> Dict[str, int]:
+    """Load ``attempts_db.json``, which specifies how many generation attempts
+    should be conducted for a crossword based on its word count. This is
+    integral to the crossword optimisation process, as crossword generation
+    time scales logarithmically with word count.
+    """
+
+    with open(ATTEMPTS_DB_PATH) as file:
+        return load(file)
+
+
+def _get_colour_palette_for_webapp(appearance_mode: str) -> Dict[str, str]:
+    """Create a dictionary based on ``constants.Colour`` for the web app."""
+    sub_class = Colour.Light if appearance_mode == "Light" else Colour.Dark
+    return {
+        key: value
+        for attr in [sub_class.__dict__, Colour.Global.__dict__]
+        for key, value in attr.items()
+        if key[0] != "_" or key.startswith("BUTTON")
+    }
+
+
+def find_best_crossword(crossword: Crossword) -> Crossword:
+    """Determine the best crossword out of a amount of instantiated
+    crosswords based on the largest amount of total intersections and
+    smallest amount of fails.
+    """
+    cfg: ConfigParser = ConfigParser()
+    cfg.read(CONFIG_PATH)
+    name: str = crossword.name
+    word_count: int = crossword.word_count
+
+    attempts_db: Dict[str, int] = _load_attempts_db()
+    try:
+        max_attempts: int = attempts_db[str(word_count)]  # Get amount of attempts 
+                                                          # based on word count
+        max_attempts *= QUALITY_MAP[  # Scale max attempts based
+                                      # on crossword quality
+            cfg.get("m", "cword_quality")
+        ]
+        max_attempts = int(ceil(max_attempts))
+    except KeyError:  # Fallback to only a single generation attempt
+        max_attempts = 1
+    attempts: int = 0  # Track current amount of attempts
+    dimensions_incremented = False
+
+    definitions: Dict[str, str] = crossword.definitions
+    dimensions: int = crossword.dimensions
+    crossword.generate()
+    best_crossword = crossword  # Assume the best crossword is the first crossword
+
+    from crossword import Crossword
+
+    while attempts <= max_attempts:
+        # Set ``via_find_best_crossword`` to True so dimensions are not 
+        # recalculated and new definitions are not sampled; only the existing 
+        # ones are randomised
+        crossword = Crossword(
+            name=name,
+            definitions=definitions,
+            word_count=word_count,
+            via_find_best_crossword=True,
+            dimensions=dimensions,
+        )
+        crossword.generate()
+
+        # Update the new best crossword if it has more intersections than
+        # the current crossword and its fails are less than or equal to the
+        # current crossword's fails. Changing the fails comparison to simply
+        # "less than" is too strict and results in a poor "best" crossword.
+        if crossword.total_intersections > best_crossword.total_intersections:
+            if crossword.fails <= best_crossword.fails:
+                best_crossword = crossword
+
+        # Increment the dimensions by 1 if there is a fail present in the current
+        # crossword to minimise the chance another fail happens in the remaining
+        # crosswords.
+        if not dimensions_incremented and crossword.fails > 0:
+            dimensions += 1
+            dimensions_incremented = True
+
+        attempts += 1
+
+    assert best_crossword.generated
+    return best_crossword
+
+
+def _interpret_cword_data(crossword: Crossword) -> None:
+    """Gather data to help with the templated creation of the crossword
+    web application.
+    """
+    starting_word_positions: List[Tuple[int]] = list(crossword.data.keys())
+    # e.x. [(1, 2), (4, 6)]
+
+    definitions_a: List[Dict[int, Tuple[str]]] = []
+    definitions_d = []
+    # e.x. [{1: ("hello", "a standard english greeting")}]"""
+
+    starting_word_matrix: List[List[int]] = deepcopy(crossword.grid)
+    # e.x.: [[1, 0, 0, 0], [[0, 0, 2, 0]] ... and so on; Each incremented
+    # number is the start of a new word.
+
+    num_label: int = (
+        1  # Incremented whenever the start of a word is found;
+           # used to create ``starting_word_matrix``.
+    )
+    for row in range(crossword.dimensions):
+        for column in range(crossword.dimensions):
+            if (row, column) in starting_word_positions:
+                current_cword_data = crossword.data[(row, column)]
+
+                if current_cword_data["direction"] == ACROSS:
+                    definitions_a.append(
+                        {
+                            num_label: (
+                                current_cword_data["word"],
+                                current_cword_data["definition"],
+                            )
+                        }
+                    )
+
+                elif current_cword_data["direction"] == DOWN:
+                    definitions_d.append(
+                        {
+                            num_label: (
+                                current_cword_data["word"],
+                                current_cword_data["definition"],
+                            )
+                        }
+                    )
+
+                starting_word_matrix[row][column] = num_label
+                num_label += 1
+
+            else:
+                starting_word_matrix[row][column] = 0
+
+    return (
+        starting_word_positions,
+        starting_word_matrix,
+        definitions_a,
+        definitions_d,
+    )
+
+
+def _randomise_definitions(definitions: Dict[str, str]) -> Dict[str, str]:
+    """Randomises the existing definitions when attempting reinsertion,
+    which prevents ``find_best_crossword`` from favouring certain word
+    groups with intrinsically higher intersections.
+    """
+    return dict(sample(list(definitions.items()), len(definitions)))
+
+
+def _verify_definitions(
+    definitions: Dict[str, str], word_count: int
+) -> Dict[str, str]:
+    """Process a dictionary of definitions through statements to raise
+    errors for particular edge cases in a definitions dictionary. This
+    function also uses ``_format_definitions`` to randomly sample a specified
+    amount of definitions from the definitions dictionary, then format
+    those definitions appropriately.
+    """
+    # Required error checking
+    if not definitions:
+        raise DefinitionsParsingError("Definitions are empty")
+    if len(definitions) < 3 or word_count < 3:
+        raise DefinitionsParsingError(
+            "The word count or definitions are < 3 in length"
+        )
+    if len(definitions) < word_count:
+        raise DefinitionsParsingError(
+            "Length of the word count is greater than the definitions"
+        )
+    if any("\\" in word for word in definitions.keys()):
+        raise DefinitionsParsingError("Escape character present in word")
+
+
+def _format_definitions(
+    definitions: Dict[str, str], word_count: int
+) -> Dict[str, str]:
+    """Randomly pick definitions from a larger sample, then prune
+    everything except the language characters from the words (the keys of
+    the definitions).
+    """
+    # Randomly sample ``word_count`` amount of definitions
+    randomly_sampled_definitions = dict(
+        sample(list(definitions.items()), word_count)
+    )
+
+    # Remove all non language chars from the keys of
+    # ``randomly_sampled_definitions``` (the words) and capitalise its values
+    # (the clues/definitions)
+    formatted_definitions = {
+        sub(KEEP_LANGUAGES_PATTERN, "", k).upper(): v
+        for k, v in randomly_sampled_definitions.items()
+    }
+
+    return formatted_definitions
