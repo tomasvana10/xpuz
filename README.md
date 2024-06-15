@@ -81,7 +81,6 @@ Check out the wiki **[here](https://github.com/tomasvana10/crossword_puzzle/wiki
 - [NYTimes Mini Crossword](https://www.nytimes.com/crosswords/game/mini) - Heavily inspired the design of the web application
 - [CSS Pattern](https://css-pattern.com) - Background CSS patterns
 - [Pure CSS Toggle Switch](https://codepen.io/morgoe/pen/VvzWQg) - Toggle switch CSS patterns
-- [W3Schools](https://www.w3schools.com/js/js_cookies.asp) - Cookie getting/setting code
 - Crossword completion sound effect (CC attribution):
   - Jazzy Chords by NenadSimic -- https://freesound.org/s/150879/ -- License: Creative Commons 0
 
