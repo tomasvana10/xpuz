@@ -469,7 +469,7 @@ class BrowserPage(CTkFrame, Addons):
     def _place_containers(self) -> None:
         self.center_container.pack(anchor="c", expand=True, fill="x")
         self.block_container.pack(expand=True, fill="both")
-        self.button_container.place(relx=0.725, rely=0.84, anchor="c")
+        self.button_container.place(relx=0.725, rely=0.8425, anchor="c")
         self.pref_container.place(relx=0.3, rely=0.84, anchor="c")
 
     def _make_content(self) -> None:
@@ -508,8 +508,9 @@ class BrowserPage(CTkFrame, Addons):
             text=_("Open"),
             height=50,
             command=self.open_webapp,
-            state="disabled",
             font=self.TEXT_FONT,
+            fg_color=Colour.Global.GREEN_BUTTON,
+            hover_color=Colour.Global.GREEN_BUTTON_HOVER,
         )
 
         self.b_terminate_webapp = CTkButton(
@@ -570,10 +571,7 @@ class BrowserPage(CTkFrame, Addons):
         self.l_title.place(relx=0.5, rely=0.1, anchor="c")
         self.b_go_back.place(relx=0.5, rely=0.2, anchor="c")
         self.b_load_cword.grid(row=0, column=0, sticky="nsew", padx=7, pady=7)
-        self.b_open_webapp.grid(row=0, column=1, sticky="nsew", padx=7, pady=7)
-        self.b_terminate_webapp.grid(
-            row=1, column=0, columnspan=2, sticky="nsew", padx=77.5, pady=7
-        )
+        self.b_terminate_webapp.grid(row=0, column=1, sticky="nsew", padx=7, pady=7)
         self.l_wc_prefs.grid(row=0, column=0, columnspan=2, pady=(5, 10))
         self.rb_max_wc.grid(row=1, column=0, padx=7, pady=7)
         self.rb_custom_wc.grid(row=2, column=0, padx=7, pady=7)
@@ -621,11 +619,8 @@ class BrowserPage(CTkFrame, Addons):
 
     def _terminate(self) -> None:
         """Reconfigure the states of the GUIs buttons and terminate the app."""
+        self.b_open_webapp.grid_forget()
         self._rollback_states()
-        self.b_open_webapp.configure(
-            fg_color=Colour.Global.BUTTON,
-            hover_color=Colour.Global.BUTTON_HOVER,
-        )
         self.launch_options_on: bool = False
         _terminate_app()
         self.webapp_on: bool = False
@@ -640,7 +635,9 @@ class BrowserPage(CTkFrame, Addons):
             CrosswordBlock._config_selectors(state="normal")
 
         self.b_terminate_webapp.configure(state="disabled")
-        self.b_open_webapp.configure(state="disabled")
+        self.b_open_webapp.grid_forget()
+        self.b_load_cword.grid(row=0, column=0, sticky="nsew", padx=7, pady=7)
+        self.b_load_cword.configure(state="disabled")
         self._configure_word_count_prefs("disabled")
         self.rb_max_wc.configure(text=f"{_('Maximum')}:")
         self.opts_custom_wc.set(_("Select word count"))
@@ -663,7 +660,7 @@ class BrowserPage(CTkFrame, Addons):
             return
 
         # It is safe to update widget states as crossword generation was OK
-        self.b_load_cword.configure(state="disabled")
+        self.b_load_cword.grid_forget()
         self.cwrapper.category_object.b_close.configure(state="disabled")
         CrosswordBlock._config_selectors(state="disabled")
         self._configure_word_count_prefs("disabled")
@@ -672,11 +669,7 @@ class BrowserPage(CTkFrame, Addons):
         self._load()
         self.webapp_on: bool = True
 
-        self.b_open_webapp.configure(
-            state="normal",
-            fg_color=Colour.Global.GREEN_BUTTON,
-            hover_color=Colour.Global.GREEN_BUTTON_HOVER,
-        )
+        self.b_open_webapp.grid(row=0, column=0, sticky="nsew", padx=7, pady=7)
         self.b_terminate_webapp.configure(state="normal")
 
     def _load(self) -> None:
