@@ -1,34 +1,80 @@
-"""Methods to help with the translation of different parts of crossword_puzzle."""
+"""Developer utilities. Translation-related"""
 
+import subprocess
 import json
 import os
+import sys
 import shutil
 from typing import Dict, List, Union
 
+import googletrans
 import numpy as np
 import polib
 from google.cloud import translate_v2
 
-from crossword_puzzle.constants import LangReplacements, Paths
-from crossword_puzzle.custom_types import CrosswordData
+from constants import (
+    LANG_REPLACEMENTS,
+    BASE_CWORDS_PATH,
+    LOCALES_PATH,
+    BASE_POT_PATH,
+    REVERSE_LANG_REPLACEMENTS,
+)
+from td import CrosswordData
 
 
-class LocaleTranslatorUtils:
+class Locales:
+    @staticmethod
+    def _run_locales_routine():
+        langcodes = Locales._parse(list(googletrans.LANGCODES.values()))
+        Locales._write_locales(langcodes)
+
+    @staticmethod
+    def _parse(langcodes: Dict[str, str]) -> Dict[str, str]:
+        parsed_langcodes = langcodes
+        for replacement in LANG_REPLACEMENTS:
+            parsed_langcodes.remove(replacement)
+            sub = LANG_REPLACEMENTS[replacement]
+            if sub:
+                parsed_langcodes.append(sub)
+
+        parsed_langcodes.append("en")
+
+        return parsed_langcodes
+
+    @staticmethod
+    def _write_locales(langcodes: Dict[str, str]) -> None:
+        """Runs the ``pybabel init`` command to create ~100 locale files within
+        ``crossword_puzzle/locales`` based on the parsed langcodes.
+        """
+        existing_langcodes = os.listdir(LOCALES_PATH)
+        for code in langcodes:
+            try:
+                if code in existing_langcodes:
+                    continue
+                print(f"Inserting: {code}")
+                cmd = f"pybabel init -l {code} -i {BASE_POT_PATH} -d {LOCALES_PATH}"
+                if sys.platform == "darwin":
+                    subprocess.run(["zsh", "-c", cmd], text=True)
+                elif sys.platform == "win32":
+                    os.system(cmd)
+            except Exception:
+                print(f"Failed to insert: {code}")
+
+
+class Translation:
     @staticmethod
     def update_msgstrs() -> None:
         """Find all the untranslated entries in each ``messages.po`` file,
         then translate and update them using Google Cloud's ``translate_v2``
         module.
         """
-        locales, lang_codes = (
-            LocaleTranslatorUtils._get_locales_and_lang_codes()
-        )
-        local_client: translate_v2.Client = client
+        locales, lang_codes = Translation._get_locales_and_lang_codes()
+        local_client = client
 
         for i, locale in enumerate(locales):
             messages: polib.POFile = polib.pofile(
                 os.path.join(
-                    Paths.LOCALES_PATH, locale, "LC_MESSAGES", "messages.po"
+                    LOCALES_PATH, locale, "LC_MESSAGES", "messages.po"
                 )
             )
             untranslated_entries = messages.untranslated_entries()
@@ -45,10 +91,9 @@ class LocaleTranslatorUtils:
                     continue  # Cannot translate english
                 entry.msgstr = local_client.translate(
                     text,
-                    target_language=lang_codes[i],
-                    source_language="en",
-                    format_="text",
-                )["translatedText"]
+                    dest=lang_codes[i],
+                    src="en",
+                ).text
                 updates += 1
 
             print(f"(Locale: {locale}) - Updated {updates} msgstr(s)")
@@ -60,13 +105,13 @@ class LocaleTranslatorUtils:
         language codes, which are mostly the same.
         """
         locales: List[str] = sorted(
-            [f.name for f in os.scandir(Paths.LOCALES_PATH) if f.is_dir()]
+            [f.name for f in os.scandir(LOCALES_PATH) if f.is_dir()]
         )
 
         lang_codes: List[str] = [
             (
-                LangReplacements.REVERSE[locale]
-                if locale in LangReplacements.REPLACEMENTS.values()
+                REVERSE_LANG_REPLACEMENTS[locale]
+                if locale in LANG_REPLACEMENTS.values()
                 else locale
             )
             for locale in locales
@@ -74,23 +119,17 @@ class LocaleTranslatorUtils:
 
         return locales, lang_codes
 
-
-class CrosswordTranslatorUtils:
     @staticmethod
     def update_cword_translations() -> None:
         """Travel down the locales directory, ensuring each locale has a cwords
         directory, exists in ``base_cwords``, and all the necessary crosswords
         have been added and translated, and makes those translations if required.
         """
-        locales, lang_codes = (
-            LocaleTranslatorUtils._get_locales_and_lang_codes()
-        )
-        base_category_tree = (
-            CrosswordTranslatorUtils._get_base_cword_category_tree()
-        )
+        locales, lang_codes = Translation._get_locales_and_lang_codes()
+        base_category_tree = Translation._get_base_cword_category_tree()
 
         for i, locale in enumerate(locales):
-            locale_path = os.path.join(Paths.LOCALES_PATH, locale)
+            locale_path = os.path.join(LOCALES_PATH, locale)
             cwords_path = os.path.join(locale_path, "cwords")
             if not os.path.exists(cwords_path):
                 os.mkdir(cwords_path)
@@ -125,27 +164,25 @@ class CrosswordTranslatorUtils:
                     if os.listdir(cword_path):
                         continue  # Probably made translations already
 
-                    definitions, info = (
-                        CrosswordTranslatorUtils._get_cword_data(
-                            category, cword
-                        )
+                    definitions, info = Translation._get_cword_data(
+                        category, cword
                     )
                     if locale == "en":  # Just write the non-translated
                         # definitions and info
                         info["translated_name"] = info["name"]
-                        CrosswordTranslatorUtils._write_translated_cword_data(
+                        Translation._write_translated_cword_data(
                             cword_path, definitions, info
                         )
                         continue
 
                     # Make the translations
                     translated_definitions, translated_info = (
-                        CrosswordTranslatorUtils._format_and_translate_cword_data(
+                        Translation._format_and_translate_cword_data(
                             lang_codes[i], definitions, info
                         )
                     )
                     # Write the translated data!
-                    CrosswordTranslatorUtils._write_translated_cword_data(
+                    Translation._write_translated_cword_data(
                         cword_path, translated_definitions, translated_info
                     )
                     print(
@@ -165,7 +202,7 @@ class CrosswordTranslatorUtils:
         parts. Returns a data with an identical structure to what was passed
         (except it is translated).
         """
-        local_client: translate_v2.Client = client
+        local_client = client
 
         arrayified_definitions = np.array(
             [pair for item in definitions.items() for pair in item]
@@ -173,12 +210,10 @@ class CrosswordTranslatorUtils:
         # Split into manageable parts for translation requests
         split_definitions = np.array_split(
             arrayified_definitions,
-            CrosswordTranslatorUtils._get_definitions_parts(
-                arrayified_definitions
-            ),
+            Translation._get_definitions_parts(arrayified_definitions),
         )
 
-        translated_definitions = CrosswordTranslatorUtils._translate_parts(
+        translated_definitions = Translation._translate_parts(
             split_definitions, language
         )
 
@@ -246,7 +281,7 @@ class CrosswordTranslatorUtils:
     def _get_base_cword_category_tree() -> Dict[str, List[str]]:
         category_tree: Dict[str, List[str]] = dict()
         for category in [
-            f for f in os.scandir(Paths.BASE_CWORDS_PATH) if f.is_dir()
+            f for f in os.scandir(BASE_CWORDS_PATH) if f.is_dir()
         ]:
             cwords: List[str] = list()
             for cword in [
@@ -259,7 +294,7 @@ class CrosswordTranslatorUtils:
 
     @staticmethod
     def _get_cword_data(category: str, name: str) -> CrosswordData:
-        base_cword_path = os.path.join(Paths.BASE_CWORDS_PATH, category, name)
+        base_cword_path = os.path.join(BASE_CWORDS_PATH, category, name)
         """Load the `definitions.json` and `info.json` files from a given base 
         crossword.
         """
@@ -286,8 +321,17 @@ class CrosswordTranslatorUtils:
 
 
 if __name__ == "__main__":
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "src/googlekey.json"
-    client = translate_v2.Client()
+    LOCALE_INIT = False
+    DO_GETTEXT_TRANSLATIONS = False
+    DO_CROSSWORD_TRANSLATIONS = False
 
-    CrosswordTranslatorUtils.update_cword_translations()
-    LocaleTranslatorUtils.update_msgstrs()
+    if LOCALE_INIT:
+        Locales._run_locales_routine()
+    if DO_GETTEXT_TRANSLATIONS:
+        client = googletrans.Translator()
+        Translation.update_msgstrs()
+    if DO_CROSSWORD_TRANSLATIONS:
+        # NOTE: translating crosswords without google-cloud will take forever
+        # os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "src/googlekey.json"
+        # client = translate_v2.Client()
+        Translation.update_cword_translations()
