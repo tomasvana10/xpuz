@@ -131,9 +131,11 @@ def _get_base_crosswords(category) -> Iterable[DirEntry]:
     ]
 
 
-def _sort_crosswords_by_suffix(cwords: List[DirEntry]) -> List[DirEntry]:
-    """Sort the cword content of a category by the cword suffixes (-easy
-    to -extreme), if possible.
+def _sort_crosswords_by_suffix(
+    cwords: Union[List[DirEntry], List[Tuple[DirEntry, DirEntry]]]
+) -> Union[List[DirEntry], List[Tuple[DirEntry, DirEntry]]]:
+    """Sort an iterable container with crossword directory entries based on
+    the crossword's suffix (from -easy to -extreme, if possible).
     """
     try:
         return sorted(
@@ -142,7 +144,9 @@ def _sort_crosswords_by_suffix(cwords: List[DirEntry]) -> List[DirEntry]:
                 cword.name.split("-")[-1].capitalize()
             ),
         )
-    except Exception:
+    except Exception:  # Handling a list of tuples in the form (category, 
+                       # crossword) where both elements are instances of
+                       # ``DirEntry``.
         try:
             return sorted(
                 cwords, 

@@ -8,7 +8,7 @@ from __future__ import annotations
 from configparser import ConfigParser
 from gettext import translation
 from json import dumps, load
-from os import listdir, path, PathLike
+from os import DirEntry, listdir, path, PathLike
 from platform import system
 from tkinter import Event, IntVar, StringVar, messagebox
 from typing import Dict, List, Union, Optional
@@ -222,7 +222,6 @@ class HomePage(CTkFrame, Addons):
             fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
         )
         self.master = master
-
         self._set_fonts()
 
     def _make_containers(self) -> None:
@@ -480,9 +479,9 @@ class BrowserPage(CTkFrame, Addons):
         self.view_pref.set(Base.cfg.get("m", "view"))
 
         # Notify user the first time they open this page
-        if Base.cfg.get("misc", "cword_browser_opened") == "0":
-            AppHelper.show_messagebox(first_time_opening_cword_browser=True)
-            _update_config(Base.cfg, "misc", "cword_browser_opened", "1")
+        if Base.cfg.get("misc", "browser_opened") == "0":
+            AppHelper.show_messagebox(first_time_browser=True)
+            _update_config(Base.cfg, "misc", "browser_opened", "1")
 
     def _make_containers(self) -> None:
         self.center_container = CTkFrame(self)
@@ -550,7 +549,7 @@ class BrowserPage(CTkFrame, Addons):
         self.master.update()
         for button in self.sb_view._buttons_dict.values():
             button.configure(width=150)
-        
+
         self.e_search = CTkEntry(
             self,
             placeholder_text=f"{_('Search')} [↵]",
@@ -634,7 +633,7 @@ class BrowserPage(CTkFrame, Addons):
             command=lambda: self._on_wc_sel("custom"),
             font=self.TEXT_FONT,
         )
-        
+
         self.change_view()
 
     def _place_content(self) -> None:
@@ -649,8 +648,9 @@ class BrowserPage(CTkFrame, Addons):
         self.rb_custom_wc.grid(row=2, column=0, padx=7, pady=7)
         self.opts_custom_wc.grid(row=3, column=0, padx=7, pady=7)
 
-    def _search_crossword(self, query):
-        if self.view_pref.get() != "Flattened": 
+    def _search_crossword(self, query: str) -> None:
+        """Regenerate all the crossword blocks based on a crossword name query."""
+        if self.view_pref.get() != "Flattened":  # Only works in Flattened view
             return
 
         self._rollback_states()
@@ -659,15 +659,24 @@ class BrowserPage(CTkFrame, Addons):
         self._reset_scroll_frame()
         CrosswordBlock._populate_all(self, query)
 
-    def _reset_search(self):
+    def _reset_search(self) -> None:
+        """Remove all text from the search box and regenerate the placeholder
+        text.
+        """
         self.master.focus_force()
         self.e_search.delete(0, "end")
         self.e_search.configure(placeholder_text=f"{_('Search')} [↵]")
 
     def _reset_scroll_frame(self) -> None:
+        """Set the x position of the center scroll frame to the start."""
         self.block_container._parent_canvas.xview("moveto", 0.0)
 
-    def _update_segbutton_text_colours(self, view):
+    def _update_segbutton_text_colours(self, view: str) -> None:
+        """Configure all segmented button colours in ``self.sb_view`` to have
+        a black text colour if unselected, otherwise, set the text colour to
+        white.
+        """
+
         if get_appearance_mode().casefold() != "light":
             return
 
@@ -677,13 +686,17 @@ class BrowserPage(CTkFrame, Addons):
             else:
                 button.configure(text_color="white")
 
-    def change_view(self, callback=None) -> None:
+    def change_view(self, callback: Optional[bool] = None) -> None:
+        """Change the browser view to Flattened or Categorical."""
+
         self._rollback_states()
+        # Remove existing blocks
         CategoryBlock._set_all(CategoryBlock._remove_block)
         CrosswordBlock._set_all(CrosswordBlock._remove_block)
         self._reset_scroll_frame()
+        # Find true english name of selected view
         view = BASE_ENG_VIEWS[self.views.index(self.view_pref.get())]
-        
+
         self._update_segbutton_text_colours(view)
         if view == "Categorised":
             self._reset_search()
@@ -693,7 +706,7 @@ class BrowserPage(CTkFrame, Addons):
             self._reset_search()
             self.e_search.configure(state="normal")
             CrosswordBlock._populate_all(self)
-        
+
         _update_config(Base.cfg, "m", "view", view)
 
     def _handle_scroll(self, event: Event) -> None:
@@ -826,7 +839,7 @@ class BrowserPage(CTkFrame, Addons):
             empty=EMPTY,
             directions=[ACROSS, DOWN],
             # Tuples in intersections must be removed. Changing this in
-            # ``cworg_gen.py`` was annoying, so it is done here instead.
+            # ``crossword.py`` was annoying, so it is done here instead.
             intersections=[
                 list(item) if isinstance(item, tuple) else item
                 for sublist in self.cwrapper.crossword.intersections
@@ -917,8 +930,8 @@ class CategoryBlock(CTkFrame, Addons, BlockUtils):
 
     @classmethod
     def _populate(cls, master: BrowserPage) -> None:
-        """Instantiate a variable amount of category blocks and put them in the 
-        block container.
+        """Instantiate all the base category blocks and put them in the central
+        scroll container.
         """
         for i, category in enumerate(_get_base_categories()):
             block: CategoryBlock = cls(
@@ -1016,7 +1029,12 @@ class CrosswordBlock(CTkFrame, Addons, BlockUtils):
     """
 
     blocks: List[object] = []  # Stores the current crossword info blocks
-    global_selected_cword: Union[None, IntVar] = None
+    
+    # If the user is viewing the browser in flattened mode, then a categorised
+    # IntVar (belonging in the crossword's category object) cannot be used.
+    # Instead, this global attribute is set to an IntVar at runtime when
+    # required and is used instead of a category's IntVar.
+    global_selected_cword: Union[None, IntVar] = None 
 
     def __init__(
         self,
@@ -1051,10 +1069,12 @@ class CrosswordBlock(CTkFrame, Addons, BlockUtils):
 
     @classmethod
     def _populate(cls, master: BrowserPage, category: CategoryBlock) -> None:
-        """Instantiate a variable amount of crossword blocks and put them in 
-        the block container.
+        """Instantiate all the base crossword blocks for a given category and
+        put them in the central scroll container.
         """
-        for i, crossword in enumerate(_sort_crosswords_by_suffix(_get_base_crosswords(category.name))):
+        for i, crossword in enumerate(
+            _sort_crosswords_by_suffix(_get_base_crosswords(category.name))
+        ):
             block: CrosswordBlock = cls(
                 master,
                 master.block_container,
@@ -1066,22 +1086,38 @@ class CrosswordBlock(CTkFrame, Addons, BlockUtils):
             cls._put_block(block)
 
     @classmethod
-    def _populate_all(cls, master: BrowserPage, query: Optional[str] = None) -> None:
-        crosswords = [(category, crossword) for category in _get_base_categories() for crossword in _get_base_crosswords(category.name)]
-        cls.global_selected_cword = IntVar()
+    def _populate_all(
+        cls, master: BrowserPage, query: Optional[str] = None
+    ) -> None:
+        """Instantiate all the base crossword blocks and sort them holistically
+        by difficulty suffix, putting them in the central scroll container only
+        if they match the provided ``query`` parameter (if it is not None).
+        """
+        crosswords: List[Tuple[DirEntry, DirEntry]] = [
+            (category, crossword)
+            for category in _get_base_categories()
+            for crossword in _get_base_crosswords(category.name)
+        ]
+        cls.global_selected_cword = IntVar()  
         cls.global_selected_cword.set(-1)
-        for i, (category, crossword) in enumerate(_sort_crosswords_by_suffix(crosswords)):
+        for i, (category, crossword) in enumerate(
+            _sort_crosswords_by_suffix(crosswords)
+        ):
             block: CrosswordBlock = cls(
-                master, 
+                master,
                 master.block_container,
                 category.name,
                 crossword.name,
                 i,
             )
-            if query and not BlockUtils._match_block_query(query, block.cwrapper.translated_name):
+            # If a query has been provided, only put the block if the query 
+            # returns true
+            if query and not BlockUtils._match_block_query(
+                query, block.cwrapper.translated_name
+            ):
                 continue
             cls._put_block(block)
-            
+
     def _make_content(self) -> None:
         self.tb_name = CTkTextbox(
             self,
@@ -1091,18 +1127,22 @@ class CrosswordBlock(CTkFrame, Addons, BlockUtils):
             scrollbar_button_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
         )
         self.tb_name.tag_config("center", justify="center")
+        translated_name = self.cwrapper.translated_name
         self.tb_name.insert(
             "end",
-            f"{chr(int(self.cwrapper.info['symbol'], 16))} {self.cwrapper.translated_name}",
+            f"{chr(int(self.cwrapper.info['symbol'], 16))} {translated_name}",
             "center",
         )
         self.tb_name.configure(state="disabled")
 
+        total_words = numbers.format_decimal(
+            self.cwrapper.info['total_definitions'], 
+            locale=self.cwrapper.language
+        )
         self.l_total_words = CTkLabel(
             self,
             font=self.TEXT_FONT,
-            text=f"{_('Total words')}: "
-            f"{numbers.format_decimal(self.cwrapper.info['total_definitions'], locale=self.cwrapper.language)}",
+            text=f"{_('Total words')}: {total_words}",
         )
 
         self.l_difficulty = CTkLabel(
@@ -1125,7 +1165,11 @@ class CrosswordBlock(CTkFrame, Addons, BlockUtils):
             text=_("Select"),
             corner_radius=1,
             font=self.TEXT_FONT,
-            variable=getattr(self.cwrapper.category_object, "selected_cword", CrosswordBlock.global_selected_cword),
+            variable=getattr( 
+                self.cwrapper.category_object, 
+                "selected_cword",  # Categorised IntVar
+                CrosswordBlock.global_selected_cword  # Global IntVar (fallback)
+            ),
             value=self.cwrapper.value,
             command=lambda: self.master._on_cword_selection(self.cwrapper),
         )
@@ -1203,7 +1247,7 @@ class AppHelper:
                 _("Error"), _("This quality is already selected.")
             )
 
-        if "first_time_opening_cword_browser" in kwargs:
+        if "first_time_browser" in kwargs:
             return messagebox.showinfo(
                 _("Info"),
                 _(
