@@ -10,8 +10,8 @@ from gettext import translation
 from json import dumps, load
 from os import listdir, path, PathLike
 from platform import system
-from tkinter import Event, IntVar, messagebox
-from typing import Dict, List, Union
+from tkinter import Event, IntVar, StringVar, messagebox
+from typing import Dict, List, Union, Optional
 from uuid import uuid4
 from webbrowser import open_new_tab
 
@@ -22,19 +22,24 @@ from constants import (
     ACROSS,
     BASE_ENG_APPEARANCES,
     BASE_ENG_CWORD_QUALITIES,
+    BASE_ENG_VIEWS,
     PAGE_MAP,
     CONFIG_PATH,
     CWORD_IMG_DARK_PATH,
     CWORD_IMG_LIGHT_PATH,
     DOWN,
     EMPTY,
+    FS_IMG_LIGHT_PATH,
+    FS_IMG_DARK_PATH,
     LOCALES_PATH,
     LOGO_PATH,
+    DIM,
     Colour,
 )
 from customtkinter import (
     CTk,
     CTkButton,
+    CTkEntry,
     CTkFont,
     CTkFrame,
     CTkImage,
@@ -42,6 +47,7 @@ from customtkinter import (
     CTkOptionMenu,
     CTkRadioButton,
     CTkScrollableFrame,
+    CTkSegmentedButton,
     CTkTextbox,
     get_appearance_mode,
     set_appearance_mode,
@@ -52,8 +58,8 @@ from cword_webapp.app import _create_app, _terminate_app
 from utils import (
     BlockUtils,
     _get_base_crosswords,
-    _get_colour_palette_for_webapp,
-    _get_crossword_categories,
+    _get_colour_palette,
+    _get_base_categories,
     _get_language_options,
     _interpret_cword_data,
     _make_category_info_json,
@@ -136,6 +142,7 @@ class Base(CTk, Addons):
     lang_info: List[Dict[str, str], List[str]] = []
     locale: Locale = None
     cfg: ConfigParser = None
+    fullscreen: bool = False
 
     def __init__(self, **kwargs) -> None:
         super().__init__()
@@ -148,19 +155,35 @@ class Base(CTk, Addons):
             setattr(Base, kwarg, kwargs[kwarg])
 
         self.protocol("WM_DELETE_WINDOW", self._exit_handler)  # Detect exit
-        self.geometry("840x600")
-        self.minsize(530, 370)
         if system() == "Windows":
             self.iconbitmap(LOGO_PATH)
         set_appearance_mode(Base.cfg.get("m", "appearance"))
         set_default_color_theme(Base.cfg.get("m", "theme"))
         set_widget_scaling(float(Base.cfg.get("m", "scale")))
+        self._set_dim()
 
         self._increment_launches()
 
         # Bring the user to the default Home Page
         page = Base.cfg.get("m", "page")
         self._route(globals()[page](self), self, _(PAGE_MAP[page]))
+
+    def _set_dim(self) -> None:
+        scale = float(Base.cfg.get("m", "scale"))
+        new_width = DIM[0] * scale
+        new_height = DIM[1] * scale
+
+        self.minsize(new_width, new_height)
+        self.maxsize(new_width, new_height)
+        self.geometry(f"{new_width}x{new_height}") 
+
+    def _toggle_fullscreen(self) -> None:
+        Base.fullscreen = not Base.fullscreen
+        if self.fullscreen:
+            self.maxsize(self.winfo_screenwidth(), self.winfo_screenheight())
+        else:
+            self._set_dim()
+        self.attributes("-fullscreen", Base.fullscreen)
 
     def _increment_launches(self) -> None:
         """Increment ``launches`` in the program config by 1."""
@@ -214,7 +237,7 @@ class HomePage(CTkFrame, Addons):
             fg_color=(Colour.Light.SUB, Colour.Dark.SUB),
         )
 
-        self.cword_opts_container = CTkFrame(
+        self.main_container = CTkFrame(
             self.container,
             corner_radius=0,
             fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
@@ -223,17 +246,29 @@ class HomePage(CTkFrame, Addons):
     def _place_containers(self) -> None:
         self.container.pack(fill="both", expand=True)
         self.settings_container.grid(row=0, column=1, sticky="nsew")
-        self.cword_opts_container.grid(row=0, column=0, sticky="nsew")
+        self.main_container.grid(row=0, column=0, sticky="nsew")
 
     def _make_content(self) -> None:
         self.l_title = CTkLabel(
-            self.cword_opts_container,
+            self.main_container,
             text=_("Crossword Puzzle"),
             font=self.TITLE_FONT,
         )
+        
+        self.b_fullscreen = CTkLabel(
+            self.main_container,
+            text="",
+            image=CTkImage(
+                light_image=Image.open(FS_IMG_LIGHT_PATH),
+                dark_image=Image.open(FS_IMG_DARK_PATH),
+            ),
+        )
+        self.b_fullscreen.bind(
+            "<Button-1>", lambda e: self.master._toggle_fullscreen()
+        )
 
         self.cword_img = CTkLabel(
-            self.cword_opts_container,
+            self.main_container,
             text="",
             image=CTkImage(
                 light_image=Image.open(CWORD_IMG_LIGHT_PATH),
@@ -243,8 +278,8 @@ class HomePage(CTkFrame, Addons):
         )
 
         self.b_open_cword_browser = CTkButton(
-            self.cword_opts_container,
-            text=_("View crosswords"),
+            self.main_container,
+            text=_("Browser"),
             command=lambda: self._route(
                 BrowserPage(self.master), self.master, _("Crossword Browser")
             ),
@@ -254,8 +289,8 @@ class HomePage(CTkFrame, Addons):
         )
 
         self.b_close_app = CTkButton(
-            self.cword_opts_container,
-            text=_("Exit the app"),
+            self.main_container,
+            text=_("Exit"),
             command=self.master._exit_handler,
             width=175,
             height=50,
@@ -273,7 +308,7 @@ class HomePage(CTkFrame, Addons):
 
         self.l_language_opts = CTkLabel(
             self.settings_container,
-            text=_("Languages"),
+            text=_("Language"),
             font=self.BOLD_TEXT_FONT,
         )
         self.opts_language = CTkOptionMenu(
@@ -351,6 +386,7 @@ class HomePage(CTkFrame, Addons):
     def _place_content(self) -> None:
         self.l_title.place(relx=0.5, rely=0.1, anchor="c")
         self.cword_img.place(relx=0.5, rely=0.35, anchor="c")
+        self.b_fullscreen.place(x=20, y=20, anchor="c")
         self.b_open_cword_browser.place(relx=0.5, rely=0.65, anchor="c")
         self.b_close_app.place(relx=0.5, rely=0.76, anchor="c")
         self.l_settings.place(relx=0.5, rely=0.1, anchor="c")
@@ -387,6 +423,7 @@ class HomePage(CTkFrame, Addons):
 
         set_widget_scaling(scale)
         _update_config(Base.cfg, "m", "scale", str(scale))
+        self.master._set_dim()
 
     def change_lang(self, lang: str) -> None:
         """Ensures the user is not selecting the same language, then creates a
@@ -439,6 +476,8 @@ class BrowserPage(CTkFrame, Addons):
         self.webapp_on: bool = False
         self.wc_pref: IntVar = IntVar()  # Word count preference
         self.wc_pref.set(-1)
+        self.view_pref: StringVar = StringVar()  # Browser view preference
+        self.view_pref.set(Base.cfg.get("m", "view"))
 
         # Notify user the first time they open this page
         if Base.cfg.get("misc", "cword_browser_opened") == "0":
@@ -457,20 +496,24 @@ class BrowserPage(CTkFrame, Addons):
         )
         self.block_container.bind_all("<MouseWheel>", self._handle_scroll)
 
-        self.button_container = CTkFrame(
+        self.bottom_container = CTkFrame(
             self, fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN)
+        )
+        self.button_container = CTkFrame(
+            self.bottom_container, fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN)
         )
 
         self.pref_container = CTkFrame(
-            self, fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN)
+            self.bottom_container, fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN)
         )
         self.pref_container.grid_columnconfigure((0, 1), weight=0)
 
     def _place_containers(self) -> None:
         self.center_container.pack(anchor="c", expand=True, fill="x")
         self.block_container.pack(expand=True, fill="both")
-        self.button_container.place(relx=0.725, rely=0.8425, anchor="c")
-        self.pref_container.place(relx=0.3, rely=0.84, anchor="c")
+        self.bottom_container.place(relx=0.5, rely=0.84, anchor="c")
+        self.pref_container.grid(row=0, column=0, padx=(10, 50), pady=10)
+        self.button_container.grid(row=0, column=1, padx=(50, 10), pady=10)
 
     def _make_content(self) -> None:
         self.l_title = CTkLabel(
@@ -479,7 +522,7 @@ class BrowserPage(CTkFrame, Addons):
 
         self.b_go_back = CTkButton(
             self,
-            text=_("Go back"),
+            text=_("Back"),
             command=lambda: self._route(
                 HomePage(self.master),
                 self.master,
@@ -487,11 +530,38 @@ class BrowserPage(CTkFrame, Addons):
                 action=self._terminate,
                 condition=self.webapp_on,
             ),
-            width=175,
             height=50,
             fg_color=Colour.Global.EXIT_BUTTON,
             hover_color=Colour.Global.EXIT_BUTTON_HOVER,
             font=self.TEXT_FONT,
+        )
+
+        self.views = [_("Categorised"), _("Flattened")]
+        self.sb_view = CTkSegmentedButton(
+            self,
+            values=self.views,
+            font=self.TEXT_FONT,
+            command=self.change_view,
+            variable=self.view_pref,
+            fg_color=(Colour.Light.SUB, Colour.Dark.SUB),
+            height=50,
+            unselected_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
+        )
+        self.master.update()
+        for button in self.sb_view._buttons_dict.values():
+            button.configure(width=150)
+        
+        self.e_search = CTkEntry(
+            self,
+            placeholder_text=f"{_('Search')} [↵]",
+            font=self.TEXT_FONT,
+            fg_color=(Colour.Light.SUB, Colour.Dark.SUB),
+            bg_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
+            justify="center",
+            width=300,
+        )
+        self.e_search.bind(
+            "<Return>", lambda e: self._search_crossword(self.e_search.get())
         )
 
         self.b_load_cword = CTkButton(
@@ -564,18 +634,67 @@ class BrowserPage(CTkFrame, Addons):
             command=lambda: self._on_wc_sel("custom"),
             font=self.TEXT_FONT,
         )
-
-        CategoryBlock._populate(self)
+        
+        self.change_view()
 
     def _place_content(self) -> None:
-        self.l_title.place(relx=0.5, rely=0.1, anchor="c")
-        self.b_go_back.place(relx=0.5, rely=0.2, anchor="c")
+        self.l_title.place(relx=0.5, rely=0.075, anchor="c")
+        self.b_go_back.place(x=20, y=20)
+        self.sb_view.place(relx=0.5, rely=0.25, anchor="c")
+        self.e_search.place(relx=0.5, rely=0.161, anchor="c")
         self.b_load_cword.grid(row=0, column=0, sticky="nsew", padx=7, pady=7)
         self.b_terminate_webapp.grid(row=0, column=1, sticky="nsew", padx=7, pady=7)
         self.l_wc_prefs.grid(row=0, column=0, columnspan=2, pady=(5, 10))
         self.rb_max_wc.grid(row=1, column=0, padx=7, pady=7)
         self.rb_custom_wc.grid(row=2, column=0, padx=7, pady=7)
         self.opts_custom_wc.grid(row=3, column=0, padx=7, pady=7)
+
+    def _search_crossword(self, query):
+        if self.view_pref.get() != "Flattened": 
+            return
+
+        self._rollback_states()
+        CategoryBlock._set_all(CategoryBlock._remove_block)
+        CrosswordBlock._set_all(CrosswordBlock._remove_block)
+        self._reset_scroll_frame()
+        CrosswordBlock._populate_all(self, query)
+
+    def _reset_search(self):
+        self.master.focus_force()
+        self.e_search.delete(0, "end")
+        self.e_search.configure(placeholder_text=f"{_('Search')} [↵]")
+
+    def _reset_scroll_frame(self) -> None:
+        self.block_container._parent_canvas.xview("moveto", 0.0)
+
+    def _update_segbutton_text_colours(self, view):
+        if get_appearance_mode().casefold() != "light":
+            return
+
+        for button in self.sb_view._buttons_dict.values():
+            if button.cget("text") != view:
+                button.configure(text_color="black")
+            else:
+                button.configure(text_color="white")
+
+    def change_view(self, callback=None) -> None:
+        self._rollback_states()
+        CategoryBlock._set_all(CategoryBlock._remove_block)
+        CrosswordBlock._set_all(CrosswordBlock._remove_block)
+        self._reset_scroll_frame()
+        view = BASE_ENG_VIEWS[self.views.index(self.view_pref.get())]
+        
+        self._update_segbutton_text_colours(view)
+        if view == "Categorised":
+            self._reset_search()
+            self.e_search.configure(state="disabled")
+            CategoryBlock._populate(self)
+        elif view == "Flattened":
+            self._reset_search()
+            self.e_search.configure(state="normal")
+            CrosswordBlock._populate_all(self)
+        
+        _update_config(Base.cfg, "m", "view", view)
 
     def _handle_scroll(self, event: Event) -> None:
         """Scroll the center scroll frame only if the viewable width is greater
@@ -621,7 +740,9 @@ class BrowserPage(CTkFrame, Addons):
         """Reconfigure the states of the GUIs buttons and terminate the app."""
         self.b_open_webapp.grid_forget()
         self._rollback_states()
-        self.launch_options_on: bool = False
+        if Base.cfg.get("m", "view") == "Flattened":
+            self.e_search.configure(state="normal")
+        self.sb_view.configure(state="normal")
         _terminate_app()
         self.webapp_on: bool = False
 
@@ -631,9 +752,11 @@ class BrowserPage(CTkFrame, Addons):
         """
         if hasattr(self, "cwrapper"):  # User selected a crossword, meaning they
                                        # had a category open, so this must be done
-            self.cwrapper.category_object.b_close.configure(state="normal")
+            if self.cwrapper.category_object:
+                self.cwrapper.category_object.b_close.configure(state="normal")
             CrosswordBlock._config_selectors(state="normal")
 
+        self.sb_view.configure(state="normal")
         self.b_terminate_webapp.configure(state="disabled")
         self.b_open_webapp.grid_forget()
         self.b_load_cword.grid(row=0, column=0, sticky="nsew", padx=7, pady=7)
@@ -642,6 +765,7 @@ class BrowserPage(CTkFrame, Addons):
         self.rb_max_wc.configure(text=f"{_('Maximum')}:")
         self.opts_custom_wc.set(_("Select word count"))
         self.wc_pref.set(-1)
+        self.launch_options_on: bool = False
 
     def _configure_word_count_prefs(self, state: str) -> None:
         """Configure all the word_count preference widgets to an either an
@@ -661,10 +785,15 @@ class BrowserPage(CTkFrame, Addons):
 
         # It is safe to update widget states as crossword generation was OK
         self.b_load_cword.grid_forget()
-        self.cwrapper.category_object.b_close.configure(state="disabled")
+        if self.cwrapper.category_object:
+            self.cwrapper.category_object.b_close.configure(state="disabled")
+            self.cwrapper.category_object.selected_cword.set(-1)
+        else:
+            CrosswordBlock.global_selected_cword.set(-1)
         CrosswordBlock._config_selectors(state="disabled")
         self._configure_word_count_prefs("disabled")
-        self.cwrapper.category_object.selected_cword.set(-1)
+        self.sb_view.configure(state="disabled")
+        self.e_search.configure(state="disabled")
 
         self._load()
         self.webapp_on: bool = True
@@ -682,7 +811,7 @@ class BrowserPage(CTkFrame, Addons):
             definitions_a,
             definitions_d,
         ) = _interpret_cword_data(self.cwrapper.crossword)
-        colour_palette: Dict[str, str] = _get_colour_palette_for_webapp(
+        colour_palette: Dict[str, str] = _get_colour_palette(
             get_appearance_mode()
         )
         _create_app(
@@ -791,7 +920,7 @@ class CategoryBlock(CTkFrame, Addons, BlockUtils):
         """Instantiate a variable amount of category blocks and put them in the 
         block container.
         """
-        for i, category in enumerate(_get_crossword_categories()):
+        for i, category in enumerate(_get_base_categories()):
             block: CategoryBlock = cls(
                 master.block_container,
                 master,
@@ -857,7 +986,7 @@ class CategoryBlock(CTkFrame, Addons, BlockUtils):
 
     def _open(self) -> None:
         """View all crossword info blocks for a specific category."""
-        self.master.block_container._parent_canvas.xview("moveto", 0.0)
+        self.master._reset_scroll_frame()
         self.b_view.configure(state="disabled")
 
         self._set_all(self._remove_block)
@@ -887,15 +1016,16 @@ class CrosswordBlock(CTkFrame, Addons, BlockUtils):
     """
 
     blocks: List[object] = []  # Stores the current crossword info blocks
+    global_selected_cword: Union[None, IntVar] = None
 
     def __init__(
         self,
         master: BrowserPage,
         container: CTkFrame,
         category: str,
-        category_object: CategoryBlock,
         name: str,
         value: int,
+        category_object: Optional[CategoryBlock] = None,
     ) -> None:
         super().__init__(
             container,
@@ -920,23 +1050,38 @@ class CrosswordBlock(CTkFrame, Addons, BlockUtils):
         self._place_content()
 
     @classmethod
-    def _populate(cls, master: BrowserPage, category: str) -> None:
+    def _populate(cls, master: BrowserPage, category: CategoryBlock) -> None:
         """Instantiate a variable amount of crossword blocks and put them in 
         the block container.
         """
-        for i, crossword in enumerate(
-            _sort_crosswords_by_suffix(_get_base_crosswords(category.name))
-        ):
+        for i, crossword in enumerate(_sort_crosswords_by_suffix(_get_base_crosswords(category.name))):
             block: CrosswordBlock = cls(
                 master,
                 master.block_container,
                 category.name,
-                category,
                 crossword.name,
                 i,
+                category,
             )
             cls._put_block(block)
 
+    @classmethod
+    def _populate_all(cls, master: BrowserPage, query: Optional[str] = None) -> None:
+        crosswords = [(category, crossword) for category in _get_base_categories() for crossword in _get_base_crosswords(category.name)]
+        cls.global_selected_cword = IntVar()
+        cls.global_selected_cword.set(-1)
+        for i, (category, crossword) in enumerate(_sort_crosswords_by_suffix(crosswords)):
+            block: CrosswordBlock = cls(
+                master, 
+                master.block_container,
+                category.name,
+                crossword.name,
+                i,
+            )
+            if query and not BlockUtils._match_block_query(query, block.cwrapper.translated_name):
+                continue
+            cls._put_block(block)
+            
     def _make_content(self) -> None:
         self.tb_name = CTkTextbox(
             self,
@@ -980,7 +1125,7 @@ class CrosswordBlock(CTkFrame, Addons, BlockUtils):
             text=_("Select"),
             corner_radius=1,
             font=self.TEXT_FONT,
-            variable=self.cwrapper.category_object.selected_cword,
+            variable=getattr(self.cwrapper.category_object, "selected_cword", CrosswordBlock.global_selected_cword),
             value=self.cwrapper.value,
             command=lambda: self.master._on_cword_selection(self.cwrapper),
         )

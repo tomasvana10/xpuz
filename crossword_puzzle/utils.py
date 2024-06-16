@@ -31,6 +31,10 @@ from td import CrosswordInfo
 
 
 class BlockUtils:
+    @staticmethod
+    def _match_block_query(query: str, block_name: str):
+        return query.strip().casefold() in block_name.strip().casefold()
+        
     @classmethod
     def _put_block(cls, block: object) -> None:
         """Pack ``block`` in its parent container and append it to the available
@@ -106,7 +110,7 @@ def _get_language_options() -> Tuple[Dict[str, str], Dict[str, str]]:
     return [localised_lang_db, localised_langs]
 
 
-def _get_crossword_categories() -> Iterable[DirEntry]:
+def _get_base_categories() -> Iterable[DirEntry]:
     """Get all the available crossword categories sorted alphabetically."""
     return sorted(
         [cat for cat in scandir(BASE_CWORDS_PATH) if cat.is_dir()],
@@ -127,7 +131,7 @@ def _get_base_crosswords(category) -> Iterable[DirEntry]:
     ]
 
 
-def _sort_crosswords_by_suffix(cwords: List[str]) -> List[str]:
+def _sort_crosswords_by_suffix(cwords: List[DirEntry]) -> List[DirEntry]:
     """Sort the cword content of a category by the cword suffixes (-easy
     to -extreme), if possible.
     """
@@ -138,9 +142,17 @@ def _sort_crosswords_by_suffix(cwords: List[str]) -> List[str]:
                 cword.name.split("-")[-1].capitalize()
             ),
         )
-    except Exception:  # Could not find the "-" in the crossword name, so
-                       # don't sort this category
-        return cwords
+    except Exception:
+        try:
+            return sorted(
+                cwords, 
+                key=lambda cword: DIFFICULTIES.index(
+                    cword[1].name.split("-")[-1].capitalize()
+                )
+            )
+        except Exception:  # Could not find the "-" in the crossword name, so
+                           # don't sort this category
+            return cwords
 
 
 def _make_cword_info_json(
@@ -210,7 +222,7 @@ def _load_attempts_db() -> Dict[str, int]:
         return load(file)
 
 
-def _get_colour_palette_for_webapp(appearance_mode: str) -> Dict[str, str]:
+def _get_colour_palette(appearance_mode: str) -> Dict[str, str]:
     """Create a dictionary based on ``constants.Colour`` for the web app."""
     sub_class = Colour.Light if appearance_mode == "Light" else Colour.Dark
     return {

@@ -1,7 +1,7 @@
 from json import load
 from pprint import pformat
 from os import PathLike, listdir, path
-from typing import Dict, Union
+from typing import Dict, Union, Optional
 
 from constants import BASE_CWORDS_PATH, DIFFICULTIES, LOCALES_PATH
 from crossword import Crossword
@@ -41,8 +41,7 @@ class CrosswordWrapper:
         *,
         language: str = "en",
         optimise: bool = True,  # Run ``utils.find_best_crossword``
-        category_object: object = None,  # The category block who is the parent of
-                                         # this wrapper's crossword info block
+        category_object: Optional[object] = None,  
         value: int = None,
     ) -> None:
         self.category = category
@@ -51,9 +50,8 @@ class CrosswordWrapper:
         self.word_count = word_count
         self.optimise = optimise
 
-        self.crossword: Union[None, Crossword] = (
-            None  # Updated when ``self.make`` is called
-        )
+        self.crossword: Union[None, Crossword] = None  # Updated when 
+                                                       # ``self.make`` is called
         self.toplevel: PathLike = self._get_toplevel()
         self.total_definitions: int = len(self.definitions)
         self._validate_data()

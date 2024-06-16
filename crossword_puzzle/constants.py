@@ -48,6 +48,8 @@ CWORD_IMG_LIGHT_PATH = path.join(
     DIR_PATH, "assets", "images", "cword_light.png"
 )
 CWORD_IMG_DARK_PATH = path.join(DIR_PATH, "assets", "images", "cword_dark.png")
+FS_IMG_LIGHT_PATH = path.join(DIR_PATH, "assets", "images", "fs_light.png")
+FS_IMG_DARK_PATH = path.join(DIR_PATH, "assets", "images", "fs_dark.png")
 LOGO_PATH = path.join(DIR_PATH, "assets", "images", "logo.ico")
 BASE_CWORDS_PATH = path.join(DIR_PATH, "base_cwords")
 ATTEMPTS_DB_PATH = path.join(DIR_PATH, "data", "attempts_db.json")
@@ -77,6 +79,7 @@ BASE_ENG_CWORD_QUALITIES: List[str] = [
 ]
 
 """Misc constants"""
+DIM = (842, 595)
 PAGE_MAP: Dict[str, str] = {
     "HomePage": "Crossword Puzzle",
     "BrowserPage": "Crossword Browser"
@@ -101,3 +104,4 @@ REVERSE_LANG_REPLACEMENTS = {
     value: key for key, value in LANG_REPLACEMENTS.items()
 }
 BASE_ENG_APPEARANCES: List[str] = ["light", "dark", "system"]
+BASE_ENG_VIEWS: List[str] = ["Categorised", "Flattened"]
