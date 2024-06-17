@@ -3,15 +3,15 @@ from math import ceil, sqrt
 from random import choice
 from typing import Dict, List, Tuple, Union
 
-from constants import (
+from crossword_puzzle.constants import (
     ACROSS,
     DIMENSIONS_CONSTANT,
     DOWN,
     EMPTY,
     WHITESPACE_SCALAR,
 )
-from td import Placement
-from utils import (
+from crossword_puzzle.td import Placement
+from crossword_puzzle.utils import (
     _format_definitions,
     _randomise_definitions,
     _verify_definitions,
@@ -35,7 +35,7 @@ class Crossword:
         dimensions: Union[None, int] = None,
     ) -> None:
         if via_find_best_crossword:  # Prevent recalculation of dimensions and
-                                     # only shuffle existing definitions
+            # only shuffle existing definitions
             self.definitions: Dict[str, str] = _randomise_definitions(
                 definitions
             )
@@ -46,7 +46,7 @@ class Crossword:
             self.dimensions: int = self._get_dimensions()
 
         self.name = name  # Generally derived from the crossword directory name
-                          # (without the difficulty suffix and title-cased)
+        # (without the difficulty suffix and title-cased)
         self.word_count = word_count  # Amount of words to be inserted
         self.generated: bool = False  # Flag to prevent duplicate generation
         self.intersections = []  # Store word intersection coordinates
@@ -122,7 +122,9 @@ class Crossword:
 
     @staticmethod
     def _sort_placements(placements: List[Placement]) -> List[Placement]:
-        return sorted(placements, key=lambda p: p["intersections"], reverse=True)
+        return sorted(
+            placements, key=lambda p: p["intersections"], reverse=True
+        )
 
     def _place_word(
         self,
@@ -383,12 +385,16 @@ class Crossword:
         """Attempt to all the words in the grid, recursing once to retry the
         placement of words with no intersections.
         """
-        if not insert_backlog:  # First time execution, attempt to insert all words
+        if (
+            not insert_backlog
+        ):  # First time execution, attempt to insert all words
             self.backlog: List[str] = []
 
         if self.inserts == 0:  # First insertion is always in the middle
             middle_placement: Placement = self._get_middle_placement(words[0])
-            self._place_word(*Crossword._unpack_placement_info(middle_placement))
+            self._place_word(
+                *Crossword._unpack_placement_info(middle_placement)
+            )
             self._add_data(middle_placement)
             self.intersections.append(middle_placement["intersections"])
             self.inserts += 1
@@ -398,14 +404,18 @@ class Crossword:
             # is complete
             placements: List[Placement] = self._get_placements(word)
             placements = self._prune_unreadable_placements(placements)
-            if not placements:  # Could not find any placements, go to next word
+            if (
+                not placements
+            ):  # Could not find any placements, go to next word
                 self.fails += 1
                 continue
 
             # Sort placements from highest to lowest intersections
             sorted_placements = Crossword._sort_placements(placements)
             if not sorted_placements[0]["intersections"]:  # No intersections
-                if not insert_backlog: # First time execution; append words here
+                if (
+                    not insert_backlog
+                ):  # First time execution; append words here
                     # for eventual reinsertion
                     self.backlog.append(word)
                     continue
@@ -420,13 +430,13 @@ class Crossword:
             self.total_intersections += len(placement["intersections"])
             self.inserts += 1
 
-        if self.backlog and not insert_backlog:  # Backlog contains uninserted 
+        if self.backlog and not insert_backlog:  # Backlog contains uninserted
             # words; attempt to insert them
             self._populate_grid(self.backlog, insert_backlog=True)
 
 
 if __name__ == "__main__":  # Example usage outside context of the GUI
-    from wrappers import CrosswordWrapper
+    from .wrappers import CrosswordWrapper
 
     cwrapper = CrosswordWrapper("geography", "capitals-easy", 3)
     cwrapper.make()

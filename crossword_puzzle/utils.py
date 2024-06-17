@@ -1,24 +1,24 @@
 """General/specialised utility functions."""
 
-from __future__ import annotations
-
 from configparser import ConfigParser
 from copy import deepcopy
+from gettext import translation
 from json import dump, load
 from math import ceil
-from os import DirEntry, listdir, path, PathLike, scandir
+from os import DirEntry, PathLike, listdir, path, scandir
 from random import randint, sample
-from typing import Dict, Iterable, List, Tuple, Union
+from tkinter import messagebox
+from typing import Callable, Dict, Iterable, List, Tuple, Union
 
 from babel import Locale
 from babel.core import UnknownLocaleError
 from regex import sub
 
-from constants import (
+from crossword_puzzle.constants import (
     ACROSS,
     ATTEMPTS_DB_PATH,
     BASE_CWORDS_PATH,
-    CONFIG_PATH,
+    BASE_CFG_PATH,
     DIFFICULTIES,
     DOWN,
     KEEP_LANGUAGES_PATTERN,
@@ -26,15 +26,109 @@ from constants import (
     QUALITY_MAP,
     Colour,
 )
-from errors import DefinitionsParsingError
-from td import CrosswordInfo
+from crossword_puzzle.errors import DefinitionsParsingError
+from crossword_puzzle.td import CrosswordInfo
+
+
+class GUIHelper:
+    @staticmethod
+    def _install_translations(locale: Locale) -> None:
+        """Install translations from ``locale.language`` with gettext."""
+        translation(
+            "messages",
+            localedir=LOCALES_PATH,
+            languages=[locale.language],
+        ).install()
+
+    @staticmethod
+    def confirm_with_messagebox(
+        exit_: bool = False, restart: bool = False, close: bool = False
+    ) -> bool:
+        """Provide confirmations to the user with tkinter messageboxes."""
+        if exit_ and restart:
+            return messagebox.askyesno(
+                _("Restart"), _("Are you sure you want to restart the app?")
+            )
+
+        if exit_ and not restart:
+            return messagebox.askyesno(
+                _("Exit"),
+                _(
+                    "Are you sure you want to exit the app? If the web app is "
+                    "running, it will be terminated."
+                ),
+            )
+
+        if close:
+            return messagebox.askyesno(
+                _("Back to home"),
+                _(
+                    "Are you sure you want to go back to the home screen? The web "
+                    "app will be terminated."
+                ),
+            )
+
+    @staticmethod
+    def show_messagebox(*args, **kwargs) -> None:
+        """Show an error/info messagebox."""
+        if "same_lang" in kwargs:
+            return messagebox.showerror(
+                _("Error"), _("This language is already selected.")
+            )
+
+        if "same_scale" in kwargs:
+            return messagebox.showerror(
+                _("Error"), _("This size is already selected.")
+            )
+
+        if "same_appearance" in kwargs:
+            return messagebox.showerror(
+                _("Error"), _("This appearance is already selected.")
+            )
+
+        if "same_quality" in kwargs:
+            return messagebox.showerror(
+                _("Error"), _("This quality is already selected.")
+            )
+
+        if "first_time_browser" in kwargs:
+            return messagebox.showinfo(
+                _("Info"),
+                _(
+                    "First time launch, please read: Once you have loaded a "
+                    "crossword, and wish to load another one, you must first "
+                    "terminate the web app. IMPORTANT: If you are on macOS, force "
+                    "quitting the application (using cmd+q) while the web app is "
+                    "running will prevent it from properly terminating. If you "
+                    "mistakenly do this, the program will run new web apps with a "
+                    "different port. Alternatively, you can manually change the "
+                    "port in the program's config file. All app processes that "
+                    "have not been properly terminated can be terminated through "
+                    "Activity Monitor on MacOS, or, simply restart your computer "
+                    "to terminate them."
+                ),
+            )
+
+        if "cword_or_def_err" in kwargs:
+            return messagebox.showerror(_("Error"), f"{args[0]}({args[1]})")
+
+        if "other_gen_err" in kwargs:
+            return messagebox.showerror(
+                _("Error"),
+                f"{args[0]}({args[1]}) - "
+                + _(
+                    "An unexpected error occured. Please reinstall the "
+                    "application with"
+                )
+                + " pip install --force-reinstall crossword-puzzle",
+            )
 
 
 class BlockUtils:
     @staticmethod
     def _match_block_query(query: str, block_name: str):
         return query.strip().casefold() in block_name.strip().casefold()
-        
+
     @classmethod
     def _put_block(cls, block: object) -> None:
         """Pack ``block`` in its parent container and append it to the available
@@ -53,13 +147,15 @@ class BlockUtils:
 
     @classmethod
     def _set_all(
-        cls, 
-        func: Union[BlockUtils._put_block, BlockUtils._remove_block]
+        cls,
+        func: Callable,
     ) -> None:
         """Put or remove all of a classes blocks."""
-        for block in [*cls.blocks]:  # Must iterate over a shallow copy here, as
-                                     # you cannot modify an array you iterate
-                                     # over (with ``func``)
+        for block in [
+            *cls.blocks
+        ]:  # Must iterate over a shallow copy here, as
+            # you cannot modify an array you iterate
+            # over (with ``func``)
             func(block)
 
     @classmethod
@@ -69,7 +165,7 @@ class BlockUtils:
             block.rb_selector.configure(**kwargs)
 
 
-def _update_config(
+def _update_cfg(
     cfg: ConfigParser, section: str, option: str, value: str
 ) -> None:
     """Update ``cfg`` at the given section, option and value, then write it
@@ -77,20 +173,20 @@ def _update_config(
     """
     cfg[section][option] = value
 
-    with open(CONFIG_PATH, "w") as f:
+    with open(BASE_CFG_PATH, "w") as f:
         cfg.write(f)
-
+        
 
 def _get_language_options() -> Tuple[Dict[str, str], Dict[str, str]]:
     """Gather a dictionary that maps each localised language name to its
     english acronym, and a list that contains all of the localised language
     names. This data is derived from ``LOCALES_PATH``."""
     localised_lang_db: Dict[str, str] = dict()  # Used to retrieve the language
-                                                # code for the selected language
-                                                # e.x. {"አማርኛ": "am",}
+    # code for the selected language
+    # e.x. {"አማርኛ": "am",}
     localised_langs: Dict[str, str] = list()  # Used in the language selection
-                                              # optionmenu
-                                              # e.x. ["አማርኛ", "عربي"]
+    # optionmenu
+    # e.x. ["አማርኛ", "عربي"]
 
     i: int = 0
     for locale in sorted(
@@ -114,11 +210,12 @@ def _get_base_categories() -> Iterable[DirEntry]:
     """Get all the available crossword categories sorted alphabetically."""
     return sorted(
         [cat for cat in scandir(BASE_CWORDS_PATH) if cat.is_dir()],
-        key=lambda cat: cat.name,
+        # Cheeky way to force the user category to be first
+        key=lambda cat: cat.name if cat.name != "user" else "!",
     )
 
 
-def _get_base_crosswords(category) -> Iterable[DirEntry]:
+def _get_base_crosswords(category: str) -> Iterable[DirEntry]:
     """Get all the available crosswords from the base crossword directory if
     they have valid ``definitions.json`` files.
     """
@@ -128,6 +225,8 @@ def _get_base_crosswords(category) -> Iterable[DirEntry]:
         if f.is_dir()
         and "definitions.json" in listdir(f.path)
         and path.getsize(path.join(f.path, "definitions.json")) > 0
+        or (category == "user" and f.is_dir())  # Can have empty definitions in
+        # this case
     ]
 
 
@@ -144,18 +243,18 @@ def _sort_crosswords_by_suffix(
                 cword.name.split("-")[-1].capitalize()
             ),
         )
-    except Exception:  # Handling a list of tuples in the form (category, 
-                       # crossword) where both elements are instances of
-                       # ``DirEntry``.
+    except Exception:  # Handling a list of tuples in the form (category,
+        # crossword) where both elements are instances of
+        # ``DirEntry``.
         try:
             return sorted(
-                cwords, 
+                cwords,
                 key=lambda cword: DIFFICULTIES.index(
                     cword[1].name.split("-")[-1].capitalize()
-                )
+                ),
             )
         except Exception:  # Could not find the "-" in the crossword name, so
-                           # don't sort this category
+            # don't sort this category
             return cwords
 
 
@@ -206,11 +305,14 @@ def _update_cword_info_word_count(
         return dump(info, f, indent=4)
 
 
-def _make_category_info_json(fp: PathLike) -> None:
+def _make_category_info_json(fp: PathLike, hex_=None) -> None:
     """Write a new info.json to a category since it does not exist in the a
     category's directory.
     """
-    hex_: str = "#%06X" % randint(0, 0xFFFFFF)
+    if not hex_:
+        hex_: str = "#%06X" % randint(0, 0xFFFFFF)
+    else:
+        hex_: str = hex_
     with open(fp, "w") as f:
         return dump({"bottom_tag_colour": hex_}, f, indent=4)
 
@@ -237,22 +339,24 @@ def _get_colour_palette(appearance_mode: str) -> Dict[str, str]:
     }
 
 
-def find_best_crossword(crossword: Crossword) -> Crossword:
+def _find_best_crossword(crossword: "Crossword", cls: object) -> "Crossword":
     """Determine the best crossword out of a amount of instantiated
     crosswords based on the largest amount of total intersections and
     smallest amount of fails.
     """
     cfg: ConfigParser = ConfigParser()
-    cfg.read(CONFIG_PATH)
+    cfg.read(BASE_CFG_PATH)
     name: str = crossword.name
     word_count: int = crossword.word_count
 
     attempts_db: Dict[str, int] = _load_attempts_db()
     try:
-        max_attempts: int = attempts_db[str(word_count)]  # Get amount of attempts 
-                                                          # based on word count
+        max_attempts: int = attempts_db[
+            str(word_count)
+        ]  # Get amount of attempts
+        # based on word count
         max_attempts *= QUALITY_MAP[  # Scale max attempts based
-                                      # on crossword quality
+            # on crossword quality
             cfg.get("m", "cword_quality")
         ]
         max_attempts = int(ceil(max_attempts))
@@ -264,15 +368,15 @@ def find_best_crossword(crossword: Crossword) -> Crossword:
     definitions: Dict[str, str] = crossword.definitions
     dimensions: int = crossword.dimensions
     crossword.generate()
-    best_crossword = crossword  # Assume the best crossword is the first crossword
-
-    from crossword import Crossword
+    best_crossword = (
+        crossword  # Assume the best crossword is the first crossword
+    )
 
     while attempts <= max_attempts:
-        # Set ``via_find_best_crossword`` to True so dimensions are not 
-        # recalculated and new definitions are not sampled; only the existing 
+        # Set ``via_find_best_crossword`` to True so dimensions are not
+        # recalculated and new definitions are not sampled; only the existing
         # ones are randomised
-        crossword = Crossword(
+        crossword = cls(
             name=name,
             definitions=definitions,
             word_count=word_count,
@@ -302,7 +406,7 @@ def find_best_crossword(crossword: Crossword) -> Crossword:
     return best_crossword
 
 
-def _interpret_cword_data(crossword: Crossword) -> None:
+def _interpret_cword_data(crossword: "Crossword") -> None:
     """Gather data to help with the templated creation of the crossword
     web application.
     """
@@ -319,7 +423,7 @@ def _interpret_cword_data(crossword: Crossword) -> None:
 
     num_label: int = (
         1  # Incremented whenever the start of a word is found;
-           # used to create ``starting_word_matrix``.
+        # used to create ``starting_word_matrix``.
     )
     for row in range(crossword.dimensions):
         for column in range(crossword.dimensions):
@@ -362,7 +466,7 @@ def _interpret_cword_data(crossword: Crossword) -> None:
 
 def _randomise_definitions(definitions: Dict[str, str]) -> Dict[str, str]:
     """Randomises the existing definitions when attempting reinsertion,
-    which prevents ``find_best_crossword`` from favouring certain word
+    which prevents ``_find_best_crossword`` from favouring certain word
     groups with intrinsically higher intersections.
     """
     return dict(sample(list(definitions.items()), len(definitions)))

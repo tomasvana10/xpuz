@@ -8,10 +8,11 @@ from multiprocessing import Process
 from os import path
 from socket import AF_INET, SOCK_STREAM, socket
 
-from constants import CONFIG_PATH, LOCALES_PATH
 from flask import Flask, render_template
 from flask_babel import Babel
-from utils import _update_config
+
+from crossword_puzzle.constants import BASE_CFG_PATH, LOCALES_PATH
+from crossword_puzzle.utils import _update_cfg
 
 app: Flask = Flask(__name__)
 # Suppress info from Flask such as ``GET`` requests
@@ -36,7 +37,7 @@ def _app_process(*args, **kwargs) -> None:
     app.config["BABEL_TRANSLATION_DIRECTORIES"] = path.normpath(LOCALES_PATH)
     babel: Babel = Babel(app)
 
-    cfg.read(CONFIG_PATH)
+    cfg.read(BASE_CFG_PATH)
     port = int(kwargs["port"])
     retry = False
     try:
@@ -53,7 +54,7 @@ def _app_process(*args, **kwargs) -> None:
             s: socket = socket()
             s.bind(("", 0))
             sock_name: int = s.getsockname()[1]
-            _update_config(cfg, "misc", "webapp_port", str(sock_name))
+            _update_cfg(cfg, "misc", "webapp_port", str(sock_name))
             app.run(debug=False, port=sock_name)
 
 

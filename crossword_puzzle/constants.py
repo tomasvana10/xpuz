@@ -2,8 +2,7 @@ from os import path
 from pathlib import Path
 from typing import Dict, List, Union
 
-from regex import compile, Pattern
-
+from regex import Pattern, compile
 
 class Colour:
     """Global and light/dark hex colours."""
@@ -41,7 +40,7 @@ class Colour:
 
 """Absolute paths used across the source code."""
 DIR_PATH = Path(__file__).resolve().parents[0]
-CONFIG_PATH = path.join(DIR_PATH, "config.ini")
+BASE_CFG_PATH = path.join(DIR_PATH, "config.ini")
 LOCALES_PATH = path.join(DIR_PATH, "locales")
 BASE_POT_PATH = path.join(LOCALES_PATH, "base.pot")
 CWORD_IMG_LIGHT_PATH = path.join(
@@ -82,7 +81,8 @@ BASE_ENG_CWORD_QUALITIES: List[str] = [
 DIM = (842, 595)
 PAGE_MAP: Dict[str, str] = {
     "HomePage": "Crossword Puzzle",
-    "BrowserPage": "Crossword Browser"
+    "BrowserPage": "Crossword Browser",
+    "EditorPage": "Crossword Editor",
 }
 LANG_REPLACEMENTS: Dict[str, Union[str, None]] = {
     "zh-cn": "zh",

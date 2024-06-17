@@ -1,24 +1,23 @@
 """Developer utilities. Translation-related"""
 
-import subprocess
 import json
 import os
-import sys
 import shutil
+import subprocess
+import sys
 from typing import Dict, List, Union
 
 import googletrans
 import numpy as np
 import polib
-from google.cloud import translate_v2
-
 from constants import (
-    LANG_REPLACEMENTS,
     BASE_CWORDS_PATH,
-    LOCALES_PATH,
     BASE_POT_PATH,
+    LANG_REPLACEMENTS,
+    LOCALES_PATH,
     REVERSE_LANG_REPLACEMENTS,
 )
+from google.cloud import translate_v2
 from td import CrosswordData
 
 

@@ -1,16 +1,16 @@
 from json import load
-from pprint import pformat
 from os import PathLike, listdir, path
-from typing import Dict, Union, Optional
+from pprint import pformat
+from typing import Dict, Optional, Union
 
-from constants import BASE_CWORDS_PATH, DIFFICULTIES, LOCALES_PATH
-from crossword import Crossword
-from td import CrosswordInfo
-from errors import CrosswordGenerationError, DefinitionsParsingError
-from utils import (
+from crossword_puzzle.constants import BASE_CWORDS_PATH, DIFFICULTIES, LOCALES_PATH
+from crossword_puzzle.crossword import Crossword
+from crossword_puzzle.errors import CrosswordGenerationError, DefinitionsParsingError
+from crossword_puzzle.td import CrosswordInfo
+from crossword_puzzle.utils import (
     _make_cword_info_json,
     _update_cword_info_word_count,
-    find_best_crossword,
+    _find_best_crossword,
 )
 
 
@@ -29,8 +29,8 @@ class CrosswordWrapper:
     it is being accessed at runtime.
     """
 
-    helper: Union[None, object] = None  # Set to ``main.AppHelper`` at runtime
-                                        # (if using the GUI)
+    helper: Union[None, object] = None  # Set to ``main.GUIHelper`` at runtime
+    # (if using the GUI)
     logger: object = logger  # Default method for issuing errors to the user
 
     def __init__(
@@ -40,8 +40,8 @@ class CrosswordWrapper:
         word_count: int = 0,
         *,
         language: str = "en",
-        optimise: bool = True,  # Run ``utils.find_best_crossword``
-        category_object: Optional[object] = None,  
+        optimise: bool = True,  # Run ``utils._find_best_crossword``
+        category_object: Optional[object] = None,
         value: int = None,
     ) -> None:
         self.category = category
@@ -50,8 +50,8 @@ class CrosswordWrapper:
         self.word_count = word_count
         self.optimise = optimise
 
-        self.crossword: Union[None, Crossword] = None  # Updated when 
-                                                       # ``self.make`` is called
+        self.crossword: Union[None, Crossword] = None  # Updated when
+        # ``self.make`` is called
         self.toplevel: PathLike = self._get_toplevel()
         self.total_definitions: int = len(self.definitions)
         self._validate_data()
@@ -68,8 +68,11 @@ class CrosswordWrapper:
         sorted_dict = dict(sorted(list(self.__dict__.items())))
         attr_names = list(sorted_dict.keys())
         attr_vals = list(sorted_dict.values())
-        return str(pformat(
-            {key: value for key, value in zip(attr_names, attr_vals)}, width=50)
+        return str(
+            pformat(
+                {key: value for key, value in zip(attr_names, attr_vals)},
+                width=50,
+            )
         )
 
     def set_word_count(self, count: int) -> None:
@@ -141,7 +144,7 @@ class CrosswordWrapper:
             return toplevel
 
     def make(self) -> Union[None, Crossword]:
-        """Generate a crossword, running ``utils.find_best_crossword`` if
+        """Generate a crossword, running ``utils._find_best_crossword`` if
         ``self.optimise`` is set to True (it is by default). Any errors caught
         are relayed to the main GUI through the helper attribute of
         ``CrosswordWrapper``.
@@ -154,7 +157,7 @@ class CrosswordWrapper:
                 self.name, self.definitions, self.word_count
             )
             if self.optimise:
-                self.crossword = find_best_crossword(self.crossword)
+                self.crossword = _find_best_crossword(self.crossword, Crossword)
 
             return self.crossword
 
