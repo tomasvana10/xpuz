@@ -24,6 +24,7 @@ from crossword_puzzle.constants import (
     CWORD_IMG_LIGHT_PATH,
     FS_IMG_DARK_PATH,
     FS_IMG_LIGHT_PATH,
+    PAGE_MAP,
     Colour,
 )
 from crossword_puzzle.utils import GUIHelper, _update_cfg
@@ -41,6 +42,7 @@ class HomePage(CTkFrame, Addons):
             fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
         )
         self.master = master
+        self.master._set_dim()
         self._set_fonts()
 
     def _make_containers(self) -> None:
@@ -105,7 +107,7 @@ class HomePage(CTkFrame, Addons):
             self.button_container,
             text=_("Browser"),
             command=lambda: self._route(
-                "BrowserPage", self.master, _("Crossword Browser")
+                "BrowserPage", self.master, _(PAGE_MAP["BrowserPage"])
             ),
             width=150,
             height=50,
@@ -116,7 +118,7 @@ class HomePage(CTkFrame, Addons):
             self.button_container,
             text=_("Editor"),
             command=lambda: self._route(
-                "EditorPage", self.master, _("Crossword Editor")
+                "EditorPage", self.master, _(PAGE_MAP["EditorPage"])
             ),
             width=150,
             height=50,
@@ -282,7 +284,7 @@ class HomePage(CTkFrame, Addons):
         GUIHelper._install_translations(Base.locale)
         _update_cfg(Base.cfg, "m", "language", lang)
 
-        self._route("HomePage", self.master, _("Crossword Puzzle"))
+        self._route("HomePage", self.master, _(PAGE_MAP["HomePage"]))
 
     def change_crossword_quality(self, quality: str) -> None:
         """Ensures the user is not selecting the same crossword quality, then

@@ -133,14 +133,16 @@ class Base(CTk, Addons):
         page = Base.cfg.get("m", "page")
         self._route(page, self, _(PAGE_MAP[page]))
 
-    def _set_dim(self) -> None:
+    def _set_dim(self, dim: Tuple[int, int] = DIM) -> None:
         scale = float(Base.cfg.get("m", "scale"))
-        new_width = DIM[0] * scale
-        new_height = DIM[1] * scale
+        new_width = dim[0] * scale
+        new_height = dim[1] * scale
 
         self.minsize(new_width, new_height)
         self.maxsize(new_width, new_height)
         self.geometry(f"{new_width}x{new_height}")
+        
+        self.update()
 
     def _toggle_fullscreen(self) -> None:
         Base.fullscreen = not Base.fullscreen

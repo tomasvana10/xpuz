@@ -1,4 +1,4 @@
-"""GUI page for viewing and searching available crosswords."""
+"""GUI page for searching, viewing and loading available crosswords."""
 
 from json import dumps, load
 from os import DirEntry, PathLike, listdir, path
@@ -27,6 +27,7 @@ from crossword_puzzle.constants import (
     BASE_ENG_VIEWS,
     DOWN,
     EMPTY,
+    PAGE_MAP,
     Colour,
 )
 from crossword_puzzle.cword_webapp.app import _create_app, _terminate_app
@@ -57,7 +58,15 @@ class BrowserPage(CTkFrame, Addons):
             fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
         )
         self.master = master
+        self.master._set_dim()
         self._set_fonts()
+        self._width, self._height = (
+            self.master.winfo_width(), self.master.winfo_height()
+        )
+        
+        self.grid_rowconfigure(0, minsize=self._height * 0.15, weight=1)
+        self.grid_rowconfigure(1, minsize=self._height * 0.85, weight=1)
+        self.grid_columnconfigure(0, weight=1)
 
         if (
             not CrosswordWrapper.helper
@@ -77,50 +86,63 @@ class BrowserPage(CTkFrame, Addons):
             _update_cfg(Base.cfg, "misc", "browser_opened", "1")
 
     def _make_containers(self) -> None:
-        self.center_container = CTkFrame(self)
+        self.header_container = CTkFrame(
+            self, fg_color=(Colour.Light.SUB, Colour.Dark.SUB), corner_radius=0
+        )
+        self.browser_container = CTkFrame(
+            self, corner_radius=0, fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN))
+        
+        self.view_container = CTkFrame(
+            self.browser_container, fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN)
+        )
+        
+        self.center_container = CTkFrame(self.browser_container)
 
         self.block_container = CTkScrollableFrame(
             self.center_container,
             orientation="horizontal",
             corner_radius=0,
-            fg_color=(Colour.Light.SUB, Colour.Dark.SUB),
-            scrollbar_button_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
+            fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
+            scrollbar_button_color=(Colour.Light.SUB, Colour.Dark.SUB),
         )
         self.block_container.bind_all("<MouseWheel>", self._handle_scroll)
 
-        self.add_cword_container = CTkFrame(
-            self, fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN)
+        self.bottom_container = CTkFrame(
+            self.browser_container, fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN)
         )
         self.button_container = CTkFrame(
-            self.add_cword_container,
+            self.bottom_container,
             fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
         )
 
         self.pref_container = CTkFrame(
-            self.add_cword_container,
+            self.bottom_container,
             fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
         )
         self.pref_container.grid_columnconfigure((0, 1), weight=0)
 
     def _place_containers(self) -> None:
-        self.center_container.pack(anchor="c", expand=True, fill="x")
+        self.header_container.grid(row=0, column=0, sticky="nsew")
+        self.browser_container.grid(row=1, column=0, sticky="nsew")
+        self.view_container.place(relx=0.5, rely=0.13, anchor="c")
+        self.center_container.place(relx=0.5, rely=0.45, anchor="c", relwidth=1.0)
         self.block_container.pack(expand=True, fill="both")
-        self.add_cword_container.place(relx=0.5, rely=0.84, anchor="c")
+        self.bottom_container.place(relx=0.5, rely=0.82, anchor="c")
         self.pref_container.grid(row=0, column=0, padx=(10, 50), pady=10)
         self.button_container.grid(row=0, column=1, padx=(50, 10), pady=10)
 
     def _make_content(self) -> None:
         self.l_title = CTkLabel(
-            self, text=_("Crossword Browser"), font=self.TITLE_FONT
+            self.header_container, text=_("Crossword Browser"), font=self.TITLE_FONT
         )
 
         self.b_go_back = CTkButton(
-            self,
+            self.header_container,
             text=_("Back"),
             command=lambda: self._route(
                 "HomePage",
                 self.master,
-                _("Crossword Puzzle"),
+                _(PAGE_MAP["HomePage"]),
                 action=self._terminate,
                 condition=self.webapp_on,
             ),
@@ -132,7 +154,7 @@ class BrowserPage(CTkFrame, Addons):
 
         self.views = [_("Categorised"), _("Flattened")]
         self.sb_view = CTkSegmentedButton(
-            self,
+            self.view_container,
             values=self.views,
             font=self.TEXT_FONT,
             command=self.change_view,
@@ -146,7 +168,7 @@ class BrowserPage(CTkFrame, Addons):
             button.configure(width=150)
 
         self.e_search = CTkEntry(
-            self,
+            self.view_container,
             placeholder_text=f"{_('Search')} [↵]",
             font=self.TEXT_FONT,
             fg_color=(Colour.Light.SUB, Colour.Dark.SUB),
@@ -232,10 +254,10 @@ class BrowserPage(CTkFrame, Addons):
         self.change_view()
 
     def _place_content(self) -> None:
-        self.l_title.place(relx=0.5, rely=0.075, anchor="c")
+        self.l_title.place(relx=0.5, rely=0.5, anchor="c")
         self.b_go_back.place(x=20, y=20)
-        self.sb_view.place(relx=0.5, rely=0.25, anchor="c")
-        self.e_search.place(relx=0.5, rely=0.161, anchor="c")
+        self.sb_view.grid(row=0, column=0, sticky="nsew", padx=10, pady=10)
+        self.e_search.grid(row=1, column=0, sticky="nsew", padx=10, pady=10)
         self.b_load_cword.grid(row=0, column=0, sticky="nsew", padx=7, pady=7)
         self.b_terminate_webapp.grid(
             row=0, column=1, sticky="nsew", padx=7, pady=7

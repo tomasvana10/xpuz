@@ -2,19 +2,24 @@
 the creation and editing of new crosswords, not pre-installed ones.
 """
 
-from os import mkdir, path, listdir
+from os import mkdir, path
+from tkinter.ttk import Separator
 
 from customtkinter import CTkButton, CTkFrame, CTkLabel, CTkOptionMenu
 
 from crossword_puzzle.base import Addons, Base
 from crossword_puzzle.constants import (
-    BASE_CWORDS_PATH, DOC_DATA_PATH, DOC_CAT_PATH, Colour,
+    BASE_CWORDS_PATH, DOC_CAT_PATH, EDITOR_DIM, PAGE_MAP, Colour,
 )
 from crossword_puzzle.utils import (
     _doc_data_routine,
     _get_base_crosswords,
     _make_category_info_json,
 )
+
+
+class Editor:
+    pass  # form validation, stuff like that
 
 
 class EditorPage(CTkFrame, Addons):
@@ -24,47 +29,45 @@ class EditorPage(CTkFrame, Addons):
             fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
         )
         self.master = master
+        self.master._set_dim(dim=EDITOR_DIM)
         self._set_fonts()
+        self._width, self._height = (
+            self.master.winfo_width(), self.master.winfo_height()
+        )
+        
+        self.grid_rowconfigure(0, minsize=self._height * 0.15, weight=1)
+        self.grid_rowconfigure(1, minsize=self._height * 0.85, weight=1)
+        self.grid_columnconfigure(0, weight=1)
 
         self._check_user_category()
 
     def _make_containers(self) -> None:
-        self.container = CTkFrame(self)
-        self.container.grid_rowconfigure((0, 1), weight=1)
-        self.container.grid_columnconfigure(0, weight=1)
-
-        self.add_word_container = CTkFrame(
-            self.container,
-            fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
-            border_color=(Colour.Light.SUB, Colour.Dark.SUB),
-            border_width=5,
-            corner_radius=0,
+        self.header_container = CTkFrame(
+            self, fg_color=(Colour.Light.SUB, Colour.Dark.SUB), corner_radius=0
         )
-        self.add_cword_container = CTkFrame(
-            self.container,
-            fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
-            border_color=(Colour.Light.SUB, Colour.Dark.SUB),
-            border_width=5,
-            corner_radius=0,
-        )
+        self.editor_container = CTkFrame(
+            self, corner_radius=0, fg_color=(Colour.Light.SUB, Colour.Dark.SUB))
+        self.editor_container.grid_columnconfigure((0, 1), weight=1)
+        
+        self.crossword_pane = CrosswordPane(self.editor_container, self)
+        self.word_pane = WordPane(self.editor_container, self)
 
     def _place_containers(self) -> None:
-        self.container.pack(fill="both", expand=True)
-        self.add_word_container.grid(row=0, column=0, sticky="nsew")
-        self.add_cword_container.grid(row=1, column=0, sticky="nsew")
+        self.header_container.grid(row=0, column=0, sticky="ew")
+        self.editor_container.grid(row=1, column=0, sticky="ew")
 
     def _make_content(self) -> None:
         self.l_title = CTkLabel(
-            self, text=_("Crossword Editor"), font=self.TITLE_FONT
+            self.header_container, text=_("Crossword Editor"), font=self.TITLE_FONT
         )
 
         self.b_go_back = CTkButton(
-            self.add_word_container,
+            self.header_container,
             text=_("Back"),
             command=lambda: self._route(
                 "HomePage",
                 self.master,
-                _("Crossword Puzzle"),
+                _(PAGE_MAP["HomePage"])
             ),
             height=50,
             fg_color=Colour.Global.EXIT_BUTTON,
@@ -72,28 +75,18 @@ class EditorPage(CTkFrame, Addons):
             font=self.TEXT_FONT,
         )
 
-        self.l_cwords_opts = CTkLabel(
-            self.add_word_container,
-            text=_("Your crosswords"),
-            font=self.BOLD_TEXT_FONT,
-        )
-        self.opts_cwords = CTkOptionMenu(
-            self.add_word_container,
-            values=[
-                crossword.name
-                for crossword in _get_base_crosswords(
-                    path.join(BASE_CWORDS_PATH, "user")
-                )
-            ],
-            font=self.TEXT_FONT,
-        )
-        self.opts_cwords.set("Choose")
+        """
+        values=[
+            crossword.name
+            for crossword in _get_base_crosswords(
+                path.join(BASE_CWORDS_PATH, "user")
+            )
+        ],
+        """
 
     def _place_content(self) -> None:
         self.b_go_back.place(x=20, y=20)
-        self.l_title.place(relx=0.5, rely=0.075, anchor="c")
-        self.l_cwords_opts.place(relx=0.2, rely=0.3, anchor="c")
-        self.opts_cwords.place(relx=0.2, rely=0.42, anchor="c")
+        self.l_title.place(relx=0.5, rely=0.5, anchor="c")
 
     def _check_user_category(self) -> None:
         fp = path.join(BASE_CWORDS_PATH, "user")
@@ -106,3 +99,29 @@ class EditorPage(CTkFrame, Addons):
                                # sys documents, so update ``fp``
             
         _make_category_info_json(fp, "#FFFFFF")
+
+
+class CrosswordPane(CTkFrame):
+    def __init__(self, container: CTkFrame, master: EditorPage) -> None:
+        super().__init__(
+            container,
+            fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
+            width=master._height * 0.5,
+            height=master._width * 0.85,
+            corner_radius=0,
+        )
+        self.master = master
+        self.grid(row=0, column=0, sticky="ew", padx=(0, 1))
+
+
+class WordPane(CTkFrame):
+    def __init__(self, container: CTkFrame, master: EditorPage) -> None:
+        super().__init__(
+            container,
+            fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
+            width=master._height * 0.5,
+            height=master._width * 0.85,
+            corner_radius=0,
+        )
+        self.master = master
+        self.grid(row=0, column=1, sticky="ew", padx=(1, 0))

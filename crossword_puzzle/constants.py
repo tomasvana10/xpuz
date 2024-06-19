@@ -76,6 +76,7 @@ QUALITY_MAP: Dict[str, int] = {
 WHITESPACE_SCALAR: float = 1.9
 DIMENSIONS_CONSTANT: int = 1
 
+
 """Base english strings"""
 BASE_ENG_CWORD_QUALITIES: List[str] = [
     "terrible",
@@ -87,8 +88,10 @@ BASE_ENG_CWORD_QUALITIES: List[str] = [
 BASE_ENG_APPEARANCES: List[str] = ["light", "dark", "system"]
 BASE_ENG_VIEWS: List[str] = ["Categorised", "Flattened"]
 
+
 """Misc constants"""
-DIM = (842, 595)
+DIM = (900, 650)
+EDITOR_DIM = (1125, 625)
 PAGE_MAP: Dict[str, str] = {
     "HomePage": "Crossword Puzzle",
     "BrowserPage": "Crossword Browser",
