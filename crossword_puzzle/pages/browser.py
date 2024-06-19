@@ -147,6 +147,7 @@ class BrowserPage(CTkFrame, Addons):
                 condition=self.webapp_on,
             ),
             height=50,
+            width=100,
             fg_color=Colour.Global.EXIT_BUTTON,
             hover_color=Colour.Global.EXIT_BUTTON_HOVER,
             font=self.TEXT_FONT,
