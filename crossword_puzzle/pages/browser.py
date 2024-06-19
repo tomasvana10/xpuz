@@ -1,3 +1,5 @@
+"""GUI page for viewing and searching available crosswords."""
+
 from json import dumps, load
 from os import DirEntry, PathLike, listdir, path
 from tkinter import Event, IntVar, StringVar
@@ -23,7 +25,6 @@ from crossword_puzzle.base import Addons, Base
 from crossword_puzzle.constants import (
     ACROSS,
     BASE_ENG_VIEWS,
-    BASE_CFG_PATH,
     DOWN,
     EMPTY,
     Colour,
@@ -37,6 +38,7 @@ from crossword_puzzle.utils import (
     _get_colour_palette,
     _interpret_cword_data,
     _make_category_info_json,
+    _read_cfg,
     _sort_crosswords_by_suffix,
     _update_cfg,
 )
@@ -339,7 +341,7 @@ class BrowserPage(CTkFrame, Addons):
 
     def open_webapp(self) -> None:
         """Open the crossword web app at a port read from ``Base.cfg``."""
-        Base.cfg.read(BASE_CFG_PATH)
+        _read_cfg(Base.cfg)
         open_new_tab(
             f"http://127.0.0.1:{Base.cfg.get('misc', 'webapp_port')}/"
         )
@@ -592,7 +594,7 @@ class CategoryBlock(CTkFrame, Addons, BlockUtils):
             "info.json" not in listdir(self.fp)
             or path.getsize(path.join(self.fp, "info.json")) <= 0
         ):
-            _make_category_info_json(path.join(self.fp, "info.json"))
+            _make_category_info_json(self.fp)
 
     def _open(self) -> None:
         """View all crossword info blocks for a specific category."""
@@ -670,7 +672,7 @@ class CrosswordBlock(CTkFrame, Addons, BlockUtils):
         put them in the central scroll container.
         """
         for i, crossword in enumerate(
-            _sort_crosswords_by_suffix(_get_base_crosswords(category.name))
+            _get_base_crosswords(category.fp)
         ):
             block: CrosswordBlock = cls(
                 master,
@@ -693,7 +695,7 @@ class CrosswordBlock(CTkFrame, Addons, BlockUtils):
         crosswords: List[Tuple[DirEntry, DirEntry]] = [
             (category, crossword)
             for category in _get_base_categories()
-            for crossword in _get_base_crosswords(category.name)
+            for crossword in _get_base_crosswords(category.path, sort=False)
         ]
         cls.global_selected_cword = IntVar()
         cls.global_selected_cword.set(-1)

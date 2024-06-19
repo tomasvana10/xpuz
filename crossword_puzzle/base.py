@@ -68,7 +68,11 @@ class Addons:
         try:
             page_inst = locals()[page_ref](base)
         except KeyError:
-            from crossword_puzzle.pages import BrowserPage, EditorPage, HomePage
+            from crossword_puzzle.pages import (
+                BrowserPage,
+                EditorPage,
+                HomePage,
+            )
 
             page_inst = locals()[page_ref](base)
 
@@ -168,6 +172,6 @@ class Base(CTk, Addons):
             self.quit()
 
         if restart:  # Additionally perform a restart
-            from .main import start
+            from .main import main
 
-            start()
+            main()

@@ -1,3 +1,7 @@
+"""Default GUI page for crossword_puzzle. Provides config options and routing
+buttons to other available pages.
+"""
+
 from typing import List
 
 from babel import Locale, numbers

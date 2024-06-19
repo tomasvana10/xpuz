@@ -2,7 +2,9 @@ from os import path
 from pathlib import Path
 from typing import Dict, List, Union
 
+from platformdirs import user_documents_dir
 from regex import Pattern, compile
+
 
 class Colour:
     """Global and light/dark hex colours."""
@@ -40,7 +42,11 @@ class Colour:
 
 """Absolute paths used across the source code."""
 DIR_PATH = Path(__file__).resolve().parents[0]
-BASE_CFG_PATH = path.join(DIR_PATH, "config.ini")
+TEMPLATE_CFG_PATH = path.join(DIR_PATH, "template.config.ini")
+DOC_PATH = user_documents_dir()
+DOC_DATA_PATH = path.join(DOC_PATH, "crossword_puzzle")
+DOC_CAT_PATH = path.join(DOC_DATA_PATH, "user")
+DOC_CFG_PATH = path.join(DOC_DATA_PATH, "config.ini")
 LOCALES_PATH = path.join(DIR_PATH, "locales")
 BASE_POT_PATH = path.join(LOCALES_PATH, "base.pot")
 CWORD_IMG_LIGHT_PATH = path.join(
@@ -69,6 +75,8 @@ QUALITY_MAP: Dict[str, int] = {
 }
 WHITESPACE_SCALAR: float = 1.9
 DIMENSIONS_CONSTANT: int = 1
+
+"""Base english strings"""
 BASE_ENG_CWORD_QUALITIES: List[str] = [
     "terrible",
     "poor",
@@ -76,6 +84,8 @@ BASE_ENG_CWORD_QUALITIES: List[str] = [
     "great",
     "perfect",
 ]
+BASE_ENG_APPEARANCES: List[str] = ["light", "dark", "system"]
+BASE_ENG_VIEWS: List[str] = ["Categorised", "Flattened"]
 
 """Misc constants"""
 DIM = (842, 595)
@@ -103,5 +113,3 @@ LANG_REPLACEMENTS: Dict[str, Union[str, None]] = {
 REVERSE_LANG_REPLACEMENTS = {
     value: key for key, value in LANG_REPLACEMENTS.items()
 }
-BASE_ENG_APPEARANCES: List[str] = ["light", "dark", "system"]
-BASE_ENG_VIEWS: List[str] = ["Categorised", "Flattened"]

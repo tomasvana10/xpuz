@@ -1,10 +1,20 @@
-from os import PathLike, mkdir, path
+"""GUI page for editing and making crosswords and their words. Only allows for
+the creation and editing of new crosswords, not pre-installed ones.
+"""
+
+from os import mkdir, path, listdir
 
 from customtkinter import CTkButton, CTkFrame, CTkLabel, CTkOptionMenu
 
 from crossword_puzzle.base import Addons, Base
-from crossword_puzzle.constants import BASE_CWORDS_PATH, Colour
-from crossword_puzzle.utils import _get_base_crosswords, _make_category_info_json
+from crossword_puzzle.constants import (
+    BASE_CWORDS_PATH, DOC_DATA_PATH, DOC_CAT_PATH, Colour,
+)
+from crossword_puzzle.utils import (
+    _doc_data_routine,
+    _get_base_crosswords,
+    _make_category_info_json,
+)
 
 
 class EditorPage(CTkFrame, Addons):
@@ -16,9 +26,7 @@ class EditorPage(CTkFrame, Addons):
         self.master = master
         self._set_fonts()
 
-        user_category_fp = path.join(BASE_CWORDS_PATH, "user")
-        if not path.exists(user_category_fp):
-            self._make_user_category(user_category_fp)
+        self._check_user_category()
 
     def _make_containers(self) -> None:
         self.container = CTkFrame(self)
@@ -72,7 +80,10 @@ class EditorPage(CTkFrame, Addons):
         self.opts_cwords = CTkOptionMenu(
             self.add_word_container,
             values=[
-                crossword.name for crossword in _get_base_crosswords("user")
+                crossword.name
+                for crossword in _get_base_crosswords(
+                    path.join(BASE_CWORDS_PATH, "user")
+                )
             ],
             font=self.TEXT_FONT,
         )
@@ -84,6 +95,14 @@ class EditorPage(CTkFrame, Addons):
         self.l_cwords_opts.place(relx=0.2, rely=0.3, anchor="c")
         self.opts_cwords.place(relx=0.2, rely=0.42, anchor="c")
 
-    def _make_user_category(self, fp: PathLike) -> None:
-        mkdir(fp)
-        _make_category_info_json(path.join(fp, "info.json"), "#FFFFFF")
+    def _check_user_category(self) -> None:
+        fp = path.join(BASE_CWORDS_PATH, "user")
+        if _doc_data_routine(
+            doc_callback=lambda: mkdir(DOC_CAT_PATH), 
+            local_callback=lambda: mkdir(fp), 
+            sublevel=DOC_CAT_PATH
+        ):
+            fp = DOC_CAT_PATH  # Success, there is now a user category in 
+                               # sys documents, so update ``fp``
+            
+        _make_category_info_json(fp, "#FFFFFF")

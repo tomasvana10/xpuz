@@ -1,4 +1,4 @@
-from setuptools import setup, find_namespace_packages
+from setuptools import find_namespace_packages, setup
 
 with open("README.md") as f:
     LONG_DESCRIPTION = f.read()
@@ -21,7 +21,8 @@ setup(
         "Flask",
         "flask_babel",
         "Pillow",
-        "regex"
+        "regex",
+        "platformdirs"
     ],
     entry_points={
         "gui_scripts": [

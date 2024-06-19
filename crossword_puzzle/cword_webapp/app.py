@@ -11,8 +11,8 @@ from socket import AF_INET, SOCK_STREAM, socket
 from flask import Flask, render_template
 from flask_babel import Babel
 
-from crossword_puzzle.constants import BASE_CFG_PATH, LOCALES_PATH
-from crossword_puzzle.utils import _update_cfg
+from crossword_puzzle.constants import LOCALES_PATH
+from crossword_puzzle.utils import _read_cfg, _update_cfg
 
 app: Flask = Flask(__name__)
 # Suppress info from Flask such as ``GET`` requests
@@ -37,7 +37,7 @@ def _app_process(*args, **kwargs) -> None:
     app.config["BABEL_TRANSLATION_DIRECTORIES"] = path.normpath(LOCALES_PATH)
     babel: Babel = Babel(app)
 
-    cfg.read(BASE_CFG_PATH)
+    _read_cfg(cfg)
     port = int(kwargs["port"])
     retry = False
     try:

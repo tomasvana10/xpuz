@@ -5,10 +5,10 @@ from copy import deepcopy
 from gettext import translation
 from json import dump, load
 from math import ceil
-from os import DirEntry, PathLike, listdir, path, scandir
+from os import DirEntry, PathLike, listdir, mkdir, path, scandir
 from random import randint, sample
 from tkinter import messagebox
-from typing import Callable, Dict, Iterable, List, Tuple, Union
+from typing import Callable, Dict, Iterable, List, Optional, Tuple, Union
 
 from babel import Locale
 from babel.core import UnknownLocaleError
@@ -18,12 +18,16 @@ from crossword_puzzle.constants import (
     ACROSS,
     ATTEMPTS_DB_PATH,
     BASE_CWORDS_PATH,
-    BASE_CFG_PATH,
     DIFFICULTIES,
+    DOC_CAT_PATH,
+    DOC_CFG_PATH,
+    DOC_DATA_PATH,
+    DOC_PATH,
     DOWN,
     KEEP_LANGUAGES_PATTERN,
     LOCALES_PATH,
     QUALITY_MAP,
+    TEMPLATE_CFG_PATH,
     Colour,
 )
 from crossword_puzzle.errors import DefinitionsParsingError
@@ -117,7 +121,7 @@ class GUIHelper:
                 _("Error"),
                 f"{args[0]}({args[1]}) - "
                 + _(
-                    "An unexpected error occured. Please reinstall the "
+                    "An unexpected error occured. Please try reinstalling the "
                     "application with"
                 )
                 + " pip install --force-reinstall crossword-puzzle",
@@ -127,7 +131,10 @@ class GUIHelper:
 class BlockUtils:
     @staticmethod
     def _match_block_query(query: str, block_name: str):
-        return query.strip().casefold() in block_name.strip().casefold()
+        """Return true if ``query`` is present in the name of a crossword info
+        block.
+        """
+        return block_name.strip().casefold().startswith(query.strip().casefold()) 
 
     @classmethod
     def _put_block(cls, block: object) -> None:
@@ -165,69 +172,94 @@ class BlockUtils:
             block.rb_selector.configure(**kwargs)
 
 
+def _doc_data_routine(
+    doc_callback: Optional[Callable] = None,
+    local_callback: Optional[Callable] = None,
+    toplevel: PathLike = DOC_PATH,
+    datalevel: PathLike = DOC_DATA_PATH,
+    sublevel: PathLike = DOC_CFG_PATH,
+) -> bool:
+    """Scan through the system document directory and create missing files
+    required by the package if possible.
+    """
+    if not path.exists(toplevel):
+        # No documents folder available. The caller might have added a func to
+        # run if this happens, which will make the required folder in the package
+        if local_callback:
+            try:  # Folder may already exist
+                local_callback()
+            except OSError:
+                pass
+        return False
+    if not path.exists(datalevel):  # Make crossword_puzzle dir in documents
+        mkdir(DOC_DATA_PATH)
+    if not path.exists(sublevel):
+        # crossword_puzzle dir exists, but the required file/folder doesn't. So
+        # run the document callback func
+        if doc_callback:
+            try:
+                doc_callback()
+            except OSError:
+                pass
+
+    return True  # Success, as the doc data has been made
+
+
+def _make_doc_cfg() -> None:
+    """Write the contents of ``sample.config.ini`` into ``config.ini``, located
+    in the system's document directory.
+    """
+    with open(TEMPLATE_CFG_PATH) as template_file, open(
+        path.join(DOC_CFG_PATH), "w"
+    ) as dest_file:
+        template_data = template_file.read()
+        dest_file.write(template_data)
+        
+        
 def _update_cfg(
     cfg: ConfigParser, section: str, option: str, value: str
 ) -> None:
     """Update ``cfg`` at the given section, option and value, then write it
-    to ``config.ini``.
+    to an available config path.
     """
     cfg[section][option] = value
 
-    with open(BASE_CFG_PATH, "w") as f:
+    # Access the template config if there is no config stored in the user's
+    # system document directory
+    fp = (
+        TEMPLATE_CFG_PATH
+        if not _doc_data_routine(doc_callback=_make_doc_cfg)
+        else DOC_CFG_PATH
+    )
+
+    with open(fp, "w") as f:
         cfg.write(f)
-        
 
-def _get_language_options() -> Tuple[Dict[str, str], Dict[str, str]]:
-    """Gather a dictionary that maps each localised language name to its
-    english acronym, and a list that contains all of the localised language
-    names. This data is derived from ``LOCALES_PATH``."""
-    localised_lang_db: Dict[str, str] = dict()  # Used to retrieve the language
-    # code for the selected language
-    # e.x. {"አማርኛ": "am",}
-    localised_langs: Dict[str, str] = list()  # Used in the language selection
-    # optionmenu
-    # e.x. ["አማርኛ", "عربي"]
 
-    i: int = 0
-    for locale in sorted(
-        [
-            f.name
-            for f in scandir(LOCALES_PATH)
-            if f.is_dir() and "LC_MESSAGES" in listdir(f.path)
-        ]
-    ):
-        try:
-            localised_langs.append(Locale.parse(locale).language_name)
-            localised_lang_db[localised_langs[i]] = locale
-            i += 1
-        except UnknownLocaleError:
-            pass
+def _read_cfg(cfg: ConfigParser) -> None:
+    if not _doc_data_routine(doc_callback=_make_doc_cfg):
+        return cfg.read(TEMPLATE_CFG_PATH)
 
-    return [localised_lang_db, localised_langs]
+    return cfg.read(DOC_CFG_PATH)
 
 
 def _get_base_categories() -> Iterable[DirEntry]:
     """Get all the available crossword categories sorted alphabetically."""
+    if _doc_data_routine() and "user" in listdir(DOC_DATA_PATH):
+        scanned_cats = [
+            cat
+            for cat in scandir(BASE_CWORDS_PATH)
+            if cat.is_dir() and cat.name != "user"
+        ]
+        scanned_cats += [cat for cat in scandir(DOC_DATA_PATH) if cat.is_dir()]
+    else:
+        scanned_cats = [
+            cat for cat in scandir(BASE_CWORDS_PATH) if cat.is_dir()
+        ]
+
     return sorted(
-        [cat for cat in scandir(BASE_CWORDS_PATH) if cat.is_dir()],
-        # Cheeky way to force the user category to be first
-        key=lambda cat: cat.name if cat.name != "user" else "!",
+        scanned_cats, key=lambda cat: cat.name if cat.name != "user" else "!"
     )
-
-
-def _get_base_crosswords(category: str) -> Iterable[DirEntry]:
-    """Get all the available crosswords from the base crossword directory if
-    they have valid ``definitions.json`` files.
-    """
-    return [
-        f
-        for f in scandir(path.join(BASE_CWORDS_PATH, category))
-        if f.is_dir()
-        and "definitions.json" in listdir(f.path)
-        and path.getsize(path.join(f.path, "definitions.json")) > 0
-        or (category == "user" and f.is_dir())  # Can have empty definitions in
-        # this case
-    ]
 
 
 def _sort_crosswords_by_suffix(
@@ -256,6 +288,31 @@ def _sort_crosswords_by_suffix(
         except Exception:  # Could not find the "-" in the crossword name, so
             # don't sort this category
             return cwords
+
+
+def _get_base_crosswords(
+    category: Union[DirEntry, PathLike], sort: bool = True
+) -> Iterable[DirEntry]:
+    """Get all the available crosswords from the base crossword directory if
+    they have valid ``definitions.json`` files.
+    """
+    fp: PathLike = getattr(category, "path", category)
+    actual_path: PathLike = (
+        DOC_CAT_PATH
+        if _doc_data_routine()
+        and "user" in listdir(DOC_DATA_PATH)
+        and fp.endswith("user")
+        else fp
+    )
+    crosswords = [
+        cword
+        for cword in scandir(actual_path)
+        if cword.is_dir()
+        and "definitions.json" in listdir(cword.path)
+        and path.getsize(path.join(cword.path, "definitions.json")) > 0
+        or (category == "user" and cword.is_dir())  # Allow empty defintions
+    ]
+    return _sort_crosswords_by_suffix(crosswords) if sort else crosswords
 
 
 def _make_cword_info_json(
@@ -313,7 +370,7 @@ def _make_category_info_json(fp: PathLike, hex_=None) -> None:
         hex_: str = "#%06X" % randint(0, 0xFFFFFF)
     else:
         hex_: str = hex_
-    with open(fp, "w") as f:
+    with open(path.join(fp, "info.json"), "w") as f:
         return dump({"bottom_tag_colour": hex_}, f, indent=4)
 
 
@@ -326,6 +383,35 @@ def _load_attempts_db() -> Dict[str, int]:
 
     with open(ATTEMPTS_DB_PATH) as file:
         return load(file)
+
+
+def _get_language_options() -> Tuple[Dict[str, str], Dict[str, str]]:
+    """Gather a dictionary that maps each localised language name to its
+    english acronym, and a list that contains all of the localised language
+    names. This data is derived from ``LOCALES_PATH``."""
+    localised_lang_db: Dict[str, str] = dict()  # Used to retrieve the language
+    # code for the selected language
+    # e.x. {"አማርኛ": "am",}
+    localised_langs: Dict[str, str] = list()  # Used in the language selection
+    # optionmenu
+    # e.x. ["አማርኛ", "عربي"]
+
+    i: int = 0
+    for locale in sorted(
+        [
+            f.name
+            for f in scandir(LOCALES_PATH)
+            if f.is_dir() and "LC_MESSAGES" in listdir(f.path)
+        ]
+    ):
+        try:
+            localised_langs.append(Locale.parse(locale).language_name)
+            localised_lang_db[localised_langs[i]] = locale
+            i += 1
+        except UnknownLocaleError:
+            pass
+
+    return [localised_lang_db, localised_langs]
 
 
 def _get_colour_palette(appearance_mode: str) -> Dict[str, str]:
@@ -345,7 +431,7 @@ def _find_best_crossword(crossword: "Crossword", cls: object) -> "Crossword":
     smallest amount of fails.
     """
     cfg: ConfigParser = ConfigParser()
-    cfg.read(BASE_CFG_PATH)
+    _read_cfg(cfg)
     name: str = crossword.name
     word_count: int = crossword.word_count
 

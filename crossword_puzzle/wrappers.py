@@ -3,22 +3,23 @@ from os import PathLike, listdir, path
 from pprint import pformat
 from typing import Dict, Optional, Union
 
-from crossword_puzzle.constants import BASE_CWORDS_PATH, DIFFICULTIES, LOCALES_PATH
+from crossword_puzzle.constants import (
+    BASE_CWORDS_PATH,
+    DIFFICULTIES,
+    DOC_CAT_PATH,
+    LOCALES_PATH,
+)
 from crossword_puzzle.crossword import Crossword
-from crossword_puzzle.errors import CrosswordGenerationError, DefinitionsParsingError
+from crossword_puzzle.errors import (
+    CrosswordGenerationError,
+    DefinitionsParsingError,
+)
 from crossword_puzzle.td import CrosswordInfo
 from crossword_puzzle.utils import (
+    _find_best_crossword,
     _make_cword_info_json,
     _update_cword_info_word_count,
-    _find_best_crossword,
 )
-
-
-def logger(*args, **kwargs) -> None:
-    """Command-line logger for errors in crossword generation/definitions
-    parsing when not using the GUI.
-    """
-    print(f"{args[0]}({args[1]})")
 
 
 class CrosswordWrapper:
@@ -30,8 +31,8 @@ class CrosswordWrapper:
     """
 
     helper: Union[None, object] = None  # Set to ``main.GUIHelper`` at runtime
-    # (if using the GUI)
-    logger: object = logger  # Default method for issuing errors to the user
+                                        # (if using the GUI)
+    logger: object = lambda *args, **kwargs: print(f"{args[0]}({args[1]})") 
 
     def __init__(
         self,
@@ -50,8 +51,7 @@ class CrosswordWrapper:
         self.word_count = word_count
         self.optimise = optimise
 
-        self.crossword: Union[None, Crossword] = None  # Updated when
-        # ``self.make`` is called
+        self.crossword: Union[None, Crossword] = None
         self.toplevel: PathLike = self._get_toplevel()
         self.total_definitions: int = len(self.definitions)
         self._validate_data()
@@ -96,51 +96,50 @@ class CrosswordWrapper:
             )
 
     def _validate_data(self) -> None:
-        """Ensure a crossword's data either:
-        1. Contains all the keys specified in the annotations of CrosswordInfo, or
-        2. Has an identical amount of definitions in its definitions.json file
-           compared to the figure specified in its info (``total_definitions``)
-
-        Otherwise, it creates a new info.json file.
+        """Minimise runtime errors by ensuring the integrity of this crossword's
+        info.json file.
         """
 
         info: CrosswordInfo = self.info
-        if not all(  # Say, ``total_definitions`` is not present. This picks it up
+        if not all(  # Pick up missing attributes
             key in info for key in CrosswordInfo.__dict__["__annotations__"]
         ):
             return _make_cword_info_json(
                 self.toplevel, self.fullname, self.category
             )
 
+        # All attributes are present, but the word count may be inaccurate.
         if info["total_definitions"] != self.total_definitions:
             return _update_cword_info_word_count(
                 self.toplevel, info, self.total_definitions
             )
 
     def _get_toplevel(self) -> PathLike:
-        """Return the absolute path to the base directory of a crossword.
-        First, the method checks if the crossword has a localised version of
-        itself present in ``locales``. If it doesn't exist, or doesn't contain
-        a ``definitions.json`` file, the method will resort to the base directory
-        path. There is no need to check if there is a definitions file in the
-        base directory, as an instance of ``CrosswordWrapper`` is only
-        instantiated for crosswords in the base crossword directory with a valid
-        ``definitions.json`` file.
+        """Find the absolute path to the toplevel of a crossword 
+        (e.g <pkg_path>\locales\geography\capitals-easy).
+         
+        The path returned will be in 1 of 3 locations:
+        1. Locales directory (if it is found),
+        2. Base crossword directory (if not localised version is present),
+        3. The system's document directory (if it is available and the crossword 
+           belongs to the "user" category).
         """
 
-        toplevel = path.join(
+        toplevel = path.join(  # Assume there is a localised version available
             LOCALES_PATH, self.language, "cwords", self.category, self.fullname
         )
-        if (
+        if (  # 1
             path.exists(toplevel)
             and "definitions.json" in listdir(toplevel)
             and path.getsize(path.join(toplevel, "definitions.json")) > 0
-        ):  # Valid ``definitions.json``
+        ):
             return toplevel
-        else:  # Resort to base crossword toplevel
-            toplevel = path.join(
+        else:
+            toplevel = path.join(  # 2
                 BASE_CWORDS_PATH, self.category, self.fullname
             )
+            if not path.exists(toplevel):
+                toplevel = path.join(DOC_CAT_PATH, self.fullname)  # 3
             return toplevel
 
     def make(self) -> Union[None, Crossword]:
@@ -156,8 +155,10 @@ class CrosswordWrapper:
             self.crossword = Crossword(
                 self.name, self.definitions, self.word_count
             )
-            if self.optimise:
-                self.crossword = _find_best_crossword(self.crossword, Crossword)
+            if self.optimise:  # Also find the best crossword
+                self.crossword = _find_best_crossword(
+                    self.crossword, Crossword
+                )
 
             return self.crossword
 
@@ -167,6 +168,7 @@ class CrosswordWrapper:
         except Exception as ex:
             help_func(type(ex).__name__, str(ex), other_gen_err=True)
             self.err_flag = True
+        return None
 
     @property
     def cells(self) -> str:
