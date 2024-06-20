@@ -1,15 +1,13 @@
 from setuptools import find_namespace_packages, setup
-
-with open("README.md") as f:
-    LONG_DESCRIPTION = f.read()
+from crossword_puzzle import __version__, __package__
 
 setup(
-    name="crossword_puzzle",
-    version="1.2.81",
+    name=__package__,
+    version=__version__,
     author="Tomas Vana",
     url="https://github.com/tomasvana10/crossword_puzzle",
     description="Select, generate and play always-unique crosswords.",
-    long_description=LONG_DESCRIPTION,
+    long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     packages=find_namespace_packages(exclude=["venv", "venv.*"]),
     license="MIT",

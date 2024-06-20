@@ -17,6 +17,7 @@ class Colour:
         GREEN_BUTTON: str = "#20D44A"
         GREEN_BUTTON_HOVER: str = "#259c41"
         BUTTON_TEXT_COLOUR: str = "#DDE3ED"
+        LINK: str = "#5688c7"
         DIFFICULTIES: List[str] = ["#089E19", "#FCBA03", "#E01C07", "#6408A6"]
 
     class Light:
@@ -90,8 +91,12 @@ BASE_ENG_VIEWS: List[str] = ["Categorised", "Flattened"]
 
 
 """Misc constants"""
+PYPI_URL = "https://pypi.org/project/crossword-puzzle/"
+RELEASE_API_URL = (
+    "https://api.github.com/repos/tomasvana10/crossword_puzzle/releases/latest"
+)
 DIM = (900, 650)
-EDITOR_DIM = (1125, 625)
+EDITOR_DIM = (1125, 650)
 PAGE_MAP: Dict[str, str] = {
     "HomePage": "Crossword Puzzle",
     "BrowserPage": "Crossword Browser",

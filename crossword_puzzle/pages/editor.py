@@ -3,7 +3,6 @@ the creation and editing of new crosswords, not pre-installed ones.
 """
 
 from os import mkdir, path
-from tkinter.ttk import Separator
 
 from customtkinter import (
     CTkButton, CTkFrame, CTkLabel, CTkOptionMenu, CTkScrollableFrame, CTkEntry

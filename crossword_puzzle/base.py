@@ -28,8 +28,9 @@ class Addons:
         self.TEXT_FONT = CTkFont(size=15, weight="normal", slant="roman")
         self.BOLD_TEXT_FONT = CTkFont(size=15, weight="bold", slant="roman")
         self.CATEGORY_FONT = CTkFont(size=23, weight="bold", slant="roman")
-        self.CWORD_BLOCK_FONT = CTkFont(
-            size=18, weight="normal", slant="roman"
+        self.CWORD_BLOCK_FONT = CTkFont(size=18, weight="normal", slant="roman")
+        self.HYPERLINK_FONT = CTkFont(
+            size=15, weight="normal", family="Courier", underline=True
         )
 
     def _confirm_route(
@@ -76,9 +77,7 @@ class Addons:
 
             page_inst = locals()[page_ref](base)
 
-        if (
-            kwargs
-        ):  # The caller of this route has added arguments for confirmation
+        if kwargs:  # The caller of this route has added arguments for confirmation
             if not self._confirm_route(**kwargs):
                 return False  # User didn't want to route
 
@@ -96,7 +95,8 @@ class Addons:
         page_inst._place_containers()
         page_inst._make_content()
         page_inst._place_content()
-
+        Base.page_inst = page_inst
+        
         return True  # Route was successful
 
 
@@ -108,6 +108,7 @@ class Base(CTk, Addons):
     locale: Locale = None
     cfg: ConfigParser = None
     fullscreen: bool = False
+    page_inst: object = None
 
     def __init__(self, **kwargs) -> None:
         super().__init__()

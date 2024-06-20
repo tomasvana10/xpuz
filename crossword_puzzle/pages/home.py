@@ -2,7 +2,13 @@
 buttons to other available pages.
 """
 
-from typing import List
+from asyncio import (
+    set_event_loop, run_coroutine_threadsafe, get_running_loop, new_event_loop
+)
+from concurrent.futures import ThreadPoolExecutor
+from threading import Thread
+from typing import List, Union
+from webbrowser import open_new_tab
 
 from babel import Locale, numbers
 from customtkinter import (
@@ -25,9 +31,10 @@ from crossword_puzzle.constants import (
     FS_IMG_DARK_PATH,
     FS_IMG_LIGHT_PATH,
     PAGE_MAP,
+    PYPI_URL,
     Colour,
 )
-from crossword_puzzle.utils import GUIHelper, _update_cfg
+from crossword_puzzle.utils import GUIHelper, _update_cfg, _check_version
 
 
 class HomePage(CTkFrame, Addons):
@@ -44,6 +51,16 @@ class HomePage(CTkFrame, Addons):
         self.master = master
         self.master._set_dim()
         self._set_fonts()
+        
+        # Code for creating a label that links to the newest version of the
+        # package (if not already installed)
+        self.loop = new_event_loop()
+        # Start new event loop in separate thread
+        Thread(target=self._start_loop, daemon=True).start()
+        # Attempt to get a new version asynchronously in the new loop
+        self.master.after(1, 
+            lambda: run_coroutine_threadsafe(self.check_version(), self.loop)
+        )
 
     def _make_containers(self) -> None:
         self.container = CTkFrame(self)
@@ -297,3 +314,32 @@ class HomePage(CTkFrame, Addons):
             return GUIHelper.show_messagebox(same_quality=True)
 
         _update_cfg(Base.cfg, "m", "cword_quality", eng_quality_name)
+
+    def _make_version_label(self, local_ver: str, remote_ver: str) -> None:
+        self.l_new_version = CTkLabel(
+            self.main_container, 
+            text=f"New version available! ({local_ver} --> {remote_ver})", 
+            font=self.HYPERLINK_FONT, 
+            text_color=Colour.Global.LINK
+        )
+        self.l_new_version.place(relx=0.5, rely=0.925, anchor="c")
+        self.l_new_version.bind(
+            "<Button-1>", lambda e: open_new_tab(PYPI_URL)
+        )
+
+    def _start_loop(self) -> None:
+        """Begin a new asyncio event loop."""
+        set_event_loop(self.loop)
+        self.loop.run_forever()
+    
+    async def check_version(self) -> None:
+        """Check if there is a new release available online. If so, create a
+        widget that notifies the user of this.
+        """
+        loop = get_running_loop()
+
+        with ThreadPoolExecutor() as executor:
+            ver = await loop.run_in_executor(executor, _check_version)
+            if ver:
+                from crossword_puzzle import __version__
+                self._make_version_label(__version__, ver)

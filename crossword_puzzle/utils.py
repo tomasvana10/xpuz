@@ -3,12 +3,13 @@
 from configparser import ConfigParser
 from copy import deepcopy
 from gettext import translation
-from json import dump, load
+from json import dump, load, loads
 from math import ceil
 from os import DirEntry, PathLike, listdir, mkdir, path, scandir
 from random import randint, sample
 from tkinter import messagebox
 from typing import Callable, Dict, Iterable, List, Optional, Tuple, Union
+import urllib.request as req
 
 from babel import Locale
 from babel.core import UnknownLocaleError
@@ -28,6 +29,7 @@ from crossword_puzzle.constants import (
     LOCALES_PATH,
     QUALITY_MAP,
     TEMPLATE_CFG_PATH,
+    RELEASE_API_URL,
     Colour,
 )
 from crossword_puzzle.errors import DefinitionsParsingError
@@ -170,6 +172,27 @@ class BlockUtils:
         """Enable or disable all the crossword block radiobutton selectors."""
         for block in cls.blocks:
             block.rb_selector.configure(**kwargs)
+
+
+def _check_version() -> Union[None, str]:
+    """Return the latest remote GitHub release if it is higher than the local
+    release using the ``urllib`` module.
+    """
+    request = req.Request(RELEASE_API_URL)
+    response = req.urlopen(request)
+
+    if response.status == 200:
+        from crossword_puzzle import __version__
+
+        data = loads(response.read().decode())
+        local_ver = __version__.split(".")
+        remote_ver = data["name"].split(".")
+        if any(
+            item[0] > item[1] for item in dict(zip(remote_ver, local_ver)).items()
+        ):
+            return data["name"]
+            
+    return None
 
 
 def _doc_data_routine(
