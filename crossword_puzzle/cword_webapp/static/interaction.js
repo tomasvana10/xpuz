@@ -2,28 +2,40 @@ const arrowKeys = ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"];
 const spacebarKeys = ["Spacebar", " "];
 const backspaceKeys = ["Backspace", "Delete"];
 const compoundInputPlaceholders = [
-  "ㅇ", "+", "ㅏ", "=", "아", "क​", "+", "इ", "=", "कै",
+  "ㅇ",
+  "+",
+  "ㅏ",
+  "=",
+  "아",
+  "क​",
+  "+",
+  "इ",
+  "=",
+  "कै",
 ];
 const onlyLangRegex = /\p{L}/u; // Ensure user only types language characters
-const modes = { // Cell manipulation directives
+const modes = {
+  // Cell manipulation directives
   ENTER: "enter",
   DEL: "del",
 };
-const gridOp = { // Grid operation directives
+const gridOp = {
+  // Grid operation directives
   REVEAL: "reveal",
   CHECK: "check",
   CLEAR: "clear",
 };
-const opMagnitude = { // The scale to which a grid operation is performed 
+const opMagnitude = {
+  // The scale to which a grid operation is performed
   CELL: "cell",
   WORD: "word",
   GRID: "grid",
-}
+};
 const toggleIds = ["ts", "tw", "tc", "tz"];
 const popupData = {
   ONLOAD: ["onload_popup", "continue_button"],
   COMPLETION: ["completion_popup", "close_button"],
-}
+};
 
 class Interaction {
   /* Class to handle all forms of interaction with the web app, as well as to
@@ -96,11 +108,11 @@ class Interaction {
     this.clicks.forEach(click => (click.volume = 0.175));
     this.playClicks = false;
 
-    this.setListeners(); 
+    this.setListeners();
     Interaction.configureScrollHeights();
 
     this.doNotSaveGridState = true; // Must use this flag to prevent the ``gridState``
-                                    // cookie being overridden.
+    // cookie being overridden.
     // Wipe the grid to prevent issues with the cell's node values, such as the
     // newline character.
     this.doSpecialButtonAction(opMagnitude.GRID, gridOp.CLEAR, false);
@@ -124,7 +136,7 @@ class Interaction {
     document.querySelectorAll(".non_empty_cell").forEach(element => {
       element.onclick = event => this.onCellClick(event, element);
       element.classList.add("zoomTarget"); // Prevents the user from having
-                                           // to click twice to zoom initially
+      // to click twice to zoom initially
     });
 
     // Allow user to remove a compound input by clicking on a "void" cell
@@ -155,9 +167,9 @@ class Interaction {
       if (event.target.checked) {
         this.doSpecialButtonAction(opMagnitude.GRID, gridOp.CHECK, false);
       }
-    })
+    });
 
-    // Detect checkboxes being modified 
+    // Detect checkboxes being modified
     document
       .querySelectorAll(".toggle_checkbox")
       .forEach(element =>
@@ -167,9 +179,9 @@ class Interaction {
     // Compound input button
     document.getElementById("compound_button").onclick = event => {
       event.stopPropagation(); // If we allow this event to propagate, it will be
-                               // registered after the compound input is set,
-                               // therefore closing it automatically due to the
-                               // click listener
+      // registered after the compound input is set,
+      // therefore closing it automatically due to the
+      // click listener
       this.handleSetCompoundInput(false);
     };
 
@@ -182,9 +194,7 @@ class Interaction {
     document.addEventListener("click", event => this.handleClick(event));
 
     // Handles when a dropdown should close if using tab
-    document.addEventListener("focusout", event =>
-      this.handleFocusOut(event)
-    );
+    document.addEventListener("focusout", event => this.handleFocusOut(event));
   }
 
   saveGridState() {
@@ -203,14 +213,10 @@ class Interaction {
     let [grid, gridClasses] = this.getGrid(true);
     Cookies.setCookie(
       "gridData",
-      JSON.stringify([
-        this.uuid,
-        this.cellCoords,
-        this.direction,
-      ]),
+      JSON.stringify([this.uuid, this.cellCoords, this.direction]),
       10 // Expiry in days
     );
-    localStorage.setItem("grid", JSON.stringify([grid, gridClasses]))
+    localStorage.setItem("grid", JSON.stringify([grid, gridClasses]));
   }
 
   saveToggleState(toggle) {
@@ -235,11 +241,13 @@ class Interaction {
     try {
       gridData = JSON.parse(gridDataCookie);
       this.direction = gridData[2];
-    } catch (err) { // The cookie doesn't exist, just select the first word
+    } catch (err) {
+      // The cookie doesn't exist, just select the first word
       Interaction.getDefByNumber(1, true);
     }
 
-    if (gridDataCookie && gridData[0] === this.uuid) { // Same crossword is being viewed
+    if (gridDataCookie && gridData[0] === this.uuid) {
+      // Same crossword is being viewed
       try {
         let [grid, gridClasses] = JSON.parse(localStorage.getItem("grid"));
         this.setGrid(grid, gridClasses); // Apply grid value and classes
@@ -247,11 +255,13 @@ class Interaction {
       } catch (err) {
         Interaction.getDefByNumber(1, true);
       }
-    } else { // First time viewing, just select the first word
+    } else {
+      // First time viewing, just select the first word
       Interaction.getDefByNumber(1, true);
     }
 
-    toggleIds.forEach(id => { // Turn on the toggles if possible
+    toggleIds.forEach(id => {
+      // Turn on the toggles if possible
       let toggle = document.getElementById(id);
       let toggleState = Cookies.getCookie(id);
       if (toggleState) {
@@ -269,8 +279,8 @@ class Interaction {
           Math.floor(Math.random() * this.clicks.length) // Random choice
         ].play();
       } catch (err) {} // This error detection prevents an error that I observed
-                       // only once, and I forgot what it was, so this handling
-                       // will be left empty.
+      // only once, and I forgot what it was, so this handling
+      // will be left empty.
     }
   }
 
@@ -299,10 +309,10 @@ class Interaction {
 
     let inputValue = event.key;
     this.playClick();
-  
+
     // Return if user is pressing CTRL or CMD + R (reloading the page)
-    if (inputValue.toLowerCase() === "r" && (event.ctrlKey || event.metaKey)) { 
-      return; 
+    if (inputValue.toLowerCase() === "r" && (event.ctrlKey || event.metaKey)) {
+      return;
     }
 
     // Handle the setting of a compound input element when pressing [Shift + 1]
@@ -334,7 +344,7 @@ class Interaction {
       !document.activeElement.classList.contains("def") &&
       !document.activeElement.classList.contains("toggle") &&
       !document.activeElement.classList.contains("non_empty_cell") &&
-      !event.target.classList.contains("dropdown_button") && 
+      !event.target.classList.contains("dropdown_button") &&
       !event.target.classList.contains("grid")
     ) {
       return this.handleEnterKeybindPress(event);
@@ -366,7 +376,7 @@ class Interaction {
     // Shift word selection forwards if pressing [Shift + ArrowDown], or
     // backwards if pressing [Shift + ArrowUp]
     if ([...arrowKeys.slice(2, 4)].includes(inputValue) && event.shiftKey) {
-      return this.shiftWordSelection(event, inputValue);
+      return this.shiftWordSelection(event, inputValue, false, true);
     }
 
     // Move the user's cell focus since they have pressed an arrow key
@@ -416,7 +426,6 @@ class Interaction {
       if (!this.checkToggle.checked) {
         currentCell.classList.remove("wrong");
       }
-
     } else if (mode === modes.DEL) {
       // The focused cell has content, just delete it and do nothing
       if (
@@ -505,44 +514,82 @@ class Interaction {
         (!Interaction.isEmpty(Interaction.getCellElement(this.cellCoords)) ||
           mode === modes.DEL)
       ) {
-        this.shiftWordSelection(null, arrow, true);
+        this.shiftWordSelection(null, arrow, false);
       }
     }
   }
 
-  shiftWordSelection(event = null, arrow, setToEnd = false) {
-    /* Cycle to the next word based on the sequence in which the words are placed
-    on the grid. 
+  getShiftedDef(def, offset) {
+    /* Get the next or previous definitions list item and update the cell coords. */
 
-    Since this method can be called by either deleting at the start of a word
-    with 'auto-word' on, or by pressing [Shift + ArrowUp] or [Shift + ArrowDown],
-    the method must know whether to shift the selection of the prior word to the
-    start or end. If deleting, it is logical to set it to the end. However, if 
-    shifting with the latter methods, it is more logical to set it to the
-    beginning, as this form of word shifting is more explicit. This is achieved
-    through the ``setToEnd`` parameter.
+    let newDefNumber = Number(def.getAttribute("data-num")) + offset;
+    let newDef = Interaction.getDefByNumber(newDefNumber);
+    if (!newDef) {
+      // User is at the first or last word, so go to either the last
+      // word (if deleting) or the first word (if inserting)
+      newDefNumber = offset === 1 ? "1" : this.wordCount;
+      newDef = Interaction.getDefByNumber(newDefNumber);
+    }
+    // Instead of being lazy and leaving all the performance intensive stuff to
+    // ``onDefinitionsListItemClick``, the only necessary calculation required,
+    // which is finding the new cell coords, is performed right here. This is 
+    // because this function can be executed up to ``wordCount`` amount of times
+    // by ``shiftWordSelection``.
+    this.cellCoords = Interaction.updateCellCoords(
+      Interaction.getCellFromNumLabel(newDefNumber)
+    );
+
+    return newDef;
+  }
+
+  shiftWordSelection(event = null, arrow, setToEnd = false, justOnce = false) {
+    /* Skip to the next most likely word that has been unmodified by the user if
+    they are performing an action that shifts their cell forward. 
+
+    If they are shifting backward, there is no inference required, and the previous
+    word is immediately selected. The logic behind this is that if the user, say,
+    presses delete at the end of the word, they likely want to go to the previous
+    one. But if the user finishes off a word, they likely want to go to the next
+    word they haven't filled in.
     */
 
     event?.preventDefault(); // This method is not always called by a listener,
                              // so optional chaining is used
-    let offset = arrow === arrowKeys[2] ? -1 : 1; // You could argue it should
-                                                  // be the other way
-    let def = this.getDefinitionsListItemFromWord();
-    let newWordNum = Number(def.getAttribute("data-num")) + offset;
-    let newDef = Interaction.getDefByNumber(newWordNum);
-    if (!newDef) {
-      // User is at the first or last word, so go to either the last
-      // word (if deleting) or the first word (if inserting)
-      let num = offset === 1 ? "1" : this.wordCount;
-      newDef = Interaction.getDefByNumber(num);
+    let offset = arrow === arrowKeys[2] ? -1 : 1; // Could be the other way tbh
+    let originalDef = this.getDefinitionsListItemFromWord();
+
+    // In this method, instead of letting the definitions click listener handle
+    // everything, (which will slow the program down), only a single necessary
+    // function is performed - removing the prior definition's focus.
+    this.changeWordFocus(false);
+    let newDef = this.getShiftedDef(originalDef, offset);
+
+    let iters = 1;
+    if (!justOnce && offset === 1) {
+      // Find the next word that is likely unfilled if shifting forward (offset is 1)
+      while (
+        originalDef !== newDef &&  // Loop hasn't returned to the original def
+        // ... and the first cell of the current word still has something in it
+        !Interaction.isEmpty([...this.getWordElements()][0])
+      ) {
+        this.changeWordFocus(false);
+        newDef = this.getShiftedDef(newDef, offset); // Move to the next def
+        iters++;
+      }
     }
-    let oldCellCoords = this.cellCoords;
+
+    if (iters === Number(this.wordCount)) {
+      // The original def word was reached, so shift once more
+      newDef = this.getShiftedDef(newDef, offset);
+    }
+
     if (offset === -1 && setToEnd) {
       this.setCoordsToEndOfWord = true; // Picked up by ``onDefinitionsListItemClick``
     }
     newDef.focus();
     newDef.click();
     newDef.blur();
+    let oldCellCoords = this.cellCoords;
     this.followCellZoom(oldCellCoords);
   }
 
@@ -623,9 +670,7 @@ class Interaction {
     /* Set user input to the start of a word when they click its definition/clue. */
 
     // Retrieve cell from parent element of number label list item
-    let currentCell = document.querySelector(
-      `[data-num_label="${numLabel}"]`
-    ).parentElement;
+    let currentCell = Interaction.getCellFromNumLabel(numLabel);
 
     this.preventZoomIfRequired(event);
     this.removeCompoundInputIfRequired(currentCell);
@@ -743,8 +788,9 @@ class Interaction {
     item or invoke and close the dropdown of a dropdown button. 
     */
 
-    let classList = event.target.classList
-    if (classList.contains("def")) { // Select word definition
+    let classList = event.target.classList;
+    if (classList.contains("def")) {
+      // Select word definition
       event.target.click();
       event.target.blur();
       if (this.zoomToggle.checked) {
@@ -753,10 +799,12 @@ class Interaction {
         this.doNotHandleStandardCellClick = true;
         Interaction.getCellElement(this.cellCoords).click();
       }
-    } else if (classList.contains("toggle")) { // Toggle a checkbox
+    } else if (classList.contains("toggle")) {
+      // Toggle a checkbox
       event.target.click();
       event.target.blur();
-    } else if (classList.contains("grid")) { // Allow user to focus on grid cells
+    } else if (classList.contains("grid")) {
+      // Allow user to focus on grid cells
       Interaction.toggleCellTabIndices(true);
     } else if (classList.contains("non_empty_cell")) {
       event.target.click();
@@ -841,8 +889,8 @@ class Interaction {
         break;
       case opMagnitude.WORD: // Do a grid operation on each element of the word
         let wasWordEmpty = this.isWordEmpty(); // Remember if word was empty before
-                                               // clearing so we can shift the
-                                               // word selection if possible
+        // clearing so we can shift the
+        // word selection if possible
         for (const cell of this.getWordElements()) {
           this.doGridOperation(cell, mode);
         }
@@ -867,7 +915,7 @@ class Interaction {
         this.crosswordCompletionHandler();
       }
       this.saveGridState(); // For any new ``lock_in`` or ``wrong`` classes that
-                            // were just added
+      // were just added
     }
   }
 
@@ -877,8 +925,7 @@ class Interaction {
     if (mode === gridOp.REVEAL) {
       cell.classList.remove("wrong");
       this.setValue(cell, cell.getAttribute("data-value"));
-      cell.classList.add("lock_in"); // This cell must now be correct, so lock
-      // it in
+      cell.classList.add("lock_in"); // This cell must now be correct, lock it in
     } else if (mode === gridOp.CHECK) {
       if (!Interaction.isEmpty(cell)) {
         if (cell.hasCorrectValue()) {
@@ -962,9 +1009,7 @@ class Interaction {
   }
 
   *getWordElements() {
-    /* Generator function that yields all the consisting cell elements of the 
-    current word. 
-    */
+    /* Generator function that yields all the cell elements of the current word. */
 
     let [startCoords, endCoords] = this.getWordIndices();
     for (let i = startCoords; i <= endCoords; i++) {
@@ -1119,7 +1164,7 @@ class Interaction {
     if (!this.compoundInputActive) {
       return;
     } // Maybe the user triggered this method with a click but no compound input
-      // element exists
+    // element exists
     let compoundInput = document.getElementsByClassName("compound_input")[0];
     let cellOfCompoundInput = compoundInput.parentElement;
     let enteredText = compoundInput.value;
@@ -1147,6 +1192,7 @@ class Interaction {
       this.handleCellShift(modes.ENTER, cellOfCompoundInput); // Shift focus for
       // ease of use
     }
+    this.crosswordCompletionHandler();
   }
 
   cycleCompoundInputPlaceholderText() {
@@ -1210,8 +1256,8 @@ class Interaction {
       event.relatedTarget?.classList.contains("grid") ||
       (event.target?.classList.contains("non_empty_cell") &&
         !event.relatedTarget?.classList.contains("non_empty_cell"))
-    ) { 
-      Interaction.toggleCellTabIndices(false); 
+    ) {
+      Interaction.toggleCellTabIndices(false);
     }
 
     /* The following condition evaluates to true if:
@@ -1326,17 +1372,25 @@ class Interaction {
     let cellToFocus;
     document.querySelectorAll(".non_empty_cell").forEach((cell, i) => {
       cell.tabIndex = mode ? "0" : "-1";
-      if (i === 0) { cellToFocus = cell; }
-    }) 
+      if (i === 0) {
+        cellToFocus = cell;
+      }
+    });
     if (mode) {
       cellToFocus.focus({ focusVisible: true });
     }
   }
 
   static toggleAllTabIndices(mode) {
-    document.querySelectorAll(`[tabindex="${mode ? "-1": "0"}"]:not(.non_empty_cell):not(.right_side)`).forEach(element => {
-      element.tabIndex = mode ? "0" : "-1";
-    });
+    document
+      .querySelectorAll(
+        `[tabindex="${
+          mode ? "-1" : "0"
+        }"]:not(.non_empty_cell):not(.right_side)`
+      )
+      .forEach(element => {
+        element.tabIndex = mode ? "0" : "-1";
+      });
   }
 
   static getDefByNumber(num, andClick = false) {
@@ -1361,6 +1415,11 @@ class Interaction {
 
   static isEmpty(cell) {
     return !cell?.childNodes[0]?.nodeValue;
+  }
+
+  static getCellFromNumLabel(numLabel) {
+    return document.querySelector(`[data-num_label="${numLabel}"]`)
+      .parentElement;
   }
 
   static getCellElement(coords) {
@@ -1402,11 +1461,16 @@ class Cookies {
   }
 
   static getCookie(name) {
-    return document.cookie.match("(^|;)\\s*" + name + "\\s*=\\s*([^;]+)")?.pop() || ""
+    return (
+      document.cookie.match("(^|;)\\s*" + name + "\\s*=\\s*([^;]+)")?.pop() ||
+      ""
+    );
   }
 }
 
+// Adding utility functions to builtin objects to simplify cell-related calculations
 Array.prototype.isEqualTo = function (arr) {
+  // Must stringify here as you cannot use "===" to compare arrays
   return JSON.stringify(this) === JSON.stringify(arr);
 };
 Element.prototype.hasCorrectValue = function () {
