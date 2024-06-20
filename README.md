@@ -27,24 +27,29 @@ An educational GUI package built with `CustomTkinter` that allows you to select,
 `flask_babel`
 `Pillow`
 `regex`
+`platformdirs`
 
 ## Installation
 > [!IMPORTANT]
 > Installing `crossword_puzzle` requires Python and pip.
 > If you have Python installed without pip, click **[here](https://pip.pypa.io/en/stable/installation/)** to install it.<br><br>
-> If you do not have Python installed, download the installer **[here](https://www.python.org/downloads/)**, then refer to the previous link on how to install pip.
+> If you do not have Python installed, download the installer **[here](https://www.python.org/downloads/)**, then refer to the previous link on how to install pip.<br><br>
+> If you are on Linux, you may not have Tkinter installed by default. Try running `sudo apt-get install python3-tk` if this is the case.
 
 > [!TIP]
 > If using `python` or `pip` doesn't work, try using `python3` or `pip3`.
 
-- Make a virtual environment and activate it (recommended):
+1. Make a virtual environment and activate it (recommended):
 ```
 pip install virtualenv
 python -m venv venv
 MacOS/Unix: source venv/bin/activate
 Windows: venv\scripts\activate
 ```
-- Install the package in your system directory/virtual environment:
+If you are on Windows and you cannot activate the virtual environment, try running `Set-ExecutionPolicy Unrestricted -Scope Process` and try again.
+<br><br>
+
+2. Install the package in your system directory/virtual environment:
 ```
 pip install -U crossword-puzzle
 ```
@@ -52,11 +57,27 @@ or, install the package in your home directory if you aren't using a virtual env
 ```
 pip install --user -U crossword-puzzle
 ```
-- Initialise the GUI through the entry point:
+<br>
+
+3. Initialise the GUI through the entry point:
 ```
 crossword-ctk
 ```
-- You can deactivate your virtual environment when you are done:
+or, run the package manually through the terminal (requires [**Git**](https://git-scm.com/downloads)):
+```
+git clone https://github.com/tomasvana10/crossword_puzzle.git
+cd crossword_puzzle
+(make a virtual environment if you wish)
+pip install -r requirements.txt
+```
+```py
+python
+>>> import crossword_puzzle as xp
+>>> xp.main()
+```
+<br>
+
+4. You can deactivate your virtual environment when you are done:
 ```
 deactivate
 ```
@@ -69,6 +90,7 @@ Check out the wiki **[here](https://github.com/tomasvana10/crossword_puzzle/wiki
 - [Babel](https://babel.pocoo.org/en/latest/) - l10n functionality and management of message catalogues
 - [flask-babel](https://python-babel.github.io/flask-babel/) - i18n integration for the Flask web application
 - [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter) - Creation of the main GUI
+- [platformdirs](https://pypi.org/project/platformdirs/) - Retrieving paths to platform-specific directories
 - [Google.Cloud.Translation.V2](https://cloud.google.com/dotnet/docs/reference/Google.Cloud.Translation.V2/latest) - Translation of locales 
 - [Pillow](https://pillow.readthedocs.io/en/stable/) - Image processing services
 - [regex](https://github.com/mrabarnett/mrab-regex) - Alternative to the standard `re` module, required for some functionality
