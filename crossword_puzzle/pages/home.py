@@ -318,7 +318,7 @@ class HomePage(CTkFrame, Addons):
     def _make_version_label(self, local_ver: str, remote_ver: str) -> None:
         self.l_new_version = CTkLabel(
             self.main_container, 
-            text=f"New version available! ({local_ver} --> {remote_ver})", 
+            text=f"{_('New version available!')} ({local_ver} --> {remote_ver})", 
             font=self.HYPERLINK_FONT, 
             text_color=Colour.Global.LINK
         )

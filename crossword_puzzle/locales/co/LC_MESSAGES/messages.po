@@ -78,7 +78,7 @@ msgstr "perfettu"
 
 #: crossword_puzzle/main.py:231
 msgid "perfect"
-msgstr "perfettu"
+msgstr "perfetta"
 
 #: crossword_puzzle/main.py:235
 msgid "Crossword Quality"
