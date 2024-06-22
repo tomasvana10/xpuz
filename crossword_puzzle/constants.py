@@ -65,7 +65,7 @@ ATTEMPTS_DB_PATH = path.join(DIR_PATH, "data", "attempts_db.json")
 DIFFICULTIES: List[str] = ["Easy", "Medium", "Hard", "Extreme"]
 ACROSS: str = "ACROSS"
 DOWN: str = "DOWN"
-EMPTY: str = "▮"
+EMPTY: str = "\u25AE"
 KEEP_LANGUAGES_PATTERN: Pattern = compile(r"\PL")
 QUALITY_MAP: Dict[str, int] = {
     "terrible": 0.05,
@@ -98,7 +98,7 @@ RELEASE_API_URL = (
 DIM = (900, 650)
 EDITOR_DIM = (1125, 650)
 PREV_SCALE_MAP: Dict[str, float] = {
-    # Scale the crossword/word preview in the editor based on the scaling
+    # Scale the crossword/word preview in the editor based on CTk scaling
     "0.7": 0.75,
     "0.8": 0.675,
     "0.9": 0.6,

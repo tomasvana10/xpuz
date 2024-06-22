@@ -2,7 +2,7 @@
 the creation and editing of new crosswords, not pre-installed ones.
 """
 
-from os import mkdir, path
+from os import mkdir, path, PathLike
 from tkinter import IntVar, Event
 from typing import List, Union
 
@@ -39,7 +39,7 @@ class Editor:
 
 
 class EditorPage(CTkFrame, Addons):
-    def __init__(self, master) -> None:
+    def __init__(self, master: Base) -> None:
         super().__init__(
             Base.base_container,
             fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
@@ -100,7 +100,7 @@ class EditorPage(CTkFrame, Addons):
         self.b_go_back.place(x=20, y=20)
         self.l_title.place(relx=0.5, rely=0.5, anchor="c")
 
-    def _get_user_category_path(self) -> None:
+    def _get_user_category_path(self) -> PathLike:
         fp = path.join(BASE_CWORDS_PATH, "user")
         if _doc_data_routine(
             doc_callback=lambda: mkdir(DOC_CAT_PATH),
@@ -108,19 +108,15 @@ class EditorPage(CTkFrame, Addons):
             sublevel=DOC_CAT_PATH,
         ):
             fp = DOC_CAT_PATH  # Success, there is now a user category in
-            # sys documents, so update ``fp``
+                               # sys documents, so update ``fp``
 
         _make_category_info_json(fp, "#FFFFFF")
         return fp
 
-    def _handle_scroll(self, event: Event, container: CTkScrollableFrame):
+    def _handle_scroll(self, event: Event, container: CTkScrollableFrame) -> None:
         scroll_region = container._parent_canvas.cget("scrollregion")
         viewable_height = container._parent_canvas.winfo_height()
-        if (
-            scroll_region
-            and int(scroll_region.split(" ")[3]) > viewable_height
-        ):
-            # -1 * event.delta emulates a "natural" scrolling motion
+        if scroll_region and int(scroll_region.split(" ")[3]) > viewable_height:
             container._parent_canvas.yview("scroll", -1 * event.delta, "units")
 
 
@@ -140,7 +136,7 @@ class CrosswordPane(CTkFrame, Addons):
         self._make_content()
         self._place_content()
 
-    def _make_content(self):
+    def _make_content(self) -> None:
         self.container = CTkFrame(
             self, fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN)
         )
@@ -223,7 +219,7 @@ class CrosswordPane(CTkFrame, Addons):
 
         MiniCrosswordBlock._populate(self)
 
-    def _place_content(self):
+    def _place_content(self) -> None:
         self.container.place(relx=0.5, rely=0.5, anchor="c")
         self.l_title.grid(row=0, column=0, columnspan=2, pady=(0, 35))
         self.preview.grid(row=1, column=0, padx=(0, 50))
@@ -248,7 +244,14 @@ class MiniCrosswordBlock(CTkFrame, Addons, BlockUtils):
     blocks: List[object] = []
     selected_block: Union[None, IntVar]
 
-    def __init__(self, master, container, name, value, fp):
+    def __init__(
+        self, 
+        master: CrosswordPane, 
+        container: CTkScrollableFrame, 
+        name: str, 
+        value: int, 
+        fp: PathLike,
+    ):
         super().__init__(
             container,
             corner_radius=10,
@@ -267,7 +270,10 @@ class MiniCrosswordBlock(CTkFrame, Addons, BlockUtils):
         self._place_content()
 
     @classmethod
-    def _populate(cls, master):
+    def _populate(cls, master: CrosswordPane) -> None:
+        """Put all base crosswords in the user category into the crossword pane's
+        scrollable frame. They can have no definitions.json file. 
+        """
         cls.selected_block = IntVar()
         cls.selected_block.set(-1)
 
@@ -285,7 +291,7 @@ class MiniCrosswordBlock(CTkFrame, Addons, BlockUtils):
             )
             cls._put_block(block, side="top")
 
-    def _make_content(self):
+    def _make_content(self) -> None:
         self.tb_name = CTkTextbox(
             self,
             font=self.BLOCK_FONT,
@@ -305,7 +311,7 @@ class MiniCrosswordBlock(CTkFrame, Addons, BlockUtils):
             height=50,
         )
 
-    def _place_content(self):
+    def _place_content(self) -> None:
         self.tb_name.pack(side="left", padx=10, pady=10)
         self.rb_selector.pack(side="right", padx=10, pady=10)
 
@@ -394,7 +400,7 @@ class WordPane(CTkFrame, Addons):
             height=50,
         )
 
-    def _place_content(self):
+    def _place_content(self) -> None:
         self.container.place(relx=0.5, rely=0.5, anchor="c")
         self.l_title.grid(row=0, column=0, columnspan=2, pady=(0, 35))
         self.preview.grid(row=1, column=0, padx=(0, 50))

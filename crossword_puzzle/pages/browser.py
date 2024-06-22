@@ -52,7 +52,7 @@ class BrowserPage(CTkFrame, Addons):
     launch the crossword webapp to complete the generated crossword.
     """
 
-    def __init__(self, master: "Base") -> None:
+    def __init__(self, master: Base) -> None:
         super().__init__(
             Base.base_container,
             fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
@@ -68,9 +68,7 @@ class BrowserPage(CTkFrame, Addons):
         self.grid_rowconfigure(1, minsize=self._height * 0.85, weight=1)
         self.grid_columnconfigure(0, weight=1)
 
-        if (
-            not CrosswordWrapper.helper
-        ):  # Set the CrosswordWrapper helper method
+        if not CrosswordWrapper.helper: # Set the CrosswordWrapper helper method
             CrosswordWrapper.helper = GUIHelper
 
         self.launch_options_on: bool = False
@@ -262,9 +260,7 @@ class BrowserPage(CTkFrame, Addons):
         self.sb_view.grid(row=0, column=0, sticky="nsew", padx=10, pady=10)
         self.e_search.grid(row=1, column=0, sticky="nsew", padx=10, pady=10)
         self.b_load_cword.grid(row=0, column=0, sticky="nsew", padx=7, pady=7)
-        self.b_terminate_webapp.grid(
-            row=0, column=1, sticky="nsew", padx=7, pady=7
-        )
+        self.b_terminate_webapp.grid(row=0, column=1, sticky="nsew", padx=7, pady=7)
         self.l_wc_prefs.grid(row=0, column=0, columnspan=2, pady=(5, 10))
         self.rb_max_wc.grid(row=1, column=0, padx=7, pady=7)
         self.rb_custom_wc.grid(row=2, column=0, padx=7, pady=7)
@@ -385,10 +381,8 @@ class BrowserPage(CTkFrame, Addons):
         """Set all the widgets back to their default states (seen when opening
         the crossword browser).
         """
-        if hasattr(
-            self, "cwrapper"
-        ):  # User selected a crossword, meaning they
-            # had a category open, so this must be done
+        if hasattr(self, "cwrapper"):  # User selected a crossword, meaning they
+                                       # had a category open, so this must be done
             if self.cwrapper.category_object:
                 self.cwrapper.category_object.b_close.configure(state="normal")
             CrosswordBlock._config_selectors(state="normal")
@@ -526,7 +520,7 @@ class CategoryBlock(CTkFrame, Addons, BlockUtils):
 
     def __init__(
         self,
-        container: CTkFrame,
+        container: CTkScrollableFrame,
         master: BrowserPage,
         name: str,
         fp: PathLike,
@@ -663,7 +657,7 @@ class CrosswordBlock(CTkFrame, Addons, BlockUtils):
     def __init__(
         self,
         master: BrowserPage,
-        container: CTkFrame,
+        container: CTkScrollableFrame,
         category: str,
         name: str,
         value: int,
@@ -722,7 +716,7 @@ class CrosswordBlock(CTkFrame, Addons, BlockUtils):
             for category in _get_base_categories()
             for crossword in _get_base_crosswords(category.path, sort=False)
         ]
-        cls.global_selected_cword = IntVar()
+        cls.global_selected_cword: IntVar = IntVar()
         cls.global_selected_cword.set(-1)
         for i, (category, crossword) in enumerate(
             _sort_crosswords_by_suffix(crosswords)

@@ -22,8 +22,6 @@ class Crossword:
     """The Crossword class creates and populates a grid with a given amount of
     randomly sampled words from a larger set of crossword definitions in a
     crossword-like pattern.
-
-    NOTE: When inserting large amounts of words, fails with insertion may occur.
     """
 
     def __init__(
@@ -35,18 +33,18 @@ class Crossword:
         dimensions: Union[None, int] = None,
     ) -> None:
         if via_find_best_crossword:  # Prevent recalculation of dimensions and
-            # only shuffle existing definitions
+                                     # only shuffle existing definitions
             self.definitions: Dict[str, str] = _randomise_definitions(
                 definitions
             )
             self.dimensions = dimensions
-        else:  # First time instantiation
+        else:  # First time instantiation (likely by ``_find_best_crossword``)
             _verify_definitions(definitions, word_count)
             self.definitions = _format_definitions(definitions, word_count)
             self.dimensions: int = self._get_dimensions()
 
         self.name = name  # Generally derived from the crossword directory name
-        # (without the difficulty suffix and title-cased)
+                          # (without the difficulty suffix and title-cased)
         self.word_count = word_count  # Amount of words to be inserted
         self.generated: bool = False  # Flag to prevent duplicate generation
         self.intersections = []  # Store word intersection coordinates
@@ -385,38 +383,29 @@ class Crossword:
         """Attempt to all the words in the grid, recursing once to retry the
         placement of words with no intersections.
         """
-        if (
-            not insert_backlog
-        ):  # First time execution, attempt to insert all words
+        if not insert_backlog: # First time execution, attempt to insert all words
             self.backlog: List[str] = []
 
         if self.inserts == 0:  # First insertion is always in the middle
             middle_placement: Placement = self._get_middle_placement(words[0])
-            self._place_word(
-                *Crossword._unpack_placement_info(middle_placement)
-            )
+            self._place_word(*Crossword._unpack_placement_info(middle_placement))
             self._add_data(middle_placement)
             self.intersections.append(middle_placement["intersections"])
             self.inserts += 1
             del words[0]
 
-        for word in words:  # Insert remaining words after the middle placement
-            # is complete
+        for word in words:  # Insert remaining words
             placements: List[Placement] = self._get_placements(word)
             placements = self._prune_unreadable_placements(placements)
-            if (
-                not placements
-            ):  # Could not find any placements, go to next word
+            if not placements: # Could not find any placements, go to next word
                 self.fails += 1
                 continue
 
             # Sort placements from highest to lowest intersections
             sorted_placements = Crossword._sort_placements(placements)
             if not sorted_placements[0]["intersections"]:  # No intersections
-                if (
-                    not insert_backlog
-                ):  # First time execution; append words here
-                    # for eventual reinsertion
+                if not insert_backlog: # First time execution; append words here
+                                       # for eventual reinsertion
                     self.backlog.append(word)
                     continue
                 else:  # Reinsertion didn't help much, just pick a random placement
@@ -431,7 +420,7 @@ class Crossword:
             self.inserts += 1
 
         if self.backlog and not insert_backlog:  # Backlog contains uninserted
-            # words; attempt to insert them
+                                                 # words; attempt to insert them
             self._populate_grid(self.backlog, insert_backlog=True)
 
 

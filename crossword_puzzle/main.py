@@ -18,6 +18,7 @@ from crossword_puzzle.utils import (
 
 
 def _get_os_language() -> str:
+    """Infer language code from operating system data."""
     if os_name == "posix":
         return environ["LANG"].split("-")[0]
     else:
@@ -35,7 +36,7 @@ def main() -> None:
         try:
             locale: Locale = Locale.parse(_get_os_language())
             _update_cfg(cfg, "m", "language", locale.language)
-        except UnknownLocaleError:
+        except Exception:
             pass
 
     GUIHelper._install_translations(locale)

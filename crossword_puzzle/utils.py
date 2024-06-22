@@ -1,6 +1,6 @@
 """General/specialised utility functions."""
 
-from configparser import ConfigParser
+from configparser import ConfigParser, NoSectionError
 from copy import deepcopy
 from gettext import translation
 from json import dump, load, loads
@@ -234,15 +234,38 @@ def _doc_data_routine(
     return True  # Success, as the doc data has been made
 
 
+def _check_doc_cfg_is_up_to_date() -> bool:
+    """Check if the all the sections (and values of those sections) are present
+    in the document config.ini file.
+    """
+    template_cfg, doc_cfg = ConfigParser(), ConfigParser()
+    template_cfg.read(TEMPLATE_CFG_PATH)
+    doc_cfg.read(DOC_CFG_PATH)
+    for section in template_cfg:
+        if section != "DEFAULT":  # Ignore this, all keys are sectioned
+            template_items = template_cfg.items(section)
+            try:  # Missing section, can immediately return False
+                doc_items = doc_cfg.items(section)
+            except NoSectionError:
+                return False
+            for item in template_items:  # Iterate through all template section items
+                if any( # template_item[0] or item[0] refers to the key here
+                    template_item[0] not in [item[0] for item in doc_items]
+                    for template_item in template_items
+                ):
+                    return False
+
+    return True  # All checks passed, tell the caller not to make a new doc cfg
+
+
 def _make_doc_cfg() -> None:
     """Write the contents of ``sample.config.ini`` into ``config.ini``, located
     in the system's document directory.
     """
-    with open(TEMPLATE_CFG_PATH) as template_file, open(
+    with open(TEMPLATE_CFG_PATH) as template_cfg, open(
         path.join(DOC_CFG_PATH), "w"
-    ) as dest_file:
-        template_data = template_file.read()
-        dest_file.write(template_data)
+    ) as dest_cfg:
+        dest_cfg.write(template_cfg.read())
 
 
 def _update_cfg(
@@ -268,20 +291,25 @@ def _update_cfg(
 def _read_cfg(cfg: ConfigParser) -> None:
     if not _doc_data_routine(doc_callback=_make_doc_cfg):
         return cfg.read(TEMPLATE_CFG_PATH)
-
-    return cfg.read(DOC_CFG_PATH)
+    else:
+        if not _check_doc_cfg_is_up_to_date():
+            _make_doc_cfg()
+        return cfg.read(DOC_CFG_PATH)
 
 
 def _get_base_categories() -> Iterable[DirEntry]:
     """Get all the available crossword categories sorted alphabetically."""
     if _doc_data_routine() and "user" in listdir(DOC_DATA_PATH):
+        # It is safe to say the user category is in the document data, so
+        # retrieve all package categories except for the user category
         scanned_cats = [
             cat
             for cat in scandir(BASE_CWORDS_PATH)
             if cat.is_dir() and cat.name != "user"
         ]
+        # Add on the user category direntry from the document data
         scanned_cats += [cat for cat in scandir(DOC_DATA_PATH) if cat.is_dir()]
-    else:
+    else:  # Retrieve ALL categories from the package data
         scanned_cats = [
             cat for cat in scandir(BASE_CWORDS_PATH) if cat.is_dir()
         ]
@@ -305,8 +333,8 @@ def _sort_crosswords_by_suffix(
             ),
         )
     except Exception:  # Handling a list of tuples in the form (category,
-        # crossword) where both elements are instances of
-        # ``DirEntry``.
+                       # crossword) where both elements are instances of
+                       # ``DirEntry``. Not all code can be perfect.
         try:
             return sorted(
                 cwords,
@@ -314,8 +342,7 @@ def _sort_crosswords_by_suffix(
                     cword[1].name.split("-")[-1].capitalize()
                 ),
             )
-        except Exception:  # Could not find the "-" in the crossword name, so
-            # don't sort this category
+        except Exception:  # Don't sort ("-<difficulty>" suffix wasn't found)
             return cwords
 
 
@@ -326,6 +353,8 @@ def _get_base_crosswords(
     they have valid ``definitions.json`` files.
     """
     fp: PathLike = getattr(category, "path", category)
+    # Actual path can either be ``fp`` or the document category path if the requested
+    # category is user and it is present in the system document data
     actual_path: PathLike = (
         DOC_CAT_PATH
         if _doc_data_routine()
@@ -339,7 +368,8 @@ def _get_base_crosswords(
         if cword.is_dir()
         and "definitions.json" in listdir(cword.path)
         and path.getsize(path.join(cword.path, "definitions.json")) > 0
-        or (lenient and category.endswith("user") and cword.is_dir())  # Allow empty defintions for editor ONLY
+        # Allow empty defintions when viewing with the editor
+        or (lenient and category.endswith("user") and cword.is_dir()) 
     ]
     return _sort_crosswords_by_suffix(crosswords) if sort else crosswords
 
@@ -373,7 +403,7 @@ def _make_cword_info_json(
             {
                 "total_definitions": total_definitions,
                 "difficulty": difficulty,
-                "symbol": "0x2717",
+                "symbol": "0x2717",  # An "X" emoji
                 "name": adjusted_cword_name,
                 "translated_name": "",
                 "category": category,
@@ -419,11 +449,11 @@ def _get_language_options() -> Tuple[Dict[str, str], Dict[str, str]]:
     english acronym, and a list that contains all of the localised language
     names. This data is derived from ``LOCALES_PATH``."""
     localised_lang_db: Dict[str, str] = dict()  # Used to retrieve the language
-    # code for the selected language
-    # e.x. {"አማርኛ": "am",}
+                                                # code for the selected language
+                                                # e.x. {"አማርኛ": "am",}
     localised_langs: Dict[str, str] = list()  # Used in the language selection
-    # optionmenu
-    # e.x. ["አማርኛ", "عربي"]
+                                              # optionmenu
+                                              # e.x. ["አማርኛ", "عربي"]
 
     i: int = 0
     for locale in sorted(
@@ -466,12 +496,9 @@ def _find_best_crossword(crossword: "Crossword", cls: object) -> "Crossword":
 
     attempts_db: Dict[str, int] = _load_attempts_db()
     try:
-        max_attempts: int = attempts_db[
-            str(word_count)
-        ]  # Get amount of attempts
-        # based on word count
-        max_attempts *= QUALITY_MAP[  # Scale max attempts based
-            # on crossword quality
+        max_attempts: int = attempts_db[str(word_count)]  # Get amount of attempts 
+                                                          # based on word count
+        max_attempts *= QUALITY_MAP[  # Scale max attempts based on crossword quality
             cfg.get("m", "cword_quality")
         ]
         max_attempts = int(ceil(max_attempts))
@@ -538,7 +565,7 @@ def _interpret_cword_data(crossword: "Crossword") -> None:
 
     num_label: int = (
         1  # Incremented whenever the start of a word is found;
-        # used to create ``starting_word_matrix``.
+           # used to create ``starting_word_matrix``.
     )
     for row in range(crossword.dimensions):
         for column in range(crossword.dimensions):

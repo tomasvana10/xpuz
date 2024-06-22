@@ -42,9 +42,7 @@ class Addons:
     ) -> bool:
         """Allow the user to confirm if they wish to route through a messagebox."""
 
-        if (
-            condition
-        ):  # A condition is required for this confirmation to happen
+        if condition: # A condition is required for this confirmation to happen
             if GUIHelper.confirm_with_messagebox(**confirmation):
                 if action:
                     action()
