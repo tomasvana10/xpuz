@@ -105,7 +105,9 @@ class BrowserPage(CTkFrame, Addons):
             fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
             scrollbar_button_color=(Colour.Light.SUB, Colour.Dark.SUB),
         )
-        self.block_container.bind_all("<MouseWheel>", self._handle_scroll)
+        self.block_container.bind_all(
+            "<MouseWheel>", lambda e: self._handle_scroll(e, self.block_container)
+        )
 
         self.bottom_container = CTkFrame(
             self.browser_container, fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN)
@@ -320,29 +322,29 @@ class BrowserPage(CTkFrame, Addons):
         self._update_segbutton_text_colours(view)
         if view == "Categorised":
             self._reset_search()
-            self.e_search.configure(state="disabled")
+            self.e_search.configure(
+                state="disabled", placeholder_text_color=("gray72", "gray42")
+            )
             CategoryBlock._populate(self)
         elif view == "Flattened":
             self._reset_search()
-            self.e_search.configure(state="normal")
+            self.e_search.configure(
+                state="normal", placeholder_text_color=("gray52", "gray62")
+            )
             CrosswordBlock._populate_all(self)
 
         _update_cfg(Base.cfg, "m", "view", view)
 
-    def _handle_scroll(self, event: Event) -> None:
+    def _handle_scroll(self, event: Event, container: CTkScrollableFrame) -> None:
         """Scroll the center scroll frame only if the viewable width is greater
         than the scroll region. This prevents weird scroll behaviour in cases
         where the above condition is inverted.
         """
-        scroll_region = self.block_container._parent_canvas.cget(
-            "scrollregion"
-        )
-        viewable_width = self.block_container._parent_canvas.winfo_width()
+        scroll_region = container._parent_canvas.cget("scrollregion")
+        viewable_width = container._parent_canvas.winfo_width()
         if scroll_region and int(scroll_region.split(" ")[2]) > viewable_width:
             # -1 * event.delta emulates a "natural" scrolling motion
-            self.block_container._parent_canvas.xview(
-                "scroll", -1 * event.delta, "units"
-            )
+            container._parent_canvas.xview("scroll", -1 * event.delta, "units")
 
     def _on_wc_sel(self, button_name: str) -> None:
         """Configure custom word count optionmenu based on radiobutton selection."""
@@ -735,7 +737,7 @@ class CrosswordBlock(CTkFrame, Addons, BlockUtils):
             # If a query has been provided, only put the block if the query
             # returns true
             if query and not BlockUtils._match_block_query(
-                query, block.cwrapper.translated_name
+                query, block.cwrapper.translated_name, _(category.name.title())
             ):
                 continue
             cls._put_block(block)
@@ -743,7 +745,7 @@ class CrosswordBlock(CTkFrame, Addons, BlockUtils):
     def _make_content(self) -> None:
         self.tb_name = CTkTextbox(
             self,
-            font=self.CWORD_BLOCK_FONT,
+            font=self.BLOCK_FONT,
             wrap="char",
             fg_color=(Colour.Light.SUB, Colour.Dark.SUB),
             scrollbar_button_color=(Colour.Light.MAIN, Colour.Dark.MAIN),

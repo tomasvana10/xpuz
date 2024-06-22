@@ -97,6 +97,18 @@ RELEASE_API_URL = (
 )
 DIM = (900, 650)
 EDITOR_DIM = (1125, 650)
+PREV_SCALE_MAP: Dict[str, float] = {
+    # Scale the crossword/word preview in the editor based on the scaling
+    "0.7": 0.75,
+    "0.8": 0.675,
+    "0.9": 0.6,
+    "1.0": 0.5,
+    "1.1": 0.485,
+    "1.2": 0.47,
+    "1.3": 0.45,
+    "1.4": 0.4,
+    "1.5": 0.4,
+}
 PAGE_MAP: Dict[str, str] = {
     "HomePage": "Crossword Puzzle",
     "BrowserPage": "Crossword Browser",

@@ -28,7 +28,7 @@ class Addons:
         self.TEXT_FONT = CTkFont(size=15, weight="normal", slant="roman")
         self.BOLD_TEXT_FONT = CTkFont(size=15, weight="bold", slant="roman")
         self.CATEGORY_FONT = CTkFont(size=23, weight="bold", slant="roman")
-        self.CWORD_BLOCK_FONT = CTkFont(size=18, weight="normal", slant="roman")
+        self.BLOCK_FONT = CTkFont(size=18, weight="normal", slant="roman")
         self.HYPERLINK_FONT = CTkFont(
             size=15, weight="normal", family="Courier", underline=True
         )

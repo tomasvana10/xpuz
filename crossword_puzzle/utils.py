@@ -132,18 +132,24 @@ class GUIHelper:
 
 class BlockUtils:
     @staticmethod
-    def _match_block_query(query: str, block_name: str):
-        """Return true if ``query`` is present in the name of a crossword info
-        block.
+    def _match_block_query(query: str, block_name: str, category: str):
+        """Return True if any part of ``block_name`` (split into the words that
+        it consists of) starts with ``query``, or if ``category`` starts with
+        ``query``. All comparisons are caseless and do not regard whitespace
+        (except the category, which keeps its whitespace).
         """
-        return block_name.strip().casefold().startswith(query.strip().casefold()) 
+        formatted_query = query.strip().casefold()
+        return any(
+            block_name_segment.strip().casefold().startswith(formatted_query)
+            for block_name_segment in block_name.split(" ")
+        ) or category.casefold().startswith(formatted_query)
 
     @classmethod
-    def _put_block(cls, block: object) -> None:
+    def _put_block(cls, block: object, side: str = "left") -> None:
         """Pack ``block`` in its parent container and append it to the available
         blocks in ``cls``.
         """
-        block.pack(side="left", padx=5, pady=(5, 0))
+        block.pack(side=side, padx=5, pady=(5, 0))
         cls.blocks.append(block)
 
     @classmethod
@@ -237,8 +243,8 @@ def _make_doc_cfg() -> None:
     ) as dest_file:
         template_data = template_file.read()
         dest_file.write(template_data)
-        
-        
+
+
 def _update_cfg(
     cfg: ConfigParser, section: str, option: str, value: str
 ) -> None:
@@ -314,7 +320,7 @@ def _sort_crosswords_by_suffix(
 
 
 def _get_base_crosswords(
-    category: Union[DirEntry, PathLike], sort: bool = True
+    category: Union[DirEntry, PathLike], sort: bool = True, lenient: bool = False,
 ) -> Iterable[DirEntry]:
     """Get all the available crosswords from the base crossword directory if
     they have valid ``definitions.json`` files.
@@ -333,7 +339,7 @@ def _get_base_crosswords(
         if cword.is_dir()
         and "definitions.json" in listdir(cword.path)
         and path.getsize(path.join(cword.path, "definitions.json")) > 0
-        or (category == "user" and cword.is_dir())  # Allow empty defintions
+        or (lenient and category.endswith("user") and cword.is_dir())  # Allow empty defintions for editor ONLY
     ]
     return _sort_crosswords_by_suffix(crosswords) if sort else crosswords
 
