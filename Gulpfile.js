@@ -14,11 +14,11 @@ const rename = require("gulp-rename")
 const presets = ["@babel/preset-env"];
 
 gulp.task("main", () => {
-  return gulp.src("./crossword_puzzle/cword_webapp/static/interaction.js")
+  return gulp.src("./crossword_puzzle/app/static/interaction.js")
     .pipe(babel({ presets })) // preset-env for ES5
     .pipe(terser()) // minify
     .pipe(rename("interaction.min.js"))
-    .pipe(gulp.dest("./crossword_puzzle/cword_webapp/static/"));
+    .pipe(gulp.dest("./crossword_puzzle/app/static/"));
 });
 
 gulp.task("default", gulp.series("main"));

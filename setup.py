@@ -24,7 +24,7 @@ setup(
     ],
     entry_points={
         "gui_scripts": [
-            "crossword-ctk = crossword_puzzle.main:start"
+            "crossword-ctk = crossword_puzzle.main:main"
         ]
     },
     classifiers=[

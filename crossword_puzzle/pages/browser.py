@@ -30,7 +30,7 @@ from crossword_puzzle.constants import (
     PAGE_MAP,
     Colour,
 )
-from crossword_puzzle.cword_webapp.app import _create_app, _terminate_app
+from crossword_puzzle.app.app import _create_app, _terminate_app
 from crossword_puzzle.utils import (
     BlockUtils,
     GUIHelper,

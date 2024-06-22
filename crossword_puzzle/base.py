@@ -15,7 +15,7 @@ from customtkinter import (
 )
 
 from crossword_puzzle.constants import DIM, LOGO_PATH, PAGE_MAP
-from crossword_puzzle.cword_webapp.app import _terminate_app
+from crossword_puzzle.app.app import _terminate_app
 from crossword_puzzle.utils import GUIHelper, _update_cfg
 
 

@@ -1,9 +1,9 @@
 recursive-include crossword_puzzle/locales/*/LC_MESSAGES *.mo
 recursive-include crossword_puzzle/locales/*/cwords *
-recursive-include crossword_puzzle/cword_webapp/static *
-recursive-include crossword_puzzle/cword_webapp/templates *
+recursive-include crossword_puzzle/app/static *
+recursive-include crossword_puzzle/app/templates *
 recursive-include crossword_puzzle/base_cwords *
 recursive-include crossword_puzzle/assets *
 recursive-include crossword_puzzle/data *
 include crossword_puzzle/babel.cfg
-include crossword_puzzle/config.ini
+include crossword_puzzle/template.config.ini
