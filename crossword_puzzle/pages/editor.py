@@ -442,12 +442,20 @@ class CrosswordPane(CTkFrame, Addons):
         self.opts_difficulty.configure(state=state)
 
     def _remove(self):
-        if GUIHelper.confirm_with_messagebox(self.name, delete_cword_or_word=True):
-            fp = self.crossword_block.cwrapper.toplevel
-            rmtree(fp)
-            
-            UserCrosswordBlock._set_all(UserCrosswordBlock._remove_block)
-            UserCrosswordBlock._populate(self)
+        if not GUIHelper.confirm_with_messagebox(self.name, delete_cword_or_word=True):
+            return 
+        
+        fp = self.crossword_block.cwrapper.toplevel
+        rmtree(fp)
+        
+        UserCrosswordBlock._set_all(UserCrosswordBlock._remove_block)
+        UserCrosswordBlock._populate(self)
+        self.master._reset_forms(Form.crossword_forms, set_invalid=True)
+        self._toggle_forms("disabled", Form.crossword_forms)
+        self.b_remove.configure(state="disabled")
+        self.b_confirm.configure(state="disabled")
+        self.master._set_form_defaults("", "", forms=Form.crossword_forms)
+        self.opts_difficulty.set("")
 
     def _add(self) -> None:
         if Form._any_nondefault_values(Form.crossword_forms):
