@@ -48,15 +48,25 @@ class GUIHelper:
 
     @staticmethod
     def confirm_with_messagebox(
-        exit_: bool = False, restart: bool = False, close: bool = False
+        *args, **kwargs
     ) -> bool:
         """Provide confirmations to the user with tkinter messageboxes."""
-        if exit_ and restart:
+        if "delete_cword_or_word" in kwargs:
+            return messagebox.askyesno(
+                _("Remove"), _("Are you sure you wish to delete this") + f" {args[0]}? " + _("It will be lost forever!")
+            )
+            
+        if "confirm_cword_or_word_add" in kwargs:
+            return messagebox.askyesno(
+                _("Add"), _("Are you sure you wish to add/select a") + f" {args[0]}? " + _("Your modified fields will be reset!")
+            )
+            
+        if "exit_" in kwargs and "restart" in kwargs:
             return messagebox.askyesno(
                 _("Restart"), _("Are you sure you want to restart the app?")
             )
 
-        if exit_ and not restart:
+        if "exit_" in kwargs and not "restart" in kwargs:
             return messagebox.askyesno(
                 _("Exit"),
                 _(
@@ -65,7 +75,7 @@ class GUIHelper:
                 ),
             )
 
-        if close:
+        if "close" in kwargs:
             return messagebox.askyesno(
                 _("Back to home"),
                 _(
@@ -398,16 +408,15 @@ def _make_cword_info_json(
         except Exception:
             difficulty: int = 0
             adjusted_cword_name: str = cword_name
-
+            
         return dump(
-            {
-                "total_definitions": total_definitions,
-                "difficulty": difficulty,
-                "symbol": "0x2717",  # An "X" emoji
-                "name": adjusted_cword_name,
-                "translated_name": "",
-                "category": category,
-            },
+            CrosswordInfo(
+                total_definitions=total_definitions, 
+                difficulty=difficulty, 
+                symbol="0x2717", 
+                translated_name="", 
+                category=category
+            ),
             info_obj,
             indent=4,
         )

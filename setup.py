@@ -20,7 +20,8 @@ setup(
         "flask_babel",
         "Pillow",
         "regex",
-        "platformdirs"
+        "platformdirs",
+        "pathvalidate"
     ],
     entry_points={
         "gui_scripts": [
