@@ -28,6 +28,8 @@ An educational GUI package built with `CustomTkinter` that allows you to select,
 `Pillow`
 `regex`
 `platformdirs`
+`pathvalidate`
+`CTkToolTip`
 
 ## Installation
 > [!IMPORTANT]

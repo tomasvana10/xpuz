@@ -1,6 +1,9 @@
-Babel==2.15.0
-customtkinter==5.2.2
-Flask==3.0.3
-flask_babel==4.0.0
-Pillow==10.3.0
-regex==2024.5.10
+Babel
+customtkinter
+Flask
+flask_babel
+Pillow
+regex
+pathvalidate
+platformdirs
+CTkToolTip
