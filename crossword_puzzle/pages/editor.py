@@ -467,7 +467,7 @@ class CrosswordPane(CTkFrame, Addons):
         self.preview.grid(row=1, column=0, padx=(0, 50))
         self.b_add.pack(side="right", anchor="e")
         self.b_remove.pack(side="right", anchor="e", padx=(81.5, 10))
-        self.b_edit_container.grid(row=2, column=0, pady=(7.5, 0))
+        self.b_edit_container.grid(row=2, column=0, pady=(7.5, 0), padx=(50, 0))
         self.name_form.grid(row=0, column=0)
         self.symbol_form.grid(row=1, column=0)
         self.l_difficulty.grid(
@@ -805,7 +805,7 @@ class WordPane(CTkFrame, Addons):
         self.preview.grid(row=1, column=0, padx=(0, 50))
         self.b_add.pack(side="right", anchor="e")
         self.b_remove.pack(side="right", anchor="e", padx=(81.5, 10))
-        self.b_edit_container.grid(row=2, column=0, pady=(7.5, 0))
+        self.b_edit_container.grid(row=2, column=0, pady=(7.5, 0), padx=(50, 0))
         self.word_form.grid(row=0, column=0)
         self.clue_form.grid(row=1, column=0)
         self.b_confirm.grid(row=2, column=0, sticky="w", pady=(20, 0))
