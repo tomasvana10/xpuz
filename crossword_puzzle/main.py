@@ -4,7 +4,10 @@ web application.
 """
 
 from configparser import ConfigParser
-from ctypes import windll
+try:
+    from ctypes import windll
+except ImportError:
+    pass
 from locale import windows_locale
 from os import name as os_name
 from os import environ
