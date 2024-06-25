@@ -64,6 +64,10 @@ class Addons:
         All class instances that use ``_route`` must have their content packed
         and contain 4 content generation methods, as seen below.
         """
+        if kwargs:  # The caller of this route has added arguments for confirmation
+            if not self._confirm_route(**kwargs):
+                return False  # User didn't want to route
+            
         try:
             page_inst = locals()[page_ref](base)
         except KeyError:
@@ -74,10 +78,6 @@ class Addons:
             )
 
             page_inst = locals()[page_ref](base)
-
-        if kwargs:  # The caller of this route has added arguments for confirmation
-            if not self._confirm_route(**kwargs):
-                return False  # User didn't want to route
 
         for widget in Base.base_container.winfo_children():  # Remove content
             widget.pack_forget()

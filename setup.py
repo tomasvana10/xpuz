@@ -21,7 +21,8 @@ setup(
         "Pillow",
         "regex",
         "platformdirs",
-        "pathvalidate"
+        "pathvalidate",
+        "CTkToolTip",
     ],
     entry_points={
         "gui_scripts": [

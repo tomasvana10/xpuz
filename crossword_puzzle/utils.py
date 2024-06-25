@@ -25,7 +25,7 @@ from crossword_puzzle.constants import (
     DOC_DATA_PATH,
     DOC_PATH,
     DOWN,
-    KEEP_LANGUAGES_PATTERN,
+    NONLANGUAGE_PATTERN,
     LOCALES_PATH,
     QUALITY_MAP,
     TEMPLATE_CFG_PATH,
@@ -53,20 +53,25 @@ class GUIHelper:
         """Provide confirmations to the user with tkinter messageboxes."""
         if "delete_cword_or_word" in kwargs:
             return messagebox.askyesno(
-                _("Remove"), _("Are you sure you wish to delete this") + f" {args[0]}? " + _("It will be lost forever!")
+                _("Remove"), _("Are you sure you want to delete this") + f" {args[0]}? " + _("It will be lost forever!")
             )
             
         if "confirm_cword_or_word_add" in kwargs:
             return messagebox.askyesno(
-                _("Add"), _("Are you sure you wish to add/select a") + f" {args[0]}? " + _("Your modified fields will be reset!")
+                _("Add or select"), _("Are you sure you want to add/select a") + f" {args[0]}? " + _("Your modified fields will be reset!")
+            )
+        
+        if "exiting_with_nondefault_fields" in kwargs:
+            return messagebox.askyesno(
+                _("Back to home"), _("Are you sure you want to go back to the home screen? Your modified fields will be reset!")
             )
             
-        if "exit_" in kwargs and "restart" in kwargs:
+        if "exit_" in kwargs and "restart" not in kwargs:
             return messagebox.askyesno(
                 _("Restart"), _("Are you sure you want to restart the app?")
             )
 
-        if "exit_" in kwargs and not "restart" in kwargs:
+        if "exit_" in kwargs and "restart" in kwargs:
             return messagebox.askyesno(
                 _("Exit"),
                 _(
@@ -105,6 +110,26 @@ class GUIHelper:
         if "same_quality" in kwargs:
             return messagebox.showerror(
                 _("Error"), _("This quality is already selected.")
+            )
+        
+        if "crossword_exists_err" in kwargs:
+            return messagebox.showerror(
+                _("Error"), _("This crossword already exists. Please choose a new name.")
+            )
+        
+        if "word_exists_err" in kwargs:
+            return messagebox.showerror(
+                _("Error"), _("This word already exists. Please choose a new word.")
+            )
+        
+        if "wrote_cword" in kwargs:
+            return messagebox.showinfo(
+                _("Info"), _("Successfully added/updated crossword!")
+            )
+        
+        if "wrote_word" in kwargs:
+            return messagebox.showinfo(
+                _("Info"), _("Successfully added/updated word!")
             )
 
         if "first_time_browser" in kwargs:
@@ -663,7 +688,7 @@ def _format_definitions(
     # ``randomly_sampled_definitions``` (the words) and capitalise its values
     # (the clues/definitions)
     formatted_definitions = {
-        sub(KEEP_LANGUAGES_PATTERN, "", k).upper(): v
+        sub(NONLANGUAGE_PATTERN, "", k).upper(): v
         for k, v in randomly_sampled_definitions.items()
     }
 

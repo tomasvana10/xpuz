@@ -66,7 +66,7 @@ DIFFICULTIES: List[str] = ["Easy", "Medium", "Hard", "Extreme"]
 ACROSS: str = "ACROSS"
 DOWN: str = "DOWN"
 EMPTY: str = "\u25AE"
-KEEP_LANGUAGES_PATTERN: Pattern = compile(r"\PL")
+NONLANGUAGE_PATTERN: Pattern = compile(r"\PL")
 QUALITY_MAP: Dict[str, int] = {
     "terrible": 0.05,
     "poor": 0.25,
