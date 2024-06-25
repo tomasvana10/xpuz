@@ -7,7 +7,7 @@ from asyncio import (
 )
 from concurrent.futures import ThreadPoolExecutor
 from threading import Thread
-from typing import List, Union
+from typing import List
 from webbrowser import open_new_tab
 
 from babel import Locale, numbers
@@ -35,6 +35,7 @@ from crossword_puzzle.constants import (
     Colour,
 )
 from crossword_puzzle.utils import GUIHelper, _update_cfg, _check_version
+from crossword_puzzle.version import __version__
 
 
 class HomePage(CTkFrame, Addons):
@@ -341,5 +342,4 @@ class HomePage(CTkFrame, Addons):
         with ThreadPoolExecutor() as executor:
             ver = await loop.run_in_executor(executor, _check_version)
             if ver:
-                from crossword_puzzle import __version__
                 self._make_version_label(__version__, ver)

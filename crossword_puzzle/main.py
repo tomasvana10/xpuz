@@ -6,13 +6,13 @@ web application.
 from configparser import ConfigParser
 try:
     from ctypes import windll
+    from locale import windows_locale
 except ImportError:
     pass
-from locale import windows_locale
 from os import name as os_name
 from os import environ
 
-from babel import Locale, UnknownLocaleError
+from babel import Locale
 
 from crossword_puzzle.base import Base
 from crossword_puzzle.utils import (

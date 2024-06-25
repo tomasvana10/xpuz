@@ -19,7 +19,7 @@ from customtkinter import (
     CTkRadioButton,
     CTkTextbox,
 )
-from pathvalidate import validate_filename, ValidationError
+from pathvalidate import validate_filename
 from regex import search
 
 from crossword_puzzle.base import Addons, Base

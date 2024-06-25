@@ -1,9 +1,10 @@
 from setuptools import find_namespace_packages, setup
-from crossword_puzzle import __version__, __package__
+
 
 setup(
-    name=__package__,
-    version=__version__,
+    name="crossword_puzzle",
+    version="2.2.83",  # If I import crossword_puzzle.version.__version__, 
+                       # setuptools fails to build the project for some reason
     author="Tomas Vana",
     url="https://github.com/tomasvana10/crossword_puzzle",
     description="Select, generate and play always-unique crosswords.",

@@ -34,6 +34,7 @@ from crossword_puzzle.constants import (
 )
 from crossword_puzzle.errors import DefinitionsParsingError
 from crossword_puzzle.td import CrosswordInfo
+from crossword_puzzle.version import __version__
 
 
 class GUIHelper:
@@ -223,8 +224,6 @@ def _check_version() -> Union[None, str]:
     response = req.urlopen(request)
 
     if response.status == 200:
-        from crossword_puzzle import __version__
-
         data = loads(response.read().decode())
         local_ver = __version__.split(".")
         remote_ver = data["name"].split(".")
@@ -439,6 +438,7 @@ def _make_cword_info_json(
                 total_definitions=total_definitions, 
                 difficulty=difficulty, 
                 symbol="0x2717", 
+                name=adjusted_cword_name,
                 translated_name="", 
                 category=category
             ),
