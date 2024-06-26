@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 from configparser import ConfigParser
 from platform import system
 from typing import Dict, List, Tuple
@@ -26,6 +24,7 @@ class Addons:
         self.TITLE_FONT = CTkFont(size=31, weight="bold", slant="roman")
         self.SUBHEADING_FONT = CTkFont(size=24, weight="normal", slant="roman")
         self.TEXT_FONT = CTkFont(size=15, weight="normal", slant="roman")
+        self.ITALIC_TEXT_FONT = CTkFont(size=15, weight="bold", slant="roman")
         self.BOLD_TEXT_FONT = CTkFont(size=15, weight="bold", slant="roman")
         self.CATEGORY_FONT = CTkFont(size=23, weight="bold", slant="roman")
         self.BLOCK_FONT = CTkFont(size=18, weight="normal", slant="roman")
@@ -55,7 +54,7 @@ class Addons:
     def _route(
         self,
         page_ref: str,  # Reference to page instance
-        base: Base,  # Reference to base instance
+        base: "Base",  # Reference to base instance
         title: str,  # Title of the new page
         **kwargs,
     ) -> bool:

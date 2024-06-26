@@ -28,7 +28,6 @@ from crossword_puzzle.constants import (
     DOC_CAT_PATH,
     EDITOR_DIM,
     PAGE_MAP,
-    PREV_SCALE_MAP,
     DIFFICULTIES,
     NONLANGUAGE_PATTERN,
     Colour,
@@ -39,6 +38,7 @@ from crossword_puzzle.utils import (
     _doc_data_routine,
     _get_base_crosswords,
     _make_category_info_json,
+    _open_file,
 )
 from crossword_puzzle.wrappers import CrosswordWrapper
 from crossword_puzzle.td import CrosswordInfo
@@ -91,7 +91,7 @@ class FormParser:
         form._check_default()
 
 
-class Form(CTkFrame, Addons):
+class Form(Addons):
     crossword_forms: List[object] = []
     word_forms: List[object] = []
 
@@ -105,13 +105,16 @@ class Form(CTkFrame, Addons):
         tooltip: str,
     ) -> None:
         self._set_fonts()
-        super().__init__(
-            master,
-            fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
+
+        # Have to encapsulate the frame within the instance here. If ``Form``
+        # inherits ``CTkFrame``, this causes issues when defining ``__str__``
+        # on older python versions.
+        self._frame = CTkFrame(
+            master, fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN)
         )
 
         self._label = CTkLabel(
-            self,
+            self._frame,
             text=_(name.title()),
             font=self.BOLD_TEXT_FONT,
             text_color_disabled=(
@@ -120,7 +123,7 @@ class Form(CTkFrame, Addons):
             ),
         )
         self._form = CTkEntry(
-            self,
+            self._frame,
             font=self.TEXT_FONT,
             fg_color=(Colour.Light.SUB, Colour.Dark.SUB),
             bg_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
@@ -130,7 +133,7 @@ class Form(CTkFrame, Addons):
         )
 
         self.b_reset_default = CTkButton(
-            self,
+            self._frame,
             text="↺",
             command=lambda: self.put(self.default, is_default=True),
             height=28,
@@ -143,6 +146,7 @@ class Form(CTkFrame, Addons):
         self._form.grid(row=1, column=0, pady=(0, 25))
         self.b_reset_default.grid(row=1, column=1, sticky="nw", padx=(5, 0))
 
+        self.master = master
         self.name = name
         self.pane = pane
         self.is_valid: bool = True
@@ -182,8 +186,14 @@ class Form(CTkFrame, Addons):
     def __len__(self):
         return len(str(self))
 
+    def grid(self, *args, **kwargs):
+        self._frame.grid(*args, **kwargs)
+
     def unfocus(self) -> None:
         self.master.focus_force()
+
+    def focus(self) -> None:
+        self.master.master.after(5, self._form.focus_set)
 
     def wipe(self) -> None:
         self._form.delete(0, "end")
@@ -239,6 +249,7 @@ class EditorPage(CTkFrame, Addons):
         self.master = master
         self.master._set_dim(dim=EDITOR_DIM)
         self._set_fonts()
+        self.master.update()
         self._width, self._height = (
             self.master.winfo_width(),
             self.master.winfo_height(),
@@ -309,15 +320,18 @@ class EditorPage(CTkFrame, Addons):
             sublevel=DOC_CAT_PATH,
         ):
             fp = DOC_CAT_PATH  # Success, there is now a user category in
-            # sys documents, so update ``fp``
+                               # sys documents, so update ``fp``
 
         _make_category_info_json(fp, "#FFFFFF")
         return fp
 
-    def _handle_scroll(
-        self, event: Event
-    ) -> None:
-        container = self.crossword_pane.preview if event.x_root - self.master.winfo_rootx() <= EDITOR_DIM[0] * self.scaling / 2  else self.word_pane.preview
+    def _handle_scroll(self, event: Event) -> None:
+        container = (
+            self.crossword_pane.preview
+            if event.x_root - self.master.winfo_rootx()
+            <= EDITOR_DIM[0] * self.scaling / 2
+            else self.word_pane.preview
+        )
         scroll_region = container._parent_canvas.cget("scrollregion")
         viewable_height = container._parent_canvas.winfo_height()
         if (
@@ -341,11 +355,12 @@ class EditorPage(CTkFrame, Addons):
     def _set_form_defaults(self, *args, forms):  # len(args) == len(forms)
         for i, form in enumerate(forms):
             form.set_default(args[i])
-    
+
     def _write_data(self, toplevel, data, type_):
         file = "info.json" if type_ == "info" else "definitions.json"
         with open(path.join(toplevel, file), "w") as f:
             dump(data, f, indent=4)
+
 
 class CrosswordPane(CTkFrame, Addons):
     def __init__(self, container: CTkFrame, master: EditorPage) -> None:
@@ -361,6 +376,7 @@ class CrosswordPane(CTkFrame, Addons):
         self.master = master
         self.crossword_block: Union[None, UserCrosswordBlock] = None
         self.grid(row=0, column=0, sticky="nsew", padx=(0, 1))
+        UserCrosswordBlock._set_all(UserCrosswordBlock._remove_block)
 
         self._set_fonts()
         self._make_content()
@@ -387,8 +403,6 @@ class CrosswordPane(CTkFrame, Addons):
         self.preview = CTkScrollableFrame(
             self.container,
             orientation="vertical",
-            height=self.master._height
-            * PREV_SCALE_MAP[Base.cfg.get("m", "scale")],
             fg_color=(Colour.Light.SUB, Colour.Dark.SUB),
             scrollbar_button_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
             width=250,
@@ -396,6 +410,16 @@ class CrosswordPane(CTkFrame, Addons):
         self.preview.bind_all(
             "<MouseWheel>",
             lambda e: self.master._handle_scroll(e),
+        )
+
+        self.b_explorer = CTkButton(
+            self.b_edit_container,
+            text="📂",
+            width=40,
+            height=30,
+            font=self.TEXT_FONT,
+            command=lambda: _open_file(self.crossword_block.cwrapper.toplevel),
+            state="disabled",
         )
 
         self.b_remove = CTkButton(
@@ -464,17 +488,18 @@ class CrosswordPane(CTkFrame, Addons):
     def _place_content(self) -> None:
         self.container.place(relx=0.5, rely=0.5, anchor="c")
         self.l_title.grid(row=0, column=0, columnspan=2, pady=(0, 25))
-        self.preview.grid(row=1, column=0, padx=(0, 50))
-        self.b_add.pack(side="right", anchor="e")
-        self.b_remove.pack(side="right", anchor="e", padx=(81.5, 10))
-        self.b_edit_container.grid(row=2, column=0, pady=(7.5, 0), padx=(50, 0))
+        self.preview.grid(row=1, column=0, padx=(0, 40), sticky="nsew")
+        self.b_explorer.pack(side="left", padx=(0, 144.75))
+        self.b_add.pack(side="left", padx=(0, 7.5))
+        self.b_remove.pack(side="left", padx=(0, 7.5))
+        self.b_edit_container.grid(row=2, column=0, pady=(7.5, 0), sticky="w")
         self.name_form.grid(row=0, column=0)
         self.symbol_form.grid(row=1, column=0)
         self.l_difficulty.grid(
             row=2, column=0, sticky="w", padx=(5, 0), pady=(0, 5)
         )
         self.opts_difficulty.grid(row=3, column=0, pady=(0, 45), sticky="w")
-        self.b_confirm.grid(row=4, column=0, sticky="w")
+        self.b_confirm.grid(row=4, column=0, sticky="w", pady=(30, 0))
         self.form_container.grid(row=1, column=1, sticky="n")
 
     def _update_difficulty(self, difficulty):
@@ -509,7 +534,8 @@ class CrosswordPane(CTkFrame, Addons):
             ):
                 return
 
-        if intvar := UserCrosswordBlock.selected_block:
+        intvar = UserCrosswordBlock.selected_block
+        if intvar:
             intvar.set(-1)
 
         self.mode = "add"
@@ -520,6 +546,7 @@ class CrosswordPane(CTkFrame, Addons):
         )
         self.b_remove.configure(state="disabled")
         self.b_confirm.configure(text=_("Add"))
+        Form.crossword_forms[0].focus()
         self._toggle_forms("normal", Form.crossword_forms)
         self.master._reset_forms(Form.crossword_forms, set_invalid=True)
         self.opts_difficulty.set(self.difficulties[0])
@@ -536,7 +563,7 @@ class CrosswordPane(CTkFrame, Addons):
             dir_name += hyphen_char
             dir_name += self.difficulty.casefold()
 
-        return dir_name        
+        return dir_name
 
     def _write(self) -> None:
         difficulty = DIFFICULTIES.index(self.difficulty)
@@ -555,7 +582,7 @@ class CrosswordPane(CTkFrame, Addons):
                 translated_name=translated_name,
                 category="user",
             )
-            
+
             toplevel = path.join(self.master.fp, dir_name)
             try:
                 mkdir(toplevel)
@@ -582,11 +609,11 @@ class CrosswordPane(CTkFrame, Addons):
         self._reset()
         self.b_add.configure(state="normal")
         UserCrosswordBlock._populate(self)
-        GUIHelper.show_messagebox(wrote_cword=True)
 
     def _reset(self) -> None:
         UserCrosswordBlock._set_all(UserCrosswordBlock._remove_block)
         self.l_title.configure(text=_("Your Crosswords"))
+        self.b_explorer.configure(state="disabled")
         self.master._reset_forms(Form.crossword_forms, set_invalid=True)
         self._toggle_forms("disabled", Form.crossword_forms)
         self.b_confirm.configure(text=_("Save"))
@@ -650,6 +677,14 @@ class UserCrosswordBlock(CTkFrame, Addons, BlockUtils):
                 i,
             )
             cls._put_block(block, side="top")
+        
+        if len(UserCrosswordBlock.blocks) == 0:
+            l_empty_info = CTkLabel(
+                master.preview, 
+                text=_("Press") + " \"+\" " + _("to add a \nnew crossword."),
+                font=master.ITALIC_TEXT_FONT
+            )
+            cls._put_block(l_empty_info, side="top")
 
     def _make_content(self) -> None:
         self.tb_name = CTkTextbox(
@@ -688,7 +723,9 @@ class UserCrosswordBlock(CTkFrame, Addons, BlockUtils):
             text=_("Your Crosswords") + " ({})".format(_("Editing"))
         )
         self.master.crossword_block = self
+        self.master.b_explorer.configure(state="normal")
         self.master.difficulty = self.cwrapper.difficulty
+        Form.crossword_forms[0].focus()
         self.master._toggle_forms("normal", Form.crossword_forms)
         self.master.b_confirm.configure(text=_("Save"))
         self.master.master._reset_forms(Form.crossword_forms)
@@ -747,8 +784,6 @@ class WordPane(CTkFrame, Addons):
         self.preview = CTkScrollableFrame(
             self.container,
             orientation="vertical",
-            height=self.master._height
-            * PREV_SCALE_MAP[Base.cfg.get("m", "scale")],
             fg_color=(Colour.Light.SUB, Colour.Dark.SUB),
             scrollbar_button_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
             width=250,
@@ -802,13 +837,15 @@ class WordPane(CTkFrame, Addons):
     def _place_content(self) -> None:
         self.container.place(relx=0.5, rely=0.5, anchor="c")
         self.l_title.grid(row=0, column=0, columnspan=2, pady=(0, 25))
-        self.preview.grid(row=1, column=0, padx=(0, 50))
-        self.b_add.pack(side="right", anchor="e")
-        self.b_remove.pack(side="right", anchor="e", padx=(81.5, 10))
-        self.b_edit_container.grid(row=2, column=0, pady=(7.5, 0), padx=(50, 0))
+        self.preview.grid(row=1, column=0, padx=(0, 40), sticky="nsew")
+        self.b_remove.pack(side="right", anchor="e")
+        self.b_add.pack(side="right", anchor="e", padx=(81.5, 10))
+        self.b_edit_container.grid(
+            row=2, column=0, pady=(7.5, 0), padx=(50, 0)
+        )
         self.word_form.grid(row=0, column=0)
         self.clue_form.grid(row=1, column=0)
-        self.b_confirm.grid(row=2, column=0, sticky="w", pady=(20, 0))
+        self.b_confirm.grid(row=2, column=0, sticky="w", pady=(135, 0))
         self.form_container.grid(row=1, column=1, sticky="n")
 
     def _add(self):
@@ -818,13 +855,15 @@ class WordPane(CTkFrame, Addons):
             ):
                 return
 
-        if intvar := UserWordBlock.selected_block:
+        intvar = UserWordBlock.selected_block
+        if intvar:
             intvar.set(-1)
 
         self.mode = "add"
         self.l_title.configure(
             text=_("Your Words") + " ({})".format(_("Adding"))
         )
+        Form.word_forms[0].focus()
         self.b_remove.configure(state="disabled")
         self.b_confirm.configure(text=_("Add"))
         self.master._toggle_forms("normal", Form.word_forms)
@@ -850,23 +889,22 @@ class WordPane(CTkFrame, Addons):
     def _write(self):
         cwrapper = self.master.crossword_pane.crossword_block.cwrapper
         definitions = cwrapper.definitions
-        
+
         if self.mode == "add":
             if str(self.word_form) in definitions.keys():
                 return GUIHelper.show_messagebox(word_exists_err=True)
-            
+
             definitions[str(self.word_form)] = str(self.clue_form)
 
         elif self.mode == "edit":
             del definitions[self.word]
             definitions[str(self.word_form)] = str(self.clue_form)
-        
+
         self.master._write_data(cwrapper.toplevel, definitions, "definitions")
-        
+
         self._reset()
         UserWordBlock._populate(self, definitions)
         self.b_add.configure(state="normal")
-        GUIHelper.show_messagebox(wrote_word=True)
 
     def _reset(self):
         self.l_title.configure(text=_("Your Words"))
@@ -911,7 +949,7 @@ class UserWordBlock(CTkFrame, Addons, BlockUtils):
     @classmethod
     def _populate(cls, master: WordPane, definitions: Dict[str, str]) -> None:
         """Put all base crosswords in the user category into the crossword pane's
-        scrollable frame. They can have no definitions.json file.
+        scrollable frame. They can have no ``definitions.json`` file.
         """
         cls.selected_block = IntVar()
         cls.selected_block.set(-1)
@@ -925,6 +963,14 @@ class UserWordBlock(CTkFrame, Addons, BlockUtils):
                 i,
             )
             cls._put_block(block, side="top")
+        
+        if len(UserWordBlock.blocks) == 0:
+            l_empty_info = CTkLabel(
+                master.preview, 
+                text=_("Press") + " \"+\" " + _("to add a") + "\n" + _("new word."),
+                font=master.ITALIC_TEXT_FONT
+            )
+            cls._put_block(l_empty_info, side="top")
 
     def _make_content(self) -> None:
         self.tb_name = CTkTextbox(
@@ -960,9 +1006,8 @@ class UserWordBlock(CTkFrame, Addons, BlockUtils):
 
         self.master.mode = "edit"
         self.master.word = self.word
-        self.master.l_title.configure(
-            text=_("Your Words") + " ({})".format(_("Editing"))
-        )
+        self.master.l_title.configure(text=_("Your Words") + " ({})".format(_("Editing")))
+        Form.word_forms[0].focus()
         self.master.master._toggle_forms("normal", Form.word_forms)
         self.master.b_confirm.configure(text=_("Save"))
         self.master.master._reset_forms(Form.word_forms)

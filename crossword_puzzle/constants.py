@@ -96,19 +96,7 @@ RELEASE_API_URL = (
     "https://api.github.com/repos/tomasvana10/crossword_puzzle/releases/latest"
 )
 DIM = (900, 650)
-EDITOR_DIM = (1125, 650)
-PREV_SCALE_MAP: Dict[str, float] = {
-    # Scale the crossword/word preview in the editor based on CTk scaling
-    "0.7": 0.85,
-    "0.8": 0.75,
-    "0.9": 0.65,
-    "1.0": 0.6,
-    "1.1": 0.55,
-    "1.2": 0.52,
-    "1.3": 0.45,
-    "1.4": 0.4,
-    "1.5": 0.4,
-}
+EDITOR_DIM = (1125, 600)
 PAGE_MAP: Dict[str, str] = {
     "HomePage": "Crossword Puzzle",
     "BrowserPage": "Crossword Browser",

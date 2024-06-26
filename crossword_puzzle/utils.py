@@ -6,10 +6,12 @@ from gettext import translation
 from json import dump, load, loads
 from math import ceil
 from os import DirEntry, PathLike, listdir, mkdir, path, scandir
+from platform import system
 from random import randint, sample
 from tkinter import messagebox
 from typing import Callable, Dict, Iterable, List, Optional, Tuple, Union
 import urllib.request as req
+from urllib.error import URLError
 
 from babel import Locale
 from babel.core import UnknownLocaleError
@@ -122,16 +124,6 @@ class GUIHelper:
             return messagebox.showerror(
                 _("Error"), _("This word already exists. Please choose a new word.")
             )
-        
-        if "wrote_cword" in kwargs:
-            return messagebox.showinfo(
-                _("Info"), _("Successfully added/updated crossword!")
-            )
-        
-        if "wrote_word" in kwargs:
-            return messagebox.showinfo(
-                _("Info"), _("Successfully added/updated word!")
-            )
 
         if "first_time_browser" in kwargs:
             return messagebox.showinfo(
@@ -216,22 +208,41 @@ class BlockUtils:
             block.rb_selector.configure(**kwargs)
 
 
+def _open_file(fp) -> None:
+    plat: str = system()
+    if plat == "Windows":
+        from os import startfile
+
+        startfile(fp)
+    else:
+        from os import system as os_system
+
+        if plat == "Darwin":
+            os_system("open %s" % fp)
+        elif plat == "Linux":
+            os_system("xdg-open %s" % fp)
+
+
 def _check_version() -> Union[None, str]:
     """Return the latest remote GitHub release if it is higher than the local
     release using the ``urllib`` module.
     """
-    request = req.Request(RELEASE_API_URL)
-    response = req.urlopen(request)
+    try:
+        request = req.Request(RELEASE_API_URL)
+        response = req.urlopen(request)
+    except URLError:
+        return None
 
     if response.status == 200:
         data = loads(response.read().decode())
         local_ver = __version__.split(".")
         remote_ver = data["name"].split(".")
+
         if any(
-            item[0] > item[1] for item in dict(zip(remote_ver, local_ver)).items()
+            item[0] > item[1] for item in list(zip(remote_ver, local_ver))
         ):
             return data["name"]
-            
+
     return None
 
 
@@ -659,17 +670,17 @@ def _verify_definitions(
     """
     # Required error checking
     if not definitions:
-        raise DefinitionsParsingError("Definitions are empty")
+        raise DefinitionsParsingError(_("Definitions are empty"))
     if len(definitions) < 3 or word_count < 3:
         raise DefinitionsParsingError(
-            "The word count or definitions are < 3 in length"
+            _("The word count or definitions are less than 3 in length")
         )
     if len(definitions) < word_count:
         raise DefinitionsParsingError(
-            "Length of the word count is greater than the definitions"
+            _("Length of the word count is greater than the definitions")
         )
     if any("\\" in word for word in definitions.keys()):
-        raise DefinitionsParsingError("Escape character present in word")
+        raise DefinitionsParsingError(_("Escape character present in word"))
 
 
 def _format_definitions(
