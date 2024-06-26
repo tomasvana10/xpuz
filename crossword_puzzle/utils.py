@@ -392,7 +392,7 @@ def _sort_crosswords_by_suffix(
 
 
 def _get_base_crosswords(
-    category: Union[DirEntry, PathLike], sort: bool = True, lenient: bool = False,
+    category: Union[DirEntry, PathLike], sort: bool = True, allow_empty_defs: bool = False,
 ) -> Iterable[DirEntry]:
     """Get all the available crosswords from the base crossword directory if
     they have valid ``definitions.json`` files.
@@ -413,8 +413,7 @@ def _get_base_crosswords(
         if cword.is_dir()
         and "definitions.json" in listdir(cword.path)
         and path.getsize(path.join(cword.path, "definitions.json")) > 0
-        # Allow empty defintions when viewing with the editor
-        or (lenient and category.endswith("user") and cword.is_dir()) 
+        or (allow_empty_defs and category.endswith("user") and cword.is_dir()) 
     ]
     return _sort_crosswords_by_suffix(crosswords) if sort else crosswords
 

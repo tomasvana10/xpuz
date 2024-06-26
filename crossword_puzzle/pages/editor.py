@@ -4,7 +4,7 @@ the creation and editing of new crosswords, not pre-installed ones.
 
 from os import mkdir, path, PathLike, rename
 from tkinter import IntVar, Event
-from typing import List, Union, Callable, Dict
+from typing import List, Union, Callable, Dict, Tuple
 from shutil import rmtree
 from json import dump
 
@@ -19,7 +19,7 @@ from customtkinter import (
     CTkRadioButton,
     CTkTextbox,
 )
-from pathvalidate import validate_filename
+from pathvalidate import validate_filename, ValidationError
 from regex import search
 
 from crossword_puzzle.base import Addons, Base
@@ -44,56 +44,15 @@ from crossword_puzzle.wrappers import CrosswordWrapper
 from crossword_puzzle.td import CrosswordInfo
 
 
-class FormParser:
-    @staticmethod
-    def _parse_name(form) -> None:
-        try:
-            if len(form) <= 32 and validate_filename(str(form)) is None:
-                form.set_valid()
-            else:
-                form.set_invalid()
-        except Exception:
-            form.set_invalid()
-        form._check_default()
-
-    @staticmethod
-    def _get_symbol_components(symbol):
-        return [hex(ord(char)) for char in symbol]
-
-    @staticmethod
-    def _parse_symbol(form) -> None:
-        components = FormParser._get_symbol_components(str(form))
-        if len(components) == 1:
-            form.set_valid()
-        else:
-            form.set_invalid()
-        form._check_default()
-
-    @staticmethod
-    def _parse_word(form) -> None:
-        if (
-            len(form) < 1
-            or len(form) > 32
-            or "\\" in str(form)
-            or bool(search(NONLANGUAGE_PATTERN, str(form)))
-        ):
-            form.set_invalid()
-        else:
-            form.set_valid()
-        form._check_default()
-
-    @staticmethod
-    def _parse_clue(form) -> None:
-        if len(form) < 1 or "\\" in str(form):
-            form.set_invalid()
-        else:
-            form.set_valid()
-        form._check_default()
-
-
 class Form(Addons):
-    crossword_forms: List[object] = []
-    word_forms: List[object] = []
+    """Encapsulation of a CTkEntry, CTkLabel and CTkButton to construct a field
+    to input data pertaining to a crossword's info or its words. 
+    
+    Contains features such as default value detection, text colour modification
+    based on incorrect value, and tooltips to provide constraints for input.
+    """
+    crossword_forms: List["Form"] = []
+    word_forms: List["Form"] = []
 
     def __init__(
         self,
@@ -131,8 +90,7 @@ class Form(Addons):
         self._tooltip = CTkToolTip(
             self._form, message=tooltip, delay=0.2, y_offset=12
         )
-
-        self.b_reset_default = CTkButton(
+        self.b_reset_to_default = CTkButton(
             self._frame,
             text="↺",
             command=lambda: self.put(self.default, is_default=True),
@@ -141,10 +99,9 @@ class Form(Addons):
             font=self.TEXT_FONT,
             state="disabled",
         )
-
         self._label.grid(row=0, column=0, sticky="w", padx=(5, 0), pady=(0, 5))
         self._form.grid(row=1, column=0, pady=(0, 25))
-        self.b_reset_default.grid(row=1, column=1, sticky="nw", padx=(5, 0))
+        self.b_reset_to_default.grid(row=1, column=1, sticky="nw", padx=(5, 0))
 
         self.master = master
         self.name = name
@@ -156,23 +113,27 @@ class Form(Addons):
         self._form.bind("<KeyRelease>", lambda e: validation_func(self))
 
     @staticmethod
-    def _any_nondefault_values(forms):
+    def _any_nondefault_values(forms: List["Form"]) -> bool:
+        """Return true if any form in ``forms`` contains a nondefault value."""
         return any(not form.has_default_value for form in forms)
 
     @staticmethod
-    def _update_confirm_button(pane, b_confirm, lenient=False):
+    def _update_confirm_button(pane: CTkFrame, b_confirm: CTkButton, allow_default: bool = False) -> None:
+        """Enable or disable the confirm button based on the form content."""
         forms = (
             Form.crossword_forms if pane == "crossword" else Form.word_forms
         )
-        if (Form._any_nondefault_values(forms) or lenient) and all(
+        if (Form._any_nondefault_values(forms) or allow_default) and all(
             form.is_valid for form in forms
-        ):
+        ):  
+            # There is at least one form that is valid, and all of the forms are
+            # valid, so the confirm button can be toggled on
             b_confirm.configure(state="normal")
         else:
             b_confirm.configure(state="disabled")
 
     @classmethod
-    def __new__(cls, *args, **kwargs) -> object:
+    def __new__(cls, *args, **kwargs):
         instance = super().__new__(cls)
         if kwargs["pane"] == "crossword":
             cls.crossword_forms.append(instance)
@@ -186,61 +147,137 @@ class Form(Addons):
     def __len__(self):
         return len(str(self))
 
-    def grid(self, *args, **kwargs):
+    def grid(self, *args, **kwargs) -> None:
+        """Wrapper method for gridding ``self._frame``."""
         self._frame.grid(*args, **kwargs)
 
     def unfocus(self) -> None:
+        """Remove focus from the entry by bringing focus to a pane."""
         self.master.focus_force()
 
     def focus(self) -> None:
+        """Focus ``self._form``. Must be done after a small delay, or else the
+        button press that triggered this method will be handled after it actually
+        sets focus to the form.
+        """
         self.master.master.after(5, self._form.focus_set)
 
     def wipe(self) -> None:
+        """Remove all characters from ``self._form``."""
         self._form.delete(0, "end")
 
-    def put(self, text: str, is_default=False) -> None:
+    def put(self, text: str, is_default: bool = False) -> None:
+        """Wipe ``self._form`` and insert ``text``."""
         self.wipe()
         self._form.insert(0, text)
         if is_default:
-            self.b_reset_default.configure(state="disabled")
-            self.set_valid()
+            self.b_reset_to_default.configure(state="disabled")
+            self.set_valid()  # Most likely already valid. 
             self._check_default()
 
     def set_state(self, state: str) -> None:
+        """Set the state of ``self._form`` and ``self._label``."""
         self._label.configure(state=state)
         self._form.configure(state=state)
-        if state == "disabled":
+        if state == "disabled":  # Also hide or show the tooltip
             self._tooltip.hide()
         else:
             self._tooltip.show()
 
     def set_valid(self) -> None:
+        """Set the text colour of ``self._form`` to black or white, depending 
+        on the appearance mode, signifying it has a valid value.
+        """
         self._form.configure(text_color=("black", "white"))
         self.is_valid = True
 
     def set_invalid(self) -> None:
+        """Set the text colour of ``self._form`` to red, signifying it contains 
+        an incorrect value.
+        """
         self._form.configure(text_color="red")
         self.is_valid = False
 
     def _check_default(self) -> None:
-        if self.default != str(self):
-            self.b_reset_default.configure(state="normal")
+        """Update the reset field button, and check if the confirm button should
+        be updated as well.
+        """
+        if self.default != str(self):  # Nondefault value, allow the user to reset
+                                       # it by enabling the reset button
+            self.b_reset_to_default.configure(state="normal")
             self.has_default_value = False
         else:
-            if self.default == "":
+            if self.default == "":  # An empty value is automatically invalid
                 self.set_invalid()
-            self.b_reset_default.configure(state="disabled")
+            self.b_reset_to_default.configure(state="disabled")
             self.has_default_value = True
+        # Since this method was called a result of the user modifying a field,
+        # also update the confirm button
         Form._update_confirm_button(self.pane, self.b_confirm)
 
     def set_default(self, text: Union[str, int]) -> None:
+        """Update ``self.default`` to ``text``, and put it into the entry."""
         self.default = str(text)
         self.put(self.default, is_default=True)
-        self.b_reset_default.configure(state="disabled")
+        # The value in ``self`` must now be the default value, so prevent the
+        # user from resetting to default or pressing the confirm button
+        self.b_reset_to_default.configure(state="disabled")
         self.b_confirm.configure(state="disabled")
 
 
+class FormParser:
+    @staticmethod
+    def _parse_name(form: Form) -> None:
+        """Parse the crossword name form contents."""
+        try:
+            # Detect filename validation errors to prevent OS errors when editing
+            if len(form) <= 32 and validate_filename(str(form)) is None:
+                form.set_valid()
+            else:
+                form.set_invalid()
+        except ValidationError:
+            form.set_invalid()
+        form._check_default()
+
+    @staticmethod
+    def _parse_symbol(form: Form) -> None:
+        """Parse the crossword symbol form contents."""
+        if len(form) == 1:
+            form.set_valid()
+        else:
+            form.set_invalid()
+        form._check_default()
+
+    @staticmethod
+    def _parse_word(form: Form) -> None:
+        """Parse a crossword's word form contents."""
+        if (
+            len(form) < 1
+            or len(form) > 32
+            or "\\" in str(form)
+            or bool(search(NONLANGUAGE_PATTERN, str(form)))  # Non-lang char present
+        ):
+            form.set_invalid()
+        else:
+            form.set_valid()
+        form._check_default()
+
+    @staticmethod
+    def _parse_clue(form: Form) -> None:
+        """Parse a crossword clue form contents."""
+        if len(form) < 1 or "\\" in str(form):
+            form.set_invalid()
+        else:
+            form.set_valid()
+        form._check_default()
+
+
 class EditorPage(CTkFrame, Addons):
+    """Base page for ``editor.py``. Consists of some utility methods required
+    only by CrosswordPane and WordPane, as well as the title bar and contains
+    for the aforementioned two classes.
+    """
+    
     def __init__(self, master: Base) -> None:
         super().__init__(
             Base.base_container,
@@ -254,9 +291,11 @@ class EditorPage(CTkFrame, Addons):
             self.master.winfo_width(),
             self.master.winfo_height(),
         )
-        self.fp = self._get_user_category_path()
-        self.scaling = float(Base.cfg.get("m", "scale"))
+        self.fp: PathLike = self._get_user_category_path()
+        self.scaling: float = float(Base.cfg.get("m", "scale"))
 
+        # Reset the form arrays to prevent duplicates when opening ``EditorPage``
+        # more than once in a single instance
         Form.crossword_forms = []
         Form.word_forms = []
 
@@ -276,6 +315,7 @@ class EditorPage(CTkFrame, Addons):
             0, weight=1, minsize=self._height * 0.85
         )
 
+        # Instantiating both the left and right columns/panes for editing
         self.crossword_pane = CrosswordPane(self.editor_container, self)
         self.word_pane = WordPane(self.editor_container, self)
 
@@ -313,23 +353,31 @@ class EditorPage(CTkFrame, Addons):
         self.l_title.place(relx=0.5, rely=0.5, anchor="c")
 
     def _get_user_category_path(self) -> PathLike:
-        fp = path.join(BASE_CWORDS_PATH, "user")
+        """Find where to access categories from, whether that is in the package
+        or in the system documents.
+        """
+        fp: PathLike = path.join(BASE_CWORDS_PATH, "user")  # Assume the system 
+                                                            # documents don't exist
         if _doc_data_routine(
             doc_callback=lambda: mkdir(DOC_CAT_PATH),
-            local_callback=lambda: mkdir(fp),
+            local_callback=lambda: mkdir(fp),  
             sublevel=DOC_CAT_PATH,
-        ):
-            fp = DOC_CAT_PATH  # Success, there is now a user category in
-                               # sys documents, so update ``fp``
-
+        ):  # Func returned true, meaning the system documents are accessible,
+            # so reassign fp to the document category path
+            fp = DOC_CAT_PATH 
         _make_category_info_json(fp, "#FFFFFF")
         return fp
 
     def _handle_scroll(self, event: Event) -> None:
-        container = (
+        """Scroll one of the two scrollable frames depending on the user's
+        cursor position.
+        """
+        container: CTkFrame = (
             self.crossword_pane.preview
-            if event.x_root - self.master.winfo_rootx()
+            # User's cursor is on the left half of the screen
+            if event.x_root - self.master.winfo_rootx()  # Account for window offset
             <= EDITOR_DIM[0] * self.scaling / 2
+            # Right half
             else self.word_pane.preview
         )
         scroll_region = container._parent_canvas.cget("scrollregion")
@@ -340,29 +388,38 @@ class EditorPage(CTkFrame, Addons):
         ):
             container._parent_canvas.yview("scroll", -1 * event.delta, "units")
 
-    def _toggle_forms(self, state, forms) -> None:
+    def _toggle_forms(self, state: str, forms: List[Form]) -> None:
+        """Enable or disable all the forms in ``forms``."""
         for form in forms:
             form.set_state(state)
             form.set_valid()
             form.unfocus()
 
-    def _reset_forms(self, forms, set_invalid=False) -> None:
+    def _reset_forms(self, forms: List[Form], set_invalid: bool = False) -> None:
+        """Remove all the content from the forms in ``forms``."""
         for form in forms:
             form.wipe()
-            if set_invalid:
+            if set_invalid:  # Set to true when adding a new crossword
                 form.set_invalid()
 
-    def _set_form_defaults(self, *args, forms):  # len(args) == len(forms)
+    def _set_form_defaults(self, *args, forms: List[Form]):
+        """Set the default of each form in ``forms`` to the respective value 
+        in ``args``. Requires len(args) to be equal to len(forms).
+        """
         for i, form in enumerate(forms):
             form.set_default(args[i])
 
-    def _write_data(self, toplevel, data, type_):
+    def _write_data(self, toplevel: PathLike, data: Dict, type_: str):
+        """Write ``data`` to a crossword's info.json or definitions.json."""
         file = "info.json" if type_ == "info" else "definitions.json"
         with open(path.join(toplevel, file), "w") as f:
             dump(data, f, indent=4)
 
 
 class CrosswordPane(CTkFrame, Addons):
+    """The left half of ``EditorPage``. Contains a preview of all the user's
+    crosswords, providing the ability to edit them or add new ones.
+    """
     def __init__(self, container: CTkFrame, master: EditorPage) -> None:
         super().__init__(
             container,
@@ -371,11 +428,15 @@ class CrosswordPane(CTkFrame, Addons):
             height=master._width * 0.85,
             corner_radius=0,
         )
-        self.pane_name = "crossword"
-        self.mode = ""
+        self.pane_name: str = "crossword"
+        self.mode: str = "" # "edit" or "add"
         self.master = master
+        # Updated by ``UserCrosswordBlock``
         self.crossword_block: Union[None, UserCrosswordBlock] = None
         self.grid(row=0, column=0, sticky="nsew", padx=(0, 1))
+        # This is done not to remove any blocks, but remove the empty info label
+        # from the UserCrosswordBlock.blocks array if it was there when the user
+        # exited ``EditorPage`` (in the same instance)
         UserCrosswordBlock._set_all(UserCrosswordBlock._remove_block)
 
         self._set_fonts()
@@ -462,7 +523,7 @@ class CrosswordPane(CTkFrame, Addons):
             FormParser._parse_symbol,
             pane=self.pane_name,
             b_confirm=self.b_confirm,
-            tooltip=_("len == 1 and code points == 1"),
+            tooltip=_("len == 1"),
         )
 
         self.l_difficulty = CTkLabel(
@@ -502,19 +563,26 @@ class CrosswordPane(CTkFrame, Addons):
         self.b_confirm.grid(row=4, column=0, sticky="w", pady=(30, 0))
         self.form_container.grid(row=1, column=1, sticky="n")
 
-    def _update_difficulty(self, difficulty):
+    def _update_difficulty(self, difficulty: str) -> None:
+        """Find the english version of ``difficulty`` and update 
+        ``self.difficulty``.
+        """
         self.difficulty = DIFFICULTIES[self.difficulties.index(difficulty)]
         Form._update_confirm_button(
-            self.pane_name, self.b_confirm, lenient=True
+            self.pane_name, self.b_confirm, allow_default=True
         )
 
-    def _toggle_forms(self, state, forms):
+    def _toggle_forms(self, state: str, forms: List[Form]) -> None:
+        """An extension to the method in ``EditorPage`` of the same name to
+        configure the state of the difficulty optionmenu.
+        """
         self.master._toggle_forms(state, forms)
         self.l_difficulty.configure(state=state)
         self.opts_difficulty.configure(state=state)
 
-    def _remove(self):
-        if not GUIHelper.confirm_with_messagebox(
+    def _remove(self) -> None:
+        """Remove a crossword from the OS file system."""
+        if not GUIHelper.confirm_with_messagebox(  # Provide confirmation
             self.pane_name, delete_cword_or_word=True
         ):
             return
@@ -524,10 +592,13 @@ class CrosswordPane(CTkFrame, Addons):
 
         self._reset()
         self.b_add.configure(state="normal")
-        UserCrosswordBlock._populate(self)
+        UserCrosswordBlock._populate(self)  # Regenerate new crossword preview
         self.master.word_pane._reset()
 
     def _add(self) -> None:
+        """Default all forms to empty, and allow the user to define the data for
+        a new crossword.
+        """
         if Form._any_nondefault_values(Form.crossword_forms):
             if not GUIHelper.confirm_with_messagebox(
                 self.pane_name, confirm_cword_or_word_add=True
@@ -536,7 +607,7 @@ class CrosswordPane(CTkFrame, Addons):
 
         intvar = UserCrosswordBlock.selected_block
         if intvar:
-            intvar.set(-1)
+            intvar.set(-1)  # Remove existing crossword selection
 
         self.mode = "add"
         self.crossword_block = None
@@ -549,12 +620,17 @@ class CrosswordPane(CTkFrame, Addons):
         Form.crossword_forms[0].focus()
         self._toggle_forms("normal", Form.crossword_forms)
         self.master._reset_forms(Form.crossword_forms, set_invalid=True)
+        # Default the difficulty to Easy
         self.opts_difficulty.set(self.difficulties[0])
         self.difficulty = DIFFICULTIES[0]
         self.master._set_form_defaults("", "", forms=Form.crossword_forms)
         self.focus_force()
 
-    def _get_cword_dirname(self, name):
+    def _get_cword_dirname(self, name: str) -> str:
+        """Return the final name of the updated/new crossword's directory, 
+        appending a hyphen (if the user specified name doesn't end in one) and
+        the casefolded difficulty.
+        """
         dir_name = name
         if not any(
             dir_name.endswith(diff.casefold()) for diff in DIFFICULTIES
@@ -566,6 +642,7 @@ class CrosswordPane(CTkFrame, Addons):
         return dir_name
 
     def _write(self) -> None:
+        """Update/write a crossword based on form data."""
         difficulty = DIFFICULTIES.index(self.difficulty)
         symbol = hex(ord(str(self.symbol_form)))
         name = str(self.name_form)
@@ -574,6 +651,7 @@ class CrosswordPane(CTkFrame, Addons):
         dir_name = self._get_cword_dirname(name)
 
         if self.mode == "add":
+            # Must make a new info, and not read it from the crossword wrapper
             info = CrosswordInfo(
                 total_definitions=0,
                 difficulty=difficulty,
@@ -588,10 +666,13 @@ class CrosswordPane(CTkFrame, Addons):
                 mkdir(toplevel)
             except FileExistsError:
                 return GUIHelper.show_messagebox(crossword_exists_err=True)
+            # Must also create info and definitions as this is a fresh crossword
+            # that doesn't contain them
             self.master._write_data(toplevel, info, "info")
             self.master._write_data(toplevel, {}, "definitions")
 
         elif self.mode == "edit":
+            # Modify existing crossword wrapper info
             cwrapper = self.crossword_block.cwrapper
             info = cwrapper.info
             info["difficulty"] = difficulty
@@ -602,7 +683,9 @@ class CrosswordPane(CTkFrame, Addons):
             toplevel = cwrapper.toplevel
             prior_level = path.dirname(toplevel)
 
+            # Info was updated, to write it
             self.master._write_data(toplevel, info, "info")
+            # Join toplevel of crossword with new name to rename it
             rename(toplevel, path.join(prior_level, dir_name))
 
         self.master.word_pane._reset()
@@ -611,6 +694,9 @@ class CrosswordPane(CTkFrame, Addons):
         UserCrosswordBlock._populate(self)
 
     def _reset(self) -> None:
+        """Revert all the states of the widgets in ``CrosswordPane`` to their
+        default values.
+        """
         UserCrosswordBlock._set_all(UserCrosswordBlock._remove_block)
         self.l_title.configure(text=_("Your Crosswords"))
         self.b_explorer.configure(state="disabled")
@@ -626,8 +712,13 @@ class CrosswordPane(CTkFrame, Addons):
 
 
 class UserCrosswordBlock(CTkFrame, Addons, BlockUtils):
-    blocks: List[object] = []
-    selected_block: Union[None, IntVar]
+    """A small frame that displays a crossword's name and provides a radiobutton
+    to select it.
+    
+    See browser.py for implementations similar to this.
+    """
+    blocks: List["UserCrosswordBlock"] = []
+    selected_block: Union[None, IntVar] = None
 
     def __init__(
         self,
@@ -645,6 +736,7 @@ class UserCrosswordBlock(CTkFrame, Addons, BlockUtils):
         )
         self.master = master
 
+        # The most useful thing I have decided to code in this project
         self.cwrapper: CrosswordWrapper = CrosswordWrapper(
             "user",
             name,
@@ -659,15 +751,16 @@ class UserCrosswordBlock(CTkFrame, Addons, BlockUtils):
 
     @classmethod
     def _populate(cls, master: CrosswordPane) -> None:
-        """Put all base crosswords in the user category into the crossword pane's
-        scrollable frame. They can have no definitions.json file.
+        """Put all of the user crosswords into ``master.preview`` 
+        (CTkScrollableFrame) as user crossword blocks.
         """
-        cls.selected_block = IntVar()
+        # Ensure the class' IntVar is ready, and remove any existing selection
+        cls.selected_block: IntVar = IntVar()
         cls.selected_block.set(-1)
 
         for i, crossword in enumerate(
             _get_base_crosswords(
-                path.join(BASE_CWORDS_PATH, "user"), lenient=True
+                path.join(BASE_CWORDS_PATH, "user"), allow_empty_defs=True
             )
         ):
             block: UserCrosswordBlock = cls(
@@ -679,6 +772,7 @@ class UserCrosswordBlock(CTkFrame, Addons, BlockUtils):
             cls._put_block(block, side="top")
         
         if len(UserCrosswordBlock.blocks) == 0:
+            # Add a label that indicates there are no user crosswords
             l_empty_info = CTkLabel(
                 master.preview, 
                 text=_("Press") + " \"+\" " + _("to add a \nnew crossword."),
@@ -712,6 +806,11 @@ class UserCrosswordBlock(CTkFrame, Addons, BlockUtils):
         self.rb_selector.pack(side="left", padx=10, pady=10)
 
     def _on_selection(self) -> None:
+        """Apply the information of this block to the crossword forms, and
+        configure the widget states appropriately.
+        """
+        # Currently, there are nondefault values. Ensure the user wants to
+        # override these values with a confirmation
         if Form._any_nondefault_values(Form.crossword_forms):
             if not GUIHelper.confirm_with_messagebox(
                 self.master.pane_name, confirm_cword_or_word_add=True
@@ -736,7 +835,6 @@ class UserCrosswordBlock(CTkFrame, Addons, BlockUtils):
         )
         self.master.opts_difficulty.set(self.localised_difficulty)
         self.master.b_remove.configure(state="normal")
-
         self.master.master.word_pane._reset()
         self.master.master.word_pane.b_add.configure(state="normal")
         UserWordBlock._set_all(UserWordBlock._remove_block)
@@ -746,6 +844,9 @@ class UserCrosswordBlock(CTkFrame, Addons, BlockUtils):
 
 
 class WordPane(CTkFrame, Addons):
+    """The right half of ``EditorPage``. Contains a preview of all the words
+    present in the currently selected crossword.
+    """
     def __init__(self, container: CTkFrame, master: EditorPage) -> None:
         super().__init__(
             container,
@@ -756,7 +857,8 @@ class WordPane(CTkFrame, Addons):
         )
         self.pane_name = "word"
         self.master = master
-        self.word = ""
+        self.word = ""  # The currently selected word, unchanged by editing until
+                        # the word is saved and reselected
         self.grid(row=0, column=1, sticky="nsew")
 
         self._set_fonts()
@@ -764,7 +866,7 @@ class WordPane(CTkFrame, Addons):
         self._place_content()
         self.master._toggle_forms("disabled", Form.word_forms)
 
-    def _make_content(self):
+    def _make_content(self) -> None:
         self.container = CTkFrame(
             self, fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN)
         )
@@ -841,14 +943,17 @@ class WordPane(CTkFrame, Addons):
         self.b_remove.pack(side="right", anchor="e")
         self.b_add.pack(side="right", anchor="e", padx=(81.5, 10))
         self.b_edit_container.grid(
-            row=2, column=0, pady=(7.5, 0), padx=(50, 0)
+            row=2, column=0, pady=(7.5, 0), padx=(60, 0)
         )
         self.word_form.grid(row=0, column=0)
         self.clue_form.grid(row=1, column=0)
         self.b_confirm.grid(row=2, column=0, sticky="w", pady=(135, 0))
         self.form_container.grid(row=1, column=1, sticky="n")
 
-    def _add(self):
+    def _add(self) -> None:
+        """Default all forms to empty, and allow the user to define the data for
+        a new/existing word.
+        """
         if Form._any_nondefault_values(Form.word_forms):
             if not GUIHelper.confirm_with_messagebox(
                 self.pane_name, confirm_cword_or_word_add=True
@@ -871,7 +976,8 @@ class WordPane(CTkFrame, Addons):
         self.master._set_form_defaults("", "", forms=Form.word_forms)
         self.focus_force()
 
-    def _remove(self):
+    def _remove(self) -> None:
+        """Remove a word/clue pair from the crossword's definitions"""
         if not GUIHelper.confirm_with_messagebox(
             self.pane_name, delete_cword_or_word=True
         ):
@@ -886,7 +992,8 @@ class WordPane(CTkFrame, Addons):
         self.b_add.configure(state="normal")
         UserWordBlock._populate(self, definitions)
 
-    def _write(self):
+    def _write(self) -> None:
+        """Update a word or write a new one to a crossword's definitions."""
         cwrapper = self.master.crossword_pane.crossword_block.cwrapper
         definitions = cwrapper.definitions
 
@@ -897,16 +1004,20 @@ class WordPane(CTkFrame, Addons):
             definitions[str(self.word_form)] = str(self.clue_form)
 
         elif self.mode == "edit":
+            # For simplicity, the original word is just deleted, and a new pair
+            # is created
             del definitions[self.word]
             definitions[str(self.word_form)] = str(self.clue_form)
 
         self.master._write_data(cwrapper.toplevel, definitions, "definitions")
-
         self._reset()
         UserWordBlock._populate(self, definitions)
         self.b_add.configure(state="normal")
 
-    def _reset(self):
+    def _reset(self) -> None:
+        """Revert all the states of the widgets in ``WordPane`` to their
+        default values.
+        """
         self.l_title.configure(text=_("Your Words"))
         UserWordBlock._set_all(UserWordBlock._remove_block)
         self.master._reset_forms(Form.word_forms, set_invalid=True)
@@ -919,6 +1030,11 @@ class WordPane(CTkFrame, Addons):
 
 
 class UserWordBlock(CTkFrame, Addons, BlockUtils):
+    """A small frame that displays a crossword's word and provides a radiobutton
+    to select it.
+    
+    See browser.py for implementations similar to this.
+    """
     blocks: List[object] = []
     selected_block: Union[None, IntVar]
 
@@ -929,7 +1045,7 @@ class UserWordBlock(CTkFrame, Addons, BlockUtils):
         word: str,
         clue: str,
         value: int,
-    ):
+    ) -> None:
         super().__init__(
             container,
             corner_radius=10,
@@ -948,13 +1064,13 @@ class UserWordBlock(CTkFrame, Addons, BlockUtils):
 
     @classmethod
     def _populate(cls, master: WordPane, definitions: Dict[str, str]) -> None:
-        """Put all base crosswords in the user category into the crossword pane's
-        scrollable frame. They can have no ``definitions.json`` file.
+        """Put all of the words of a user crossword into ``master.preview`` 
+        (CTkScrollableFrame) as user word blocks.
         """
         cls.selected_block = IntVar()
         cls.selected_block.set(-1)
 
-        for i, (word, clue) in enumerate(definitions.items()):
+        for i, (word, clue) in enumerate(sorted(definitions.items(), key=lambda item: item[0])):
             block: UserWordBlock = cls(
                 master,
                 master.preview,
@@ -998,6 +1114,9 @@ class UserWordBlock(CTkFrame, Addons, BlockUtils):
         self.rb_selector.pack(side="left", padx=10, pady=10)
 
     def _on_selection(self) -> None:
+        """Apply the information of this block to the word forms, and
+        configure the widget states appropriately.
+        """
         if Form._any_nondefault_values(Form.word_forms):
             if not GUIHelper.confirm_with_messagebox(
                 self.master.pane_name, confirm_cword_or_word_add=True
