@@ -76,7 +76,7 @@ class BrowserPage(CTkFrame, Addons):
         self.wc_pref: IntVar = IntVar()  # Word count preference
         self.wc_pref.set(-1)
         self.view_pref: StringVar = StringVar()  # Browser view preference
-        self.view_pref.set(Base.cfg.get("m", "view"))
+        self.view_pref.set(_(Base.cfg.get("m", "view")))
 
         # Notify user the first time they open this page
         if Base.cfg.get("misc", "browser_opened") == "0":
@@ -268,7 +268,7 @@ class BrowserPage(CTkFrame, Addons):
 
     def _search_crossword(self, query: str) -> None:
         """Regenerate all the crossword blocks based on a crossword name query."""
-        if self.view_pref.get() != "Flattened":  # Only works in Flattened view
+        if self.view_pref.get() != _("Flattened"):  # Only works in Flattened view
             return
 
         self._rollback_states()
@@ -313,7 +313,7 @@ class BrowserPage(CTkFrame, Addons):
         CrosswordBlock._set_all(CrosswordBlock._remove_block)
         self._reset_scroll_frame()
         # Find true english name of selected view
-        view = BASE_ENG_VIEWS[self.views.index(self.view_pref.get())]
+        view = BASE_ENG_VIEWS[self.views.index(_(self.view_pref.get()))]
 
         self._update_segbutton_text_colours(view)
         if view == "Categorised":

@@ -515,7 +515,7 @@ class CrosswordPane(CTkFrame, Addons):
             FormParser._parse_name,
             pane=self.pane_name,
             b_confirm=self.b_confirm,
-            tooltip=_("len >= 1 and valid OS file name"),
+            tooltip=_("length >= 1 and valid OS file name"),
         )
         self.symbol_form = Form(
             self.form_container,
@@ -523,7 +523,7 @@ class CrosswordPane(CTkFrame, Addons):
             FormParser._parse_symbol,
             pane=self.pane_name,
             b_confirm=self.b_confirm,
-            tooltip=_("len == 1"),
+            tooltip=_("length == 1"),
         )
 
         self.l_difficulty = CTkLabel(
@@ -924,7 +924,7 @@ class WordPane(CTkFrame, Addons):
             FormParser._parse_word,
             pane=self.pane_name,
             b_confirm=self.b_confirm,
-            tooltip=_("len >= 1 and len <= 32 and is a language character"),
+            tooltip=_("length >= 1 and length <= 32 and is a language character"),
         )
 
         self.clue_form = Form(
@@ -933,7 +933,7 @@ class WordPane(CTkFrame, Addons):
             FormParser._parse_clue,
             pane=self.pane_name,
             b_confirm=self.b_confirm,
-            tooltip=_("len >= 1"),
+            tooltip=_("length >= 1"),
         )
 
     def _place_content(self) -> None:
