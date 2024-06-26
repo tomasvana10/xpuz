@@ -17,7 +17,7 @@
   
 </div>
 
-An educational GUI package built with `CustomTkinter` that allows you to select, configure and generate a crossword to view, interact with and complete in a `Flask` web application.
+An educational GUI package built with `CustomTkinter` that allows you to play procedurally generated crosswords.
 - Download the latest source code: [click here](https://github.com/tomasvana10/crossword_puzzle/releases/latest)
 
 ## Dependencies
@@ -100,6 +100,9 @@ Check out the wiki **[here](https://github.com/tomasvana10/crossword_puzzle/wiki
 - [gulp.js](https://gulpjs.com/) - Toolkit to help automate the web app's JavaScript transpilation
 - [Babel.js](https://babeljs.io/) - JavaScript transpiler
 - [Terser](https://terser.org/) - JavaScript minifier
+- [CTkToolTip](https://github.com/Akascape/CTkToolTip) - Tooltips for forms in the crossword editor
+- [pathvalidate](https://pypi.org/project/pathvalidate/) - Validating crossword name input
+- [platformdirs](https://pypi.org/project/platformdirs/) - Storing config and user-made crosswords
 
 ## Other acknowledgements
 - [NYTimes Mini Crossword](https://www.nytimes.com/crosswords/game/mini) - Heavily inspired the design of the web application
@@ -109,10 +112,12 @@ Check out the wiki **[here](https://github.com/tomasvana10/crossword_puzzle/wiki
   - Jazzy Chords by NenadSimic -- https://freesound.org/s/150879/ -- License: Creative Commons 0
 
 ## Gallery
-<img alt="crossword puzzle home" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/b7472342-5cfe-418b-bdf1-cd7ab0389ace">
+<img alt="crossword puzzle home" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/6b9eba14-220d-43dc-8b28-ddb92ea2d3b6">
 <hr>
-<img alt="crossword puzzle browser" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/b3be1965-3847-45c8-99fd-b2ad284b46d9">
+<img alt="crossword puzzle browser" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/2e84ad2b-2011-4094-9091-e746dd1a2c3a">
 <hr>
-<img alt="crossword puzzle game english" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/40c74282-8981-4b90-a29e-b4787d3ea134">
+<img alt="crossword puzzle editor" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/68e7bc7d-0268-42a3-bc67-bc9a44871763">
 <hr>
-<img alt="crossword puzzle game japanese" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/e892e74d-fa45-4866-8483-27b950cf152c">
+<img alt="crossword puzzle game english" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/0475c6c4-e371-4d9d-837b-c06e0bde153f">
+<hr>
+<img alt="crossword puzzle game japanese" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/0e9d9d08-4a7c-4853-b83b-b2a27eab4b82">
