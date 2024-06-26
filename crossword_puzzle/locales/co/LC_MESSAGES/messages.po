@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-13 21:45+1000\n"
+"POT-Creation-Date: 2024-06-27 00:02+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: co <LL@li.org>\n"
@@ -19,183 +19,102 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: crossword_puzzle/main.py:79 crossword_puzzle/main.py:130
-#: crossword_puzzle/main.py:275 crossword_puzzle/main.py:343
-msgid "Crossword Puzzle"
-msgstr "Crossword Puzzle"
+#: utils.py:59
+msgid "Remove"
+msgstr "caccià"
 
-#: crossword_puzzle/main.py:146
-msgid "View crosswords"
-msgstr "Vede i cruciverbi"
+#: utils.py:59
+msgid "Are you sure you want to delete this"
+msgstr "Sò sicuru chì vulete sguassà questu"
 
-#: crossword_puzzle/main.py:155
-msgid "Exit the app"
-msgstr "Esci da l'app"
+#: utils.py:59
+msgid "It will be lost forever!"
+msgstr "Sarà persu per sempre !"
 
-#: crossword_puzzle/main.py:166
-msgid "Global Settings"
-msgstr "Settings Global"
+#: utils.py:64
+msgid "Add or select"
+msgstr "Aghjunghjite o selezziunate"
 
-#: crossword_puzzle/main.py:173
-msgid "Languages"
-msgstr "Lingue"
+#: utils.py:64
+msgid "Are you sure you want to add/select a"
+msgstr "Sò sicuru chì vulete aghjunghje / selezziunà a"
 
-#: crossword_puzzle/main.py:185
-msgid "Size"
-msgstr "Taglia"
+#: utils.py:64
+msgid "Your modified fields will be reset!"
+msgstr "I vostri campi mudificati seranu resettati!"
 
-#: crossword_puzzle/main.py:204
-msgid "light"
-msgstr "luce"
+#: utils.py:69 utils.py:88
+msgid "Back to home"
+msgstr "Torna in casa"
 
-#: crossword_puzzle/main.py:204
-msgid "dark"
-msgstr "scuru"
+#: utils.py:69
+msgid ""
+"Are you sure you want to go back to the home screen? Your modified fields "
+"will be reset!"
+msgstr "Sò sicuru chì vulete vultà à u screnu in casa ? "
 
-#: crossword_puzzle/main.py:204
-msgid "system"
-msgstr "sistema"
-
-#: crossword_puzzle/main.py:207 crossword_puzzle/main.py:221
-msgid "Appearance"
-msgstr "Apparizione"
-
-#: crossword_puzzle/main.py:227
-msgid "terrible"
-msgstr "terribile"
-
-#: crossword_puzzle/main.py:228
-msgid "poor"
-msgstr "Poviru"
-
-#: crossword_puzzle/main.py:229
-msgid "average"
-msgstr "Media"
-
-#: crossword_puzzle/main.py:230
-msgid "great"
-msgstr "perfettu"
-
-#: crossword_puzzle/main.py:231
-msgid "perfect"
-msgstr "perfetta"
-
-#: crossword_puzzle/main.py:235
-msgid "Crossword Quality"
-msgstr "Qualità crucivia"
-
-#: crossword_puzzle/main.py:267 crossword_puzzle/main.py:420
-msgid "Crossword Browser"
-msgstr "Browser cruciverba"
-
-#: crossword_puzzle/main.py:425
-msgid "Go back"
-msgstr "Riturnà"
-
-#: crossword_puzzle/main.py:436
-msgid "Load crossword"
-msgstr "Caricà cruciverba"
-
-#: crossword_puzzle/main.py:445
-msgid "Open web app"
-msgstr "Apri l'app web"
-
-#: crossword_puzzle/main.py:454
-msgid "Terminate web app"
-msgstr "Termina l'app web"
-
-#: crossword_puzzle/main.py:465
-msgid "Word count preferences"
-msgstr "Preferenze di conte di parolle"
-
-#: crossword_puzzle/main.py:479 crossword_puzzle/main.py:541
-#: crossword_puzzle/main.py:587 crossword_puzzle/main.py:808
-msgid "Select word count"
-msgstr "Sceglie u numeru di parolle"
-
-#: crossword_puzzle/main.py:494
-msgid "Custom"
-msgstr "Custom"
-
-#: crossword_puzzle/main.py:699
-msgid "To perform this operation, you must first select a cell."
-msgstr "Per fà sta operazione, duvete prima selezziunate una cellula."
-
-#: crossword_puzzle/main.py:892
-msgid "View"
-msgstr "Vede"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:373
-#: crossword_puzzle/main.py:899
-msgid "Close"
-msgstr "Chiudi"
-
-#: crossword_puzzle/main.py:1046
-msgid "difficulty"
-msgstr "difficultà"
-
-#: crossword_puzzle/main.py:1102
-msgid "Select"
-msgstr "Selezziunà"
-
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Restart"
 msgstr "Riavvia"
 
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Are you sure you want to restart the app?"
 msgstr "Sò sicuru chì vulete riavvia l'app?"
 
-#: crossword_puzzle/main.py:1160
+#: pages/home.py:148 utils.py:79
 msgid "Exit"
 msgstr "Esci"
 
-#: crossword_puzzle/main.py:1161
+#: utils.py:80
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr ""
-"Sò sicuru chì vulete esce da l'app? Se l'app web hè in esecuzione, serà "
-"terminata."
+"Sò sicuru chì vulete esce da l'app? Sò sicuru chì vulete esce da l'app? Se "
+"l'app web hè in esecuzione, serà terminata."
 
-#: crossword_puzzle/main.py:1170
-msgid "Back to home"
-msgstr "Torna in casa"
-
-#: crossword_puzzle/main.py:1171
+#: utils.py:89
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
-"Sò sicuru chì vulete vultà à u screnu in casa ? L'app web serà terminata."
+"Sò sicuru chì vulete vultà à u screnu in casa? Sò sicuru chì vulete vultà à "
+"u screnu in casa ? L'app web serà terminata."
 
-#: crossword_puzzle/main.py:1194 crossword_puzzle/main.py:1199
-#: crossword_puzzle/main.py:1204 crossword_puzzle/main.py:1209
-#: crossword_puzzle/main.py:1232 crossword_puzzle/main.py:1244
+#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
+#: utils.py:125 utils.py:147 utils.py:151
 msgid "Error"
 msgstr "Errore"
 
-#: crossword_puzzle/main.py:1194
+#: utils.py:100
 msgid "This language is already selected."
 msgstr "Sta lingua hè digià sceltu."
 
-#: crossword_puzzle/main.py:1199
+#: utils.py:105
 msgid "This size is already selected."
 msgstr "Sta taglia hè digià sceltu."
 
-#: crossword_puzzle/main.py:1204
+#: utils.py:110
 msgid "This appearance is already selected."
 msgstr "Stu aspettu hè digià sceltu."
 
-#: crossword_puzzle/main.py:1209
+#: utils.py:115
 msgid "This quality is already selected."
 msgstr "Questa qualità hè digià scelta."
 
-#: crossword_puzzle/main.py:1214
+#: utils.py:120
+msgid "This crossword already exists. Please choose a new name."
+msgstr "Stu cruciverba esiste digià. "
+
+#: utils.py:125
+msgid "This word already exists. Please choose a new word."
+msgstr "Sta parolla esiste digià. "
+
+#: utils.py:130
 msgid "Info"
 msgstr "Info"
 
-#: crossword_puzzle/main.py:1215
+#: utils.py:131
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -208,140 +127,347 @@ msgid ""
 "computer to terminate them."
 msgstr ""
 "U primu lanciu, per piacè leghjite: Una volta chì avete caricatu un "
-"cruciverba, è vulete carricà un altru, duvete prima finisce l'app web. "
-"IMPORTANTE: Sè site in macOS, forzate a abbandunà l'applicazione (usendu cmd"
-" + q) mentre l'app web hè in esecuzione, impediscenu di finisce bè. Sè vo "
-"fate questu per sbagliu, u prugramma correrà novi applicazioni web cù un "
-"portu diversu. In alternativa, pudete cambià manualmente u portu in u "
-"schedariu di cunfigurazione di u prugramma. Tutti i prucessi di l'app chì ùn"
-" sò micca stati terminati bè ponu esse terminati attraversu Activity Monitor"
-" in MacOS, o, simpricimenti, riavvia u vostru urdinatore per finisce."
+"cruciverba, è vulete carcà un altru, duvete prima finisce l'app web. U primu"
+" lanciu, per piacè leghjite: Una volta chì avete caricatu un cruciverba, è "
+"vulete carricà un altru, duvete prima finisce l'app web. IMPORTANTE: Sè site"
+" in macOS, forzate a abbandunà l'applicazione (usendu cmd + q) mentre l'app "
+"web hè in esecuzione, impediscenu di finisce bè. Sè vo fate questu per "
+"sbagliu, u prugramma correrà novi applicazioni web cù un portu diversu. In "
+"alternativa, pudete cambià manualmente u portu in u schedariu di "
+"cunfigurazione di u prugramma. Tutti i prucessi di l'app chì ùn sò micca "
+"stati terminati bè ponu esse terminati attraversu Activity Monitor in MacOS,"
+" o, simpricimenti, riavvia u vostru urdinatore per finisce."
 
-#: crossword_puzzle/main.py:1233
+#: utils.py:153
 msgid ""
-"An error occured while loading this crossword's definitions. Ensure that its"
-" definitions JSON file exists in the base cwords directory. NOTE: Base "
-"crossword data is only accessed when its translated version is not present "
-"in the locales directory."
-msgstr ""
-"Un errore hè accadutu durante u caricamentu di e definizione di stu "
-"cruciverba. Assicuratevi chì e so definizioni JSON file esiste in u "
-"cartulare di basa cwords. NOTA: I dati di cruciverba di basa sò accessu solu"
-" quandu a so versione tradutta ùn hè micca presente in u repertoriu locale."
+"An unexpected error occured. Please try reinstalling the application with"
+msgstr "Un errore imprevisu hè accadutu. "
 
-#: crossword_puzzle/main.py:1245
-msgid ""
-"An error occured in crossword generation. Please see further information in "
-"the console"
-msgstr ""
-"Un errore hè accadutu in a generazione di cruciverba. Per piacè vede più "
-"infurmazione in a cunsola"
+#: utils.py:672
+msgid "Definitions are empty"
+msgstr "E definizione sò viote"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:13
-#: crossword_puzzle/cword_webapp/templates/index.html:343
+#: utils.py:675
+msgid "The word count or definitions are less than 3 in length"
+msgstr "U numeru di parolle o definizione sò menu di 3 in lunghezza"
+
+#: utils.py:679
+msgid "Length of the word count is greater than the definitions"
+msgstr "A lunghezza di a parolla hè più grande di e definizione"
+
+#: utils.py:682
+msgid "Escape character present in word"
+msgstr "Carattere di scappà presente in a parolla"
+
+#: app/templates/index.html:13 app/templates/index.html:338
 msgid "Crossword Puzzle - Game"
 msgstr "Cruciverba puzzle - ghjocu"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:155
-msgid "Across"
-msgstr "Per tutta"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:178
-msgid "Down"
-msgstr "Giù"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:203
+#: app/templates/index.html:136
 msgid "Compound"
 msgstr "Compostu"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:216
-msgid "Reveal"
-msgstr "Revela"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:223
-#: crossword_puzzle/cword_webapp/templates/index.html:252
-msgid "Cell"
-msgstr "Cellula"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:229
-#: crossword_puzzle/cword_webapp/templates/index.html:258
-#: crossword_puzzle/cword_webapp/templates/index.html:281
-msgid "Word"
-msgstr "Parolla"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:235
-#: crossword_puzzle/cword_webapp/templates/index.html:264
-#: crossword_puzzle/cword_webapp/templates/index.html:287
-msgid "Grid"
-msgstr "Grid"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:245
-msgid "Check"
-msgstr "Cuntrollu"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:274
-msgid "Clear"
-msgstr "CLEAR"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:293
-msgid "Unrevealed"
-msgstr "Senza cuntrollu"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:306
+#: app/templates/index.html:149
 msgid "Auto-skip"
 msgstr "Skip auto"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:315
+#: app/templates/index.html:158
 msgid "Auto-word"
 msgstr "Parola auto"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:324
+#: app/templates/index.html:167
 msgid "Auto-check"
 msgstr "Verificà Auto"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:333
+#: app/templates/index.html:176
 msgid "Zoom"
 msgstr "Zoom"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:189
+msgid "Reveal"
+msgstr "Revela"
+
+#: app/templates/index.html:197 app/templates/index.html:230
+msgid "Cell"
+msgstr "Cellula"
+
+#: app/templates/index.html:204 app/templates/index.html:237
+#: app/templates/index.html:263
+msgid "Word"
+msgstr "Parolla"
+
+#: app/templates/index.html:211 app/templates/index.html:244
+#: app/templates/index.html:270
+msgid "Grid"
+msgstr "Grid"
+
+#: app/templates/index.html:222
+msgid "Check"
+msgstr "Cuntrollu"
+
+#: app/templates/index.html:255
+msgid "Clear"
+msgstr "CLEAR"
+
+#: app/templates/index.html:277
+msgid "Unrevealed"
+msgstr "Senza cuntrollu"
+
+#: app/templates/index.html:286
+msgid "Across"
+msgstr "Per tutta"
+
+#: app/templates/index.html:308
+msgid "Down"
+msgstr "Giù"
+
+#: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "VOI VIDE"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:340
 msgid "from"
 msgstr "da"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:350
+#: app/templates/index.html:345
 msgid "word(s) could not be inserted, sorry."
 msgstr "parolle (s) ùn pudia micca esse inserita, scusate."
 
-#: crossword_puzzle/cword_webapp/templates/index.html:353
+#: app/templates/index.html:348
 msgid "Word count (adjusted)"
 msgstr "Conte di e parole (aghjustate)"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:356
+#: app/templates/index.html:351
 msgid "Word count"
 msgstr "Conta di parolla"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:362
+#: app/templates/index.html:357
 msgid "Continue"
 msgstr "Cuntinuà"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:368
+#: app/templates/index.html:363
 msgid "You completed the crossword!"
 msgstr "Avete completatu a crossword!"
 
+#: app/templates/index.html:368 pages/browser.py:586
+msgid "Close"
+msgstr "Chiudi"
+
+#: pages/browser.py:136
+msgid "Crossword Browser"
+msgstr "Browser cruciverba"
+
+#: pages/browser.py:141 pages/editor.py:335
+msgid "Back"
+msgstr "Torna"
+
+#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+msgid "HomePage"
+msgstr "Homepage"
+
+#: pages/browser.py:156
+msgid "Categorised"
+msgstr "categurizatu"
+
+#: pages/browser.py:156
+msgid "Flattened"
+msgstr "Appiattitu"
+
+#: pages/browser.py:186
+msgid "Load"
+msgstr "Carica"
+
+#: pages/browser.py:195
+msgid "Open"
+msgstr "Apertu"
+
+#: pages/browser.py:205
+msgid "Terminate"
+msgstr "Termina"
+
+#: pages/browser.py:216
+msgid "Word count preferences"
+msgstr "Preferenze di conte di parolle"
+
+#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
+#: pages/browser.py:495
+msgid "Select word count"
+msgstr "Sceglie u numeru di parolle"
+
+#: pages/browser.py:246
+msgid "Custom"
+msgstr "Custom"
+
+#: pages/browser.py:475
+msgid "To perform this operation, you must first select a cell."
+msgstr "Per fà sta operazione, duvete prima selezziunate una cellula."
+
+#: pages/browser.py:579
+msgid "View"
+msgstr "Vede"
+
+#: pages/browser.py:783
+msgid "Select"
+msgstr "Selezziunà"
+
+#: pages/editor.py:329
+msgid "Crossword Editor"
+msgstr "Editore di parole incruciate"
+
+#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
+#: pages/editor.py:822
+msgid "Your Crosswords"
+msgstr "I vostri cruciverba"
+
+#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
+#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+msgid "Save"
+msgstr "Salvà"
+
+#: pages/editor.py:518
+msgid "length >= 1 and valid OS file name"
+msgstr "lunghezza>= 1 è nome di file OS validu"
+
+#: pages/editor.py:526
+msgid "length == 1"
+msgstr "lunghezza == 1"
+
+#: pages/editor.py:531
+msgid "Difficulty"
+msgstr "DIFULTITÀ"
+
+#: pages/editor.py:538
 msgid "Easy"
 msgstr "Facile"
 
+#: pages/editor.py:538
 msgid "Medium"
 msgstr "Medium"
 
+#: pages/editor.py:538
 msgid "Hard"
 msgstr "Duru"
 
+#: pages/editor.py:538
 msgid "Extreme"
 msgstr "Estremo"
+
+#: pages/editor.py:616 pages/editor.py:969
+msgid "Adding"
+msgstr "aghjunghje"
+
+#: pages/editor.py:619 pages/editor.py:973
+msgid "Add"
+msgstr "aghjunghje"
+
+#: pages/editor.py:778 pages/editor.py:1086
+msgid "Press"
+msgstr "Pulse"
+
+#: pages/editor.py:778
+msgid ""
+"to add a \n"
+"new crossword."
+msgstr ""
+"per aghjunghje un \n"
+"nuvellu cruciverba."
+
+#: pages/editor.py:822 pages/editor.py:1128
+msgid "Editing"
+msgstr "Editatu"
+
+#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
+#: pages/editor.py:1128
+msgid "Your Words"
+msgstr "E vostre parolle"
+
+#: pages/editor.py:927
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "longueur >= 1 et longueur <= 32 et est un caractère de langue"
+
+#: pages/editor.py:936
+msgid "length >= 1"
+msgstr "lunghezza >= 1"
+
+#: pages/editor.py:1086
+msgid "to add a"
+msgstr "aghjunghje a"
+
+#: pages/editor.py:1086
+msgid "new word."
+msgstr "parolla nova."
+
+#: pages/home.py:98
+msgid "Crossword Puzzle"
+msgstr "Crossword Puzzle"
+
+#: pages/home.py:126
+msgid "Browser"
+msgstr "navigatore"
+
+#: pages/home.py:128
+msgid "BrowserPage"
+msgstr "BrowsPPage"
+
+#: pages/home.py:137
+msgid "Editor"
+msgstr "Editore"
+
+#: pages/home.py:139
+msgid "EditorPage"
+msgstr "Pagina Editore"
+
+#: pages/home.py:159
+msgid "Global Settings"
+msgstr "Settings Global"
+
+#: pages/home.py:166
+msgid "Language"
+msgstr "Lingua"
+
+#: pages/home.py:178
+msgid "Size"
+msgstr "Taglia"
+
+#: pages/home.py:197
+msgid "light"
+msgstr "luce"
+
+#: pages/home.py:197
+msgid "dark"
+msgstr "scuru"
+
+#: pages/home.py:197
+msgid "system"
+msgstr "sistema"
+
+#: pages/home.py:200 pages/home.py:214
+msgid "Appearance"
+msgstr "Apparizione"
+
+#: pages/home.py:220
+msgid "terrible"
+msgstr "terribile"
+
+#: pages/home.py:221
+msgid "poor"
+msgstr "Poviru"
+
+#: pages/home.py:222
+msgid "average"
+msgstr "Media"
+
+#: pages/home.py:223
+msgid "great"
+msgstr "perfettu"
+
+#: pages/home.py:224
+msgid "perfect"
+msgstr "perfetta"
+
+#: pages/home.py:228
+msgid "Crossword Quality"
+msgstr "Qualità crucivia"
 
 msgid "Geography"
 msgstr "Geografia"
@@ -355,11 +481,20 @@ msgstr "Scienza"
 msgid "Computer Science"
 msgstr "Informatica"
 
-msgid "Difficulty"
-msgstr "DIFULTITÀ"
+msgid "User"
+msgstr "utilizatore"
 
 msgid "Total words"
 msgstr "Parolle totale"
 
 msgid "Maximum"
 msgstr "Massimu"
+
+msgid "Clue"
+msgstr "Indice"
+
+msgid "Name"
+msgstr "Nome"
+
+msgid "Symbol"
+msgstr "Simbulu"

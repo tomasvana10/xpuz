@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-13 21:45+1000\n"
+"POT-Creation-Date: 2024-06-27 00:02+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: km <LL@li.org>\n"
@@ -19,138 +19,55 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: crossword_puzzle/main.py:79 crossword_puzzle/main.py:130
-#: crossword_puzzle/main.py:275 crossword_puzzle/main.py:343
-msgid "Crossword Puzzle"
-msgstr "ល្បែងផ្គុំពាក្យឆ្លង"
+#: utils.py:59
+msgid "Remove"
+msgstr "យកចេញ"
 
-#: crossword_puzzle/main.py:146
-msgid "View crosswords"
-msgstr "មើលពាក្យឆ្លង"
+#: utils.py:59
+msgid "Are you sure you want to delete this"
+msgstr "តើ អ្នក ប្រាកដ ថា អ្នក ចង់ លុប វា"
 
-#: crossword_puzzle/main.py:155
-msgid "Exit the app"
-msgstr "ចេញពីកម្មវិធី"
+#: utils.py:59
+msgid "It will be lost forever!"
+msgstr "វានឹងបាត់បង់ជារៀងរហូត!"
 
-#: crossword_puzzle/main.py:166
-msgid "Global Settings"
-msgstr "ការកំណត់សកល"
+#: utils.py:64
+msgid "Add or select"
+msgstr "បន្ថែម ឬ ជ្រើស"
 
-#: crossword_puzzle/main.py:173
-msgid "Languages"
-msgstr "ភាសា"
+#: utils.py:64
+msgid "Are you sure you want to add/select a"
+msgstr "តើ អ្នក ប្រាកដ ថា អ្នក ចង់ បន្ថែម/ជ្រើស យក a"
 
-#: crossword_puzzle/main.py:185
-msgid "Size"
-msgstr "ទំហំ"
+#: utils.py:64
+msgid "Your modified fields will be reset!"
+msgstr "វាលដែលបានកែប្រែរបស់អ្នកនឹងត្រូវបាន កំណត់ឡើងវិញ!"
 
-#: crossword_puzzle/main.py:204
-msgid "light"
-msgstr "ពន្លឺ"
+#: utils.py:69 utils.py:88
+msgid "Back to home"
+msgstr "ត្រលប់​ទៅផ្ទះ"
 
-#: crossword_puzzle/main.py:204
-msgid "dark"
-msgstr "ងងឹត"
+#: utils.py:69
+msgid ""
+"Are you sure you want to go back to the home screen? Your modified fields "
+"will be reset!"
+msgstr ""
+"តើ អ្នក ប្រាកដ ជា ចង់ ត្រឡប់ ទៅ អេក្រង់ ផ្ទះ វិញ ឬ ទេ ? "
+"វាលដែលបានកែប្រែរបស់អ្នកនឹងត្រូវបាន កំណត់ឡើងវិញ!"
 
-#: crossword_puzzle/main.py:204
-msgid "system"
-msgstr "ប្រព័ន្ធ"
-
-#: crossword_puzzle/main.py:207 crossword_puzzle/main.py:221
-msgid "Appearance"
-msgstr "រូបរាង"
-
-#: crossword_puzzle/main.py:227
-msgid "terrible"
-msgstr "អារកក់កយរអាេយខ្លាច"
-
-#: crossword_puzzle/main.py:228
-msgid "poor"
-msgstr "រកីរក"
-
-#: crossword_puzzle/main.py:229
-msgid "average"
-msgstr "មធ្យម"
-
-#: crossword_puzzle/main.py:230
-msgid "great"
-msgstr "ដ៏ធម"
-
-#: crossword_puzzle/main.py:231
-msgid "perfect"
-msgstr "សុរកិត"
-
-#: crossword_puzzle/main.py:235
-msgid "Crossword Quality"
-msgstr "គុណភាពឆ្លងដែន"
-
-#: crossword_puzzle/main.py:267 crossword_puzzle/main.py:420
-msgid "Crossword Browser"
-msgstr "កម្មវិធីរុករកតាមអ៊ីនធឺណិត"
-
-#: crossword_puzzle/main.py:425
-msgid "Go back"
-msgstr "ត្រឡប់​ក្រោយ"
-
-#: crossword_puzzle/main.py:436
-msgid "Load crossword"
-msgstr "ផ្ទុកពាក្យឆ្លង"
-
-#: crossword_puzzle/main.py:445
-msgid "Open web app"
-msgstr "បើកកម្មវិធីបណ្តាញ"
-
-#: crossword_puzzle/main.py:454
-msgid "Terminate web app"
-msgstr "បញ្ចប់កម្មវិធីបណ្តាញ"
-
-#: crossword_puzzle/main.py:465
-msgid "Word count preferences"
-msgstr "ចំណូលចិត្តរាប់ពាក្យ"
-
-#: crossword_puzzle/main.py:479 crossword_puzzle/main.py:541
-#: crossword_puzzle/main.py:587 crossword_puzzle/main.py:808
-msgid "Select word count"
-msgstr "ជ្រើសរើសចំនួនពាក្យ"
-
-#: crossword_puzzle/main.py:494
-msgid "Custom"
-msgstr "ផ្ទាល់ខ្លួន"
-
-#: crossword_puzzle/main.py:699
-msgid "To perform this operation, you must first select a cell."
-msgstr "ដើម្បីអនុវត្តប្រតិបត្តិការនេះដំបូងអ្នកត្រូវតែជ្រើសក្រឡា។"
-
-#: crossword_puzzle/main.py:892
-msgid "View"
-msgstr "មើល"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:373
-#: crossword_puzzle/main.py:899
-msgid "Close"
-msgstr "បិទ"
-
-#: crossword_puzzle/main.py:1046
-msgid "difficulty"
-msgstr "ការលំបាក"
-
-#: crossword_puzzle/main.py:1102
-msgid "Select"
-msgstr "ជ្រើសរើស"
-
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Restart"
 msgstr "ចាប់ផ្ដើមឡើងវិញ"
 
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Are you sure you want to restart the app?"
 msgstr "តើអ្នកប្រាកដថាចង់ចាប់ផ្តើមកម្មវិធីឡើងវិញទេ?"
 
-#: crossword_puzzle/main.py:1160
+#: pages/home.py:148 utils.py:79
 msgid "Exit"
 msgstr "ចេញ"
 
-#: crossword_puzzle/main.py:1161
+#: utils.py:80
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -158,44 +75,47 @@ msgstr ""
 "តើអ្នកប្រាកដថាចង់ចាកចេញពីកម្មវិធីមែនទេ? ប្រសិនបើកម្មវិធីបណ្តាញកំពុងដំណើរការ "
 "វានឹងត្រូវបានបញ្ចប់។"
 
-#: crossword_puzzle/main.py:1170
-msgid "Back to home"
-msgstr "ត្រលប់​ទៅផ្ទះ"
-
-#: crossword_puzzle/main.py:1171
+#: utils.py:89
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
 "តើអ្នកប្រាកដថាចង់ត្រលប់ទៅអេក្រង់ដើមវិញទេ? កម្មវិធីបណ្តាញនឹងត្រូវបានបិទ។"
 
-#: crossword_puzzle/main.py:1194 crossword_puzzle/main.py:1199
-#: crossword_puzzle/main.py:1204 crossword_puzzle/main.py:1209
-#: crossword_puzzle/main.py:1232 crossword_puzzle/main.py:1244
+#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
+#: utils.py:125 utils.py:147 utils.py:151
 msgid "Error"
 msgstr "កំហុស"
 
-#: crossword_puzzle/main.py:1194
+#: utils.py:100
 msgid "This language is already selected."
 msgstr "ភាសានេះត្រូវបានជ្រើសរើសរួចហើយ។"
 
-#: crossword_puzzle/main.py:1199
+#: utils.py:105
 msgid "This size is already selected."
 msgstr "ទំហំនេះត្រូវបានជ្រើសរើសរួចហើយ។"
 
-#: crossword_puzzle/main.py:1204
+#: utils.py:110
 msgid "This appearance is already selected."
 msgstr "រូបរាងនេះត្រូវបានជ្រើសរើសរួចហើយ។"
 
-#: crossword_puzzle/main.py:1209
+#: utils.py:115
 msgid "This quality is already selected."
 msgstr "គុណភាពនេះត្រូវបានជ្រើសរើសរួចហើយ។"
 
-#: crossword_puzzle/main.py:1214
+#: utils.py:120
+msgid "This crossword already exists. Please choose a new name."
+msgstr "ពាក្យ កាត់ នេះ មាន រួច ហើយ ។ សូមជ្រើសរើសឈ្មោះថ្មី។"
+
+#: utils.py:125
+msgid "This word already exists. Please choose a new word."
+msgstr "ពាក្យ នេះ មាន រួច ហើយ ។ សូមជ្រើសរើសពាក្យថ្មី។"
+
+#: utils.py:130
 msgid "Info"
 msgstr "ព័ត៌មាន"
 
-#: crossword_puzzle/main.py:1215
+#: utils.py:131
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -218,130 +138,338 @@ msgstr ""
 " Activity Monitor នៅលើ MacOS "
 "ឬគ្រាន់តែចាប់ផ្តើមកុំព្យូទ័ររបស់អ្នកឡើងវិញដើម្បីបិទវា។"
 
-#: crossword_puzzle/main.py:1233
+#: utils.py:153
 msgid ""
-"An error occured while loading this crossword's definitions. Ensure that its"
-" definitions JSON file exists in the base cwords directory. NOTE: Base "
-"crossword data is only accessed when its translated version is not present "
-"in the locales directory."
+"An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
-"កំហុស​មួយ​បាន​កើត​ឡើង​ខណៈ​ពេល​ផ្ទុក​និយមន័យ​ពាក្យ​ឆ្លង​នេះ។ "
-"ត្រូវប្រាកដថានិយមន័យរបស់វា ឯកសារ JSON មាននៅក្នុងថត cwords មូលដ្ឋាន។ ចំណាំ៖ "
-"ទិន្នន័យ​ពាក្យ​សម្ងាត់​មូលដ្ឋាន​ត្រូវ​បាន​ចូល​ប្រើ​តែ​នៅ​ពេល​ដែល​កំណែ​ប្រែ​របស់​វា​មិន​មាន​នៅ​ក្នុង​ថត​មូលដ្ឋាន។"
+"កំហុស ដែល មិន បាន រំពឹង ទុក មួយ បាន កើត ឡើង ។ "
+"សូមសាកល្បងធ្វើការស្តារឡើងវិញនូវកម្មវិធីជាមួយ"
 
-#: crossword_puzzle/main.py:1245
-msgid ""
-"An error occured in crossword generation. Please see further information in "
-"the console"
-msgstr ""
-"កំហុសមួយបានកើតឡើងនៅក្នុងការបង្កើតពាក្យឆ្លង។ "
-"សូមមើលព័ត៌មានបន្ថែមនៅក្នុងកុងសូល។"
+#: utils.py:672
+msgid "Definitions are empty"
+msgstr "និយមន័យ គឺ ទទេ"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:13
-#: crossword_puzzle/cword_webapp/templates/index.html:343
+#: utils.py:675
+msgid "The word count or definitions are less than 3 in length"
+msgstr "ពាក្យ រាប់ ឬ និយមន័យ មាន ប្រវែង តិច ជាង ៣"
+
+#: utils.py:679
+msgid "Length of the word count is greater than the definitions"
+msgstr "ប្រវែង ពាក្យ រាប់ គឺ ធំ ជាង និយមន័យ"
+
+#: utils.py:682
+msgid "Escape character present in word"
+msgstr "តួអក្សរ គេច ខ្លួន មាន វត្តមាន ក្នុង ពាក្យ"
+
+#: app/templates/index.html:13 app/templates/index.html:338
 msgid "Crossword Puzzle - Game"
 msgstr "ល្បែងផ្គុំរូបឈើឆ្កាង - ល្បែង"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:155
-msgid "Across"
-msgstr "ឆ្លងកាត់"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:178
-msgid "Down"
-msgstr "ឆ្ពោហតោខាងរេកាម"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:203
+#: app/templates/index.html:136
 msgid "Compound"
 msgstr "បរិចចា"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:216
-msgid "Reveal"
-msgstr "បហ្ចេញអាេយដឹង"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:223
-#: crossword_puzzle/cword_webapp/templates/index.html:252
-msgid "Cell"
-msgstr "បន្ទប់ក្នុងកុក"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:229
-#: crossword_puzzle/cword_webapp/templates/index.html:258
-#: crossword_puzzle/cword_webapp/templates/index.html:281
-msgid "Word"
-msgstr "ហក្យ"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:235
-#: crossword_puzzle/cword_webapp/templates/index.html:264
-#: crossword_puzzle/cword_webapp/templates/index.html:287
-msgid "Grid"
-msgstr "បប្យេសី"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:245
-msgid "Check"
-msgstr "ការបិនិត្យ"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:274
-msgid "Clear"
-msgstr "ផ្លឺ"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:293
-msgid "Unrevealed"
-msgstr "ដេលមិនរស់ឡើងវិញ"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:306
+#: app/templates/index.html:149
 msgid "Auto-skip"
 msgstr "រំលងដោយស្វ័យប្រវត្តិ"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:315
+#: app/templates/index.html:158
 msgid "Auto-word"
 msgstr "ពាក្យស្វ័យប្រវត្តិ"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:324
+#: app/templates/index.html:167
 msgid "Auto-check"
 msgstr "ពិនិត្យដោយស្វ័យប្រវត្តិ"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:333
+#: app/templates/index.html:176
 msgid "Zoom"
 msgstr "ធេវីអាេយ"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:189
+msgid "Reveal"
+msgstr "បហ្ចេញអាេយដឹង"
+
+#: app/templates/index.html:197 app/templates/index.html:230
+msgid "Cell"
+msgstr "បន្ទប់ក្នុងកុក"
+
+#: app/templates/index.html:204 app/templates/index.html:237
+#: app/templates/index.html:263
+msgid "Word"
+msgstr "ហក្យ"
+
+#: app/templates/index.html:211 app/templates/index.html:244
+#: app/templates/index.html:270
+msgid "Grid"
+msgstr "បប្យេសី"
+
+#: app/templates/index.html:222
+msgid "Check"
+msgstr "ការបិនិត្យ"
+
+#: app/templates/index.html:255
+msgid "Clear"
+msgstr "ផ្លឺ"
+
+#: app/templates/index.html:277
+msgid "Unrevealed"
+msgstr "ដេលមិនរស់ឡើងវិញ"
+
+#: app/templates/index.html:286
+msgid "Across"
+msgstr "ឆ្លងកាត់"
+
+#: app/templates/index.html:308
+msgid "Down"
+msgstr "ឆ្ពោហតោខាងរេកាម"
+
+#: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "អ្នកកំពុងមើល"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:340
 msgid "from"
 msgstr "តាមងបី"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:350
+#: app/templates/index.html:345
 msgid "word(s) could not be inserted, sorry."
 msgstr "សូមទោសពាក្យមិនអាចត្រូវបានបញ្ចូលសូមទោស។"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:353
+#: app/templates/index.html:348
 msgid "Word count (adjusted)"
 msgstr "ចំនួនពាក្យ (បានលៃតម្រូវ)"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:356
+#: app/templates/index.html:351
 msgid "Word count"
 msgstr "រាប់​ពាក្យ"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:362
+#: app/templates/index.html:357
 msgid "Continue"
 msgstr "បន្ដ"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:368
+#: app/templates/index.html:363
 msgid "You completed the crossword!"
 msgstr "អ្នកបានបញ្ចប់ការឆ្លង Crossword!"
 
+#: app/templates/index.html:368 pages/browser.py:586
+msgid "Close"
+msgstr "បិទ"
+
+#: pages/browser.py:136
+msgid "Crossword Browser"
+msgstr "កម្មវិធីរុករកតាមអ៊ីនធឺណិត"
+
+#: pages/browser.py:141 pages/editor.py:335
+msgid "Back"
+msgstr "ត្រឡប់ មក វិញ"
+
+#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+msgid "HomePage"
+msgstr "ទំព័រដើមPage"
+
+#: pages/browser.py:156
+msgid "Categorised"
+msgstr "Categorised"
+
+#: pages/browser.py:156
+msgid "Flattened"
+msgstr "រាបស្មើ"
+
+#: pages/browser.py:186
+msgid "Load"
+msgstr "ផ្ទុក"
+
+#: pages/browser.py:195
+msgid "Open"
+msgstr "បើក"
+
+#: pages/browser.py:205
+msgid "Terminate"
+msgstr "ចប់"
+
+#: pages/browser.py:216
+msgid "Word count preferences"
+msgstr "ចំណូលចិត្តរាប់ពាក្យ"
+
+#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
+#: pages/browser.py:495
+msgid "Select word count"
+msgstr "ជ្រើសរើសចំនួនពាក្យ"
+
+#: pages/browser.py:246
+msgid "Custom"
+msgstr "ផ្ទាល់ខ្លួន"
+
+#: pages/browser.py:475
+msgid "To perform this operation, you must first select a cell."
+msgstr "ដើម្បីអនុវត្តប្រតិបត្តិការនេះដំបូងអ្នកត្រូវតែជ្រើសក្រឡា។"
+
+#: pages/browser.py:579
+msgid "View"
+msgstr "មើល"
+
+#: pages/browser.py:783
+msgid "Select"
+msgstr "ជ្រើសរើស"
+
+#: pages/editor.py:329
+msgid "Crossword Editor"
+msgstr "កម្មវិធី កែសម្រួល ពាក្យ ក្រូស"
+
+#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
+#: pages/editor.py:822
+msgid "Your Crosswords"
+msgstr "ពាក្យកាត់របស់អ្នក"
+
+#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
+#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+msgid "Save"
+msgstr "រក្សាទុក"
+
+#: pages/editor.py:518
+msgid "length >= 1 and valid OS file name"
+msgstr "ប្រវែង >= 1 និង ឈ្មោះ ឯកសារ OS ត្រឹមត្រូវ"
+
+#: pages/editor.py:526
+msgid "length == 1"
+msgstr "ប្រវែង == 1"
+
+#: pages/editor.py:531
+msgid "Difficulty"
+msgstr "ផាបលមបាក"
+
+#: pages/editor.py:538
 msgid "Easy"
 msgstr "ងាយស្រួល"
 
+#: pages/editor.py:538
 msgid "Medium"
 msgstr "មធ្យម"
 
+#: pages/editor.py:538
 msgid "Hard"
 msgstr "រឹង"
 
+#: pages/editor.py:538
 msgid "Extreme"
 msgstr "ខ្លាំង"
+
+#: pages/editor.py:616 pages/editor.py:969
+msgid "Adding"
+msgstr "បន្ថែម"
+
+#: pages/editor.py:619 pages/editor.py:973
+msgid "Add"
+msgstr "បន្ថែម"
+
+#: pages/editor.py:778 pages/editor.py:1086
+msgid "Press"
+msgstr "ចុច"
+
+#: pages/editor.py:778
+msgid ""
+"to add a \n"
+"new crossword."
+msgstr ""
+"ដើម្បី បន្ថែម \n"
+"ពាក្យកាត់ថ្មី។"
+
+#: pages/editor.py:822 pages/editor.py:1128
+msgid "Editing"
+msgstr "ការ កែសម្រួល"
+
+#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
+#: pages/editor.py:1128
+msgid "Your Words"
+msgstr "ពាក្យសម្ដីរបស់អ្នក"
+
+#: pages/editor.py:927
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "ប្រវែង >= ១ និង ប្រវែង <= ៣២ និង ជា តួអក្សរ ភាសា"
+
+#: pages/editor.py:936
+msgid "length >= 1"
+msgstr "ប្រវែង >= 1"
+
+#: pages/editor.py:1086
+msgid "to add a"
+msgstr "ដើម្បី បន្ថែម"
+
+#: pages/editor.py:1086
+msgid "new word."
+msgstr "ពាក្យថ្មី។"
+
+#: pages/home.py:98
+msgid "Crossword Puzzle"
+msgstr "ល្បែងផ្គុំពាក្យឆ្លង"
+
+#: pages/home.py:126
+msgid "Browser"
+msgstr "កម្មវិធីរុករក"
+
+#: pages/home.py:128
+msgid "BrowserPage"
+msgstr "BrowserPage"
+
+#: pages/home.py:137
+msgid "Editor"
+msgstr "អ្នក និពន្ធ"
+
+#: pages/home.py:139
+msgid "EditorPage"
+msgstr "EditorPage"
+
+#: pages/home.py:159
+msgid "Global Settings"
+msgstr "ការកំណត់សកល"
+
+#: pages/home.py:166
+msgid "Language"
+msgstr "ភាសា"
+
+#: pages/home.py:178
+msgid "Size"
+msgstr "ទំហំ"
+
+#: pages/home.py:197
+msgid "light"
+msgstr "ពន្លឺ"
+
+#: pages/home.py:197
+msgid "dark"
+msgstr "ងងឹត"
+
+#: pages/home.py:197
+msgid "system"
+msgstr "ប្រព័ន្ធ"
+
+#: pages/home.py:200 pages/home.py:214
+msgid "Appearance"
+msgstr "រូបរាង"
+
+#: pages/home.py:220
+msgid "terrible"
+msgstr "អារកក់កយរអាេយខ្លាច"
+
+#: pages/home.py:221
+msgid "poor"
+msgstr "រកីរក"
+
+#: pages/home.py:222
+msgid "average"
+msgstr "មធ្យម"
+
+#: pages/home.py:223
+msgid "great"
+msgstr "ដ៏ធម"
+
+#: pages/home.py:224
+msgid "perfect"
+msgstr "សុរកិត"
+
+#: pages/home.py:228
+msgid "Crossword Quality"
+msgstr "គុណភាពឆ្លងដែន"
 
 msgid "Geography"
 msgstr "ភូមិសាស្ត្រ"
@@ -355,11 +483,20 @@ msgstr "វិទ្យាសាស្ត្រ"
 msgid "Computer Science"
 msgstr "វិទ្យាសាស្ត្រ​កុំព្យូទ័រ"
 
-msgid "Difficulty"
-msgstr "ផាបលមបាក"
+msgid "User"
+msgstr "អ្នកប្រើប្រាស់"
 
 msgid "Total words"
 msgstr "ពាក្យសរុប"
 
 msgid "Maximum"
 msgstr "អតិបរិមា"
+
+msgid "Clue"
+msgstr "ក្លៀក"
+
+msgid "Name"
+msgstr "ឈ្មោះ"
+
+msgid "Symbol"
+msgstr "និមិត្តរូប"

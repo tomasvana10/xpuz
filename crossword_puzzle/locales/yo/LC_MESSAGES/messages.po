@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-13 21:45+1000\n"
+"POT-Creation-Date: 2024-06-27 00:02+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: yo <LL@li.org>\n"
@@ -19,138 +19,55 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: crossword_puzzle/main.py:79 crossword_puzzle/main.py:130
-#: crossword_puzzle/main.py:275 crossword_puzzle/main.py:343
-msgid "Crossword Puzzle"
-msgstr "Crossword adojuru"
+#: utils.py:59
+msgid "Remove"
+msgstr "Yọọ́ kúrò"
 
-#: crossword_puzzle/main.py:146
-msgid "View crosswords"
-msgstr "Wo crosswords"
+#: utils.py:59
+msgid "Are you sure you want to delete this"
+msgstr "Ṣé ó dá ẹ lójú pé o fẹ́ pa èyí rẹ́"
 
-#: crossword_puzzle/main.py:155
-msgid "Exit the app"
-msgstr "Jade ni app"
+#: utils.py:59
+msgid "It will be lost forever!"
+msgstr "Ó máa sọnù títí láé!"
 
-#: crossword_puzzle/main.py:166
-msgid "Global Settings"
-msgstr "Eto Agbaye"
+#: utils.py:64
+msgid "Add or select"
+msgstr "Fi kun tabi yan"
 
-#: crossword_puzzle/main.py:173
-msgid "Languages"
-msgstr "Awọn ede"
+#: utils.py:64
+msgid "Are you sure you want to add/select a"
+msgstr "2. ì"
 
-#: crossword_puzzle/main.py:185
-msgid "Size"
-msgstr "Iwọn"
+#: utils.py:64
+msgid "Your modified fields will be reset!"
+msgstr "Awọn aaye atunṣe rẹ yoo tun ṣe atunṣe!"
 
-#: crossword_puzzle/main.py:204
-msgid "light"
-msgstr "imole"
+#: utils.py:69 utils.py:88
+msgid "Back to home"
+msgstr "Pada si ile"
 
-#: crossword_puzzle/main.py:204
-msgid "dark"
-msgstr "dudu"
+#: utils.py:69
+msgid ""
+"Are you sure you want to go back to the home screen? Your modified fields "
+"will be reset!"
+msgstr ""
+"Ṣé ó dá ọ lójú pé o fẹ́ padà sí ojú ìbòjú ilé? Awọn aaye atunṣe rẹ yoo tun "
+"ṣe atunṣe!"
 
-#: crossword_puzzle/main.py:204
-msgid "system"
-msgstr "eto"
-
-#: crossword_puzzle/main.py:207 crossword_puzzle/main.py:221
-msgid "Appearance"
-msgstr "Ifarahan"
-
-#: crossword_puzzle/main.py:227
-msgid "terrible"
-msgstr "bibanilẹru"
-
-#: crossword_puzzle/main.py:228
-msgid "poor"
-msgstr "talaka"
-
-#: crossword_puzzle/main.py:229
-msgid "average"
-msgstr "aropin"
-
-#: crossword_puzzle/main.py:230
-msgid "great"
-msgstr "nla"
-
-#: crossword_puzzle/main.py:231
-msgid "perfect"
-msgstr "pipe"
-
-#: crossword_puzzle/main.py:235
-msgid "Crossword Quality"
-msgstr "Didara"
-
-#: crossword_puzzle/main.py:267 crossword_puzzle/main.py:420
-msgid "Crossword Browser"
-msgstr "Crossword Browser"
-
-#: crossword_puzzle/main.py:425
-msgid "Go back"
-msgstr "Pada"
-
-#: crossword_puzzle/main.py:436
-msgid "Load crossword"
-msgstr "Fifuye crossword"
-
-#: crossword_puzzle/main.py:445
-msgid "Open web app"
-msgstr "Ṣii ohun elo wẹẹbu"
-
-#: crossword_puzzle/main.py:454
-msgid "Terminate web app"
-msgstr "Pa ohun elo wẹẹbu kuro"
-
-#: crossword_puzzle/main.py:465
-msgid "Word count preferences"
-msgstr "Awọn ayanfẹ kika ọrọ"
-
-#: crossword_puzzle/main.py:479 crossword_puzzle/main.py:541
-#: crossword_puzzle/main.py:587 crossword_puzzle/main.py:808
-msgid "Select word count"
-msgstr "Yan kika ọrọ"
-
-#: crossword_puzzle/main.py:494
-msgid "Custom"
-msgstr "Aṣa"
-
-#: crossword_puzzle/main.py:699
-msgid "To perform this operation, you must first select a cell."
-msgstr "Lati ṣe iṣẹ yii, o gbọdọ kọkọ yan sẹẹli kan."
-
-#: crossword_puzzle/main.py:892
-msgid "View"
-msgstr "Wo"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:373
-#: crossword_puzzle/main.py:899
-msgid "Close"
-msgstr "Sunmọ"
-
-#: crossword_puzzle/main.py:1046
-msgid "difficulty"
-msgstr "iṣoro"
-
-#: crossword_puzzle/main.py:1102
-msgid "Select"
-msgstr "Yan"
-
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Restart"
 msgstr "Tun bẹrẹ"
 
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Are you sure you want to restart the app?"
 msgstr "Ṣe o da ọ loju pe o fẹ tun app naa bẹrẹ?"
 
-#: crossword_puzzle/main.py:1160
+#: pages/home.py:148 utils.py:79
 msgid "Exit"
 msgstr "Jade"
 
-#: crossword_puzzle/main.py:1161
+#: utils.py:80
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -158,44 +75,47 @@ msgstr ""
 "Ṣe o da ọ loju pe o fẹ jade kuro ni app naa? Ti ohun elo wẹẹbu n ṣiṣẹ, yoo "
 "fopin si."
 
-#: crossword_puzzle/main.py:1170
-msgid "Back to home"
-msgstr "Pada si ile"
-
-#: crossword_puzzle/main.py:1171
+#: utils.py:89
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
 "Ṣe o da ọ loju pe o fẹ pada si iboju ile? Ohun elo wẹẹbu yoo fopin si."
 
-#: crossword_puzzle/main.py:1194 crossword_puzzle/main.py:1199
-#: crossword_puzzle/main.py:1204 crossword_puzzle/main.py:1209
-#: crossword_puzzle/main.py:1232 crossword_puzzle/main.py:1244
+#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
+#: utils.py:125 utils.py:147 utils.py:151
 msgid "Error"
 msgstr "Asise"
 
-#: crossword_puzzle/main.py:1194
+#: utils.py:100
 msgid "This language is already selected."
 msgstr "Ede yii ti yan tẹlẹ."
 
-#: crossword_puzzle/main.py:1199
+#: utils.py:105
 msgid "This size is already selected."
 msgstr "Iwọn yii ti yan tẹlẹ."
 
-#: crossword_puzzle/main.py:1204
+#: utils.py:110
 msgid "This appearance is already selected."
 msgstr "Irisi yii ti yan tẹlẹ."
 
-#: crossword_puzzle/main.py:1209
+#: utils.py:115
 msgid "This quality is already selected."
 msgstr "Didara yii ti yan tẹlẹ."
 
-#: crossword_puzzle/main.py:1214
+#: utils.py:120
+msgid "This crossword already exists. Please choose a new name."
+msgstr "Ọ̀rọ̀ ìkọjá yìí ti wà tẹ́lẹ̀. Jọwọ yan orukọ tuntun kan."
+
+#: utils.py:125
+msgid "This word already exists. Please choose a new word."
+msgstr "Ọ̀rọ̀ yìí ti wà tẹ́lẹ̀. Jọ̀wọ́ yan ọ̀rọ̀ tuntun."
+
+#: utils.py:130
 msgid "Info"
 msgstr "Alaye"
 
-#: crossword_puzzle/main.py:1215
+#: utils.py:131
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -216,128 +136,337 @@ msgstr ""
 "ilana app ti ko ti fopin daradara le jẹ fopin si nipasẹ Atẹle Iṣẹ ṣiṣe lori "
 "MacOS, tabi tun bẹrẹ kọnputa rẹ lati fopin si wọn."
 
-#: crossword_puzzle/main.py:1233
+#: utils.py:153
 msgid ""
-"An error occured while loading this crossword's definitions. Ensure that its"
-" definitions JSON file exists in the base cwords directory. NOTE: Base "
-"crossword data is only accessed when its translated version is not present "
-"in the locales directory."
+"An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
-"Aṣiṣe waye lakoko ikojọpọ awọn itumọ ọrọ agbekọja yii. Rii daju pe awọn "
-"asọye rẹ faili JSON wa ninu iwe ilana cwords mimọ. AKIYESI: Data crossword "
-"mimọ jẹ wọle nikan nigbati ẹya ti a tumọ ko si ninu ilana awọn agbegbe."
+"Àṣìṣe àìròtẹ́lẹ̀ ṣẹlẹ̀. Jọ̀wọ́ gbìyànjú láti tún ohun èlò náà ṣe pẹ̀lú"
 
-#: crossword_puzzle/main.py:1245
-msgid ""
-"An error occured in crossword generation. Please see further information in "
-"the console"
-msgstr "Asise waye ni crossword iran. Jọwọ wo alaye siwaju sii ninu console"
+#: utils.py:672
+msgid "Definitions are empty"
+msgstr "Àwọn ìtumọ̀ òfìfo"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:13
-#: crossword_puzzle/cword_webapp/templates/index.html:343
+#: utils.py:675
+msgid "The word count or definitions are less than 3 in length"
+msgstr "Awọn ọrọ ka tabi definitions ni o wa kere ju 3 ni ipari"
+
+#: utils.py:679
+msgid "Length of the word count is greater than the definitions"
+msgstr "Gígùn ọ̀rọ̀ náà tóbi ju ìtumọ̀ lọ."
+
+#: utils.py:682
+msgid "Escape character present in word"
+msgstr "Sá ìwà tí ó wà nínú ọ̀rọ̀"
+
+#: app/templates/index.html:13 app/templates/index.html:338
 msgid "Crossword Puzzle - Game"
 msgstr "Adojuru ipinlẹ - ere"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:155
-msgid "Across"
-msgstr "Kọja"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:178
-msgid "Down"
-msgstr "Si isalẹ"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:203
+#: app/templates/index.html:136
 msgid "Compound"
 msgstr "Pọpo"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:216
-msgid "Reveal"
-msgstr "Fihan"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:223
-#: crossword_puzzle/cword_webapp/templates/index.html:252
-msgid "Cell"
-msgstr "Padi"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:229
-#: crossword_puzzle/cword_webapp/templates/index.html:258
-#: crossword_puzzle/cword_webapp/templates/index.html:281
-msgid "Word"
-msgstr "Ọrọ"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:235
-#: crossword_puzzle/cword_webapp/templates/index.html:264
-#: crossword_puzzle/cword_webapp/templates/index.html:287
-msgid "Grid"
-msgstr "Akoj"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:245
-msgid "Check"
-msgstr "Ṣayẹwo"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:274
-msgid "Clear"
-msgstr "Ko kuro"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:293
-msgid "Unrevealed"
-msgstr "Aigbagbọ"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:306
+#: app/templates/index.html:149
 msgid "Auto-skip"
 msgstr "Aifọwọyi"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:315
+#: app/templates/index.html:158
 msgid "Auto-word"
 msgstr "Ọrọ-auto"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:324
+#: app/templates/index.html:167
 msgid "Auto-check"
 msgstr "Ṣayẹwo laifọwọyi"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:333
+#: app/templates/index.html:176
 msgid "Zoom"
 msgstr "Sun-didi"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:189
+msgid "Reveal"
+msgstr "Fihan"
+
+#: app/templates/index.html:197 app/templates/index.html:230
+msgid "Cell"
+msgstr "Padi"
+
+#: app/templates/index.html:204 app/templates/index.html:237
+#: app/templates/index.html:263
+msgid "Word"
+msgstr "Ọrọ"
+
+#: app/templates/index.html:211 app/templates/index.html:244
+#: app/templates/index.html:270
+msgid "Grid"
+msgstr "Akoj"
+
+#: app/templates/index.html:222
+msgid "Check"
+msgstr "Ṣayẹwo"
+
+#: app/templates/index.html:255
+msgid "Clear"
+msgstr "Ko kuro"
+
+#: app/templates/index.html:277
+msgid "Unrevealed"
+msgstr "Aigbagbọ"
+
+#: app/templates/index.html:286
+msgid "Across"
+msgstr "Kọja"
+
+#: app/templates/index.html:308
+msgid "Down"
+msgstr "Si isalẹ"
+
+#: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "O nwo"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:340
 msgid "from"
 msgstr "lati"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:350
+#: app/templates/index.html:345
 msgid "word(s) could not be inserted, sorry."
 msgstr "Ọrọ (s) ko le fi sii, binu."
 
-#: crossword_puzzle/cword_webapp/templates/index.html:353
+#: app/templates/index.html:348
 msgid "Word count (adjusted)"
 msgstr "Akiyesi ọrọ (ti tunṣe)"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:356
+#: app/templates/index.html:351
 msgid "Word count"
 msgstr "A ka ọrọ"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:362
+#: app/templates/index.html:357
 msgid "Continue"
 msgstr "Tẹsiwaju"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:368
+#: app/templates/index.html:363
 msgid "You completed the crossword!"
 msgstr "O pari Oro Cross:"
 
+#: app/templates/index.html:368 pages/browser.py:586
+msgid "Close"
+msgstr "Sunmọ"
+
+#: pages/browser.py:136
+msgid "Crossword Browser"
+msgstr "Crossword Browser"
+
+#: pages/browser.py:141 pages/editor.py:335
+msgid "Back"
+msgstr "Lẹ́hìn"
+
+#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+msgid "HomePage"
+msgstr "HomePage"
+
+#: pages/browser.py:156
+msgid "Categorised"
+msgstr "Categorised"
+
+#: pages/browser.py:156
+msgid "Flattened"
+msgstr "Fẹ́lẹ́"
+
+#: pages/browser.py:186
+msgid "Load"
+msgstr "Kó"
+
+#: pages/browser.py:195
+msgid "Open"
+msgstr "Ṣí"
+
+#: pages/browser.py:205
+msgid "Terminate"
+msgstr "Fòpin sí i"
+
+#: pages/browser.py:216
+msgid "Word count preferences"
+msgstr "Awọn ayanfẹ kika ọrọ"
+
+#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
+#: pages/browser.py:495
+msgid "Select word count"
+msgstr "Yan kika ọrọ"
+
+#: pages/browser.py:246
+msgid "Custom"
+msgstr "Aṣa"
+
+#: pages/browser.py:475
+msgid "To perform this operation, you must first select a cell."
+msgstr "Lati ṣe iṣẹ yii, o gbọdọ kọkọ yan sẹẹli kan."
+
+#: pages/browser.py:579
+msgid "View"
+msgstr "Wo"
+
+#: pages/browser.py:783
+msgid "Select"
+msgstr "Yan"
+
+#: pages/editor.py:329
+msgid "Crossword Editor"
+msgstr "Olootu Crossword"
+
+#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
+#: pages/editor.py:822
+msgid "Your Crosswords"
+msgstr "Àwọn ọ̀rọ̀ Àgbélébùú Rẹ"
+
+#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
+#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+msgid "Save"
+msgstr "Fipamọ́"
+
+#: pages/editor.py:518
+msgid "length >= 1 and valid OS file name"
+msgstr "ipari > = 1 ati ki o wulo OS faili orukọ"
+
+#: pages/editor.py:526
+msgid "length == 1"
+msgstr "ipari == 1"
+
+#: pages/editor.py:531
+msgid "Difficulty"
+msgstr "Ida iṣoro"
+
+#: pages/editor.py:538
 msgid "Easy"
 msgstr "Rọrun"
 
+#: pages/editor.py:538
 msgid "Medium"
 msgstr "Alabọde"
 
+#: pages/editor.py:538
 msgid "Hard"
 msgstr "Lile"
 
+#: pages/editor.py:538
 msgid "Extreme"
 msgstr "Pupọ"
+
+#: pages/editor.py:616 pages/editor.py:969
+msgid "Adding"
+msgstr "Fi kun"
+
+#: pages/editor.py:619 pages/editor.py:973
+msgid "Add"
+msgstr "Ṣàfikún"
+
+#: pages/editor.py:778 pages/editor.py:1086
+msgid "Press"
+msgstr "Tẹ"
+
+#: pages/editor.py:778
+msgid ""
+"to add a \n"
+"new crossword."
+msgstr ""
+"to add a \n"
+"new crossword ì"
+
+#: pages/editor.py:822 pages/editor.py:1128
+msgid "Editing"
+msgstr "Ṣiṣatunkọ"
+
+#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
+#: pages/editor.py:1128
+msgid "Your Words"
+msgstr "Ọ̀rọ̀ Rẹ"
+
+#: pages/editor.py:927
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "ipari > = 1 ati ipari < = 32 ati pe o jẹ ohun kikọ ede"
+
+#: pages/editor.py:936
+msgid "length >= 1"
+msgstr "gigun > = 1"
+
+#: pages/editor.py:1086
+msgid "to add a"
+msgstr "to add a"
+
+#: pages/editor.py:1086
+msgid "new word."
+msgstr "ọrọ titun."
+
+#: pages/home.py:98
+msgid "Crossword Puzzle"
+msgstr "Crossword adojuru"
+
+#: pages/home.py:126
+msgid "Browser"
+msgstr "Aṣàwákiri"
+
+#: pages/home.py:128
+msgid "BrowserPage"
+msgstr "BrowserPage"
+
+#: pages/home.py:137
+msgid "Editor"
+msgstr "Olootu"
+
+#: pages/home.py:139
+msgid "EditorPage"
+msgstr "EditorPage"
+
+#: pages/home.py:159
+msgid "Global Settings"
+msgstr "Eto Agbaye"
+
+#: pages/home.py:166
+msgid "Language"
+msgstr "Èdè"
+
+#: pages/home.py:178
+msgid "Size"
+msgstr "Iwọn"
+
+#: pages/home.py:197
+msgid "light"
+msgstr "imole"
+
+#: pages/home.py:197
+msgid "dark"
+msgstr "dudu"
+
+#: pages/home.py:197
+msgid "system"
+msgstr "eto"
+
+#: pages/home.py:200 pages/home.py:214
+msgid "Appearance"
+msgstr "Ifarahan"
+
+#: pages/home.py:220
+msgid "terrible"
+msgstr "bibanilẹru"
+
+#: pages/home.py:221
+msgid "poor"
+msgstr "talaka"
+
+#: pages/home.py:222
+msgid "average"
+msgstr "aropin"
+
+#: pages/home.py:223
+msgid "great"
+msgstr "nla"
+
+#: pages/home.py:224
+msgid "perfect"
+msgstr "pipe"
+
+#: pages/home.py:228
+msgid "Crossword Quality"
+msgstr "Didara"
 
 msgid "Geography"
 msgstr "Geography"
@@ -351,11 +480,20 @@ msgstr "Imọ"
 msgid "Computer Science"
 msgstr "Imo komputa sayensi"
 
-msgid "Difficulty"
-msgstr "Ida iṣoro"
+msgid "User"
+msgstr "Olùṣàmúlò"
 
 msgid "Total words"
 msgstr "Lapapọ awọn ọrọ"
 
 msgid "Maximum"
 msgstr "O pọju"
+
+msgid "Clue"
+msgstr "Ìtọ́sọ́nà"
+
+msgid "Name"
+msgstr "Orúkọ"
+
+msgid "Symbol"
+msgstr "Àmì"

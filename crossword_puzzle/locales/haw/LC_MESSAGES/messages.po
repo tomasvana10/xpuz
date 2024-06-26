@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-13 21:45+1000\n"
+"POT-Creation-Date: 2024-06-27 00:02+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: haw <LL@li.org>\n"
@@ -19,183 +19,102 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: crossword_puzzle/main.py:79 crossword_puzzle/main.py:130
-#: crossword_puzzle/main.py:275 crossword_puzzle/main.py:343
-msgid "Crossword Puzzle"
-msgstr "Huʻi Huaʻōlelo Crossword"
+#: utils.py:59
+msgid "Remove"
+msgstr "Wehe"
 
-#: crossword_puzzle/main.py:146
-msgid "View crosswords"
-msgstr "Nānā i nā huaʻōlelo"
+#: utils.py:59
+msgid "Are you sure you want to delete this"
+msgstr "Makemake ʻoe e holoi i kēia"
 
-#: crossword_puzzle/main.py:155
-msgid "Exit the app"
-msgstr "Haʻalele i ka polokalamu"
+#: utils.py:59
+msgid "It will be lost forever!"
+msgstr "E nalowale mau loa ana!"
 
-#: crossword_puzzle/main.py:166
-msgid "Global Settings"
-msgstr "Nā hoʻonohonoho honua"
+#: utils.py:64
+msgid "Add or select"
+msgstr "Hoʻohui a koho paha"
 
-#: crossword_puzzle/main.py:173
-msgid "Languages"
-msgstr "ʻŌlelo"
+#: utils.py:64
+msgid "Are you sure you want to add/select a"
+msgstr "Makemake ʻoe e hoʻohui/koho i kahi"
 
-#: crossword_puzzle/main.py:185
-msgid "Size"
-msgstr "Nui"
+#: utils.py:64
+msgid "Your modified fields will be reset!"
+msgstr "E hoʻihoʻi hou ʻia kāu mau kahua i hoʻololi ʻia!"
 
-#: crossword_puzzle/main.py:204
-msgid "light"
-msgstr "māmā"
+#: utils.py:69 utils.py:88
+msgid "Back to home"
+msgstr "Hoʻi i ka home"
 
-#: crossword_puzzle/main.py:204
-msgid "dark"
-msgstr "pouli"
+#: utils.py:69
+msgid ""
+"Are you sure you want to go back to the home screen? Your modified fields "
+"will be reset!"
+msgstr "Makemake ʻoe e hoʻi i ka pale home? "
 
-#: crossword_puzzle/main.py:204
-msgid "system"
-msgstr "ʻōnaehana"
-
-#: crossword_puzzle/main.py:207 crossword_puzzle/main.py:221
-msgid "Appearance"
-msgstr "Ka nana aku"
-
-#: crossword_puzzle/main.py:227
-msgid "terrible"
-msgstr "weliweli"
-
-#: crossword_puzzle/main.py:228
-msgid "poor"
-msgstr "ilihune"
-
-#: crossword_puzzle/main.py:229
-msgid "average"
-msgstr "Apana"
-
-#: crossword_puzzle/main.py:230
-msgid "great"
-msgstr "nui"
-
-#: crossword_puzzle/main.py:231
-msgid "perfect"
-msgstr "hemolele"
-
-#: crossword_puzzle/main.py:235
-msgid "Crossword Quality"
-msgstr "ʻO keʻano o ke aloha"
-
-#: crossword_puzzle/main.py:267 crossword_puzzle/main.py:420
-msgid "Crossword Browser"
-msgstr "Huli Huaʻōlelo Crossword"
-
-#: crossword_puzzle/main.py:425
-msgid "Go back"
-msgstr "Hoʻi aku"
-
-#: crossword_puzzle/main.py:436
-msgid "Load crossword"
-msgstr "Hoʻouka i ka huaʻōlelo"
-
-#: crossword_puzzle/main.py:445
-msgid "Open web app"
-msgstr "E wehe i ka polokalamu kele pūnaewele"
-
-#: crossword_puzzle/main.py:454
-msgid "Terminate web app"
-msgstr "E hoʻopau i ka polokalamu kele pūnaewele"
-
-#: crossword_puzzle/main.py:465
-msgid "Word count preferences"
-msgstr "Nā koho helu huaʻōlelo"
-
-#: crossword_puzzle/main.py:479 crossword_puzzle/main.py:541
-#: crossword_puzzle/main.py:587 crossword_puzzle/main.py:808
-msgid "Select word count"
-msgstr "E koho i ka helu ʻōlelo"
-
-#: crossword_puzzle/main.py:494
-msgid "Custom"
-msgstr "Kuʻuna"
-
-#: crossword_puzzle/main.py:699
-msgid "To perform this operation, you must first select a cell."
-msgstr "E hana i kēia hana, ponoʻoe e koho mua i kahi kelepona."
-
-#: crossword_puzzle/main.py:892
-msgid "View"
-msgstr "Nānā"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:373
-#: crossword_puzzle/main.py:899
-msgid "Close"
-msgstr "Pani"
-
-#: crossword_puzzle/main.py:1046
-msgid "difficulty"
-msgstr "pilikia"
-
-#: crossword_puzzle/main.py:1102
-msgid "Select"
-msgstr "E koho"
-
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Restart"
 msgstr "Hoʻomaka hou"
 
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Are you sure you want to restart the app?"
 msgstr "Makemake ʻoe e hoʻomaka hou i ka polokalamu?"
 
-#: crossword_puzzle/main.py:1160
+#: pages/home.py:148 utils.py:79
 msgid "Exit"
 msgstr "Puka"
 
-#: crossword_puzzle/main.py:1161
+#: utils.py:80
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr ""
-"Makemake ʻoe e haʻalele i ka polokalamu? Inā holo ka polokalamu pūnaewele, e"
-" hoʻopau ʻia."
+"Makemake ʻoe e haʻalele i ka polokalamu? Makemake ʻoe e haʻalele i ka "
+"polokalamu? Inā holo ka polokalamu pūnaewele, e hoʻopau ʻia."
 
-#: crossword_puzzle/main.py:1170
-msgid "Back to home"
-msgstr "Hoʻi i ka home"
-
-#: crossword_puzzle/main.py:1171
+#: utils.py:89
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
-"Makemake ʻoe e hoʻi i ka pale home? E hoʻopau ʻia ka polokalamu pūnaewele."
+"Makemake ʻoe e hoʻi i ka pale home? Makemake ʻoe e hoʻi i ka pale home? E "
+"hoʻopau ʻia ka polokalamu pūnaewele."
 
-#: crossword_puzzle/main.py:1194 crossword_puzzle/main.py:1199
-#: crossword_puzzle/main.py:1204 crossword_puzzle/main.py:1209
-#: crossword_puzzle/main.py:1232 crossword_puzzle/main.py:1244
+#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
+#: utils.py:125 utils.py:147 utils.py:151
 msgid "Error"
 msgstr "Kuhihewa"
 
-#: crossword_puzzle/main.py:1194
+#: utils.py:100
 msgid "This language is already selected."
 msgstr "Ua koho ʻia kēia ʻōlelo."
 
-#: crossword_puzzle/main.py:1199
+#: utils.py:105
 msgid "This size is already selected."
 msgstr "Ua koho mua ʻia kēia nui."
 
-#: crossword_puzzle/main.py:1204
+#: utils.py:110
 msgid "This appearance is already selected."
 msgstr "Ua koho ʻia kēia hiʻohiʻona."
 
-#: crossword_puzzle/main.py:1209
+#: utils.py:115
 msgid "This quality is already selected."
 msgstr "Ua kohoʻia kēiaʻano maikaʻi."
 
-#: crossword_puzzle/main.py:1214
+#: utils.py:120
+msgid "This crossword already exists. Please choose a new name."
+msgstr "Loaʻa kēia huaʻōlelo. "
+
+#: utils.py:125
+msgid "This word already exists. Please choose a new word."
+msgstr "Aia kēia huaʻōlelo. "
+
+#: utils.py:130
 msgid "Info"
 msgstr "ʻIke"
 
-#: crossword_puzzle/main.py:1215
+#: utils.py:131
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -208,141 +127,346 @@ msgid ""
 "computer to terminate them."
 msgstr ""
 "ʻO ka hoʻomaka mua ʻana, e ʻoluʻolu e heluhelu: Ke hoʻouka ʻoe i kahi "
-"huaʻōlelo, a makemake ʻoe e hoʻouka i kekahi, pono ʻoe e hoʻopau i ka "
-"polokalamu pūnaewele. NUI: Inā aia ʻoe ma macOS, e haʻalele i ka noi (me ka "
-"hoʻohana ʻana i ka cmd+q) i ka wā e holo ana ka polokalamu pūnaewele e pale "
-"iā ia mai ka hoʻopau pono ʻana. Inā kuhi hewa ʻoe i kēia, e holo ka "
-"polokalamu i nā polokalamu pūnaewele hou me kahi awa ʻē aʻe. ʻO kahi ʻē aʻe,"
-" hiki iā ʻoe ke hoʻololi lima i ke awa ma ka faila config o ka papahana. "
-"Hiki ke hoʻopau ʻia nā kaʻina hana a pau i hoʻopau pono ʻole ʻia ma o "
-"Activity Monitor ma MacOS, a i ʻole, e hoʻomaka hou i kāu kamepiula e "
+"huaʻōlelo, a makemake ʻoe e hoʻouka i kekahi, pono ʻoe e hoʻopau mua i ka "
+"polokalamu pūnaewele. ʻO ka hoʻomaka mua ʻana, e ʻoluʻolu e heluhelu: Ke "
+"hoʻouka ʻoe i kahi huaʻōlelo, a makemake ʻoe e hoʻouka i kekahi, pono ʻoe e "
+"hoʻopau i ka polokalamu pūnaewele. NUI: Inā aia ʻoe ma macOS, e haʻalele i "
+"ka noi (me ka hoʻohana ʻana i ka cmd+q) i ka wā e holo ana ka polokalamu "
+"pūnaewele e pale iā ia mai ka hoʻopau pono ʻana. Inā kuhi hewa ʻoe i kēia, e"
+" holo ka polokalamu i nā polokalamu pūnaewele hou me kahi awa ʻē aʻe. ʻO "
+"kahi ʻē aʻe, hiki iā ʻoe ke hoʻololi lima i ke awa ma ka faila config o ka "
+"papahana. Hiki ke hoʻopau ʻia nā kaʻina hana a pau i hoʻopau pono ʻole ʻia "
+"ma o Activity Monitor ma MacOS, a i ʻole, e hoʻomaka hou i kāu kamepiula e "
 "hoʻopau iā lākou."
 
-#: crossword_puzzle/main.py:1233
+#: utils.py:153
 msgid ""
-"An error occured while loading this crossword's definitions. Ensure that its"
-" definitions JSON file exists in the base cwords directory. NOTE: Base "
-"crossword data is only accessed when its translated version is not present "
-"in the locales directory."
-msgstr ""
-"Ua hewa i ka wā e hoʻouka ana i nā wehewehena crossword. E hōʻoia i kona "
-"wehewehe ʻana i ka faila JSON ma ka papa kuhikuhi cwords. KA MANAʻO: Loaʻa "
-"wale ka ʻikepili crossword inā ʻaʻole i loaʻa kāna mana unuhi i ka papa "
-"kuhikuhi wahi."
+"An unexpected error occured. Please try reinstalling the application with"
+msgstr "Ua loaʻa kahi hewa i manaʻo ʻole ʻia. "
 
-#: crossword_puzzle/main.py:1245
-msgid ""
-"An error occured in crossword generation. Please see further information in "
-"the console"
-msgstr ""
-"Loaʻa ka hewa i ka hana ʻana i nā huaʻōlelo. E ʻoluʻolu e ʻike i ka ʻike hou"
-" aku ma ka console"
+#: utils.py:672
+msgid "Definitions are empty"
+msgstr "ʻAʻohe wehewehe"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:13
-#: crossword_puzzle/cword_webapp/templates/index.html:343
+#: utils.py:675
+msgid "The word count or definitions are less than 3 in length"
+msgstr "ʻO ka helu a i ʻole ka wehewehe ʻana ʻaʻole ia ma mua o 3 ka lōʻihi"
+
+#: utils.py:679
+msgid "Length of the word count is greater than the definitions"
+msgstr "ʻOi aku ka lōʻihi o ka helu ʻōlelo ma mua o nā wehewehe"
+
+#: utils.py:682
+msgid "Escape character present in word"
+msgstr "Pakele i ke ano ma ka olelo"
+
+#: app/templates/index.html:13 app/templates/index.html:338
 msgid "Crossword Puzzle - Game"
 msgstr "Crossword puzzle - pāʻani"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:155
-msgid "Across"
-msgstr "Ma waena"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:178
-msgid "Down"
-msgstr "Iho"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:203
+#: app/templates/index.html:136
 msgid "Compound"
 msgstr "Coupound"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:216
-msgid "Reveal"
-msgstr "Hōʻike"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:223
-#: crossword_puzzle/cword_webapp/templates/index.html:252
-msgid "Cell"
-msgstr "Kelepona"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:229
-#: crossword_puzzle/cword_webapp/templates/index.html:258
-#: crossword_puzzle/cword_webapp/templates/index.html:281
-msgid "Word"
-msgstr "Hua'ōlelo"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:235
-#: crossword_puzzle/cword_webapp/templates/index.html:264
-#: crossword_puzzle/cword_webapp/templates/index.html:287
-msgid "Grid"
-msgstr "Grid"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:245
-msgid "Check"
-msgstr "Nānā"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:274
-msgid "Clear"
-msgstr "Maopopo"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:293
-msgid "Unrevealed"
-msgstr "ʻAʻole iʻikeʻia"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:306
+#: app/templates/index.html:149
 msgid "Auto-skip"
 msgstr "Skip-skip"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:315
+#: app/templates/index.html:158
 msgid "Auto-word"
 msgstr "Hua'ōlelo-hua'ōlelo"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:324
+#: app/templates/index.html:167
 msgid "Auto-check"
 msgstr "ʻO ka nānā-nānā"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:333
+#: app/templates/index.html:176
 msgid "Zoom"
 msgstr "ZOOM"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:189
+msgid "Reveal"
+msgstr "Hōʻike"
+
+#: app/templates/index.html:197 app/templates/index.html:230
+msgid "Cell"
+msgstr "Kelepona"
+
+#: app/templates/index.html:204 app/templates/index.html:237
+#: app/templates/index.html:263
+msgid "Word"
+msgstr "Hua'ōlelo"
+
+#: app/templates/index.html:211 app/templates/index.html:244
+#: app/templates/index.html:270
+msgid "Grid"
+msgstr "Grid"
+
+#: app/templates/index.html:222
+msgid "Check"
+msgstr "Nānā"
+
+#: app/templates/index.html:255
+msgid "Clear"
+msgstr "Maopopo"
+
+#: app/templates/index.html:277
+msgid "Unrevealed"
+msgstr "ʻAʻole iʻikeʻia"
+
+#: app/templates/index.html:286
+msgid "Across"
+msgstr "Ma waena"
+
+#: app/templates/index.html:308
+msgid "Down"
+msgstr "Iho"
+
+#: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "Ke nānā neiʻoe"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:340
 msgid "from"
 msgstr "Mai"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:350
+#: app/templates/index.html:345
 msgid "word(s) could not be inserted, sorry."
 msgstr "ʻAʻole hiki ke hoʻokomoʻia nā hua'ōlelo (s), e kala mai."
 
-#: crossword_puzzle/cword_webapp/templates/index.html:353
+#: app/templates/index.html:348
 msgid "Word count (adjusted)"
 msgstr "Helu hua'ōlelo (hoʻoponoponoʻia)"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:356
+#: app/templates/index.html:351
 msgid "Word count"
 msgstr "Heluhelu nui"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:362
+#: app/templates/index.html:357
 msgid "Continue"
 msgstr "E hoʻomau"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:368
+#: app/templates/index.html:363
 msgid "You completed the crossword!"
 msgstr "Ua hoʻopauʻoe i ka crossword!"
 
+#: app/templates/index.html:368 pages/browser.py:586
+msgid "Close"
+msgstr "Pani"
+
+#: pages/browser.py:136
+msgid "Crossword Browser"
+msgstr "Huli Huaʻōlelo Crossword"
+
+#: pages/browser.py:141 pages/editor.py:335
+msgid "Back"
+msgstr "Hoʻi"
+
+#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+msgid "HomePage"
+msgstr "ʻAoʻao"
+
+#: pages/browser.py:156
+msgid "Categorised"
+msgstr "Wehewehe ʻia"
+
+#: pages/browser.py:156
+msgid "Flattened"
+msgstr "Palahalaha"
+
+#: pages/browser.py:186
+msgid "Load"
+msgstr "Haawe"
+
+#: pages/browser.py:195
+msgid "Open"
+msgstr "Wehe"
+
+#: pages/browser.py:205
+msgid "Terminate"
+msgstr "Hoʻopau"
+
+#: pages/browser.py:216
+msgid "Word count preferences"
+msgstr "Nā koho helu huaʻōlelo"
+
+#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
+#: pages/browser.py:495
+msgid "Select word count"
+msgstr "E koho i ka helu ʻōlelo"
+
+#: pages/browser.py:246
+msgid "Custom"
+msgstr "Kuʻuna"
+
+#: pages/browser.py:475
+msgid "To perform this operation, you must first select a cell."
+msgstr "E hana i kēia hana, ponoʻoe e koho mua i kahi kelepona."
+
+#: pages/browser.py:579
+msgid "View"
+msgstr "Nānā"
+
+#: pages/browser.py:783
+msgid "Select"
+msgstr "E koho"
+
+#: pages/editor.py:329
+msgid "Crossword Editor"
+msgstr "Luna Hoʻoponopono Crossword"
+
+#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
+#: pages/editor.py:822
+msgid "Your Crosswords"
+msgstr "Kau mau hua'ōlelo"
+
+#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
+#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+msgid "Save"
+msgstr "Hoʻopakele"
+
+#: pages/editor.py:518
+msgid "length >= 1 and valid OS file name"
+msgstr "lōʻihi >= 1 a me ka inoa faila OS kūpono"
+
+#: pages/editor.py:526
+msgid "length == 1"
+msgstr "lōʻihi == 1"
+
+#: pages/editor.py:531
+msgid "Difficulty"
+msgstr "Pilikia"
+
+#: pages/editor.py:538
 msgid "Easy"
 msgstr "maʻalahi"
 
+#: pages/editor.py:538
 msgid "Medium"
 msgstr "Kauwaena"
 
+#: pages/editor.py:538
 msgid "Hard"
 msgstr "Paʻakikī"
 
+#: pages/editor.py:538
 msgid "Extreme"
 msgstr "Kiʻekiʻe"
+
+#: pages/editor.py:616 pages/editor.py:969
+msgid "Adding"
+msgstr "Hoʻohui"
+
+#: pages/editor.py:619 pages/editor.py:973
+msgid "Add"
+msgstr "Hoʻohui"
+
+#: pages/editor.py:778 pages/editor.py:1086
+msgid "Press"
+msgstr "Paʻi"
+
+#: pages/editor.py:778
+msgid ""
+"to add a \n"
+"new crossword."
+msgstr "e hoʻohui i kahi huaʻōlelo hou."
+
+#: pages/editor.py:822 pages/editor.py:1128
+msgid "Editing"
+msgstr "Hoʻoponopono"
+
+#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
+#: pages/editor.py:1128
+msgid "Your Words"
+msgstr "Kau ʻōlelo"
+
+#: pages/editor.py:927
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "lōʻihi >= 1 a me ka lōʻihi <= 32 a he ʻano ʻōlelo"
+
+#: pages/editor.py:936
+msgid "length >= 1"
+msgstr "lōʻihi >= 1"
+
+#: pages/editor.py:1086
+msgid "to add a"
+msgstr "e hoʻohui a"
+
+#: pages/editor.py:1086
+msgid "new word."
+msgstr "ʻōlelo hou."
+
+#: pages/home.py:98
+msgid "Crossword Puzzle"
+msgstr "Huʻi Huaʻōlelo Crossword"
+
+#: pages/home.py:126
+msgid "Browser"
+msgstr "Ka mea nānā"
+
+#: pages/home.py:128
+msgid "BrowserPage"
+msgstr "'ʻOmanana"
+
+#: pages/home.py:137
+msgid "Editor"
+msgstr "Lunahooponopono"
+
+#: pages/home.py:139
+msgid "EditorPage"
+msgstr "Aoao Lunahooponopono"
+
+#: pages/home.py:159
+msgid "Global Settings"
+msgstr "Nā hoʻonohonoho honua"
+
+#: pages/home.py:166
+msgid "Language"
+msgstr "ʻŌlelo"
+
+#: pages/home.py:178
+msgid "Size"
+msgstr "Nui"
+
+#: pages/home.py:197
+msgid "light"
+msgstr "māmā"
+
+#: pages/home.py:197
+msgid "dark"
+msgstr "pouli"
+
+#: pages/home.py:197
+msgid "system"
+msgstr "ʻōnaehana"
+
+#: pages/home.py:200 pages/home.py:214
+msgid "Appearance"
+msgstr "Ka nana aku"
+
+#: pages/home.py:220
+msgid "terrible"
+msgstr "weliweli"
+
+#: pages/home.py:221
+msgid "poor"
+msgstr "ilihune"
+
+#: pages/home.py:222
+msgid "average"
+msgstr "Apana"
+
+#: pages/home.py:223
+msgid "great"
+msgstr "nui"
+
+#: pages/home.py:224
+msgid "perfect"
+msgstr "hemolele"
+
+#: pages/home.py:228
+msgid "Crossword Quality"
+msgstr "ʻO keʻano o ke aloha"
 
 msgid "Geography"
 msgstr "Palapala honua"
@@ -356,11 +480,20 @@ msgstr "ʻepekema"
 msgid "Computer Science"
 msgstr "ʻepekema kamepiula"
 
-msgid "Difficulty"
-msgstr "Pilikia"
+msgid "User"
+msgstr "mea hoʻohana"
 
 msgid "Total words"
 msgstr "Nā hua'ōlelo"
 
 msgid "Maximum"
 msgstr "Loa"
+
+msgid "Clue"
+msgstr "ʻIkepili"
+
+msgid "Name"
+msgstr "Inoa"
+
+msgid "Symbol"
+msgstr "Hoailona"

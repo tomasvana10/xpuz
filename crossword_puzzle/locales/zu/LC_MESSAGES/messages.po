@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-13 21:45+1000\n"
+"POT-Creation-Date: 2024-06-27 00:02+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: zu <LL@li.org>\n"
@@ -19,138 +19,55 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: crossword_puzzle/main.py:79 crossword_puzzle/main.py:130
-#: crossword_puzzle/main.py:275 crossword_puzzle/main.py:343
-msgid "Crossword Puzzle"
-msgstr "I-Crossword Puzzle"
+#: utils.py:59
+msgid "Remove"
+msgstr "Susa"
 
-#: crossword_puzzle/main.py:146
-msgid "View crosswords"
-msgstr "Buka amagama ahlukene"
+#: utils.py:59
+msgid "Are you sure you want to delete this"
+msgstr "Uqinisekile ukuthi ufuna ukususa lokhu"
 
-#: crossword_puzzle/main.py:155
-msgid "Exit the app"
-msgstr "Phuma kuhlelo lokusebenza"
+#: utils.py:59
+msgid "It will be lost forever!"
+msgstr "Kuzolahleka kuze kube phakade!"
 
-#: crossword_puzzle/main.py:166
-msgid "Global Settings"
-msgstr "Izilungiselelo zomhlaba jikelele"
+#: utils.py:64
+msgid "Add or select"
+msgstr "Engeza noma khetha"
 
-#: crossword_puzzle/main.py:173
-msgid "Languages"
-msgstr "Izilimi"
+#: utils.py:64
+msgid "Are you sure you want to add/select a"
+msgstr "Uqinisekile ukuthi ufuna ukwengeza/ukukhetha a"
 
-#: crossword_puzzle/main.py:185
-msgid "Size"
-msgstr "Usayizi"
+#: utils.py:64
+msgid "Your modified fields will be reset!"
+msgstr "Izinkambu zakho eziguquliwe zizohlelwa kabusha!"
 
-#: crossword_puzzle/main.py:204
-msgid "light"
-msgstr "ukukhanya"
+#: utils.py:69 utils.py:88
+msgid "Back to home"
+msgstr "Emuva ekhaya"
 
-#: crossword_puzzle/main.py:204
-msgid "dark"
-msgstr "mnyama"
+#: utils.py:69
+msgid ""
+"Are you sure you want to go back to the home screen? Your modified fields "
+"will be reset!"
+msgstr ""
+"Uqinisekile ukuthi ufuna ukubuyela esikrinini sasekhaya? Izinkambu zakho "
+"eziguquliwe zizohlelwa kabusha!"
 
-#: crossword_puzzle/main.py:204
-msgid "system"
-msgstr "uhlelo"
-
-#: crossword_puzzle/main.py:207 crossword_puzzle/main.py:221
-msgid "Appearance"
-msgstr "Ukubukeka"
-
-#: crossword_puzzle/main.py:227
-msgid "terrible"
-msgstr "-sabisayo"
-
-#: crossword_puzzle/main.py:228
-msgid "poor"
-msgstr "-ntulayo"
-
-#: crossword_puzzle/main.py:229
-msgid "average"
-msgstr "-vamile"
-
-#: crossword_puzzle/main.py:230
-msgid "great"
-msgstr "-khulu"
-
-#: crossword_puzzle/main.py:231
-msgid "perfect"
-msgstr "gweda"
-
-#: crossword_puzzle/main.py:235
-msgid "Crossword Quality"
-msgstr "Ikhwalithi yamagama"
-
-#: crossword_puzzle/main.py:267 crossword_puzzle/main.py:420
-msgid "Crossword Browser"
-msgstr "Isiphequluli se-Crossword"
-
-#: crossword_puzzle/main.py:425
-msgid "Go back"
-msgstr "Buyela emuva"
-
-#: crossword_puzzle/main.py:436
-msgid "Load crossword"
-msgstr "Layisha amagama aphambene"
-
-#: crossword_puzzle/main.py:445
-msgid "Open web app"
-msgstr "Vula uhlelo lokusebenza lwewebhu"
-
-#: crossword_puzzle/main.py:454
-msgid "Terminate web app"
-msgstr "Susa uhlelo lokusebenza lwewebhu"
-
-#: crossword_puzzle/main.py:465
-msgid "Word count preferences"
-msgstr "Izinketho zenani lamagama"
-
-#: crossword_puzzle/main.py:479 crossword_puzzle/main.py:541
-#: crossword_puzzle/main.py:587 crossword_puzzle/main.py:808
-msgid "Select word count"
-msgstr "Khetha isibalo samagama"
-
-#: crossword_puzzle/main.py:494
-msgid "Custom"
-msgstr "Ngokwezifiso"
-
-#: crossword_puzzle/main.py:699
-msgid "To perform this operation, you must first select a cell."
-msgstr "Ukwenza lo msebenzi, kufanele uqale ukhethe iseli."
-
-#: crossword_puzzle/main.py:892
-msgid "View"
-msgstr "Buka"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:373
-#: crossword_puzzle/main.py:899
-msgid "Close"
-msgstr "Vala"
-
-#: crossword_puzzle/main.py:1046
-msgid "difficulty"
-msgstr "ubunzima"
-
-#: crossword_puzzle/main.py:1102
-msgid "Select"
-msgstr "Khetha"
-
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Restart"
 msgstr "Qala kabusha"
 
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Are you sure you want to restart the app?"
 msgstr "Uqinisekile ukuthi ufuna ukuqala kabusha uhlelo lokusebenza?"
 
-#: crossword_puzzle/main.py:1160
+#: pages/home.py:148 utils.py:79
 msgid "Exit"
 msgstr "Phuma"
 
-#: crossword_puzzle/main.py:1161
+#: utils.py:80
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -158,11 +75,7 @@ msgstr ""
 "Ingabe uqinisekile ukuthi ufuna ukuphuma ohlelweni lokusebenza? Uma uhlelo "
 "lokusebenza lwewebhu lusebenza, luzonqanyulwa."
 
-#: crossword_puzzle/main.py:1170
-msgid "Back to home"
-msgstr "Emuva ekhaya"
-
-#: crossword_puzzle/main.py:1171
+#: utils.py:89
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -170,33 +83,40 @@ msgstr ""
 "Uqinisekile ukuthi ufuna ukubuyela esikrinini sasekhaya? Uhlelo lokusebenza "
 "lwewebhu luzonqanyulwa."
 
-#: crossword_puzzle/main.py:1194 crossword_puzzle/main.py:1199
-#: crossword_puzzle/main.py:1204 crossword_puzzle/main.py:1209
-#: crossword_puzzle/main.py:1232 crossword_puzzle/main.py:1244
+#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
+#: utils.py:125 utils.py:147 utils.py:151
 msgid "Error"
 msgstr "Iphutha"
 
-#: crossword_puzzle/main.py:1194
+#: utils.py:100
 msgid "This language is already selected."
 msgstr "Lolu limi seluvele lukhethiwe."
 
-#: crossword_puzzle/main.py:1199
+#: utils.py:105
 msgid "This size is already selected."
 msgstr "Lo sayizi usuvele ukhethiwe."
 
-#: crossword_puzzle/main.py:1204
+#: utils.py:110
 msgid "This appearance is already selected."
 msgstr "Lokhu kubonakala sekukhethiwe kakade."
 
-#: crossword_puzzle/main.py:1209
+#: utils.py:115
 msgid "This quality is already selected."
 msgstr "Le mfanelo isivele ikhethiwe."
 
-#: crossword_puzzle/main.py:1214
+#: utils.py:120
+msgid "This crossword already exists. Please choose a new name."
+msgstr "Le crossword isivele ikhona. Sicela ukhethe igama elisha."
+
+#: utils.py:125
+msgid "This word already exists. Please choose a new word."
+msgstr "Leli gama selikhona. Sicela ukhethe igama elisha."
+
+#: utils.py:130
 msgid "Info"
 msgstr "Ulwazi"
 
-#: crossword_puzzle/main.py:1215
+#: utils.py:131
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -219,131 +139,338 @@ msgstr ""
 "zinganqanyulwa Nge-Activity Monitor ku-MacOS, noma, vele uqale kabusha "
 "ikhompuyutha yakho ukuze uziqede."
 
-#: crossword_puzzle/main.py:1233
+#: utils.py:153
 msgid ""
-"An error occured while loading this crossword's definitions. Ensure that its"
-" definitions JSON file exists in the base cwords directory. NOTE: Base "
-"crossword data is only accessed when its translated version is not present "
-"in the locales directory."
+"An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
-"Kwenzeke iphutha ngenkathi kulayishwa izincazelo zamagama aphambene. "
-"Qinisekisa ukuthi izincazelo zefayela le-JSON likhona kumkhombandlela we-"
-"base cwords. QAPHELA: Idatha ye-crossword eyisisekelo ifinyelelwa kuphela "
-"uma inguqulo yayo ehunyushiwe ingekho kuhla lwemibhalo lwezindawo."
+"Kwenzeke iphutha elingalindelekile. Sicela uzame ukufaka kabusha uhlelo "
+"lokusebenza nge"
 
-#: crossword_puzzle/main.py:1245
-msgid ""
-"An error occured in crossword generation. Please see further information in "
-"the console"
-msgstr ""
-"Kwenzeke iphutha ekukhiqizeni amagama ahlukene. Sicela ubone imininingwane "
-"eyengeziwe kukhonsoli"
+#: utils.py:672
+msgid "Definitions are empty"
+msgstr "Izincazelo azinalutho"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:13
-#: crossword_puzzle/cword_webapp/templates/index.html:343
+#: utils.py:675
+msgid "The word count or definitions are less than 3 in length"
+msgstr "Ukubalwa kwegama noma izincazelo zingaphansi kuka-3 ubude"
+
+#: utils.py:679
+msgid "Length of the word count is greater than the definitions"
+msgstr "Ubude besibalo segama bukhulu kunezincazelo"
+
+#: utils.py:682
+msgid "Escape character present in word"
+msgstr "Ukuphunyuka uhlamvu olukhona ngezwi"
+
+#: app/templates/index.html:13 app/templates/index.html:338
 msgid "Crossword Puzzle - Game"
 msgstr "Iphazili ye-Crossword - Game"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:155
-msgid "Across"
-msgstr "Phesheya"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:178
-msgid "Down"
-msgstr "Ngaphansi"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:203
+#: app/templates/index.html:136
 msgid "Compound"
 msgstr "Landela"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:216
-msgid "Reveal"
-msgstr "Hlakukisa"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:223
-#: crossword_puzzle/cword_webapp/templates/index.html:252
-msgid "Cell"
-msgstr "Iseli"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:229
-#: crossword_puzzle/cword_webapp/templates/index.html:258
-#: crossword_puzzle/cword_webapp/templates/index.html:281
-msgid "Word"
-msgstr "Uhlamvu lwegama"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:235
-#: crossword_puzzle/cword_webapp/templates/index.html:264
-#: crossword_puzzle/cword_webapp/templates/index.html:287
-msgid "Grid"
-msgstr "Igridi"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:245
-msgid "Check"
-msgstr "-Hlola"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:274
-msgid "Clear"
-msgstr "-Cwebile"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:293
-msgid "Unrevealed"
-msgstr "Akuzange kuthunyelwe"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:306
+#: app/templates/index.html:149
 msgid "Auto-skip"
 msgstr "Qamba ngokuzenzakalela"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:315
+#: app/templates/index.html:158
 msgid "Auto-word"
 msgstr "Auto-izwi"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:324
+#: app/templates/index.html:167
 msgid "Auto-check"
 msgstr "Hlola"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:333
+#: app/templates/index.html:176
 msgid "Zoom"
 msgstr "Zukisa"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:189
+msgid "Reveal"
+msgstr "Hlakukisa"
+
+#: app/templates/index.html:197 app/templates/index.html:230
+msgid "Cell"
+msgstr "Iseli"
+
+#: app/templates/index.html:204 app/templates/index.html:237
+#: app/templates/index.html:263
+msgid "Word"
+msgstr "Uhlamvu lwegama"
+
+#: app/templates/index.html:211 app/templates/index.html:244
+#: app/templates/index.html:270
+msgid "Grid"
+msgstr "Igridi"
+
+#: app/templates/index.html:222
+msgid "Check"
+msgstr "-Hlola"
+
+#: app/templates/index.html:255
+msgid "Clear"
+msgstr "-Cwebile"
+
+#: app/templates/index.html:277
+msgid "Unrevealed"
+msgstr "Akuzange kuthunyelwe"
+
+#: app/templates/index.html:286
+msgid "Across"
+msgstr "Phesheya"
+
+#: app/templates/index.html:308
+msgid "Down"
+msgstr "Ngaphansi"
+
+#: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "Uyabuka"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:340
 msgid "from"
 msgstr "ukusuka"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:350
+#: app/templates/index.html:345
 msgid "word(s) could not be inserted, sorry."
 msgstr "Amagama (s) akwazanga ukufakwa, uxolo."
 
-#: crossword_puzzle/cword_webapp/templates/index.html:353
+#: app/templates/index.html:348
 msgid "Word count (adjusted)"
 msgstr "Ukubala kwamagama (kulungiswe)"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:356
+#: app/templates/index.html:351
 msgid "Word count"
 msgstr "Ukubala amagama"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:362
+#: app/templates/index.html:357
 msgid "Continue"
 msgstr "Qhubeka"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:368
+#: app/templates/index.html:363
 msgid "You completed the crossword!"
 msgstr "Uqede i-Crossword!"
 
+#: app/templates/index.html:368 pages/browser.py:586
+msgid "Close"
+msgstr "Vala"
+
+#: pages/browser.py:136
+msgid "Crossword Browser"
+msgstr "Isiphequluli se-Crossword"
+
+#: pages/browser.py:141 pages/editor.py:335
+msgid "Back"
+msgstr "Emuva"
+
+#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+msgid "HomePage"
+msgstr "IkhayaIkhasi"
+
+#: pages/browser.py:156
+msgid "Categorised"
+msgstr "Kuhlukaniswe"
+
+#: pages/browser.py:156
+msgid "Flattened"
+msgstr "Flattened"
+
+#: pages/browser.py:186
+msgid "Load"
+msgstr "Layisha"
+
+#: pages/browser.py:195
+msgid "Open"
+msgstr "Vula"
+
+#: pages/browser.py:205
+msgid "Terminate"
+msgstr "Terminate"
+
+#: pages/browser.py:216
+msgid "Word count preferences"
+msgstr "Izinketho zenani lamagama"
+
+#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
+#: pages/browser.py:495
+msgid "Select word count"
+msgstr "Khetha isibalo samagama"
+
+#: pages/browser.py:246
+msgid "Custom"
+msgstr "Ngokwezifiso"
+
+#: pages/browser.py:475
+msgid "To perform this operation, you must first select a cell."
+msgstr "Ukwenza lo msebenzi, kufanele uqale ukhethe iseli."
+
+#: pages/browser.py:579
+msgid "View"
+msgstr "Buka"
+
+#: pages/browser.py:783
+msgid "Select"
+msgstr "Khetha"
+
+#: pages/editor.py:329
+msgid "Crossword Editor"
+msgstr "Umhleli we-crossword"
+
+#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
+#: pages/editor.py:822
+msgid "Your Crosswords"
+msgstr "Ama-crosswords akho"
+
+#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
+#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+msgid "Save"
+msgstr "Gcina"
+
+#: pages/editor.py:518
+msgid "length >= 1 and valid OS file name"
+msgstr "ubude > = 1 negama lefayela le-OS elivumelekile"
+
+#: pages/editor.py:526
+msgid "length == 1"
+msgstr "ubude == 1"
+
+#: pages/editor.py:531
+msgid "Difficulty"
+msgstr "Ubulukhuni"
+
+#: pages/editor.py:538
 msgid "Easy"
 msgstr "Kulula"
 
+#: pages/editor.py:538
 msgid "Medium"
 msgstr "Maphakathi"
 
+#: pages/editor.py:538
 msgid "Hard"
 msgstr "Kunzima"
 
+#: pages/editor.py:538
 msgid "Extreme"
 msgstr "Okudlulele"
+
+#: pages/editor.py:616 pages/editor.py:969
+msgid "Adding"
+msgstr "Ukwengeza"
+
+#: pages/editor.py:619 pages/editor.py:973
+msgid "Add"
+msgstr "Engeza"
+
+#: pages/editor.py:778 pages/editor.py:1086
+msgid "Press"
+msgstr "Cindezela"
+
+#: pages/editor.py:778
+msgid ""
+"to add a \n"
+"new crossword."
+msgstr ""
+"ukwengeza a \n"
+"i-crossword entsha."
+
+#: pages/editor.py:822 pages/editor.py:1128
+msgid "Editing"
+msgstr "Ukuhlela"
+
+#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
+#: pages/editor.py:1128
+msgid "Your Words"
+msgstr "Amazwi Akho"
+
+#: pages/editor.py:927
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "ubude > = 1 nobude < = 32 futhi ungumlingiswa wolimi"
+
+#: pages/editor.py:936
+msgid "length >= 1"
+msgstr "ubude >= 1"
+
+#: pages/editor.py:1086
+msgid "to add a"
+msgstr "ukwengeza a"
+
+#: pages/editor.py:1086
+msgid "new word."
+msgstr "igama elisha."
+
+#: pages/home.py:98
+msgid "Crossword Puzzle"
+msgstr "I-Crossword Puzzle"
+
+#: pages/home.py:126
+msgid "Browser"
+msgstr "Isiphequluli"
+
+#: pages/home.py:128
+msgid "BrowserPage"
+msgstr "IsiphequluliIkhasi"
+
+#: pages/home.py:137
+msgid "Editor"
+msgstr "Umhleli"
+
+#: pages/home.py:139
+msgid "EditorPage"
+msgstr "EditorPage"
+
+#: pages/home.py:159
+msgid "Global Settings"
+msgstr "Izilungiselelo zomhlaba jikelele"
+
+#: pages/home.py:166
+msgid "Language"
+msgstr "Ulwimi"
+
+#: pages/home.py:178
+msgid "Size"
+msgstr "Usayizi"
+
+#: pages/home.py:197
+msgid "light"
+msgstr "ukukhanya"
+
+#: pages/home.py:197
+msgid "dark"
+msgstr "mnyama"
+
+#: pages/home.py:197
+msgid "system"
+msgstr "uhlelo"
+
+#: pages/home.py:200 pages/home.py:214
+msgid "Appearance"
+msgstr "Ukubukeka"
+
+#: pages/home.py:220
+msgid "terrible"
+msgstr "-sabisayo"
+
+#: pages/home.py:221
+msgid "poor"
+msgstr "-ntulayo"
+
+#: pages/home.py:222
+msgid "average"
+msgstr "-vamile"
+
+#: pages/home.py:223
+msgid "great"
+msgstr "-khulu"
+
+#: pages/home.py:224
+msgid "perfect"
+msgstr "gweda"
+
+#: pages/home.py:228
+msgid "Crossword Quality"
+msgstr "Ikhwalithi yamagama"
 
 msgid "Geography"
 msgstr "IJografi"
@@ -357,11 +484,20 @@ msgstr "Isayensi"
 msgid "Computer Science"
 msgstr "Isayensi yekhompyutha"
 
-msgid "Difficulty"
-msgstr "Ubulukhuni"
+msgid "User"
+msgstr "Umsebenzisi"
 
 msgid "Total words"
 msgstr "Amagama aphelele"
 
 msgid "Maximum"
 msgstr "Okusekugcineni"
+
+msgid "Clue"
+msgstr "Inkomba"
+
+msgid "Name"
+msgstr "Igama"
+
+msgid "Symbol"
+msgstr "Uphawu"

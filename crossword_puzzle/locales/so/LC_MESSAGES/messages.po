@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-13 21:45+1000\n"
+"POT-Creation-Date: 2024-06-27 00:02+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: so <LL@li.org>\n"
@@ -19,138 +19,55 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: crossword_puzzle/main.py:79 crossword_puzzle/main.py:130
-#: crossword_puzzle/main.py:275 crossword_puzzle/main.py:343
-msgid "Crossword Puzzle"
-msgstr "Halxiraalaha Ereyga"
+#: utils.py:59
+msgid "Remove"
+msgstr "ka saar"
 
-#: crossword_puzzle/main.py:146
-msgid "View crosswords"
-msgstr "Eeg ereyada isdhaafka ah"
+#: utils.py:59
+msgid "Are you sure you want to delete this"
+msgstr "Ma hubtaa in aad rabto in aad tan tirtiro"
 
-#: crossword_puzzle/main.py:155
-msgid "Exit the app"
-msgstr "Ka bax abka"
+#: utils.py:59
+msgid "It will be lost forever!"
+msgstr "Waa lagu halligan weligood."
 
-#: crossword_puzzle/main.py:166
-msgid "Global Settings"
-msgstr "Goobaha Caalamiga ah"
+#: utils.py:64
+msgid "Add or select"
+msgstr "Ku dar ama ku dar ama ku dooro"
 
-#: crossword_puzzle/main.py:173
-msgid "Languages"
-msgstr "Luuqadaha"
+#: utils.py:64
+msgid "Are you sure you want to add/select a"
+msgstr "Ma hubtaa in aad rabto in aad ku darto / dooro a"
 
-#: crossword_puzzle/main.py:185
-msgid "Size"
-msgstr "Cabbirka"
+#: utils.py:64
+msgid "Your modified fields will be reset!"
+msgstr "Goobaha aad wax ka bedeleysay ayaa dib loo soo celin doonaa!"
 
-#: crossword_puzzle/main.py:204
-msgid "light"
-msgstr "iftiin"
+#: utils.py:69 utils.py:88
+msgid "Back to home"
+msgstr "Ku noqo guriga"
 
-#: crossword_puzzle/main.py:204
-msgid "dark"
-msgstr "madow"
+#: utils.py:69
+msgid ""
+"Are you sure you want to go back to the home screen? Your modified fields "
+"will be reset!"
+msgstr ""
+"Ma hubtaa in aad rabto in aad dib ugu noqotid shaashadda guriga? Goobaha aad"
+" wax ka bedeleysay ayaa dib loo soo celin doonaa!"
 
-#: crossword_puzzle/main.py:204
-msgid "system"
-msgstr "nidaamka"
-
-#: crossword_puzzle/main.py:207 crossword_puzzle/main.py:221
-msgid "Appearance"
-msgstr "Muuqashada"
-
-#: crossword_puzzle/main.py:227
-msgid "terrible"
-msgstr "aad u daran"
-
-#: crossword_puzzle/main.py:228
-msgid "poor"
-msgstr "fakhri ah"
-
-#: crossword_puzzle/main.py:229
-msgid "average"
-msgstr "dhexdhexaad ah"
-
-#: crossword_puzzle/main.py:230
-msgid "great"
-msgstr "weyn"
-
-#: crossword_puzzle/main.py:231
-msgid "perfect"
-msgstr "fiican"
-
-#: crossword_puzzle/main.py:235
-msgid "Crossword Quality"
-msgstr "Tayada ereyga"
-
-#: crossword_puzzle/main.py:267 crossword_puzzle/main.py:420
-msgid "Crossword Browser"
-msgstr "Browser-ka-hadalka"
-
-#: crossword_puzzle/main.py:425
-msgid "Go back"
-msgstr "Dib ugu noqo"
-
-#: crossword_puzzle/main.py:436
-msgid "Load crossword"
-msgstr "Soo rar kelmadda isdhaafka"
-
-#: crossword_puzzle/main.py:445
-msgid "Open web app"
-msgstr "Fur shabakada internetka"
-
-#: crossword_puzzle/main.py:454
-msgid "Terminate web app"
-msgstr "Jooji abka shabakada"
-
-#: crossword_puzzle/main.py:465
-msgid "Word count preferences"
-msgstr "Dookhyada tirinta kelmadda"
-
-#: crossword_puzzle/main.py:479 crossword_puzzle/main.py:541
-#: crossword_puzzle/main.py:587 crossword_puzzle/main.py:808
-msgid "Select word count"
-msgstr "Dooro tirinta kelmadda"
-
-#: crossword_puzzle/main.py:494
-msgid "Custom"
-msgstr "Caadiyan"
-
-#: crossword_puzzle/main.py:699
-msgid "To perform this operation, you must first select a cell."
-msgstr "Si aad u fuliso howshaan, waa inaad marka hore doorataa unug."
-
-#: crossword_puzzle/main.py:892
-msgid "View"
-msgstr "Daawo"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:373
-#: crossword_puzzle/main.py:899
-msgid "Close"
-msgstr "Xir"
-
-#: crossword_puzzle/main.py:1046
-msgid "difficulty"
-msgstr "dhib"
-
-#: crossword_puzzle/main.py:1102
-msgid "Select"
-msgstr "Dooro"
-
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Restart"
 msgstr "Dib u bilow"
 
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Are you sure you want to restart the app?"
 msgstr "Ma hubtaa inaad rabto inaad dib u bilowdo abka?"
 
-#: crossword_puzzle/main.py:1160
+#: pages/home.py:148 utils.py:79
 msgid "Exit"
 msgstr "Ka bax"
 
-#: crossword_puzzle/main.py:1161
+#: utils.py:80
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -158,11 +75,7 @@ msgstr ""
 "Ma hubtaa inaad doonayso inaad ka baxdo abka? Haddii abka webku uu socdo, "
 "waa la joojin doonaa."
 
-#: crossword_puzzle/main.py:1170
-msgid "Back to home"
-msgstr "Ku noqo guriga"
-
-#: crossword_puzzle/main.py:1171
+#: utils.py:89
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -170,33 +83,40 @@ msgstr ""
 "Ma hubtaa inaad doonayso inaad ku laabato shaashadda guriga? Abka shabakada "
 "waa la joojin doonaa"
 
-#: crossword_puzzle/main.py:1194 crossword_puzzle/main.py:1199
-#: crossword_puzzle/main.py:1204 crossword_puzzle/main.py:1209
-#: crossword_puzzle/main.py:1232 crossword_puzzle/main.py:1244
+#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
+#: utils.py:125 utils.py:147 utils.py:151
 msgid "Error"
 msgstr "Khalad"
 
-#: crossword_puzzle/main.py:1194
+#: utils.py:100
 msgid "This language is already selected."
 msgstr "Luqadan mar hore ayaa la doortay."
 
-#: crossword_puzzle/main.py:1199
+#: utils.py:105
 msgid "This size is already selected."
 msgstr "Xajmigan mar hore ayaa la doortay."
 
-#: crossword_puzzle/main.py:1204
+#: utils.py:110
 msgid "This appearance is already selected."
 msgstr "Muuqaalkan mar hore ayaa la doortay."
 
-#: crossword_puzzle/main.py:1209
+#: utils.py:115
 msgid "This quality is already selected."
 msgstr "Tayadan mar hore ayaa la doortay."
 
-#: crossword_puzzle/main.py:1214
+#: utils.py:120
+msgid "This crossword already exists. Please choose a new name."
+msgstr "Kedintani waa mid horay u jirtay. Fadlan dooro magac cusub."
+
+#: utils.py:125
+msgid "This word already exists. Please choose a new word."
+msgstr "Ereygani mar horeba waa jiray. Fadlan dooro erey cusub."
+
+#: utils.py:130
 msgid "Info"
 msgstr "Xog"
 
-#: crossword_puzzle/main.py:1215
+#: utils.py:131
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -219,131 +139,338 @@ msgstr ""
 "joojin karaa iyada oo loo marayo Kormeerka Hawsha ee MacOS, ama, si fudud "
 "dib u bilaw kombiyuutarkaaga si aad u joojiso."
 
-#: crossword_puzzle/main.py:1233
+#: utils.py:153
 msgid ""
-"An error occured while loading this crossword's definitions. Ensure that its"
-" definitions JSON file exists in the base cwords directory. NOTE: Base "
-"crossword data is only accessed when its translated version is not present "
-"in the locales directory."
+"An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
-"Khalad ayaa dhacay markii la soo gelinayay qeexitaannada kelmad-dhaafka. "
-"Hubi in qeexitaankeeda faylka JSON uu ku jiro tusaha cwords-ka. FIIRO GAAR "
-"AH: Xogta kelmadda sal-ku-galka ah waxa la galaa kaliya marka nooca la "
-"turjumay aanu ku jirin tusaha xaafadaha."
+"Qalad lama filaan ah ayaa dhacay. Fadlan isku day in aad dib ula soo noqoto "
+"codsiga"
 
-#: crossword_puzzle/main.py:1245
-msgid ""
-"An error occured in crossword generation. Please see further information in "
-"the console"
-msgstr ""
-"Khalad ayaa ka dhacay jiilka ereyada isdhaafka ah. Fadlan ka eeg macluumaad "
-"dheeraad ah console-ka"
+#: utils.py:672
+msgid "Definitions are empty"
+msgstr "Qeexitaanadu waa madhan yihiin"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:13
-#: crossword_puzzle/cword_webapp/templates/index.html:343
+#: utils.py:675
+msgid "The word count or definitions are less than 3 in length"
+msgstr "Tirinta erayga ama qeexiddu waxay ka yar yihiin dhererka 3"
+
+#: utils.py:679
+msgid "Length of the word count is greater than the definitions"
+msgstr "Length of tirinta erayga waa ka weyn yahay qeexidda"
+
+#: utils.py:682
+msgid "Escape character present in word"
+msgstr "dabeecad baxsada jooga in word"
+
+#: app/templates/index.html:13 app/templates/index.html:338
 msgid "Crossword Puzzle - Game"
 msgstr "Hal-abuurka ereyga - ciyaarta"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:155
-msgid "Across"
-msgstr "Ka gudbid"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:178
-msgid "Down"
-msgstr "Hoose"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:203
+#: app/templates/index.html:136
 msgid "Compound"
 msgstr "Xirfad"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:216
-msgid "Reveal"
-msgstr "Muujin"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:223
-#: crossword_puzzle/cword_webapp/templates/index.html:252
-msgid "Cell"
-msgstr "Unug"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:229
-#: crossword_puzzle/cword_webapp/templates/index.html:258
-#: crossword_puzzle/cword_webapp/templates/index.html:281
-msgid "Word"
-msgstr "Erey"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:235
-#: crossword_puzzle/cword_webapp/templates/index.html:264
-#: crossword_puzzle/cword_webapp/templates/index.html:287
-msgid "Grid"
-msgstr "Shiirid"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:245
-msgid "Check"
-msgstr "Hubin"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:274
-msgid "Clear"
-msgstr "Waadixin ah"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:293
-msgid "Unrevealed"
-msgstr "Aan laga soo bixin"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:306
+#: app/templates/index.html:149
 msgid "Auto-skip"
 msgstr "Is-bood-ka-dhig"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:315
+#: app/templates/index.html:158
 msgid "Auto-word"
 msgstr "Auto-ereyga"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:324
+#: app/templates/index.html:167
 msgid "Auto-check"
 msgstr "Baadhitaan"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:333
+#: app/templates/index.html:176
 msgid "Zoom"
 msgstr "Soo dhowaanid"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:189
+msgid "Reveal"
+msgstr "Muujin"
+
+#: app/templates/index.html:197 app/templates/index.html:230
+msgid "Cell"
+msgstr "Unug"
+
+#: app/templates/index.html:204 app/templates/index.html:237
+#: app/templates/index.html:263
+msgid "Word"
+msgstr "Erey"
+
+#: app/templates/index.html:211 app/templates/index.html:244
+#: app/templates/index.html:270
+msgid "Grid"
+msgstr "Shiirid"
+
+#: app/templates/index.html:222
+msgid "Check"
+msgstr "Hubin"
+
+#: app/templates/index.html:255
+msgid "Clear"
+msgstr "Waadixin ah"
+
+#: app/templates/index.html:277
+msgid "Unrevealed"
+msgstr "Aan laga soo bixin"
+
+#: app/templates/index.html:286
+msgid "Across"
+msgstr "Ka gudbid"
+
+#: app/templates/index.html:308
+msgid "Down"
+msgstr "Hoose"
+
+#: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "Waad fiirineysaa"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:340
 msgid "from"
 msgstr "ka"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:350
+#: app/templates/index.html:345
 msgid "word(s) could not be inserted, sorry."
 msgstr "Ereyga (yaasha) lama galin karo, waan ka xumahay."
 
-#: crossword_puzzle/cword_webapp/templates/index.html:353
+#: app/templates/index.html:348
 msgid "Word count (adjusted)"
 msgstr "Tirinta ereyga (la hagaajiyay)"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:356
+#: app/templates/index.html:351
 msgid "Word count"
 msgstr "Ereyga tirinta"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:362
+#: app/templates/index.html:357
 msgid "Continue"
 msgstr "Socon"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:368
+#: app/templates/index.html:363
 msgid "You completed the crossword!"
 msgstr "Waxaad dhammaystirtay ereyga iskutallaabta!"
 
+#: app/templates/index.html:368 pages/browser.py:586
+msgid "Close"
+msgstr "Xir"
+
+#: pages/browser.py:136
+msgid "Crossword Browser"
+msgstr "Browser-ka-hadalka"
+
+#: pages/browser.py:141 pages/editor.py:335
+msgid "Back"
+msgstr "Hore"
+
+#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+msgid "HomePage"
+msgstr "HomeSami"
+
+#: pages/browser.py:156
+msgid "Categorised"
+msgstr "Qaybta"
+
+#: pages/browser.py:156
+msgid "Flattened"
+msgstr "fadhiyo"
+
+#: pages/browser.py:186
+msgid "Load"
+msgstr "Rar"
+
+#: pages/browser.py:195
+msgid "Open"
+msgstr "Wuxuu furan yahay"
+
+#: pages/browser.py:205
+msgid "Terminate"
+msgstr "Jooji"
+
+#: pages/browser.py:216
+msgid "Word count preferences"
+msgstr "Dookhyada tirinta kelmadda"
+
+#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
+#: pages/browser.py:495
+msgid "Select word count"
+msgstr "Dooro tirinta kelmadda"
+
+#: pages/browser.py:246
+msgid "Custom"
+msgstr "Caadiyan"
+
+#: pages/browser.py:475
+msgid "To perform this operation, you must first select a cell."
+msgstr "Si aad u fuliso howshaan, waa inaad marka hore doorataa unug."
+
+#: pages/browser.py:579
+msgid "View"
+msgstr "Daawo"
+
+#: pages/browser.py:783
+msgid "Select"
+msgstr "Dooro"
+
+#: pages/editor.py:329
+msgid "Crossword Editor"
+msgstr "Tafatiraha Crossword"
+
+#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
+#: pages/editor.py:822
+msgid "Your Crosswords"
+msgstr "Erayo"
+
+#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
+#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+msgid "Save"
+msgstr "Xaree"
+
+#: pages/editor.py:518
+msgid "length >= 1 and valid OS file name"
+msgstr "dhererka > = 1 iyo magaca faylka OS OS oo sax ah"
+
+#: pages/editor.py:526
+msgid "length == 1"
+msgstr "dherer == 1"
+
+#: pages/editor.py:531
+msgid "Difficulty"
+msgstr "Dhibaato"
+
+#: pages/editor.py:538
 msgid "Easy"
 msgstr "Fudud"
 
+#: pages/editor.py:538
 msgid "Medium"
 msgstr "Dhexdhexaad"
 
+#: pages/editor.py:538
 msgid "Hard"
 msgstr "Adag"
 
+#: pages/editor.py:538
 msgid "Extreme"
 msgstr "Aad u daran"
+
+#: pages/editor.py:616 pages/editor.py:969
+msgid "Adding"
+msgstr "kordhiyay"
+
+#: pages/editor.py:619 pages/editor.py:973
+msgid "Add"
+msgstr "Add"
+
+#: pages/editor.py:778 pages/editor.py:1086
+msgid "Press"
+msgstr "Press"
+
+#: pages/editor.py:778
+msgid ""
+"to add a \n"
+"new crossword."
+msgstr ""
+"mid ku daro a \n"
+"hal-ku-meel-gaar ah."
+
+#: pages/editor.py:822 pages/editor.py:1128
+msgid "Editing"
+msgstr "Waxka bedelaada"
+
+#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
+#: pages/editor.py:1128
+msgid "Your Words"
+msgstr "Erayadaada"
+
+#: pages/editor.py:927
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "dhererka > = 1 iyo dhererka < = 32 waana qof luqadeed"
+
+#: pages/editor.py:936
+msgid "length >= 1"
+msgstr "dherer > = 1"
+
+#: pages/editor.py:1086
+msgid "to add a"
+msgstr "mid ku daro a"
+
+#: pages/editor.py:1086
+msgid "new word."
+msgstr "ereyga cusub."
+
+#: pages/home.py:98
+msgid "Crossword Puzzle"
+msgstr "Halxiraalaha Ereyga"
+
+#: pages/home.py:126
+msgid "Browser"
+msgstr "Browser"
+
+#: pages/home.py:128
+msgid "BrowserPage"
+msgstr "BrowserPage"
+
+#: pages/home.py:137
+msgid "Editor"
+msgstr "Tifaftire"
+
+#: pages/home.py:139
+msgid "EditorPage"
+msgstr "EditorPage"
+
+#: pages/home.py:159
+msgid "Global Settings"
+msgstr "Goobaha Caalamiga ah"
+
+#: pages/home.py:166
+msgid "Language"
+msgstr "luuqada"
+
+#: pages/home.py:178
+msgid "Size"
+msgstr "Cabbirka"
+
+#: pages/home.py:197
+msgid "light"
+msgstr "iftiin"
+
+#: pages/home.py:197
+msgid "dark"
+msgstr "madow"
+
+#: pages/home.py:197
+msgid "system"
+msgstr "nidaamka"
+
+#: pages/home.py:200 pages/home.py:214
+msgid "Appearance"
+msgstr "Muuqashada"
+
+#: pages/home.py:220
+msgid "terrible"
+msgstr "aad u daran"
+
+#: pages/home.py:221
+msgid "poor"
+msgstr "fakhri ah"
+
+#: pages/home.py:222
+msgid "average"
+msgstr "dhexdhexaad ah"
+
+#: pages/home.py:223
+msgid "great"
+msgstr "weyn"
+
+#: pages/home.py:224
+msgid "perfect"
+msgstr "fiican"
+
+#: pages/home.py:228
+msgid "Crossword Quality"
+msgstr "Tayada ereyga"
 
 msgid "Geography"
 msgstr "Juqraafiga"
@@ -357,11 +484,20 @@ msgstr "Sayniska"
 msgid "Computer Science"
 msgstr "Sayniska Kombiyuutarka"
 
-msgid "Difficulty"
-msgstr "Dhibaato"
+msgid "User"
+msgstr "Isticmaalaha"
 
 msgid "Total words"
 msgstr "Wadarta ereyada"
 
 msgid "Maximum"
 msgstr "Heer ugu badan"
+
+msgid "Clue"
+msgstr "Clue"
+
+msgid "Name"
+msgstr "magaca"
+
+msgid "Symbol"
+msgstr "Astaanta"

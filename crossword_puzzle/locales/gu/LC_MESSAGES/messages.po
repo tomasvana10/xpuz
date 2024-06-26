@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-13 21:45+1000\n"
+"POT-Creation-Date: 2024-06-27 00:02+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: gu <LL@li.org>\n"
@@ -19,138 +19,55 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: crossword_puzzle/main.py:79 crossword_puzzle/main.py:130
-#: crossword_puzzle/main.py:275 crossword_puzzle/main.py:343
-msgid "Crossword Puzzle"
-msgstr "ક્રોસવર્ડ પઝલ"
+#: utils.py:59
+msgid "Remove"
+msgstr "દૂર કરો"
 
-#: crossword_puzzle/main.py:146
-msgid "View crosswords"
-msgstr "ક્રોસવર્ડ્સ જુઓ"
+#: utils.py:59
+msgid "Are you sure you want to delete this"
+msgstr "શું તમે ખરેખર આને કાઢી નાંખવા માંગો છો"
 
-#: crossword_puzzle/main.py:155
-msgid "Exit the app"
-msgstr "એપ્લિકેશનમાંથી બહાર નીકળો"
+#: utils.py:59
+msgid "It will be lost forever!"
+msgstr "કાયમ માટે ખોવાઈ જશે!"
 
-#: crossword_puzzle/main.py:166
-msgid "Global Settings"
-msgstr "વૈશ્વિક સેટિંગ્સ"
+#: utils.py:64
+msgid "Add or select"
+msgstr "ઉમેરો અથવા પસંદ કરો"
 
-#: crossword_puzzle/main.py:173
-msgid "Languages"
-msgstr "ભાષાઓ"
+#: utils.py:64
+msgid "Are you sure you want to add/select a"
+msgstr "શું તમે ખરેખર ઉમેરવા/પસંદ કરવા માંગો છો"
 
-#: crossword_puzzle/main.py:185
-msgid "Size"
-msgstr "કદ"
+#: utils.py:64
+msgid "Your modified fields will be reset!"
+msgstr "તમારા બદલાયેલ ક્ષેત્રો પુનઃસુયોજિત થઈ જશે!"
 
-#: crossword_puzzle/main.py:204
-msgid "light"
-msgstr "પ્રકાશ"
+#: utils.py:69 utils.py:88
+msgid "Back to home"
+msgstr "ઘરે પાછા"
 
-#: crossword_puzzle/main.py:204
-msgid "dark"
-msgstr "અંધારું"
+#: utils.py:69
+msgid ""
+"Are you sure you want to go back to the home screen? Your modified fields "
+"will be reset!"
+msgstr ""
+"શું તમે ખરેખર હોમ સ્ક્રીન પર પાછા જવા માંગો છો? તમારા બદલાયેલ ક્ષેત્રો "
+"પુનઃસુયોજિત થઈ જશે!"
 
-#: crossword_puzzle/main.py:204
-msgid "system"
-msgstr "સિસ્ટમ"
-
-#: crossword_puzzle/main.py:207 crossword_puzzle/main.py:221
-msgid "Appearance"
-msgstr "દેખાવ"
-
-#: crossword_puzzle/main.py:227
-msgid "terrible"
-msgstr "ભયંકર"
-
-#: crossword_puzzle/main.py:228
-msgid "poor"
-msgstr "ગરીબ"
-
-#: crossword_puzzle/main.py:229
-msgid "average"
-msgstr "સરેરાશ"
-
-#: crossword_puzzle/main.py:230
-msgid "great"
-msgstr "મહાન"
-
-#: crossword_puzzle/main.py:231
-msgid "perfect"
-msgstr "સંપૂર્ણ"
-
-#: crossword_puzzle/main.py:235
-msgid "Crossword Quality"
-msgstr "ક્રોસવર્ડ ગુણવત્તા"
-
-#: crossword_puzzle/main.py:267 crossword_puzzle/main.py:420
-msgid "Crossword Browser"
-msgstr "ક્રોસવર્ડ બ્રાઉઝર"
-
-#: crossword_puzzle/main.py:425
-msgid "Go back"
-msgstr "પાછા જાવ"
-
-#: crossword_puzzle/main.py:436
-msgid "Load crossword"
-msgstr "ક્રોસવર્ડ લોડ કરો"
-
-#: crossword_puzzle/main.py:445
-msgid "Open web app"
-msgstr "વેબ એપ્લિકેશન ખોલો"
-
-#: crossword_puzzle/main.py:454
-msgid "Terminate web app"
-msgstr "વેબ એપ્લિકેશન સમાપ્ત કરો"
-
-#: crossword_puzzle/main.py:465
-msgid "Word count preferences"
-msgstr "શબ્દ ગણતરી પસંદગીઓ"
-
-#: crossword_puzzle/main.py:479 crossword_puzzle/main.py:541
-#: crossword_puzzle/main.py:587 crossword_puzzle/main.py:808
-msgid "Select word count"
-msgstr "શબ્દ ગણતરી પસંદ કરો"
-
-#: crossword_puzzle/main.py:494
-msgid "Custom"
-msgstr "કસ્ટમ"
-
-#: crossword_puzzle/main.py:699
-msgid "To perform this operation, you must first select a cell."
-msgstr "આ કામગીરી કરવા માટે, તમારે પહેલા સેલ પસંદ કરવું આવશ્યક છે."
-
-#: crossword_puzzle/main.py:892
-msgid "View"
-msgstr "જુઓ"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:373
-#: crossword_puzzle/main.py:899
-msgid "Close"
-msgstr "બંધ"
-
-#: crossword_puzzle/main.py:1046
-msgid "difficulty"
-msgstr "મુશ્કેલી"
-
-#: crossword_puzzle/main.py:1102
-msgid "Select"
-msgstr "પસંદ કરો"
-
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Restart"
 msgstr "પુનઃપ્રારંભ"
 
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Are you sure you want to restart the app?"
 msgstr "શું તમે ખરેખર એપને પુનઃપ્રારંભ કરવા માંગો છો?"
 
-#: crossword_puzzle/main.py:1160
+#: pages/home.py:148 utils.py:79
 msgid "Exit"
 msgstr "બહાર નીકળો"
 
-#: crossword_puzzle/main.py:1161
+#: utils.py:80
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -158,11 +75,7 @@ msgstr ""
 "શું તમે ખરેખર એપ્લિકેશનમાંથી બહાર નીકળવા માંગો છો? જો વેબ એપ્લિકેશન ચાલી રહી"
 " છે, તો તે સમાપ્ત કરવામાં આવશે."
 
-#: crossword_puzzle/main.py:1170
-msgid "Back to home"
-msgstr "ઘરે પાછા"
-
-#: crossword_puzzle/main.py:1171
+#: utils.py:89
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -170,33 +83,41 @@ msgstr ""
 "શું તમે ખરેખર હોમ સ્ક્રીન પર પાછા જવા માંગો છો? વેબ એપ્લિકેશન સમાપ્ત કરવામાં"
 " આવશે."
 
-#: crossword_puzzle/main.py:1194 crossword_puzzle/main.py:1199
-#: crossword_puzzle/main.py:1204 crossword_puzzle/main.py:1209
-#: crossword_puzzle/main.py:1232 crossword_puzzle/main.py:1244
+#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
+#: utils.py:125 utils.py:147 utils.py:151
 msgid "Error"
 msgstr "ભૂલ"
 
-#: crossword_puzzle/main.py:1194
+#: utils.py:100
 msgid "This language is already selected."
 msgstr "આ ભાષા પહેલેથી જ પસંદ કરેલ છે."
 
-#: crossword_puzzle/main.py:1199
+#: utils.py:105
 msgid "This size is already selected."
 msgstr "આ કદ પહેલેથી જ પસંદ કરેલ છે."
 
-#: crossword_puzzle/main.py:1204
+#: utils.py:110
 msgid "This appearance is already selected."
 msgstr "આ દેખાવ પહેલેથી જ પસંદ કરેલ છે."
 
-#: crossword_puzzle/main.py:1209
+#: utils.py:115
 msgid "This quality is already selected."
 msgstr "આ ગુણવત્તા પહેલાથી જ પસંદ થયેલ છે."
 
-#: crossword_puzzle/main.py:1214
+#: utils.py:120
+msgid "This crossword already exists. Please choose a new name."
+msgstr ""
+"આ ક્રોસવર્ડ પહેલેથી જ અસ્તિત્વ ધરાવે છે. મહેરબાની કરીને નવું નામ પસંદ કરો."
+
+#: utils.py:125
+msgid "This word already exists. Please choose a new word."
+msgstr "આ શબ્દ પહેલેથી જ અસ્તિત્વમાં છે. કૃપા કરીને નવો શબ્દ પસંદ કરો."
+
+#: utils.py:130
 msgid "Info"
 msgstr "માહિતી"
 
-#: crossword_puzzle/main.py:1215
+#: utils.py:131
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -218,129 +139,338 @@ msgstr ""
 "નથી તે MacOS પર પ્રવૃત્તિ મોનિટર દ્વારા સમાપ્ત થઈ શકે છે, અથવા, તેને સમાપ્ત "
 "કરવા માટે ફક્ત તમારા કમ્પ્યુટરને ફરીથી પ્રારંભ કરો."
 
-#: crossword_puzzle/main.py:1233
+#: utils.py:153
 msgid ""
-"An error occured while loading this crossword's definitions. Ensure that its"
-" definitions JSON file exists in the base cwords directory. NOTE: Base "
-"crossword data is only accessed when its translated version is not present "
-"in the locales directory."
+"An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
-"આ ક્રોસવર્ડની વ્યાખ્યાઓ લોડ કરતી વખતે એક ભૂલ આવી. ખાતરી કરો કે તેની "
-"વ્યાખ્યાઓ JSON ફાઇલ બેઝ કવર્ડ્સ ડિરેક્ટરીમાં અસ્તિત્વમાં છે. નોંધ: બેઝ "
-"ક્રોસવર્ડ ડેટા ફક્ત ત્યારે જ એક્સેસ થાય છે જ્યારે તેનું ભાષાંતરિત સંસ્કરણ "
-"લોકેલ ડિરેક્ટરીમાં હાજર ન હોય."
+"એક અનિચ્છનીય ભૂલ ઉદ્ભવી. મહેરબાની કરીને આની સાથે કાર્યક્રમને ફરીથી સ્થાપિત "
+"કરવાનો પ્રયત્ન કરો"
 
-#: crossword_puzzle/main.py:1245
-msgid ""
-"An error occured in crossword generation. Please see further information in "
-"the console"
-msgstr "ક્રોસવર્ડ જનરેશનમાં ભૂલ આવી. કૃપા કરીને કન્સોલમાં વધુ માહિતી જુઓ"
+#: utils.py:672
+msgid "Definitions are empty"
+msgstr "વ્યાખ્યાઓ ખાલી છે"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:13
-#: crossword_puzzle/cword_webapp/templates/index.html:343
+#: utils.py:675
+msgid "The word count or definitions are less than 3 in length"
+msgstr "શબ્દ ગણતરી અથવા વ્યાખ્યાઓ લંબાઇમાં 3 કરતા ઓછી છે"
+
+#: utils.py:679
+msgid "Length of the word count is greater than the definitions"
+msgstr "શબ્દ ગણતરીની લંબાઇ વ્યાખ્યાઓ કરતા વધારે છે"
+
+#: utils.py:682
+msgid "Escape character present in word"
+msgstr "શબ્દમાં હાજર રહેલ અક્ષરને છટકવો"
+
+#: app/templates/index.html:13 app/templates/index.html:338
 msgid "Crossword Puzzle - Game"
 msgstr "ક્રોસવર્ડ પઝલ - રમત"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:155
-msgid "Across"
-msgstr "સમગ્ર"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:178
-msgid "Down"
-msgstr "નીચે"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:203
+#: app/templates/index.html:136
 msgid "Compound"
 msgstr "સંયોજન"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:216
-msgid "Reveal"
-msgstr "ઉઘાડી"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:223
-#: crossword_puzzle/cword_webapp/templates/index.html:252
-msgid "Cell"
-msgstr "ઓરડું"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:229
-#: crossword_puzzle/cword_webapp/templates/index.html:258
-#: crossword_puzzle/cword_webapp/templates/index.html:281
-msgid "Word"
-msgstr "શબ્દ"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:235
-#: crossword_puzzle/cword_webapp/templates/index.html:264
-#: crossword_puzzle/cword_webapp/templates/index.html:287
-msgid "Grid"
-msgstr "ગ્રીડ"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:245
-msgid "Check"
-msgstr "તપાસ"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:274
-msgid "Clear"
-msgstr "ચોખ્ખુ"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:293
-msgid "Unrevealed"
-msgstr "ઉન્મત્ત"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:306
+#: app/templates/index.html:149
 msgid "Auto-skip"
 msgstr "સ્વત -sાંશ"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:315
+#: app/templates/index.html:158
 msgid "Auto-word"
 msgstr "શબ્દ"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:324
+#: app/templates/index.html:167
 msgid "Auto-check"
 msgstr "સ્વચાલિત તપાસ"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:333
+#: app/templates/index.html:176
 msgid "Zoom"
 msgstr "ઝૂમ"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:189
+msgid "Reveal"
+msgstr "ઉઘાડી"
+
+#: app/templates/index.html:197 app/templates/index.html:230
+msgid "Cell"
+msgstr "ઓરડું"
+
+#: app/templates/index.html:204 app/templates/index.html:237
+#: app/templates/index.html:263
+msgid "Word"
+msgstr "શબ્દ"
+
+#: app/templates/index.html:211 app/templates/index.html:244
+#: app/templates/index.html:270
+msgid "Grid"
+msgstr "ગ્રીડ"
+
+#: app/templates/index.html:222
+msgid "Check"
+msgstr "તપાસ"
+
+#: app/templates/index.html:255
+msgid "Clear"
+msgstr "ચોખ્ખુ"
+
+#: app/templates/index.html:277
+msgid "Unrevealed"
+msgstr "ઉન્મત્ત"
+
+#: app/templates/index.html:286
+msgid "Across"
+msgstr "સમગ્ર"
+
+#: app/templates/index.html:308
+msgid "Down"
+msgstr "નીચે"
+
+#: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "તમે જોઈ રહ્યા છો"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:340
 msgid "from"
 msgstr "થી"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:350
+#: app/templates/index.html:345
 msgid "word(s) could not be inserted, sorry."
 msgstr "માફ કરશો, શબ્દ (ઓ) દાખલ કરી શકાતો નથી."
 
-#: crossword_puzzle/cword_webapp/templates/index.html:353
+#: app/templates/index.html:348
 msgid "Word count (adjusted)"
 msgstr "શબ્દ ગણતરી (સમાયોજિત)"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:356
+#: app/templates/index.html:351
 msgid "Word count"
 msgstr "શબ્દગણના"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:362
+#: app/templates/index.html:357
 msgid "Continue"
 msgstr "ચાલુ રાખવું"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:368
+#: app/templates/index.html:363
 msgid "You completed the crossword!"
 msgstr "તમે ક્રોસવર્ડ પૂર્ણ કર્યો!"
 
+#: app/templates/index.html:368 pages/browser.py:586
+msgid "Close"
+msgstr "બંધ"
+
+#: pages/browser.py:136
+msgid "Crossword Browser"
+msgstr "ક્રોસવર્ડ બ્રાઉઝર"
+
+#: pages/browser.py:141 pages/editor.py:335
+msgid "Back"
+msgstr "પાછળ"
+
+#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+msgid "HomePage"
+msgstr "ઘરપાનું"
+
+#: pages/browser.py:156
+msgid "Categorised"
+msgstr "વર્ગીકૃત"
+
+#: pages/browser.py:156
+msgid "Flattened"
+msgstr "ફ્લેટન થયેલ"
+
+#: pages/browser.py:186
+msgid "Load"
+msgstr "લાવો"
+
+#: pages/browser.py:195
+msgid "Open"
+msgstr "સાફ"
+
+#: pages/browser.py:205
+msgid "Terminate"
+msgstr "બંધ કરો"
+
+#: pages/browser.py:216
+msgid "Word count preferences"
+msgstr "શબ્દ ગણતરી પસંદગીઓ"
+
+#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
+#: pages/browser.py:495
+msgid "Select word count"
+msgstr "શબ્દ ગણતરી પસંદ કરો"
+
+#: pages/browser.py:246
+msgid "Custom"
+msgstr "કસ્ટમ"
+
+#: pages/browser.py:475
+msgid "To perform this operation, you must first select a cell."
+msgstr "આ કામગીરી કરવા માટે, તમારે પહેલા સેલ પસંદ કરવું આવશ્યક છે."
+
+#: pages/browser.py:579
+msgid "View"
+msgstr "જુઓ"
+
+#: pages/browser.py:783
+msgid "Select"
+msgstr "પસંદ કરો"
+
+#: pages/editor.py:329
+msgid "Crossword Editor"
+msgstr "Crossword સંપાદક"
+
+#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
+#: pages/editor.py:822
+msgid "Your Crosswords"
+msgstr "તમારા ક્રોસવર્ડ્સ"
+
+#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
+#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+msgid "Save"
+msgstr "સંગ્રહો"
+
+#: pages/editor.py:518
+msgid "length >= 1 and valid OS file name"
+msgstr "લંબાઇ >= ૧ અને માન્ય OS ફાઇલ નામ"
+
+#: pages/editor.py:526
+msgid "length == 1"
+msgstr "લંબાઇ == 1"
+
+#: pages/editor.py:531
+msgid "Difficulty"
+msgstr "મુશ્કેલી"
+
+#: pages/editor.py:538
 msgid "Easy"
 msgstr "સરળ"
 
+#: pages/editor.py:538
 msgid "Medium"
 msgstr "મધ્યમ"
 
+#: pages/editor.py:538
 msgid "Hard"
 msgstr "કઠણ"
 
+#: pages/editor.py:538
 msgid "Extreme"
 msgstr "આત્યંતિક"
+
+#: pages/editor.py:616 pages/editor.py:969
+msgid "Adding"
+msgstr "ઉમેરી રહ્યા છીએ"
+
+#: pages/editor.py:619 pages/editor.py:973
+msgid "Add"
+msgstr "ઉમેરો"
+
+#: pages/editor.py:778 pages/editor.py:1086
+msgid "Press"
+msgstr "દબાવો"
+
+#: pages/editor.py:778
+msgid ""
+"to add a \n"
+"new crossword."
+msgstr ""
+"ઉમેરવા માટે \n"
+"નવો ક્રોસવર્ડ."
+
+#: pages/editor.py:822 pages/editor.py:1128
+msgid "Editing"
+msgstr "સંપાદન"
+
+#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
+#: pages/editor.py:1128
+msgid "Your Words"
+msgstr "તમારા શબ્દો"
+
+#: pages/editor.py:927
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "લંબાઇ >= 1 અને લંબાઇ <= 32 છે અને તે ભાષા અક્ષર છે"
+
+#: pages/editor.py:936
+msgid "length >= 1"
+msgstr "લંબાઇ >= ૧"
+
+#: pages/editor.py:1086
+msgid "to add a"
+msgstr "ઉમેરવા માટે"
+
+#: pages/editor.py:1086
+msgid "new word."
+msgstr "નવો શબ્દ."
+
+#: pages/home.py:98
+msgid "Crossword Puzzle"
+msgstr "ક્રોસવર્ડ પઝલ"
+
+#: pages/home.py:126
+msgid "Browser"
+msgstr "બ્રાઉઝર"
+
+#: pages/home.py:128
+msgid "BrowserPage"
+msgstr "બ્રાઉઝર પાનું"
+
+#: pages/home.py:137
+msgid "Editor"
+msgstr "સંપાદક"
+
+#: pages/home.py:139
+msgid "EditorPage"
+msgstr "સંપાદકપાનું"
+
+#: pages/home.py:159
+msgid "Global Settings"
+msgstr "વૈશ્વિક સેટિંગ્સ"
+
+#: pages/home.py:166
+msgid "Language"
+msgstr "ભાષા"
+
+#: pages/home.py:178
+msgid "Size"
+msgstr "કદ"
+
+#: pages/home.py:197
+msgid "light"
+msgstr "પ્રકાશ"
+
+#: pages/home.py:197
+msgid "dark"
+msgstr "અંધારું"
+
+#: pages/home.py:197
+msgid "system"
+msgstr "સિસ્ટમ"
+
+#: pages/home.py:200 pages/home.py:214
+msgid "Appearance"
+msgstr "દેખાવ"
+
+#: pages/home.py:220
+msgid "terrible"
+msgstr "ભયંકર"
+
+#: pages/home.py:221
+msgid "poor"
+msgstr "ગરીબ"
+
+#: pages/home.py:222
+msgid "average"
+msgstr "સરેરાશ"
+
+#: pages/home.py:223
+msgid "great"
+msgstr "મહાન"
+
+#: pages/home.py:224
+msgid "perfect"
+msgstr "સંપૂર્ણ"
+
+#: pages/home.py:228
+msgid "Crossword Quality"
+msgstr "ક્રોસવર્ડ ગુણવત્તા"
 
 msgid "Geography"
 msgstr "ભૂગોળ"
@@ -354,11 +484,20 @@ msgstr "વિજ્ઞાન"
 msgid "Computer Science"
 msgstr "કોમ્પ્યુટર સાયન્સ"
 
-msgid "Difficulty"
-msgstr "મુશ્કેલી"
+msgid "User"
+msgstr "વપરાશકર્તા"
 
 msgid "Total words"
 msgstr "કુલ શબ્દો"
 
 msgid "Maximum"
 msgstr "મહત્તમ"
+
+msgid "Clue"
+msgstr "ચાવી"
+
+msgid "Name"
+msgstr "નામ"
+
+msgid "Symbol"
+msgstr "ચિહ્ન"

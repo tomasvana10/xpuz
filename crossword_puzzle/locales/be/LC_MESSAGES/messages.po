@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-13 21:45+1000\n"
+"POT-Creation-Date: 2024-06-27 00:02+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: be <LL@li.org>\n"
@@ -19,184 +19,102 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: crossword_puzzle/main.py:79 crossword_puzzle/main.py:130
-#: crossword_puzzle/main.py:275 crossword_puzzle/main.py:343
-msgid "Crossword Puzzle"
-msgstr "Крыжаванка"
+#: utils.py:59
+msgid "Remove"
+msgstr "Выдаліць"
 
-#: crossword_puzzle/main.py:146
-msgid "View crosswords"
-msgstr "Прагляд крыжаванак"
+#: utils.py:59
+msgid "Are you sure you want to delete this"
+msgstr "Вы ўпэўнены, што хочаце выдаліць гэта"
 
-#: crossword_puzzle/main.py:155
-msgid "Exit the app"
-msgstr "Выйдзіце з праграмы"
+#: utils.py:59
+msgid "It will be lost forever!"
+msgstr "Гэта будзе страчана назаўжды!"
 
-#: crossword_puzzle/main.py:166
-msgid "Global Settings"
-msgstr "Глабальныя налады"
+#: utils.py:64
+msgid "Add or select"
+msgstr "Дадаць або выбраць"
 
-#: crossword_puzzle/main.py:173
-msgid "Languages"
-msgstr "Мовы"
+#: utils.py:64
+msgid "Are you sure you want to add/select a"
+msgstr "Вы ўпэўнены, што хочаце дадаць/выбраць a"
 
-#: crossword_puzzle/main.py:185
-msgid "Size"
-msgstr "Памер"
+#: utils.py:64
+msgid "Your modified fields will be reset!"
+msgstr "Вашы змененыя палі будуць скінуты!"
 
-#: crossword_puzzle/main.py:204
-msgid "light"
-msgstr "святло"
-
-#: crossword_puzzle/main.py:204
-msgid "dark"
-msgstr "цёмны"
-
-#: crossword_puzzle/main.py:204
-msgid "system"
-msgstr "сістэма"
-
-#: crossword_puzzle/main.py:207 crossword_puzzle/main.py:221
-msgid "Appearance"
-msgstr "Знешні выгляд"
-
-#: crossword_puzzle/main.py:227
-msgid "terrible"
-msgstr "жудасны"
-
-#: crossword_puzzle/main.py:228
-msgid "poor"
-msgstr "бедны"
-
-#: crossword_puzzle/main.py:229
-msgid "average"
-msgstr "сярэдні"
-
-#: crossword_puzzle/main.py:230
-msgid "great"
-msgstr "вялікі"
-
-#: crossword_puzzle/main.py:231
-msgid "perfect"
-msgstr "удасканальваць"
-
-#: crossword_puzzle/main.py:235
-msgid "Crossword Quality"
-msgstr "Якасць крыжаванкі"
-
-#: crossword_puzzle/main.py:267 crossword_puzzle/main.py:420
-msgid "Crossword Browser"
-msgstr "Браўзэр крыжаванак"
-
-#: crossword_puzzle/main.py:425
-msgid "Go back"
-msgstr "Вяртацца"
-
-#: crossword_puzzle/main.py:436
-msgid "Load crossword"
-msgstr "Спампаваць крыжаванка"
-
-#: crossword_puzzle/main.py:445
-msgid "Open web app"
-msgstr "Адкрыйце вэб-прыкладанне"
-
-#: crossword_puzzle/main.py:454
-msgid "Terminate web app"
-msgstr "Спыніць вэб-праграму"
-
-#: crossword_puzzle/main.py:465
-msgid "Word count preferences"
-msgstr "Параметры колькасці слоў"
-
-#: crossword_puzzle/main.py:479 crossword_puzzle/main.py:541
-#: crossword_puzzle/main.py:587 crossword_puzzle/main.py:808
-msgid "Select word count"
-msgstr "Выберыце колькасць слоў"
-
-#: crossword_puzzle/main.py:494
-msgid "Custom"
-msgstr "Прыстасаваныя"
-
-#: crossword_puzzle/main.py:699
-msgid "To perform this operation, you must first select a cell."
-msgstr "Каб выканаць гэтую аперацыю, неабходна спачатку выбраць вочку."
-
-#: crossword_puzzle/main.py:892
-msgid "View"
-msgstr "Выгляд"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:373
-#: crossword_puzzle/main.py:899
-msgid "Close"
-msgstr "Блізка"
-
-#: crossword_puzzle/main.py:1046
-msgid "difficulty"
-msgstr "цяжкасць"
-
-#: crossword_puzzle/main.py:1102
-msgid "Select"
-msgstr "Выберыце"
-
-#: crossword_puzzle/main.py:1154
-msgid "Restart"
-msgstr "Перазапуск"
-
-#: crossword_puzzle/main.py:1154
-msgid "Are you sure you want to restart the app?"
-msgstr "Вы ўпэўнены, што хочаце перазапусціць праграму?"
-
-#: crossword_puzzle/main.py:1160
-msgid "Exit"
-msgstr "Выхад"
-
-#: crossword_puzzle/main.py:1161
-msgid ""
-"Are you sure you want to exit the app? If the web app is running, it will be"
-" terminated."
-msgstr ""
-"Вы ўпэўнены, што хочаце выйсці з праграмы? Калі вэб-праграма працуе, яна "
-"будзе спынена."
-
-#: crossword_puzzle/main.py:1170
+#: utils.py:69 utils.py:88
 msgid "Back to home"
 msgstr "Вярнуцца на галоўную"
 
-#: crossword_puzzle/main.py:1171
+#: utils.py:69
+msgid ""
+"Are you sure you want to go back to the home screen? Your modified fields "
+"will be reset!"
+msgstr "Вы ўпэўнены, што хочаце вярнуцца на галоўны экран? "
+
+#: utils.py:74
+msgid "Restart"
+msgstr "Перазапуск"
+
+#: utils.py:74
+msgid "Are you sure you want to restart the app?"
+msgstr "Вы ўпэўнены, што хочаце перазапусціць праграму?"
+
+#: pages/home.py:148 utils.py:79
+msgid "Exit"
+msgstr "Выхад"
+
+#: utils.py:80
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr "Вы ўпэўнены, што хочаце выйсці з праграмы? "
+"Вы ўпэўнены, што хочаце выйсці з праграмы? Калі вэб-праграма працуе, яна "
+"будзе спынена."
+
+#: utils.py:89
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
-msgstr ""
+msgstr "Вы ўпэўнены, што хочаце вярнуцца на галоўны экран? "
 "Вы ўпэўнены, што хочаце вярнуцца на галоўны экран? Вэб-прыкладанне будзе "
 "спынена."
 
-#: crossword_puzzle/main.py:1194 crossword_puzzle/main.py:1199
-#: crossword_puzzle/main.py:1204 crossword_puzzle/main.py:1209
-#: crossword_puzzle/main.py:1232 crossword_puzzle/main.py:1244
+#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
+#: utils.py:125 utils.py:147 utils.py:151
 msgid "Error"
 msgstr "Памылка"
 
-#: crossword_puzzle/main.py:1194
+#: utils.py:100
 msgid "This language is already selected."
 msgstr "Гэта мова ўжо выбрана."
 
-#: crossword_puzzle/main.py:1199
+#: utils.py:105
 msgid "This size is already selected."
 msgstr "Гэты памер ужо выбраны."
 
-#: crossword_puzzle/main.py:1204
+#: utils.py:110
 msgid "This appearance is already selected."
 msgstr "Гэты знешні выгляд ужо выбраны."
 
-#: crossword_puzzle/main.py:1209
+#: utils.py:115
 msgid "This quality is already selected."
 msgstr "Гэта якасць ужо абрана."
 
-#: crossword_puzzle/main.py:1214
+#: utils.py:120
+msgid "This crossword already exists. Please choose a new name."
+msgstr "Гэта крыжаванка ўжо існуе. "
+
+#: utils.py:125
+msgid "This word already exists. Please choose a new word."
+msgstr "Гэтае слова ўжо існуе. "
+
+#: utils.py:130
 msgid "Info"
 msgstr "Інфармацыя"
 
-#: crossword_puzzle/main.py:1215
+#: utils.py:131
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -207,7 +125,7 @@ msgid ""
 "file. All app processes that have not been properly terminated can be "
 "terminated through Activity Monitor on MacOS, or, simply restart your "
 "computer to terminate them."
-msgstr ""
+msgstr "Калі ласка, прачытайце пры першым запуску: калі вы загрузілі крыжаванку і жадаеце загрузіць іншую, вы павінны спачатку спыніць вэб-праграму. "
 "Калі ласка, прачытайце пры першым запуску: калі вы загрузілі крыжаванку і "
 "жадаеце загрузіць іншую, спачатку трэба спыніць вэб-праграму. ВАЖНА: калі вы"
 " карыстаецеся macOS, прымусовы выхад з праграмы (з дапамогай cmd+q) падчас "
@@ -218,131 +136,334 @@ msgstr ""
 "праз Activity Monitor у MacOS або проста перазагрузіце кампутар, каб спыніць"
 " іх."
 
-#: crossword_puzzle/main.py:1233
+#: utils.py:153
 msgid ""
-"An error occured while loading this crossword's definitions. Ensure that its"
-" definitions JSON file exists in the base cwords directory. NOTE: Base "
-"crossword data is only accessed when its translated version is not present "
-"in the locales directory."
-msgstr ""
-"Адбылася памылка падчас загрузкі азначэнняў гэтага крыжаванкі. "
-"Пераканайцеся, што файл азначэнняў JSON існуе ў базавым каталогу cwords. "
-"УВАГА: доступ да базавых дадзеных крыжаванак даступны толькі тады, калі іх "
-"перакладзеная версія адсутнічае ў каталогу моў."
+"An unexpected error occured. Please try reinstalling the application with"
+msgstr "Адбылася нечаканая памылка. "
 
-#: crossword_puzzle/main.py:1245
-msgid ""
-"An error occured in crossword generation. Please see further information in "
-"the console"
-msgstr ""
-"Адбылася памылка пры стварэнні крыжаванак. Глядзіце дадатковую інфармацыю ў "
-"кансолі"
+#: utils.py:672
+msgid "Definitions are empty"
+msgstr "Азначэнні пустыя"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:13
-#: crossword_puzzle/cword_webapp/templates/index.html:343
+#: utils.py:675
+msgid "The word count or definitions are less than 3 in length"
+msgstr "Колькасць слоў або азначэнняў менш за 3 па даўжыні"
+
+#: utils.py:679
+msgid "Length of the word count is greater than the definitions"
+msgstr "Даўжыня слоў большая за азначэнні"
+
+#: utils.py:682
+msgid "Escape character present in word"
+msgstr "Уцёкавы знак, які прысутнічае ў слове"
+
+#: app/templates/index.html:13 app/templates/index.html:338
 msgid "Crossword Puzzle - Game"
 msgstr "Крыжаванка - гульня"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:155
-msgid "Across"
-msgstr "Упоперак"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:178
-msgid "Down"
-msgstr "Уніз"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:203
+#: app/templates/index.html:136
 msgid "Compound"
 msgstr "Злучэнне"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:216
-msgid "Reveal"
-msgstr "Выяўляць"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:223
-#: crossword_puzzle/cword_webapp/templates/index.html:252
-msgid "Cell"
-msgstr "Клетка"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:229
-#: crossword_puzzle/cword_webapp/templates/index.html:258
-#: crossword_puzzle/cword_webapp/templates/index.html:281
-msgid "Word"
-msgstr "Слова"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:235
-#: crossword_puzzle/cword_webapp/templates/index.html:264
-#: crossword_puzzle/cword_webapp/templates/index.html:287
-msgid "Grid"
-msgstr "Сетка"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:245
-msgid "Check"
-msgstr "Праверка"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:274
-msgid "Clear"
-msgstr "Чысціць"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:293
-msgid "Unrevealed"
-msgstr "Неражаны"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:306
+#: app/templates/index.html:149
 msgid "Auto-skip"
 msgstr "Аўтамабіль"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:315
+#: app/templates/index.html:158
 msgid "Auto-word"
 msgstr "Аўтаматычнае слова"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:324
+#: app/templates/index.html:167
 msgid "Auto-check"
 msgstr "Аўта-праверка"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:333
+#: app/templates/index.html:176
 msgid "Zoom"
 msgstr "Зум"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:189
+msgid "Reveal"
+msgstr "Выяўляць"
+
+#: app/templates/index.html:197 app/templates/index.html:230
+msgid "Cell"
+msgstr "Клетка"
+
+#: app/templates/index.html:204 app/templates/index.html:237
+#: app/templates/index.html:263
+msgid "Word"
+msgstr "Слова"
+
+#: app/templates/index.html:211 app/templates/index.html:244
+#: app/templates/index.html:270
+msgid "Grid"
+msgstr "Сетка"
+
+#: app/templates/index.html:222
+msgid "Check"
+msgstr "Праверка"
+
+#: app/templates/index.html:255
+msgid "Clear"
+msgstr "Чысціць"
+
+#: app/templates/index.html:277
+msgid "Unrevealed"
+msgstr "Неражаны"
+
+#: app/templates/index.html:286
+msgid "Across"
+msgstr "Упоперак"
+
+#: app/templates/index.html:308
+msgid "Down"
+msgstr "Уніз"
+
+#: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "Вы праглядаеце"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:340
 msgid "from"
 msgstr "ад"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:350
+#: app/templates/index.html:345
 msgid "word(s) could not be inserted, sorry."
 msgstr "Слова (ы) немагчыма ўставіць, прабачце."
 
-#: crossword_puzzle/cword_webapp/templates/index.html:353
+#: app/templates/index.html:348
 msgid "Word count (adjusted)"
 msgstr "Колькасць слоў (скарэкціраваны)"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:356
+#: app/templates/index.html:351
 msgid "Word count"
 msgstr "Колькасць слоў"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:362
+#: app/templates/index.html:357
 msgid "Continue"
 msgstr "Працягваць"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:368
+#: app/templates/index.html:363
 msgid "You completed the crossword!"
 msgstr "Вы завяршылі крыжаванку!"
 
+#: app/templates/index.html:368 pages/browser.py:586
+msgid "Close"
+msgstr "Блізка"
+
+#: pages/browser.py:136
+msgid "Crossword Browser"
+msgstr "Браўзэр крыжаванак"
+
+#: pages/browser.py:141 pages/editor.py:335
+msgid "Back"
+msgstr "Назад"
+
+#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+msgid "HomePage"
+msgstr "Хатняя старонка"
+
+#: pages/browser.py:156
+msgid "Categorised"
+msgstr "Катэгарызаваны"
+
+#: pages/browser.py:156
+msgid "Flattened"
+msgstr "Пляскаты"
+
+#: pages/browser.py:186
+msgid "Load"
+msgstr "Нагрузка"
+
+#: pages/browser.py:195
+msgid "Open"
+msgstr "Адкрыты"
+
+#: pages/browser.py:205
+msgid "Terminate"
+msgstr "Скончыць"
+
+#: pages/browser.py:216
+msgid "Word count preferences"
+msgstr "Параметры колькасці слоў"
+
+#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
+#: pages/browser.py:495
+msgid "Select word count"
+msgstr "Выберыце колькасць слоў"
+
+#: pages/browser.py:246
+msgid "Custom"
+msgstr "Прыстасаваныя"
+
+#: pages/browser.py:475
+msgid "To perform this operation, you must first select a cell."
+msgstr "Каб выканаць гэтую аперацыю, неабходна спачатку выбраць вочку."
+
+#: pages/browser.py:579
+msgid "View"
+msgstr "Выгляд"
+
+#: pages/browser.py:783
+msgid "Select"
+msgstr "Выберыце"
+
+#: pages/editor.py:329
+msgid "Crossword Editor"
+msgstr "Рэдактар ​​крыжаванак"
+
+#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
+#: pages/editor.py:822
+msgid "Your Crosswords"
+msgstr "Вашы крыжаванкі"
+
+#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
+#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+msgid "Save"
+msgstr "Захаваць"
+
+#: pages/editor.py:518
+msgid "length >= 1 and valid OS file name"
+msgstr "даўжыня >= 1 і сапраўднае імя файла АС"
+
+#: pages/editor.py:526
+msgid "length == 1"
+msgstr "даўжыня == 1"
+
+#: pages/editor.py:531
+msgid "Difficulty"
+msgstr "Цяжкасць"
+
+#: pages/editor.py:538
 msgid "Easy"
 msgstr "лёгка"
 
+#: pages/editor.py:538
 msgid "Medium"
 msgstr "Сярэдні"
 
+#: pages/editor.py:538
 msgid "Hard"
 msgstr "Цяжка"
 
+#: pages/editor.py:538
 msgid "Extreme"
 msgstr "Экстрым"
+
+#: pages/editor.py:616 pages/editor.py:969
+msgid "Adding"
+msgstr "Даданне"
+
+#: pages/editor.py:619 pages/editor.py:973
+msgid "Add"
+msgstr "Дадаць"
+
+#: pages/editor.py:778 pages/editor.py:1086
+msgid "Press"
+msgstr "Прэса"
+
+#: pages/editor.py:778
+msgid ""
+"to add a \n"
+"new crossword."
+msgstr "дадаць \nновую крыжаванку."
+
+#: pages/editor.py:822 pages/editor.py:1128
+msgid "Editing"
+msgstr "Рэдагаванне"
+
+#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
+#: pages/editor.py:1128
+msgid "Your Words"
+msgstr "Вашы словы"
+
+#: pages/editor.py:927
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "даўжыня >= 1 і даўжыня <= 32 і з'яўляецца сімвалам мовы"
+
+#: pages/editor.py:936
+msgid "length >= 1"
+msgstr "даўжыня >= 1"
+
+#: pages/editor.py:1086
+msgid "to add a"
+msgstr "дадаць а"
+
+#: pages/editor.py:1086
+msgid "new word."
+msgstr "новае слова."
+
+#: pages/home.py:98
+msgid "Crossword Puzzle"
+msgstr "Крыжаванка"
+
+#: pages/home.py:126
+msgid "Browser"
+msgstr "Браўзер"
+
+#: pages/home.py:128
+msgid "BrowserPage"
+msgstr "Старонка аглядальніка"
+
+#: pages/home.py:137
+msgid "Editor"
+msgstr "Рэдактар"
+
+#: pages/home.py:139
+msgid "EditorPage"
+msgstr "Старонка рэдактара"
+
+#: pages/home.py:159
+msgid "Global Settings"
+msgstr "Глабальныя налады"
+
+#: pages/home.py:166
+msgid "Language"
+msgstr "Мова"
+
+#: pages/home.py:178
+msgid "Size"
+msgstr "Памер"
+
+#: pages/home.py:197
+msgid "light"
+msgstr "святло"
+
+#: pages/home.py:197
+msgid "dark"
+msgstr "цёмны"
+
+#: pages/home.py:197
+msgid "system"
+msgstr "сістэма"
+
+#: pages/home.py:200 pages/home.py:214
+msgid "Appearance"
+msgstr "Знешні выгляд"
+
+#: pages/home.py:220
+msgid "terrible"
+msgstr "жудасны"
+
+#: pages/home.py:221
+msgid "poor"
+msgstr "бедны"
+
+#: pages/home.py:222
+msgid "average"
+msgstr "сярэдні"
+
+#: pages/home.py:223
+msgid "great"
+msgstr "вялікі"
+
+#: pages/home.py:224
+msgid "perfect"
+msgstr "удасканальваць"
+
+#: pages/home.py:228
+msgid "Crossword Quality"
+msgstr "Якасць крыжаванкі"
 
 msgid "Geography"
 msgstr "Геаграфія"
@@ -356,11 +477,20 @@ msgstr "Навука"
 msgid "Computer Science"
 msgstr "Інфарматыка"
 
-msgid "Difficulty"
-msgstr "Цяжкасць"
+msgid "User"
+msgstr "Карыстальнік"
 
 msgid "Total words"
 msgstr "Усяго словы"
 
 msgid "Maximum"
 msgstr "Максімум"
+
+msgid "Clue"
+msgstr "Падказка"
+
+msgid "Name"
+msgstr "Імя"
+
+msgid "Symbol"
+msgstr "Сімвал"

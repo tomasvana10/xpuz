@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-13 21:45+1000\n"
+"POT-Creation-Date: 2024-06-27 00:02+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: su <LL@li.org>\n"
@@ -19,184 +19,103 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: crossword_puzzle/main.py:79 crossword_puzzle/main.py:130
-#: crossword_puzzle/main.py:275 crossword_puzzle/main.py:343
-msgid "Crossword Puzzle"
-msgstr "Teka-teki silang"
+#: utils.py:59
+msgid "Remove"
+msgstr "Leupaskeun"
 
-#: crossword_puzzle/main.py:146
-msgid "View crosswords"
-msgstr "Témbongkeun crosswords"
+#: utils.py:59
+msgid "Are you sure you want to delete this"
+msgstr "Naha anjeun yakin hoyong ngahapus ieu"
 
-#: crossword_puzzle/main.py:155
-msgid "Exit the app"
-msgstr "Kaluar tina aplikasi"
+#: utils.py:59
+msgid "It will be lost forever!"
+msgstr "Bakal leungit salawasna!"
 
-#: crossword_puzzle/main.py:166
-msgid "Global Settings"
-msgstr "Setélan Global"
+#: utils.py:64
+msgid "Add or select"
+msgstr "Tambahkeun atawa pilih"
 
-#: crossword_puzzle/main.py:173
-msgid "Languages"
-msgstr "Basa"
+#: utils.py:64
+msgid "Are you sure you want to add/select a"
+msgstr "Naha anjeun yakin rék nambahkeun / milih a"
 
-#: crossword_puzzle/main.py:185
-msgid "Size"
-msgstr "Ukuran"
+#: utils.py:64
+msgid "Your modified fields will be reset!"
+msgstr "Widang anu dirobih anjeun bakal direset!"
 
-#: crossword_puzzle/main.py:204
-msgid "light"
-msgstr "cahayaan"
+#: utils.py:69 utils.py:88
+msgid "Back to home"
+msgstr "Balik ka imah"
 
-#: crossword_puzzle/main.py:204
-msgid "dark"
-msgstr "poek"
+#: utils.py:69
+msgid ""
+"Are you sure you want to go back to the home screen? Your modified fields "
+"will be reset!"
+msgstr "Naha anjeun yakin rék balik deui ka layar utama? "
 
-#: crossword_puzzle/main.py:204
-msgid "system"
-msgstr "sistem"
-
-#: crossword_puzzle/main.py:207 crossword_puzzle/main.py:221
-msgid "Appearance"
-msgstr "Penampilan"
-
-#: crossword_puzzle/main.py:227
-msgid "terrible"
-msgstr "pikasieuneun"
-
-#: crossword_puzzle/main.py:228
-msgid "poor"
-msgstr "malarat"
-
-#: crossword_puzzle/main.py:229
-msgid "average"
-msgstr "rata-rata"
-
-#: crossword_puzzle/main.py:230
-msgid "great"
-msgstr "hebat"
-
-#: crossword_puzzle/main.py:231
-msgid "perfect"
-msgstr "sampurna"
-
-#: crossword_puzzle/main.py:235
-msgid "Crossword Quality"
-msgstr "Kualitas silang"
-
-#: crossword_puzzle/main.py:267 crossword_puzzle/main.py:420
-msgid "Crossword Browser"
-msgstr "Crossword Browser"
-
-#: crossword_puzzle/main.py:425
-msgid "Go back"
-msgstr "Uih deui"
-
-#: crossword_puzzle/main.py:436
-msgid "Load crossword"
-msgstr "Ngamuat crossword"
-
-#: crossword_puzzle/main.py:445
-msgid "Open web app"
-msgstr "Buka aplikasi wéb"
-
-#: crossword_puzzle/main.py:454
-msgid "Terminate web app"
-msgstr "Pareuman aplikasi wéb"
-
-#: crossword_puzzle/main.py:465
-msgid "Word count preferences"
-msgstr "Preferensi cacah kecap"
-
-#: crossword_puzzle/main.py:479 crossword_puzzle/main.py:541
-#: crossword_puzzle/main.py:587 crossword_puzzle/main.py:808
-msgid "Select word count"
-msgstr "Pilih jumlah kecap"
-
-#: crossword_puzzle/main.py:494
-msgid "Custom"
-msgstr "Adat"
-
-#: crossword_puzzle/main.py:699
-msgid "To perform this operation, you must first select a cell."
-msgstr "Pikeun ngalakukeun operasi ieu, anjeun kedah milih sél."
-
-#: crossword_puzzle/main.py:892
-msgid "View"
-msgstr "Témbongkeun"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:373
-#: crossword_puzzle/main.py:899
-msgid "Close"
-msgstr "Tutup"
-
-#: crossword_puzzle/main.py:1046
-msgid "difficulty"
-msgstr "kasusah"
-
-#: crossword_puzzle/main.py:1102
-msgid "Select"
-msgstr "Pilih"
-
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Restart"
 msgstr "Uihan deui"
 
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Are you sure you want to restart the app?"
 msgstr "Naha anjeun yakin hoyong ngabalikan deui aplikasi?"
 
-#: crossword_puzzle/main.py:1160
+#: pages/home.py:148 utils.py:79
 msgid "Exit"
 msgstr "Kaluar"
 
-#: crossword_puzzle/main.py:1161
+#: utils.py:80
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr ""
-"Naha anjeun yakin hoyong kaluar tina aplikasi? Upami aplikasi wéb "
-"dijalankeun, éta bakal dileungitkeun."
+"Naha anjeun yakin hoyong kaluar tina aplikasi? Naha anjeun yakin hoyong "
+"kaluar tina aplikasi? Upami aplikasi wéb dijalankeun, éta bakal "
+"dileungitkeun."
 
-#: crossword_puzzle/main.py:1170
-msgid "Back to home"
-msgstr "Balik ka imah"
-
-#: crossword_puzzle/main.py:1171
+#: utils.py:89
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
-"Naha anjeun yakin rék balik deui ka layar utama? Aplikasi wéb bakal "
-"dipareuman."
+"Naha anjeun yakin rék balik deui ka layar utama? Naha anjeun yakin rék balik"
+" deui ka layar utama? Aplikasi wéb bakal dipareuman."
 
-#: crossword_puzzle/main.py:1194 crossword_puzzle/main.py:1199
-#: crossword_puzzle/main.py:1204 crossword_puzzle/main.py:1209
-#: crossword_puzzle/main.py:1232 crossword_puzzle/main.py:1244
+#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
+#: utils.py:125 utils.py:147 utils.py:151
 msgid "Error"
 msgstr "Kasalahan"
 
-#: crossword_puzzle/main.py:1194
+#: utils.py:100
 msgid "This language is already selected."
 msgstr "Basa ieu geus dipilih."
 
-#: crossword_puzzle/main.py:1199
+#: utils.py:105
 msgid "This size is already selected."
 msgstr "Ukuran ieu geus dipilih."
 
-#: crossword_puzzle/main.py:1204
+#: utils.py:110
 msgid "This appearance is already selected."
 msgstr "Penampilan ieu parantos dipilih."
 
-#: crossword_puzzle/main.py:1209
+#: utils.py:115
 msgid "This quality is already selected."
 msgstr "Kualitas ieu parantos dipilih."
 
-#: crossword_puzzle/main.py:1214
+#: utils.py:120
+msgid "This crossword already exists. Please choose a new name."
+msgstr "Ieu crossword geus aya. "
+
+#: utils.py:125
+msgid "This word already exists. Please choose a new word."
+msgstr "Kecap ieu geus aya. "
+
+#: utils.py:130
 msgid "Info"
 msgstr "Inpo"
 
-#: crossword_puzzle/main.py:1215
+#: utils.py:131
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -208,141 +127,349 @@ msgid ""
 "terminated through Activity Monitor on MacOS, or, simply restart your "
 "computer to terminate them."
 msgstr ""
-"Peluncuran pertama kali, mangga baca: Sakali anjeun parantos ngamuat silang,"
-" sareng hoyong ngamuat anu sanés, anjeun kedah ngeureunkeun heula aplikasi "
-"wéb. PENTING: Upami anjeun nganggo macOS, maksakeun kaluar tina aplikasina "
-"(nganggo cmd+q) nalika aplikasi wéb dijalankeun bakal nyegah éta "
-"ngeureunkeunana leres. Upami anjeun salah ngalakukeun ieu, program bakal "
-"ngajalankeun aplikasi wéb énggal sareng port anu béda. Alternatipna, anjeun "
-"tiasa sacara manual ngarobih port dina file config program. Sadaya prosés "
-"aplikasi anu henteu leres-leres ditungtungan tiasa ditungtungan ku Activity "
-"Monitor dina MacOS, atanapi, ngan saukur balikan deui komputer anjeun pikeun"
-" ngeureunkeunana."
+"Pertama kali diluncurkeun, mangga baca: Sakali anjeun parantos ngamuat "
+"silang, sareng hoyong ngamuat anu sanés, anjeun kedah ngeureunkeun heula "
+"aplikasi wéb. Peluncuran pertama kali, mangga baca: Sakali anjeun parantos "
+"ngamuat silang, sareng hoyong ngamuat anu sanés, anjeun kedah ngeureunkeun "
+"heula aplikasi wéb. PENTING: Upami anjeun nganggo macOS, maksakeun kaluar "
+"tina aplikasina (nganggo cmd+q) nalika aplikasi wéb dijalankeun bakal nyegah"
+" éta ngeureunkeunana leres. Upami anjeun salah ngalakukeun ieu, program "
+"bakal ngajalankeun aplikasi wéb énggal sareng port anu béda. Alternatipna, "
+"anjeun tiasa sacara manual ngarobih port dina file config program. Sadaya "
+"prosés aplikasi anu henteu leres-leres ditungtungan tiasa ditungtungan ku "
+"Activity Monitor dina MacOS, atanapi, ngan saukur balikan deui komputer "
+"anjeun pikeun ngeureunkeunana."
 
-#: crossword_puzzle/main.py:1233
+#: utils.py:153
 msgid ""
-"An error occured while loading this crossword's definitions. Ensure that its"
-" definitions JSON file exists in the base cwords directory. NOTE: Base "
-"crossword data is only accessed when its translated version is not present "
-"in the locales directory."
-msgstr ""
-"Aya kasalahan nalika ngamuat definisi silang ieu. Pastikeun yén file JSON "
-"definisina aya dina diréktori cwords dasar. CATETAN: Data crossword dasar "
-"ngan diaksés nalika versi tarjamah na teu aya dina diréktori lokal."
+"An unexpected error occured. Please try reinstalling the application with"
+msgstr "Aya kasalahan anu teu disangka-sangka. "
 
-#: crossword_puzzle/main.py:1245
-msgid ""
-"An error occured in crossword generation. Please see further information in "
-"the console"
-msgstr ""
-"Kasalahan lumangsung dina generasi crossword. Mangga tingali informasi "
-"salajengna dina konsol nu"
+#: utils.py:672
+msgid "Definitions are empty"
+msgstr "Harti kosong"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:13
-#: crossword_puzzle/cword_webapp/templates/index.html:343
+#: utils.py:675
+msgid "The word count or definitions are less than 3 in length"
+msgstr "Jumlah kecap atawa harti panjangna kirang ti 3"
+
+#: utils.py:679
+msgid "Length of the word count is greater than the definitions"
+msgstr "Panjang kecap itungan leuwih badag batan harti"
+
+#: utils.py:682
+msgid "Escape character present in word"
+msgstr "Kabur karakter anu aya dina kecap"
+
+#: app/templates/index.html:13 app/templates/index.html:338
 msgid "Crossword Puzzle - Game"
 msgstr "Teka-teki silang - patandingan"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:155
-msgid "Across"
-msgstr "Meuntas"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:178
-msgid "Down"
-msgstr "Turun"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:203
+#: app/templates/index.html:136
 msgid "Compound"
 msgstr "Supiround"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:216
-msgid "Reveal"
-msgstr "Ngungkabkeun"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:223
-#: crossword_puzzle/cword_webapp/templates/index.html:252
-msgid "Cell"
-msgstr "Sél"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:229
-#: crossword_puzzle/cword_webapp/templates/index.html:258
-#: crossword_puzzle/cword_webapp/templates/index.html:281
-msgid "Word"
-msgstr "Kecap"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:235
-#: crossword_puzzle/cword_webapp/templates/index.html:264
-#: crossword_puzzle/cword_webapp/templates/index.html:287
-msgid "Grid"
-msgstr "Gram gram grid"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:245
-msgid "Check"
-msgstr "Pariksa"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:274
-msgid "Clear"
-msgstr "Jelas"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:293
-msgid "Unrevealed"
-msgstr "Teu teratur"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:306
+#: app/templates/index.html:149
 msgid "Auto-skip"
 msgstr "Auto-skip"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:315
+#: app/templates/index.html:158
 msgid "Auto-word"
 msgstr "Auto-kecap"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:324
+#: app/templates/index.html:167
 msgid "Auto-check"
 msgstr "Otomatis-pariksa"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:333
+#: app/templates/index.html:176
 msgid "Zoom"
 msgstr "Zo"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:189
+msgid "Reveal"
+msgstr "Ngungkabkeun"
+
+#: app/templates/index.html:197 app/templates/index.html:230
+msgid "Cell"
+msgstr "Sél"
+
+#: app/templates/index.html:204 app/templates/index.html:237
+#: app/templates/index.html:263
+msgid "Word"
+msgstr "Kecap"
+
+#: app/templates/index.html:211 app/templates/index.html:244
+#: app/templates/index.html:270
+msgid "Grid"
+msgstr "Gram gram grid"
+
+#: app/templates/index.html:222
+msgid "Check"
+msgstr "Pariksa"
+
+#: app/templates/index.html:255
+msgid "Clear"
+msgstr "Jelas"
+
+#: app/templates/index.html:277
+msgid "Unrevealed"
+msgstr "Teu teratur"
+
+#: app/templates/index.html:286
+msgid "Across"
+msgstr "Meuntas"
+
+#: app/templates/index.html:308
+msgid "Down"
+msgstr "Turun"
+
+#: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "Anjeun ningali"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:340
 msgid "from"
 msgstr "tina"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:350
+#: app/templates/index.html:345
 msgid "word(s) could not be inserted, sorry."
 msgstr "kecap (s) teu tiasa diselapkeun, punten."
 
-#: crossword_puzzle/cword_webapp/templates/index.html:353
+#: app/templates/index.html:348
 msgid "Word count (adjusted)"
 msgstr "Kecap-kecap (disaluyukeun)"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:356
+#: app/templates/index.html:351
 msgid "Word count"
 msgstr "Cacah Kecap"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:362
+#: app/templates/index.html:357
 msgid "Continue"
 msgstr "Nuluykeun"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:368
+#: app/templates/index.html:363
 msgid "You completed the crossword!"
 msgstr "Anjeun réngsé crossword!"
 
+#: app/templates/index.html:368 pages/browser.py:586
+msgid "Close"
+msgstr "Tutup"
+
+#: pages/browser.py:136
+msgid "Crossword Browser"
+msgstr "Crossword Browser"
+
+#: pages/browser.py:141 pages/editor.py:335
+msgid "Back"
+msgstr "Balik deui"
+
+#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+msgid "HomePage"
+msgstr "Kaca Utama"
+
+#: pages/browser.py:156
+msgid "Categorised"
+msgstr "Digolongkeun"
+
+#: pages/browser.py:156
+msgid "Flattened"
+msgstr "Dipulung"
+
+#: pages/browser.py:186
+msgid "Load"
+msgstr "Muatan"
+
+#: pages/browser.py:195
+msgid "Open"
+msgstr "Buka"
+
+#: pages/browser.py:205
+msgid "Terminate"
+msgstr "Leupaskeun"
+
+#: pages/browser.py:216
+msgid "Word count preferences"
+msgstr "Preferensi cacah kecap"
+
+#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
+#: pages/browser.py:495
+msgid "Select word count"
+msgstr "Pilih jumlah kecap"
+
+#: pages/browser.py:246
+msgid "Custom"
+msgstr "Adat"
+
+#: pages/browser.py:475
+msgid "To perform this operation, you must first select a cell."
+msgstr "Pikeun ngalakukeun operasi ieu, anjeun kedah milih sél."
+
+#: pages/browser.py:579
+msgid "View"
+msgstr "Témbongkeun"
+
+#: pages/browser.py:783
+msgid "Select"
+msgstr "Pilih"
+
+#: pages/editor.py:329
+msgid "Crossword Editor"
+msgstr "Editor Silang"
+
+#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
+#: pages/editor.py:822
+msgid "Your Crosswords"
+msgstr "Crosswords Anjeun"
+
+#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
+#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+msgid "Save"
+msgstr "Simpen"
+
+#: pages/editor.py:518
+msgid "length >= 1 and valid OS file name"
+msgstr "panjang > = 1 jeung ngaran file OS valid"
+
+#: pages/editor.py:526
+msgid "length == 1"
+msgstr "panjangna == 1"
+
+#: pages/editor.py:531
+msgid "Difficulty"
+msgstr "Hésé"
+
+#: pages/editor.py:538
 msgid "Easy"
 msgstr "gampil"
 
+#: pages/editor.py:538
 msgid "Medium"
 msgstr "Sedeng"
 
+#: pages/editor.py:538
 msgid "Hard"
 msgstr "Teuas"
 
+#: pages/editor.py:538
 msgid "Extreme"
 msgstr "Ekstrim"
+
+#: pages/editor.py:616 pages/editor.py:969
+msgid "Adding"
+msgstr "Nambahan"
+
+#: pages/editor.py:619 pages/editor.py:973
+msgid "Add"
+msgstr "Tambihkeun"
+
+#: pages/editor.py:778 pages/editor.py:1086
+msgid "Press"
+msgstr "Pencét"
+
+#: pages/editor.py:778
+msgid ""
+"to add a \n"
+"new crossword."
+msgstr ""
+"pikeun nambahkeun \n"
+"crossword anyar."
+
+#: pages/editor.py:822 pages/editor.py:1128
+msgid "Editing"
+msgstr "Ngédit"
+
+#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
+#: pages/editor.py:1128
+msgid "Your Words"
+msgstr "Kecap Anjeun"
+
+#: pages/editor.py:927
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "panjang >= 1 jeung panjang <= 32 sarta mangrupa karakter basa"
+
+#: pages/editor.py:936
+msgid "length >= 1"
+msgstr "panjangna >= 1"
+
+#: pages/editor.py:1086
+msgid "to add a"
+msgstr "pikeun nambahkeun a"
+
+#: pages/editor.py:1086
+msgid "new word."
+msgstr "kecap anyar."
+
+#: pages/home.py:98
+msgid "Crossword Puzzle"
+msgstr "Teka-teki silang"
+
+#: pages/home.py:126
+msgid "Browser"
+msgstr "Panyungsi"
+
+#: pages/home.py:128
+msgid "BrowserPage"
+msgstr "Cikal"
+
+#: pages/home.py:137
+msgid "Editor"
+msgstr "Éditor"
+
+#: pages/home.py:139
+msgid "EditorPage"
+msgstr "Kaca Editor"
+
+#: pages/home.py:159
+msgid "Global Settings"
+msgstr "Setélan Global"
+
+#: pages/home.py:166
+msgid "Language"
+msgstr "Basa"
+
+#: pages/home.py:178
+msgid "Size"
+msgstr "Ukuran"
+
+#: pages/home.py:197
+msgid "light"
+msgstr "cahayaan"
+
+#: pages/home.py:197
+msgid "dark"
+msgstr "poek"
+
+#: pages/home.py:197
+msgid "system"
+msgstr "sistem"
+
+#: pages/home.py:200 pages/home.py:214
+msgid "Appearance"
+msgstr "Penampilan"
+
+#: pages/home.py:220
+msgid "terrible"
+msgstr "pikasieuneun"
+
+#: pages/home.py:221
+msgid "poor"
+msgstr "malarat"
+
+#: pages/home.py:222
+msgid "average"
+msgstr "rata-rata"
+
+#: pages/home.py:223
+msgid "great"
+msgstr "hebat"
+
+#: pages/home.py:224
+msgid "perfect"
+msgstr "sampurna"
+
+#: pages/home.py:228
+msgid "Crossword Quality"
+msgstr "Kualitas silang"
 
 msgid "Geography"
 msgstr "Géografi"
@@ -356,11 +483,20 @@ msgstr "Élmu"
 msgid "Computer Science"
 msgstr "Ilmu komputer"
 
-msgid "Difficulty"
-msgstr "Hésé"
+msgid "User"
+msgstr "Pamaké"
 
 msgid "Total words"
 msgstr "Total kecap"
 
 msgid "Maximum"
 msgstr "Maksimum"
+
+msgid "Clue"
+msgstr "Pitunjuk"
+
+msgid "Name"
+msgstr "Ngaran"
+
+msgid "Symbol"
+msgstr "Lambang"

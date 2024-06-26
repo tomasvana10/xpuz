@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-13 21:45+1000\n"
+"POT-Creation-Date: 2024-06-27 00:02+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: vi <LL@li.org>\n"
@@ -19,138 +19,55 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: crossword_puzzle/main.py:79 crossword_puzzle/main.py:130
-#: crossword_puzzle/main.py:275 crossword_puzzle/main.py:343
-msgid "Crossword Puzzle"
-msgstr "Câu đố ô chữ"
+#: utils.py:59
+msgid "Remove"
+msgstr "Triệt"
 
-#: crossword_puzzle/main.py:146
-msgid "View crosswords"
-msgstr "Xem ô chữ"
+#: utils.py:59
+msgid "Are you sure you want to delete this"
+msgstr "Bạn có chắc chắn muốn xóa cái này không"
 
-#: crossword_puzzle/main.py:155
-msgid "Exit the app"
-msgstr "Thoát khỏi ứng dụng"
+#: utils.py:59
+msgid "It will be lost forever!"
+msgstr "Nó sẽ bị mất mãi mãi!"
 
-#: crossword_puzzle/main.py:166
-msgid "Global Settings"
-msgstr "Thiết lập toàn cầu"
+#: utils.py:64
+msgid "Add or select"
+msgstr "Thêm hoặc chọn"
 
-#: crossword_puzzle/main.py:173
-msgid "Languages"
-msgstr "Ngôn ngữ"
+#: utils.py:64
+msgid "Are you sure you want to add/select a"
+msgstr "Bạn có chắc chắn muốn thêm / chọn một"
 
-#: crossword_puzzle/main.py:185
-msgid "Size"
-msgstr "Kích cỡ"
+#: utils.py:64
+msgid "Your modified fields will be reset!"
+msgstr "Các trường đã sửa đổi của bạn sẽ được đặt lại!"
 
-#: crossword_puzzle/main.py:204
-msgid "light"
-msgstr "ánh sáng"
+#: utils.py:69 utils.py:88
+msgid "Back to home"
+msgstr "Trở về nhà"
 
-#: crossword_puzzle/main.py:204
-msgid "dark"
-msgstr "tối tăm"
+#: utils.py:69
+msgid ""
+"Are you sure you want to go back to the home screen? Your modified fields "
+"will be reset!"
+msgstr ""
+"Bạn có chắc chắn muốn quay lại màn hình chính không? Các trường đã sửa đổi "
+"của bạn sẽ được đặt lại!"
 
-#: crossword_puzzle/main.py:204
-msgid "system"
-msgstr "hệ thống"
-
-#: crossword_puzzle/main.py:207 crossword_puzzle/main.py:221
-msgid "Appearance"
-msgstr "Vẻ bề ngoài"
-
-#: crossword_puzzle/main.py:227
-msgid "terrible"
-msgstr "kinh khủng"
-
-#: crossword_puzzle/main.py:228
-msgid "poor"
-msgstr "nghèo"
-
-#: crossword_puzzle/main.py:229
-msgid "average"
-msgstr "trung bình"
-
-#: crossword_puzzle/main.py:230
-msgid "great"
-msgstr "Tuyệt"
-
-#: crossword_puzzle/main.py:231
-msgid "perfect"
-msgstr "hoàn hảo "
-
-#: crossword_puzzle/main.py:235
-msgid "Crossword Quality"
-msgstr "Chất lượng ô chữ"
-
-#: crossword_puzzle/main.py:267 crossword_puzzle/main.py:420
-msgid "Crossword Browser"
-msgstr "Trình duyệt ô chữ"
-
-#: crossword_puzzle/main.py:425
-msgid "Go back"
-msgstr "Quay lại"
-
-#: crossword_puzzle/main.py:436
-msgid "Load crossword"
-msgstr "Tải ô chữ"
-
-#: crossword_puzzle/main.py:445
-msgid "Open web app"
-msgstr "Mở ứng dụng web"
-
-#: crossword_puzzle/main.py:454
-msgid "Terminate web app"
-msgstr "Chấm dứt ứng dụng web"
-
-#: crossword_puzzle/main.py:465
-msgid "Word count preferences"
-msgstr "Tùy chọn đếm từ"
-
-#: crossword_puzzle/main.py:479 crossword_puzzle/main.py:541
-#: crossword_puzzle/main.py:587 crossword_puzzle/main.py:808
-msgid "Select word count"
-msgstr "Chọn số từ"
-
-#: crossword_puzzle/main.py:494
-msgid "Custom"
-msgstr "Phong tục"
-
-#: crossword_puzzle/main.py:699
-msgid "To perform this operation, you must first select a cell."
-msgstr "Để thực hiện thao tác này, trước tiên bạn phải chọn một ô."
-
-#: crossword_puzzle/main.py:892
-msgid "View"
-msgstr "Xem"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:373
-#: crossword_puzzle/main.py:899
-msgid "Close"
-msgstr "Đóng"
-
-#: crossword_puzzle/main.py:1046
-msgid "difficulty"
-msgstr "khó khăn"
-
-#: crossword_puzzle/main.py:1102
-msgid "Select"
-msgstr "Lựa chọn"
-
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Restart"
 msgstr "Khởi động lại"
 
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Are you sure you want to restart the app?"
 msgstr "Bạn có chắc chắn muốn khởi động lại ứng dụng không?"
 
-#: crossword_puzzle/main.py:1160
+#: pages/home.py:148 utils.py:79
 msgid "Exit"
 msgstr "Lối ra"
 
-#: crossword_puzzle/main.py:1161
+#: utils.py:80
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -158,11 +75,7 @@ msgstr ""
 "Bạn có chắc chắn muốn thoát khỏi ứng dụng không? Nếu ứng dụng web đang chạy,"
 " nó sẽ bị chấm dứt."
 
-#: crossword_puzzle/main.py:1170
-msgid "Back to home"
-msgstr "Trở về nhà"
-
-#: crossword_puzzle/main.py:1171
+#: utils.py:89
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -170,33 +83,40 @@ msgstr ""
 "Bạn có chắc chắn muốn quay lại màn hình chính không? Ứng dụng web sẽ bị chấm"
 " dứt."
 
-#: crossword_puzzle/main.py:1194 crossword_puzzle/main.py:1199
-#: crossword_puzzle/main.py:1204 crossword_puzzle/main.py:1209
-#: crossword_puzzle/main.py:1232 crossword_puzzle/main.py:1244
+#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
+#: utils.py:125 utils.py:147 utils.py:151
 msgid "Error"
 msgstr "Lỗi"
 
-#: crossword_puzzle/main.py:1194
+#: utils.py:100
 msgid "This language is already selected."
 msgstr "Ngôn ngữ này đã được chọn."
 
-#: crossword_puzzle/main.py:1199
+#: utils.py:105
 msgid "This size is already selected."
 msgstr "Kích thước này đã được chọn."
 
-#: crossword_puzzle/main.py:1204
+#: utils.py:110
 msgid "This appearance is already selected."
 msgstr "Giao diện này đã được chọn."
 
-#: crossword_puzzle/main.py:1209
+#: utils.py:115
 msgid "This quality is already selected."
 msgstr "Chất lượng này đã được chọn."
 
-#: crossword_puzzle/main.py:1214
+#: utils.py:120
+msgid "This crossword already exists. Please choose a new name."
+msgstr "Ô chữ này đã tồn tại. Vui lòng chọn một tên mới."
+
+#: utils.py:125
+msgid "This word already exists. Please choose a new word."
+msgstr "Từ này đã tồn tại. Vui lòng chọn một từ mới."
+
+#: utils.py:130
 msgid "Info"
 msgstr "Thông tin"
 
-#: crossword_puzzle/main.py:1215
+#: utils.py:131
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -218,131 +138,336 @@ msgstr ""
 "thể bị chấm dứt thông qua Trình giám sát hoạt động trên MacOS hoặc chỉ cần "
 "khởi động lại máy tính của bạn để chấm dứt chúng."
 
-#: crossword_puzzle/main.py:1233
+#: utils.py:153
 msgid ""
-"An error occured while loading this crossword's definitions. Ensure that its"
-" definitions JSON file exists in the base cwords directory. NOTE: Base "
-"crossword data is only accessed when its translated version is not present "
-"in the locales directory."
-msgstr ""
-"Đã xảy ra lỗi khi tải định nghĩa của ô chữ này. Đảm bảo rằng tệp JSON định "
-"nghĩa của nó tồn tại trong thư mục cwords cơ sở. LƯU Ý: Dữ liệu ô chữ cơ bản"
-" chỉ được truy cập khi phiên bản dịch của nó không có trong thư mục ngôn "
-"ngữ."
+"An unexpected error occured. Please try reinstalling the application with"
+msgstr "Đã xảy ra lỗi không mong muốn. Vui lòng thử cài đặt lại ứng dụng với"
 
-#: crossword_puzzle/main.py:1245
-msgid ""
-"An error occured in crossword generation. Please see further information in "
-"the console"
-msgstr ""
-"Đã xảy ra lỗi khi tạo ô chữ. Vui lòng xem thêm thông tin trong bảng điều "
-"khiển"
+#: utils.py:672
+msgid "Definitions are empty"
+msgstr "Định nghĩa trống"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:13
-#: crossword_puzzle/cword_webapp/templates/index.html:343
+#: utils.py:675
+msgid "The word count or definitions are less than 3 in length"
+msgstr "Số lượng từ hoặc định nghĩa có độ dài nhỏ hơn 3"
+
+#: utils.py:679
+msgid "Length of the word count is greater than the definitions"
+msgstr "Độ dài của số từ lớn hơn các định nghĩa"
+
+#: utils.py:682
+msgid "Escape character present in word"
+msgstr "Thoát khỏi nhân vật hiện diện trong từ"
+
+#: app/templates/index.html:13 app/templates/index.html:338
 msgid "Crossword Puzzle - Game"
 msgstr "Trò chơi ô chữ - Trò chơi"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:155
-msgid "Across"
-msgstr "Sang"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:178
-msgid "Down"
-msgstr "Xuống"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:203
+#: app/templates/index.html:136
 msgid "Compound"
 msgstr "Hợp chất"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:216
-msgid "Reveal"
-msgstr "Tiết lộ"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:223
-#: crossword_puzzle/cword_webapp/templates/index.html:252
-msgid "Cell"
-msgstr "Tế bào"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:229
-#: crossword_puzzle/cword_webapp/templates/index.html:258
-#: crossword_puzzle/cword_webapp/templates/index.html:281
-msgid "Word"
-msgstr "Từ"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:235
-#: crossword_puzzle/cword_webapp/templates/index.html:264
-#: crossword_puzzle/cword_webapp/templates/index.html:287
-msgid "Grid"
-msgstr "Lưới"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:245
-msgid "Check"
-msgstr "Kiểm tra"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:274
-msgid "Clear"
-msgstr "Thông thoáng"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:293
-msgid "Unrevealed"
-msgstr "Không được chấp nhận"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:306
+#: app/templates/index.html:149
 msgid "Auto-skip"
 msgstr "Tự động trượt băng"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:315
+#: app/templates/index.html:158
 msgid "Auto-word"
 msgstr "Từ tự động"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:324
+#: app/templates/index.html:167
 msgid "Auto-check"
 msgstr "Kiểm tra tự động"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:333
+#: app/templates/index.html:176
 msgid "Zoom"
 msgstr "Phóng"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:189
+msgid "Reveal"
+msgstr "Tiết lộ"
+
+#: app/templates/index.html:197 app/templates/index.html:230
+msgid "Cell"
+msgstr "Tế bào"
+
+#: app/templates/index.html:204 app/templates/index.html:237
+#: app/templates/index.html:263
+msgid "Word"
+msgstr "Từ"
+
+#: app/templates/index.html:211 app/templates/index.html:244
+#: app/templates/index.html:270
+msgid "Grid"
+msgstr "Lưới"
+
+#: app/templates/index.html:222
+msgid "Check"
+msgstr "Kiểm tra"
+
+#: app/templates/index.html:255
+msgid "Clear"
+msgstr "Thông thoáng"
+
+#: app/templates/index.html:277
+msgid "Unrevealed"
+msgstr "Không được chấp nhận"
+
+#: app/templates/index.html:286
+msgid "Across"
+msgstr "Sang"
+
+#: app/templates/index.html:308
+msgid "Down"
+msgstr "Xuống"
+
+#: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "Bạn đang xem"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:340
 msgid "from"
 msgstr "từ"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:350
+#: app/templates/index.html:345
 msgid "word(s) could not be inserted, sorry."
 msgstr "(các) từ không thể được chèn, xin lỗi."
 
-#: crossword_puzzle/cword_webapp/templates/index.html:353
+#: app/templates/index.html:348
 msgid "Word count (adjusted)"
 msgstr "Đếm từ (đã điều chỉnh)"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:356
+#: app/templates/index.html:351
 msgid "Word count"
 msgstr "Số từ"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:362
+#: app/templates/index.html:357
 msgid "Continue"
 msgstr "Tiếp tục"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:368
+#: app/templates/index.html:363
 msgid "You completed the crossword!"
 msgstr "Bạn đã hoàn thành ô chữ!"
 
+#: app/templates/index.html:368 pages/browser.py:586
+msgid "Close"
+msgstr "Đóng"
+
+#: pages/browser.py:136
+msgid "Crossword Browser"
+msgstr "Trình duyệt ô chữ"
+
+#: pages/browser.py:141 pages/editor.py:335
+msgid "Back"
+msgstr "Lưng"
+
+#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+msgid "HomePage"
+msgstr "Trang chủ"
+
+#: pages/browser.py:156
+msgid "Categorised"
+msgstr "Phân loại"
+
+#: pages/browser.py:156
+msgid "Flattened"
+msgstr "Phẳng"
+
+#: pages/browser.py:186
+msgid "Load"
+msgstr "Tải"
+
+#: pages/browser.py:195
+msgid "Open"
+msgstr "Mở"
+
+#: pages/browser.py:205
+msgid "Terminate"
+msgstr "Chấm dứt"
+
+#: pages/browser.py:216
+msgid "Word count preferences"
+msgstr "Tùy chọn đếm từ"
+
+#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
+#: pages/browser.py:495
+msgid "Select word count"
+msgstr "Chọn số từ"
+
+#: pages/browser.py:246
+msgid "Custom"
+msgstr "Phong tục"
+
+#: pages/browser.py:475
+msgid "To perform this operation, you must first select a cell."
+msgstr "Để thực hiện thao tác này, trước tiên bạn phải chọn một ô."
+
+#: pages/browser.py:579
+msgid "View"
+msgstr "Xem"
+
+#: pages/browser.py:783
+msgid "Select"
+msgstr "Lựa chọn"
+
+#: pages/editor.py:329
+msgid "Crossword Editor"
+msgstr "Trình chỉnh sửa ô chữ"
+
+#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
+#: pages/editor.py:822
+msgid "Your Crosswords"
+msgstr "Ô chữ của bạn"
+
+#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
+#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+msgid "Save"
+msgstr "Cứu"
+
+#: pages/editor.py:518
+msgid "length >= 1 and valid OS file name"
+msgstr "độ dài > = 1 và tên tệp hệ điều hành hợp lệ"
+
+#: pages/editor.py:526
+msgid "length == 1"
+msgstr "chiều dài == 1"
+
+#: pages/editor.py:531
+msgid "Difficulty"
+msgstr "Khó khăn"
+
+#: pages/editor.py:538
 msgid "Easy"
 msgstr "Dễ"
 
+#: pages/editor.py:538
 msgid "Medium"
 msgstr "Trung bình"
 
+#: pages/editor.py:538
 msgid "Hard"
 msgstr "Cứng"
 
+#: pages/editor.py:538
 msgid "Extreme"
 msgstr "Vô cùng"
+
+#: pages/editor.py:616 pages/editor.py:969
+msgid "Adding"
+msgstr "Thêm"
+
+#: pages/editor.py:619 pages/editor.py:973
+msgid "Add"
+msgstr "Thêm"
+
+#: pages/editor.py:778 pages/editor.py:1086
+msgid "Press"
+msgstr "Báo chí"
+
+#: pages/editor.py:778
+msgid ""
+"to add a \n"
+"new crossword."
+msgstr ""
+"để thêm một \n"
+"ô chữ mới."
+
+#: pages/editor.py:822 pages/editor.py:1128
+msgid "Editing"
+msgstr "Chỉnh sửa"
+
+#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
+#: pages/editor.py:1128
+msgid "Your Words"
+msgstr "Lời nói của bạn"
+
+#: pages/editor.py:927
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "độ dài > = 1 và độ dài < = 32 và là một ký tự ngôn ngữ"
+
+#: pages/editor.py:936
+msgid "length >= 1"
+msgstr "chiều dài > = 1"
+
+#: pages/editor.py:1086
+msgid "to add a"
+msgstr "để thêm một"
+
+#: pages/editor.py:1086
+msgid "new word."
+msgstr "từ mới."
+
+#: pages/home.py:98
+msgid "Crossword Puzzle"
+msgstr "Câu đố ô chữ"
+
+#: pages/home.py:126
+msgid "Browser"
+msgstr "Trình duyệt"
+
+#: pages/home.py:128
+msgid "BrowserPage"
+msgstr "Trình duyệtTrang"
+
+#: pages/home.py:137
+msgid "Editor"
+msgstr "Biên tập viên"
+
+#: pages/home.py:139
+msgid "EditorPage"
+msgstr "Trang biên tập"
+
+#: pages/home.py:159
+msgid "Global Settings"
+msgstr "Thiết lập toàn cầu"
+
+#: pages/home.py:166
+msgid "Language"
+msgstr "Ngôn ngữ"
+
+#: pages/home.py:178
+msgid "Size"
+msgstr "Kích cỡ"
+
+#: pages/home.py:197
+msgid "light"
+msgstr "ánh sáng"
+
+#: pages/home.py:197
+msgid "dark"
+msgstr "tối tăm"
+
+#: pages/home.py:197
+msgid "system"
+msgstr "hệ thống"
+
+#: pages/home.py:200 pages/home.py:214
+msgid "Appearance"
+msgstr "Vẻ bề ngoài"
+
+#: pages/home.py:220
+msgid "terrible"
+msgstr "kinh khủng"
+
+#: pages/home.py:221
+msgid "poor"
+msgstr "nghèo"
+
+#: pages/home.py:222
+msgid "average"
+msgstr "trung bình"
+
+#: pages/home.py:223
+msgid "great"
+msgstr "Tuyệt"
+
+#: pages/home.py:224
+msgid "perfect"
+msgstr "hoàn hảo "
+
+#: pages/home.py:228
+msgid "Crossword Quality"
+msgstr "Chất lượng ô chữ"
 
 msgid "Geography"
 msgstr "Địa lý"
@@ -356,11 +481,20 @@ msgstr "Khoa học"
 msgid "Computer Science"
 msgstr "Khoa học máy tính"
 
-msgid "Difficulty"
-msgstr "Khó khăn"
+msgid "User"
+msgstr "Người dùng"
 
 msgid "Total words"
 msgstr "Tổng số từ"
 
 msgid "Maximum"
 msgstr "Tối đa"
+
+msgid "Clue"
+msgstr "Manh mối"
+
+msgid "Name"
+msgstr "Tên"
+
+msgid "Symbol"
+msgstr "Biểu tượng"

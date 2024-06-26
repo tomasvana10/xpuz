@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-13 21:45+1000\n"
+"POT-Creation-Date: 2024-06-27 00:02+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ja <LL@li.org>\n"
@@ -19,180 +19,98 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: crossword_puzzle/main.py:79 crossword_puzzle/main.py:130
-#: crossword_puzzle/main.py:275 crossword_puzzle/main.py:343
-msgid "Crossword Puzzle"
-msgstr "クロスワードパズル"
+#: utils.py:59
+msgid "Remove"
+msgstr "取り去る"
 
-#: crossword_puzzle/main.py:146
-msgid "View crosswords"
-msgstr "クロスワードを表示する"
+#: utils.py:59
+msgid "Are you sure you want to delete this"
+msgstr "これを削除してもよろしいですか?"
 
-#: crossword_puzzle/main.py:155
-msgid "Exit the app"
-msgstr "アプリを終了する"
+#: utils.py:59
+msgid "It will be lost forever!"
+msgstr "それは永遠に失われます!"
 
-#: crossword_puzzle/main.py:166
-msgid "Global Settings"
-msgstr "全体設定"
+#: utils.py:64
+msgid "Add or select"
+msgstr "追加または選択"
 
-#: crossword_puzzle/main.py:173
-msgid "Languages"
-msgstr "言語"
+#: utils.py:64
+msgid "Are you sure you want to add/select a"
+msgstr "追加/選択してもよろしいですか?"
 
-#: crossword_puzzle/main.py:185
-msgid "Size"
-msgstr "サイズ"
+#: utils.py:64
+msgid "Your modified fields will be reset!"
+msgstr "変更したフィールドがリセットされます。"
 
-#: crossword_puzzle/main.py:204
-msgid "light"
-msgstr "ライト"
+#: utils.py:69 utils.py:88
+msgid "Back to home"
+msgstr "家に帰る"
 
-#: crossword_puzzle/main.py:204
-msgid "dark"
-msgstr "暗い"
+#: utils.py:69
+msgid ""
+"Are you sure you want to go back to the home screen? Your modified fields "
+"will be reset!"
+msgstr "ホーム画面に戻ってもよろしいですか?変更したフィールドがリセットされます。"
 
-#: crossword_puzzle/main.py:204
-msgid "system"
-msgstr "システム"
-
-#: crossword_puzzle/main.py:207 crossword_puzzle/main.py:221
-msgid "Appearance"
-msgstr "外観"
-
-#: crossword_puzzle/main.py:227
-msgid "terrible"
-msgstr "ひどい"
-
-#: crossword_puzzle/main.py:228
-msgid "poor"
-msgstr "貧しい"
-
-#: crossword_puzzle/main.py:229
-msgid "average"
-msgstr "平均"
-
-#: crossword_puzzle/main.py:230
-msgid "great"
-msgstr "素晴らしい"
-
-#: crossword_puzzle/main.py:231
-msgid "perfect"
-msgstr "完璧"
-
-#: crossword_puzzle/main.py:235
-msgid "Crossword Quality"
-msgstr "クロスワード品質"
-
-#: crossword_puzzle/main.py:267 crossword_puzzle/main.py:420
-msgid "Crossword Browser"
-msgstr "クロスワードブラウザ"
-
-#: crossword_puzzle/main.py:425
-msgid "Go back"
-msgstr "戻る"
-
-#: crossword_puzzle/main.py:436
-msgid "Load crossword"
-msgstr "クロスワードをロードする"
-
-#: crossword_puzzle/main.py:445
-msgid "Open web app"
-msgstr "ウェブアプリを開く"
-
-#: crossword_puzzle/main.py:454
-msgid "Terminate web app"
-msgstr "Webアプリを終了する"
-
-#: crossword_puzzle/main.py:465
-msgid "Word count preferences"
-msgstr "文字数の設定"
-
-#: crossword_puzzle/main.py:479 crossword_puzzle/main.py:541
-#: crossword_puzzle/main.py:587 crossword_puzzle/main.py:808
-msgid "Select word count"
-msgstr "文字数を選択してください"
-
-#: crossword_puzzle/main.py:494
-msgid "Custom"
-msgstr "カスタム"
-
-#: crossword_puzzle/main.py:699
-msgid "To perform this operation, you must first select a cell."
-msgstr "この操作を実行するには、最初にセルを選択する必要があります。"
-
-#: crossword_puzzle/main.py:892
-msgid "View"
-msgstr "ビュー"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:373
-#: crossword_puzzle/main.py:899
-msgid "Close"
-msgstr "近い"
-
-#: crossword_puzzle/main.py:1046
-msgid "difficulty"
-msgstr "困難"
-
-#: crossword_puzzle/main.py:1102
-msgid "Select"
-msgstr "選択する"
-
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Restart"
 msgstr "再起動"
 
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Are you sure you want to restart the app?"
 msgstr "アプリを再起動してもよろしいですか?"
 
-#: crossword_puzzle/main.py:1160
+#: pages/home.py:148 utils.py:79
 msgid "Exit"
 msgstr "出口"
 
-#: crossword_puzzle/main.py:1161
+#: utils.py:80
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr "アプリを終了してもよろしいですか? Web アプリが実行中の場合は終了します。"
 
-#: crossword_puzzle/main.py:1170
-msgid "Back to home"
-msgstr "家に帰る"
-
-#: crossword_puzzle/main.py:1171
+#: utils.py:89
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr "ホーム画面に戻ってもよろしいですか? Webアプリが終了します。"
 
-#: crossword_puzzle/main.py:1194 crossword_puzzle/main.py:1199
-#: crossword_puzzle/main.py:1204 crossword_puzzle/main.py:1209
-#: crossword_puzzle/main.py:1232 crossword_puzzle/main.py:1244
+#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
+#: utils.py:125 utils.py:147 utils.py:151
 msgid "Error"
 msgstr "エラー"
 
-#: crossword_puzzle/main.py:1194
+#: utils.py:100
 msgid "This language is already selected."
 msgstr "この言語はすでに選択されています。"
 
-#: crossword_puzzle/main.py:1199
+#: utils.py:105
 msgid "This size is already selected."
 msgstr "このサイズはすでに選択されています。"
 
-#: crossword_puzzle/main.py:1204
+#: utils.py:110
 msgid "This appearance is already selected."
 msgstr "この外観はすでに選択されています。"
 
-#: crossword_puzzle/main.py:1209
+#: utils.py:115
 msgid "This quality is already selected."
 msgstr "この品質はすでに選択されています。"
 
-#: crossword_puzzle/main.py:1214
+#: utils.py:120
+msgid "This crossword already exists. Please choose a new name."
+msgstr "このクロスワードは既に存在します。新しい名前を選択してください。"
+
+#: utils.py:125
+msgid "This word already exists. Please choose a new word."
+msgstr "この単語は既に存在します。新しい単語を選択してください。"
+
+#: utils.py:130
 msgid "Info"
 msgstr "情報"
 
-#: crossword_puzzle/main.py:1215
+#: utils.py:131
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -210,128 +128,336 @@ msgstr ""
 "アプリを実行します。あるいは、プログラムの構成ファイル内のポートを手動で変更することもできます。適切に終了されていないすべてのアプリ "
 "プロセスは、MacOS のアクティビティ モニターを通じて終了するか、コンピュータを再起動するだけで終了できます。"
 
-#: crossword_puzzle/main.py:1233
+#: utils.py:153
 msgid ""
-"An error occured while loading this crossword's definitions. Ensure that its"
-" definitions JSON file exists in the base cwords directory. NOTE: Base "
-"crossword data is only accessed when its translated version is not present "
-"in the locales directory."
-msgstr ""
-"このクロスワードの定義をロード中にエラーが発生しました。その定義 JSON ファイルがベース cwords "
-"ディレクトリに存在することを確認してください。注: 基本クロスワード データは、その翻訳バージョンがロケール "
-"ディレクトリに存在しない場合にのみアクセスされます。"
+"An unexpected error occured. Please try reinstalling the application with"
+msgstr "予期しないエラーが発生しました。でアプリケーションを再インストールしてみてください"
 
-#: crossword_puzzle/main.py:1245
-msgid ""
-"An error occured in crossword generation. Please see further information in "
-"the console"
-msgstr "クロスワード生成でエラーが発生しました。コンソールで詳細を確認してください"
+#: utils.py:672
+msgid "Definitions are empty"
+msgstr "定義が空です"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:13
-#: crossword_puzzle/cword_webapp/templates/index.html:343
+#: utils.py:675
+msgid "The word count or definitions are less than 3 in length"
+msgstr "単語数または定義の長さが 3 未満である"
+
+#: utils.py:679
+msgid "Length of the word count is greater than the definitions"
+msgstr "単語数の長さが定義を超えています"
+
+#: utils.py:682
+msgid "Escape character present in word"
+msgstr "単語内に存在するエスケープ文字"
+
+#: app/templates/index.html:13 app/templates/index.html:338
 msgid "Crossword Puzzle - Game"
 msgstr "クロスワードパズル - ゲーム"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:155
-msgid "Across"
-msgstr "横切って"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:178
-msgid "Down"
-msgstr "下"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:203
+#: app/templates/index.html:136
 msgid "Compound"
 msgstr "化合物"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:216
-msgid "Reveal"
-msgstr "明らかにする"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:223
-#: crossword_puzzle/cword_webapp/templates/index.html:252
-msgid "Cell"
-msgstr "細胞"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:229
-#: crossword_puzzle/cword_webapp/templates/index.html:258
-#: crossword_puzzle/cword_webapp/templates/index.html:281
-msgid "Word"
-msgstr "言葉"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:235
-#: crossword_puzzle/cword_webapp/templates/index.html:264
-#: crossword_puzzle/cword_webapp/templates/index.html:287
-msgid "Grid"
-msgstr "グリッド"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:245
-msgid "Check"
-msgstr "チェック"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:274
-msgid "Clear"
-msgstr "クリア"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:293
-msgid "Unrevealed"
-msgstr "不明瞭"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:306
+#: app/templates/index.html:149
 msgid "Auto-skip"
 msgstr "Auto-Skip"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:315
+#: app/templates/index.html:158
 msgid "Auto-word"
 msgstr "自動単語"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:324
+#: app/templates/index.html:167
 msgid "Auto-check"
 msgstr "自動チェック"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:333
+#: app/templates/index.html:176
 msgid "Zoom"
 msgstr "ズーム"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:189
+msgid "Reveal"
+msgstr "明らかにする"
+
+#: app/templates/index.html:197 app/templates/index.html:230
+msgid "Cell"
+msgstr "細胞"
+
+#: app/templates/index.html:204 app/templates/index.html:237
+#: app/templates/index.html:263
+msgid "Word"
+msgstr "言葉"
+
+#: app/templates/index.html:211 app/templates/index.html:244
+#: app/templates/index.html:270
+msgid "Grid"
+msgstr "グリッド"
+
+#: app/templates/index.html:222
+msgid "Check"
+msgstr "チェック"
+
+#: app/templates/index.html:255
+msgid "Clear"
+msgstr "クリア"
+
+#: app/templates/index.html:277
+msgid "Unrevealed"
+msgstr "不明瞭"
+
+#: app/templates/index.html:286
+msgid "Across"
+msgstr "横切って"
+
+#: app/templates/index.html:308
+msgid "Down"
+msgstr "下"
+
+#: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "あなたは見ています"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:340
 msgid "from"
 msgstr "から"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:350
+#: app/templates/index.html:345
 msgid "word(s) could not be inserted, sorry."
 msgstr "単語を挿入できませんでした、ごめんなさい。"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:353
+#: app/templates/index.html:348
 msgid "Word count (adjusted)"
 msgstr "ワードカウント（調整）"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:356
+#: app/templates/index.html:351
 msgid "Word count"
 msgstr "単語数"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:362
+#: app/templates/index.html:357
 msgid "Continue"
 msgstr "続く"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:368
+#: app/templates/index.html:363
 msgid "You completed the crossword!"
 msgstr "クロスワードを完成させました！"
 
+#: app/templates/index.html:368 pages/browser.py:586
+msgid "Close"
+msgstr "近い"
+
+#: pages/browser.py:136
+msgid "Crossword Browser"
+msgstr "クロスワードブラウザ"
+
+#: pages/browser.py:141 pages/editor.py:335
+msgid "Back"
+msgstr "戻る"
+
+#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+msgid "HomePage"
+msgstr "ホームページ"
+
+#: pages/browser.py:156
+msgid "Categorised"
+msgstr "分類"
+
+#: pages/browser.py:156
+msgid "Flattened"
+msgstr "ぺちゃんこ"
+
+#: pages/browser.py:186
+msgid "Load"
+msgstr "負荷"
+
+#: pages/browser.py:195
+msgid "Open"
+msgstr "開ける"
+
+#: pages/browser.py:205
+msgid "Terminate"
+msgstr "終了する"
+
+#: pages/browser.py:216
+msgid "Word count preferences"
+msgstr "文字数の設定"
+
+#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
+#: pages/browser.py:495
+msgid "Select word count"
+msgstr "文字数を選択してください"
+
+#: pages/browser.py:246
+msgid "Custom"
+msgstr "カスタム"
+
+#: pages/browser.py:475
+msgid "To perform this operation, you must first select a cell."
+msgstr "この操作を実行するには、最初にセルを選択する必要があります。"
+
+#: pages/browser.py:579
+msgid "View"
+msgstr "ビュー"
+
+#: pages/browser.py:783
+msgid "Select"
+msgstr "選択する"
+
+#: pages/editor.py:329
+msgid "Crossword Editor"
+msgstr "クロスワードエディタ"
+
+#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
+#: pages/editor.py:822
+msgid "Your Crosswords"
+msgstr "あなたのクロスワード"
+
+#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
+#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+msgid "Save"
+msgstr "セーブ"
+
+#: pages/editor.py:518
+msgid "length >= 1 and valid OS file name"
+msgstr "length >= 1 で有効な OS ファイル名"
+
+#: pages/editor.py:526
+msgid "length == 1"
+msgstr "長さ == 1"
+
+#: pages/editor.py:531
+msgid "Difficulty"
+msgstr "困難"
+
+#: pages/editor.py:538
 msgid "Easy"
 msgstr "簡単"
 
+#: pages/editor.py:538
 msgid "Medium"
 msgstr "中くらい"
 
+#: pages/editor.py:538
 msgid "Hard"
 msgstr "難しい"
 
+#: pages/editor.py:538
 msgid "Extreme"
 msgstr "過激"
+
+#: pages/editor.py:616 pages/editor.py:969
+msgid "Adding"
+msgstr "追加"
+
+#: pages/editor.py:619 pages/editor.py:973
+msgid "Add"
+msgstr "足す"
+
+#: pages/editor.py:778 pages/editor.py:1086
+msgid "Press"
+msgstr "押す"
+
+#: pages/editor.py:778
+msgid ""
+"to add a \n"
+"new crossword."
+msgstr ""
+"をクリックして、\n"
+"新しいクロスワード。"
+
+#: pages/editor.py:822 pages/editor.py:1128
+msgid "Editing"
+msgstr "編集"
+
+#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
+#: pages/editor.py:1128
+msgid "Your Words"
+msgstr "あなたの言葉"
+
+#: pages/editor.py:927
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "長さ >= 1 かつ長さ <= 32 であり、言語文字である"
+
+#: pages/editor.py:936
+msgid "length >= 1"
+msgstr "長さ >= 1"
+
+#: pages/editor.py:1086
+msgid "to add a"
+msgstr "をクリックして、"
+
+#: pages/editor.py:1086
+msgid "new word."
+msgstr "新語。"
+
+#: pages/home.py:98
+msgid "Crossword Puzzle"
+msgstr "クロスワードパズル"
+
+#: pages/home.py:126
+msgid "Browser"
+msgstr "ブラウザー"
+
+#: pages/home.py:128
+msgid "BrowserPage"
+msgstr "ブラウザページ"
+
+#: pages/home.py:137
+msgid "Editor"
+msgstr "編集者"
+
+#: pages/home.py:139
+msgid "EditorPage"
+msgstr "EditorPage(エディタページ)"
+
+#: pages/home.py:159
+msgid "Global Settings"
+msgstr "全体設定"
+
+#: pages/home.py:166
+msgid "Language"
+msgstr "言語"
+
+#: pages/home.py:178
+msgid "Size"
+msgstr "サイズ"
+
+#: pages/home.py:197
+msgid "light"
+msgstr "ライト"
+
+#: pages/home.py:197
+msgid "dark"
+msgstr "暗い"
+
+#: pages/home.py:197
+msgid "system"
+msgstr "システム"
+
+#: pages/home.py:200 pages/home.py:214
+msgid "Appearance"
+msgstr "外観"
+
+#: pages/home.py:220
+msgid "terrible"
+msgstr "ひどい"
+
+#: pages/home.py:221
+msgid "poor"
+msgstr "貧しい"
+
+#: pages/home.py:222
+msgid "average"
+msgstr "平均"
+
+#: pages/home.py:223
+msgid "great"
+msgstr "素晴らしい"
+
+#: pages/home.py:224
+msgid "perfect"
+msgstr "完璧"
+
+#: pages/home.py:228
+msgid "Crossword Quality"
+msgstr "クロスワード品質"
 
 msgid "Geography"
 msgstr "地理"
@@ -345,11 +471,20 @@ msgstr "科学"
 msgid "Computer Science"
 msgstr "コンピュータサイエンス"
 
-msgid "Difficulty"
-msgstr "困難"
+msgid "User"
+msgstr "利用者"
 
 msgid "Total words"
 msgstr "合計単語"
 
 msgid "Maximum"
 msgstr "最大"
+
+msgid "Clue"
+msgstr "手掛かり"
+
+msgid "Name"
+msgstr "名前"
+
+msgid "Symbol"
+msgstr "記号"

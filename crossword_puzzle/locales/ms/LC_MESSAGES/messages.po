@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-13 21:45+1000\n"
+"POT-Creation-Date: 2024-06-27 00:02+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ms <LL@li.org>\n"
@@ -19,139 +19,55 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: crossword_puzzle/main.py:79 crossword_puzzle/main.py:130
-#: crossword_puzzle/main.py:275 crossword_puzzle/main.py:343
-msgid "Crossword Puzzle"
-msgstr "Teka silang kata"
+#: utils.py:59
+msgid "Remove"
+msgstr "Mengalih keluar"
 
-#: crossword_puzzle/main.py:146
-msgid "View crosswords"
-msgstr "Lihat silang kata"
+#: utils.py:59
+msgid "Are you sure you want to delete this"
+msgstr "Adakah anda pasti mahu memadamkannya"
 
-#: crossword_puzzle/main.py:155
-msgid "Exit the app"
-msgstr "Keluar dari apl"
+#: utils.py:59
+msgid "It will be lost forever!"
+msgstr "Ia akan hilang selama-lamanya!"
 
-#: crossword_puzzle/main.py:166
-msgid "Global Settings"
-msgstr "Tetapan global"
+#: utils.py:64
+msgid "Add or select"
+msgstr "Tambah atau pilih"
 
-#: crossword_puzzle/main.py:173
-msgid "Languages"
-msgstr "Bahasa"
+#: utils.py:64
+msgid "Are you sure you want to add/select a"
+msgstr "Adakah anda pasti mahu menambah/memilih a"
 
-#: crossword_puzzle/main.py:185
-msgid "Size"
-msgstr "Saiz"
+#: utils.py:64
+msgid "Your modified fields will be reset!"
+msgstr "Medan diubahsuai anda akan ditetapkan semula!"
 
-#: crossword_puzzle/main.py:204
-msgid "light"
-msgstr "ringan"
+#: utils.py:69 utils.py:88
+msgid "Back to home"
+msgstr "Kembali ke rumah"
 
-#: crossword_puzzle/main.py:204
-msgid "dark"
-msgstr "gelap"
-
-#: crossword_puzzle/main.py:204
-msgid "system"
-msgstr "sistem"
-
-#: crossword_puzzle/main.py:207 crossword_puzzle/main.py:221
-msgid "Appearance"
-msgstr "Penampilan"
-
-#: crossword_puzzle/main.py:227
-msgid "terrible"
-msgstr "dahsyat"
-
-#: crossword_puzzle/main.py:228
-msgid "poor"
-msgstr "miskin"
-
-#: crossword_puzzle/main.py:229
-msgid "average"
-msgstr "purata"
-
-#: crossword_puzzle/main.py:230
-msgid "great"
-msgstr "hebat"
-
-#: crossword_puzzle/main.py:231
-msgid "perfect"
-msgstr "sempurna"
-
-#: crossword_puzzle/main.py:235
-msgid "Crossword Quality"
-msgstr "Kualiti silang kata"
-
-#: crossword_puzzle/main.py:267 crossword_puzzle/main.py:420
-msgid "Crossword Browser"
-msgstr "Pelayar Silang Kata"
-
-#: crossword_puzzle/main.py:425
-msgid "Go back"
-msgstr "Pergi balik"
-
-#: crossword_puzzle/main.py:436
-msgid "Load crossword"
-msgstr "Muatkan silang kata"
-
-#: crossword_puzzle/main.py:445
-msgid "Open web app"
-msgstr "Buka apl web"
-
-#: crossword_puzzle/main.py:454
-msgid "Terminate web app"
-msgstr "Tamatkan apl web"
-
-#: crossword_puzzle/main.py:465
-msgid "Word count preferences"
-msgstr "Pilihan bilangan perkataan"
-
-#: crossword_puzzle/main.py:479 crossword_puzzle/main.py:541
-#: crossword_puzzle/main.py:587 crossword_puzzle/main.py:808
-msgid "Select word count"
-msgstr "Pilih bilangan perkataan"
-
-#: crossword_puzzle/main.py:494
-msgid "Custom"
-msgstr "Adat"
-
-#: crossword_puzzle/main.py:699
-msgid "To perform this operation, you must first select a cell."
+#: utils.py:69
+msgid ""
+"Are you sure you want to go back to the home screen? Your modified fields "
+"will be reset!"
 msgstr ""
-"Untuk melaksanakan operasi ini, anda mesti memilih sel terlebih dahulu."
+"Adakah anda pasti mahu kembali ke skrin utama? Medan diubahsuai anda akan "
+"ditetapkan semula!"
 
-#: crossword_puzzle/main.py:892
-msgid "View"
-msgstr "Lihat"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:373
-#: crossword_puzzle/main.py:899
-msgid "Close"
-msgstr "tutup"
-
-#: crossword_puzzle/main.py:1046
-msgid "difficulty"
-msgstr "kesukaran"
-
-#: crossword_puzzle/main.py:1102
-msgid "Select"
-msgstr "Pilih"
-
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Restart"
 msgstr "Mula semula"
 
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Are you sure you want to restart the app?"
 msgstr "Adakah anda pasti mahu memulakan semula apl?"
 
-#: crossword_puzzle/main.py:1160
+#: pages/home.py:148 utils.py:79
 msgid "Exit"
 msgstr "Keluar"
 
-#: crossword_puzzle/main.py:1161
+#: utils.py:80
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -159,44 +75,47 @@ msgstr ""
 "Adakah anda pasti mahu keluar dari apl? Jika apl web berjalan, ia akan "
 "ditamatkan."
 
-#: crossword_puzzle/main.py:1170
-msgid "Back to home"
-msgstr "Kembali ke rumah"
-
-#: crossword_puzzle/main.py:1171
+#: utils.py:89
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
 "Adakah anda pasti mahu kembali ke skrin utama? Apl web akan ditamatkan."
 
-#: crossword_puzzle/main.py:1194 crossword_puzzle/main.py:1199
-#: crossword_puzzle/main.py:1204 crossword_puzzle/main.py:1209
-#: crossword_puzzle/main.py:1232 crossword_puzzle/main.py:1244
+#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
+#: utils.py:125 utils.py:147 utils.py:151
 msgid "Error"
 msgstr "ralat"
 
-#: crossword_puzzle/main.py:1194
+#: utils.py:100
 msgid "This language is already selected."
 msgstr "Bahasa ini sudah dipilih."
 
-#: crossword_puzzle/main.py:1199
+#: utils.py:105
 msgid "This size is already selected."
 msgstr "Saiz ini sudah dipilih."
 
-#: crossword_puzzle/main.py:1204
+#: utils.py:110
 msgid "This appearance is already selected."
 msgstr "Penampilan ini sudah dipilih."
 
-#: crossword_puzzle/main.py:1209
+#: utils.py:115
 msgid "This quality is already selected."
 msgstr "Kualiti ini sudah dipilih."
 
-#: crossword_puzzle/main.py:1214
+#: utils.py:120
+msgid "This crossword already exists. Please choose a new name."
+msgstr "Silang kata ini sudah wujud. Sila pilih nama baru."
+
+#: utils.py:125
+msgid "This word already exists. Please choose a new word."
+msgstr "Perkataan ini sudah wujud. Sila pilih perkataan baru."
+
+#: utils.py:130
 msgid "Info"
 msgstr "info"
 
-#: crossword_puzzle/main.py:1215
+#: utils.py:131
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -219,131 +138,338 @@ msgstr ""
 "Monitor Aktiviti pada MacOS, atau, hanya mulakan semula komputer anda untuk "
 "menamatkannya."
 
-#: crossword_puzzle/main.py:1233
+#: utils.py:153
 msgid ""
-"An error occured while loading this crossword's definitions. Ensure that its"
-" definitions JSON file exists in the base cwords directory. NOTE: Base "
-"crossword data is only accessed when its translated version is not present "
-"in the locales directory."
+"An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
-"Ralat berlaku semasa memuatkan takrif silang kata ini. Pastikan fail JSON "
-"definisinya wujud dalam direktori cwords asas. NOTA: Data silang kata asas "
-"hanya diakses apabila versi terjemahannya tidak terdapat dalam direktori "
-"tempat."
+"Ralat yang tidak dijangka berlaku. Sila cuba memasang semula aplikasi dengan"
 
-#: crossword_puzzle/main.py:1245
-msgid ""
-"An error occured in crossword generation. Please see further information in "
-"the console"
-msgstr ""
-"Ralat telah berlaku dalam penjanaan silang kata. Sila lihat maklumat lanjut "
-"dalam konsol"
+#: utils.py:672
+msgid "Definitions are empty"
+msgstr "Definisi kosong"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:13
-#: crossword_puzzle/cword_webapp/templates/index.html:343
+#: utils.py:675
+msgid "The word count or definitions are less than 3 in length"
+msgstr "Kiraan perkataan atau takrifan adalah kurang daripada 3 panjang"
+
+#: utils.py:679
+msgid "Length of the word count is greater than the definitions"
+msgstr "Panjang kiraan perkataan lebih besar daripada definisi"
+
+#: utils.py:682
+msgid "Escape character present in word"
+msgstr "Watak melarikan diri hadir dalam perkataan"
+
+#: app/templates/index.html:13 app/templates/index.html:338
 msgid "Crossword Puzzle - Game"
 msgstr "Teka -teki silang kata - permainan"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:155
-msgid "Across"
-msgstr "Di seberang"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:178
-msgid "Down"
-msgstr "Ke bawah"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:203
+#: app/templates/index.html:136
 msgid "Compound"
 msgstr "Kompaun"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:216
-msgid "Reveal"
-msgstr "Mendedahkan"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:223
-#: crossword_puzzle/cword_webapp/templates/index.html:252
-msgid "Cell"
-msgstr "Sel"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:229
-#: crossword_puzzle/cword_webapp/templates/index.html:258
-#: crossword_puzzle/cword_webapp/templates/index.html:281
-msgid "Word"
-msgstr "Perkataan"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:235
-#: crossword_puzzle/cword_webapp/templates/index.html:264
-#: crossword_puzzle/cword_webapp/templates/index.html:287
-msgid "Grid"
-msgstr "Grid"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:245
-msgid "Check"
-msgstr "Periksa"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:274
-msgid "Clear"
-msgstr "Jelas"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:293
-msgid "Unrevealed"
-msgstr "Tidak disengajakan"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:306
+#: app/templates/index.html:149
 msgid "Auto-skip"
 msgstr "Auto-skip"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:315
+#: app/templates/index.html:158
 msgid "Auto-word"
 msgstr "Auto-word"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:324
+#: app/templates/index.html:167
 msgid "Auto-check"
 msgstr "Auto-Check"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:333
+#: app/templates/index.html:176
 msgid "Zoom"
 msgstr "Zum"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:189
+msgid "Reveal"
+msgstr "Mendedahkan"
+
+#: app/templates/index.html:197 app/templates/index.html:230
+msgid "Cell"
+msgstr "Sel"
+
+#: app/templates/index.html:204 app/templates/index.html:237
+#: app/templates/index.html:263
+msgid "Word"
+msgstr "Perkataan"
+
+#: app/templates/index.html:211 app/templates/index.html:244
+#: app/templates/index.html:270
+msgid "Grid"
+msgstr "Grid"
+
+#: app/templates/index.html:222
+msgid "Check"
+msgstr "Periksa"
+
+#: app/templates/index.html:255
+msgid "Clear"
+msgstr "Jelas"
+
+#: app/templates/index.html:277
+msgid "Unrevealed"
+msgstr "Tidak disengajakan"
+
+#: app/templates/index.html:286
+msgid "Across"
+msgstr "Di seberang"
+
+#: app/templates/index.html:308
+msgid "Down"
+msgstr "Ke bawah"
+
+#: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "Anda melihat"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:340
 msgid "from"
 msgstr "dari"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:350
+#: app/templates/index.html:345
 msgid "word(s) could not be inserted, sorry."
 msgstr "Word (s) tidak boleh dimasukkan, maaf."
 
-#: crossword_puzzle/cword_webapp/templates/index.html:353
+#: app/templates/index.html:348
 msgid "Word count (adjusted)"
 msgstr "Kiraan perkataan (diselaraskan)"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:356
+#: app/templates/index.html:351
 msgid "Word count"
 msgstr "Kiraan perkataan"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:362
+#: app/templates/index.html:357
 msgid "Continue"
 msgstr "Teruskan"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:368
+#: app/templates/index.html:363
 msgid "You completed the crossword!"
 msgstr "Anda menyelesaikan silang kata!"
 
+#: app/templates/index.html:368 pages/browser.py:586
+msgid "Close"
+msgstr "tutup"
+
+#: pages/browser.py:136
+msgid "Crossword Browser"
+msgstr "Pelayar Silang Kata"
+
+#: pages/browser.py:141 pages/editor.py:335
+msgid "Back"
+msgstr "Kembali"
+
+#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+msgid "HomePage"
+msgstr "Laman Utama"
+
+#: pages/browser.py:156
+msgid "Categorised"
+msgstr "Dikategorikan"
+
+#: pages/browser.py:156
+msgid "Flattened"
+msgstr "Diratakan"
+
+#: pages/browser.py:186
+msgid "Load"
+msgstr "Memuatkan"
+
+#: pages/browser.py:195
+msgid "Open"
+msgstr "Terbuka"
+
+#: pages/browser.py:205
+msgid "Terminate"
+msgstr "Menamatkan"
+
+#: pages/browser.py:216
+msgid "Word count preferences"
+msgstr "Pilihan bilangan perkataan"
+
+#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
+#: pages/browser.py:495
+msgid "Select word count"
+msgstr "Pilih bilangan perkataan"
+
+#: pages/browser.py:246
+msgid "Custom"
+msgstr "Adat"
+
+#: pages/browser.py:475
+msgid "To perform this operation, you must first select a cell."
+msgstr ""
+"Untuk melaksanakan operasi ini, anda mesti memilih sel terlebih dahulu."
+
+#: pages/browser.py:579
+msgid "View"
+msgstr "Lihat"
+
+#: pages/browser.py:783
+msgid "Select"
+msgstr "Pilih"
+
+#: pages/editor.py:329
+msgid "Crossword Editor"
+msgstr "Penyunting silang kata"
+
+#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
+#: pages/editor.py:822
+msgid "Your Crosswords"
+msgstr "Kata Silang Kata Anda"
+
+#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
+#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+msgid "Save"
+msgstr "Simpan"
+
+#: pages/editor.py:518
+msgid "length >= 1 and valid OS file name"
+msgstr "panjang >= 1 dan nama fail OS yang sah"
+
+#: pages/editor.py:526
+msgid "length == 1"
+msgstr "panjang == 1"
+
+#: pages/editor.py:531
+msgid "Difficulty"
+msgstr "Kesukaran"
+
+#: pages/editor.py:538
 msgid "Easy"
 msgstr "Mudah"
 
+#: pages/editor.py:538
 msgid "Medium"
 msgstr "Sederhana"
 
+#: pages/editor.py:538
 msgid "Hard"
 msgstr "Keras"
 
+#: pages/editor.py:538
 msgid "Extreme"
 msgstr "melampau"
+
+#: pages/editor.py:616 pages/editor.py:969
+msgid "Adding"
+msgstr "Menambah"
+
+#: pages/editor.py:619 pages/editor.py:973
+msgid "Add"
+msgstr "Menambah"
+
+#: pages/editor.py:778 pages/editor.py:1086
+msgid "Press"
+msgstr "Tekan"
+
+#: pages/editor.py:778
+msgid ""
+"to add a \n"
+"new crossword."
+msgstr ""
+"untuk menambah \n"
+"silang kata baru."
+
+#: pages/editor.py:822 pages/editor.py:1128
+msgid "Editing"
+msgstr "Mengedit"
+
+#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
+#: pages/editor.py:1128
+msgid "Your Words"
+msgstr "Kata-kata anda"
+
+#: pages/editor.py:927
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "panjang >= 1 dan panjang <= 32 dan merupakan aksara bahasa"
+
+#: pages/editor.py:936
+msgid "length >= 1"
+msgstr "panjang >= 1"
+
+#: pages/editor.py:1086
+msgid "to add a"
+msgstr "untuk menambah"
+
+#: pages/editor.py:1086
+msgid "new word."
+msgstr "perkataan baru."
+
+#: pages/home.py:98
+msgid "Crossword Puzzle"
+msgstr "Teka silang kata"
+
+#: pages/home.py:126
+msgid "Browser"
+msgstr "Pelayar"
+
+#: pages/home.py:128
+msgid "BrowserPage"
+msgstr "BrowserPage"
+
+#: pages/home.py:137
+msgid "Editor"
+msgstr "Editor"
+
+#: pages/home.py:139
+msgid "EditorPage"
+msgstr "EditorPage"
+
+#: pages/home.py:159
+msgid "Global Settings"
+msgstr "Tetapan global"
+
+#: pages/home.py:166
+msgid "Language"
+msgstr "Bahasa"
+
+#: pages/home.py:178
+msgid "Size"
+msgstr "Saiz"
+
+#: pages/home.py:197
+msgid "light"
+msgstr "ringan"
+
+#: pages/home.py:197
+msgid "dark"
+msgstr "gelap"
+
+#: pages/home.py:197
+msgid "system"
+msgstr "sistem"
+
+#: pages/home.py:200 pages/home.py:214
+msgid "Appearance"
+msgstr "Penampilan"
+
+#: pages/home.py:220
+msgid "terrible"
+msgstr "dahsyat"
+
+#: pages/home.py:221
+msgid "poor"
+msgstr "miskin"
+
+#: pages/home.py:222
+msgid "average"
+msgstr "purata"
+
+#: pages/home.py:223
+msgid "great"
+msgstr "hebat"
+
+#: pages/home.py:224
+msgid "perfect"
+msgstr "sempurna"
+
+#: pages/home.py:228
+msgid "Crossword Quality"
+msgstr "Kualiti silang kata"
 
 msgid "Geography"
 msgstr "Geografi"
@@ -357,11 +483,20 @@ msgstr "Sains"
 msgid "Computer Science"
 msgstr "Sains Komputer"
 
-msgid "Difficulty"
-msgstr "Kesukaran"
+msgid "User"
+msgstr "Pengguna"
 
 msgid "Total words"
 msgstr "Jumlah perkataan"
 
 msgid "Maximum"
 msgstr "Maksimum"
+
+msgid "Clue"
+msgstr "Petunjuk"
+
+msgid "Name"
+msgstr "Nama"
+
+msgid "Symbol"
+msgstr "Simbol"

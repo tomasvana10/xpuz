@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-05-13 21:45+1000\n"
+"POT-Creation-Date: 2024-06-27 00:02+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: eu <LL@li.org>\n"
@@ -19,138 +19,55 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: crossword_puzzle/main.py:79 crossword_puzzle/main.py:130
-#: crossword_puzzle/main.py:275 crossword_puzzle/main.py:343
-msgid "Crossword Puzzle"
-msgstr "Gurutzegrama"
+#: utils.py:59
+msgid "Remove"
+msgstr "Ezabatu"
 
-#: crossword_puzzle/main.py:146
-msgid "View crosswords"
-msgstr "Ikusi gurutzegramak"
+#: utils.py:59
+msgid "Are you sure you want to delete this"
+msgstr "Ziur al zaude hau ezabatu nahi duzula?"
 
-#: crossword_puzzle/main.py:155
-msgid "Exit the app"
-msgstr "Irten aplikaziotik"
+#: utils.py:59
+msgid "It will be lost forever!"
+msgstr "Betiko galduko da!"
 
-#: crossword_puzzle/main.py:166
-msgid "Global Settings"
-msgstr "Ezarpen orokorrak"
+#: utils.py:64
+msgid "Add or select"
+msgstr "Gehitu edo aukeratu"
 
-#: crossword_puzzle/main.py:173
-msgid "Languages"
-msgstr "Hizkuntzak"
+#: utils.py:64
+msgid "Are you sure you want to add/select a"
+msgstr "Ziur al zaude gehitu/ aukeratu nahi duzula"
 
-#: crossword_puzzle/main.py:185
-msgid "Size"
-msgstr "Tamaina"
+#: utils.py:64
+msgid "Your modified fields will be reset!"
+msgstr "Bere eremu eraldatuak berrezarri egingo dira!"
 
-#: crossword_puzzle/main.py:204
-msgid "light"
-msgstr "argia"
+#: utils.py:69 utils.py:88
+msgid "Back to home"
+msgstr "Itzuli etxera"
 
-#: crossword_puzzle/main.py:204
-msgid "dark"
-msgstr "iluna"
+#: utils.py:69
+msgid ""
+"Are you sure you want to go back to the home screen? Your modified fields "
+"will be reset!"
+msgstr ""
+"Ziur al zaude hasierako pantailara itzuli nahi duzula? Bere eremu eraldatuak"
+" berrezarri egingo dira!"
 
-#: crossword_puzzle/main.py:204
-msgid "system"
-msgstr "sistema"
-
-#: crossword_puzzle/main.py:207 crossword_puzzle/main.py:221
-msgid "Appearance"
-msgstr "Itxura"
-
-#: crossword_puzzle/main.py:227
-msgid "terrible"
-msgstr "anker"
-
-#: crossword_puzzle/main.py:228
-msgid "poor"
-msgstr "txiro"
-
-#: crossword_puzzle/main.py:229
-msgid "average"
-msgstr "batezbesteko"
-
-#: crossword_puzzle/main.py:230
-msgid "great"
-msgstr "handi"
-
-#: crossword_puzzle/main.py:231
-msgid "perfect"
-msgstr "ezin hobe"
-
-#: crossword_puzzle/main.py:235
-msgid "Crossword Quality"
-msgstr "Gurutzegramaren kalitatea"
-
-#: crossword_puzzle/main.py:267 crossword_puzzle/main.py:420
-msgid "Crossword Browser"
-msgstr "Gurutzegrama arakatzailea"
-
-#: crossword_puzzle/main.py:425
-msgid "Go back"
-msgstr "Atzera egin"
-
-#: crossword_puzzle/main.py:436
-msgid "Load crossword"
-msgstr "Kargatu gurutzegrama"
-
-#: crossword_puzzle/main.py:445
-msgid "Open web app"
-msgstr "Ireki web aplikazioa"
-
-#: crossword_puzzle/main.py:454
-msgid "Terminate web app"
-msgstr "Amaitu web-aplikazioa"
-
-#: crossword_puzzle/main.py:465
-msgid "Word count preferences"
-msgstr "Hitz kopuruaren hobespenak"
-
-#: crossword_puzzle/main.py:479 crossword_puzzle/main.py:541
-#: crossword_puzzle/main.py:587 crossword_puzzle/main.py:808
-msgid "Select word count"
-msgstr "Hautatu hitz kopurua"
-
-#: crossword_puzzle/main.py:494
-msgid "Custom"
-msgstr "Pertsonalizatua"
-
-#: crossword_puzzle/main.py:699
-msgid "To perform this operation, you must first select a cell."
-msgstr "Eragiketa hau burutzeko, gelaxka bat aukeratu behar duzu lehenengo."
-
-#: crossword_puzzle/main.py:892
-msgid "View"
-msgstr "Ikusi"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:373
-#: crossword_puzzle/main.py:899
-msgid "Close"
-msgstr "Itxi"
-
-#: crossword_puzzle/main.py:1046
-msgid "difficulty"
-msgstr "zailtasuna"
-
-#: crossword_puzzle/main.py:1102
-msgid "Select"
-msgstr "Hautatu"
-
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Restart"
 msgstr "Berriro hasi"
 
-#: crossword_puzzle/main.py:1154
+#: utils.py:74
 msgid "Are you sure you want to restart the app?"
 msgstr "Ziur aplikazioa berrabiarazi nahi duzula?"
 
-#: crossword_puzzle/main.py:1160
+#: pages/home.py:148 utils.py:79
 msgid "Exit"
 msgstr "Irten"
 
-#: crossword_puzzle/main.py:1161
+#: utils.py:80
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -158,11 +75,7 @@ msgstr ""
 "Ziur aplikaziotik irten nahi duzula? Web aplikazioa martxan badago, amaitu "
 "egingo da."
 
-#: crossword_puzzle/main.py:1170
-msgid "Back to home"
-msgstr "Itzuli etxera"
-
-#: crossword_puzzle/main.py:1171
+#: utils.py:89
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -170,33 +83,40 @@ msgstr ""
 "Ziur hasierako pantailara itzuli nahi duzula? Web aplikazioa amaitu egingo "
 "da."
 
-#: crossword_puzzle/main.py:1194 crossword_puzzle/main.py:1199
-#: crossword_puzzle/main.py:1204 crossword_puzzle/main.py:1209
-#: crossword_puzzle/main.py:1232 crossword_puzzle/main.py:1244
+#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
+#: utils.py:125 utils.py:147 utils.py:151
 msgid "Error"
 msgstr "Errorea"
 
-#: crossword_puzzle/main.py:1194
+#: utils.py:100
 msgid "This language is already selected."
 msgstr "Hizkuntza hau dagoeneko hautatuta dago."
 
-#: crossword_puzzle/main.py:1199
+#: utils.py:105
 msgid "This size is already selected."
 msgstr "Tamaina hau dagoeneko hautatuta dago."
 
-#: crossword_puzzle/main.py:1204
+#: utils.py:110
 msgid "This appearance is already selected."
 msgstr "Itxura hau dagoeneko hautatuta dago."
 
-#: crossword_puzzle/main.py:1209
+#: utils.py:115
 msgid "This quality is already selected."
 msgstr "Kalitate hori dagoeneko hautatuta dago."
 
-#: crossword_puzzle/main.py:1214
+#: utils.py:120
+msgid "This crossword already exists. Please choose a new name."
+msgstr "Gurutzegrama hau existitzen da. Mesedez, aukeratu izen berri bat."
+
+#: utils.py:125
+msgid "This word already exists. Please choose a new word."
+msgstr "Hitz hau existitzen da. Mesedez, aukeratu beste hitz bat."
+
+#: utils.py:130
 msgid "Info"
 msgstr "Info"
 
-#: crossword_puzzle/main.py:1215
+#: utils.py:131
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -218,131 +138,337 @@ msgstr ""
 "aplikazio-prozesu guztiak MacOS-en Activity Monitor-en bidez amaitu daitezke"
 " edo, besterik gabe, berrabiarazi ordenagailua horiek amaitzeko."
 
-#: crossword_puzzle/main.py:1233
+#: utils.py:153
 msgid ""
-"An error occured while loading this crossword's definitions. Ensure that its"
-" definitions JSON file exists in the base cwords directory. NOTE: Base "
-"crossword data is only accessed when its translated version is not present "
-"in the locales directory."
+"An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
-"Errore bat gertatu da gurutzegrama honen definizioak kargatzean. Ziurtatu "
-"bere definizioen JSON fitxategia oinarrizko cwords direktorioan dagoela. "
-"OHARRA: Oinarrizko gurutzegrama-datuetara itzulitako bertsioa lokalen "
-"direktorioan ez dagoenean bakarrik sartzen da."
+"Ustekabeko akatsa gertatu da. Saiatu aplikazioa berriro martxan jartzeko"
 
-#: crossword_puzzle/main.py:1245
-msgid ""
-"An error occured in crossword generation. Please see further information in "
-"the console"
-msgstr ""
-"Errore bat gertatu da hitz gurutzatuak sortzean. Mesedez, ikusi informazio "
-"gehiago kontsolan"
+#: utils.py:672
+msgid "Definitions are empty"
+msgstr "Definizioak hutsik daude"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:13
-#: crossword_puzzle/cword_webapp/templates/index.html:343
+#: utils.py:675
+msgid "The word count or definitions are less than 3 in length"
+msgstr "Hitzen edo definizioen kopuruak 3 luzera baino gutxiago ditu"
+
+#: utils.py:679
+msgid "Length of the word count is greater than the definitions"
+msgstr "Hitzen zenbaketaren luzera definizioena baino handiagoa da"
+
+#: utils.py:682
+msgid "Escape character present in word"
+msgstr "Hitzean dagoen ihes-izaera"
+
+#: app/templates/index.html:13 app/templates/index.html:338
 msgid "Crossword Puzzle - Game"
 msgstr "Gurutzegramaren puzzlea - jokoa"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:155
-msgid "Across"
-msgstr "-Tik zehar"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:178
-msgid "Down"
-msgstr "Beherantz"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:203
+#: app/templates/index.html:136
 msgid "Compound"
 msgstr "Konposatu"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:216
-msgid "Reveal"
-msgstr "Azaldu"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:223
-#: crossword_puzzle/cword_webapp/templates/index.html:252
-msgid "Cell"
-msgstr "Gela"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:229
-#: crossword_puzzle/cword_webapp/templates/index.html:258
-#: crossword_puzzle/cword_webapp/templates/index.html:281
-msgid "Word"
-msgstr "Hitz"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:235
-#: crossword_puzzle/cword_webapp/templates/index.html:264
-#: crossword_puzzle/cword_webapp/templates/index.html:287
-msgid "Grid"
-msgstr "Harbera"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:245
-msgid "Check"
-msgstr "Egiaztatu"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:274
-msgid "Clear"
-msgstr "Hustu"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:293
-msgid "Unrevealed"
-msgstr "Ezeztatu gabe"
-
-#: crossword_puzzle/cword_webapp/templates/index.html:306
+#: app/templates/index.html:149
 msgid "Auto-skip"
 msgstr "Auto-saltatzea"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:315
+#: app/templates/index.html:158
 msgid "Auto-word"
 msgstr "Auto-hitza"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:324
+#: app/templates/index.html:167
 msgid "Auto-check"
 msgstr "Auto-check"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:333
+#: app/templates/index.html:176
 msgid "Zoom"
 msgstr "Zoaz"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:189
+msgid "Reveal"
+msgstr "Azaldu"
+
+#: app/templates/index.html:197 app/templates/index.html:230
+msgid "Cell"
+msgstr "Gela"
+
+#: app/templates/index.html:204 app/templates/index.html:237
+#: app/templates/index.html:263
+msgid "Word"
+msgstr "Hitz"
+
+#: app/templates/index.html:211 app/templates/index.html:244
+#: app/templates/index.html:270
+msgid "Grid"
+msgstr "Harbera"
+
+#: app/templates/index.html:222
+msgid "Check"
+msgstr "Egiaztatu"
+
+#: app/templates/index.html:255
+msgid "Clear"
+msgstr "Hustu"
+
+#: app/templates/index.html:277
+msgid "Unrevealed"
+msgstr "Ezeztatu gabe"
+
+#: app/templates/index.html:286
+msgid "Across"
+msgstr "-Tik zehar"
+
+#: app/templates/index.html:308
+msgid "Down"
+msgstr "Beherantz"
+
+#: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "Ikusten ari zara"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:345
+#: app/templates/index.html:340
 msgid "from"
 msgstr "-tik"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:350
+#: app/templates/index.html:345
 msgid "word(s) could not be inserted, sorry."
 msgstr "Ezin da hitza sartu, barkatu."
 
-#: crossword_puzzle/cword_webapp/templates/index.html:353
+#: app/templates/index.html:348
 msgid "Word count (adjusted)"
 msgstr "Hitz kopurua (egokitua)"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:356
+#: app/templates/index.html:351
 msgid "Word count"
 msgstr "Hitz kopurua"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:362
+#: app/templates/index.html:357
 msgid "Continue"
 msgstr "Jarraitu"
 
-#: crossword_puzzle/cword_webapp/templates/index.html:368
+#: app/templates/index.html:363
 msgid "You completed the crossword!"
 msgstr "Gurutzegrama osatu duzu!"
 
+#: app/templates/index.html:368 pages/browser.py:586
+msgid "Close"
+msgstr "Itxi"
+
+#: pages/browser.py:136
+msgid "Crossword Browser"
+msgstr "Gurutzegrama arakatzailea"
+
+#: pages/browser.py:141 pages/editor.py:335
+msgid "Back"
+msgstr "Atzera"
+
+#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+msgid "HomePage"
+msgstr "Orrialde nagusia"
+
+#: pages/browser.py:156
+msgid "Categorised"
+msgstr "Kategorizatuak"
+
+#: pages/browser.py:156
+msgid "Flattened"
+msgstr "Aplanatua"
+
+#: pages/browser.py:186
+msgid "Load"
+msgstr "Karga"
+
+#: pages/browser.py:195
+msgid "Open"
+msgstr "Ireki"
+
+#: pages/browser.py:205
+msgid "Terminate"
+msgstr "Amaitu"
+
+#: pages/browser.py:216
+msgid "Word count preferences"
+msgstr "Hitz kopuruaren hobespenak"
+
+#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
+#: pages/browser.py:495
+msgid "Select word count"
+msgstr "Hautatu hitz kopurua"
+
+#: pages/browser.py:246
+msgid "Custom"
+msgstr "Pertsonalizatua"
+
+#: pages/browser.py:475
+msgid "To perform this operation, you must first select a cell."
+msgstr "Eragiketa hau burutzeko, gelaxka bat aukeratu behar duzu lehenengo."
+
+#: pages/browser.py:579
+msgid "View"
+msgstr "Ikusi"
+
+#: pages/browser.py:783
+msgid "Select"
+msgstr "Hautatu"
+
+#: pages/editor.py:329
+msgid "Crossword Editor"
+msgstr "Gurutzegrametako Editorea"
+
+#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
+#: pages/editor.py:822
+msgid "Your Crosswords"
+msgstr "Zure gurutzegramak"
+
+#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
+#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+msgid "Save"
+msgstr "Salbatu"
+
+#: pages/editor.py:518
+msgid "length >= 1 and valid OS file name"
+msgstr "> luzera= 1 eta baliozko sistema eragilearen artxibo-izena"
+
+#: pages/editor.py:526
+msgid "length == 1"
+msgstr "luzera == 1"
+
+#: pages/editor.py:531
+msgid "Difficulty"
+msgstr "Zailtasun"
+
+#: pages/editor.py:538
 msgid "Easy"
 msgstr "Erraza"
 
+#: pages/editor.py:538
 msgid "Medium"
 msgstr "Ertaina"
 
+#: pages/editor.py:538
 msgid "Hard"
 msgstr "Gogorra"
 
+#: pages/editor.py:538
 msgid "Extreme"
 msgstr "Muturrekoa"
+
+#: pages/editor.py:616 pages/editor.py:969
+msgid "Adding"
+msgstr "Gehitu"
+
+#: pages/editor.py:619 pages/editor.py:973
+msgid "Add"
+msgstr "Gehitu"
+
+#: pages/editor.py:778 pages/editor.py:1086
+msgid "Press"
+msgstr "Prentsa"
+
+#: pages/editor.py:778
+msgid ""
+"to add a \n"
+"new crossword."
+msgstr ""
+"Gehitzeko \n"
+"Gurutzegrama berria."
+
+#: pages/editor.py:822 pages/editor.py:1128
+msgid "Editing"
+msgstr "Zuzenketa"
+
+#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
+#: pages/editor.py:1128
+msgid "Your Words"
+msgstr "Bere hitzak"
+
+#: pages/editor.py:927
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "> luzera= 1 eta luzera <= 32 eta hizkuntza-izaera"
+
+#: pages/editor.py:936
+msgid "length >= 1"
+msgstr "> luzera= 1"
+
+#: pages/editor.py:1086
+msgid "to add a"
+msgstr "Gehitzeko"
+
+#: pages/editor.py:1086
+msgid "new word."
+msgstr "Hitz berria."
+
+#: pages/home.py:98
+msgid "Crossword Puzzle"
+msgstr "Gurutzegrama"
+
+#: pages/home.py:126
+msgid "Browser"
+msgstr "Esploratzaile"
+
+#: pages/home.py:128
+msgid "BrowserPage"
+msgstr "BrowserPage (Nabigatzailearen orrialdea)"
+
+#: pages/home.py:137
+msgid "Editor"
+msgstr "Editor"
+
+#: pages/home.py:139
+msgid "EditorPage"
+msgstr "EditorPage"
+
+#: pages/home.py:159
+msgid "Global Settings"
+msgstr "Ezarpen orokorrak"
+
+#: pages/home.py:166
+msgid "Language"
+msgstr "Hizkuntza"
+
+#: pages/home.py:178
+msgid "Size"
+msgstr "Tamaina"
+
+#: pages/home.py:197
+msgid "light"
+msgstr "argia"
+
+#: pages/home.py:197
+msgid "dark"
+msgstr "iluna"
+
+#: pages/home.py:197
+msgid "system"
+msgstr "sistema"
+
+#: pages/home.py:200 pages/home.py:214
+msgid "Appearance"
+msgstr "Itxura"
+
+#: pages/home.py:220
+msgid "terrible"
+msgstr "anker"
+
+#: pages/home.py:221
+msgid "poor"
+msgstr "txiro"
+
+#: pages/home.py:222
+msgid "average"
+msgstr "batezbesteko"
+
+#: pages/home.py:223
+msgid "great"
+msgstr "handi"
+
+#: pages/home.py:224
+msgid "perfect"
+msgstr "ezin hobe"
+
+#: pages/home.py:228
+msgid "Crossword Quality"
+msgstr "Gurutzegramaren kalitatea"
 
 msgid "Geography"
 msgstr "Geografia"
@@ -356,11 +482,20 @@ msgstr "Zientzia"
 msgid "Computer Science"
 msgstr "Informatika"
 
-msgid "Difficulty"
-msgstr "Zailtasun"
+msgid "User"
+msgstr "Erabiltzailea"
 
 msgid "Total words"
 msgstr "Hitz guztira"
 
 msgid "Maximum"
 msgstr "Gehienezko"
+
+msgid "Clue"
+msgstr "Pista"
+
+msgid "Name"
+msgstr "Izena"
+
+msgid "Symbol"
+msgstr "Sinboloa"
