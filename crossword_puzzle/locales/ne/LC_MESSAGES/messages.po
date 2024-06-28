@@ -361,18 +361,6 @@ msgstr "थप्दै"
 msgid "Add"
 msgstr "थप्नुहोस्"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "थिच्नुहोस्"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"एक थप्नको लागि \n"
-"नया क्रॉसवर्ड।"
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "सम्पादन गर्दै"
@@ -499,3 +487,15 @@ msgstr "नाम"
 
 msgid "Symbol"
 msgstr "प्रतीक"
+
+msgid "Search"
+msgstr "खोजी"
+
+msgid "Press"
+msgstr "थिच्नुहोस्"
+
+msgid "new crossword."
+msgstr "नयाँ क्रसवर्ड।"
+
+msgid "New version available!"
+msgstr "नयाँ संस्करण उपलब्ध!"

@@ -364,18 +364,6 @@ msgstr "ಸೇರಿಸಲಾಗುತ್ತಿದೆ"
 msgid "Add"
 msgstr "ಸೇರಿಸು"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "ಪತ್ರಿಕಾ"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"ಸೇರಿಸಲು \n"
-"ಹೊಸ ಕ್ರಾಸ್ ವರ್ಡ್."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "ಸಂಪಾದನೆ"
@@ -502,3 +490,15 @@ msgstr "ಹೆಸರು"
 
 msgid "Symbol"
 msgstr "ಚಿಹ್ನೆ"
+
+msgid "Search"
+msgstr "ಹುಡುಕಿ Kannada"
+
+msgid "Press"
+msgstr "ಪತ್ರಿಕಾ"
+
+msgid "new crossword."
+msgstr "ಹೊಸ ಕ್ರಾಸ್‌ವರ್ಡ್."
+
+msgid "New version available!"
+msgstr "ಹೊಸ ಆವೃತ್ತಿ ಲಭ್ಯವಿದೆ!"

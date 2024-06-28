@@ -361,18 +361,6 @@ msgstr "जोडणे:"
 msgid "Add"
 msgstr "मिळवणे"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "दाबणे"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"ए जोडण्यासाठी \n"
-"नवीन क्रॉसवर्ड।"
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "संपादन"
@@ -499,3 +487,15 @@ msgstr "नाम"
 
 msgid "Symbol"
 msgstr "प्रतीक"
+
+msgid "Search"
+msgstr "शोध"
+
+msgid "Press"
+msgstr "दाबणे"
+
+msgid "new crossword."
+msgstr "नवीन क्रॉसवर्ड."
+
+msgid "New version available!"
+msgstr "नवीन आवृत्ती उपलब्ध!"

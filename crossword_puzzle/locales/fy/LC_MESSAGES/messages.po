@@ -360,18 +360,6 @@ msgstr "tafoeging"
 msgid "Add"
 msgstr "oan"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Druk"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"in \n"
-"nij krúswurd tafoegje."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Bewurkje"
@@ -498,3 +486,15 @@ msgstr "namme"
 
 msgid "Symbol"
 msgstr "Symboal"
+
+msgid "Search"
+msgstr "Sykje"
+
+msgid "Press"
+msgstr "Druk"
+
+msgid "new crossword."
+msgstr "nij krúswurd."
+
+msgid "New version available!"
+msgstr "Nije ferzje beskikber!"

@@ -361,16 +361,6 @@ msgstr "Hoʻohui"
 msgid "Add"
 msgstr "Hoʻohui"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Paʻi"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr "e hoʻohui i kahi huaʻōlelo hou."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Hoʻoponopono"
@@ -497,3 +487,15 @@ msgstr "Inoa"
 
 msgid "Symbol"
 msgstr "Hoailona"
+
+msgid "Search"
+msgstr "Huli"
+
+msgid "Press"
+msgstr "Paʻi"
+
+msgid "new crossword."
+msgstr "hale kūʻai hou."
+
+msgid "New version available!"
+msgstr "Loaʻa ma hope!"

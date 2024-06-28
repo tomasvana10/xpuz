@@ -364,18 +364,6 @@ msgstr "Ekleme"
 msgid "Add"
 msgstr "Eklemek"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Basın"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"eklemek için \n"
-"Yeni bulmaca."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Düzenleme"
@@ -502,3 +490,15 @@ msgstr "Ad"
 
 msgid "Symbol"
 msgstr "Sembol"
+
+msgid "Search"
+msgstr "Aramak"
+
+msgid "Press"
+msgstr "Basın"
+
+msgid "new crossword."
+msgstr "Yeni bulmaca."
+
+msgid "New version available!"
+msgstr "Yeni sürüm mevcut!"

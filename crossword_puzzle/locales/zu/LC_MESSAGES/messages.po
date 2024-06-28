@@ -363,18 +363,6 @@ msgstr "Ukwengeza"
 msgid "Add"
 msgstr "Engeza"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Cindezela"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"ukwengeza a \n"
-"i-crossword entsha."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Ukuhlela"
@@ -501,3 +489,15 @@ msgstr "Igama"
 
 msgid "Symbol"
 msgstr "Uphawu"
+
+msgid "Search"
+msgstr "Sesha"
+
+msgid "Press"
+msgstr "Cindezela"
+
+msgid "new crossword."
+msgstr "I-Crossword entsha."
+
+msgid "New version available!"
+msgstr "Uhlobo olusha luyatholakala!"

@@ -363,18 +363,6 @@ msgstr "যুক্ত"
 msgid "Add"
 msgstr "যুক্ত"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "টিপুন"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"একটি যোগ করতে \n"
-"নতুন ক্রসওয়ার্ড।"
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "সম্পাদনা"
@@ -501,3 +489,15 @@ msgstr "নাম"
 
 msgid "Symbol"
 msgstr "প্রতীক"
+
+msgid "Search"
+msgstr "অনুসন্ধান"
+
+msgid "Press"
+msgstr "টিপুন"
+
+msgid "new crossword."
+msgstr "নতুন ক্রসওয়ার্ড।"
+
+msgid "New version available!"
+msgstr "নতুন সংস্করণ উপলব্ধ!"

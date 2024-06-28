@@ -359,18 +359,6 @@ msgstr "Legge"
 msgid "Add"
 msgstr "Tilføye"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Presse"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"Slik legger du til en \n"
-"Nytt kryssord."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Redigering"
@@ -497,3 +485,15 @@ msgstr "Navn"
 
 msgid "Symbol"
 msgstr "Symbol"
+
+msgid "Search"
+msgstr "Søk"
+
+msgid "Press"
+msgstr "Presse"
+
+msgid "new crossword."
+msgstr "Nytt kryssord."
+
+msgid "New version available!"
+msgstr "Ny versjon tilgjengelig!"

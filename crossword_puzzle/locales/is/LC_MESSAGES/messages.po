@@ -360,18 +360,6 @@ msgstr "Bæta við"
 msgid "Add"
 msgstr "Bæta við"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Þrýsta"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"til að bæta við \n"
-"Ný krossgáta."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Útgáfa"
@@ -498,3 +486,15 @@ msgstr "Nafn"
 
 msgid "Symbol"
 msgstr "Tákn"
+
+msgid "Search"
+msgstr "Leit"
+
+msgid "Press"
+msgstr "Þrýsta"
+
+msgid "new crossword."
+msgstr "nýtt krossgáta."
+
+msgid "New version available!"
+msgstr "Ný útgáfa í boði!"

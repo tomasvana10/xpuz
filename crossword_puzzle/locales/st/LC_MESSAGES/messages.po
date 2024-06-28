@@ -364,18 +364,6 @@ msgstr "Phaella ka ho re"
 msgid "Add"
 msgstr "Eketsang"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Press ea khatiso"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"Add a ho ho \n"
-"Lesha Cruise"
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Ho hlophisa"
@@ -502,3 +490,15 @@ msgstr "Lebitso la lebitso"
 
 msgid "Symbol"
 msgstr "Letšoao la letšoao"
+
+msgid "Search"
+msgstr "Batla"
+
+msgid "Press"
+msgstr "Press ea khatiso"
+
+msgid "new crossword."
+msgstr "Polelo e ncha."
+
+msgid "New version available!"
+msgstr "Phetolelo e ncha e teng!"

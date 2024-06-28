@@ -360,18 +360,6 @@ msgstr "Qoʻshish"
 msgid "Add"
 msgstr "Qo'shish"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Bosib o'tkazing"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"qo'shish uchun \n"
-"yangi krossvord."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Tahrirlash"
@@ -498,3 +486,15 @@ msgstr "Nom"
 
 msgid "Symbol"
 msgstr "Ramz"
+
+msgid "Search"
+msgstr "Qidirmoq"
+
+msgid "Press"
+msgstr "Bosib o'tkazing"
+
+msgid "new crossword."
+msgstr "Yangi krossvord."
+
+msgid "New version available!"
+msgstr "Yangi versiya mavjud!"

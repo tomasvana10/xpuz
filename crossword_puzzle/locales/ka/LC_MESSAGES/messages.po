@@ -360,18 +360,6 @@ msgstr "დამატება"
 msgid "Add"
 msgstr "დამატება"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "პრესა"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"დაამატოთ ა \n"
-"ახალი კროსვორდი."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "რედაქტირება"
@@ -498,3 +486,15 @@ msgstr "სახელი"
 
 msgid "Symbol"
 msgstr "სიმბოლო"
+
+msgid "Search"
+msgstr "ძებნა"
+
+msgid "Press"
+msgstr "პრესა"
+
+msgid "new crossword."
+msgstr "ახალი კროსვორდი."
+
+msgid "New version available!"
+msgstr "ახალი ვერსია ხელმისაწვდომია!"

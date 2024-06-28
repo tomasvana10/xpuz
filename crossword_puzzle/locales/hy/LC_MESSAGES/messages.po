@@ -360,18 +360,6 @@ msgstr "Ավելացնել"
 msgid "Add"
 msgstr "Ավելացնել"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Սեղմեք"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"ավելացնել ա \n"
-"նոր խաչաձեւ խոսք:"
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Խմբագրել"
@@ -498,3 +486,15 @@ msgstr "Անուն"
 
 msgid "Symbol"
 msgstr "Զինանշան"
+
+msgid "Search"
+msgstr "Որոնել"
+
+msgid "Press"
+msgstr "Սեղմեք"
+
+msgid "new crossword."
+msgstr "Նոր խաչբառ:"
+
+msgid "New version available!"
+msgstr "Նոր տարբերակը մատչելի է:"

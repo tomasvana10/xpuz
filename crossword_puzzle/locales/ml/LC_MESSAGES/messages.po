@@ -364,18 +364,6 @@ msgstr "ചേർക്കുന്നു"
 msgid "Add"
 msgstr "ചേർക്കുക"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "അമർത്തുക"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"ഒരു കൂട്ടിച്ചേർക്കാൻ \n"
-"പുതിയ ക്രോസ് വേഡ്."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "എഡിറ്റിംഗ്"
@@ -502,3 +490,15 @@ msgstr "നാമം"
 
 msgid "Symbol"
 msgstr "അടയാളം"
+
+msgid "Search"
+msgstr "അനേഷണം"
+
+msgid "Press"
+msgstr "അമർത്തുക"
+
+msgid "new crossword."
+msgstr "പുതിയ ക്രോസ്വേഡ്."
+
+msgid "New version available!"
+msgstr "പുതിയ പതിപ്പ് ലഭ്യമാണ്!"

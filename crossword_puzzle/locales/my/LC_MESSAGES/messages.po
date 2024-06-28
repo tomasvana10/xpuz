@@ -367,18 +367,6 @@ msgstr "ပေါင်းထည့်ပါ"
 msgid "Add"
 msgstr "ပေါင်းထည့်ပါ"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "ပုံနှိပ်"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"ထပ်ထည့်ရန် \n"
-"လက်ဝါးကပ်စည်းအသစ်။"
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "၁၁ ။"
@@ -505,3 +493,15 @@ msgstr "အမည်"
 
 msgid "Symbol"
 msgstr "အမှတ်သင်္ကေတ"
+
+msgid "Search"
+msgstr "ရှာဖေှခြင်း"
+
+msgid "Press"
+msgstr "ပုံနှိပ်"
+
+msgid "new crossword."
+msgstr "စကားလုံးအသစ်။"
+
+msgid "New version available!"
+msgstr "ဗားရှင်းအသစ်ရရှိနိုင်ပါသည်။"

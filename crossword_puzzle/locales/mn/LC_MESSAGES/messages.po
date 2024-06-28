@@ -359,18 +359,6 @@ msgstr "Дэмжиж байна"
 msgid "Add"
 msgstr "Нэмэх"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Хэвлэл мэдээллийнхэн"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"а нэмэх \n"
-"шинэ солбицлын үг."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Редакц"
@@ -497,3 +485,15 @@ msgstr "Нэр"
 
 msgid "Symbol"
 msgstr "Бэлгэдэл"
+
+msgid "Search"
+msgstr "Эрэл хайгуул хийх"
+
+msgid "Press"
+msgstr "Хэвлэл мэдээллийнхэн"
+
+msgid "new crossword."
+msgstr "шинэ кроссворд."
+
+msgid "New version available!"
+msgstr "Шинэ хувилбар авах боломжтой!"

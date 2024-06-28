@@ -362,18 +362,6 @@ msgstr "Kuongeza"
 msgid "Add"
 msgstr "Ongeza"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Bonyeza"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"kuongeza a \n"
-"neno jipya la msalaba."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Kuhariri"
@@ -500,3 +488,15 @@ msgstr "Jina"
 
 msgid "Symbol"
 msgstr "Ishara"
+
+msgid "Search"
+msgstr "Tafuta"
+
+msgid "Press"
+msgstr "Bonyeza"
+
+msgid "new crossword."
+msgstr "msemo mpya."
+
+msgid "New version available!"
+msgstr "Toleo jipya linapatikana!"

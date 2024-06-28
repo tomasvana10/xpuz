@@ -359,18 +359,6 @@ msgstr "Lägga"
 msgid "Add"
 msgstr "Addera"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Trycka"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"för att lägga till en \n"
-"Nytt korsord."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Redigering"
@@ -497,3 +485,15 @@ msgstr "Namn"
 
 msgid "Symbol"
 msgstr "Symbol"
+
+msgid "Search"
+msgstr "Sök"
+
+msgid "Press"
+msgstr "Trycka"
+
+msgid "new crossword."
+msgstr "Nytt korsord."
+
+msgid "New version available!"
+msgstr "Ny version tillgänglig!"

@@ -361,18 +361,6 @@ msgstr "Afegir"
 msgid "Add"
 msgstr "Sumar"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Premsa"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"per afegir un \n"
-"Nous mots encreuats."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Edició"
@@ -499,3 +487,15 @@ msgstr "Nom"
 
 msgid "Symbol"
 msgstr "Símbol"
+
+msgid "Search"
+msgstr "Cerca"
+
+msgid "Press"
+msgstr "Premsa"
+
+msgid "new crossword."
+msgstr "Nou mots encreuats."
+
+msgid "New version available!"
+msgstr "Nova versió disponible!"

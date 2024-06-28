@@ -362,18 +362,6 @@ msgstr "జోడించడం"
 msgid "Add"
 msgstr "కూడండి"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "నొక్కు"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"ఒక జోడించడానికి \n"
-"కొత్త క్రాస్ వర్డ్."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "కూర్పు"
@@ -500,3 +488,15 @@ msgstr "పేరు"
 
 msgid "Symbol"
 msgstr "చిహ్నం"
+
+msgid "Search"
+msgstr "వెతకండి"
+
+msgid "Press"
+msgstr "నొక్కు"
+
+msgid "new crossword."
+msgstr "కొత్త క్రాస్‌వర్డ్."
+
+msgid "New version available!"
+msgstr "క్రొత్త వెర్షన్ అందుబాటులో ఉంది!"

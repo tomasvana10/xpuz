@@ -362,18 +362,6 @@ msgstr "Kuwonjezera"
 msgid "Add"
 msgstr "Onjeza"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Kankha"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"kuwonjezera a\n"
-"newword frowword."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Kusintha"
@@ -500,3 +488,15 @@ msgstr "Dzina"
 
 msgid "Symbol"
 msgstr "Chitsanzo"
+
+msgid "Search"
+msgstr "Kufunafuna"
+
+msgid "Press"
+msgstr "Kankha"
+
+msgid "new crossword."
+msgstr "newword frowword."
+
+msgid "New version available!"
+msgstr "Mtundu watsopano womwe ulipo!"

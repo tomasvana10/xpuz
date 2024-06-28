@@ -363,18 +363,6 @@ msgstr "ଯୋଡିଛନ୍ତି"
 msgid "Add"
 msgstr "ଯୋଡନ୍ତୁ"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "ଦବାନ୍ତୁ"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"ଏକ ଯୋଡିବାକୁ \n"
-"ନୂତନ କ୍ରସୱାର୍ଡ।"
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "ସମ୍ପାଦନା[ସମ୍ପାଦନା]"
@@ -501,3 +489,15 @@ msgstr "ନାମ[ସମ୍ପାଦନା]"
 
 msgid "Symbol"
 msgstr "ଚିହ୍ନ[ସମ୍ପାଦନା]"
+
+msgid "Search"
+msgstr "ସନ୍ଧାନ କର |"
+
+msgid "Press"
+msgstr "ଦବାନ୍ତୁ"
+
+msgid "new crossword."
+msgstr "ନୂତନ କ୍ରସ୍ ୱାର୍ଡ |"
+
+msgid "New version available!"
+msgstr "ନୂତନ ସଂସ୍କରଣ ଉପଲବ୍ଧ!"

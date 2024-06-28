@@ -362,18 +362,6 @@ msgstr "Додавання"
 msgid "Add"
 msgstr "Додати"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Прес"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"щоб додати об'єкт \n"
-"Новий кросворд."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Редагування"
@@ -500,3 +488,15 @@ msgstr "Ім'я"
 
 msgid "Symbol"
 msgstr "Символ"
+
+msgid "Search"
+msgstr "Пошук"
+
+msgid "Press"
+msgstr "Прес"
+
+msgid "new crossword."
+msgstr "Новий кросворд."
+
+msgid "New version available!"
+msgstr "Нова версія доступна!"

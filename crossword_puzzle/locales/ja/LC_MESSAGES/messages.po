@@ -350,18 +350,6 @@ msgstr "追加"
 msgid "Add"
 msgstr "足す"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "押す"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"をクリックして、\n"
-"新しいクロスワード。"
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "編集"
@@ -488,3 +476,15 @@ msgstr "名前"
 
 msgid "Symbol"
 msgstr "記号"
+
+msgid "Search"
+msgstr "検索"
+
+msgid "Press"
+msgstr "押す"
+
+msgid "new crossword."
+msgstr "新しいクロスワード。"
+
+msgid "New version available!"
+msgstr "新しいバージョンが利用可能です！"

@@ -362,18 +362,6 @@ msgstr "Dodavanje"
 msgid "Add"
 msgstr "Dodati"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Pritisnite"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"da dodam a \n"
-"novu ukrštenicu."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Uređivanje"
@@ -500,3 +488,15 @@ msgstr "Ime"
 
 msgid "Symbol"
 msgstr "Simbol"
+
+msgid "Search"
+msgstr "Pretražiti"
+
+msgid "Press"
+msgstr "Pritisnite"
+
+msgid "new crossword."
+msgstr "Nova križaljka."
+
+msgid "New version available!"
+msgstr "Dostupna nova verzija!"

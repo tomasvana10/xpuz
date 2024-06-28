@@ -363,18 +363,6 @@ msgstr "Ag cur leis"
 msgid "Add"
 msgstr "Cuir Leis"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Preas"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"a chur leis \n"
-"crosfhocal nua."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Eagarthóireacht"
@@ -501,3 +489,15 @@ msgstr "Ainm"
 
 msgid "Symbol"
 msgstr "Siombail"
+
+msgid "Search"
+msgstr "Cuardach"
+
+msgid "Press"
+msgstr "Preas"
+
+msgid "new crossword."
+msgstr "Crosfhocal nua."
+
+msgid "New version available!"
+msgstr "Leagan nua ar fáil!"

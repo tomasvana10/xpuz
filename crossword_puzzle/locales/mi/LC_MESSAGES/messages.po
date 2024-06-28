@@ -363,18 +363,6 @@ msgstr "Tāpiri ana"
 msgid "Add"
 msgstr "Tāpiri"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Pēhi"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"hei tāpiri i tētahi \n"
-"kupu whakawhiti hōu."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Whakarerekē ana"
@@ -501,3 +489,15 @@ msgstr "Ingoa"
 
 msgid "Symbol"
 msgstr "Tohu"
+
+msgid "Search"
+msgstr "Rapu"
+
+msgid "Press"
+msgstr "Pēhi"
+
+msgid "new crossword."
+msgstr "Tuhinga o mua."
+
+msgid "New version available!"
+msgstr "Ko te putanga hou e waatea ana!"

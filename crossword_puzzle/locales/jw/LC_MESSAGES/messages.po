@@ -360,18 +360,6 @@ msgstr "Nambahake"
 msgid "Add"
 msgstr "Tambah"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Penet"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"kanggo nambah \n"
-" silang tembung anyar."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Nyunting"
@@ -498,3 +486,15 @@ msgstr "Jeneng"
 
 msgid "Symbol"
 msgstr "Simbol"
+
+msgid "Search"
+msgstr "Telusuran"
+
+msgid "Press"
+msgstr "Penet"
+
+msgid "new crossword."
+msgstr "Bagean anyar."
+
+msgid "New version available!"
+msgstr "Versi anyar sing kasedhiya!"

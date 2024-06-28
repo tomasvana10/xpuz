@@ -361,18 +361,6 @@ msgstr "එකතු කිරීම"
 msgid "Add"
 msgstr "එකතු කරන්න"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "ඔබන්න"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"එකතු කිරීමට \n"
-"නව හරස් පදය."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "සංස්කරණය"
@@ -499,3 +487,15 @@ msgstr "නම"
 
 msgid "Symbol"
 msgstr "සංකේතය"
+
+msgid "Search"
+msgstr "සෙවීම"
+
+msgid "Press"
+msgstr "ඔබන්න"
+
+msgid "new crossword."
+msgstr "නව හරස්පද."
+
+msgid "New version available!"
+msgstr "නව අනුවාදය තිබේ!"

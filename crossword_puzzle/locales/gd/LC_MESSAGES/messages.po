@@ -51,7 +51,9 @@ msgstr "Air ais dhan dachaigh"
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
-msgstr "A bheil thu cinnteach gu bheil thu airson a dhol air ais chun sgrion dachaigh? "
+msgstr ""
+"A bheil thu cinnteach gu bheil thu airson a dhol air ais chun sgrion "
+"dachaigh? "
 
 #: utils.py:74
 msgid "Restart"
@@ -59,8 +61,9 @@ msgstr "Ath-thòisich"
 
 #: utils.py:74
 msgid "Are you sure you want to restart the app?"
-msgstr "A bheil thu cinnteach gu bheil thu airson an aplacaid ath-thòiseachadh?"
-"A bheil thu cinnteach gu bheil thu airson an aplacaid ath-thòiseachadh?"
+msgstr ""
+"A bheil thu cinnteach gu bheil thu airson an aplacaid ath-thòiseachadh?A "
+"bheil thu cinnteach gu bheil thu airson an aplacaid ath-thòiseachadh?"
 
 #: pages/home.py:148 utils.py:79
 msgid "Exit"
@@ -70,17 +73,19 @@ msgstr "Ar-a-mach"
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
-msgstr "A bheil thu cinnteach gu bheil thu airson an aplacaid fhàgail? "
-"A bheil thu cinnteach gu bheil thu airson an aplacaid fhàgail? Ma tha an "
-"aplacaid lìn a 'ruith, thèid a thoirt gu crìch."
+msgstr ""
+"A bheil thu cinnteach gu bheil thu airson an aplacaid fhàgail? A bheil thu "
+"cinnteach gu bheil thu airson an aplacaid fhàgail? Ma tha an aplacaid lìn a "
+"'ruith, thèid a thoirt gu crìch."
 
 #: utils.py:89
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
-msgstr "A bheil thu cinnteach gu bheil thu airson a dhol air ais chun sgrion dachaigh? "
+msgstr ""
 "A bheil thu cinnteach gu bheil thu airson a dhol air ais chun sgrion "
-"dachaigh? Thèid an app lìn a thoirt gu crìch."
+"dachaigh? A bheil thu cinnteach gu bheil thu airson a dhol air ais chun "
+"sgrion dachaigh? Thèid an app lìn a thoirt gu crìch."
 
 #: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
 #: utils.py:125 utils.py:147 utils.py:151
@@ -126,9 +131,12 @@ msgid ""
 "file. All app processes that have not been properly terminated can be "
 "terminated through Activity Monitor on MacOS, or, simply restart your "
 "computer to terminate them."
-msgstr "Cur air bhog airson a’ chiad uair, feuch an leugh thu: Aon uair ‘s gu bheil thu air crois-fhacal a luchdachadh, agus gu bheil thu airson fear eile a luchdachadh, feumaidh tu an aplacaid lìn a thoirt gu crìch an-toiseach. "
-"A’ chiad turas a chuir air bhog, feuch an leugh thu: Aon uair ‘s gu bheil "
+msgstr ""
+"Cur air bhog airson a’ chiad uair, feuch an leugh thu: Aon uair ‘s gu bheil "
 "thu air crois-fhacal a luchdachadh, agus gu bheil thu airson fear eile a "
+"luchdachadh, feumaidh tu an aplacaid lìn a thoirt gu crìch an-toiseach. A’ "
+"chiad turas a chuir air bhog, feuch an leugh thu: Aon uair ‘s gu bheil thu "
+"air crois-fhacal a luchdachadh, agus gu bheil thu airson fear eile a "
 "luchdachadh, feumaidh tu an aplacaid lìn a thoirt gu crìch an-toiseach. "
 "CUDROMACH: Ma tha thu air macOS, feuch an cuir thu stad air an tagradh (a’ "
 "cleachdadh cmd + q) fhad ‘s a tha an aplacaid lìn a’ ruith a ’cur casg air "
@@ -301,8 +309,10 @@ msgstr "Gnàthach"
 
 #: pages/browser.py:475
 msgid "To perform this operation, you must first select a cell."
-msgstr "Gus an obrachadh seo a dhèanamh, feumaidh tu cealla a thaghadh an toiseach."
-"Gus an obair seo a choileanadh, feumaidh tu cealla a thaghadh an toiseach."
+msgstr ""
+"Gus an obrachadh seo a dhèanamh, feumaidh tu cealla a thaghadh an "
+"toiseach.Gus an obair seo a choileanadh, feumaidh tu cealla a thaghadh an "
+"toiseach."
 
 #: pages/browser.py:579
 msgid "View"
@@ -361,16 +371,6 @@ msgstr "A' cur ris"
 #: pages/editor.py:619 pages/editor.py:973
 msgid "Add"
 msgstr "Cuir ris"
-
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Brùth"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr "\ncrois-fhacal ùr a chur ris."
 
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
@@ -498,3 +498,15 @@ msgstr "Ainm"
 
 msgid "Symbol"
 msgstr "Ìomhaigh"
+
+msgid "Search"
+msgstr "Rannsaich"
+
+msgid "Press"
+msgstr "Brùth"
+
+msgid "new crossword."
+msgstr "crois-fhacal ùr."
+
+msgid "New version available!"
+msgstr "Tionndadh ùr ri fhaighinn!"

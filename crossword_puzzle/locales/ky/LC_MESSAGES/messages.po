@@ -359,18 +359,6 @@ msgstr "Кошуу"
 msgid "Add"
 msgstr "Кошуу"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Пресс"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"кошуу үчүн \n"
-"жаңы айкаш сөздөр."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Редакциялоо"
@@ -497,3 +485,15 @@ msgstr "Аты-жөнү"
 
 msgid "Symbol"
 msgstr "Символ"
+
+msgid "Search"
+msgstr "Издөө"
+
+msgid "Press"
+msgstr "Пресс"
+
+msgid "new crossword."
+msgstr "жаңы кроссворд."
+
+msgid "New version available!"
+msgstr "Жаңы версия жеткиликтүү!"

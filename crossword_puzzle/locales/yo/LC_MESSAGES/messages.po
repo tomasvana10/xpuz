@@ -359,18 +359,6 @@ msgstr "Fi kun"
 msgid "Add"
 msgstr "Ṣàfikún"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Tẹ"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"to add a \n"
-"new crossword ì"
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Ṣiṣatunkọ"
@@ -497,3 +485,15 @@ msgstr "Orúkọ"
 
 msgid "Symbol"
 msgstr "Àmì"
+
+msgid "Search"
+msgstr "Ṣewadii"
+
+msgid "Press"
+msgstr "Tẹ"
+
+msgid "new crossword."
+msgstr "Titun morjord."
+
+msgid "New version available!"
+msgstr "Ẹya tuntun wa!"

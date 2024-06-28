@@ -367,18 +367,6 @@ msgstr "Pagdaragdag"
 msgid "Add"
 msgstr "Idagdag"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Pindutin"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"Upang magdagdag ng isang\n"
-"Bagong Crossword."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Pag -edit"
@@ -505,3 +493,15 @@ msgstr "Pangalan"
 
 msgid "Symbol"
 msgstr "Simbolo"
+
+msgid "Search"
+msgstr "Maghanap"
+
+msgid "Press"
+msgstr "Pindutin"
+
+msgid "new crossword."
+msgstr "Bagong Crossword."
+
+msgid "New version available!"
+msgstr "Magagamit ang bagong bersyon!"

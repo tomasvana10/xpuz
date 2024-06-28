@@ -360,18 +360,6 @@ msgstr "aghjunghje"
 msgid "Add"
 msgstr "aghjunghje"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Pulse"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"per aghjunghje un \n"
-"nuvellu cruciverba."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Editatu"
@@ -498,3 +486,15 @@ msgstr "Nome"
 
 msgid "Symbol"
 msgstr "Simbulu"
+
+msgid "Search"
+msgstr "CERCAZZA"
+
+msgid "Press"
+msgstr "Pulse"
+
+msgid "new crossword."
+msgstr "nova cruciverba."
+
+msgid "New version available!"
+msgstr "Nova versione disponibile!"

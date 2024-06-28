@@ -367,18 +367,6 @@ msgstr "சேர்க்கிறது"
 msgid "Add"
 msgstr "சேர்"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "அழுத்து"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"சேர்க்க ஒரு \n"
-"புதிய குறுக்கெழுத்து."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "திருத்த"
@@ -505,3 +493,15 @@ msgstr "பெயர்"
 
 msgid "Symbol"
 msgstr "குறியீடு"
+
+msgid "Search"
+msgstr "தேடல்"
+
+msgid "Press"
+msgstr "அழுத்து"
+
+msgid "new crossword."
+msgstr "புதிய குறுக்கெழுத்து."
+
+msgid "New version available!"
+msgstr "புதிய பதிப்பு கிடைக்கிறது!"

@@ -361,18 +361,6 @@ msgstr "Dobäi"
 msgid "Add"
 msgstr "derbäi"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Dëpte drécken"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"fir en \n"
-"neie Kräizwuertwuert derbäi ze ginn."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Redaktioun"
@@ -500,3 +488,14 @@ msgstr "Numm"
 msgid "Symbol"
 msgstr "Symbol"
 
+msgid "Search"
+msgstr "Sichen"
+
+msgid "Press"
+msgstr "Dëpte drécken"
+
+msgid "new crossword."
+msgstr "neit Kräizwuert."
+
+msgid "New version available!"
+msgstr "Nei Versioun verfügbar!"

@@ -359,18 +359,6 @@ msgstr "Lisades"
 msgid "Add"
 msgstr "Lisama"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Ajakirjandus"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"Lisada \n"
-"uus ristsõna."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Redigeerimise"
@@ -497,3 +485,15 @@ msgstr "Nimi"
 
 msgid "Symbol"
 msgstr "Sümbol"
+
+msgid "Search"
+msgstr "Otsing"
+
+msgid "Press"
+msgstr "Ajakirjandus"
+
+msgid "new crossword."
+msgstr "Uus ristsõna."
+
+msgid "New version available!"
+msgstr "Saadaval uus versioon!"

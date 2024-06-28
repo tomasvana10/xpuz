@@ -358,18 +358,6 @@ msgstr "Na-agbakwụnye"
 msgid "Add"
 msgstr "Tinye"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Pịa"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"Iji tinye otu \n"
-"New CrossWord"
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Edezi"
@@ -496,3 +484,15 @@ msgstr "Aha"
 
 msgid "Symbol"
 msgstr "Akara"
+
+msgid "Search"
+msgstr "Ochucho"
+
+msgid "Press"
+msgstr "Pịa"
+
+msgid "new crossword."
+msgstr "NewWorword."
+
+msgid "New version available!"
+msgstr "Version New Dị Ọhụrụ!"

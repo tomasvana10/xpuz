@@ -362,18 +362,6 @@ msgstr "Pievienojot"
 msgid "Add"
 msgstr "Pievienot"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Prese"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"Lai pievienotu \n"
-"jauna krustvārdu mīkla."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Rediģēšanas"
@@ -500,3 +488,15 @@ msgstr "Vārds"
 
 msgid "Symbol"
 msgstr "Simbols"
+
+msgid "Search"
+msgstr "Meklēt"
+
+msgid "Press"
+msgstr "Prese"
+
+msgid "new crossword."
+msgstr "Jauns krustvārdu vārds."
+
+msgid "New version available!"
+msgstr "Pieejama jauna versija!"

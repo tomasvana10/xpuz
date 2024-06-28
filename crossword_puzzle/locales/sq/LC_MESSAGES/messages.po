@@ -363,18 +363,6 @@ msgstr "Duke shtuar"
 msgid "Add"
 msgstr "Shto"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Shtyp"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"Për të shtuar një \n"
-"Fjalëkryq i ri."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Editimi"
@@ -501,3 +489,15 @@ msgstr "Emri"
 
 msgid "Symbol"
 msgstr "Simboli"
+
+msgid "Search"
+msgstr "Kërkim"
+
+msgid "Press"
+msgstr "Shtyp"
+
+msgid "new crossword."
+msgstr "Fjalëkryq i ri."
+
+msgid "New version available!"
+msgstr "Version i ri në dispozicion!"

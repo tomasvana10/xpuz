@@ -69,17 +69,17 @@ msgstr "Eliro"
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
-msgstr "Ĉu vi certas, ke vi volas eliri la apon? "
-"Ĉu vi certas, ke vi volas eliri la apon? Se la retejo funkcias, ĝi estos "
-"ĉesigita."
+msgstr ""
+"Ĉu vi certas, ke vi volas eliri la apon? Ĉu vi certas, ke vi volas eliri la "
+"apon? Se la retejo funkcias, ĝi estos ĉesigita."
 
 #: utils.py:89
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
-msgstr "Ĉu vi certas, ke vi volas reiri al la hejma ekrano? "
-"Ĉu vi certas, ke vi volas reiri al la hejma ekrano? La TTT-apliko estos "
-"ĉesigita."
+msgstr ""
+"Ĉu vi certas, ke vi volas reiri al la hejma ekrano? Ĉu vi certas, ke vi "
+"volas reiri al la hejma ekrano? La TTT-apliko estos ĉesigita."
 
 #: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
 #: utils.py:125 utils.py:147 utils.py:151
@@ -125,15 +125,17 @@ msgid ""
 "file. All app processes that have not been properly terminated can be "
 "terminated through Activity Monitor on MacOS, or, simply restart your "
 "computer to terminate them."
-msgstr "Unuafoje lanĉo, bonvolu legi: Post kiam vi ŝargis krucvorton, kaj volas ŝargi alian, vi unue devas ĉesigi la TTT-aplikaĵon. "
+msgstr ""
 "Unuafoje lanĉo, bonvolu legi: Post kiam vi ŝargis krucvorton, kaj volas "
-"ŝargi alian, vi unue devas ĉesigi la TTT-aplikaĵon. GRAVA: Se vi estas en "
-"macOS, devigi forlasi la aplikaĵon (uzante cmd+q) dum la TTT-apliko "
-"funkcias, malhelpos ĝin ĝuste finiĝi. Se vi erare faras tion, la programo "
-"funkcios novajn retprogramojn kun malsama haveno. Alternative, vi povas mane"
-" ŝanĝi la havenon en la agordosiero de la programo. Ĉiuj aplikaj procezoj, "
-"kiuj ne estis ĝuste finitaj, povas esti ĉesigitaj per Activity Monitor en "
-"MacOS, aŭ simple rekomenci vian komputilon por ĉesigi ilin."
+"ŝargi alian, vi unue devas ĉesigi la TTT-aplikaĵon. Unuafoje lanĉo, bonvolu "
+"legi: Post kiam vi ŝargis krucvorton, kaj volas ŝargi alian, vi unue devas "
+"ĉesigi la TTT-aplikaĵon. GRAVA: Se vi estas en macOS, devigi forlasi la "
+"aplikaĵon (uzante cmd+q) dum la TTT-apliko funkcias, malhelpos ĝin ĝuste "
+"finiĝi. Se vi erare faras tion, la programo funkcios novajn retprogramojn "
+"kun malsama haveno. Alternative, vi povas mane ŝanĝi la havenon en la "
+"agordosiero de la programo. Ĉiuj aplikaj procezoj, kiuj ne estis ĝuste "
+"finitaj, povas esti ĉesigitaj per Activity Monitor en MacOS, aŭ simple "
+"rekomenci vian komputilon por ĉesigi ilin."
 
 #: utils.py:153
 msgid ""
@@ -357,16 +359,6 @@ msgstr "Aldonante"
 msgid "Add"
 msgstr "Aldoni"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Premu"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr "por aldoni \nnova krucvorto."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Redaktado"
@@ -493,3 +485,15 @@ msgstr "Nomo"
 
 msgid "Symbol"
 msgstr "Simbolo"
+
+msgid "Search"
+msgstr "Serĉo"
+
+msgid "Press"
+msgstr "Premu"
+
+msgid "new crossword."
+msgstr "Nova krucvorto."
+
+msgid "New version available!"
+msgstr "Nova versio havebla!"

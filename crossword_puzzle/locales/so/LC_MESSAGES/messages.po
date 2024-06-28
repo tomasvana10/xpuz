@@ -363,18 +363,6 @@ msgstr "kordhiyay"
 msgid "Add"
 msgstr "Add"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Press"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"mid ku daro a \n"
-"hal-ku-meel-gaar ah."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Waxka bedelaada"
@@ -501,3 +489,15 @@ msgstr "magaca"
 
 msgid "Symbol"
 msgstr "Astaanta"
+
+msgid "Search"
+msgstr "Raadinta"
+
+msgid "Press"
+msgstr "Press"
+
+msgid "new crossword."
+msgstr "ereyga cusub."
+
+msgid "New version available!"
+msgstr "Nooc cusub ayaa la heli karaa!"

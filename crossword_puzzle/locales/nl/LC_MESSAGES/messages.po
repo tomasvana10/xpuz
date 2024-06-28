@@ -363,18 +363,6 @@ msgstr "Toevoegen"
 msgid "Add"
 msgstr "Toevoegen"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Pers"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"om een \n"
-"Nieuw kruiswoordraadsel."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Bewerken"
@@ -501,3 +489,15 @@ msgstr "Naam"
 
 msgid "Symbol"
 msgstr "Symbool"
+
+msgid "Search"
+msgstr "Zoekopdracht"
+
+msgid "Press"
+msgstr "Pers"
+
+msgid "new crossword."
+msgstr "Nieuw kruiswoordraadsel."
+
+msgid "New version available!"
+msgstr "Nieuwe versie beschikbaar!"

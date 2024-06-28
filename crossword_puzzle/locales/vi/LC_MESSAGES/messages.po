@@ -360,18 +360,6 @@ msgstr "Thêm"
 msgid "Add"
 msgstr "Thêm"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Báo chí"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"để thêm một \n"
-"ô chữ mới."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Chỉnh sửa"
@@ -498,3 +486,15 @@ msgstr "Tên"
 
 msgid "Symbol"
 msgstr "Biểu tượng"
+
+msgid "Search"
+msgstr "Tìm kiếm"
+
+msgid "Press"
+msgstr "Báo chí"
+
+msgid "new crossword."
+msgstr "ô chữ mới."
+
+msgid "New version available!"
+msgstr "Phiên bản mới có sẵn!"

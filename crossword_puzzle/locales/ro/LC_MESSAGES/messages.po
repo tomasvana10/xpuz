@@ -362,18 +362,6 @@ msgstr "Adăugarea"
 msgid "Add"
 msgstr "Adăuga"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Presă"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"Pentru a adăuga un \n"
-"cuvinte încrucișate noi."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Editare"
@@ -500,3 +488,15 @@ msgstr "Nume"
 
 msgid "Symbol"
 msgstr "Simbol"
+
+msgid "Search"
+msgstr "Căutare"
+
+msgid "Press"
+msgstr "Presă"
+
+msgid "new crossword."
+msgstr "nou cuvânt încrucișat."
+
+msgid "New version available!"
+msgstr "Noua versiune disponibilă!"

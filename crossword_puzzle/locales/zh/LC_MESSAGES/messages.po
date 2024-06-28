@@ -349,18 +349,6 @@ msgstr "添加"
 msgid "Add"
 msgstr "加"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "压"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"添加\n"
-"新的填字游戏。"
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "编辑"
@@ -487,3 +475,15 @@ msgstr "名字"
 
 msgid "Symbol"
 msgstr "象征"
+
+msgid "Search"
+msgstr "搜索"
+
+msgid "Press"
+msgstr "压"
+
+msgid "new crossword."
+msgstr "新填字游戏。"
+
+msgid "New version available!"
+msgstr "可用的新版本！"

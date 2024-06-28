@@ -362,18 +362,6 @@ msgstr "ਜੋੜਨਾ"
 msgid "Add"
 msgstr "ਜੋੜੋ"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "ਦਬਾਓ"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"ਇੱਕ ਜੋੜਨ ਲਈ \n"
-"ਨਵਾਂ ਕਰਾਸਵਰਡ।"
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "ਸੰਪਾਦਨ"
@@ -500,3 +488,15 @@ msgstr "ਨਾਂ"
 
 msgid "Symbol"
 msgstr "ਚਿੰਨ੍ਹ"
+
+msgid "Search"
+msgstr "ਖੋਜ"
+
+msgid "Press"
+msgstr "ਦਬਾਓ"
+
+msgid "new crossword."
+msgstr "ਨਵਾਂ ਕਰਾਸਵਰਡ."
+
+msgid "New version available!"
+msgstr "ਨਵਾਂ ਵਰਜ਼ਨ ਉਪਲਬਧ!"

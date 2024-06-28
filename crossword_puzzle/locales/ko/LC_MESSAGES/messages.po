@@ -350,18 +350,6 @@ msgstr "추가"
 msgid "Add"
 msgstr "더하다"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "누르다"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"를 추가하려면 \n"
-"새로운 십자말풀이."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "편집"
@@ -488,3 +476,15 @@ msgstr "이름"
 
 msgid "Symbol"
 msgstr "상징"
+
+msgid "Search"
+msgstr "찾다"
+
+msgid "Press"
+msgstr "누르다"
+
+msgid "new crossword."
+msgstr "새로운 크로스 워드."
+
+msgid "New version available!"
+msgstr "새로운 버전을 사용할 수 있습니다!"

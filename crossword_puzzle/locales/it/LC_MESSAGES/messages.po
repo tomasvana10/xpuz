@@ -363,18 +363,6 @@ msgstr "Somma"
 msgid "Add"
 msgstr "Aggiungere"
 
-#: pages/editor.py:778 pages/editor.py:1086
-msgid "Press"
-msgstr "Passeggiata"
-
-#: pages/editor.py:778
-msgid ""
-"to add a \n"
-"new crossword."
-msgstr ""
-"per aggiungere un oggetto \n"
-"Nuovo cruciverba."
-
 #: pages/editor.py:822 pages/editor.py:1128
 msgid "Editing"
 msgstr "Redazione"
@@ -501,3 +489,15 @@ msgstr "Nome"
 
 msgid "Symbol"
 msgstr "Simbolo"
+
+msgid "Search"
+msgstr "Ricerca"
+
+msgid "Press"
+msgstr "Passeggiata"
+
+msgid "new crossword."
+msgstr "Nuovo cruciverba."
+
+msgid "New version available!"
+msgstr "Nuova versione disponibile!"
