@@ -472,8 +472,6 @@ def _make_category_info_json(fp: PathLike, hex_=None) -> None:
     """
     if not hex_:
         hex_: str = "#%06X" % randint(0, 0xFFFFFF)
-    else:
-        hex_: str = hex_
     with open(path.join(fp, "info.json"), "w") as f:
         return dump({"bottom_tag_colour": hex_}, f, indent=4)
 
@@ -529,7 +527,7 @@ def _get_colour_palette(appearance_mode: str) -> Dict[str, str]:
     }
 
 
-def _find_best_crossword(crossword: "Crossword", cls: object) -> "Crossword":
+def _find_best_crossword(crossword: "Crossword", cls: "Crossword") -> "Crossword":
     """Determine the best crossword out of a amount of instantiated
     crosswords based on the largest amount of total intersections and
     smallest amount of fails.
@@ -593,7 +591,7 @@ def _find_best_crossword(crossword: "Crossword", cls: object) -> "Crossword":
     return best_crossword
 
 
-def _interpret_cword_data(crossword: "Crossword") -> None:
+def _interpret_cword_data(crossword: "Crossword") -> Tuple[List]:
     """Gather data to help with the templated creation of the crossword
     web application.
     """
