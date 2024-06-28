@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-27 00:02+1000\n"
+"POT-Creation-Date: 2024-06-28 21:00+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fy <LL@li.org>\n"
@@ -19,53 +19,80 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: utils.py:59
+#: import_export.py:21
+msgid "Select a destination to export your crosswords to"
+msgstr "Selektearje in bestimming om jo krúswurden nei te eksportearjen"
+
+#: import_export.py:25
+msgid "my-crosswords"
+msgstr "my-krúswurden"
+
+#: import_export.py:64
+msgid ""
+"Select a valid crossword JSON file that was exported using crossword_puzzle"
+msgstr ""
+"Selektearje in jildich krúswurd JSON-bestân dat waard eksporteare mei "
+"Crossword_PUZLE"
+
+#: utils.py:60
 msgid "Remove"
 msgstr "fyts"
 
-#: utils.py:59
+#: utils.py:60
 msgid "Are you sure you want to delete this"
 msgstr "Binne jo wis dat jo dit wiskje wolle"
 
-#: utils.py:59
+#: utils.py:60
 msgid "It will be lost forever!"
 msgstr "It sil foar altyd ferlern gean!"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Add or select"
 msgstr "Foegje of selektearje"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Are you sure you want to add/select a"
 msgstr "Binne jo wis dat jo wolle tafoegje / selektearje a"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Your modified fields will be reset!"
 msgstr "Jo oanpaste fjilden wurde weromset!"
 
-#: utils.py:69 utils.py:88
+#: utils.py:70 utils.py:94
 msgid "Back to home"
 msgstr "Wêrom nei hûs"
 
-#: utils.py:69
+#: utils.py:70
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
 msgstr "Binne jo wis dat jo werom wolle nei it thússkerm? "
 
-#: utils.py:74
+#: utils.py:75 utils.py:141 utils.py:151 utils.py:156 utils.py:179
+msgid "Info"
+msgstr "Info"
+
+#: utils.py:75
+msgid ""
+"Are you sure you want to import crosswords? Your modified fields will be "
+"reset!"
+msgstr ""
+"Binne jo wis dat jo krúswurden wolle ymportearje?Jo wizige fjilden sille "
+"wurde reset!"
+
+#: utils.py:80
 msgid "Restart"
 msgstr "Op 'e nij begjinne"
 
-#: utils.py:74
+#: utils.py:80
 msgid "Are you sure you want to restart the app?"
 msgstr "Binne jo wis dat jo de app opnij starte wolle?"
 
-#: pages/home.py:148 utils.py:79
+#: pages/home.py:148 utils.py:85
 msgid "Exit"
 msgstr "Útgong"
 
-#: utils.py:80
+#: utils.py:86
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -73,7 +100,7 @@ msgstr ""
 "Binne jo wis dat jo de app ôfslute wolle? Binne jo wis dat jo de app ôfslute"
 " wolle? As de webapp rint, sil dizze wurde beëinige."
 
-#: utils.py:89
+#: utils.py:95
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -81,40 +108,77 @@ msgstr ""
 "Binne jo wis dat jo werom wolle nei it thússkerm? Binne jo wis dat jo werom "
 "wolle nei it thússkerm? De webapp sil wurde beëinige."
 
-#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
-#: utils.py:125 utils.py:147 utils.py:151
+#: utils.py:106 utils.py:111 utils.py:116 utils.py:121 utils.py:126
+#: utils.py:135 utils.py:146 utils.py:169 utils.py:174 utils.py:196
+#: utils.py:200
 msgid "Error"
 msgstr "Fersin"
 
-#: utils.py:100
+#: utils.py:106
 msgid "This language is already selected."
 msgstr "Dizze taal is al selektearre."
 
-#: utils.py:105
+#: utils.py:111
 msgid "This size is already selected."
 msgstr "Dizze grutte is al selektearre."
 
-#: utils.py:110
+#: utils.py:116
 msgid "This appearance is already selected."
 msgstr "Dit uterlik is al selektearre."
 
-#: utils.py:115
+#: utils.py:121
 msgid "This quality is already selected."
 msgstr "Dizze kwaliteit is al selekteare."
 
-#: utils.py:120
-msgid "This crossword already exists. Please choose a new name."
-msgstr "Dit krúswurd bestiet al. "
+#: utils.py:127
+msgid ""
+"A crossword with this name and difficulty already exists. Please choose a "
+"new name and/or a new difficulty."
+msgstr ""
+"In krúswurd mei dizze namme en swierrichheden bestiet al.Kies asjebleaft in "
+"nije namme en / as in nije muoite."
 
-#: utils.py:125
+#: utils.py:136
+msgid "You have no crosswords to export. Please make some and try again."
+msgstr ""
+"Jo hawwe gjin krúswurden om te eksportearjen.Meitsje asjebleaft wat en "
+"besykje it opnij."
+
+#: utils.py:141
+msgid "Successfully exported your crosswords."
+msgstr "Jo krúswurden mei súkses eksporteare."
+
+#: utils.py:146
+msgid "Your crosswords could not be exported, sorry."
+msgstr "Jo krúswurden koene net eksporteare wurde, sorry."
+
+#: utils.py:151
+msgid "All of your crosswords were successfully imported."
+msgstr "Al jo krúswurden waarden mei súkses ymporteare."
+
+#: utils.py:157
+msgid "Your import could not be fully completed."
+msgstr "Jo ymport koe net folslein foltôge wurde."
+
+#: utils.py:159
+msgid ""
+"Crosswords with duplicate names and difficulties that were not imported: "
+msgstr ""
+"Crosswords mei dûbeleammen en swierrichheden dy't net waarden ymporteare:"
+
+#: utils.py:163
+msgid "Invalid crosswords that were not imported: "
+msgstr "Unjildige krúswurden dy't net waarden ymporteare:"
+
+#: utils.py:169
+msgid "The specified JSON file is invalid and cannot be processed."
+msgstr "It oantsjutte JSON-bestân is unjildich en kin net ferwurke wurde."
+
+#: utils.py:174
 msgid "This word already exists. Please choose a new word."
 msgstr "Dit wurd bestiet al. "
 
-#: utils.py:130
-msgid "Info"
-msgstr "Info"
-
-#: utils.py:131
+#: utils.py:180
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -138,24 +202,24 @@ msgstr ""
 "beëinige fia Activity Monitor op MacOS, of gewoan jo kompjûter opnij starte "
 "om se te beëinigjen."
 
-#: utils.py:153
+#: utils.py:202
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr "Der barde in ûnferwachte flater. "
 
-#: utils.py:672
+#: utils.py:719
 msgid "Definitions are empty"
 msgstr "Definysjes binne leech"
 
-#: utils.py:675
+#: utils.py:722
 msgid "The word count or definitions are less than 3 in length"
 msgstr "De wurdtelling of definysjes binne minder dan 3 yn lingte"
 
-#: utils.py:679
+#: utils.py:726
 msgid "Length of the word count is greater than the definitions"
 msgstr "Lengte fan 'e wurdtelling is grutter dan de definysjes"
 
-#: utils.py:682
+#: utils.py:729
 msgid "Escape character present in word"
 msgstr "Escape karakter oanwêzich yn wurd"
 
@@ -257,11 +321,11 @@ msgstr "Slute"
 msgid "Crossword Browser"
 msgstr "Crossword Browser"
 
-#: pages/browser.py:141 pages/editor.py:335
+#: pages/browser.py:141 pages/editor.py:359
 msgid "Back"
 msgstr "werom"
 
-#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+#: pages/browser.py:145 pages/editor.py:363 pages/home.py:305
 msgid "HomePage"
 msgstr "Thússide"
 
@@ -269,7 +333,7 @@ msgstr "Thússide"
 msgid "Categorised"
 msgstr "Kategorisearre"
 
-#: pages/browser.py:156
+#: pages/browser.py:156 pages/browser.py:271
 msgid "Flattened"
 msgstr "Flatten"
 
@@ -310,78 +374,86 @@ msgstr "Fisy"
 msgid "Select"
 msgstr "Útkieze"
 
-#: pages/editor.py:329
+#: pages/editor.py:353
 msgid "Crossword Editor"
 msgstr "Krúswurdboek bewurker"
 
-#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
-#: pages/editor.py:822
+#: pages/editor.py:491 pages/editor.py:706 pages/editor.py:796
+#: pages/editor.py:936
 msgid "Your Crosswords"
 msgstr "Jo krúswurdwurden"
 
-#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
-#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+#: pages/editor.py:555 pages/editor.py:800 pages/editor.py:943
+#: pages/editor.py:1030 pages/editor.py:1143 pages/editor.py:1257
 msgid "Save"
 msgstr "Bewarje"
 
-#: pages/editor.py:518
+#: pages/editor.py:567
 msgid "length >= 1 and valid OS file name"
 msgstr "length>= 1 en jildige OS-bestânnamme"
 
-#: pages/editor.py:526
+#: pages/editor.py:576
 msgid "length == 1"
 msgstr "lengte == 1"
 
-#: pages/editor.py:531
+#: pages/editor.py:582
 msgid "Difficulty"
 msgstr "Swierrichheid"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Easy"
 msgstr "Maklik"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Medium"
 msgstr "Medium"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Hard"
 msgstr "Hurd"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Extreme"
 msgstr "Ekstreem"
 
-#: pages/editor.py:616 pages/editor.py:969
+#: pages/editor.py:706 pages/editor.py:1086
 msgid "Adding"
 msgstr "tafoeging"
 
-#: pages/editor.py:619 pages/editor.py:973
+#: pages/editor.py:709 pages/editor.py:1090
 msgid "Add"
 msgstr "oan"
 
-#: pages/editor.py:822 pages/editor.py:1128
-msgid "Editing"
-msgstr "Bewurkje"
+#: pages/editor.py:888 pages/editor.py:1206
+msgid "Press"
+msgstr "Druk"
 
-#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
-#: pages/editor.py:1128
-msgid "Your Words"
-msgstr "Jo wurden"
-
-#: pages/editor.py:927
-msgid "length >= 1 and length <= 32 and is a language character"
-msgstr "length >= 1 en lingte <= 32 en is in taalkarakter"
-
-#: pages/editor.py:936
-msgid "length >= 1"
-msgstr "lengte >= 1"
-
-#: pages/editor.py:1086
+#: pages/editor.py:890 pages/editor.py:1208
 msgid "to add a"
 msgstr "a te foegjen"
 
-#: pages/editor.py:1086
+#: pages/editor.py:892
+msgid "new crossword."
+msgstr "nij krúswurd."
+
+#: pages/editor.py:936 pages/editor.py:1253
+msgid "Editing"
+msgstr "Bewurkje"
+
+#: pages/editor.py:998 pages/editor.py:1086 pages/editor.py:1138
+#: pages/editor.py:1253
+msgid "Your Words"
+msgstr "Jo wurden"
+
+#: pages/editor.py:1042
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "length >= 1 en lingte <= 32 en is in taalkarakter"
+
+#: pages/editor.py:1053
+msgid "length >= 1"
+msgstr "lengte >= 1"
+
+#: pages/editor.py:1210
 msgid "new word."
 msgstr "nij wurd."
 
@@ -489,12 +561,6 @@ msgstr "Symboal"
 
 msgid "Search"
 msgstr "Sykje"
-
-msgid "Press"
-msgstr "Druk"
-
-msgid "new crossword."
-msgstr "nij krúswurd."
 
 msgid "New version available!"
 msgstr "Nije ferzje beskikber!"

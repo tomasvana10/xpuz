@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-27 00:02+1000\n"
+"POT-Creation-Date: 2024-06-28 21:00+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: uz <LL@li.org>\n"
@@ -19,35 +19,48 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: utils.py:59
+#: import_export.py:21
+msgid "Select a destination to export your crosswords to"
+msgstr "Karox so'zlaringizni eksport qilish uchun manzilni tanlang"
+
+#: import_export.py:25
+msgid "my-crosswords"
+msgstr "my-kreswvordlar"
+
+#: import_export.py:64
+msgid ""
+"Select a valid crossword JSON file that was exported using crossword_puzzle"
+msgstr "Crosword_puzzzle yordamida eksport qilingan JSON faylini tanlang"
+
+#: utils.py:60
 msgid "Remove"
 msgstr "Olib tashlash"
 
-#: utils.py:59
+#: utils.py:60
 msgid "Are you sure you want to delete this"
 msgstr "Buni oʻchirishga ishonchingiz komilmi?"
 
-#: utils.py:59
+#: utils.py:60
 msgid "It will be lost forever!"
 msgstr "Abadiy yo'qoladi!"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Add or select"
 msgstr "Qo'shish yoki tanlash"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Are you sure you want to add/select a"
 msgstr "Qo'shish/tanlashga ishonchingiz komilmi?"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Your modified fields will be reset!"
 msgstr "O'zgartirilgan maydonlar qayta tiklanadi!"
 
-#: utils.py:69 utils.py:88
+#: utils.py:70 utils.py:94
 msgid "Back to home"
 msgstr "Uyga qaytish"
 
-#: utils.py:69
+#: utils.py:70
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
@@ -55,19 +68,31 @@ msgstr ""
 "Uy ekraniga qaytishni xohlayotganingizga ishonchingiz komilmi? "
 "O'zgartirilgan maydonlar qayta tiklanadi!"
 
-#: utils.py:74
+#: utils.py:75 utils.py:141 utils.py:151 utils.py:156 utils.py:179
+msgid "Info"
+msgstr "Ma'lumot"
+
+#: utils.py:75
+msgid ""
+"Are you sure you want to import crosswords? Your modified fields will be "
+"reset!"
+msgstr ""
+"Haqiqatan ham siz krossvordlarni import qilishni xohlaysizmi?O'zgartirilgan "
+"maydonlar tiklanadi!"
+
+#: utils.py:80
 msgid "Restart"
 msgstr "Qayta ishga tushirish"
 
-#: utils.py:74
+#: utils.py:80
 msgid "Are you sure you want to restart the app?"
 msgstr "Haqiqatan ham ilovani qayta ishga tushirmoqchimisiz?"
 
-#: pages/home.py:148 utils.py:79
+#: pages/home.py:148 utils.py:85
 msgid "Exit"
 msgstr "Chiqish"
 
-#: utils.py:80
+#: utils.py:86
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -75,46 +100,82 @@ msgstr ""
 "Haqiqatan ham ilovadan chiqmoqchimisiz? Agar veb-ilova ishlayotgan bo'lsa, u"
 " tugatiladi."
 
-#: utils.py:89
+#: utils.py:95
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr "Haqiqatan ham bosh ekranga qaytmoqchimisiz? Veb-ilova tugatiladi."
 
-#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
-#: utils.py:125 utils.py:147 utils.py:151
+#: utils.py:106 utils.py:111 utils.py:116 utils.py:121 utils.py:126
+#: utils.py:135 utils.py:146 utils.py:169 utils.py:174 utils.py:196
+#: utils.py:200
 msgid "Error"
 msgstr "Xato"
 
-#: utils.py:100
+#: utils.py:106
 msgid "This language is already selected."
 msgstr "Bu til allaqachon tanlangan."
 
-#: utils.py:105
+#: utils.py:111
 msgid "This size is already selected."
 msgstr "Bu oʻlcham allaqachon tanlangan."
 
-#: utils.py:110
+#: utils.py:116
 msgid "This appearance is already selected."
 msgstr "Bu ko'rinish allaqachon tanlangan."
 
-#: utils.py:115
+#: utils.py:121
 msgid "This quality is already selected."
 msgstr "Ushbu sifat allaqachon tanlangan."
 
-#: utils.py:120
-msgid "This crossword already exists. Please choose a new name."
-msgstr "Ushbu krossvord allaqachon mavjud. Iltimos yangi nom tanlang."
+#: utils.py:127
+msgid ""
+"A crossword with this name and difficulty already exists. Please choose a "
+"new name and/or a new difficulty."
+msgstr ""
+"Bu ism va qiyinchilik bilan kesish so'zi allaqachon mavjud.Iltimos, yangi "
+"ism va / yoki yangi qiyinchilikni tanlang."
 
-#: utils.py:125
+#: utils.py:136
+msgid "You have no crosswords to export. Please make some and try again."
+msgstr ""
+"Sizda eksport qilish uchun krossevator yo'q.Iltimos, bir qismini yarating va"
+" qaytadan urining."
+
+#: utils.py:141
+msgid "Successfully exported your crosswords."
+msgstr "Sizning krossvordingizni muvaffaqiyatli eksport qildi."
+
+#: utils.py:146
+msgid "Your crosswords could not be exported, sorry."
+msgstr "Sizning krossvordlaringiz eksport qilinishi mumkin emas, uzr."
+
+#: utils.py:151
+msgid "All of your crosswords were successfully imported."
+msgstr "Sizning barcha krossvordlaringiz muvaffaqiyatli keltirildi."
+
+#: utils.py:157
+msgid "Your import could not be fully completed."
+msgstr "Sizning importingiz to'liq yakunlanmadi."
+
+#: utils.py:159
+msgid ""
+"Crosswords with duplicate names and difficulties that were not imported: "
+msgstr "Import qilinmaydigan dublikat va qiyinchiliklar bo'lgan krossvordlar:"
+
+#: utils.py:163
+msgid "Invalid crosswords that were not imported: "
+msgstr "Import qilinmagan xun so'zlar:"
+
+#: utils.py:169
+msgid "The specified JSON file is invalid and cannot be processed."
+msgstr "Belgilangan Json fayli yaroqsiz va qayta ishlanmaydi."
+
+#: utils.py:174
 msgid "This word already exists. Please choose a new word."
 msgstr "Bu soʻz allaqachon mavjud. Iltimos yangi so'z tanlang."
 
-#: utils.py:130
-msgid "Info"
-msgstr "Ma'lumot"
-
-#: utils.py:131
+#: utils.py:180
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -137,24 +198,24 @@ msgstr ""
 "Activity Monitor orqali tugatilishi mumkin yoki ularni tugatish uchun "
 "kompyuteringizni qayta ishga tushirishingiz mumkin."
 
-#: utils.py:153
+#: utils.py:202
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr "Kutilmagan xato roʻy berdi. Iltimos dasturni qayta oʻrnatib koʻring"
 
-#: utils.py:672
+#: utils.py:719
 msgid "Definitions are empty"
 msgstr "Atamalar boʻsh"
 
-#: utils.py:675
+#: utils.py:722
 msgid "The word count or definitions are less than 3 in length"
 msgstr "So'z hisobi yoki atamalarining uzunligi 3 dan kam"
 
-#: utils.py:679
+#: utils.py:726
 msgid "Length of the word count is greater than the definitions"
 msgstr "So'z hisobining uzunligi atamalardan katta"
 
-#: utils.py:682
+#: utils.py:729
 msgid "Escape character present in word"
 msgstr "So'zda mavjud bo'lgan qochish belgisi"
 
@@ -256,11 +317,11 @@ msgstr "Yopish"
 msgid "Crossword Browser"
 msgstr "Krossvord brauzer"
 
-#: pages/browser.py:141 pages/editor.py:335
+#: pages/browser.py:141 pages/editor.py:359
 msgid "Back"
 msgstr "Orqaga"
 
-#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+#: pages/browser.py:145 pages/editor.py:363 pages/home.py:305
 msgid "HomePage"
 msgstr "Bosh sahifa"
 
@@ -268,7 +329,7 @@ msgstr "Bosh sahifa"
 msgid "Categorised"
 msgstr "Turkumlangan"
 
-#: pages/browser.py:156
+#: pages/browser.py:156 pages/browser.py:271
 msgid "Flattened"
 msgstr "Yassilangan"
 
@@ -310,78 +371,86 @@ msgstr "Ko'rinish"
 msgid "Select"
 msgstr "Tanlang"
 
-#: pages/editor.py:329
+#: pages/editor.py:353
 msgid "Crossword Editor"
 msgstr "Krossvord tahrirchiName"
 
-#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
-#: pages/editor.py:822
+#: pages/editor.py:491 pages/editor.py:706 pages/editor.py:796
+#: pages/editor.py:936
 msgid "Your Crosswords"
 msgstr "Krossvordlaringiz"
 
-#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
-#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+#: pages/editor.py:555 pages/editor.py:800 pages/editor.py:943
+#: pages/editor.py:1030 pages/editor.py:1143 pages/editor.py:1257
 msgid "Save"
 msgstr "Saqlash"
 
-#: pages/editor.py:518
+#: pages/editor.py:567
 msgid "length >= 1 and valid OS file name"
 msgstr "uzunligi >= 1 va haqiqiy OS fayl nomi"
 
-#: pages/editor.py:526
+#: pages/editor.py:576
 msgid "length == 1"
 msgstr "uzunligi == 1"
 
-#: pages/editor.py:531
+#: pages/editor.py:582
 msgid "Difficulty"
 msgstr "Qiyinchilik"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Easy"
 msgstr "Oson"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Medium"
 msgstr "O'rta"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Hard"
 msgstr "Qattiq"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Extreme"
 msgstr "Ekstremal"
 
-#: pages/editor.py:616 pages/editor.py:969
+#: pages/editor.py:706 pages/editor.py:1086
 msgid "Adding"
 msgstr "Qoʻshish"
 
-#: pages/editor.py:619 pages/editor.py:973
+#: pages/editor.py:709 pages/editor.py:1090
 msgid "Add"
 msgstr "Qo'shish"
 
-#: pages/editor.py:822 pages/editor.py:1128
-msgid "Editing"
-msgstr "Tahrirlash"
+#: pages/editor.py:888 pages/editor.py:1206
+msgid "Press"
+msgstr "Bosib o'tkazing"
 
-#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
-#: pages/editor.py:1128
-msgid "Your Words"
-msgstr "Sizning so'zlar"
-
-#: pages/editor.py:927
-msgid "length >= 1 and length <= 32 and is a language character"
-msgstr "uzunligi >= 1 va uzunligi <= 32 bo'lib, til belgisi"
-
-#: pages/editor.py:936
-msgid "length >= 1"
-msgstr "uzunligi >= 1"
-
-#: pages/editor.py:1086
+#: pages/editor.py:890 pages/editor.py:1208
 msgid "to add a"
 msgstr "qo'shish uchun"
 
-#: pages/editor.py:1086
+#: pages/editor.py:892
+msgid "new crossword."
+msgstr "Yangi krossvord."
+
+#: pages/editor.py:936 pages/editor.py:1253
+msgid "Editing"
+msgstr "Tahrirlash"
+
+#: pages/editor.py:998 pages/editor.py:1086 pages/editor.py:1138
+#: pages/editor.py:1253
+msgid "Your Words"
+msgstr "Sizning so'zlar"
+
+#: pages/editor.py:1042
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "uzunligi >= 1 va uzunligi <= 32 bo'lib, til belgisi"
+
+#: pages/editor.py:1053
+msgid "length >= 1"
+msgstr "uzunligi >= 1"
+
+#: pages/editor.py:1210
 msgid "new word."
 msgstr "yangi so'z."
 
@@ -489,12 +558,6 @@ msgstr "Ramz"
 
 msgid "Search"
 msgstr "Qidirmoq"
-
-msgid "Press"
-msgstr "Bosib o'tkazing"
-
-msgid "new crossword."
-msgstr "Yangi krossvord."
 
 msgid "New version available!"
 msgstr "Yangi versiya mavjud!"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-27 00:02+1000\n"
+"POT-Creation-Date: 2024-06-28 21:00+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ka <LL@li.org>\n"
@@ -19,35 +19,50 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: utils.py:59
+#: import_export.py:21
+msgid "Select a destination to export your crosswords to"
+msgstr "შეარჩიეთ დანიშნულების ადგილი, რომ გაიტანოთ თქვენი ჯვარედინი სიტყვები"
+
+#: import_export.py:25
+msgid "my-crosswords"
+msgstr "ჩემი ჯვრის სიტყვები"
+
+#: import_export.py:64
+msgid ""
+"Select a valid crossword JSON file that was exported using crossword_puzzle"
+msgstr ""
+"შეარჩიეთ მოქმედი ჯვრისწერის JSON ფაილი, რომელიც ექსპორტზე იქნა ექსპორტზე "
+"Crossword_puzzle გამოყენებით"
+
+#: utils.py:60
 msgid "Remove"
 msgstr "წაშლა"
 
-#: utils.py:59
+#: utils.py:60
 msgid "Are you sure you want to delete this"
 msgstr "დარწმუნებული ხართ, რომ გსურთ ამის წაშლა"
 
-#: utils.py:59
+#: utils.py:60
 msgid "It will be lost forever!"
 msgstr "ის სამუდამოდ დაიკარგება!"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Add or select"
 msgstr "დამატება ან არჩევა"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Are you sure you want to add/select a"
 msgstr "დარწმუნებული ხართ, რომ გსურთ დაამატოთ / აირჩიოთ ა"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Your modified fields will be reset!"
 msgstr "თქვენი შეცვლილი ველები აღდგება!"
 
-#: utils.py:69 utils.py:88
+#: utils.py:70 utils.py:94
 msgid "Back to home"
 msgstr "სახლში დაბრუნება"
 
-#: utils.py:69
+#: utils.py:70
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
@@ -55,19 +70,31 @@ msgstr ""
 "ჟთდსპვნ ლთ ჟთ, ფვ თჟკაქ ეა ჟვ გყპნვქ გ ეყპნა? თქვენი შეცვლილი ველები "
 "აღდგება!"
 
-#: utils.py:74
+#: utils.py:75 utils.py:141 utils.py:151 utils.py:156 utils.py:179
+msgid "Info"
+msgstr "ინფორმაცია"
+
+#: utils.py:75
+msgid ""
+"Are you sure you want to import crosswords? Your modified fields will be "
+"reset!"
+msgstr ""
+"დარწმუნებული ხართ, რომ გსურთ ჯვრისწერის იმპორტი?თქვენი შეცვლილი ველები "
+"გადატვირთულია!"
+
+#: utils.py:80
 msgid "Restart"
 msgstr "Რესტარტი"
 
-#: utils.py:74
+#: utils.py:80
 msgid "Are you sure you want to restart the app?"
 msgstr "დარწმუნებული ხართ, რომ გსურთ აპის გადატვირთვა?"
 
-#: pages/home.py:148 utils.py:79
+#: pages/home.py:148 utils.py:85
 msgid "Exit"
 msgstr "გასვლა"
 
-#: utils.py:80
+#: utils.py:86
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -75,47 +102,85 @@ msgstr ""
 "დარწმუნებული ხართ, რომ გსურთ აპიდან გასვლა? თუ ვებ აპი გაშვებულია, ის "
 "შეწყდება."
 
-#: utils.py:89
+#: utils.py:95
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
 "დარწმუნებული ხართ, რომ გსურთ საწყის ეკრანზე დაბრუნება? ვებ აპი შეწყდება."
 
-#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
-#: utils.py:125 utils.py:147 utils.py:151
+#: utils.py:106 utils.py:111 utils.py:116 utils.py:121 utils.py:126
+#: utils.py:135 utils.py:146 utils.py:169 utils.py:174 utils.py:196
+#: utils.py:200
 msgid "Error"
 msgstr "შეცდომა"
 
-#: utils.py:100
+#: utils.py:106
 msgid "This language is already selected."
 msgstr "ეს ენა უკვე შერჩეულია."
 
-#: utils.py:105
+#: utils.py:111
 msgid "This size is already selected."
 msgstr "ეს ზომა უკვე შერჩეულია."
 
-#: utils.py:110
+#: utils.py:116
 msgid "This appearance is already selected."
 msgstr "ეს გარეგნობა უკვე შერჩეულია."
 
-#: utils.py:115
+#: utils.py:121
 msgid "This quality is already selected."
 msgstr "ეს ხარისხი უკვე შეირჩევა."
 
-#: utils.py:120
-msgid "This crossword already exists. Please choose a new name."
-msgstr "ეს კროსვორდი უკვე არსებობს. გთხოვთ აირჩიოთ ახალი სახელი."
+#: utils.py:127
+msgid ""
+"A crossword with this name and difficulty already exists. Please choose a "
+"new name and/or a new difficulty."
+msgstr ""
+"ამ სახელის და სირთულეების კროსვორდი უკვე არსებობს.გთხოვთ, აირჩიოთ ახალი "
+"სახელი და/ან ახალი სირთულე."
 
-#: utils.py:125
+#: utils.py:136
+msgid "You have no crosswords to export. Please make some and try again."
+msgstr ""
+"თქვენ არ გაქვთ ჯვრისწერის ექსპორტი.გთხოვთ, გააკეთოთ რამდენიმე და სცადოთ "
+"ისევ."
+
+#: utils.py:141
+msgid "Successfully exported your crosswords."
+msgstr "წარმატებით გაიტანეთ თქვენი ჯვრისწერები."
+
+#: utils.py:146
+msgid "Your crosswords could not be exported, sorry."
+msgstr "თქვენი ჯვრისწერის ექსპორტი ვერ მოხერხდა, უკაცრავად."
+
+#: utils.py:151
+msgid "All of your crosswords were successfully imported."
+msgstr "თქვენი ყველა ჯვრისწერის წარმატებით იმპორტირებული იყო."
+
+#: utils.py:157
+msgid "Your import could not be fully completed."
+msgstr "თქვენი იმპორტი სრულად ვერ დასრულდა."
+
+#: utils.py:159
+msgid ""
+"Crosswords with duplicate names and difficulties that were not imported: "
+msgstr ""
+"კროსვორდები დუბლიკატი სახელებითა და სირთულეებით, რომლებიც არ იყო "
+"იმპორტირებული:"
+
+#: utils.py:163
+msgid "Invalid crosswords that were not imported: "
+msgstr "არასწორი ჯვრისწერები, რომლებიც არ იყო იმპორტირებული:"
+
+#: utils.py:169
+msgid "The specified JSON file is invalid and cannot be processed."
+msgstr "მითითებული JSON ფაილი არასწორია და მისი დამუშავება შეუძლებელია."
+
+#: utils.py:174
 msgid "This word already exists. Please choose a new word."
 msgstr "ეს სიტყვა უკვე არსებობს. გთხოვთ აირჩიოთ ახალი სიტყვა."
 
-#: utils.py:130
-msgid "Info"
-msgstr "ინფორმაცია"
-
-#: utils.py:131
+#: utils.py:180
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -137,25 +202,25 @@ msgstr ""
 "Activity Monitor-ის მეშვეობით MacOS-ზე, ან უბრალოდ გადატვირთეთ კომპიუტერი "
 "მათი შესაწყვეტად."
 
-#: utils.py:153
+#: utils.py:202
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
 "მოხდა გაუთვალისწინებელი შეცდომა. გთხოვთ, სცადოთ პროგრამის ხელახლა ინსტალაცია"
 
-#: utils.py:672
+#: utils.py:719
 msgid "Definitions are empty"
 msgstr "განმარტებები ცარიელია"
 
-#: utils.py:675
+#: utils.py:722
 msgid "The word count or definitions are less than 3 in length"
 msgstr "სიტყვების რაოდენობა ან განმარტებები 3-ზე ნაკლებია"
 
-#: utils.py:679
+#: utils.py:726
 msgid "Length of the word count is greater than the definitions"
 msgstr "სიტყვის დათვლის სიგრძე უფრო მეტია, ვიდრე განმარტებები"
 
-#: utils.py:682
+#: utils.py:729
 msgid "Escape character present in word"
 msgstr "Escape ხასიათი იმყოფება სიტყვა"
 
@@ -257,11 +322,11 @@ msgstr "დახურვა"
 msgid "Crossword Browser"
 msgstr "კროსვორდის ბრაუზერი"
 
-#: pages/browser.py:141 pages/editor.py:335
+#: pages/browser.py:141 pages/editor.py:359
 msgid "Back"
 msgstr "უკან"
 
-#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+#: pages/browser.py:145 pages/editor.py:363 pages/home.py:305
 msgid "HomePage"
 msgstr "მთავარი"
 
@@ -269,7 +334,7 @@ msgstr "მთავარი"
 msgid "Categorised"
 msgstr "კატეგორიზებული"
 
-#: pages/browser.py:156
+#: pages/browser.py:156 pages/browser.py:271
 msgid "Flattened"
 msgstr "გაბრტყელებული"
 
@@ -310,78 +375,86 @@ msgstr "ხედი"
 msgid "Select"
 msgstr "აირჩიეთ"
 
-#: pages/editor.py:329
+#: pages/editor.py:353
 msgid "Crossword Editor"
 msgstr "კროსვორდის რედაქტორი"
 
-#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
-#: pages/editor.py:822
+#: pages/editor.py:491 pages/editor.py:706 pages/editor.py:796
+#: pages/editor.py:936
 msgid "Your Crosswords"
 msgstr "შენი კროსვორდები"
 
-#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
-#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+#: pages/editor.py:555 pages/editor.py:800 pages/editor.py:943
+#: pages/editor.py:1030 pages/editor.py:1143 pages/editor.py:1257
 msgid "Save"
 msgstr "შენახვა"
 
-#: pages/editor.py:518
+#: pages/editor.py:567
 msgid "length >= 1 and valid OS file name"
 msgstr "სიგრძე >= 1 და მოქმედი OS ფაილის სახელი"
 
-#: pages/editor.py:526
+#: pages/editor.py:576
 msgid "length == 1"
 msgstr "სიგრძე == 1"
 
-#: pages/editor.py:531
+#: pages/editor.py:582
 msgid "Difficulty"
 msgstr "სირთულე"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Easy"
 msgstr "Ადვილი"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Medium"
 msgstr "საშუალო"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Hard"
 msgstr "მძიმე"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Extreme"
 msgstr "ექსტრემალური"
 
-#: pages/editor.py:616 pages/editor.py:969
+#: pages/editor.py:706 pages/editor.py:1086
 msgid "Adding"
 msgstr "დამატება"
 
-#: pages/editor.py:619 pages/editor.py:973
+#: pages/editor.py:709 pages/editor.py:1090
 msgid "Add"
 msgstr "დამატება"
 
-#: pages/editor.py:822 pages/editor.py:1128
-msgid "Editing"
-msgstr "რედაქტირება"
+#: pages/editor.py:888 pages/editor.py:1206
+msgid "Press"
+msgstr "პრესა"
 
-#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
-#: pages/editor.py:1128
-msgid "Your Words"
-msgstr "შენი სიტყვები"
-
-#: pages/editor.py:927
-msgid "length >= 1 and length <= 32 and is a language character"
-msgstr "სიგრძე >= 1 და სიგრძე < = 32 და არის ენის ხასიათი"
-
-#: pages/editor.py:936
-msgid "length >= 1"
-msgstr "სიგრძე >= 1"
-
-#: pages/editor.py:1086
+#: pages/editor.py:890 pages/editor.py:1208
 msgid "to add a"
 msgstr "დაამატოთ ა"
 
-#: pages/editor.py:1086
+#: pages/editor.py:892
+msgid "new crossword."
+msgstr "ახალი კროსვორდი."
+
+#: pages/editor.py:936 pages/editor.py:1253
+msgid "Editing"
+msgstr "რედაქტირება"
+
+#: pages/editor.py:998 pages/editor.py:1086 pages/editor.py:1138
+#: pages/editor.py:1253
+msgid "Your Words"
+msgstr "შენი სიტყვები"
+
+#: pages/editor.py:1042
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "სიგრძე >= 1 და სიგრძე < = 32 და არის ენის ხასიათი"
+
+#: pages/editor.py:1053
+msgid "length >= 1"
+msgstr "სიგრძე >= 1"
+
+#: pages/editor.py:1210
 msgid "new word."
 msgstr "ახალი სიტყვა."
 
@@ -489,12 +562,6 @@ msgstr "სიმბოლო"
 
 msgid "Search"
 msgstr "ძებნა"
-
-msgid "Press"
-msgstr "პრესა"
-
-msgid "new crossword."
-msgstr "ახალი კროსვორდი."
 
 msgid "New version available!"
 msgstr "ახალი ვერსია ხელმისაწვდომია!"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-27 00:02+1000\n"
+"POT-Creation-Date: 2024-06-28 21:00+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: be <LL@li.org>\n"
@@ -19,53 +19,80 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: utils.py:59
+#: import_export.py:21
+msgid "Select a destination to export your crosswords to"
+msgstr "Выберыце пункт прызначэння для экспарту крыжаванкі ў"
+
+#: import_export.py:25
+msgid "my-crosswords"
+msgstr "мае-крыжавыя словы"
+
+#: import_export.py:64
+msgid ""
+"Select a valid crossword JSON file that was exported using crossword_puzzle"
+msgstr ""
+"Выберыце сапраўдны файл Crossword JSON, які быў экспартаваны з дапамогай "
+"Crossword_Puzzle"
+
+#: utils.py:60
 msgid "Remove"
 msgstr "Выдаліць"
 
-#: utils.py:59
+#: utils.py:60
 msgid "Are you sure you want to delete this"
 msgstr "Вы ўпэўнены, што хочаце выдаліць гэта"
 
-#: utils.py:59
+#: utils.py:60
 msgid "It will be lost forever!"
 msgstr "Гэта будзе страчана назаўжды!"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Add or select"
 msgstr "Дадаць або выбраць"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Are you sure you want to add/select a"
 msgstr "Вы ўпэўнены, што хочаце дадаць/выбраць a"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Your modified fields will be reset!"
 msgstr "Вашы змененыя палі будуць скінуты!"
 
-#: utils.py:69 utils.py:88
+#: utils.py:70 utils.py:94
 msgid "Back to home"
 msgstr "Вярнуцца на галоўную"
 
-#: utils.py:69
+#: utils.py:70
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
 msgstr "Вы ўпэўнены, што хочаце вярнуцца на галоўны экран? "
 
-#: utils.py:74
+#: utils.py:75 utils.py:141 utils.py:151 utils.py:156 utils.py:179
+msgid "Info"
+msgstr "Інфармацыя"
+
+#: utils.py:75
+msgid ""
+"Are you sure you want to import crosswords? Your modified fields will be "
+"reset!"
+msgstr ""
+"Вы ўпэўнены, што хочаце імпартаваць крыжаванкі?Вашы мадыфікаваныя палі "
+"будуць скінуты!"
+
+#: utils.py:80
 msgid "Restart"
 msgstr "Перазапуск"
 
-#: utils.py:74
+#: utils.py:80
 msgid "Are you sure you want to restart the app?"
 msgstr "Вы ўпэўнены, што хочаце перазапусціць праграму?"
 
-#: pages/home.py:148 utils.py:79
+#: pages/home.py:148 utils.py:85
 msgid "Exit"
 msgstr "Выхад"
 
-#: utils.py:80
+#: utils.py:86
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -73,7 +100,7 @@ msgstr ""
 "Вы ўпэўнены, што хочаце выйсці з праграмы? Вы ўпэўнены, што хочаце выйсці з "
 "праграмы? Калі вэб-праграма працуе, яна будзе спынена."
 
-#: utils.py:89
+#: utils.py:95
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -81,40 +108,77 @@ msgstr ""
 "Вы ўпэўнены, што хочаце вярнуцца на галоўны экран? Вы ўпэўнены, што хочаце "
 "вярнуцца на галоўны экран? Вэб-прыкладанне будзе спынена."
 
-#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
-#: utils.py:125 utils.py:147 utils.py:151
+#: utils.py:106 utils.py:111 utils.py:116 utils.py:121 utils.py:126
+#: utils.py:135 utils.py:146 utils.py:169 utils.py:174 utils.py:196
+#: utils.py:200
 msgid "Error"
 msgstr "Памылка"
 
-#: utils.py:100
+#: utils.py:106
 msgid "This language is already selected."
 msgstr "Гэта мова ўжо выбрана."
 
-#: utils.py:105
+#: utils.py:111
 msgid "This size is already selected."
 msgstr "Гэты памер ужо выбраны."
 
-#: utils.py:110
+#: utils.py:116
 msgid "This appearance is already selected."
 msgstr "Гэты знешні выгляд ужо выбраны."
 
-#: utils.py:115
+#: utils.py:121
 msgid "This quality is already selected."
 msgstr "Гэта якасць ужо абрана."
 
-#: utils.py:120
-msgid "This crossword already exists. Please choose a new name."
-msgstr "Гэта крыжаванка ўжо існуе. "
+#: utils.py:127
+msgid ""
+"A crossword with this name and difficulty already exists. Please choose a "
+"new name and/or a new difficulty."
+msgstr ""
+"Крыжаванка з гэтым імем і складанасцю ўжо існуе.Калі ласка, абярыце новае "
+"імя і/або новую складанасць."
 
-#: utils.py:125
+#: utils.py:136
+msgid "You have no crosswords to export. Please make some and try again."
+msgstr ""
+"У вас няма крыжаванкі для экспарту.Калі ласка, зрабіце некалькі і "
+"паспрабуйце яшчэ раз."
+
+#: utils.py:141
+msgid "Successfully exported your crosswords."
+msgstr "Паспяхова экспартаваў свае крыжаванкі."
+
+#: utils.py:146
+msgid "Your crosswords could not be exported, sorry."
+msgstr "Вашы крыжаванкі нельга было экспартаваць, прабачце."
+
+#: utils.py:151
+msgid "All of your crosswords were successfully imported."
+msgstr "Усе вашы крыжаванкі былі паспяхова імпартаваны."
+
+#: utils.py:157
+msgid "Your import could not be fully completed."
+msgstr "Ваш імпарт не можа быць цалкам завершаны."
+
+#: utils.py:159
+msgid ""
+"Crosswords with duplicate names and difficulties that were not imported: "
+msgstr ""
+"Крыжаванкі з дублікатамі імёнаў і цяжкасцей, якія не былі імпартаваны:"
+
+#: utils.py:163
+msgid "Invalid crosswords that were not imported: "
+msgstr "Несапраўдныя крыжаванкі, якія не былі імпартаваны:"
+
+#: utils.py:169
+msgid "The specified JSON file is invalid and cannot be processed."
+msgstr "Указаны файл JSON несапраўдны і не можа быць апрацаваны."
+
+#: utils.py:174
 msgid "This word already exists. Please choose a new word."
 msgstr "Гэтае слова ўжо існуе. "
 
-#: utils.py:130
-msgid "Info"
-msgstr "Інфармацыя"
-
-#: utils.py:131
+#: utils.py:180
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -138,24 +202,24 @@ msgstr ""
 "праз Activity Monitor у MacOS або проста перазагрузіце кампутар, каб спыніць"
 " іх."
 
-#: utils.py:153
+#: utils.py:202
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr "Адбылася нечаканая памылка. "
 
-#: utils.py:672
+#: utils.py:719
 msgid "Definitions are empty"
 msgstr "Азначэнні пустыя"
 
-#: utils.py:675
+#: utils.py:722
 msgid "The word count or definitions are less than 3 in length"
 msgstr "Колькасць слоў або азначэнняў менш за 3 па даўжыні"
 
-#: utils.py:679
+#: utils.py:726
 msgid "Length of the word count is greater than the definitions"
 msgstr "Даўжыня слоў большая за азначэнні"
 
-#: utils.py:682
+#: utils.py:729
 msgid "Escape character present in word"
 msgstr "Уцёкавы знак, які прысутнічае ў слове"
 
@@ -257,11 +321,11 @@ msgstr "Блізка"
 msgid "Crossword Browser"
 msgstr "Браўзэр крыжаванак"
 
-#: pages/browser.py:141 pages/editor.py:335
+#: pages/browser.py:141 pages/editor.py:359
 msgid "Back"
 msgstr "Назад"
 
-#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+#: pages/browser.py:145 pages/editor.py:363 pages/home.py:305
 msgid "HomePage"
 msgstr "Хатняя старонка"
 
@@ -269,7 +333,7 @@ msgstr "Хатняя старонка"
 msgid "Categorised"
 msgstr "Катэгарызаваны"
 
-#: pages/browser.py:156
+#: pages/browser.py:156 pages/browser.py:271
 msgid "Flattened"
 msgstr "Пляскаты"
 
@@ -310,78 +374,86 @@ msgstr "Выгляд"
 msgid "Select"
 msgstr "Выберыце"
 
-#: pages/editor.py:329
+#: pages/editor.py:353
 msgid "Crossword Editor"
 msgstr "Рэдактар ​​крыжаванак"
 
-#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
-#: pages/editor.py:822
+#: pages/editor.py:491 pages/editor.py:706 pages/editor.py:796
+#: pages/editor.py:936
 msgid "Your Crosswords"
 msgstr "Вашы крыжаванкі"
 
-#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
-#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+#: pages/editor.py:555 pages/editor.py:800 pages/editor.py:943
+#: pages/editor.py:1030 pages/editor.py:1143 pages/editor.py:1257
 msgid "Save"
 msgstr "Захаваць"
 
-#: pages/editor.py:518
+#: pages/editor.py:567
 msgid "length >= 1 and valid OS file name"
 msgstr "даўжыня >= 1 і сапраўднае імя файла АС"
 
-#: pages/editor.py:526
+#: pages/editor.py:576
 msgid "length == 1"
 msgstr "даўжыня == 1"
 
-#: pages/editor.py:531
+#: pages/editor.py:582
 msgid "Difficulty"
 msgstr "Цяжкасць"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Easy"
 msgstr "лёгка"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Medium"
 msgstr "Сярэдні"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Hard"
 msgstr "Цяжка"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Extreme"
 msgstr "Экстрым"
 
-#: pages/editor.py:616 pages/editor.py:969
+#: pages/editor.py:706 pages/editor.py:1086
 msgid "Adding"
 msgstr "Даданне"
 
-#: pages/editor.py:619 pages/editor.py:973
+#: pages/editor.py:709 pages/editor.py:1090
 msgid "Add"
 msgstr "Дадаць"
 
-#: pages/editor.py:822 pages/editor.py:1128
-msgid "Editing"
-msgstr "Рэдагаванне"
+#: pages/editor.py:888 pages/editor.py:1206
+msgid "Press"
+msgstr "Прэса"
 
-#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
-#: pages/editor.py:1128
-msgid "Your Words"
-msgstr "Вашы словы"
-
-#: pages/editor.py:927
-msgid "length >= 1 and length <= 32 and is a language character"
-msgstr "даўжыня >= 1 і даўжыня <= 32 і з'яўляецца сімвалам мовы"
-
-#: pages/editor.py:936
-msgid "length >= 1"
-msgstr "даўжыня >= 1"
-
-#: pages/editor.py:1086
+#: pages/editor.py:890 pages/editor.py:1208
 msgid "to add a"
 msgstr "дадаць а"
 
-#: pages/editor.py:1086
+#: pages/editor.py:892
+msgid "new crossword."
+msgstr "Новы крыжаванка."
+
+#: pages/editor.py:936 pages/editor.py:1253
+msgid "Editing"
+msgstr "Рэдагаванне"
+
+#: pages/editor.py:998 pages/editor.py:1086 pages/editor.py:1138
+#: pages/editor.py:1253
+msgid "Your Words"
+msgstr "Вашы словы"
+
+#: pages/editor.py:1042
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "даўжыня >= 1 і даўжыня <= 32 і з'яўляецца сімвалам мовы"
+
+#: pages/editor.py:1053
+msgid "length >= 1"
+msgstr "даўжыня >= 1"
+
+#: pages/editor.py:1210
 msgid "new word."
 msgstr "новае слова."
 
@@ -489,12 +561,6 @@ msgstr "Сімвал"
 
 msgid "Search"
 msgstr "Пошукі"
-
-msgid "Press"
-msgstr "Прэса"
-
-msgid "new crossword."
-msgstr "Новы крыжаванка."
 
 msgid "New version available!"
 msgstr "Даступна новая версія!"

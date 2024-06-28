@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-27 00:02+1000\n"
+"POT-Creation-Date: 2024-06-28 21:00+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: km <LL@li.org>\n"
@@ -19,35 +19,50 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: utils.py:59
+#: import_export.py:21
+msgid "Select a destination to export your crosswords to"
+msgstr "ជ្រើសរើសទិសដៅដើម្បីនាំចេញ Crosswords របស់អ្នកទៅ"
+
+#: import_export.py:25
+msgid "my-crosswords"
+msgstr "crosswords របស់ខ្ញុំ"
+
+#: import_export.py:64
+msgid ""
+"Select a valid crossword JSON file that was exported using crossword_puzzle"
+msgstr ""
+"ជ្រើសរើសឯកសារ Crossword Json ដែលមានសុពលភាពដែលត្រូវបាននាំចេញដោយប្រើ "
+"Crossword_puzzle"
+
+#: utils.py:60
 msgid "Remove"
 msgstr "យកចេញ"
 
-#: utils.py:59
+#: utils.py:60
 msgid "Are you sure you want to delete this"
 msgstr "តើ អ្នក ប្រាកដ ថា អ្នក ចង់ លុប វា"
 
-#: utils.py:59
+#: utils.py:60
 msgid "It will be lost forever!"
 msgstr "វានឹងបាត់បង់ជារៀងរហូត!"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Add or select"
 msgstr "បន្ថែម ឬ ជ្រើស"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Are you sure you want to add/select a"
 msgstr "តើ អ្នក ប្រាកដ ថា អ្នក ចង់ បន្ថែម/ជ្រើស យក a"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Your modified fields will be reset!"
 msgstr "វាលដែលបានកែប្រែរបស់អ្នកនឹងត្រូវបាន កំណត់ឡើងវិញ!"
 
-#: utils.py:69 utils.py:88
+#: utils.py:70 utils.py:94
 msgid "Back to home"
 msgstr "ត្រលប់​ទៅផ្ទះ"
 
-#: utils.py:69
+#: utils.py:70
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
@@ -55,19 +70,31 @@ msgstr ""
 "តើ អ្នក ប្រាកដ ជា ចង់ ត្រឡប់ ទៅ អេក្រង់ ផ្ទះ វិញ ឬ ទេ ? "
 "វាលដែលបានកែប្រែរបស់អ្នកនឹងត្រូវបាន កំណត់ឡើងវិញ!"
 
-#: utils.py:74
+#: utils.py:75 utils.py:141 utils.py:151 utils.py:156 utils.py:179
+msgid "Info"
+msgstr "ព័ត៌មាន"
+
+#: utils.py:75
+msgid ""
+"Are you sure you want to import crosswords? Your modified fields will be "
+"reset!"
+msgstr ""
+"តើអ្នកពិតជាចង់នាំចូល CassWords "
+"មែនទេ?វាលដែលបានកែប្រែរបស់អ្នកនឹងត្រូវបានកំណត់ឡើងវិញ!"
+
+#: utils.py:80
 msgid "Restart"
 msgstr "ចាប់ផ្ដើមឡើងវិញ"
 
-#: utils.py:74
+#: utils.py:80
 msgid "Are you sure you want to restart the app?"
 msgstr "តើអ្នកប្រាកដថាចង់ចាប់ផ្តើមកម្មវិធីឡើងវិញទេ?"
 
-#: pages/home.py:148 utils.py:79
+#: pages/home.py:148 utils.py:85
 msgid "Exit"
 msgstr "ចេញ"
 
-#: utils.py:80
+#: utils.py:86
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -75,47 +102,81 @@ msgstr ""
 "តើអ្នកប្រាកដថាចង់ចាកចេញពីកម្មវិធីមែនទេ? ប្រសិនបើកម្មវិធីបណ្តាញកំពុងដំណើរការ "
 "វានឹងត្រូវបានបញ្ចប់។"
 
-#: utils.py:89
+#: utils.py:95
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
 "តើអ្នកប្រាកដថាចង់ត្រលប់ទៅអេក្រង់ដើមវិញទេ? កម្មវិធីបណ្តាញនឹងត្រូវបានបិទ។"
 
-#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
-#: utils.py:125 utils.py:147 utils.py:151
+#: utils.py:106 utils.py:111 utils.py:116 utils.py:121 utils.py:126
+#: utils.py:135 utils.py:146 utils.py:169 utils.py:174 utils.py:196
+#: utils.py:200
 msgid "Error"
 msgstr "កំហុស"
 
-#: utils.py:100
+#: utils.py:106
 msgid "This language is already selected."
 msgstr "ភាសានេះត្រូវបានជ្រើសរើសរួចហើយ។"
 
-#: utils.py:105
+#: utils.py:111
 msgid "This size is already selected."
 msgstr "ទំហំនេះត្រូវបានជ្រើសរើសរួចហើយ។"
 
-#: utils.py:110
+#: utils.py:116
 msgid "This appearance is already selected."
 msgstr "រូបរាងនេះត្រូវបានជ្រើសរើសរួចហើយ។"
 
-#: utils.py:115
+#: utils.py:121
 msgid "This quality is already selected."
 msgstr "គុណភាពនេះត្រូវបានជ្រើសរើសរួចហើយ។"
 
-#: utils.py:120
-msgid "This crossword already exists. Please choose a new name."
-msgstr "ពាក្យ កាត់ នេះ មាន រួច ហើយ ។ សូមជ្រើសរើសឈ្មោះថ្មី។"
+#: utils.py:127
+msgid ""
+"A crossword with this name and difficulty already exists. Please choose a "
+"new name and/or a new difficulty."
+msgstr ""
+"មានពាក្យសំដីដែលមានឈ្មោះនិងការលំបាកនេះមានរួចហើយ។សូមជ្រើសរើសឈ្មោះថ្មីនិង / "
+"ឬការលំបាកថ្មី។"
 
-#: utils.py:125
+#: utils.py:136
+msgid "You have no crosswords to export. Please make some and try again."
+msgstr "អ្នកមិនមានឈើឆ្កាងដើម្បីនាំចេញទេ។សូមធ្វើការខ្លះហើយព្យាយាមម្តងទៀត។"
+
+#: utils.py:141
+msgid "Successfully exported your crosswords."
+msgstr "បាននាំចេញ CRASSWORDS របស់អ្នកដោយជោគជ័យ។"
+
+#: utils.py:146
+msgid "Your crosswords could not be exported, sorry."
+msgstr "ការសោកស្តាយរបស់អ្នកមិនអាចនាំចេញសូមទោសបានទេ។"
+
+#: utils.py:151
+msgid "All of your crosswords were successfully imported."
+msgstr "ទាំងអស់នៃឈើឆ្កាងរបស់អ្នកត្រូវបាននាំចូលដោយជោគជ័យ។"
+
+#: utils.py:157
+msgid "Your import could not be fully completed."
+msgstr "ការនាំចូលរបស់អ្នកមិនអាចបញ្ចប់បានពេញលេញទេ។"
+
+#: utils.py:159
+msgid ""
+"Crosswords with duplicate names and difficulties that were not imported: "
+msgstr "Crosswords ដែលមានឈ្មោះស្ទួននិងការលំបាកដែលមិនត្រូវបាននាំចូល:"
+
+#: utils.py:163
+msgid "Invalid crosswords that were not imported: "
+msgstr "ឈើឆ្កាងមិនត្រឹមត្រូវដែលមិនត្រូវបាននាំចូល:"
+
+#: utils.py:169
+msgid "The specified JSON file is invalid and cannot be processed."
+msgstr "ឯកសារ JSON ដែលបានបញ្ជាក់មិនត្រឹមត្រូវហើយមិនអាចដំណើរការបានទេ។"
+
+#: utils.py:174
 msgid "This word already exists. Please choose a new word."
 msgstr "ពាក្យ នេះ មាន រួច ហើយ ។ សូមជ្រើសរើសពាក្យថ្មី។"
 
-#: utils.py:130
-msgid "Info"
-msgstr "ព័ត៌មាន"
-
-#: utils.py:131
+#: utils.py:180
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -138,26 +199,26 @@ msgstr ""
 " Activity Monitor នៅលើ MacOS "
 "ឬគ្រាន់តែចាប់ផ្តើមកុំព្យូទ័ររបស់អ្នកឡើងវិញដើម្បីបិទវា។"
 
-#: utils.py:153
+#: utils.py:202
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
 "កំហុស ដែល មិន បាន រំពឹង ទុក មួយ បាន កើត ឡើង ។ "
 "សូមសាកល្បងធ្វើការស្តារឡើងវិញនូវកម្មវិធីជាមួយ"
 
-#: utils.py:672
+#: utils.py:719
 msgid "Definitions are empty"
 msgstr "និយមន័យ គឺ ទទេ"
 
-#: utils.py:675
+#: utils.py:722
 msgid "The word count or definitions are less than 3 in length"
 msgstr "ពាក្យ រាប់ ឬ និយមន័យ មាន ប្រវែង តិច ជាង ៣"
 
-#: utils.py:679
+#: utils.py:726
 msgid "Length of the word count is greater than the definitions"
 msgstr "ប្រវែង ពាក្យ រាប់ គឺ ធំ ជាង និយមន័យ"
 
-#: utils.py:682
+#: utils.py:729
 msgid "Escape character present in word"
 msgstr "តួអក្សរ គេច ខ្លួន មាន វត្តមាន ក្នុង ពាក្យ"
 
@@ -259,11 +320,11 @@ msgstr "បិទ"
 msgid "Crossword Browser"
 msgstr "កម្មវិធីរុករកតាមអ៊ីនធឺណិត"
 
-#: pages/browser.py:141 pages/editor.py:335
+#: pages/browser.py:141 pages/editor.py:359
 msgid "Back"
 msgstr "ត្រឡប់ មក វិញ"
 
-#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+#: pages/browser.py:145 pages/editor.py:363 pages/home.py:305
 msgid "HomePage"
 msgstr "ទំព័រដើមPage"
 
@@ -271,7 +332,7 @@ msgstr "ទំព័រដើមPage"
 msgid "Categorised"
 msgstr "Categorised"
 
-#: pages/browser.py:156
+#: pages/browser.py:156 pages/browser.py:271
 msgid "Flattened"
 msgstr "រាបស្មើ"
 
@@ -312,78 +373,86 @@ msgstr "មើល"
 msgid "Select"
 msgstr "ជ្រើសរើស"
 
-#: pages/editor.py:329
+#: pages/editor.py:353
 msgid "Crossword Editor"
 msgstr "កម្មវិធី កែសម្រួល ពាក្យ ក្រូស"
 
-#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
-#: pages/editor.py:822
+#: pages/editor.py:491 pages/editor.py:706 pages/editor.py:796
+#: pages/editor.py:936
 msgid "Your Crosswords"
 msgstr "ពាក្យកាត់របស់អ្នក"
 
-#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
-#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+#: pages/editor.py:555 pages/editor.py:800 pages/editor.py:943
+#: pages/editor.py:1030 pages/editor.py:1143 pages/editor.py:1257
 msgid "Save"
 msgstr "រក្សាទុក"
 
-#: pages/editor.py:518
+#: pages/editor.py:567
 msgid "length >= 1 and valid OS file name"
 msgstr "ប្រវែង >= 1 និង ឈ្មោះ ឯកសារ OS ត្រឹមត្រូវ"
 
-#: pages/editor.py:526
+#: pages/editor.py:576
 msgid "length == 1"
 msgstr "ប្រវែង == 1"
 
-#: pages/editor.py:531
+#: pages/editor.py:582
 msgid "Difficulty"
 msgstr "ផាបលមបាក"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Easy"
 msgstr "ងាយស្រួល"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Medium"
 msgstr "មធ្យម"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Hard"
 msgstr "រឹង"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Extreme"
 msgstr "ខ្លាំង"
 
-#: pages/editor.py:616 pages/editor.py:969
+#: pages/editor.py:706 pages/editor.py:1086
 msgid "Adding"
 msgstr "បន្ថែម"
 
-#: pages/editor.py:619 pages/editor.py:973
+#: pages/editor.py:709 pages/editor.py:1090
 msgid "Add"
 msgstr "បន្ថែម"
 
-#: pages/editor.py:822 pages/editor.py:1128
-msgid "Editing"
-msgstr "ការ កែសម្រួល"
+#: pages/editor.py:888 pages/editor.py:1206
+msgid "Press"
+msgstr "ចុច"
 
-#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
-#: pages/editor.py:1128
-msgid "Your Words"
-msgstr "ពាក្យសម្ដីរបស់អ្នក"
-
-#: pages/editor.py:927
-msgid "length >= 1 and length <= 32 and is a language character"
-msgstr "ប្រវែង >= ១ និង ប្រវែង <= ៣២ និង ជា តួអក្សរ ភាសា"
-
-#: pages/editor.py:936
-msgid "length >= 1"
-msgstr "ប្រវែង >= 1"
-
-#: pages/editor.py:1086
+#: pages/editor.py:890 pages/editor.py:1208
 msgid "to add a"
 msgstr "ដើម្បី បន្ថែម"
 
-#: pages/editor.py:1086
+#: pages/editor.py:892
+msgid "new crossword."
+msgstr "ឈើឆ្កាងថ្មី។"
+
+#: pages/editor.py:936 pages/editor.py:1253
+msgid "Editing"
+msgstr "ការ កែសម្រួល"
+
+#: pages/editor.py:998 pages/editor.py:1086 pages/editor.py:1138
+#: pages/editor.py:1253
+msgid "Your Words"
+msgstr "ពាក្យសម្ដីរបស់អ្នក"
+
+#: pages/editor.py:1042
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "ប្រវែង >= ១ និង ប្រវែង <= ៣២ និង ជា តួអក្សរ ភាសា"
+
+#: pages/editor.py:1053
+msgid "length >= 1"
+msgstr "ប្រវែង >= 1"
+
+#: pages/editor.py:1210
 msgid "new word."
 msgstr "ពាក្យថ្មី។"
 
@@ -491,12 +560,6 @@ msgstr "និមិត្តរូប"
 
 msgid "Search"
 msgstr "ការឆេកឆេ"
-
-msgid "Press"
-msgstr "ចុច"
-
-msgid "new crossword."
-msgstr "ឈើឆ្កាងថ្មី។"
 
 msgid "New version available!"
 msgstr "មានកំណែថ្មី!"

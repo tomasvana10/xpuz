@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-27 00:02+1000\n"
+"POT-Creation-Date: 2024-06-28 21:00+1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: hnj <LL@li.org>\n"
@@ -19,35 +19,50 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: utils.py:59
+#: import_export.py:21
+msgid "Select a destination to export your crosswords to"
+msgstr "Xaiv lub hom phiaj mus rau export koj crosswords rau"
+
+#: import_export.py:25
+msgid "my-crosswords"
+msgstr "kuv-crosswords"
+
+#: import_export.py:64
+msgid ""
+"Select a valid crossword JSON file that was exported using crossword_puzzle"
+msgstr ""
+"Xaiv ib qho kev sib tw JONS cov ntaub ntawv uas tau xa tawm siv "
+"crossword_puzzzle"
+
+#: utils.py:60
 msgid "Remove"
 msgstr "Tshem tawm"
 
-#: utils.py:59
+#: utils.py:60
 msgid "Are you sure you want to delete this"
 msgstr "Koj puas paub tseeb tias koj xav rho tawm qhov no"
 
-#: utils.py:59
+#: utils.py:60
 msgid "It will be lost forever!"
 msgstr "Nws yuav ploj mus ib txhis!"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Add or select"
 msgstr "Ntxiv lossis Xaiv"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Are you sure you want to add/select a"
 msgstr "Koj puas paub tseeb tias koj xav ntxiv / xaiv A"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Your modified fields will be reset!"
 msgstr "Koj cov teb hloov kho yuav rov pib dua!"
 
-#: utils.py:69 utils.py:88
+#: utils.py:70 utils.py:94
 msgid "Back to home"
 msgstr "Rov qab mus tsev"
 
-#: utils.py:69
+#: utils.py:70
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
@@ -55,19 +70,31 @@ msgstr ""
 "Koj puas paub tseeb tias koj xav rov qab mus rau hauv lub vijtsam hauv "
 "tsev?Koj cov teb hloov kho yuav rov pib dua!"
 
-#: utils.py:74
+#: utils.py:75 utils.py:141 utils.py:151 utils.py:156 utils.py:179
+msgid "Info"
+msgstr "Cov ntaub ntawv"
+
+#: utils.py:75
+msgid ""
+"Are you sure you want to import crosswords? Your modified fields will be "
+"reset!"
+msgstr ""
+"Koj puas paub tseeb tias koj xav tau import crosswords?Koj cov teb hloov kho"
+" yuav rov pib dua!"
+
+#: utils.py:80
 msgid "Restart"
 msgstr "Rov pib dua"
 
-#: utils.py:74
+#: utils.py:80
 msgid "Are you sure you want to restart the app?"
 msgstr "Koj puas paub tseeb tias koj xav rov pib dua lub app?"
 
-#: pages/home.py:148 utils.py:79
+#: pages/home.py:148 utils.py:85
 msgid "Exit"
 msgstr "Tawm"
 
-#: utils.py:80
+#: utils.py:86
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -75,7 +102,7 @@ msgstr ""
 "Koj puas paub tseeb tias koj xav tawm ntawm lub app? Yog tias lub vev xaib "
 "app tab tom khiav, nws yuav raug txiav tawm."
 
-#: utils.py:89
+#: utils.py:95
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -83,40 +110,76 @@ msgstr ""
 "Koj puas paub tseeb tias koj xav rov qab mus rau qhov screen tsev? Lub vev "
 "xaib app yuav raug txiav tawm."
 
-#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
-#: utils.py:125 utils.py:147 utils.py:151
+#: utils.py:106 utils.py:111 utils.py:116 utils.py:121 utils.py:126
+#: utils.py:135 utils.py:146 utils.py:169 utils.py:174 utils.py:196
+#: utils.py:200
 msgid "Error"
 msgstr "yuam kev"
 
-#: utils.py:100
+#: utils.py:106
 msgid "This language is already selected."
 msgstr "Cov lus no twb xaiv lawm."
 
-#: utils.py:105
+#: utils.py:111
 msgid "This size is already selected."
 msgstr "Qhov loj me no twb xaiv lawm."
 
-#: utils.py:110
+#: utils.py:116
 msgid "This appearance is already selected."
 msgstr "Cov tsos no twb xaiv lawm."
 
-#: utils.py:115
+#: utils.py:121
 msgid "This quality is already selected."
 msgstr "Qhov zoo no yog twb tau xaiv."
 
-#: utils.py:120
-msgid "This crossword already exists. Please choose a new name."
-msgstr "Cov lus hla no twb muaj lawm.Thov xaiv lub npe tshiab."
+#: utils.py:127
+msgid ""
+"A crossword with this name and difficulty already exists. Please choose a "
+"new name and/or a new difficulty."
+msgstr ""
+"Ib tug crossword nrog lub npe no thiab nyuaj twb muaj lawm.Thov xaiv lub npe"
+" tshiab thiab / lossis qhov nyuaj tshiab."
 
-#: utils.py:125
+#: utils.py:136
+msgid "You have no crosswords to export. Please make some and try again."
+msgstr "Koj tsis muaj crosswords rau export.Thov ua qee qhov thiab sim dua."
+
+#: utils.py:141
+msgid "Successfully exported your crosswords."
+msgstr "Ntse xa koj cov lus hla."
+
+#: utils.py:146
+msgid "Your crosswords could not be exported, sorry."
+msgstr "Koj cov lus hla tsis tuaj yeem raug xa tawm, thov txim."
+
+#: utils.py:151
+msgid "All of your crosswords were successfully imported."
+msgstr "Tag nrho koj cov lus hla tau ua tiav imported."
+
+#: utils.py:157
+msgid "Your import could not be fully completed."
+msgstr "Koj cov ntshuam tsis tuaj yeem ua tiav tiav."
+
+#: utils.py:159
+msgid ""
+"Crosswords with duplicate names and difficulties that were not imported: "
+msgstr ""
+"Crosswords nrog cov npe theej tawm thiab cov teeb meem uas tsis tau txawv "
+"teb:"
+
+#: utils.py:163
+msgid "Invalid crosswords that were not imported: "
+msgstr "Cov Crosswords tsis raug uas tsis yog import:"
+
+#: utils.py:169
+msgid "The specified JSON file is invalid and cannot be processed."
+msgstr "Cov ntaub ntawv JSIs tsis raug siv thiab tsis tuaj yeem ua tiav."
+
+#: utils.py:174
 msgid "This word already exists. Please choose a new word."
 msgstr "Lo lus no twb muaj lawm.Thov xaiv lo lus tshiab."
 
-#: utils.py:130
-msgid "Info"
-msgstr "Cov ntaub ntawv"
-
-#: utils.py:131
+#: utils.py:180
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -139,25 +202,25 @@ msgstr ""
 "ntawm Kev Saib Xyuas Kev Ua Haujlwm ntawm macOS, lossis, tsuas yog rov pib "
 "dua koj lub khoos phis tawm kom tshem tawm lawv."
 
-#: utils.py:153
+#: utils.py:202
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
 "Kev ua yuam kev tsis tau npaj txhij.Thov sim rov kho daim ntawv thov nrog"
 
-#: utils.py:672
+#: utils.py:719
 msgid "Definitions are empty"
 msgstr "Cov ntsiab lus txhais yog khoob"
 
-#: utils.py:675
+#: utils.py:722
 msgid "The word count or definitions are less than 3 in length"
 msgstr "Lo lus suav lossis cov ntsiab lus yog tsawg dua 3 nyob rau hauv ntev"
 
-#: utils.py:679
+#: utils.py:726
 msgid "Length of the word count is greater than the definitions"
 msgstr "Ntev ntawm Lo Lus suav yog ntau dua cov lus txhais"
 
-#: utils.py:682
+#: utils.py:729
 msgid "Escape character present in word"
 msgstr "Tus cim khiav tawm tam sim no hauv Lo Lus"
 
@@ -259,11 +322,11 @@ msgstr "Kaw"
 msgid "Crossword Browser"
 msgstr "Crossword Browser"
 
-#: pages/browser.py:141 pages/editor.py:335
+#: pages/browser.py:141 pages/editor.py:359
 msgid "Back"
 msgstr "Nram ntej"
 
-#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+#: pages/browser.py:145 pages/editor.py:363 pages/home.py:305
 msgid "HomePage"
 msgstr "Homepage"
 
@@ -271,7 +334,7 @@ msgstr "Homepage"
 msgid "Categorised"
 msgstr "Categorized"
 
-#: pages/browser.py:156
+#: pages/browser.py:156 pages/browser.py:271
 msgid "Flattened"
 msgstr "Ua kom tiaj"
 
@@ -314,78 +377,86 @@ msgstr "Saib"
 msgid "Select"
 msgstr "Xaiv"
 
-#: pages/editor.py:329
+#: pages/editor.py:353
 msgid "Crossword Editor"
 msgstr "Crossword editor"
 
-#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
-#: pages/editor.py:822
+#: pages/editor.py:491 pages/editor.py:706 pages/editor.py:796
+#: pages/editor.py:936
 msgid "Your Crosswords"
 msgstr "Koj cov lus sib dhos"
 
-#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
-#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+#: pages/editor.py:555 pages/editor.py:800 pages/editor.py:943
+#: pages/editor.py:1030 pages/editor.py:1143 pages/editor.py:1257
 msgid "Save"
 msgstr "Cawm"
 
-#: pages/editor.py:518
+#: pages/editor.py:567
 msgid "length >= 1 and valid OS file name"
 msgstr "Ntev> = 1 thiab siv tau OS cov ntaub ntawv npe"
 
-#: pages/editor.py:526
+#: pages/editor.py:576
 msgid "length == 1"
 msgstr "ntev == 1"
 
-#: pages/editor.py:531
+#: pages/editor.py:582
 msgid "Difficulty"
 msgstr "Qho nyuaj"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Easy"
 msgstr "Yooj yim"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Medium"
 msgstr "Nruab nrab"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Hard"
 msgstr "Nyuaj"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Extreme"
 msgstr "Heev"
 
-#: pages/editor.py:616 pages/editor.py:969
+#: pages/editor.py:706 pages/editor.py:1086
 msgid "Adding"
 msgstr "Ntxiv"
 
-#: pages/editor.py:619 pages/editor.py:973
+#: pages/editor.py:709 pages/editor.py:1090
 msgid "Add"
 msgstr "Ntxiv"
 
-#: pages/editor.py:822 pages/editor.py:1128
-msgid "Editing"
-msgstr "Hloov"
+#: pages/editor.py:888 pages/editor.py:1206
+msgid "Press"
+msgstr "Thawb"
 
-#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
-#: pages/editor.py:1128
-msgid "Your Words"
-msgstr "Koj cov lus"
-
-#: pages/editor.py:927
-msgid "length >= 1 and length <= 32 and is a language character"
-msgstr "ntev> = 1 thiab ntev <= 32 thiab yog ib hom lus"
-
-#: pages/editor.py:936
-msgid "length >= 1"
-msgstr "ntev> = 1"
-
-#: pages/editor.py:1086
+#: pages/editor.py:890 pages/editor.py:1208
 msgid "to add a"
 msgstr "Txhawm rau ntxiv a"
 
-#: pages/editor.py:1086
+#: pages/editor.py:892
+msgid "new crossword."
+msgstr "Tshiab crossword."
+
+#: pages/editor.py:936 pages/editor.py:1253
+msgid "Editing"
+msgstr "Hloov"
+
+#: pages/editor.py:998 pages/editor.py:1086 pages/editor.py:1138
+#: pages/editor.py:1253
+msgid "Your Words"
+msgstr "Koj cov lus"
+
+#: pages/editor.py:1042
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "ntev> = 1 thiab ntev <= 32 thiab yog ib hom lus"
+
+#: pages/editor.py:1053
+msgid "length >= 1"
+msgstr "ntev> = 1"
+
+#: pages/editor.py:1210
 msgid "new word."
 msgstr "Lo lus tshiab."
 
@@ -493,12 +564,6 @@ msgstr "Lub cim"
 
 msgid "Search"
 msgstr "Kev tshawb nrhiav"
-
-msgid "Press"
-msgstr "Thawb"
-
-msgid "new crossword."
-msgstr "Tshiab crossword."
 
 msgid "New version available!"
 msgstr "Tshiab version!"

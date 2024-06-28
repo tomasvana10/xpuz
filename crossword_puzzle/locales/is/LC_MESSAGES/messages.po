@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-27 00:02+1000\n"
+"POT-Creation-Date: 2024-06-28 21:00+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: is <LL@li.org>\n"
@@ -19,35 +19,48 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n%10==1 && n%100!=11 ? 0 : 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: utils.py:59
+#: import_export.py:21
+msgid "Select a destination to export your crosswords to"
+msgstr "Veldu áfangastað til að flytja krossgátur þínar til"
+
+#: import_export.py:25
+msgid "my-crosswords"
+msgstr "My-crosswords"
+
+#: import_export.py:64
+msgid ""
+"Select a valid crossword JSON file that was exported using crossword_puzzle"
+msgstr "Veldu gild krossgátu JSON skrá sem var flutt út með Crossword_puzzle"
+
+#: utils.py:60
 msgid "Remove"
 msgstr "Fjarlægja"
 
-#: utils.py:59
+#: utils.py:60
 msgid "Are you sure you want to delete this"
 msgstr "Ertu viss um að þú viljir eyða þessu"
 
-#: utils.py:59
+#: utils.py:60
 msgid "It will be lost forever!"
 msgstr "Það mun glatast að eilífu!"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Add or select"
 msgstr "Bæta við eða velja"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Are you sure you want to add/select a"
 msgstr "Ertu viss um að þú viljir bæta við/velja"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Your modified fields will be reset!"
 msgstr "Breyttu reitirnir verða endurstilltir!"
 
-#: utils.py:69 utils.py:88
+#: utils.py:70 utils.py:94
 msgid "Back to home"
 msgstr "Aftur heim"
 
-#: utils.py:69
+#: utils.py:70
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
@@ -55,19 +68,31 @@ msgstr ""
 "Ertu viss um að þú viljir fara aftur á heimaskjáinn? Breyttu reitirnir verða"
 " endurstilltir!"
 
-#: utils.py:74
+#: utils.py:75 utils.py:141 utils.py:151 utils.py:156 utils.py:179
+msgid "Info"
+msgstr "Upplýsingar"
+
+#: utils.py:75
+msgid ""
+"Are you sure you want to import crosswords? Your modified fields will be "
+"reset!"
+msgstr ""
+"Ertu viss um að þú viljir flytja krossgátur?Breyttu reitirnir þínir verða "
+"endurstilltir!"
+
+#: utils.py:80
 msgid "Restart"
 msgstr "Endurræsa"
 
-#: utils.py:74
+#: utils.py:80
 msgid "Are you sure you want to restart the app?"
 msgstr "Ertu viss um að þú viljir endurræsa forritið?"
 
-#: pages/home.py:148 utils.py:79
+#: pages/home.py:148 utils.py:85
 msgid "Exit"
 msgstr "Hætta"
 
-#: utils.py:80
+#: utils.py:86
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -75,7 +100,7 @@ msgstr ""
 "Ertu viss um að þú viljir hætta í forritinu? Ef vefforritið er í gangi "
 "verður því lokað."
 
-#: utils.py:89
+#: utils.py:95
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -83,40 +108,76 @@ msgstr ""
 "Ertu viss um að þú viljir fara aftur á heimaskjáinn? Vefforritinu verður "
 "lokað."
 
-#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
-#: utils.py:125 utils.py:147 utils.py:151
+#: utils.py:106 utils.py:111 utils.py:116 utils.py:121 utils.py:126
+#: utils.py:135 utils.py:146 utils.py:169 utils.py:174 utils.py:196
+#: utils.py:200
 msgid "Error"
 msgstr "Villa"
 
-#: utils.py:100
+#: utils.py:106
 msgid "This language is already selected."
 msgstr "Þetta tungumál er þegar valið."
 
-#: utils.py:105
+#: utils.py:111
 msgid "This size is already selected."
 msgstr "Þessi stærð er þegar valin."
 
-#: utils.py:110
+#: utils.py:116
 msgid "This appearance is already selected."
 msgstr "Þetta útlit er þegar valið."
 
-#: utils.py:115
+#: utils.py:121
 msgid "This quality is already selected."
 msgstr "Þessi gæði eru þegar valin."
 
-#: utils.py:120
-msgid "This crossword already exists. Please choose a new name."
-msgstr "Þessi krossgáta er þegar til. Veldu nýtt heiti."
+#: utils.py:127
+msgid ""
+"A crossword with this name and difficulty already exists. Please choose a "
+"new name and/or a new difficulty."
+msgstr ""
+"Krossgáta með þessu nafni og erfiðleikum er þegar til.Vinsamlegast veldu "
+"nýtt nafn og/eða nýjan vanda."
 
-#: utils.py:125
+#: utils.py:136
+msgid "You have no crosswords to export. Please make some and try again."
+msgstr ""
+"Þú hefur engin krossgátur til að flytja út.Vinsamlegast gerðu nokkrar og "
+"reyndu aftur."
+
+#: utils.py:141
+msgid "Successfully exported your crosswords."
+msgstr "Flutti krossgátur þínar með góðum árangri."
+
+#: utils.py:146
+msgid "Your crosswords could not be exported, sorry."
+msgstr "Ekki var hægt að flytja krossgátur þínar, því miður."
+
+#: utils.py:151
+msgid "All of your crosswords were successfully imported."
+msgstr "Öll krossgátin þín voru flutt inn."
+
+#: utils.py:157
+msgid "Your import could not be fully completed."
+msgstr "Ekki var hægt að klára innflutning þinn að fullu."
+
+#: utils.py:159
+msgid ""
+"Crosswords with duplicate names and difficulties that were not imported: "
+msgstr "Krossgátur með afritum og erfiðleikum sem ekki voru fluttir inn:"
+
+#: utils.py:163
+msgid "Invalid crosswords that were not imported: "
+msgstr "Ógild krossgátur sem ekki voru flutt inn:"
+
+#: utils.py:169
+msgid "The specified JSON file is invalid and cannot be processed."
+msgstr "Tilgreind JSON skrá er ógild og er ekki hægt að vinna úr."
+
+#: utils.py:174
 msgid "This word already exists. Please choose a new word."
 msgstr "Þetta orð er þegar til. Veldu nýtt orð."
 
-#: utils.py:130
-msgid "Info"
-msgstr "Upplýsingar"
-
-#: utils.py:131
+#: utils.py:180
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -138,24 +199,24 @@ msgstr ""
 " í gegnum Activity Monitor á MacOS, eða einfaldlega endurræsa tölvuna þína "
 "til að loka þeim."
 
-#: utils.py:153
+#: utils.py:202
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr "Óvænt villa varð. Reyndu að setja forritið upp aftur með"
 
-#: utils.py:672
+#: utils.py:719
 msgid "Definitions are empty"
 msgstr "Skilgreiningar eru tómar"
 
-#: utils.py:675
+#: utils.py:722
 msgid "The word count or definitions are less than 3 in length"
 msgstr "Orðafjöldi eða skilgreiningar eru styttri en 3 að lengd"
 
-#: utils.py:679
+#: utils.py:726
 msgid "Length of the word count is greater than the definitions"
 msgstr "Lengd orðafjölda er meiri en skilgreiningarnar"
 
-#: utils.py:682
+#: utils.py:729
 msgid "Escape character present in word"
 msgstr "Flýja staf til staðar í orði"
 
@@ -257,11 +318,11 @@ msgstr "Loka"
 msgid "Crossword Browser"
 msgstr "Krossgátuvafri"
 
-#: pages/browser.py:141 pages/editor.py:335
+#: pages/browser.py:141 pages/editor.py:359
 msgid "Back"
 msgstr "Bak"
 
-#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+#: pages/browser.py:145 pages/editor.py:363 pages/home.py:305
 msgid "HomePage"
 msgstr "Heimasíða"
 
@@ -269,7 +330,7 @@ msgstr "Heimasíða"
 msgid "Categorised"
 msgstr "Flokkað"
 
-#: pages/browser.py:156
+#: pages/browser.py:156 pages/browser.py:271
 msgid "Flattened"
 msgstr "Fletja"
 
@@ -310,78 +371,86 @@ msgstr "Útsýni"
 msgid "Select"
 msgstr "Veldu"
 
-#: pages/editor.py:329
+#: pages/editor.py:353
 msgid "Crossword Editor"
 msgstr "Krossgáta ritstjóri"
 
-#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
-#: pages/editor.py:822
+#: pages/editor.py:491 pages/editor.py:706 pages/editor.py:796
+#: pages/editor.py:936
 msgid "Your Crosswords"
 msgstr "Krossgáturnar þínar"
 
-#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
-#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+#: pages/editor.py:555 pages/editor.py:800 pages/editor.py:943
+#: pages/editor.py:1030 pages/editor.py:1143 pages/editor.py:1257
 msgid "Save"
 msgstr "Spara"
 
-#: pages/editor.py:518
+#: pages/editor.py:567
 msgid "length >= 1 and valid OS file name"
 msgstr "lengd >= 1 og gilt skráarheiti stýrikerfis"
 
-#: pages/editor.py:526
+#: pages/editor.py:576
 msgid "length == 1"
 msgstr "lengd == 1"
 
-#: pages/editor.py:531
+#: pages/editor.py:582
 msgid "Difficulty"
 msgstr "Erfiðleikar"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Easy"
 msgstr "Auðvelt"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Medium"
 msgstr "Miðlungs"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Hard"
 msgstr "Erfitt"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Extreme"
 msgstr "Öfgafullt"
 
-#: pages/editor.py:616 pages/editor.py:969
+#: pages/editor.py:706 pages/editor.py:1086
 msgid "Adding"
 msgstr "Bæta við"
 
-#: pages/editor.py:619 pages/editor.py:973
+#: pages/editor.py:709 pages/editor.py:1090
 msgid "Add"
 msgstr "Bæta við"
 
-#: pages/editor.py:822 pages/editor.py:1128
-msgid "Editing"
-msgstr "Útgáfa"
+#: pages/editor.py:888 pages/editor.py:1206
+msgid "Press"
+msgstr "Þrýsta"
 
-#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
-#: pages/editor.py:1128
-msgid "Your Words"
-msgstr "Orð þín"
-
-#: pages/editor.py:927
-msgid "length >= 1 and length <= 32 and is a language character"
-msgstr "lengd >= 1 og lengd <= 32 og er tungumálstákn"
-
-#: pages/editor.py:936
-msgid "length >= 1"
-msgstr "lengd >= 1"
-
-#: pages/editor.py:1086
+#: pages/editor.py:890 pages/editor.py:1208
 msgid "to add a"
 msgstr "til að bæta við"
 
-#: pages/editor.py:1086
+#: pages/editor.py:892
+msgid "new crossword."
+msgstr "nýtt krossgáta."
+
+#: pages/editor.py:936 pages/editor.py:1253
+msgid "Editing"
+msgstr "Útgáfa"
+
+#: pages/editor.py:998 pages/editor.py:1086 pages/editor.py:1138
+#: pages/editor.py:1253
+msgid "Your Words"
+msgstr "Orð þín"
+
+#: pages/editor.py:1042
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "lengd >= 1 og lengd <= 32 og er tungumálstákn"
+
+#: pages/editor.py:1053
+msgid "length >= 1"
+msgstr "lengd >= 1"
+
+#: pages/editor.py:1210
 msgid "new word."
 msgstr "Nýtt orð."
 
@@ -489,12 +558,6 @@ msgstr "Tákn"
 
 msgid "Search"
 msgstr "Leit"
-
-msgid "Press"
-msgstr "Þrýsta"
-
-msgid "new crossword."
-msgstr "nýtt krossgáta."
 
 msgid "New version available!"
 msgstr "Ný útgáfa í boði!"

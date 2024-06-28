@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-27 00:02+1000\n"
+"POT-Creation-Date: 2024-06-28 21:00+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ny <LL@li.org>\n"
@@ -19,35 +19,50 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: utils.py:59
+#: import_export.py:21
+msgid "Select a destination to export your crosswords to"
+msgstr "Sankhani kopita kutumiza kutumiza kwanu"
+
+#: import_export.py:25
+msgid "my-crosswords"
+msgstr "Maudindo Anga"
+
+#: import_export.py:64
+msgid ""
+"Select a valid crossword JSON file that was exported using crossword_puzzle"
+msgstr ""
+"Sankhani fayilo yovomerezeka ya Json yomwe idatumizidwa pogwiritsa ntchito "
+"@Puzvey"
+
+#: utils.py:60
 msgid "Remove"
 msgstr "Chotsa"
 
-#: utils.py:59
+#: utils.py:60
 msgid "Are you sure you want to delete this"
 msgstr "Mukutsimikiza kuti mukufuna kuchotsa izi"
 
-#: utils.py:59
+#: utils.py:60
 msgid "It will be lost forever!"
 msgstr "Idzataika kwamuyaya!"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Add or select"
 msgstr "Onjezerani kapena sankhani"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Are you sure you want to add/select a"
 msgstr "Mukutsimikiza kuti mukufuna kuwonjezera / kusankha a"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Your modified fields will be reset!"
 msgstr "Minda yomwe mumasinthidwa idzakonzedwanso!"
 
-#: utils.py:69 utils.py:88
+#: utils.py:70 utils.py:94
 msgid "Back to home"
 msgstr "Kubwerera kunyumba"
 
-#: utils.py:69
+#: utils.py:70
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
@@ -55,19 +70,31 @@ msgstr ""
 "Mukutsimikiza kuti mukufuna kubwerera ku Screen Yanyumba?Minda yomwe "
 "mumasinthidwa idzakonzedwanso!"
 
-#: utils.py:74
+#: utils.py:75 utils.py:141 utils.py:151 utils.py:156 utils.py:179
+msgid "Info"
+msgstr "Zambiri"
+
+#: utils.py:75
+msgid ""
+"Are you sure you want to import crosswords? Your modified fields will be "
+"reset!"
+msgstr ""
+"Mukutsimikiza kuti mukufuna kulowetsa?Minda yomwe mumasinthidwa "
+"idzakonzedwanso!"
+
+#: utils.py:80
 msgid "Restart"
 msgstr "Yambitsaninso"
 
-#: utils.py:74
+#: utils.py:80
 msgid "Are you sure you want to restart the app?"
 msgstr "Kodi mukutsimikiza kuti mukufuna kuyambitsanso pulogalamuyi?"
 
-#: pages/home.py:148 utils.py:79
+#: pages/home.py:148 utils.py:85
 msgid "Exit"
 msgstr "Potulukira"
 
-#: utils.py:80
+#: utils.py:86
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -75,7 +102,7 @@ msgstr ""
 "Kodi mukutsimikiza kuti mukufuna kutuluka mu pulogalamuyi? Ngati pulogalamu "
 "yapaintaneti ikugwira ntchito, idzathetsedwa."
 
-#: utils.py:89
+#: utils.py:95
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -83,40 +110,75 @@ msgstr ""
 "Kodi mukutsimikiza kuti mukufuna kubwereranso ku sikirini yakunyumba? "
 "Pulogalamu yapaintaneti idzathetsedwa."
 
-#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
-#: utils.py:125 utils.py:147 utils.py:151
+#: utils.py:106 utils.py:111 utils.py:116 utils.py:121 utils.py:126
+#: utils.py:135 utils.py:146 utils.py:169 utils.py:174 utils.py:196
+#: utils.py:200
 msgid "Error"
 msgstr "Cholakwika"
 
-#: utils.py:100
+#: utils.py:106
 msgid "This language is already selected."
 msgstr "Chilankhulochi chasankhidwa kale."
 
-#: utils.py:105
+#: utils.py:111
 msgid "This size is already selected."
 msgstr "Kukula uku kwasankhidwa kale."
 
-#: utils.py:110
+#: utils.py:116
 msgid "This appearance is already selected."
 msgstr "Maonekedwe awa asankhidwa kale."
 
-#: utils.py:115
+#: utils.py:121
 msgid "This quality is already selected."
 msgstr "Izi zimasankhidwa kale."
 
-#: utils.py:120
-msgid "This crossword already exists. Please choose a new name."
-msgstr "Mawu awa alipo alipo kale.Chonde sankhani dzina latsopano."
+#: utils.py:127
+msgid ""
+"A crossword with this name and difficulty already exists. Please choose a "
+"new name and/or a new difficulty."
+msgstr ""
+"Bokosi lokhala ndi dzinali komanso zovuta zili kale.Chonde sankhani dzina "
+"latsopano ndi / kapena zovuta zatsopano."
 
-#: utils.py:125
+#: utils.py:136
+msgid "You have no crosswords to export. Please make some and try again."
+msgstr "Mulibe mawu ogulitsira.Chonde pangani ena ndikuyesanso."
+
+#: utils.py:141
+msgid "Successfully exported your crosswords."
+msgstr "Adatumiza bwino adatumiza mawu anu."
+
+#: utils.py:146
+msgid "Your crosswords could not be exported, sorry."
+msgstr "Mawu anu opukutira sangatumizidwe kunja, pepani."
+
+#: utils.py:151
+msgid "All of your crosswords were successfully imported."
+msgstr "Mawu anu onse a pamtanda adatulutsidwa bwino."
+
+#: utils.py:157
+msgid "Your import could not be fully completed."
+msgstr "Kuyitanitsa kwanu sikungamalizidwe kwathunthu."
+
+#: utils.py:159
+msgid ""
+"Crosswords with duplicate names and difficulties that were not imported: "
+msgstr "Mawu owombera ndi mayina obwereza ndi zovuta zomwe sizinalowe:"
+
+#: utils.py:163
+msgid "Invalid crosswords that were not imported: "
+msgstr "Mawu osavomerezeka omwe sanatulutsidwe:"
+
+#: utils.py:169
+msgid "The specified JSON file is invalid and cannot be processed."
+msgstr ""
+"Fayilo yotchulidwa ya JSSON ndiyosavomerezeka ndipo sangathe kukonzedwa."
+
+#: utils.py:174
 msgid "This word already exists. Please choose a new word."
 msgstr "Mawu awa alipo kale.Chonde sankhani mawu atsopano."
 
-#: utils.py:130
-msgid "Info"
-msgstr "Zambiri"
-
-#: utils.py:131
+#: utils.py:180
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -138,26 +200,26 @@ msgstr ""
 "sizinathetsedwe bwino zitha kuthetsedwa kudzera mu Activity Monitor pa "
 "MacOS, kapena, ingoyambitsaninso kompyuta yanu kuti muyimitse."
 
-#: utils.py:153
+#: utils.py:202
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
 "Cholakwika chosayembekezereka chidachitika.Chonde yesaninso kubwezeretsanso "
 "ntchito"
 
-#: utils.py:672
+#: utils.py:719
 msgid "Definitions are empty"
 msgstr "Matanthauzidwe alibe"
 
-#: utils.py:675
+#: utils.py:722
 msgid "The word count or definitions are less than 3 in length"
 msgstr "Kuwerenga mawu kapena matanthauzidwe ndi ochepera 3 kutalika"
 
-#: utils.py:679
+#: utils.py:726
 msgid "Length of the word count is greater than the definitions"
 msgstr "Kutalika kwa mawuwa ndikokulirapo kuposa matanthauzidwe"
 
-#: utils.py:682
+#: utils.py:729
 msgid "Escape character present in word"
 msgstr "Yendani mkhalidwe womwe umapezeka m'mawu"
 
@@ -259,11 +321,11 @@ msgstr "Tsekani"
 msgid "Crossword Browser"
 msgstr "Crossword Browser"
 
-#: pages/browser.py:141 pages/editor.py:335
+#: pages/browser.py:141 pages/editor.py:359
 msgid "Back"
 msgstr "Limbikitsa"
 
-#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+#: pages/browser.py:145 pages/editor.py:363 pages/home.py:305
 msgid "HomePage"
 msgstr "Kunyumba"
 
@@ -271,7 +333,7 @@ msgstr "Kunyumba"
 msgid "Categorised"
 msgstr "Gulu"
 
-#: pages/browser.py:156
+#: pages/browser.py:156 pages/browser.py:271
 msgid "Flattened"
 msgstr "Okhazikika"
 
@@ -312,78 +374,86 @@ msgstr "Onani"
 msgid "Select"
 msgstr "Sankhani"
 
-#: pages/editor.py:329
+#: pages/editor.py:353
 msgid "Crossword Editor"
 msgstr "Mkonzi Woyimira"
 
-#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
-#: pages/editor.py:822
+#: pages/editor.py:491 pages/editor.py:706 pages/editor.py:796
+#: pages/editor.py:936
 msgid "Your Crosswords"
 msgstr "Mawu anu"
 
-#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
-#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+#: pages/editor.py:555 pages/editor.py:800 pages/editor.py:943
+#: pages/editor.py:1030 pages/editor.py:1143 pages/editor.py:1257
 msgid "Save"
 msgstr "Sunga"
 
-#: pages/editor.py:518
+#: pages/editor.py:567
 msgid "length >= 1 and valid OS file name"
 msgstr "Kutalika> = 1 ndi dzina lovomerezeka la os"
 
-#: pages/editor.py:526
+#: pages/editor.py:576
 msgid "length == 1"
 msgstr "Kutalika == 1"
 
-#: pages/editor.py:531
+#: pages/editor.py:582
 msgid "Difficulty"
 msgstr "Kuvuta"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Easy"
 msgstr "Zosavuta"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Medium"
 msgstr "Wapakati"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Hard"
 msgstr "Zovuta"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Extreme"
 msgstr "Kwambiri"
 
-#: pages/editor.py:616 pages/editor.py:969
+#: pages/editor.py:706 pages/editor.py:1086
 msgid "Adding"
 msgstr "Kuwonjezera"
 
-#: pages/editor.py:619 pages/editor.py:973
+#: pages/editor.py:709 pages/editor.py:1090
 msgid "Add"
 msgstr "Onjeza"
 
-#: pages/editor.py:822 pages/editor.py:1128
-msgid "Editing"
-msgstr "Kusintha"
+#: pages/editor.py:888 pages/editor.py:1206
+msgid "Press"
+msgstr "Kankha"
 
-#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
-#: pages/editor.py:1128
-msgid "Your Words"
-msgstr "Mawu Anu"
-
-#: pages/editor.py:927
-msgid "length >= 1 and length <= 32 and is a language character"
-msgstr "Kutalika> = 1 ndi kutalika <= 32 ndipo ndi chilankhulo"
-
-#: pages/editor.py:936
-msgid "length >= 1"
-msgstr "Kutalika> = 1"
-
-#: pages/editor.py:1086
+#: pages/editor.py:890 pages/editor.py:1208
 msgid "to add a"
 msgstr "kuwonjezera a"
 
-#: pages/editor.py:1086
+#: pages/editor.py:892
+msgid "new crossword."
+msgstr "newword frowword."
+
+#: pages/editor.py:936 pages/editor.py:1253
+msgid "Editing"
+msgstr "Kusintha"
+
+#: pages/editor.py:998 pages/editor.py:1086 pages/editor.py:1138
+#: pages/editor.py:1253
+msgid "Your Words"
+msgstr "Mawu Anu"
+
+#: pages/editor.py:1042
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "Kutalika> = 1 ndi kutalika <= 32 ndipo ndi chilankhulo"
+
+#: pages/editor.py:1053
+msgid "length >= 1"
+msgstr "Kutalika> = 1"
+
+#: pages/editor.py:1210
 msgid "new word."
 msgstr "Mawu atsopano."
 
@@ -491,12 +561,6 @@ msgstr "Chitsanzo"
 
 msgid "Search"
 msgstr "Kufunafuna"
-
-msgid "Press"
-msgstr "Kankha"
-
-msgid "new crossword."
-msgstr "newword frowword."
 
 msgid "New version available!"
 msgstr "Mtundu watsopano womwe ulipo!"

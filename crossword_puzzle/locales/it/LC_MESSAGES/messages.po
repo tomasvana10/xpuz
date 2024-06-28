@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-27 00:02+1000\n"
+"POT-Creation-Date: 2024-06-28 21:00+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: it <LL@li.org>\n"
@@ -19,35 +19,50 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: utils.py:59
+#: import_export.py:21
+msgid "Select a destination to export your crosswords to"
+msgstr "Seleziona una destinazione per esportare i tuoi cruciverba"
+
+#: import_export.py:25
+msgid "my-crosswords"
+msgstr "My-Crosswords"
+
+#: import_export.py:64
+msgid ""
+"Select a valid crossword JSON file that was exported using crossword_puzzle"
+msgstr ""
+"Seleziona un file JSON CROSSWORD valido che è stato esportato utilizzando "
+"Crossword_Puzzle"
+
+#: utils.py:60
 msgid "Remove"
 msgstr "Togliere"
 
-#: utils.py:59
+#: utils.py:60
 msgid "Are you sure you want to delete this"
 msgstr "Sei sicuro di volerlo eliminare?"
 
-#: utils.py:59
+#: utils.py:60
 msgid "It will be lost forever!"
 msgstr "Sarà perduto per sempre!"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Add or select"
 msgstr "Aggiungi o seleziona"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Are you sure you want to add/select a"
 msgstr "Sei sicuro di voler aggiungere/selezionare un"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Your modified fields will be reset!"
 msgstr "I campi modificati verranno reimpostati!"
 
-#: utils.py:69 utils.py:88
+#: utils.py:70 utils.py:94
 msgid "Back to home"
 msgstr "Tornare a casa"
 
-#: utils.py:69
+#: utils.py:70
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
@@ -55,19 +70,31 @@ msgstr ""
 "Sei sicuro di voler tornare alla schermata iniziale? I campi modificati "
 "verranno reimpostati!"
 
-#: utils.py:74
+#: utils.py:75 utils.py:141 utils.py:151 utils.py:156 utils.py:179
+msgid "Info"
+msgstr "Informazioni"
+
+#: utils.py:75
+msgid ""
+"Are you sure you want to import crosswords? Your modified fields will be "
+"reset!"
+msgstr ""
+"Sei sicuro di voler importare i cruciverba?I tuoi campi modificati verranno "
+"ripristinati!"
+
+#: utils.py:80
 msgid "Restart"
 msgstr "Ricomincia"
 
-#: utils.py:74
+#: utils.py:80
 msgid "Are you sure you want to restart the app?"
 msgstr "Sei sicuro di voler riavviare l'app?"
 
-#: pages/home.py:148 utils.py:79
+#: pages/home.py:148 utils.py:85
 msgid "Exit"
 msgstr "Uscita"
 
-#: utils.py:80
+#: utils.py:86
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -75,7 +102,7 @@ msgstr ""
 "Sei sicuro di voler uscire dall'app? Se l'app Web è in esecuzione, verrà "
 "terminata."
 
-#: utils.py:89
+#: utils.py:95
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -83,40 +110,75 @@ msgstr ""
 "Sei sicuro di voler tornare alla schermata principale? L'app Web verrà "
 "terminata."
 
-#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
-#: utils.py:125 utils.py:147 utils.py:151
+#: utils.py:106 utils.py:111 utils.py:116 utils.py:121 utils.py:126
+#: utils.py:135 utils.py:146 utils.py:169 utils.py:174 utils.py:196
+#: utils.py:200
 msgid "Error"
 msgstr "Errore"
 
-#: utils.py:100
+#: utils.py:106
 msgid "This language is already selected."
 msgstr "Questa lingua è già selezionata."
 
-#: utils.py:105
+#: utils.py:111
 msgid "This size is already selected."
 msgstr "Questa dimensione è già selezionata."
 
-#: utils.py:110
+#: utils.py:116
 msgid "This appearance is already selected."
 msgstr "Questo aspetto è già selezionato."
 
-#: utils.py:115
+#: utils.py:121
 msgid "This quality is already selected."
 msgstr "Questa qualità è già selezionata."
 
-#: utils.py:120
-msgid "This crossword already exists. Please choose a new name."
-msgstr "Questo cruciverba esiste già. Scegli un nuovo nome."
+#: utils.py:127
+msgid ""
+"A crossword with this name and difficulty already exists. Please choose a "
+"new name and/or a new difficulty."
+msgstr ""
+"Esiste già un cruciverba con questo nome e difficoltà.Scegli un nuovo nome "
+"e/o una nuova difficoltà."
 
-#: utils.py:125
+#: utils.py:136
+msgid "You have no crosswords to export. Please make some and try again."
+msgstr "Non hai cruciverba da esportare.Per favore, fai un po 'e riprova."
+
+#: utils.py:141
+msgid "Successfully exported your crosswords."
+msgstr "Esportava con successo i tuoi cruciverba."
+
+#: utils.py:146
+msgid "Your crosswords could not be exported, sorry."
+msgstr "I tuoi cruciverba non potevano essere esportati, scusate."
+
+#: utils.py:151
+msgid "All of your crosswords were successfully imported."
+msgstr "Tutti i tuoi cruciverba sono stati importati con successo."
+
+#: utils.py:157
+msgid "Your import could not be fully completed."
+msgstr "La tua importazione non potrebbe essere completamente completata."
+
+#: utils.py:159
+msgid ""
+"Crosswords with duplicate names and difficulties that were not imported: "
+msgstr ""
+"Crucioni con nomi duplicati e difficoltà che non sono state importate:"
+
+#: utils.py:163
+msgid "Invalid crosswords that were not imported: "
+msgstr "Crutriglie non valide che non sono state importate:"
+
+#: utils.py:169
+msgid "The specified JSON file is invalid and cannot be processed."
+msgstr "Il file JSON specificato non è valido e non può essere elaborato."
+
+#: utils.py:174
 msgid "This word already exists. Please choose a new word."
 msgstr "Questa parola esiste già. Si prega di scegliere una nuova parola."
 
-#: utils.py:130
-msgid "Info"
-msgstr "Informazioni"
-
-#: utils.py:131
+#: utils.py:180
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -138,26 +200,26 @@ msgstr ""
 "possono essere terminati tramite Activity Monitor su MacOS o semplicemente "
 "riavviando il computer per terminarli."
 
-#: utils.py:153
+#: utils.py:202
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
 "Si è verificato un errore imprevisto. Prova a reinstallare l'applicazione "
 "con"
 
-#: utils.py:672
+#: utils.py:719
 msgid "Definitions are empty"
 msgstr "Le definizioni sono vuote"
 
-#: utils.py:675
+#: utils.py:722
 msgid "The word count or definitions are less than 3 in length"
 msgstr "Il numero di parole o le definizioni sono inferiori a 3"
 
-#: utils.py:679
+#: utils.py:726
 msgid "Length of the word count is greater than the definitions"
 msgstr "La lunghezza del conteggio delle parole è maggiore delle definizioni"
 
-#: utils.py:682
+#: utils.py:729
 msgid "Escape character present in word"
 msgstr "Carattere di escape presente in word"
 
@@ -259,11 +321,11 @@ msgstr "Vicino"
 msgid "Crossword Browser"
 msgstr "Navigatore di cruciverba"
 
-#: pages/browser.py:141 pages/editor.py:335
+#: pages/browser.py:141 pages/editor.py:359
 msgid "Back"
 msgstr "Indietro"
 
-#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+#: pages/browser.py:145 pages/editor.py:363 pages/home.py:305
 msgid "HomePage"
 msgstr "Pagina iniziale"
 
@@ -271,7 +333,7 @@ msgstr "Pagina iniziale"
 msgid "Categorised"
 msgstr "Classificati"
 
-#: pages/browser.py:156
+#: pages/browser.py:156 pages/browser.py:271
 msgid "Flattened"
 msgstr "Appiattito"
 
@@ -313,78 +375,86 @@ msgstr "Visualizzazione"
 msgid "Select"
 msgstr "Selezionare"
 
-#: pages/editor.py:329
+#: pages/editor.py:353
 msgid "Crossword Editor"
 msgstr "Editor di cruciverba"
 
-#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
-#: pages/editor.py:822
+#: pages/editor.py:491 pages/editor.py:706 pages/editor.py:796
+#: pages/editor.py:936
 msgid "Your Crosswords"
 msgstr "I tuoi cruciverba"
 
-#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
-#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+#: pages/editor.py:555 pages/editor.py:800 pages/editor.py:943
+#: pages/editor.py:1030 pages/editor.py:1143 pages/editor.py:1257
 msgid "Save"
 msgstr "Salvare"
 
-#: pages/editor.py:518
+#: pages/editor.py:567
 msgid "length >= 1 and valid OS file name"
 msgstr "lunghezza >= 1 e nome file del sistema operativo valido"
 
-#: pages/editor.py:526
+#: pages/editor.py:576
 msgid "length == 1"
 msgstr "lunghezza == 1"
 
-#: pages/editor.py:531
+#: pages/editor.py:582
 msgid "Difficulty"
 msgstr "Difficoltà"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Easy"
 msgstr "Facile"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Medium"
 msgstr "medio"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Hard"
 msgstr "Difficile"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Extreme"
 msgstr "Estremo"
 
-#: pages/editor.py:616 pages/editor.py:969
+#: pages/editor.py:706 pages/editor.py:1086
 msgid "Adding"
 msgstr "Somma"
 
-#: pages/editor.py:619 pages/editor.py:973
+#: pages/editor.py:709 pages/editor.py:1090
 msgid "Add"
 msgstr "Aggiungere"
 
-#: pages/editor.py:822 pages/editor.py:1128
-msgid "Editing"
-msgstr "Redazione"
+#: pages/editor.py:888 pages/editor.py:1206
+msgid "Press"
+msgstr "Passeggiata"
 
-#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
-#: pages/editor.py:1128
-msgid "Your Words"
-msgstr "Le tue parole"
-
-#: pages/editor.py:927
-msgid "length >= 1 and length <= 32 and is a language character"
-msgstr "lunghezza >= 1 e lunghezza <= 32 ed è un carattere di lingua"
-
-#: pages/editor.py:936
-msgid "length >= 1"
-msgstr "lunghezza >= 1"
-
-#: pages/editor.py:1086
+#: pages/editor.py:890 pages/editor.py:1208
 msgid "to add a"
 msgstr "per aggiungere un oggetto"
 
-#: pages/editor.py:1086
+#: pages/editor.py:892
+msgid "new crossword."
+msgstr "Nuovo cruciverba."
+
+#: pages/editor.py:936 pages/editor.py:1253
+msgid "Editing"
+msgstr "Redazione"
+
+#: pages/editor.py:998 pages/editor.py:1086 pages/editor.py:1138
+#: pages/editor.py:1253
+msgid "Your Words"
+msgstr "Le tue parole"
+
+#: pages/editor.py:1042
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "lunghezza >= 1 e lunghezza <= 32 ed è un carattere di lingua"
+
+#: pages/editor.py:1053
+msgid "length >= 1"
+msgstr "lunghezza >= 1"
+
+#: pages/editor.py:1210
 msgid "new word."
 msgstr "nuova parola."
 
@@ -492,12 +562,6 @@ msgstr "Simbolo"
 
 msgid "Search"
 msgstr "Ricerca"
-
-msgid "Press"
-msgstr "Passeggiata"
-
-msgid "new crossword."
-msgstr "Nuovo cruciverba."
 
 msgid "New version available!"
 msgstr "Nuova versione disponibile!"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-27 00:02+1000\n"
+"POT-Creation-Date: 2024-06-28 21:00+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: th <LL@li.org>\n"
@@ -19,100 +19,156 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: utils.py:59
+#: import_export.py:21
+msgid "Select a destination to export your crosswords to"
+msgstr "เลือกปลายทางเพื่อส่งออกไขว้ของคุณไปยัง"
+
+#: import_export.py:25
+msgid "my-crosswords"
+msgstr "My-crosswords"
+
+#: import_export.py:64
+msgid ""
+"Select a valid crossword JSON file that was exported using crossword_puzzle"
+msgstr "เลือกไฟล์ Crossword JSON ที่ถูกต้องที่ส่งออกโดยใช้ crossword_puzzle"
+
+#: utils.py:60
 msgid "Remove"
 msgstr "ถอด"
 
-#: utils.py:59
+#: utils.py:60
 msgid "Are you sure you want to delete this"
 msgstr "คุณแน่ใจหรือไม่ว่าต้องการลบสิ่งนี้"
 
-#: utils.py:59
+#: utils.py:60
 msgid "It will be lost forever!"
 msgstr "มันจะหายไปตลอดกาล!"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Add or select"
 msgstr "เพิ่มหรือเลือก"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Are you sure you want to add/select a"
 msgstr "คุณแน่ใจหรือไม่ว่าต้องการเพิ่ม/เลือก"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Your modified fields will be reset!"
 msgstr "ฟิลด์ที่แก้ไขของคุณจะถูกรีเซ็ต!"
 
-#: utils.py:69 utils.py:88
+#: utils.py:70 utils.py:94
 msgid "Back to home"
 msgstr "กลับไปที่บ้าน"
 
-#: utils.py:69
+#: utils.py:70
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
 msgstr ""
 "คุณแน่ใจหรือว่าต้องการกลับไปที่หน้าจอหลัก? ฟิลด์ที่แก้ไขของคุณจะถูกรีเซ็ต!"
 
-#: utils.py:74
+#: utils.py:75 utils.py:141 utils.py:151 utils.py:156 utils.py:179
+msgid "Info"
+msgstr "ข้อมูล"
+
+#: utils.py:75
+msgid ""
+"Are you sure you want to import crosswords? Your modified fields will be "
+"reset!"
+msgstr "แน่ใจหรือว่าต้องการนำเข้าไขว้?ฟิลด์ที่แก้ไขของคุณจะถูกรีเซ็ต!"
+
+#: utils.py:80
 msgid "Restart"
 msgstr "เริ่มต้นใหม่"
 
-#: utils.py:74
+#: utils.py:80
 msgid "Are you sure you want to restart the app?"
 msgstr "คุณแน่ใจหรือไม่ว่าต้องการรีสตาร์ทแอป"
 
-#: pages/home.py:148 utils.py:79
+#: pages/home.py:148 utils.py:85
 msgid "Exit"
 msgstr "ออก"
 
-#: utils.py:80
+#: utils.py:86
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr ""
 "คุณแน่ใจหรือไม่ว่าต้องการออกจากแอป หากเว็บแอปทำงานอยู่ แอปนั้นจะถูกยกเลิก"
 
-#: utils.py:89
+#: utils.py:95
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr "คุณแน่ใจหรือไม่ว่าต้องการกลับไปที่หน้าจอหลัก เว็บแอปจะถูกยกเลิก"
 
-#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
-#: utils.py:125 utils.py:147 utils.py:151
+#: utils.py:106 utils.py:111 utils.py:116 utils.py:121 utils.py:126
+#: utils.py:135 utils.py:146 utils.py:169 utils.py:174 utils.py:196
+#: utils.py:200
 msgid "Error"
 msgstr "ข้อผิดพลาด"
 
-#: utils.py:100
+#: utils.py:106
 msgid "This language is already selected."
 msgstr "ภาษานี้ถูกเลือกไว้แล้ว"
 
-#: utils.py:105
+#: utils.py:111
 msgid "This size is already selected."
 msgstr "ขนาดนี้ถูกเลือกไว้แล้ว"
 
-#: utils.py:110
+#: utils.py:116
 msgid "This appearance is already selected."
 msgstr "ลักษณะที่ปรากฏนี้ถูกเลือกไว้แล้ว"
 
-#: utils.py:115
+#: utils.py:121
 msgid "This quality is already selected."
 msgstr "คุณภาพนี้ถูกเลือกแล้ว"
 
-#: utils.py:120
-msgid "This crossword already exists. Please choose a new name."
-msgstr "ปริศนาอักษรไขว้นี้มีอยู่แล้ว โปรดเลือกชื่อใหม่"
+#: utils.py:127
+msgid ""
+"A crossword with this name and difficulty already exists. Please choose a "
+"new name and/or a new difficulty."
+msgstr ""
+"คำไขว้ที่มีชื่อและความยากลำบากนี้มีอยู่แล้วโปรดเลือกชื่อใหม่และ/หรือความยากลำบากใหม่"
 
-#: utils.py:125
+#: utils.py:136
+msgid "You have no crosswords to export. Please make some and try again."
+msgstr "คุณไม่มีคำไขว้ที่จะส่งออกกรุณาทำบางอย่างและลองอีกครั้ง"
+
+#: utils.py:141
+msgid "Successfully exported your crosswords."
+msgstr "ส่งออกไขว้ของคุณสำเร็จ"
+
+#: utils.py:146
+msgid "Your crosswords could not be exported, sorry."
+msgstr "ไขว้ของคุณไม่สามารถส่งออกขออภัย"
+
+#: utils.py:151
+msgid "All of your crosswords were successfully imported."
+msgstr "คำไขว้ทั้งหมดของคุณนำเข้าสำเร็จ"
+
+#: utils.py:157
+msgid "Your import could not be fully completed."
+msgstr "การนำเข้าของคุณไม่สมบูรณ์"
+
+#: utils.py:159
+msgid ""
+"Crosswords with duplicate names and difficulties that were not imported: "
+msgstr "คำไขว้ที่มีชื่อและปัญหาที่ซ้ำกันที่ไม่ได้นำเข้า:"
+
+#: utils.py:163
+msgid "Invalid crosswords that were not imported: "
+msgstr "คำไขว้ที่ไม่ถูกต้องที่ไม่ได้นำเข้า:"
+
+#: utils.py:169
+msgid "The specified JSON file is invalid and cannot be processed."
+msgstr "ไฟล์ JSON ที่ระบุไม่ถูกต้องและไม่สามารถประมวลผลได้"
+
+#: utils.py:174
 msgid "This word already exists. Please choose a new word."
 msgstr "คํานี้มีอยู่แล้ว โปรดเลือกคําใหม่"
 
-#: utils.py:130
-msgid "Info"
-msgstr "ข้อมูล"
-
-#: utils.py:131
+#: utils.py:180
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -133,24 +189,24 @@ msgstr ""
 "กระบวนการแอพทั้งหมดที่ยังไม่ถูกยกเลิกอย่างถูกต้องสามารถยุติได้ผ่านตัวตรวจสอบกิจกรรมบน"
 " MacOS หรือเพียงแค่รีสตาร์ทคอมพิวเตอร์เพื่อยุติกระบวนการเหล่านั้น"
 
-#: utils.py:153
+#: utils.py:202
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr "เกิดข้อผิดพลาดที่ไม่คาดคิด โปรดลองติดตั้งแอปพลิเคชันใหม่ด้วย"
 
-#: utils.py:672
+#: utils.py:719
 msgid "Definitions are empty"
 msgstr "คําจํากัดความว่างเปล่า"
 
-#: utils.py:675
+#: utils.py:722
 msgid "The word count or definitions are less than 3 in length"
 msgstr "จํานวนคําหรือคําจํากัดความมีความยาวน้อยกว่า 3"
 
-#: utils.py:679
+#: utils.py:726
 msgid "Length of the word count is greater than the definitions"
 msgstr "ความยาวของจํานวนคํามากกว่าคําจํากัดความ"
 
-#: utils.py:682
+#: utils.py:729
 msgid "Escape character present in word"
 msgstr "หนีอักขระที่มีอยู่ในคํา"
 
@@ -252,11 +308,11 @@ msgstr "ปิด"
 msgid "Crossword Browser"
 msgstr "เบราว์เซอร์ Crossword"
 
-#: pages/browser.py:141 pages/editor.py:335
+#: pages/browser.py:141 pages/editor.py:359
 msgid "Back"
 msgstr "ย้อนกลับ"
 
-#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+#: pages/browser.py:145 pages/editor.py:363 pages/home.py:305
 msgid "HomePage"
 msgstr "หน้าแรก"
 
@@ -264,7 +320,7 @@ msgstr "หน้าแรก"
 msgid "Categorised"
 msgstr "จัดหมวดหมู่"
 
-#: pages/browser.py:156
+#: pages/browser.py:156 pages/browser.py:271
 msgid "Flattened"
 msgstr "แบน"
 
@@ -305,78 +361,86 @@ msgstr "ดู"
 msgid "Select"
 msgstr "เลือก"
 
-#: pages/editor.py:329
+#: pages/editor.py:353
 msgid "Crossword Editor"
 msgstr "ตัวแก้ไขปริศนาอักษรไขว้"
 
-#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
-#: pages/editor.py:822
+#: pages/editor.py:491 pages/editor.py:706 pages/editor.py:796
+#: pages/editor.py:936
 msgid "Your Crosswords"
 msgstr "ปริศนาอักษรไขว้ของคุณ"
 
-#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
-#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+#: pages/editor.py:555 pages/editor.py:800 pages/editor.py:943
+#: pages/editor.py:1030 pages/editor.py:1143 pages/editor.py:1257
 msgid "Save"
 msgstr "ประหยัด"
 
-#: pages/editor.py:518
+#: pages/editor.py:567
 msgid "length >= 1 and valid OS file name"
 msgstr "ความยาว >= 1 และชื่อไฟล์ระบบปฏิบัติการที่ถูกต้อง"
 
-#: pages/editor.py:526
+#: pages/editor.py:576
 msgid "length == 1"
 msgstr "ความยาว == 1"
 
-#: pages/editor.py:531
+#: pages/editor.py:582
 msgid "Difficulty"
 msgstr "ความยากลำบาก"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Easy"
 msgstr "ง่าย"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Medium"
 msgstr "ปานกลาง"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Hard"
 msgstr "แข็ง"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Extreme"
 msgstr "สุดขีด"
 
-#: pages/editor.py:616 pages/editor.py:969
+#: pages/editor.py:706 pages/editor.py:1086
 msgid "Adding"
 msgstr "เพิ่ม"
 
-#: pages/editor.py:619 pages/editor.py:973
+#: pages/editor.py:709 pages/editor.py:1090
 msgid "Add"
 msgstr "เพิ่ม"
 
-#: pages/editor.py:822 pages/editor.py:1128
-msgid "Editing"
-msgstr "แก้ไข"
+#: pages/editor.py:888 pages/editor.py:1206
+msgid "Press"
+msgstr "กด"
 
-#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
-#: pages/editor.py:1128
-msgid "Your Words"
-msgstr "คําพูดของคุณ"
-
-#: pages/editor.py:927
-msgid "length >= 1 and length <= 32 and is a language character"
-msgstr "ความยาว >= 1 และความยาว <= 32 และเป็นอักขระภาษา"
-
-#: pages/editor.py:936
-msgid "length >= 1"
-msgstr "ความยาว >= 1"
-
-#: pages/editor.py:1086
+#: pages/editor.py:890 pages/editor.py:1208
 msgid "to add a"
 msgstr "เพื่อเพิ่ม"
 
-#: pages/editor.py:1086
+#: pages/editor.py:892
+msgid "new crossword."
+msgstr "คำไขว้ใหม่"
+
+#: pages/editor.py:936 pages/editor.py:1253
+msgid "Editing"
+msgstr "แก้ไข"
+
+#: pages/editor.py:998 pages/editor.py:1086 pages/editor.py:1138
+#: pages/editor.py:1253
+msgid "Your Words"
+msgstr "คําพูดของคุณ"
+
+#: pages/editor.py:1042
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "ความยาว >= 1 และความยาว <= 32 และเป็นอักขระภาษา"
+
+#: pages/editor.py:1053
+msgid "length >= 1"
+msgstr "ความยาว >= 1"
+
+#: pages/editor.py:1210
 msgid "new word."
 msgstr "คําใหม่"
 
@@ -484,12 +548,6 @@ msgstr "สัญลักษณ์"
 
 msgid "Search"
 msgstr "ค้นหา"
-
-msgid "Press"
-msgstr "กด"
-
-msgid "new crossword."
-msgstr "คำไขว้ใหม่"
 
 msgid "New version available!"
 msgstr "มีเวอร์ชันใหม่!"

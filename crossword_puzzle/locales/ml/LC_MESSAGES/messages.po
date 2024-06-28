@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-27 00:02+1000\n"
+"POT-Creation-Date: 2024-06-28 21:00+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ml <LL@li.org>\n"
@@ -19,35 +19,52 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: utils.py:59
+#: import_export.py:21
+msgid "Select a destination to export your crosswords to"
+msgstr ""
+"നിങ്ങളുടെ ക്രോസ്വേഡുകൾ കയറ്റുമതി ചെയ്യുന്നതിന് ഒരു ലക്ഷ്യസ്ഥാനം "
+"തിരഞ്ഞെടുക്കുക"
+
+#: import_export.py:25
+msgid "my-crosswords"
+msgstr "എന്റെ ക്രോസ്വേഡുകൾ"
+
+#: import_export.py:64
+msgid ""
+"Select a valid crossword JSON file that was exported using crossword_puzzle"
+msgstr ""
+"ക്രോസ്വേഡ്_പരം ഉപയോഗിച്ച് എക്സ്പോർട്ടുചെയ്ത സാധുവായ ഒരു ക്രോസ്വേഡ് JSON ഫയൽ "
+"തിരഞ്ഞെടുക്കുക"
+
+#: utils.py:60
 msgid "Remove"
 msgstr "നീക്കം ചെയ്യുക"
 
-#: utils.py:59
+#: utils.py:60
 msgid "Are you sure you want to delete this"
 msgstr "ഇത് ഇല്ലാതാക്കണമെന്ന് നിങ്ങൾക്ക് ഉറപ്പാണോ?"
 
-#: utils.py:59
+#: utils.py:60
 msgid "It will be lost forever!"
 msgstr "അത് എന്നെന്നേക്കുമായി നഷ്ടപ്പെടും!"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Add or select"
 msgstr "ചേർക്കുക അല്ലെങ്കിൽ തിരഞ്ഞെടുക്കുക"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Are you sure you want to add/select a"
 msgstr "ഒരു ചേർക്കാൻ / തിരഞ്ഞെടുക്കണമെന്ന് നിങ്ങൾക്ക് ഉറപ്പാണോ"
 
-#: utils.py:64
+#: utils.py:65
 msgid "Your modified fields will be reset!"
 msgstr "നിങ്ങളുടെ പരിഷ്കരിച്ച ഫീൽഡുകൾ പുനഃക്രമീകരിക്കും!"
 
-#: utils.py:69 utils.py:88
+#: utils.py:70 utils.py:94
 msgid "Back to home"
 msgstr "തിരികെ വീട്ടിലേക്ക്"
 
-#: utils.py:69
+#: utils.py:70
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
@@ -55,19 +72,31 @@ msgstr ""
 "ഹോം സ്ക്രീനിലേക്ക് തിരികെ പോകണമെന്ന് നിങ്ങൾക്ക് ഉറപ്പാണോ? നിങ്ങളുടെ "
 "പരിഷ്കരിച്ച ഫീൽഡുകൾ പുനഃക്രമീകരിക്കും!"
 
-#: utils.py:74
+#: utils.py:75 utils.py:141 utils.py:151 utils.py:156 utils.py:179
+msgid "Info"
+msgstr "വിവരം"
+
+#: utils.py:75
+msgid ""
+"Are you sure you want to import crosswords? Your modified fields will be "
+"reset!"
+msgstr ""
+"ക്രോസ്വേഡുകൾ ഇറക്കുമതി ചെയ്യണമെന്ന് നിങ്ങൾക്ക് ഉറപ്പാണോ?നിങ്ങളുടെ "
+"പരിഷ്ക്കരിച്ച ഫീൽഡുകൾ പുന .സജ്ജമാക്കും!"
+
+#: utils.py:80
 msgid "Restart"
 msgstr "പുനരാരംഭിക്കുക"
 
-#: utils.py:74
+#: utils.py:80
 msgid "Are you sure you want to restart the app?"
 msgstr "ആപ്പ് പുനരാരംഭിക്കണമെന്ന് തീർച്ചയാണോ?"
 
-#: pages/home.py:148 utils.py:79
+#: pages/home.py:148 utils.py:85
 msgid "Exit"
 msgstr "പുറത്ത്"
 
-#: utils.py:80
+#: utils.py:86
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -75,7 +104,7 @@ msgstr ""
 "ആപ്പിൽ നിന്ന് പുറത്തുകടക്കണമെന്ന് തീർച്ചയാണോ? വെബ് ആപ്പ് "
 "പ്രവർത്തിക്കുകയാണെങ്കിൽ, അത് അവസാനിപ്പിക്കും."
 
-#: utils.py:89
+#: utils.py:95
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -83,41 +112,77 @@ msgstr ""
 "ഹോം സ്‌ക്രീനിലേക്ക് തിരികെ പോകണമെന്ന് തീർച്ചയാണോ? വെബ് ആപ്പ് "
 "അവസാനിപ്പിക്കും."
 
-#: utils.py:100 utils.py:105 utils.py:110 utils.py:115 utils.py:120
-#: utils.py:125 utils.py:147 utils.py:151
+#: utils.py:106 utils.py:111 utils.py:116 utils.py:121 utils.py:126
+#: utils.py:135 utils.py:146 utils.py:169 utils.py:174 utils.py:196
+#: utils.py:200
 msgid "Error"
 msgstr "പിശക്"
 
-#: utils.py:100
+#: utils.py:106
 msgid "This language is already selected."
 msgstr "ഈ ഭാഷ ഇതിനകം തിരഞ്ഞെടുത്തു."
 
-#: utils.py:105
+#: utils.py:111
 msgid "This size is already selected."
 msgstr "ഈ വലുപ്പം ഇതിനകം തിരഞ്ഞെടുത്തു."
 
-#: utils.py:110
+#: utils.py:116
 msgid "This appearance is already selected."
 msgstr "ഈ രൂപം ഇതിനകം തിരഞ്ഞെടുത്തു."
 
-#: utils.py:115
+#: utils.py:121
 msgid "This quality is already selected."
 msgstr "ഈ ഗുണനിലവാരം ഇതിനകം തിരഞ്ഞെടുത്തു."
 
-#: utils.py:120
-msgid "This crossword already exists. Please choose a new name."
+#: utils.py:127
+msgid ""
+"A crossword with this name and difficulty already exists. Please choose a "
+"new name and/or a new difficulty."
 msgstr ""
-"ഈ ക്രോസ് വേർഡ് ഇതിനകം നിലവിലുണ്ട്. ദയവായി ഒരു പുതിയ പേര് തിരഞ്ഞെടുക്കുക."
+"ഈ പേരും ബുദ്ധിമുട്ടും ഇതിനകം നിലവിലുണ്ട്.ദയവായി ഒരു പുതിയ പേര് കൂടാതെ / "
+"അല്ലെങ്കിൽ ഒരു പുതിയ ബുദ്ധിമുട്ട് തിരഞ്ഞെടുക്കുക."
 
-#: utils.py:125
+#: utils.py:136
+msgid "You have no crosswords to export. Please make some and try again."
+msgstr ""
+"കയറ്റുമതി ചെയ്യുന്നതിന് നിങ്ങൾക്ക് ക്രോസ്വേഡുകളൊന്നുമില്ല.ദയവായി ചിലത് "
+"നിർമ്മിച്ച് വീണ്ടും ശ്രമിക്കുക."
+
+#: utils.py:141
+msgid "Successfully exported your crosswords."
+msgstr "നിങ്ങളുടെ ക്രോസ്വേഡുകൾ വിജയകരമായി എക്സ്പോർട്ടുചെയ്തു."
+
+#: utils.py:146
+msgid "Your crosswords could not be exported, sorry."
+msgstr "നിങ്ങളുടെ ക്രോസ്വേഡുകൾ കയറ്റുമതി ചെയ്യാൻ കഴിഞ്ഞില്ല, ക്ഷമിക്കണം."
+
+#: utils.py:151
+msgid "All of your crosswords were successfully imported."
+msgstr "നിങ്ങളുടെ എല്ലാ ക്രോസ്വേഡുകളും വിജയകരമായി ഇറക്കുമതി ചെയ്തു."
+
+#: utils.py:157
+msgid "Your import could not be fully completed."
+msgstr "നിങ്ങളുടെ ഇറക്കുമതി പൂർണ്ണമായും പൂർത്തിയാക്കാൻ കഴിഞ്ഞില്ല."
+
+#: utils.py:159
+msgid ""
+"Crosswords with duplicate names and difficulties that were not imported: "
+msgstr ""
+"തനിപ്പകർപ്പ് പേരുകളുള്ള ക്രോസ്വേഡുകൾ ഇറക്കുമതി ചെയ്യാത്ത ബുദ്ധിമുട്ടുകൾ:"
+
+#: utils.py:163
+msgid "Invalid crosswords that were not imported: "
+msgstr "ഇറക്കുമതി ചെയ്യാത്ത അസാധുവായ ക്രോസ്വേഡുകൾ:"
+
+#: utils.py:169
+msgid "The specified JSON file is invalid and cannot be processed."
+msgstr "നിർദ്ദിഷ്ട ജെസൺ ഫയൽ അസാധുവാണ്, പ്രോസസ്സ് ചെയ്യാൻ കഴിയില്ല."
+
+#: utils.py:174
 msgid "This word already exists. Please choose a new word."
 msgstr "ഈ വാക്ക് നിലവിലുണ്ട്. ദയവായി ഒരു പുതിയ വാക്ക് തിരഞ്ഞെടുക്കുക."
 
-#: utils.py:130
-msgid "Info"
-msgstr "വിവരം"
-
-#: utils.py:131
+#: utils.py:180
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -140,26 +205,26 @@ msgstr ""
 "പ്രോസസ്സുകളും MacOS-ലെ ആക്റ്റിവിറ്റി മോണിറ്റർ വഴി അവസാനിപ്പിക്കാം, "
 "അല്ലെങ്കിൽ അവ അവസാനിപ്പിക്കാൻ നിങ്ങളുടെ കമ്പ്യൂട്ടർ പുനരാരംഭിക്കുക."
 
-#: utils.py:153
+#: utils.py:202
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
 "അപ്രതീക്ഷിതമായ ഒരു പിശക് സംഭവിച്ചു. ഇനിപ്പറയുന്നവ ഉപയോഗിച്ച് ആപ്ലിക്കേഷൻ "
 "വീണ്ടും ഇൻസ്റ്റാൾ ചെയ്യാൻ ശ്രമിക്കുക"
 
-#: utils.py:672
+#: utils.py:719
 msgid "Definitions are empty"
 msgstr "നിർവചനങ്ങൾ ശൂന്യമാണ്"
 
-#: utils.py:675
+#: utils.py:722
 msgid "The word count or definitions are less than 3 in length"
 msgstr "പദങ്ങളുടെ എണ്ണം അല്ലെങ്കിൽ നിർവചനങ്ങൾ നീളം 3 ൽ കുറവാണ്"
 
-#: utils.py:679
+#: utils.py:726
 msgid "Length of the word count is greater than the definitions"
 msgstr "വാക്കുകളുടെ എണ്ണത്തിന്റെ ദൈർഘ്യം നിർവചനങ്ങളേക്കാൾ കൂടുതലാണ്"
 
-#: utils.py:682
+#: utils.py:729
 msgid "Escape character present in word"
 msgstr "വാക്കുകളിൽ അടങ്ങിയിരിക്കുന്ന എസ്കേപ്പ് കഥാപാത്രം"
 
@@ -261,11 +326,11 @@ msgstr "അടയ്ക്കുക"
 msgid "Crossword Browser"
 msgstr "ക്രോസ്വേഡ് ബ്രൗസർ"
 
-#: pages/browser.py:141 pages/editor.py:335
+#: pages/browser.py:141 pages/editor.py:359
 msgid "Back"
 msgstr "പുറം"
 
-#: pages/browser.py:145 pages/editor.py:339 pages/home.py:305
+#: pages/browser.py:145 pages/editor.py:363 pages/home.py:305
 msgid "HomePage"
 msgstr "ഹോം പേജ്"
 
@@ -273,7 +338,7 @@ msgstr "ഹോം പേജ്"
 msgid "Categorised"
 msgstr "തരംതിരിച്ചിരിക്കുന്നു"
 
-#: pages/browser.py:156
+#: pages/browser.py:156 pages/browser.py:271
 msgid "Flattened"
 msgstr "പരന്നു"
 
@@ -314,78 +379,86 @@ msgstr "കാണുക"
 msgid "Select"
 msgstr "തിരഞ്ഞെടുക്കുക"
 
-#: pages/editor.py:329
+#: pages/editor.py:353
 msgid "Crossword Editor"
 msgstr "ക്രോസ് വേർഡ് എഡിറ്റർ"
 
-#: pages/editor.py:461 pages/editor.py:616 pages/editor.py:701
-#: pages/editor.py:822
+#: pages/editor.py:491 pages/editor.py:706 pages/editor.py:796
+#: pages/editor.py:936
 msgid "Your Crosswords"
 msgstr "നിങ്ങളുടെ ക്രോസ് വേർഡുകൾ"
 
-#: pages/editor.py:506 pages/editor.py:705 pages/editor.py:829
-#: pages/editor.py:915 pages/editor.py:1026 pages/editor.py:1131
+#: pages/editor.py:555 pages/editor.py:800 pages/editor.py:943
+#: pages/editor.py:1030 pages/editor.py:1143 pages/editor.py:1257
 msgid "Save"
 msgstr "രക്ഷിക്കുക"
 
-#: pages/editor.py:518
+#: pages/editor.py:567
 msgid "length >= 1 and valid OS file name"
 msgstr "ദൈർഘ്യം > = 1, സാധുതയുള്ള OS ഫയൽ നാമം"
 
-#: pages/editor.py:526
+#: pages/editor.py:576
 msgid "length == 1"
 msgstr "നീളം == 1"
 
-#: pages/editor.py:531
+#: pages/editor.py:582
 msgid "Difficulty"
 msgstr "വൈഷമം"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Easy"
 msgstr "എളുപ്പം"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Medium"
 msgstr "ഇടത്തരം"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Hard"
 msgstr "കഠിനം"
 
-#: pages/editor.py:538
+#: pages/editor.py:589
 msgid "Extreme"
 msgstr "അങ്ങേയറ്റം"
 
-#: pages/editor.py:616 pages/editor.py:969
+#: pages/editor.py:706 pages/editor.py:1086
 msgid "Adding"
 msgstr "ചേർക്കുന്നു"
 
-#: pages/editor.py:619 pages/editor.py:973
+#: pages/editor.py:709 pages/editor.py:1090
 msgid "Add"
 msgstr "ചേർക്കുക"
 
-#: pages/editor.py:822 pages/editor.py:1128
-msgid "Editing"
-msgstr "എഡിറ്റിംഗ്"
+#: pages/editor.py:888 pages/editor.py:1206
+msgid "Press"
+msgstr "അമർത്തുക"
 
-#: pages/editor.py:883 pages/editor.py:969 pages/editor.py:1021
-#: pages/editor.py:1128
-msgid "Your Words"
-msgstr "താങ്കളുടെ വാക്കുകൾ"
-
-#: pages/editor.py:927
-msgid "length >= 1 and length <= 32 and is a language character"
-msgstr "നീളം > = 1, നീളം < = 32, ഇത് ഒരു ഭാഷാ പ്രതീകമാണ്"
-
-#: pages/editor.py:936
-msgid "length >= 1"
-msgstr "നീളം > = 1"
-
-#: pages/editor.py:1086
+#: pages/editor.py:890 pages/editor.py:1208
 msgid "to add a"
 msgstr "ഒരു കൂട്ടിച്ചേർക്കാൻ"
 
-#: pages/editor.py:1086
+#: pages/editor.py:892
+msgid "new crossword."
+msgstr "പുതിയ ക്രോസ്വേഡ്."
+
+#: pages/editor.py:936 pages/editor.py:1253
+msgid "Editing"
+msgstr "എഡിറ്റിംഗ്"
+
+#: pages/editor.py:998 pages/editor.py:1086 pages/editor.py:1138
+#: pages/editor.py:1253
+msgid "Your Words"
+msgstr "താങ്കളുടെ വാക്കുകൾ"
+
+#: pages/editor.py:1042
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "നീളം > = 1, നീളം < = 32, ഇത് ഒരു ഭാഷാ പ്രതീകമാണ്"
+
+#: pages/editor.py:1053
+msgid "length >= 1"
+msgstr "നീളം > = 1"
+
+#: pages/editor.py:1210
 msgid "new word."
 msgstr "പുതിയ വാക്ക്."
 
@@ -493,12 +566,6 @@ msgstr "അടയാളം"
 
 msgid "Search"
 msgstr "അനേഷണം"
-
-msgid "Press"
-msgstr "അമർത്തുക"
-
-msgid "new crossword."
-msgstr "പുതിയ ക്രോസ്വേഡ്."
 
 msgid "New version available!"
 msgstr "പുതിയ പതിപ്പ് ലഭ്യമാണ്!"
