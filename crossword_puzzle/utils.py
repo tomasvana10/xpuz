@@ -47,6 +47,7 @@ class GUIHelper:
             "messages",
             localedir=LOCALES_PATH,
             languages=[locale.language],
+            fallback=True,
         ).install()
 
     @staticmethod
