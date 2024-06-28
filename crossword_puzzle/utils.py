@@ -51,30 +51,42 @@ class GUIHelper:
         ).install()
 
     @staticmethod
-    def confirm_with_messagebox(
-        *args, **kwargs
-    ) -> bool:
+    def confirm_with_messagebox(*args, **kwargs) -> bool:
         """Provide confirmations to the user with tkinter messageboxes."""
         if "delete_cword_or_word" in kwargs:
             return messagebox.askyesno(
-                _("Remove"), _("Are you sure you want to delete this") + f" {args[0]}? " + _("It will be lost forever!")
+                _("Remove"),
+                _("Are you sure you want to delete this")
+                + f" {args[0]}? "
+                + _("It will be lost forever!"),
             )
-            
+
         if "confirm_cword_or_word_add" in kwargs:
             return messagebox.askyesno(
-                _("Add or select"), _("Are you sure you want to add/select a") + f" {args[0]}? " + _("Your modified fields will be reset!")
+                _("Add or select"),
+                _("Are you sure you want to add/select a")
+                + f" {args[0]}? "
+                + _("Your modified fields will be reset!"),
             )
-        
+
         if "exiting_with_nondefault_fields" in kwargs:
             return messagebox.askyesno(
-                _("Back to home"), _("Are you sure you want to go back to the home screen? Your modified fields will be reset!")
+                _("Back to home"),
+                _(
+                    "Are you sure you want to go back to the home screen? Your "
+                    "modified fields will be reset!"
+                ),
             )
-        
+
         if "importing_with_nondefault_fields" in kwargs:
             return messagebox.askyesno(
-                _("Info"), _("Are you sure you want to import crosswords? Your modified fields will be reset!")
+                _("Info"),
+                _(
+                    "Are you sure you want to import crosswords? Your modified "
+                    "fields will be reset!"
+                ),
             )
-            
+
         if "exit_" in kwargs and "restart" not in kwargs:
             return messagebox.askyesno(
                 _("Restart"), _("Are you sure you want to restart the app?")
@@ -120,58 +132,67 @@ class GUIHelper:
             return messagebox.showerror(
                 _("Error"), _("This quality is already selected.")
             )
-        
+
         if "crossword_exists_err" in kwargs:
             return messagebox.showerror(
-                _("Error"), 
+                _("Error"),
                 _(
                     "A crossword with this name and difficulty already exists. "
                     "Please choose a new name and/or a new difficulty."
-                )
+                ),
             )
-        
+
         if "no_crosswords_to_export_err" in kwargs:
             return messagebox.showerror(
                 _("Error"),
-                _("You have no crosswords to export. Please make some and try again.")
+                _(
+                    "You have no crosswords to export. Please make some and try again."
+                ),
             )
-            
+
         if "export_success" in kwargs:
             return messagebox.showinfo(
                 _("Info"), _("Successfully exported your crosswords.")
             )
-        
+
         if "export_failure" in kwargs:
             return messagebox.showinfo(
                 _("Error"), _("Your crosswords could not be exported, sorry.")
             )
-        
+
         if "import_success" in kwargs:
             return messagebox.showinfo(
-                _("Info"), _("All of your crosswords were successfully imported.")
+                _("Info"),
+                _("All of your crosswords were successfully imported."),
             )
-        
+
         if "partial_import_success" in kwargs:
             return messagebox.showinfo(
-                _("Info"), 
+                _("Info"),
                 _("Your import could not be fully completed.")
                 + "\n\n"
-                + _("Crosswords with duplicate names and difficulties that were "
+                + _(
+                    "Crosswords with duplicate names and difficulties that were "
                     "not imported: "
                 )
-                + f"[{', '.join(args[0])}]." + "\n\n"
-                + _("Invalid crosswords that were not imported: ") 
-                + f"[{', '.join(args[1])}]."
+                + f"[{', '.join(args[0])}]."
+                + "\n\n"
+                + _("Invalid crosswords that were not imported: ")
+                + f"[{', '.join(args[1])}].",
             )
-        
+
         if "import_failure" in kwargs:
             return messagebox.showinfo(
-                _("Error"), _("The specified JSON file is invalid and cannot be processed.")
+                _("Error"),
+                _(
+                    "The specified JSON file is invalid and cannot be processed."
+                ),
             )
-        
+
         if "word_exists_err" in kwargs:
             return messagebox.showerror(
-                _("Error"), _("This word already exists. Please choose a new word.")
+                _("Error"),
+                _("This word already exists. Please choose a new word."),
             )
 
         if "first_time_browser" in kwargs:
@@ -287,9 +308,7 @@ def _check_version() -> Union[None, str]:
         local_ver = __version__.split(".")
         remote_ver = data["name"].split(".")
 
-        if any(
-            item[0] > item[1] for item in list(zip(remote_ver, local_ver))
-        ):
+        if any(item[0] > item[1] for item in list(zip(remote_ver, local_ver))):
             return data["name"]
 
     return None
@@ -343,7 +362,7 @@ def _check_doc_cfg_is_up_to_date() -> bool:
             except NoSectionError:
                 return False
             for item in template_items:  # Iterate through all template section items
-                if any( # template_item[0] or item[0] refers to the key here
+                if any(  # template_item[0] or item[0] refers to the key here
                     template_item[0] not in [item[0] for item in doc_items]
                     for template_item in template_items
                 ):
@@ -441,7 +460,9 @@ def _sort_crosswords_by_suffix(
 
 
 def _get_base_crosswords(
-    category: Union[DirEntry, PathLike], sort: bool = True, allow_empty_defs: bool = False,
+    category: Union[DirEntry, PathLike],
+    sort: bool = True,
+    allow_empty_defs: bool = False,
 ) -> Iterable[DirEntry]:
     """Get all the available crosswords from the base crossword directory if
     they have valid ``definitions.json`` files.
@@ -462,7 +483,7 @@ def _get_base_crosswords(
         if cword.is_dir()
         and "definitions.json" in listdir(cword.path)
         and path.getsize(path.join(cword.path, "definitions.json")) > 0
-        or (allow_empty_defs and category.endswith("user") and cword.is_dir()) 
+        or (allow_empty_defs and category.endswith("user") and cword.is_dir())
     ]
     return _sort_crosswords_by_suffix(crosswords) if sort else crosswords
 
@@ -491,15 +512,15 @@ def _make_cword_info_json(
         except Exception:
             difficulty: int = 0
             adjusted_cword_name: str = cword_name
-            
+
         return dump(
             CrosswordInfo(
-                total_definitions=total_definitions, 
-                difficulty=difficulty, 
-                symbol="0x2717", 
+                total_definitions=total_definitions,
+                difficulty=difficulty,
+                symbol="0x2717",
                 name=adjusted_cword_name,
-                translated_name="", 
-                category=category
+                translated_name="",
+                category=category,
             ),
             info_obj,
             indent=4,
@@ -540,11 +561,11 @@ def _get_language_options() -> Tuple[Dict[str, str], Dict[str, str]]:
     english acronym, and a list that contains all of the localised language
     names. This data is derived from ``LOCALES_PATH``."""
     localised_lang_db: Dict[str, str] = dict()  # Used to retrieve the language
-                                                # code for the selected language
-                                                # e.x. {"አማርኛ": "am",}
+    # code for the selected language
+    # e.x. {"አማርኛ": "am",}
     localised_langs: Dict[str, str] = list()  # Used in the language selection
-                                              # optionmenu
-                                              # e.x. ["አማርኛ", "عربي"]
+    # optionmenu
+    # e.x. ["አማርኛ", "عربي"]
 
     i: int = 0
     for locale in sorted(
@@ -575,7 +596,9 @@ def _get_colour_palette(appearance_mode: str) -> Dict[str, str]:
     }
 
 
-def _find_best_crossword(crossword: "Crossword", cls: "Crossword") -> "Crossword":
+def _find_best_crossword(
+    crossword: "Crossword", cls: "Crossword"
+) -> "Crossword":
     """Determine the best crossword out of a amount of instantiated
     crosswords based on the largest amount of total intersections and
     smallest amount of fails.
@@ -589,9 +612,11 @@ def _find_best_crossword(crossword: "Crossword", cls: "Crossword") -> "Crossword
     try:
         max_attempts: int = attempts_db[str(word_count)]  # Get amount of attempts 
                                                           # based on word count
-        max_attempts *= QUALITY_MAP[  # Scale max attempts based on crossword quality
-            cfg.get("m", "cword_quality")
-        ]
+        max_attempts *= (
+            QUALITY_MAP[  # Scale max attempts based on crossword quality
+                cfg.get("m", "cword_quality")
+            ]
+        )
         max_attempts = int(ceil(max_attempts))
     except KeyError:  # Fallback to only a single generation attempt
         max_attempts = 1

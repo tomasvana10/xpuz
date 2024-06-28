@@ -19,7 +19,7 @@ from customtkinter import (
     CTkEntry,
     CTkRadioButton,
     CTkTextbox,
-    CTkImage
+    CTkImage,
 )
 from pathvalidate import validate_filename, ValidationError
 from PIL import Image
@@ -155,13 +155,18 @@ class Form(Addons):
         self, pane: CTkFrame, b_confirm: CTkButton
     ) -> None:
         """Enable or disable the confirm button based on the form content."""
-        forms = Form.crossword_forms if pane == "crossword" else Form.word_forms
-        has_selected_block = hasattr(getattr(self.pane_instance, "crossword_block", ""), "cwrapper")
+        forms = (
+            Form.crossword_forms if pane == "crossword" else Form.word_forms
+        )
+        has_selected_block = hasattr(
+            getattr(self.pane_instance, "crossword_block", ""), "cwrapper"
+        )
         if (
             Form._any_nondefault_values(forms)
             # An instance of the crossword pane has been provided, allowing this
             # method to check if the default difficulty is chosen or not.
-            or self.pane_instance and has_selected_block
+            or self.pane_instance
+            and has_selected_block
             and self.pane_instance.crossword_block.cwrapper.difficulty
             != self.pane_instance.difficulty
         ) and Form._all_valid_values(forms):
@@ -603,7 +608,7 @@ class CrosswordPane(CTkFrame, Addons):
         self.preview.grid(row=1, column=0, padx=(0, 40), sticky="nsew")
         self.b_explorer.pack(side="left", padx=(0, 7.5))
         self.b_export.pack(side="left", padx=(0, 7.5))
-        self.b_import.pack(side="left", padx=(0, 51))
+        self.b_import.pack(side="left", padx=(0, 48.4))
         self.b_add.pack(side="left", padx=(0, 7.5))
         self.b_remove.pack(side="left", padx=(0, 7.5))
         self.b_edit_container.grid(row=2, column=0, pady=(7.5, 0), sticky="w")
@@ -617,16 +622,20 @@ class CrosswordPane(CTkFrame, Addons):
         self.form_container.grid(row=1, column=1, sticky="n")
 
     def _export(self) -> None:
+        """Export all of the user's crosswords into a json file."""
         if isinstance(UserCrosswordBlock.blocks[0], CTkLabel):
             return GUIHelper.show_messagebox(no_crosswords_to_export_err=True)
-        
+
         exp = Export(UserCrosswordBlock.blocks)
         if exp.exported:
             return GUIHelper.show_messagebox(export_success=True)
         else:
             return GUIHelper.show_messagebox(export_failure=True)
-        
+
     def _import(self) -> None:
+        """Allow the user to add new crosswords from a JSON file that was
+        exported through crossword_puzzle.
+        """
         if Form._any_nondefault_values(Form.crossword_forms):
             if not GUIHelper.confirm_with_messagebox(
                 importing_with_nondefault_fields=True
@@ -636,15 +645,19 @@ class CrosswordPane(CTkFrame, Addons):
 
         if imp.invalid_file:
             return GUIHelper.show_messagebox(import_failure=True)
-        elif imp.imported and not imp.conflicting_fullnames and not imp.skipped_crossword_fullnames:
+        elif (
+            imp.imported
+            and not imp.conflicting_fullnames
+            and not imp.skipped_crossword_fullnames
+        ):
             GUIHelper.show_messagebox(import_success=True)
         else:
             GUIHelper.show_messagebox(
-                imp.conflicting_fullnames, 
-                imp.skipped_crossword_fullnames, 
+                imp.conflicting_fullnames,
+                imp.skipped_crossword_fullnames,
                 partial_import_success=True,
             )
-        
+
         self._reset()
         self.b_add.configure(state="normal")
         UserCrosswordBlock._populate(self, imp.imported_crossword_fullnames)
@@ -652,7 +665,7 @@ class CrosswordPane(CTkFrame, Addons):
         for block in UserCrosswordBlock.blocks:
             if hasattr(block, "_flash"):
                 block._flash()
-        
+
     def _update_difficulty(self, difficulty: str) -> None:
         """Find the english version of ``difficulty`` and update
         ``self.difficulty``.
@@ -846,14 +859,14 @@ class UserCrosswordBlock(CTkFrame, Addons, BlockUtils):
         self._set_fonts()
         self._make_content()
         self._place_content()
-        
+
     def _flash(self):
         if not self.flash:
             return
-        self.master.master.master.after(50, self.configure(fg_color="green"))
+        self.master.master.update_idletasks()
+        self.master.master.master.after(150, self.configure(fg_color="green"))
         self.master.master.master.after(
-            50, 
-            self.configure(fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN))
+            150, self.configure(fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN))
         )
 
     @classmethod
@@ -877,7 +890,7 @@ class UserCrosswordBlock(CTkFrame, Addons, BlockUtils):
                 master.preview,
                 crossword.name,
                 i,
-                flash=flash_these and crossword.name in flash_these
+                flash=flash_these and crossword.name in flash_these,
             )
             cls._put_block(block, side="top")
 
