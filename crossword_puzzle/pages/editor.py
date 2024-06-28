@@ -7,6 +7,7 @@ from tkinter import IntVar, Event
 from typing import List, Union, Callable, Dict, Optional
 from shutil import rmtree
 from json import dump
+from threading import Thread
 
 from CTkToolTip import CTkToolTip
 from customtkinter import (
@@ -18,8 +19,10 @@ from customtkinter import (
     CTkEntry,
     CTkRadioButton,
     CTkTextbox,
+    CTkImage
 )
 from pathvalidate import validate_filename, ValidationError
+from PIL import Image
 from regex import search
 
 from crossword_puzzle.base import Addons, Base
@@ -30,6 +33,9 @@ from crossword_puzzle.constants import (
     PAGE_MAP,
     DIFFICULTIES,
     NONLANGUAGE_PATTERN,
+    FOLDER_IMG_PATH,
+    IMPORT_IMG_PATH,
+    EXPORT_IMG_PATH,
     Colour,
 )
 from crossword_puzzle.utils import (
@@ -42,6 +48,7 @@ from crossword_puzzle.utils import (
 )
 from crossword_puzzle.wrappers import CrosswordWrapper
 from crossword_puzzle.td import CrosswordInfo
+from crossword_puzzle.import_export import Export, Import
 
 
 class Form(Addons):
@@ -499,14 +506,32 @@ class CrosswordPane(CTkFrame, Addons):
 
         self.b_explorer = CTkButton(
             self.b_edit_container,
-            text="📂",
+            text="",
             width=40,
             height=30,
+            image=CTkImage(Image.open(FOLDER_IMG_PATH), size=(14, 14)),
             font=self.TEXT_FONT,
             command=lambda: _open_file(self.crossword_block.cwrapper.toplevel),
             state="disabled",
         )
-
+        self.b_export = CTkButton(
+            self.b_edit_container,
+            text="",
+            width=40,
+            height=30,
+            image=CTkImage(Image.open(EXPORT_IMG_PATH), size=(14, 14)),
+            font=self.TEXT_FONT,
+            command=self._export,
+        )
+        self.b_import = CTkButton(
+            self.b_edit_container,
+            text="",
+            width=40,
+            height=30,
+            image=CTkImage(Image.open(IMPORT_IMG_PATH), size=(14, 14)),
+            font=self.TEXT_FONT,
+            command=self._import,
+        )
         self.b_remove = CTkButton(
             self.b_edit_container,
             text="-",
@@ -576,7 +601,9 @@ class CrosswordPane(CTkFrame, Addons):
         self.container.place(relx=0.5, rely=0.5, anchor="c")
         self.l_title.grid(row=0, column=0, columnspan=2, pady=(0, 25))
         self.preview.grid(row=1, column=0, padx=(0, 40), sticky="nsew")
-        self.b_explorer.pack(side="left", padx=(0, 144.75))
+        self.b_explorer.pack(side="left", padx=(0, 7.5))
+        self.b_export.pack(side="left", padx=(0, 7.5))
+        self.b_import.pack(side="left", padx=(0, 51))
         self.b_add.pack(side="left", padx=(0, 7.5))
         self.b_remove.pack(side="left", padx=(0, 7.5))
         self.b_edit_container.grid(row=2, column=0, pady=(7.5, 0), sticky="w")
@@ -589,6 +616,43 @@ class CrosswordPane(CTkFrame, Addons):
         self.b_confirm.grid(row=4, column=0, sticky="w", pady=(30, 0))
         self.form_container.grid(row=1, column=1, sticky="n")
 
+    def _export(self) -> None:
+        if isinstance(UserCrosswordBlock.blocks[0], CTkLabel):
+            return GUIHelper.show_messagebox(no_crosswords_to_export_err=True)
+        
+        exp = Export(UserCrosswordBlock.blocks)
+        if exp.exported:
+            return GUIHelper.show_messagebox(export_success=True)
+        else:
+            return GUIHelper.show_messagebox(export_failure=True)
+        
+    def _import(self) -> None:
+        if Form._any_nondefault_values(Form.crossword_forms):
+            if not GUIHelper.confirm_with_messagebox(
+                importing_with_nondefault_fields=True
+            ):
+                return None
+        imp = Import(self, self.master.fp)
+
+        if imp.invalid_file:
+            return GUIHelper.show_messagebox(import_failure=True)
+        elif imp.imported and not imp.conflicting_fullnames and not imp.skipped_crossword_fullnames:
+            GUIHelper.show_messagebox(import_success=True)
+        else:
+            GUIHelper.show_messagebox(
+                imp.conflicting_fullnames, 
+                imp.skipped_crossword_fullnames, 
+                partial_import_success=True,
+            )
+        
+        self._reset()
+        self.b_add.configure(state="normal")
+        UserCrosswordBlock._populate(self, imp.imported_crossword_fullnames)
+        self.master.word_pane._reset()
+        for block in UserCrosswordBlock.blocks:
+            if hasattr(block, "_flash"):
+                block._flash()
+        
     def _update_difficulty(self, difficulty: str) -> None:
         """Find the english version of ``difficulty`` and update
         ``self.difficulty``.
@@ -758,6 +822,7 @@ class UserCrosswordBlock(CTkFrame, Addons, BlockUtils):
         container: CTkScrollableFrame,
         name: str,
         value: int,
+        flash: bool = False,
     ):
         super().__init__(
             container,
@@ -767,6 +832,7 @@ class UserCrosswordBlock(CTkFrame, Addons, BlockUtils):
             border_width=3,
         )
         self.master = master
+        self.flash = flash
 
         # The most useful thing I have decided to code in this project
         self.cwrapper: CrosswordWrapper = CrosswordWrapper(
@@ -780,9 +846,20 @@ class UserCrosswordBlock(CTkFrame, Addons, BlockUtils):
         self._set_fonts()
         self._make_content()
         self._place_content()
+        
+    def _flash(self):
+        if not self.flash:
+            return
+        self.master.master.master.after(50, self.configure(fg_color="green"))
+        self.master.master.master.after(
+            50, 
+            self.configure(fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN))
+        )
 
     @classmethod
-    def _populate(cls, master: CrosswordPane) -> None:
+    def _populate(
+        cls, master: CrosswordPane, flash_these: Optional[List[str]] = None
+    ) -> None:
         """Put all of the user crosswords into ``master.preview``
         (CTkScrollableFrame) as user crossword blocks.
         """
@@ -800,6 +877,7 @@ class UserCrosswordBlock(CTkFrame, Addons, BlockUtils):
                 master.preview,
                 crossword.name,
                 i,
+                flash=flash_these and crossword.name in flash_these
             )
             cls._put_block(block, side="top")
 

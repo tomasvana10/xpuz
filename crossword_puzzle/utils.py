@@ -69,6 +69,11 @@ class GUIHelper:
             return messagebox.askyesno(
                 _("Back to home"), _("Are you sure you want to go back to the home screen? Your modified fields will be reset!")
             )
+        
+        if "importing_with_nondefault_fields" in kwargs:
+            return messagebox.askyesno(
+                _("Info"), _("Are you sure you want to import crosswords? Your modified fields will be reset!")
+            )
             
         if "exit_" in kwargs and "restart" not in kwargs:
             return messagebox.askyesno(
@@ -118,7 +123,50 @@ class GUIHelper:
         
         if "crossword_exists_err" in kwargs:
             return messagebox.showerror(
-                _("Error"), _("This crossword already exists. Please choose a new name.")
+                _("Error"), 
+                _(
+                    "A crossword with this name and difficulty already exists. "
+                    "Please choose a new name and/or a new difficulty."
+                )
+            )
+        
+        if "no_crosswords_to_export_err" in kwargs:
+            return messagebox.showerror(
+                _("Error"),
+                _("You have no crosswords to export. Please make some and try again.")
+            )
+            
+        if "export_success" in kwargs:
+            return messagebox.showinfo(
+                _("Info"), _("Successfully exported your crosswords.")
+            )
+        
+        if "export_failure" in kwargs:
+            return messagebox.showinfo(
+                _("Error"), _("Your crosswords could not be exported, sorry.")
+            )
+        
+        if "import_success" in kwargs:
+            return messagebox.showinfo(
+                _("Info"), _("All of your crosswords were successfully imported.")
+            )
+        
+        if "partial_import_success" in kwargs:
+            return messagebox.showinfo(
+                _("Info"), 
+                _("Your import could not be fully completed.")
+                + "\n\n"
+                + _("Crosswords with duplicate names and difficulties that were "
+                    "not imported: "
+                )
+                + f"[{', '.join(args[0])}]." + "\n\n"
+                + _("Invalid crosswords that were not imported: ") 
+                + f"[{', '.join(args[1])}]."
+            )
+        
+        if "import_failure" in kwargs:
+            return messagebox.showinfo(
+                _("Error"), _("The specified JSON file is invalid and cannot be processed.")
             )
         
         if "word_exists_err" in kwargs:
