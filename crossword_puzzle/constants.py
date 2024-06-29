@@ -82,6 +82,15 @@ WHITESPACE_SCALAR: float = 1.9
 DIMENSIONS_CONSTANT: int = 1
 
 
+"""PDF-related constants"""
+PDF_WIDTH = 3508
+PDF_HEIGHT = 2480
+PDF_MARGIN = 150
+FONTSIZE_DIR_TITLE = 100
+FONTSIZE_DEF = 40
+PAGE_DEF_MAX = 25
+
+
 """Base english strings"""
 BASE_ENG_CWORD_QUALITIES: List[str] = [
     "terrible",

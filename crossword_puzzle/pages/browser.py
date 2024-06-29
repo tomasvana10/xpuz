@@ -2,7 +2,7 @@
 
 from json import dumps, load
 from os import DirEntry, PathLike, listdir, path
-from tkinter import Event, IntVar, StringVar
+from tkinter import Event, IntVar, StringVar, filedialog
 from typing import Dict, List, Optional, Tuple, Union
 from uuid import uuid4
 from webbrowser import open_new_tab
@@ -20,6 +20,7 @@ from customtkinter import (
     CTkTextbox,
     get_appearance_mode,
 )
+from platformdirs import user_downloads_dir
 
 from crossword_puzzle.base import Addons, Base
 from crossword_puzzle.constants import (
@@ -143,7 +144,7 @@ class BrowserPage(CTkFrame, Addons):
                 "HomePage",
                 self.master,
                 _(PAGE_MAP["HomePage"]),
-                action=self._terminate,
+                action=self.terminate,
                 condition=self.webapp_on,
             ),
             height=50,
@@ -199,12 +200,20 @@ class BrowserPage(CTkFrame, Addons):
             fg_color=Colour.Global.GREEN_BUTTON,
             hover_color=Colour.Global.GREEN_BUTTON_HOVER,
         )
+        
+        self.b_write_pdf = CTkButton(
+            self.button_container,
+            text=_("Make PDF"),
+            height=50,
+            command=self.write_pdf,
+            font=self.TEXT_FONT,
+        )
 
         self.b_terminate_webapp = CTkButton(
             self.button_container,
             text=_("Terminate"),
             height=50,
-            command=self._terminate,
+            command=self.terminate,
             fg_color=Colour.Global.EXIT_BUTTON,
             hover_color=Colour.Global.EXIT_BUTTON_HOVER,
             state="disabled",
@@ -261,6 +270,7 @@ class BrowserPage(CTkFrame, Addons):
         self.e_search.grid(row=1, column=0, sticky="nsew", padx=10, pady=10)
         self.b_load_cword.grid(row=0, column=0, sticky="nsew", padx=7, pady=7)
         self.b_terminate_webapp.grid(row=0, column=1, sticky="nsew", padx=7, pady=7)
+        self.b_write_pdf.grid(row=1, column=0, columnspan=2, pady=(7, 0))
         self.l_wc_prefs.grid(row=0, column=0, columnspan=2, pady=(5, 10))
         self.rb_max_wc.grid(row=1, column=0, padx=7, pady=7)
         self.rb_custom_wc.grid(row=2, column=0, padx=7, pady=7)
@@ -360,23 +370,6 @@ class BrowserPage(CTkFrame, Addons):
 
         self.b_load_cword.configure(state="normal")
 
-    def open_webapp(self) -> None:
-        """Open the crossword web app at a port read from ``Base.cfg``."""
-        _read_cfg(Base.cfg)
-        open_new_tab(
-            f"http://127.0.0.1:{Base.cfg.get('misc', 'webapp_port')}/"
-        )
-
-    def _terminate(self) -> None:
-        """Reconfigure the states of the GUIs buttons and terminate the app."""
-        self.b_open_webapp.grid_forget()
-        self._rollback_states()
-        if Base.cfg.get("m", "view") == "Flattened":
-            self.e_search.configure(state="normal")
-        self.sb_view.configure(state="normal")
-        _terminate_app()
-        self.webapp_on: bool = False
-
     def _rollback_states(self) -> None:
         """Set all the widgets back to their default states (seen when opening
         the crossword browser).
@@ -392,6 +385,7 @@ class BrowserPage(CTkFrame, Addons):
         self.b_open_webapp.grid_forget()
         self.b_load_cword.grid(row=0, column=0, sticky="nsew", padx=7, pady=7)
         self.b_load_cword.configure(state="disabled")
+        self.b_write_pdf.configure(state="disabled")
         self._configure_word_count_prefs("disabled")
         self.rb_max_wc.configure(text=f"{_('Maximum')}:")
         self.opts_custom_wc.set(_("Select word count"))
@@ -407,6 +401,66 @@ class BrowserPage(CTkFrame, Addons):
         self.rb_max_wc.configure(state=state)
         self.rb_custom_wc.configure(state=state)
         self.opts_custom_wc.configure(state=state)
+
+    def open_webapp(self) -> None:
+        """Open the crossword web app at a port read from ``Base.cfg``."""
+        _read_cfg(Base.cfg)
+        open_new_tab(
+            f"http://127.0.0.1:{Base.cfg.get('misc', 'webapp_port')}/"
+        )
+
+    def terminate(self) -> None:
+        """Reconfigure the states of the GUIs buttons and terminate the app."""
+        self.b_open_webapp.grid_forget()
+        self._rollback_states()
+        if Base.cfg.get("m", "view") == "Flattened":
+            self.e_search.configure(state="normal")
+        self.sb_view.configure(state="normal")
+        _terminate_app()
+        self.webapp_on: bool = False
+
+    def _get_pdf_filepath(self, name: str) -> PathLike:
+        return filedialog.asksaveasfilename(
+            title=_("Select a destination to download your PDF to"),
+            defaultextension=".pdf",
+            filetypes=[("PDF files", "*.pdf")],
+            initialdir=user_downloads_dir(),
+            initialfile=name + ".pdf"
+        )
+
+    def write_pdf(self) -> None:
+        try:
+            from crossword_puzzle.pdf import PDF
+        except ImportError:
+            return GUIHelper.show_messagebox(pdf_missing_dep=True)
+        
+        name = f"{self.cwrapper.translated_name} ({_(self.cwrapper.difficulty)})"
+        filepath = self._get_pdf_filepath(name)
+        
+        if not filepath:
+            return
+        
+        if not filepath.endswith(".pdf"):
+            filepath += ".pdf"
+        
+        pdf = PDF(
+            filepath,
+            self.cwrapper.crossword, 
+            self.starting_word_positions, 
+            self.starting_word_matrix, 
+            self.definitions_a, 
+            self.definitions_d, 
+            name
+        )
+        
+        if not pdf.drawn:
+            return GUIHelper.show_messagebox(pdf_write_err=True)
+        else:
+            fails = self.cwrapper.crossword.fails
+            if fails > 0:
+                return GUIHelper.show_messagebox(fails, pdf_write_success=True)
+            else:
+                return GUIHelper.show_messagebox(pdf_write_success=True)
 
     def load(self) -> None:
         """Initialise the crossword and web app."""
@@ -431,16 +485,17 @@ class BrowserPage(CTkFrame, Addons):
 
         self.b_open_webapp.grid(row=0, column=0, sticky="nsew", padx=7, pady=7)
         self.b_terminate_webapp.configure(state="normal")
+        self.b_write_pdf.configure(state="normal")
 
     def _load(self) -> None:
         """Gather data and use ``_create_app`` to initialise the Flask app on a
         new thread.
         """
         (
-            starting_word_positions,
-            starting_word_matrix,
-            definitions_a,
-            definitions_d,
+            self.starting_word_positions,
+            self.starting_word_matrix,
+            self.definitions_a,
+            self.definitions_d,
         ) = _interpret_cword_data(self.cwrapper.crossword)
         colour_palette: Dict[str, str] = _get_colour_palette(
             get_appearance_mode()
@@ -466,11 +521,11 @@ class BrowserPage(CTkFrame, Addons):
             word_count=self.cwrapper.word_count,
             failed_insertions=self.cwrapper.crossword.fails,
             dimensions=self.cwrapper.crossword.dimensions,
-            starting_word_positions=starting_word_positions,
-            starting_word_matrix=starting_word_matrix,
+            starting_word_positions=self.starting_word_positions,
+            starting_word_matrix=self.starting_word_matrix,
             grid=self.cwrapper.crossword.grid,
-            definitions_a=definitions_a,
-            definitions_d=definitions_d,
+            definitions_a=self.definitions_a,
+            definitions_d=self.definitions_d,
             js_err_msgs=[
                 _("To perform this operation, you must first select a cell.")
             ],
@@ -636,7 +691,7 @@ class CategoryBlock(CTkFrame, Addons, BlockUtils):
         self._populate(self.master)
 
         self.master.b_load_cword.configure(state="disabled")
-        self.master._terminate()
+        self.master.terminate()
 
 
 class CrosswordBlock(CTkFrame, Addons, BlockUtils):

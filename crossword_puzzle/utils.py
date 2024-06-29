@@ -194,6 +194,41 @@ class GUIHelper:
                 _("Error"),
                 _("This word already exists. Please choose a new word."),
             )
+        
+        if "pdf_write_err" in kwargs:
+            return messagebox.showerror(
+                _("Error"),
+                _("An error occurred during creating your PDF. Please try again."),
+            )
+        
+        if "pdf_write_success" in kwargs:
+            if not args:
+                fails_msg = ""
+            else:
+                disclaimer_str = _(
+                    "words that could not be inserted during crossword "
+                    "generation will not be included in this PDF, sorry."
+                )
+                fails_msg = f" {args[0]} {disclaimer_str}"
+            return messagebox.showerror(
+                _("Info"),
+                _("Successfully wrote PDF.") + fails_msg,
+            )
+        
+        if "pdf_missing_dep" in kwargs:
+            return messagebox.showerror(
+                _("Error"),
+                _(
+                    "You are missing pycairo, which is required to perform this "
+                    "operation. Please run"
+                )
+                + " pip install pycairo "
+                + _(
+                    "and install the headers for pycairo if you are not on "
+                    "Windows at the following link as a guide"
+                )
+                + ": https://pycairo.readthedocs.io/en/latest/getting_started.html"
+            )
 
         if "first_time_browser" in kwargs:
             return messagebox.showinfo(

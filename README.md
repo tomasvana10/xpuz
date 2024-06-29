@@ -31,6 +31,11 @@ An educational GUI package built with `CustomTkinter` that allows you to design 
 `pathvalidate`
 `CTkToolTip`
 
+`pycairo` is an optional dependency that is required if you want to make PDFs from your generated crosswords. After reading **[Installation](#installation)** and installing the package, also run `pip install pycairo`. If you are on an operating system other than Windows, please also read **[pycairo's Getting Started](https://pycairo.readthedocs.io/en/latest/getting_started.html)** to install the required headers for `pycairo`.
+
+> [!WARNING]  
+> Languages whose alphabets use complex glyphs (such as Mandarin and Japanese) are not supported when making PDFs.
+
 ## Tested python versions
 - **Windows**: Python >= 3.7
 - **MacOS**: Python >= 3.8
@@ -44,7 +49,12 @@ An educational GUI package built with `CustomTkinter` that allows you to design 
 
 - **Software**
   - A browser that isn't Internet Explorer
-  - Python and pip (see [Installation](#installation))
+  - Python and pip (see **[Installation](#installation)**)
+
+## Limitations
+- Right-to-left scripts are not supported.
+- Translations are made with a translation API, and therefore might be inaccurate.
+- Crosswords may occasionally have one to two missing words.
 
 ## Installation
 > [!IMPORTANT]
