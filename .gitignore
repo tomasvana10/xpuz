@@ -8,6 +8,12 @@ run_as_package.py
 # python related
 venv
 __pycache__
+py37
+py38
+py39
+py310
+py311
+py312
 
 # vscode extensions
 tempCodeRunnerFile.py

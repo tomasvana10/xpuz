@@ -12,7 +12,9 @@ from customtkinter import (
     set_widget_scaling,
 )
 
-from crossword_puzzle.constants import DIM, LOGO_PATH, PAGE_MAP
+from crossword_puzzle.constants import (
+    DIM, WIN_LOGO_PATH, LINUX_LOGO_PATH, PAGE_MAP
+)
 from crossword_puzzle.app.app import _terminate_app
 from crossword_puzzle.utils import GUIHelper, _update_cfg
 
@@ -41,7 +43,7 @@ class Addons:
     ) -> bool:
         """Allow the user to confirm if they wish to route through a messagebox."""
 
-        if condition: # A condition is required for this confirmation to happen
+        if condition:  # A condition is required for this confirmation to happen
             if GUIHelper.confirm_with_messagebox(**confirmation):
                 if action:
                     action()
@@ -66,7 +68,7 @@ class Addons:
         if kwargs:  # The caller of this route has added arguments for confirmation
             if not self._confirm_route(**kwargs):
                 return False  # User didn't want to route
-            
+
         try:
             page_inst = locals()[page_ref](base)
         except KeyError:
@@ -93,7 +95,7 @@ class Addons:
         page_inst._make_content()
         page_inst._place_content()
         Base.page_inst = page_inst
-        
+
         return True  # Route was successful
 
 
@@ -118,8 +120,10 @@ class Base(CTk, Addons):
             setattr(Base, kwarg, kwargs[kwarg])
 
         self.protocol("WM_DELETE_WINDOW", self._exit_handler)  # Detect exit
-        if system() == "Windows":
-            self.iconbitmap(LOGO_PATH)
+        if system() in ["Windows", "Linux"]:
+            self.iconbitmap(
+                WIN_LOGO_PATH if system() == "Windows" else LINUX_LOGO_PATH
+            )
         set_appearance_mode(Base.cfg.get("m", "appearance"))
         set_default_color_theme(Base.cfg.get("m", "theme"))
         set_widget_scaling(float(Base.cfg.get("m", "scale")))
@@ -127,7 +131,8 @@ class Base(CTk, Addons):
 
         self._increment_launches()
 
-        # Bring the user to the default Home Page
+        # Bring the user to the Home Page or their most recently opened page
+        # since last viewing the GUI.
         page = Base.cfg.get("m", "page")
         self._route(page, self, _(PAGE_MAP[page]))
 
@@ -139,7 +144,7 @@ class Base(CTk, Addons):
         self.minsize(new_width, new_height)
         self.maxsize(new_width, new_height)
         self.geometry(f"{new_width}x{new_height}")
-        
+
         self.update()
 
     def _toggle_fullscreen(self) -> None:

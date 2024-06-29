@@ -116,7 +116,7 @@ class CrosswordWrapper:
 
     def _get_toplevel(self) -> PathLike:
         """Find the absolute path to the toplevel of a crossword 
-        (e.g <pkg_path>\locales\geography\capitals-easy).
+        (e.g <pkg_path>\\locales\\geography\\capitals-easy).
          
         The path returned will be in 1 of 3 locations:
         1. Locales directory (if it is found),
