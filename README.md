@@ -139,9 +139,9 @@ Check out the wiki **[here](https://github.com/tomasvana10/crossword_puzzle/wiki
 ## Gallery
 <img alt="crossword puzzle home" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/6b9eba14-220d-43dc-8b28-ddb92ea2d3b6">
 <hr>
-<img alt="crossword puzzle browser" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/2e84ad2b-2011-4094-9091-e746dd1a2c3a">
+<img alt="crossword puzzle browser" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/ed54ded8-d99b-41f5-98e4-91b8c19e5504">
 <hr>
-<img alt="crossword puzzle editor" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/68e7bc7d-0268-42a3-bc67-bc9a44871763">
+<img alt="crossword puzzle editor" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/33d7ec0c-ee2e-435f-9386-e7373f8a6378">
 <hr>
 <img alt="crossword puzzle game english" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/0475c6c4-e371-4d9d-837b-c06e0bde153f">
 <hr>
