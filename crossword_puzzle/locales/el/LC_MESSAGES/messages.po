@@ -220,11 +220,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
 "και εγκαταστήστε τις κεφαλίδες για το Pycairo εάν δεν βρίσκεστε στα Windows "
-"στον ακόλουθο σύνδεσμο ως οδηγός"
+"χρησιμοποιώντας τον οδηγό Getting Getting του Pycairo"
 
 #: utils.py:236
 msgid ""
@@ -383,20 +383,20 @@ msgid "Search"
 msgstr "Αναζήτηση"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Φορτίο"
+msgid "Create"
+msgstr "Δημιουργώ"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Ανοίγω"
+msgid "Play"
+msgstr "Παίζω"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Φτιάξτε PDF"
+msgid "Write to PDF"
+msgstr "Γράψτε στο PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Τερματίζω"
+msgid "Destroy"
+msgstr "Καταστρέφω"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -618,3 +618,15 @@ msgstr "Όνομα"
 
 msgid "Symbol"
 msgstr "Σύμβολο"
+
+#~ msgid "Load"
+#~ msgstr "Φορτίο"
+
+#~ msgid "Open"
+#~ msgstr "Ανοίγω"
+
+#~ msgid "Make PDF"
+#~ msgstr "Φτιάξτε PDF"
+
+#~ msgid "Terminate"
+#~ msgstr "Τερματίζω"

@@ -218,11 +218,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"un instalējiet Pycairo galvenes, ja jūs neatrodat Windows pie šīs saites kā "
-"ceļvedis"
+"un instalējiet Pycairo galvenes, ja jūs neatrodaties uz logiem, izmantojot "
+"Pycairo sākšanas ceļvedi"
 
 #: utils.py:236
 msgid ""
@@ -380,20 +380,20 @@ msgid "Search"
 msgstr "Meklēt"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Slodze"
+msgid "Create"
+msgstr "Radīt"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Atvērts"
+msgid "Play"
+msgstr "Rotaļlieta"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Padariet pdf"
+msgid "Write to PDF"
+msgstr "Rakstiet PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Pārtraukt"
+msgid "Destroy"
+msgstr "Iznīcināt"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -614,3 +614,15 @@ msgstr "Vārds"
 
 msgid "Symbol"
 msgstr "Simbols"
+
+#~ msgid "Load"
+#~ msgstr "Slodze"
+
+#~ msgid "Open"
+#~ msgstr "Atvērts"
+
+#~ msgid "Make PDF"
+#~ msgstr "Padariet pdf"
+
+#~ msgid "Terminate"
+#~ msgstr "Pārtraukt"

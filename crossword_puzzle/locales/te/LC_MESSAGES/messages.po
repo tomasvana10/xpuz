@@ -216,11 +216,11 @@ msgstr "ఈ ఆపరేషన్ చేయడానికి అవసరమై
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"మరియు మీరు కింది లింక్‌లో గైడ్‌గా విండోస్‌లో లేకపోతే పైకైరో కోసం శీర్షికలను "
-"ఇన్‌స్టాల్ చేయండి"
+"మరియు పైకైరో కోసం శీర్షికలను ఇన్‌స్టాల్ చేయండి మీరు పైకైరో యొక్క ప్రారంభ "
+"గైడ్ ఉపయోగించి విండోస్‌లో లేకపోతే"
 
 #: utils.py:236
 msgid ""
@@ -378,20 +378,20 @@ msgid "Search"
 msgstr "వెతకండి"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "బరువు"
+msgid "Create"
+msgstr "సృష్టించండి"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "బహిరంగ"
+msgid "Play"
+msgstr "ఆడండి"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "PDF చేయండి"
+msgid "Write to PDF"
+msgstr "పిడిఎఫ్‌కు వ్రాయండి"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "ముగించు"
+msgid "Destroy"
+msgstr "నాశనం"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -612,3 +612,15 @@ msgstr "పేరు"
 
 msgid "Symbol"
 msgstr "చిహ్నం"
+
+#~ msgid "Load"
+#~ msgstr "బరువు"
+
+#~ msgid "Open"
+#~ msgstr "బహిరంగ"
+
+#~ msgid "Make PDF"
+#~ msgstr "PDF చేయండి"
+
+#~ msgid "Terminate"
+#~ msgstr "ముగించు"

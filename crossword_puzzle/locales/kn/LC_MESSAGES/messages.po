@@ -220,11 +220,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"ಮತ್ತು ನೀವು ಗೈಡ್‌ನಂತೆ ಈ ಕೆಳಗಿನ ಲಿಂಕ್‌ನಲ್ಲಿ ವಿಂಡೋಸ್‌ನಲ್ಲಿ ಇಲ್ಲದಿದ್ದರೆ "
-"ಪೈಕೈರೊಗಾಗಿ ಹೆಡರ್ಗಳನ್ನು ಸ್ಥಾಪಿಸಿ"
+"ಮತ್ತು ಪೈಕೈರೊಗೆ ನೀವು ವಿಂಡೋಸ್‌ನಲ್ಲಿ ಇಲ್ಲದಿದ್ದರೆ ಪೈಕೈರೊಗಾಗಿ ಹೆಡರ್ಗಳನ್ನು "
+"ಸ್ಥಾಪಿಸಿ ಪೈಕೈರೊನ ಪ್ರಾರಂಭಿಕ ಮಾರ್ಗದರ್ಶಿ ಬಳಸಿ"
 
 #: utils.py:236
 msgid ""
@@ -383,20 +383,20 @@ msgid "Search"
 msgstr "ಹುಡುಕಿ Kannada"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "ಲೋಡ್"
+msgid "Create"
+msgstr "ರಚಿಸು"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "ತೆರೆಯಿರಿ"
+msgid "Play"
+msgstr "ನುಡಿಸು"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "ಪಿಡಿಎಫ್ ಮಾಡಿ"
+msgid "Write to PDF"
+msgstr "ಪಿಡಿಎಫ್‌ಗೆ ಬರೆಯಿರಿ"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "ಕೊನೆಗೊಳಿಸು"
+msgid "Destroy"
+msgstr "ನಾಶಮಾಡು"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -617,3 +617,15 @@ msgstr "ಹೆಸರು"
 
 msgid "Symbol"
 msgstr "ಚಿಹ್ನೆ"
+
+#~ msgid "Load"
+#~ msgstr "ಲೋಡ್"
+
+#~ msgid "Open"
+#~ msgstr "ತೆರೆಯಿರಿ"
+
+#~ msgid "Make PDF"
+#~ msgstr "ಪಿಡಿಎಫ್ ಮಾಡಿ"
+
+#~ msgid "Terminate"
+#~ msgstr "ಕೊನೆಗೊಳಿಸು"

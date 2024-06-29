@@ -219,11 +219,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"oo madaxooda ku rakib pycairo haddii aadan ku jirin daaqadaha xiriirinta soo"
-" socota hagaha"
+"oo madaxooda ku rakib kuwa ku habboon pycairo haddii aadan ku jirin "
+"daaqadaha adoo adeegsanaya Tilmaanta Bilowga ee Pycairo"
 
 #: utils.py:236
 msgid ""
@@ -382,20 +382,20 @@ msgid "Search"
 msgstr "Raadinta"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Rar"
+msgid "Create"
+msgstr "Abuurid"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Wuxuu furan yahay"
+msgid "Play"
+msgstr "Cayaar"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Pdf samee"
+msgid "Write to PDF"
+msgstr "U qor pdf"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Jooji"
+msgid "Destroy"
+msgstr "Burburin"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -616,3 +616,15 @@ msgstr "magaca"
 
 msgid "Symbol"
 msgstr "Astaanta"
+
+#~ msgid "Load"
+#~ msgstr "Rar"
+
+#~ msgid "Open"
+#~ msgstr "Wuxuu furan yahay"
+
+#~ msgid "Make PDF"
+#~ msgstr "Pdf samee"
+
+#~ msgid "Terminate"
+#~ msgstr "Jooji"

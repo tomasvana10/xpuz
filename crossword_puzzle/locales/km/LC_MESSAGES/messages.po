@@ -213,11 +213,11 @@ msgstr "អ្នកកំពុងបាត់ខ្លួន Pycairo ដែល
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
 "និងតំឡើងបឋមកថាសម្រាប់ Pycairo "
-"ប្រសិនបើអ្នកមិននៅលើបង្អួចនៅតំណភ្ជាប់ខាងក្រោមជាមគ្គុទេសក៍"
+"ប្រសិនបើអ្នកមិននៅលើវីនដូដោយប្រើមគ្គុទេសក៍ចាប់ផ្តើមរបស់ Pycairo"
 
 #: utils.py:236
 msgid ""
@@ -376,20 +376,20 @@ msgid "Search"
 msgstr "ការឆេកឆេ"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "ផ្ទុក"
+msgid "Create"
+msgstr "បង្កើត"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "បើក"
+msgid "Play"
+msgstr "ការលេង"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "ធ្វើឱ្យ PDF"
+msgid "Write to PDF"
+msgstr "សរសេរទៅ PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "ចប់"
+msgid "Destroy"
+msgstr "កមតេច"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -610,3 +610,15 @@ msgstr "ឈ្មោះ"
 
 msgid "Symbol"
 msgstr "និមិត្តរូប"
+
+#~ msgid "Load"
+#~ msgstr "ផ្ទុក"
+
+#~ msgid "Open"
+#~ msgstr "បើក"
+
+#~ msgid "Make PDF"
+#~ msgstr "ធ្វើឱ្យ PDF"
+
+#~ msgid "Terminate"
+#~ msgstr "ចប់"

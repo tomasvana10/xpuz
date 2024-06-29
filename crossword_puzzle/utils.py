@@ -225,7 +225,7 @@ class GUIHelper:
                 + " pip install pycairo "
                 + _(
                     "and install the headers for pycairo if you are not on "
-                    "Windows at the following link as a guide"
+                    "Windows using pycairo's Getting Started guide"
                 )
                 + ": https://pycairo.readthedocs.io/en/latest/getting_started.html"
             )

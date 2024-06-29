@@ -214,11 +214,11 @@ msgstr "Ua halaʻoe i ka pycairo, kahi e pono ai e hana i kēia hana.Holo"
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"a hoʻonohonoho i nā poʻomanaʻo no ka pycaro ināʻaʻoleʻoe ma ka Windows i "
-"kēia loulou ma hope he alakaʻi"
+"a hoʻonohonoho i nā poʻomanaʻo no ka pycaro ināʻaʻoleʻoe ma ka Windows me ka"
+" hoʻohanaʻana i nā alakaʻiʻo Pycairo"
 
 #: utils.py:236
 msgid ""
@@ -377,20 +377,20 @@ msgid "Search"
 msgstr "Huli"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Haawe"
+msgid "Create"
+msgstr "Hana"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Wehe"
+msgid "Play"
+msgstr "Pāʻani"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Make pdf"
+msgid "Write to PDF"
+msgstr "Kākau i PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Hoʻopau"
+msgid "Destroy"
+msgstr "Luku"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -611,3 +611,15 @@ msgstr "Inoa"
 
 msgid "Symbol"
 msgstr "Hoailona"
+
+#~ msgid "Load"
+#~ msgstr "Haawe"
+
+#~ msgid "Open"
+#~ msgstr "Wehe"
+
+#~ msgid "Make PDF"
+#~ msgstr "Make pdf"
+
+#~ msgid "Terminate"
+#~ msgstr "Hoʻopau"

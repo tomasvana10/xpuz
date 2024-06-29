@@ -220,11 +220,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"a gosod y penawdau ar gyfer pycairo os nad ydych ar ffenestri yn y ddolen "
-"ganlynol fel canllaw"
+"a gosod y penawdau ar gyfer pycairo os nad ydych ar ffenestri gan ddefnyddio"
+" canllaw cychwyn pycairo"
 
 #: utils.py:236
 msgid ""
@@ -380,20 +380,20 @@ msgid "Search"
 msgstr "Chwilota"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Llwytho"
+msgid "Create"
+msgstr "Creiff"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Agor"
+msgid "Play"
+msgstr "Chwarae"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Gwneud pdf"
+msgid "Write to PDF"
+msgstr "Ysgrifennwch at PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Terfynu"
+msgid "Destroy"
+msgstr "Difetha ’"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -614,3 +614,15 @@ msgstr "Enw"
 
 msgid "Symbol"
 msgstr "Symbol"
+
+#~ msgid "Load"
+#~ msgstr "Llwytho"
+
+#~ msgid "Open"
+#~ msgstr "Agor"
+
+#~ msgid "Make PDF"
+#~ msgstr "Gwneud pdf"
+
+#~ msgid "Terminate"
+#~ msgstr "Terfynu"

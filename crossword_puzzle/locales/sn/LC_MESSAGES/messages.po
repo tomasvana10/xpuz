@@ -221,11 +221,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"uye gadza misoro ye pycairo kana iwe usiri paWindows pane inotevera "
-"chinongedzo segwara"
+"uye gadza misoro yePycairo kana iwe usiri pamaWindows uchishandisa Pycairo's"
+" kutanga gwara"
 
 #: utils.py:236
 msgid ""
@@ -383,20 +383,20 @@ msgid "Search"
 msgstr "Tsvaga"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Mutoro"
+msgid "Create"
+msgstr "Gadzira"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Vhura"
+msgid "Play"
+msgstr "Tamba"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Gadzira PDF"
+msgid "Write to PDF"
+msgstr "Nyora kuPDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Kugumisa"
+msgid "Destroy"
+msgstr "Paradza"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -617,3 +617,15 @@ msgstr "Zita"
 
 msgid "Symbol"
 msgstr "Chiratidzo"
+
+#~ msgid "Load"
+#~ msgstr "Mutoro"
+
+#~ msgid "Open"
+#~ msgstr "Vhura"
+
+#~ msgid "Make PDF"
+#~ msgstr "Gadzira PDF"
+
+#~ msgid "Terminate"
+#~ msgstr "Kugumisa"

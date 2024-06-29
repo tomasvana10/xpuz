@@ -203,11 +203,11 @@ msgstr "คุณหายไป Pycairo ซึ่งจำเป็นต้อ
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
 "และติดตั้งส่วนหัวสำหรับ Pycairo หากคุณไม่ได้อยู่ใน Windows "
-"ที่ลิงค์ต่อไปนี้เป็นคู่มือ"
+"โดยใช้คู่มือการเริ่มต้นใช้งานของ Pycairo"
 
 #: utils.py:236
 msgid ""
@@ -362,20 +362,20 @@ msgid "Search"
 msgstr "ค้นหา"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "ภาระ"
+msgid "Create"
+msgstr "สร้าง"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "เปิด"
+msgid "Play"
+msgstr "เล่น"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "ทำ PDF"
+msgid "Write to PDF"
+msgstr "เขียนถึง PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "ยุติ"
+msgid "Destroy"
+msgstr "ทำลาย"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -596,3 +596,15 @@ msgstr "ชื่อ"
 
 msgid "Symbol"
 msgstr "สัญลักษณ์"
+
+#~ msgid "Load"
+#~ msgstr "ภาระ"
+
+#~ msgid "Open"
+#~ msgstr "เปิด"
+
+#~ msgid "Make PDF"
+#~ msgstr "ทำ PDF"
+
+#~ msgid "Terminate"
+#~ msgstr "ยุติ"

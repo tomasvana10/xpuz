@@ -214,11 +214,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"ja installige Pycairo päised, kui te ei asu akendel järgmisel lingil "
-"juhendina"
+"ja installige Pycairo päised, kui te ei asu Pycairo käivitamise juhendi abil"
+" Windowsis"
 
 #: utils.py:236
 msgid ""
@@ -374,20 +374,20 @@ msgid "Search"
 msgstr "Otsing"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Laadima"
+msgid "Create"
+msgstr "Looma"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Avama"
+msgid "Play"
+msgstr "Näidend"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Tee PDF -i"
+msgid "Write to PDF"
+msgstr "Kirjutage PDF -ile"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Lõpetada"
+msgid "Destroy"
+msgstr "Hävitama"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -608,3 +608,15 @@ msgstr "Nimi"
 
 msgid "Symbol"
 msgstr "Sümbol"
+
+#~ msgid "Load"
+#~ msgstr "Laadima"
+
+#~ msgid "Open"
+#~ msgstr "Avama"
+
+#~ msgid "Make PDF"
+#~ msgstr "Tee PDF -i"
+
+#~ msgid "Terminate"
+#~ msgstr "Lõpetada"

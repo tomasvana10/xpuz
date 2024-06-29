@@ -225,11 +225,9 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
-msgstr ""
-"வழிகாட்டியாக பின்வரும் இணைப்பில் விண்டோஸில் இல்லாவிட்டால் பைகிரோவுக்கான "
-"தலைப்புகளை நிறுவவும்"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
+msgstr "பைகிரோவின் தலைப்புகளை நிறுவவும்"
 
 #: utils.py:236
 msgid ""
@@ -387,20 +385,20 @@ msgid "Search"
 msgstr "தேடல்"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "சுமை"
+msgid "Create"
+msgstr "உருவாக்கு"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "திற"
+msgid "Play"
+msgstr "விளையாடுங்கள்"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "PDF ஐ உருவாக்குங்கள்"
+msgid "Write to PDF"
+msgstr "PDF க்கு எழுதுங்கள்"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "நிறுத்து"
+msgid "Destroy"
+msgstr "அழிக்கவும்"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -623,3 +621,15 @@ msgstr "பெயர்"
 
 msgid "Symbol"
 msgstr "குறியீடு"
+
+#~ msgid "Load"
+#~ msgstr "சுமை"
+
+#~ msgid "Open"
+#~ msgstr "திற"
+
+#~ msgid "Make PDF"
+#~ msgstr "PDF ஐ உருவாக்குங்கள்"
+
+#~ msgid "Terminate"
+#~ msgstr "நிறுத்து"

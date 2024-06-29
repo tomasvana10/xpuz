@@ -218,11 +218,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"le ho kenya lihlooho tsa pycairo haeba u se ka lifensetere khokahano e "
-"latelang e le tataiso"
+"le ho kenya lihlooho tsa pycairo haeba u se lifensetere li sebelisa tataiso "
+"ea pycairo"
 
 #: utils.py:236
 msgid ""
@@ -379,20 +379,20 @@ msgid "Search"
 msgstr "Batla"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Mojaro"
+msgid "Create"
+msgstr "Theha"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Ho bula"
+msgid "Play"
+msgstr "Bapala"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Etsa PDF"
+msgid "Write to PDF"
+msgstr "Ngola ho PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Felisa Les"
+msgid "Destroy"
+msgstr "Senya"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -613,3 +613,15 @@ msgstr "Lebitso la lebitso"
 
 msgid "Symbol"
 msgstr "Letšoao la letšoao"
+
+#~ msgid "Load"
+#~ msgstr "Mojaro"
+
+#~ msgid "Open"
+#~ msgstr "Ho bula"
+
+#~ msgid "Make PDF"
+#~ msgstr "Etsa PDF"
+
+#~ msgid "Terminate"
+#~ msgstr "Felisa Les"

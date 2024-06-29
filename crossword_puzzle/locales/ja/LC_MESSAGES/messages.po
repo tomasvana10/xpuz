@@ -200,9 +200,9 @@ msgstr "この操作を実行するために必要なピカイロがありませ
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
-msgstr "そして、ガイドとして次のリンクでWindowsにいない場合は、Pycairoのヘッダーをインストールします"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
+msgstr "Pycairo's Getting Guideを使用してWindowsにいない場合は、Pycairoのヘッダーをインストールしてください"
 
 #: utils.py:236
 msgid ""
@@ -354,20 +354,20 @@ msgid "Search"
 msgstr "検索"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "負荷"
+msgid "Create"
+msgstr "作成する"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "開ける"
+msgid "Play"
+msgstr "遊ぶ"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "PDFを作成します"
+msgid "Write to PDF"
+msgstr "PDFに書き込みます"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "終了する"
+msgid "Destroy"
+msgstr "破壊する"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -588,3 +588,15 @@ msgstr "名前"
 
 msgid "Symbol"
 msgstr "記号"
+
+#~ msgid "Load"
+#~ msgstr "負荷"
+
+#~ msgid "Open"
+#~ msgstr "開ける"
+
+#~ msgid "Make PDF"
+#~ msgstr "PDFを作成します"
+
+#~ msgid "Terminate"
+#~ msgstr "終了する"

@@ -205,10 +205,11 @@ msgstr "Vos es absentis pycairo, quod requiritur ad operationem.Run"
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"Et install in capitis ad pycairo si non in Fenestra in sequenti link ut dux"
+"Et install in capitis ad pycairo si non in Fenestra usura pycairo scriptor "
+"questus coepi dux"
 
 #: utils.py:236
 msgid ""
@@ -364,20 +365,20 @@ msgid "Search"
 msgstr "Quaerere"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Onus"
+msgid "Create"
+msgstr "Creo"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Aperto"
+msgid "Play"
+msgstr "Pale"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "PDF faciunt"
+msgid "Write to PDF"
+msgstr "Scribere PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Terminito"
+msgid "Destroy"
+msgstr "Perdisco"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -598,3 +599,15 @@ msgstr "Nomen"
 
 msgid "Symbol"
 msgstr "Symbolum"
+
+#~ msgid "Load"
+#~ msgstr "Onus"
+
+#~ msgid "Open"
+#~ msgstr "Aperto"
+
+#~ msgid "Make PDF"
+#~ msgstr "PDF faciunt"
+
+#~ msgid "Terminate"
+#~ msgstr "Terminito"

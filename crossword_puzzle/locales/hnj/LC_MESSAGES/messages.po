@@ -217,11 +217,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"thiab nruab cov headers rau Pycairo yog tias koj tsis nyob ntawm Windows "
-"ntawm qhov txuas hauv qab no ua cov lus qhia"
+"thiab nruab cov headers rau Pycairo yog tias koj tsis nyob ntawm Windows siv"
+" Pycairo tau pib qhia"
 
 #: utils.py:236
 msgid ""
@@ -379,20 +379,20 @@ msgid "Search"
 msgstr "Kev tshawb nrhiav"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Yam ris"
+msgid "Create"
+msgstr "Tsim"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Qhib"
+msgid "Play"
+msgstr "Ua si"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Ua PDF"
+msgid "Write to PDF"
+msgstr "Sau rau PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Txiav"
+msgid "Destroy"
+msgstr "Rhuav"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -615,3 +615,15 @@ msgstr "Lub npe"
 
 msgid "Symbol"
 msgstr "Lub cim"
+
+#~ msgid "Load"
+#~ msgstr "Yam ris"
+
+#~ msgid "Open"
+#~ msgstr "Qhib"
+
+#~ msgid "Make PDF"
+#~ msgstr "Ua PDF"
+
+#~ msgid "Terminate"
+#~ msgstr "Txiav"

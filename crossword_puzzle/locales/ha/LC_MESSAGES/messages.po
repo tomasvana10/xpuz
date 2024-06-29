@@ -220,11 +220,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"kuma shigar da taken da pyciro idan ba ku kan windows a cikin hanyar haɗin "
-"yanar gizo mai zuwa azaman jagora"
+"kuma shigar da taken da pyciro idan ba a kan Windows ta amfani da Jagorar "
+"Pycairi"
 
 #: utils.py:236
 msgid ""
@@ -383,20 +383,20 @@ msgid "Search"
 msgstr "Bincika"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Lodi"
+msgid "Create"
+msgstr "Halitta"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Buɗe"
+msgid "Play"
+msgstr "Yi wasa"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Yi pdf"
+msgid "Write to PDF"
+msgstr "Rubuta zuwa PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "An kawar da"
+msgid "Destroy"
+msgstr "Rushe"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -617,3 +617,15 @@ msgstr "Sunan"
 
 msgid "Symbol"
 msgstr "Alamar"
+
+#~ msgid "Load"
+#~ msgstr "Lodi"
+
+#~ msgid "Open"
+#~ msgstr "Buɗe"
+
+#~ msgid "Make PDF"
+#~ msgstr "Yi pdf"
+
+#~ msgid "Terminate"
+#~ msgstr "An kawar da"

@@ -218,11 +218,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"i instal·leu les capçaleres per a Pycairo si no esteu a Windows al següent "
-"enllaç com a guia"
+"i instal·leu les capçaleres per a Pycairo si no esteu a Windows mitjançant "
+"la guia de Pycairo Inici"
 
 #: utils.py:236
 msgid ""
@@ -380,20 +380,20 @@ msgid "Search"
 msgstr "Cerca"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Càrrega"
+msgid "Create"
+msgstr "Crear"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Obrir"
+msgid "Play"
+msgstr "Jugar"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Fer pdf"
+msgid "Write to PDF"
+msgstr "Escriu a PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Acabar"
+msgid "Destroy"
+msgstr "Destruir"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -614,3 +614,15 @@ msgstr "Nom"
 
 msgid "Symbol"
 msgstr "Símbol"
+
+#~ msgid "Load"
+#~ msgstr "Càrrega"
+
+#~ msgid "Open"
+#~ msgstr "Obrir"
+
+#~ msgid "Make PDF"
+#~ msgstr "Fer pdf"
+
+#~ msgid "Terminate"
+#~ msgstr "Acabar"

@@ -214,11 +214,9 @@ msgstr "Сізде бұл әрекетті орындау үшін қажет Py
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
-msgstr ""
-"Егер сіз келесі сілтемеде терезеде болмасаңыз, тақырыптарды Pycairo үшін "
-"орнатыңыз"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
+msgstr "Егер сіз Windows-та болмасаңыз, Pycairo үшін тақырыптарды орнатыңыз"
 
 #: utils.py:236
 msgid ""
@@ -374,20 +372,20 @@ msgid "Search"
 msgstr "Іздеу"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Жүктеу"
+msgid "Create"
+msgstr "Жарату"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Ашу"
+msgid "Play"
+msgstr "Ойнау"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "PDF жасаңыз"
+msgid "Write to PDF"
+msgstr "PDF-ке жазыңыз"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Тоқтату"
+msgid "Destroy"
+msgstr "Бұзу"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -608,3 +606,15 @@ msgstr "Атауы"
 
 msgid "Symbol"
 msgstr "Символ"
+
+#~ msgid "Load"
+#~ msgstr "Жүктеу"
+
+#~ msgid "Open"
+#~ msgstr "Ашу"
+
+#~ msgid "Make PDF"
+#~ msgstr "PDF жасаңыз"
+
+#~ msgid "Terminate"
+#~ msgstr "Тоқтату"

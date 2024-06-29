@@ -214,11 +214,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"အကယ်. သင်သည်ပြတင်းပေါက်များ၌လမ်းပြတစ်ခုအနေဖြင့် 0 င်းဒိုးတွင်မပါရှိပါက "
-"Pycairo အတွက်ခေါင်းဖောင်းများကိုတပ်ဆင်ပါ"
+"Pycairoo ကို အသုံးပြု. Windows ကိုဖွင့ ်. 0 င်းဒိုးကိုမဖွင့်ပါက Pycairo "
+"အတွက်ခေါင်းဖောင်းများကိုတပ်ဆင်ပါ"
 
 #: utils.py:236
 msgid ""
@@ -381,20 +381,20 @@ msgid "Search"
 msgstr "ရှာဖေှခြင်း"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "ဝန်တင်"
+msgid "Create"
+msgstr "ဖန်တီး"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "ဖွင့်ထားပါ"
+msgid "Play"
+msgstr "ကစားခြင်း"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "PDF လုပ်ပါ"
+msgid "Write to PDF"
+msgstr "PDF သို့ရေးပါ"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "အဆုံးသတ်ခြင်း"
+msgid "Destroy"
+msgstr "ဖျက်ဆီး"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -615,3 +615,15 @@ msgstr "အမည်"
 
 msgid "Symbol"
 msgstr "အမှတ်သင်္ကေတ"
+
+#~ msgid "Load"
+#~ msgstr "ဝန်တင်"
+
+#~ msgid "Open"
+#~ msgstr "ဖွင့်ထားပါ"
+
+#~ msgid "Make PDF"
+#~ msgstr "PDF လုပ်ပါ"
+
+#~ msgid "Terminate"
+#~ msgstr "အဆုံးသတ်ခြင်း"

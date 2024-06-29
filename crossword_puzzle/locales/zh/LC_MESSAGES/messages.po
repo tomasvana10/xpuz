@@ -200,9 +200,9 @@ msgstr "您缺少Pycairo，这是执行此操作所必需的。请跑"
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
-msgstr "如果您不在以下链接作为指南，请安装Pycairo的标头"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
+msgstr "如果您不使用Pycairo的“入门指南”安装Pycairo的标题"
 
 #: utils.py:236
 msgid ""
@@ -353,20 +353,20 @@ msgid "Search"
 msgstr "搜索"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "负荷"
+msgid "Create"
+msgstr "创造"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "打开"
+msgid "Play"
+msgstr "玩"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "做PDF"
+msgid "Write to PDF"
+msgstr "写入PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "终止"
+msgid "Destroy"
+msgstr "破坏"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -587,3 +587,15 @@ msgstr "名字"
 
 msgid "Symbol"
 msgstr "象征"
+
+#~ msgid "Load"
+#~ msgstr "负荷"
+
+#~ msgid "Open"
+#~ msgstr "打开"
+
+#~ msgid "Make PDF"
+#~ msgstr "做PDF"
+
+#~ msgid "Terminate"
+#~ msgstr "终止"

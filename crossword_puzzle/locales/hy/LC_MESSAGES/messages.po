@@ -217,11 +217,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"եւ տեղադրեք վերնագրերը Pycairo- ի համար, եթե դուք Windows- ում չեք հետեւյալ "
-"հղումից, որպես ուղեցույց"
+"եւ տեղադրեք վերնագրերը Pycairo- ի համար, եթե դուք Windows- ում չեք, "
+"օգտագործելով Pycairo- ի մեկնարկը"
 
 #: utils.py:236
 msgid ""
@@ -378,20 +378,20 @@ msgid "Search"
 msgstr "Որոնել"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Բեռնել"
+msgid "Create"
+msgstr "Ստեղծել"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Բաց"
+msgid "Play"
+msgstr "Խաղալ"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Կատարել pdf"
+msgid "Write to PDF"
+msgstr "Գրեք PDF- ին"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Տերմին"
+msgid "Destroy"
+msgstr "Ոչնչացնել"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -612,3 +612,15 @@ msgstr "Անուն"
 
 msgid "Symbol"
 msgstr "Զինանշան"
+
+#~ msgid "Load"
+#~ msgstr "Բեռնել"
+
+#~ msgid "Open"
+#~ msgstr "Բաց"
+
+#~ msgid "Make PDF"
+#~ msgstr "Կատարել pdf"
+
+#~ msgid "Terminate"
+#~ msgstr "Տերմին"

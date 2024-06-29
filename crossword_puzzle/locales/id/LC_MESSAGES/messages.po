@@ -218,11 +218,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"dan instal header untuk pycairo jika Anda tidak menggunakan windows di "
-"tautan berikut sebagai panduan"
+"dan instal header untuk pycairo jika Anda tidak menggunakan windows "
+"menggunakan panduan pemula Pycairo"
 
 #: utils.py:236
 msgid ""
@@ -380,20 +380,20 @@ msgid "Search"
 msgstr "Mencari"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Muat"
+msgid "Create"
+msgstr "Membuat"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Buka"
+msgid "Play"
+msgstr "Bermain"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Membuat pdf"
+msgid "Write to PDF"
+msgstr "Tulis ke PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Menyelesaikan"
+msgid "Destroy"
+msgstr "Menghancurkan"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -614,3 +614,15 @@ msgstr "Nama"
 
 msgid "Symbol"
 msgstr "Lambang"
+
+#~ msgid "Load"
+#~ msgstr "Muat"
+
+#~ msgid "Open"
+#~ msgstr "Buka"
+
+#~ msgid "Make PDF"
+#~ msgstr "Membuat pdf"
+
+#~ msgid "Terminate"
+#~ msgstr "Menyelesaikan"

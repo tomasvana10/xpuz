@@ -221,11 +221,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"ug i-install ang mga header alang sa pycairo kung wala ka sa mga bintana sa "
-"mosunud nga link ingon usa ka giya"
+"ug i-install ang mga header alang sa pycairo kung wala ka sa Windows gamit "
+"ang pag-undang sa giya sa Pycairo"
 
 #: utils.py:236
 msgid ""
@@ -384,20 +384,20 @@ msgid "Search"
 msgstr "Mangita"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Karga"
+msgid "Create"
+msgstr "Paghimo"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Bukas"
+msgid "Play"
+msgstr "Magdula"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Paghimo PDF"
+msgid "Write to PDF"
+msgstr "Pagsulat sa PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Taposon"
+msgid "Destroy"
+msgstr "Moguba"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -619,3 +619,15 @@ msgstr "Ngalan"
 
 msgid "Symbol"
 msgstr "Timailhan"
+
+#~ msgid "Load"
+#~ msgstr "Karga"
+
+#~ msgid "Open"
+#~ msgstr "Bukas"
+
+#~ msgid "Make PDF"
+#~ msgstr "Paghimo PDF"
+
+#~ msgid "Terminate"
+#~ msgstr "Taposon"

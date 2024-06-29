@@ -219,11 +219,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"и инсталирайте заглавките за pycairo, ако не сте на прозорци на следната "
-"връзка като ръководство"
+"и инсталирайте заглавките за pycairo, ако не сте на Windows, използвайки "
+"Ръководството за стартиране на Pycairo"
 
 #: utils.py:236
 msgid ""
@@ -379,20 +379,20 @@ msgid "Search"
 msgstr "Търсене"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Товаря"
+msgid "Create"
+msgstr "Създаване"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Отворя"
+msgid "Play"
+msgstr "Игра"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Направете pdf"
+msgid "Write to PDF"
+msgstr "Пишете на PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Приключвам"
+msgid "Destroy"
+msgstr "Унищожи"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -613,3 +613,15 @@ msgstr "Име"
 
 msgid "Symbol"
 msgstr "Символ"
+
+#~ msgid "Load"
+#~ msgstr "Товаря"
+
+#~ msgid "Open"
+#~ msgstr "Отворя"
+
+#~ msgid "Make PDF"
+#~ msgstr "Направете pdf"
+
+#~ msgid "Terminate"
+#~ msgstr "Приключвам"

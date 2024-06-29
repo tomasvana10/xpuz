@@ -220,11 +220,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"en installeer de headers voor Pycairo als u niet op Windows bent op de "
-"volgende link als gids"
+"en installeer de headers voor Pycairo als u niet op Windows bent met behulp "
+"van Pycairo's Starting Guide"
 
 #: utils.py:236
 msgid ""
@@ -383,20 +383,20 @@ msgid "Search"
 msgstr "Zoekopdracht"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Lading"
+msgid "Create"
+msgstr "Creëren"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Openen"
+msgid "Play"
+msgstr "Toneelstuk"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Maak PDF"
+msgid "Write to PDF"
+msgstr "Schrijf naar PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Beëindigen"
+msgid "Destroy"
+msgstr "Vernietigen"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -617,3 +617,15 @@ msgstr "Naam"
 
 msgid "Symbol"
 msgstr "Symbool"
+
+#~ msgid "Load"
+#~ msgstr "Lading"
+
+#~ msgid "Open"
+#~ msgstr "Openen"
+
+#~ msgid "Make PDF"
+#~ msgstr "Maak PDF"
+
+#~ msgid "Terminate"
+#~ msgstr "Beëindigen"

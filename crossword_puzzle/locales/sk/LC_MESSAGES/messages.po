@@ -216,11 +216,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"A nainštalujte hlavičky pre Pycairo, ak nie ste na Windows na nasledujúcom "
-"odkaze ako sprievodcu"
+"A nainštalujte hlavičky pre Pycairo, ak nie ste v systéme Windows pomocou "
+"sprievodcu Pycairo's Geting Geting"
 
 #: utils.py:236
 msgid ""
@@ -375,20 +375,20 @@ msgid "Search"
 msgstr "Vyhľadávanie"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Naložiť"
+msgid "Create"
+msgstr "Vytvárať"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Otvorený"
+msgid "Play"
+msgstr "hrať"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Urobiť PDF"
+msgid "Write to PDF"
+msgstr "Napíšte na PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Ukončiť"
+msgid "Destroy"
+msgstr "Zničiť"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -609,3 +609,15 @@ msgstr "Meno"
 
 msgid "Symbol"
 msgstr "Symbol"
+
+#~ msgid "Load"
+#~ msgstr "Naložiť"
+
+#~ msgid "Open"
+#~ msgstr "Otvorený"
+
+#~ msgid "Make PDF"
+#~ msgstr "Urobiť PDF"
+
+#~ msgid "Terminate"
+#~ msgstr "Ukončiť"

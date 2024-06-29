@@ -184,7 +184,7 @@ class BrowserPage(CTkFrame, Addons):
 
         self.b_load_cword = CTkButton(
             self.button_container,
-            text=_("Load"),
+            text=_("Create"),
             height=50,
             command=self.load,
             state="disabled",
@@ -193,7 +193,7 @@ class BrowserPage(CTkFrame, Addons):
 
         self.b_open_webapp = CTkButton(
             self.button_container,
-            text=_("Open"),
+            text=_("Play"),
             height=50,
             command=self.open_webapp,
             font=self.TEXT_FONT,
@@ -203,7 +203,7 @@ class BrowserPage(CTkFrame, Addons):
         
         self.b_write_pdf = CTkButton(
             self.button_container,
-            text=_("Make PDF"),
+            text=_("Write to PDF"),
             height=50,
             command=self.write_pdf,
             font=self.TEXT_FONT,
@@ -211,7 +211,7 @@ class BrowserPage(CTkFrame, Addons):
 
         self.b_terminate_webapp = CTkButton(
             self.button_container,
-            text=_("Terminate"),
+            text=_("Destroy"),
             height=50,
             command=self.terminate,
             fg_color=Colour.Global.EXIT_BUTTON,
@@ -309,7 +309,7 @@ class BrowserPage(CTkFrame, Addons):
             return
 
         for button in self.sb_view._buttons_dict.values():
-            if button.cget("text") != view:
+            if button.cget("text") != _(view):
                 button.configure(text_color="black")
             else:
                 button.configure(text_color="white")

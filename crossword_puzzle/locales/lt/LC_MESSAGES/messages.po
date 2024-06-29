@@ -218,11 +218,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"ir įdiekite „Pycairo“ antraštes, jei nesate „Windows“ šioje nuorodoje kaip "
-"vadovas kaip vadovas"
+"Ir įdiekite „Pycairo“ antraštes, jei nesate „Windows“ naudodami „Pycairo“ "
+"pradedančiųjų vadovą"
 
 #: utils.py:236
 msgid ""
@@ -379,20 +379,20 @@ msgid "Search"
 msgstr "Paieška"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Apkrova"
+msgid "Create"
+msgstr "Sukurti"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Atidaryta"
+msgid "Play"
+msgstr "žaisti"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Padarykite pdf"
+msgid "Write to PDF"
+msgstr "Rašykite į PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Nutraukti"
+msgid "Destroy"
+msgstr "Sunaikinti"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -613,3 +613,15 @@ msgstr "Vardas, pavadinimas"
 
 msgid "Symbol"
 msgstr "Simbolis"
+
+#~ msgid "Load"
+#~ msgstr "Apkrova"
+
+#~ msgid "Open"
+#~ msgstr "Atidaryta"
+
+#~ msgid "Make PDF"
+#~ msgstr "Padarykite pdf"
+
+#~ msgid "Terminate"
+#~ msgstr "Nutraukti"

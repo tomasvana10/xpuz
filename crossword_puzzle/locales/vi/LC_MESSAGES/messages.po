@@ -213,11 +213,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"và cài đặt các tiêu đề cho pycairo nếu bạn không ở trên cửa sổ ở liên kết "
-"sau làm hướng dẫn"
+"và cài đặt các tiêu đề cho pycairo nếu bạn không ở trên cửa sổ bằng cách sử "
+"dụng hướng dẫn bắt đầu của Pycairo"
 
 #: utils.py:236
 msgid ""
@@ -373,20 +373,20 @@ msgid "Search"
 msgstr "Tìm kiếm"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Tải"
+msgid "Create"
+msgstr "Tạo nên"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Mở"
+msgid "Play"
+msgstr "Chơi"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Tạo PDF"
+msgid "Write to PDF"
+msgstr "Viết thư cho PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Chấm dứt"
+msgid "Destroy"
+msgstr "Hủy hoại"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -607,3 +607,15 @@ msgstr "Tên"
 
 msgid "Symbol"
 msgstr "Biểu tượng"
+
+#~ msgid "Load"
+#~ msgstr "Tải"
+
+#~ msgid "Open"
+#~ msgstr "Mở"
+
+#~ msgid "Make PDF"
+#~ msgstr "Tạo PDF"
+
+#~ msgid "Terminate"
+#~ msgstr "Chấm dứt"

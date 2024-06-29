@@ -213,11 +213,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"ඔබ මාර්ගෝපදේශයක් ලෙස පහත සබැඳිය කවුළුවල නොමැති නම් pycairo සඳහා ශීර්ෂයන් "
-"සඳහා ශීර්ෂ කරන්න"
+"පයරායිරෝ හි ආරම්භක මාර්ගෝපදේශය භාවිතා කරමින් ඔබ වින්ඩෝස් හි නොමැති නම් "
+"පයැරාවිරෝ සඳහා ශීර්ෂයන් ස්ථාපනය කරන්න"
 
 #: utils.py:236
 msgid ""
@@ -375,20 +375,20 @@ msgid "Search"
 msgstr "සෙවීම"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "පැටවීම"
+msgid "Create"
+msgstr "සාදන්න"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "විවෘත කරන්න"
+msgid "Play"
+msgstr "සෙල්ලම් කරන්න"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "PDF සාදන්න"
+msgid "Write to PDF"
+msgstr "PDF වෙත ලියන්න"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "අවසන් කරන්න"
+msgid "Destroy"
+msgstr "විනාශ කරන්න"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -609,3 +609,15 @@ msgstr "නම"
 
 msgid "Symbol"
 msgstr "සංකේතය"
+
+#~ msgid "Load"
+#~ msgstr "පැටවීම"
+
+#~ msgid "Open"
+#~ msgstr "විවෘත කරන්න"
+
+#~ msgid "Make PDF"
+#~ msgstr "PDF සාදන්න"
+
+#~ msgid "Terminate"
+#~ msgstr "අවසන් කරන්න"

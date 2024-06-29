@@ -220,11 +220,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"agus na ceanntásca a shuiteáil do Pycairo mura bhfuil tú ar Windows ag an "
-"nasc seo a leanas mar threoir"
+"agus na ceanntásca a shuiteáil le haghaidh Pycairo mura bhfuil tú ar Windows"
+" ag baint úsáide as Treoir Pycairo's Getting Start"
 
 #: utils.py:236
 msgid ""
@@ -383,20 +383,20 @@ msgid "Search"
 msgstr "Cuardach"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Luchtaigh"
+msgid "Create"
+msgstr "Cruthaigh"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Oscail"
+msgid "Play"
+msgstr "Bheith ag súgradh"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Déan PDF"
+msgid "Write to PDF"
+msgstr "Scríobh chuig PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Foirceannadh"
+msgid "Destroy"
+msgstr "Scrios"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -617,3 +617,15 @@ msgstr "Ainm"
 
 msgid "Symbol"
 msgstr "Siombail"
+
+#~ msgid "Load"
+#~ msgstr "Luchtaigh"
+
+#~ msgid "Open"
+#~ msgstr "Oscail"
+
+#~ msgid "Make PDF"
+#~ msgstr "Déan PDF"
+
+#~ msgid "Terminate"
+#~ msgstr "Foirceannadh"

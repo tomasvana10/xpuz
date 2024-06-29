@@ -217,11 +217,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"u installa l-intestaturi għal Pycairo jekk m'intix fuq it-twieqi fil-link li"
-" ġej bħala gwida"
+"u installa l-intestaturi għal Pycairo jekk m'intix fuq it-twieqi billi tuża "
+"l-gwida tal-bidu ta 'Pycairo"
 
 #: utils.py:236
 msgid ""
@@ -379,20 +379,20 @@ msgid "Search"
 msgstr "Tfittxija"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Tagħbija"
+msgid "Create"
+msgstr "Oħloq"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Miftuħa"
+msgid "Play"
+msgstr "Play"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Agħmel PDF"
+msgid "Write to PDF"
+msgstr "Ikteb lil PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Jintemmu"
+msgid "Destroy"
+msgstr "Teqred"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -613,3 +613,15 @@ msgstr "Isem"
 
 msgid "Symbol"
 msgstr "Simbolu"
+
+#~ msgid "Load"
+#~ msgstr "Tagħbija"
+
+#~ msgid "Open"
+#~ msgstr "Miftuħa"
+
+#~ msgid "Make PDF"
+#~ msgstr "Agħmel PDF"
+
+#~ msgid "Terminate"
+#~ msgstr "Jintemmu"

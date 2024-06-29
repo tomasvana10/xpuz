@@ -213,11 +213,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"Хэрэв та гарын авлага болгон цонхны цонхонд байхгүй бол пикеро дээр гарчиг "
-"суурилуул"
+"Хэрэв та PYCIAIRO-д POCIAIRO-д суулгаж байгаа бол PYCAIRO-г ашиглаж байгаа "
+"бол PONDAIRO-г эхлүүлэх"
 
 #: utils.py:236
 msgid ""
@@ -372,20 +372,20 @@ msgid "Search"
 msgstr "Эрэл хайгуул хийх"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Ачаа"
+msgid "Create"
+msgstr "Шуүгиан дэгдээх"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Нээлттэй"
+msgid "Play"
+msgstr "Тоглоом"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Pdf хийх"
+msgid "Write to PDF"
+msgstr "PDF руу бичих"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Терминатор"
+msgid "Destroy"
+msgstr "Устгах"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -606,3 +606,15 @@ msgstr "Нэр"
 
 msgid "Symbol"
 msgstr "Бэлгэдэл"
+
+#~ msgid "Load"
+#~ msgstr "Ачаа"
+
+#~ msgid "Open"
+#~ msgstr "Нээлттэй"
+
+#~ msgid "Make PDF"
+#~ msgstr "Pdf хийх"
+
+#~ msgid "Terminate"
+#~ msgstr "Терминатор"

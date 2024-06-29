@@ -215,11 +215,11 @@ msgstr "आपण पायकायरो गहाळ आहात, ज्य�
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"आपण मार्गदर्शक म्हणून खालील दुव्यावर विंडोजवर नसल्यास पायकेरोसाठी शीर्षलेख "
-"स्थापित करा"
+"आणि पायकेरोसाठी हेडर्स स्थापित करा जर आपण पायकायरोच्या स्टार्ट गाईडचा वापर "
+"करुन विंडोजवर नसाल तर"
 
 #: utils.py:236
 msgid ""
@@ -376,20 +376,20 @@ msgid "Search"
 msgstr "शोध"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "ओझे"
+msgid "Create"
+msgstr "तयार करा"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "उघडणे"
+msgid "Play"
+msgstr "खेळा"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "पीडीएफ बनवा"
+msgid "Write to PDF"
+msgstr "पीडीएफला लिहा"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "समाप्त करा"
+msgid "Destroy"
+msgstr "नष्ट करा"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -610,3 +610,15 @@ msgstr "नाम"
 
 msgid "Symbol"
 msgstr "प्रतीक"
+
+#~ msgid "Load"
+#~ msgstr "ओझे"
+
+#~ msgid "Open"
+#~ msgstr "उघडणे"
+
+#~ msgid "Make PDF"
+#~ msgstr "पीडीएफ बनवा"
+
+#~ msgid "Terminate"
+#~ msgstr "समाप्त करा"

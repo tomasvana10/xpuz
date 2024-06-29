@@ -212,11 +212,11 @@ msgstr "O n padanu Pycaro, eyiti o nilo lati ṣe iṣẹ yii.Jọwọ sare"
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"ki o si fi sori ẹrọ awọn akọle fun PYCAIRO Ti o ko ba lori Windows ni ọna "
-"asopọ atẹle bi itọsọna kan"
+"ki o si fi sori ẹrọ awọn akọle fun PYCAIRO Ti o ko ba lori Windows nipa lilo"
+" Pyccairo's Bibẹrẹ Itọsọna Bibẹrẹ"
 
 #: utils.py:236
 msgid ""
@@ -372,20 +372,20 @@ msgid "Search"
 msgstr "Ṣewadii"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Kó"
+msgid "Create"
+msgstr "Lati ṣẹda"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Ṣí"
+msgid "Play"
+msgstr "Mu ṣiṣẹ"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Ṣe pdf"
+msgid "Write to PDF"
+msgstr "Kọ si pdf"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Fòpin sí i"
+msgid "Destroy"
+msgstr "Pa run run"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -606,3 +606,15 @@ msgstr "Orúkọ"
 
 msgid "Symbol"
 msgstr "Àmì"
+
+#~ msgid "Load"
+#~ msgstr "Kó"
+
+#~ msgid "Open"
+#~ msgstr "Ṣí"
+
+#~ msgid "Make PDF"
+#~ msgstr "Ṣe pdf"
+
+#~ msgid "Terminate"
+#~ msgstr "Fòpin sí i"

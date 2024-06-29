@@ -220,11 +220,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"ଏବଂ ପିକିରୋ ପାଇଁ ହେଡର୍ ସଂସ୍ଥାପନ କରନ୍ତୁ ଯଦି ଆପଣ ୱିଣ୍ଡୋଜ୍ ଲିଙ୍କ୍ ରେ ୱିଣ୍ଡୋଜ୍ ରେ"
-" ଥାଆନ୍ତି ନାହିଁ |"
+"ଏବଂ ଯଦି ଆପଣ ପାଇକିରୋଙ୍କ ଗାଇଡ୍ ବ୍ୟବହାର କରି ୱିଣ୍ଡୋଜ୍ ରାଇଡ୍ ଗାଇଡ୍ ବ୍ୟବହାର କରି "
+"ଘରେ ଥିବା ହେଡର୍ ସଂସ୍ଥାପନ କରନ୍ତୁ |"
 
 #: utils.py:236
 msgid ""
@@ -383,20 +383,20 @@ msgid "Search"
 msgstr "ସନ୍ଧାନ କର |"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "ଲୋଡ୍ ଲୋଡ୍"
+msgid "Create"
+msgstr "ସୃଷ୍ଟି କରନ୍ତୁ |"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "ଖୋଲା ଅଛି"
+msgid "Play"
+msgstr "ଖେଳ"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "PDF ତିଆରି କରନ୍ତୁ |"
+msgid "Write to PDF"
+msgstr "PDF କୁ ଲେଖନ୍ତୁ |"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Terminate"
+msgid "Destroy"
+msgstr "ବିନାଶ କର |"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -617,3 +617,15 @@ msgstr "ନାମ[ସମ୍ପାଦନା]"
 
 msgid "Symbol"
 msgstr "ଚିହ୍ନ[ସମ୍ପାଦନା]"
+
+#~ msgid "Load"
+#~ msgstr "ଲୋଡ୍ ଲୋଡ୍"
+
+#~ msgid "Open"
+#~ msgstr "ଖୋଲା ଅଛି"
+
+#~ msgid "Make PDF"
+#~ msgstr "PDF ତିଆରି କରନ୍ତୁ |"
+
+#~ msgid "Terminate"
+#~ msgstr "Terminate"

@@ -200,9 +200,9 @@ msgstr "이 작업을 수행 해야하는 Pycairo가 누락되었습니다.실�
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
-msgstr "다음 링크에서 가이드로 Windows에 있지 않은 경우 Pycairo 헤더를 설치하십시오."
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
+msgstr "Pycairo의 시작 가이드를 사용하여 Windows에 있지 않은 경우 Pycairo 헤더를 설치하십시오."
 
 #: utils.py:236
 msgid ""
@@ -354,20 +354,20 @@ msgid "Search"
 msgstr "찾다"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "부하"
+msgid "Create"
+msgstr "만들다"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "열다"
+msgid "Play"
+msgstr "놀다"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "PDF를 만드십시오"
+msgid "Write to PDF"
+msgstr "PDF에 쓰십시오"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "끝내다"
+msgid "Destroy"
+msgstr "파괴하다"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -588,3 +588,15 @@ msgstr "이름"
 
 msgid "Symbol"
 msgstr "상징"
+
+#~ msgid "Load"
+#~ msgstr "부하"
+
+#~ msgid "Open"
+#~ msgstr "열다"
+
+#~ msgid "Make PDF"
+#~ msgstr "PDF를 만드십시오"
+
+#~ msgid "Terminate"
+#~ msgstr "끝내다"

@@ -219,11 +219,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"და დააინსტალირეთ სათაურები Pycairo- სთვის, თუ თქვენ არ ხართ ფანჯრებზე შემდეგ"
-" ბმულზე, როგორც სახელმძღვანელო"
+"და დააინსტალირეთ სათაურები Pycairo- სთვის, თუ თქვენ არ ხართ ფანჯრებზე, "
+"რომლებიც იყენებთ PycaiRo– ს დაწყების სახელმძღვანელოს"
 
 #: utils.py:236
 msgid ""
@@ -380,20 +380,20 @@ msgid "Search"
 msgstr "ძებნა"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "ჩატვირთვა"
+msgid "Create"
+msgstr "Შექმნა"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "გახსნა"
+msgid "Play"
+msgstr "თამაში"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "გააკეთე PDF"
+msgid "Write to PDF"
+msgstr "დაწერე PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "შეწყვეტა"
+msgid "Destroy"
+msgstr "დანგრევა"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -614,3 +614,15 @@ msgstr "სახელი"
 
 msgid "Symbol"
 msgstr "სიმბოლო"
+
+#~ msgid "Load"
+#~ msgstr "ჩატვირთვა"
+
+#~ msgid "Open"
+#~ msgstr "გახსნა"
+
+#~ msgid "Make PDF"
+#~ msgstr "გააკეთე PDF"
+
+#~ msgid "Terminate"
+#~ msgstr "შეწყვეტა"

@@ -216,11 +216,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"a nainstalujte záhlaví pro Pycairo, pokud nejste na Windows na následujícím "
-"odkazu jako průvodce"
+"a nainstalujte záhlaví pro Pycairo, pokud nejste na Windows pomocí Pycairo's"
+" Get Začínáme průvodce"
 
 #: utils.py:236
 msgid ""
@@ -375,20 +375,20 @@ msgid "Search"
 msgstr "Vyhledávání"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Náklad"
+msgid "Create"
+msgstr "Vytvořit"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Otevřený"
+msgid "Play"
+msgstr "Hrát si"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Vytvořte PDF"
+msgid "Write to PDF"
+msgstr "Napište do PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Ukončit"
+msgid "Destroy"
+msgstr "Zničit"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -609,3 +609,15 @@ msgstr "Jméno"
 
 msgid "Symbol"
 msgstr "Symbol"
+
+#~ msgid "Load"
+#~ msgstr "Náklad"
+
+#~ msgid "Open"
+#~ msgstr "Otevřený"
+
+#~ msgid "Make PDF"
+#~ msgstr "Vytvořte PDF"
+
+#~ msgid "Terminate"
+#~ msgstr "Ukončit"

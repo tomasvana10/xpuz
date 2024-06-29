@@ -217,11 +217,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"eta instalatu pycairorako goiburuak Gida gisa hurrengo estekan ez badituzu "
-"Windows-en"
+"eta instalatu goiburuak pycairoren leihoetan ez bazaude Pycairoren hasitako "
+"gida erabiliz"
 
 #: utils.py:236
 msgid ""
@@ -378,20 +378,20 @@ msgid "Search"
 msgstr "Araketa"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "Karga"
+msgid "Create"
+msgstr "Sortu"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Ireki"
+msgid "Play"
+msgstr "Jokatu"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Pdf egin"
+msgid "Write to PDF"
+msgstr "Idatzi pdf-ri"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Amaitu"
+msgid "Destroy"
+msgstr "Suntsitu"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -612,3 +612,15 @@ msgstr "Izena"
 
 msgid "Symbol"
 msgstr "Sinboloa"
+
+#~ msgid "Load"
+#~ msgstr "Karga"
+
+#~ msgid "Open"
+#~ msgstr "Ireki"
+
+#~ msgid "Make PDF"
+#~ msgstr "Pdf egin"
+
+#~ msgid "Terminate"
+#~ msgstr "Amaitu"

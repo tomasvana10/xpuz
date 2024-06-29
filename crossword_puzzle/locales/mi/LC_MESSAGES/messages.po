@@ -215,11 +215,11 @@ msgstr ""
 
 #: utils.py:226
 msgid ""
-"and install the headers for pycairo if you are not on Windows at the "
-"following link as a guide"
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
 msgstr ""
-"ka whakauru i nga pane mo te Pycaino Mena kaore koe i te Matapihi i te hono "
-"e whai ake nei hei kaiarahi"
+"me te whakauru i nga pane mo te Pycaino Mena kaore koe i runga i nga "
+"matapihi ma te whakamahi i nga kaiarahi tiimata o te Pycairo"
 
 #: utils.py:236
 msgid ""
@@ -377,20 +377,20 @@ msgid "Search"
 msgstr "Rapu"
 
 #: pages/browser.py:187
-msgid "Load"
-msgstr "[L]"
+msgid "Create"
+msgstr "Hanga"
 
 #: pages/browser.py:196
-msgid "Open"
-msgstr "Huaki"
+msgid "Play"
+msgstr "Whakaaturanga"
 
 #: pages/browser.py:206
-msgid "Make PDF"
-msgstr "Hanga pdf"
+msgid "Write to PDF"
+msgstr "Tuhia ki PDF"
 
 #: pages/browser.py:214
-msgid "Terminate"
-msgstr "Terminate"
+msgid "Destroy"
+msgstr "Wāwāhi"
 
 #: pages/browser.py:225
 msgid "Word count preferences"
@@ -611,3 +611,15 @@ msgstr "Ingoa"
 
 msgid "Symbol"
 msgstr "Tohu"
+
+#~ msgid "Load"
+#~ msgstr "[L]"
+
+#~ msgid "Open"
+#~ msgstr "Huaki"
+
+#~ msgid "Make PDF"
+#~ msgstr "Hanga pdf"
+
+#~ msgid "Terminate"
+#~ msgstr "Terminate"
