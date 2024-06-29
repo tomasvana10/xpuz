@@ -17,7 +17,7 @@
   
 </div>
 
-An educational GUI package built with `CustomTkinter` that allows you to play procedurally generated crosswords.
+An educational GUI package built with `CustomTkinter` that allows you to design and play procedurally generated crosswords.
 - Download the latest source code: [click here](https://github.com/tomasvana10/crossword_puzzle/releases/latest)
 
 ## Dependencies
@@ -31,12 +31,27 @@ An educational GUI package built with `CustomTkinter` that allows you to play pr
 `pathvalidate`
 `CTkToolTip`
 
+## Tested python versions
+- **Windows**: Python >= 3.7
+- **MacOS**: Python >= 3.8
+- **Linux**: Python >= 3.8
+
+## Requirements
+- **Hardware**
+  - RAM: >120MB (GUI only), >500MB (GUI and browser to play crossword)
+  - CPU: Any
+  - Storage: >6MB available space
+
+- **Software**
+  - A browser that isn't Internet Explorer
+  - Python and pip (see [Installation](#installation))
+
 ## Installation
 > [!IMPORTANT]
 > Installing `crossword_puzzle` requires Python and pip.
 > If you have Python installed without pip, click **[here](https://pip.pypa.io/en/stable/installation/)** to install it.<br><br>
-> If you do not have Python installed, download the installer **[here](https://www.python.org/downloads/)**, then refer to the previous link on how to install pip.<br><br>
-> If you are on Linux, you may not have Tkinter installed by default. Try running `sudo apt-get install python3-tk` if this is the case.
+> If you do not have Python installed, download the installer **[here](https://www.python.org/downloads/)**, or install it with **[pyenv](https://github.com/pyenv/pyenv)** (recommended). Then, refer to the previous link on how to install pip.<br><br>
+> If you are on Linux or MacOS, you may not have Tkinter installed by default. Try running `sudo apt-get install python3-tk` on Linux or `sudo pip install python3-tk` on MacOS if this is the case.
 
 > [!TIP]
 > If using `python` or `pip` doesn't work, try using `python3` or `pip3`.
