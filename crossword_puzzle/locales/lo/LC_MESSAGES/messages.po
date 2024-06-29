@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-28 21:00+1000\n"
+"POT-Creation-Date: 2024-06-29 19:48+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: lo <LL@li.org>\n"
@@ -19,49 +19,61 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: import_export.py:21
+#: import_export.py:24
 msgid "Select a destination to export your crosswords to"
 msgstr "ເລືອກຈຸດຫມາຍປາຍທາງເພື່ອສົ່ງອອກ crosswords ຂອງທ່ານໃຫ້"
 
-#: import_export.py:25
+#: import_export.py:28
 msgid "my-crosswords"
 msgstr "my-crosswords"
 
-#: import_export.py:64
+#: import_export.py:70
 msgid ""
 "Select a valid crossword JSON file that was exported using crossword_puzzle"
 msgstr ""
 "ເລືອກເອກະສານ Crossword JSON ທີ່ຖືກຕ້ອງທີ່ຖືກສົ່ງອອກໂດຍໃຊ້ Crossword_Puzzle"
 
-#: utils.py:60
+#: pdf.py:53
+msgid "Answers"
+msgstr "ຄໍາຕອບ"
+
+#: app/templates/index.html:286 pdf.py:207
+msgid "Across"
+msgstr "ຂ້າມ"
+
+#: app/templates/index.html:308 pdf.py:214
+msgid "Down"
+msgstr "ລົງ"
+
+#: utils.py:58
 msgid "Remove"
 msgstr "ການຖອດຖອນ"
 
-#: utils.py:60
+#: utils.py:59
 msgid "Are you sure you want to delete this"
 msgstr "ທ່ານແນ່ໃຈວ່າທ່ານຕ້ອງການລຶບນີ້"
 
-#: utils.py:60
+#: utils.py:61
 msgid "It will be lost forever!"
 msgstr "ຈະເສຍໄປຕະຫຼອດການ!"
 
-#: utils.py:65
+#: utils.py:66
 msgid "Add or select"
 msgstr "ເພີ່ມ ຫຼື ເລືອກ"
 
-#: utils.py:65
+#: utils.py:67
 msgid "Are you sure you want to add/select a"
 msgstr "ທ່ານແນ່ໃຈວ່າທ່ານຕ້ອງການເພີ່ມ/ຄັດເລືອກ"
 
-#: utils.py:65
+#: utils.py:69
 msgid "Your modified fields will be reset!"
 msgstr "ທົ່ງນາທີ່ຖືກດັດແປງຂອງທ່ານຈະໄດ້ຮັບການຕັ້ງຄ່າໃຫມ່!"
 
-#: utils.py:70 utils.py:94
+#: utils.py:74 utils.py:106
 msgid "Back to home"
 msgstr "ກັບໄປຫາບ້ານ"
 
-#: utils.py:70
+#: utils.py:75
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
@@ -69,11 +81,12 @@ msgstr ""
 "ທ່ານແນ່ໃຈວ່າທ່ານຕ້ອງການທີ່ຈະກັບຄືນໄປເບິ່ງຫນ້າຈໍບ້ານ? "
 "ທົ່ງນາທີ່ຖືກດັດແປງຂອງທ່ານຈະໄດ້ຮັບການຕັ້ງຄ່າໃຫມ່!"
 
-#: utils.py:75 utils.py:141 utils.py:151 utils.py:156 utils.py:179
+#: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
+#: utils.py:235
 msgid "Info"
 msgstr "ຂໍ້ມູນ"
 
-#: utils.py:75
+#: utils.py:84
 msgid ""
 "Are you sure you want to import crosswords? Your modified fields will be "
 "reset!"
@@ -81,54 +94,54 @@ msgstr ""
 "ທ່ານແນ່ໃຈບໍ່ວ່າທ່ານຕ້ອງການນໍາເຂົ້າ "
 "crosswords?ຂົງເຂດທີ່ຖືກດັດແກ້ຂອງທ່ານຈະຖືກປັບໃຫມ່!"
 
-#: utils.py:80
+#: utils.py:92
 msgid "Restart"
 msgstr "ເລີ່ມ​ຕົ້ນ​ໃຫມ່"
 
-#: utils.py:80
+#: utils.py:92
 msgid "Are you sure you want to restart the app?"
 msgstr "ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການຣີສະຕາດແອັບ?"
 
-#: pages/home.py:148 utils.py:85
+#: pages/home.py:148 utils.py:97
 msgid "Exit"
 msgstr "ອອກໄປ"
 
-#: utils.py:86
+#: utils.py:98
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr ""
 "ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການອອກຈາກແອັບ? ຖ້າແອັບເວັບກຳລັງເຮັດວຽກຢູ່, ມັນຈະຖືກປິດ."
 
-#: utils.py:95
+#: utils.py:107
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr "ທ່ານແນ່ໃຈບໍ່ວ່າຕ້ອງການກັບໄປໜ້າຈໍຫຼັກ? ແອັບເວັບຈະຖືກປິດ."
 
-#: utils.py:106 utils.py:111 utils.py:116 utils.py:121 utils.py:126
-#: utils.py:135 utils.py:146 utils.py:169 utils.py:174 utils.py:196
-#: utils.py:200
+#: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
+#: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
+#: utils.py:220 utils.py:252 utils.py:256
 msgid "Error"
 msgstr "ຜິດພາດ"
 
-#: utils.py:106
+#: utils.py:118
 msgid "This language is already selected."
 msgstr "ພາສານີ້ຖືກເລືອກແລ້ວ."
 
-#: utils.py:111
+#: utils.py:123
 msgid "This size is already selected."
 msgstr "ຂະໜາດນີ້ຖືກເລືອກແລ້ວ."
 
-#: utils.py:116
+#: utils.py:128
 msgid "This appearance is already selected."
 msgstr "ລັກສະນະນີ້ຖືກເລືອກແລ້ວ."
 
-#: utils.py:121
+#: utils.py:133
 msgid "This quality is already selected."
 msgstr "ຄຸນນະພາບນີ້ໄດ້ຖືກຄັດເລືອກແລ້ວ."
 
-#: utils.py:127
+#: utils.py:139
 msgid ""
 "A crossword with this name and difficulty already exists. Please choose a "
 "new name and/or a new difficulty."
@@ -136,44 +149,74 @@ msgstr ""
 "ຄໍາເວົ້າທີ່ມີຊື່ແລະຄວາມຫຍຸ້ງຍາກນີ້ມີຢູ່ແລ້ວ.ກະລຸນາເລືອກຊື່ໃຫມ່ແລະ / "
 "ຫຼືຄວາມຫຍຸ້ງຍາກໃຫມ່."
 
-#: utils.py:136
+#: utils.py:148
 msgid "You have no crosswords to export. Please make some and try again."
 msgstr "ທ່ານບໍ່ມີຂໍ້ອ້າງອີງໃສ່ການສົ່ງອອກ.ກະລຸນາເຮັດບາງຢ່າງແລະລອງໃຫມ່ອີກຄັ້ງ."
 
-#: utils.py:141
+#: utils.py:155
 msgid "Successfully exported your crosswords."
 msgstr "ສົ່ງອອກ crosswords ຂອງທ່ານສົບຜົນສໍາເລັດ."
 
-#: utils.py:146
+#: utils.py:160
 msgid "Your crosswords could not be exported, sorry."
 msgstr "ຄໍາສັບຂອງທ່ານບໍ່ສາມາດສົ່ງອອກໄດ້, ຂໍອະໄພ."
 
-#: utils.py:151
+#: utils.py:166
 msgid "All of your crosswords were successfully imported."
 msgstr "ຄໍາສັບທັງຫມົດຂອງທ່ານຖືກນໍາເຂົ້າຢ່າງສໍາເລັດຜົນ."
 
-#: utils.py:157
+#: utils.py:172
 msgid "Your import could not be fully completed."
 msgstr "ການນໍາເຂົ້າຂອງທ່ານບໍ່ສາມາດເຮັດສໍາເລັດໄດ້ຢ່າງເຕັມທີ່."
 
-#: utils.py:159
+#: utils.py:174
 msgid ""
 "Crosswords with duplicate names and difficulties that were not imported: "
 msgstr "ຄໍາສັບຕ່າງໆທີ່ມີຊື່ແລະຄວາມຫຍຸ້ງຍາກທີ່ບໍ່ໄດ້ນໍາເຂົ້າ:"
 
-#: utils.py:163
+#: utils.py:180
 msgid "Invalid crosswords that were not imported: "
 msgstr "crosswords ບໍ່ຖືກຕ້ອງທີ່ບໍ່ໄດ້ນໍາເຂົ້າ:"
 
-#: utils.py:169
+#: utils.py:187
 msgid "The specified JSON file is invalid and cannot be processed."
 msgstr "ເອກະສານ JSON ທີ່ລະບຸໄວ້ແມ່ນບໍ່ຖືກຕ້ອງແລະບໍ່ສາມາດດໍາເນີນການໄດ້."
 
-#: utils.py:174
+#: utils.py:195
 msgid "This word already exists. Please choose a new word."
 msgstr "ຄໍານີ້ມີຢູ່ແລ້ວ. ກະລຸນາເລືອກຄໍາສັບໃຫມ່."
 
-#: utils.py:180
+#: utils.py:201
+msgid "An error occurred while creating your PDF. Please try again."
+msgstr "ມີຂໍ້ຜິດພາດເກີດຂື້ນໃນຂະນະທີ່ສ້າງ PDF ຂອງທ່ານ.ກະລຸນາລອງໃຫມ່ອີກຄັ້ງ."
+
+#: utils.py:208
+msgid ""
+"words that could not be inserted during crossword generation will not be "
+"included in this PDF, sorry."
+msgstr ""
+"ຄໍາສັບທີ່ບໍ່ສາມາດໃສ່ໄດ້ໃນລະຫວ່າງການຜະລິດ crossword ຈະບໍ່ຖືກລວມເຂົ້າໃນ PDF "
+"ນີ້, ຂໍໂທດ."
+
+#: utils.py:215
+msgid "Successfully wrote PDF."
+msgstr "ຂຽນຢ່າງສໍາເລັດຜົນ PDF."
+
+#: utils.py:221
+msgid ""
+"You are missing pycairo, which is required to perform this operation. Please"
+" run"
+msgstr ""
+"ທ່ານກໍາລັງຫາຍສາບສູນ Pycaiiro, ເຊິ່ງຈໍາເປັນຕ້ອງໄດ້ດໍາເນີນການນີ້.ກະລຸນາແລ່ນ"
+
+#: utils.py:226
+msgid ""
+"and install the headers for pycairo if you are not on Windows at the "
+"following link as a guide"
+msgstr ""
+"ແລະຕິດຕັ້ງຫົວຂອງ Pycairo ຖ້າທ່ານບໍ່ຢູ່ໃນປ່ອງຢ້ຽມທີ່ລິ້ງຕໍ່ໄປນີ້ເປັນຄູ່ມື"
+
+#: utils.py:236
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -196,24 +239,24 @@ msgstr ""
 "Activity Monitor ໃນ MacOS, "
 "ຫຼືພຽງແຕ່ປິດເປີດຄອມພິວເຕີຂອງທ່ານຄືນໃໝ່ເພື່ອຢຸດພວກມັນ."
 
-#: utils.py:202
+#: utils.py:258
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr "ເກີດຄວາມຜິດພາດທີ່ບໍ່ຄາດຄິດ. ກະລຸນາລອງຕິດຕັ້ງຄໍາຮ້ອງສະຫມັກດ້ວຍ"
 
-#: utils.py:719
+#: utils.py:779
 msgid "Definitions are empty"
 msgstr "ຄໍານິຍາມວ່າງເປົ່າ"
 
-#: utils.py:722
+#: utils.py:782
 msgid "The word count or definitions are less than 3 in length"
 msgstr "ຄໍາວ່ານັບຫຼືຄໍານິຍາມມີຄວາມຍາວຫນ້ອຍກວ່າ 3"
 
-#: utils.py:726
+#: utils.py:786
 msgid "Length of the word count is greater than the definitions"
 msgstr "ຄວາມຍາວຂອງຄໍາວ່ານັບແມ່ນຍິ່ງໃຫຍ່ກວ່າຄໍານິຍາມ"
 
-#: utils.py:729
+#: utils.py:789
 msgid "Escape character present in word"
 msgstr "Escape ບຸກ ຄະ ລິກ ລັກ ສະ ນະ ທີ່ ມີ ຢູ່ ໃນ ຄໍາ ສັບ"
 
@@ -271,14 +314,6 @@ msgstr "ແຈ່ມແຈ້ງ"
 msgid "Unrevealed"
 msgstr "ບໍ່ມີປະໂຫຍດ"
 
-#: app/templates/index.html:286
-msgid "Across"
-msgstr "ຂ້າມ"
-
-#: app/templates/index.html:308
-msgid "Down"
-msgstr "ລົງ"
-
 #: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "ທ່ານກໍາລັງເບິ່ງ"
@@ -307,147 +342,167 @@ msgstr "ດໍາເນີນຕໍ່ໄປ"
 msgid "You completed the crossword!"
 msgstr "ທ່ານໄດ້ສໍາເລັດ crossword!"
 
-#: app/templates/index.html:368 pages/browser.py:586
+#: app/templates/index.html:368 pages/browser.py:641
 msgid "Close"
 msgstr "ປິດ"
 
-#: pages/browser.py:136
+#: pages/browser.py:137
 msgid "Crossword Browser"
 msgstr "ຕົວທ່ອງເວັບຂອງ Crossword"
 
-#: pages/browser.py:141 pages/editor.py:359
+#: pages/browser.py:142 pages/editor.py:363
 msgid "Back"
 msgstr "ຫຼັງ"
 
-#: pages/browser.py:145 pages/editor.py:363 pages/home.py:305
+#: pages/browser.py:146 pages/editor.py:367 pages/home.py:305
 msgid "HomePage"
 msgstr "HomePage"
 
-#: pages/browser.py:156
+#: pages/browser.py:157
 msgid "Categorised"
 msgstr "ຖືກຈັດປະເພດ"
 
-#: pages/browser.py:156 pages/browser.py:271
+#: pages/browser.py:157 pages/browser.py:281
 msgid "Flattened"
 msgstr "Flattened"
 
-#: pages/browser.py:186
+#: pages/browser.py:174 pages/browser.py:296
+msgid "Search"
+msgstr "ຄົ້ນຫາ"
+
+#: pages/browser.py:187
 msgid "Load"
 msgstr "Load"
 
-#: pages/browser.py:195
+#: pages/browser.py:196
 msgid "Open"
 msgstr "ເປີດ"
 
-#: pages/browser.py:205
+#: pages/browser.py:206
+msgid "Make PDF"
+msgstr "ເຮັດ PDF"
+
+#: pages/browser.py:214
 msgid "Terminate"
 msgstr "Terminate"
 
-#: pages/browser.py:216
+#: pages/browser.py:225
 msgid "Word count preferences"
 msgstr "ການຕັ້ງຄ່າການນັບຄໍາ"
 
-#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
-#: pages/browser.py:495
+#: pages/browser.py:240 pages/browser.py:360 pages/browser.py:391
+#: pages/browser.py:550
 msgid "Select word count"
 msgstr "ເລືອກການນັບຄໍາ"
 
-#: pages/browser.py:246
+#: pages/browser.py:244 pages/browser.py:390 pages/browser.py:561
+msgid "Maximum"
+msgstr "ສູງສຸດ"
+
+#: pages/browser.py:255
 msgid "Custom"
 msgstr "ກຳນົດເອງ"
 
-#: pages/browser.py:475
+#: pages/browser.py:424
+msgid "Select a destination to download your PDF to"
+msgstr "ເລືອກຈຸດຫມາຍປາຍທາງເພື່ອດາວໂຫລດ PDF ຂອງທ່ານໃຫ້"
+
+#: pages/browser.py:530
 msgid "To perform this operation, you must first select a cell."
 msgstr "ເພື່ອປະຕິບັດການປະຕິບັດງານນີ້, ກ່ອນອື່ນຫມົດທ່ານຕ້ອງເລືອກເອົາຫ້ອງ."
 
-#: pages/browser.py:579
+#: pages/browser.py:634
 msgid "View"
 msgstr "ເບິ່ງ"
 
-#: pages/browser.py:783
-msgid "Select"
-msgstr "ເລືອກ"
+#: pages/browser.py:818
+msgid "Total words"
+msgstr "ຄໍາສັບ"
 
-#: pages/editor.py:353
-msgid "Crossword Editor"
-msgstr "Crossword Editor"
-
-#: pages/editor.py:491 pages/editor.py:706 pages/editor.py:796
-#: pages/editor.py:936
-msgid "Your Crosswords"
-msgstr "ຄໍາສັບຂອງເຈົ້າ"
-
-#: pages/editor.py:555 pages/editor.py:800 pages/editor.py:943
-#: pages/editor.py:1030 pages/editor.py:1143 pages/editor.py:1257
-msgid "Save"
-msgstr "ຊ່ວຍປະຢັດ"
-
-#: pages/editor.py:567
-msgid "length >= 1 and valid OS file name"
-msgstr "ຄວາມຍາວ >= 1 ແລະຊື່ໄຟລ໌ OS ທີ່ໃຊ້ໄດ້"
-
-#: pages/editor.py:576
-msgid "length == 1"
-msgstr "ຍາວ == 1"
-
-#: pages/editor.py:582
+#: pages/browser.py:824 pages/editor.py:586
 msgid "Difficulty"
 msgstr "ຄວາມຫຍຸ້ງຍາກ"
 
-#: pages/editor.py:589
+#: pages/browser.py:838
+msgid "Select"
+msgstr "ເລືອກ"
+
+#: pages/editor.py:357
+msgid "Crossword Editor"
+msgstr "Crossword Editor"
+
+#: pages/editor.py:495 pages/editor.py:718 pages/editor.py:808
+#: pages/editor.py:948
+msgid "Your Crosswords"
+msgstr "ຄໍາສັບຂອງເຈົ້າ"
+
+#: pages/editor.py:559 pages/editor.py:812 pages/editor.py:955
+#: pages/editor.py:1042 pages/editor.py:1155 pages/editor.py:1269
+msgid "Save"
+msgstr "ຊ່ວຍປະຢັດ"
+
+#: pages/editor.py:571
+msgid "length >= 1 and valid OS file name"
+msgstr "ຄວາມຍາວ >= 1 ແລະຊື່ໄຟລ໌ OS ທີ່ໃຊ້ໄດ້"
+
+#: pages/editor.py:580
+msgid "length == 1"
+msgstr "ຍາວ == 1"
+
+#: pages/editor.py:593
 msgid "Easy"
 msgstr "ງ່າຍ"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Medium"
 msgstr "ຂະຫນາດກາງ"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Hard"
 msgstr "ແຂງ"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Extreme"
 msgstr "ທີ່ສຸດ"
 
-#: pages/editor.py:706 pages/editor.py:1086
+#: pages/editor.py:718 pages/editor.py:1098
 msgid "Adding"
 msgstr "ການເພີ່ມ"
 
-#: pages/editor.py:709 pages/editor.py:1090
+#: pages/editor.py:721 pages/editor.py:1102
 msgid "Add"
 msgstr "ຕື່ມ"
 
-#: pages/editor.py:888 pages/editor.py:1206
+#: pages/editor.py:900 pages/editor.py:1218
 msgid "Press"
 msgstr "ການພິມ"
 
-#: pages/editor.py:890 pages/editor.py:1208
+#: pages/editor.py:902 pages/editor.py:1220
 msgid "to add a"
 msgstr "ເພື່ອຕື່ມ"
 
-#: pages/editor.py:892
+#: pages/editor.py:904
 msgid "new crossword."
 msgstr "crossword ໃຫມ່."
 
-#: pages/editor.py:936 pages/editor.py:1253
+#: pages/editor.py:948 pages/editor.py:1265
 msgid "Editing"
 msgstr "ການແກ້ໄຂ"
 
-#: pages/editor.py:998 pages/editor.py:1086 pages/editor.py:1138
-#: pages/editor.py:1253
+#: pages/editor.py:1010 pages/editor.py:1098 pages/editor.py:1150
+#: pages/editor.py:1265
 msgid "Your Words"
 msgstr "ຄໍາເວົ້າຂອງທ່ານ"
 
-#: pages/editor.py:1042
+#: pages/editor.py:1054
 msgid "length >= 1 and length <= 32 and is a language character"
 msgstr "ຄວາມຍາວ >= 1 ແລະ ຄວາມຍາວ <= 32 ແລະ ເປັນບຸກຄະລິກພາສາ"
 
-#: pages/editor.py:1053
+#: pages/editor.py:1065
 msgid "length >= 1"
 msgstr "ຄວາມຍາວ >= 1"
 
-#: pages/editor.py:1210
+#: pages/editor.py:1222
 msgid "new word."
 msgstr "ຄໍາໃຫມ່."
 
@@ -523,6 +578,10 @@ msgstr "ຜ່ອງແຜ້ວ"
 msgid "Crossword Quality"
 msgstr "ຄຸນນະພາບຂອງຂໍ້"
 
+#: pages/home.py:322
+msgid "New version available!"
+msgstr "ລຸ້ນໃຫມ່ມີຢູ່!"
+
 msgid "Geography"
 msgstr "ພູມສາດ"
 
@@ -538,12 +597,6 @@ msgstr "ວິ​ທະ​ຍາ​ສາດ​ຄອມ​ພິວ​ເຕີ
 msgid "User"
 msgstr "ຜູ້ໃຊ້"
 
-msgid "Total words"
-msgstr "ຄໍາສັບ"
-
-msgid "Maximum"
-msgstr "ສູງສຸດ"
-
 msgid "Clue"
 msgstr "Clue"
 
@@ -552,9 +605,3 @@ msgstr "ຊື່"
 
 msgid "Symbol"
 msgstr "ສັນຍາລັກ"
-
-msgid "Search"
-msgstr "ຄົ້ນຫາ"
-
-msgid "New version available!"
-msgstr "ລຸ້ນໃຫມ່ມີຢູ່!"

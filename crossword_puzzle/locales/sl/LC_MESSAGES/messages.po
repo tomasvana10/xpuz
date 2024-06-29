@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-28 21:00+1000\n"
+"POT-Creation-Date: 2024-06-29 19:48+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: sl <LL@li.org>\n"
@@ -19,50 +19,62 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: import_export.py:21
+#: import_export.py:24
 msgid "Select a destination to export your crosswords to"
 msgstr "Izberite cilj za izvoz križancev v"
 
-#: import_export.py:25
+#: import_export.py:28
 msgid "my-crosswords"
 msgstr "moje crosswords"
 
-#: import_export.py:64
+#: import_export.py:70
 msgid ""
 "Select a valid crossword JSON file that was exported using crossword_puzzle"
 msgstr ""
 "Izberite veljavno datoteko Crossword JSON, ki je bila izvožena s pomočjo "
 "crossword_puzzle"
 
-#: utils.py:60
+#: pdf.py:53
+msgid "Answers"
+msgstr "Odgovori"
+
+#: app/templates/index.html:286 pdf.py:207
+msgid "Across"
+msgstr "Čez"
+
+#: app/templates/index.html:308 pdf.py:214
+msgid "Down"
+msgstr "Dol"
+
+#: utils.py:58
 msgid "Remove"
 msgstr "Odstrani"
 
-#: utils.py:60
+#: utils.py:59
 msgid "Are you sure you want to delete this"
 msgstr "Ali ste prepričani, da želite to izbrisati"
 
-#: utils.py:60
+#: utils.py:61
 msgid "It will be lost forever!"
 msgstr "Za vedno bo izgubljena!"
 
-#: utils.py:65
+#: utils.py:66
 msgid "Add or select"
 msgstr "Dodajanje ali izbiranje"
 
-#: utils.py:65
+#: utils.py:67
 msgid "Are you sure you want to add/select a"
 msgstr "Ali ste prepričani, da želite dodati/izbrati"
 
-#: utils.py:65
+#: utils.py:69
 msgid "Your modified fields will be reset!"
 msgstr "Vaša spremenjena polja bodo ponastavljena!"
 
-#: utils.py:70 utils.py:94
+#: utils.py:74 utils.py:106
 msgid "Back to home"
 msgstr "Nazaj domov"
 
-#: utils.py:70
+#: utils.py:75
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
@@ -70,11 +82,12 @@ msgstr ""
 "Ali ste prepričani, da se želite vrniti na začetni zaslon? Vaša spremenjena "
 "polja bodo ponastavljena!"
 
-#: utils.py:75 utils.py:141 utils.py:151 utils.py:156 utils.py:179
+#: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
+#: utils.py:235
 msgid "Info"
 msgstr "Informacije"
 
-#: utils.py:75
+#: utils.py:84
 msgid ""
 "Are you sure you want to import crosswords? Your modified fields will be "
 "reset!"
@@ -82,19 +95,19 @@ msgstr ""
 "Ali ste prepričani, da želite uvoziti križanke?Vaša spremenjena polja se "
 "bodo ponastavila!"
 
-#: utils.py:80
+#: utils.py:92
 msgid "Restart"
 msgstr "Ponovni zagon"
 
-#: utils.py:80
+#: utils.py:92
 msgid "Are you sure you want to restart the app?"
 msgstr "Ali ste prepričani, da želite znova zagnati aplikacijo?"
 
-#: pages/home.py:148 utils.py:85
+#: pages/home.py:148 utils.py:97
 msgid "Exit"
 msgstr "Izhod"
 
-#: utils.py:86
+#: utils.py:98
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -102,7 +115,7 @@ msgstr ""
 "Ali ste prepričani, da želite zapreti aplikacijo? Če se spletna aplikacija "
 "izvaja, bo prekinjena."
 
-#: utils.py:95
+#: utils.py:107
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -110,29 +123,29 @@ msgstr ""
 "Ali ste prepričani, da se želite vrniti na začetni zaslon? Spletna "
 "aplikacija bo ukinjena."
 
-#: utils.py:106 utils.py:111 utils.py:116 utils.py:121 utils.py:126
-#: utils.py:135 utils.py:146 utils.py:169 utils.py:174 utils.py:196
-#: utils.py:200
+#: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
+#: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
+#: utils.py:220 utils.py:252 utils.py:256
 msgid "Error"
 msgstr "Napaka"
 
-#: utils.py:106
+#: utils.py:118
 msgid "This language is already selected."
 msgstr "Ta jezik je že izbran."
 
-#: utils.py:111
+#: utils.py:123
 msgid "This size is already selected."
 msgstr "Ta velikost je že izbrana."
 
-#: utils.py:116
+#: utils.py:128
 msgid "This appearance is already selected."
 msgstr "Ta videz je že izbran."
 
-#: utils.py:121
+#: utils.py:133
 msgid "This quality is already selected."
 msgstr "Ta kakovost je že izbrana."
 
-#: utils.py:127
+#: utils.py:139
 msgid ""
 "A crossword with this name and difficulty already exists. Please choose a "
 "new name and/or a new difficulty."
@@ -140,44 +153,76 @@ msgstr ""
 "Križna beseda s tem imenom in težavami že obstaja.Izberite novo ime in/ali "
 "novo težavo."
 
-#: utils.py:136
+#: utils.py:148
 msgid "You have no crosswords to export. Please make some and try again."
 msgstr "Nimate križanja za izvoz.Prosimo, naredite nekaj in poskusite znova."
 
-#: utils.py:141
+#: utils.py:155
 msgid "Successfully exported your crosswords."
 msgstr "Uspešno izvozil vaše križanke."
 
-#: utils.py:146
+#: utils.py:160
 msgid "Your crosswords could not be exported, sorry."
 msgstr "Ni bilo mogoče izvoziti navzkrižnih, žal."
 
-#: utils.py:151
+#: utils.py:166
 msgid "All of your crosswords were successfully imported."
 msgstr "Vse vaše križanke so bile uspešno uvožene."
 
-#: utils.py:157
+#: utils.py:172
 msgid "Your import could not be fully completed."
 msgstr "Vašega uvoza ni bilo mogoče v celoti dokončati."
 
-#: utils.py:159
+#: utils.py:174
 msgid ""
 "Crosswords with duplicate names and difficulties that were not imported: "
 msgstr "Križanke z dvojnimi imeni in težavami, ki niso bile uvožene:"
 
-#: utils.py:163
+#: utils.py:180
 msgid "Invalid crosswords that were not imported: "
 msgstr "Neveljavne križanke, ki niso bile uvožene:"
 
-#: utils.py:169
+#: utils.py:187
 msgid "The specified JSON file is invalid and cannot be processed."
 msgstr "Navedena datoteka JSON je neveljavna in je ni mogoče obdelati."
 
-#: utils.py:174
+#: utils.py:195
 msgid "This word already exists. Please choose a new word."
 msgstr "Ta beseda že obstaja. Izberite novo besedo."
 
-#: utils.py:180
+#: utils.py:201
+msgid "An error occurred while creating your PDF. Please try again."
+msgstr ""
+"Med ustvarjanjem vašega PDF je prišlo do napake.Prosim poskusite ponovno."
+
+#: utils.py:208
+msgid ""
+"words that could not be inserted during crossword generation will not be "
+"included in this PDF, sorry."
+msgstr ""
+"Besede, ki jih med generacijo križanja ni bilo mogoče vstaviti, ne bodo "
+"vključene v ta PDF, žal."
+
+#: utils.py:215
+msgid "Successfully wrote PDF."
+msgstr "Uspešno napisal PDF."
+
+#: utils.py:221
+msgid ""
+"You are missing pycairo, which is required to perform this operation. Please"
+" run"
+msgstr ""
+"Manjka vam Pycairo, ki je potrebna za izvedbo te operacije.Prosim teči"
+
+#: utils.py:226
+msgid ""
+"and install the headers for pycairo if you are not on Windows at the "
+"following link as a guide"
+msgstr ""
+"in namestite glave za Pycairo, če niste v Windows na naslednji povezavi kot "
+"vodnik"
+
+#: utils.py:236
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -199,25 +244,25 @@ msgstr ""
 " prek Activity Monitorja v sistemu MacOS ali preprosto znova zaženite "
 "računalnik, da jih prekinete."
 
-#: utils.py:202
+#: utils.py:258
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
 "Prišlo je do nepričakovane napake. Poskusite znova namestiti aplikacijo z"
 
-#: utils.py:719
+#: utils.py:779
 msgid "Definitions are empty"
 msgstr "Definicije so prazne"
 
-#: utils.py:722
+#: utils.py:782
 msgid "The word count or definitions are less than 3 in length"
 msgstr "Število besed ali definicije so krajše od 3"
 
-#: utils.py:726
+#: utils.py:786
 msgid "Length of the word count is greater than the definitions"
 msgstr "Dolžina števila besed je večja od definicij"
 
-#: utils.py:729
+#: utils.py:789
 msgid "Escape character present in word"
 msgstr "Znak pobega, prisoten v besedi"
 
@@ -275,14 +320,6 @@ msgstr "Jasno"
 msgid "Unrevealed"
 msgstr "Nerazkrito"
 
-#: app/templates/index.html:286
-msgid "Across"
-msgstr "Čez"
-
-#: app/templates/index.html:308
-msgid "Down"
-msgstr "Dol"
-
 #: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "Gledate"
@@ -311,147 +348,167 @@ msgstr "Nadaljujte"
 msgid "You completed the crossword!"
 msgstr "Dokončali ste križanko!"
 
-#: app/templates/index.html:368 pages/browser.py:586
+#: app/templates/index.html:368 pages/browser.py:641
 msgid "Close"
 msgstr "Zapri"
 
-#: pages/browser.py:136
+#: pages/browser.py:137
 msgid "Crossword Browser"
 msgstr "Brskalnik križank"
 
-#: pages/browser.py:141 pages/editor.py:359
+#: pages/browser.py:142 pages/editor.py:363
 msgid "Back"
 msgstr "Hrbet"
 
-#: pages/browser.py:145 pages/editor.py:363 pages/home.py:305
+#: pages/browser.py:146 pages/editor.py:367 pages/home.py:305
 msgid "HomePage"
 msgstr "Domača stran"
 
-#: pages/browser.py:156
+#: pages/browser.py:157
 msgid "Categorised"
 msgstr "Razvrščeni"
 
-#: pages/browser.py:156 pages/browser.py:271
+#: pages/browser.py:157 pages/browser.py:281
 msgid "Flattened"
 msgstr "Sploščen"
 
-#: pages/browser.py:186
+#: pages/browser.py:174 pages/browser.py:296
+msgid "Search"
+msgstr "Iskanje"
+
+#: pages/browser.py:187
 msgid "Load"
 msgstr "Tovor"
 
-#: pages/browser.py:195
+#: pages/browser.py:196
 msgid "Open"
 msgstr "Odprt"
 
-#: pages/browser.py:205
+#: pages/browser.py:206
+msgid "Make PDF"
+msgstr "Naredite pdf"
+
+#: pages/browser.py:214
 msgid "Terminate"
 msgstr "Končati"
 
-#: pages/browser.py:216
+#: pages/browser.py:225
 msgid "Word count preferences"
 msgstr "Nastavitve števila besed"
 
-#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
-#: pages/browser.py:495
+#: pages/browser.py:240 pages/browser.py:360 pages/browser.py:391
+#: pages/browser.py:550
 msgid "Select word count"
 msgstr "Izberite število besed"
 
-#: pages/browser.py:246
+#: pages/browser.py:244 pages/browser.py:390 pages/browser.py:561
+msgid "Maximum"
+msgstr "Največ"
+
+#: pages/browser.py:255
 msgid "Custom"
 msgstr "Po meri"
 
-#: pages/browser.py:475
+#: pages/browser.py:424
+msgid "Select a destination to download your PDF to"
+msgstr "Izberite destinacijo za prenos PDF na"
+
+#: pages/browser.py:530
 msgid "To perform this operation, you must first select a cell."
 msgstr "Če želite izvesti to operacijo, morate najprej izbrati celico."
 
-#: pages/browser.py:579
+#: pages/browser.py:634
 msgid "View"
 msgstr "Pogled"
 
-#: pages/browser.py:783
-msgid "Select"
-msgstr "Izberite"
+#: pages/browser.py:818
+msgid "Total words"
+msgstr "Skupne besede"
 
-#: pages/editor.py:353
-msgid "Crossword Editor"
-msgstr "Urejevalnik križank"
-
-#: pages/editor.py:491 pages/editor.py:706 pages/editor.py:796
-#: pages/editor.py:936
-msgid "Your Crosswords"
-msgstr "Vaše križanke"
-
-#: pages/editor.py:555 pages/editor.py:800 pages/editor.py:943
-#: pages/editor.py:1030 pages/editor.py:1143 pages/editor.py:1257
-msgid "Save"
-msgstr "Shraniti"
-
-#: pages/editor.py:567
-msgid "length >= 1 and valid OS file name"
-msgstr "dolžina >= 1 in veljavno ime datoteke OS"
-
-#: pages/editor.py:576
-msgid "length == 1"
-msgstr "dolžina == 1"
-
-#: pages/editor.py:582
+#: pages/browser.py:824 pages/editor.py:586
 msgid "Difficulty"
 msgstr "Težave"
 
-#: pages/editor.py:589
+#: pages/browser.py:838
+msgid "Select"
+msgstr "Izberite"
+
+#: pages/editor.py:357
+msgid "Crossword Editor"
+msgstr "Urejevalnik križank"
+
+#: pages/editor.py:495 pages/editor.py:718 pages/editor.py:808
+#: pages/editor.py:948
+msgid "Your Crosswords"
+msgstr "Vaše križanke"
+
+#: pages/editor.py:559 pages/editor.py:812 pages/editor.py:955
+#: pages/editor.py:1042 pages/editor.py:1155 pages/editor.py:1269
+msgid "Save"
+msgstr "Shraniti"
+
+#: pages/editor.py:571
+msgid "length >= 1 and valid OS file name"
+msgstr "dolžina >= 1 in veljavno ime datoteke OS"
+
+#: pages/editor.py:580
+msgid "length == 1"
+msgstr "dolžina == 1"
+
+#: pages/editor.py:593
 msgid "Easy"
 msgstr "enostavno"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Medium"
 msgstr "Srednje"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Hard"
 msgstr "težko"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Extreme"
 msgstr "Ekstremno"
 
-#: pages/editor.py:706 pages/editor.py:1086
+#: pages/editor.py:718 pages/editor.py:1098
 msgid "Adding"
 msgstr "Dodajanje"
 
-#: pages/editor.py:709 pages/editor.py:1090
+#: pages/editor.py:721 pages/editor.py:1102
 msgid "Add"
 msgstr "Dodati"
 
-#: pages/editor.py:888 pages/editor.py:1206
+#: pages/editor.py:900 pages/editor.py:1218
 msgid "Press"
 msgstr "Tisk"
 
-#: pages/editor.py:890 pages/editor.py:1208
+#: pages/editor.py:902 pages/editor.py:1220
 msgid "to add a"
 msgstr "Dodajanje"
 
-#: pages/editor.py:892
+#: pages/editor.py:904
 msgid "new crossword."
 msgstr "Nova križana beseda."
 
-#: pages/editor.py:936 pages/editor.py:1253
+#: pages/editor.py:948 pages/editor.py:1265
 msgid "Editing"
 msgstr "Urejanje"
 
-#: pages/editor.py:998 pages/editor.py:1086 pages/editor.py:1138
-#: pages/editor.py:1253
+#: pages/editor.py:1010 pages/editor.py:1098 pages/editor.py:1150
+#: pages/editor.py:1265
 msgid "Your Words"
 msgstr "Vaše besede"
 
-#: pages/editor.py:1042
+#: pages/editor.py:1054
 msgid "length >= 1 and length <= 32 and is a language character"
 msgstr "dolžina >= 1 in dolžina <= 32 ter je jezikovni znak"
 
-#: pages/editor.py:1053
+#: pages/editor.py:1065
 msgid "length >= 1"
 msgstr "dolžina >= 1"
 
-#: pages/editor.py:1210
+#: pages/editor.py:1222
 msgid "new word."
 msgstr "Nova beseda."
 
@@ -527,6 +584,10 @@ msgstr "popoln"
 msgid "Crossword Quality"
 msgstr "Kakovost križanja"
 
+#: pages/home.py:322
+msgid "New version available!"
+msgstr "Na voljo je nova različica!"
+
 msgid "Geography"
 msgstr "Geografija"
 
@@ -542,12 +603,6 @@ msgstr "Računalništvo"
 msgid "User"
 msgstr "Uporabnik"
 
-msgid "Total words"
-msgstr "Skupne besede"
-
-msgid "Maximum"
-msgstr "Največ"
-
 msgid "Clue"
 msgstr "Pojma"
 
@@ -556,9 +611,3 @@ msgstr "Ime"
 
 msgid "Symbol"
 msgstr "Simbol"
-
-msgid "Search"
-msgstr "Iskanje"
-
-msgid "New version available!"
-msgstr "Na voljo je nova različica!"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-28 21:00+1000\n"
+"POT-Creation-Date: 2024-06-29 19:48+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: vi <LL@li.org>\n"
@@ -19,48 +19,60 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: import_export.py:21
+#: import_export.py:24
 msgid "Select a destination to export your crosswords to"
 msgstr "Chọn một điểm đến để xuất ô chữ của bạn sang"
 
-#: import_export.py:25
+#: import_export.py:28
 msgid "my-crosswords"
 msgstr "My-Crosswords"
 
-#: import_export.py:64
+#: import_export.py:70
 msgid ""
 "Select a valid crossword JSON file that was exported using crossword_puzzle"
 msgstr "Chọn một tệp JSON ô chữ hợp lệ được xuất bằng ô chữ"
 
-#: utils.py:60
+#: pdf.py:53
+msgid "Answers"
+msgstr "Câu trả lời"
+
+#: app/templates/index.html:286 pdf.py:207
+msgid "Across"
+msgstr "Sang"
+
+#: app/templates/index.html:308 pdf.py:214
+msgid "Down"
+msgstr "Xuống"
+
+#: utils.py:58
 msgid "Remove"
 msgstr "Triệt"
 
-#: utils.py:60
+#: utils.py:59
 msgid "Are you sure you want to delete this"
 msgstr "Bạn có chắc chắn muốn xóa cái này không"
 
-#: utils.py:60
+#: utils.py:61
 msgid "It will be lost forever!"
 msgstr "Nó sẽ bị mất mãi mãi!"
 
-#: utils.py:65
+#: utils.py:66
 msgid "Add or select"
 msgstr "Thêm hoặc chọn"
 
-#: utils.py:65
+#: utils.py:67
 msgid "Are you sure you want to add/select a"
 msgstr "Bạn có chắc chắn muốn thêm / chọn một"
 
-#: utils.py:65
+#: utils.py:69
 msgid "Your modified fields will be reset!"
 msgstr "Các trường đã sửa đổi của bạn sẽ được đặt lại!"
 
-#: utils.py:70 utils.py:94
+#: utils.py:74 utils.py:106
 msgid "Back to home"
 msgstr "Trở về nhà"
 
-#: utils.py:70
+#: utils.py:75
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
@@ -68,11 +80,12 @@ msgstr ""
 "Bạn có chắc chắn muốn quay lại màn hình chính không? Các trường đã sửa đổi "
 "của bạn sẽ được đặt lại!"
 
-#: utils.py:75 utils.py:141 utils.py:151 utils.py:156 utils.py:179
+#: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
+#: utils.py:235
 msgid "Info"
 msgstr "Thông tin"
 
-#: utils.py:75
+#: utils.py:84
 msgid ""
 "Are you sure you want to import crosswords? Your modified fields will be "
 "reset!"
@@ -80,19 +93,19 @@ msgstr ""
 "Bạn có chắc là bạn muốn nhập ô chữ không?Các trường sửa đổi của bạn sẽ được "
 "đặt lại!"
 
-#: utils.py:80
+#: utils.py:92
 msgid "Restart"
 msgstr "Khởi động lại"
 
-#: utils.py:80
+#: utils.py:92
 msgid "Are you sure you want to restart the app?"
 msgstr "Bạn có chắc chắn muốn khởi động lại ứng dụng không?"
 
-#: pages/home.py:148 utils.py:85
+#: pages/home.py:148 utils.py:97
 msgid "Exit"
 msgstr "Lối ra"
 
-#: utils.py:86
+#: utils.py:98
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -100,7 +113,7 @@ msgstr ""
 "Bạn có chắc chắn muốn thoát khỏi ứng dụng không? Nếu ứng dụng web đang chạy,"
 " nó sẽ bị chấm dứt."
 
-#: utils.py:95
+#: utils.py:107
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -108,29 +121,29 @@ msgstr ""
 "Bạn có chắc chắn muốn quay lại màn hình chính không? Ứng dụng web sẽ bị chấm"
 " dứt."
 
-#: utils.py:106 utils.py:111 utils.py:116 utils.py:121 utils.py:126
-#: utils.py:135 utils.py:146 utils.py:169 utils.py:174 utils.py:196
-#: utils.py:200
+#: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
+#: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
+#: utils.py:220 utils.py:252 utils.py:256
 msgid "Error"
 msgstr "Lỗi"
 
-#: utils.py:106
+#: utils.py:118
 msgid "This language is already selected."
 msgstr "Ngôn ngữ này đã được chọn."
 
-#: utils.py:111
+#: utils.py:123
 msgid "This size is already selected."
 msgstr "Kích thước này đã được chọn."
 
-#: utils.py:116
+#: utils.py:128
 msgid "This appearance is already selected."
 msgstr "Giao diện này đã được chọn."
 
-#: utils.py:121
+#: utils.py:133
 msgid "This quality is already selected."
 msgstr "Chất lượng này đã được chọn."
 
-#: utils.py:127
+#: utils.py:139
 msgid ""
 "A crossword with this name and difficulty already exists. Please choose a "
 "new name and/or a new difficulty."
@@ -138,44 +151,75 @@ msgstr ""
 "Một ô chữ với tên này và khó khăn đã tồn tại.Vui lòng chọn một tên mới "
 "và/hoặc một khó khăn mới."
 
-#: utils.py:136
+#: utils.py:148
 msgid "You have no crosswords to export. Please make some and try again."
 msgstr "Bạn không có ô chữ để xuất.Hãy làm một số và thử lại."
 
-#: utils.py:141
+#: utils.py:155
 msgid "Successfully exported your crosswords."
 msgstr "Xuất thành công ô chữ của bạn."
 
-#: utils.py:146
+#: utils.py:160
 msgid "Your crosswords could not be exported, sorry."
 msgstr "Khotwords của bạn không thể được xuất, xin lỗi."
 
-#: utils.py:151
+#: utils.py:166
 msgid "All of your crosswords were successfully imported."
 msgstr "Tất cả các ô chữ của bạn đã được nhập thành công."
 
-#: utils.py:157
+#: utils.py:172
 msgid "Your import could not be fully completed."
 msgstr "Nhập khẩu của bạn không thể được hoàn thành đầy đủ."
 
-#: utils.py:159
+#: utils.py:174
 msgid ""
 "Crosswords with duplicate names and difficulties that were not imported: "
 msgstr "Ô chữ với tên trùng lặp và những khó khăn không được nhập khẩu:"
 
-#: utils.py:163
+#: utils.py:180
 msgid "Invalid crosswords that were not imported: "
 msgstr "Ô chữ không hợp lệ không được nhập khẩu:"
 
-#: utils.py:169
+#: utils.py:187
 msgid "The specified JSON file is invalid and cannot be processed."
 msgstr "Tệp JSON được chỉ định là không hợp lệ và không thể được xử lý."
 
-#: utils.py:174
+#: utils.py:195
 msgid "This word already exists. Please choose a new word."
 msgstr "Từ này đã tồn tại. Vui lòng chọn một từ mới."
 
-#: utils.py:180
+#: utils.py:201
+msgid "An error occurred while creating your PDF. Please try again."
+msgstr "Đã xảy ra lỗi trong khi tạo pdf của bạn.Vui lòng thử lại."
+
+#: utils.py:208
+msgid ""
+"words that could not be inserted during crossword generation will not be "
+"included in this PDF, sorry."
+msgstr ""
+"Các từ không thể được chèn trong quá trình tạo ô chữ sẽ không được đưa vào "
+"pdf này, xin lỗi."
+
+#: utils.py:215
+msgid "Successfully wrote PDF."
+msgstr "Đã viết thành công PDF."
+
+#: utils.py:221
+msgid ""
+"You are missing pycairo, which is required to perform this operation. Please"
+" run"
+msgstr ""
+"Bạn đang thiếu pycairo, được yêu cầu để thực hiện thao tác này.Hãy chạy"
+
+#: utils.py:226
+msgid ""
+"and install the headers for pycairo if you are not on Windows at the "
+"following link as a guide"
+msgstr ""
+"và cài đặt các tiêu đề cho pycairo nếu bạn không ở trên cửa sổ ở liên kết "
+"sau làm hướng dẫn"
+
+#: utils.py:236
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -197,24 +241,24 @@ msgstr ""
 "thể bị chấm dứt thông qua Trình giám sát hoạt động trên MacOS hoặc chỉ cần "
 "khởi động lại máy tính của bạn để chấm dứt chúng."
 
-#: utils.py:202
+#: utils.py:258
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr "Đã xảy ra lỗi không mong muốn. Vui lòng thử cài đặt lại ứng dụng với"
 
-#: utils.py:719
+#: utils.py:779
 msgid "Definitions are empty"
 msgstr "Định nghĩa trống"
 
-#: utils.py:722
+#: utils.py:782
 msgid "The word count or definitions are less than 3 in length"
 msgstr "Số lượng từ hoặc định nghĩa có độ dài nhỏ hơn 3"
 
-#: utils.py:726
+#: utils.py:786
 msgid "Length of the word count is greater than the definitions"
 msgstr "Độ dài của số từ lớn hơn các định nghĩa"
 
-#: utils.py:729
+#: utils.py:789
 msgid "Escape character present in word"
 msgstr "Thoát khỏi nhân vật hiện diện trong từ"
 
@@ -272,14 +316,6 @@ msgstr "Thông thoáng"
 msgid "Unrevealed"
 msgstr "Không được chấp nhận"
 
-#: app/templates/index.html:286
-msgid "Across"
-msgstr "Sang"
-
-#: app/templates/index.html:308
-msgid "Down"
-msgstr "Xuống"
-
 #: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "Bạn đang xem"
@@ -308,147 +344,167 @@ msgstr "Tiếp tục"
 msgid "You completed the crossword!"
 msgstr "Bạn đã hoàn thành ô chữ!"
 
-#: app/templates/index.html:368 pages/browser.py:586
+#: app/templates/index.html:368 pages/browser.py:641
 msgid "Close"
 msgstr "Đóng"
 
-#: pages/browser.py:136
+#: pages/browser.py:137
 msgid "Crossword Browser"
 msgstr "Trình duyệt ô chữ"
 
-#: pages/browser.py:141 pages/editor.py:359
+#: pages/browser.py:142 pages/editor.py:363
 msgid "Back"
 msgstr "Lưng"
 
-#: pages/browser.py:145 pages/editor.py:363 pages/home.py:305
+#: pages/browser.py:146 pages/editor.py:367 pages/home.py:305
 msgid "HomePage"
 msgstr "Trang chủ"
 
-#: pages/browser.py:156
+#: pages/browser.py:157
 msgid "Categorised"
 msgstr "Phân loại"
 
-#: pages/browser.py:156 pages/browser.py:271
+#: pages/browser.py:157 pages/browser.py:281
 msgid "Flattened"
 msgstr "Phẳng"
 
-#: pages/browser.py:186
+#: pages/browser.py:174 pages/browser.py:296
+msgid "Search"
+msgstr "Tìm kiếm"
+
+#: pages/browser.py:187
 msgid "Load"
 msgstr "Tải"
 
-#: pages/browser.py:195
+#: pages/browser.py:196
 msgid "Open"
 msgstr "Mở"
 
-#: pages/browser.py:205
+#: pages/browser.py:206
+msgid "Make PDF"
+msgstr "Tạo PDF"
+
+#: pages/browser.py:214
 msgid "Terminate"
 msgstr "Chấm dứt"
 
-#: pages/browser.py:216
+#: pages/browser.py:225
 msgid "Word count preferences"
 msgstr "Tùy chọn đếm từ"
 
-#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
-#: pages/browser.py:495
+#: pages/browser.py:240 pages/browser.py:360 pages/browser.py:391
+#: pages/browser.py:550
 msgid "Select word count"
 msgstr "Chọn số từ"
 
-#: pages/browser.py:246
+#: pages/browser.py:244 pages/browser.py:390 pages/browser.py:561
+msgid "Maximum"
+msgstr "Tối đa"
+
+#: pages/browser.py:255
 msgid "Custom"
 msgstr "Phong tục"
 
-#: pages/browser.py:475
+#: pages/browser.py:424
+msgid "Select a destination to download your PDF to"
+msgstr "Chọn điểm đến để tải xuống tệp PDF của bạn để"
+
+#: pages/browser.py:530
 msgid "To perform this operation, you must first select a cell."
 msgstr "Để thực hiện thao tác này, trước tiên bạn phải chọn một ô."
 
-#: pages/browser.py:579
+#: pages/browser.py:634
 msgid "View"
 msgstr "Xem"
 
-#: pages/browser.py:783
-msgid "Select"
-msgstr "Lựa chọn"
+#: pages/browser.py:818
+msgid "Total words"
+msgstr "Tổng số từ"
 
-#: pages/editor.py:353
-msgid "Crossword Editor"
-msgstr "Trình chỉnh sửa ô chữ"
-
-#: pages/editor.py:491 pages/editor.py:706 pages/editor.py:796
-#: pages/editor.py:936
-msgid "Your Crosswords"
-msgstr "Ô chữ của bạn"
-
-#: pages/editor.py:555 pages/editor.py:800 pages/editor.py:943
-#: pages/editor.py:1030 pages/editor.py:1143 pages/editor.py:1257
-msgid "Save"
-msgstr "Cứu"
-
-#: pages/editor.py:567
-msgid "length >= 1 and valid OS file name"
-msgstr "độ dài > = 1 và tên tệp hệ điều hành hợp lệ"
-
-#: pages/editor.py:576
-msgid "length == 1"
-msgstr "chiều dài == 1"
-
-#: pages/editor.py:582
+#: pages/browser.py:824 pages/editor.py:586
 msgid "Difficulty"
 msgstr "Khó khăn"
 
-#: pages/editor.py:589
+#: pages/browser.py:838
+msgid "Select"
+msgstr "Lựa chọn"
+
+#: pages/editor.py:357
+msgid "Crossword Editor"
+msgstr "Trình chỉnh sửa ô chữ"
+
+#: pages/editor.py:495 pages/editor.py:718 pages/editor.py:808
+#: pages/editor.py:948
+msgid "Your Crosswords"
+msgstr "Ô chữ của bạn"
+
+#: pages/editor.py:559 pages/editor.py:812 pages/editor.py:955
+#: pages/editor.py:1042 pages/editor.py:1155 pages/editor.py:1269
+msgid "Save"
+msgstr "Cứu"
+
+#: pages/editor.py:571
+msgid "length >= 1 and valid OS file name"
+msgstr "độ dài > = 1 và tên tệp hệ điều hành hợp lệ"
+
+#: pages/editor.py:580
+msgid "length == 1"
+msgstr "chiều dài == 1"
+
+#: pages/editor.py:593
 msgid "Easy"
 msgstr "Dễ"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Medium"
 msgstr "Trung bình"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Hard"
 msgstr "Cứng"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Extreme"
 msgstr "Vô cùng"
 
-#: pages/editor.py:706 pages/editor.py:1086
+#: pages/editor.py:718 pages/editor.py:1098
 msgid "Adding"
 msgstr "Thêm"
 
-#: pages/editor.py:709 pages/editor.py:1090
+#: pages/editor.py:721 pages/editor.py:1102
 msgid "Add"
 msgstr "Thêm"
 
-#: pages/editor.py:888 pages/editor.py:1206
+#: pages/editor.py:900 pages/editor.py:1218
 msgid "Press"
 msgstr "Báo chí"
 
-#: pages/editor.py:890 pages/editor.py:1208
+#: pages/editor.py:902 pages/editor.py:1220
 msgid "to add a"
 msgstr "để thêm một"
 
-#: pages/editor.py:892
+#: pages/editor.py:904
 msgid "new crossword."
 msgstr "ô chữ mới."
 
-#: pages/editor.py:936 pages/editor.py:1253
+#: pages/editor.py:948 pages/editor.py:1265
 msgid "Editing"
 msgstr "Chỉnh sửa"
 
-#: pages/editor.py:998 pages/editor.py:1086 pages/editor.py:1138
-#: pages/editor.py:1253
+#: pages/editor.py:1010 pages/editor.py:1098 pages/editor.py:1150
+#: pages/editor.py:1265
 msgid "Your Words"
 msgstr "Lời nói của bạn"
 
-#: pages/editor.py:1042
+#: pages/editor.py:1054
 msgid "length >= 1 and length <= 32 and is a language character"
 msgstr "độ dài > = 1 và độ dài < = 32 và là một ký tự ngôn ngữ"
 
-#: pages/editor.py:1053
+#: pages/editor.py:1065
 msgid "length >= 1"
 msgstr "chiều dài > = 1"
 
-#: pages/editor.py:1210
+#: pages/editor.py:1222
 msgid "new word."
 msgstr "từ mới."
 
@@ -524,6 +580,10 @@ msgstr "hoàn hảo "
 msgid "Crossword Quality"
 msgstr "Chất lượng ô chữ"
 
+#: pages/home.py:322
+msgid "New version available!"
+msgstr "Phiên bản mới có sẵn!"
+
 msgid "Geography"
 msgstr "Địa lý"
 
@@ -539,12 +599,6 @@ msgstr "Khoa học máy tính"
 msgid "User"
 msgstr "Người dùng"
 
-msgid "Total words"
-msgstr "Tổng số từ"
-
-msgid "Maximum"
-msgstr "Tối đa"
-
 msgid "Clue"
 msgstr "Manh mối"
 
@@ -553,9 +607,3 @@ msgstr "Tên"
 
 msgid "Symbol"
 msgstr "Biểu tượng"
-
-msgid "Search"
-msgstr "Tìm kiếm"
-
-msgid "New version available!"
-msgstr "Phiên bản mới có sẵn!"

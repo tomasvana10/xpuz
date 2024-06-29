@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-28 21:00+1000\n"
+"POT-Creation-Date: 2024-06-29 19:48+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: nl <LL@li.org>\n"
@@ -19,50 +19,62 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: import_export.py:21
+#: import_export.py:24
 msgid "Select a destination to export your crosswords to"
 msgstr "Selecteer een bestemming om uw kruiswoordraadsels naar te exporteren"
 
-#: import_export.py:25
+#: import_export.py:28
 msgid "my-crosswords"
 msgstr "My-Crosswords"
 
-#: import_export.py:64
+#: import_export.py:70
 msgid ""
 "Select a valid crossword JSON file that was exported using crossword_puzzle"
 msgstr ""
 "Selecteer een geldig kruiswoordraadsel JSON -bestand dat is geëxporteerd met"
 " Crossword_Puzzle"
 
-#: utils.py:60
+#: pdf.py:53
+msgid "Answers"
+msgstr "Antwoorden"
+
+#: app/templates/index.html:286 pdf.py:207
+msgid "Across"
+msgstr "Over"
+
+#: app/templates/index.html:308 pdf.py:214
+msgid "Down"
+msgstr "Omlaag"
+
+#: utils.py:58
 msgid "Remove"
 msgstr "Verwijderen"
 
-#: utils.py:60
+#: utils.py:59
 msgid "Are you sure you want to delete this"
 msgstr "Weet je zeker dat je dit wilt verwijderen?"
 
-#: utils.py:60
+#: utils.py:61
 msgid "It will be lost forever!"
 msgstr "Het zal voor altijd verloren zijn!"
 
-#: utils.py:65
+#: utils.py:66
 msgid "Add or select"
 msgstr "Toevoegen of selecteren"
 
-#: utils.py:65
+#: utils.py:67
 msgid "Are you sure you want to add/select a"
 msgstr "Weet u zeker dat u een"
 
-#: utils.py:65
+#: utils.py:69
 msgid "Your modified fields will be reset!"
 msgstr "Uw gewijzigde velden worden gereset!"
 
-#: utils.py:70 utils.py:94
+#: utils.py:74 utils.py:106
 msgid "Back to home"
 msgstr "Terug naar huis"
 
-#: utils.py:70
+#: utils.py:75
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
@@ -70,11 +82,12 @@ msgstr ""
 "Weet je zeker dat je terug wilt naar het startscherm? Uw gewijzigde velden "
 "worden gereset!"
 
-#: utils.py:75 utils.py:141 utils.py:151 utils.py:156 utils.py:179
+#: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
+#: utils.py:235
 msgid "Info"
 msgstr "Info"
 
-#: utils.py:75
+#: utils.py:84
 msgid ""
 "Are you sure you want to import crosswords? Your modified fields will be "
 "reset!"
@@ -82,19 +95,19 @@ msgstr ""
 "Weet u zeker dat u kruiswoordraadsels wilt importeren?Uw aangepaste velden "
 "worden gereset!"
 
-#: utils.py:80
+#: utils.py:92
 msgid "Restart"
 msgstr "Herstarten"
 
-#: utils.py:80
+#: utils.py:92
 msgid "Are you sure you want to restart the app?"
 msgstr "Weet u zeker dat u de app opnieuw wilt starten?"
 
-#: pages/home.py:148 utils.py:85
+#: pages/home.py:148 utils.py:97
 msgid "Exit"
 msgstr "Uitgang"
 
-#: utils.py:86
+#: utils.py:98
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -102,7 +115,7 @@ msgstr ""
 "Weet u zeker dat u de app wilt afsluiten? Als de web-app actief is, wordt "
 "deze beëindigd."
 
-#: utils.py:95
+#: utils.py:107
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -110,29 +123,29 @@ msgstr ""
 "Weet je zeker dat je terug wilt naar het startscherm? De webapp wordt "
 "beëindigd."
 
-#: utils.py:106 utils.py:111 utils.py:116 utils.py:121 utils.py:126
-#: utils.py:135 utils.py:146 utils.py:169 utils.py:174 utils.py:196
-#: utils.py:200
+#: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
+#: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
+#: utils.py:220 utils.py:252 utils.py:256
 msgid "Error"
 msgstr "Fout"
 
-#: utils.py:106
+#: utils.py:118
 msgid "This language is already selected."
 msgstr "Deze taal is al geselecteerd."
 
-#: utils.py:111
+#: utils.py:123
 msgid "This size is already selected."
 msgstr "Deze maat is al geselecteerd."
 
-#: utils.py:116
+#: utils.py:128
 msgid "This appearance is already selected."
 msgstr "Deze verschijning is al geselecteerd."
 
-#: utils.py:121
+#: utils.py:133
 msgid "This quality is already selected."
 msgstr "Deze kwaliteit is al geselecteerd."
 
-#: utils.py:127
+#: utils.py:139
 msgid ""
 "A crossword with this name and difficulty already exists. Please choose a "
 "new name and/or a new difficulty."
@@ -140,48 +153,80 @@ msgstr ""
 "Een kruiswoordraadsel met deze naam en er bestaat al moeilijkheid.Kies een "
 "nieuwe naam en/of een nieuwe moeilijkheid."
 
-#: utils.py:136
+#: utils.py:148
 msgid "You have no crosswords to export. Please make some and try again."
 msgstr ""
 "U hebt geen kruiswoordraadsels om te exporteren.Maak er alsjeblieft wat en "
 "probeer het opnieuw."
 
-#: utils.py:141
+#: utils.py:155
 msgid "Successfully exported your crosswords."
 msgstr "Met succes uw kruiswoordraadsels geëxporteerd."
 
-#: utils.py:146
+#: utils.py:160
 msgid "Your crosswords could not be exported, sorry."
 msgstr "Uw kruiswoordraadsels kunnen niet worden geëxporteerd, sorry."
 
-#: utils.py:151
+#: utils.py:166
 msgid "All of your crosswords were successfully imported."
 msgstr "Al uw kruiswoordraadsels zijn met succes geïmporteerd."
 
-#: utils.py:157
+#: utils.py:172
 msgid "Your import could not be fully completed."
 msgstr "Uw import kan niet volledig worden voltooid."
 
-#: utils.py:159
+#: utils.py:174
 msgid ""
 "Crosswords with duplicate names and difficulties that were not imported: "
 msgstr ""
 "Kruiswoordraadsels met dubbele namen en moeilijkheden die niet werden "
 "geïmporteerd:"
 
-#: utils.py:163
+#: utils.py:180
 msgid "Invalid crosswords that were not imported: "
 msgstr "Ongeldige kruiswoordraadsels die niet zijn geïmporteerd:"
 
-#: utils.py:169
+#: utils.py:187
 msgid "The specified JSON file is invalid and cannot be processed."
 msgstr "Het opgegeven JSON -bestand is ongeldig en kan niet worden verwerkt."
 
-#: utils.py:174
+#: utils.py:195
 msgid "This word already exists. Please choose a new word."
 msgstr "Dit woord bestaat al. Kies een nieuw woord."
 
-#: utils.py:180
+#: utils.py:201
+msgid "An error occurred while creating your PDF. Please try again."
+msgstr ""
+"Er is een fout opgetreden bij het maken van uw PDF.Probeer het opnieuw."
+
+#: utils.py:208
+msgid ""
+"words that could not be inserted during crossword generation will not be "
+"included in this PDF, sorry."
+msgstr ""
+"Woorden die niet konden worden ingevoegd tijdens het genereren van "
+"kruiswoordraadsels, zullen niet worden opgenomen in deze PDF, sorry."
+
+#: utils.py:215
+msgid "Successfully wrote PDF."
+msgstr "Schreef met succes PDF."
+
+#: utils.py:221
+msgid ""
+"You are missing pycairo, which is required to perform this operation. Please"
+" run"
+msgstr ""
+"U mist Pycairo, dat nodig is om deze bewerking uit te voeren.Ren alsjeblieft"
+
+#: utils.py:226
+msgid ""
+"and install the headers for pycairo if you are not on Windows at the "
+"following link as a guide"
+msgstr ""
+"en installeer de headers voor Pycairo als u niet op Windows bent op de "
+"volgende link als gids"
+
+#: utils.py:236
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -204,26 +249,26 @@ msgstr ""
 "kunnen worden beëindigd via Activity Monitor op MacOS, of u kunt "
 "eenvoudigweg uw computer opnieuw opstarten om ze te beëindigen."
 
-#: utils.py:202
+#: utils.py:258
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
 "Er is een onverwachte fout opgetreden. Probeer de applicatie opnieuw te "
 "installeren met"
 
-#: utils.py:719
+#: utils.py:779
 msgid "Definitions are empty"
 msgstr "Definities zijn leeg"
 
-#: utils.py:722
+#: utils.py:782
 msgid "The word count or definitions are less than 3 in length"
 msgstr "Het aantal woorden of definities zijn minder dan 3 lang"
 
-#: utils.py:726
+#: utils.py:786
 msgid "Length of the word count is greater than the definitions"
 msgstr "De lengte van het aantal woorden is groter dan de definities"
 
-#: utils.py:729
+#: utils.py:789
 msgid "Escape character present in word"
 msgstr "Escape-teken aanwezig in woord"
 
@@ -281,14 +326,6 @@ msgstr "Duidelijk"
 msgid "Unrevealed"
 msgstr "Niet opgeheven"
 
-#: app/templates/index.html:286
-msgid "Across"
-msgstr "Over"
-
-#: app/templates/index.html:308
-msgid "Down"
-msgstr "Omlaag"
-
 #: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "U kijkt"
@@ -317,147 +354,167 @@ msgstr "Doorgaan"
 msgid "You completed the crossword!"
 msgstr "U hebt het kruiswoordraadsel voltooid!"
 
-#: app/templates/index.html:368 pages/browser.py:586
+#: app/templates/index.html:368 pages/browser.py:641
 msgid "Close"
 msgstr "Dichtbij"
 
-#: pages/browser.py:136
+#: pages/browser.py:137
 msgid "Crossword Browser"
 msgstr "Kruiswoordraadselbrowser"
 
-#: pages/browser.py:141 pages/editor.py:359
+#: pages/browser.py:142 pages/editor.py:363
 msgid "Back"
 msgstr "Terug"
 
-#: pages/browser.py:145 pages/editor.py:363 pages/home.py:305
+#: pages/browser.py:146 pages/editor.py:367 pages/home.py:305
 msgid "HomePage"
 msgstr "Homepage"
 
-#: pages/browser.py:156
+#: pages/browser.py:157
 msgid "Categorised"
 msgstr "Ingedeeld"
 
-#: pages/browser.py:156 pages/browser.py:271
+#: pages/browser.py:157 pages/browser.py:281
 msgid "Flattened"
 msgstr "Afgevlakte"
 
-#: pages/browser.py:186
+#: pages/browser.py:174 pages/browser.py:296
+msgid "Search"
+msgstr "Zoekopdracht"
+
+#: pages/browser.py:187
 msgid "Load"
 msgstr "Lading"
 
-#: pages/browser.py:195
+#: pages/browser.py:196
 msgid "Open"
 msgstr "Openen"
 
-#: pages/browser.py:205
+#: pages/browser.py:206
+msgid "Make PDF"
+msgstr "Maak PDF"
+
+#: pages/browser.py:214
 msgid "Terminate"
 msgstr "Beëindigen"
 
-#: pages/browser.py:216
+#: pages/browser.py:225
 msgid "Word count preferences"
 msgstr "Voorkeuren voor het aantal woorden"
 
-#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
-#: pages/browser.py:495
+#: pages/browser.py:240 pages/browser.py:360 pages/browser.py:391
+#: pages/browser.py:550
 msgid "Select word count"
 msgstr "Selecteer het aantal woorden"
 
-#: pages/browser.py:246
+#: pages/browser.py:244 pages/browser.py:390 pages/browser.py:561
+msgid "Maximum"
+msgstr "Maximaal"
+
+#: pages/browser.py:255
 msgid "Custom"
 msgstr "Aangepast"
 
-#: pages/browser.py:475
+#: pages/browser.py:424
+msgid "Select a destination to download your PDF to"
+msgstr "Selecteer een bestemming om uw PDF naar te downloaden"
+
+#: pages/browser.py:530
 msgid "To perform this operation, you must first select a cell."
 msgstr "Om deze bewerking uit te voeren, moet u eerst een cel selecteren."
 
-#: pages/browser.py:579
+#: pages/browser.py:634
 msgid "View"
 msgstr "Weergave"
 
-#: pages/browser.py:783
-msgid "Select"
-msgstr "Selecteer"
+#: pages/browser.py:818
+msgid "Total words"
+msgstr "Totale woorden"
 
-#: pages/editor.py:353
-msgid "Crossword Editor"
-msgstr "Kruiswoordraadsel-editor"
-
-#: pages/editor.py:491 pages/editor.py:706 pages/editor.py:796
-#: pages/editor.py:936
-msgid "Your Crosswords"
-msgstr "Uw kruiswoordraadsels"
-
-#: pages/editor.py:555 pages/editor.py:800 pages/editor.py:943
-#: pages/editor.py:1030 pages/editor.py:1143 pages/editor.py:1257
-msgid "Save"
-msgstr "Redden"
-
-#: pages/editor.py:567
-msgid "length >= 1 and valid OS file name"
-msgstr "lengte >= 1 en geldige OS-bestandsnaam"
-
-#: pages/editor.py:576
-msgid "length == 1"
-msgstr "lengte == 1"
-
-#: pages/editor.py:582
+#: pages/browser.py:824 pages/editor.py:586
 msgid "Difficulty"
 msgstr "Moeilijkheid"
 
-#: pages/editor.py:589
+#: pages/browser.py:838
+msgid "Select"
+msgstr "Selecteer"
+
+#: pages/editor.py:357
+msgid "Crossword Editor"
+msgstr "Kruiswoordraadsel-editor"
+
+#: pages/editor.py:495 pages/editor.py:718 pages/editor.py:808
+#: pages/editor.py:948
+msgid "Your Crosswords"
+msgstr "Uw kruiswoordraadsels"
+
+#: pages/editor.py:559 pages/editor.py:812 pages/editor.py:955
+#: pages/editor.py:1042 pages/editor.py:1155 pages/editor.py:1269
+msgid "Save"
+msgstr "Redden"
+
+#: pages/editor.py:571
+msgid "length >= 1 and valid OS file name"
+msgstr "lengte >= 1 en geldige OS-bestandsnaam"
+
+#: pages/editor.py:580
+msgid "length == 1"
+msgstr "lengte == 1"
+
+#: pages/editor.py:593
 msgid "Easy"
 msgstr "Eenvoudig"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Medium"
 msgstr "Medium"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Hard"
 msgstr "Moeilijk"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Extreme"
 msgstr "Extreem"
 
-#: pages/editor.py:706 pages/editor.py:1086
+#: pages/editor.py:718 pages/editor.py:1098
 msgid "Adding"
 msgstr "Toevoegen"
 
-#: pages/editor.py:709 pages/editor.py:1090
+#: pages/editor.py:721 pages/editor.py:1102
 msgid "Add"
 msgstr "Toevoegen"
 
-#: pages/editor.py:888 pages/editor.py:1206
+#: pages/editor.py:900 pages/editor.py:1218
 msgid "Press"
 msgstr "Pers"
 
-#: pages/editor.py:890 pages/editor.py:1208
+#: pages/editor.py:902 pages/editor.py:1220
 msgid "to add a"
 msgstr "om een"
 
-#: pages/editor.py:892
+#: pages/editor.py:904
 msgid "new crossword."
 msgstr "Nieuw kruiswoordraadsel."
 
-#: pages/editor.py:936 pages/editor.py:1253
+#: pages/editor.py:948 pages/editor.py:1265
 msgid "Editing"
 msgstr "Bewerken"
 
-#: pages/editor.py:998 pages/editor.py:1086 pages/editor.py:1138
-#: pages/editor.py:1253
+#: pages/editor.py:1010 pages/editor.py:1098 pages/editor.py:1150
+#: pages/editor.py:1265
 msgid "Your Words"
 msgstr "Jouw woorden"
 
-#: pages/editor.py:1042
+#: pages/editor.py:1054
 msgid "length >= 1 and length <= 32 and is a language character"
 msgstr "lengte >= 1 en lengte <= 32 en is een taalteken"
 
-#: pages/editor.py:1053
+#: pages/editor.py:1065
 msgid "length >= 1"
 msgstr "lengte >= 1"
 
-#: pages/editor.py:1210
+#: pages/editor.py:1222
 msgid "new word."
 msgstr "nieuw woord."
 
@@ -533,6 +590,10 @@ msgstr "perfect"
 msgid "Crossword Quality"
 msgstr "Kruiswoordraadselkwaliteit"
 
+#: pages/home.py:322
+msgid "New version available!"
+msgstr "Nieuwe versie beschikbaar!"
+
 msgid "Geography"
 msgstr "Geografie"
 
@@ -548,12 +609,6 @@ msgstr "Computertechnologie"
 msgid "User"
 msgstr "Gebruiker"
 
-msgid "Total words"
-msgstr "Totale woorden"
-
-msgid "Maximum"
-msgstr "Maximaal"
-
 msgid "Clue"
 msgstr "Aanwijzing"
 
@@ -562,9 +617,3 @@ msgstr "Naam"
 
 msgid "Symbol"
 msgstr "Symbool"
-
-msgid "Search"
-msgstr "Zoekopdracht"
-
-msgid "New version available!"
-msgstr "Nieuwe versie beschikbaar!"

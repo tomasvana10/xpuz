@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-28 21:00+1000\n"
+"POT-Creation-Date: 2024-06-29 19:48+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: fi <LL@li.org>\n"
@@ -19,76 +19,89 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: import_export.py:21
+#: import_export.py:24
 msgid "Select a destination to export your crosswords to"
 msgstr "Valitse määränpää viemään ristisanat"
 
-#: import_export.py:25
+#: import_export.py:28
 msgid "my-crosswords"
 msgstr "My-Crosswords"
 
-#: import_export.py:64
+#: import_export.py:70
 msgid ""
 "Select a valid crossword JSON file that was exported using crossword_puzzle"
 msgstr "Valitse kelvollinen ristisanat JSON"
 
-#: utils.py:60
+#: pdf.py:53
+msgid "Answers"
+msgstr "Vastaukset"
+
+#: app/templates/index.html:286 pdf.py:207
+msgid "Across"
+msgstr "Poikki"
+
+#: app/templates/index.html:308 pdf.py:214
+msgid "Down"
+msgstr "Alas"
+
+#: utils.py:58
 msgid "Remove"
 msgstr "Poistaa"
 
-#: utils.py:60
+#: utils.py:59
 msgid "Are you sure you want to delete this"
 msgstr "Haluatko varmasti poistaa tämän"
 
-#: utils.py:60
+#: utils.py:61
 msgid "It will be lost forever!"
 msgstr "Se menetetään ikuisesti!"
 
-#: utils.py:65
+#: utils.py:66
 msgid "Add or select"
 msgstr "Lisää tai valitse"
 
-#: utils.py:65
+#: utils.py:67
 msgid "Are you sure you want to add/select a"
 msgstr "Haluatko varmasti lisätä/valita"
 
-#: utils.py:65
+#: utils.py:69
 msgid "Your modified fields will be reset!"
 msgstr "Muokatut kentät nollataan!"
 
-#: utils.py:70 utils.py:94
+#: utils.py:74 utils.py:106
 msgid "Back to home"
 msgstr "Takaisin kotiin"
 
-#: utils.py:70
+#: utils.py:75
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
 msgstr "Haluatko varmasti palata aloitusnäyttöön? Muokatut kentät nollataan!"
 
-#: utils.py:75 utils.py:141 utils.py:151 utils.py:156 utils.py:179
+#: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
+#: utils.py:235
 msgid "Info"
 msgstr "Tiedot"
 
-#: utils.py:75
+#: utils.py:84
 msgid ""
 "Are you sure you want to import crosswords? Your modified fields will be "
 "reset!"
 msgstr "Oletko varma, että haluat tuoda ristisanat?Muokatut kentät nollataan!"
 
-#: utils.py:80
+#: utils.py:92
 msgid "Restart"
 msgstr "Uudelleenkäynnistää"
 
-#: utils.py:80
+#: utils.py:92
 msgid "Are you sure you want to restart the app?"
 msgstr "Haluatko varmasti käynnistää sovelluksen uudelleen?"
 
-#: pages/home.py:148 utils.py:85
+#: pages/home.py:148 utils.py:97
 msgid "Exit"
 msgstr "Poistu"
 
-#: utils.py:86
+#: utils.py:98
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -96,35 +109,35 @@ msgstr ""
 "Haluatko varmasti poistua sovelluksesta? Jos verkkosovellus on käynnissä, se"
 " lopetetaan."
 
-#: utils.py:95
+#: utils.py:107
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr "Haluatko varmasti palata aloitusnäyttöön? Verkkosovellus lopetetaan."
 
-#: utils.py:106 utils.py:111 utils.py:116 utils.py:121 utils.py:126
-#: utils.py:135 utils.py:146 utils.py:169 utils.py:174 utils.py:196
-#: utils.py:200
+#: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
+#: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
+#: utils.py:220 utils.py:252 utils.py:256
 msgid "Error"
 msgstr "Virhe"
 
-#: utils.py:106
+#: utils.py:118
 msgid "This language is already selected."
 msgstr "Tämä kieli on jo valittu."
 
-#: utils.py:111
+#: utils.py:123
 msgid "This size is already selected."
 msgstr "Tämä koko on jo valittu."
 
-#: utils.py:116
+#: utils.py:128
 msgid "This appearance is already selected."
 msgstr "Tämä ulkoasu on jo valittu."
 
-#: utils.py:121
+#: utils.py:133
 msgid "This quality is already selected."
 msgstr "Tämä laatu on jo valittu."
 
-#: utils.py:127
+#: utils.py:139
 msgid ""
 "A crossword with this name and difficulty already exists. Please choose a "
 "new name and/or a new difficulty."
@@ -132,44 +145,76 @@ msgstr ""
 "Ristisana, jolla on jo olemassa, on jo olemassa.Valitse uusi nimi ja/tai "
 "uusi vaikeus."
 
-#: utils.py:136
+#: utils.py:148
 msgid "You have no crosswords to export. Please make some and try again."
 msgstr "Sinulla ei ole ristisanoja vientiin.Ole hyvä ja yritä uudelleen."
 
-#: utils.py:141
+#: utils.py:155
 msgid "Successfully exported your crosswords."
 msgstr "Vientivät ristisanat onnistuneesti."
 
-#: utils.py:146
+#: utils.py:160
 msgid "Your crosswords could not be exported, sorry."
 msgstr "Ristisanasi ei voitu viedä, anteeksi."
 
-#: utils.py:151
+#: utils.py:166
 msgid "All of your crosswords were successfully imported."
 msgstr "Kaikki ristisanat tuotiin onnistuneesti."
 
-#: utils.py:157
+#: utils.py:172
 msgid "Your import could not be fully completed."
 msgstr "Tuontiasi ei voitu kokonaan loppuun."
 
-#: utils.py:159
+#: utils.py:174
 msgid ""
 "Crosswords with duplicate names and difficulties that were not imported: "
 msgstr "Ristisanat, joissa on kaksoiskappaleet ja vaikeudet, joita ei tuotu:"
 
-#: utils.py:163
+#: utils.py:180
 msgid "Invalid crosswords that were not imported: "
 msgstr "Virheelliset ristisanat, joita ei tuotu:"
 
-#: utils.py:169
+#: utils.py:187
 msgid "The specified JSON file is invalid and cannot be processed."
 msgstr "Määritetty JSON -tiedosto on virheellinen eikä sitä voida käsitellä."
 
-#: utils.py:174
+#: utils.py:195
 msgid "This word already exists. Please choose a new word."
 msgstr "Tämä sana on jo olemassa. Valitse uusi sana."
 
-#: utils.py:180
+#: utils.py:201
+msgid "An error occurred while creating your PDF. Please try again."
+msgstr "PDF -tiedostosi luomalla tapahtui virhe.Yritä uudelleen."
+
+#: utils.py:208
+msgid ""
+"words that could not be inserted during crossword generation will not be "
+"included in this PDF, sorry."
+msgstr ""
+"Sanoja, joita ei voitu työntää ristisanojen luomisen aikana, ei sisälly "
+"tähän PDF: ään, anteeksi."
+
+#: utils.py:215
+msgid "Successfully wrote PDF."
+msgstr "Kirjoitti PDF: n onnistuneesti."
+
+#: utils.py:221
+msgid ""
+"You are missing pycairo, which is required to perform this operation. Please"
+" run"
+msgstr ""
+"Sinulta puuttuu Pycairo, jota vaaditaan tämän toiminnan suorittamiseen.Ole "
+"hyvä ja juoksuta"
+
+#: utils.py:226
+msgid ""
+"and install the headers for pycairo if you are not on Windows at the "
+"following link as a guide"
+msgstr ""
+"ja asenna Pycairon otsikot, jos et ole ikkunoissa seuraavassa linkissä "
+"oppaana"
+
+#: utils.py:236
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -191,24 +236,24 @@ msgstr ""
 "voidaan lopettaa MacOS:n Activity Monitorin kautta tai lopettaa ne "
 "yksinkertaisesti käynnistämällä tietokoneesi uudelleen."
 
-#: utils.py:202
+#: utils.py:258
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr "Tapahtui odottamaton virhe. Yritä asentaa sovellus uudelleen"
 
-#: utils.py:719
+#: utils.py:779
 msgid "Definitions are empty"
 msgstr "Määritelmät ovat tyhjiä"
 
-#: utils.py:722
+#: utils.py:782
 msgid "The word count or definitions are less than 3 in length"
 msgstr "Sanamäärä tai määritelmät ovat alle 3 pitkiä"
 
-#: utils.py:726
+#: utils.py:786
 msgid "Length of the word count is greater than the definitions"
 msgstr "Sanamäärän pituus on suurempi kuin määritelmät"
 
-#: utils.py:729
+#: utils.py:789
 msgid "Escape character present in word"
 msgstr "Pakomerkki sanassa"
 
@@ -266,14 +311,6 @@ msgstr "Asia selvä"
 msgid "Unrevealed"
 msgstr "Paluuttamaton"
 
-#: app/templates/index.html:286
-msgid "Across"
-msgstr "Poikki"
-
-#: app/templates/index.html:308
-msgid "Down"
-msgstr "Alas"
-
 #: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "Katsot"
@@ -302,147 +339,167 @@ msgstr "Jatkaa"
 msgid "You completed the crossword!"
 msgstr "Suoritin ristisanan!"
 
-#: app/templates/index.html:368 pages/browser.py:586
+#: app/templates/index.html:368 pages/browser.py:641
 msgid "Close"
 msgstr "kiinni"
 
-#: pages/browser.py:136
+#: pages/browser.py:137
 msgid "Crossword Browser"
 msgstr "Ristisanatehtävä selain"
 
-#: pages/browser.py:141 pages/editor.py:359
+#: pages/browser.py:142 pages/editor.py:363
 msgid "Back"
 msgstr "Selkä"
 
-#: pages/browser.py:145 pages/editor.py:363 pages/home.py:305
+#: pages/browser.py:146 pages/editor.py:367 pages/home.py:305
 msgid "HomePage"
 msgstr "Kotisivu"
 
-#: pages/browser.py:156
+#: pages/browser.py:157
 msgid "Categorised"
 msgstr "Luokitella"
 
-#: pages/browser.py:156 pages/browser.py:271
+#: pages/browser.py:157 pages/browser.py:281
 msgid "Flattened"
 msgstr "Litistetty"
 
-#: pages/browser.py:186
+#: pages/browser.py:174 pages/browser.py:296
+msgid "Search"
+msgstr "Hae"
+
+#: pages/browser.py:187
 msgid "Load"
 msgstr "Kuorma"
 
-#: pages/browser.py:195
+#: pages/browser.py:196
 msgid "Open"
 msgstr "Avata"
 
-#: pages/browser.py:205
+#: pages/browser.py:206
+msgid "Make PDF"
+msgstr "Tehdä pdf"
+
+#: pages/browser.py:214
 msgid "Terminate"
 msgstr "Lopettaa"
 
-#: pages/browser.py:216
+#: pages/browser.py:225
 msgid "Word count preferences"
 msgstr "Sanamääräasetukset"
 
-#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
-#: pages/browser.py:495
+#: pages/browser.py:240 pages/browser.py:360 pages/browser.py:391
+#: pages/browser.py:550
 msgid "Select word count"
 msgstr "Valitse sanamäärä"
 
-#: pages/browser.py:246
+#: pages/browser.py:244 pages/browser.py:390 pages/browser.py:561
+msgid "Maximum"
+msgstr "Enimmäismäärä"
+
+#: pages/browser.py:255
 msgid "Custom"
 msgstr "Mukautettu"
 
-#: pages/browser.py:475
+#: pages/browser.py:424
+msgid "Select a destination to download your PDF to"
+msgstr "Valitse kohde ladata PDF -tiedosto"
+
+#: pages/browser.py:530
 msgid "To perform this operation, you must first select a cell."
 msgstr "Tämän toiminnan suorittamiseksi sinun on ensin valittava solu."
 
-#: pages/browser.py:579
+#: pages/browser.py:634
 msgid "View"
 msgstr "Näytä"
 
-#: pages/browser.py:783
-msgid "Select"
-msgstr "Valitse"
+#: pages/browser.py:818
+msgid "Total words"
+msgstr "Kokonais sanat"
 
-#: pages/editor.py:353
-msgid "Crossword Editor"
-msgstr "Ristisanatehtävä Editori"
-
-#: pages/editor.py:491 pages/editor.py:706 pages/editor.py:796
-#: pages/editor.py:936
-msgid "Your Crosswords"
-msgstr "Ristisanatehtäväsi"
-
-#: pages/editor.py:555 pages/editor.py:800 pages/editor.py:943
-#: pages/editor.py:1030 pages/editor.py:1143 pages/editor.py:1257
-msgid "Save"
-msgstr "Säästää"
-
-#: pages/editor.py:567
-msgid "length >= 1 and valid OS file name"
-msgstr "length >= 1 ja kelvollinen käyttöjärjestelmän tiedostonimi"
-
-#: pages/editor.py:576
-msgid "length == 1"
-msgstr "pituus == 1"
-
-#: pages/editor.py:582
+#: pages/browser.py:824 pages/editor.py:586
 msgid "Difficulty"
 msgstr "Vaikeus"
 
-#: pages/editor.py:589
+#: pages/browser.py:838
+msgid "Select"
+msgstr "Valitse"
+
+#: pages/editor.py:357
+msgid "Crossword Editor"
+msgstr "Ristisanatehtävä Editori"
+
+#: pages/editor.py:495 pages/editor.py:718 pages/editor.py:808
+#: pages/editor.py:948
+msgid "Your Crosswords"
+msgstr "Ristisanatehtäväsi"
+
+#: pages/editor.py:559 pages/editor.py:812 pages/editor.py:955
+#: pages/editor.py:1042 pages/editor.py:1155 pages/editor.py:1269
+msgid "Save"
+msgstr "Säästää"
+
+#: pages/editor.py:571
+msgid "length >= 1 and valid OS file name"
+msgstr "length >= 1 ja kelvollinen käyttöjärjestelmän tiedostonimi"
+
+#: pages/editor.py:580
+msgid "length == 1"
+msgstr "pituus == 1"
+
+#: pages/editor.py:593
 msgid "Easy"
 msgstr "Helppo"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Medium"
 msgstr "Keskikokoinen"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Hard"
 msgstr "Kovaa"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Extreme"
 msgstr "Äärimmäistä"
 
-#: pages/editor.py:706 pages/editor.py:1086
+#: pages/editor.py:718 pages/editor.py:1098
 msgid "Adding"
 msgstr "Lisääminen"
 
-#: pages/editor.py:709 pages/editor.py:1090
+#: pages/editor.py:721 pages/editor.py:1102
 msgid "Add"
 msgstr "Lisätä"
 
-#: pages/editor.py:888 pages/editor.py:1206
+#: pages/editor.py:900 pages/editor.py:1218
 msgid "Press"
 msgstr "Painaa"
 
-#: pages/editor.py:890 pages/editor.py:1208
+#: pages/editor.py:902 pages/editor.py:1220
 msgid "to add a"
 msgstr "Voit lisätä"
 
-#: pages/editor.py:892
+#: pages/editor.py:904
 msgid "new crossword."
 msgstr "Uusi ristisanatehtävä."
 
-#: pages/editor.py:936 pages/editor.py:1253
+#: pages/editor.py:948 pages/editor.py:1265
 msgid "Editing"
 msgstr "Muokkaaminen"
 
-#: pages/editor.py:998 pages/editor.py:1086 pages/editor.py:1138
-#: pages/editor.py:1253
+#: pages/editor.py:1010 pages/editor.py:1098 pages/editor.py:1150
+#: pages/editor.py:1265
 msgid "Your Words"
 msgstr "Sinun sanasi"
 
-#: pages/editor.py:1042
+#: pages/editor.py:1054
 msgid "length >= 1 and length <= 32 and is a language character"
 msgstr "pituus >= 1 ja pituus <= 32 ja on kielimerkki"
 
-#: pages/editor.py:1053
+#: pages/editor.py:1065
 msgid "length >= 1"
 msgstr "pituus >= 1"
 
-#: pages/editor.py:1210
+#: pages/editor.py:1222
 msgid "new word."
 msgstr "Uusi sana."
 
@@ -518,6 +575,10 @@ msgstr "täydellinen"
 msgid "Crossword Quality"
 msgstr "Ristisanan laatu"
 
+#: pages/home.py:322
+msgid "New version available!"
+msgstr "Uusi versio saatavilla!"
+
 msgid "Geography"
 msgstr "Maantiede"
 
@@ -533,12 +594,6 @@ msgstr "Tietokone Tiede"
 msgid "User"
 msgstr "Käyttäjä"
 
-msgid "Total words"
-msgstr "Kokonais sanat"
-
-msgid "Maximum"
-msgstr "Enimmäismäärä"
-
 msgid "Clue"
 msgstr "Johtolanka"
 
@@ -547,9 +602,3 @@ msgstr "Nimi"
 
 msgid "Symbol"
 msgstr "Symboli"
-
-msgid "Search"
-msgstr "Hae"
-
-msgid "New version available!"
-msgstr "Uusi versio saatavilla!"

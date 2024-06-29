@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-28 21:00+1000\n"
+"POT-Creation-Date: 2024-06-29 19:48+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ne <LL@li.org>\n"
@@ -19,50 +19,62 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: import_export.py:21
+#: import_export.py:24
 msgid "Select a destination to export your crosswords to"
 msgstr "तपाईंको क्रसवर्ड निर्यात गर्न गन्तव्य चयन गर्नुहोस्"
 
-#: import_export.py:25
+#: import_export.py:28
 msgid "my-crosswords"
 msgstr "मेरो क्रसवर्ड्स"
 
-#: import_export.py:64
+#: import_export.py:70
 msgid ""
 "Select a valid crossword JSON file that was exported using crossword_puzzle"
 msgstr ""
 "एक मान्य क्रसवर्ड जेसन फाईल चयन गर्नुहोस् जुन क्रसवर्ड_पीसुजल प्रयोग गरी "
 "निर्यात गरिएको थियो"
 
-#: utils.py:60
+#: pdf.py:53
+msgid "Answers"
+msgstr "उत्तर"
+
+#: app/templates/index.html:286 pdf.py:207
+msgid "Across"
+msgstr "वारपार"
+
+#: app/templates/index.html:308 pdf.py:214
+msgid "Down"
+msgstr "तल"
+
+#: utils.py:58
 msgid "Remove"
 msgstr "हटाउनुहोस्"
 
-#: utils.py:60
+#: utils.py:59
 msgid "Are you sure you want to delete this"
 msgstr "तपाईँ यसलाई मेट्न निश्चित हुनुहुन्छ ?"
 
-#: utils.py:60
+#: utils.py:61
 msgid "It will be lost forever!"
 msgstr "यो सदाको लागि हराउनेछ!"
 
-#: utils.py:65
+#: utils.py:66
 msgid "Add or select"
 msgstr "थप्नुहोस् वा चयन गर्नुहोस्"
 
-#: utils.py:65
+#: utils.py:67
 msgid "Are you sure you want to add/select a"
 msgstr "के तपाईँ थप्न/चयन गर्न निश्चित हुनुहुन्छ?"
 
-#: utils.py:65
+#: utils.py:69
 msgid "Your modified fields will be reset!"
 msgstr "तपाईँको परिमार्जित फाँटहरू रिसेट गरिनेछ!"
 
-#: utils.py:70 utils.py:94
+#: utils.py:74 utils.py:106
 msgid "Back to home"
 msgstr "घर फिर्ता"
 
-#: utils.py:70
+#: utils.py:75
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
@@ -70,11 +82,12 @@ msgstr ""
 "के तपाईँ होम स्क्रिनमा फर्कन निश्चित हुनुहुन्छ? तपाईँको परिमार्जित फाँटहरू "
 "रिसेट गरिनेछ!"
 
-#: utils.py:75 utils.py:141 utils.py:151 utils.py:156 utils.py:179
+#: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
+#: utils.py:235
 msgid "Info"
 msgstr "जानकारी"
 
-#: utils.py:75
+#: utils.py:84
 msgid ""
 "Are you sure you want to import crosswords? Your modified fields will be "
 "reset!"
@@ -82,19 +95,19 @@ msgstr ""
 "के तपाइँ निश्चित हुनुहुन्छ कि तपाइँ क्रसवर्डहरू आयात गर्न "
 "चाहानुहुन्छ?तपाईंको परिमार्जित क्षेत्रहरू रिसेट हुनेछ!"
 
-#: utils.py:80
+#: utils.py:92
 msgid "Restart"
 msgstr "फेरि शुरु गर्नु"
 
-#: utils.py:80
+#: utils.py:92
 msgid "Are you sure you want to restart the app?"
 msgstr "के तपाइँ एप पुन: सुरु गर्न निश्चित हुनुहुन्छ?"
 
-#: pages/home.py:148 utils.py:85
+#: pages/home.py:148 utils.py:97
 msgid "Exit"
 msgstr "बाहिर निस्कनुहोस्"
 
-#: utils.py:86
+#: utils.py:98
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -102,36 +115,36 @@ msgstr ""
 "के तपाइँ एपबाट बाहिर निस्कन निश्चित हुनुहुन्छ? यदि वेब एप चलिरहेको छ भने, यो"
 " समाप्त हुनेछ।"
 
-#: utils.py:95
+#: utils.py:107
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
 "के तपाईं निश्चित रूपमा गृह स्क्रिनमा फर्कन चाहनुहुन्छ? वेब एप खारेज गरिनेछ।"
 
-#: utils.py:106 utils.py:111 utils.py:116 utils.py:121 utils.py:126
-#: utils.py:135 utils.py:146 utils.py:169 utils.py:174 utils.py:196
-#: utils.py:200
+#: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
+#: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
+#: utils.py:220 utils.py:252 utils.py:256
 msgid "Error"
 msgstr "त्रुटि"
 
-#: utils.py:106
+#: utils.py:118
 msgid "This language is already selected."
 msgstr "यो भाषा पहिले नै चयन गरिएको छ।"
 
-#: utils.py:111
+#: utils.py:123
 msgid "This size is already selected."
 msgstr "यो आकार पहिले नै चयन गरिएको छ।"
 
-#: utils.py:116
+#: utils.py:128
 msgid "This appearance is already selected."
 msgstr "यो उपस्थिति पहिले नै चयन गरिएको छ।"
 
-#: utils.py:121
+#: utils.py:133
 msgid "This quality is already selected."
 msgstr "यो गुण पहिले नै चयन गरिएको छ।"
 
-#: utils.py:127
+#: utils.py:139
 msgid ""
 "A crossword with this name and difficulty already exists. Please choose a "
 "new name and/or a new difficulty."
@@ -139,46 +152,77 @@ msgstr ""
 "यस नामको साथ क्रसवर्ड र कठिनाई पहिले नै अवस्थित छ।कृपया नयाँ नाम र / वा नयाँ"
 " कठिनाई छनौट गर्नुहोस्।"
 
-#: utils.py:136
+#: utils.py:148
 msgid "You have no crosswords to export. Please make some and try again."
 msgstr ""
 "तपाइँसँग निर्यात गर्न कुनै क्रसवर्ड छैन।कृपया केहि बनाउनुहोस् र फेरि प्रयास "
 "गर्नुहोस्।"
 
-#: utils.py:141
+#: utils.py:155
 msgid "Successfully exported your crosswords."
 msgstr "सफलतापूर्वक तपाईंको क्रसवर्डहरू निर्यात गरियो।"
 
-#: utils.py:146
+#: utils.py:160
 msgid "Your crosswords could not be exported, sorry."
 msgstr "तपाईंको क्रसवर्ड्स निर्यात गर्न सकिएन, माफ गर्नुहोस्।"
 
-#: utils.py:151
+#: utils.py:166
 msgid "All of your crosswords were successfully imported."
 msgstr "तपाईंको सबै क्रसवर्डहरू सफलतापूर्वक आयात गरियो।"
 
-#: utils.py:157
+#: utils.py:172
 msgid "Your import could not be fully completed."
 msgstr "तपाईंको आयात पूर्ण रूपमा पूरा हुन सकेन।"
 
-#: utils.py:159
+#: utils.py:174
 msgid ""
 "Crosswords with duplicate names and difficulties that were not imported: "
 msgstr "नक्कल नामहरू र कठिनाइहरूको साथ क्रसवर्डहरू जुन आयात गरिएको थिएन:"
 
-#: utils.py:163
+#: utils.py:180
 msgid "Invalid crosswords that were not imported: "
 msgstr "अवैध क्रसवर्डहरू जुन आयात गरिएको थिएन:"
 
-#: utils.py:169
+#: utils.py:187
 msgid "The specified JSON file is invalid and cannot be processed."
 msgstr "निर्दिष्ट json फाईल अवैध छ र प्रशोधन गर्न सकिदैन।"
 
-#: utils.py:174
+#: utils.py:195
 msgid "This word already exists. Please choose a new word."
 msgstr "यो शब्द पहिल्यै अवस्थित छ । कृपया नयाँ शब्द रोज्नुहोस् ।"
 
-#: utils.py:180
+#: utils.py:201
+msgid "An error occurred while creating your PDF. Please try again."
+msgstr ""
+"तपाईंको PDF सिर्जना गर्दा एउटा त्रुटि देखा पर्यो।फेरि प्रयास गर्नुहोस।"
+
+#: utils.py:208
+msgid ""
+"words that could not be inserted during crossword generation will not be "
+"included in this PDF, sorry."
+msgstr ""
+"क्रसवर्ड जेनको समयमा सम्मिलित हुन नसक्ने शब्दहरू यस पीडीएफमा समावेश हुँदैन, "
+"माफ गर्नुहोस्।"
+
+#: utils.py:215
+msgid "Successfully wrote PDF."
+msgstr "सफलतापूर्वक pdf लेखियो।"
+
+#: utils.py:221
+msgid ""
+"You are missing pycairo, which is required to perform this operation. Please"
+" run"
+msgstr "तपाईं pycairo हराइरहेको छ, जुन यो अपरेशन प्रदर्शन गर्न आवश्यक छ।रन गर"
+
+#: utils.py:226
+msgid ""
+"and install the headers for pycairo if you are not on Windows at the "
+"following link as a guide"
+msgstr ""
+"र हेडरलाई पिरोरोको लागि स्थापना गर्नुहोस् यदि तपाईं एक गाईडको रूपमा निम्न "
+"लिंकहरूमा हुनुहुन्न भने"
+
+#: utils.py:236
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -200,26 +244,26 @@ msgstr ""
 "राम्ररी समाप्त नगरिएका छन् MacOS मा गतिविधि मनिटर मार्फत समाप्त गर्न सकिन्छ,"
 " वा, तिनीहरूलाई समाप्त गर्नको लागि तपाइँको कम्प्युटर पुन: सुरु गर्नुहोस्।"
 
-#: utils.py:202
+#: utils.py:258
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
 "एउटा अनपेक्षित त्रुटि उत्पन्न भयो । कृपया यससँग अनुप्रयोग पुन: स्थापना गर्ने"
 " प्रयास गर्नुहोस्"
 
-#: utils.py:719
+#: utils.py:779
 msgid "Definitions are empty"
 msgstr "परिभाषाहरू खाली छन्"
 
-#: utils.py:722
+#: utils.py:782
 msgid "The word count or definitions are less than 3 in length"
 msgstr "शब्द गणना वा परिभाषाहरू लम्बाइमा 3 भन्दा कम छन्"
 
-#: utils.py:726
+#: utils.py:786
 msgid "Length of the word count is greater than the definitions"
 msgstr "शब्द गणनाको लम्बाइ परिभाषाभन्दा ठूलो छ"
 
-#: utils.py:729
+#: utils.py:789
 msgid "Escape character present in word"
 msgstr "शब्दमा उपस्थित क्यारेक्टर बाट बच्नुहोस्"
 
@@ -277,14 +321,6 @@ msgstr "स्पष्ट"
 msgid "Unrevealed"
 msgstr "रिकेको छैन"
 
-#: app/templates/index.html:286
-msgid "Across"
-msgstr "वारपार"
-
-#: app/templates/index.html:308
-msgid "Down"
-msgstr "तल"
-
 #: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "तपाईं अवलोकन गर्दै हुनुहुन्छ"
@@ -313,147 +349,167 @@ msgstr "जारी राख्नु"
 msgid "You completed the crossword!"
 msgstr "तपाईंले क्रसवर्ड पूरा गर्नुभयो!"
 
-#: app/templates/index.html:368 pages/browser.py:586
+#: app/templates/index.html:368 pages/browser.py:641
 msgid "Close"
 msgstr "बन्द गर्नुहोस्"
 
-#: pages/browser.py:136
+#: pages/browser.py:137
 msgid "Crossword Browser"
 msgstr "क्रसवर्ड ब्राउजर"
 
-#: pages/browser.py:141 pages/editor.py:359
+#: pages/browser.py:142 pages/editor.py:363
 msgid "Back"
 msgstr "पछाडि"
 
-#: pages/browser.py:145 pages/editor.py:363 pages/home.py:305
+#: pages/browser.py:146 pages/editor.py:367 pages/home.py:305
 msgid "HomePage"
 msgstr "गृहपृष्ठ"
 
-#: pages/browser.py:156
+#: pages/browser.py:157
 msgid "Categorised"
 msgstr "वर्गीकृत गरियो"
 
-#: pages/browser.py:156 pages/browser.py:271
+#: pages/browser.py:157 pages/browser.py:281
 msgid "Flattened"
 msgstr "चपटा भयो"
 
-#: pages/browser.py:186
+#: pages/browser.py:174 pages/browser.py:296
+msgid "Search"
+msgstr "खोजी"
+
+#: pages/browser.py:187
 msgid "Load"
 msgstr "लोड गर्नुहोस्"
 
-#: pages/browser.py:195
+#: pages/browser.py:196
 msgid "Open"
 msgstr "खोल्नुहोस्"
 
-#: pages/browser.py:205
+#: pages/browser.py:206
+msgid "Make PDF"
+msgstr "PDF बनाउनुहोस्"
+
+#: pages/browser.py:214
 msgid "Terminate"
 msgstr "समाप्त गर्नुहोस्"
 
-#: pages/browser.py:216
+#: pages/browser.py:225
 msgid "Word count preferences"
 msgstr "शब्द गणना प्राथमिकताहरू"
 
-#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
-#: pages/browser.py:495
+#: pages/browser.py:240 pages/browser.py:360 pages/browser.py:391
+#: pages/browser.py:550
 msgid "Select word count"
 msgstr "शब्द गणना चयन गर्नुहोस्"
 
-#: pages/browser.py:246
+#: pages/browser.py:244 pages/browser.py:390 pages/browser.py:561
+msgid "Maximum"
+msgstr "अधिकतम"
+
+#: pages/browser.py:255
 msgid "Custom"
 msgstr "अनुकूलन"
 
-#: pages/browser.py:475
+#: pages/browser.py:424
+msgid "Select a destination to download your PDF to"
+msgstr "तपाईंको PDF डाउनलोड गर्न गन्तव्य चयन गर्नुहोस्"
+
+#: pages/browser.py:530
 msgid "To perform this operation, you must first select a cell."
 msgstr "यो अपरेशन प्रदर्शन गर्न, तपाईंले पहिले एउटा सेल चयन गर्नुपर्नेछ।"
 
-#: pages/browser.py:579
+#: pages/browser.py:634
 msgid "View"
 msgstr "हेर्नुहोस्"
 
-#: pages/browser.py:783
-msgid "Select"
-msgstr "चयन गर्नुहोस्"
+#: pages/browser.py:818
+msgid "Total words"
+msgstr "कूल शब्दहरू"
 
-#: pages/editor.py:353
-msgid "Crossword Editor"
-msgstr "क्रसवर्ड सम्पादक"
-
-#: pages/editor.py:491 pages/editor.py:706 pages/editor.py:796
-#: pages/editor.py:936
-msgid "Your Crosswords"
-msgstr "तपाईँका क्रसवर्डहरू"
-
-#: pages/editor.py:555 pages/editor.py:800 pages/editor.py:943
-#: pages/editor.py:1030 pages/editor.py:1143 pages/editor.py:1257
-msgid "Save"
-msgstr "बचत गर्नुहोस्"
-
-#: pages/editor.py:567
-msgid "length >= 1 and valid OS file name"
-msgstr "लम्बाइ >= १ र वैध ओएस फाइल नाम"
-
-#: pages/editor.py:576
-msgid "length == 1"
-msgstr "लम्बाई == 1"
-
-#: pages/editor.py:582
+#: pages/browser.py:824 pages/editor.py:586
 msgid "Difficulty"
 msgstr "कठिनाइ"
 
-#: pages/editor.py:589
+#: pages/browser.py:838
+msgid "Select"
+msgstr "चयन गर्नुहोस्"
+
+#: pages/editor.py:357
+msgid "Crossword Editor"
+msgstr "क्रसवर्ड सम्पादक"
+
+#: pages/editor.py:495 pages/editor.py:718 pages/editor.py:808
+#: pages/editor.py:948
+msgid "Your Crosswords"
+msgstr "तपाईँका क्रसवर्डहरू"
+
+#: pages/editor.py:559 pages/editor.py:812 pages/editor.py:955
+#: pages/editor.py:1042 pages/editor.py:1155 pages/editor.py:1269
+msgid "Save"
+msgstr "बचत गर्नुहोस्"
+
+#: pages/editor.py:571
+msgid "length >= 1 and valid OS file name"
+msgstr "लम्बाइ >= १ र वैध ओएस फाइल नाम"
+
+#: pages/editor.py:580
+msgid "length == 1"
+msgstr "लम्बाई == 1"
+
+#: pages/editor.py:593
 msgid "Easy"
 msgstr "सजिलो"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Medium"
 msgstr "मध्यम"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Hard"
 msgstr "कडा"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Extreme"
 msgstr "चरम"
 
-#: pages/editor.py:706 pages/editor.py:1086
+#: pages/editor.py:718 pages/editor.py:1098
 msgid "Adding"
 msgstr "थप्दै"
 
-#: pages/editor.py:709 pages/editor.py:1090
+#: pages/editor.py:721 pages/editor.py:1102
 msgid "Add"
 msgstr "थप्नुहोस्"
 
-#: pages/editor.py:888 pages/editor.py:1206
+#: pages/editor.py:900 pages/editor.py:1218
 msgid "Press"
 msgstr "थिच्नुहोस्"
 
-#: pages/editor.py:890 pages/editor.py:1208
+#: pages/editor.py:902 pages/editor.py:1220
 msgid "to add a"
 msgstr "एक थप्नको लागि"
 
-#: pages/editor.py:892
+#: pages/editor.py:904
 msgid "new crossword."
 msgstr "नयाँ क्रसवर्ड।"
 
-#: pages/editor.py:936 pages/editor.py:1253
+#: pages/editor.py:948 pages/editor.py:1265
 msgid "Editing"
 msgstr "सम्पादन गर्दै"
 
-#: pages/editor.py:998 pages/editor.py:1086 pages/editor.py:1138
-#: pages/editor.py:1253
+#: pages/editor.py:1010 pages/editor.py:1098 pages/editor.py:1150
+#: pages/editor.py:1265
 msgid "Your Words"
 msgstr "तपाईंको शब्दहरू"
 
-#: pages/editor.py:1042
+#: pages/editor.py:1054
 msgid "length >= 1 and length <= 32 and is a language character"
 msgstr "लम्बाइ > = १ र लम्बाइ < = ३२ र यो भाषा क्यारेक्टर हो"
 
-#: pages/editor.py:1053
+#: pages/editor.py:1065
 msgid "length >= 1"
 msgstr "लम्बाई >= 1"
 
-#: pages/editor.py:1210
+#: pages/editor.py:1222
 msgid "new word."
 msgstr "नयाँ शब्द।"
 
@@ -529,6 +585,10 @@ msgstr "पूर्ण"
 msgid "Crossword Quality"
 msgstr "क्रसवर्ड को गुणस्तर"
 
+#: pages/home.py:322
+msgid "New version available!"
+msgstr "नयाँ संस्करण उपलब्ध!"
+
 msgid "Geography"
 msgstr "भूगोल"
 
@@ -544,12 +604,6 @@ msgstr "कम्प्युटर विज्ञान"
 msgid "User"
 msgstr "प्रयोगकर्ता"
 
-msgid "Total words"
-msgstr "कूल शब्दहरू"
-
-msgid "Maximum"
-msgstr "अधिकतम"
-
 msgid "Clue"
 msgstr "Clue"
 
@@ -558,9 +612,3 @@ msgstr "नाम"
 
 msgid "Symbol"
 msgstr "प्रतीक"
-
-msgid "Search"
-msgstr "खोजी"
-
-msgid "New version available!"
-msgstr "नयाँ संस्करण उपलब्ध!"

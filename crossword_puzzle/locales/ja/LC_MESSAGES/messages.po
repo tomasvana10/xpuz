@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-28 21:00+1000\n"
+"POT-Creation-Date: 2024-06-29 19:48+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ja <LL@li.org>\n"
@@ -19,153 +19,192 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: import_export.py:21
+#: import_export.py:24
 msgid "Select a destination to export your crosswords to"
 msgstr "クロスワードをエクスポートする宛先を選択します"
 
-#: import_export.py:25
+#: import_export.py:28
 msgid "my-crosswords"
 msgstr "私のクロスワード"
 
-#: import_export.py:64
+#: import_export.py:70
 msgid ""
 "Select a valid crossword JSON file that was exported using crossword_puzzle"
 msgstr "CrossWord_Puzzleを使用してエクスポートされた有効なクロスワードJSONファイルを選択します"
 
-#: utils.py:60
+#: pdf.py:53
+msgid "Answers"
+msgstr "回答"
+
+#: app/templates/index.html:286 pdf.py:207
+msgid "Across"
+msgstr "横切って"
+
+#: app/templates/index.html:308 pdf.py:214
+msgid "Down"
+msgstr "下"
+
+#: utils.py:58
 msgid "Remove"
 msgstr "取り去る"
 
-#: utils.py:60
+#: utils.py:59
 msgid "Are you sure you want to delete this"
 msgstr "これを削除してもよろしいですか?"
 
-#: utils.py:60
+#: utils.py:61
 msgid "It will be lost forever!"
 msgstr "それは永遠に失われます!"
 
-#: utils.py:65
+#: utils.py:66
 msgid "Add or select"
 msgstr "追加または選択"
 
-#: utils.py:65
+#: utils.py:67
 msgid "Are you sure you want to add/select a"
 msgstr "追加/選択してもよろしいですか?"
 
-#: utils.py:65
+#: utils.py:69
 msgid "Your modified fields will be reset!"
 msgstr "変更したフィールドがリセットされます。"
 
-#: utils.py:70 utils.py:94
+#: utils.py:74 utils.py:106
 msgid "Back to home"
 msgstr "家に帰る"
 
-#: utils.py:70
+#: utils.py:75
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
 msgstr "ホーム画面に戻ってもよろしいですか?変更したフィールドがリセットされます。"
 
-#: utils.py:75 utils.py:141 utils.py:151 utils.py:156 utils.py:179
+#: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
+#: utils.py:235
 msgid "Info"
 msgstr "情報"
 
-#: utils.py:75
+#: utils.py:84
 msgid ""
 "Are you sure you want to import crosswords? Your modified fields will be "
 "reset!"
 msgstr "クロスワードをインポートしたいですか？変更されたフィールドはリセットされます！"
 
-#: utils.py:80
+#: utils.py:92
 msgid "Restart"
 msgstr "再起動"
 
-#: utils.py:80
+#: utils.py:92
 msgid "Are you sure you want to restart the app?"
 msgstr "アプリを再起動してもよろしいですか?"
 
-#: pages/home.py:148 utils.py:85
+#: pages/home.py:148 utils.py:97
 msgid "Exit"
 msgstr "出口"
 
-#: utils.py:86
+#: utils.py:98
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr "アプリを終了してもよろしいですか? Web アプリが実行中の場合は終了します。"
 
-#: utils.py:95
+#: utils.py:107
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr "ホーム画面に戻ってもよろしいですか? Webアプリが終了します。"
 
-#: utils.py:106 utils.py:111 utils.py:116 utils.py:121 utils.py:126
-#: utils.py:135 utils.py:146 utils.py:169 utils.py:174 utils.py:196
-#: utils.py:200
+#: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
+#: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
+#: utils.py:220 utils.py:252 utils.py:256
 msgid "Error"
 msgstr "エラー"
 
-#: utils.py:106
+#: utils.py:118
 msgid "This language is already selected."
 msgstr "この言語はすでに選択されています。"
 
-#: utils.py:111
+#: utils.py:123
 msgid "This size is already selected."
 msgstr "このサイズはすでに選択されています。"
 
-#: utils.py:116
+#: utils.py:128
 msgid "This appearance is already selected."
 msgstr "この外観はすでに選択されています。"
 
-#: utils.py:121
+#: utils.py:133
 msgid "This quality is already selected."
 msgstr "この品質はすでに選択されています。"
 
-#: utils.py:127
+#: utils.py:139
 msgid ""
 "A crossword with this name and difficulty already exists. Please choose a "
 "new name and/or a new difficulty."
 msgstr "この名前と難易度を持つクロスワードがすでに存在しています。新しい名前や新しい難易度を選択してください。"
 
-#: utils.py:136
+#: utils.py:148
 msgid "You have no crosswords to export. Please make some and try again."
 msgstr "エクスポートするクロスワードはありません。いくつかを作って、もう一度やり直してください。"
 
-#: utils.py:141
+#: utils.py:155
 msgid "Successfully exported your crosswords."
 msgstr "クロスワードを正常にエクスポートしました。"
 
-#: utils.py:146
+#: utils.py:160
 msgid "Your crosswords could not be exported, sorry."
 msgstr "クロスワードをエクスポートすることはできませんでした、ごめんなさい。"
 
-#: utils.py:151
+#: utils.py:166
 msgid "All of your crosswords were successfully imported."
 msgstr "クロスワードはすべて正常にインポートされました。"
 
-#: utils.py:157
+#: utils.py:172
 msgid "Your import could not be fully completed."
 msgstr "輸入は完全に完了できませんでした。"
 
-#: utils.py:159
+#: utils.py:174
 msgid ""
 "Crosswords with duplicate names and difficulties that were not imported: "
 msgstr "インポートされなかった重複した名前と困難を伴うクロスワード："
 
-#: utils.py:163
+#: utils.py:180
 msgid "Invalid crosswords that were not imported: "
 msgstr "インポートされなかった無効なクロスワード："
 
-#: utils.py:169
+#: utils.py:187
 msgid "The specified JSON file is invalid and cannot be processed."
 msgstr "指定されたJSONファイルは無効で、処理できません。"
 
-#: utils.py:174
+#: utils.py:195
 msgid "This word already exists. Please choose a new word."
 msgstr "この単語は既に存在します。新しい単語を選択してください。"
 
-#: utils.py:180
+#: utils.py:201
+msgid "An error occurred while creating your PDF. Please try again."
+msgstr "PDFの作成中にエラーが発生しました。もう一度やり直してください。"
+
+#: utils.py:208
+msgid ""
+"words that could not be inserted during crossword generation will not be "
+"included in this PDF, sorry."
+msgstr "クロスワード生成中に挿入できなかった単語は、このPDFには含まれません、申し訳ありません。"
+
+#: utils.py:215
+msgid "Successfully wrote PDF."
+msgstr "PDFを正常に書きました。"
+
+#: utils.py:221
+msgid ""
+"You are missing pycairo, which is required to perform this operation. Please"
+" run"
+msgstr "この操作を実行するために必要なピカイロがありません。実行してください"
+
+#: utils.py:226
+msgid ""
+"and install the headers for pycairo if you are not on Windows at the "
+"following link as a guide"
+msgstr "そして、ガイドとして次のリンクでWindowsにいない場合は、Pycairoのヘッダーをインストールします"
+
+#: utils.py:236
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -183,24 +222,24 @@ msgstr ""
 "アプリを実行します。あるいは、プログラムの構成ファイル内のポートを手動で変更することもできます。適切に終了されていないすべてのアプリ "
 "プロセスは、MacOS のアクティビティ モニターを通じて終了するか、コンピュータを再起動するだけで終了できます。"
 
-#: utils.py:202
+#: utils.py:258
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr "予期しないエラーが発生しました。でアプリケーションを再インストールしてみてください"
 
-#: utils.py:719
+#: utils.py:779
 msgid "Definitions are empty"
 msgstr "定義が空です"
 
-#: utils.py:722
+#: utils.py:782
 msgid "The word count or definitions are less than 3 in length"
 msgstr "単語数または定義の長さが 3 未満である"
 
-#: utils.py:726
+#: utils.py:786
 msgid "Length of the word count is greater than the definitions"
 msgstr "単語数の長さが定義を超えています"
 
-#: utils.py:729
+#: utils.py:789
 msgid "Escape character present in word"
 msgstr "単語内に存在するエスケープ文字"
 
@@ -258,14 +297,6 @@ msgstr "クリア"
 msgid "Unrevealed"
 msgstr "不明瞭"
 
-#: app/templates/index.html:286
-msgid "Across"
-msgstr "横切って"
-
-#: app/templates/index.html:308
-msgid "Down"
-msgstr "下"
-
 #: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "あなたは見ています"
@@ -294,147 +325,167 @@ msgstr "続く"
 msgid "You completed the crossword!"
 msgstr "クロスワードを完成させました！"
 
-#: app/templates/index.html:368 pages/browser.py:586
+#: app/templates/index.html:368 pages/browser.py:641
 msgid "Close"
 msgstr "近い"
 
-#: pages/browser.py:136
+#: pages/browser.py:137
 msgid "Crossword Browser"
 msgstr "クロスワードブラウザ"
 
-#: pages/browser.py:141 pages/editor.py:359
+#: pages/browser.py:142 pages/editor.py:363
 msgid "Back"
 msgstr "戻る"
 
-#: pages/browser.py:145 pages/editor.py:363 pages/home.py:305
+#: pages/browser.py:146 pages/editor.py:367 pages/home.py:305
 msgid "HomePage"
 msgstr "ホームページ"
 
-#: pages/browser.py:156
+#: pages/browser.py:157
 msgid "Categorised"
 msgstr "分類"
 
-#: pages/browser.py:156 pages/browser.py:271
+#: pages/browser.py:157 pages/browser.py:281
 msgid "Flattened"
 msgstr "ぺちゃんこ"
 
-#: pages/browser.py:186
+#: pages/browser.py:174 pages/browser.py:296
+msgid "Search"
+msgstr "検索"
+
+#: pages/browser.py:187
 msgid "Load"
 msgstr "負荷"
 
-#: pages/browser.py:195
+#: pages/browser.py:196
 msgid "Open"
 msgstr "開ける"
 
-#: pages/browser.py:205
+#: pages/browser.py:206
+msgid "Make PDF"
+msgstr "PDFを作成します"
+
+#: pages/browser.py:214
 msgid "Terminate"
 msgstr "終了する"
 
-#: pages/browser.py:216
+#: pages/browser.py:225
 msgid "Word count preferences"
 msgstr "文字数の設定"
 
-#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
-#: pages/browser.py:495
+#: pages/browser.py:240 pages/browser.py:360 pages/browser.py:391
+#: pages/browser.py:550
 msgid "Select word count"
 msgstr "文字数を選択してください"
 
-#: pages/browser.py:246
+#: pages/browser.py:244 pages/browser.py:390 pages/browser.py:561
+msgid "Maximum"
+msgstr "最大"
+
+#: pages/browser.py:255
 msgid "Custom"
 msgstr "カスタム"
 
-#: pages/browser.py:475
+#: pages/browser.py:424
+msgid "Select a destination to download your PDF to"
+msgstr "PDFをダウンロードする宛先を選択します"
+
+#: pages/browser.py:530
 msgid "To perform this operation, you must first select a cell."
 msgstr "この操作を実行するには、最初にセルを選択する必要があります。"
 
-#: pages/browser.py:579
+#: pages/browser.py:634
 msgid "View"
 msgstr "ビュー"
 
-#: pages/browser.py:783
-msgid "Select"
-msgstr "選択する"
+#: pages/browser.py:818
+msgid "Total words"
+msgstr "合計単語"
 
-#: pages/editor.py:353
-msgid "Crossword Editor"
-msgstr "クロスワードエディタ"
-
-#: pages/editor.py:491 pages/editor.py:706 pages/editor.py:796
-#: pages/editor.py:936
-msgid "Your Crosswords"
-msgstr "あなたのクロスワード"
-
-#: pages/editor.py:555 pages/editor.py:800 pages/editor.py:943
-#: pages/editor.py:1030 pages/editor.py:1143 pages/editor.py:1257
-msgid "Save"
-msgstr "セーブ"
-
-#: pages/editor.py:567
-msgid "length >= 1 and valid OS file name"
-msgstr "length >= 1 で有効な OS ファイル名"
-
-#: pages/editor.py:576
-msgid "length == 1"
-msgstr "長さ == 1"
-
-#: pages/editor.py:582
+#: pages/browser.py:824 pages/editor.py:586
 msgid "Difficulty"
 msgstr "困難"
 
-#: pages/editor.py:589
+#: pages/browser.py:838
+msgid "Select"
+msgstr "選択する"
+
+#: pages/editor.py:357
+msgid "Crossword Editor"
+msgstr "クロスワードエディタ"
+
+#: pages/editor.py:495 pages/editor.py:718 pages/editor.py:808
+#: pages/editor.py:948
+msgid "Your Crosswords"
+msgstr "あなたのクロスワード"
+
+#: pages/editor.py:559 pages/editor.py:812 pages/editor.py:955
+#: pages/editor.py:1042 pages/editor.py:1155 pages/editor.py:1269
+msgid "Save"
+msgstr "セーブ"
+
+#: pages/editor.py:571
+msgid "length >= 1 and valid OS file name"
+msgstr "length >= 1 で有効な OS ファイル名"
+
+#: pages/editor.py:580
+msgid "length == 1"
+msgstr "長さ == 1"
+
+#: pages/editor.py:593
 msgid "Easy"
 msgstr "簡単"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Medium"
 msgstr "中くらい"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Hard"
 msgstr "難しい"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Extreme"
 msgstr "過激"
 
-#: pages/editor.py:706 pages/editor.py:1086
+#: pages/editor.py:718 pages/editor.py:1098
 msgid "Adding"
 msgstr "追加"
 
-#: pages/editor.py:709 pages/editor.py:1090
+#: pages/editor.py:721 pages/editor.py:1102
 msgid "Add"
 msgstr "足す"
 
-#: pages/editor.py:888 pages/editor.py:1206
+#: pages/editor.py:900 pages/editor.py:1218
 msgid "Press"
 msgstr "押す"
 
-#: pages/editor.py:890 pages/editor.py:1208
+#: pages/editor.py:902 pages/editor.py:1220
 msgid "to add a"
 msgstr "をクリックして、"
 
-#: pages/editor.py:892
+#: pages/editor.py:904
 msgid "new crossword."
 msgstr "新しいクロスワード。"
 
-#: pages/editor.py:936 pages/editor.py:1253
+#: pages/editor.py:948 pages/editor.py:1265
 msgid "Editing"
 msgstr "編集"
 
-#: pages/editor.py:998 pages/editor.py:1086 pages/editor.py:1138
-#: pages/editor.py:1253
+#: pages/editor.py:1010 pages/editor.py:1098 pages/editor.py:1150
+#: pages/editor.py:1265
 msgid "Your Words"
 msgstr "あなたの言葉"
 
-#: pages/editor.py:1042
+#: pages/editor.py:1054
 msgid "length >= 1 and length <= 32 and is a language character"
 msgstr "長さ >= 1 かつ長さ <= 32 であり、言語文字である"
 
-#: pages/editor.py:1053
+#: pages/editor.py:1065
 msgid "length >= 1"
 msgstr "長さ >= 1"
 
-#: pages/editor.py:1210
+#: pages/editor.py:1222
 msgid "new word."
 msgstr "新語。"
 
@@ -510,6 +561,10 @@ msgstr "完璧"
 msgid "Crossword Quality"
 msgstr "クロスワード品質"
 
+#: pages/home.py:322
+msgid "New version available!"
+msgstr "新しいバージョンが利用可能です！"
+
 msgid "Geography"
 msgstr "地理"
 
@@ -525,12 +580,6 @@ msgstr "コンピュータサイエンス"
 msgid "User"
 msgstr "利用者"
 
-msgid "Total words"
-msgstr "合計単語"
-
-msgid "Maximum"
-msgstr "最大"
-
 msgid "Clue"
 msgstr "手掛かり"
 
@@ -539,9 +588,3 @@ msgstr "名前"
 
 msgid "Symbol"
 msgstr "記号"
-
-msgid "Search"
-msgstr "検索"
-
-msgid "New version available!"
-msgstr "新しいバージョンが利用可能です！"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-28 21:00+1000\n"
+"POT-Creation-Date: 2024-06-29 19:48+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ga <LL@li.org>\n"
@@ -19,50 +19,62 @@ msgstr ""
 "Plural-Forms: nplurals=5; plural=(n==1 ? 0 : n==2 ? 1 : n>=3 && n<=6 ? 2 : n>=7 && n<=10 ? 3 : 4);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: import_export.py:21
+#: import_export.py:24
 msgid "Select a destination to export your crosswords to"
 msgstr "Roghnaigh ceann scríbe chun do chrosfhocail a onnmhairiú chuig"
 
-#: import_export.py:25
+#: import_export.py:28
 msgid "my-crosswords"
 msgstr "My-Crosswords"
 
-#: import_export.py:64
+#: import_export.py:70
 msgid ""
 "Select a valid crossword JSON file that was exported using crossword_puzzle"
 msgstr ""
 "Roghnaigh comhad Crossword JSON bailí a onnmhairíodh ag úsáid "
 "CrossWord_Puzzle"
 
-#: utils.py:60
+#: pdf.py:53
+msgid "Answers"
+msgstr "Freagra"
+
+#: app/templates/index.html:286 pdf.py:207
+msgid "Across"
+msgstr "Ar fud"
+
+#: app/templates/index.html:308 pdf.py:214
+msgid "Down"
+msgstr "In íochtar"
+
+#: utils.py:58
 msgid "Remove"
 msgstr "Bain"
 
-#: utils.py:60
+#: utils.py:59
 msgid "Are you sure you want to delete this"
 msgstr "An bhfuil tú cinnte go bhfuil fonn ort é seo a scriosadh"
 
-#: utils.py:60
+#: utils.py:61
 msgid "It will be lost forever!"
 msgstr "Beidh sé caillte go deo!"
 
-#: utils.py:65
+#: utils.py:66
 msgid "Add or select"
 msgstr "Cuir leis nó roghnaigh"
 
-#: utils.py:65
+#: utils.py:67
 msgid "Are you sure you want to add/select a"
 msgstr "An bhfuil tú cinnte go bhfuil fonn ort"
 
-#: utils.py:65
+#: utils.py:69
 msgid "Your modified fields will be reset!"
 msgstr "Déanfar do réimsí modhnaithe a athshocrú!"
 
-#: utils.py:70 utils.py:94
+#: utils.py:74 utils.py:106
 msgid "Back to home"
 msgstr "Ar ais go dtí Baile"
 
-#: utils.py:70
+#: utils.py:75
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
@@ -70,11 +82,12 @@ msgstr ""
 "An bhfuil tú cinnte go bhfuil fonn ort dul ar ais go dtí an scáileán baile? "
 "Déanfar do réimsí modhnaithe a athshocrú!"
 
-#: utils.py:75 utils.py:141 utils.py:151 utils.py:156 utils.py:179
+#: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
+#: utils.py:235
 msgid "Info"
 msgstr "Eolas"
 
-#: utils.py:75
+#: utils.py:84
 msgid ""
 "Are you sure you want to import crosswords? Your modified fields will be "
 "reset!"
@@ -82,19 +95,19 @@ msgstr ""
 "An bhfuil tú cinnte gur mhaith leat crosfhocail a allmhairiú?Athshocrófar do"
 " réimsí modhnaithe!"
 
-#: utils.py:80
+#: utils.py:92
 msgid "Restart"
 msgstr "Tosaigh arís"
 
-#: utils.py:80
+#: utils.py:92
 msgid "Are you sure you want to restart the app?"
 msgstr "An bhfuil tú cinnte gur mhaith leat an aip a atosú?"
 
-#: pages/home.py:148 utils.py:85
+#: pages/home.py:148 utils.py:97
 msgid "Exit"
 msgstr "An slí amach"
 
-#: utils.py:86
+#: utils.py:98
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -102,7 +115,7 @@ msgstr ""
 "An bhfuil tú cinnte gur mhaith leat éirí as an aip? Má tá an app gréasáin ag"
 " rith, cuirfear deireadh leis."
 
-#: utils.py:95
+#: utils.py:107
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -110,29 +123,29 @@ msgstr ""
 "An bhfuil tú cinnte gur mhaith leat dul ar ais go dtí an scáileán baile? "
 "Cuirfear deireadh leis an app gréasáin."
 
-#: utils.py:106 utils.py:111 utils.py:116 utils.py:121 utils.py:126
-#: utils.py:135 utils.py:146 utils.py:169 utils.py:174 utils.py:196
-#: utils.py:200
+#: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
+#: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
+#: utils.py:220 utils.py:252 utils.py:256
 msgid "Error"
 msgstr "Earráid"
 
-#: utils.py:106
+#: utils.py:118
 msgid "This language is already selected."
 msgstr "Tá an teanga seo roghnaithe cheana féin."
 
-#: utils.py:111
+#: utils.py:123
 msgid "This size is already selected."
 msgstr "Tá an méid seo roghnaithe cheana féin."
 
-#: utils.py:116
+#: utils.py:128
 msgid "This appearance is already selected."
 msgstr "Tá an chuma seo roghnaithe cheana féin."
 
-#: utils.py:121
+#: utils.py:133
 msgid "This quality is already selected."
 msgstr "Roghnaítear an caighdeán seo cheana féin."
 
-#: utils.py:127
+#: utils.py:139
 msgid ""
 "A crossword with this name and difficulty already exists. Please choose a "
 "new name and/or a new difficulty."
@@ -140,48 +153,80 @@ msgstr ""
 "Tá crosfhocal leis an ainm seo agus leis an deacracht seo ann cheana "
 "féin.Roghnaigh ainm nua agus/nó deacracht nua le do thoil."
 
-#: utils.py:136
+#: utils.py:148
 msgid "You have no crosswords to export. Please make some and try again."
 msgstr ""
 "Níl aon chrosfhocail agat le honnmhairiú.Déan roinnt le do thoil agus bain "
 "triail eile as."
 
-#: utils.py:141
+#: utils.py:155
 msgid "Successfully exported your crosswords."
 msgstr "Onnmhairíodh do chrosfhocail go rathúil."
 
-#: utils.py:146
+#: utils.py:160
 msgid "Your crosswords could not be exported, sorry."
 msgstr "Níorbh fhéidir do chrosfhocail a onnmhairiú, tá brón orm."
 
-#: utils.py:151
+#: utils.py:166
 msgid "All of your crosswords were successfully imported."
 msgstr "Rinneadh gach ceann de do chrosfhocail a allmhairiú go rathúil."
 
-#: utils.py:157
+#: utils.py:172
 msgid "Your import could not be fully completed."
 msgstr "Ní fhéadfaí do allmhairiú a chomhlánú go hiomlán."
 
-#: utils.py:159
+#: utils.py:174
 msgid ""
 "Crosswords with duplicate names and difficulties that were not imported: "
 msgstr ""
 "Crosfhocail le hainmneacha agus deacrachtaí dúblacha nár allmhairíodh:"
 
-#: utils.py:163
+#: utils.py:180
 msgid "Invalid crosswords that were not imported: "
 msgstr "Crosfhocail neamhbhailí nár allmhairíodh:"
 
-#: utils.py:169
+#: utils.py:187
 msgid "The specified JSON file is invalid and cannot be processed."
 msgstr ""
 "Tá an comhad sonraithe JSON neamhbhailí agus ní féidir é a phróiseáil."
 
-#: utils.py:174
+#: utils.py:195
 msgid "This word already exists. Please choose a new word."
 msgstr "Tá an focal seo ann cheana féin. Roghnaigh focal nua, le do thoil."
 
-#: utils.py:180
+#: utils.py:201
+msgid "An error occurred while creating your PDF. Please try again."
+msgstr "Tharla earráid agus do PDF á chruthú agat.Arís, le d'thoil."
+
+#: utils.py:208
+msgid ""
+"words that could not be inserted during crossword generation will not be "
+"included in this PDF, sorry."
+msgstr ""
+"Ní chuirfear focail nach bhféadfaí a chur isteach le linn giniúint "
+"crosfhocail san áireamh sa PDF seo, tá brón orm."
+
+#: utils.py:215
+msgid "Successfully wrote PDF."
+msgstr "Scríobh go rathúil PDF."
+
+#: utils.py:221
+msgid ""
+"You are missing pycairo, which is required to perform this operation. Please"
+" run"
+msgstr ""
+"Tá tú ag iarraidh Pycairo, a bhfuil gá leis an oibríocht seo a dhéanamh.Rith"
+" le do thoil"
+
+#: utils.py:226
+msgid ""
+"and install the headers for pycairo if you are not on Windows at the "
+"following link as a guide"
+msgstr ""
+"agus na ceanntásca a shuiteáil do Pycairo mura bhfuil tú ar Windows ag an "
+"nasc seo a leanas mar threoir"
+
+#: utils.py:236
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -204,26 +249,26 @@ msgstr ""
 "curtha i gceart a fhoirceannadh trí Gníomhaíocht Monatóireacht a dhéanamh ar"
 " MacOS, nó, go simplí atosú do ríomhaire chun deireadh a chur leo."
 
-#: utils.py:202
+#: utils.py:258
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
 "Tharla earráid gan choinne. Bain triail as an bhfeidhmchlár a athshuiteáil "
 "le"
 
-#: utils.py:719
+#: utils.py:779
 msgid "Definitions are empty"
 msgstr "Tá sainmhínithe folamh"
 
-#: utils.py:722
+#: utils.py:782
 msgid "The word count or definitions are less than 3 in length"
 msgstr "Tá líon na bhfocal nó na sainmhínithe níos lú ná 3 ar fhad"
 
-#: utils.py:726
+#: utils.py:786
 msgid "Length of the word count is greater than the definitions"
 msgstr "Tá fad an chomhaireamh focal níos mó ná na sainmhínithe"
 
-#: utils.py:729
+#: utils.py:789
 msgid "Escape character present in word"
 msgstr "Escape carachtar i láthair i focal"
 
@@ -281,14 +326,6 @@ msgstr "Glan amach"
 msgid "Unrevealed"
 msgstr "Neamhréirithe"
 
-#: app/templates/index.html:286
-msgid "Across"
-msgstr "Ar fud"
-
-#: app/templates/index.html:308
-msgid "Down"
-msgstr "In íochtar"
-
 #: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "Tá tú ag breathnú"
@@ -317,147 +354,167 @@ msgstr "Leanúint ar aghaidh"
 msgid "You completed the crossword!"
 msgstr "Chríochnaigh tú an crosfhocal!"
 
-#: app/templates/index.html:368 pages/browser.py:586
+#: app/templates/index.html:368 pages/browser.py:641
 msgid "Close"
 msgstr "Dún"
 
-#: pages/browser.py:136
+#: pages/browser.py:137
 msgid "Crossword Browser"
 msgstr "Brabhsálaí Crosfhocal"
 
-#: pages/browser.py:141 pages/editor.py:359
+#: pages/browser.py:142 pages/editor.py:363
 msgid "Back"
 msgstr "Ar ais"
 
-#: pages/browser.py:145 pages/editor.py:363 pages/home.py:305
+#: pages/browser.py:146 pages/editor.py:367 pages/home.py:305
 msgid "HomePage"
 msgstr "Leathanach Baile"
 
-#: pages/browser.py:156
+#: pages/browser.py:157
 msgid "Categorised"
 msgstr "Catagóirithe"
 
-#: pages/browser.py:156 pages/browser.py:271
+#: pages/browser.py:157 pages/browser.py:281
 msgid "Flattened"
 msgstr "Leacaithe"
 
-#: pages/browser.py:186
+#: pages/browser.py:174 pages/browser.py:296
+msgid "Search"
+msgstr "Cuardach"
+
+#: pages/browser.py:187
 msgid "Load"
 msgstr "Luchtaigh"
 
-#: pages/browser.py:195
+#: pages/browser.py:196
 msgid "Open"
 msgstr "Oscail"
 
-#: pages/browser.py:205
+#: pages/browser.py:206
+msgid "Make PDF"
+msgstr "Déan PDF"
+
+#: pages/browser.py:214
 msgid "Terminate"
 msgstr "Foirceannadh"
 
-#: pages/browser.py:216
+#: pages/browser.py:225
 msgid "Word count preferences"
 msgstr "Roghanna comhaireamh focal"
 
-#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
-#: pages/browser.py:495
+#: pages/browser.py:240 pages/browser.py:360 pages/browser.py:391
+#: pages/browser.py:550
 msgid "Select word count"
 msgstr "Roghnaigh líon na bhfocal"
 
-#: pages/browser.py:246
+#: pages/browser.py:244 pages/browser.py:390 pages/browser.py:561
+msgid "Maximum"
+msgstr "Uas-"
+
+#: pages/browser.py:255
 msgid "Custom"
 msgstr "Saincheaptha"
 
-#: pages/browser.py:475
+#: pages/browser.py:424
+msgid "Select a destination to download your PDF to"
+msgstr "Roghnaigh ceann scríbe chun do PDF a íoslódáil go"
+
+#: pages/browser.py:530
 msgid "To perform this operation, you must first select a cell."
 msgstr "Chun an oibríocht seo a dhéanamh, ní mór duit cill a roghnú ar dtús."
 
-#: pages/browser.py:579
+#: pages/browser.py:634
 msgid "View"
 msgstr "Amharc"
 
-#: pages/browser.py:783
-msgid "Select"
-msgstr "Roghnaigh"
+#: pages/browser.py:818
+msgid "Total words"
+msgstr "Focail Iomlán"
 
-#: pages/editor.py:353
-msgid "Crossword Editor"
-msgstr "Eagarthóir Crosfhocal"
-
-#: pages/editor.py:491 pages/editor.py:706 pages/editor.py:796
-#: pages/editor.py:936
-msgid "Your Crosswords"
-msgstr "Do Chrosfhocail"
-
-#: pages/editor.py:555 pages/editor.py:800 pages/editor.py:943
-#: pages/editor.py:1030 pages/editor.py:1143 pages/editor.py:1257
-msgid "Save"
-msgstr "Sábháil"
-
-#: pages/editor.py:567
-msgid "length >= 1 and valid OS file name"
-msgstr "fad >= 1 agus ainm comhaid bailí OS"
-
-#: pages/editor.py:576
-msgid "length == 1"
-msgstr "fad == 1"
-
-#: pages/editor.py:582
+#: pages/browser.py:824 pages/editor.py:586
 msgid "Difficulty"
 msgstr "Stró"
 
-#: pages/editor.py:589
+#: pages/browser.py:838
+msgid "Select"
+msgstr "Roghnaigh"
+
+#: pages/editor.py:357
+msgid "Crossword Editor"
+msgstr "Eagarthóir Crosfhocal"
+
+#: pages/editor.py:495 pages/editor.py:718 pages/editor.py:808
+#: pages/editor.py:948
+msgid "Your Crosswords"
+msgstr "Do Chrosfhocail"
+
+#: pages/editor.py:559 pages/editor.py:812 pages/editor.py:955
+#: pages/editor.py:1042 pages/editor.py:1155 pages/editor.py:1269
+msgid "Save"
+msgstr "Sábháil"
+
+#: pages/editor.py:571
+msgid "length >= 1 and valid OS file name"
+msgstr "fad >= 1 agus ainm comhaid bailí OS"
+
+#: pages/editor.py:580
+msgid "length == 1"
+msgstr "fad == 1"
+
+#: pages/editor.py:593
 msgid "Easy"
 msgstr "Éasca"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Medium"
 msgstr "Mheán"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Hard"
 msgstr "Deacair"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Extreme"
 msgstr "mhór"
 
-#: pages/editor.py:706 pages/editor.py:1086
+#: pages/editor.py:718 pages/editor.py:1098
 msgid "Adding"
 msgstr "Ag cur leis"
 
-#: pages/editor.py:709 pages/editor.py:1090
+#: pages/editor.py:721 pages/editor.py:1102
 msgid "Add"
 msgstr "Cuir Leis"
 
-#: pages/editor.py:888 pages/editor.py:1206
+#: pages/editor.py:900 pages/editor.py:1218
 msgid "Press"
 msgstr "Preas"
 
-#: pages/editor.py:890 pages/editor.py:1208
+#: pages/editor.py:902 pages/editor.py:1220
 msgid "to add a"
 msgstr "a chur leis"
 
-#: pages/editor.py:892
+#: pages/editor.py:904
 msgid "new crossword."
 msgstr "Crosfhocal nua."
 
-#: pages/editor.py:936 pages/editor.py:1253
+#: pages/editor.py:948 pages/editor.py:1265
 msgid "Editing"
 msgstr "Eagarthóireacht"
 
-#: pages/editor.py:998 pages/editor.py:1086 pages/editor.py:1138
-#: pages/editor.py:1253
+#: pages/editor.py:1010 pages/editor.py:1098 pages/editor.py:1150
+#: pages/editor.py:1265
 msgid "Your Words"
 msgstr "Do Chuid Focal"
 
-#: pages/editor.py:1042
+#: pages/editor.py:1054
 msgid "length >= 1 and length <= 32 and is a language character"
 msgstr "fad >= 1 agus fad <= 32 agus is carachtar teanga é"
 
-#: pages/editor.py:1053
+#: pages/editor.py:1065
 msgid "length >= 1"
 msgstr "fad >= 1"
 
-#: pages/editor.py:1210
+#: pages/editor.py:1222
 msgid "new word."
 msgstr "focal nua."
 
@@ -533,6 +590,10 @@ msgstr "cuir isteach ar"
 msgid "Crossword Quality"
 msgstr "Caighdeán crosfhocal"
 
+#: pages/home.py:322
+msgid "New version available!"
+msgstr "Leagan nua ar fáil!"
+
 msgid "Geography"
 msgstr "Tíreolaíocht"
 
@@ -548,12 +609,6 @@ msgstr "Eolaíocht Ríomhaireachta"
 msgid "User"
 msgstr "Úsáideoir"
 
-msgid "Total words"
-msgstr "Focail Iomlán"
-
-msgid "Maximum"
-msgstr "Uas-"
-
 msgid "Clue"
 msgstr "Leid"
 
@@ -562,9 +617,3 @@ msgstr "Ainm"
 
 msgid "Symbol"
 msgstr "Siombail"
-
-msgid "Search"
-msgstr "Cuardach"
-
-msgid "New version available!"
-msgstr "Leagan nua ar fáil!"

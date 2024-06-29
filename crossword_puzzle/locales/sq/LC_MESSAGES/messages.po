@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-28 21:00+1000\n"
+"POT-Creation-Date: 2024-06-29 19:48+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: sq <LL@li.org>\n"
@@ -19,50 +19,62 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: import_export.py:21
+#: import_export.py:24
 msgid "Select a destination to export your crosswords to"
 msgstr "Zgjidhni një destinacion për të eksportuar fjalët kryqëzore në"
 
-#: import_export.py:25
+#: import_export.py:28
 msgid "my-crosswords"
 msgstr "My-Crosswords"
 
-#: import_export.py:64
+#: import_export.py:70
 msgid ""
 "Select a valid crossword JSON file that was exported using crossword_puzzle"
 msgstr ""
 "Zgjidhni një skedar të vlefshëm për fjalëkryq JSON që u eksportua duke "
 "përdorur Crossword_Puzzle"
 
-#: utils.py:60
+#: pdf.py:53
+msgid "Answers"
+msgstr "Përgjigje"
+
+#: app/templates/index.html:286 pdf.py:207
+msgid "Across"
+msgstr "Përtej"
+
+#: app/templates/index.html:308 pdf.py:214
+msgid "Down"
+msgstr "Poshtë"
+
+#: utils.py:58
 msgid "Remove"
 msgstr "Hiq"
 
-#: utils.py:60
+#: utils.py:59
 msgid "Are you sure you want to delete this"
 msgstr "Je i sigurt që dëshiron ta fshish këtë"
 
-#: utils.py:60
+#: utils.py:61
 msgid "It will be lost forever!"
 msgstr "Do të humbasë përgjithmonë!"
 
-#: utils.py:65
+#: utils.py:66
 msgid "Add or select"
 msgstr "Shto ose zgjidh"
 
-#: utils.py:65
+#: utils.py:67
 msgid "Are you sure you want to add/select a"
 msgstr "Jeni të sigurt që dëshironi të shtoni/zgjidhni një"
 
-#: utils.py:65
+#: utils.py:69
 msgid "Your modified fields will be reset!"
 msgstr "Fushat tuaja të modifikuara do të rivendosen!"
 
-#: utils.py:70 utils.py:94
+#: utils.py:74 utils.py:106
 msgid "Back to home"
 msgstr "Përsëri në shtëpi"
 
-#: utils.py:70
+#: utils.py:75
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
@@ -70,11 +82,12 @@ msgstr ""
 "Je i sigurt që dëshiron të kthehesh në ekranin e shtëpisë? Fushat tuaja të "
 "modifikuara do të rivendosen!"
 
-#: utils.py:75 utils.py:141 utils.py:151 utils.py:156 utils.py:179
+#: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
+#: utils.py:235
 msgid "Info"
 msgstr "Informacion"
 
-#: utils.py:75
+#: utils.py:84
 msgid ""
 "Are you sure you want to import crosswords? Your modified fields will be "
 "reset!"
@@ -82,19 +95,19 @@ msgstr ""
 "A jeni i sigurt që doni të importoni fjalëkryq?Fushat tuaja të modifikuara "
 "do të rivendosen!"
 
-#: utils.py:80
+#: utils.py:92
 msgid "Restart"
 msgstr "Rifillo, fillo përsëri"
 
-#: utils.py:80
+#: utils.py:92
 msgid "Are you sure you want to restart the app?"
 msgstr "Jeni i sigurt që dëshironi të rinisni aplikacionin?"
 
-#: pages/home.py:148 utils.py:85
+#: pages/home.py:148 utils.py:97
 msgid "Exit"
 msgstr "Dilni"
 
-#: utils.py:86
+#: utils.py:98
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -102,7 +115,7 @@ msgstr ""
 "Je i sigurt që dëshiron të dalësh nga aplikacioni? Nëse aplikacioni i uebit "
 "po funksionon, ai do të mbyllet."
 
-#: utils.py:95
+#: utils.py:107
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -110,29 +123,29 @@ msgstr ""
 "Jeni i sigurt që dëshironi të ktheheni në ekranin bazë? Aplikacioni i uebit "
 "do të mbyllet."
 
-#: utils.py:106 utils.py:111 utils.py:116 utils.py:121 utils.py:126
-#: utils.py:135 utils.py:146 utils.py:169 utils.py:174 utils.py:196
-#: utils.py:200
+#: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
+#: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
+#: utils.py:220 utils.py:252 utils.py:256
 msgid "Error"
 msgstr "Gabim"
 
-#: utils.py:106
+#: utils.py:118
 msgid "This language is already selected."
 msgstr "Kjo gjuhë është zgjedhur tashmë."
 
-#: utils.py:111
+#: utils.py:123
 msgid "This size is already selected."
 msgstr "Kjo madhësi është zgjedhur tashmë."
 
-#: utils.py:116
+#: utils.py:128
 msgid "This appearance is already selected."
 msgstr "Kjo pamje është përzgjedhur tashmë."
 
-#: utils.py:121
+#: utils.py:133
 msgid "This quality is already selected."
 msgstr "Kjo cilësi është zgjedhur tashmë."
 
-#: utils.py:127
+#: utils.py:139
 msgid ""
 "A crossword with this name and difficulty already exists. Please choose a "
 "new name and/or a new difficulty."
@@ -140,47 +153,79 @@ msgstr ""
 "Një fjalëkryq me këtë emër dhe vështirësi tashmë ekziston.Ju lutemi zgjidhni"
 " një emër të ri dhe/ose një vështirësi të re."
 
-#: utils.py:136
+#: utils.py:148
 msgid "You have no crosswords to export. Please make some and try again."
 msgstr ""
 "Ju nuk keni fjalëkryq për të eksportuar.Ju lutemi bëni disa dhe provoni "
 "përsëri."
 
-#: utils.py:141
+#: utils.py:155
 msgid "Successfully exported your crosswords."
 msgstr "Eksportoi me sukses fjalët tuaja."
 
-#: utils.py:146
+#: utils.py:160
 msgid "Your crosswords could not be exported, sorry."
 msgstr "Fjalëkryqët tuaj nuk mund të eksportohen, më falni."
 
-#: utils.py:151
+#: utils.py:166
 msgid "All of your crosswords were successfully imported."
 msgstr "Të gjitha fjalët tuaja kryqëzuese u importuan me sukses."
 
-#: utils.py:157
+#: utils.py:172
 msgid "Your import could not be fully completed."
 msgstr "Importi juaj nuk mund të përfundojë plotësisht."
 
-#: utils.py:159
+#: utils.py:174
 msgid ""
 "Crosswords with duplicate names and difficulties that were not imported: "
 msgstr "Fjalëkryq me emra të kopjuar dhe vështirësi që nuk u importuan:"
 
-#: utils.py:163
+#: utils.py:180
 msgid "Invalid crosswords that were not imported: "
 msgstr "Fjalëkryq të pavlefshëm që nuk u importuan:"
 
-#: utils.py:169
+#: utils.py:187
 msgid "The specified JSON file is invalid and cannot be processed."
 msgstr ""
 "Dosja e specifikuar JSON është e pavlefshme dhe nuk mund të përpunohet."
 
-#: utils.py:174
+#: utils.py:195
 msgid "This word already exists. Please choose a new word."
 msgstr "Kjo fjalë tashmë ekziston. Ju lutem zgjidhni një fjalë të re."
 
-#: utils.py:180
+#: utils.py:201
+msgid "An error occurred while creating your PDF. Please try again."
+msgstr "Ndodhi një gabim gjatë krijimit të PDF tuaj.Ju lutem provoni përsëri."
+
+#: utils.py:208
+msgid ""
+"words that could not be inserted during crossword generation will not be "
+"included in this PDF, sorry."
+msgstr ""
+"Fjalët që nuk mund të futen gjatë gjenerimit të fjalëkryqit nuk do të "
+"përfshihen në këtë PDF, më falni."
+
+#: utils.py:215
+msgid "Successfully wrote PDF."
+msgstr "Shkroi me sukses PDF."
+
+#: utils.py:221
+msgid ""
+"You are missing pycairo, which is required to perform this operation. Please"
+" run"
+msgstr ""
+"Ju mungon Pycairo, e cila kërkohet për të kryer këtë operacion.Ju lutem "
+"vraponi"
+
+#: utils.py:226
+msgid ""
+"and install the headers for pycairo if you are not on Windows at the "
+"following link as a guide"
+msgstr ""
+"dhe instaloni kokat për në Pycairo nëse nuk jeni në dritare në lidhjen e "
+"mëposhtme si udhëzues"
+
+#: utils.py:236
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -204,25 +249,25 @@ msgstr ""
 "aktivitetit në MacOS ose thjesht rinisni kompjuterin tuaj për t'i përfunduar"
 " ato."
 
-#: utils.py:202
+#: utils.py:258
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
 "Ndodhi një gabim i papritur. Ju lutem provoni të riinstaloni aplikacionin me"
 
-#: utils.py:719
+#: utils.py:779
 msgid "Definitions are empty"
 msgstr "Përkufizimet janë bosh"
 
-#: utils.py:722
+#: utils.py:782
 msgid "The word count or definitions are less than 3 in length"
 msgstr "Numërimi i fjalëve ose përkufizimet janë më pak se 3 në gjatësi"
 
-#: utils.py:726
+#: utils.py:786
 msgid "Length of the word count is greater than the definitions"
 msgstr "Gjatësia e numërimit të fjalëve është më e madhe se përkufizimet"
 
-#: utils.py:729
+#: utils.py:789
 msgid "Escape character present in word"
 msgstr "Karakteri i arratisjes i pranishëm në fjalë"
 
@@ -280,14 +325,6 @@ msgstr "Qartë"
 msgid "Unrevealed"
 msgstr "I pazbuluar"
 
-#: app/templates/index.html:286
-msgid "Across"
-msgstr "Përtej"
-
-#: app/templates/index.html:308
-msgid "Down"
-msgstr "Poshtë"
-
 #: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "Ju jeni duke parë"
@@ -316,147 +353,167 @@ msgstr "Vazhdoj"
 msgid "You completed the crossword!"
 msgstr "E keni përfunduar fjalëkryqin!"
 
-#: app/templates/index.html:368 pages/browser.py:586
+#: app/templates/index.html:368 pages/browser.py:641
 msgid "Close"
 msgstr "Mbylle"
 
-#: pages/browser.py:136
+#: pages/browser.py:137
 msgid "Crossword Browser"
 msgstr "Shfletuesi i fjalëkryqeve"
 
-#: pages/browser.py:141 pages/editor.py:359
+#: pages/browser.py:142 pages/editor.py:363
 msgid "Back"
 msgstr "Mbrapa"
 
-#: pages/browser.py:145 pages/editor.py:363 pages/home.py:305
+#: pages/browser.py:146 pages/editor.py:367 pages/home.py:305
 msgid "HomePage"
 msgstr "Faqe Hyrëse"
 
-#: pages/browser.py:156
+#: pages/browser.py:157
 msgid "Categorised"
 msgstr "Kategorizuar"
 
-#: pages/browser.py:156 pages/browser.py:271
+#: pages/browser.py:157 pages/browser.py:281
 msgid "Flattened"
 msgstr "Rrafshuar"
 
-#: pages/browser.py:186
+#: pages/browser.py:174 pages/browser.py:296
+msgid "Search"
+msgstr "Kërkim"
+
+#: pages/browser.py:187
 msgid "Load"
 msgstr "Ngarkesa"
 
-#: pages/browser.py:195
+#: pages/browser.py:196
 msgid "Open"
 msgstr "Hapur"
 
-#: pages/browser.py:205
+#: pages/browser.py:206
+msgid "Make PDF"
+msgstr "Bëj pdf"
+
+#: pages/browser.py:214
 msgid "Terminate"
 msgstr "Përfundoni"
 
-#: pages/browser.py:216
+#: pages/browser.py:225
 msgid "Word count preferences"
 msgstr "Preferencat e numrit të fjalëve"
 
-#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
-#: pages/browser.py:495
+#: pages/browser.py:240 pages/browser.py:360 pages/browser.py:391
+#: pages/browser.py:550
 msgid "Select word count"
 msgstr "Zgjidhni numrin e fjalëve"
 
-#: pages/browser.py:246
+#: pages/browser.py:244 pages/browser.py:390 pages/browser.py:561
+msgid "Maximum"
+msgstr "Maksimum"
+
+#: pages/browser.py:255
 msgid "Custom"
 msgstr "Me porosi"
 
-#: pages/browser.py:475
+#: pages/browser.py:424
+msgid "Select a destination to download your PDF to"
+msgstr "Zgjidhni një destinacion për të shkarkuar pdf -in tuaj"
+
+#: pages/browser.py:530
 msgid "To perform this operation, you must first select a cell."
 msgstr "Për të kryer këtë operacion, së pari duhet të zgjidhni një qelizë."
 
-#: pages/browser.py:579
+#: pages/browser.py:634
 msgid "View"
 msgstr "Pamje"
 
-#: pages/browser.py:783
-msgid "Select"
-msgstr "Zgjidhni"
+#: pages/browser.py:818
+msgid "Total words"
+msgstr "Fjalë totale"
 
-#: pages/editor.py:353
-msgid "Crossword Editor"
-msgstr "Editori i fjalëkryqeve"
-
-#: pages/editor.py:491 pages/editor.py:706 pages/editor.py:796
-#: pages/editor.py:936
-msgid "Your Crosswords"
-msgstr "Fjalëkryqet e tua"
-
-#: pages/editor.py:555 pages/editor.py:800 pages/editor.py:943
-#: pages/editor.py:1030 pages/editor.py:1143 pages/editor.py:1257
-msgid "Save"
-msgstr "Ruaj"
-
-#: pages/editor.py:567
-msgid "length >= 1 and valid OS file name"
-msgstr "gjatësia >= 1 dhe emri i skedarit OS i vlefshëm"
-
-#: pages/editor.py:576
-msgid "length == 1"
-msgstr "== 1"
-
-#: pages/editor.py:582
+#: pages/browser.py:824 pages/editor.py:586
 msgid "Difficulty"
 msgstr "Vështirësi"
 
-#: pages/editor.py:589
+#: pages/browser.py:838
+msgid "Select"
+msgstr "Zgjidhni"
+
+#: pages/editor.py:357
+msgid "Crossword Editor"
+msgstr "Editori i fjalëkryqeve"
+
+#: pages/editor.py:495 pages/editor.py:718 pages/editor.py:808
+#: pages/editor.py:948
+msgid "Your Crosswords"
+msgstr "Fjalëkryqet e tua"
+
+#: pages/editor.py:559 pages/editor.py:812 pages/editor.py:955
+#: pages/editor.py:1042 pages/editor.py:1155 pages/editor.py:1269
+msgid "Save"
+msgstr "Ruaj"
+
+#: pages/editor.py:571
+msgid "length >= 1 and valid OS file name"
+msgstr "gjatësia >= 1 dhe emri i skedarit OS i vlefshëm"
+
+#: pages/editor.py:580
+msgid "length == 1"
+msgstr "== 1"
+
+#: pages/editor.py:593
 msgid "Easy"
 msgstr "Lehtë"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Medium"
 msgstr "E mesme"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Hard"
 msgstr "E vështirë"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Extreme"
 msgstr "Ekstreme"
 
-#: pages/editor.py:706 pages/editor.py:1086
+#: pages/editor.py:718 pages/editor.py:1098
 msgid "Adding"
 msgstr "Duke shtuar"
 
-#: pages/editor.py:709 pages/editor.py:1090
+#: pages/editor.py:721 pages/editor.py:1102
 msgid "Add"
 msgstr "Shto"
 
-#: pages/editor.py:888 pages/editor.py:1206
+#: pages/editor.py:900 pages/editor.py:1218
 msgid "Press"
 msgstr "Shtyp"
 
-#: pages/editor.py:890 pages/editor.py:1208
+#: pages/editor.py:902 pages/editor.py:1220
 msgid "to add a"
 msgstr "Për të shtuar një"
 
-#: pages/editor.py:892
+#: pages/editor.py:904
 msgid "new crossword."
 msgstr "Fjalëkryq i ri."
 
-#: pages/editor.py:936 pages/editor.py:1253
+#: pages/editor.py:948 pages/editor.py:1265
 msgid "Editing"
 msgstr "Editimi"
 
-#: pages/editor.py:998 pages/editor.py:1086 pages/editor.py:1138
-#: pages/editor.py:1253
+#: pages/editor.py:1010 pages/editor.py:1098 pages/editor.py:1150
+#: pages/editor.py:1265
 msgid "Your Words"
 msgstr "Fjalët e tua"
 
-#: pages/editor.py:1042
+#: pages/editor.py:1054
 msgid "length >= 1 and length <= 32 and is a language character"
 msgstr "gjatësia >= 1 dhe gjatësia <= 32 dhe është një karakter gjuhësor"
 
-#: pages/editor.py:1053
+#: pages/editor.py:1065
 msgid "length >= 1"
 msgstr "gjatësia >= 1"
 
-#: pages/editor.py:1210
+#: pages/editor.py:1222
 msgid "new word."
 msgstr "Fjalë e re."
 
@@ -532,6 +589,10 @@ msgstr "i përkryer"
 msgid "Crossword Quality"
 msgstr "Cilësia e fjalëkryqit"
 
+#: pages/home.py:322
+msgid "New version available!"
+msgstr "Version i ri në dispozicion!"
+
 msgid "Geography"
 msgstr "Gjeografia"
 
@@ -547,12 +608,6 @@ msgstr "Shkenca Kompjuterike"
 msgid "User"
 msgstr "Përdoruesi"
 
-msgid "Total words"
-msgstr "Fjalë totale"
-
-msgid "Maximum"
-msgstr "Maksimum"
-
 msgid "Clue"
 msgstr "E dhënë"
 
@@ -561,9 +616,3 @@ msgstr "Emri"
 
 msgid "Symbol"
 msgstr "Simboli"
-
-msgid "Search"
-msgstr "Kërkim"
-
-msgid "New version available!"
-msgstr "Version i ri në dispozicion!"

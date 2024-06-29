@@ -198,7 +198,7 @@ class GUIHelper:
         if "pdf_write_err" in kwargs:
             return messagebox.showerror(
                 _("Error"),
-                _("An error occurred during creating your PDF. Please try again."),
+                _("An error occurred while creating your PDF. Please try again."),
             )
         
         if "pdf_write_success" in kwargs:

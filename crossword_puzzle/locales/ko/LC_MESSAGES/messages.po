@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-28 21:00+1000\n"
+"POT-Creation-Date: 2024-06-29 19:48+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ko <LL@li.org>\n"
@@ -19,153 +19,192 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: import_export.py:21
+#: import_export.py:24
 msgid "Select a destination to export your crosswords to"
 msgstr "크로스 워드를 내보내는 대상을 선택하십시오"
 
-#: import_export.py:25
+#: import_export.py:28
 msgid "my-crosswords"
 msgstr "내 크로스 워드"
 
-#: import_export.py:64
+#: import_export.py:70
 msgid ""
 "Select a valid crossword JSON file that was exported using crossword_puzzle"
 msgstr "Crossword_puzzle을 사용하여 내보내는 유효한 Crossword JSON 파일 선택"
 
-#: utils.py:60
+#: pdf.py:53
+msgid "Answers"
+msgstr "답변"
+
+#: app/templates/index.html:286 pdf.py:207
+msgid "Across"
+msgstr "가로"
+
+#: app/templates/index.html:308 pdf.py:214
+msgid "Down"
+msgstr "세로"
+
+#: utils.py:58
 msgid "Remove"
 msgstr "제거하다"
 
-#: utils.py:60
+#: utils.py:59
 msgid "Are you sure you want to delete this"
 msgstr "이것을 삭제하시겠습니까?"
 
-#: utils.py:60
+#: utils.py:61
 msgid "It will be lost forever!"
 msgstr "그것은 영원히 사라질 것입니다!"
 
-#: utils.py:65
+#: utils.py:66
 msgid "Add or select"
 msgstr "추가 또는 선택"
 
-#: utils.py:65
+#: utils.py:67
 msgid "Are you sure you want to add/select a"
 msgstr "추가/선택하시겠습니까?"
 
-#: utils.py:65
+#: utils.py:69
 msgid "Your modified fields will be reset!"
 msgstr "수정된 필드가 재설정됩니다!"
 
-#: utils.py:70 utils.py:94
+#: utils.py:74 utils.py:106
 msgid "Back to home"
 msgstr "홈으로"
 
-#: utils.py:70
+#: utils.py:75
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
 msgstr "홈 화면으로 돌아가시겠습니까? 수정된 필드가 재설정됩니다!"
 
-#: utils.py:75 utils.py:141 utils.py:151 utils.py:156 utils.py:179
+#: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
+#: utils.py:235
 msgid "Info"
 msgstr "정보"
 
-#: utils.py:75
+#: utils.py:84
 msgid ""
 "Are you sure you want to import crosswords? Your modified fields will be "
 "reset!"
 msgstr "크로스 워드를 가져오고 싶습니까?수정 된 필드가 재설정됩니다!"
 
-#: utils.py:80
+#: utils.py:92
 msgid "Restart"
 msgstr "재시작"
 
-#: utils.py:80
+#: utils.py:92
 msgid "Are you sure you want to restart the app?"
 msgstr "앱을 다시 시작하시겠습니까?"
 
-#: pages/home.py:148 utils.py:85
+#: pages/home.py:148 utils.py:97
 msgid "Exit"
 msgstr "나가기"
 
-#: utils.py:86
+#: utils.py:98
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
 msgstr "앱을 종료하시겠습니까? 웹앱이 실행 중이면 종료됩니다."
 
-#: utils.py:95
+#: utils.py:107
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr "홈 화면으로 돌아가시겠습니까? 웹앱이 종료됩니다."
 
-#: utils.py:106 utils.py:111 utils.py:116 utils.py:121 utils.py:126
-#: utils.py:135 utils.py:146 utils.py:169 utils.py:174 utils.py:196
-#: utils.py:200
+#: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
+#: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
+#: utils.py:220 utils.py:252 utils.py:256
 msgid "Error"
 msgstr "오류"
 
-#: utils.py:106
+#: utils.py:118
 msgid "This language is already selected."
 msgstr "이 언어는 이미 선택되어 있습니다."
 
-#: utils.py:111
+#: utils.py:123
 msgid "This size is already selected."
 msgstr "이 크기는 이미 선택되었습니다."
 
-#: utils.py:116
+#: utils.py:128
 msgid "This appearance is already selected."
 msgstr "이 환경은 이미 선택되어 있습니다."
 
-#: utils.py:121
+#: utils.py:133
 msgid "This quality is already selected."
 msgstr "이 품질은 이미 선택되었습니다."
 
-#: utils.py:127
+#: utils.py:139
 msgid ""
 "A crossword with this name and difficulty already exists. Please choose a "
 "new name and/or a new difficulty."
 msgstr "이 이름과 어려움이있는 크로스 워드가 이미 존재합니다.새 이름 및/또는 새로운 난이도를 선택하십시오."
 
-#: utils.py:136
+#: utils.py:148
 msgid "You have no crosswords to export. Please make some and try again."
 msgstr "수출 할 크로스 워드가 없습니다.좀 만들어 다시 시도하십시오."
 
-#: utils.py:141
+#: utils.py:155
 msgid "Successfully exported your crosswords."
 msgstr "크로스 워드를 성공적으로 수출했습니다."
 
-#: utils.py:146
+#: utils.py:160
 msgid "Your crosswords could not be exported, sorry."
 msgstr "크로스 워드를 내보낼 수 없습니다. 죄송합니다."
 
-#: utils.py:151
+#: utils.py:166
 msgid "All of your crosswords were successfully imported."
 msgstr "모든 크로스 워드가 성공적으로 수입되었습니다."
 
-#: utils.py:157
+#: utils.py:172
 msgid "Your import could not be fully completed."
 msgstr "수입품을 완전히 완료 할 수 없습니다."
 
-#: utils.py:159
+#: utils.py:174
 msgid ""
 "Crosswords with duplicate names and difficulties that were not imported: "
 msgstr "수입되지 않은 중복 이름과 어려움이있는 크로스 워드 :"
 
-#: utils.py:163
+#: utils.py:180
 msgid "Invalid crosswords that were not imported: "
 msgstr "수입되지 않은 잘못된 크로스 워드 :"
 
-#: utils.py:169
+#: utils.py:187
 msgid "The specified JSON file is invalid and cannot be processed."
 msgstr "지정된 JSON 파일은 유효하지 않으며 처리 할 수 ​​없습니다."
 
-#: utils.py:174
+#: utils.py:195
 msgid "This word already exists. Please choose a new word."
 msgstr "이 단어는 이미 존재합니다. 새로운 단어를 선택하세요."
 
-#: utils.py:180
+#: utils.py:201
+msgid "An error occurred while creating your PDF. Please try again."
+msgstr "PDF를 만드는 동안 오류가 발생했습니다.다시 시도하십시오."
+
+#: utils.py:208
+msgid ""
+"words that could not be inserted during crossword generation will not be "
+"included in this PDF, sorry."
+msgstr "크로스 워드 생성 중에 삽입 할 수없는 단어는이 PDF에 포함되지 않습니다. 죄송합니다."
+
+#: utils.py:215
+msgid "Successfully wrote PDF."
+msgstr "PDF를 성공적으로 썼습니다."
+
+#: utils.py:221
+msgid ""
+"You are missing pycairo, which is required to perform this operation. Please"
+" run"
+msgstr "이 작업을 수행 해야하는 Pycairo가 누락되었습니다.실행하십시오"
+
+#: utils.py:226
+msgid ""
+"and install the headers for pycairo if you are not on Windows at the "
+"following link as a guide"
+msgstr "다음 링크에서 가이드로 Windows에 있지 않은 경우 Pycairo 헤더를 설치하십시오."
+
+#: utils.py:236
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -183,24 +222,24 @@ msgstr ""
 "수동으로 변경할 수 있습니다. 제대로 종료되지 않은 모든 앱 프로세스는 MacOS의 Activity Monitor를 통해 종료하거나 "
 "컴퓨터를 다시 시작하여 종료할 수 있습니다."
 
-#: utils.py:202
+#: utils.py:258
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr "예기치 않은 오류가 발생했습니다. 다음을 사용하여 응용 프로그램을 다시 설치해 보십시오."
 
-#: utils.py:719
+#: utils.py:779
 msgid "Definitions are empty"
 msgstr "정의가 비어 있습니다."
 
-#: utils.py:722
+#: utils.py:782
 msgid "The word count or definitions are less than 3 in length"
 msgstr "단어 수 또는 정의의 길이가 3 미만입니다."
 
-#: utils.py:726
+#: utils.py:786
 msgid "Length of the word count is greater than the definitions"
 msgstr "단어 수의 길이가 정의보다 큽니다."
 
-#: utils.py:729
+#: utils.py:789
 msgid "Escape character present in word"
 msgstr "단어에 이스케이프 문자가 있음"
 
@@ -258,14 +297,6 @@ msgstr "클리어"
 msgid "Unrevealed"
 msgstr "리뷰되지 않은"
 
-#: app/templates/index.html:286
-msgid "Across"
-msgstr "가로"
-
-#: app/templates/index.html:308
-msgid "Down"
-msgstr "세로"
-
 #: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "이미 보고있습니다"
@@ -294,147 +325,167 @@ msgstr "계속하기"
 msgid "You completed the crossword!"
 msgstr "크로스워드(십자말 풀이)를 완료했습니다!"
 
-#: app/templates/index.html:368 pages/browser.py:586
+#: app/templates/index.html:368 pages/browser.py:641
 msgid "Close"
 msgstr "닫기"
 
-#: pages/browser.py:136
+#: pages/browser.py:137
 msgid "Crossword Browser"
 msgstr "크로스워드 브라우저"
 
-#: pages/browser.py:141 pages/editor.py:359
+#: pages/browser.py:142 pages/editor.py:363
 msgid "Back"
 msgstr "뒤로"
 
-#: pages/browser.py:145 pages/editor.py:363 pages/home.py:305
+#: pages/browser.py:146 pages/editor.py:367 pages/home.py:305
 msgid "HomePage"
 msgstr "홈페이지"
 
-#: pages/browser.py:156
+#: pages/browser.py:157
 msgid "Categorised"
 msgstr "분류"
 
-#: pages/browser.py:156 pages/browser.py:271
+#: pages/browser.py:157 pages/browser.py:281
 msgid "Flattened"
 msgstr "평평"
 
-#: pages/browser.py:186
+#: pages/browser.py:174 pages/browser.py:296
+msgid "Search"
+msgstr "찾다"
+
+#: pages/browser.py:187
 msgid "Load"
 msgstr "부하"
 
-#: pages/browser.py:195
+#: pages/browser.py:196
 msgid "Open"
 msgstr "열다"
 
-#: pages/browser.py:205
+#: pages/browser.py:206
+msgid "Make PDF"
+msgstr "PDF를 만드십시오"
+
+#: pages/browser.py:214
 msgid "Terminate"
 msgstr "끝내다"
 
-#: pages/browser.py:216
+#: pages/browser.py:225
 msgid "Word count preferences"
 msgstr "단어 수 설정"
 
-#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
-#: pages/browser.py:495
+#: pages/browser.py:240 pages/browser.py:360 pages/browser.py:391
+#: pages/browser.py:550
 msgid "Select word count"
 msgstr "단어 수 선택"
 
-#: pages/browser.py:246
+#: pages/browser.py:244 pages/browser.py:390 pages/browser.py:561
+msgid "Maximum"
+msgstr "최고"
+
+#: pages/browser.py:255
 msgid "Custom"
 msgstr "커스텀"
 
-#: pages/browser.py:475
+#: pages/browser.py:424
+msgid "Select a destination to download your PDF to"
+msgstr "PDF를 다운로드 할 대상을 선택하십시오"
+
+#: pages/browser.py:530
 msgid "To perform this operation, you must first select a cell."
 msgstr "이 작업을 수행하려면 먼저 칸을 선택해야합니다."
 
-#: pages/browser.py:579
+#: pages/browser.py:634
 msgid "View"
 msgstr "보기"
 
-#: pages/browser.py:783
-msgid "Select"
-msgstr "선택하기"
+#: pages/browser.py:818
+msgid "Total words"
+msgstr "총 단어"
 
-#: pages/editor.py:353
-msgid "Crossword Editor"
-msgstr "크로스워드 편집기"
-
-#: pages/editor.py:491 pages/editor.py:706 pages/editor.py:796
-#: pages/editor.py:936
-msgid "Your Crosswords"
-msgstr "당신의 십자말풀이"
-
-#: pages/editor.py:555 pages/editor.py:800 pages/editor.py:943
-#: pages/editor.py:1030 pages/editor.py:1143 pages/editor.py:1257
-msgid "Save"
-msgstr "구해내다"
-
-#: pages/editor.py:567
-msgid "length >= 1 and valid OS file name"
-msgstr "길이 >= 1 및 유효한 OS 파일 이름"
-
-#: pages/editor.py:576
-msgid "length == 1"
-msgstr "길이 == 1"
-
-#: pages/editor.py:582
+#: pages/browser.py:824 pages/editor.py:586
 msgid "Difficulty"
 msgstr "어려움"
 
-#: pages/editor.py:589
+#: pages/browser.py:838
+msgid "Select"
+msgstr "선택하기"
+
+#: pages/editor.py:357
+msgid "Crossword Editor"
+msgstr "크로스워드 편집기"
+
+#: pages/editor.py:495 pages/editor.py:718 pages/editor.py:808
+#: pages/editor.py:948
+msgid "Your Crosswords"
+msgstr "당신의 십자말풀이"
+
+#: pages/editor.py:559 pages/editor.py:812 pages/editor.py:955
+#: pages/editor.py:1042 pages/editor.py:1155 pages/editor.py:1269
+msgid "Save"
+msgstr "구해내다"
+
+#: pages/editor.py:571
+msgid "length >= 1 and valid OS file name"
+msgstr "길이 >= 1 및 유효한 OS 파일 이름"
+
+#: pages/editor.py:580
+msgid "length == 1"
+msgstr "길이 == 1"
+
+#: pages/editor.py:593
 msgid "Easy"
 msgstr "쉬움"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Medium"
 msgstr "중간"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Hard"
 msgstr "어려움"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Extreme"
 msgstr "쌈@뽕함"
 
-#: pages/editor.py:706 pages/editor.py:1086
+#: pages/editor.py:718 pages/editor.py:1098
 msgid "Adding"
 msgstr "추가"
 
-#: pages/editor.py:709 pages/editor.py:1090
+#: pages/editor.py:721 pages/editor.py:1102
 msgid "Add"
 msgstr "더하다"
 
-#: pages/editor.py:888 pages/editor.py:1206
+#: pages/editor.py:900 pages/editor.py:1218
 msgid "Press"
 msgstr "누르다"
 
-#: pages/editor.py:890 pages/editor.py:1208
+#: pages/editor.py:902 pages/editor.py:1220
 msgid "to add a"
 msgstr "를 추가하려면"
 
-#: pages/editor.py:892
+#: pages/editor.py:904
 msgid "new crossword."
 msgstr "새로운 크로스 워드."
 
-#: pages/editor.py:936 pages/editor.py:1253
+#: pages/editor.py:948 pages/editor.py:1265
 msgid "Editing"
 msgstr "편집"
 
-#: pages/editor.py:998 pages/editor.py:1086 pages/editor.py:1138
-#: pages/editor.py:1253
+#: pages/editor.py:1010 pages/editor.py:1098 pages/editor.py:1150
+#: pages/editor.py:1265
 msgid "Your Words"
 msgstr "당신의 말"
 
-#: pages/editor.py:1042
+#: pages/editor.py:1054
 msgid "length >= 1 and length <= 32 and is a language character"
 msgstr "길이 >= 1 및 길이 <= 32이며 언어 문자입니다."
 
-#: pages/editor.py:1053
+#: pages/editor.py:1065
 msgid "length >= 1"
 msgstr "길이 >= 1"
 
-#: pages/editor.py:1210
+#: pages/editor.py:1222
 msgid "new word."
 msgstr "새 단어."
 
@@ -510,6 +561,10 @@ msgstr "완벽한"
 msgid "Crossword Quality"
 msgstr "크로스 워드 품질"
 
+#: pages/home.py:322
+msgid "New version available!"
+msgstr "새로운 버전을 사용할 수 있습니다!"
+
 msgid "Geography"
 msgstr "지리학"
 
@@ -525,12 +580,6 @@ msgstr "컴퓨터 과학"
 msgid "User"
 msgstr "사용자"
 
-msgid "Total words"
-msgstr "총 단어"
-
-msgid "Maximum"
-msgstr "최고"
-
 msgid "Clue"
 msgstr "실마리"
 
@@ -539,9 +588,3 @@ msgstr "이름"
 
 msgid "Symbol"
 msgstr "상징"
-
-msgid "Search"
-msgstr "찾다"
-
-msgid "New version available!"
-msgstr "새로운 버전을 사용할 수 있습니다!"

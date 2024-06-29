@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-28 21:00+1000\n"
+"POT-Creation-Date: 2024-06-29 19:48+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: mi <LL@li.org>\n"
@@ -19,50 +19,62 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: import_export.py:21
+#: import_export.py:24
 msgid "Select a destination to export your crosswords to"
 msgstr "Whiriwhiria he haerenga ki te kawe i o kupu whakapae ki"
 
-#: import_export.py:25
+#: import_export.py:28
 msgid "my-crosswords"
 msgstr "aku-kupu"
 
-#: import_export.py:64
+#: import_export.py:70
 msgid ""
 "Select a valid crossword JSON file that was exported using crossword_puzzle"
 msgstr ""
 "Tīpakohia he Kōnae Crossword Serverword Json i tukuna ma te whakamahi i te "
 "Crossword_Pewzzle"
 
-#: utils.py:60
+#: pdf.py:53
+msgid "Answers"
+msgstr "Whakautu"
+
+#: app/templates/index.html:286 pdf.py:207
+msgid "Across"
+msgstr "Tīpae"
+
+#: app/templates/index.html:308 pdf.py:214
+msgid "Down"
+msgstr "Iho"
+
+#: utils.py:58
 msgid "Remove"
 msgstr "Tango"
 
-#: utils.py:60
+#: utils.py:59
 msgid "Are you sure you want to delete this"
 msgstr "E tika ana kia mukua tēnei"
 
-#: utils.py:60
+#: utils.py:61
 msgid "It will be lost forever!"
 msgstr "Ka ngaro mo ake tonu atu!"
 
-#: utils.py:65
+#: utils.py:66
 msgid "Add or select"
 msgstr "Tāpiri, tīpako rānei"
 
-#: utils.py:65
+#: utils.py:67
 msgid "Are you sure you want to add/select a"
 msgstr "E tika ana kia tāpiri/tīpakohia tētahi"
 
-#: utils.py:65
+#: utils.py:69
 msgid "Your modified fields will be reset!"
 msgstr "Ka tautuhi anō ō āpure kua whakakētia!"
 
-#: utils.py:70 utils.py:94
+#: utils.py:74 utils.py:106
 msgid "Back to home"
 msgstr "Hoki ki te kainga"
 
-#: utils.py:70
+#: utils.py:75
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
@@ -70,11 +82,12 @@ msgstr ""
 "E tika ana kia hoki ki te mata kāinga? Ka tautuhi anō ō āpure kua "
 "whakakētia!"
 
-#: utils.py:75 utils.py:141 utils.py:151 utils.py:156 utils.py:179
+#: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
+#: utils.py:235
 msgid "Info"
 msgstr "Nga korero"
 
-#: utils.py:75
+#: utils.py:84
 msgid ""
 "Are you sure you want to import crosswords? Your modified fields will be "
 "reset!"
@@ -82,19 +95,19 @@ msgstr ""
 "Kei te hiahia koe ki te kawemai i nga kupu whakapae?Ka tautuhia o maara kua "
 "whakarerekehia!"
 
-#: utils.py:80
+#: utils.py:92
 msgid "Restart"
 msgstr "Tīmata anō"
 
-#: utils.py:80
+#: utils.py:92
 msgid "Are you sure you want to restart the app?"
 msgstr "Kei te tino hiahia koe ki te whakaara ano i te taupānga?"
 
-#: pages/home.py:148 utils.py:85
+#: pages/home.py:148 utils.py:97
 msgid "Exit"
 msgstr "Putaatu"
 
-#: utils.py:86
+#: utils.py:98
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -102,7 +115,7 @@ msgstr ""
 "Kei te tino hiahia koe ki te puta atu i te taupānga? Mena kei te rere te "
 "taupānga tukutuku, ka mutu."
 
-#: utils.py:95
+#: utils.py:107
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -110,29 +123,29 @@ msgstr ""
 "Kei te tino hiahia koe ki te hoki ki te mata o te kainga? Ka whakamutua te "
 "taupānga tukutuku."
 
-#: utils.py:106 utils.py:111 utils.py:116 utils.py:121 utils.py:126
-#: utils.py:135 utils.py:146 utils.py:169 utils.py:174 utils.py:196
-#: utils.py:200
+#: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
+#: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
+#: utils.py:220 utils.py:252 utils.py:256
 msgid "Error"
 msgstr "Hapa"
 
-#: utils.py:106
+#: utils.py:118
 msgid "This language is already selected."
 msgstr "Kua tohua kē tēnei reo."
 
-#: utils.py:111
+#: utils.py:123
 msgid "This size is already selected."
 msgstr "Kua tohua kē tēnei rahi."
 
-#: utils.py:116
+#: utils.py:128
 msgid "This appearance is already selected."
 msgstr "Kua tohua kē tēnei ahua."
 
-#: utils.py:121
+#: utils.py:133
 msgid "This quality is already selected."
 msgstr "Kua tohua tenei kounga."
 
-#: utils.py:127
+#: utils.py:139
 msgid ""
 "A crossword with this name and difficulty already exists. Please choose a "
 "new name and/or a new difficulty."
@@ -140,44 +153,75 @@ msgstr ""
 "Kei te noho tonu te kupu me te uaua o tenei ingoa me te uaua.Kōwhiria he "
 "ingoa hou me / he uaua hou ranei."
 
-#: utils.py:136
+#: utils.py:148
 msgid "You have no crosswords to export. Please make some and try again."
 msgstr "Kaore koe e whiti ki te kaweake.Tena koa, me whakamatau ano."
 
-#: utils.py:141
+#: utils.py:155
 msgid "Successfully exported your crosswords."
 msgstr "Ka tukuna angitu i o kupu whakarite."
 
-#: utils.py:146
+#: utils.py:160
 msgid "Your crosswords could not be exported, sorry."
 msgstr "Kaore i taea te kawe i o kupu whakapae, pouri."
 
-#: utils.py:151
+#: utils.py:166
 msgid "All of your crosswords were successfully imported."
 msgstr "Ko nga kupu katoa i kawe mai i nga kupu ripeka."
 
-#: utils.py:157
+#: utils.py:172
 msgid "Your import could not be fully completed."
 msgstr "Kaore e taea te whakatutuki i to kawemai."
 
-#: utils.py:159
+#: utils.py:174
 msgid ""
 "Crosswords with duplicate names and difficulties that were not imported: "
 msgstr "Nga kupu whakapae me nga ingoa taarua me nga uaua kaore i te kawemai:"
 
-#: utils.py:163
+#: utils.py:180
 msgid "Invalid crosswords that were not imported: "
 msgstr "Kupu whakapae kore i kawemai:"
 
-#: utils.py:169
+#: utils.py:187
 msgid "The specified JSON file is invalid and cannot be processed."
 msgstr "He muhu te konae a JSon kaore e taea te whakahaere."
 
-#: utils.py:174
+#: utils.py:195
 msgid "This word already exists. Please choose a new word."
 msgstr "Kei te tīari kē tēnei kupu. Kōwhiritia koa tētahi kupu hōu."
 
-#: utils.py:180
+#: utils.py:201
+msgid "An error occurred while creating your PDF. Please try again."
+msgstr "Kua puta he hapa i te wa e hanga ana i to PDF.Me ngana ano."
+
+#: utils.py:208
+msgid ""
+"words that could not be inserted during crossword generation will not be "
+"included in this PDF, sorry."
+msgstr ""
+"Ko nga kupu kaore e taea te whakauru i te wa o te whakatipuranga whiti e "
+"kore e whakauruhia ki tenei PDF, pouri."
+
+#: utils.py:215
+msgid "Successfully wrote PDF."
+msgstr "I tuhia pai te PDF."
+
+#: utils.py:221
+msgid ""
+"You are missing pycairo, which is required to perform this operation. Please"
+" run"
+msgstr ""
+"Kei te ngaro koe i te Pycairo, e tika ana kia mahia tenei mahi.Tēnā rere"
+
+#: utils.py:226
+msgid ""
+"and install the headers for pycairo if you are not on Windows at the "
+"following link as a guide"
+msgstr ""
+"ka whakauru i nga pane mo te Pycaino Mena kaore koe i te Matapihi i te hono "
+"e whai ake nei hei kaiarahi"
+
+#: utils.py:236
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -200,25 +244,25 @@ msgstr ""
 "Aroturuki Mahi i runga i te MacOS, me whakaara ano ranei i to rorohiko ki te"
 " whakamutu."
 
-#: utils.py:202
+#: utils.py:258
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
 "Kua puta mai tētahi hapa ohorere. Ngana koa ki te tāuta anō i te taupānga ki"
 
-#: utils.py:719
+#: utils.py:779
 msgid "Definitions are empty"
 msgstr "Kei te putu ngā tautuhinga"
 
-#: utils.py:722
+#: utils.py:782
 msgid "The word count or definitions are less than 3 in length"
 msgstr "He iti iho te tatau kupu, ngā tikanga rānei i te 3 te roa"
 
-#: utils.py:726
+#: utils.py:786
 msgid "Length of the word count is greater than the definitions"
 msgstr "He nui ake te roanga o te tatau kupu i ngā tikanga"
 
-#: utils.py:729
+#: utils.py:789
 msgid "Escape character present in word"
 msgstr "Pūāhua Escape kei roto i te kupu"
 
@@ -276,14 +320,6 @@ msgstr "Purata"
 msgid "Unrevealed"
 msgstr "E kore e whakaaetia"
 
-#: app/templates/index.html:286
-msgid "Across"
-msgstr "Tīpae"
-
-#: app/templates/index.html:308
-msgid "Down"
-msgstr "Iho"
-
 #: app/templates/index.html:340
 msgid "You are viewing"
 msgstr "Kei te tiro koe"
@@ -312,147 +348,167 @@ msgstr "Tonu"
 msgid "You completed the crossword!"
 msgstr "Kua oti i a koe te kupu whakatika!"
 
-#: app/templates/index.html:368 pages/browser.py:586
+#: app/templates/index.html:368 pages/browser.py:641
 msgid "Close"
 msgstr "Katia"
 
-#: pages/browser.py:136
+#: pages/browser.py:137
 msgid "Crossword Browser"
 msgstr "Pūtirotiro Crossword"
 
-#: pages/browser.py:141 pages/editor.py:359
+#: pages/browser.py:142 pages/editor.py:363
 msgid "Back"
 msgstr "Whakamuri"
 
-#: pages/browser.py:145 pages/editor.py:363 pages/home.py:305
+#: pages/browser.py:146 pages/editor.py:367 pages/home.py:305
 msgid "HomePage"
 msgstr "Whārangi Kāinga"
 
-#: pages/browser.py:156
+#: pages/browser.py:157
 msgid "Categorised"
 msgstr "Kua Whakakāwaitia"
 
-#: pages/browser.py:156 pages/browser.py:271
+#: pages/browser.py:157 pages/browser.py:281
 msgid "Flattened"
 msgstr "Papatahi"
 
-#: pages/browser.py:186
+#: pages/browser.py:174 pages/browser.py:296
+msgid "Search"
+msgstr "Rapu"
+
+#: pages/browser.py:187
 msgid "Load"
 msgstr "[L]"
 
-#: pages/browser.py:195
+#: pages/browser.py:196
 msgid "Open"
 msgstr "Huaki"
 
-#: pages/browser.py:205
+#: pages/browser.py:206
+msgid "Make PDF"
+msgstr "Hanga pdf"
+
+#: pages/browser.py:214
 msgid "Terminate"
 msgstr "Terminate"
 
-#: pages/browser.py:216
+#: pages/browser.py:225
 msgid "Word count preferences"
 msgstr "Nga manakohanga tatau kupu"
 
-#: pages/browser.py:231 pages/browser.py:350 pages/browser.py:397
-#: pages/browser.py:495
+#: pages/browser.py:240 pages/browser.py:360 pages/browser.py:391
+#: pages/browser.py:550
 msgid "Select word count"
 msgstr "Tīpakohia te tatau kupu"
 
-#: pages/browser.py:246
+#: pages/browser.py:244 pages/browser.py:390 pages/browser.py:561
+msgid "Maximum"
+msgstr "Mutunga rawa"
+
+#: pages/browser.py:255
 msgid "Custom"
 msgstr "Ritenga"
 
-#: pages/browser.py:475
+#: pages/browser.py:424
+msgid "Select a destination to download your PDF to"
+msgstr "Whiriwhiria he haerenga ki te tango i to PDF ki"
+
+#: pages/browser.py:530
 msgid "To perform this operation, you must first select a cell."
 msgstr "Ki te mahi i tenei mahinga, me matua whiriwhiri koe i tetahi pūtau."
 
-#: pages/browser.py:579
+#: pages/browser.py:634
 msgid "View"
 msgstr "Tirohanga"
 
-#: pages/browser.py:783
-msgid "Select"
-msgstr "Tīpakohia"
+#: pages/browser.py:818
+msgid "Total words"
+msgstr "Tapeke kupu"
 
-#: pages/editor.py:353
-msgid "Crossword Editor"
-msgstr "Kaiwhakatika Kupu Whakawhiti"
-
-#: pages/editor.py:491 pages/editor.py:706 pages/editor.py:796
-#: pages/editor.py:936
-msgid "Your Crosswords"
-msgstr "Ō Kupu Whakawhiti"
-
-#: pages/editor.py:555 pages/editor.py:800 pages/editor.py:943
-#: pages/editor.py:1030 pages/editor.py:1143 pages/editor.py:1257
-msgid "Save"
-msgstr "Tiaki"
-
-#: pages/editor.py:567
-msgid "length >= 1 and valid OS file name"
-msgstr "roa >= 1 me te ingoa kōnae OS whaimana"
-
-#: pages/editor.py:576
-msgid "length == 1"
-msgstr "roanga == 1"
-
-#: pages/editor.py:582
+#: pages/browser.py:824 pages/editor.py:586
 msgid "Difficulty"
 msgstr "Mea uaua"
 
-#: pages/editor.py:589
+#: pages/browser.py:838
+msgid "Select"
+msgstr "Tīpakohia"
+
+#: pages/editor.py:357
+msgid "Crossword Editor"
+msgstr "Kaiwhakatika Kupu Whakawhiti"
+
+#: pages/editor.py:495 pages/editor.py:718 pages/editor.py:808
+#: pages/editor.py:948
+msgid "Your Crosswords"
+msgstr "Ō Kupu Whakawhiti"
+
+#: pages/editor.py:559 pages/editor.py:812 pages/editor.py:955
+#: pages/editor.py:1042 pages/editor.py:1155 pages/editor.py:1269
+msgid "Save"
+msgstr "Tiaki"
+
+#: pages/editor.py:571
+msgid "length >= 1 and valid OS file name"
+msgstr "roa >= 1 me te ingoa kōnae OS whaimana"
+
+#: pages/editor.py:580
+msgid "length == 1"
+msgstr "roanga == 1"
+
+#: pages/editor.py:593
 msgid "Easy"
 msgstr "Māmā"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Medium"
 msgstr "Waenga"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Hard"
 msgstr "pakeke"
 
-#: pages/editor.py:589
+#: pages/editor.py:593
 msgid "Extreme"
 msgstr "Tino"
 
-#: pages/editor.py:706 pages/editor.py:1086
+#: pages/editor.py:718 pages/editor.py:1098
 msgid "Adding"
 msgstr "Tāpiri ana"
 
-#: pages/editor.py:709 pages/editor.py:1090
+#: pages/editor.py:721 pages/editor.py:1102
 msgid "Add"
 msgstr "Tāpiri"
 
-#: pages/editor.py:888 pages/editor.py:1206
+#: pages/editor.py:900 pages/editor.py:1218
 msgid "Press"
 msgstr "Pēhi"
 
-#: pages/editor.py:890 pages/editor.py:1208
+#: pages/editor.py:902 pages/editor.py:1220
 msgid "to add a"
 msgstr "hei tāpiri i tētahi"
 
-#: pages/editor.py:892
+#: pages/editor.py:904
 msgid "new crossword."
 msgstr "Tuhinga o mua."
 
-#: pages/editor.py:936 pages/editor.py:1253
+#: pages/editor.py:948 pages/editor.py:1265
 msgid "Editing"
 msgstr "Whakarerekē ana"
 
-#: pages/editor.py:998 pages/editor.py:1086 pages/editor.py:1138
-#: pages/editor.py:1253
+#: pages/editor.py:1010 pages/editor.py:1098 pages/editor.py:1150
+#: pages/editor.py:1265
 msgid "Your Words"
 msgstr "Ō Kupu"
 
-#: pages/editor.py:1042
+#: pages/editor.py:1054
 msgid "length >= 1 and length <= 32 and is a language character"
 msgstr "roa >= 1 me te roa <= 32, ā, he pūāhua reo"
 
-#: pages/editor.py:1053
+#: pages/editor.py:1065
 msgid "length >= 1"
 msgstr "roa >= 1"
 
-#: pages/editor.py:1210
+#: pages/editor.py:1222
 msgid "new word."
 msgstr "kupu hōu."
 
@@ -528,6 +584,10 @@ msgstr "tutuki"
 msgid "Crossword Quality"
 msgstr "Kounga Whakatau"
 
+#: pages/home.py:322
+msgid "New version available!"
+msgstr "Ko te putanga hou e waatea ana!"
+
 msgid "Geography"
 msgstr "Matawhenua"
 
@@ -543,12 +603,6 @@ msgstr "Pūtaiao Rorohiko"
 msgid "User"
 msgstr "Kaiwhakamahi"
 
-msgid "Total words"
-msgstr "Tapeke kupu"
-
-msgid "Maximum"
-msgstr "Mutunga rawa"
-
 msgid "Clue"
 msgstr "Clue"
 
@@ -557,9 +611,3 @@ msgstr "Ingoa"
 
 msgid "Symbol"
 msgstr "Tohu"
-
-msgid "Search"
-msgstr "Rapu"
-
-msgid "New version available!"
-msgstr "Ko te putanga hou e waatea ana!"
