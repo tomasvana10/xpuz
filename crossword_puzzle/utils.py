@@ -156,7 +156,7 @@ class GUIHelper:
             )
 
         if "export_failure" in kwargs:
-            return messagebox.showinfo(
+            return messagebox.showerror(
                 _("Error"), _("Your crosswords could not be exported, sorry.")
             )
 
@@ -182,7 +182,7 @@ class GUIHelper:
             )
 
         if "import_failure" in kwargs:
-            return messagebox.showinfo(
+            return messagebox.showerror(
                 _("Error"),
                 _(
                     "The specified JSON file is invalid and cannot be processed."
@@ -210,7 +210,7 @@ class GUIHelper:
                     "generation will not be included in this PDF, sorry."
                 )
                 fails_msg = f" {args[0]} {disclaimer_str}"
-            return messagebox.showerror(
+            return messagebox.showinfo(
                 _("Info"),
                 _("Successfully wrote PDF.") + fails_msg,
             )
