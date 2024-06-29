@@ -7,7 +7,6 @@ from tkinter import IntVar, Event
 from typing import List, Union, Callable, Dict, Optional
 from shutil import rmtree
 from json import dump
-from threading import Thread
 
 from CTkToolTip import CTkToolTip
 from customtkinter import (

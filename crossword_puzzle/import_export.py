@@ -1,9 +1,8 @@
 from json import dump, load
 from tkinter import filedialog
 from os import mkdir, path, rmdir, PathLike
-from typing import Union, List, Dict, Any, Iterable
+from typing import Union, List, Any
 
-from customtkinter import CTkLabel
 from platformdirs import user_downloads_dir
 
 from crossword_puzzle.td import CrosswordInfo, CrosswordData
