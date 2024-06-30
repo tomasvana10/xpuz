@@ -265,7 +265,7 @@ resizing equally distributed. */
     display: none;
     top: 100%;
     left: 0;
-    width: 20vmin;
+    width: 25vmin;
     background-color: var(--sub_colour);
     box-shadow: 6px 6px 10px 1px var(--main_colour);
     padding: 0;
@@ -318,15 +318,15 @@ resizing equally distributed. */
 }
 
 #check_dropdown {
-    left: 35.522%;
+    left: 35%;
 }
 
 #clear_dropdown {
-    left: 71.21%;
+    left: 70.2%;
 }
 
 .top_buttons_container .special_button {
-    min-width: 20vmin;
+    min-width: 25vmin;
 }
 /* ---------- */
 
