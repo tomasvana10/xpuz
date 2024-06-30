@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-29 19:48+1000\n"
+"POT-Creation-Date: 2024-06-30 17:39+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: hy <LL@li.org>\n"
@@ -32,10 +32,6 @@ msgid ""
 "Select a valid crossword JSON file that was exported using crossword_puzzle"
 msgstr ""
 "Ընտրեք վավեր խաչբառ JSON ֆայլ, որն արտահանվել է Crossword_Puzzle- ի միջոցով"
-
-#: pdf.py:53
-msgid "Answers"
-msgstr "Պատասխանները"
 
 #: app/templates/index.html:286 pdf.py:207
 msgid "Across"
@@ -82,7 +78,7 @@ msgstr ""
 "կվերաստեղծվեն!"
 
 #: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
-#: utils.py:235
+#: utils.py:246
 msgid "Info"
 msgstr "Ինֆո"
 
@@ -123,7 +119,7 @@ msgstr ""
 
 #: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
 #: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
-#: utils.py:220 utils.py:252 utils.py:256
+#: utils.py:220 utils.py:231 utils.py:263 utils.py:267
 msgid "Error"
 msgstr "Սխալ"
 
@@ -209,13 +205,25 @@ msgstr "Հաջողությամբ գրել է PDF- ը:"
 
 #: utils.py:221
 msgid ""
+"You are missing pywebview, which is required when viewing the crossword game"
+" in an embedded window. Please run"
+msgstr ""
+"Դուք բացակայում եք PywebView- ը, որը պահանջվում է խաչբառ խաղ ներկառուցված "
+"պատուհանում դիտելիս:Խնդրում եմ վազել"
+
+#: utils.py:226
+msgid "to install this dependency."
+msgstr "այս կախվածությունը տեղադրելու համար:"
+
+#: utils.py:232
+msgid ""
 "You are missing pycairo, which is required to perform this operation. Please"
 " run"
 msgstr ""
 "Դուք բացակայում եք Pycairo- ն, որը պահանջվում է կատարել այս "
 "գործողությունը:Խնդրում եմ վազել"
 
-#: utils.py:226
+#: utils.py:237
 msgid ""
 "and install the headers for pycairo if you are not on Windows using "
 "pycairo's Getting Started guide"
@@ -223,7 +231,7 @@ msgstr ""
 "եւ տեղադրեք վերնագրերը Pycairo- ի համար, եթե դուք Windows- ում չեք, "
 "օգտագործելով Pycairo- ի մեկնարկը"
 
-#: utils.py:236
+#: utils.py:247
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -245,29 +253,30 @@ msgstr ""
 " դադարեցվել MacOS-ում Activity Monitor-ի միջոցով կամ պարզապես վերագործարկեք "
 "ձեր համակարգիչը՝ դրանք դադարեցնելու համար:"
 
-#: utils.py:258
+#: utils.py:269
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
 "Անսպասելի սխալ է տեղի ունեցել. Խնդրում ենք փորձել վերաապահովել դիմումը"
 
-#: utils.py:779
+#: utils.py:790
 msgid "Definitions are empty"
 msgstr "Սահմանումները դատարկ են"
 
-#: utils.py:782
+#: utils.py:793
 msgid "The word count or definitions are less than 3 in length"
 msgstr "Հաշվել բառը կամ սահմանումները 3-ից պակաս են երկարության"
 
-#: utils.py:786
+#: utils.py:797
 msgid "Length of the word count is greater than the definitions"
 msgstr "Բառի երկարությունն ավելի մեծ է, քան սահմանումները"
 
-#: utils.py:789
+#: utils.py:800
 msgid "Escape character present in word"
 msgstr "Փախչող կերպարը, որը ներկա է բառով"
 
 #: app/templates/index.html:13 app/templates/index.html:338
+#: pages/browser.py:458
 msgid "Crossword Puzzle - Game"
 msgstr "Խաչբառ հանելուկ - խաղ"
 
@@ -349,88 +358,84 @@ msgstr "Շարունակել"
 msgid "You completed the crossword!"
 msgstr "Դուք ավարտեցիք խաչբառ:"
 
-#: app/templates/index.html:368 pages/browser.py:641
+#: app/templates/index.html:368 pages/browser.py:718
 msgid "Close"
 msgstr "փակել"
 
-#: pages/browser.py:137
+#: pages/browser.py:142
 msgid "Crossword Browser"
 msgstr "Խաչբառ զննարկիչ"
 
-#: pages/browser.py:142 pages/editor.py:363
+#: pages/browser.py:147 pages/editor.py:363
 msgid "Back"
 msgstr "Հետույք"
 
-#: pages/browser.py:146 pages/editor.py:367 pages/home.py:305
+#: pages/browser.py:151 pages/editor.py:367 pages/home.py:305
 msgid "HomePage"
 msgstr "Գլխավոր էջՓեյջ"
 
-#: pages/browser.py:157
+#: pages/browser.py:162
 msgid "Categorised"
 msgstr "Կատեգորիաներ"
 
-#: pages/browser.py:157 pages/browser.py:281
+#: pages/browser.py:162 pages/browser.py:314
 msgid "Flattened"
 msgstr "Ֆլոտինացված"
 
-#: pages/browser.py:174 pages/browser.py:296
-msgid "Search"
-msgstr "Որոնել"
-
-#: pages/browser.py:187
+#: pages/browser.py:191
 msgid "Create"
 msgstr "Ստեղծել"
 
-#: pages/browser.py:196
+#: pages/browser.py:200
 msgid "Play"
 msgstr "Խաղալ"
 
-#: pages/browser.py:206
+#: pages/browser.py:208 pages/home.py:126
+msgid "Browser"
+msgstr "Բրաուզեր"
+
+#: pages/browser.py:208
+msgid "Embedded"
+msgstr "Ներկառուցված"
+
+#: pages/browser.py:211
+msgid "Game view"
+msgstr "Խաղ"
+
+#: pages/browser.py:237
 msgid "Write to PDF"
 msgstr "Գրեք PDF- ին"
 
-#: pages/browser.py:214
+#: pages/browser.py:245
 msgid "Destroy"
 msgstr "Ոչնչացնել"
 
-#: pages/browser.py:225
+#: pages/browser.py:256
 msgid "Word count preferences"
 msgstr "Բառերի քանակի նախապատվություններ"
 
-#: pages/browser.py:240 pages/browser.py:360 pages/browser.py:391
-#: pages/browser.py:550
+#: pages/browser.py:271 pages/browser.py:400 pages/browser.py:433
+#: pages/browser.py:627
 msgid "Select word count"
 msgstr "Ընտրեք բառերի քանակը"
 
-#: pages/browser.py:244 pages/browser.py:390 pages/browser.py:561
-msgid "Maximum"
-msgstr "Առավելագույն"
-
-#: pages/browser.py:255
+#: pages/browser.py:286
 msgid "Custom"
 msgstr "Պատվերով"
 
-#: pages/browser.py:424
+#: pages/browser.py:499
 msgid "Select a destination to download your PDF to"
 msgstr "Ընտրեք նպատակակետ `ձեր PDF- ին ներբեռնելու համար"
 
-#: pages/browser.py:530
+#: pages/browser.py:607
 msgid "To perform this operation, you must first select a cell."
 msgstr "Այս գործողությունը կատարելու համար նախ պետք է բջիջ ընտրեք:"
 
-#: pages/browser.py:634
+#: pages/browser.py:711
 msgid "View"
 msgstr "Դիտել"
 
-#: pages/browser.py:818
-msgid "Total words"
-msgstr "Ընդհանուր բառեր"
-
-#: pages/browser.py:824 pages/editor.py:586
-msgid "Difficulty"
-msgstr "Դժվարություն"
-
-#: pages/browser.py:838
+#: pages/browser.py:915
 msgid "Select"
 msgstr "Ընտրել"
 
@@ -455,6 +460,10 @@ msgstr "երկարություն >= 1 եւ վավերԱԿԱՆ OS ֆայլի ան
 #: pages/editor.py:580
 msgid "length == 1"
 msgstr "երկարություն == 1"
+
+#: pages/editor.py:586
+msgid "Difficulty"
+msgstr "Դժվարություն"
 
 #: pages/editor.py:593
 msgid "Easy"
@@ -516,10 +525,6 @@ msgstr "նոր խոսք:"
 #: pages/home.py:98
 msgid "Crossword Puzzle"
 msgstr "Խաչբառ"
-
-#: pages/home.py:126
-msgid "Browser"
-msgstr "Բրաուզեր"
 
 #: pages/home.py:128
 msgid "BrowserPage"
@@ -585,10 +590,6 @@ msgstr "կատարյալ"
 msgid "Crossword Quality"
 msgstr "Խաչբառերի որակ"
 
-#: pages/home.py:322
-msgid "New version available!"
-msgstr "Նոր տարբերակը մատչելի է:"
-
 msgid "Geography"
 msgstr "Աշխարհագրություն"
 
@@ -604,6 +605,12 @@ msgstr "Համակարգչային գիտություն"
 msgid "User"
 msgstr "Օգտվող"
 
+msgid "Total words"
+msgstr "Ընդհանուր բառեր"
+
+msgid "Maximum"
+msgstr "Առավելագույն"
+
 msgid "Clue"
 msgstr "Կլյու"
 
@@ -613,14 +620,8 @@ msgstr "Անուն"
 msgid "Symbol"
 msgstr "Զինանշան"
 
-#~ msgid "Load"
-#~ msgstr "Բեռնել"
+msgid "Search"
+msgstr "Որոնել"
 
-#~ msgid "Open"
-#~ msgstr "Բաց"
-
-#~ msgid "Make PDF"
-#~ msgstr "Կատարել pdf"
-
-#~ msgid "Terminate"
-#~ msgstr "Տերմին"
+msgid "New version available!"
+msgstr "Նոր տարբերակը մատչելի է:"

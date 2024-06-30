@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-29 19:48+1000\n"
+"POT-Creation-Date: 2024-06-30 17:39+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: it <LL@li.org>\n"
@@ -30,13 +30,9 @@ msgstr "My-Crosswords"
 #: import_export.py:70
 msgid ""
 "Select a valid crossword JSON file that was exported using crossword_puzzle"
-msgstr ""
+msgstr "Seleziona un file JSON di cruciverba valido che è stato esportato utilizzando crossword_puzzle"
 "Seleziona un file JSON CROSSWORD valido che è stato esportato utilizzando "
 "Crossword_Puzzle"
-
-#: pdf.py:53
-msgid "Answers"
-msgstr "Risposte"
 
 #: app/templates/index.html:286 pdf.py:207
 msgid "Across"
@@ -78,12 +74,12 @@ msgstr "Tornare a casa"
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
-msgstr ""
+msgstr "Sei sicuro di voler tornare alla schermata principale? "
 "Sei sicuro di voler tornare alla schermata iniziale? I campi modificati "
 "verranno reimpostati!"
 
 #: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
-#: utils.py:235
+#: utils.py:246
 msgid "Info"
 msgstr "Informazioni"
 
@@ -91,7 +87,7 @@ msgstr "Informazioni"
 msgid ""
 "Are you sure you want to import crosswords? Your modified fields will be "
 "reset!"
-msgstr ""
+msgstr "Sei sicuro di voler importare i cruciverba? "
 "Sei sicuro di voler importare i cruciverba?I tuoi campi modificati verranno "
 "ripristinati!"
 
@@ -111,7 +107,7 @@ msgstr "Uscita"
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
-msgstr ""
+msgstr "Sei sicuro di voler uscire dall'app? "
 "Sei sicuro di voler uscire dall'app? Se l'app Web è in esecuzione, verrà "
 "terminata."
 
@@ -119,13 +115,13 @@ msgstr ""
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
-msgstr ""
+msgstr "Sei sicuro di voler tornare alla schermata principale? "
 "Sei sicuro di voler tornare alla schermata principale? L'app Web verrà "
 "terminata."
 
 #: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
 #: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
-#: utils.py:220 utils.py:252 utils.py:256
+#: utils.py:220 utils.py:231 utils.py:263 utils.py:267
 msgid "Error"
 msgstr "Errore"
 
@@ -149,7 +145,7 @@ msgstr "Questa qualità è già selezionata."
 msgid ""
 "A crossword with this name and difficulty already exists. Please choose a "
 "new name and/or a new difficulty."
-msgstr ""
+msgstr "Esiste già un cruciverba con questo nome e difficoltà. "
 "Esiste già un cruciverba con questo nome e difficoltà.Scegli un nuovo nome "
 "e/o una nuova difficoltà."
 
@@ -176,7 +172,7 @@ msgstr "La tua importazione non potrebbe essere completamente completata."
 #: utils.py:174
 msgid ""
 "Crosswords with duplicate names and difficulties that were not imported: "
-msgstr ""
+msgstr "Cruciverba con nomi duplicati e difficoltà non importate: "
 "Crucioni con nomi duplicati e difficoltà che non sono state importate:"
 
 #: utils.py:180
@@ -193,14 +189,14 @@ msgstr "Questa parola esiste già. Si prega di scegliere una nuova parola."
 
 #: utils.py:201
 msgid "An error occurred while creating your PDF. Please try again."
-msgstr ""
+msgstr "Si è verificato un errore durante la creazione del PDF. "
 "Si è verificato un errore durante la creazione del PDF.Per favore riprova."
 
 #: utils.py:208
 msgid ""
 "words that could not be inserted during crossword generation will not be "
 "included in this PDF, sorry."
-msgstr ""
+msgstr "le parole che non è stato possibile inserire durante la generazione del cruciverba non verranno incluse in questo PDF, siamo spiacenti."
 "Le parole che non possono essere inserite durante la generazione di parole "
 "crociate non saranno incluse in questo PDF, scusate."
 
@@ -210,21 +206,31 @@ msgstr "Ha scritto con successo PDF."
 
 #: utils.py:221
 msgid ""
+"You are missing pywebview, which is required when viewing the crossword game"
+" in an embedded window. Please run"
+msgstr "Manca pywebview, necessario quando si visualizza il gioco del cruciverba in una finestra incorporata. "
+
+#: utils.py:226
+msgid "to install this dependency."
+msgstr "per installare questa dipendenza."
+
+#: utils.py:232
+msgid ""
 "You are missing pycairo, which is required to perform this operation. Please"
 " run"
-msgstr ""
+msgstr "Ti manca pycairo, necessario per eseguire questa operazione. "
 "Ti manca Pycairo, che è necessario per eseguire questa operazione.Per favore"
 " corri"
 
-#: utils.py:226
+#: utils.py:237
 msgid ""
 "and install the headers for pycairo if you are not on Windows using "
 "pycairo's Getting Started guide"
-msgstr ""
+msgstr "e installa le intestazioni per Pycairo se non sei su Windows utilizzando la guida introduttiva di Pycairo"
 "e installare le intestazioni per Pycairo se non si è su Windows utilizzando "
 "la Guida per iniziare Pycairo"
 
-#: utils.py:236
+#: utils.py:247
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -235,7 +241,7 @@ msgid ""
 "file. All app processes that have not been properly terminated can be "
 "terminated through Activity Monitor on MacOS, or, simply restart your "
 "computer to terminate them."
-msgstr ""
+msgstr "Al primo avvio, leggi: una volta caricato un cruciverba e desideri caricarne un altro, devi prima chiudere l'app web. "
 "Al primo avvio, leggi: Una volta caricato un cruciverba e desideri caricarne"
 " un altro, devi prima chiudere l'app web. IMPORTANTE: se utilizzi macOS, "
 "forzare l'uscita dall'applicazione (utilizzando cmd+q) mentre l'app Web è in"
@@ -246,30 +252,31 @@ msgstr ""
 "possono essere terminati tramite Activity Monitor su MacOS o semplicemente "
 "riavviando il computer per terminarli."
 
-#: utils.py:258
+#: utils.py:269
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
-msgstr ""
+msgstr "Si è verificato un errore imprevisto. "
 "Si è verificato un errore imprevisto. Prova a reinstallare l'applicazione "
 "con"
 
-#: utils.py:779
+#: utils.py:790
 msgid "Definitions are empty"
 msgstr "Le definizioni sono vuote"
 
-#: utils.py:782
+#: utils.py:793
 msgid "The word count or definitions are less than 3 in length"
 msgstr "Il numero di parole o le definizioni sono inferiori a 3"
 
-#: utils.py:786
+#: utils.py:797
 msgid "Length of the word count is greater than the definitions"
 msgstr "La lunghezza del conteggio delle parole è maggiore delle definizioni"
 
-#: utils.py:789
+#: utils.py:800
 msgid "Escape character present in word"
 msgstr "Carattere di escape presente in word"
 
 #: app/templates/index.html:13 app/templates/index.html:338
+#: pages/browser.py:458
 msgid "Crossword Puzzle - Game"
 msgstr "Cruciverba - Gioco"
 
@@ -351,89 +358,85 @@ msgstr "Continua"
 msgid "You completed the crossword!"
 msgstr "Hai completato il cruciverba!"
 
-#: app/templates/index.html:368 pages/browser.py:641
+#: app/templates/index.html:368 pages/browser.py:718
 msgid "Close"
 msgstr "Vicino"
 
-#: pages/browser.py:137
+#: pages/browser.py:142
 msgid "Crossword Browser"
 msgstr "Navigatore di cruciverba"
 
-#: pages/browser.py:142 pages/editor.py:363
+#: pages/browser.py:147 pages/editor.py:363
 msgid "Back"
 msgstr "Indietro"
 
-#: pages/browser.py:146 pages/editor.py:367 pages/home.py:305
+#: pages/browser.py:151 pages/editor.py:367 pages/home.py:305
 msgid "HomePage"
 msgstr "Pagina iniziale"
 
-#: pages/browser.py:157
+#: pages/browser.py:162
 msgid "Categorised"
 msgstr "Classificati"
 
-#: pages/browser.py:157 pages/browser.py:281
+#: pages/browser.py:162 pages/browser.py:314
 msgid "Flattened"
 msgstr "Appiattito"
 
-#: pages/browser.py:174 pages/browser.py:296
-msgid "Search"
-msgstr "Ricerca"
-
-#: pages/browser.py:187
+#: pages/browser.py:191
 msgid "Create"
 msgstr "Creare"
 
-#: pages/browser.py:196
+#: pages/browser.py:200
 msgid "Play"
 msgstr "Giocare"
 
-#: pages/browser.py:206
+#: pages/browser.py:208 pages/home.py:126
+msgid "Browser"
+msgstr "Browser"
+
+#: pages/browser.py:208
+msgid "Embedded"
+msgstr "Incorporato"
+
+#: pages/browser.py:211
+msgid "Game view"
+msgstr "Vista del gioco"
+
+#: pages/browser.py:237
 msgid "Write to PDF"
 msgstr "Scrivi a PDF"
 
-#: pages/browser.py:214
+#: pages/browser.py:245
 msgid "Destroy"
 msgstr "Distruggere"
 
-#: pages/browser.py:225
+#: pages/browser.py:256
 msgid "Word count preferences"
 msgstr "Preferenze sul conteggio delle parole"
 
-#: pages/browser.py:240 pages/browser.py:360 pages/browser.py:391
-#: pages/browser.py:550
+#: pages/browser.py:271 pages/browser.py:400 pages/browser.py:433
+#: pages/browser.py:627
 msgid "Select word count"
 msgstr "Seleziona il conteggio delle parole"
 
-#: pages/browser.py:244 pages/browser.py:390 pages/browser.py:561
-msgid "Maximum"
-msgstr "Massimo"
-
-#: pages/browser.py:255
+#: pages/browser.py:286
 msgid "Custom"
 msgstr "Costume"
 
-#: pages/browser.py:424
+#: pages/browser.py:499
 msgid "Select a destination to download your PDF to"
 msgstr "Seleziona una destinazione per scaricare il tuo PDF"
 
-#: pages/browser.py:530
+#: pages/browser.py:607
 msgid "To perform this operation, you must first select a cell."
-msgstr ""
+msgstr "Per eseguire questa operazione è necessario prima selezionare una cella."
 "Per eseguire questa operazione, è necessario prima selezionare una cella."
 
-#: pages/browser.py:634
+#: pages/browser.py:711
 msgid "View"
 msgstr "Visualizzazione"
 
-#: pages/browser.py:818
-msgid "Total words"
-msgstr "Parole totali"
-
-#: pages/browser.py:824 pages/editor.py:586
-msgid "Difficulty"
-msgstr "Difficoltà"
-
-#: pages/browser.py:838
+#: pages/browser.py:915
 msgid "Select"
 msgstr "Selezionare"
 
@@ -458,6 +461,10 @@ msgstr "lunghezza >= 1 e nome file del sistema operativo valido"
 #: pages/editor.py:580
 msgid "length == 1"
 msgstr "lunghezza == 1"
+
+#: pages/editor.py:586
+msgid "Difficulty"
+msgstr "Difficoltà"
 
 #: pages/editor.py:593
 msgid "Easy"
@@ -519,10 +526,6 @@ msgstr "nuova parola."
 #: pages/home.py:98
 msgid "Crossword Puzzle"
 msgstr "Parole crociate"
-
-#: pages/home.py:126
-msgid "Browser"
-msgstr "Browser"
 
 #: pages/home.py:128
 msgid "BrowserPage"
@@ -588,10 +591,6 @@ msgstr "perfetto"
 msgid "Crossword Quality"
 msgstr "Qualità dei cruciverba"
 
-#: pages/home.py:322
-msgid "New version available!"
-msgstr "Nuova versione disponibile!"
-
 msgid "Geography"
 msgstr "Geografia"
 
@@ -607,6 +606,12 @@ msgstr "Informatica"
 msgid "User"
 msgstr "Utente"
 
+msgid "Total words"
+msgstr "Parole totali"
+
+msgid "Maximum"
+msgstr "Massimo"
+
 msgid "Clue"
 msgstr "Indizio"
 
@@ -616,14 +621,8 @@ msgstr "Nome"
 msgid "Symbol"
 msgstr "Simbolo"
 
-#~ msgid "Load"
-#~ msgstr "Carico"
+msgid "Search"
+msgstr "Ricerca"
 
-#~ msgid "Open"
-#~ msgstr "Aperto"
-
-#~ msgid "Make PDF"
-#~ msgstr "Fare pdf"
-
-#~ msgid "Terminate"
-#~ msgstr "Terminare"
+msgid "New version available!"
+msgstr "Nuova versione disponibile!"

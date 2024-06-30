@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-29 19:48+1000\n"
+"POT-Creation-Date: 2024-06-30 17:39+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: st <LL@li.org>\n"
@@ -33,10 +33,6 @@ msgid ""
 msgstr ""
 "Khetha faele e sebetsang ea School JSON e neng e romelletsoe ho tsamaisana "
 "le ho beha Crossword_Puzle"
-
-#: pdf.py:53
-msgid "Answers"
-msgstr "Likarabo"
 
 #: app/templates/index.html:286 pdf.py:207
 msgid "Across"
@@ -83,7 +79,7 @@ msgstr ""
 "hau a fetotsoeng a tla fetoloa!"
 
 #: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
-#: utils.py:235
+#: utils.py:246
 msgid "Info"
 msgstr "Info"
 
@@ -125,7 +121,7 @@ msgstr ""
 
 #: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
 #: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
-#: utils.py:220 utils.py:252 utils.py:256
+#: utils.py:220 utils.py:231 utils.py:263 utils.py:267
 msgid "Error"
 msgstr "Phoso"
 
@@ -211,12 +207,24 @@ msgstr "O ile a ngola ka katleho."
 
 #: utils.py:221
 msgid ""
+"You are missing pywebview, which is required when viewing the crossword game"
+" in an embedded window. Please run"
+msgstr ""
+"U lahlehile PyweBview, e hlokahalang ha u sheba papali ea Crossword ka "
+"fensetere e kentsoeng.Ka kopo matha"
+
+#: utils.py:226
+msgid "to install this dependency."
+msgstr "ho kenya ho itšetleha hona."
+
+#: utils.py:232
+msgid ""
 "You are missing pycairo, which is required to perform this operation. Please"
 " run"
 msgstr ""
 "U hloloheloa pycairo, e hlokahalang ho etsa ts'ebetso ena.Ka kopo matha"
 
-#: utils.py:226
+#: utils.py:237
 msgid ""
 "and install the headers for pycairo if you are not on Windows using "
 "pycairo's Getting Started guide"
@@ -224,7 +232,7 @@ msgstr ""
 "le ho kenya lihlooho tsa pycairo haeba u se lifensetere li sebelisa tataiso "
 "ea pycairo"
 
-#: utils.py:236
+#: utils.py:247
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -246,29 +254,30 @@ msgstr ""
 " Lits'ebetso tsohle tsa app tse sa kang tsa felisoa ka nepo li ka felisoa ka"
 " Activity Monitor ho MacOS, kapa, feela qala komporo ea hau hape ho e emisa."
 
-#: utils.py:258
+#: utils.py:269
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
 "Ho bile le phoso e sa lebelloang. Ka kopo, leka ho kenya kopo ea hau hape"
 
-#: utils.py:779
+#: utils.py:790
 msgid "Definitions are empty"
 msgstr "Litlhaloso ha li na letho"
 
-#: utils.py:782
+#: utils.py:793
 msgid "The word count or definitions are less than 3 in length"
 msgstr "Palo kapa litlhaloso li ka tlase ho 3 ka bolelele"
 
-#: utils.py:786
+#: utils.py:797
 msgid "Length of the word count is greater than the definitions"
 msgstr "Boholo ba lentsoe bo phahame ho feta litlhaloso"
 
-#: utils.py:789
+#: utils.py:800
 msgid "Escape character present in word"
 msgstr "ʻO ka hoʻohaʻana i ka hoʻohaʻana i ka"
 
 #: app/templates/index.html:13 app/templates/index.html:338
+#: pages/browser.py:458
 msgid "Crossword Puzzle - Game"
 msgstr "Crossword Pozzle - papali"
 
@@ -350,88 +359,84 @@ msgstr "Tsoela pele"
 msgid "You completed the crossword!"
 msgstr "U qetile mantsoe a sefapano!"
 
-#: app/templates/index.html:368 pages/browser.py:641
+#: app/templates/index.html:368 pages/browser.py:718
 msgid "Close"
 msgstr "Koala"
 
-#: pages/browser.py:137
+#: pages/browser.py:142
 msgid "Crossword Browser"
 msgstr "Crossword Browser"
 
-#: pages/browser.py:142 pages/editor.py:363
+#: pages/browser.py:147 pages/editor.py:363
 msgid "Back"
 msgstr "Boa Boa"
 
-#: pages/browser.py:146 pages/editor.py:367 pages/home.py:305
+#: pages/browser.py:151 pages/editor.py:367 pages/home.py:305
 msgid "HomePage"
 msgstr "Home Site Seo"
 
-#: pages/browser.py:157
+#: pages/browser.py:162
 msgid "Categorised"
 msgstr "Ka hoʻohaʻana i ka hoʻohaʻana"
 
-#: pages/browser.py:157 pages/browser.py:281
+#: pages/browser.py:162 pages/browser.py:314
 msgid "Flattened"
 msgstr "Ho ho ho flattened"
 
-#: pages/browser.py:174 pages/browser.py:296
-msgid "Search"
-msgstr "Batla"
-
-#: pages/browser.py:187
+#: pages/browser.py:191
 msgid "Create"
 msgstr "Theha"
 
-#: pages/browser.py:196
+#: pages/browser.py:200
 msgid "Play"
 msgstr "Bapala"
 
-#: pages/browser.py:206
+#: pages/browser.py:208 pages/home.py:126
+msgid "Browser"
+msgstr "Mohaser"
+
+#: pages/browser.py:208
+msgid "Embedded"
+msgstr "E kenelletse"
+
+#: pages/browser.py:211
+msgid "Game view"
+msgstr "Sheba pono ea papali"
+
+#: pages/browser.py:237
 msgid "Write to PDF"
 msgstr "Ngola ho PDF"
 
-#: pages/browser.py:214
+#: pages/browser.py:245
 msgid "Destroy"
 msgstr "Senya"
 
-#: pages/browser.py:225
+#: pages/browser.py:256
 msgid "Word count preferences"
 msgstr "Likhetho tsa palo ea mantsoe"
 
-#: pages/browser.py:240 pages/browser.py:360 pages/browser.py:391
-#: pages/browser.py:550
+#: pages/browser.py:271 pages/browser.py:400 pages/browser.py:433
+#: pages/browser.py:627
 msgid "Select word count"
 msgstr "Khetha palo ea mantsoe"
 
-#: pages/browser.py:244 pages/browser.py:390 pages/browser.py:561
-msgid "Maximum"
-msgstr "Boholo"
-
-#: pages/browser.py:255
+#: pages/browser.py:286
 msgid "Custom"
 msgstr "Tloaelo"
 
-#: pages/browser.py:424
+#: pages/browser.py:499
 msgid "Select a destination to download your PDF to"
 msgstr "Khetha sebaka seo u eang ho sona ho jarolla PDF ea hau ho"
 
-#: pages/browser.py:530
+#: pages/browser.py:607
 msgid "To perform this operation, you must first select a cell."
 msgstr "Ho etsa ts'ebetso ena, o tlameha ho khetha sele."
 
-#: pages/browser.py:634
+#: pages/browser.py:711
 msgid "View"
 msgstr "Sheba"
 
-#: pages/browser.py:818
-msgid "Total words"
-msgstr "Mantsoe a felletseng"
-
-#: pages/browser.py:824 pages/editor.py:586
-msgid "Difficulty"
-msgstr "Bothata"
-
-#: pages/browser.py:838
+#: pages/browser.py:915
 msgid "Select"
 msgstr "Khetha"
 
@@ -456,6 +461,10 @@ msgstr "Length > = 1 & Valid OS File Name"
 #: pages/editor.py:580
 msgid "length == 1"
 msgstr "Leng = 1"
+
+#: pages/editor.py:586
+msgid "Difficulty"
+msgstr "Bothata"
 
 #: pages/editor.py:593
 msgid "Easy"
@@ -517,10 +526,6 @@ msgstr "Lentsoe le lecha."
 #: pages/home.py:98
 msgid "Crossword Puzzle"
 msgstr "Phapanyetsano ea Mantsoe"
-
-#: pages/home.py:126
-msgid "Browser"
-msgstr "Mohaser"
 
 #: pages/home.py:128
 msgid "BrowserPage"
@@ -586,10 +591,6 @@ msgstr "E phethahetseng"
 msgid "Crossword Quality"
 msgstr "Boleng ba mantsoe"
 
-#: pages/home.py:322
-msgid "New version available!"
-msgstr "Phetolelo e ncha e teng!"
-
 msgid "Geography"
 msgstr "Geography"
 
@@ -605,6 +606,12 @@ msgstr "Mahlale a likomporo"
 msgid "User"
 msgstr "Basebelisi ba"
 
+msgid "Total words"
+msgstr "Mantsoe a felletseng"
+
+msgid "Maximum"
+msgstr "Boholo"
+
 msgid "Clue"
 msgstr "Leang Clue"
 
@@ -614,14 +621,8 @@ msgstr "Lebitso la lebitso"
 msgid "Symbol"
 msgstr "Letšoao la letšoao"
 
-#~ msgid "Load"
-#~ msgstr "Mojaro"
+msgid "Search"
+msgstr "Batla"
 
-#~ msgid "Open"
-#~ msgstr "Ho bula"
-
-#~ msgid "Make PDF"
-#~ msgstr "Etsa PDF"
-
-#~ msgid "Terminate"
-#~ msgstr "Felisa Les"
+msgid "New version available!"
+msgstr "Phetolelo e ncha e teng!"

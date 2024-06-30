@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-29 19:48+1000\n"
+"POT-Creation-Date: 2024-06-30 17:39+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: da <LL@li.org>\n"
@@ -33,10 +33,6 @@ msgid ""
 msgstr ""
 "Vælg en gyldig krydsord JSON -fil, der blev eksporteret ved hjælp af "
 "Crossword_Puzzle"
-
-#: pdf.py:53
-msgid "Answers"
-msgstr "Svar"
 
 #: app/templates/index.html:286 pdf.py:207
 msgid "Across"
@@ -83,7 +79,7 @@ msgstr ""
 "nulstilles!"
 
 #: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
-#: utils.py:235
+#: utils.py:246
 msgid "Info"
 msgstr "Info"
 
@@ -125,7 +121,7 @@ msgstr ""
 
 #: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
 #: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
-#: utils.py:220 utils.py:252 utils.py:256
+#: utils.py:220 utils.py:231 utils.py:263 utils.py:267
 msgid "Error"
 msgstr "Fejl"
 
@@ -209,12 +205,24 @@ msgstr "Skrevet PDF."
 
 #: utils.py:221
 msgid ""
+"You are missing pywebview, which is required when viewing the crossword game"
+" in an embedded window. Please run"
+msgstr ""
+"Du mangler PyWebView, som kræves, når du ser krydsordspilet i et indlejret "
+"vindue.Kør venligst"
+
+#: utils.py:226
+msgid "to install this dependency."
+msgstr "at installere denne afhængighed."
+
+#: utils.py:232
+msgid ""
 "You are missing pycairo, which is required to perform this operation. Please"
 " run"
 msgstr ""
 "Du mangler Pycairo, som kræves for at udføre denne operation.Kør venligst"
 
-#: utils.py:226
+#: utils.py:237
 msgid ""
 "and install the headers for pycairo if you are not on Windows using "
 "pycairo's Getting Started guide"
@@ -222,7 +230,7 @@ msgstr ""
 "Og installer overskrifterne til Pycairo, hvis du ikke er på Windows ved "
 "hjælp af Pycairo's Coming Marted Guide"
 
-#: utils.py:236
+#: utils.py:247
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -244,28 +252,29 @@ msgstr ""
 "Monitor på MacOS, eller du kan blot genstarte din computer for at afslutte "
 "dem."
 
-#: utils.py:258
+#: utils.py:269
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr "Der opstod en uventet fejl. Prøv at geninstallere programmet med"
 
-#: utils.py:779
+#: utils.py:790
 msgid "Definitions are empty"
 msgstr "Definitionerne er tomme"
 
-#: utils.py:782
+#: utils.py:793
 msgid "The word count or definitions are less than 3 in length"
 msgstr "Ordtællingen eller definitionerne er mindre end 3 i længden"
 
-#: utils.py:786
+#: utils.py:797
 msgid "Length of the word count is greater than the definitions"
 msgstr "Længden af ordtællingen er større end definitionerne"
 
-#: utils.py:789
+#: utils.py:800
 msgid "Escape character present in word"
 msgstr "Escape tegn til stede i ord"
 
 #: app/templates/index.html:13 app/templates/index.html:338
+#: pages/browser.py:458
 msgid "Crossword Puzzle - Game"
 msgstr "Krydsord puslespil - spil"
 
@@ -347,88 +356,84 @@ msgstr "Blive ved"
 msgid "You completed the crossword!"
 msgstr "Du afsluttede krydsordet!"
 
-#: app/templates/index.html:368 pages/browser.py:641
+#: app/templates/index.html:368 pages/browser.py:718
 msgid "Close"
 msgstr "Tæt"
 
-#: pages/browser.py:137
+#: pages/browser.py:142
 msgid "Crossword Browser"
 msgstr "Krydsord browser"
 
-#: pages/browser.py:142 pages/editor.py:363
+#: pages/browser.py:147 pages/editor.py:363
 msgid "Back"
 msgstr "Ryg"
 
-#: pages/browser.py:146 pages/editor.py:367 pages/home.py:305
+#: pages/browser.py:151 pages/editor.py:367 pages/home.py:305
 msgid "HomePage"
 msgstr "Hjemmeside"
 
-#: pages/browser.py:157
+#: pages/browser.py:162
 msgid "Categorised"
 msgstr "Kategoriseret"
 
-#: pages/browser.py:157 pages/browser.py:281
+#: pages/browser.py:162 pages/browser.py:314
 msgid "Flattened"
 msgstr "Fladtrykt"
 
-#: pages/browser.py:174 pages/browser.py:296
-msgid "Search"
-msgstr "Søg"
-
-#: pages/browser.py:187
+#: pages/browser.py:191
 msgid "Create"
 msgstr "skab"
 
-#: pages/browser.py:196
+#: pages/browser.py:200
 msgid "Play"
 msgstr "Spil"
 
-#: pages/browser.py:206
+#: pages/browser.py:208 pages/home.py:126
+msgid "Browser"
+msgstr "Browser"
+
+#: pages/browser.py:208
+msgid "Embedded"
+msgstr "Indlejret"
+
+#: pages/browser.py:211
+msgid "Game view"
+msgstr "Spilvisning"
+
+#: pages/browser.py:237
 msgid "Write to PDF"
 msgstr "Skriv til PDF"
 
-#: pages/browser.py:214
+#: pages/browser.py:245
 msgid "Destroy"
 msgstr "Ødelægge"
 
-#: pages/browser.py:225
+#: pages/browser.py:256
 msgid "Word count preferences"
 msgstr "Ordantal præferencer"
 
-#: pages/browser.py:240 pages/browser.py:360 pages/browser.py:391
-#: pages/browser.py:550
+#: pages/browser.py:271 pages/browser.py:400 pages/browser.py:433
+#: pages/browser.py:627
 msgid "Select word count"
 msgstr "Vælg ordantal"
 
-#: pages/browser.py:244 pages/browser.py:390 pages/browser.py:561
-msgid "Maximum"
-msgstr "Maksimum"
-
-#: pages/browser.py:255
+#: pages/browser.py:286
 msgid "Custom"
 msgstr "Brugerdefinerede"
 
-#: pages/browser.py:424
+#: pages/browser.py:499
 msgid "Select a destination to download your PDF to"
 msgstr "Vælg en destination for at downloade din PDF til"
 
-#: pages/browser.py:530
+#: pages/browser.py:607
 msgid "To perform this operation, you must first select a cell."
 msgstr "For at udføre denne operation skal du først vælge en celle."
 
-#: pages/browser.py:634
+#: pages/browser.py:711
 msgid "View"
 msgstr "Udsigt"
 
-#: pages/browser.py:818
-msgid "Total words"
-msgstr "Samlede ord"
-
-#: pages/browser.py:824 pages/editor.py:586
-msgid "Difficulty"
-msgstr "Vanskelighed"
-
-#: pages/browser.py:838
+#: pages/browser.py:915
 msgid "Select"
 msgstr "Vælg"
 
@@ -453,6 +458,10 @@ msgstr "længde >= 1 og gyldigt OS-filnavn"
 #: pages/editor.py:580
 msgid "length == 1"
 msgstr "længde == 1"
+
+#: pages/editor.py:586
+msgid "Difficulty"
+msgstr "Vanskelighed"
 
 #: pages/editor.py:593
 msgid "Easy"
@@ -514,10 +523,6 @@ msgstr "nyt ord."
 #: pages/home.py:98
 msgid "Crossword Puzzle"
 msgstr "Kryds og tværs"
-
-#: pages/home.py:126
-msgid "Browser"
-msgstr "Browser"
 
 #: pages/home.py:128
 msgid "BrowserPage"
@@ -583,10 +588,6 @@ msgstr "Perfekt"
 msgid "Crossword Quality"
 msgstr "Krydsordskvalitet"
 
-#: pages/home.py:322
-msgid "New version available!"
-msgstr "Ny version tilgængelig!"
-
 msgid "Geography"
 msgstr "Geografi"
 
@@ -602,6 +603,12 @@ msgstr "Computer videnskab"
 msgid "User"
 msgstr "Bruger"
 
+msgid "Total words"
+msgstr "Samlede ord"
+
+msgid "Maximum"
+msgstr "Maksimum"
+
 msgid "Clue"
 msgstr "Fingerpeg"
 
@@ -611,14 +618,8 @@ msgstr "Navn"
 msgid "Symbol"
 msgstr "Symbol"
 
-#~ msgid "Load"
-#~ msgstr "Læs"
+msgid "Search"
+msgstr "Søg"
 
-#~ msgid "Open"
-#~ msgstr "Åben"
-
-#~ msgid "Make PDF"
-#~ msgstr "Lav PDF"
-
-#~ msgid "Terminate"
-#~ msgstr "Opsige"
+msgid "New version available!"
+msgstr "Ny version tilgængelig!"

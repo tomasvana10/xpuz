@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-29 19:48+1000\n"
+"POT-Creation-Date: 2024-06-30 17:39+1000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: hnj <LL@li.org>\n"
@@ -33,10 +33,6 @@ msgid ""
 msgstr ""
 "Xaiv ib qho kev sib tw JONS cov ntaub ntawv uas tau xa tawm siv "
 "crossword_puzzzle"
-
-#: pdf.py:53
-msgid "Answers"
-msgstr "Lus teb"
 
 #: app/templates/index.html:286 pdf.py:207
 msgid "Across"
@@ -83,7 +79,7 @@ msgstr ""
 "tsev?Koj cov teb hloov kho yuav rov pib dua!"
 
 #: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
-#: utils.py:235
+#: utils.py:246
 msgid "Info"
 msgstr "Cov ntaub ntawv"
 
@@ -125,7 +121,7 @@ msgstr ""
 
 #: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
 #: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
-#: utils.py:220 utils.py:252 utils.py:256
+#: utils.py:220 utils.py:231 utils.py:263 utils.py:267
 msgid "Error"
 msgstr "yuam kev"
 
@@ -210,12 +206,24 @@ msgstr "Ntse sau PDF."
 
 #: utils.py:221
 msgid ""
+"You are missing pywebview, which is required when viewing the crossword game"
+" in an embedded window. Please run"
+msgstr ""
+"Koj tau ploj lawm pywebview, uas yuav tsum tau thaum saib cov kev ua si hla "
+"hauv lub qhov rais kos.Thov khiav"
+
+#: utils.py:226
+msgid "to install this dependency."
+msgstr "rau nruab qhov kev vam khom."
+
+#: utils.py:232
+msgid ""
 "You are missing pycairo, which is required to perform this operation. Please"
 " run"
 msgstr ""
 "Koj ploj lawm pycairo, uas yuav tsum tau ua txoj haujlwm no.Thov khiav"
 
-#: utils.py:226
+#: utils.py:237
 msgid ""
 "and install the headers for pycairo if you are not on Windows using "
 "pycairo's Getting Started guide"
@@ -223,7 +231,7 @@ msgstr ""
 "thiab nruab cov headers rau Pycairo yog tias koj tsis nyob ntawm Windows siv"
 " Pycairo tau pib qhia"
 
-#: utils.py:236
+#: utils.py:247
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -246,29 +254,30 @@ msgstr ""
 "ntawm Kev Saib Xyuas Kev Ua Haujlwm ntawm macOS, lossis, tsuas yog rov pib "
 "dua koj lub khoos phis tawm kom tshem tawm lawv."
 
-#: utils.py:258
+#: utils.py:269
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
 "Kev ua yuam kev tsis tau npaj txhij.Thov sim rov kho daim ntawv thov nrog"
 
-#: utils.py:779
+#: utils.py:790
 msgid "Definitions are empty"
 msgstr "Cov ntsiab lus txhais yog khoob"
 
-#: utils.py:782
+#: utils.py:793
 msgid "The word count or definitions are less than 3 in length"
 msgstr "Lo lus suav lossis cov ntsiab lus yog tsawg dua 3 nyob rau hauv ntev"
 
-#: utils.py:786
+#: utils.py:797
 msgid "Length of the word count is greater than the definitions"
 msgstr "Ntev ntawm Lo Lus suav yog ntau dua cov lus txhais"
 
-#: utils.py:789
+#: utils.py:800
 msgid "Escape character present in word"
 msgstr "Tus cim khiav tawm tam sim no hauv Lo Lus"
 
 #: app/templates/index.html:13 app/templates/index.html:338
+#: pages/browser.py:458
 msgid "Crossword Puzzle - Game"
 msgstr "Cov lus teb sib dhos ua ke - kev ua si"
 
@@ -350,90 +359,86 @@ msgstr "Mus txua ntxiv"
 msgid "You completed the crossword!"
 msgstr "Koj ua tiav cov lus hla!"
 
-#: app/templates/index.html:368 pages/browser.py:641
+#: app/templates/index.html:368 pages/browser.py:718
 msgid "Close"
 msgstr "Kaw"
 
-#: pages/browser.py:137
+#: pages/browser.py:142
 msgid "Crossword Browser"
 msgstr "Crossword Browser"
 
-#: pages/browser.py:142 pages/editor.py:363
+#: pages/browser.py:147 pages/editor.py:363
 msgid "Back"
 msgstr "Nram ntej"
 
-#: pages/browser.py:146 pages/editor.py:367 pages/home.py:305
+#: pages/browser.py:151 pages/editor.py:367 pages/home.py:305
 msgid "HomePage"
 msgstr "Homepage"
 
-#: pages/browser.py:157
+#: pages/browser.py:162
 msgid "Categorised"
 msgstr "Categorized"
 
-#: pages/browser.py:157 pages/browser.py:281
+#: pages/browser.py:162 pages/browser.py:314
 msgid "Flattened"
 msgstr "Ua kom tiaj"
 
-#: pages/browser.py:174 pages/browser.py:296
-msgid "Search"
-msgstr "Kev tshawb nrhiav"
-
-#: pages/browser.py:187
+#: pages/browser.py:191
 msgid "Create"
 msgstr "Tsim"
 
-#: pages/browser.py:196
+#: pages/browser.py:200
 msgid "Play"
 msgstr "Ua si"
 
-#: pages/browser.py:206
+#: pages/browser.py:208 pages/home.py:126
+msgid "Browser"
+msgstr "Browser"
+
+#: pages/browser.py:208
+msgid "Embedded"
+msgstr "Kos tau"
+
+#: pages/browser.py:211
+msgid "Game view"
+msgstr "Game Saib"
+
+#: pages/browser.py:237
 msgid "Write to PDF"
 msgstr "Sau rau PDF"
 
-#: pages/browser.py:214
+#: pages/browser.py:245
 msgid "Destroy"
 msgstr "Rhuav"
 
-#: pages/browser.py:225
+#: pages/browser.py:256
 msgid "Word count preferences"
 msgstr "Xaiv cov lus suav"
 
-#: pages/browser.py:240 pages/browser.py:360 pages/browser.py:391
-#: pages/browser.py:550
+#: pages/browser.py:271 pages/browser.py:400 pages/browser.py:433
+#: pages/browser.py:627
 msgid "Select word count"
 msgstr "Xaiv cov lus suav"
 
-#: pages/browser.py:244 pages/browser.py:390 pages/browser.py:561
-msgid "Maximum"
-msgstr "Ntau tshaj plaws"
-
-#: pages/browser.py:255
+#: pages/browser.py:286
 msgid "Custom"
 msgstr "Kev cai"
 
-#: pages/browser.py:424
+#: pages/browser.py:499
 msgid "Select a destination to download your PDF to"
 msgstr "Xaiv lub hom phiaj mus rub tawm koj PDF rau"
 
-#: pages/browser.py:530
+#: pages/browser.py:607
 msgid "To perform this operation, you must first select a cell."
 msgstr ""
 "Ua haujlwm ua haujlwm no, koj yuav tsum xub xaiv ntawm lub xov tooj ntawm "
 "tes."
 
-#: pages/browser.py:634
+#: pages/browser.py:711
 msgid "View"
 msgstr "Saib"
 
-#: pages/browser.py:818
-msgid "Total words"
-msgstr "Tag Nrho Cov Lus"
-
-#: pages/browser.py:824 pages/editor.py:586
-msgid "Difficulty"
-msgstr "Qho nyuaj"
-
-#: pages/browser.py:838
+#: pages/browser.py:915
 msgid "Select"
 msgstr "Xaiv"
 
@@ -458,6 +463,10 @@ msgstr "Ntev> = 1 thiab siv tau OS cov ntaub ntawv npe"
 #: pages/editor.py:580
 msgid "length == 1"
 msgstr "ntev == 1"
+
+#: pages/editor.py:586
+msgid "Difficulty"
+msgstr "Qho nyuaj"
 
 #: pages/editor.py:593
 msgid "Easy"
@@ -519,10 +528,6 @@ msgstr "Lo lus tshiab."
 #: pages/home.py:98
 msgid "Crossword Puzzle"
 msgstr "Crossword Puzzle"
-
-#: pages/home.py:126
-msgid "Browser"
-msgstr "Browser"
 
 #: pages/home.py:128
 msgid "BrowserPage"
@@ -588,10 +593,6 @@ msgstr "zoo tag nrho"
 msgid "Crossword Quality"
 msgstr "Crossword Zoo"
 
-#: pages/home.py:322
-msgid "New version available!"
-msgstr "Tshiab version!"
-
 msgid "Geography"
 msgstr "Geography"
 
@@ -607,6 +608,12 @@ msgstr "Computer Science"
 msgid "User"
 msgstr "Tus siv"
 
+msgid "Total words"
+msgstr "Tag Nrho Cov Lus"
+
+msgid "Maximum"
+msgstr "Ntau tshaj plaws"
+
 msgid "Clue"
 msgstr "Pov thawj"
 
@@ -616,14 +623,8 @@ msgstr "Lub npe"
 msgid "Symbol"
 msgstr "Lub cim"
 
-#~ msgid "Load"
-#~ msgstr "Yam ris"
+msgid "Search"
+msgstr "Kev tshawb nrhiav"
 
-#~ msgid "Open"
-#~ msgstr "Qhib"
-
-#~ msgid "Make PDF"
-#~ msgstr "Ua PDF"
-
-#~ msgid "Terminate"
-#~ msgstr "Txiav"
+msgid "New version available!"
+msgstr "Tshiab version!"

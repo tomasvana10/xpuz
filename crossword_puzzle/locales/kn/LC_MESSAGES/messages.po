@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-29 19:48+1000\n"
+"POT-Creation-Date: 2024-06-30 17:39+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: kn <LL@li.org>\n"
@@ -33,10 +33,6 @@ msgid ""
 msgstr ""
 "ಕ್ರಾಸ್‌ವರ್ಡ್_ಪ uzz ಲ್ ಬಳಸಿ ರಫ್ತು ಮಾಡಲಾದ ಮಾನ್ಯ ಕ್ರಾಸ್‌ವರ್ಡ್ JSON ಫೈಲ್ ಅನ್ನು "
 "ಆಯ್ಕೆಮಾಡಿ"
-
-#: pdf.py:53
-msgid "Answers"
-msgstr "ಉತ್ತರಗಳು"
 
 #: app/templates/index.html:286 pdf.py:207
 msgid "Across"
@@ -83,7 +79,7 @@ msgstr ""
 "ಗಳನ್ನು ಮರುಹೊಂದಿಸಲಾಗುತ್ತದೆ!"
 
 #: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
-#: utils.py:235
+#: utils.py:246
 msgid "Info"
 msgstr "ಮಾಹಿತಿ"
 
@@ -125,7 +121,7 @@ msgstr ""
 
 #: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
 #: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
-#: utils.py:220 utils.py:252 utils.py:256
+#: utils.py:220 utils.py:231 utils.py:263 utils.py:267
 msgid "Error"
 msgstr "ದೋಷ"
 
@@ -212,13 +208,25 @@ msgstr "ಪಿಡಿಎಫ್ ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಬ
 
 #: utils.py:221
 msgid ""
+"You are missing pywebview, which is required when viewing the crossword game"
+" in an embedded window. Please run"
+msgstr ""
+"ನೀವು PYWEBVIEW ಅನ್ನು ಕಳೆದುಕೊಂಡಿದ್ದೀರಿ, ಇದು ಎಂಬೆಡೆಡ್ ವಿಂಡೋದಲ್ಲಿ ಕ್ರಾಸ್‌ವರ್ಡ್ "
+"ಆಟವನ್ನು ನೋಡುವಾಗ ಅಗತ್ಯವಾಗಿರುತ್ತದೆ.ದಯವಿಟ್ಟು ಚಲಾಯಿಸಿ"
+
+#: utils.py:226
+msgid "to install this dependency."
+msgstr "ಈ ಅವಲಂಬನೆಯನ್ನು ಸ್ಥಾಪಿಸಲು."
+
+#: utils.py:232
+msgid ""
 "You are missing pycairo, which is required to perform this operation. Please"
 " run"
 msgstr ""
 "ನೀವು ಪೈಕೈರೊವನ್ನು ಕಳೆದುಕೊಂಡಿದ್ದೀರಿ, ಇದು ಈ ಕಾರ್ಯಾಚರಣೆಯನ್ನು ನಿರ್ವಹಿಸುವ "
 "ಅಗತ್ಯವಿದೆ.ದಯವಿಟ್ಟು ಚಲಾಯಿಸಿ"
 
-#: utils.py:226
+#: utils.py:237
 msgid ""
 "and install the headers for pycairo if you are not on Windows using "
 "pycairo's Getting Started guide"
@@ -226,7 +234,7 @@ msgstr ""
 "ಮತ್ತು ಪೈಕೈರೊಗೆ ನೀವು ವಿಂಡೋಸ್‌ನಲ್ಲಿ ಇಲ್ಲದಿದ್ದರೆ ಪೈಕೈರೊಗಾಗಿ ಹೆಡರ್ಗಳನ್ನು "
 "ಸ್ಥಾಪಿಸಿ ಪೈಕೈರೊನ ಪ್ರಾರಂಭಿಕ ಮಾರ್ಗದರ್ಶಿ ಬಳಸಿ"
 
-#: utils.py:236
+#: utils.py:247
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -249,30 +257,31 @@ msgstr ""
 "ನಲ್ಲಿ ಚಟುವಟಿಕೆ ಮಾನಿಟರ್ ಮೂಲಕ ಕೊನೆಗೊಳಿಸಬಹುದು ಅಥವಾ ಅವುಗಳನ್ನು ಕೊನೆಗೊಳಿಸಲು ನಿಮ್ಮ "
 "ಕಂಪ್ಯೂಟರ್ ಅನ್ನು ಮರುಪ್ರಾರಂಭಿಸಿ."
 
-#: utils.py:258
+#: utils.py:269
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
 "ಅನಿರೀಕ್ಷಿತ ದೋಷವೊಂದು ಸಂಭವಿಸಿದೆ. ದಯವಿಟ್ಟು ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಇದರೊಂದಿಗೆ "
 "ಮರುಸ್ಥಾಪಿಸಲು ಪ್ರಯತ್ನಿಸಿ"
 
-#: utils.py:779
+#: utils.py:790
 msgid "Definitions are empty"
 msgstr "ವ್ಯಾಖ್ಯಾನಗಳು ಖಾಲಿಯಾಗಿವೆ"
 
-#: utils.py:782
+#: utils.py:793
 msgid "The word count or definitions are less than 3 in length"
 msgstr "ಪದ ಎಣಿಕೆ ಅಥವಾ ವ್ಯಾಖ್ಯಾನಗಳು 3 ಕ್ಕಿಂತ ಕಡಿಮೆ ಉದ್ದವನ್ನು ಹೊಂದಿವೆ"
 
-#: utils.py:786
+#: utils.py:797
 msgid "Length of the word count is greater than the definitions"
 msgstr "ಪದ ಎಣಿಕೆಯ ಉದ್ದವು ವ್ಯಾಖ್ಯಾನಗಳಿಗಿಂತ ಹೆಚ್ಚಾಗಿದೆ"
 
-#: utils.py:789
+#: utils.py:800
 msgid "Escape character present in word"
 msgstr "ಪದದಲ್ಲಿರುವ ಎಸ್ಕೇಪ್ ಅಕ್ಷರ"
 
 #: app/templates/index.html:13 app/templates/index.html:338
+#: pages/browser.py:458
 msgid "Crossword Puzzle - Game"
 msgstr "ಕ್ರಾಸ್‌ವರ್ಡ್ ಒಗಟು - ಆಟ"
 
@@ -354,88 +363,84 @@ msgstr "ಮುಂದುವರಿಸು"
 msgid "You completed the crossword!"
 msgstr "ನೀವು ಕ್ರಾಸ್‌ವರ್ಡ್ ಪೂರ್ಣಗೊಳಿಸಿದ್ದೀರಿ!"
 
-#: app/templates/index.html:368 pages/browser.py:641
+#: app/templates/index.html:368 pages/browser.py:718
 msgid "Close"
 msgstr "ಮುಚ್ಚಿ"
 
-#: pages/browser.py:137
+#: pages/browser.py:142
 msgid "Crossword Browser"
 msgstr "ಕ್ರಾಸ್ವರ್ಡ್ ಬ್ರೌಸರ್"
 
-#: pages/browser.py:142 pages/editor.py:363
+#: pages/browser.py:147 pages/editor.py:363
 msgid "Back"
 msgstr "ಹಿಂದೆ"
 
-#: pages/browser.py:146 pages/editor.py:367 pages/home.py:305
+#: pages/browser.py:151 pages/editor.py:367 pages/home.py:305
 msgid "HomePage"
 msgstr "ಮುಖಪುಟ"
 
-#: pages/browser.py:157
+#: pages/browser.py:162
 msgid "Categorised"
 msgstr "ವರ್ಗೀಕರಿಸಲಾಗಿದೆ"
 
-#: pages/browser.py:157 pages/browser.py:281
+#: pages/browser.py:162 pages/browser.py:314
 msgid "Flattened"
 msgstr "ಚಪ್ಪಟೆಯಾಗಿದೆ"
 
-#: pages/browser.py:174 pages/browser.py:296
-msgid "Search"
-msgstr "ಹುಡುಕಿ Kannada"
-
-#: pages/browser.py:187
+#: pages/browser.py:191
 msgid "Create"
 msgstr "ರಚಿಸು"
 
-#: pages/browser.py:196
+#: pages/browser.py:200
 msgid "Play"
 msgstr "ನುಡಿಸು"
 
-#: pages/browser.py:206
+#: pages/browser.py:208 pages/home.py:126
+msgid "Browser"
+msgstr "ಬ್ರೌಸರ್"
+
+#: pages/browser.py:208
+msgid "Embedded"
+msgstr "ಹುದುಗಿಸಿದ"
+
+#: pages/browser.py:211
+msgid "Game view"
+msgstr "ಆಟದ ನೋಟ"
+
+#: pages/browser.py:237
 msgid "Write to PDF"
 msgstr "ಪಿಡಿಎಫ್‌ಗೆ ಬರೆಯಿರಿ"
 
-#: pages/browser.py:214
+#: pages/browser.py:245
 msgid "Destroy"
 msgstr "ನಾಶಮಾಡು"
 
-#: pages/browser.py:225
+#: pages/browser.py:256
 msgid "Word count preferences"
 msgstr "ಪದಗಳ ಎಣಿಕೆ ಆದ್ಯತೆಗಳು"
 
-#: pages/browser.py:240 pages/browser.py:360 pages/browser.py:391
-#: pages/browser.py:550
+#: pages/browser.py:271 pages/browser.py:400 pages/browser.py:433
+#: pages/browser.py:627
 msgid "Select word count"
 msgstr "ಪದಗಳ ಸಂಖ್ಯೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ"
 
-#: pages/browser.py:244 pages/browser.py:390 pages/browser.py:561
-msgid "Maximum"
-msgstr "ಗರಿಷ್ಠ"
-
-#: pages/browser.py:255
+#: pages/browser.py:286
 msgid "Custom"
 msgstr "ಕಸ್ಟಮ್"
 
-#: pages/browser.py:424
+#: pages/browser.py:499
 msgid "Select a destination to download your PDF to"
 msgstr "ನಿಮ್ಮ ಪಿಡಿಎಫ್ ಅನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ಗಮ್ಯಸ್ಥಾನವನ್ನು ಆಯ್ಕೆಮಾಡಿ"
 
-#: pages/browser.py:530
+#: pages/browser.py:607
 msgid "To perform this operation, you must first select a cell."
 msgstr "ಈ ಕಾರ್ಯಾಚರಣೆಯನ್ನು ಮಾಡಲು, ನೀವು ಮೊದಲು ಕೋಶವನ್ನು ಆಯ್ಕೆ ಮಾಡಬೇಕು."
 
-#: pages/browser.py:634
+#: pages/browser.py:711
 msgid "View"
 msgstr "ನೋಟ"
 
-#: pages/browser.py:818
-msgid "Total words"
-msgstr "ಒಟ್ಟು ಪದಗಳು"
-
-#: pages/browser.py:824 pages/editor.py:586
-msgid "Difficulty"
-msgstr "ತೊಂದರೆ"
-
-#: pages/browser.py:838
+#: pages/browser.py:915
 msgid "Select"
 msgstr "ಆಯ್ಕೆ ಮಾಡಿ"
 
@@ -460,6 +465,10 @@ msgstr "ಉದ್ದ >= 1 ಮತ್ತು ಮಾನ್ಯ OS ಫೈಲ್ ಹೆ
 #: pages/editor.py:580
 msgid "length == 1"
 msgstr "ಉದ್ದ == 1"
+
+#: pages/editor.py:586
+msgid "Difficulty"
+msgstr "ತೊಂದರೆ"
 
 #: pages/editor.py:593
 msgid "Easy"
@@ -521,10 +530,6 @@ msgstr "ಹೊಸ ಪದ."
 #: pages/home.py:98
 msgid "Crossword Puzzle"
 msgstr "ಪದಬಂಧ"
-
-#: pages/home.py:126
-msgid "Browser"
-msgstr "ಬ್ರೌಸರ್"
 
 #: pages/home.py:128
 msgid "BrowserPage"
@@ -590,10 +595,6 @@ msgstr "ಪರಿಪೂರ್ಣ"
 msgid "Crossword Quality"
 msgstr "ಕ್ರಾಸ್‌ವರ್ಡ್ ಗುಣಮಟ್ಟ"
 
-#: pages/home.py:322
-msgid "New version available!"
-msgstr "ಹೊಸ ಆವೃತ್ತಿ ಲಭ್ಯವಿದೆ!"
-
 msgid "Geography"
 msgstr "ಭೂಗೋಳಶಾಸ್ತ್ರ"
 
@@ -609,6 +610,12 @@ msgstr "ಗಣಕ ಯಂತ್ರ ವಿಜ್ಞಾನ"
 msgid "User"
 msgstr "ಬಳಕೆದಾರ"
 
+msgid "Total words"
+msgstr "ಒಟ್ಟು ಪದಗಳು"
+
+msgid "Maximum"
+msgstr "ಗರಿಷ್ಠ"
+
 msgid "Clue"
 msgstr "ಸುಳಿವು"
 
@@ -618,14 +625,8 @@ msgstr "ಹೆಸರು"
 msgid "Symbol"
 msgstr "ಚಿಹ್ನೆ"
 
-#~ msgid "Load"
-#~ msgstr "ಲೋಡ್"
+msgid "Search"
+msgstr "ಹುಡುಕಿ Kannada"
 
-#~ msgid "Open"
-#~ msgstr "ತೆರೆಯಿರಿ"
-
-#~ msgid "Make PDF"
-#~ msgstr "ಪಿಡಿಎಫ್ ಮಾಡಿ"
-
-#~ msgid "Terminate"
-#~ msgstr "ಕೊನೆಗೊಳಿಸು"
+msgid "New version available!"
+msgstr "ಹೊಸ ಆವೃತ್ತಿ ಲಭ್ಯವಿದೆ!"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-29 19:48+1000\n"
+"POT-Creation-Date: 2024-06-30 17:39+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ne <LL@li.org>\n"
@@ -33,10 +33,6 @@ msgid ""
 msgstr ""
 "एक मान्य क्रसवर्ड जेसन फाईल चयन गर्नुहोस् जुन क्रसवर्ड_पीसुजल प्रयोग गरी "
 "निर्यात गरिएको थियो"
-
-#: pdf.py:53
-msgid "Answers"
-msgstr "उत्तर"
 
 #: app/templates/index.html:286 pdf.py:207
 msgid "Across"
@@ -83,7 +79,7 @@ msgstr ""
 "रिसेट गरिनेछ!"
 
 #: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
-#: utils.py:235
+#: utils.py:246
 msgid "Info"
 msgstr "जानकारी"
 
@@ -124,7 +120,7 @@ msgstr ""
 
 #: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
 #: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
-#: utils.py:220 utils.py:252 utils.py:256
+#: utils.py:220 utils.py:231 utils.py:263 utils.py:267
 msgid "Error"
 msgstr "त्रुटि"
 
@@ -210,11 +206,23 @@ msgstr "सफलतापूर्वक pdf लेखियो।"
 
 #: utils.py:221
 msgid ""
+"You are missing pywebview, which is required when viewing the crossword game"
+" in an embedded window. Please run"
+msgstr ""
+"तपाईं pywebwworw हराइरहनुभएको छ, जो एक इम्बेडेड विन्डोमा क्रसवर्ड खेल हेर्दा"
+" आवश्यक छ।रन गर"
+
+#: utils.py:226
+msgid "to install this dependency."
+msgstr "यो निर्भरता स्थापना गर्न।"
+
+#: utils.py:232
+msgid ""
 "You are missing pycairo, which is required to perform this operation. Please"
 " run"
 msgstr "तपाईं pycairo हराइरहेको छ, जुन यो अपरेशन प्रदर्शन गर्न आवश्यक छ।रन गर"
 
-#: utils.py:226
+#: utils.py:237
 msgid ""
 "and install the headers for pycairo if you are not on Windows using "
 "pycairo's Getting Started guide"
@@ -222,7 +230,7 @@ msgstr ""
 "र यदि तपाईं pyapiro को प्रयोग गरीरहेको बेलायूको लागि नभई विन्डोजमा हजुरहरू "
 "स्थापना गर्नुहोस्"
 
-#: utils.py:236
+#: utils.py:247
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -244,30 +252,31 @@ msgstr ""
 "राम्ररी समाप्त नगरिएका छन् MacOS मा गतिविधि मनिटर मार्फत समाप्त गर्न सकिन्छ,"
 " वा, तिनीहरूलाई समाप्त गर्नको लागि तपाइँको कम्प्युटर पुन: सुरु गर्नुहोस्।"
 
-#: utils.py:258
+#: utils.py:269
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
 "एउटा अनपेक्षित त्रुटि उत्पन्न भयो । कृपया यससँग अनुप्रयोग पुन: स्थापना गर्ने"
 " प्रयास गर्नुहोस्"
 
-#: utils.py:779
+#: utils.py:790
 msgid "Definitions are empty"
 msgstr "परिभाषाहरू खाली छन्"
 
-#: utils.py:782
+#: utils.py:793
 msgid "The word count or definitions are less than 3 in length"
 msgstr "शब्द गणना वा परिभाषाहरू लम्बाइमा 3 भन्दा कम छन्"
 
-#: utils.py:786
+#: utils.py:797
 msgid "Length of the word count is greater than the definitions"
 msgstr "शब्द गणनाको लम्बाइ परिभाषाभन्दा ठूलो छ"
 
-#: utils.py:789
+#: utils.py:800
 msgid "Escape character present in word"
 msgstr "शब्दमा उपस्थित क्यारेक्टर बाट बच्नुहोस्"
 
 #: app/templates/index.html:13 app/templates/index.html:338
+#: pages/browser.py:458
 msgid "Crossword Puzzle - Game"
 msgstr "क्रसवर्ड पजल - खेल"
 
@@ -349,88 +358,84 @@ msgstr "जारी राख्नु"
 msgid "You completed the crossword!"
 msgstr "तपाईंले क्रसवर्ड पूरा गर्नुभयो!"
 
-#: app/templates/index.html:368 pages/browser.py:641
+#: app/templates/index.html:368 pages/browser.py:718
 msgid "Close"
 msgstr "बन्द गर्नुहोस्"
 
-#: pages/browser.py:137
+#: pages/browser.py:142
 msgid "Crossword Browser"
 msgstr "क्रसवर्ड ब्राउजर"
 
-#: pages/browser.py:142 pages/editor.py:363
+#: pages/browser.py:147 pages/editor.py:363
 msgid "Back"
 msgstr "पछाडि"
 
-#: pages/browser.py:146 pages/editor.py:367 pages/home.py:305
+#: pages/browser.py:151 pages/editor.py:367 pages/home.py:305
 msgid "HomePage"
 msgstr "गृहपृष्ठ"
 
-#: pages/browser.py:157
+#: pages/browser.py:162
 msgid "Categorised"
 msgstr "वर्गीकृत गरियो"
 
-#: pages/browser.py:157 pages/browser.py:281
+#: pages/browser.py:162 pages/browser.py:314
 msgid "Flattened"
 msgstr "चपटा भयो"
 
-#: pages/browser.py:174 pages/browser.py:296
-msgid "Search"
-msgstr "खोजी"
-
-#: pages/browser.py:187
+#: pages/browser.py:191
 msgid "Create"
 msgstr "सृष्टि गर्नु्"
 
-#: pages/browser.py:196
+#: pages/browser.py:200
 msgid "Play"
 msgstr "खेल्नु"
 
-#: pages/browser.py:206
+#: pages/browser.py:208 pages/home.py:126
+msgid "Browser"
+msgstr "ब्राउजर"
+
+#: pages/browser.py:208
+msgid "Embedded"
+msgstr "इम्बेड गरिएको"
+
+#: pages/browser.py:211
+msgid "Game view"
+msgstr "खेल दृश्य"
+
+#: pages/browser.py:237
 msgid "Write to PDF"
 msgstr "PDF मा लेख्नुहोस्"
 
-#: pages/browser.py:214
+#: pages/browser.py:245
 msgid "Destroy"
 msgstr "नष्ट"
 
-#: pages/browser.py:225
+#: pages/browser.py:256
 msgid "Word count preferences"
 msgstr "शब्द गणना प्राथमिकताहरू"
 
-#: pages/browser.py:240 pages/browser.py:360 pages/browser.py:391
-#: pages/browser.py:550
+#: pages/browser.py:271 pages/browser.py:400 pages/browser.py:433
+#: pages/browser.py:627
 msgid "Select word count"
 msgstr "शब्द गणना चयन गर्नुहोस्"
 
-#: pages/browser.py:244 pages/browser.py:390 pages/browser.py:561
-msgid "Maximum"
-msgstr "अधिकतम"
-
-#: pages/browser.py:255
+#: pages/browser.py:286
 msgid "Custom"
 msgstr "अनुकूलन"
 
-#: pages/browser.py:424
+#: pages/browser.py:499
 msgid "Select a destination to download your PDF to"
 msgstr "तपाईंको PDF डाउनलोड गर्न गन्तव्य चयन गर्नुहोस्"
 
-#: pages/browser.py:530
+#: pages/browser.py:607
 msgid "To perform this operation, you must first select a cell."
 msgstr "यो अपरेशन प्रदर्शन गर्न, तपाईंले पहिले एउटा सेल चयन गर्नुपर्नेछ।"
 
-#: pages/browser.py:634
+#: pages/browser.py:711
 msgid "View"
 msgstr "हेर्नुहोस्"
 
-#: pages/browser.py:818
-msgid "Total words"
-msgstr "कूल शब्दहरू"
-
-#: pages/browser.py:824 pages/editor.py:586
-msgid "Difficulty"
-msgstr "कठिनाइ"
-
-#: pages/browser.py:838
+#: pages/browser.py:915
 msgid "Select"
 msgstr "चयन गर्नुहोस्"
 
@@ -455,6 +460,10 @@ msgstr "लम्बाइ >= १ र वैध ओएस फाइल नाम
 #: pages/editor.py:580
 msgid "length == 1"
 msgstr "लम्बाई == 1"
+
+#: pages/editor.py:586
+msgid "Difficulty"
+msgstr "कठिनाइ"
 
 #: pages/editor.py:593
 msgid "Easy"
@@ -516,10 +525,6 @@ msgstr "नयाँ शब्द।"
 #: pages/home.py:98
 msgid "Crossword Puzzle"
 msgstr "क्रसवर्ड पजल"
-
-#: pages/home.py:126
-msgid "Browser"
-msgstr "ब्राउजर"
 
 #: pages/home.py:128
 msgid "BrowserPage"
@@ -585,10 +590,6 @@ msgstr "पूर्ण"
 msgid "Crossword Quality"
 msgstr "क्रसवर्ड को गुणस्तर"
 
-#: pages/home.py:322
-msgid "New version available!"
-msgstr "नयाँ संस्करण उपलब्ध!"
-
 msgid "Geography"
 msgstr "भूगोल"
 
@@ -604,6 +605,12 @@ msgstr "कम्प्युटर विज्ञान"
 msgid "User"
 msgstr "प्रयोगकर्ता"
 
+msgid "Total words"
+msgstr "कूल शब्दहरू"
+
+msgid "Maximum"
+msgstr "अधिकतम"
+
 msgid "Clue"
 msgstr "Clue"
 
@@ -613,14 +620,8 @@ msgstr "नाम"
 msgid "Symbol"
 msgstr "प्रतीक"
 
-#~ msgid "Load"
-#~ msgstr "लोड गर्नुहोस्"
+msgid "Search"
+msgstr "खोजी"
 
-#~ msgid "Open"
-#~ msgstr "खोल्नुहोस्"
-
-#~ msgid "Make PDF"
-#~ msgstr "PDF बनाउनुहोस्"
-
-#~ msgid "Terminate"
-#~ msgstr "समाप्त गर्नुहोस्"
+msgid "New version available!"
+msgstr "नयाँ संस्करण उपलब्ध!"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-29 19:48+1000\n"
+"POT-Creation-Date: 2024-06-30 17:39+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: haw <LL@li.org>\n"
@@ -33,10 +33,6 @@ msgid ""
 msgstr ""
 "E koho i kahi faile crossword Jon Pro faile i laweʻia i ka hoʻohanaʻana i ka"
 " crosword_puzzle"
-
-#: pdf.py:53
-msgid "Answers"
-msgstr "Pane"
 
 #: app/templates/index.html:286 pdf.py:207
 msgid "Across"
@@ -81,7 +77,7 @@ msgid ""
 msgstr "Makemake ʻoe e hoʻi i ka pale home? "
 
 #: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
-#: utils.py:235
+#: utils.py:246
 msgid "Info"
 msgstr "ʻIke"
 
@@ -123,7 +119,7 @@ msgstr ""
 
 #: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
 #: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
-#: utils.py:220 utils.py:252 utils.py:256
+#: utils.py:220 utils.py:231 utils.py:263 utils.py:267
 msgid "Error"
 msgstr "Kuhihewa"
 
@@ -208,11 +204,23 @@ msgstr "Ua kākau ponoʻo PDF."
 
 #: utils.py:221
 msgid ""
+"You are missing pywebview, which is required when viewing the crossword game"
+" in an embedded window. Please run"
+msgstr ""
+"Oe ke nalowale pywebject, e pono ai ke nānā i ke nānāʻana i ka pāʻani "
+"crossword i loko o kahi puka aniani i kahi puka aniani.Holo"
+
+#: utils.py:226
+msgid "to install this dependency."
+msgstr "e hoʻokau i kēia hilinaʻi."
+
+#: utils.py:232
+msgid ""
 "You are missing pycairo, which is required to perform this operation. Please"
 " run"
 msgstr "Ua halaʻoe i ka pycairo, kahi e pono ai e hana i kēia hana.Holo"
 
-#: utils.py:226
+#: utils.py:237
 msgid ""
 "and install the headers for pycairo if you are not on Windows using "
 "pycairo's Getting Started guide"
@@ -220,7 +228,7 @@ msgstr ""
 "a hoʻonohonoho i nā poʻomanaʻo no ka pycaro ināʻaʻoleʻoe ma ka Windows me ka"
 " hoʻohanaʻana i nā alakaʻiʻo Pycairo"
 
-#: utils.py:236
+#: utils.py:247
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -245,28 +253,29 @@ msgstr ""
 "ma o Activity Monitor ma MacOS, a i ʻole, e hoʻomaka hou i kāu kamepiula e "
 "hoʻopau iā lākou."
 
-#: utils.py:258
+#: utils.py:269
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr "Ua loaʻa kahi hewa i manaʻo ʻole ʻia. "
 
-#: utils.py:779
+#: utils.py:790
 msgid "Definitions are empty"
 msgstr "ʻAʻohe wehewehe"
 
-#: utils.py:782
+#: utils.py:793
 msgid "The word count or definitions are less than 3 in length"
 msgstr "ʻO ka helu a i ʻole ka wehewehe ʻana ʻaʻole ia ma mua o 3 ka lōʻihi"
 
-#: utils.py:786
+#: utils.py:797
 msgid "Length of the word count is greater than the definitions"
 msgstr "ʻOi aku ka lōʻihi o ka helu ʻōlelo ma mua o nā wehewehe"
 
-#: utils.py:789
+#: utils.py:800
 msgid "Escape character present in word"
 msgstr "Pakele i ke ano ma ka olelo"
 
 #: app/templates/index.html:13 app/templates/index.html:338
+#: pages/browser.py:458
 msgid "Crossword Puzzle - Game"
 msgstr "Crossword puzzle - pāʻani"
 
@@ -348,88 +357,84 @@ msgstr "E hoʻomau"
 msgid "You completed the crossword!"
 msgstr "Ua hoʻopauʻoe i ka crossword!"
 
-#: app/templates/index.html:368 pages/browser.py:641
+#: app/templates/index.html:368 pages/browser.py:718
 msgid "Close"
 msgstr "Pani"
 
-#: pages/browser.py:137
+#: pages/browser.py:142
 msgid "Crossword Browser"
 msgstr "Huli Huaʻōlelo Crossword"
 
-#: pages/browser.py:142 pages/editor.py:363
+#: pages/browser.py:147 pages/editor.py:363
 msgid "Back"
 msgstr "Hoʻi"
 
-#: pages/browser.py:146 pages/editor.py:367 pages/home.py:305
+#: pages/browser.py:151 pages/editor.py:367 pages/home.py:305
 msgid "HomePage"
 msgstr "ʻAoʻao"
 
-#: pages/browser.py:157
+#: pages/browser.py:162
 msgid "Categorised"
 msgstr "Wehewehe ʻia"
 
-#: pages/browser.py:157 pages/browser.py:281
+#: pages/browser.py:162 pages/browser.py:314
 msgid "Flattened"
 msgstr "Palahalaha"
 
-#: pages/browser.py:174 pages/browser.py:296
-msgid "Search"
-msgstr "Huli"
-
-#: pages/browser.py:187
+#: pages/browser.py:191
 msgid "Create"
 msgstr "Hana"
 
-#: pages/browser.py:196
+#: pages/browser.py:200
 msgid "Play"
 msgstr "Pāʻani"
 
-#: pages/browser.py:206
+#: pages/browser.py:208 pages/home.py:126
+msgid "Browser"
+msgstr "Ka mea nānā"
+
+#: pages/browser.py:208
+msgid "Embedded"
+msgstr "Hoʻokomoʻia"
+
+#: pages/browser.py:211
+msgid "Game view"
+msgstr "Pāʻani Paʻa"
+
+#: pages/browser.py:237
 msgid "Write to PDF"
 msgstr "Kākau i PDF"
 
-#: pages/browser.py:214
+#: pages/browser.py:245
 msgid "Destroy"
 msgstr "Luku"
 
-#: pages/browser.py:225
+#: pages/browser.py:256
 msgid "Word count preferences"
 msgstr "Nā koho helu huaʻōlelo"
 
-#: pages/browser.py:240 pages/browser.py:360 pages/browser.py:391
-#: pages/browser.py:550
+#: pages/browser.py:271 pages/browser.py:400 pages/browser.py:433
+#: pages/browser.py:627
 msgid "Select word count"
 msgstr "E koho i ka helu ʻōlelo"
 
-#: pages/browser.py:244 pages/browser.py:390 pages/browser.py:561
-msgid "Maximum"
-msgstr "Loa"
-
-#: pages/browser.py:255
+#: pages/browser.py:286
 msgid "Custom"
 msgstr "Kuʻuna"
 
-#: pages/browser.py:424
+#: pages/browser.py:499
 msgid "Select a destination to download your PDF to"
 msgstr "Koho i kahi wahi e hoʻoiho ai i kāu PDF i"
 
-#: pages/browser.py:530
+#: pages/browser.py:607
 msgid "To perform this operation, you must first select a cell."
 msgstr "E hana i kēia hana, ponoʻoe e koho mua i kahi kelepona."
 
-#: pages/browser.py:634
+#: pages/browser.py:711
 msgid "View"
 msgstr "Nānā"
 
-#: pages/browser.py:818
-msgid "Total words"
-msgstr "Nā hua'ōlelo"
-
-#: pages/browser.py:824 pages/editor.py:586
-msgid "Difficulty"
-msgstr "Pilikia"
-
-#: pages/browser.py:838
+#: pages/browser.py:915
 msgid "Select"
 msgstr "E koho"
 
@@ -454,6 +459,10 @@ msgstr "lōʻihi >= 1 a me ka inoa faila OS kūpono"
 #: pages/editor.py:580
 msgid "length == 1"
 msgstr "lōʻihi == 1"
+
+#: pages/editor.py:586
+msgid "Difficulty"
+msgstr "Pilikia"
 
 #: pages/editor.py:593
 msgid "Easy"
@@ -515,10 +524,6 @@ msgstr "ʻōlelo hou."
 #: pages/home.py:98
 msgid "Crossword Puzzle"
 msgstr "Huʻi Huaʻōlelo Crossword"
-
-#: pages/home.py:126
-msgid "Browser"
-msgstr "Ka mea nānā"
 
 #: pages/home.py:128
 msgid "BrowserPage"
@@ -584,10 +589,6 @@ msgstr "hemolele"
 msgid "Crossword Quality"
 msgstr "ʻO keʻano o ke aloha"
 
-#: pages/home.py:322
-msgid "New version available!"
-msgstr "Loaʻa ma hope!"
-
 msgid "Geography"
 msgstr "Palapala honua"
 
@@ -603,6 +604,12 @@ msgstr "ʻepekema kamepiula"
 msgid "User"
 msgstr "mea hoʻohana"
 
+msgid "Total words"
+msgstr "Nā hua'ōlelo"
+
+msgid "Maximum"
+msgstr "Loa"
+
 msgid "Clue"
 msgstr "ʻIkepili"
 
@@ -612,14 +619,8 @@ msgstr "Inoa"
 msgid "Symbol"
 msgstr "Hoailona"
 
-#~ msgid "Load"
-#~ msgstr "Haawe"
+msgid "Search"
+msgstr "Huli"
 
-#~ msgid "Open"
-#~ msgstr "Wehe"
-
-#~ msgid "Make PDF"
-#~ msgstr "Make pdf"
-
-#~ msgid "Terminate"
-#~ msgstr "Hoʻopau"
+msgid "New version available!"
+msgstr "Loaʻa ma hope!"
