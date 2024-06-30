@@ -158,7 +158,7 @@ class HomePage(CTkFrame, Addons):
             self.settings_container,
             text=_("Global Settings"),
             font=self.SUBHEADING_FONT,
-            wraplength=self.settings_container.winfo_reqwidth() * 0.9,
+            wraplength=self.settings_container.winfo_reqwidth() * 0.8,
         )
 
         self.l_language_opts = CTkLabel(

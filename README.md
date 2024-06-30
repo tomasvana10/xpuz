@@ -36,6 +36,9 @@ An educational GUI package built with `CustomTkinter` that allows you to design 
 > [!WARNING]  
 > Languages whose alphabets use complex glyphs (such as Mandarin and Japanese) are not supported when making PDFs.
 
+`pywebview` is another optional dependency that is required if you want to view crosswords in a webview instead of your browser. Please run `pip install pywebview` if this is the case.
+
+
 ## Tested python versions
 - **Windows**: Python >= 3.7
 - **MacOS**: Python >= 3.8
@@ -43,13 +46,14 @@ An educational GUI package built with `CustomTkinter` that allows you to design 
 
 ## Requirements
 - **Hardware**
-  - RAM: >120MB (GUI only), >500MB (GUI and browser to play crossword)
-  - CPU: Any
-  - Storage: >6MB available space
+  - **RAM**: >120MB (GUI only), >500MB (GUI and browser to play crossword)
+  - **CPU**: Any
+  - **Storage**: >50MB available space
 
 - **Software**
-  - A browser that isn't Internet Explorer
-  - Python and pip (see **[Installation](#installation)**)
+  - **OS**: Windows, MacOS, Linux
+  - **Browser**: Not Internet Explorer
+  - **Additional**: Python and pip (see **[Installation](#installation)**)
 
 ## Limitations
 - Right-to-left scripts are not supported.
@@ -128,6 +132,8 @@ Check out the wiki **[here](https://github.com/tomasvana10/crossword_puzzle/wiki
 - [CTkToolTip](https://github.com/Akascape/CTkToolTip) - Tooltips for forms in the crossword editor
 - [pathvalidate](https://pypi.org/project/pathvalidate/) - Validating crossword name input
 - [platformdirs](https://pypi.org/project/platformdirs/) - Storing config and user-made crosswords
+- [Pycairo](https://pycairo.readthedocs.io/en/latest/) - Crossword PDF creation
+- [pywebview](https://pywebview.flowrl.com/) - Browser webview to play crossword
 
 ## Other acknowledgements
 - [NYTimes Mini Crossword](https://www.nytimes.com/crosswords/game/mini) - Heavily inspired the design of the web application
@@ -139,7 +145,7 @@ Check out the wiki **[here](https://github.com/tomasvana10/crossword_puzzle/wiki
 ## Gallery
 <img alt="crossword puzzle home" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/6b9eba14-220d-43dc-8b28-ddb92ea2d3b6">
 <hr>
-<img alt="crossword puzzle browser" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/ed54ded8-d99b-41f5-98e4-91b8c19e5504">
+<img alt="crossword puzzle browser" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/6e5b7eae-970e-46b5-8a72-34d70bea2332">
 <hr>
 <img alt="crossword puzzle editor" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/33d7ec0c-ee2e-435f-9386-e7373f8a6378">
 <hr>

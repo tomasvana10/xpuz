@@ -100,7 +100,8 @@ BASE_ENG_CWORD_QUALITIES: List[str] = [
     "perfect",
 ]
 BASE_ENG_APPEARANCES: List[str] = ["light", "dark", "system"]
-BASE_ENG_VIEWS: List[str] = ["Categorised", "Flattened"]
+BASE_ENG_BROWSER_VIEWS: List[str] = ["Categorised", "Flattened"]
+BASE_ENG_APP_VIEWS: List[str] = ["Browser", "Embedded"]
 
 
 """Misc constants"""

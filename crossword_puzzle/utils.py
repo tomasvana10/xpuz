@@ -215,6 +215,17 @@ class GUIHelper:
                 _("Successfully wrote PDF.") + fails_msg,
             )
         
+        if "app_view_missing_dep" in kwargs:
+            return messagebox.showerror(
+                _("Error"),
+                _(
+                    "You are missing pywebview, which is required when viewing "
+                    "the crossword game in an embedded window. Please run"
+                )
+                + " pip install pywebview "
+                + _("to install this dependency.")
+            )
+        
         if "pdf_missing_dep" in kwargs:
             return messagebox.showerror(
                 _("Error"),

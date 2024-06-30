@@ -2,7 +2,7 @@
 
 from json import dumps, load
 from os import DirEntry, PathLike, listdir, path
-from tkinter import Event, IntVar, StringVar, filedialog
+from tkinter import Event, IntVar, StringVar, filedialog, Tk
 from typing import Dict, List, Optional, Tuple, Union
 from uuid import uuid4
 from webbrowser import open_new_tab
@@ -25,7 +25,8 @@ from platformdirs import user_downloads_dir
 from crossword_puzzle.base import Addons, Base
 from crossword_puzzle.constants import (
     ACROSS,
-    BASE_ENG_VIEWS,
+    BASE_ENG_BROWSER_VIEWS,
+    BASE_ENG_APP_VIEWS,
     DOWN,
     EMPTY,
     PAGE_MAP,
@@ -64,7 +65,7 @@ class BrowserPage(CTkFrame, Addons):
         self._width, self._height = (
             self.master.winfo_width(), self.master.winfo_height()
         )
-        
+
         self.grid_rowconfigure(0, minsize=self._height * 0.15, weight=1)
         self.grid_rowconfigure(1, minsize=self._height * 0.85, weight=1)
         self.grid_columnconfigure(0, weight=1)
@@ -76,8 +77,12 @@ class BrowserPage(CTkFrame, Addons):
         self.webapp_on: bool = False
         self.wc_pref: IntVar = IntVar()  # Word count preference
         self.wc_pref.set(-1)
-        self.view_pref: StringVar = StringVar()  # Browser view preference
-        self.view_pref.set(_(Base.cfg.get("m", "view")))
+        self.browser_view_pref: StringVar = StringVar()  # Browser view preference
+        self.browser_view_pref.set(_(Base.cfg.get("m", "browser_view")))
+        self.app_view_pref: StringVar = StringVar()  # App view preference
+        self.app_view_pref.set(_(Base.cfg.get("m", "app_view")))
+        self.webview = None
+        self.webview_open: bool = False
 
         # Notify user the first time they open this page
         if Base.cfg.get("misc", "browser_opened") == "0":
@@ -90,11 +95,11 @@ class BrowserPage(CTkFrame, Addons):
         )
         self.browser_container = CTkFrame(
             self, corner_radius=0, fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN))
-        
+
         self.view_container = CTkFrame(
             self.browser_container, fg_color=(Colour.Light.MAIN, Colour.Dark.MAIN)
         )
-        
+
         self.center_container = CTkFrame(self.browser_container)
 
         self.block_container = CTkScrollableFrame(
@@ -154,20 +159,19 @@ class BrowserPage(CTkFrame, Addons):
             font=self.TEXT_FONT,
         )
 
-        self.views = [_("Categorised"), _("Flattened")]
-        self.sb_view = CTkSegmentedButton(
+        self.browser_views = [_("Categorised"), _("Flattened")]
+        self.sb_browser_view = CTkSegmentedButton(
             self.view_container,
-            values=self.views,
+            values=self.browser_views,
             font=self.TEXT_FONT,
-            command=self.change_view,
-            variable=self.view_pref,
+            command=self.change_browser_view,
+            variable=self.browser_view_pref,
             fg_color=(Colour.Light.SUB, Colour.Dark.SUB),
             height=50,
             unselected_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
         )
-        self.master.update()
-        for button in self.sb_view._buttons_dict.values():
-            button.configure(width=150)
+        for button in self.sb_browser_view._buttons_dict.values():
+            button.configure(width=100)
 
         self.e_search = CTkEntry(
             self.view_container,
@@ -195,12 +199,39 @@ class BrowserPage(CTkFrame, Addons):
             self.button_container,
             text=_("Play"),
             height=50,
-            command=self.open_webapp,
+            command=self.open_app,
             font=self.TEXT_FONT,
             fg_color=Colour.Global.GREEN_BUTTON,
             hover_color=Colour.Global.GREEN_BUTTON_HOVER,
         )
-        
+
+        self.app_views = [_("Browser"), _("Embedded")]
+        self.l_app_view = CTkLabel(
+            self.button_container,
+            text=_("Game view"),
+            state="disabled",
+            font=self.BOLD_TEXT_FONT,
+            text_color_disabled=(
+                Colour.Light.TEXT_DISABLED,
+                Colour.Dark.TEXT_DISABLED,
+            ),
+        )
+        self.sb_app_view = CTkSegmentedButton(
+            self.button_container,
+            values=self.app_views,
+            font=self.TEXT_FONT,
+            variable=self.app_view_pref,
+            command=self.change_app_view,
+            fg_color=(Colour.Light.SUB, Colour.Dark.SUB),
+            height=50,
+            unselected_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
+        )
+        self.update()
+        for button in self.sb_app_view._buttons_dict.values():
+            button.configure(width=100)
+        self._update_segbutton_text_colours(_(self.app_view_pref.get()), self.sb_app_view)
+        self.sb_app_view.configure(state="disabled")
+
         self.b_write_pdf = CTkButton(
             self.button_container,
             text=_("Write to PDF"),
@@ -261,16 +292,18 @@ class BrowserPage(CTkFrame, Addons):
             font=self.TEXT_FONT,
         )
 
-        self.change_view()
+        self.change_browser_view()
 
     def _place_content(self) -> None:
         self.l_title.place(relx=0.5, rely=0.5, anchor="c")
         self.b_go_back.place(x=20, y=20)
-        self.sb_view.grid(row=0, column=0, sticky="nsew", padx=10, pady=10)
+        self.sb_browser_view.grid(row=0, column=0, sticky="nsew", padx=10, pady=10)
         self.e_search.grid(row=1, column=0, sticky="nsew", padx=10, pady=10)
-        self.b_load_cword.grid(row=0, column=0, sticky="nsew", padx=7, pady=7)
-        self.b_terminate_webapp.grid(row=0, column=1, sticky="nsew", padx=7, pady=7)
-        self.b_write_pdf.grid(row=1, column=0, columnspan=2, pady=(7, 0))
+        self.b_load_cword.grid(row=1, column=0, sticky="nsew", padx=7, pady=7)
+        self.b_terminate_webapp.grid(row=2, column=0, sticky="nsew", padx=7, pady=7)
+        self.sb_app_view.grid(row=1, column=1, sticky="nsew", padx=7, pady=7)
+        self.l_app_view.grid(row=0, column=1, sticky="s")
+        self.b_write_pdf.grid(row=2, column=1, columnspan=2, pady=(1, 0))
         self.l_wc_prefs.grid(row=0, column=0, columnspan=2, pady=(5, 10))
         self.rb_max_wc.grid(row=1, column=0, padx=7, pady=7)
         self.rb_custom_wc.grid(row=2, column=0, padx=7, pady=7)
@@ -278,7 +311,7 @@ class BrowserPage(CTkFrame, Addons):
 
     def _search_crossword(self, query: str) -> None:
         """Regenerate all the crossword blocks based on a crossword name query."""
-        if self.view_pref.get() != _("Flattened"):  # Only works in Flattened view
+        if self.browser_view_pref.get() != _("Flattened"):  # Only works in Flattened view
             return
 
         self._rollback_states()
@@ -299,8 +332,8 @@ class BrowserPage(CTkFrame, Addons):
         """Set the x position of the center scroll frame to the start."""
         self.block_container._parent_canvas.xview("moveto", 0.0)
 
-    def _update_segbutton_text_colours(self, view: str) -> None:
-        """Configure all segmented button colours in ``self.sb_view`` to have
+    def _update_segbutton_text_colours(self, view: str, sb_browser_view: CTkSegmentedButton) -> None:
+        """Configure all segmented button colours in ``self.sb_browser_view`` to have
         a black text colour if unselected, otherwise, set the text colour to
         white.
         """
@@ -308,13 +341,13 @@ class BrowserPage(CTkFrame, Addons):
         if get_appearance_mode().casefold() != "light":
             return
 
-        for button in self.sb_view._buttons_dict.values():
+        for button in sb_browser_view._buttons_dict.values():
             if button.cget("text") != _(view):
                 button.configure(text_color="black")
             else:
                 button.configure(text_color="white")
 
-    def change_view(self, callback: Optional[bool] = None) -> None:
+    def change_browser_view(self, callback: Optional = None) -> None:
         """Change the browser view to Flattened or Categorical."""
 
         self._rollback_states()
@@ -323,9 +356,9 @@ class BrowserPage(CTkFrame, Addons):
         CrosswordBlock._set_all(CrosswordBlock._remove_block)
         self._reset_scroll_frame()
         # Find true english name of selected view
-        view = BASE_ENG_VIEWS[self.views.index(_(self.view_pref.get()))]
+        view = BASE_ENG_BROWSER_VIEWS[self.browser_views.index(_(self.browser_view_pref.get()))]
 
-        self._update_segbutton_text_colours(view)
+        self._update_segbutton_text_colours(view, self.sb_browser_view)
         if view == "Categorised":
             self._reset_search()
             self.e_search.configure(
@@ -339,7 +372,14 @@ class BrowserPage(CTkFrame, Addons):
             )
             CrosswordBlock._populate_all(self)
 
-        _update_cfg(Base.cfg, "m", "view", view)
+        _update_cfg(Base.cfg, "m", "browser_view", view)
+
+    def change_app_view(self, callback=None) -> None:
+        """Change the app view to Browser or Embedded."""
+
+        view = BASE_ENG_APP_VIEWS[self.app_views.index(_(self.app_view_pref.get()))]
+        self._update_segbutton_text_colours(view, self.sb_app_view)
+        _update_cfg(Base.cfg, "m", "app_view", view)
 
     def _handle_scroll(self, event: Event, container: CTkScrollableFrame) -> None:
         """Scroll the center scroll frame only if the viewable width is greater
@@ -375,15 +415,17 @@ class BrowserPage(CTkFrame, Addons):
         the crossword browser).
         """
         if hasattr(self, "cwrapper"):  # User selected a crossword, meaning they
-                                       # had a category open, so this must be done
+            # had a category open, so this must be done
             if self.cwrapper.category_object:
                 self.cwrapper.category_object.b_close.configure(state="normal")
             CrosswordBlock._config_selectors(state="normal")
 
-        self.sb_view.configure(state="normal")
+        self.sb_browser_view.configure(state="normal")
+        self.sb_app_view.configure(state="disabled")
+        self.l_app_view.configure(state="disabled")
         self.b_terminate_webapp.configure(state="disabled")
         self.b_open_webapp.grid_forget()
-        self.b_load_cword.grid(row=0, column=0, sticky="nsew", padx=7, pady=7)
+        self.b_load_cword.grid(row=1, column=0, sticky="nsew", padx=7, pady=7)
         self.b_load_cword.configure(state="disabled")
         self.b_write_pdf.configure(state="disabled")
         self._configure_word_count_prefs("disabled")
@@ -402,20 +444,53 @@ class BrowserPage(CTkFrame, Addons):
         self.rb_custom_wc.configure(state=state)
         self.opts_custom_wc.configure(state=state)
 
-    def open_webapp(self) -> None:
+    def _on_webview_close(self) -> None:
+        """Update ``self.webview_open`` to false when the user closes the
+        webview.
+        """
+        self.webview_open = False
+
+    def _open_app_embedded(self, url: str) -> None:
+        """Start a webview with the ``webview`` module."""
+        import webview
+
+        self.webview = webview.create_window(
+            _("Crossword Puzzle - Game"),
+            url,
+            width=self.master.winfo_screenwidth(),
+            height=int(self.master.winfo_screenheight() * 0.925),
+            x=0,
+            y=0,
+        )
+        self.webview.events.closed += self._on_webview_close
+        webview.start()
+
+    def open_app(self) -> None:
         """Open the crossword web app at a port read from ``Base.cfg``."""
         _read_cfg(Base.cfg)
-        open_new_tab(
-            f"http://127.0.0.1:{Base.cfg.get('misc', 'webapp_port')}/"
-        )
+
+        url = f"http://127.0.0.1:{Base.cfg.get('misc', 'webapp_port')}/"
+        app_view = BASE_ENG_APP_VIEWS[self.app_views.index(self.sb_app_view.get())]
+
+        if app_view == BASE_ENG_APP_VIEWS[0]:
+            open_new_tab(url)
+        else:
+            try:
+                self._open_app_embedded(url)
+            except ImportError:
+                return GUIHelper.show_messagebox(app_view_missing_dep=True)
 
     def terminate(self) -> None:
         """Reconfigure the states of the GUIs buttons and terminate the app."""
         self.b_open_webapp.grid_forget()
         self._rollback_states()
-        if Base.cfg.get("m", "view") == "Flattened":
+        if Base.cfg.get("m", "browser_view") == "Flattened":
             self.e_search.configure(state="normal")
-        self.sb_view.configure(state="normal")
+        self.sb_browser_view.configure(state="normal")
+        if self.webview:
+            if self.webview_open:
+                self.webview.destroy()
+            self.webview = None
         _terminate_app()
         self.webapp_on: bool = False
 
@@ -433,16 +508,16 @@ class BrowserPage(CTkFrame, Addons):
             from crossword_puzzle.pdf import PDF
         except ImportError:
             return GUIHelper.show_messagebox(pdf_missing_dep=True)
-        
+
         name = f"{self.cwrapper.translated_name} ({_(self.cwrapper.difficulty)})"
         filepath = self._get_pdf_filepath(name)
-        
+
         if not filepath:
             return
-        
+
         if not filepath.endswith(".pdf"):
             filepath += ".pdf"
-        
+
         pdf = PDF(
             filepath,
             self.cwrapper.crossword, 
@@ -452,7 +527,7 @@ class BrowserPage(CTkFrame, Addons):
             self.definitions_d, 
             name
         )
-        
+
         if not pdf.drawn:
             return GUIHelper.show_messagebox(pdf_write_err=True)
         else:
@@ -477,14 +552,16 @@ class BrowserPage(CTkFrame, Addons):
             CrosswordBlock.global_selected_cword.set(-1)
         CrosswordBlock._config_selectors(state="disabled")
         self._configure_word_count_prefs("disabled")
-        self.sb_view.configure(state="disabled")
+        self.sb_browser_view.configure(state="disabled")
         self.e_search.configure(state="disabled")
 
         self._load()
         self.webapp_on: bool = True
 
-        self.b_open_webapp.grid(row=0, column=0, sticky="nsew", padx=7, pady=7)
+        self.b_open_webapp.grid(row=1, column=0, sticky="nsew", padx=7, pady=7)
         self.b_terminate_webapp.configure(state="normal")
+        self.sb_app_view.configure(state="normal")
+        self.l_app_view.configure(state="normal")
         self.b_write_pdf.configure(state="normal")
 
     def _load(self) -> None:
