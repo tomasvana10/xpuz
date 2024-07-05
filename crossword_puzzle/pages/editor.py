@@ -95,6 +95,7 @@ class Form(Addons):
             fg_color=(Colour.Light.SUB, Colour.Dark.SUB),
             bg_color=(Colour.Light.MAIN, Colour.Dark.MAIN),
         )
+        self._form._name = name
         self._tooltip = CTkToolTip(
             self._form, message=tooltip, delay=0.2, y_offset=12
         )
@@ -146,6 +147,9 @@ class Form(Addons):
     def __len__(self) -> int:
         return len(str(self))
 
+    def unbind_(self) -> None:
+        self._form.unbind("<KeyRelease>")
+
     def grid(self, *args, **kwargs) -> None:
         """Wrapper method for gridding ``self._frame``."""
         self._frame.grid(*args, **kwargs)
@@ -174,9 +178,6 @@ class Form(Addons):
             b_confirm.configure(state="normal")
         else:
             b_confirm.configure(state="disabled")
-
-    def unbind(self) -> None:
-        self._form.unbind("<KeyRelease>")
 
     def unfocus(self) -> None:
         """Remove focus from the entry by bringing focus to a pane."""
@@ -333,6 +334,8 @@ class EditorPage(CTkFrame, Addons):
         self.grid_rowconfigure(0, minsize=self._height * 0.15, weight=1)
         self.grid_rowconfigure(1, minsize=self._height * 0.85, weight=1)
         self.grid_columnconfigure(0, weight=1)
+        
+        self.master.bind("<Return>", lambda e: self._handle_enter())
 
     def _make_containers(self) -> None:
         self.header_container = CTkFrame(
@@ -383,11 +386,12 @@ class EditorPage(CTkFrame, Addons):
         self.b_go_back.place(x=20, y=20)
         self.l_title.place(relx=0.5, rely=0.5, anchor="c")
 
-    def _unbind(self) -> None:
+    def unbind_(self) -> None:
         """Remove bindings which can be detected on different pages."""
         self.crossword_pane.preview.unbind_all("<MouseWheel>")
         for form in [*Form.crossword_forms, *Form.word_forms]:
-            form.unbind()
+            form.unbind_()
+        self.master.unbind("<Return>")
 
     def _get_user_category_path(self) -> PathLike:
         """Find where to access categories from, whether that is in the package
@@ -426,6 +430,23 @@ class EditorPage(CTkFrame, Addons):
         ):
             container._parent_canvas.yview("scroll", -1 * event.delta, "units")
 
+    def _handle_enter(self) -> None:
+        focused_form_name = self.master.focus_get().master._name
+        crossword_pane_button = self.crossword_pane.b_confirm
+        word_pane_button = self.word_pane.b_confirm
+        print("enter")
+
+        if (
+            focused_form_name in ["name", "symbol"]
+            and crossword_pane_button.cget("state") == "normal"
+        ):
+            crossword_pane_button.invoke()
+        elif (
+            focused_form_name in ["word", "clue"]
+            and word_pane_button.cget("state") == "normal"
+        ):
+            word_pane_button.invoke()
+        
     def _toggle_forms(self, state: str, forms: List[Form]) -> None:
         """Enable or disable all the forms in ``forms``."""
         for form in forms:
@@ -565,7 +586,7 @@ class CrosswordPane(CTkFrame, Addons):
 
         self.b_confirm = CTkButton(
             self.form_container,
-            text=_("Save"),
+            text=_("Save") + " [↵]",
             font=self.TEXT_FONT,
             height=50,
             command=self._write,
@@ -727,7 +748,7 @@ class CrosswordPane(CTkFrame, Addons):
             text=_("Your Crosswords") + " ({})".format(_("Adding"))
         )
         self.b_remove.configure(state="disabled")
-        self.b_confirm.configure(text=_("Add"))
+        self.b_confirm.configure(text=_("Add") + " [↵]",)
         Form.crossword_forms[0].focus()
         self._toggle_forms("normal", Form.crossword_forms)
         self.master._reset_forms(Form.crossword_forms, set_invalid=True)
@@ -818,7 +839,7 @@ class CrosswordPane(CTkFrame, Addons):
         self.b_explorer.configure(state="disabled")
         self.master._reset_forms(Form.crossword_forms, set_invalid=True)
         self._toggle_forms("disabled", Form.crossword_forms)
-        self.b_confirm.configure(text=_("Save"))
+        self.b_confirm.configure(text=_("Save") + " [↵]")
         self.b_remove.configure(state="disabled")
         self.b_add.configure(state="disabled")
         self.b_confirm.configure(state="disabled")
@@ -959,15 +980,15 @@ class UserCrosswordBlock(CTkFrame, Addons, BlockUtils):
         self.master.crossword_block = self
         self.master.b_explorer.configure(state="normal")
         self.master.difficulty = self.cwrapper.difficulty
-        Form.crossword_forms[0].focus()
         self.master._toggle_forms("normal", Form.crossword_forms)
-        self.master.b_confirm.configure(text=_("Save"))
+        self.master.b_confirm.configure(text=_("Save") + " [↵]")
         self.master.master._reset_forms(Form.crossword_forms)
         self.master.master._set_form_defaults(
             self.cwrapper.name,
             chr(int(self.cwrapper.info["symbol"], 16)),
             forms=Form.crossword_forms,
         )
+        Form.crossword_forms[0].focus()
         self.master.opts_difficulty.set(self.localised_difficulty)
         self.master.b_remove.configure(state="normal")
         self.master.master.word_pane._reset()
@@ -1048,7 +1069,7 @@ class WordPane(CTkFrame, Addons):
 
         self.b_confirm = CTkButton(
             self.form_container,
-            text=_("Save"),
+            text=_("Save") + " [↵]",
             font=self.TEXT_FONT,
             height=50,
             state="disabled",
@@ -1108,7 +1129,7 @@ class WordPane(CTkFrame, Addons):
         )
         Form.word_forms[0].focus()
         self.b_remove.configure(state="disabled")
-        self.b_confirm.configure(text=_("Add"))
+        self.b_confirm.configure(text=_("Add") + " [↵]")
         self.master._toggle_forms("normal", Form.word_forms)
         self.master._reset_forms(Form.word_forms, set_invalid=True)
         self.master._set_form_defaults("", "", forms=Form.word_forms)
@@ -1161,7 +1182,7 @@ class WordPane(CTkFrame, Addons):
         self.master._reset_forms(Form.word_forms, set_invalid=True)
         self.master._toggle_forms("disabled", Form.word_forms)
         self.master._set_form_defaults("", "", forms=Form.word_forms)
-        self.b_confirm.configure(text=_("Save"))
+        self.b_confirm.configure(text=_("Save") + " [↵]")
         self.b_confirm.configure(state="disabled")
         self.b_add.configure(state="disabled")
         self.b_remove.configure(state="disabled")
@@ -1175,7 +1196,7 @@ class UserWordBlock(CTkFrame, Addons, BlockUtils):
     """
 
     blocks: List[object] = []
-    selected_block: Union[None, IntVar]
+    selected_block: Union[None, IntVar] = None
 
     def __init__(
         self,
@@ -1275,7 +1296,7 @@ class UserWordBlock(CTkFrame, Addons, BlockUtils):
         )
         Form.word_forms[0].focus()
         self.master.master._toggle_forms("normal", Form.word_forms)
-        self.master.b_confirm.configure(text=_("Save"))
+        self.master.b_confirm.configure(text=_("Save") + " [↵]")
         self.master.master._reset_forms(Form.word_forms)
         self.master.master._set_form_defaults(
             self.word,

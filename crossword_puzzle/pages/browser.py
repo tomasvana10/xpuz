@@ -2,7 +2,7 @@
 
 from json import dumps, load
 from os import DirEntry, PathLike, listdir, path
-from tkinter import Event, IntVar, StringVar, filedialog, Tk
+from tkinter import Event, IntVar, StringVar, filedialog
 from typing import Dict, List, Optional, Tuple, Union
 from uuid import uuid4
 from webbrowser import open_new_tab
@@ -309,7 +309,7 @@ class BrowserPage(CTkFrame, Addons):
         self.rb_custom_wc.grid(row=2, column=0, padx=7, pady=7)
         self.opts_custom_wc.grid(row=3, column=0, padx=7, pady=7)
 
-    def _unbind(self) -> None:
+    def unbind_(self) -> None:
         """Remove bindings which can be detected on different pages."""
         self.block_container.unbind_all("<MouseWheel")
         self.e_search.unbind("<Return>")

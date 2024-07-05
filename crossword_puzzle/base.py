@@ -86,7 +86,7 @@ class Addons:
         base.title(title)
         _update_cfg(Base.cfg, "m", "page", page_inst.__class__.__name__)
         try:  # Attempt to unbind existing widgets
-            Base.page_inst._unbind()
+            Base.page_inst.unbind_()
         except AttributeError:
             pass
         Base.page_inst = page_inst

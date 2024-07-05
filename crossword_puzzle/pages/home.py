@@ -127,7 +127,6 @@ class HomePage(CTkFrame, Addons):
             command=lambda: self._route(
                 "BrowserPage", self.master, _(PAGE_MAP["BrowserPage"])
             ),
-            width=150,
             height=50,
             font=self.TEXT_FONT,
         )
@@ -138,7 +137,6 @@ class HomePage(CTkFrame, Addons):
             command=lambda: self._route(
                 "EditorPage", self.master, _(PAGE_MAP["EditorPage"])
             ),
-            width=150,
             height=50,
             font=self.TEXT_FONT,
         )
@@ -147,7 +145,6 @@ class HomePage(CTkFrame, Addons):
             self.button_container,
             text=_("Exit"),
             command=self.master._exit_handler,
-            width=150,
             height=50,
             fg_color=Colour.Global.EXIT_BUTTON,
             hover_color=Colour.Global.EXIT_BUTTON_HOVER,
@@ -261,7 +258,7 @@ class HomePage(CTkFrame, Addons):
         self.l_cword_quality.place(relx=0.5, rely=0.81, anchor="c")
         self.opts_cword_quality.place(relx=0.5, rely=0.87, anchor="c")
 
-    def _unbind(self) -> None:
+    def unbind_(self) -> None:
         """Remove bindings which can be detected on different pages."""
         pass
 
