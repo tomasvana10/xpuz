@@ -6,7 +6,7 @@
 
 <div align="center">
 
-  ![cross-main-pic](https://github.com/tomasvana10/crossword_puzzle/assets/124552709/370a11cb-540e-41c4-8917-5f5272da2ebd)
+  ![crossword banner](https://github.com/tomasvana10/crossword_puzzle/assets/124552709/370a11cb-540e-41c4-8917-5f5272da2ebd)
   ![licence](https://img.shields.io/badge/licence-MIT-green?style=flat?logo=licence)
   [![PyPI version](https://img.shields.io/pypi/v/crossword_puzzle?style=flat-square)](https://pypi.org/project/crossword_puzzle/)
   [![Publish to PyPI.org](https://github.com/tomasvana10/crossword_puzzle/actions/workflows/publish.yml/badge.svg)](https://github.com/tomasvana10/crossword_puzzle/actions/workflows/publish.yml)
@@ -36,10 +36,7 @@ An educational GUI/web package built with `CustomTkinter` and `Flask` that allow
 > [!WARNING]  
 > Languages whose alphabets use complex glyphs (such as Mandarin and Japanese) are not supported when making PDFs.
 
-`pywebview` is another optional dependency that is required if you want to view crosswords in a webview instead of your browser. Please run `pip install pywebview` if this is the case.
-
-
-## Tested python versions
+## Tested Python versions
 - **Windows**: Python >= 3.7
 - **MacOS**: Python >= 3.8
 - **Linux**: Python >= 3.8
@@ -48,7 +45,7 @@ An educational GUI/web package built with `CustomTkinter` and `Flask` that allow
 - **Hardware**
   - **RAM**: >120MB (GUI only), >500MB (GUI and browser to play crossword)
   - **CPU**: Any
-  - **Storage**: >50MB available space
+  - **Storage**: >30MB available space (the program and its dependencies)
 
 - **Software**
   - **OS**: Windows, MacOS, Linux
@@ -59,13 +56,14 @@ An educational GUI/web package built with `CustomTkinter` and `Flask` that allow
 - Right-to-left scripts are not supported.
 - Translations are made with a translation API, and therefore might be inaccurate.
 - Generated crosswords may occasionally have a few missing words.
+- If your OS scaling is higher than the default, the web application will likely be too big. Read [Troubleshooting](https://github.com/tomasvana10/crossword_puzzle/wiki/Troubleshooting) for more information.
 
 ## Installation
 > [!IMPORTANT]
 > Installing `crossword_puzzle` requires Python3 and pip.
-> If you have Python installed without pip, click [here](https://pip.pypa.io/en/stable/installation/) to install it.<br><br>
-> If you do not have Python installed, download the installer [here](https://www.python.org/downloads/), or install it with [pyenv](https://github.com/pyenv/pyenv) (recommended). Then, refer to the previous link on how to install pip.<br><br>
-> If you are on Linux or MacOS, you may not have Tkinter installed by default. Try running `sudo apt-get install python3-tk` on Linux or `sudo pip install python3-tk` on MacOS if this is the case.
+> If you have Python3 installed without pip, click [here](https://pip.pypa.io/en/stable/installation/) to install it.<br><br>
+> If you do not have Python3 installed, download the installer [here](https://www.python.org/downloads/), or install it with [pyenv](https://github.com/pyenv/pyenv) (recommended). Then, refer to the previous link on how to install pip.<br><br>
+> **Linux and MacOS users**: You may not have Tkinter installed by default. Try running `sudo apt-get install python3-tk` on Linux or `sudo pip install python3-tk` on MacOS if this is the case.
 
 > [!TIP]
 > If using `python` or `pip` doesn't work, try using `python3` or `pip3`.
@@ -77,22 +75,20 @@ python -m venv venv
 MacOS/Unix: source venv/bin/activate
 Windows: venv\scripts\activate
 ```
-If you are on Windows and you cannot activate the virtual environment, try running `Set-ExecutionPolicy Unrestricted -Scope Process` in your terminal, ensuring you follow all the prompts, then try this step again.
-<br><br>
+**Windows users**: If you cannot activate the virtual environment, try running `Set-ExecutionPolicy Unrestricted -Scope Process` in your terminal, ensuring you follow all the prompts. Then, try this step again.
 
 2. Install the package in your system directory/virtual environment:
 ```
-pip install -U crossword-puzzle
+pip install crossword-puzzle
 ```
 or, install the package in your home directory if you aren't using a virtual environment:
 ```
-pip install --user -U crossword-puzzle
+pip install --user crossword-puzzle
 ```
-<br>
 
-3. Install either or both of the optional dependencies (read [Dependencies](#dependencies) for more information):
+3. Install pycairo if you want to make PDFs from your generated crosswords (read [Dependencies](#dependencies) for more information):
 ```
-pip install pywebview pycairo
+pip install pycairo
 ```
 
 4. Initialise the GUI through the entry point:
@@ -109,23 +105,30 @@ pip install -r requirements.txt
 >>> import crossword_puzzle as xp
 >>> xp.main()
 ```
-<br>
 
 5. You can deactivate your virtual environment when you are done:
 ```
 deactivate
 ```
 
+## Updating
+1. Activate your virtual environment if you are using one.
+   
+3. Update the package:
+```
+pip install -U crossword-puzzle
+```
+
 ## Quickstart
 You can utilise one of two scripts to quickly activate a virtual environment and update and start `crossword_puzzle`.
 
-1. Read the `Important` section of [Installation](#installation) to install Python and pip
-2. If you are on Windows, ensure you have script execution enabled. If you are unsure, run `Set-ExecutionPolicy Unrestricted -Scope Process` in your terminal and follow the prompts.
+1. Read the `Important` section of [Installation](#installation) to install Python3 and pip
+2. **Windows users**: Ensure you have script execution enabled. If you are unsure, run `Set-ExecutionPolicy Unrestricted -Scope Process` in your terminal and follow the prompts.
 3. Download a quickstart file from the repository:
    - **Windows**: [quickstart-win.bat](https://github.com/tomasvana10/crossword_puzzle/blob/main/quickstart-win.bat)
    - **MacOS/Linux**: [quickstart-posix.sh](https://github.com/tomasvana10/crossword_puzzle/blob/main/quickstart-posix.sh)
 4. Run the script:
-   - **Windows**: Double click the script or call it in command-line with `.\path\to\quickstart-win.bat`.
+   - **Windows**: Double click the script file or call it in command-line with `.\path\to\quickstart-win.bat`.
    - **MacOS/Linux**: Call the script in the command-line with `source path/to/quickstart-posix.sh`.
 
 ## Documentation

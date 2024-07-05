@@ -415,7 +415,7 @@ class BrowserPage(CTkFrame, Addons):
         the crossword browser).
         """
         if hasattr(self, "cwrapper"):  # User selected a crossword, meaning they
-            # had a category open, so this must be done
+                                       # had a category open, so this must be done
             if self.cwrapper.category_object:
                 self.cwrapper.category_object.b_close.configure(state="normal")
             CrosswordBlock._config_selectors(state="normal")
@@ -475,10 +475,7 @@ class BrowserPage(CTkFrame, Addons):
         if app_view == BASE_ENG_APP_VIEWS[0]:
             open_new_tab(url)
         else:
-            try:
-                self._open_app_embedded(url)
-            except ImportError:
-                return GUIHelper.show_messagebox(app_view_missing_dep=True)
+            self._open_app_embedded(url)
 
     def terminate(self) -> None:
         """Reconfigure the states of the GUIs buttons and terminate the app."""

@@ -24,6 +24,7 @@ setup(
         "platformdirs",
         "pathvalidate",
         "CTkToolTip",
+        "pywebview",
     ],
     entry_points={
         "gui_scripts": [
