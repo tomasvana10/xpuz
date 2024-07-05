@@ -261,6 +261,10 @@ class HomePage(CTkFrame, Addons):
         self.l_cword_quality.place(relx=0.5, rely=0.81, anchor="c")
         self.opts_cword_quality.place(relx=0.5, rely=0.87, anchor="c")
 
+    def _unbind(self) -> None:
+        """Remove bindings which can be detected on different pages."""
+        pass
+
     def change_appearance(self, appearance: str) -> None:
         """Ensures the user is not selecting the same appearance, then sets
         the appearance. Some list indexing is required to make the program

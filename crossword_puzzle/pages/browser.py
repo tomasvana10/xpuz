@@ -309,6 +309,11 @@ class BrowserPage(CTkFrame, Addons):
         self.rb_custom_wc.grid(row=2, column=0, padx=7, pady=7)
         self.opts_custom_wc.grid(row=3, column=0, padx=7, pady=7)
 
+    def _unbind(self) -> None:
+        """Remove bindings which can be detected on different pages."""
+        self.block_container.unbind_all("<MouseWheel")
+        self.e_search.unbind("<Return>")
+
     def _search_crossword(self, query: str) -> None:
         """Regenerate all the crossword blocks based on a crossword name query."""
         if self.browser_view_pref.get() != _("Flattened"):  # Only works in Flattened view

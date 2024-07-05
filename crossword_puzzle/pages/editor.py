@@ -175,6 +175,9 @@ class Form(Addons):
         else:
             b_confirm.configure(state="disabled")
 
+    def unbind(self) -> None:
+        self._form.unbind("<KeyRelease>")
+
     def unfocus(self) -> None:
         """Remove focus from the entry by bringing focus to a pane."""
         self.master.focus_force()
@@ -379,6 +382,12 @@ class EditorPage(CTkFrame, Addons):
     def _place_content(self) -> None:
         self.b_go_back.place(x=20, y=20)
         self.l_title.place(relx=0.5, rely=0.5, anchor="c")
+
+    def _unbind(self) -> None:
+        """Remove bindings which can be detected on different pages."""
+        self.crossword_pane.preview.unbind_all("<MouseWheel>")
+        for form in [*Form.crossword_forms, *Form.word_forms]:
+            form.unbind()
 
     def _get_user_category_path(self) -> PathLike:
         """Find where to access categories from, whether that is in the package

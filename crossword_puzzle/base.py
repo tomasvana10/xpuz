@@ -55,7 +55,7 @@ class Addons:
 
     def _route(
         self,
-        page_ref: str,  # Reference to page instance
+        page_ref: str,  # Name of the page instance
         base: "Base",  # Reference to base instance
         title: str,  # Title of the new page
         **kwargs,
@@ -83,18 +83,19 @@ class Addons:
         for widget in Base.base_container.winfo_children():  # Remove content
             widget.pack_forget()
 
-        base.title(title)  # Update to a new title
-
-        # Update page in ``config.ini``
+        base.title(title)
         _update_cfg(Base.cfg, "m", "page", page_inst.__class__.__name__)
+        try:  # Attempt to unbind existing widgets
+            Base.page_inst._unbind()
+        except AttributeError:
+            pass
+        Base.page_inst = page_inst
 
-        # Place the new page and call its content generation methods
         page_inst.pack(expand=True, fill="both")
         page_inst._make_containers()
         page_inst._place_containers()
         page_inst._make_content()
         page_inst._place_content()
-        Base.page_inst = page_inst
 
         return True  # Route was successful
 
