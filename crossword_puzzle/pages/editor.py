@@ -132,7 +132,7 @@ class Form(Addons):
         return all(form.is_valid for form in forms)
 
     @classmethod
-    def __new__(cls, *args, **kwargs):
+    def __new__(cls, *args, **kwargs) -> "Form":
         instance = super().__new__(cls)
         if kwargs["pane_name"] == "crossword":
             cls.crossword_forms.append(instance)
@@ -140,10 +140,10 @@ class Form(Addons):
             cls.word_forms.append(instance)
         return instance
 
-    def __str__(self):
+    def __str__(self) -> str:
         return str(self._form.get())
 
-    def __len__(self):
+    def __len__(self) -> int:
         return len(str(self))
 
     def grid(self, *args, **kwargs) -> None:
@@ -559,7 +559,7 @@ class CrosswordPane(CTkFrame, Addons):
             text=_("Save"),
             font=self.TEXT_FONT,
             height=50,
-            command=lambda: self.master.master.after(10, self._write),
+            command=self._write,
             state="disabled",
         )
         self.name_form = Form(
@@ -859,7 +859,7 @@ class UserCrosswordBlock(CTkFrame, Addons, BlockUtils):
         self._make_content()
         self._place_content()
 
-    def _flash(self):
+    def _flash(self) -> None:
         if not self.flash:
             return
         self.master.master.update_idletasks()
@@ -1043,7 +1043,7 @@ class WordPane(CTkFrame, Addons):
             font=self.TEXT_FONT,
             height=50,
             state="disabled",
-            command=lambda: self.master.master.after(10, self._write),
+            command=lambda: self.master.master.after(15, self._write),
         )
         self.word_form = Form(
             self.form_container,
