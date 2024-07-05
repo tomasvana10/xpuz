@@ -3,7 +3,7 @@ from setuptools import find_namespace_packages, setup
 
 setup(
     name="crossword_puzzle",
-    version="2.2.93",  # If I import crossword_puzzle.version.__version__, 
+    version="2.2.94",  # If I import crossword_puzzle.version.__version__, 
                        # setuptools fails to build the project for some reason
     author="Tomas Vana",
     url="https://github.com/tomasvana10/crossword_puzzle",
