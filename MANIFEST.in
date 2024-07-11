@@ -7,3 +7,4 @@ recursive-include xpuz/assets *
 recursive-include xpuz/data *
 include xpuz/babel.cfg
 include xpuz/template.config.ini
+include RENAMED.md
