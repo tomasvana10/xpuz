@@ -1,0 +1,628 @@
+# Lithuanian translations for xpuz.
+# Copyright (C) 2024 Tomas Vana
+# This file is distributed under the same license as the xpuz
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-06-30 17:39+1000\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: lt <LL@li.org>\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: import_export.py:24
+msgid "Select a destination to export your crosswords to"
+msgstr "Pasirinkite tikslą, į kurį galėsite eksportuoti savo kryžiažodžius"
+
+#: import_export.py:28
+msgid "my-crosswords"
+msgstr "my-crosswords"
+
+#: import_export.py:70
+msgid ""
+"Select a valid crossword JSON file that was exported using xpuz"
+msgstr ""
+"Pasirinkite galiojantį kryžiažodžio JSON failą, kuris buvo eksportuotas "
+"naudojant „xpuz“"
+
+#: app/templates/index.html:286 pdf.py:207
+msgid "Across"
+msgstr "Skersai"
+
+#: app/templates/index.html:308 pdf.py:214
+msgid "Down"
+msgstr "Žemyn"
+
+#: utils.py:58
+msgid "Remove"
+msgstr "Šalinti"
+
+#: utils.py:59
+msgid "Are you sure you want to delete this"
+msgstr "Ar tikrai norite tai ištrinti"
+
+#: utils.py:61
+msgid "It will be lost forever!"
+msgstr "Jis bus prarastas amžiams!"
+
+#: utils.py:66
+msgid "Add or select"
+msgstr "Pridėti arba pasirinkti"
+
+#: utils.py:67
+msgid "Are you sure you want to add/select a"
+msgstr "Ar tikrai norite pridėti / pasirinkti a"
+
+#: utils.py:69
+msgid "Your modified fields will be reset!"
+msgstr "Jūsų pakeisti laukai bus nustatyti iš naujo!"
+
+#: utils.py:74 utils.py:106
+msgid "Back to home"
+msgstr "Grįžti namo"
+
+#: utils.py:75
+msgid ""
+"Are you sure you want to go back to the home screen? Your modified fields "
+"will be reset!"
+msgstr ""
+"Ar tikrai norite grįžti į pagrindinį ekraną? Jūsų pakeisti laukai bus "
+"nustatyti iš naujo!"
+
+#: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
+#: utils.py:246
+msgid "Info"
+msgstr "Informacija"
+
+#: utils.py:84
+msgid ""
+"Are you sure you want to import crosswords? Your modified fields will be "
+"reset!"
+msgstr ""
+"Ar tikrai norite importuoti kryžiažodžius?Jūsų modifikuoti laukai bus iš "
+"naujo nustatyti!"
+
+#: utils.py:92
+msgid "Restart"
+msgstr "Perkrauti"
+
+#: utils.py:92
+msgid "Are you sure you want to restart the app?"
+msgstr "Ar tikrai norite iš naujo paleisti programą?"
+
+#: pages/home.py:148 utils.py:97
+msgid "Exit"
+msgstr "Išeiti"
+
+#: utils.py:98
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr ""
+"Ar tikrai norite išeiti iš programos? Jei žiniatinklio programa veikia, ji "
+"bus nutraukta."
+
+#: utils.py:107
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr ""
+"Ar tikrai norite grįžti į pagrindinį ekraną? Žiniatinklio programa bus "
+"nutraukta."
+
+#: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
+#: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
+#: utils.py:220 utils.py:231 utils.py:263 utils.py:267
+msgid "Error"
+msgstr "Klaida"
+
+#: utils.py:118
+msgid "This language is already selected."
+msgstr "Ši kalba jau pasirinkta."
+
+#: utils.py:123
+msgid "This size is already selected."
+msgstr "Šis dydis jau pasirinktas."
+
+#: utils.py:128
+msgid "This appearance is already selected."
+msgstr "Ši išvaizda jau pasirinkta."
+
+#: utils.py:133
+msgid "This quality is already selected."
+msgstr "Ši kokybė jau pasirinkta."
+
+#: utils.py:139
+msgid ""
+"A crossword with this name and difficulty already exists. Please choose a "
+"new name and/or a new difficulty."
+msgstr ""
+"Kryžiažodis su šiuo vardu ir sunkumais jau egzistuoja.Pasirinkite naują "
+"vardą ir (arba) naują sunkumą."
+
+#: utils.py:148
+msgid "You have no crosswords to export. Please make some and try again."
+msgstr ""
+"Jūs neturite kryžiažodžių, kuriuos reikia eksportuoti.Prašau pasidaryti ir "
+"bandyti dar kartą."
+
+#: utils.py:155
+msgid "Successfully exported your crosswords."
+msgstr "Sėkmingai eksportavo jūsų kryžiažodžius."
+
+#: utils.py:160
+msgid "Your crosswords could not be exported, sorry."
+msgstr "Atsiprašome, kad jūsų kryžiažodžiai negalėjo būti eksportuojami."
+
+#: utils.py:166
+msgid "All of your crosswords were successfully imported."
+msgstr "Visi jūsų kryžiažodžiai buvo sėkmingai importuoti."
+
+#: utils.py:172
+msgid "Your import could not be fully completed."
+msgstr "Jūsų importas negalėjo būti visiškai baigtas."
+
+#: utils.py:174
+msgid ""
+"Crosswords with duplicate names and difficulties that were not imported: "
+msgstr "Kryžiažodžiai su vardais ir sunkumais, kurie nebuvo importuoti:"
+
+#: utils.py:180
+msgid "Invalid crosswords that were not imported: "
+msgstr "Neteisingi kryžiažodžiai, kurie nebuvo importuoti:"
+
+#: utils.py:187
+msgid "The specified JSON file is invalid and cannot be processed."
+msgstr "Nurodytas JSON failas neteisingas ir jo negalima apdoroti."
+
+#: utils.py:195
+msgid "This word already exists. Please choose a new word."
+msgstr "Šis žodis jau egzistuoja. Pasirinkite naują žodį."
+
+#: utils.py:201
+msgid "An error occurred while creating your PDF. Please try again."
+msgstr "Klaida sukuriant PDF įvyko klaida.Prašau, pabandykite dar kartą."
+
+#: utils.py:208
+msgid ""
+"words that could not be inserted during crossword generation will not be "
+"included in this PDF, sorry."
+msgstr ""
+"Žodžiai, kurių nebuvo galima įterpti kryžiažodžių generavimo metu, nebus "
+"įtraukti į šį PDF, atsiprašau."
+
+#: utils.py:215
+msgid "Successfully wrote PDF."
+msgstr "Sėkmingai parašė PDF."
+
+#: utils.py:221
+msgid ""
+"You are missing pywebview, which is required when viewing the crossword game"
+" in an embedded window. Please run"
+msgstr ""
+"Jums trūksta „PyWebView“, ko reikia žiūrint kryžiažodį įterptame "
+"lange.Prašau bėgti"
+
+#: utils.py:226
+msgid "to install this dependency."
+msgstr "Norėdami įdiegti šią priklausomybę."
+
+#: utils.py:232
+msgid ""
+"You are missing pycairo, which is required to perform this operation. Please"
+" run"
+msgstr ""
+"Jums trūksta „Pycairo“, kurio reikia norint atlikti šią operaciją.Prašau "
+"bėgti"
+
+#: utils.py:237
+msgid ""
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
+msgstr ""
+"Ir įdiekite „Pycairo“ antraštes, jei nesate „Windows“ naudodami „Pycairo“ "
+"pradedančiųjų vadovą"
+
+#: utils.py:247
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, the program will run new web apps with a different port. "
+"Alternatively, you can manually change the port in the program's config "
+"file. All app processes that have not been properly terminated can be "
+"terminated through Activity Monitor on MacOS, or, simply restart your "
+"computer to terminate them."
+msgstr ""
+"Pirmą kartą paleidus, perskaitykite: Įkėlę kryžiažodį ir norėdami įkelti "
+"kitą, pirmiausia turite nutraukti žiniatinklio programą. SVARBU: jei "
+"naudojate „MacOS“, priverstinai uždarydami programą (naudodami cmd+q), kol "
+"žiniatinklio programa veikia, ji negalės tinkamai nutraukti. Jei tai "
+"padarysite per klaidą, programa paleis naujas žiniatinklio programas su kitu"
+" prievadu. Arba galite rankiniu būdu pakeisti prievadą programos "
+"konfigūracijos faile. Visi netinkamai nutraukti programų procesai gali būti "
+"nutraukti naudojant „Activity Monitor“ sistemoje „MacOS“ arba tiesiog iš "
+"naujo paleiskite kompiuterį, kad juos nutrauktumėte."
+
+#: utils.py:269
+msgid ""
+"An unexpected error occured. Please try reinstalling the application with"
+msgstr ""
+"Įvyko netikėta klaida. Pabandykite iš naujo įdiegti programą naudodami"
+
+#: utils.py:790
+msgid "Definitions are empty"
+msgstr "Apibrėžimai tušti"
+
+#: utils.py:793
+msgid "The word count or definitions are less than 3 in length"
+msgstr "Žodžių skaičius arba apibrėžimai yra trumpesni nei 3"
+
+#: utils.py:797
+msgid "Length of the word count is greater than the definitions"
+msgstr "Žodžių skaičiaus ilgis yra didesnis nei apibrėžimų"
+
+#: utils.py:800
+msgid "Escape character present in word"
+msgstr "Pabėgimo simbolis, esantis žodyje"
+
+#: app/templates/index.html:13 app/templates/index.html:338
+#: pages/browser.py:458
+msgid "Crossword Puzzle - Game"
+msgstr "Kryžiažodis - žaidimas"
+
+#: app/templates/index.html:136
+msgid "Compound"
+msgstr "Junginys"
+
+#: app/templates/index.html:149
+msgid "Auto-skip"
+msgstr "Automatinis slidinėjimas"
+
+#: app/templates/index.html:158
+msgid "Auto-word"
+msgstr "Automatinis žodis"
+
+#: app/templates/index.html:167
+msgid "Auto-check"
+msgstr "Automatinis patikrinimas"
+
+#: app/templates/index.html:176
+msgid "Zoom"
+msgstr "Mastelio keitimas"
+
+#: app/templates/index.html:189
+msgid "Reveal"
+msgstr "Atskleisti"
+
+#: app/templates/index.html:197 app/templates/index.html:230
+msgid "Cell"
+msgstr "Ląstelė"
+
+#: app/templates/index.html:204 app/templates/index.html:237
+#: app/templates/index.html:263
+msgid "Word"
+msgstr "Žodis"
+
+#: app/templates/index.html:211 app/templates/index.html:244
+#: app/templates/index.html:270
+msgid "Grid"
+msgstr "Tinklelis"
+
+#: app/templates/index.html:222
+msgid "Check"
+msgstr "Patikrinti"
+
+#: app/templates/index.html:255
+msgid "Clear"
+msgstr "Aišku"
+
+#: app/templates/index.html:277
+msgid "Unrevealed"
+msgstr "Neatskleista"
+
+#: app/templates/index.html:340
+msgid "You are viewing"
+msgstr "Jūs žiūrite"
+
+#: app/templates/index.html:340
+msgid "from"
+msgstr "nuo"
+
+#: app/templates/index.html:345
+msgid "word(s) could not be inserted, sorry."
+msgstr "Žodis (-ai) negalėjo būti įterptas, atsiprašau."
+
+#: app/templates/index.html:348
+msgid "Word count (adjusted)"
+msgstr "Žodžių skaičius (pakoreguotas)"
+
+#: app/templates/index.html:351
+msgid "Word count"
+msgstr "Žodžių skaičius"
+
+#: app/templates/index.html:357
+msgid "Continue"
+msgstr "Tęsti"
+
+#: app/templates/index.html:363
+msgid "You completed the crossword!"
+msgstr "Jūs baigėte kryžiažodį!"
+
+#: app/templates/index.html:368 pages/browser.py:718
+msgid "Close"
+msgstr "Uždaryti"
+
+#: pages/browser.py:142
+msgid "Crossword Browser"
+msgstr "Kryžiažodžių naršyklė"
+
+#: pages/browser.py:147 pages/editor.py:363
+msgid "Back"
+msgstr "Nugara"
+
+#: pages/browser.py:151 pages/editor.py:367 pages/home.py:305
+msgid "HomePage"
+msgstr "Pagrindinis puslapis"
+
+#: pages/browser.py:162
+msgid "Categorised"
+msgstr "Suskirstyti"
+
+#: pages/browser.py:162 pages/browser.py:314
+msgid "Flattened"
+msgstr "Paplokščias"
+
+#: pages/browser.py:191
+msgid "Create"
+msgstr "Sukurti"
+
+#: pages/browser.py:200
+msgid "Play"
+msgstr "žaisti"
+
+#: pages/browser.py:208 pages/home.py:126
+msgid "Browser"
+msgstr "Naršyklė"
+
+#: pages/browser.py:208
+msgid "Embedded"
+msgstr "Įterpta"
+
+#: pages/browser.py:211
+msgid "Game view"
+msgstr "Žaidimo vaizdas"
+
+#: pages/browser.py:237
+msgid "Write to PDF"
+msgstr "Rašykite į PDF"
+
+#: pages/browser.py:245
+msgid "Destroy"
+msgstr "Sunaikinti"
+
+#: pages/browser.py:256
+msgid "Word count preferences"
+msgstr "Žodžių skaičiaus nuostatos"
+
+#: pages/browser.py:271 pages/browser.py:400 pages/browser.py:433
+#: pages/browser.py:627
+msgid "Select word count"
+msgstr "Pasirinkite žodžių skaičių"
+
+#: pages/browser.py:286
+msgid "Custom"
+msgstr "Pasirinktinis"
+
+#: pages/browser.py:499
+msgid "Select a destination to download your PDF to"
+msgstr "Pasirinkite tikslą, kad galėtumėte atsisiųsti savo PDF"
+
+#: pages/browser.py:607
+msgid "To perform this operation, you must first select a cell."
+msgstr "Norėdami atlikti šią operaciją, pirmiausia turite pasirinkti langelį."
+
+#: pages/browser.py:711
+msgid "View"
+msgstr "Žiūrėti"
+
+#: pages/browser.py:915
+msgid "Select"
+msgstr "Pasirinkite"
+
+#: pages/editor.py:357
+msgid "Crossword Editor"
+msgstr "Kryžiažodžių rengyklė"
+
+#: pages/editor.py:495 pages/editor.py:718 pages/editor.py:808
+#: pages/editor.py:948
+msgid "Your Crosswords"
+msgstr "Jūsų kryžiažodžiai"
+
+#: pages/editor.py:559 pages/editor.py:812 pages/editor.py:955
+#: pages/editor.py:1042 pages/editor.py:1155 pages/editor.py:1269
+msgid "Save"
+msgstr "Taupyti"
+
+#: pages/editor.py:571
+msgid "length >= 1 and valid OS file name"
+msgstr "ilgis >= 1 ir galiojantis OS failo pavadinimas"
+
+#: pages/editor.py:580
+msgid "length == 1"
+msgstr "ilgis == 1"
+
+#: pages/editor.py:586
+msgid "Difficulty"
+msgstr "Sunkumas"
+
+#: pages/editor.py:593
+msgid "Easy"
+msgstr "Lengva"
+
+#: pages/editor.py:593
+msgid "Medium"
+msgstr "Vidutinis"
+
+#: pages/editor.py:593
+msgid "Hard"
+msgstr "Sunku"
+
+#: pages/editor.py:593
+msgid "Extreme"
+msgstr "Ekstremalus"
+
+#: pages/editor.py:718 pages/editor.py:1098
+msgid "Adding"
+msgstr "Pridedant"
+
+#: pages/editor.py:721 pages/editor.py:1102
+msgid "Add"
+msgstr "Pridėti"
+
+#: pages/editor.py:900 pages/editor.py:1218
+msgid "Press"
+msgstr "Spauda"
+
+#: pages/editor.py:902 pages/editor.py:1220
+msgid "to add a"
+msgstr ", jei norite įtraukti"
+
+#: pages/editor.py:904
+msgid "new crossword."
+msgstr "Naujas kryžiažodis."
+
+#: pages/editor.py:948 pages/editor.py:1265
+msgid "Editing"
+msgstr "Redagavimo"
+
+#: pages/editor.py:1010 pages/editor.py:1098 pages/editor.py:1150
+#: pages/editor.py:1265
+msgid "Your Words"
+msgstr "Jūsų žodžiai"
+
+#: pages/editor.py:1054
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "ilgis >= 1 ir ilgis <= 32 ir yra kalbos simbolis"
+
+#: pages/editor.py:1065
+msgid "length >= 1"
+msgstr "ilgis >= 1"
+
+#: pages/editor.py:1222
+msgid "new word."
+msgstr "naujas žodis."
+
+#: pages/home.py:98
+msgid "Crossword Puzzle"
+msgstr "Kryžiažodis"
+
+#: pages/home.py:128
+msgid "BrowserPage"
+msgstr "Naršyklės puslapis"
+
+#: pages/home.py:137
+msgid "Editor"
+msgstr "Redaktorius"
+
+#: pages/home.py:139
+msgid "EditorPage"
+msgstr "Redaktoriaus puslapis"
+
+#: pages/home.py:159
+msgid "Global Settings"
+msgstr "Visuotiniai nustatymai"
+
+#: pages/home.py:166
+msgid "Language"
+msgstr "Kalba"
+
+#: pages/home.py:178
+msgid "Size"
+msgstr "Dydis"
+
+#: pages/home.py:197
+msgid "light"
+msgstr "šviesos"
+
+#: pages/home.py:197
+msgid "dark"
+msgstr "tamsus"
+
+#: pages/home.py:197
+msgid "system"
+msgstr "sistema"
+
+#: pages/home.py:200 pages/home.py:214
+msgid "Appearance"
+msgstr "Išvaizda"
+
+#: pages/home.py:220
+msgid "terrible"
+msgstr "baisus"
+
+#: pages/home.py:221
+msgid "poor"
+msgstr "vargšas"
+
+#: pages/home.py:222
+msgid "average"
+msgstr "vidurkis"
+
+#: pages/home.py:223
+msgid "great"
+msgstr "Puiku"
+
+#: pages/home.py:224
+msgid "perfect"
+msgstr "puikus"
+
+#: pages/home.py:228
+msgid "Crossword Quality"
+msgstr "Kryžiažodžių kokybė"
+
+msgid "Geography"
+msgstr "Geografija"
+
+msgid "Math"
+msgstr "Matematika"
+
+msgid "Science"
+msgstr "Mokslas"
+
+msgid "Computer Science"
+msgstr "Informatika"
+
+msgid "User"
+msgstr "Naudotojas"
+
+msgid "Total words"
+msgstr "Iš viso žodžiai"
+
+msgid "Maximum"
+msgstr "Maksimalus"
+
+msgid "Clue"
+msgstr "Clue"
+
+msgid "Name"
+msgstr "Vardas, pavadinimas"
+
+msgid "Symbol"
+msgstr "Simbolis"
+
+msgid "Search"
+msgstr "Paieška"
+
+msgid "New version available!"
+msgstr "Galima rasti naują versiją!"

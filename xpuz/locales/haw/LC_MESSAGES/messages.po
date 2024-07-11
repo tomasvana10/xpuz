@@ -1,0 +1,626 @@
+# Hawaiian translations for xpuz.
+# Copyright (C) 2024 Tomas Vana
+# This file is distributed under the same license as the xpuz
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-06-30 17:39+1000\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: haw <LL@li.org>\n"
+"Language: haw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: import_export.py:24
+msgid "Select a destination to export your crosswords to"
+msgstr "E koho i kahi wahi e hoʻolaha ai i kāu mau crosswords i"
+
+#: import_export.py:28
+msgid "my-crosswords"
+msgstr "ʻO kaʻu-crosswords"
+
+#: import_export.py:70
+msgid ""
+"Select a valid crossword JSON file that was exported using xpuz"
+msgstr ""
+"E koho i kahi faile crossword Jon Pro faile i laweʻia i ka hoʻohanaʻana i ka"
+" crosword_puzzle"
+
+#: app/templates/index.html:286 pdf.py:207
+msgid "Across"
+msgstr "Ma waena"
+
+#: app/templates/index.html:308 pdf.py:214
+msgid "Down"
+msgstr "Iho"
+
+#: utils.py:58
+msgid "Remove"
+msgstr "Wehe"
+
+#: utils.py:59
+msgid "Are you sure you want to delete this"
+msgstr "Makemake ʻoe e holoi i kēia"
+
+#: utils.py:61
+msgid "It will be lost forever!"
+msgstr "E nalowale mau loa ana!"
+
+#: utils.py:66
+msgid "Add or select"
+msgstr "Hoʻohui a koho paha"
+
+#: utils.py:67
+msgid "Are you sure you want to add/select a"
+msgstr "Makemake ʻoe e hoʻohui/koho i kahi"
+
+#: utils.py:69
+msgid "Your modified fields will be reset!"
+msgstr "E hoʻihoʻi hou ʻia kāu mau kahua i hoʻololi ʻia!"
+
+#: utils.py:74 utils.py:106
+msgid "Back to home"
+msgstr "Hoʻi i ka home"
+
+#: utils.py:75
+msgid ""
+"Are you sure you want to go back to the home screen? Your modified fields "
+"will be reset!"
+msgstr "Makemake ʻoe e hoʻi i ka pale home? "
+
+#: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
+#: utils.py:246
+msgid "Info"
+msgstr "ʻIke"
+
+#: utils.py:84
+msgid ""
+"Are you sure you want to import crosswords? Your modified fields will be "
+"reset!"
+msgstr ""
+"ʻIkeʻoe makemakeʻoe e hoʻokomo i nā crosswords?E hoʻihoʻiʻia kāu mau mahina "
+"i hoʻololiʻia!"
+
+#: utils.py:92
+msgid "Restart"
+msgstr "Hoʻomaka hou"
+
+#: utils.py:92
+msgid "Are you sure you want to restart the app?"
+msgstr "Makemake ʻoe e hoʻomaka hou i ka polokalamu?"
+
+#: pages/home.py:148 utils.py:97
+msgid "Exit"
+msgstr "Puka"
+
+#: utils.py:98
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr ""
+"Makemake ʻoe e haʻalele i ka polokalamu? Makemake ʻoe e haʻalele i ka "
+"polokalamu? Inā holo ka polokalamu pūnaewele, e hoʻopau ʻia."
+
+#: utils.py:107
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr ""
+"Makemake ʻoe e hoʻi i ka pale home? Makemake ʻoe e hoʻi i ka pale home? E "
+"hoʻopau ʻia ka polokalamu pūnaewele."
+
+#: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
+#: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
+#: utils.py:220 utils.py:231 utils.py:263 utils.py:267
+msgid "Error"
+msgstr "Kuhihewa"
+
+#: utils.py:118
+msgid "This language is already selected."
+msgstr "Ua koho ʻia kēia ʻōlelo."
+
+#: utils.py:123
+msgid "This size is already selected."
+msgstr "Ua koho mua ʻia kēia nui."
+
+#: utils.py:128
+msgid "This appearance is already selected."
+msgstr "Ua koho ʻia kēia hiʻohiʻona."
+
+#: utils.py:133
+msgid "This quality is already selected."
+msgstr "Ua kohoʻia kēiaʻano maikaʻi."
+
+#: utils.py:139
+msgid ""
+"A crossword with this name and difficulty already exists. Please choose a "
+"new name and/or a new difficulty."
+msgstr ""
+"ʻO kahi crossword me kēia inoa a me kēia paʻakikī ke loaʻa.Eʻoluʻolu e koho "
+"i kahi inoa hou a me / a iʻole kahi pilikia hou."
+
+#: utils.py:148
+msgid "You have no crosswords to export. Please make some and try again."
+msgstr ""
+"ʻAʻohe o kou mau'ōlelo e hiki ai ke kiʻi.Eʻoluʻolu e hana hou a ho'āʻo hou."
+
+#: utils.py:155
+msgid "Successfully exported your crosswords."
+msgstr "Ua kūleʻa maikaʻi i kāu mau lā."
+
+#: utils.py:160
+msgid "Your crosswords could not be exported, sorry."
+msgstr "ʻAʻole hiki ke kiʻiʻia kāu mau crosswords, e kala."
+
+#: utils.py:166
+msgid "All of your crosswords were successfully imported."
+msgstr "Ua hoʻokomoʻia nā mea āpau o kāu crosswords."
+
+#: utils.py:172
+msgid "Your import could not be fully completed."
+msgstr "ʻAʻole hiki ke hoʻopauʻia kāu hoʻopuka."
+
+#: utils.py:174
+msgid ""
+"Crosswords with duplicate names and difficulties that were not imported: "
+msgstr "Nā crosswords me nā inoa kope a me nā pilikia i hāʻawiʻoleʻiaʻoleʻia:"
+
+#: utils.py:180
+msgid "Invalid crosswords that were not imported: "
+msgstr "Nā Crosswords Trosswordsʻaʻole i hoʻopukaʻia:"
+
+#: utils.py:187
+msgid "The specified JSON file is invalid and cannot be processed."
+msgstr "ʻAʻole kūpono ka faila JSON aʻaʻole hiki ke hoʻokōʻia."
+
+#: utils.py:195
+msgid "This word already exists. Please choose a new word."
+msgstr "Aia kēia huaʻōlelo. "
+
+#: utils.py:201
+msgid "An error occurred while creating your PDF. Please try again."
+msgstr ""
+"Ua hala kekahi hewa i ka wā e hoʻokumu ai i kāu PDF.Eʻoluʻolu e ho'āʻo hou."
+
+#: utils.py:208
+msgid ""
+"words that could not be inserted during crossword generation will not be "
+"included in this PDF, sorry."
+msgstr ""
+"ʻAʻole hiki ke hoʻokomoʻia nā hua'ōlelo i hikiʻole ke hoʻokomoʻia i ka wā o "
+"ke Aupuni Crosswordʻaʻole e hoʻokomoʻia ma kēia PDF, e kalaʻia."
+
+#: utils.py:215
+msgid "Successfully wrote PDF."
+msgstr "Ua kākau ponoʻo PDF."
+
+#: utils.py:221
+msgid ""
+"You are missing pywebview, which is required when viewing the crossword game"
+" in an embedded window. Please run"
+msgstr ""
+"Oe ke nalowale pywebject, e pono ai ke nānā i ke nānāʻana i ka pāʻani "
+"crossword i loko o kahi puka aniani i kahi puka aniani.Holo"
+
+#: utils.py:226
+msgid "to install this dependency."
+msgstr "e hoʻokau i kēia hilinaʻi."
+
+#: utils.py:232
+msgid ""
+"You are missing pycairo, which is required to perform this operation. Please"
+" run"
+msgstr "Ua halaʻoe i ka pycairo, kahi e pono ai e hana i kēia hana.Holo"
+
+#: utils.py:237
+msgid ""
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
+msgstr ""
+"a hoʻonohonoho i nā poʻomanaʻo no ka pycaro ināʻaʻoleʻoe ma ka Windows me ka"
+" hoʻohanaʻana i nā alakaʻiʻo Pycairo"
+
+#: utils.py:247
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, the program will run new web apps with a different port. "
+"Alternatively, you can manually change the port in the program's config "
+"file. All app processes that have not been properly terminated can be "
+"terminated through Activity Monitor on MacOS, or, simply restart your "
+"computer to terminate them."
+msgstr ""
+"ʻO ka hoʻomaka mua ʻana, e ʻoluʻolu e heluhelu: Ke hoʻouka ʻoe i kahi "
+"huaʻōlelo, a makemake ʻoe e hoʻouka i kekahi, pono ʻoe e hoʻopau mua i ka "
+"polokalamu pūnaewele. ʻO ka hoʻomaka mua ʻana, e ʻoluʻolu e heluhelu: Ke "
+"hoʻouka ʻoe i kahi huaʻōlelo, a makemake ʻoe e hoʻouka i kekahi, pono ʻoe e "
+"hoʻopau i ka polokalamu pūnaewele. NUI: Inā aia ʻoe ma macOS, e haʻalele i "
+"ka noi (me ka hoʻohana ʻana i ka cmd+q) i ka wā e holo ana ka polokalamu "
+"pūnaewele e pale iā ia mai ka hoʻopau pono ʻana. Inā kuhi hewa ʻoe i kēia, e"
+" holo ka polokalamu i nā polokalamu pūnaewele hou me kahi awa ʻē aʻe. ʻO "
+"kahi ʻē aʻe, hiki iā ʻoe ke hoʻololi lima i ke awa ma ka faila config o ka "
+"papahana. Hiki ke hoʻopau ʻia nā kaʻina hana a pau i hoʻopau pono ʻole ʻia "
+"ma o Activity Monitor ma MacOS, a i ʻole, e hoʻomaka hou i kāu kamepiula e "
+"hoʻopau iā lākou."
+
+#: utils.py:269
+msgid ""
+"An unexpected error occured. Please try reinstalling the application with"
+msgstr "Ua loaʻa kahi hewa i manaʻo ʻole ʻia. "
+
+#: utils.py:790
+msgid "Definitions are empty"
+msgstr "ʻAʻohe wehewehe"
+
+#: utils.py:793
+msgid "The word count or definitions are less than 3 in length"
+msgstr "ʻO ka helu a i ʻole ka wehewehe ʻana ʻaʻole ia ma mua o 3 ka lōʻihi"
+
+#: utils.py:797
+msgid "Length of the word count is greater than the definitions"
+msgstr "ʻOi aku ka lōʻihi o ka helu ʻōlelo ma mua o nā wehewehe"
+
+#: utils.py:800
+msgid "Escape character present in word"
+msgstr "Pakele i ke ano ma ka olelo"
+
+#: app/templates/index.html:13 app/templates/index.html:338
+#: pages/browser.py:458
+msgid "Crossword Puzzle - Game"
+msgstr "Crossword puzzle - pāʻani"
+
+#: app/templates/index.html:136
+msgid "Compound"
+msgstr "Coupound"
+
+#: app/templates/index.html:149
+msgid "Auto-skip"
+msgstr "Skip-skip"
+
+#: app/templates/index.html:158
+msgid "Auto-word"
+msgstr "Hua'ōlelo-hua'ōlelo"
+
+#: app/templates/index.html:167
+msgid "Auto-check"
+msgstr "ʻO ka nānā-nānā"
+
+#: app/templates/index.html:176
+msgid "Zoom"
+msgstr "ZOOM"
+
+#: app/templates/index.html:189
+msgid "Reveal"
+msgstr "Hōʻike"
+
+#: app/templates/index.html:197 app/templates/index.html:230
+msgid "Cell"
+msgstr "Kelepona"
+
+#: app/templates/index.html:204 app/templates/index.html:237
+#: app/templates/index.html:263
+msgid "Word"
+msgstr "Hua'ōlelo"
+
+#: app/templates/index.html:211 app/templates/index.html:244
+#: app/templates/index.html:270
+msgid "Grid"
+msgstr "Grid"
+
+#: app/templates/index.html:222
+msgid "Check"
+msgstr "Nānā"
+
+#: app/templates/index.html:255
+msgid "Clear"
+msgstr "Maopopo"
+
+#: app/templates/index.html:277
+msgid "Unrevealed"
+msgstr "ʻAʻole iʻikeʻia"
+
+#: app/templates/index.html:340
+msgid "You are viewing"
+msgstr "Ke nānā neiʻoe"
+
+#: app/templates/index.html:340
+msgid "from"
+msgstr "Mai"
+
+#: app/templates/index.html:345
+msgid "word(s) could not be inserted, sorry."
+msgstr "ʻAʻole hiki ke hoʻokomoʻia nā hua'ōlelo (s), e kala mai."
+
+#: app/templates/index.html:348
+msgid "Word count (adjusted)"
+msgstr "Helu hua'ōlelo (hoʻoponoponoʻia)"
+
+#: app/templates/index.html:351
+msgid "Word count"
+msgstr "Heluhelu nui"
+
+#: app/templates/index.html:357
+msgid "Continue"
+msgstr "E hoʻomau"
+
+#: app/templates/index.html:363
+msgid "You completed the crossword!"
+msgstr "Ua hoʻopauʻoe i ka crossword!"
+
+#: app/templates/index.html:368 pages/browser.py:718
+msgid "Close"
+msgstr "Pani"
+
+#: pages/browser.py:142
+msgid "Crossword Browser"
+msgstr "Huli Huaʻōlelo Crossword"
+
+#: pages/browser.py:147 pages/editor.py:363
+msgid "Back"
+msgstr "Hoʻi"
+
+#: pages/browser.py:151 pages/editor.py:367 pages/home.py:305
+msgid "HomePage"
+msgstr "ʻAoʻao"
+
+#: pages/browser.py:162
+msgid "Categorised"
+msgstr "Wehewehe ʻia"
+
+#: pages/browser.py:162 pages/browser.py:314
+msgid "Flattened"
+msgstr "Palahalaha"
+
+#: pages/browser.py:191
+msgid "Create"
+msgstr "Hana"
+
+#: pages/browser.py:200
+msgid "Play"
+msgstr "Pāʻani"
+
+#: pages/browser.py:208 pages/home.py:126
+msgid "Browser"
+msgstr "Ka mea nānā"
+
+#: pages/browser.py:208
+msgid "Embedded"
+msgstr "Hoʻokomoʻia"
+
+#: pages/browser.py:211
+msgid "Game view"
+msgstr "Pāʻani Paʻa"
+
+#: pages/browser.py:237
+msgid "Write to PDF"
+msgstr "Kākau i PDF"
+
+#: pages/browser.py:245
+msgid "Destroy"
+msgstr "Luku"
+
+#: pages/browser.py:256
+msgid "Word count preferences"
+msgstr "Nā koho helu huaʻōlelo"
+
+#: pages/browser.py:271 pages/browser.py:400 pages/browser.py:433
+#: pages/browser.py:627
+msgid "Select word count"
+msgstr "E koho i ka helu ʻōlelo"
+
+#: pages/browser.py:286
+msgid "Custom"
+msgstr "Kuʻuna"
+
+#: pages/browser.py:499
+msgid "Select a destination to download your PDF to"
+msgstr "Koho i kahi wahi e hoʻoiho ai i kāu PDF i"
+
+#: pages/browser.py:607
+msgid "To perform this operation, you must first select a cell."
+msgstr "E hana i kēia hana, ponoʻoe e koho mua i kahi kelepona."
+
+#: pages/browser.py:711
+msgid "View"
+msgstr "Nānā"
+
+#: pages/browser.py:915
+msgid "Select"
+msgstr "E koho"
+
+#: pages/editor.py:357
+msgid "Crossword Editor"
+msgstr "Luna Hoʻoponopono Crossword"
+
+#: pages/editor.py:495 pages/editor.py:718 pages/editor.py:808
+#: pages/editor.py:948
+msgid "Your Crosswords"
+msgstr "Kau mau hua'ōlelo"
+
+#: pages/editor.py:559 pages/editor.py:812 pages/editor.py:955
+#: pages/editor.py:1042 pages/editor.py:1155 pages/editor.py:1269
+msgid "Save"
+msgstr "Hoʻopakele"
+
+#: pages/editor.py:571
+msgid "length >= 1 and valid OS file name"
+msgstr "lōʻihi >= 1 a me ka inoa faila OS kūpono"
+
+#: pages/editor.py:580
+msgid "length == 1"
+msgstr "lōʻihi == 1"
+
+#: pages/editor.py:586
+msgid "Difficulty"
+msgstr "Pilikia"
+
+#: pages/editor.py:593
+msgid "Easy"
+msgstr "maʻalahi"
+
+#: pages/editor.py:593
+msgid "Medium"
+msgstr "Kauwaena"
+
+#: pages/editor.py:593
+msgid "Hard"
+msgstr "Paʻakikī"
+
+#: pages/editor.py:593
+msgid "Extreme"
+msgstr "Kiʻekiʻe"
+
+#: pages/editor.py:718 pages/editor.py:1098
+msgid "Adding"
+msgstr "Hoʻohui"
+
+#: pages/editor.py:721 pages/editor.py:1102
+msgid "Add"
+msgstr "Hoʻohui"
+
+#: pages/editor.py:900 pages/editor.py:1218
+msgid "Press"
+msgstr "Paʻi"
+
+#: pages/editor.py:902 pages/editor.py:1220
+msgid "to add a"
+msgstr "e hoʻohui a"
+
+#: pages/editor.py:904
+msgid "new crossword."
+msgstr "hale kūʻai hou."
+
+#: pages/editor.py:948 pages/editor.py:1265
+msgid "Editing"
+msgstr "Hoʻoponopono"
+
+#: pages/editor.py:1010 pages/editor.py:1098 pages/editor.py:1150
+#: pages/editor.py:1265
+msgid "Your Words"
+msgstr "Kau ʻōlelo"
+
+#: pages/editor.py:1054
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "lōʻihi >= 1 a me ka lōʻihi <= 32 a he ʻano ʻōlelo"
+
+#: pages/editor.py:1065
+msgid "length >= 1"
+msgstr "lōʻihi >= 1"
+
+#: pages/editor.py:1222
+msgid "new word."
+msgstr "ʻōlelo hou."
+
+#: pages/home.py:98
+msgid "Crossword Puzzle"
+msgstr "Huʻi Huaʻōlelo Crossword"
+
+#: pages/home.py:128
+msgid "BrowserPage"
+msgstr "'ʻOmanana"
+
+#: pages/home.py:137
+msgid "Editor"
+msgstr "Lunahooponopono"
+
+#: pages/home.py:139
+msgid "EditorPage"
+msgstr "Aoao Lunahooponopono"
+
+#: pages/home.py:159
+msgid "Global Settings"
+msgstr "Nā hoʻonohonoho honua"
+
+#: pages/home.py:166
+msgid "Language"
+msgstr "ʻŌlelo"
+
+#: pages/home.py:178
+msgid "Size"
+msgstr "Nui"
+
+#: pages/home.py:197
+msgid "light"
+msgstr "māmā"
+
+#: pages/home.py:197
+msgid "dark"
+msgstr "pouli"
+
+#: pages/home.py:197
+msgid "system"
+msgstr "ʻōnaehana"
+
+#: pages/home.py:200 pages/home.py:214
+msgid "Appearance"
+msgstr "Ka nana aku"
+
+#: pages/home.py:220
+msgid "terrible"
+msgstr "weliweli"
+
+#: pages/home.py:221
+msgid "poor"
+msgstr "ilihune"
+
+#: pages/home.py:222
+msgid "average"
+msgstr "Apana"
+
+#: pages/home.py:223
+msgid "great"
+msgstr "nui"
+
+#: pages/home.py:224
+msgid "perfect"
+msgstr "hemolele"
+
+#: pages/home.py:228
+msgid "Crossword Quality"
+msgstr "ʻO keʻano o ke aloha"
+
+msgid "Geography"
+msgstr "Palapala honua"
+
+msgid "Math"
+msgstr "Makemakika"
+
+msgid "Science"
+msgstr "ʻepekema"
+
+msgid "Computer Science"
+msgstr "ʻepekema kamepiula"
+
+msgid "User"
+msgstr "mea hoʻohana"
+
+msgid "Total words"
+msgstr "Nā hua'ōlelo"
+
+msgid "Maximum"
+msgstr "Loa"
+
+msgid "Clue"
+msgstr "ʻIkepili"
+
+msgid "Name"
+msgstr "Inoa"
+
+msgid "Symbol"
+msgstr "Hoailona"
+
+msgid "Search"
+msgstr "Huli"
+
+msgid "New version available!"
+msgstr "Loaʻa ma hope!"

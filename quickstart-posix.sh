@@ -9,7 +9,7 @@ if [ ! -d venv]; then
 fi
 
 source venv/bin/activate
-pip3 install -U crossword-puzzle || {
-    pip install -U crossword-puzzle
+pip3 install -U xpuz || {
+    pip install -U xpuz
 }
-crossword-ctk
+xpuz-ctk

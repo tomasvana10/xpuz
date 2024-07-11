@@ -6,7 +6,7 @@ if not exist venv (
 )
 
 call ./venv/Scripts/Activate.bat
-pip install -U crossword-puzzle
-crossword-ctk
+pip install -U xpuz
+xpuz-ctk
 
 pause

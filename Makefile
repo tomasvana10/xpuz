@@ -1,8 +1,8 @@
 # Constants
-BABEL_CFG = crossword_puzzle/babel.cfg
-LOCALES = crossword_puzzle/locales
-BASE_POT = crossword_puzzle/locales/base.pot
-TRANSLATOR = crossword_puzzle/__dev.py
+BABEL_CFG = xpuz/babel.cfg
+LOCALES = xpuz/locales
+BASE_POT = xpuz/locales/base.pot
+TRANSLATOR = xpuz/__dev.py
 
 # i18n
 i18n: extract update translate compile

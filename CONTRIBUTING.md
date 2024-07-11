@@ -1,15 +1,15 @@
-# Contributing to crossword_puzzle
-Thanks for deciding to contribute to crossword_puzzle. Please read below for information on how to make a pull request.
+# Contributing to xpuz
+Thanks for deciding to contribute to `xpuz`. Please read below for information on how to make a pull request.
 
 When contributing to this project, you must agree that you have authored 100% of the content, that you have the necessary rights to the content and that the content you contribute may be provided under the project licence.
 
 Then, submit a pull request:
-1. Create a fork of crossword_puzzle
+1. Create a fork of `xpuz`
    
 2. Clone your fork locally on your computer (requires git):
 ```
-git clone https://github.com/<your_name>/crossword_puzzle.git
-cd crossword_puzzle
+git clone https://github.com/<your_name>/xpuz.git
+cd xpuz
 ```
 
 3. Make a new branch and switch to it:

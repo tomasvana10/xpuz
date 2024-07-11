@@ -1,24 +1,24 @@
 <div align="center">
   
-  # crossword_puzzle
+  # xpuz
 
 </div>
 
 <div align="center">
 
-  ![crossword banner](https://github.com/tomasvana10/crossword_puzzle/assets/124552709/370a11cb-540e-41c4-8917-5f5272da2ebd)
+  ![crossword banner](https://github.com/tomasvana10/xpuz/assets/124552709/370a11cb-540e-41c4-8917-5f5272da2ebd)
   ![licence](https://img.shields.io/badge/licence-MIT-green?style=flat?logo=licence)
-  [![PyPI version](https://img.shields.io/pypi/v/crossword_puzzle?style=flat-square)](https://pypi.org/project/crossword_puzzle/)
-  [![Publish to PyPI.org](https://github.com/tomasvana10/crossword_puzzle/actions/workflows/publish.yml/badge.svg)](https://github.com/tomasvana10/crossword_puzzle/actions/workflows/publish.yml)
-  [![release](https://img.shields.io/github/v/release/tomasvana10/crossword_puzzle?logo=github)](https://github.com/tomasvana10/crossword_puzzle/releases/latest)
-  [![issues](https://img.shields.io/github/issues-raw/tomasvana10/crossword_puzzle.svg?maxAge=25000)](https://github.com/tomasvana10/crossword_puzzle/issues)
-  [![CodeQL](https://github.com/tomasvana10/crossword_puzzle/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/tomasvana10/crossword_puzzle/actions/workflows/github-code-scanning/codeql)
-  [![Tests](https://github.com/tomasvana10/crossword_puzzle/actions/workflows/tox-tests.yml/badge.svg)](https://github.com/tomasvana10/crossword_puzzle/actions/workflows/tox-tests.yml)
+  [![PyPI version](https://img.shields.io/pypi/v/xpuz?style=flat-square)](https://pypi.org/project/xpuz/)
+  [![Publish to PyPI.org](https://github.com/tomasvana10/xpuz/actions/workflows/publish.yml/badge.svg)](https://github.com/tomasvana10/xpuz/actions/workflows/publish.yml)
+  [![release](https://img.shields.io/github/v/release/tomasvana10/xpuz?logo=github)](https://github.com/tomasvana10/xpuz/releases/latest)
+  [![issues](https://img.shields.io/github/issues-raw/tomasvana10/xpuz.svg?maxAge=25000)](https://github.com/tomasvana10/xpuz/issues)
+  [![CodeQL](https://github.com/tomasvana10/xpuz/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/tomasvana10/xpuz/actions/workflows/github-code-scanning/codeql)
+  [![Tests](https://github.com/tomasvana10/xpuz/actions/workflows/tox-tests.yml/badge.svg)](https://github.com/tomasvana10/xpuz/actions/workflows/tox-tests.yml)
   
 </div>
 
 An educational GUI/web package built with `CustomTkinter` and `Flask` that allows you to design and play procedurally generated crosswords.
-- Download the latest source code: [click here](https://github.com/tomasvana10/crossword_puzzle/releases/latest)
+- Download the latest source code: [click here](https://github.com/tomasvana10/xpuz/releases/latest)
 
 ## Dependencies
 `Babel`
@@ -56,11 +56,11 @@ An educational GUI/web package built with `CustomTkinter` and `Flask` that allow
 - Right-to-left scripts are not supported.
 - Translations are made with a translation API, and therefore might be inaccurate.
 - Generated crosswords may occasionally have a few missing words.
-- If your OS scaling is higher than the default, the web application will likely be too big. Read [Troubleshooting](https://github.com/tomasvana10/crossword_puzzle/wiki/Troubleshooting) for more information.
+- If your OS scaling is higher than the default, the web application will likely be too big. Read [Troubleshooting](https://github.com/tomasvana10/xpuz/wiki/Troubleshooting) for more information.
 
 ## Installation
 > [!IMPORTANT]
-> Installing `crossword_puzzle` requires Python3 and pip.
+> Installing `xpuz` requires Python3 and pip.
 > If you have Python3 installed without pip, click [here](https://pip.pypa.io/en/stable/installation/) to install it.<br><br>
 > If you do not have Python3 installed, download the installer [here](https://www.python.org/downloads/), or install it with [pyenv](https://github.com/pyenv/pyenv) (recommended). Then, refer to the previous link on how to install pip.<br><br>
 > **Linux and MacOS users**: You may not have Tkinter installed by default. Try running `sudo apt-get install python3-tk` on Linux or `sudo pip install python3-tk` on MacOS if this is the case.
@@ -79,11 +79,11 @@ Windows: venv\scripts\activate
 
 2. Install the package in your system directory/virtual environment:
 ```
-pip install crossword-puzzle
+pip install xpuz
 ```
 or, install the package in your home directory if you aren't using a virtual environment:
 ```
-pip install --user crossword-puzzle
+pip install --user xpuz
 ```
 
 3. Install pycairo if you want to make PDFs from your generated crosswords (read [Dependencies](#dependencies) for more information):
@@ -93,16 +93,16 @@ pip install pycairo
 
 4. Initialise the GUI through the entry point:
 ```
-crossword-ctk
+xpuz-ctk
 ```
 or, run the package manually through the terminal (requires [Git](https://git-scm.com/downloads)):
 ```
-git clone https://github.com/tomasvana10/crossword_puzzle.git
-cd crossword_puzzle
+git clone https://github.com/tomasvana10/xpuz.git
+cd xpuz
 pip install -r requirements.txt
 ```
 ```py
->>> import crossword_puzzle as xp
+>>> import xpuz as xp
 >>> xp.main()
 ```
 
@@ -116,23 +116,23 @@ deactivate
    
 3. Update the package:
 ```
-pip install -U crossword-puzzle
+pip install -U xpuz
 ```
 
 ## Quickstart
-You can utilise one of two scripts to quickly activate a virtual environment and update and start `crossword_puzzle`.
+You can utilise one of two scripts to quickly activate a virtual environment and update and start `xpuz`.
 
 1. Read the `Important` section of [Installation](#installation) to install Python3 and pip
 2. **Windows users**: Ensure you have script execution enabled. If you are unsure, run `Set-ExecutionPolicy Unrestricted -Scope Process` in your terminal and follow the prompts.
 3. Download a quickstart file from the repository:
-   - **Windows**: [quickstart-win.bat](https://github.com/tomasvana10/crossword_puzzle/blob/main/quickstart-win.bat)
-   - **MacOS/Linux**: [quickstart-posix.sh](https://github.com/tomasvana10/crossword_puzzle/blob/main/quickstart-posix.sh)
+   - **Windows**: [quickstart-win.bat](https://github.com/tomasvana10/xpuz/blob/main/quickstart-win.bat)
+   - **MacOS/Linux**: [quickstart-posix.sh](https://github.com/tomasvana10/xpuz/blob/main/quickstart-posix.sh)
 4. Run the script:
    - **Windows**: Double click the script file or call it in command-line with `.\path\to\quickstart-win.bat`.
    - **MacOS/Linux**: Call the script in the command-line with `source path/to/quickstart-posix.sh`.
 
 ## Documentation
-Check out the wiki [here](https://github.com/tomasvana10/crossword_puzzle/wiki) for information on usage, troubleshooting, FAQ, and more.
+Check out the wiki [here](https://github.com/tomasvana10/xpuz/wiki) for information on usage, troubleshooting, FAQ, and more.
 
 ## Third-party library acknowledgements
 - [Flask](https://flask.palletsprojects.com/en/3.0.x/) - Web framework for the crossword web application
@@ -160,12 +160,12 @@ Check out the wiki [here](https://github.com/tomasvana10/crossword_puzzle/wiki) 
 - Jazzy Chords by NenadSimic -- https://freesound.org/s/150879/ -- License: Creative Commons 0
 
 ## Gallery
-<img alt="crossword puzzle home" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/6b9eba14-220d-43dc-8b28-ddb92ea2d3b6">
+<img alt="crossword puzzle home" src="https://github.com/tomasvana10/xpuz/assets/124552709/6b9eba14-220d-43dc-8b28-ddb92ea2d3b6">
 <hr>
-<img alt="crossword puzzle browser" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/6e5b7eae-970e-46b5-8a72-34d70bea2332">
+<img alt="crossword puzzle browser" src="https://github.com/tomasvana10/xpuz/assets/124552709/6e5b7eae-970e-46b5-8a72-34d70bea2332">
 <hr>
-<img alt="crossword puzzle editor" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/33d7ec0c-ee2e-435f-9386-e7373f8a6378">
+<img alt="crossword puzzle editor" src="https://github.com/tomasvana10/xpuz/assets/124552709/33d7ec0c-ee2e-435f-9386-e7373f8a6378">
 <hr>
-<img alt="crossword puzzle game english" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/0475c6c4-e371-4d9d-837b-c06e0bde153f">
+<img alt="crossword puzzle game english" src="https://github.com/tomasvana10/xpuz/assets/124552709/0475c6c4-e371-4d9d-837b-c06e0bde153f">
 <hr>
-<img alt="crossword puzzle game japanese" src="https://github.com/tomasvana10/crossword_puzzle/assets/124552709/0e9d9d08-4a7c-4853-b83b-b2a27eab4b82">
+<img alt="crossword puzzle game japanese" src="https://github.com/tomasvana10/xpuz/assets/124552709/0e9d9d08-4a7c-4853-b83b-b2a27eab4b82">

@@ -1,0 +1,630 @@
+# Bangla translations for xpuz.
+# Copyright (C) 2024 Tomas Vana
+# This file is distributed under the same license as the xpuz
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-06-30 17:39+1000\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: bn <LL@li.org>\n"
+"Language: bn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: import_export.py:24
+msgid "Select a destination to export your crosswords to"
+msgstr "আপনার ক্রসওয়ার্ডগুলি রফতানি করতে একটি গন্তব্য নির্বাচন করুন"
+
+#: import_export.py:28
+msgid "my-crosswords"
+msgstr "আমার-ক্রসওয়ার্ডস"
+
+#: import_export.py:70
+msgid ""
+"Select a valid crossword JSON file that was exported using xpuz"
+msgstr ""
+"ক্রসওয়ার্ড_পজল ব্যবহার করে রফতানি করা একটি বৈধ ক্রসওয়ার্ড জেএসএন ফাইল "
+"নির্বাচন করুন"
+
+#: app/templates/index.html:286 pdf.py:207
+msgid "Across"
+msgstr "জুড়ে"
+
+#: app/templates/index.html:308 pdf.py:214
+msgid "Down"
+msgstr "নিচে"
+
+#: utils.py:58
+msgid "Remove"
+msgstr "অপসারণ"
+
+#: utils.py:59
+msgid "Are you sure you want to delete this"
+msgstr "তুমি কি নিশ্চিত যে তুমি এটি মুছতে চাও?"
+
+#: utils.py:61
+msgid "It will be lost forever!"
+msgstr "চিরতরে হারিয়ে যাবে!"
+
+#: utils.py:66
+msgid "Add or select"
+msgstr "যোগ করুন বা নির্বাচন করুন"
+
+#: utils.py:67
+msgid "Are you sure you want to add/select a"
+msgstr "তুমি কি নিশ্চিত যে তুমি একটি যুক্ত / নির্বাচন করতে চাও"
+
+#: utils.py:69
+msgid "Your modified fields will be reset!"
+msgstr "আপনার পরিবর্তিত ক্ষেত্রগুলি পুনরায় সেট হবে!"
+
+#: utils.py:74 utils.py:106
+msgid "Back to home"
+msgstr "বাড়িতে ফিরে যাও"
+
+#: utils.py:75
+msgid ""
+"Are you sure you want to go back to the home screen? Your modified fields "
+"will be reset!"
+msgstr ""
+"আপনি কি নিশ্চিত যে আপনি হোম স্ক্রিনে ফিরে যেতে চান? আপনার পরিবর্তিত "
+"ক্ষেত্রগুলি পুনরায় সেট হবে!"
+
+#: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
+#: utils.py:246
+msgid "Info"
+msgstr "তথ্য"
+
+#: utils.py:84
+msgid ""
+"Are you sure you want to import crosswords? Your modified fields will be "
+"reset!"
+msgstr ""
+"আপনি কি নিশ্চিত যে আপনি ক্রসওয়ার্ড আমদানি করতে চান?আপনার পরিবর্তিত "
+"ক্ষেত্রগুলি পুনরায় সেট করা হবে!"
+
+#: utils.py:92
+msgid "Restart"
+msgstr "আবার শুরু"
+
+#: utils.py:92
+msgid "Are you sure you want to restart the app?"
+msgstr "আপনি কি অ্যাপটি পুনরায় চালু করার বিষয়ে নিশ্চিত?"
+
+#: pages/home.py:148 utils.py:97
+msgid "Exit"
+msgstr "প্রস্থান করুন"
+
+#: utils.py:98
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr ""
+"আপনি কি অ্যাপ থেকে প্রস্থান করার বিষয়ে নিশ্চিত? ওয়েব অ্যাপটি চলমান থাকলে "
+"তা বন্ধ হয়ে যাবে।"
+
+#: utils.py:107
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr ""
+"আপনি কি নিশ্চিত যে আপনি হোম স্ক্রিনে ফিরে যেতে চান? ওয়েব অ্যাপটি বন্ধ হয়ে "
+"যাবে।"
+
+#: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
+#: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
+#: utils.py:220 utils.py:231 utils.py:263 utils.py:267
+msgid "Error"
+msgstr "ত্রুটি"
+
+#: utils.py:118
+msgid "This language is already selected."
+msgstr "এই ভাষাটি ইতিমধ্যেই নির্বাচিত হয়েছে৷"
+
+#: utils.py:123
+msgid "This size is already selected."
+msgstr "এই আকারটি ইতিমধ্যেই নির্বাচিত।"
+
+#: utils.py:128
+msgid "This appearance is already selected."
+msgstr "এই চেহারা ইতিমধ্যেই নির্বাচিত হয়েছে."
+
+#: utils.py:133
+msgid "This quality is already selected."
+msgstr "এই গুণটি ইতিমধ্যে নির্বাচিত হয়েছে।"
+
+#: utils.py:139
+msgid ""
+"A crossword with this name and difficulty already exists. Please choose a "
+"new name and/or a new difficulty."
+msgstr ""
+"এই নাম এবং অসুবিধা সহ একটি ক্রসওয়ার্ড ইতিমধ্যে বিদ্যমান।দয়া করে একটি নতুন "
+"নাম এবং/অথবা একটি নতুন অসুবিধা চয়ন করুন।"
+
+#: utils.py:148
+msgid "You have no crosswords to export. Please make some and try again."
+msgstr ""
+"রফতানির জন্য আপনার কোনও ক্রসওয়ার্ড নেই।কিছু তৈরি করুন এবং আবার চেষ্টা করুন।"
+
+#: utils.py:155
+msgid "Successfully exported your crosswords."
+msgstr "সফলভাবে আপনার ক্রসওয়ার্ডগুলি রফতানি করেছে।"
+
+#: utils.py:160
+msgid "Your crosswords could not be exported, sorry."
+msgstr "আপনার ক্রসওয়ার্ডগুলি রফতানি করা যায়নি, দুঃখিত।"
+
+#: utils.py:166
+msgid "All of your crosswords were successfully imported."
+msgstr "আপনার সমস্ত ক্রসওয়ার্ড সফলভাবে আমদানি করা হয়েছিল।"
+
+#: utils.py:172
+msgid "Your import could not be fully completed."
+msgstr "আপনার আমদানি পুরোপুরি সম্পন্ন করা যায়নি।"
+
+#: utils.py:174
+msgid ""
+"Crosswords with duplicate names and difficulties that were not imported: "
+msgstr "নকল নাম এবং অসুবিধা সহ ক্রসওয়ার্ডগুলি আমদানি করা হয়নি:"
+
+#: utils.py:180
+msgid "Invalid crosswords that were not imported: "
+msgstr "অবৈধ ক্রসওয়ার্ডগুলি যা আমদানি করা হয়নি:"
+
+#: utils.py:187
+msgid "The specified JSON file is invalid and cannot be processed."
+msgstr "নির্দিষ্ট জেএসএন ফাইলটি অবৈধ এবং প্রক্রিয়া করা যায় না।"
+
+#: utils.py:195
+msgid "This word already exists. Please choose a new word."
+msgstr "এই শব্দটি ইতিমধ্যে বিদ্যমান। একটি নতুন শব্দ চয়ন করুন।"
+
+#: utils.py:201
+msgid "An error occurred while creating your PDF. Please try again."
+msgstr ""
+"আপনার পিডিএফ তৈরি করার সময় একটি ত্রুটি ঘটেছে।অনুগ্রহপূর্বক আবার চেষ্টা "
+"করুন।"
+
+#: utils.py:208
+msgid ""
+"words that could not be inserted during crossword generation will not be "
+"included in this PDF, sorry."
+msgstr ""
+"ক্রসওয়ার্ড প্রজন্মের সময় যে শব্দগুলি সন্নিবেশ করা যায় না সেগুলি এই পিডিএফ"
+" -এ অন্তর্ভুক্ত করা হবে না, দুঃখিত।"
+
+#: utils.py:215
+msgid "Successfully wrote PDF."
+msgstr "সফলভাবে পিডিএফ লিখেছেন।"
+
+#: utils.py:221
+msgid ""
+"You are missing pywebview, which is required when viewing the crossword game"
+" in an embedded window. Please run"
+msgstr ""
+"আপনি পাইওয়েবিউ মিস করছেন, যা এমবেডেড উইন্ডোতে ক্রসওয়ার্ড গেমটি দেখার সময় "
+"প্রয়োজনীয়।চালানোর জন্য অনুগ্রহ করে"
+
+#: utils.py:226
+msgid "to install this dependency."
+msgstr "এই নির্ভরতা ইনস্টল করতে।"
+
+#: utils.py:232
+msgid ""
+"You are missing pycairo, which is required to perform this operation. Please"
+" run"
+msgstr ""
+"আপনি পাইকারো অনুপস্থিত, যা এই অপারেশনটি সম্পাদন করতে হবে।চালানোর জন্য "
+"অনুগ্রহ করে"
+
+#: utils.py:237
+msgid ""
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
+msgstr ""
+"এবং পাইকারোর জন্য শিরোনামগুলি ইনস্টল করুন যদি আপনি পাইকারোর শুরু গাইড "
+"ব্যবহার করে উইন্ডোজে না থাকেন তবে"
+
+#: utils.py:247
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, the program will run new web apps with a different port. "
+"Alternatively, you can manually change the port in the program's config "
+"file. All app processes that have not been properly terminated can be "
+"terminated through Activity Monitor on MacOS, or, simply restart your "
+"computer to terminate them."
+msgstr ""
+"প্রথমবার লঞ্চ, অনুগ্রহ করে পড়ুন: একবার আপনি একটি ক্রসওয়ার্ড লোড করলে, এবং "
+"অন্য একটি লোড করতে চান, আপনাকে প্রথমে ওয়েব অ্যাপটি বন্ধ করতে হবে। "
+"গুরুত্বপূর্ণ: আপনি যদি macOS-এ থাকেন, ওয়েব অ্যাপটি চলাকালীন অ্যাপ্লিকেশনটি "
+"(cmd+q ব্যবহার করে) জোর করে ছেড়ে দিলে তা সঠিকভাবে সমাপ্ত হতে বাধা দেবে। "
+"আপনি যদি ভুল করে এটি করেন, প্রোগ্রামটি একটি ভিন্ন পোর্ট সহ নতুন ওয়েব অ্যাপ "
+"চালাবে। বিকল্পভাবে, আপনি প্রোগ্রামের কনফিগার ফাইলে পোর্টটি ম্যানুয়ালি "
+"পরিবর্তন করতে পারেন। সমস্ত অ্যাপ প্রসেস যেগুলি সঠিকভাবে বন্ধ করা হয়নি "
+"সেগুলি MacOS-এ অ্যাক্টিভিটি মনিটরের মাধ্যমে বন্ধ করা যেতে পারে, অথবা, সেগুলি"
+" বন্ধ করতে আপনার কম্পিউটার পুনরায় চালু করুন৷"
+
+#: utils.py:269
+msgid ""
+"An unexpected error occured. Please try reinstalling the application with"
+msgstr ""
+"একটি অপ্রত্যাশিত ত্রুটি সংঘটিত হয়েছে। দয়া করে অ্যাপ্লিকেশনটি পুনরায় "
+"ইনস্টল করার চেষ্টা করুন"
+
+#: utils.py:790
+msgid "Definitions are empty"
+msgstr "সংজ্ঞা ফাঁকা"
+
+#: utils.py:793
+msgid "The word count or definitions are less than 3 in length"
+msgstr "শব্দ গণনা বা সংজ্ঞা দৈর্ঘ্য 3 এর চেয়ে কম"
+
+#: utils.py:797
+msgid "Length of the word count is greater than the definitions"
+msgstr "শব্দ গণনার দৈর্ঘ্য সংজ্ঞাগুলির চেয়ে বেশি"
+
+#: utils.py:800
+msgid "Escape character present in word"
+msgstr "শব্দে উপস্থিত, পলায়ন চরিত্র"
+
+#: app/templates/index.html:13 app/templates/index.html:338
+#: pages/browser.py:458
+msgid "Crossword Puzzle - Game"
+msgstr "ক্রসওয়ার্ড ধাঁধা - খেলা"
+
+#: app/templates/index.html:136
+msgid "Compound"
+msgstr "যৌগিক"
+
+#: app/templates/index.html:149
+msgid "Auto-skip"
+msgstr "অটো-স্কিপ"
+
+#: app/templates/index.html:158
+msgid "Auto-word"
+msgstr "অটো-শব্দ"
+
+#: app/templates/index.html:167
+msgid "Auto-check"
+msgstr "অটো-চেক"
+
+#: app/templates/index.html:176
+msgid "Zoom"
+msgstr "জুম"
+
+#: app/templates/index.html:189
+msgid "Reveal"
+msgstr "প্রকাশ করা"
+
+#: app/templates/index.html:197 app/templates/index.html:230
+msgid "Cell"
+msgstr "সেল"
+
+#: app/templates/index.html:204 app/templates/index.html:237
+#: app/templates/index.html:263
+msgid "Word"
+msgstr "শব্দ"
+
+#: app/templates/index.html:211 app/templates/index.html:244
+#: app/templates/index.html:270
+msgid "Grid"
+msgstr "গ্রিড"
+
+#: app/templates/index.html:222
+msgid "Check"
+msgstr "পরীক্ষা করুন"
+
+#: app/templates/index.html:255
+msgid "Clear"
+msgstr "পরিষ্কার"
+
+#: app/templates/index.html:277
+msgid "Unrevealed"
+msgstr "আনারভেলড"
+
+#: app/templates/index.html:340
+msgid "You are viewing"
+msgstr "আপনি দেখছেন"
+
+#: app/templates/index.html:340
+msgid "from"
+msgstr "থেকে"
+
+#: app/templates/index.html:345
+msgid "word(s) could not be inserted, sorry."
+msgstr "শব্দ (গুলি) serted োকানো যায়নি, দুঃখিত।"
+
+#: app/templates/index.html:348
+msgid "Word count (adjusted)"
+msgstr "শব্দ গণনা (সামঞ্জস্য)"
+
+#: app/templates/index.html:351
+msgid "Word count"
+msgstr "শব্দ গণনা"
+
+#: app/templates/index.html:357
+msgid "Continue"
+msgstr "চালিয়ে যান"
+
+#: app/templates/index.html:363
+msgid "You completed the crossword!"
+msgstr "আপনি ক্রসওয়ার্ড শেষ করেছেন!"
+
+#: app/templates/index.html:368 pages/browser.py:718
+msgid "Close"
+msgstr "বন্ধ"
+
+#: pages/browser.py:142
+msgid "Crossword Browser"
+msgstr "ক্রসওয়ার্ড ব্রাউজার"
+
+#: pages/browser.py:147 pages/editor.py:363
+msgid "Back"
+msgstr "ফিরে"
+
+#: pages/browser.py:151 pages/editor.py:367 pages/home.py:305
+msgid "HomePage"
+msgstr "হোমপেজ"
+
+#: pages/browser.py:162
+msgid "Categorised"
+msgstr "Categorized"
+
+#: pages/browser.py:162 pages/browser.py:314
+msgid "Flattened"
+msgstr "চ্যাপ্টা"
+
+#: pages/browser.py:191
+msgid "Create"
+msgstr "সৃষ্টি"
+
+#: pages/browser.py:200
+msgid "Play"
+msgstr "খেলুন"
+
+#: pages/browser.py:208 pages/home.py:126
+msgid "Browser"
+msgstr "ব্রাউজার"
+
+#: pages/browser.py:208
+msgid "Embedded"
+msgstr "এম্বেড"
+
+#: pages/browser.py:211
+msgid "Game view"
+msgstr "গেম ভিউ"
+
+#: pages/browser.py:237
+msgid "Write to PDF"
+msgstr "পিডিএফ লিখুন"
+
+#: pages/browser.py:245
+msgid "Destroy"
+msgstr "ধ্বংস"
+
+#: pages/browser.py:256
+msgid "Word count preferences"
+msgstr "শব্দ গণনা পছন্দ"
+
+#: pages/browser.py:271 pages/browser.py:400 pages/browser.py:433
+#: pages/browser.py:627
+msgid "Select word count"
+msgstr "শব্দ সংখ্যা নির্বাচন করুন"
+
+#: pages/browser.py:286
+msgid "Custom"
+msgstr "কাস্টম"
+
+#: pages/browser.py:499
+msgid "Select a destination to download your PDF to"
+msgstr "আপনার পিডিএফ ডাউনলোড করতে একটি গন্তব্য নির্বাচন করুন"
+
+#: pages/browser.py:607
+msgid "To perform this operation, you must first select a cell."
+msgstr "এই অপারেশনটি সম্পাদন করতে আপনাকে প্রথমে একটি সেল নির্বাচন করতে হবে।"
+
+#: pages/browser.py:711
+msgid "View"
+msgstr "দেখুন"
+
+#: pages/browser.py:915
+msgid "Select"
+msgstr "নির্বাচন করুন"
+
+#: pages/editor.py:357
+msgid "Crossword Editor"
+msgstr "ক্রসওয়ার্ড সম্পাদক"
+
+#: pages/editor.py:495 pages/editor.py:718 pages/editor.py:808
+#: pages/editor.py:948
+msgid "Your Crosswords"
+msgstr "তোমার ক্রসওয়ার্ড"
+
+#: pages/editor.py:559 pages/editor.py:812 pages/editor.py:955
+#: pages/editor.py:1042 pages/editor.py:1155 pages/editor.py:1269
+msgid "Save"
+msgstr "সংরক্ষণ"
+
+#: pages/editor.py:571
+msgid "length >= 1 and valid OS file name"
+msgstr "দৈর্ঘ্য > = 1 এবং বৈধ ওএস ফাইলের নাম"
+
+#: pages/editor.py:580
+msgid "length == 1"
+msgstr "দৈর্ঘ্য == ১"
+
+#: pages/editor.py:586
+msgid "Difficulty"
+msgstr "অসুবিধা"
+
+#: pages/editor.py:593
+msgid "Easy"
+msgstr "সহজ"
+
+#: pages/editor.py:593
+msgid "Medium"
+msgstr "মধ্যম"
+
+#: pages/editor.py:593
+msgid "Hard"
+msgstr "কঠিন"
+
+#: pages/editor.py:593
+msgid "Extreme"
+msgstr "চরম"
+
+#: pages/editor.py:718 pages/editor.py:1098
+msgid "Adding"
+msgstr "যুক্ত"
+
+#: pages/editor.py:721 pages/editor.py:1102
+msgid "Add"
+msgstr "যুক্ত"
+
+#: pages/editor.py:900 pages/editor.py:1218
+msgid "Press"
+msgstr "টিপুন"
+
+#: pages/editor.py:902 pages/editor.py:1220
+msgid "to add a"
+msgstr "একটি যোগ করতে"
+
+#: pages/editor.py:904
+msgid "new crossword."
+msgstr "নতুন ক্রসওয়ার্ড।"
+
+#: pages/editor.py:948 pages/editor.py:1265
+msgid "Editing"
+msgstr "সম্পাদনা"
+
+#: pages/editor.py:1010 pages/editor.py:1098 pages/editor.py:1150
+#: pages/editor.py:1265
+msgid "Your Words"
+msgstr "আপনার কথাগুলো"
+
+#: pages/editor.py:1054
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "দৈর্ঘ্য > = 1 এবং দৈর্ঘ্য < = 32 এবং এটি একটি ভাষা অক্ষর"
+
+#: pages/editor.py:1065
+msgid "length >= 1"
+msgstr "দৈর্ঘ্য >= 1"
+
+#: pages/editor.py:1222
+msgid "new word."
+msgstr "নতুন শব্দ।"
+
+#: pages/home.py:98
+msgid "Crossword Puzzle"
+msgstr "শব্দের ধাঁধা"
+
+#: pages/home.py:128
+msgid "BrowserPage"
+msgstr "ব্রাউজারপেজ"
+
+#: pages/home.py:137
+msgid "Editor"
+msgstr "সম্পাদক"
+
+#: pages/home.py:139
+msgid "EditorPage"
+msgstr "সম্পাদকপাতা"
+
+#: pages/home.py:159
+msgid "Global Settings"
+msgstr "গ্লোবাল সেটিংস"
+
+#: pages/home.py:166
+msgid "Language"
+msgstr "ভাষা"
+
+#: pages/home.py:178
+msgid "Size"
+msgstr "আকার"
+
+#: pages/home.py:197
+msgid "light"
+msgstr "আলো"
+
+#: pages/home.py:197
+msgid "dark"
+msgstr "অন্ধকার"
+
+#: pages/home.py:197
+msgid "system"
+msgstr "পদ্ধতি"
+
+#: pages/home.py:200 pages/home.py:214
+msgid "Appearance"
+msgstr "চেহারা"
+
+#: pages/home.py:220
+msgid "terrible"
+msgstr "ভয়ানক"
+
+#: pages/home.py:221
+msgid "poor"
+msgstr "দরিদ্র"
+
+#: pages/home.py:222
+msgid "average"
+msgstr "গড়"
+
+#: pages/home.py:223
+msgid "great"
+msgstr "দুর্দান্ত"
+
+#: pages/home.py:224
+msgid "perfect"
+msgstr "নিখুঁত"
+
+#: pages/home.py:228
+msgid "Crossword Quality"
+msgstr "ক্রসওয়ার্ড মান"
+
+msgid "Geography"
+msgstr "ভূগোল"
+
+msgid "Math"
+msgstr "গণিত"
+
+msgid "Science"
+msgstr "বিজ্ঞান"
+
+msgid "Computer Science"
+msgstr "কম্পিউটার বিজ্ঞান"
+
+msgid "User"
+msgstr "ব্যবহারকারী"
+
+msgid "Total words"
+msgstr "মোট শব্দ"
+
+msgid "Maximum"
+msgstr "সর্বাধিক"
+
+msgid "Clue"
+msgstr "ক্লু"
+
+msgid "Name"
+msgstr "নাম"
+
+msgid "Symbol"
+msgstr "প্রতীক"
+
+msgid "Search"
+msgstr "অনুসন্ধান"
+
+msgid "New version available!"
+msgstr "নতুন সংস্করণ উপলব্ধ!"

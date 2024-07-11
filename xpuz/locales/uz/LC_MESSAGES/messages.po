@@ -1,0 +1,624 @@
+# Uzbek translations for xpuz.
+# Copyright (C) 2024 Tomas Vana
+# This file is distributed under the same license as the xpuz
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-06-30 17:39+1000\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: uz <LL@li.org>\n"
+"Language: uz\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: import_export.py:24
+msgid "Select a destination to export your crosswords to"
+msgstr "Karox so'zlaringizni eksport qilish uchun manzilni tanlang"
+
+#: import_export.py:28
+msgid "my-crosswords"
+msgstr "my-kreswvordlar"
+
+#: import_export.py:70
+msgid ""
+"Select a valid crossword JSON file that was exported using xpuz"
+msgstr "Crosword_puzzzle yordamida eksport qilingan JSON faylini tanlang"
+
+#: app/templates/index.html:286 pdf.py:207
+msgid "Across"
+msgstr "Bo'ylab"
+
+#: app/templates/index.html:308 pdf.py:214
+msgid "Down"
+msgstr "Pastga"
+
+#: utils.py:58
+msgid "Remove"
+msgstr "Olib tashlash"
+
+#: utils.py:59
+msgid "Are you sure you want to delete this"
+msgstr "Buni oʻchirishga ishonchingiz komilmi?"
+
+#: utils.py:61
+msgid "It will be lost forever!"
+msgstr "Abadiy yo'qoladi!"
+
+#: utils.py:66
+msgid "Add or select"
+msgstr "Qo'shish yoki tanlash"
+
+#: utils.py:67
+msgid "Are you sure you want to add/select a"
+msgstr "Qo'shish/tanlashga ishonchingiz komilmi?"
+
+#: utils.py:69
+msgid "Your modified fields will be reset!"
+msgstr "O'zgartirilgan maydonlar qayta tiklanadi!"
+
+#: utils.py:74 utils.py:106
+msgid "Back to home"
+msgstr "Uyga qaytish"
+
+#: utils.py:75
+msgid ""
+"Are you sure you want to go back to the home screen? Your modified fields "
+"will be reset!"
+msgstr ""
+"Uy ekraniga qaytishni xohlayotganingizga ishonchingiz komilmi? "
+"O'zgartirilgan maydonlar qayta tiklanadi!"
+
+#: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
+#: utils.py:246
+msgid "Info"
+msgstr "Ma'lumot"
+
+#: utils.py:84
+msgid ""
+"Are you sure you want to import crosswords? Your modified fields will be "
+"reset!"
+msgstr ""
+"Haqiqatan ham siz krossvordlarni import qilishni xohlaysizmi?O'zgartirilgan "
+"maydonlar tiklanadi!"
+
+#: utils.py:92
+msgid "Restart"
+msgstr "Qayta ishga tushirish"
+
+#: utils.py:92
+msgid "Are you sure you want to restart the app?"
+msgstr "Haqiqatan ham ilovani qayta ishga tushirmoqchimisiz?"
+
+#: pages/home.py:148 utils.py:97
+msgid "Exit"
+msgstr "Chiqish"
+
+#: utils.py:98
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr ""
+"Haqiqatan ham ilovadan chiqmoqchimisiz? Agar veb-ilova ishlayotgan bo'lsa, u"
+" tugatiladi."
+
+#: utils.py:107
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr "Haqiqatan ham bosh ekranga qaytmoqchimisiz? Veb-ilova tugatiladi."
+
+#: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
+#: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
+#: utils.py:220 utils.py:231 utils.py:263 utils.py:267
+msgid "Error"
+msgstr "Xato"
+
+#: utils.py:118
+msgid "This language is already selected."
+msgstr "Bu til allaqachon tanlangan."
+
+#: utils.py:123
+msgid "This size is already selected."
+msgstr "Bu oʻlcham allaqachon tanlangan."
+
+#: utils.py:128
+msgid "This appearance is already selected."
+msgstr "Bu ko'rinish allaqachon tanlangan."
+
+#: utils.py:133
+msgid "This quality is already selected."
+msgstr "Ushbu sifat allaqachon tanlangan."
+
+#: utils.py:139
+msgid ""
+"A crossword with this name and difficulty already exists. Please choose a "
+"new name and/or a new difficulty."
+msgstr ""
+"Bu ism va qiyinchilik bilan kesish so'zi allaqachon mavjud.Iltimos, yangi "
+"ism va / yoki yangi qiyinchilikni tanlang."
+
+#: utils.py:148
+msgid "You have no crosswords to export. Please make some and try again."
+msgstr ""
+"Sizda eksport qilish uchun krossevator yo'q.Iltimos, bir qismini yarating va"
+" qaytadan urining."
+
+#: utils.py:155
+msgid "Successfully exported your crosswords."
+msgstr "Sizning krossvordingizni muvaffaqiyatli eksport qildi."
+
+#: utils.py:160
+msgid "Your crosswords could not be exported, sorry."
+msgstr "Sizning krossvordlaringiz eksport qilinishi mumkin emas, uzr."
+
+#: utils.py:166
+msgid "All of your crosswords were successfully imported."
+msgstr "Sizning barcha krossvordlaringiz muvaffaqiyatli keltirildi."
+
+#: utils.py:172
+msgid "Your import could not be fully completed."
+msgstr "Sizning importingiz to'liq yakunlanmadi."
+
+#: utils.py:174
+msgid ""
+"Crosswords with duplicate names and difficulties that were not imported: "
+msgstr "Import qilinmaydigan dublikat va qiyinchiliklar bo'lgan krossvordlar:"
+
+#: utils.py:180
+msgid "Invalid crosswords that were not imported: "
+msgstr "Import qilinmagan xun so'zlar:"
+
+#: utils.py:187
+msgid "The specified JSON file is invalid and cannot be processed."
+msgstr "Belgilangan Json fayli yaroqsiz va qayta ishlanmaydi."
+
+#: utils.py:195
+msgid "This word already exists. Please choose a new word."
+msgstr "Bu soʻz allaqachon mavjud. Iltimos yangi so'z tanlang."
+
+#: utils.py:201
+msgid "An error occurred while creating your PDF. Please try again."
+msgstr ""
+"PDF-ni yaratishda xatolik yuz berdi.Iltimos, yana bir bor urinib ko'ring."
+
+#: utils.py:208
+msgid ""
+"words that could not be inserted during crossword generation will not be "
+"included in this PDF, sorry."
+msgstr "Kechirasiz, krossvord avlodida kiritilmaydigan so'zlar, uzr."
+
+#: utils.py:215
+msgid "Successfully wrote PDF."
+msgstr "PDF muvaffaqiyatli yozgan."
+
+#: utils.py:221
+msgid ""
+"You are missing pywebview, which is required when viewing the crossword game"
+" in an embedded window. Please run"
+msgstr ""
+"Siz pywebvieen-ni yo'qotganingizda, Croscord o'yinini o'rnatilgan derazada "
+"ko'rish paytida talab qilinadi.Iltimos, yuguring"
+
+#: utils.py:226
+msgid "to install this dependency."
+msgstr "ushbu bog'liqlikni o'rnatish."
+
+#: utils.py:232
+msgid ""
+"You are missing pycairo, which is required to perform this operation. Please"
+" run"
+msgstr ""
+"Siz ushbu operatsiyani bajarish uchun zarur bo'lgan pikiro "
+"yo'qolgansiz.Iltimos, yuguring"
+
+#: utils.py:237
+msgid ""
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
+msgstr ""
+"va agar siz Windows-da, agar siz PICYA-dan foydalanib, Windows-dan "
+"foydalanmasangiz, sarlavhalarni o'rnating"
+
+#: utils.py:247
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, the program will run new web apps with a different port. "
+"Alternatively, you can manually change the port in the program's config "
+"file. All app processes that have not been properly terminated can be "
+"terminated through Activity Monitor on MacOS, or, simply restart your "
+"computer to terminate them."
+msgstr ""
+"Birinchi marta ishga tushirilganda, o'qing: Krossvordni yuklaganingizdan "
+"so'ng va boshqasini yuklamoqchi bo'lsangiz, avval veb-ilovani tugatishingiz "
+"kerak. MUHIM: Agar siz macOS operatsion tizimida bo'lsangiz, veb-ilova "
+"ishlayotgan vaqtda (cmd+q yordamida) ilovani majburan o'chirib qo'ysangiz, "
+"uning to'g'ri tugatilishi oldini oladi. Agar buni xato qilsangiz, dastur "
+"boshqa portga ega yangi veb-ilovalarni ishga tushiradi. Shu bilan bir "
+"qatorda, dasturning konfiguratsiya faylidagi portni qo'lda o'zgartirishingiz"
+" mumkin. To'g'ri tugatilmagan barcha ilovalar jarayonlari MacOS'dagi "
+"Activity Monitor orqali tugatilishi mumkin yoki ularni tugatish uchun "
+"kompyuteringizni qayta ishga tushirishingiz mumkin."
+
+#: utils.py:269
+msgid ""
+"An unexpected error occured. Please try reinstalling the application with"
+msgstr "Kutilmagan xato roʻy berdi. Iltimos dasturni qayta oʻrnatib koʻring"
+
+#: utils.py:790
+msgid "Definitions are empty"
+msgstr "Atamalar boʻsh"
+
+#: utils.py:793
+msgid "The word count or definitions are less than 3 in length"
+msgstr "So'z hisobi yoki atamalarining uzunligi 3 dan kam"
+
+#: utils.py:797
+msgid "Length of the word count is greater than the definitions"
+msgstr "So'z hisobining uzunligi atamalardan katta"
+
+#: utils.py:800
+msgid "Escape character present in word"
+msgstr "So'zda mavjud bo'lgan qochish belgisi"
+
+#: app/templates/index.html:13 app/templates/index.html:338
+#: pages/browser.py:458
+msgid "Crossword Puzzle - Game"
+msgstr "Krossvord jumboq - o'yin"
+
+#: app/templates/index.html:136
+msgid "Compound"
+msgstr "Aralashma"
+
+#: app/templates/index.html:149
+msgid "Auto-skip"
+msgstr "Avtobusdan o'tish"
+
+#: app/templates/index.html:158
+msgid "Auto-word"
+msgstr "Avtomatik so'z"
+
+#: app/templates/index.html:167
+msgid "Auto-check"
+msgstr "Avtomatik tekshiruv"
+
+#: app/templates/index.html:176
+msgid "Zoom"
+msgstr "Kattalashtirish"
+
+#: app/templates/index.html:189
+msgid "Reveal"
+msgstr "Oshkor qilmoq"
+
+#: app/templates/index.html:197 app/templates/index.html:230
+msgid "Cell"
+msgstr "Uyali"
+
+#: app/templates/index.html:204 app/templates/index.html:237
+#: app/templates/index.html:263
+msgid "Word"
+msgstr "So'z"
+
+#: app/templates/index.html:211 app/templates/index.html:244
+#: app/templates/index.html:270
+msgid "Grid"
+msgstr "Panjara"
+
+#: app/templates/index.html:222
+msgid "Check"
+msgstr "Tekshirmoq"
+
+#: app/templates/index.html:255
+msgid "Clear"
+msgstr "Aniq"
+
+#: app/templates/index.html:277
+msgid "Unrevealed"
+msgstr "So'kadigan"
+
+#: app/templates/index.html:340
+msgid "You are viewing"
+msgstr "Siz ko'ryapsiz"
+
+#: app/templates/index.html:340
+msgid "from"
+msgstr "dan"
+
+#: app/templates/index.html:345
+msgid "word(s) could not be inserted, sorry."
+msgstr "Kechirasiz, Word (lar). Kechirasiz."
+
+#: app/templates/index.html:348
+msgid "Word count (adjusted)"
+msgstr "Word soni (sozlangan)"
+
+#: app/templates/index.html:351
+msgid "Word count"
+msgstr "So'zlar soni"
+
+#: app/templates/index.html:357
+msgid "Continue"
+msgstr "Davom eting"
+
+#: app/templates/index.html:363
+msgid "You completed the crossword!"
+msgstr "Siz krossvordni tugatdingiz!"
+
+#: app/templates/index.html:368 pages/browser.py:718
+msgid "Close"
+msgstr "Yopish"
+
+#: pages/browser.py:142
+msgid "Crossword Browser"
+msgstr "Krossvord brauzer"
+
+#: pages/browser.py:147 pages/editor.py:363
+msgid "Back"
+msgstr "Orqaga"
+
+#: pages/browser.py:151 pages/editor.py:367 pages/home.py:305
+msgid "HomePage"
+msgstr "Bosh sahifa"
+
+#: pages/browser.py:162
+msgid "Categorised"
+msgstr "Turkumlangan"
+
+#: pages/browser.py:162 pages/browser.py:314
+msgid "Flattened"
+msgstr "Yassilangan"
+
+#: pages/browser.py:191
+msgid "Create"
+msgstr "Yaratmoq"
+
+#: pages/browser.py:200
+msgid "Play"
+msgstr "O'ynash"
+
+#: pages/browser.py:208 pages/home.py:126
+msgid "Browser"
+msgstr "Akkaunt"
+
+#: pages/browser.py:208
+msgid "Embedded"
+msgstr "Qo'shilgan"
+
+#: pages/browser.py:211
+msgid "Game view"
+msgstr "O'yin ko'rinishi"
+
+#: pages/browser.py:237
+msgid "Write to PDF"
+msgstr "PDF-ga yozing"
+
+#: pages/browser.py:245
+msgid "Destroy"
+msgstr "Vayron qilmoq"
+
+#: pages/browser.py:256
+msgid "Word count preferences"
+msgstr "So'zlarni hisoblash sozlamalari"
+
+#: pages/browser.py:271 pages/browser.py:400 pages/browser.py:433
+#: pages/browser.py:627
+msgid "Select word count"
+msgstr "So'z sonini tanlang"
+
+#: pages/browser.py:286
+msgid "Custom"
+msgstr "Maxsus"
+
+#: pages/browser.py:499
+msgid "Select a destination to download your PDF to"
+msgstr "PDF-ni yuklab olish uchun manzilni tanlang"
+
+#: pages/browser.py:607
+msgid "To perform this operation, you must first select a cell."
+msgstr ""
+"Ushbu operatsiyani bajarish uchun avval katakchani tanlashingiz kerak."
+
+#: pages/browser.py:711
+msgid "View"
+msgstr "Ko'rinish"
+
+#: pages/browser.py:915
+msgid "Select"
+msgstr "Tanlang"
+
+#: pages/editor.py:357
+msgid "Crossword Editor"
+msgstr "Krossvord tahrirchiName"
+
+#: pages/editor.py:495 pages/editor.py:718 pages/editor.py:808
+#: pages/editor.py:948
+msgid "Your Crosswords"
+msgstr "Krossvordlaringiz"
+
+#: pages/editor.py:559 pages/editor.py:812 pages/editor.py:955
+#: pages/editor.py:1042 pages/editor.py:1155 pages/editor.py:1269
+msgid "Save"
+msgstr "Saqlash"
+
+#: pages/editor.py:571
+msgid "length >= 1 and valid OS file name"
+msgstr "uzunligi >= 1 va haqiqiy OS fayl nomi"
+
+#: pages/editor.py:580
+msgid "length == 1"
+msgstr "uzunligi == 1"
+
+#: pages/editor.py:586
+msgid "Difficulty"
+msgstr "Qiyinchilik"
+
+#: pages/editor.py:593
+msgid "Easy"
+msgstr "Oson"
+
+#: pages/editor.py:593
+msgid "Medium"
+msgstr "O'rta"
+
+#: pages/editor.py:593
+msgid "Hard"
+msgstr "Qattiq"
+
+#: pages/editor.py:593
+msgid "Extreme"
+msgstr "Ekstremal"
+
+#: pages/editor.py:718 pages/editor.py:1098
+msgid "Adding"
+msgstr "Qoʻshish"
+
+#: pages/editor.py:721 pages/editor.py:1102
+msgid "Add"
+msgstr "Qo'shish"
+
+#: pages/editor.py:900 pages/editor.py:1218
+msgid "Press"
+msgstr "Bosib o'tkazing"
+
+#: pages/editor.py:902 pages/editor.py:1220
+msgid "to add a"
+msgstr "qo'shish uchun"
+
+#: pages/editor.py:904
+msgid "new crossword."
+msgstr "Yangi krossvord."
+
+#: pages/editor.py:948 pages/editor.py:1265
+msgid "Editing"
+msgstr "Tahrirlash"
+
+#: pages/editor.py:1010 pages/editor.py:1098 pages/editor.py:1150
+#: pages/editor.py:1265
+msgid "Your Words"
+msgstr "Sizning so'zlar"
+
+#: pages/editor.py:1054
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "uzunligi >= 1 va uzunligi <= 32 bo'lib, til belgisi"
+
+#: pages/editor.py:1065
+msgid "length >= 1"
+msgstr "uzunligi >= 1"
+
+#: pages/editor.py:1222
+msgid "new word."
+msgstr "yangi so'z."
+
+#: pages/home.py:98
+msgid "Crossword Puzzle"
+msgstr "Krossvord"
+
+#: pages/home.py:128
+msgid "BrowserPage"
+msgstr "Brauzer Sahifasi"
+
+#: pages/home.py:137
+msgid "Editor"
+msgstr "Tahrirchi"
+
+#: pages/home.py:139
+msgid "EditorPage"
+msgstr "Tahrirchi sahifasi"
+
+#: pages/home.py:159
+msgid "Global Settings"
+msgstr "Global sozlamalar"
+
+#: pages/home.py:166
+msgid "Language"
+msgstr "Til"
+
+#: pages/home.py:178
+msgid "Size"
+msgstr "Hajmi"
+
+#: pages/home.py:197
+msgid "light"
+msgstr "yorug'lik"
+
+#: pages/home.py:197
+msgid "dark"
+msgstr "qorong'i"
+
+#: pages/home.py:197
+msgid "system"
+msgstr "tizimi"
+
+#: pages/home.py:200 pages/home.py:214
+msgid "Appearance"
+msgstr "Tashqi ko'rinish"
+
+#: pages/home.py:220
+msgid "terrible"
+msgstr "qo'rqinchli"
+
+#: pages/home.py:221
+msgid "poor"
+msgstr "kambag'al"
+
+#: pages/home.py:222
+msgid "average"
+msgstr "o'rtacha"
+
+#: pages/home.py:223
+msgid "great"
+msgstr "ajoyib"
+
+#: pages/home.py:224
+msgid "perfect"
+msgstr "mukammal"
+
+#: pages/home.py:228
+msgid "Crossword Quality"
+msgstr "Krossvord sifati"
+
+msgid "Geography"
+msgstr "Geografiya"
+
+msgid "Math"
+msgstr "Matematika"
+
+msgid "Science"
+msgstr "Fan"
+
+msgid "Computer Science"
+msgstr "Kompyuter fanlari"
+
+msgid "User"
+msgstr "Foydalanuvchi"
+
+msgid "Total words"
+msgstr "Umumiy so'zlar"
+
+msgid "Maximum"
+msgstr "Maksimal"
+
+msgid "Clue"
+msgstr "Maʼlumot"
+
+msgid "Name"
+msgstr "Nom"
+
+msgid "Symbol"
+msgstr "Ramz"
+
+msgid "Search"
+msgstr "Qidirmoq"
+
+msgid "New version available!"
+msgstr "Yangi versiya mavjud!"

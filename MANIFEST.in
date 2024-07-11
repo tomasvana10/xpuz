@@ -1,9 +1,9 @@
-recursive-include crossword_puzzle/locales/*/LC_MESSAGES *.mo
-recursive-include crossword_puzzle/locales/*/cwords *
-recursive-include crossword_puzzle/app/static *
-recursive-include crossword_puzzle/app/templates *
-recursive-include crossword_puzzle/base_cwords *
-recursive-include crossword_puzzle/assets *
-recursive-include crossword_puzzle/data *
-include crossword_puzzle/babel.cfg
-include crossword_puzzle/template.config.ini
+recursive-include xpuz/locales/*/LC_MESSAGES *.mo
+recursive-include xpuz/locales/*/cwords *
+recursive-include xpuz/app/static *
+recursive-include xpuz/app/templates *
+recursive-include xpuz/base_cwords *
+recursive-include xpuz/assets *
+recursive-include xpuz/data *
+include xpuz/babel.cfg
+include xpuz/template.config.ini

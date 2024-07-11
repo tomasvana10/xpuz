@@ -1,0 +1,634 @@
+# Cebuano translations for xpuz.
+# Copyright (C) 2024 Tomas Vana
+# This file is distributed under the same license as the xpuz
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-06-30 17:39+1000\n"
+"PO-Revision-Date: 2024-02-18 13:24+1100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ceb <LL@li.org>\n"
+"Language: ceb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: import_export.py:24
+msgid "Select a destination to export your crosswords to"
+msgstr "Pagpili usa ka padulngan aron ma-export ang imong mga crosswords sa"
+
+#: import_export.py:28
+msgid "my-crosswords"
+msgstr "my-crosswords"
+
+#: import_export.py:70
+msgid ""
+"Select a valid crossword JSON file that was exported using xpuz"
+msgstr ""
+"Pagpili usa ka balido nga file sa crossword json nga gi-export gamit ang "
+"xpuz"
+
+#: app/templates/index.html:286 pdf.py:207
+msgid "Across"
+msgstr "Tabok"
+
+#: app/templates/index.html:308 pdf.py:214
+msgid "Down"
+msgstr "Sa ubos"
+
+#: utils.py:58
+msgid "Remove"
+msgstr "Pulason"
+
+#: utils.py:59
+msgid "Are you sure you want to delete this"
+msgstr "Sigurado ka nga gusto nimo nga tangtangon kini"
+
+#: utils.py:61
+msgid "It will be lost forever!"
+msgstr "Mawala kini hangtod sa hangtod!"
+
+#: utils.py:66
+msgid "Add or select"
+msgstr "Pagdugang o pagpili"
+
+#: utils.py:67
+msgid "Are you sure you want to add/select a"
+msgstr "Sigurado ka nga gusto nimo idugang / pilia ang a"
+
+#: utils.py:69
+msgid "Your modified fields will be reset!"
+msgstr "Ang imong giusab nga mga uma pag-reset!"
+
+#: utils.py:74 utils.py:106
+msgid "Back to home"
+msgstr "Balik sa balay"
+
+#: utils.py:75
+msgid ""
+"Are you sure you want to go back to the home screen? Your modified fields "
+"will be reset!"
+msgstr ""
+"Sigurado ka ba nga gusto nimo nga mobalik sa home screen?Ang imong giusab "
+"nga mga uma pag-reset!"
+
+#: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
+#: utils.py:246
+msgid "Info"
+msgstr "Impormasyon"
+
+#: utils.py:84
+msgid ""
+"Are you sure you want to import crosswords? Your modified fields will be "
+"reset!"
+msgstr ""
+"Sigurado ka ba nga gusto nimo nga mag-import mga crosswords?Ang imong giusab"
+" nga mga uma pag-reset!"
+
+#: utils.py:92
+msgid "Restart"
+msgstr "I-restart"
+
+#: utils.py:92
+msgid "Are you sure you want to restart the app?"
+msgstr "Sigurado ka ba nga gusto nimong i-restart ang app?"
+
+#: pages/home.py:148 utils.py:97
+msgid "Exit"
+msgstr "Paggawas"
+
+#: utils.py:98
+msgid ""
+"Are you sure you want to exit the app? If the web app is running, it will be"
+" terminated."
+msgstr ""
+"Sigurado ka nga gusto nimong mugawas sa app? Kung ang web app nagdagan, kini"
+" mahunong."
+
+#: utils.py:107
+msgid ""
+"Are you sure you want to go back to the home screen? The web app will be "
+"terminated."
+msgstr ""
+"Sigurado ka ba nga gusto nimong mobalik sa home screen? Ang web app ihunong."
+
+#: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
+#: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
+#: utils.py:220 utils.py:231 utils.py:263 utils.py:267
+msgid "Error"
+msgstr "Sayop"
+
+#: utils.py:118
+msgid "This language is already selected."
+msgstr "Kini nga pinulongan gipili na."
+
+#: utils.py:123
+msgid "This size is already selected."
+msgstr "Kini nga gidak-on gipili na."
+
+#: utils.py:128
+msgid "This appearance is already selected."
+msgstr "Kini nga panagway gipili na."
+
+#: utils.py:133
+msgid "This quality is already selected."
+msgstr "Kini nga kalidad napili na."
+
+#: utils.py:139
+msgid ""
+"A crossword with this name and difficulty already exists. Please choose a "
+"new name and/or a new difficulty."
+msgstr ""
+"Adunay usa ka crossword nga adunay kini nga ngalan ug kalisud na.Palihug "
+"pagpili usa ka bag-ong ngalan ug / o usa ka bag-ong kalisud."
+
+#: utils.py:148
+msgid "You have no crosswords to export. Please make some and try again."
+msgstr ""
+"Wala ka'y ​​mga crosswords aron ma-export.Palihug paghimo og pipila ug "
+"pagsulay pag-usab."
+
+#: utils.py:155
+msgid "Successfully exported your crosswords."
+msgstr "Malampuson nga gi-export ang imong mga crosswords."
+
+#: utils.py:160
+msgid "Your crosswords could not be exported, sorry."
+msgstr "Ang imong mga crosswords dili ma-export, sorry."
+
+#: utils.py:166
+msgid "All of your crosswords were successfully imported."
+msgstr "Ang tanan nimong mga crosswords malampuson nga gi-import."
+
+#: utils.py:172
+msgid "Your import could not be fully completed."
+msgstr "Ang imong import dili mahimo nga hingpit nga makumpleto."
+
+#: utils.py:174
+msgid ""
+"Crosswords with duplicate names and difficulties that were not imported: "
+msgstr ""
+"Mga crosswords nga adunay mga doble nga ngalan ug kalisud nga wala ma-"
+"import:"
+
+#: utils.py:180
+msgid "Invalid crosswords that were not imported: "
+msgstr "Ang mga dili husto nga crosswords nga wala ma-import:"
+
+#: utils.py:187
+msgid "The specified JSON file is invalid and cannot be processed."
+msgstr "Ang gitino nga file sa JSON dili husto ug dili maproseso."
+
+#: utils.py:195
+msgid "This word already exists. Please choose a new word."
+msgstr "Kini nga pulong naa na.Palihug pagpili usa ka bag-ong pulong."
+
+#: utils.py:201
+msgid "An error occurred while creating your PDF. Please try again."
+msgstr ""
+"Usa ka sayup ang nahitabo samtang naghimo sa imong PDF.Palihug sulayi pag-"
+"usab."
+
+#: utils.py:208
+msgid ""
+"words that could not be inserted during crossword generation will not be "
+"included in this PDF, sorry."
+msgstr ""
+"Ang mga pulong nga dili ikawas sa panahon sa henerasyon sa crossword dili "
+"ilakip sa kini nga PDF, sorry."
+
+#: utils.py:215
+msgid "Successfully wrote PDF."
+msgstr "Malampuson nga nagsulat sa PDF."
+
+#: utils.py:221
+msgid ""
+"You are missing pywebview, which is required when viewing the crossword game"
+" in an embedded window. Please run"
+msgstr ""
+"Nawala ang imong PywebView, nga gikinahanglan kung gitan-aw ang dula sa "
+"crossword sa usa ka giladmon nga bintana.Palihug pagdagan"
+
+#: utils.py:226
+msgid "to install this dependency."
+msgstr "aron ma-install kini nga pagsalig."
+
+#: utils.py:232
+msgid ""
+"You are missing pycairo, which is required to perform this operation. Please"
+" run"
+msgstr ""
+"Nawala ka nga Pycairo, nga gikinahanglan aron mahimo kini nga "
+"operasyon.Palihug pagdagan"
+
+#: utils.py:237
+msgid ""
+"and install the headers for pycairo if you are not on Windows using "
+"pycairo's Getting Started guide"
+msgstr ""
+"ug i-install ang mga header alang sa pycairo kung wala ka sa Windows gamit "
+"ang pag-undang sa giya sa Pycairo"
+
+#: utils.py:247
+msgid ""
+"First time launch, please read: Once you have loaded a crossword, and wish "
+"to load another one, you must first terminate the web app. IMPORTANT: If you"
+" are on macOS, force quitting the application (using cmd+q) while the web "
+"app is running will prevent it from properly terminating. If you mistakenly "
+"do this, the program will run new web apps with a different port. "
+"Alternatively, you can manually change the port in the program's config "
+"file. All app processes that have not been properly terminated can be "
+"terminated through Activity Monitor on MacOS, or, simply restart your "
+"computer to terminate them."
+msgstr ""
+"Sa unang higayon nga paglansad, palihug basaha: Sa higayon nga nakarga na "
+"nimo ang usa ka crossword, ug gusto nga magkarga og lain, kinahanglan nimo "
+"nga tapuson una ang web app. IMPORTANTE: Kung naa ka sa macOS, pugson ang "
+"pag-undang sa aplikasyon (gamit ang cmd+q) samtang nagdagan ang web app "
+"makapugong niini sa husto nga pagtapos. Kung nasayop ka sa pagbuhat niini, "
+"ang programa magpadagan sa bag-ong web apps nga adunay lahi nga pantalan. Sa"
+" laing paagi, mahimo nimong usbon ang port sa config file sa programa. Ang "
+"tanan nga mga proseso sa app nga wala mahuman sa hustong paagi mahimong "
+"tapuson pinaagi sa Activity Monitor sa MacOS, o, i-restart lang ang imong "
+"computer aron tapuson kini."
+
+#: utils.py:269
+msgid ""
+"An unexpected error occured. Please try reinstalling the application with"
+msgstr ""
+"Usa ka wala damha nga sayup nga nahitabo.Palihug sulayi nga i-install ang "
+"aplikasyon sa"
+
+#: utils.py:790
+msgid "Definitions are empty"
+msgstr "Ang mga kahulugan wala'y sulod"
+
+#: utils.py:793
+msgid "The word count or definitions are less than 3 in length"
+msgstr "Ang pulong ihap o mga kahulugan dili moubos sa 3 sa gitas-on"
+
+#: utils.py:797
+msgid "Length of the word count is greater than the definitions"
+msgstr "Ang gitas-on sa pulong nga ihap mas dako kaysa sa mga kahulugan"
+
+#: utils.py:800
+msgid "Escape character present in word"
+msgstr "Pag-ikyas sa Kinaiya nga Nagpakita sa Pulong"
+
+#: app/templates/index.html:13 app/templates/index.html:338
+#: pages/browser.py:458
+msgid "Crossword Puzzle - Game"
+msgstr "Puzzle sa crossword - Game"
+
+#: app/templates/index.html:136
+msgid "Compound"
+msgstr "Compound"
+
+#: app/templates/index.html:149
+msgid "Auto-skip"
+msgstr "Auto-SKIP"
+
+#: app/templates/index.html:158
+msgid "Auto-word"
+msgstr "AUTO-PULONG"
+
+#: app/templates/index.html:167
+msgid "Auto-check"
+msgstr "Auto-check"
+
+#: app/templates/index.html:176
+msgid "Zoom"
+msgstr "Pag-zoom"
+
+#: app/templates/index.html:189
+msgid "Reveal"
+msgstr "Pagpadayag sa"
+
+#: app/templates/index.html:197 app/templates/index.html:230
+msgid "Cell"
+msgstr "Selula"
+
+#: app/templates/index.html:204 app/templates/index.html:237
+#: app/templates/index.html:263
+msgid "Word"
+msgstr "Pulong"
+
+#: app/templates/index.html:211 app/templates/index.html:244
+#: app/templates/index.html:270
+msgid "Grid"
+msgstr "Grid"
+
+#: app/templates/index.html:222
+msgid "Check"
+msgstr "Tseke"
+
+#: app/templates/index.html:255
+msgid "Clear"
+msgstr "Tataw"
+
+#: app/templates/index.html:277
+msgid "Unrevealed"
+msgstr "Wala maabtik"
+
+#: app/templates/index.html:340
+msgid "You are viewing"
+msgstr "Imong gitan-aw"
+
+#: app/templates/index.html:340
+msgid "from"
+msgstr "gikan"
+
+#: app/templates/index.html:345
+msgid "word(s) could not be inserted, sorry."
+msgstr "Ang mga (mga) pulong dili mahimong i-insert, sorry."
+
+#: app/templates/index.html:348
+msgid "Word count (adjusted)"
+msgstr "WORD COUNT (GIPADAYAG)"
+
+#: app/templates/index.html:351
+msgid "Word count"
+msgstr "Pag-ihap sa pulong"
+
+#: app/templates/index.html:357
+msgid "Continue"
+msgstr "Magpadayon"
+
+#: app/templates/index.html:363
+msgid "You completed the crossword!"
+msgstr "Nahuman nimo ang crossword!"
+
+#: app/templates/index.html:368 pages/browser.py:718
+msgid "Close"
+msgstr "Suod nga"
+
+#: pages/browser.py:142
+msgid "Crossword Browser"
+msgstr "Crossword Browser"
+
+#: pages/browser.py:147 pages/editor.py:363
+msgid "Back"
+msgstr "Sa likod"
+
+#: pages/browser.py:151 pages/editor.py:367 pages/home.py:305
+msgid "HomePage"
+msgstr "Balay sa balay"
+
+#: pages/browser.py:162
+msgid "Categorised"
+msgstr "Labot"
+
+#: pages/browser.py:162 pages/browser.py:314
+msgid "Flattened"
+msgstr "Patagon"
+
+#: pages/browser.py:191
+msgid "Create"
+msgstr "Paghimo"
+
+#: pages/browser.py:200
+msgid "Play"
+msgstr "Magdula"
+
+#: pages/browser.py:208 pages/home.py:126
+msgid "Browser"
+msgstr "Browser"
+
+#: pages/browser.py:208
+msgid "Embedded"
+msgstr "Gilakip"
+
+#: pages/browser.py:211
+msgid "Game view"
+msgstr "Pagtan-aw sa Game"
+
+#: pages/browser.py:237
+msgid "Write to PDF"
+msgstr "Pagsulat sa PDF"
+
+#: pages/browser.py:245
+msgid "Destroy"
+msgstr "Moguba"
+
+#: pages/browser.py:256
+msgid "Word count preferences"
+msgstr "Mga gusto sa pag-ihap sa pulong"
+
+#: pages/browser.py:271 pages/browser.py:400 pages/browser.py:433
+#: pages/browser.py:627
+msgid "Select word count"
+msgstr "Pagpili sa gidaghanon sa pulong"
+
+#: pages/browser.py:286
+msgid "Custom"
+msgstr "Custom"
+
+#: pages/browser.py:499
+msgid "Select a destination to download your PDF to"
+msgstr "Pagpili usa ka padulngan aron ma-download ang imong PDF sa"
+
+#: pages/browser.py:607
+msgid "To perform this operation, you must first select a cell."
+msgstr ""
+"Aron mahimo kini nga operasyon, kinahanglan ka una nga magpili usa ka cell."
+
+#: pages/browser.py:711
+msgid "View"
+msgstr "Panglantaw"
+
+#: pages/browser.py:915
+msgid "Select"
+msgstr "Pagpili"
+
+#: pages/editor.py:357
+msgid "Crossword Editor"
+msgstr "Crossword Editor"
+
+#: pages/editor.py:495 pages/editor.py:718 pages/editor.py:808
+#: pages/editor.py:948
+msgid "Your Crosswords"
+msgstr "Imong mga crosswords"
+
+#: pages/editor.py:559 pages/editor.py:812 pages/editor.py:955
+#: pages/editor.py:1042 pages/editor.py:1155 pages/editor.py:1269
+msgid "Save"
+msgstr "Magtigom"
+
+#: pages/editor.py:571
+msgid "length >= 1 and valid OS file name"
+msgstr "Haba> = 1 ug balido nga ngalan sa file sa OS"
+
+#: pages/editor.py:580
+msgid "length == 1"
+msgstr "gitas-on == 1"
+
+#: pages/editor.py:586
+msgid "Difficulty"
+msgstr "Kalisod"
+
+#: pages/editor.py:593
+msgid "Easy"
+msgstr "Sayon"
+
+#: pages/editor.py:593
+msgid "Medium"
+msgstr "Medium"
+
+#: pages/editor.py:593
+msgid "Hard"
+msgstr "Lisud"
+
+#: pages/editor.py:593
+msgid "Extreme"
+msgstr "Grabe"
+
+#: pages/editor.py:718 pages/editor.py:1098
+msgid "Adding"
+msgstr "Pagdugang"
+
+#: pages/editor.py:721 pages/editor.py:1102
+msgid "Add"
+msgstr "Modugang"
+
+#: pages/editor.py:900 pages/editor.py:1218
+msgid "Press"
+msgstr "Idusok"
+
+#: pages/editor.py:902 pages/editor.py:1220
+msgid "to add a"
+msgstr "Aron makadugang a"
+
+#: pages/editor.py:904
+msgid "new crossword."
+msgstr "bag-ong crossword."
+
+#: pages/editor.py:948 pages/editor.py:1265
+msgid "Editing"
+msgstr "Pag-edit"
+
+#: pages/editor.py:1010 pages/editor.py:1098 pages/editor.py:1150
+#: pages/editor.py:1265
+msgid "Your Words"
+msgstr "Imong mga Pulong"
+
+#: pages/editor.py:1054
+msgid "length >= 1 and length <= 32 and is a language character"
+msgstr "Haba> = 1 ug gitas-on <= 32 ug usa ka kinaiya sa sinultian"
+
+#: pages/editor.py:1065
+msgid "length >= 1"
+msgstr "Haba> = 1"
+
+#: pages/editor.py:1222
+msgid "new word."
+msgstr "Bag-ong Pulong."
+
+#: pages/home.py:98
+msgid "Crossword Puzzle"
+msgstr "Crossword Puzzle"
+
+#: pages/home.py:128
+msgid "BrowserPage"
+msgstr "Browserpage"
+
+#: pages/home.py:137
+msgid "Editor"
+msgstr "Editor"
+
+#: pages/home.py:139
+msgid "EditorPage"
+msgstr "Editorpage"
+
+#: pages/home.py:159
+msgid "Global Settings"
+msgstr "Mga Setting sa Kalibutan"
+
+#: pages/home.py:166
+msgid "Language"
+msgstr "Sinultihan"
+
+#: pages/home.py:178
+msgid "Size"
+msgstr "Gidak-on"
+
+#: pages/home.py:197
+msgid "light"
+msgstr "kahayag"
+
+#: pages/home.py:197
+msgid "dark"
+msgstr "ngitngit"
+
+#: pages/home.py:197
+msgid "system"
+msgstr "sistema"
+
+#: pages/home.py:200 pages/home.py:214
+msgid "Appearance"
+msgstr "Panagway"
+
+#: pages/home.py:220
+msgid "terrible"
+msgstr "mangilngig"
+
+#: pages/home.py:221
+msgid "poor"
+msgstr "pobre"
+
+#: pages/home.py:222
+msgid "average"
+msgstr "average"
+
+#: pages/home.py:223
+msgid "great"
+msgstr "dako"
+
+#: pages/home.py:224
+msgid "perfect"
+msgstr "hingpit"
+
+#: pages/home.py:228
+msgid "Crossword Quality"
+msgstr "Kalidad sa krus"
+
+msgid "Geography"
+msgstr "Geograpiya"
+
+msgid "Math"
+msgstr "Math"
+
+msgid "Science"
+msgstr "Siyensiya"
+
+msgid "Computer Science"
+msgstr "Computer Science"
+
+msgid "User"
+msgstr "Tiggamit"
+
+msgid "Total words"
+msgstr "Totang mga pulong"
+
+msgid "Maximum"
+msgstr "Kinadak-an"
+
+msgid "Clue"
+msgstr "Timailhan"
+
+msgid "Name"
+msgstr "Ngalan"
+
+msgid "Symbol"
+msgstr "Timailhan"
+
+msgid "Search"
+msgstr "Mangita"
+
+msgid "New version available!"
+msgstr "Bag-ong bersyon nga magamit!"

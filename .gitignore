@@ -24,7 +24,7 @@ tempCodeRunnerFile.python
 
 # setuptools
 build
-crossword_puzzle.egg-info
+xpuz.egg-info
 dist
 
 # dev tools
