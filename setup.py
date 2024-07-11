@@ -3,12 +3,12 @@ from setuptools import find_namespace_packages, setup
 
 setup(
     name="crossword_puzzle",
-    version="2.2.95",  # If I import crossword_puzzle.version.__version__, 
+    version="2.2.96",  # If I import crossword_puzzle.version.__version__, 
                        # setuptools fails to build the project for some reason
     author="Tomas Vana",
     url="https://github.com/tomasvana10/crossword_puzzle",
     description="Select, generate and play always-unique crosswords.",
-    long_description=open("README.md").read(),
+    long_description=open("RENAMED.md").read(),
     long_description_content_type="text/markdown",
     packages=find_namespace_packages(exclude=["venv", "venv.*"]),
     license="MIT",
