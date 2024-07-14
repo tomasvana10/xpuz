@@ -391,7 +391,7 @@ def _check_version() -> Union[None, str]:
         # Any component of the remote semver'd tag is greater than that of the
         # local tag (MAJOR or MINOR or PATCH), meaning a new version has been
         # made, so, return the remote version.
-        if any(item[0] > item[1] for item in list(zip(remote_ver, local_ver))):
+        if any(int(item[0]) > int(item[1]) for item in list(zip(remote_ver, local_ver))):
             return data["name"]
 
     return None  # ``response.status`` wasn't 200, meaning some error occurred.
