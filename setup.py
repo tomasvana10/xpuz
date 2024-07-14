@@ -3,7 +3,7 @@ from setuptools import find_namespace_packages, setup
 
 setup(
     name="xpuz",
-    version="2.2.98",  # If I import xpuz.version.__version__, 
+    version="2.2.99",  # If I import xpuz.version.__version__, 
                        # setuptools fails to build the project for some reason
     author="Tomas Vana",
     url="https://github.com/tomasvana10/xpuz",
