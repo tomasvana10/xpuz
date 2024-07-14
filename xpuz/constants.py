@@ -1,3 +1,7 @@
+"""Constant values used across the source code, defining values such as paths
+and colour values for both the GUI and the web application.
+"""
+
 from os import path
 from pathlib import Path
 from typing import Dict, List, Union
@@ -58,7 +62,10 @@ FS_IMG_LIGHT_PATH = path.join(IMAGES_PATH, "fs_light.png")
 FS_IMG_DARK_PATH = path.join(IMAGES_PATH, "fs_dark.png")
 EXPORT_IMG_PATH = path.join(IMAGES_PATH, "export.png")
 IMPORT_IMG_PATH = path.join(IMAGES_PATH, "import.png")
+EXPORT_DIS_IMG_PATH = path.join(IMAGES_PATH, "export_dis.png")
+IMPORT_DIS_IMG_PATH = path.join(IMAGES_PATH, "import_dis.png")
 FOLDER_IMG_PATH = path.join(IMAGES_PATH, "folder.png")
+FOLDER_DIS_IMG_PATH = path.join(IMAGES_PATH, "folder_dis.png")
 WIN_LOGO_PATH = path.join(IMAGES_PATH, "logo.ico")
 LINUX_LOGO_PATH = "@" + path.join(IMAGES_PATH, "logo.xbm")
 BASE_CWORDS_PATH = path.join(DIR_PATH, "base_cwords")
@@ -102,6 +109,7 @@ BASE_ENG_CWORD_QUALITIES: List[str] = [
 BASE_ENG_APPEARANCES: List[str] = ["light", "dark", "system"]
 BASE_ENG_BROWSER_VIEWS: List[str] = ["Categorised", "Flattened"]
 BASE_ENG_APP_VIEWS: List[str] = ["Browser", "Embedded"]
+BASE_ENG_EXPORTS: List[str] = ["PDF", "ipuz"]
 
 
 """Misc constants"""

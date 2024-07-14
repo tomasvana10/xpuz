@@ -1,5 +1,7 @@
-from typing import List
 from os import PathLike
+from typing import List
+from platformdirs import user_downloads_dir
+from tkinter import filedialog
 
 from cairo import (
     FONT_SLANT_NORMAL,
@@ -18,38 +20,47 @@ from xpuz.constants import (
     PDF_MARGIN,
     PDF_WIDTH,
 )
-from xpuz.crossword import Crossword
+from xpuz.wrappers import CrosswordWrapper
+from xpuz.utils import GUIHelper
 
 
 class PDF:
     """Provides the functionality to create a PDF with the an empty crossword
     grid and its definitions, as well as the completed crossword grid.
-    
+
     DISCLAIMER: Cannot draw crosswords that contains complex glyphs, such as
     Mandarin and Japanese, due to limitations with ``cairo``.
     """
+
     def __init__(
         self,
-        fp: PathLike,
-        crossword: Crossword,
+        cwrapper: CrosswordWrapper,
         # Refer to ``utils._interpret_cword_data`` for information on these params
         starting_word_positions,
         starting_word_matrix,
         definitions_a,
         definitions_d,
-        display_name: str,
     ) -> None:
-        self.crossword = crossword
+        self.cwrapper = cwrapper
+        self.crossword = self.cwrapper.crossword
         self.grid: List[List[str]] = self.crossword.grid
         self.dimensions: int = self.crossword.dimensions
-        self.drawn: bool  = False
+        self.drawn: bool = False
+        self.display_name = f"{self.cwrapper.translated_name} ({_(self.cwrapper.difficulty)})"
+        
+        self.filepath = PDF._get_pdf_filepath(self.display_name)
+        if not self.filepath:
+            self.bad_filepath = True
+        else:
+            if not self.filepath.endswith(".pdf"):
+                self.filepath += ".pdf"
+            self.bad_filepath = False
 
         self.starting_word_positions = starting_word_positions
         self.starting_word_matrix = starting_word_matrix
         self.definitions_a, self.definitions_d = definitions_a, definitions_d
         self.definitions_a_backlog, self.definitions_d_backlog = [], []
         self.backlog_inserted: bool = False
-        self.display_name = display_name
         self.display_name_answer = self.display_name + f" - {_('Answers')}"
 
         # Calculating relative side length of each cell, then using that value
@@ -58,18 +69,40 @@ class PDF:
         self.grid_dim: float = self.dimensions * self.cell_dim
         self.num_label_fontsize = self.cell_dim * 0.3
         self.cell_fontsize = self.cell_dim * 0.8
-        
-        try:
-            self._s: PDFSurface = PDFSurface(fp, PDF_WIDTH, PDF_HEIGHT)
-            self._c: Context = Context(self._s)
-            self._c.set_line_width(1)
 
-            self._draw_all()
-            self.drawn = True
-            
+    def _make(self) -> None:
+        try:
+            if not self.bad_filepath:
+                self._s: PDFSurface = PDFSurface(self.filepath, PDF_WIDTH, PDF_HEIGHT)
+                self._c: Context = Context(self._s)
+                self._c.set_line_width(1)
+
+                self._draw_all()
+                self.drawn = True
         except Exception:
             pass
+            
+        self._on_finish()
     
+    @staticmethod
+    def _get_pdf_filepath(name: str) -> PathLike:
+        return filedialog.asksaveasfilename(
+            title=_("Select a destination to download your PDF to"),
+            defaultextension=".pdf",
+            filetypes=[("PDF files", "*.pdf")],
+            initialdir=user_downloads_dir(),
+            initialfile=name + ".pdf",
+        )
+    
+    def _on_finish(self) -> None:
+        if not self.drawn:
+            return GUIHelper.show_messagebox(pdf_write_err=True)
+        else:
+            fails = self.crossword.fails
+            if fails > 0:
+                return GUIHelper.show_messagebox(fails, pdf_write_success=True)
+            else:
+                return GUIHelper.show_messagebox(pdf_write_success=True)
 
     def _set_font_face(
         self,
@@ -116,7 +149,7 @@ class PDF:
                     )
                     self._c.fill()
 
-                else:  # This cell has text 
+                else:  # This cell has text
                     self._c.set_source_rgb(1, 1, 1)
                     self._c.rectangle(
                         col * self.cell_dim,
@@ -172,8 +205,10 @@ class PDF:
         """Draw lines in between all of the cells."""
         self._c.set_source_rgb(0, 0, 0)
 
-        for row in range(self.dimensions + 1):  # Account for far right and bottom
-                                                # edges by adding 1
+        for row in range(
+            self.dimensions + 1
+        ):  # Account for far right and bottom
+            # edges by adding 1
             self._c.move_to(0, row * self.cell_dim)
             self._c.line_to(
                 self.dimensions * self.cell_dim, row * self.cell_dim
@@ -238,7 +273,7 @@ class PDF:
         backlog: List,
     ) -> None:
         """Draw either the across or down definitions column.
-        
+
         DISCLAIMER: Does not provide wrapping for clues.
         """
         definitions_x: float = (
@@ -264,7 +299,7 @@ class PDF:
             if i + 1 > PAGE_DEF_MAX and not self.backlog_inserted:
                 backlog.append(definition)
                 continue
-            
+
             for number, (word, clue) in definition.items():
                 text = f"{number}. {clue}"
                 self._c.move_to(
@@ -272,4 +307,3 @@ class PDF:
                 )
                 self._c.show_text(text)
                 y += FONTSIZE_DEF * 2
-

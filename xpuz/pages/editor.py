@@ -2,52 +2,54 @@
 the creation and editing of new crosswords, not pre-installed ones.
 """
 
-from os import mkdir, path, PathLike, rename
-from tkinter import IntVar, Event
-from typing import List, Union, Callable, Dict, Optional
-from shutil import rmtree
 from json import dump
+from os import PathLike, mkdir, path, rename
+from shutil import rmtree
+from tkinter import Event, IntVar
+from typing import Callable, Dict, List, Optional, Union
 
 from CTkToolTip import CTkToolTip
 from customtkinter import (
     CTkButton,
+    CTkEntry,
     CTkFrame,
+    CTkImage,
     CTkLabel,
     CTkOptionMenu,
-    CTkScrollableFrame,
-    CTkEntry,
     CTkRadioButton,
+    CTkScrollableFrame,
     CTkTextbox,
-    CTkImage,
 )
-from pathvalidate import validate_filename, ValidationError
+from pathvalidate import ValidationError, validate_filename
 from PIL import Image
 from regex import search
 
 from xpuz.base import Addons, Base
 from xpuz.constants import (
     BASE_CWORDS_PATH,
+    DIFFICULTIES,
     DOC_CAT_PATH,
     EDITOR_DIM,
-    PAGE_MAP,
-    DIFFICULTIES,
-    NONLANGUAGE_PATTERN,
+    EXPORT_IMG_PATH,
+    FOLDER_DIS_IMG_PATH,
     FOLDER_IMG_PATH,
     IMPORT_IMG_PATH,
-    EXPORT_IMG_PATH,
+    NONLANGUAGE_PATTERN,
+    PAGE_MAP,
     Colour,
 )
+from xpuz.import_export import Export, Import
+from xpuz.td import CrosswordInfo
 from xpuz.utils import (
     BlockUtils,
     GUIHelper,
     _doc_data_routine,
     _get_base_crosswords,
+    _get_english_string,
     _make_category_info_json,
     _open_file,
 )
 from xpuz.wrappers import CrosswordWrapper
-from xpuz.td import CrosswordInfo
-from xpuz.import_export import Export, Import
 
 
 class Form(Addons):
@@ -334,7 +336,7 @@ class EditorPage(CTkFrame, Addons):
         self.grid_rowconfigure(0, minsize=self._height * 0.15, weight=1)
         self.grid_rowconfigure(1, minsize=self._height * 0.85, weight=1)
         self.grid_columnconfigure(0, weight=1)
-        
+
         self.master.bind("<Return>", lambda e: self._handle_enter())
 
     def _make_containers(self) -> None:
@@ -446,7 +448,7 @@ class EditorPage(CTkFrame, Addons):
             and word_pane_button.cget("state") == "normal"
         ):
             word_pane_button.invoke()
-        
+
     def _toggle_forms(self, state: str, forms: List[Form]) -> None:
         """Enable or disable all the forms in ``forms``."""
         for form in forms:
@@ -538,16 +540,21 @@ class CrosswordPane(CTkFrame, Addons):
             lambda e: self.master._handle_scroll(e),
         )
 
+        self.explorer_img_states = (
+            CTkImage(Image.open(FOLDER_IMG_PATH), size=(14, 14)),
+            CTkImage(Image.open(FOLDER_DIS_IMG_PATH), size=(14, 14)),
+        )
         self.b_explorer = CTkButton(
             self.b_edit_container,
             text="",
             width=40,
             height=30,
-            image=CTkImage(Image.open(FOLDER_IMG_PATH), size=(14, 14)),
             font=self.TEXT_FONT,
             command=lambda: _open_file(self.crossword_block.cwrapper.toplevel),
             state="disabled",
+            image=self.explorer_img_states[1],
         )
+
         self.b_export = CTkButton(
             self.b_edit_container,
             text="",
@@ -699,7 +706,9 @@ class CrosswordPane(CTkFrame, Addons):
         """Find the english version of ``difficulty`` and update
         ``self.difficulty``.
         """
-        self.difficulty = DIFFICULTIES[self.difficulties.index(difficulty)]
+        self.difficulty = _get_english_string(
+            DIFFICULTIES, self.difficulties, difficulty
+        )
         Form.crossword_forms[0]._update_confirm_button(
             self.pane_name, self.b_confirm
         )
@@ -748,7 +757,9 @@ class CrosswordPane(CTkFrame, Addons):
             text=_("Your Crosswords") + " ({})".format(_("Adding"))
         )
         self.b_remove.configure(state="disabled")
-        self.b_confirm.configure(text=_("Add") + " [↵]",)
+        self.b_confirm.configure(
+            text=_("Add") + " [↵]",
+        )
         Form.crossword_forms[0].focus()
         self._toggle_forms("normal", Form.crossword_forms)
         self.master._reset_forms(Form.crossword_forms, set_invalid=True)
@@ -837,6 +848,7 @@ class CrosswordPane(CTkFrame, Addons):
         UserCrosswordBlock._set_all(UserCrosswordBlock._remove_block)
         self.l_title.configure(text=_("Your Crosswords"))
         self.b_explorer.configure(state="disabled")
+        self.b_explorer.configure(image=self.explorer_img_states[1])
         self.master._reset_forms(Form.crossword_forms, set_invalid=True)
         self._toggle_forms("disabled", Form.crossword_forms)
         self.b_confirm.configure(text=_("Save") + " [↵]")
@@ -979,6 +991,9 @@ class UserCrosswordBlock(CTkFrame, Addons, BlockUtils):
         )
         self.master.crossword_block = self
         self.master.b_explorer.configure(state="normal")
+        self.master.b_explorer.configure(
+            image=self.master.explorer_img_states[0]
+        )
         self.master.difficulty = self.cwrapper.difficulty
         self.master._toggle_forms("normal", Form.crossword_forms)
         self.master.b_confirm.configure(text=_("Save") + " [↵]")
@@ -1014,8 +1029,10 @@ class WordPane(CTkFrame, Addons):
         )
         self.pane_name = "word"
         self.master = master
-        self.word = ""  # The currently selected word, unchanged by editing until
-                        # the word is saved and reselected
+        self.word = (
+            ""  # The currently selected word, unchanged by editing until
+        )
+        # the word is saved and reselected
         self.grid(row=0, column=1, sticky="nsew")
 
         self._set_fonts()
