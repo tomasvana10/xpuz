@@ -876,7 +876,6 @@ class UserCrosswordBlock(CTkFrame, Addons, BlockUtils):
             language=Base.locale.language,
             value=value,
         )
-        self.localised_difficulty: str = _(self.cwrapper.difficulty)
 
         self._set_fonts()
         self._make_content()
@@ -985,7 +984,7 @@ class UserCrosswordBlock(CTkFrame, Addons, BlockUtils):
             forms=Form.crossword_forms,
         )
         Form.crossword_forms[0].focus()
-        self.master.opts_difficulty.set(self.localised_difficulty)
+        self.master.opts_difficulty.set(self.cwrapper.translated_difficulty)
         self.master.b_remove.configure(state="normal")
         self.master.master.word_pane._reset()
         self.master.master.word_pane.b_add.configure(state="normal")

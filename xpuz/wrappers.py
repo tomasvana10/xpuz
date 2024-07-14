@@ -60,6 +60,8 @@ class CrosswordWrapper:
         self.value = value
         self.translated_name: str = self.info["translated_name"] or self.name
         self.difficulty: str = DIFFICULTIES[self.info["difficulty"]]
+        self.translated_difficulty = _(self.difficulty)
+        self.display_name: str = f"{self.translated_name} ({_(self.difficulty)})"
 
     def __str__(self) -> str:
         sorted_dict = dict(sorted(list(self.__dict__.items())))
