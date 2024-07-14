@@ -10,17 +10,29 @@ from typing import Any, List, Union
 from platformdirs import user_downloads_dir
 
 from xpuz.td import CrosswordData, CrosswordInfo
+from xpuz.utils import GUIHelper
 
 
 class Export(list):
-    """Export all the crosswords a user has made into a single JSON file."""
+    """Export all the crosswords a user has made into a single JSON fdile."""
     
     def __init__(self, blocks: List["UserCrosswordBlock"]) -> None:
         self.blocks = blocks
         self.exported: bool = False
+        self.no_filepath: bool = False
 
+    def start(self) -> None:
+        """Commence the export process and provide information once it is done."""
         self._assemble()
         self._export()
+        
+        if self.no_filepath:
+            return
+        
+        if self.exported:
+            return GUIHelper.show_messagebox(export_success=True)
+        else:
+            return GUIHelper.show_messagebox(export_failure=True)
 
     def _get_filepath(self) -> Union[str, PathLike]:
         """Acquire the path of where the user wants to save their exported
@@ -39,6 +51,7 @@ class Export(list):
         filepath = self._get_filepath()
 
         if not filepath:
+            self.no_filepath = True
             return
 
         if not filepath.endswith(".json"):
@@ -78,8 +91,29 @@ class Import:
         self.imported_crossword_fullnames: List[str] = []
         self.imported: bool = False
         self.invalid_file: bool = False
+        self.no_filepath: bool = False
 
+    def start(self) -> None:
+        """Commence the import process and provide information once it is done."""
         self._import()
+        
+        if self.no_filepath:
+            return
+        
+        if self.invalid_file:
+            return GUIHelper.show_messagebox(import_failure=True)
+        elif (
+            self.imported
+            and not self.conflicting_fullnames
+            and not self.skipped_crossword_fullnames
+        ):
+            GUIHelper.show_messagebox(import_success=True)
+        else:
+            GUIHelper.show_messagebox(
+                self.conflicting_fullnames,
+                self.skipped_crossword_fullnames,
+                partial_import_success=True,
+            )
 
     def _get_filepath(self) -> Union[str, PathLike]:
         """Acquire the path of the user's crossword JSON."""
@@ -96,7 +130,7 @@ class Import:
         filepath = self._get_filepath()
 
         if not filepath:
-            self.invalid_file = True
+            self.no_filepath = True
             return
 
         with open(filepath) as f:

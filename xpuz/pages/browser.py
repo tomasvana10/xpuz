@@ -602,7 +602,7 @@ class BrowserPage(CTkFrame, Addons):
             self.starting_word_matrix,
             self.definitions_a,
             self.definitions_d,
-        )._make()
+        ).write()
 
     def load(self) -> None:
         """Initialise the crossword and web app."""

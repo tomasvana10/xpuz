@@ -47,14 +47,6 @@ class PDF:
         self.dimensions: int = self.crossword.dimensions
         self.drawn: bool = False
         self.display_name = f"{self.cwrapper.translated_name} ({_(self.cwrapper.difficulty)})"
-        
-        self.filepath = PDF._get_pdf_filepath(self.display_name)
-        if not self.filepath:
-            self.bad_filepath = True
-        else:
-            if not self.filepath.endswith(".pdf"):
-                self.filepath += ".pdf"
-            self.bad_filepath = False
 
         self.starting_word_positions = starting_word_positions
         self.starting_word_matrix = starting_word_matrix
@@ -70,10 +62,18 @@ class PDF:
         self.num_label_fontsize = self.cell_dim * 0.3
         self.cell_fontsize = self.cell_dim * 0.8
 
-    def _make(self) -> None:
+    def write(self) -> None:
+        filepath = PDF._get_pdf_filepath(self.display_name)
+        if not filepath:
+            bad_filepath = True
+        else:
+            if not filepath.endswith(".pdf"):
+                filepath += ".pdf"
+            bad_filepath = False
+            
         try:
-            if not self.bad_filepath:
-                self._s: PDFSurface = PDFSurface(self.filepath, PDF_WIDTH, PDF_HEIGHT)
+            if not bad_filepath:
+                self._s: PDFSurface = PDFSurface(filepath, PDF_WIDTH, PDF_HEIGHT)
                 self._c: Context = Context(self._s)
                 self._c.set_line_width(1)
 

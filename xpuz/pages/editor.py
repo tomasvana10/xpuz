@@ -436,7 +436,6 @@ class EditorPage(CTkFrame, Addons):
         focused_form_name = self.master.focus_get().master._name
         crossword_pane_button = self.crossword_pane.b_confirm
         word_pane_button = self.word_pane.b_confirm
-        print("enter")
 
         if (
             focused_form_name in ["name", "symbol"]
@@ -662,11 +661,7 @@ class CrosswordPane(CTkFrame, Addons):
         if isinstance(UserCrosswordBlock.blocks[0], CTkLabel):
             return GUIHelper.show_messagebox(no_crosswords_to_export_err=True)
 
-        exp = Export(UserCrosswordBlock.blocks)
-        if exp.exported:
-            return GUIHelper.show_messagebox(export_success=True)
-        else:
-            return GUIHelper.show_messagebox(export_failure=True)
+        Export(UserCrosswordBlock.blocks).start()
 
     def _import(self) -> None:
         """Allow the user to add new crosswords from a JSON file that was
@@ -678,21 +673,7 @@ class CrosswordPane(CTkFrame, Addons):
             ):
                 return None
         imp = Import(self, self.master.fp)
-
-        if imp.invalid_file:
-            return GUIHelper.show_messagebox(import_failure=True)
-        elif (
-            imp.imported
-            and not imp.conflicting_fullnames
-            and not imp.skipped_crossword_fullnames
-        ):
-            GUIHelper.show_messagebox(import_success=True)
-        else:
-            GUIHelper.show_messagebox(
-                imp.conflicting_fullnames,
-                imp.skipped_crossword_fullnames,
-                partial_import_success=True,
-            )
+        imp.start()
 
         self._reset()
         self.b_add.configure(state="normal")
