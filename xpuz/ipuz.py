@@ -1,3 +1,5 @@
+"""Module implementing ``ipuz`` export functionality."""
+
 from datetime import date
 from json import dump
 
@@ -8,6 +10,7 @@ from xpuz.utils import GUIHelper, _get_saveas_filename
 
 
 class IPuz(dict):
+    """Export a generated crossword in ``ipuz`` format."""
     def __init__(
         self,
         cwrapper: CrosswordWrapper,
@@ -23,6 +26,9 @@ class IPuz(dict):
         self.definitions_a, self.definitions_d = definitions_a, definitions_d
 
     def write(self) -> None:
+        """Compile the data of the generated crossword into ``self``, and write
+        it to ``filepath``.
+        """
         filepath = _get_saveas_filename(
             _("Select a destination to export your ipuz to"),
             self.cwrapper.display_name,
@@ -31,8 +37,10 @@ class IPuz(dict):
         )
         if not filepath:
             return
-        if not filepath.endswith(".ipuz.json"):
+        if not filepath.endswith(".json"):
             filepath += ".ipuz.json"
+        else:
+            filepath = filepath.replace(".json", ".ipuz.json")
 
         self = IPuzV2.create(
             dimensions={
