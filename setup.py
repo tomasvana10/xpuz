@@ -28,7 +28,7 @@ setup(
     ],
     entry_points={
         "gui_scripts": [
-            "xpuz-ctk = xpuz.main:main"
+            "xpuz-ctk = xpuz.__main__:main"
         ]
     },
     classifiers=[

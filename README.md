@@ -100,10 +100,7 @@ or, run the package manually through the terminal (requires [Git](https://git-sc
 git clone https://github.com/tomasvana10/xpuz.git
 cd xpuz
 pip install -r requirements.txt
-```
-```py
->>> import xpuz as xp
->>> xp.main()
+python -m xpuz
 ```
 
 5. You can deactivate your virtual environment when you are done:
