@@ -1,4 +1,4 @@
-"""Custom types for type annotation in the source code of ."""
+"""Custom types for type annotation in the source code of ``xpuz``."""
 
 from typing import Dict, List, Tuple, Union
 

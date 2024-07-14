@@ -1,3 +1,5 @@
+"""Wrappers to encapsulate classes."""
+
 from json import load
 from os import PathLike, listdir, path
 from pprint import pformat

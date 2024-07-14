@@ -1,3 +1,5 @@
+"""Module implementing PDF export functionality."""
+
 from typing import List
 
 from cairo import (
