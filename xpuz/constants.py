@@ -117,6 +117,7 @@ PYPI_URL = "https://pypi.org/project/xpuz/"
 RELEASE_API_URL = (
     "https://api.github.com/repos/tomasvana10/xpuz/releases/latest"
 )
+PROJECT_URL = "https://github.com/tomasvana10/xpuz"
 DIM = (900, 650)
 EDITOR_DIM = (1125, 600)
 PAGE_MAP: Dict[str, str] = {
