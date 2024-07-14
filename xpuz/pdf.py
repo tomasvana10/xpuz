@@ -1,7 +1,4 @@
-from os import PathLike
 from typing import List
-from platformdirs import user_downloads_dir
-from tkinter import filedialog
 
 from cairo import (
     FONT_SLANT_NORMAL,
@@ -21,7 +18,7 @@ from xpuz.constants import (
     PDF_WIDTH,
 )
 from xpuz.wrappers import CrosswordWrapper
-from xpuz.utils import GUIHelper
+from xpuz.utils import GUIHelper, _get_saveas_filename
 
 
 class PDF:
@@ -46,7 +43,7 @@ class PDF:
         self.grid: List[List[str]] = self.crossword.grid
         self.dimensions: int = self.crossword.dimensions
         self.drawn: bool = False
-        self.display_name = f"{self.cwrapper.translated_name} ({_(self.cwrapper.difficulty)})"
+        self.display_name = self.cwrapper.display_name
 
         self.starting_word_positions = starting_word_positions
         self.starting_word_matrix = starting_word_matrix
@@ -63,37 +60,30 @@ class PDF:
         self.cell_fontsize = self.cell_dim * 0.8
 
     def write(self) -> None:
-        filepath = PDF._get_pdf_filepath(self.display_name)
+        filepath = _get_saveas_filename(
+            _("Select a destination to download your PDF to"),
+            self.display_name,
+            ".pdf",
+            [("PDF files", "*.pdf")],
+        )
         if not filepath:
-            bad_filepath = True
-        else:
-            if not filepath.endswith(".pdf"):
-                filepath += ".pdf"
-            bad_filepath = False
-            
-        try:
-            if not bad_filepath:
-                self._s: PDFSurface = PDFSurface(filepath, PDF_WIDTH, PDF_HEIGHT)
-                self._c: Context = Context(self._s)
-                self._c.set_line_width(1)
+            return
+        if not filepath.endswith(".pdf"):
+            filepath += ".pdf"
 
-                self._draw_all()
-                self.drawn = True
+        try:
+            self._s: PDFSurface = PDFSurface(filepath, PDF_WIDTH, PDF_HEIGHT)
+            self._c: Context = Context(self._s)
+            self._c.set_line_width(1)
+
+            self._draw_all()
+            self.drawn = True
+
         except Exception:
             pass
-            
+
         self._on_finish()
-    
-    @staticmethod
-    def _get_pdf_filepath(name: str) -> PathLike:
-        return filedialog.asksaveasfilename(
-            title=_("Select a destination to download your PDF to"),
-            defaultextension=".pdf",
-            filetypes=[("PDF files", "*.pdf")],
-            initialdir=user_downloads_dir(),
-            initialfile=name + ".pdf",
-        )
-    
+
     def _on_finish(self) -> None:
         if not self.drawn:
             return GUIHelper.show_messagebox(pdf_write_err=True)
@@ -207,8 +197,7 @@ class PDF:
 
         for row in range(
             self.dimensions + 1
-        ):  # Account for far right and bottom
-            # edges by adding 1
+        ):  # Account for far right and bottom edges by adding 1
             self._c.move_to(0, row * self.cell_dim)
             self._c.line_to(
                 self.dimensions * self.cell_dim, row * self.cell_dim

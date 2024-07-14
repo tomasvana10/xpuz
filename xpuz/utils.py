@@ -9,13 +9,14 @@ from math import ceil
 from os import DirEntry, PathLike, listdir, mkdir, path, scandir
 from platform import system
 from random import randint, sample
-from tkinter import messagebox
+from tkinter import messagebox, filedialog
 from typing import Callable, Dict, Iterable, List, Optional, Tuple, Union
 from urllib.error import URLError
 
 from babel import Locale
 from babel.core import UnknownLocaleError
 from regex import sub
+from platformdirs import user_downloads_dir
 
 from xpuz.constants import (
     ACROSS,
@@ -27,6 +28,7 @@ from xpuz.constants import (
     DOC_DATA_PATH,
     DOC_PATH,
     DOWN,
+    EMPTY,
     LOCALES_PATH,
     NONLANGUAGE_PATTERN,
     QUALITY_MAP,
@@ -231,6 +233,12 @@ class GUIHelper:
                 )
                 + ": https://pycairo.readthedocs.io/en/latest/getting_started.html",
             )
+        
+        if "ipuz_write_success" in kwargs:
+            return messagebox.showinfo(
+                _("Info"),
+                _("Successfully wrote ipuz")
+            )
 
         if "first_time_browser" in kwargs:
             return messagebox.showinfo(
@@ -335,6 +343,24 @@ def _open_file(fp: PathLike) -> None:
             os_system("open %s" % fp)
         elif plat == "Linux":
             os_system("xdg-open %s" % fp)
+
+
+def _get_saveas_filename(title: str, name: str, extension: str, filetypes: List[Tuple[str]]) -> Union[str, PathLike]:
+    return filedialog.asksaveasfilename(
+        title=title,
+        defaultextension=extension,
+        filetypes=filetypes,
+        initialfile=name + extension,
+        initialdir=user_downloads_dir(),
+    )
+
+
+def _get_open_filename(title: str, filetypes: List[Tuple[str]]) -> Union[str, PathLike]:
+    return filedialog.askopenfilename(
+        title=title,
+        initialdir=user_downloads_dir(),
+        filetypes=filetypes,
+    )
 
 
 def _get_english_string(
@@ -779,7 +805,10 @@ def _interpret_cword_data(crossword: "Crossword") -> Tuple[List]:
                 num_label += 1
 
             else:
-                starting_word_matrix[row][column] = 0
+                if crossword.grid[row][column] == EMPTY:
+                    starting_word_matrix[row][column] = None
+                else:
+                    starting_word_matrix[row][column] = 0
 
     return (
         starting_word_positions,

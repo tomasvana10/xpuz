@@ -272,7 +272,7 @@ class BrowserPage(CTkFrame, Addons):
 
         self.l_export = CTkLabel(
             self.export_container,
-            text=_("Export options"),
+            text=_("Export as"),
             state="disabled",
             font=self.BOLD_TEXT_FONT,
             text_color_disabled=(
@@ -588,7 +588,14 @@ class BrowserPage(CTkFrame, Addons):
             self._export_ipuz()
 
     def _export_ipuz(self) -> None:
-        ...
+        from xpuz.ipuz import IPuz 
+        
+        IPuz(
+            self.cwrapper,
+            self.starting_word_matrix,
+            self.definitions_a,
+            self.definitions_d,
+        ).write()
 
     def _export_pdf(self) -> None:
         try:
@@ -883,7 +890,6 @@ class CrosswordBlock(CTkFrame, Addons, BlockUtils):
             category_object=category_object,
             value=value,
         )
-        self.localised_difficulty: str = _(self.cwrapper.difficulty)
 
         self._set_fonts()
         self._make_content()
@@ -968,7 +974,7 @@ class CrosswordBlock(CTkFrame, Addons, BlockUtils):
         self.l_difficulty = CTkLabel(
             self,
             font=self.TEXT_FONT,
-            text=f"{_('Difficulty')}: {self.localised_difficulty}",
+            text=f"{_('Difficulty')}: {self.cwrapper.translated_difficulty}",
         )
 
         self.bottom_colour_tag = CTkLabel(

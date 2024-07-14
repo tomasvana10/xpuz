@@ -4,18 +4,15 @@ crosswords through JSON files.
 
 from json import dump, load
 from os import PathLike, mkdir, path, rmdir
-from tkinter import filedialog
-from typing import Any, List, Union
-
-from platformdirs import user_downloads_dir
+from typing import Any, List
 
 from xpuz.td import CrosswordData, CrosswordInfo
-from xpuz.utils import GUIHelper
+from xpuz.utils import GUIHelper, _get_saveas_filename, _get_open_filename
 
 
 class Export(list):
     """Export all the crosswords a user has made into a single JSON fdile."""
-    
+
     def __init__(self, blocks: List["UserCrosswordBlock"]) -> None:
         self.blocks = blocks
         self.exported: bool = False
@@ -25,30 +22,23 @@ class Export(list):
         """Commence the export process and provide information once it is done."""
         self._assemble()
         self._export()
-        
+
         if self.no_filepath:
             return
-        
+
         if self.exported:
             return GUIHelper.show_messagebox(export_success=True)
         else:
             return GUIHelper.show_messagebox(export_failure=True)
 
-    def _get_filepath(self) -> Union[str, PathLike]:
-        """Acquire the path of where the user wants to save their exported
-        crossword JSON file.
-        """
-        return filedialog.asksaveasfilename(
-            title=_("Select a destination to export your crosswords to"),
-            defaultextension=".json",
-            filetypes=[("JSON files", "*.json")],
-            initialdir=user_downloads_dir(),
-            initialfile=_("my-crosswords") + ".json",
-        )
-
     def _export(self) -> None:
         """Write ``self`` to ``filepath``."""
-        filepath = self._get_filepath()
+        filepath = _get_saveas_filename(
+            _("Select a destination to export your crosswords to"),
+            _("my-crosswords"),
+            ".json",
+            [("JSON files", "*.json")],
+        )
 
         if not filepath:
             self.no_filepath = True
@@ -81,7 +71,7 @@ class Export(list):
 
 class Import:
     """Import a valid user-selected file to ``fp``."""
-    
+
     def __init__(self, master: "CrosswordPane", fp: PathLike) -> None:
         self.master = master
         self.fp = fp
@@ -96,10 +86,10 @@ class Import:
     def start(self) -> None:
         """Commence the import process and provide information once it is done."""
         self._import()
-        
+
         if self.no_filepath:
             return
-        
+
         if self.invalid_file:
             return GUIHelper.show_messagebox(import_failure=True)
         elif (
@@ -115,19 +105,14 @@ class Import:
                 partial_import_success=True,
             )
 
-    def _get_filepath(self) -> Union[str, PathLike]:
-        """Acquire the path of the user's crossword JSON."""
-        return filedialog.askopenfilename(
-            title=_(
-                "Select a valid crossword JSON file that was exported using xpuz"
-            ),
-            initialdir=user_downloads_dir(),
-            filetypes=[("JSON Files", "*.json")],
-        )
-
     def _import(self) -> None:
         """Read the contents of ``filepath`` and call ``self._write``."""
-        filepath = self._get_filepath()
+        filepath = _get_open_filename(
+            _(
+                "Select a valid crossword JSON file that was exported using xpuz"
+            ),
+            [("JSON files", "*.json")],
+        )
 
         if not filepath:
             self.no_filepath = True
