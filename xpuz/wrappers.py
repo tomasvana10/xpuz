@@ -10,10 +10,7 @@ from xpuz.constants import (
     LOCALES_PATH,
 )
 from xpuz.crossword import Crossword
-from xpuz.errors import (
-    CrosswordGenerationError,
-    DefinitionsParsingError,
-)
+from xpuz.errors import CrosswordGenerationError, DefinitionsParsingError
 from xpuz.td import CrosswordInfo
 from xpuz.utils import (
     _find_best_crossword,
@@ -115,13 +112,13 @@ class CrosswordWrapper:
             )
 
     def _get_toplevel(self) -> PathLike:
-        """Find the absolute path to the toplevel of a crossword 
-        (e.g <pkg_path>\\locales\\geography\\capitals-easy).
-         
+        """Find the absolute path to the toplevel of a crossword
+        (e.g <pkg_path>/locales/geography/capitals-easy).
+
         The path returned will be in 1 of 3 locations:
         1. Locales directory (if it is found),
         2. Base crossword directory (if not localised version is present),
-        3. The system's document directory (if it is available and the crossword 
+        3. The system's document directory (if it is available and the crossword
            belongs to the "user" category).
         """
 

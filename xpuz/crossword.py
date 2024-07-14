@@ -1,3 +1,5 @@
+"""Crossword creation module."""
+
 from collections import namedtuple
 from math import ceil, sqrt
 from random import choice

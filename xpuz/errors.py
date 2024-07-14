@@ -1,3 +1,6 @@
+"""Custom errors module."""
+
+
 class CrosswordGenerationError(Exception):
     pass
 

@@ -1,5 +1,6 @@
 """General/specialised utility functions."""
 
+import urllib.request as req
 from configparser import ConfigParser, NoSectionError
 from copy import deepcopy
 from gettext import translation
@@ -10,7 +11,6 @@ from platform import system
 from random import randint, sample
 from tkinter import messagebox
 from typing import Callable, Dict, Iterable, List, Optional, Tuple, Union
-import urllib.request as req
 from urllib.error import URLError
 
 from babel import Locale
@@ -27,11 +27,11 @@ from xpuz.constants import (
     DOC_DATA_PATH,
     DOC_PATH,
     DOWN,
-    NONLANGUAGE_PATTERN,
     LOCALES_PATH,
+    NONLANGUAGE_PATTERN,
     QUALITY_MAP,
-    TEMPLATE_CFG_PATH,
     RELEASE_API_URL,
+    TEMPLATE_CFG_PATH,
     Colour,
 )
 from xpuz.errors import DefinitionsParsingError
@@ -194,13 +194,15 @@ class GUIHelper:
                 _("Error"),
                 _("This word already exists. Please choose a new word."),
             )
-        
+
         if "pdf_write_err" in kwargs:
             return messagebox.showerror(
                 _("Error"),
-                _("An error occurred while creating your PDF. Please try again."),
+                _(
+                    "An error occurred while creating your PDF. Please try again."
+                ),
             )
-        
+
         if "pdf_write_success" in kwargs:
             if not args:
                 fails_msg = ""
@@ -214,7 +216,7 @@ class GUIHelper:
                 _("Info"),
                 _("Successfully wrote PDF.") + fails_msg,
             )
-        
+
         if "pdf_missing_dep" in kwargs:
             return messagebox.showerror(
                 _("Error"),
@@ -227,7 +229,7 @@ class GUIHelper:
                     "and install the headers for pycairo if you are not on "
                     "Windows using pycairo's Getting Started guide"
                 )
-                + ": https://pycairo.readthedocs.io/en/latest/getting_started.html"
+                + ": https://pycairo.readthedocs.io/en/latest/getting_started.html",
             )
 
         if "first_time_browser" in kwargs:
@@ -264,6 +266,10 @@ class GUIHelper:
 
 
 class BlockUtils:
+    """Methods to help with manipulating block objects in both ``pages/editor.py``
+    and ``pages/browser.py``.
+    """
+
     @staticmethod
     def _match_block_query(query: str, block_name: str, category: str):
         """Return True if any part of ``block_name`` (split into the words that
@@ -298,7 +304,9 @@ class BlockUtils:
         cls,
         func: Callable,
     ) -> None:
-        """Put or remove all of a classes blocks."""
+        """Call ``func``, passing each block in ``cls.blocks`` as parameters.
+        Most often used to put or remove all of the blocks in ``cls.blocks``.
+        """
         for block in [
             *cls.blocks
         ]:  # Must iterate over a shallow copy here, as
@@ -308,12 +316,13 @@ class BlockUtils:
 
     @classmethod
     def _config_selectors(cls, **kwargs) -> None:
-        """Enable or disable all the crossword block radiobutton selectors."""
+        """Enable or disable all the radiobutton selectors in ``cls.blocks``."""
         for block in cls.blocks:
             block.rb_selector.configure(**kwargs)
 
 
-def _open_file(fp) -> None:
+def _open_file(fp: PathLike) -> None:
+    """Open ``fp`` (directory) in the OS' default file explorer."""
     plat: str = system()
     if plat == "Windows":
         from os import startfile
@@ -328,25 +337,38 @@ def _open_file(fp) -> None:
             os_system("xdg-open %s" % fp)
 
 
+def _get_english_string(
+    eng_arr: List[str], localised_arr: List[str], index_value: Union[str, int]
+) -> None:
+    """Find the english version of ``index_value`` by finding its index in
+    ``localised_arr``, then using the resulting integer to index ``eng_arr``.
+    This function assumes both arrays have the same relative order.
+    """
+    return eng_arr[localised_arr.index(index_value)]
+
+
 def _check_version() -> Union[None, str]:
     """Return the latest remote GitHub release if it is higher than the local
-    release using the ``urllib`` module.
+    release using the ``urllib`` module. Returns None otherwise.
     """
     try:
         request = req.Request(RELEASE_API_URL)
         response = req.urlopen(request)
-    except URLError:
+    except URLError:  # URL doesn't exist
         return None
 
-    if response.status == 200:
+    if response.status == 200:  # Request success
         data = loads(response.read().decode())
         local_ver = __version__.split(".")
         remote_ver = data["name"].split(".")
 
+        # Any component of the remote semver'd tag is greater than that of the
+        # local tag (MAJOR or MINOR or PATCH), meaning a new version has been
+        # made, so, return the remote version.
         if any(item[0] > item[1] for item in list(zip(remote_ver, local_ver))):
             return data["name"]
 
-    return None
+    return None  # ``response.status`` wasn't 200, meaning some error occurred.
 
 
 def _doc_data_routine(
@@ -356,26 +378,33 @@ def _doc_data_routine(
     datalevel: PathLike = DOC_DATA_PATH,
     sublevel: PathLike = DOC_CFG_PATH,
 ) -> bool:
-    """Scan through the system document directory and create missing files
-    required by the package if possible.
+    """Scan through both the package and system document directories, making
+    the required folders if needed.
     """
     if not path.exists(toplevel):
         # No documents folder available. The caller might have added a func to
         # run if this happens, which will make the required folder in the package
         if local_callback:
-            try:  # Folder may already exist
-                local_callback()
+            try:
+                local_callback()  # Attempt to make the required package files
             except OSError:
                 pass
-        return False
-    if not path.exists(datalevel):  # Make xpuz dir in documents
+        return False  # Cannot continue, as Documents do not exist
+
+    # If the code reached this point, it means a Documents folder must exist
+    if not path.exists(
+        datalevel
+    ):  # Attempt to make the ``xpuz`` dir in Documents
         mkdir(DOC_DATA_PATH)
-    if not path.exists(sublevel):
-        # xpuz dir exists, but the required file/folder doesn't. So
-        # run the document callback func
+
+    if not path.exists(
+        sublevel
+    ):  # The required sub-directory doesn't exist yet
+        # in Documents
         if doc_callback:
             try:
-                doc_callback()
+                doc_callback()  # Attempt to make the required sub-directory
+                # eg ``xpuz/user`` for user crosswords
             except OSError:
                 pass
 
@@ -396,18 +425,22 @@ def _check_doc_cfg_is_up_to_date() -> bool:
                 doc_items = doc_cfg.items(section)
             except NoSectionError:
                 return False
-            for item in template_items:  # Iterate through all template section items
+            for (
+                item
+            ) in template_items:  # Iterate through all template section items
                 if any(  # template_item[0] or item[0] refers to the key here
                     template_item[0] not in [item[0] for item in doc_items]
                     for template_item in template_items
-                ):
+                ):  # This means not all sections are identical
                     return False
 
-    return True  # All checks passed, tell the caller not to make a new doc cfg
+    return (
+        True  # All checks passed, tell the caller not to update the config.ini
+    )
 
 
 def _make_doc_cfg() -> None:
-    """Write the contents of ``sample.config.ini`` into ``config.ini``, located
+    """Write the contents of ``template.config.ini`` into ``config.ini``, located
     in the system's document directory.
     """
     with open(TEMPLATE_CFG_PATH) as template_cfg, open(
@@ -424,10 +457,10 @@ def _update_cfg(
     """
     cfg[section][option] = value
 
-    # Access the template config if there is no config stored in the user's
-    # system document directory
     fp = (
         TEMPLATE_CFG_PATH
+        # If ``_doc_data_routine`` returned False, we must use the package
+        # config, as the Document config doesn't exist.
         if not _doc_data_routine(doc_callback=_make_doc_cfg)
         else DOC_CFG_PATH
     )
@@ -437,6 +470,11 @@ def _update_cfg(
 
 
 def _read_cfg(cfg: ConfigParser) -> None:
+    """Determine which config file to access (whether it is
+    ``template.config.ini`` in the package or ``config.ini`` in the system
+    documents directory), and write its contents to ``cfg``.
+    """
+    # Documents directory unavailable
     if not _doc_data_routine(doc_callback=_make_doc_cfg):
         return cfg.read(TEMPLATE_CFG_PATH)
     else:
@@ -448,7 +486,7 @@ def _read_cfg(cfg: ConfigParser) -> None:
 def _get_base_categories() -> Iterable[DirEntry]:
     """Get all the available crossword categories sorted alphabetically."""
     if _doc_data_routine() and "user" in listdir(DOC_DATA_PATH):
-        # It is safe to say the user category is in the document data, so
+        # It is safe to say the user category is in the Document data, so
         # retrieve all package categories except for the user category
         scanned_cats = [
             cat
@@ -457,6 +495,7 @@ def _get_base_categories() -> Iterable[DirEntry]:
         ]
         # Add on the user category direntry from the document data
         scanned_cats += [cat for cat in scandir(DOC_DATA_PATH) if cat.is_dir()]
+
     else:  # Retrieve ALL categories from the package data
         scanned_cats = [
             cat for cat in scandir(BASE_CWORDS_PATH) if cat.is_dir()
@@ -478,20 +517,13 @@ def _sort_crosswords_by_suffix(
             cwords,
             key=lambda cword: DIFFICULTIES.index(
                 cword.name.split("-")[-1].capitalize()
+                if not isinstance(cwords[0], tuple)
+                # Handling an array of tuples, where tup[1] is the crossword name
+                else cword[1].name.split("-")[-1].capitalize()
             ),
         )
-    except Exception:  # Handling a list of tuples in the form (category,
-                       # crossword) where both elements are instances of
-                       # ``DirEntry``. Not all code can be perfect.
-        try:
-            return sorted(
-                cwords,
-                key=lambda cword: DIFFICULTIES.index(
-                    cword[1].name.split("-")[-1].capitalize()
-                ),
-            )
-        except Exception:  # Don't sort ("-<difficulty>" suffix wasn't found)
-            return cwords
+    except ValueError:  # Don't sort ("-<difficulty>" suffix wasn't found)
+        return cwords
 
 
 def _get_base_crosswords(
