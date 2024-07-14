@@ -1,9 +1,12 @@
-"""Default GUI page for xpuz. Provides config options and routing
-buttons to other available pages.
+"""Default GUI page for ``xpuz``. Provides global configuration options and 
+routing buttons to other available pages.
 """
 
 from asyncio import (
-    set_event_loop, run_coroutine_threadsafe, get_running_loop, new_event_loop
+    get_running_loop,
+    new_event_loop,
+    run_coroutine_threadsafe,
+    set_event_loop,
 )
 from concurrent.futures import ThreadPoolExecutor
 from threading import Thread
@@ -34,7 +37,12 @@ from xpuz.constants import (
     PYPI_URL,
     Colour,
 )
-from xpuz.utils import GUIHelper, _update_cfg, _check_version
+from xpuz.utils import (
+    GUIHelper,
+    _check_version,
+    _get_english_string,
+    _update_cfg,
+)
 from xpuz.version import __version__
 
 
@@ -52,16 +60,17 @@ class HomePage(CTkFrame, Addons):
         self.master = master
         self.master._set_dim()
         self._set_fonts()
-        
-        # Code for creating a label that links to the newest version of the
-        # package (if not already installed)
-        self.loop = new_event_loop()
-        # Start new event loop in separate thread
-        Thread(target=self._start_loop, daemon=True).start()
-        # Attempt to get a new version asynchronously in the new loop
-        self.master.after(1, 
-            lambda: run_coroutine_threadsafe(self.check_version(), self.loop)
-        )
+
+        self.appearances: List[str] = [_("light"), _("dark"), _("system")]
+        self.cword_qualities: List[str] = [
+            _("terrible"),
+            _("poor"),
+            _("average"),
+            _("great"),
+            _("perfect"),
+        ]
+
+        self._start_version_checking()
 
     def _make_containers(self) -> None:
         self.container = CTkFrame(self)
@@ -191,7 +200,6 @@ class HomePage(CTkFrame, Addons):
             )
         )
 
-        self.appearances: List[str] = [_("light"), _("dark"), _("system")]
         self.l_appearance_opts = CTkLabel(
             self.settings_container,
             text=_("Appearance"),
@@ -213,13 +221,6 @@ class HomePage(CTkFrame, Addons):
             font=self.BOLD_TEXT_FONT,
         )
 
-        self.cword_qualities: List[str] = [
-            _("terrible"),
-            _("poor"),
-            _("average"),
-            _("great"),
-            _("perfect"),
-        ]
         self.l_cword_quality = CTkLabel(
             self.settings_container,
             text=_("Crossword Quality"),
@@ -267,11 +268,9 @@ class HomePage(CTkFrame, Addons):
         the appearance. Some list indexing is required to make the program
         compatible with non-english languages.
         """
-        # Must be done because you cannot do ``set_appearance_mode("نظام")``,
-        # for example
-        eng_appearance_name: str = BASE_ENG_APPEARANCES[
-            self.appearances.index(appearance)
-        ]
+        eng_appearance_name: str = _get_english_string(
+            BASE_ENG_APPEARANCES, self.appearances, appearance
+        )
         if eng_appearance_name == Base.cfg.get("m", "appearance"):
             return GUIHelper.show_messagebox(same_appearance=True)
 
@@ -309,9 +308,9 @@ class HomePage(CTkFrame, Addons):
         """Ensures the user is not selecting the same crossword quality, then
         updates the crossword quality in ``config.ini``.
         """
-        eng_quality_name: str = BASE_ENG_CWORD_QUALITIES[
-            self.cword_qualities.index(quality)
-        ]
+        eng_quality_name: str = _get_english_string(
+            BASE_ENG_CWORD_QUALITIES, self.cword_qualities, quality
+        )
         if eng_quality_name == Base.cfg.get("m", "cword_quality"):
             return GUIHelper.show_messagebox(same_quality=True)
 
@@ -319,25 +318,34 @@ class HomePage(CTkFrame, Addons):
 
     def _make_version_label(self, local_ver: str, remote_ver: str) -> None:
         self.l_new_version = CTkLabel(
-            self.main_container, 
-            text=f"{_('New version available!')} ({local_ver} --> {remote_ver})", 
-            font=self.HYPERLINK_FONT, 
-            text_color=Colour.Global.LINK
+            self.main_container,
+            text=f"{_('New version available!')} ({local_ver} --> {remote_ver})",
+            font=self.HYPERLINK_FONT,
+            text_color=Colour.Global.LINK,
         )
         self.l_new_version.place(relx=0.5, rely=0.925, anchor="c")
-        self.l_new_version.bind(
-            "<Button-1>", lambda e: open_new_tab(PYPI_URL)
+        self.l_new_version.bind("<Button-1>", lambda e: open_new_tab(PYPI_URL))
+
+    def _start_version_checking(self) -> None:
+        """Create a new event loop and begin checking for a new version of
+        ``xpuz`` asynchronously."""
+        loop = new_event_loop()
+
+        def _start_loop() -> None:
+            """Begin an new async event loop"""
+            set_event_loop(loop)
+            loop.run_forever()
+
+        # Start new event loop in separate thread
+        Thread(target=_start_loop, daemon=True).start()
+
+        # Attempt to get a new version asynchronously in the new loop
+        self.master.after(
+            1, lambda: run_coroutine_threadsafe(self.check_version(), loop)
         )
 
-    def _start_loop(self) -> None:
-        """Begin a new asyncio event loop."""
-        set_event_loop(self.loop)
-        self.loop.run_forever()
-    
     async def check_version(self) -> None:
-        """Check if there is a new release available online. If so, create a
-        widget that notifies the user of this.
-        """
+        """Coroutine to execute ``utils._check_version`` asynchronously."""
         loop = get_running_loop()
 
         with ThreadPoolExecutor() as executor:
