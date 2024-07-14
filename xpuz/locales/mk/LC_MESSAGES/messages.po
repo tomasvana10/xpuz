@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-30 17:39+1000\n"
+"POT-Creation-Date: 2024-07-14 17:17+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: mk <LL@li.org>\n"
@@ -19,58 +19,69 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: import_export.py:24
+#: import_export.py:37
 msgid "Select a destination to export your crosswords to"
 msgstr "Изберете дестинација за извоз на крстозбори до"
 
-#: import_export.py:28
+#: import_export.py:38
 msgid "my-crosswords"
 msgstr "моите-вкрстени зборови"
 
-#: import_export.py:70
-msgid ""
-"Select a valid crossword JSON file that was exported using xpuz"
+#: import_export.py:111
+msgid "Select a valid crossword JSON file that was exported using xpuz"
 msgstr ""
 "Изберете валидна крстозбор Json датотека што беше извезена со употреба на "
 "xpuz"
 
-#: app/templates/index.html:286 pdf.py:207
+#: ipuz.py:27
+msgid "Select a destination to export your ipuz to"
+msgstr "Изберете дестинација за да го извезете вашиот IPUZ до"
+
+#: pdf.py:53
+msgid "Answers"
+msgstr "Одговори"
+
+#: pdf.py:64
+msgid "Select a destination to download your PDF to"
+msgstr "Изберете дестинација за да ја преземете вашата PDF до"
+
+#: app/templates/index.html:286 pdf.py:231
 msgid "Across"
 msgstr "Преку"
 
-#: app/templates/index.html:308 pdf.py:214
+#: app/templates/index.html:308 pdf.py:238
 msgid "Down"
 msgstr "Долу"
 
-#: utils.py:58
+#: utils.py:60
 msgid "Remove"
 msgstr "Тргни го."
 
-#: utils.py:59
+#: utils.py:61
 msgid "Are you sure you want to delete this"
 msgstr "Дали сте сигурни дека сакате да го избришете ова"
 
-#: utils.py:61
+#: utils.py:63
 msgid "It will be lost forever!"
 msgstr "Ќе биде изгубено засекогаш!"
 
-#: utils.py:66
+#: utils.py:68
 msgid "Add or select"
 msgstr "Додадете или изберете"
 
-#: utils.py:67
+#: utils.py:69
 msgid "Are you sure you want to add/select a"
 msgstr "Дали сте сигурни дека сакате да додадете/ изберете"
 
-#: utils.py:69
+#: utils.py:71
 msgid "Your modified fields will be reset!"
 msgstr "Вашите модифицирани полиња ќе бидат ресетираат!"
 
-#: utils.py:74 utils.py:106
+#: utils.py:76 utils.py:108
 msgid "Back to home"
 msgstr "Назад до дома"
 
-#: utils.py:75
+#: utils.py:77
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
@@ -78,12 +89,12 @@ msgstr ""
 "Сигурен си дека сакаш да се вратиш на почетниот екран? Вашите модифицирани "
 "полиња ќе бидат ресетираат!"
 
-#: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
-#: utils.py:246
+#: utils.py:85 utils.py:157 utils.py:167 utils.py:173 utils.py:218
+#: utils.py:239 utils.py:245
 msgid "Info"
 msgstr "Инфо"
 
-#: utils.py:84
+#: utils.py:86
 msgid ""
 "Are you sure you want to import crosswords? Your modified fields will be "
 "reset!"
@@ -91,19 +102,19 @@ msgstr ""
 "Дали сте сигурни дека сакате да увезувате крстозбори?Вашите изменети полиња "
 "ќе бидат ресетирани!"
 
-#: utils.py:92
+#: utils.py:94
 msgid "Restart"
 msgstr "Рестарт"
 
-#: utils.py:92
+#: utils.py:94
 msgid "Are you sure you want to restart the app?"
 msgstr "Дали сте сигурни дека сакате да ја рестартирате апликацијата?"
 
-#: pages/home.py:148 utils.py:97
+#: pages/home.py:155 utils.py:99
 msgid "Exit"
 msgstr "Излезете"
 
-#: utils.py:98
+#: utils.py:100
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -111,7 +122,7 @@ msgstr ""
 "Дали сте сигурни дека сакате да излезете од апликацијата? Ако веб-"
 "апликацијата работи, таа ќе се прекине."
 
-#: utils.py:107
+#: utils.py:109
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -119,29 +130,29 @@ msgstr ""
 "Дали сте сигурни дека сакате да се вратите на почетниот екран? Веб-"
 "апликацијата ќе се прекине."
 
-#: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
-#: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
-#: utils.py:220 utils.py:231 utils.py:263 utils.py:267
+#: utils.py:120 utils.py:125 utils.py:130 utils.py:135 utils.py:140
+#: utils.py:149 utils.py:162 utils.py:188 utils.py:196 utils.py:202
+#: utils.py:224 utils.py:262 utils.py:266
 msgid "Error"
 msgstr "Грешка"
 
-#: utils.py:118
+#: utils.py:120
 msgid "This language is already selected."
 msgstr "Овој јазик е веќе избран."
 
-#: utils.py:123
+#: utils.py:125
 msgid "This size is already selected."
 msgstr "Оваа големина е веќе избрана."
 
-#: utils.py:128
+#: utils.py:130
 msgid "This appearance is already selected."
 msgstr "Овој изглед е веќе избран."
 
-#: utils.py:133
+#: utils.py:135
 msgid "This quality is already selected."
 msgstr "Овој квалитет е веќе избран."
 
-#: utils.py:139
+#: utils.py:141
 msgid ""
 "A crossword with this name and difficulty already exists. Please choose a "
 "new name and/or a new difficulty."
@@ -149,51 +160,51 @@ msgstr ""
 "Веќе постои крстозбор со ова име и тешкотија.Ве молиме, изберете ново име "
 "и/или нова тешкотија."
 
-#: utils.py:148
+#: utils.py:150
 msgid "You have no crosswords to export. Please make some and try again."
 msgstr ""
 "Немате крстозбори за извезува.Ве молиме, направете малку и обидете се "
 "повторно."
 
-#: utils.py:155
+#: utils.py:157
 msgid "Successfully exported your crosswords."
 msgstr "Успешно извезени вашите крстозбори."
 
-#: utils.py:160
+#: utils.py:162
 msgid "Your crosswords could not be exported, sorry."
 msgstr "Вашите крстозбори не можеа да се извезуваат, извинете."
 
-#: utils.py:166
+#: utils.py:168
 msgid "All of your crosswords were successfully imported."
 msgstr "Сите ваши крстозбори беа успешно увезени."
 
-#: utils.py:172
+#: utils.py:174
 msgid "Your import could not be fully completed."
 msgstr "Вашиот увоз не може да биде целосно завршен."
 
-#: utils.py:174
+#: utils.py:176
 msgid ""
 "Crosswords with duplicate names and difficulties that were not imported: "
 msgstr "Крстозбори со дупликати имиња и тешкотии што не беа увезени:"
 
-#: utils.py:180
+#: utils.py:182
 msgid "Invalid crosswords that were not imported: "
 msgstr "Невалидни крстозбори што не беа увезени:"
 
-#: utils.py:187
+#: utils.py:189
 msgid "The specified JSON file is invalid and cannot be processed."
 msgstr "Наведената датотека JSON е невалидна и не може да се обработи."
 
-#: utils.py:195
+#: utils.py:197
 msgid "This word already exists. Please choose a new word."
 msgstr "Овој збор веќе постои. Ве молам одберете нов збор."
 
-#: utils.py:201
+#: utils.py:203
 msgid "An error occurred while creating your PDF. Please try again."
 msgstr ""
 "Се појави грешка при креирање на вашиот PDF.Ве молиме, обидете се повторно."
 
-#: utils.py:208
+#: utils.py:212
 msgid ""
 "words that could not be inserted during crossword generation will not be "
 "included in this PDF, sorry."
@@ -201,23 +212,11 @@ msgstr ""
 "Зборовите што не може да се вметнат за време на генерацијата на крстозбор "
 "нема да бидат вклучени во овој PDF, извинете."
 
-#: utils.py:215
+#: utils.py:219
 msgid "Successfully wrote PDF."
 msgstr "Успешно напиша PDF."
 
-#: utils.py:221
-msgid ""
-"You are missing pywebview, which is required when viewing the crossword game"
-" in an embedded window. Please run"
-msgstr ""
-"Ви недостасува PyWebView, што е потребно при гледање на играта со крстозбор "
-"во вграден прозорец.Те молам трчај"
-
-#: utils.py:226
-msgid "to install this dependency."
-msgstr "Да се ​​инсталира оваа зависност."
-
-#: utils.py:232
+#: utils.py:225
 msgid ""
 "You are missing pycairo, which is required to perform this operation. Please"
 " run"
@@ -225,7 +224,7 @@ msgstr ""
 "Ви недостасува Pycairo, од кое се бара да се изврши оваа операција.Те молам "
 "трчај"
 
-#: utils.py:237
+#: utils.py:230
 msgid ""
 "and install the headers for pycairo if you are not on Windows using "
 "pycairo's Getting Started guide"
@@ -233,7 +232,11 @@ msgstr ""
 "И инсталирајте ги заглавјата за Pycairo ако не сте на Windows користејќи го "
 "упатството за започнување на Pycairo"
 
-#: utils.py:247
+#: utils.py:240
+msgid "Successfully wrote ipuz"
+msgstr "Успешно го напиша Ипуз"
+
+#: utils.py:246
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -255,31 +258,31 @@ msgstr ""
 "прекинати може да се прекинат преку Activity Monitor на MacOS или едноставно"
 " рестартирајте го компјутерот за да ги прекинете."
 
-#: utils.py:269
+#: utils.py:268
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
 "Се случи неочекувана грешка. Ве молиме обидете се да ја реинсталирате "
 "апликацијата со"
 
-#: utils.py:790
+#: utils.py:840
 msgid "Definitions are empty"
 msgstr "Дефинициите се празни"
 
-#: utils.py:793
+#: utils.py:843
 msgid "The word count or definitions are less than 3 in length"
 msgstr "Зборот број или дефиниции се помали од 3 во должина"
 
-#: utils.py:797
+#: utils.py:847
 msgid "Length of the word count is greater than the definitions"
 msgstr "Должината на зборот е поголема од дефинициите"
 
-#: utils.py:800
+#: utils.py:850
 msgid "Escape character present in word"
 msgstr "Лик од бегство присутен во зборот"
 
 #: app/templates/index.html:13 app/templates/index.html:338
-#: pages/browser.py:458
+#: pages/browser.py:545
 msgid "Crossword Puzzle - Game"
 msgstr "Загатка за крстозбор - игра"
 
@@ -361,237 +364,257 @@ msgstr "Продолжете"
 msgid "You completed the crossword!"
 msgstr "Го завршивте крстозборот!"
 
-#: app/templates/index.html:368 pages/browser.py:718
+#: app/templates/index.html:368 pages/browser.py:797
 msgid "Close"
 msgstr "Затвори"
 
-#: pages/browser.py:142
-msgid "Crossword Browser"
-msgstr "Прелистувач на крстозбори"
-
-#: pages/browser.py:147 pages/editor.py:363
-msgid "Back"
-msgstr "Назад."
-
-#: pages/browser.py:151 pages/editor.py:367 pages/home.py:305
-msgid "HomePage"
-msgstr "Почетната страница"
-
-#: pages/browser.py:162
+#: pages/browser.py:92
 msgid "Categorised"
 msgstr "Категоризирани"
 
-#: pages/browser.py:162 pages/browser.py:314
+#: pages/browser.py:92 pages/browser.py:393
 msgid "Flattened"
 msgstr "Сплескани"
 
-#: pages/browser.py:191
-msgid "Create"
-msgstr "Креирај"
-
-#: pages/browser.py:200
-msgid "Play"
-msgstr "Игра"
-
-#: pages/browser.py:208 pages/home.py:126
+#: pages/browser.py:98 pages/home.py:135
 msgid "Browser"
 msgstr "Прелистувач"
 
-#: pages/browser.py:208
+#: pages/browser.py:98
 msgid "Embedded"
 msgstr "Вграден"
 
-#: pages/browser.py:211
+#: pages/browser.py:102
+msgid "PDF"
+msgstr "Pdf"
+
+#: pages/browser.py:102
+msgid "ipuz"
+msgstr "ipuz"
+
+#: pages/browser.py:183
+msgid "Crossword Browser"
+msgstr "Прелистувач на крстозбори"
+
+#: pages/browser.py:189 pages/editor.py:371
+msgid "Back"
+msgstr "Назад."
+
+#: pages/browser.py:193 pages/editor.py:375 pages/home.py:305
+msgid "HomePage"
+msgstr "Почетната страница"
+
+#: pages/browser.py:219 pages/browser.py:412
+msgid "Search"
+msgstr "Пребарување"
+
+#: pages/browser.py:232
+msgid "Create"
+msgstr "Креирај"
+
+#: pages/browser.py:241
+msgid "Play"
+msgstr "Игра"
+
+#: pages/browser.py:251
 msgid "Game view"
 msgstr "Поглед на игра"
 
-#: pages/browser.py:237
-msgid "Write to PDF"
-msgstr "Пишувајте на PDF"
+#: pages/browser.py:275
+msgid "Export as"
+msgstr "Извоз како"
 
-#: pages/browser.py:245
+#: pages/browser.py:313
 msgid "Destroy"
 msgstr "Уништи"
 
-#: pages/browser.py:256
+#: pages/browser.py:324
 msgid "Word count preferences"
 msgstr "Преференци за броење зборови"
 
-#: pages/browser.py:271 pages/browser.py:400 pages/browser.py:433
-#: pages/browser.py:627
+#: pages/browser.py:339 pages/browser.py:482 pages/browser.py:520
+#: pages/browser.py:706
 msgid "Select word count"
 msgstr "Изберете број на зборови"
 
-#: pages/browser.py:286
+#: pages/browser.py:343 pages/browser.py:519 pages/browser.py:717
+msgid "Maximum"
+msgstr "Максимум"
+
+#: pages/browser.py:354
 msgid "Custom"
 msgstr "Прилагодено"
 
-#: pages/browser.py:499
-msgid "Select a destination to download your PDF to"
-msgstr "Изберете дестинација за да ја преземете вашата PDF до"
-
-#: pages/browser.py:607
+#: pages/browser.py:686
 msgid "To perform this operation, you must first select a cell."
 msgstr "За да ја извршите оваа операција, прво мора да изберете ќелија."
 
-#: pages/browser.py:711
+#: pages/browser.py:790
 msgid "View"
 msgstr "Прикажи"
 
-#: pages/browser.py:915
-msgid "Select"
-msgstr "Изберете"
+#: pages/browser.py:971
+msgid "Total words"
+msgstr "Тотални зборови"
 
-#: pages/editor.py:357
-msgid "Crossword Editor"
-msgstr "Уредник на крстозбори"
-
-#: pages/editor.py:495 pages/editor.py:718 pages/editor.py:808
-#: pages/editor.py:948
-msgid "Your Crosswords"
-msgstr "Твоите крстозбори"
-
-#: pages/editor.py:559 pages/editor.py:812 pages/editor.py:955
-#: pages/editor.py:1042 pages/editor.py:1155 pages/editor.py:1269
-msgid "Save"
-msgstr "Спасете"
-
-#: pages/editor.py:571
-msgid "length >= 1 and valid OS file name"
-msgstr "должина >= 1 и валидно име на OS датотека"
-
-#: pages/editor.py:580
-msgid "length == 1"
-msgstr "должина == 1"
-
-#: pages/editor.py:586
+#: pages/browser.py:977 pages/editor.py:622
 msgid "Difficulty"
 msgstr "Тешкотии"
 
-#: pages/editor.py:593
+#: pages/browser.py:991
+msgid "Select"
+msgstr "Изберете"
+
+#: pages/editor.py:365
+msgid "Crossword Editor"
+msgstr "Уредник на крстозбори"
+
+#: pages/editor.py:526 pages/editor.py:738 pages/editor.py:830
+#: pages/editor.py:970
+msgid "Your Crosswords"
+msgstr "Твоите крстозбори"
+
+#: pages/editor.py:595 pages/editor.py:835 pages/editor.py:979
+#: pages/editor.py:1069 pages/editor.py:1182 pages/editor.py:1296
+msgid "Save"
+msgstr "Спасете"
+
+#: pages/editor.py:607
+msgid "length >= 1 and valid OS file name"
+msgstr "должина >= 1 и валидно име на OS датотека"
+
+#: pages/editor.py:616
+msgid "length == 1"
+msgstr "должина == 1"
+
+#: pages/editor.py:629
 msgid "Easy"
 msgstr "Лесно"
 
-#: pages/editor.py:593
+#: pages/editor.py:629
 msgid "Medium"
 msgstr "Средно"
 
-#: pages/editor.py:593
+#: pages/editor.py:629
 msgid "Hard"
 msgstr "Тешко"
 
-#: pages/editor.py:593
+#: pages/editor.py:629
 msgid "Extreme"
 msgstr "Екстремни"
 
-#: pages/editor.py:718 pages/editor.py:1098
+#: pages/editor.py:738 pages/editor.py:1125
 msgid "Adding"
 msgstr "Додавам"
 
-#: pages/editor.py:721 pages/editor.py:1102
+#: pages/editor.py:742 pages/editor.py:1129
 msgid "Add"
 msgstr "Додадете"
 
-#: pages/editor.py:900 pages/editor.py:1218
+#: pages/editor.py:922 pages/editor.py:1245
 msgid "Press"
 msgstr "Притисни"
 
-#: pages/editor.py:902 pages/editor.py:1220
+#: pages/editor.py:924 pages/editor.py:1247
 msgid "to add a"
 msgstr "да додадам"
 
-#: pages/editor.py:904
+#: pages/editor.py:926
 msgid "new crossword."
 msgstr "нов крстозбор."
 
-#: pages/editor.py:948 pages/editor.py:1265
+#: pages/editor.py:970 pages/editor.py:1292
 msgid "Editing"
 msgstr "Уредување"
 
-#: pages/editor.py:1010 pages/editor.py:1098 pages/editor.py:1150
-#: pages/editor.py:1265
+#: pages/editor.py:1037 pages/editor.py:1125 pages/editor.py:1177
+#: pages/editor.py:1292
 msgid "Your Words"
 msgstr "Твоите зборови"
 
-#: pages/editor.py:1054
+#: pages/editor.py:1081
 msgid "length >= 1 and length <= 32 and is a language character"
 msgstr "должина >= 1 и должина <= 32 и е јазичен карактер"
 
-#: pages/editor.py:1065
+#: pages/editor.py:1092
 msgid "length >= 1"
 msgstr "должина >= 1"
 
-#: pages/editor.py:1222
+#: pages/editor.py:1249
 msgid "new word."
 msgstr "Нов збор."
 
-#: pages/home.py:98
-msgid "Crossword Puzzle"
-msgstr "Крстозбор"
-
-#: pages/home.py:128
-msgid "BrowserPage"
-msgstr "BrowserPage"
-
-#: pages/home.py:137
-msgid "Editor"
-msgstr "Уредник"
-
-#: pages/home.py:139
-msgid "EditorPage"
-msgstr "EditorPage"
-
-#: pages/home.py:159
-msgid "Global Settings"
-msgstr "Глобални поставки"
-
-#: pages/home.py:166
-msgid "Language"
-msgstr "Јазик"
-
-#: pages/home.py:178
-msgid "Size"
-msgstr "Големина"
-
-#: pages/home.py:197
+#: pages/home.py:64
 msgid "light"
 msgstr "светлина"
 
-#: pages/home.py:197
+#: pages/home.py:64
 msgid "dark"
 msgstr "темно"
 
-#: pages/home.py:197
+#: pages/home.py:64
 msgid "system"
 msgstr "систем"
 
-#: pages/home.py:200 pages/home.py:214
-msgid "Appearance"
-msgstr "Изглед"
-
-#: pages/home.py:220
+#: pages/home.py:66
 msgid "terrible"
 msgstr "страшно"
 
-#: pages/home.py:221
+#: pages/home.py:67
 msgid "poor"
 msgstr "сиромашен"
 
-#: pages/home.py:222
+#: pages/home.py:68
 msgid "average"
 msgstr "просек"
 
-#: pages/home.py:223
+#: pages/home.py:69
 msgid "great"
 msgstr "Одлично"
 
-#: pages/home.py:224
+#: pages/home.py:70
 msgid "perfect"
 msgstr "совршено"
 
-#: pages/home.py:228
+#: pages/home.py:107
+msgid "Crossword Puzzle"
+msgstr "Крстозбор"
+
+#: pages/home.py:137
+msgid "BrowserPage"
+msgstr "BrowserPage"
+
+#: pages/home.py:145
+msgid "Editor"
+msgstr "Уредник"
+
+#: pages/home.py:147
+msgid "EditorPage"
+msgstr "EditorPage"
+
+#: pages/home.py:165
+msgid "Global Settings"
+msgstr "Глобални поставки"
+
+#: pages/home.py:172
+msgid "Language"
+msgstr "Јазик"
+
+#: pages/home.py:184
+msgid "Size"
+msgstr "Големина"
+
+#: pages/home.py:205 pages/home.py:219
+msgid "Appearance"
+msgstr "Изглед"
+
+#: pages/home.py:226
 msgid "Crossword Quality"
 msgstr "Квалитет на крстозбор"
+
+#: pages/home.py:322
+msgid "New version available!"
+msgstr "Достапна е нова верзија!"
 
 msgid "Geography"
 msgstr "Географија"
@@ -608,12 +631,6 @@ msgstr "Компјутерски науки"
 msgid "User"
 msgstr "Корисник"
 
-msgid "Total words"
-msgstr "Тотални зборови"
-
-msgid "Maximum"
-msgstr "Максимум"
-
 msgid "Clue"
 msgstr "Трага"
 
@@ -622,9 +639,3 @@ msgstr "Име."
 
 msgid "Symbol"
 msgstr "Симбол."
-
-msgid "Search"
-msgstr "Пребарување"
-
-msgid "New version available!"
-msgstr "Достапна е нова верзија!"

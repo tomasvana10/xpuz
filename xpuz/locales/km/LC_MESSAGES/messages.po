@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-30 17:39+1000\n"
+"POT-Creation-Date: 2024-07-14 17:17+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: km <LL@li.org>\n"
@@ -19,58 +19,68 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: import_export.py:24
+#: import_export.py:37
 msgid "Select a destination to export your crosswords to"
 msgstr "ជ្រើសរើសទិសដៅដើម្បីនាំចេញ Crosswords របស់អ្នកទៅ"
 
-#: import_export.py:28
+#: import_export.py:38
 msgid "my-crosswords"
 msgstr "crosswords របស់ខ្ញុំ"
 
-#: import_export.py:70
-msgid ""
-"Select a valid crossword JSON file that was exported using xpuz"
+#: import_export.py:111
+msgid "Select a valid crossword JSON file that was exported using xpuz"
 msgstr ""
-"ជ្រើសរើសឯកសារ Crossword Json ដែលមានសុពលភាពដែលត្រូវបាននាំចេញដោយប្រើ "
-"xpuz"
+"ជ្រើសរើសឯកសារ Crossword Json ដែលមានសុពលភាពដែលត្រូវបាននាំចេញដោយប្រើ xpuz"
 
-#: app/templates/index.html:286 pdf.py:207
+#: ipuz.py:27
+msgid "Select a destination to export your ipuz to"
+msgstr "ជ្រើសរើសទិសដៅដើម្បីនាំចេញ IPUz របស់អ្នកទៅ"
+
+#: pdf.py:53
+msgid "Answers"
+msgstr "ឆ្លើយ"
+
+#: pdf.py:64
+msgid "Select a destination to download your PDF to"
+msgstr "ជ្រើសរើសទិសដៅដើម្បីទាញយកឯកសារ PDF របស់អ្នកទៅ"
+
+#: app/templates/index.html:286 pdf.py:231
 msgid "Across"
 msgstr "ឆ្លងកាត់"
 
-#: app/templates/index.html:308 pdf.py:214
+#: app/templates/index.html:308 pdf.py:238
 msgid "Down"
 msgstr "ឆ្ពោហតោខាងរេកាម"
 
-#: utils.py:58
+#: utils.py:60
 msgid "Remove"
 msgstr "យកចេញ"
 
-#: utils.py:59
+#: utils.py:61
 msgid "Are you sure you want to delete this"
 msgstr "តើ អ្នក ប្រាកដ ថា អ្នក ចង់ លុប វា"
 
-#: utils.py:61
+#: utils.py:63
 msgid "It will be lost forever!"
 msgstr "វានឹងបាត់បង់ជារៀងរហូត!"
 
-#: utils.py:66
+#: utils.py:68
 msgid "Add or select"
 msgstr "បន្ថែម ឬ ជ្រើស"
 
-#: utils.py:67
+#: utils.py:69
 msgid "Are you sure you want to add/select a"
 msgstr "តើ អ្នក ប្រាកដ ថា អ្នក ចង់ បន្ថែម/ជ្រើស យក a"
 
-#: utils.py:69
+#: utils.py:71
 msgid "Your modified fields will be reset!"
 msgstr "វាលដែលបានកែប្រែរបស់អ្នកនឹងត្រូវបាន កំណត់ឡើងវិញ!"
 
-#: utils.py:74 utils.py:106
+#: utils.py:76 utils.py:108
 msgid "Back to home"
 msgstr "ត្រលប់​ទៅផ្ទះ"
 
-#: utils.py:75
+#: utils.py:77
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
@@ -78,12 +88,12 @@ msgstr ""
 "តើ អ្នក ប្រាកដ ជា ចង់ ត្រឡប់ ទៅ អេក្រង់ ផ្ទះ វិញ ឬ ទេ ? "
 "វាលដែលបានកែប្រែរបស់អ្នកនឹងត្រូវបាន កំណត់ឡើងវិញ!"
 
-#: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
-#: utils.py:246
+#: utils.py:85 utils.py:157 utils.py:167 utils.py:173 utils.py:218
+#: utils.py:239 utils.py:245
 msgid "Info"
 msgstr "ព័ត៌មាន"
 
-#: utils.py:84
+#: utils.py:86
 msgid ""
 "Are you sure you want to import crosswords? Your modified fields will be "
 "reset!"
@@ -91,19 +101,19 @@ msgstr ""
 "តើអ្នកពិតជាចង់នាំចូល CassWords "
 "មែនទេ?វាលដែលបានកែប្រែរបស់អ្នកនឹងត្រូវបានកំណត់ឡើងវិញ!"
 
-#: utils.py:92
+#: utils.py:94
 msgid "Restart"
 msgstr "ចាប់ផ្ដើមឡើងវិញ"
 
-#: utils.py:92
+#: utils.py:94
 msgid "Are you sure you want to restart the app?"
 msgstr "តើអ្នកប្រាកដថាចង់ចាប់ផ្តើមកម្មវិធីឡើងវិញទេ?"
 
-#: pages/home.py:148 utils.py:97
+#: pages/home.py:155 utils.py:99
 msgid "Exit"
 msgstr "ចេញ"
 
-#: utils.py:98
+#: utils.py:100
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -111,36 +121,36 @@ msgstr ""
 "តើអ្នកប្រាកដថាចង់ចាកចេញពីកម្មវិធីមែនទេ? ប្រសិនបើកម្មវិធីបណ្តាញកំពុងដំណើរការ "
 "វានឹងត្រូវបានបញ្ចប់។"
 
-#: utils.py:107
+#: utils.py:109
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
 "តើអ្នកប្រាកដថាចង់ត្រលប់ទៅអេក្រង់ដើមវិញទេ? កម្មវិធីបណ្តាញនឹងត្រូវបានបិទ។"
 
-#: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
-#: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
-#: utils.py:220 utils.py:231 utils.py:263 utils.py:267
+#: utils.py:120 utils.py:125 utils.py:130 utils.py:135 utils.py:140
+#: utils.py:149 utils.py:162 utils.py:188 utils.py:196 utils.py:202
+#: utils.py:224 utils.py:262 utils.py:266
 msgid "Error"
 msgstr "កំហុស"
 
-#: utils.py:118
+#: utils.py:120
 msgid "This language is already selected."
 msgstr "ភាសានេះត្រូវបានជ្រើសរើសរួចហើយ។"
 
-#: utils.py:123
+#: utils.py:125
 msgid "This size is already selected."
 msgstr "ទំហំនេះត្រូវបានជ្រើសរើសរួចហើយ។"
 
-#: utils.py:128
+#: utils.py:130
 msgid "This appearance is already selected."
 msgstr "រូបរាងនេះត្រូវបានជ្រើសរើសរួចហើយ។"
 
-#: utils.py:133
+#: utils.py:135
 msgid "This quality is already selected."
 msgstr "គុណភាពនេះត្រូវបានជ្រើសរើសរួចហើយ។"
 
-#: utils.py:139
+#: utils.py:141
 msgid ""
 "A crossword with this name and difficulty already exists. Please choose a "
 "new name and/or a new difficulty."
@@ -148,48 +158,48 @@ msgstr ""
 "មានពាក្យសំដីដែលមានឈ្មោះនិងការលំបាកនេះមានរួចហើយ។សូមជ្រើសរើសឈ្មោះថ្មីនិង / "
 "ឬការលំបាកថ្មី។"
 
-#: utils.py:148
+#: utils.py:150
 msgid "You have no crosswords to export. Please make some and try again."
 msgstr "អ្នកមិនមានឈើឆ្កាងដើម្បីនាំចេញទេ។សូមធ្វើការខ្លះហើយព្យាយាមម្តងទៀត។"
 
-#: utils.py:155
+#: utils.py:157
 msgid "Successfully exported your crosswords."
 msgstr "បាននាំចេញ CRASSWORDS របស់អ្នកដោយជោគជ័យ។"
 
-#: utils.py:160
+#: utils.py:162
 msgid "Your crosswords could not be exported, sorry."
 msgstr "ការសោកស្តាយរបស់អ្នកមិនអាចនាំចេញសូមទោសបានទេ។"
 
-#: utils.py:166
+#: utils.py:168
 msgid "All of your crosswords were successfully imported."
 msgstr "ទាំងអស់នៃឈើឆ្កាងរបស់អ្នកត្រូវបាននាំចូលដោយជោគជ័យ។"
 
-#: utils.py:172
+#: utils.py:174
 msgid "Your import could not be fully completed."
 msgstr "ការនាំចូលរបស់អ្នកមិនអាចបញ្ចប់បានពេញលេញទេ។"
 
-#: utils.py:174
+#: utils.py:176
 msgid ""
 "Crosswords with duplicate names and difficulties that were not imported: "
 msgstr "Crosswords ដែលមានឈ្មោះស្ទួននិងការលំបាកដែលមិនត្រូវបាននាំចូល:"
 
-#: utils.py:180
+#: utils.py:182
 msgid "Invalid crosswords that were not imported: "
 msgstr "ឈើឆ្កាងមិនត្រឹមត្រូវដែលមិនត្រូវបាននាំចូល:"
 
-#: utils.py:187
+#: utils.py:189
 msgid "The specified JSON file is invalid and cannot be processed."
 msgstr "ឯកសារ JSON ដែលបានបញ្ជាក់មិនត្រឹមត្រូវហើយមិនអាចដំណើរការបានទេ។"
 
-#: utils.py:195
+#: utils.py:197
 msgid "This word already exists. Please choose a new word."
 msgstr "ពាក្យ នេះ មាន រួច ហើយ ។ សូមជ្រើសរើសពាក្យថ្មី។"
 
-#: utils.py:201
+#: utils.py:203
 msgid "An error occurred while creating your PDF. Please try again."
 msgstr "កំហុសមួយបានកើតឡើងខណៈពេលបង្កើត PDF របស់អ្នក។សូម​ព្យាយាម​ម្តង​ទៀត។"
 
-#: utils.py:208
+#: utils.py:212
 msgid ""
 "words that could not be inserted during crossword generation will not be "
 "included in this PDF, sorry."
@@ -197,29 +207,17 @@ msgstr ""
 "ពាក្យដែលមិនអាចបញ្ចូលបានក្នុងកំឡុងពេលជំនាន់ស្តុងនឹងមិនត្រូវបានរាប់បញ្ចូលក្នុងឯកសារ"
 " PDF នេះទេសូមទោស។"
 
-#: utils.py:215
+#: utils.py:219
 msgid "Successfully wrote PDF."
 msgstr "បានសរសេរ PDF ដោយជោគជ័យ។"
 
-#: utils.py:221
-msgid ""
-"You are missing pywebview, which is required when viewing the crossword game"
-" in an embedded window. Please run"
-msgstr ""
-"អ្នកកំពុងបាត់ Pywebview ដែលត្រូវការនៅពេលមើលហ្គេម Crossword "
-"នៅក្នុងបង្អួចដែលបានបង្កប់។សូមរត់"
-
-#: utils.py:226
-msgid "to install this dependency."
-msgstr "ដើម្បីដំឡើងភាពអាស្រ័យនេះ។"
-
-#: utils.py:232
+#: utils.py:225
 msgid ""
 "You are missing pycairo, which is required to perform this operation. Please"
 " run"
 msgstr "អ្នកកំពុងបាត់ខ្លួន Pycairo ដែលតម្រូវឱ្យអនុវត្តប្រតិបត្តិការនេះ។សូមរត់"
 
-#: utils.py:237
+#: utils.py:230
 msgid ""
 "and install the headers for pycairo if you are not on Windows using "
 "pycairo's Getting Started guide"
@@ -227,7 +225,11 @@ msgstr ""
 "និងតំឡើងបឋមកថាសម្រាប់ Pycairo "
 "ប្រសិនបើអ្នកមិននៅលើវីនដូដោយប្រើមគ្គុទេសក៍ចាប់ផ្តើមរបស់ Pycairo"
 
-#: utils.py:247
+#: utils.py:240
+msgid "Successfully wrote ipuz"
+msgstr "បានសរសេរ IPUz ដោយជោគជ័យ"
+
+#: utils.py:246
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -250,31 +252,31 @@ msgstr ""
 " Activity Monitor នៅលើ MacOS "
 "ឬគ្រាន់តែចាប់ផ្តើមកុំព្យូទ័ររបស់អ្នកឡើងវិញដើម្បីបិទវា។"
 
-#: utils.py:269
+#: utils.py:268
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
 "កំហុស ដែល មិន បាន រំពឹង ទុក មួយ បាន កើត ឡើង ។ "
 "សូមសាកល្បងធ្វើការស្តារឡើងវិញនូវកម្មវិធីជាមួយ"
 
-#: utils.py:790
+#: utils.py:840
 msgid "Definitions are empty"
 msgstr "និយមន័យ គឺ ទទេ"
 
-#: utils.py:793
+#: utils.py:843
 msgid "The word count or definitions are less than 3 in length"
 msgstr "ពាក្យ រាប់ ឬ និយមន័យ មាន ប្រវែង តិច ជាង ៣"
 
-#: utils.py:797
+#: utils.py:847
 msgid "Length of the word count is greater than the definitions"
 msgstr "ប្រវែង ពាក្យ រាប់ គឺ ធំ ជាង និយមន័យ"
 
-#: utils.py:800
+#: utils.py:850
 msgid "Escape character present in word"
 msgstr "តួអក្សរ គេច ខ្លួន មាន វត្តមាន ក្នុង ពាក្យ"
 
 #: app/templates/index.html:13 app/templates/index.html:338
-#: pages/browser.py:458
+#: pages/browser.py:545
 msgid "Crossword Puzzle - Game"
 msgstr "ល្បែងផ្គុំរូបឈើឆ្កាង - ល្បែង"
 
@@ -356,237 +358,257 @@ msgstr "បន្ដ"
 msgid "You completed the crossword!"
 msgstr "អ្នកបានបញ្ចប់ការឆ្លង Crossword!"
 
-#: app/templates/index.html:368 pages/browser.py:718
+#: app/templates/index.html:368 pages/browser.py:797
 msgid "Close"
 msgstr "បិទ"
 
-#: pages/browser.py:142
-msgid "Crossword Browser"
-msgstr "កម្មវិធីរុករកតាមអ៊ីនធឺណិត"
-
-#: pages/browser.py:147 pages/editor.py:363
-msgid "Back"
-msgstr "ត្រឡប់ មក វិញ"
-
-#: pages/browser.py:151 pages/editor.py:367 pages/home.py:305
-msgid "HomePage"
-msgstr "ទំព័រដើមPage"
-
-#: pages/browser.py:162
+#: pages/browser.py:92
 msgid "Categorised"
 msgstr "Categorised"
 
-#: pages/browser.py:162 pages/browser.py:314
+#: pages/browser.py:92 pages/browser.py:393
 msgid "Flattened"
 msgstr "រាបស្មើ"
 
-#: pages/browser.py:191
-msgid "Create"
-msgstr "បង្កើត"
-
-#: pages/browser.py:200
-msgid "Play"
-msgstr "ការលេង"
-
-#: pages/browser.py:208 pages/home.py:126
+#: pages/browser.py:98 pages/home.py:135
 msgid "Browser"
 msgstr "កម្មវិធីរុករក"
 
-#: pages/browser.py:208
+#: pages/browser.py:98
 msgid "Embedded"
 msgstr "បង្កប់"
 
-#: pages/browser.py:211
+#: pages/browser.py:102
+msgid "PDF"
+msgstr "pdf"
+
+#: pages/browser.py:102
+msgid "ipuz"
+msgstr "Ipuz"
+
+#: pages/browser.py:183
+msgid "Crossword Browser"
+msgstr "កម្មវិធីរុករកតាមអ៊ីនធឺណិត"
+
+#: pages/browser.py:189 pages/editor.py:371
+msgid "Back"
+msgstr "ត្រឡប់ មក វិញ"
+
+#: pages/browser.py:193 pages/editor.py:375 pages/home.py:305
+msgid "HomePage"
+msgstr "ទំព័រដើមPage"
+
+#: pages/browser.py:219 pages/browser.py:412
+msgid "Search"
+msgstr "ការឆេកឆេ"
+
+#: pages/browser.py:232
+msgid "Create"
+msgstr "បង្កើត"
+
+#: pages/browser.py:241
+msgid "Play"
+msgstr "ការលេង"
+
+#: pages/browser.py:251
 msgid "Game view"
 msgstr "ទិដ្ឋភាពហ្គេម"
 
-#: pages/browser.py:237
-msgid "Write to PDF"
-msgstr "សរសេរទៅ PDF"
+#: pages/browser.py:275
+msgid "Export as"
+msgstr "នាំចេញជា"
 
-#: pages/browser.py:245
+#: pages/browser.py:313
 msgid "Destroy"
 msgstr "កមតេច"
 
-#: pages/browser.py:256
+#: pages/browser.py:324
 msgid "Word count preferences"
 msgstr "ចំណូលចិត្តរាប់ពាក្យ"
 
-#: pages/browser.py:271 pages/browser.py:400 pages/browser.py:433
-#: pages/browser.py:627
+#: pages/browser.py:339 pages/browser.py:482 pages/browser.py:520
+#: pages/browser.py:706
 msgid "Select word count"
 msgstr "ជ្រើសរើសចំនួនពាក្យ"
 
-#: pages/browser.py:286
+#: pages/browser.py:343 pages/browser.py:519 pages/browser.py:717
+msgid "Maximum"
+msgstr "អតិបរិមា"
+
+#: pages/browser.py:354
 msgid "Custom"
 msgstr "ផ្ទាល់ខ្លួន"
 
-#: pages/browser.py:499
-msgid "Select a destination to download your PDF to"
-msgstr "ជ្រើសរើសទិសដៅដើម្បីទាញយកឯកសារ PDF របស់អ្នកទៅ"
-
-#: pages/browser.py:607
+#: pages/browser.py:686
 msgid "To perform this operation, you must first select a cell."
 msgstr "ដើម្បីអនុវត្តប្រតិបត្តិការនេះដំបូងអ្នកត្រូវតែជ្រើសក្រឡា។"
 
-#: pages/browser.py:711
+#: pages/browser.py:790
 msgid "View"
 msgstr "មើល"
 
-#: pages/browser.py:915
-msgid "Select"
-msgstr "ជ្រើសរើស"
+#: pages/browser.py:971
+msgid "Total words"
+msgstr "ពាក្យសរុប"
 
-#: pages/editor.py:357
-msgid "Crossword Editor"
-msgstr "កម្មវិធី កែសម្រួល ពាក្យ ក្រូស"
-
-#: pages/editor.py:495 pages/editor.py:718 pages/editor.py:808
-#: pages/editor.py:948
-msgid "Your Crosswords"
-msgstr "ពាក្យកាត់របស់អ្នក"
-
-#: pages/editor.py:559 pages/editor.py:812 pages/editor.py:955
-#: pages/editor.py:1042 pages/editor.py:1155 pages/editor.py:1269
-msgid "Save"
-msgstr "រក្សាទុក"
-
-#: pages/editor.py:571
-msgid "length >= 1 and valid OS file name"
-msgstr "ប្រវែង >= 1 និង ឈ្មោះ ឯកសារ OS ត្រឹមត្រូវ"
-
-#: pages/editor.py:580
-msgid "length == 1"
-msgstr "ប្រវែង == 1"
-
-#: pages/editor.py:586
+#: pages/browser.py:977 pages/editor.py:622
 msgid "Difficulty"
 msgstr "ផាបលមបាក"
 
-#: pages/editor.py:593
+#: pages/browser.py:991
+msgid "Select"
+msgstr "ជ្រើសរើស"
+
+#: pages/editor.py:365
+msgid "Crossword Editor"
+msgstr "កម្មវិធី កែសម្រួល ពាក្យ ក្រូស"
+
+#: pages/editor.py:526 pages/editor.py:738 pages/editor.py:830
+#: pages/editor.py:970
+msgid "Your Crosswords"
+msgstr "ពាក្យកាត់របស់អ្នក"
+
+#: pages/editor.py:595 pages/editor.py:835 pages/editor.py:979
+#: pages/editor.py:1069 pages/editor.py:1182 pages/editor.py:1296
+msgid "Save"
+msgstr "រក្សាទុក"
+
+#: pages/editor.py:607
+msgid "length >= 1 and valid OS file name"
+msgstr "ប្រវែង >= 1 និង ឈ្មោះ ឯកសារ OS ត្រឹមត្រូវ"
+
+#: pages/editor.py:616
+msgid "length == 1"
+msgstr "ប្រវែង == 1"
+
+#: pages/editor.py:629
 msgid "Easy"
 msgstr "ងាយស្រួល"
 
-#: pages/editor.py:593
+#: pages/editor.py:629
 msgid "Medium"
 msgstr "មធ្យម"
 
-#: pages/editor.py:593
+#: pages/editor.py:629
 msgid "Hard"
 msgstr "រឹង"
 
-#: pages/editor.py:593
+#: pages/editor.py:629
 msgid "Extreme"
 msgstr "ខ្លាំង"
 
-#: pages/editor.py:718 pages/editor.py:1098
+#: pages/editor.py:738 pages/editor.py:1125
 msgid "Adding"
 msgstr "បន្ថែម"
 
-#: pages/editor.py:721 pages/editor.py:1102
+#: pages/editor.py:742 pages/editor.py:1129
 msgid "Add"
 msgstr "បន្ថែម"
 
-#: pages/editor.py:900 pages/editor.py:1218
+#: pages/editor.py:922 pages/editor.py:1245
 msgid "Press"
 msgstr "ចុច"
 
-#: pages/editor.py:902 pages/editor.py:1220
+#: pages/editor.py:924 pages/editor.py:1247
 msgid "to add a"
 msgstr "ដើម្បី បន្ថែម"
 
-#: pages/editor.py:904
+#: pages/editor.py:926
 msgid "new crossword."
 msgstr "ឈើឆ្កាងថ្មី។"
 
-#: pages/editor.py:948 pages/editor.py:1265
+#: pages/editor.py:970 pages/editor.py:1292
 msgid "Editing"
 msgstr "ការ កែសម្រួល"
 
-#: pages/editor.py:1010 pages/editor.py:1098 pages/editor.py:1150
-#: pages/editor.py:1265
+#: pages/editor.py:1037 pages/editor.py:1125 pages/editor.py:1177
+#: pages/editor.py:1292
 msgid "Your Words"
 msgstr "ពាក្យសម្ដីរបស់អ្នក"
 
-#: pages/editor.py:1054
+#: pages/editor.py:1081
 msgid "length >= 1 and length <= 32 and is a language character"
 msgstr "ប្រវែង >= ១ និង ប្រវែង <= ៣២ និង ជា តួអក្សរ ភាសា"
 
-#: pages/editor.py:1065
+#: pages/editor.py:1092
 msgid "length >= 1"
 msgstr "ប្រវែង >= 1"
 
-#: pages/editor.py:1222
+#: pages/editor.py:1249
 msgid "new word."
 msgstr "ពាក្យថ្មី។"
 
-#: pages/home.py:98
-msgid "Crossword Puzzle"
-msgstr "ល្បែងផ្គុំពាក្យឆ្លង"
-
-#: pages/home.py:128
-msgid "BrowserPage"
-msgstr "BrowserPage"
-
-#: pages/home.py:137
-msgid "Editor"
-msgstr "អ្នក និពន្ធ"
-
-#: pages/home.py:139
-msgid "EditorPage"
-msgstr "EditorPage"
-
-#: pages/home.py:159
-msgid "Global Settings"
-msgstr "ការកំណត់សកល"
-
-#: pages/home.py:166
-msgid "Language"
-msgstr "ភាសា"
-
-#: pages/home.py:178
-msgid "Size"
-msgstr "ទំហំ"
-
-#: pages/home.py:197
+#: pages/home.py:64
 msgid "light"
 msgstr "ពន្លឺ"
 
-#: pages/home.py:197
+#: pages/home.py:64
 msgid "dark"
 msgstr "ងងឹត"
 
-#: pages/home.py:197
+#: pages/home.py:64
 msgid "system"
 msgstr "ប្រព័ន្ធ"
 
-#: pages/home.py:200 pages/home.py:214
-msgid "Appearance"
-msgstr "រូបរាង"
-
-#: pages/home.py:220
+#: pages/home.py:66
 msgid "terrible"
 msgstr "អារកក់កយរអាេយខ្លាច"
 
-#: pages/home.py:221
+#: pages/home.py:67
 msgid "poor"
 msgstr "រកីរក"
 
-#: pages/home.py:222
+#: pages/home.py:68
 msgid "average"
 msgstr "មធ្យម"
 
-#: pages/home.py:223
+#: pages/home.py:69
 msgid "great"
 msgstr "ដ៏ធម"
 
-#: pages/home.py:224
+#: pages/home.py:70
 msgid "perfect"
 msgstr "សុរកិត"
 
-#: pages/home.py:228
+#: pages/home.py:107
+msgid "Crossword Puzzle"
+msgstr "ល្បែងផ្គុំពាក្យឆ្លង"
+
+#: pages/home.py:137
+msgid "BrowserPage"
+msgstr "BrowserPage"
+
+#: pages/home.py:145
+msgid "Editor"
+msgstr "អ្នក និពន្ធ"
+
+#: pages/home.py:147
+msgid "EditorPage"
+msgstr "EditorPage"
+
+#: pages/home.py:165
+msgid "Global Settings"
+msgstr "ការកំណត់សកល"
+
+#: pages/home.py:172
+msgid "Language"
+msgstr "ភាសា"
+
+#: pages/home.py:184
+msgid "Size"
+msgstr "ទំហំ"
+
+#: pages/home.py:205 pages/home.py:219
+msgid "Appearance"
+msgstr "រូបរាង"
+
+#: pages/home.py:226
 msgid "Crossword Quality"
 msgstr "គុណភាពឆ្លងដែន"
+
+#: pages/home.py:322
+msgid "New version available!"
+msgstr "មានកំណែថ្មី!"
 
 msgid "Geography"
 msgstr "ភូមិសាស្ត្រ"
@@ -603,12 +625,6 @@ msgstr "វិទ្យាសាស្ត្រ​កុំព្យូទ័រ
 msgid "User"
 msgstr "អ្នកប្រើប្រាស់"
 
-msgid "Total words"
-msgstr "ពាក្យសរុប"
-
-msgid "Maximum"
-msgstr "អតិបរិមា"
-
 msgid "Clue"
 msgstr "ក្លៀក"
 
@@ -617,9 +633,3 @@ msgstr "ឈ្មោះ"
 
 msgid "Symbol"
 msgstr "និមិត្តរូប"
-
-msgid "Search"
-msgstr "ការឆេកឆេ"
-
-msgid "New version available!"
-msgstr "មានកំណែថ្មី!"

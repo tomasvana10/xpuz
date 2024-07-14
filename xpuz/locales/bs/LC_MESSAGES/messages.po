@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-30 17:39+1000\n"
+"POT-Creation-Date: 2024-07-14 17:17+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: bs <LL@li.org>\n"
@@ -19,58 +19,69 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: import_export.py:24
+#: import_export.py:37
 msgid "Select a destination to export your crosswords to"
 msgstr "Odaberite destinaciju za izvoz križaljka na"
 
-#: import_export.py:28
+#: import_export.py:38
 msgid "my-crosswords"
 msgstr "My-Crosswords"
 
-#: import_export.py:70
-msgid ""
-"Select a valid crossword JSON file that was exported using xpuz"
+#: import_export.py:111
+msgid "Select a valid crossword JSON file that was exported using xpuz"
 msgstr ""
 "Odaberite važeću križaljku JSON datoteku koja je izvezana pomoću "
 "crossword_puzle"
 
-#: app/templates/index.html:286 pdf.py:207
+#: ipuz.py:27
+msgid "Select a destination to export your ipuz to"
+msgstr "Odaberite odredište za izvoz Ipuza na"
+
+#: pdf.py:53
+msgid "Answers"
+msgstr "Odgovori"
+
+#: pdf.py:64
+msgid "Select a destination to download your PDF to"
+msgstr "Odaberite odredište za preuzimanje PDF-a na"
+
+#: app/templates/index.html:286 pdf.py:231
 msgid "Across"
 msgstr "Preko"
 
-#: app/templates/index.html:308 pdf.py:214
+#: app/templates/index.html:308 pdf.py:238
 msgid "Down"
 msgstr "Dolje"
 
-#: utils.py:58
+#: utils.py:60
 msgid "Remove"
 msgstr "Ukloniti"
 
-#: utils.py:59
+#: utils.py:61
 msgid "Are you sure you want to delete this"
 msgstr "Jeste li sigurni da želite izbrisati ovo"
 
-#: utils.py:61
+#: utils.py:63
 msgid "It will be lost forever!"
 msgstr "Zauvijek će biti izgubljena!"
 
-#: utils.py:66
+#: utils.py:68
 msgid "Add or select"
 msgstr "Dodaj ili odaberi"
 
-#: utils.py:67
+#: utils.py:69
 msgid "Are you sure you want to add/select a"
 msgstr "Da li ste sigurni da želite da dodate/izaberete"
 
-#: utils.py:69
+#: utils.py:71
 msgid "Your modified fields will be reset!"
 msgstr "Vaša modificirana polja će biti vraćena!"
 
-#: utils.py:74 utils.py:106
+#: utils.py:76 utils.py:108
 msgid "Back to home"
 msgstr "Povratak na početnu"
 
-#: utils.py:75
+#: utils.py:77
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
@@ -78,12 +89,12 @@ msgstr ""
 "Jeste li sigurni da se želite vratiti na početni ekran? Vaša modificirana "
 "polja će biti vraćena!"
 
-#: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
-#: utils.py:246
+#: utils.py:85 utils.py:157 utils.py:167 utils.py:173 utils.py:218
+#: utils.py:239 utils.py:245
 msgid "Info"
 msgstr "Info"
 
-#: utils.py:84
+#: utils.py:86
 msgid ""
 "Are you sure you want to import crosswords? Your modified fields will be "
 "reset!"
@@ -91,19 +102,19 @@ msgstr ""
 "Jeste li sigurni da želite uvesti križaljke?Vaša modifikovana polja bit će "
 "resetirana!"
 
-#: utils.py:92
+#: utils.py:94
 msgid "Restart"
 msgstr "Ponovo pokreni"
 
-#: utils.py:92
+#: utils.py:94
 msgid "Are you sure you want to restart the app?"
 msgstr "Jeste li sigurni da želite ponovo pokrenuti aplikaciju?"
 
-#: pages/home.py:148 utils.py:97
+#: pages/home.py:155 utils.py:99
 msgid "Exit"
 msgstr "Izlaz"
 
-#: utils.py:98
+#: utils.py:100
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -111,7 +122,7 @@ msgstr ""
 "Jeste li sigurni da želite izaći iz aplikacije? Ako je web aplikacija "
 "pokrenuta, bit će ugašena."
 
-#: utils.py:107
+#: utils.py:109
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -119,29 +130,29 @@ msgstr ""
 "Jeste li sigurni da se želite vratiti na početni ekran? Web aplikacija će "
 "biti ugašena."
 
-#: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
-#: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
-#: utils.py:220 utils.py:231 utils.py:263 utils.py:267
+#: utils.py:120 utils.py:125 utils.py:130 utils.py:135 utils.py:140
+#: utils.py:149 utils.py:162 utils.py:188 utils.py:196 utils.py:202
+#: utils.py:224 utils.py:262 utils.py:266
 msgid "Error"
 msgstr "Greška"
 
-#: utils.py:118
+#: utils.py:120
 msgid "This language is already selected."
 msgstr "Ovaj jezik je već odabran."
 
-#: utils.py:123
+#: utils.py:125
 msgid "This size is already selected."
 msgstr "Ova veličina je već odabrana."
 
-#: utils.py:128
+#: utils.py:130
 msgid "This appearance is already selected."
 msgstr "Ovaj izgled je već odabran."
 
-#: utils.py:133
+#: utils.py:135
 msgid "This quality is already selected."
 msgstr "Ova kvaliteta je već odabrana."
 
-#: utils.py:139
+#: utils.py:141
 msgid ""
 "A crossword with this name and difficulty already exists. Please choose a "
 "new name and/or a new difficulty."
@@ -149,50 +160,50 @@ msgstr ""
 "Ukrštena sa ovim imenom i poteškoćama već postoji.Molimo odaberite novo ime "
 "i / ili novu poteškoću."
 
-#: utils.py:148
+#: utils.py:150
 msgid "You have no crosswords to export. Please make some and try again."
 msgstr ""
 "Nemate križaljka za izvoz.Molim vas napravite neke i pokušajte ponovo."
 
-#: utils.py:155
+#: utils.py:157
 msgid "Successfully exported your crosswords."
 msgstr "Uspješno izvezene vaše križaljke."
 
-#: utils.py:160
+#: utils.py:162
 msgid "Your crosswords could not be exported, sorry."
 msgstr "Vaše križaljke nisu se mogle izvoziti, izvini."
 
-#: utils.py:166
+#: utils.py:168
 msgid "All of your crosswords were successfully imported."
 msgstr "Sve vaše križaljke uspješno su uvezene."
 
-#: utils.py:172
+#: utils.py:174
 msgid "Your import could not be fully completed."
 msgstr "Vaš uvoz nije mogao biti u potpunosti dovršen."
 
-#: utils.py:174
+#: utils.py:176
 msgid ""
 "Crosswords with duplicate names and difficulties that were not imported: "
 msgstr "Ukrštene riječi s duplikatom imena i poteškoćama koje nisu uvezene:"
 
-#: utils.py:180
+#: utils.py:182
 msgid "Invalid crosswords that were not imported: "
 msgstr "Nevažeće križaljke koje nisu uvezene:"
 
-#: utils.py:187
+#: utils.py:189
 msgid "The specified JSON file is invalid and cannot be processed."
 msgstr "Navedena JSON datoteka nije važeća i ne može se obraditi."
 
-#: utils.py:195
+#: utils.py:197
 msgid "This word already exists. Please choose a new word."
 msgstr "Ova reč već postoji. Molimo Vas da izaberete novu reč."
 
-#: utils.py:201
+#: utils.py:203
 msgid "An error occurred while creating your PDF. Please try again."
 msgstr ""
 "Došlo je do pogreške prilikom stvaranja PDF-a.Molimo pokušajte ponovo."
 
-#: utils.py:208
+#: utils.py:212
 msgid ""
 "words that could not be inserted during crossword generation will not be "
 "included in this PDF, sorry."
@@ -200,23 +211,11 @@ msgstr ""
 "Riječi koje nisu mogle biti umetnute tijekom stvaranja križaljki neće biti "
 "uključene u ovaj PDF, izvinite."
 
-#: utils.py:215
+#: utils.py:219
 msgid "Successfully wrote PDF."
 msgstr "Uspješno napisao pdf."
 
-#: utils.py:221
-msgid ""
-"You are missing pywebview, which is required when viewing the crossword game"
-" in an embedded window. Please run"
-msgstr ""
-"Nedostaje vam PYWEBVIEW, koji je potreban prilikom pregledačke igre u "
-"ugrađenom prozoru.Molim te trči"
-
-#: utils.py:226
-msgid "to install this dependency."
-msgstr "za instaliranje ove ovisnosti."
-
-#: utils.py:232
+#: utils.py:225
 msgid ""
 "You are missing pycairo, which is required to perform this operation. Please"
 " run"
@@ -224,7 +223,7 @@ msgstr ""
 "Nedostaje vam Pycairo, koji je potreban za obavljanje ove operacije.Molim te"
 " trči"
 
-#: utils.py:237
+#: utils.py:230
 msgid ""
 "and install the headers for pycairo if you are not on Windows using "
 "pycairo's Getting Started guide"
@@ -232,7 +231,11 @@ msgstr ""
 "i instalirajte zaglavlja za Pycairo ako niste na Windows-u pomoću Pycairo-"
 "ovog vodiča za početak"
 
-#: utils.py:247
+#: utils.py:240
+msgid "Successfully wrote ipuz"
+msgstr "Uspješno napisao Ipuz"
+
+#: utils.py:246
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -254,31 +257,31 @@ msgstr ""
 "Activity Monitora na MacOS-u ili jednostavno ponovo pokrenite računar da "
 "biste ih prekinuli."
 
-#: utils.py:269
+#: utils.py:268
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
 "Desila se neočekivana greška. Molimo Vas da pokušate da ponovo instalirate "
 "aplikaciju"
 
-#: utils.py:790
+#: utils.py:840
 msgid "Definitions are empty"
 msgstr "Definicije su prazne"
 
-#: utils.py:793
+#: utils.py:843
 msgid "The word count or definitions are less than 3 in length"
 msgstr "Broj reči ili definicija su manje od 3 u dužini."
 
-#: utils.py:797
+#: utils.py:847
 msgid "Length of the word count is greater than the definitions"
 msgstr "Dužina reči je veća od definicije"
 
-#: utils.py:800
+#: utils.py:850
 msgid "Escape character present in word"
 msgstr "Karakter za bijeg prisutan u riječi"
 
 #: app/templates/index.html:13 app/templates/index.html:338
-#: pages/browser.py:458
+#: pages/browser.py:545
 msgid "Crossword Puzzle - Game"
 msgstr "Ukrštena zagonetka - igra"
 
@@ -360,237 +363,257 @@ msgstr "Nastaviti"
 msgid "You completed the crossword!"
 msgstr "Završili ste ukrštenu reč!"
 
-#: app/templates/index.html:368 pages/browser.py:718
+#: app/templates/index.html:368 pages/browser.py:797
 msgid "Close"
 msgstr "Zatvori"
 
-#: pages/browser.py:142
-msgid "Crossword Browser"
-msgstr "Crossword Browser"
-
-#: pages/browser.py:147 pages/editor.py:363
-msgid "Back"
-msgstr "Leđa"
-
-#: pages/browser.py:151 pages/editor.py:367 pages/home.py:305
-msgid "HomePage"
-msgstr "Početna stranica"
-
-#: pages/browser.py:162
+#: pages/browser.py:92
 msgid "Categorised"
 msgstr "Kategorizovano"
 
-#: pages/browser.py:162 pages/browser.py:314
+#: pages/browser.py:92 pages/browser.py:393
 msgid "Flattened"
 msgstr "Spljoštena"
 
-#: pages/browser.py:191
-msgid "Create"
-msgstr "Stvoriti"
-
-#: pages/browser.py:200
-msgid "Play"
-msgstr "Igrati"
-
-#: pages/browser.py:208 pages/home.py:126
+#: pages/browser.py:98 pages/home.py:135
 msgid "Browser"
 msgstr "Preglednik"
 
-#: pages/browser.py:208
+#: pages/browser.py:98
 msgid "Embedded"
 msgstr "Ugrađen"
 
-#: pages/browser.py:211
+#: pages/browser.py:102
+msgid "PDF"
+msgstr "PDF"
+
+#: pages/browser.py:102
+msgid "ipuz"
+msgstr "Ipuz"
+
+#: pages/browser.py:183
+msgid "Crossword Browser"
+msgstr "Crossword Browser"
+
+#: pages/browser.py:189 pages/editor.py:371
+msgid "Back"
+msgstr "Leđa"
+
+#: pages/browser.py:193 pages/editor.py:375 pages/home.py:305
+msgid "HomePage"
+msgstr "Početna stranica"
+
+#: pages/browser.py:219 pages/browser.py:412
+msgid "Search"
+msgstr "Pretražiti"
+
+#: pages/browser.py:232
+msgid "Create"
+msgstr "Stvoriti"
+
+#: pages/browser.py:241
+msgid "Play"
+msgstr "Igrati"
+
+#: pages/browser.py:251
 msgid "Game view"
 msgstr "Pregled igre"
 
-#: pages/browser.py:237
-msgid "Write to PDF"
-msgstr "Pišite PDF"
+#: pages/browser.py:275
+msgid "Export as"
+msgstr "Izvoz kao"
 
-#: pages/browser.py:245
+#: pages/browser.py:313
 msgid "Destroy"
 msgstr "Uništiti"
 
-#: pages/browser.py:256
+#: pages/browser.py:324
 msgid "Word count preferences"
 msgstr "Postavke broja riječi"
 
-#: pages/browser.py:271 pages/browser.py:400 pages/browser.py:433
-#: pages/browser.py:627
+#: pages/browser.py:339 pages/browser.py:482 pages/browser.py:520
+#: pages/browser.py:706
 msgid "Select word count"
 msgstr "Odaberite broj riječi"
 
-#: pages/browser.py:286
+#: pages/browser.py:343 pages/browser.py:519 pages/browser.py:717
+msgid "Maximum"
+msgstr "Maksimum"
+
+#: pages/browser.py:354
 msgid "Custom"
 msgstr "Custom"
 
-#: pages/browser.py:499
-msgid "Select a destination to download your PDF to"
-msgstr "Odaberite odredište za preuzimanje PDF-a na"
-
-#: pages/browser.py:607
+#: pages/browser.py:686
 msgid "To perform this operation, you must first select a cell."
 msgstr "Da biste izveli ovu operaciju, prvo morate odabrati ćeliju."
 
-#: pages/browser.py:711
+#: pages/browser.py:790
 msgid "View"
 msgstr "Pogled"
 
-#: pages/browser.py:915
-msgid "Select"
-msgstr "Odaberite"
+#: pages/browser.py:971
+msgid "Total words"
+msgstr "Ukupne riječi"
 
-#: pages/editor.py:357
-msgid "Crossword Editor"
-msgstr "Urednik križaljke"
-
-#: pages/editor.py:495 pages/editor.py:718 pages/editor.py:808
-#: pages/editor.py:948
-msgid "Your Crosswords"
-msgstr "Tvoje ukrštenice."
-
-#: pages/editor.py:559 pages/editor.py:812 pages/editor.py:955
-#: pages/editor.py:1042 pages/editor.py:1155 pages/editor.py:1269
-msgid "Save"
-msgstr "Spasiti"
-
-#: pages/editor.py:571
-msgid "length >= 1 and valid OS file name"
-msgstr "dužina > = 1 i važeće ime datoteke OS-a"
-
-#: pages/editor.py:580
-msgid "length == 1"
-msgstr "dužina == 1"
-
-#: pages/editor.py:586
+#: pages/browser.py:977 pages/editor.py:622
 msgid "Difficulty"
 msgstr "Poteškoća"
 
-#: pages/editor.py:593
+#: pages/browser.py:991
+msgid "Select"
+msgstr "Odaberite"
+
+#: pages/editor.py:365
+msgid "Crossword Editor"
+msgstr "Urednik križaljke"
+
+#: pages/editor.py:526 pages/editor.py:738 pages/editor.py:830
+#: pages/editor.py:970
+msgid "Your Crosswords"
+msgstr "Tvoje ukrštenice."
+
+#: pages/editor.py:595 pages/editor.py:835 pages/editor.py:979
+#: pages/editor.py:1069 pages/editor.py:1182 pages/editor.py:1296
+msgid "Save"
+msgstr "Spasiti"
+
+#: pages/editor.py:607
+msgid "length >= 1 and valid OS file name"
+msgstr "dužina > = 1 i važeće ime datoteke OS-a"
+
+#: pages/editor.py:616
+msgid "length == 1"
+msgstr "dužina == 1"
+
+#: pages/editor.py:629
 msgid "Easy"
 msgstr "Lako"
 
-#: pages/editor.py:593
+#: pages/editor.py:629
 msgid "Medium"
 msgstr "Srednje"
 
-#: pages/editor.py:593
+#: pages/editor.py:629
 msgid "Hard"
 msgstr "Teško"
 
-#: pages/editor.py:593
+#: pages/editor.py:629
 msgid "Extreme"
 msgstr "Ekstremno"
 
-#: pages/editor.py:718 pages/editor.py:1098
+#: pages/editor.py:738 pages/editor.py:1125
 msgid "Adding"
 msgstr "Dodavanje"
 
-#: pages/editor.py:721 pages/editor.py:1102
+#: pages/editor.py:742 pages/editor.py:1129
 msgid "Add"
 msgstr "Dodati"
 
-#: pages/editor.py:900 pages/editor.py:1218
+#: pages/editor.py:922 pages/editor.py:1245
 msgid "Press"
 msgstr "Pritisnite"
 
-#: pages/editor.py:902 pages/editor.py:1220
+#: pages/editor.py:924 pages/editor.py:1247
 msgid "to add a"
 msgstr "da dodam a"
 
-#: pages/editor.py:904
+#: pages/editor.py:926
 msgid "new crossword."
 msgstr "Nova križaljka."
 
-#: pages/editor.py:948 pages/editor.py:1265
+#: pages/editor.py:970 pages/editor.py:1292
 msgid "Editing"
 msgstr "Uređivanje"
 
-#: pages/editor.py:1010 pages/editor.py:1098 pages/editor.py:1150
-#: pages/editor.py:1265
+#: pages/editor.py:1037 pages/editor.py:1125 pages/editor.py:1177
+#: pages/editor.py:1292
 msgid "Your Words"
 msgstr "Tvoje riječi"
 
-#: pages/editor.py:1054
+#: pages/editor.py:1081
 msgid "length >= 1 and length <= 32 and is a language character"
 msgstr "dužina >= 1 i dužina <= 32 i jezički je karakter"
 
-#: pages/editor.py:1065
+#: pages/editor.py:1092
 msgid "length >= 1"
 msgstr "dužina > = 1"
 
-#: pages/editor.py:1222
+#: pages/editor.py:1249
 msgid "new word."
 msgstr "novu reč."
 
-#: pages/home.py:98
-msgid "Crossword Puzzle"
-msgstr "Ukrštenica"
-
-#: pages/home.py:128
-msgid "BrowserPage"
-msgstr "Stranica preglednika"
-
-#: pages/home.py:137
-msgid "Editor"
-msgstr "Urednik"
-
-#: pages/home.py:139
-msgid "EditorPage"
-msgstr "Stranica urednika"
-
-#: pages/home.py:159
-msgid "Global Settings"
-msgstr "Globalne postavke"
-
-#: pages/home.py:166
-msgid "Language"
-msgstr "Jezik"
-
-#: pages/home.py:178
-msgid "Size"
-msgstr "Veličina"
-
-#: pages/home.py:197
+#: pages/home.py:64
 msgid "light"
 msgstr "svjetlo"
 
-#: pages/home.py:197
+#: pages/home.py:64
 msgid "dark"
 msgstr "mračno"
 
-#: pages/home.py:197
+#: pages/home.py:64
 msgid "system"
 msgstr "sistem"
 
-#: pages/home.py:200 pages/home.py:214
-msgid "Appearance"
-msgstr "Izgled"
-
-#: pages/home.py:220
+#: pages/home.py:66
 msgid "terrible"
 msgstr "strašan"
 
-#: pages/home.py:221
+#: pages/home.py:67
 msgid "poor"
 msgstr "loš"
 
-#: pages/home.py:222
+#: pages/home.py:68
 msgid "average"
 msgstr "prosjek"
 
-#: pages/home.py:223
+#: pages/home.py:69
 msgid "great"
 msgstr "sjajan"
 
-#: pages/home.py:224
+#: pages/home.py:70
 msgid "perfect"
 msgstr "savršen"
 
-#: pages/home.py:228
+#: pages/home.py:107
+msgid "Crossword Puzzle"
+msgstr "Ukrštenica"
+
+#: pages/home.py:137
+msgid "BrowserPage"
+msgstr "Stranica preglednika"
+
+#: pages/home.py:145
+msgid "Editor"
+msgstr "Urednik"
+
+#: pages/home.py:147
+msgid "EditorPage"
+msgstr "Stranica urednika"
+
+#: pages/home.py:165
+msgid "Global Settings"
+msgstr "Globalne postavke"
+
+#: pages/home.py:172
+msgid "Language"
+msgstr "Jezik"
+
+#: pages/home.py:184
+msgid "Size"
+msgstr "Veličina"
+
+#: pages/home.py:205 pages/home.py:219
+msgid "Appearance"
+msgstr "Izgled"
+
+#: pages/home.py:226
 msgid "Crossword Quality"
 msgstr "Kvalitet ukrštenom"
+
+#: pages/home.py:322
+msgid "New version available!"
+msgstr "Dostupna nova verzija!"
 
 msgid "Geography"
 msgstr "Geografija"
@@ -607,12 +630,6 @@ msgstr "Računarska nauka"
 msgid "User"
 msgstr "Korisničko"
 
-msgid "Total words"
-msgstr "Ukupne riječi"
-
-msgid "Maximum"
-msgstr "Maksimum"
-
 msgid "Clue"
 msgstr "Pojma"
 
@@ -621,9 +638,3 @@ msgstr "Ime"
 
 msgid "Symbol"
 msgstr "Simbol"
-
-msgid "Search"
-msgstr "Pretražiti"
-
-msgid "New version available!"
-msgstr "Dostupna nova verzija!"

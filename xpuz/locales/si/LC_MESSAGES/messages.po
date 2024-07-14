@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-30 17:39+1000\n"
+"POT-Creation-Date: 2024-07-14 17:17+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: si <LL@li.org>\n"
@@ -19,58 +19,69 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: import_export.py:24
+#: import_export.py:37
 msgid "Select a destination to export your crosswords to"
 msgstr "ඔබේ හරස්පද කවුළු අපනයනය කිරීම සඳහා ගමනාන්තයක් තෝරන්න"
 
-#: import_export.py:28
+#: import_export.py:38
 msgid "my-crosswords"
 msgstr "මගේ හරස්පද"
 
-#: import_export.py:70
-msgid ""
-"Select a valid crossword JSON file that was exported using xpuz"
+#: import_export.py:111
+msgid "Select a valid crossword JSON file that was exported using xpuz"
 msgstr ""
 "ක්රොස්වර්ඩ්_Pාවුලය භාවිතයෙන් අපනයනය කරන ලද වලංගු හරස්පදයක් ජසන් ගොනුවක් "
 "තෝරන්න"
 
-#: app/templates/index.html:286 pdf.py:207
+#: ipuz.py:27
+msgid "Select a destination to export your ipuz to"
+msgstr "ඔබගේ IPUZ වෙත අපනයනය කිරීම සඳහා ගමනාන්තයක් තෝරන්න"
+
+#: pdf.py:53
+msgid "Answers"
+msgstr "පිළිතුරු"
+
+#: pdf.py:64
+msgid "Select a destination to download your PDF to"
+msgstr "ඔබගේ PDF බාගත කිරීම සඳහා ගමනාන්තයක් තෝරන්න"
+
+#: app/templates/index.html:286 pdf.py:231
 msgid "Across"
 msgstr "හරහා"
 
-#: app/templates/index.html:308 pdf.py:214
+#: app/templates/index.html:308 pdf.py:238
 msgid "Down"
 msgstr "පහළ"
 
-#: utils.py:58
+#: utils.py:60
 msgid "Remove"
 msgstr "ඉවත් කරන්න"
 
-#: utils.py:59
+#: utils.py:61
 msgid "Are you sure you want to delete this"
 msgstr "ඔබට මෙය මකා දැමීමට අවශ්ය බව ඔබට විශ්වාසද?"
 
-#: utils.py:61
+#: utils.py:63
 msgid "It will be lost forever!"
 msgstr "එය සදහටම නැති වී යනු ඇත!"
 
-#: utils.py:66
+#: utils.py:68
 msgid "Add or select"
 msgstr "එක් කරන්න හෝ තෝරන්න"
 
-#: utils.py:67
+#: utils.py:69
 msgid "Are you sure you want to add/select a"
 msgstr "ඔබට a එකතු කිරීමට / තෝරා ගැනීමට අවශ්ය බව ඔබට විශ්වාසද"
 
-#: utils.py:69
+#: utils.py:71
 msgid "Your modified fields will be reset!"
 msgstr "ඔබගේ නවීකරණය කරන ලද ක්ෂේත්ර නැවත සකස් කරනු ලැබේ!"
 
-#: utils.py:74 utils.py:106
+#: utils.py:76 utils.py:108
 msgid "Back to home"
 msgstr "ආපසු නිවසට"
 
-#: utils.py:75
+#: utils.py:77
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
@@ -78,12 +89,12 @@ msgstr ""
 "ඔබට නැවත මුල් තිරයට යාමට අවශ්ය බව ඔබට විශ්වාසද? ඔබගේ නවීකරණය කරන ලද ක්ෂේත්ර "
 "නැවත සකස් කරනු ලැබේ!"
 
-#: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
-#: utils.py:246
+#: utils.py:85 utils.py:157 utils.py:167 utils.py:173 utils.py:218
+#: utils.py:239 utils.py:245
 msgid "Info"
 msgstr "තොරතුරු"
 
-#: utils.py:84
+#: utils.py:86
 msgid ""
 "Are you sure you want to import crosswords? Your modified fields will be "
 "reset!"
@@ -91,19 +102,19 @@ msgstr ""
 "හරස්පද ආනයනය කිරීමට ඔබට අවශ්ය බව ඔබට විශ්වාසද?ඔබගේ නවීකරණය කරන ලද ක්ෂේත්ර "
 "නැවත සැකසෙනු ඇත!"
 
-#: utils.py:92
+#: utils.py:94
 msgid "Restart"
 msgstr "යළි අරඹන්න"
 
-#: utils.py:92
+#: utils.py:94
 msgid "Are you sure you want to restart the app?"
 msgstr "ඔබට යෙදුම නැවත ආරම්භ කිරීමට අවශ්‍ය බව විශ්වාසද?"
 
-#: pages/home.py:148 utils.py:97
+#: pages/home.py:155 utils.py:99
 msgid "Exit"
 msgstr "පිටවීම"
 
-#: utils.py:98
+#: utils.py:100
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -111,36 +122,36 @@ msgstr ""
 "ඔබට යෙදුමෙන් පිටවීමට අවශ්‍ය බව විශ්වාසද? වෙබ් යෙදුම ක්‍රියාත්මක වන්නේ නම්, "
 "එය අවසන් වේ."
 
-#: utils.py:107
+#: utils.py:109
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
 msgstr ""
 "ඔබට මුල් තිරය වෙත ආපසු යාමට අවශ්‍ය බව විශ්වාසද? වෙබ් යෙදුම අවසන් වනු ඇත."
 
-#: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
-#: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
-#: utils.py:220 utils.py:231 utils.py:263 utils.py:267
+#: utils.py:120 utils.py:125 utils.py:130 utils.py:135 utils.py:140
+#: utils.py:149 utils.py:162 utils.py:188 utils.py:196 utils.py:202
+#: utils.py:224 utils.py:262 utils.py:266
 msgid "Error"
 msgstr "දෝෂයකි"
 
-#: utils.py:118
+#: utils.py:120
 msgid "This language is already selected."
 msgstr "මෙම භාෂාව දැනටමත් තෝරා ඇත."
 
-#: utils.py:123
+#: utils.py:125
 msgid "This size is already selected."
 msgstr "මෙම ප්රමාණය දැනටමත් තෝරා ඇත."
 
-#: utils.py:128
+#: utils.py:130
 msgid "This appearance is already selected."
 msgstr "මෙම පෙනුම දැනටමත් තෝරා ඇත."
 
-#: utils.py:133
+#: utils.py:135
 msgid "This quality is already selected."
 msgstr "මෙම ගුණාංගය දැනටමත් තෝරාගෙන ඇත."
 
-#: utils.py:139
+#: utils.py:141
 msgid ""
 "A crossword with this name and difficulty already exists. Please choose a "
 "new name and/or a new difficulty."
@@ -148,78 +159,66 @@ msgstr ""
 "මෙම නම සහ දුෂ්කරතා සහිත හරස්පදයක් දැනටමත් පවතී.කරුණාකර නව නමක් සහ / හෝ නව "
 "දුෂ්කරතාවයක් තෝරන්න."
 
-#: utils.py:148
+#: utils.py:150
 msgid "You have no crosswords to export. Please make some and try again."
 msgstr "ඔබට අපනයනය කිරීමට හරස්කඩ නොමැත.කරුණාකර සමහරක් සාදා නැවත උත්සාහ කරන්න."
 
-#: utils.py:155
+#: utils.py:157
 msgid "Successfully exported your crosswords."
 msgstr "ඔබේ හරස්පද සාර්ථකව අපනයනය කිරීම."
 
-#: utils.py:160
+#: utils.py:162
 msgid "Your crosswords could not be exported, sorry."
 msgstr "ඔබේ හරස්පද අපනයනය කළ නොහැකි, සමාවෙන්න."
 
-#: utils.py:166
+#: utils.py:168
 msgid "All of your crosswords were successfully imported."
 msgstr "ඔබගේ හරස්පද සියල්ලම සාර්ථකව ආනයනය කරන ලදී."
 
-#: utils.py:172
+#: utils.py:174
 msgid "Your import could not be fully completed."
 msgstr "ඔබගේ ආනයනය සම්පුර්ණ කළ නොහැකි විය."
 
-#: utils.py:174
+#: utils.py:176
 msgid ""
 "Crosswords with duplicate names and difficulties that were not imported: "
 msgstr "ආනයනය නොකළ අනුපිටපත් නම් සහ දුෂ්කරතා සහිත හරස්පද:"
 
-#: utils.py:180
+#: utils.py:182
 msgid "Invalid crosswords that were not imported: "
 msgstr "ආනයනය නොකළ වලංගු අන්තයේ වචන:"
 
-#: utils.py:187
+#: utils.py:189
 msgid "The specified JSON file is invalid and cannot be processed."
 msgstr "නිශ්චිත JSON ගොනුව අවලංගු වන අතර එය සැකසිය නොහැක."
 
-#: utils.py:195
+#: utils.py:197
 msgid "This word already exists. Please choose a new word."
 msgstr "මෙම වචනය දැනටමත් පවතී. කරුණාකර අලුත් වචනයක් තෝරන්න."
 
-#: utils.py:201
+#: utils.py:203
 msgid "An error occurred while creating your PDF. Please try again."
 msgstr "ඔබේ PDF නිර්මාණය කිරීමේදී දෝෂයක් ඇතිවිය.කරුණාකර නැවත උත්සාහ කරන්න."
 
-#: utils.py:208
+#: utils.py:212
 msgid ""
 "words that could not be inserted during crossword generation will not be "
 "included in this PDF, sorry."
 msgstr ""
 "හරස්පද පරම්පරාවේදී ඇතුළත් කළ නොහැකි වචන මෙම PDF හි ඇතුළත් නොවේ, සමාවෙන්න."
 
-#: utils.py:215
+#: utils.py:219
 msgid "Successfully wrote PDF."
 msgstr "සාර්ථකව පී.ඩී.එෆ්."
 
-#: utils.py:221
-msgid ""
-"You are missing pywebview, which is required when viewing the crossword game"
-" in an embedded window. Please run"
-msgstr ""
-"කාවැද්දූ කවුළුවක හරස්පද ක්රීඩාව බැලීමේදී අවශ්ය වන PYWEBIBVIED ඔබ අස්ථානගත වී"
-" ඇත.කරුණාකර ධාවනය කරන්න"
-
-#: utils.py:226
-msgid "to install this dependency."
-msgstr "මෙම යැපීම ස්ථාපනය කිරීමට."
-
-#: utils.py:232
+#: utils.py:225
 msgid ""
 "You are missing pycairo, which is required to perform this operation. Please"
 " run"
 msgstr ""
 "ඔබට මෙම මෙහෙයුම සිදු කිරීම සඳහා පයරායිරෝ අතුරුදහන් වී ඇත.කරුණාකර ධාවනය කරන්න"
 
-#: utils.py:237
+#: utils.py:230
 msgid ""
 "and install the headers for pycairo if you are not on Windows using "
 "pycairo's Getting Started guide"
@@ -227,7 +226,11 @@ msgstr ""
 "පයරායිරෝ හි ආරම්භක මාර්ගෝපදේශය භාවිතා කරමින් ඔබ වින්ඩෝස් හි නොමැති නම් "
 "පයැරාවිරෝ සඳහා ශීර්ෂයන් ස්ථාපනය කරන්න"
 
-#: utils.py:247
+#: utils.py:240
+msgid "Successfully wrote ipuz"
+msgstr "සාර්ථකව iPuz ලිවීය"
+
+#: utils.py:246
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -249,31 +252,31 @@ msgstr ""
 "මොනිටරය හරහා අවසන් කළ හැකිය, නැතහොත්, ඒවා අවසන් කිරීමට ඔබේ පරිගණකය නැවත "
 "ආරම්භ කරන්න."
 
-#: utils.py:269
+#: utils.py:268
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
 "අනපේක්ෂිත දෝෂයක් සිදු විය. කරුණාකර සමඟ යෙදුම නැවත ස්ථාපනය කිරීමට උත්සාහ "
 "කරන්න"
 
-#: utils.py:790
+#: utils.py:840
 msgid "Definitions are empty"
 msgstr "අර්ථ දැක්වීම් හිස් ය"
 
-#: utils.py:793
+#: utils.py:843
 msgid "The word count or definitions are less than 3 in length"
 msgstr "වචන ගණන හෝ අර්ථ දැක්වීම් දිග 3 ට වඩා අඩුය"
 
-#: utils.py:797
+#: utils.py:847
 msgid "Length of the word count is greater than the definitions"
 msgstr "වචන ගණනේ දිග අර්ථ දැක්වීම් වලට වඩා වැඩිය"
 
-#: utils.py:800
+#: utils.py:850
 msgid "Escape character present in word"
 msgstr "වචනයෙන් පවතින පැන යාමේ චරිතය"
 
 #: app/templates/index.html:13 app/templates/index.html:338
-#: pages/browser.py:458
+#: pages/browser.py:545
 msgid "Crossword Puzzle - Game"
 msgstr "හරස්පද ප්රහේලිකාව - ක්රීඩාව"
 
@@ -355,237 +358,257 @@ msgstr "දිගටම කරගෙන යන්න"
 msgid "You completed the crossword!"
 msgstr "ඔබ හරස්පදය සම්පූර්ණ කළා!"
 
-#: app/templates/index.html:368 pages/browser.py:718
+#: app/templates/index.html:368 pages/browser.py:797
 msgid "Close"
 msgstr "වසන්න"
 
-#: pages/browser.py:142
-msgid "Crossword Browser"
-msgstr "හරස්පද බ්‍රව්සරය"
-
-#: pages/browser.py:147 pages/editor.py:363
-msgid "Back"
-msgstr "පස්සට"
-
-#: pages/browser.py:151 pages/editor.py:367 pages/home.py:305
-msgid "HomePage"
-msgstr "මුල් පිටුව"
-
-#: pages/browser.py:162
+#: pages/browser.py:92
 msgid "Categorised"
 msgstr "වර්ගීකරණය කර ඇත"
 
-#: pages/browser.py:162 pages/browser.py:314
+#: pages/browser.py:92 pages/browser.py:393
 msgid "Flattened"
 msgstr "සමතලා කර ඇත"
 
-#: pages/browser.py:191
-msgid "Create"
-msgstr "සාදන්න"
-
-#: pages/browser.py:200
-msgid "Play"
-msgstr "සෙල්ලම් කරන්න"
-
-#: pages/browser.py:208 pages/home.py:126
+#: pages/browser.py:98 pages/home.py:135
 msgid "Browser"
 msgstr "බ්රව්සරය"
 
-#: pages/browser.py:208
+#: pages/browser.py:98
 msgid "Embedded"
 msgstr "කාවැද්දූ"
 
-#: pages/browser.py:211
+#: pages/browser.py:102
+msgid "PDF"
+msgstr "PDF"
+
+#: pages/browser.py:102
+msgid "ipuz"
+msgstr "ipuz"
+
+#: pages/browser.py:183
+msgid "Crossword Browser"
+msgstr "හරස්පද බ්‍රව්සරය"
+
+#: pages/browser.py:189 pages/editor.py:371
+msgid "Back"
+msgstr "පස්සට"
+
+#: pages/browser.py:193 pages/editor.py:375 pages/home.py:305
+msgid "HomePage"
+msgstr "මුල් පිටුව"
+
+#: pages/browser.py:219 pages/browser.py:412
+msgid "Search"
+msgstr "සෙවීම"
+
+#: pages/browser.py:232
+msgid "Create"
+msgstr "සාදන්න"
+
+#: pages/browser.py:241
+msgid "Play"
+msgstr "සෙල්ලම් කරන්න"
+
+#: pages/browser.py:251
 msgid "Game view"
 msgstr "ක්රීඩා දර්ශනය"
 
-#: pages/browser.py:237
-msgid "Write to PDF"
-msgstr "PDF වෙත ලියන්න"
+#: pages/browser.py:275
+msgid "Export as"
+msgstr "අපනයනය"
 
-#: pages/browser.py:245
+#: pages/browser.py:313
 msgid "Destroy"
 msgstr "විනාශ කරන්න"
 
-#: pages/browser.py:256
+#: pages/browser.py:324
 msgid "Word count preferences"
 msgstr "වචන ගණන් කිරීමේ මනාපයන්"
 
-#: pages/browser.py:271 pages/browser.py:400 pages/browser.py:433
-#: pages/browser.py:627
+#: pages/browser.py:339 pages/browser.py:482 pages/browser.py:520
+#: pages/browser.py:706
 msgid "Select word count"
 msgstr "වචන ගණන තෝරන්න"
 
-#: pages/browser.py:286
+#: pages/browser.py:343 pages/browser.py:519 pages/browser.py:717
+msgid "Maximum"
+msgstr "උපරිම"
+
+#: pages/browser.py:354
 msgid "Custom"
 msgstr "අභිරුචි"
 
-#: pages/browser.py:499
-msgid "Select a destination to download your PDF to"
-msgstr "ඔබගේ PDF බාගත කිරීම සඳහා ගමනාන්තයක් තෝරන්න"
-
-#: pages/browser.py:607
+#: pages/browser.py:686
 msgid "To perform this operation, you must first select a cell."
 msgstr "මෙම මෙහෙයුම සිදු කිරීම සඳහා, ඔබ මුලින්ම කොටුවක් තෝරා ගත යුතුය."
 
-#: pages/browser.py:711
+#: pages/browser.py:790
 msgid "View"
 msgstr "දැක්ම"
 
-#: pages/browser.py:915
-msgid "Select"
-msgstr "තෝරන්න"
+#: pages/browser.py:971
+msgid "Total words"
+msgstr "මුළු වචන"
 
-#: pages/editor.py:357
-msgid "Crossword Editor"
-msgstr "හරස්පද සංස්කාරක"
-
-#: pages/editor.py:495 pages/editor.py:718 pages/editor.py:808
-#: pages/editor.py:948
-msgid "Your Crosswords"
-msgstr "ඔබේ හරස් පද"
-
-#: pages/editor.py:559 pages/editor.py:812 pages/editor.py:955
-#: pages/editor.py:1042 pages/editor.py:1155 pages/editor.py:1269
-msgid "Save"
-msgstr "සුරකින්න"
-
-#: pages/editor.py:571
-msgid "length >= 1 and valid OS file name"
-msgstr "දිග > = 1 සහ වලංගු මෙහෙයුම් පද්ධතිය ගොනු නාමය"
-
-#: pages/editor.py:580
-msgid "length == 1"
-msgstr "දිග == 1"
-
-#: pages/editor.py:586
+#: pages/browser.py:977 pages/editor.py:622
 msgid "Difficulty"
 msgstr "දුෂ්කරතා"
 
-#: pages/editor.py:593
+#: pages/browser.py:991
+msgid "Select"
+msgstr "තෝරන්න"
+
+#: pages/editor.py:365
+msgid "Crossword Editor"
+msgstr "හරස්පද සංස්කාරක"
+
+#: pages/editor.py:526 pages/editor.py:738 pages/editor.py:830
+#: pages/editor.py:970
+msgid "Your Crosswords"
+msgstr "ඔබේ හරස් පද"
+
+#: pages/editor.py:595 pages/editor.py:835 pages/editor.py:979
+#: pages/editor.py:1069 pages/editor.py:1182 pages/editor.py:1296
+msgid "Save"
+msgstr "සුරකින්න"
+
+#: pages/editor.py:607
+msgid "length >= 1 and valid OS file name"
+msgstr "දිග > = 1 සහ වලංගු මෙහෙයුම් පද්ධතිය ගොනු නාමය"
+
+#: pages/editor.py:616
+msgid "length == 1"
+msgstr "දිග == 1"
+
+#: pages/editor.py:629
 msgid "Easy"
 msgstr "පහසු"
 
-#: pages/editor.py:593
+#: pages/editor.py:629
 msgid "Medium"
 msgstr "මධ්යම"
 
-#: pages/editor.py:593
+#: pages/editor.py:629
 msgid "Hard"
 msgstr "අමාරුයි"
 
-#: pages/editor.py:593
+#: pages/editor.py:629
 msgid "Extreme"
 msgstr "අන්ත"
 
-#: pages/editor.py:718 pages/editor.py:1098
+#: pages/editor.py:738 pages/editor.py:1125
 msgid "Adding"
 msgstr "එකතු කිරීම"
 
-#: pages/editor.py:721 pages/editor.py:1102
+#: pages/editor.py:742 pages/editor.py:1129
 msgid "Add"
 msgstr "එකතු කරන්න"
 
-#: pages/editor.py:900 pages/editor.py:1218
+#: pages/editor.py:922 pages/editor.py:1245
 msgid "Press"
 msgstr "ඔබන්න"
 
-#: pages/editor.py:902 pages/editor.py:1220
+#: pages/editor.py:924 pages/editor.py:1247
 msgid "to add a"
 msgstr "එකතු කිරීමට"
 
-#: pages/editor.py:904
+#: pages/editor.py:926
 msgid "new crossword."
 msgstr "නව හරස්පද."
 
-#: pages/editor.py:948 pages/editor.py:1265
+#: pages/editor.py:970 pages/editor.py:1292
 msgid "Editing"
 msgstr "සංස්කරණය"
 
-#: pages/editor.py:1010 pages/editor.py:1098 pages/editor.py:1150
-#: pages/editor.py:1265
+#: pages/editor.py:1037 pages/editor.py:1125 pages/editor.py:1177
+#: pages/editor.py:1292
 msgid "Your Words"
 msgstr "ඔබේ වචන"
 
-#: pages/editor.py:1054
+#: pages/editor.py:1081
 msgid "length >= 1 and length <= 32 and is a language character"
 msgstr "දිග > = 1 සහ දිග < = 32 වන අතර එය භාෂා අක්ෂරයකි"
 
-#: pages/editor.py:1065
+#: pages/editor.py:1092
 msgid "length >= 1"
 msgstr "දිග > = 1"
 
-#: pages/editor.py:1222
+#: pages/editor.py:1249
 msgid "new word."
 msgstr "අලුත් වචනයක්."
 
-#: pages/home.py:98
-msgid "Crossword Puzzle"
-msgstr "හරස්පද ප්රහේලිකාව"
-
-#: pages/home.py:128
-msgid "BrowserPage"
-msgstr "බ් රව්සර් පිටුව"
-
-#: pages/home.py:137
-msgid "Editor"
-msgstr "සංස්කාරක"
-
-#: pages/home.py:139
-msgid "EditorPage"
-msgstr "කර්තෘ පිටුව"
-
-#: pages/home.py:159
-msgid "Global Settings"
-msgstr "ගෝලීය සැකසුම්"
-
-#: pages/home.py:166
-msgid "Language"
-msgstr "භාෂාව"
-
-#: pages/home.py:178
-msgid "Size"
-msgstr "ප්රමාණය"
-
-#: pages/home.py:197
+#: pages/home.py:64
 msgid "light"
 msgstr "ආලෝකය"
 
-#: pages/home.py:197
+#: pages/home.py:64
 msgid "dark"
 msgstr "අඳුරු"
 
-#: pages/home.py:197
+#: pages/home.py:64
 msgid "system"
 msgstr "පද්ධති"
 
-#: pages/home.py:200 pages/home.py:214
-msgid "Appearance"
-msgstr "පෙනුම"
-
-#: pages/home.py:220
+#: pages/home.py:66
 msgid "terrible"
 msgstr "භයානක"
 
-#: pages/home.py:221
+#: pages/home.py:67
 msgid "poor"
 msgstr "දුප්පත්"
 
-#: pages/home.py:222
+#: pages/home.py:68
 msgid "average"
 msgstr "සාමාන්යය"
 
-#: pages/home.py:223
+#: pages/home.py:69
 msgid "great"
 msgstr "මහා"
 
-#: pages/home.py:224
+#: pages/home.py:70
 msgid "perfect"
 msgstr "පරිපූර්ණ"
 
-#: pages/home.py:228
+#: pages/home.py:107
+msgid "Crossword Puzzle"
+msgstr "හරස්පද ප්රහේලිකාව"
+
+#: pages/home.py:137
+msgid "BrowserPage"
+msgstr "බ් රව්සර් පිටුව"
+
+#: pages/home.py:145
+msgid "Editor"
+msgstr "සංස්කාරක"
+
+#: pages/home.py:147
+msgid "EditorPage"
+msgstr "කර්තෘ පිටුව"
+
+#: pages/home.py:165
+msgid "Global Settings"
+msgstr "ගෝලීය සැකසුම්"
+
+#: pages/home.py:172
+msgid "Language"
+msgstr "භාෂාව"
+
+#: pages/home.py:184
+msgid "Size"
+msgstr "ප්රමාණය"
+
+#: pages/home.py:205 pages/home.py:219
+msgid "Appearance"
+msgstr "පෙනුම"
+
+#: pages/home.py:226
 msgid "Crossword Quality"
 msgstr "හරස්පදයේ ගුණාත්මකභාවය"
+
+#: pages/home.py:322
+msgid "New version available!"
+msgstr "නව අනුවාදය තිබේ!"
 
 msgid "Geography"
 msgstr "භූගෝල විද්යාව"
@@ -602,12 +625,6 @@ msgstr "පරිගණක විද්යාව"
 msgid "User"
 msgstr "පරිශීලක"
 
-msgid "Total words"
-msgstr "මුළු වචන"
-
-msgid "Maximum"
-msgstr "උපරිම"
-
 msgid "Clue"
 msgstr "හෝඩුවාවන්"
 
@@ -616,9 +633,3 @@ msgstr "නම"
 
 msgid "Symbol"
 msgstr "සංකේතය"
-
-msgid "Search"
-msgstr "සෙවීම"
-
-msgid "New version available!"
-msgstr "නව අනුවාදය තිබේ!"

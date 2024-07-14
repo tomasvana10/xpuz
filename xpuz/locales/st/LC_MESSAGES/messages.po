@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-30 17:39+1000\n"
+"POT-Creation-Date: 2024-07-14 17:17+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: st <LL@li.org>\n"
@@ -19,58 +19,69 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: import_export.py:24
+#: import_export.py:37
 msgid "Select a destination to export your crosswords to"
 msgstr "Khetha sebaka seo u eang ho sona ha ho na thuso ea hau ho"
 
-#: import_export.py:28
+#: import_export.py:38
 msgid "my-crosswords"
 msgstr "Linoko tsa ka"
 
-#: import_export.py:70
-msgid ""
-"Select a valid crossword JSON file that was exported using xpuz"
+#: import_export.py:111
+msgid "Select a valid crossword JSON file that was exported using xpuz"
 msgstr ""
 "Khetha faele e sebetsang ea School JSON e neng e romelletsoe ho tsamaisana "
 "le ho beha Crossword_Puzle"
 
-#: app/templates/index.html:286 pdf.py:207
+#: ipuz.py:27
+msgid "Select a destination to export your ipuz to"
+msgstr "Khetha sebaka seo u eang ho sona ho romella IPUZ ea hau ho"
+
+#: pdf.py:53
+msgid "Answers"
+msgstr "Likarabo"
+
+#: pdf.py:64
+msgid "Select a destination to download your PDF to"
+msgstr "Khetha sebaka seo u eang ho sona ho jarolla PDF ea hau ho"
+
+#: app/templates/index.html:286 pdf.py:231
 msgid "Across"
 msgstr "Ka nako"
 
-#: app/templates/index.html:308 pdf.py:214
+#: app/templates/index.html:308 pdf.py:238
 msgid "Down"
 msgstr "Tlase"
 
-#: utils.py:58
+#: utils.py:60
 msgid "Remove"
 msgstr "Delete Delete"
 
-#: utils.py:59
+#: utils.py:61
 msgid "Are you sure you want to delete this"
 msgstr "Na u na le bonnete ba hore u batla ho hlakola sena"
 
-#: utils.py:61
+#: utils.py:63
 msgid "It will be lost forever!"
 msgstr "E tla lahleheloa ka ho sa feleng!"
 
-#: utils.py:66
+#: utils.py:68
 msgid "Add or select"
 msgstr "Eketsa kapa khetha"
 
-#: utils.py:67
+#: utils.py:69
 msgid "Are you sure you want to add/select a"
 msgstr "Na u na le bonnete ba hore u batla ho eketsa / khetha a"
 
-#: utils.py:69
+#: utils.py:71
 msgid "Your modified fields will be reset!"
 msgstr "Masimo a hau a fetotsoeng a tla fetoloa!"
 
-#: utils.py:74 utils.py:106
+#: utils.py:76 utils.py:108
 msgid "Back to home"
 msgstr "Khutlela hae"
 
-#: utils.py:75
+#: utils.py:77
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
@@ -78,12 +89,12 @@ msgstr ""
 "Na u na le bonnete ba hore u batla ho khutlela skrineng sa lapeng? Masimo a "
 "hau a fetotsoeng a tla fetoloa!"
 
-#: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
-#: utils.py:246
+#: utils.py:85 utils.py:157 utils.py:167 utils.py:173 utils.py:218
+#: utils.py:239 utils.py:245
 msgid "Info"
 msgstr "Info"
 
-#: utils.py:84
+#: utils.py:86
 msgid ""
 "Are you sure you want to import crosswords? Your modified fields will be "
 "reset!"
@@ -91,19 +102,19 @@ msgstr ""
 "Na u na le bonnete ba hore u batla ho kenya li-password tsa cross?Masimo a "
 "hau a fetotsoeng a tla khutlisoa!"
 
-#: utils.py:92
+#: utils.py:94
 msgid "Restart"
 msgstr "Qala hape"
 
-#: utils.py:92
+#: utils.py:94
 msgid "Are you sure you want to restart the app?"
 msgstr "Na ehlile u batla ho qala sesebelisoa hape?"
 
-#: pages/home.py:148 utils.py:97
+#: pages/home.py:155 utils.py:99
 msgid "Exit"
 msgstr "Etsoa"
 
-#: utils.py:98
+#: utils.py:100
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -111,7 +122,7 @@ msgstr ""
 "Na ehlile u batla ho tsoa ho app? Haeba sesebelisoa sa marang-rang se ntse "
 "se sebetsa, se tla emisoa."
 
-#: utils.py:107
+#: utils.py:109
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -119,29 +130,29 @@ msgstr ""
 "Na ehlile u batla ho khutlela skrineng sa lapeng? Sesebelisoa sa Marang-rang"
 " se tla emisoa."
 
-#: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
-#: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
-#: utils.py:220 utils.py:231 utils.py:263 utils.py:267
+#: utils.py:120 utils.py:125 utils.py:130 utils.py:135 utils.py:140
+#: utils.py:149 utils.py:162 utils.py:188 utils.py:196 utils.py:202
+#: utils.py:224 utils.py:262 utils.py:266
 msgid "Error"
 msgstr "Phoso"
 
-#: utils.py:118
+#: utils.py:120
 msgid "This language is already selected."
 msgstr "Puo ena e se e khethiloe."
 
-#: utils.py:123
+#: utils.py:125
 msgid "This size is already selected."
 msgstr "Boholo bona bo se bo khethiloe."
 
-#: utils.py:128
+#: utils.py:130
 msgid "This appearance is already selected."
 msgstr "Ponahalo ena e se e khethiloe."
 
-#: utils.py:133
+#: utils.py:135
 msgid "This quality is already selected."
 msgstr "Boleng bona bo se bo khethiloe."
 
-#: utils.py:139
+#: utils.py:141
 msgid ""
 "A crossword with this name and difficulty already exists. Please choose a "
 "new name and/or a new difficulty."
@@ -149,51 +160,51 @@ msgstr ""
 "Mokhabiso o nang le lebitso lena le mathata ana a se a ntse a le teng.Ka "
 "kopo khetha lebitso le lecha le / kapa bothata bo bocha."
 
-#: utils.py:148
+#: utils.py:150
 msgid "You have no crosswords to export. Please make some and try again."
 msgstr ""
 "Ha u na li-parpic ha li na ho romella kantle.Ka kopo etsa tse ling ebe u "
 "leka hape."
 
-#: utils.py:155
+#: utils.py:157
 msgid "Successfully exported your crosswords."
 msgstr "E romelletsoe ka katleho le li-cross tsa hau."
 
-#: utils.py:160
+#: utils.py:162
 msgid "Your crosswords could not be exported, sorry."
 msgstr "Linotlolo tsa hau li ne li ke ke tsa romelloa li romelloa."
 
-#: utils.py:166
+#: utils.py:168
 msgid "All of your crosswords were successfully imported."
 msgstr "Linoko tsa hau kaofela li ile tsa romelloa ka katleho."
 
-#: utils.py:172
+#: utils.py:174
 msgid "Your import could not be fully completed."
 msgstr "Ho kenella ha hao ho ke ke ha phetheloa ka botlalo."
 
-#: utils.py:174
+#: utils.py:176
 msgid ""
 "Crosswords with duplicate names and difficulties that were not imported: "
 msgstr "Linokonane le mabitso a kopitsang le mathata a sa buuoeng:"
 
-#: utils.py:180
+#: utils.py:182
 msgid "Invalid crosswords that were not imported: "
 msgstr "Linomoro tse sa sebetseng tse neng li sa fumanehe:"
 
-#: utils.py:187
+#: utils.py:189
 msgid "The specified JSON file is invalid and cannot be processed."
 msgstr "Faele ea JSON e boletsoeng e sa sebetse ebile e ke ke ea sebetsoa."
 
-#: utils.py:195
+#: utils.py:197
 msgid "This word already exists. Please choose a new word."
 msgstr ""
 "Lentsoe lena le se le ntse le le teng. Ka kopo khetha lentsoe le lecha."
 
-#: utils.py:201
+#: utils.py:203
 msgid "An error occurred while creating your PDF. Please try again."
 msgstr "Ho bile le phoso ha u ntse u etsa PDF ea hau.Ka kopo leka hape."
 
-#: utils.py:208
+#: utils.py:212
 msgid ""
 "words that could not be inserted during crossword generation will not be "
 "included in this PDF, sorry."
@@ -201,30 +212,18 @@ msgstr ""
 "Mantsoe a neng a ke ke a kenngoa nakong ea pokello ea mantsoe a ke ke a "
 "kenyelletsoa ho PDF ena, masoabi."
 
-#: utils.py:215
+#: utils.py:219
 msgid "Successfully wrote PDF."
 msgstr "O ile a ngola ka katleho."
 
-#: utils.py:221
-msgid ""
-"You are missing pywebview, which is required when viewing the crossword game"
-" in an embedded window. Please run"
-msgstr ""
-"U lahlehile PyweBview, e hlokahalang ha u sheba papali ea Crossword ka "
-"fensetere e kentsoeng.Ka kopo matha"
-
-#: utils.py:226
-msgid "to install this dependency."
-msgstr "ho kenya ho itšetleha hona."
-
-#: utils.py:232
+#: utils.py:225
 msgid ""
 "You are missing pycairo, which is required to perform this operation. Please"
 " run"
 msgstr ""
 "U hloloheloa pycairo, e hlokahalang ho etsa ts'ebetso ena.Ka kopo matha"
 
-#: utils.py:237
+#: utils.py:230
 msgid ""
 "and install the headers for pycairo if you are not on Windows using "
 "pycairo's Getting Started guide"
@@ -232,7 +231,11 @@ msgstr ""
 "le ho kenya lihlooho tsa pycairo haeba u se lifensetere li sebelisa tataiso "
 "ea pycairo"
 
-#: utils.py:247
+#: utils.py:240
+msgid "Successfully wrote ipuz"
+msgstr "O ngotse ka katleho ipuz"
+
+#: utils.py:246
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -254,30 +257,30 @@ msgstr ""
 " Lits'ebetso tsohle tsa app tse sa kang tsa felisoa ka nepo li ka felisoa ka"
 " Activity Monitor ho MacOS, kapa, feela qala komporo ea hau hape ho e emisa."
 
-#: utils.py:269
+#: utils.py:268
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
 "Ho bile le phoso e sa lebelloang. Ka kopo, leka ho kenya kopo ea hau hape"
 
-#: utils.py:790
+#: utils.py:840
 msgid "Definitions are empty"
 msgstr "Litlhaloso ha li na letho"
 
-#: utils.py:793
+#: utils.py:843
 msgid "The word count or definitions are less than 3 in length"
 msgstr "Palo kapa litlhaloso li ka tlase ho 3 ka bolelele"
 
-#: utils.py:797
+#: utils.py:847
 msgid "Length of the word count is greater than the definitions"
 msgstr "Boholo ba lentsoe bo phahame ho feta litlhaloso"
 
-#: utils.py:800
+#: utils.py:850
 msgid "Escape character present in word"
 msgstr "ʻO ka hoʻohaʻana i ka hoʻohaʻana i ka"
 
 #: app/templates/index.html:13 app/templates/index.html:338
-#: pages/browser.py:458
+#: pages/browser.py:545
 msgid "Crossword Puzzle - Game"
 msgstr "Crossword Pozzle - papali"
 
@@ -359,237 +362,257 @@ msgstr "Tsoela pele"
 msgid "You completed the crossword!"
 msgstr "U qetile mantsoe a sefapano!"
 
-#: app/templates/index.html:368 pages/browser.py:718
+#: app/templates/index.html:368 pages/browser.py:797
 msgid "Close"
 msgstr "Koala"
 
-#: pages/browser.py:142
-msgid "Crossword Browser"
-msgstr "Crossword Browser"
-
-#: pages/browser.py:147 pages/editor.py:363
-msgid "Back"
-msgstr "Boa Boa"
-
-#: pages/browser.py:151 pages/editor.py:367 pages/home.py:305
-msgid "HomePage"
-msgstr "Home Site Seo"
-
-#: pages/browser.py:162
+#: pages/browser.py:92
 msgid "Categorised"
 msgstr "Ka hoʻohaʻana i ka hoʻohaʻana"
 
-#: pages/browser.py:162 pages/browser.py:314
+#: pages/browser.py:92 pages/browser.py:393
 msgid "Flattened"
 msgstr "Ho ho ho flattened"
 
-#: pages/browser.py:191
-msgid "Create"
-msgstr "Theha"
-
-#: pages/browser.py:200
-msgid "Play"
-msgstr "Bapala"
-
-#: pages/browser.py:208 pages/home.py:126
+#: pages/browser.py:98 pages/home.py:135
 msgid "Browser"
 msgstr "Mohaser"
 
-#: pages/browser.py:208
+#: pages/browser.py:98
 msgid "Embedded"
 msgstr "E kenelletse"
 
-#: pages/browser.py:211
+#: pages/browser.py:102
+msgid "PDF"
+msgstr "PDF"
+
+#: pages/browser.py:102
+msgid "ipuz"
+msgstr "ipuz"
+
+#: pages/browser.py:183
+msgid "Crossword Browser"
+msgstr "Crossword Browser"
+
+#: pages/browser.py:189 pages/editor.py:371
+msgid "Back"
+msgstr "Boa Boa"
+
+#: pages/browser.py:193 pages/editor.py:375 pages/home.py:305
+msgid "HomePage"
+msgstr "Home Site Seo"
+
+#: pages/browser.py:219 pages/browser.py:412
+msgid "Search"
+msgstr "Batla"
+
+#: pages/browser.py:232
+msgid "Create"
+msgstr "Theha"
+
+#: pages/browser.py:241
+msgid "Play"
+msgstr "Bapala"
+
+#: pages/browser.py:251
 msgid "Game view"
 msgstr "Sheba pono ea papali"
 
-#: pages/browser.py:237
-msgid "Write to PDF"
-msgstr "Ngola ho PDF"
+#: pages/browser.py:275
+msgid "Export as"
+msgstr "Ho romella kantle joalo"
 
-#: pages/browser.py:245
+#: pages/browser.py:313
 msgid "Destroy"
 msgstr "Senya"
 
-#: pages/browser.py:256
+#: pages/browser.py:324
 msgid "Word count preferences"
 msgstr "Likhetho tsa palo ea mantsoe"
 
-#: pages/browser.py:271 pages/browser.py:400 pages/browser.py:433
-#: pages/browser.py:627
+#: pages/browser.py:339 pages/browser.py:482 pages/browser.py:520
+#: pages/browser.py:706
 msgid "Select word count"
 msgstr "Khetha palo ea mantsoe"
 
-#: pages/browser.py:286
+#: pages/browser.py:343 pages/browser.py:519 pages/browser.py:717
+msgid "Maximum"
+msgstr "Boholo"
+
+#: pages/browser.py:354
 msgid "Custom"
 msgstr "Tloaelo"
 
-#: pages/browser.py:499
-msgid "Select a destination to download your PDF to"
-msgstr "Khetha sebaka seo u eang ho sona ho jarolla PDF ea hau ho"
-
-#: pages/browser.py:607
+#: pages/browser.py:686
 msgid "To perform this operation, you must first select a cell."
 msgstr "Ho etsa ts'ebetso ena, o tlameha ho khetha sele."
 
-#: pages/browser.py:711
+#: pages/browser.py:790
 msgid "View"
 msgstr "Sheba"
 
-#: pages/browser.py:915
-msgid "Select"
-msgstr "Khetha"
+#: pages/browser.py:971
+msgid "Total words"
+msgstr "Mantsoe a felletseng"
 
-#: pages/editor.py:357
-msgid "Crossword Editor"
-msgstr "Crossword Editor"
-
-#: pages/editor.py:495 pages/editor.py:718 pages/editor.py:808
-#: pages/editor.py:948
-msgid "Your Crosswords"
-msgstr "Li-crosswords tsa hau"
-
-#: pages/editor.py:559 pages/editor.py:812 pages/editor.py:955
-#: pages/editor.py:1042 pages/editor.py:1155 pages/editor.py:1269
-msgid "Save"
-msgstr "Mpolokeng"
-
-#: pages/editor.py:571
-msgid "length >= 1 and valid OS file name"
-msgstr "Length > = 1 & Valid OS File Name"
-
-#: pages/editor.py:580
-msgid "length == 1"
-msgstr "Leng = 1"
-
-#: pages/editor.py:586
+#: pages/browser.py:977 pages/editor.py:622
 msgid "Difficulty"
 msgstr "Bothata"
 
-#: pages/editor.py:593
+#: pages/browser.py:991
+msgid "Select"
+msgstr "Khetha"
+
+#: pages/editor.py:365
+msgid "Crossword Editor"
+msgstr "Crossword Editor"
+
+#: pages/editor.py:526 pages/editor.py:738 pages/editor.py:830
+#: pages/editor.py:970
+msgid "Your Crosswords"
+msgstr "Li-crosswords tsa hau"
+
+#: pages/editor.py:595 pages/editor.py:835 pages/editor.py:979
+#: pages/editor.py:1069 pages/editor.py:1182 pages/editor.py:1296
+msgid "Save"
+msgstr "Mpolokeng"
+
+#: pages/editor.py:607
+msgid "length >= 1 and valid OS file name"
+msgstr "Length > = 1 & Valid OS File Name"
+
+#: pages/editor.py:616
+msgid "length == 1"
+msgstr "Leng = 1"
+
+#: pages/editor.py:629
 msgid "Easy"
 msgstr "Bonolo"
 
-#: pages/editor.py:593
+#: pages/editor.py:629
 msgid "Medium"
 msgstr "Mahareng"
 
-#: pages/editor.py:593
+#: pages/editor.py:629
 msgid "Hard"
 msgstr "E thata"
 
-#: pages/editor.py:593
+#: pages/editor.py:629
 msgid "Extreme"
 msgstr "Feteletseng"
 
-#: pages/editor.py:718 pages/editor.py:1098
+#: pages/editor.py:738 pages/editor.py:1125
 msgid "Adding"
 msgstr "Phaella ka ho re"
 
-#: pages/editor.py:721 pages/editor.py:1102
+#: pages/editor.py:742 pages/editor.py:1129
 msgid "Add"
 msgstr "Eketsang"
 
-#: pages/editor.py:900 pages/editor.py:1218
+#: pages/editor.py:922 pages/editor.py:1245
 msgid "Press"
 msgstr "Press ea khatiso"
 
-#: pages/editor.py:902 pages/editor.py:1220
+#: pages/editor.py:924 pages/editor.py:1247
 msgid "to add a"
 msgstr "Add a ho ho"
 
-#: pages/editor.py:904
+#: pages/editor.py:926
 msgid "new crossword."
 msgstr "Polelo e ncha."
 
-#: pages/editor.py:948 pages/editor.py:1265
+#: pages/editor.py:970 pages/editor.py:1292
 msgid "Editing"
 msgstr "Ho hlophisa"
 
-#: pages/editor.py:1010 pages/editor.py:1098 pages/editor.py:1150
-#: pages/editor.py:1265
+#: pages/editor.py:1037 pages/editor.py:1125 pages/editor.py:1177
+#: pages/editor.py:1292
 msgid "Your Words"
 msgstr "Mantsoe a hau"
 
-#: pages/editor.py:1054
+#: pages/editor.py:1081
 msgid "length >= 1 and length <= 32 and is a language character"
 msgstr "bolelele > = 1 le bolelele < = 32 mme ke semelo sa puo"
 
-#: pages/editor.py:1065
+#: pages/editor.py:1092
 msgid "length >= 1"
 msgstr "Leng > = 1"
 
-#: pages/editor.py:1222
+#: pages/editor.py:1249
 msgid "new word."
 msgstr "Lentsoe le lecha."
 
-#: pages/home.py:98
-msgid "Crossword Puzzle"
-msgstr "Phapanyetsano ea Mantsoe"
-
-#: pages/home.py:128
-msgid "BrowserPage"
-msgstr "Sebaka sa ho browser"
-
-#: pages/home.py:137
-msgid "Editor"
-msgstr "Mohlophisi"
-
-#: pages/home.py:139
-msgid "EditorPage"
-msgstr "Mohlophisi oa Leqephe"
-
-#: pages/home.py:159
-msgid "Global Settings"
-msgstr "Litlhophiso tsa Global"
-
-#: pages/home.py:166
-msgid "Language"
-msgstr "Lesli Lesme"
-
-#: pages/home.py:178
-msgid "Size"
-msgstr "Boholo"
-
-#: pages/home.py:197
+#: pages/home.py:64
 msgid "light"
 msgstr "kganya"
 
-#: pages/home.py:197
+#: pages/home.py:64
 msgid "dark"
 msgstr "lefifi"
 
-#: pages/home.py:197
+#: pages/home.py:64
 msgid "system"
 msgstr "tsamaiso"
 
-#: pages/home.py:200 pages/home.py:214
-msgid "Appearance"
-msgstr "Ponahalo"
-
-#: pages/home.py:220
+#: pages/home.py:66
 msgid "terrible"
 msgstr "e mpe"
 
-#: pages/home.py:221
+#: pages/home.py:67
 msgid "poor"
 msgstr "mafutsana"
 
-#: pages/home.py:222
+#: pages/home.py:68
 msgid "average"
 msgstr "Karolelano"
 
-#: pages/home.py:223
+#: pages/home.py:69
 msgid "great"
 msgstr "e kholo"
 
-#: pages/home.py:224
+#: pages/home.py:70
 msgid "perfect"
 msgstr "E phethahetseng"
 
-#: pages/home.py:228
+#: pages/home.py:107
+msgid "Crossword Puzzle"
+msgstr "Phapanyetsano ea Mantsoe"
+
+#: pages/home.py:137
+msgid "BrowserPage"
+msgstr "Sebaka sa ho browser"
+
+#: pages/home.py:145
+msgid "Editor"
+msgstr "Mohlophisi"
+
+#: pages/home.py:147
+msgid "EditorPage"
+msgstr "Mohlophisi oa Leqephe"
+
+#: pages/home.py:165
+msgid "Global Settings"
+msgstr "Litlhophiso tsa Global"
+
+#: pages/home.py:172
+msgid "Language"
+msgstr "Lesli Lesme"
+
+#: pages/home.py:184
+msgid "Size"
+msgstr "Boholo"
+
+#: pages/home.py:205 pages/home.py:219
+msgid "Appearance"
+msgstr "Ponahalo"
+
+#: pages/home.py:226
 msgid "Crossword Quality"
 msgstr "Boleng ba mantsoe"
+
+#: pages/home.py:322
+msgid "New version available!"
+msgstr "Phetolelo e ncha e teng!"
 
 msgid "Geography"
 msgstr "Geography"
@@ -606,12 +629,6 @@ msgstr "Mahlale a likomporo"
 msgid "User"
 msgstr "Basebelisi ba"
 
-msgid "Total words"
-msgstr "Mantsoe a felletseng"
-
-msgid "Maximum"
-msgstr "Boholo"
-
 msgid "Clue"
 msgstr "Leang Clue"
 
@@ -620,9 +637,3 @@ msgstr "Lebitso la lebitso"
 
 msgid "Symbol"
 msgstr "Letšoao la letšoao"
-
-msgid "Search"
-msgstr "Batla"
-
-msgid "New version available!"
-msgstr "Phetolelo e ncha e teng!"

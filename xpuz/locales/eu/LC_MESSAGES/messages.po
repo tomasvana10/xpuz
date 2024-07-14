@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-30 17:39+1000\n"
+"POT-Creation-Date: 2024-07-14 17:17+1000\n"
 "PO-Revision-Date: 2024-02-18 13:24+1100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: eu <LL@li.org>\n"
@@ -19,56 +19,67 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.15.0\n"
 
-#: import_export.py:24
+#: import_export.py:37
 msgid "Select a destination to export your crosswords to"
 msgstr "Aukeratu helmuga zure gurutzegramak esportatzeko"
 
-#: import_export.py:28
+#: import_export.py:38
 msgid "my-crosswords"
 msgstr "Nire gurutzegramak"
 
-#: import_export.py:70
-msgid ""
-"Select a valid crossword JSON file that was exported using xpuz"
+#: import_export.py:111
+msgid "Select a valid crossword JSON file that was exported using xpuz"
 msgstr "Hautatu gurutze-hitzak erabiliz esportatu den gurutzegrama baliozkoa"
 
-#: app/templates/index.html:286 pdf.py:207
+#: ipuz.py:27
+msgid "Select a destination to export your ipuz to"
+msgstr "Hautatu helmuga zure ipuz esportatzeko"
+
+#: pdf.py:53
+msgid "Answers"
+msgstr "Erantzun"
+
+#: pdf.py:64
+msgid "Select a destination to download your PDF to"
+msgstr "Hautatu helmuga zure PDF deskargatzeko"
+
+#: app/templates/index.html:286 pdf.py:231
 msgid "Across"
 msgstr "-Tik zehar"
 
-#: app/templates/index.html:308 pdf.py:214
+#: app/templates/index.html:308 pdf.py:238
 msgid "Down"
 msgstr "Beherantz"
 
-#: utils.py:58
+#: utils.py:60
 msgid "Remove"
 msgstr "Ezabatu"
 
-#: utils.py:59
+#: utils.py:61
 msgid "Are you sure you want to delete this"
 msgstr "Ziur al zaude hau ezabatu nahi duzula?"
 
-#: utils.py:61
+#: utils.py:63
 msgid "It will be lost forever!"
 msgstr "Betiko galduko da!"
 
-#: utils.py:66
+#: utils.py:68
 msgid "Add or select"
 msgstr "Gehitu edo aukeratu"
 
-#: utils.py:67
+#: utils.py:69
 msgid "Are you sure you want to add/select a"
 msgstr "Ziur al zaude gehitu/ aukeratu nahi duzula"
 
-#: utils.py:69
+#: utils.py:71
 msgid "Your modified fields will be reset!"
 msgstr "Bere eremu eraldatuak berrezarri egingo dira!"
 
-#: utils.py:74 utils.py:106
+#: utils.py:76 utils.py:108
 msgid "Back to home"
 msgstr "Itzuli etxera"
 
-#: utils.py:75
+#: utils.py:77
 msgid ""
 "Are you sure you want to go back to the home screen? Your modified fields "
 "will be reset!"
@@ -76,12 +87,12 @@ msgstr ""
 "Ziur al zaude hasierako pantailara itzuli nahi duzula? Bere eremu eraldatuak"
 " berrezarri egingo dira!"
 
-#: utils.py:83 utils.py:155 utils.py:165 utils.py:171 utils.py:214
-#: utils.py:246
+#: utils.py:85 utils.py:157 utils.py:167 utils.py:173 utils.py:218
+#: utils.py:239 utils.py:245
 msgid "Info"
 msgstr "Info"
 
-#: utils.py:84
+#: utils.py:86
 msgid ""
 "Are you sure you want to import crosswords? Your modified fields will be "
 "reset!"
@@ -89,19 +100,19 @@ msgstr ""
 "Ziur al zaude gurutzegramak inportatu nahi dituzula?Aldatutako eremuak "
 "berrezarri egingo dira!"
 
-#: utils.py:92
+#: utils.py:94
 msgid "Restart"
 msgstr "Berriro hasi"
 
-#: utils.py:92
+#: utils.py:94
 msgid "Are you sure you want to restart the app?"
 msgstr "Ziur aplikazioa berrabiarazi nahi duzula?"
 
-#: pages/home.py:148 utils.py:97
+#: pages/home.py:155 utils.py:99
 msgid "Exit"
 msgstr "Irten"
 
-#: utils.py:98
+#: utils.py:100
 msgid ""
 "Are you sure you want to exit the app? If the web app is running, it will be"
 " terminated."
@@ -109,7 +120,7 @@ msgstr ""
 "Ziur aplikaziotik irten nahi duzula? Web aplikazioa martxan badago, amaitu "
 "egingo da."
 
-#: utils.py:107
+#: utils.py:109
 msgid ""
 "Are you sure you want to go back to the home screen? The web app will be "
 "terminated."
@@ -117,29 +128,29 @@ msgstr ""
 "Ziur hasierako pantailara itzuli nahi duzula? Web aplikazioa amaitu egingo "
 "da."
 
-#: utils.py:118 utils.py:123 utils.py:128 utils.py:133 utils.py:138
-#: utils.py:147 utils.py:160 utils.py:186 utils.py:194 utils.py:200
-#: utils.py:220 utils.py:231 utils.py:263 utils.py:267
+#: utils.py:120 utils.py:125 utils.py:130 utils.py:135 utils.py:140
+#: utils.py:149 utils.py:162 utils.py:188 utils.py:196 utils.py:202
+#: utils.py:224 utils.py:262 utils.py:266
 msgid "Error"
 msgstr "Errorea"
 
-#: utils.py:118
+#: utils.py:120
 msgid "This language is already selected."
 msgstr "Hizkuntza hau dagoeneko hautatuta dago."
 
-#: utils.py:123
+#: utils.py:125
 msgid "This size is already selected."
 msgstr "Tamaina hau dagoeneko hautatuta dago."
 
-#: utils.py:128
+#: utils.py:130
 msgid "This appearance is already selected."
 msgstr "Itxura hau dagoeneko hautatuta dago."
 
-#: utils.py:133
+#: utils.py:135
 msgid "This quality is already selected."
 msgstr "Kalitate hori dagoeneko hautatuta dago."
 
-#: utils.py:139
+#: utils.py:141
 msgid ""
 "A crossword with this name and difficulty already exists. Please choose a "
 "new name and/or a new difficulty."
@@ -147,51 +158,51 @@ msgstr ""
 "Izen eta zailtasun honekin gurutzegrama bat dago dagoeneko.Mesedez, aukeratu"
 " izen berria eta / edo zailtasun berri bat."
 
-#: utils.py:148
+#: utils.py:150
 msgid "You have no crosswords to export. Please make some and try again."
 msgstr ""
 "Ez duzu gurutzegramarik esportatzeko.Mesedez, egin batzuk eta saiatu "
 "berriro."
 
-#: utils.py:155
+#: utils.py:157
 msgid "Successfully exported your crosswords."
 msgstr "Arrakastaz esportatu zure gurutzegramak."
 
-#: utils.py:160
+#: utils.py:162
 msgid "Your crosswords could not be exported, sorry."
 msgstr "Ezin izan dira zure gurutzegramak esportatu, barkatu."
 
-#: utils.py:166
+#: utils.py:168
 msgid "All of your crosswords were successfully imported."
 msgstr "Zure hitz gurutzatu guztiak behar bezala inportatu ziren."
 
-#: utils.py:172
+#: utils.py:174
 msgid "Your import could not be fully completed."
 msgstr "Ezin izan da zure inportazioa guztiz osatu."
 
-#: utils.py:174
+#: utils.py:176
 msgid ""
 "Crosswords with duplicate names and difficulties that were not imported: "
 msgstr "Gurutzegramak inportatu ez ziren izen eta zailtasunekin:"
 
-#: utils.py:180
+#: utils.py:182
 msgid "Invalid crosswords that were not imported: "
 msgstr "Inportatu ez ziren gurutzegrama baliogabeak:"
 
-#: utils.py:187
+#: utils.py:189
 msgid "The specified JSON file is invalid and cannot be processed."
 msgstr "Zehaztutako JSON fitxategia baliogabea da eta ezin da prozesatu."
 
-#: utils.py:195
+#: utils.py:197
 msgid "This word already exists. Please choose a new word."
 msgstr "Hitz hau existitzen da. Mesedez, aukeratu beste hitz bat."
 
-#: utils.py:201
+#: utils.py:203
 msgid "An error occurred while creating your PDF. Please try again."
 msgstr ""
 "Errore bat gertatu da zure PDF sortu bitartean.Saiatu berriro mesedez."
 
-#: utils.py:208
+#: utils.py:212
 msgid ""
 "words that could not be inserted during crossword generation will not be "
 "included in this PDF, sorry."
@@ -199,23 +210,11 @@ msgstr ""
 "Gurutzegramak sortzerakoan sartu ezin diren hitzak ez dira PDF honetan "
 "sartuko, barkatu."
 
-#: utils.py:215
+#: utils.py:219
 msgid "Successfully wrote PDF."
 msgstr "Arrakastaz idatzi du pdf."
 
-#: utils.py:221
-msgid ""
-"You are missing pywebview, which is required when viewing the crossword game"
-" in an embedded window. Please run"
-msgstr ""
-"Pywebview falta zaizu, gurutzegramak ikusgai dagoen leiho batean ikustean "
-"beharrezkoa da.Mesedez exekutatu"
-
-#: utils.py:226
-msgid "to install this dependency."
-msgstr "mendekotasun hori instalatzeko."
-
-#: utils.py:232
+#: utils.py:225
 msgid ""
 "You are missing pycairo, which is required to perform this operation. Please"
 " run"
@@ -223,7 +222,7 @@ msgstr ""
 "Pysairo falta zaizu, funtzionamendu hau burutzeko beharrezkoa dena.Mesedez "
 "exekutatu"
 
-#: utils.py:237
+#: utils.py:230
 msgid ""
 "and install the headers for pycairo if you are not on Windows using "
 "pycairo's Getting Started guide"
@@ -231,7 +230,11 @@ msgstr ""
 "eta instalatu goiburuak pycairoren leihoetan ez bazaude Pycairoren hasitako "
 "gida erabiliz"
 
-#: utils.py:247
+#: utils.py:240
+msgid "Successfully wrote ipuz"
+msgstr "Arrakastaz idatzi zuen ipuz"
+
+#: utils.py:246
 msgid ""
 "First time launch, please read: Once you have loaded a crossword, and wish "
 "to load another one, you must first terminate the web app. IMPORTANT: If you"
@@ -253,30 +256,30 @@ msgstr ""
 "aplikazio-prozesu guztiak MacOS-en Activity Monitor-en bidez amaitu daitezke"
 " edo, besterik gabe, berrabiarazi ordenagailua horiek amaitzeko."
 
-#: utils.py:269
+#: utils.py:268
 msgid ""
 "An unexpected error occured. Please try reinstalling the application with"
 msgstr ""
 "Ustekabeko akatsa gertatu da. Saiatu aplikazioa berriro martxan jartzeko"
 
-#: utils.py:790
+#: utils.py:840
 msgid "Definitions are empty"
 msgstr "Definizioak hutsik daude"
 
-#: utils.py:793
+#: utils.py:843
 msgid "The word count or definitions are less than 3 in length"
 msgstr "Hitzen edo definizioen kopuruak 3 luzera baino gutxiago ditu"
 
-#: utils.py:797
+#: utils.py:847
 msgid "Length of the word count is greater than the definitions"
 msgstr "Hitzen zenbaketaren luzera definizioena baino handiagoa da"
 
-#: utils.py:800
+#: utils.py:850
 msgid "Escape character present in word"
 msgstr "Hitzean dagoen ihes-izaera"
 
 #: app/templates/index.html:13 app/templates/index.html:338
-#: pages/browser.py:458
+#: pages/browser.py:545
 msgid "Crossword Puzzle - Game"
 msgstr "Gurutzegramaren puzzlea - jokoa"
 
@@ -358,237 +361,257 @@ msgstr "Jarraitu"
 msgid "You completed the crossword!"
 msgstr "Gurutzegrama osatu duzu!"
 
-#: app/templates/index.html:368 pages/browser.py:718
+#: app/templates/index.html:368 pages/browser.py:797
 msgid "Close"
 msgstr "Itxi"
 
-#: pages/browser.py:142
-msgid "Crossword Browser"
-msgstr "Gurutzegrama arakatzailea"
-
-#: pages/browser.py:147 pages/editor.py:363
-msgid "Back"
-msgstr "Atzera"
-
-#: pages/browser.py:151 pages/editor.py:367 pages/home.py:305
-msgid "HomePage"
-msgstr "Orrialde nagusia"
-
-#: pages/browser.py:162
+#: pages/browser.py:92
 msgid "Categorised"
 msgstr "Kategorizatuak"
 
-#: pages/browser.py:162 pages/browser.py:314
+#: pages/browser.py:92 pages/browser.py:393
 msgid "Flattened"
 msgstr "Aplanatua"
 
-#: pages/browser.py:191
-msgid "Create"
-msgstr "Sortu"
-
-#: pages/browser.py:200
-msgid "Play"
-msgstr "Jokatu"
-
-#: pages/browser.py:208 pages/home.py:126
+#: pages/browser.py:98 pages/home.py:135
 msgid "Browser"
 msgstr "Esploratzaile"
 
-#: pages/browser.py:208
+#: pages/browser.py:98
 msgid "Embedded"
 msgstr "Kapsulatu"
 
-#: pages/browser.py:211
+#: pages/browser.py:102
+msgid "PDF"
+msgstr "Pdf"
+
+#: pages/browser.py:102
+msgid "ipuz"
+msgstr "iparr"
+
+#: pages/browser.py:183
+msgid "Crossword Browser"
+msgstr "Gurutzegrama arakatzailea"
+
+#: pages/browser.py:189 pages/editor.py:371
+msgid "Back"
+msgstr "Atzera"
+
+#: pages/browser.py:193 pages/editor.py:375 pages/home.py:305
+msgid "HomePage"
+msgstr "Orrialde nagusia"
+
+#: pages/browser.py:219 pages/browser.py:412
+msgid "Search"
+msgstr "Araketa"
+
+#: pages/browser.py:232
+msgid "Create"
+msgstr "Sortu"
+
+#: pages/browser.py:241
+msgid "Play"
+msgstr "Jokatu"
+
+#: pages/browser.py:251
 msgid "Game view"
 msgstr "Game Ikuspegia"
 
-#: pages/browser.py:237
-msgid "Write to PDF"
-msgstr "Idatzi pdf-ri"
+#: pages/browser.py:275
+msgid "Export as"
+msgstr "Esportatu gisa"
 
-#: pages/browser.py:245
+#: pages/browser.py:313
 msgid "Destroy"
 msgstr "Suntsitu"
 
-#: pages/browser.py:256
+#: pages/browser.py:324
 msgid "Word count preferences"
 msgstr "Hitz kopuruaren hobespenak"
 
-#: pages/browser.py:271 pages/browser.py:400 pages/browser.py:433
-#: pages/browser.py:627
+#: pages/browser.py:339 pages/browser.py:482 pages/browser.py:520
+#: pages/browser.py:706
 msgid "Select word count"
 msgstr "Hautatu hitz kopurua"
 
-#: pages/browser.py:286
+#: pages/browser.py:343 pages/browser.py:519 pages/browser.py:717
+msgid "Maximum"
+msgstr "Gehienezko"
+
+#: pages/browser.py:354
 msgid "Custom"
 msgstr "Pertsonalizatua"
 
-#: pages/browser.py:499
-msgid "Select a destination to download your PDF to"
-msgstr "Hautatu helmuga zure PDF deskargatzeko"
-
-#: pages/browser.py:607
+#: pages/browser.py:686
 msgid "To perform this operation, you must first select a cell."
 msgstr "Eragiketa hau burutzeko, gelaxka bat aukeratu behar duzu lehenengo."
 
-#: pages/browser.py:711
+#: pages/browser.py:790
 msgid "View"
 msgstr "Ikusi"
 
-#: pages/browser.py:915
-msgid "Select"
-msgstr "Hautatu"
+#: pages/browser.py:971
+msgid "Total words"
+msgstr "Hitz guztira"
 
-#: pages/editor.py:357
-msgid "Crossword Editor"
-msgstr "Gurutzegrametako Editorea"
-
-#: pages/editor.py:495 pages/editor.py:718 pages/editor.py:808
-#: pages/editor.py:948
-msgid "Your Crosswords"
-msgstr "Zure gurutzegramak"
-
-#: pages/editor.py:559 pages/editor.py:812 pages/editor.py:955
-#: pages/editor.py:1042 pages/editor.py:1155 pages/editor.py:1269
-msgid "Save"
-msgstr "Salbatu"
-
-#: pages/editor.py:571
-msgid "length >= 1 and valid OS file name"
-msgstr "> luzera= 1 eta baliozko sistema eragilearen artxibo-izena"
-
-#: pages/editor.py:580
-msgid "length == 1"
-msgstr "luzera == 1"
-
-#: pages/editor.py:586
+#: pages/browser.py:977 pages/editor.py:622
 msgid "Difficulty"
 msgstr "Zailtasun"
 
-#: pages/editor.py:593
+#: pages/browser.py:991
+msgid "Select"
+msgstr "Hautatu"
+
+#: pages/editor.py:365
+msgid "Crossword Editor"
+msgstr "Gurutzegrametako Editorea"
+
+#: pages/editor.py:526 pages/editor.py:738 pages/editor.py:830
+#: pages/editor.py:970
+msgid "Your Crosswords"
+msgstr "Zure gurutzegramak"
+
+#: pages/editor.py:595 pages/editor.py:835 pages/editor.py:979
+#: pages/editor.py:1069 pages/editor.py:1182 pages/editor.py:1296
+msgid "Save"
+msgstr "Salbatu"
+
+#: pages/editor.py:607
+msgid "length >= 1 and valid OS file name"
+msgstr "> luzera= 1 eta baliozko sistema eragilearen artxibo-izena"
+
+#: pages/editor.py:616
+msgid "length == 1"
+msgstr "luzera == 1"
+
+#: pages/editor.py:629
 msgid "Easy"
 msgstr "Erraza"
 
-#: pages/editor.py:593
+#: pages/editor.py:629
 msgid "Medium"
 msgstr "Ertaina"
 
-#: pages/editor.py:593
+#: pages/editor.py:629
 msgid "Hard"
 msgstr "Gogorra"
 
-#: pages/editor.py:593
+#: pages/editor.py:629
 msgid "Extreme"
 msgstr "Muturrekoa"
 
-#: pages/editor.py:718 pages/editor.py:1098
+#: pages/editor.py:738 pages/editor.py:1125
 msgid "Adding"
 msgstr "Gehitu"
 
-#: pages/editor.py:721 pages/editor.py:1102
+#: pages/editor.py:742 pages/editor.py:1129
 msgid "Add"
 msgstr "Gehitu"
 
-#: pages/editor.py:900 pages/editor.py:1218
+#: pages/editor.py:922 pages/editor.py:1245
 msgid "Press"
 msgstr "Prentsa"
 
-#: pages/editor.py:902 pages/editor.py:1220
+#: pages/editor.py:924 pages/editor.py:1247
 msgid "to add a"
 msgstr "Gehitzeko"
 
-#: pages/editor.py:904
+#: pages/editor.py:926
 msgid "new crossword."
 msgstr "Gurutzegrama berria."
 
-#: pages/editor.py:948 pages/editor.py:1265
+#: pages/editor.py:970 pages/editor.py:1292
 msgid "Editing"
 msgstr "Zuzenketa"
 
-#: pages/editor.py:1010 pages/editor.py:1098 pages/editor.py:1150
-#: pages/editor.py:1265
+#: pages/editor.py:1037 pages/editor.py:1125 pages/editor.py:1177
+#: pages/editor.py:1292
 msgid "Your Words"
 msgstr "Bere hitzak"
 
-#: pages/editor.py:1054
+#: pages/editor.py:1081
 msgid "length >= 1 and length <= 32 and is a language character"
 msgstr "> luzera= 1 eta luzera <= 32 eta hizkuntza-izaera"
 
-#: pages/editor.py:1065
+#: pages/editor.py:1092
 msgid "length >= 1"
 msgstr "> luzera= 1"
 
-#: pages/editor.py:1222
+#: pages/editor.py:1249
 msgid "new word."
 msgstr "Hitz berria."
 
-#: pages/home.py:98
-msgid "Crossword Puzzle"
-msgstr "Gurutzegrama"
-
-#: pages/home.py:128
-msgid "BrowserPage"
-msgstr "BrowserPage (Nabigatzailearen orrialdea)"
-
-#: pages/home.py:137
-msgid "Editor"
-msgstr "Editor"
-
-#: pages/home.py:139
-msgid "EditorPage"
-msgstr "EditorPage"
-
-#: pages/home.py:159
-msgid "Global Settings"
-msgstr "Ezarpen orokorrak"
-
-#: pages/home.py:166
-msgid "Language"
-msgstr "Hizkuntza"
-
-#: pages/home.py:178
-msgid "Size"
-msgstr "Tamaina"
-
-#: pages/home.py:197
+#: pages/home.py:64
 msgid "light"
 msgstr "argia"
 
-#: pages/home.py:197
+#: pages/home.py:64
 msgid "dark"
 msgstr "iluna"
 
-#: pages/home.py:197
+#: pages/home.py:64
 msgid "system"
 msgstr "sistema"
 
-#: pages/home.py:200 pages/home.py:214
-msgid "Appearance"
-msgstr "Itxura"
-
-#: pages/home.py:220
+#: pages/home.py:66
 msgid "terrible"
 msgstr "anker"
 
-#: pages/home.py:221
+#: pages/home.py:67
 msgid "poor"
 msgstr "txiro"
 
-#: pages/home.py:222
+#: pages/home.py:68
 msgid "average"
 msgstr "batezbesteko"
 
-#: pages/home.py:223
+#: pages/home.py:69
 msgid "great"
 msgstr "handi"
 
-#: pages/home.py:224
+#: pages/home.py:70
 msgid "perfect"
 msgstr "ezin hobe"
 
-#: pages/home.py:228
+#: pages/home.py:107
+msgid "Crossword Puzzle"
+msgstr "Gurutzegrama"
+
+#: pages/home.py:137
+msgid "BrowserPage"
+msgstr "BrowserPage (Nabigatzailearen orrialdea)"
+
+#: pages/home.py:145
+msgid "Editor"
+msgstr "Editor"
+
+#: pages/home.py:147
+msgid "EditorPage"
+msgstr "EditorPage"
+
+#: pages/home.py:165
+msgid "Global Settings"
+msgstr "Ezarpen orokorrak"
+
+#: pages/home.py:172
+msgid "Language"
+msgstr "Hizkuntza"
+
+#: pages/home.py:184
+msgid "Size"
+msgstr "Tamaina"
+
+#: pages/home.py:205 pages/home.py:219
+msgid "Appearance"
+msgstr "Itxura"
+
+#: pages/home.py:226
 msgid "Crossword Quality"
 msgstr "Gurutzegramaren kalitatea"
+
+#: pages/home.py:322
+msgid "New version available!"
+msgstr "Bertsio berria eskuragarri!"
 
 msgid "Geography"
 msgstr "Geografia"
@@ -605,12 +628,6 @@ msgstr "Informatika"
 msgid "User"
 msgstr "Erabiltzailea"
 
-msgid "Total words"
-msgstr "Hitz guztira"
-
-msgid "Maximum"
-msgstr "Gehienezko"
-
 msgid "Clue"
 msgstr "Pista"
 
@@ -619,9 +636,3 @@ msgstr "Izena"
 
 msgid "Symbol"
 msgstr "Sinboloa"
-
-msgid "Search"
-msgstr "Araketa"
-
-msgid "New version available!"
-msgstr "Bertsio berria eskuragarri!"
