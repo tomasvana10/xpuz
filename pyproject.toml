@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xpuz"
+version = "2.2.102"
+description = "Design and play procedurally generated crosswords"
+license = { text = "MIT" }
+authors = [
+    { name = "Tomas Vana" }
+]
+urls = { "Homepage" = "https://github.com/tomasvana10/xpuz" }
+classifiers = [
+    "Topic :: Multimedia",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: JavaScript",
+    "Topic :: Text Processing :: Markup :: HTML",
+    "Framework :: Flask",
+    "Topic :: Software Development :: Localization",
+    "Topic :: Education",
+    "Topic :: Games/Entertainment"
+]
+keywords = ["crosswords", "procedural generation", "games"]
+dependencies = [
+    "Babel",
+    "customtkinter",
+    "Flask",
+    "flask_babel",
+    "Pillow",
+    "regex",
+    "platformdirs",
+    "pathvalidate",
+    "CTkToolTip",
+    "pywebview",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.entry-points.gui_scripts]
+xpuz-ctk = "xpuz.__main__:main"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
