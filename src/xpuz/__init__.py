@@ -1,0 +1,1 @@
+"""Play procedurally generated crosswords."""

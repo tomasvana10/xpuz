@@ -1,9 +1,9 @@
-recursive-include xpuz/locales/*/LC_MESSAGES *.mo
-recursive-include xpuz/locales/*/cwords *
-recursive-include xpuz/app/static *
-recursive-include xpuz/app/templates *
-recursive-include xpuz/base_cwords *
-recursive-include xpuz/assets *
-recursive-include xpuz/data *
-include xpuz/babel.cfg
-include xpuz/template.config.ini
+recursive-include src/xpuz/locales/*/LC_MESSAGES *.mo
+recursive-include src/xpuz/locales/*/cwords *
+recursive-include src/xpuz/app/static *
+recursive-include src/xpuz/app/templates *
+recursive-include src/xpuz/base_cwords *
+recursive-include src/xpuz/assets *
+recursive-include src/xpuz/data *
+include src/xpuz/babel.cfg
+include src/xpuz/template.config.ini

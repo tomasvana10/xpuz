@@ -19,6 +19,7 @@ from customtkinter import (
 from xpuz.app.app import _terminate_app
 from xpuz.constants import DIM, LINUX_LOGO_PATH, PAGE_MAP, WIN_LOGO_PATH
 from xpuz.utils import GUIHelper, _update_cfg
+from xpuz._version import __version__
 
 
 class Addons:
@@ -85,7 +86,7 @@ class Addons:
         for widget in Base.base_container.winfo_children():  # Remove content
             widget.pack_forget()
 
-        base.title(title)
+        base.title(f"{title} ({__version__})")
         _update_cfg(Base.cfg, "m", "page", page_inst.__class__.__name__)
         try:  # Attempt to unbind existing widgets
             Base.page_inst.unbind_()

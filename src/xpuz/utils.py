@@ -38,7 +38,7 @@ from xpuz.constants import (
 )
 from xpuz.errors import DefinitionsParsingError
 from xpuz.td import CrosswordInfo
-from xpuz.version import __version__
+from xpuz._version import __version__
 
 
 class GUIHelper:

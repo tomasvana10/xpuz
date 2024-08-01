@@ -43,7 +43,7 @@ from xpuz.utils import (
     _get_english_string,
     _update_cfg,
 )
-from xpuz.version import __version__
+from xpuz._version import __version__
 
 
 class HomePage(CTkFrame, Addons):

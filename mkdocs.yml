@@ -1,0 +1,131 @@
+site_name: "xpuz"
+site_description: "Play procedurally generated crosswords."
+site_url: "https://xpuz.readthedocs.io/"
+repo_url: "https://github.com/tomasvana10/xpuz/"
+edit_uri: "edit/main/docs/"
+repo_name: "xpuz"
+copyright: Copyright &copy; 2023-2024 Tomas Vana
+
+watch:
+  - src
+  
+nav:
+  - Home: 
+    - index.md
+    - License: license.md
+    - Credits: credits.md
+    - Gallery: gallery.md
+  - Installation: installation.md
+  - User Guide: user_guide.md
+  - Troubleshooting: troubleshooting.md
+  - FAQ: faq.md
+  - Code Reference: reference/ # defer to gen-files + literate-nav
+
+
+theme:
+  name: material
+  icon:
+    logo: material/book-open-page-variant
+    annotation: material/arrow-right-circle
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        name: Switch to light mode
+        icon: material/brightness-auto
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        name: Switch to dark mode
+        icon: material/brightness-7
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        name: Switch to system preference
+        icon: material/brightness-4
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.select
+    - content.code.annotate
+    - content.code.annotations
+    - content.code.copy
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - search.share
+    - toc.follow
+
+markdown_extensions:
+  - callouts
+  - footnotes
+  - attr_list
+  - mkdocs-click
+  - pymdownx.snippets
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.caret
+  - footnotes
+  - def_list
+  - admonition
+  - toc:
+      permalink: "¤"
+
+plugins:
+  - search
+  - markdown-exec
+  - gen-files:
+      scripts:
+      - docs\scripts\gen_ref_nav.py
+  - literate-nav:
+      nav_file: SUMMARY.md
+  - coverage
+  - mkdocstrings:
+      handlers:
+        python:
+          import:
+          - https://docs.python.org/3/objects.inv
+          paths: [src]
+          options:
+            docstring_options:
+              ignore_init_summary: true
+            docstring_section_style: table
+            show:
+              private: true
+            filters: []
+            heading_level: 1
+            inherited_members: false  # very important to have this off
+            merge_init_into_class: true
+            separate_signature: true
+            show_root_heading: true
+            show_root_full_path: true
+            show_signature_annotations: true
+            show_symbol_type_heading: true
+            show_symbol_type_toc: true
+            signature_crossrefs: true
+            summary: true
+
+extra:
+  social:
+  - icon: fontawesome/brands/github
+    link: https://github.com/tomasvana10
+  analytics:
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: Let us know how we can improve this page.
