@@ -1,0 +1,20 @@
+# dev
+black
+ruff==0.4.10
+
+# docs
+mkdocs
+mkdocs-material
+mkdocs-click
+markdown-callouts
+markdown-exec
+mkdocs-gen-files
+mkdocs-literate-nav
+mkdocs-coverage
+mkdocstrings[python]
+tomli
+
+# building
+setuptools>=72.1.0
+wheel>=0.43.0
+build
