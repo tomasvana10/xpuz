@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "xpuz"
-version = "2.3.102"
+version = "2.2.104"
 description = "Design and play procedurally generated crosswords"
 license = { text = "MIT" }
 authors = [
