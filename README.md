@@ -17,8 +17,26 @@
   
 </div>
 
-An educational GUI/web package built with `CustomTkinter` and `Flask` that allows you to design and play procedurally generated crosswords.
-- Download the latest source code: [click here](https://github.com/tomasvana10/xpuz/releases/latest)
+`xpuz` is a GUI/web package built with `CustomTkinter` and `Flask`. It allows you to select a predefined or customised set of words to procedurally generate a crossword from, and view it in a locally hosted `Flask` web app.
+- Download the latest source code [here](https://github.com/tomasvana10/xpuz/releases/latest).
+- Play a demo of the game itself [here](https://tomasvana10.github.io/).
+
+## Contents
+- [xpuz](#xpuz)
+  - [Contents](#contents)
+  - [Dependencies](#dependencies)
+  - [Tested Python Versions](#tested-python-versions)
+  - [Requirements](#requirements)
+    - [Hardware](#hardware)
+    - [Software](#software)
+  - [Limitations](#limitations)
+  - [Installation](#installation)
+  - [Updating](#updating)
+  - [Quickstart](#quickstart)
+  - [Documentation](#documentation)
+  - [Third-party Library Acknowledgements](#third-party-library-acknowledgements)
+  - [Other Acknowledgements](#other-acknowledgements)
+  - [Gallery](#gallery)
 
 ## Dependencies
 `Babel`
@@ -36,18 +54,18 @@ An educational GUI/web package built with `CustomTkinter` and `Flask` that allow
 > [!WARNING]  
 > Languages whose alphabets use complex glyphs (such as Mandarin and Japanese) are not supported when making PDFs.
 
-## Tested Python versions
+## Tested Python Versions
 - **Windows**: Python >= 3.7
 - **MacOS**: Python >= 3.8
 - **Linux**: Python >= 3.8
 
 ## Requirements
-- **Hardware**
+### Hardware
   - **RAM**: >120MB (GUI only), >500MB (GUI and browser to play crossword)
   - **CPU**: Any
   - **Storage**: >30MB available space (the program and its dependencies)
 
-- **Software**
+### Software
   - **OS**: Windows, MacOS, Linux
   - **Browser**: Not Internet Explorer
   - **Additional**: Python and pip (see [Installation](#installation))
@@ -119,7 +137,7 @@ pip install -U xpuz
 ## Quickstart
 You can utilise one of two scripts to quickly activate a virtual environment and update and start `xpuz`.
 
-1. Read the `Important` section of [Installation](#installation) to install Python3 and pip
+1. Read the `Important` section of [Installation](#installation) to install Python3 and pip.
 2. **Windows users**: Ensure you have script execution enabled. If you are unsure, run `Set-ExecutionPolicy Unrestricted -Scope Process` in your terminal and follow the prompts.
 3. Download a quickstart file from the repository:
    - **Windows**: [quickstart-win.bat](https://github.com/tomasvana10/xpuz/blob/main/quickstart-win.bat)
@@ -131,7 +149,7 @@ You can utilise one of two scripts to quickly activate a virtual environment and
 ## Documentation
 Check out the wiki [here](https://github.com/tomasvana10/xpuz/wiki) for information on usage, troubleshooting, FAQ, and more.
 
-## Third-party library acknowledgements
+## Third-party Library Acknowledgements
 - [Flask](https://flask.palletsprojects.com/en/3.0.x/) - Web framework for the crossword web application
 - [Babel](https://babel.pocoo.org/en/latest/) - l10n functionality and management of message catalogues
 - [flask-babel](https://python-babel.github.io/flask-babel/) - i18n integration for the Flask web application
@@ -150,7 +168,7 @@ Check out the wiki [here](https://github.com/tomasvana10/xpuz/wiki) for informat
 - [Pycairo](https://pycairo.readthedocs.io/en/latest/) - Crossword PDF creation
 - [pywebview](https://pywebview.flowrl.com/) - Browser webview to play crossword
 
-## Other acknowledgements
+## Other Acknowledgements
 - [NYTimes Mini Crossword](https://www.nytimes.com/crosswords/game/mini) - Heavily inspired the design of the web application
 - [CSS Pattern](https://css-pattern.com) - Background CSS patterns
 - [Pure CSS Toggle Switch](https://codepen.io/morgoe/pen/VvzWQg) - Toggle switch CSS patterns
@@ -159,7 +177,7 @@ Check out the wiki [here](https://github.com/tomasvana10/xpuz/wiki) for informat
 ## Gallery
 <img alt="crossword puzzle home" src="https://github.com/tomasvana10/xpuz/assets/124552709/6b9eba14-220d-43dc-8b28-ddb92ea2d3b6">
 <hr>
-<img alt="crossword puzzle browser" src="https://github.com/tomasvana10/xpuz/assets/124552709/6e5b7eae-970e-46b5-8a72-34d70bea2332">
+<img alt="crossword puzzle browser" src="https://github.com/user-attachments/assets/a596a34a-4f29-472b-b672-5fbce78d1e8d">
 <hr>
 <img alt="crossword puzzle editor" src="https://github.com/tomasvana10/xpuz/assets/124552709/33d7ec0c-ee2e-435f-9386-e7373f8a6378">
 <hr>
