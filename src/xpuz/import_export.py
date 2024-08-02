@@ -11,9 +11,14 @@ from xpuz.utils import GUIHelper, _get_saveas_filename, _get_open_filename
 
 
 class Export(list):
-    """Export all the crosswords a user has made into a single JSON fdile."""
+    """Export all the crosswords a user has made into a single JSON file."""
 
     def __init__(self, blocks: List["UserCrosswordBlock"]) -> None:
+        """Initialise the `self.blocks` array and export-related booleans.
+        
+        Args:
+            blocks: The available user crossword blocks
+        """
         self.blocks = blocks
         self.exported: bool = False
         self.no_filepath: bool = False
@@ -24,7 +29,7 @@ class Export(list):
         self._export()
 
         if self.no_filepath:
-            return
+            return None
 
         if self.exported:
             return GUIHelper.show_messagebox(export_success=True)
@@ -55,7 +60,7 @@ class Export(list):
         self.exported = True
 
     def _assemble(self) -> None:
-        """Append all the user crossword data to ``self``."""
+        """Append all the user crossword crosswords to ``self``."""
         for block in self.blocks:
             cwrapper = block.cwrapper
             self.append(
@@ -73,6 +78,12 @@ class Import:
     """Import a valid user-selected file to ``fp``."""
 
     def __init__(self, master: "CrosswordPane", fp: PathLike) -> None:
+        """Initialise import-related booleans and lists.
+        
+        Args:
+            master: The instance of the crossword pane.
+            fp: The filepath to which the crosswords will be imported.
+        """
         self.master = master
         self.fp = fp
 
@@ -88,7 +99,7 @@ class Import:
         self._import()
 
         if self.no_filepath:
-            return
+            return None
 
         if self.invalid_file:
             return GUIHelper.show_messagebox(import_failure=True)
@@ -120,22 +131,25 @@ class Import:
 
         with open(filepath) as f:
             try:
-                data: Any = load(f)
+                crosswords: Any = load(f)
             except Exception:
                 self.invalid_file = True
                 return
 
-        if not isinstance(data, list):
+        if not isinstance(crosswords, list):
             self.invalid_file = True
             return
 
-        self._write(data)
+        self._write(crosswords)
 
-    def _write(self, data: Any) -> None:
-        """Write ``data`` to ``self.fp``, collecting information on invalid
+    def _write(self, crosswords: Any) -> None:
+        """Write ``crosswords`` to ``self.fp``, collecting information on invalid
         and conflicting crosswords.
+        
+        Args:
+            crosswords: The crosswords to import.
         """
-        for crossword in data:
+        for crossword in crosswords:
             if not isinstance(crossword, list) or len(crossword) != 2:
                 self.invalid_file = True
                 return

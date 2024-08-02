@@ -1,6 +1,6 @@
 """Module implementing PDF export functionality."""
 
-from typing import List
+from typing import List, Dict, Tuple, Union
 
 from cairo import (
     FONT_SLANT_NORMAL,
@@ -34,12 +34,21 @@ class PDF:
     def __init__(
         self,
         cwrapper: CrosswordWrapper,
-        # Refer to ``utils._interpret_cword_data`` for information on these params
-        starting_word_positions,
-        starting_word_matrix,
-        definitions_a,
-        definitions_d,
+        starting_word_positions: List[Tuple[int]],
+        starting_word_matrix: List[List[int]],
+        definitions_a: List[Dict[int, Tuple[str]]],
+        definitions_d: List[Dict[int, Tuple[str]]],
     ) -> None:
+        """Initialise the crossword data and the crossword wrapper object.
+        
+        Args:
+            cwrapper: The crossword wrapper.
+            starting_word_positions: [read this function](utils.md#xpuz.utils._interpret_cword_data)
+            starting_word_matrix: [read this function](utils.md#xpuz.utils._interpret_cword_data)
+            definitions_a: [read this function](utils.md#xpuz.utils._interpret_cword_data)
+            definitions_d: [read this function](utils.md#xpuz.utils._interpret_cword_data)
+        """
+            
         self.cwrapper = cwrapper
         self.crossword = self.cwrapper.crossword
         self.grid: List[List[str]] = self.crossword.grid
@@ -62,6 +71,7 @@ class PDF:
         self.cell_fontsize = self.cell_dim * 0.8
 
     def write(self) -> None:
+        """Begin the PDF writing process."""
         filepath = _get_saveas_filename(
             _("Select a destination to download your PDF to"),
             self.display_name,
@@ -87,6 +97,7 @@ class PDF:
         self._on_finish()
 
     def _on_finish(self) -> None:
+        """Provide information to the user after drawing is finished."""
         if not self.drawn:
             return GUIHelper.show_messagebox(pdf_write_err=True)
         else:
@@ -99,9 +110,16 @@ class PDF:
     def _set_font_face(
         self,
         family: str = "Arial",
-        slant=FONT_SLANT_NORMAL,
-        weight=FONT_WEIGHT_BOLD,
+        slant: str = FONT_SLANT_NORMAL,
+        weight: str = FONT_WEIGHT_BOLD,
     ) -> None:
+        """Set the font that is used by `pycairo`. 
+        
+        Args:
+            family: The font family.
+            slant: The font slant.
+            weight: The font weight.
+        """
         self._c.select_font_face(family, slant, weight)
 
     def _draw_all(self) -> None:
@@ -120,8 +138,13 @@ class PDF:
 
         self._s.finish()
 
-    def _draw_grid(self, with_answers=False) -> None:
-        """Draw the crossword grid in the center of the page."""
+    def _draw_grid(self, with_answers: bool = False) -> None:
+        """Draw the crossword grid in the center of the page.
+        
+        Args: 
+            with_answers: Whether to draw this current part of the crossword PDF
+                          with answers in the grid or not.
+        """
         offset_x: float = (PDF_WIDTH - 2 * PDF_MARGIN - self.grid_dim) / 2
         offset_y: float = (PDF_HEIGHT - 2 * PDF_MARGIN - self.grid_dim) / 2
         self._c.translate(PDF_MARGIN, PDF_MARGIN)
@@ -161,8 +184,11 @@ class PDF:
         self._draw_grid_lines()  # Separate the cells
 
     def _draw_cell_letter(self, row: int, col: int) -> None:
-        """Draw ``self.grid[row][col]``, using ``row`` and ``col`` as a reference
-        to determine the drawing location.
+        """Draw the letter at `self.grid[row][col]`.
+        
+        Args:
+            row: The row, used as a reference to determine the drawing location.
+            col: The column, used as a reference to determine the drawing location.
         """
         self._c.set_source_rgb(0, 0, 0)
         self._c.set_font_size(self.cell_fontsize)
@@ -182,6 +208,10 @@ class PDF:
     def _draw_number_label(self, row: int, col: int) -> None:
         """Draw a number label in the top left hand corner of the cell at ``row``
         and ``col``.
+        
+        Args:
+            row: The row, used as a reference to determine the drawing location.
+            col: The column, used as a reference to determine the drawing location.
         """
         self._c.set_source_rgb(0, 0, 0)
 
@@ -214,7 +244,11 @@ class PDF:
             self._c.stroke()
 
     def _draw_display_name(self, name: str) -> None:
-        """Draw ``name`` at the top of the current page."""
+        """Draw ``name`` at the top of the current page.
+        
+        Args:
+            name: The display name.
+        """
         self._c.set_source_rgb(0, 0, 0)
 
         self._c.set_font_size(60.0)
@@ -257,15 +291,23 @@ class PDF:
 
     def _draw_definitions_col(
         self,
-        definitions,
+        definitions: List[str],
         dir_title: str,
         start_x: float,
         start_y: float,
-        backlog: List,
+        backlog: Union[List[None], List[str]],
     ) -> None:
         """Draw either the across or down definitions column.
 
         DISCLAIMER: Does not provide wrapping for clues.
+        
+        Args:
+            definitions: The definitions for either the across or down column.
+            dir_title: The title for the column.
+            start_x: The x position to begin drawing the column.
+            start_y: The y position to begin drawing the column.
+            backlog: The definitions that could not fit on the existing page.
+                     It is empty in the first call of this method.
         """
         definitions_x: float = (
             start_x + ((PDF_WIDTH - 2 * PDF_MARGIN) / 2 - 40) / 2

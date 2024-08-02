@@ -1,5 +1,8 @@
 """Constant values used across the source code, defining values such as paths
 and colour values for both the GUI and the web application.
+
+NOTE: You can view the attributes that do not belong to any classes in this module 
+by pressing the `View source of this page` to the left of the table of contents.
 """
 
 from os import path
@@ -11,9 +14,10 @@ from regex import Pattern, compile
 
 
 class Colour:
-    """Global and light/dark hex colours."""
+    """Hex colour specification for both the GUI and the web app."""
 
     class Global:
+        """Global hex colours."""
         BUTTON: str = "#21528C"
         BUTTON_HOVER: str = "#13385F"
         EXIT_BUTTON: str = "#ED3B4D"
@@ -25,6 +29,7 @@ class Colour:
         DIFFICULTIES: List[str] = ["#089E19", "#FCBA03", "#E01C07", "#6408A6"]
 
     class Light:
+        """Light mode hex colours."""
         MAIN: str = "#C7D0D4"
         SUB: str = "#DFE8ED"
         TEXT: str = "#242424"
@@ -35,6 +40,7 @@ class Colour:
         WRONG: str = "#FC0A2A"
 
     class Dark:
+        """Dark mode hex colours."""
         MAIN: str = "#263238"
         SUB: str = "#37474F"
         TEXT: str = "#D7D6D6"
@@ -45,7 +51,7 @@ class Colour:
         WRONG: str = "#D90D28"
 
 
-"""Absolute paths used across the source code."""
+# Absolute paths used across the source code.
 DIR_PATH = Path(__file__).resolve().parents[0]
 TEMPLATE_CFG_PATH = path.join(DIR_PATH, "template.config.ini")
 DOC_PATH = user_documents_dir()
@@ -72,7 +78,7 @@ BASE_CWORDS_PATH = path.join(DIR_PATH, "base_cwords")
 ATTEMPTS_DB_PATH = path.join(DIR_PATH, "data", "attempts_db.json")
 
 
-"""Crossword-related constants."""
+# Crossword-related constants.
 DIFFICULTIES: List[str] = ["Easy", "Medium", "Hard", "Extreme"]
 ACROSS: str = "ACROSS"
 DOWN: str = "DOWN"
@@ -89,7 +95,7 @@ WHITESPACE_SCALAR: float = 1.9
 DIMENSIONS_CONSTANT: int = 1
 
 
-"""PDF-related constants"""
+# PDF-related constants
 PDF_WIDTH = 3508
 PDF_HEIGHT = 2480
 PDF_MARGIN = 150
@@ -98,7 +104,7 @@ FONTSIZE_DEF = 40
 PAGE_DEF_MAX = 25
 
 
-"""Base english strings"""
+# Base english strings
 BASE_ENG_CWORD_QUALITIES: List[str] = [
     "terrible",
     "poor",
@@ -112,7 +118,7 @@ BASE_ENG_APP_VIEWS: List[str] = ["Browser", "Embedded"]
 BASE_ENG_EXPORTS: List[str] = ["PDF", "ipuz"]
 
 
-"""Misc constants"""
+# Misc constants
 PYPI_URL = "https://pypi.org/project/xpuz/"
 RELEASE_API_URL = (
     "https://api.github.com/repos/tomasvana10/xpuz/releases/latest"

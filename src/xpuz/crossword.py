@@ -21,9 +21,8 @@ from xpuz.utils import (
 
 
 class Crossword:
-    """The Crossword class creates and populates a grid with a given amount of
-    randomly sampled words from a larger set of crossword definitions in a
-    crossword-like pattern.
+    """Creates and populates a grid with a given amount of randomly sampled 
+    words from a larger set of crossword definitions in a crossword-like pattern.
     """
 
     def __init__(
@@ -34,6 +33,17 @@ class Crossword:
         via_find_best_crossword: bool = False,
         dimensions: Union[None, int] = None,
     ) -> None:
+        """Initialise the base parameters of a crossword such as definitions
+        and dimensions to prepare for generation.
+        
+        Args:
+            name: The crossword's name.
+            definitions: The word:clue data for the crossword
+            word_count: The amount of words to try inserting into the grid.
+            via_find_best_crossword: Whether this class is being instantiated with find_best_crossword or not.
+            dimensions: The side length of the grid. Both length and width are identical.
+        """
+            
         if via_find_best_crossword:  # Prevent recalculation of dimensions and
                                      # only shuffle existing definitions
             self.definitions: Dict[str, str] = _randomise_definitions(
@@ -57,10 +67,19 @@ class Crossword:
 
     @property
     def cells(self) -> str:
+        """Show an easy-to-read representation of this `Crossword` instance.
+        
+        Returns:
+            The cells.
+        """
         return "\n".join(" ".join(cell for cell in row) for row in self.grid)
 
     def __repr__(self) -> str:
-        """Display a dev-friendly representation of ``Crossword``."""
+        """Display a dev-friendly representation of this `Crossword` instance.
+        
+        Returns:
+            The representation in `namedtuple` format.
+        """
         return repr(
             namedtuple(
                 "Crossword",
@@ -75,19 +94,26 @@ class Crossword:
         )
 
     def generate(self) -> Union[bool, None]:
-        """Create a two-dimensional array (filled with ``EMPTY`` characters)."""
+        """Create a two-dimensional array filled with ``EMPTY`` characters.
+        
+        Returns:
+            Whether the grid was generated or not."""
         if not self.generated:
             self.grid: List[List[str]] = self._init_grid()
             self._populate_grid(
                 list(self.definitions.keys())  # Keys of definitions are words
             )
             self.generated: bool = True
+            return True
         else:
             return False
 
     def _get_dimensions(self) -> int:
         """Determine the square dimensions of the crossword based on total word
         count or maximum word length.
+        
+        Returns:
+            The dimensions.
         """
         self.total_char_count: int = sum(
             len(word) for word in self.definitions.keys()
@@ -103,7 +129,11 @@ class Crossword:
         return max(dimensions, max_word_len)
 
     def _init_grid(self) -> List[List[str]]:
-        """Return a two-dimensional array of ``EMPTY`` characters."""
+        """Create two-dimensional array of ``EMPTY`` characters.
+        
+        Returns:
+            The two-dimensional array/crossword grid.
+        """
         return [
             [EMPTY for col in range(self.dimensions)]
             for row in range(self.dimensions)
@@ -113,6 +143,15 @@ class Crossword:
     def _unpack_placement_info(
         placement: Placement,
     ) -> Tuple[str, Union[ACROSS, DOWN], int, int]:
+        """Return specific data from `placement` that is required to call
+        [_place_word](crossword.md#xpuz.crossword.Crossword._place_word).
+        
+        Args:
+            placement: The placement data.
+        
+        Returns:
+            The extracted placement data.
+        """
         return (
             placement["word"],
             placement["direction"],
@@ -122,6 +161,14 @@ class Crossword:
 
     @staticmethod
     def _sort_placements(placements: List[Placement]) -> List[Placement]:
+        """Sort `placements` by their `intersections` key.
+        
+        Args:
+            placements: The placements.
+        
+        Returns:
+            The sorted placements.
+        """
         return sorted(
             placements, key=lambda p: p["intersections"], reverse=True
         )
@@ -133,7 +180,14 @@ class Crossword:
         row: int,
         col: int,
     ) -> None:
-        """Place a word in the grid at the given row, column and direction."""
+        """Place `word` in the grid at the given `row`, `column` and `direction`.
+        
+        Args:
+            word: The word to be placed.
+            direction: The direction to place the word.
+            row: The row to place the word.
+            col: The column to place the word.
+        """
         if direction == ACROSS:
             for i, letter in enumerate(word):
                 self.grid[row][col + i] = letter
@@ -146,6 +200,12 @@ class Crossword:
         """Return the placement for the first word in a random orientation in
         the middle of the grid. This naturally makes the generator build off of
         the center, making the crossword look nicer.
+        
+        Args:
+            word: The word to be placed in the middle of the grid.
+        
+        Returns:
+            A pseudo-placement dictionary.
         """
         direction: str = choice([ACROSS, DOWN])
         middle: int = self.dimensions // 2
@@ -171,10 +231,19 @@ class Crossword:
         row: int,
         col: int,
     ) -> Union[Tuple[None], Tuple[int]]:
-        """Find the row and column of all points of intersection that ``word``
-        has with ``self.grid``.
+        """Find the row and column of all points of intersection that `word`
+        has with `self.grid`.
+        
+        Args:
+            word: The word to be placed.
+            direction: The direction the word is being placed in.
+            row: The row the word is being placed in.
+            col: The column the word is being placed in.
+        
+        Returns:
+            All the intersections that `word` has with `self.grid` in (row, column) form.
         """
-        intersections: List[Tuple[int, int]] = []  # (row, column) form
+        intersections: List[Tuple[int, int]] = []
 
         if direction == ACROSS:
             for i, letter in enumerate(word):
@@ -196,14 +265,27 @@ class Crossword:
         col: int,
     ) -> bool:
         """Determine if a word is suitable to be inserted into the grid. Causes
-        for this function returning False are as follows:
-            1. The word exceeds the limits of the grid if placed at ``row``
-               and ``col``.
+        for this method returning False are as follows:
+        
+            1. The word exceeds the limits of the grid if placed at `row`
+               and `col`.
+               
             2. The word intersects with another word of the same orientation at
                its first or last letter, e.x. ATHENSOFIA (Athens + Sofia)
+               
             3. Other characters are in the way of the word - not
                overlapping/intersecting.
+               
             4. Directly adjacent intersections are present.
+        
+        Args:
+            word: The word to be placed.
+            direction: The direction the word is being placed in.
+            row: The row the word is being placed in.
+            col: The column the word is being placed in.
+        
+        Returns:
+            Whether the word is valid or not.
         """
         if direction == ACROSS:
             # Case 1
@@ -272,12 +354,15 @@ class Crossword:
 
     def _prune_unreadable_placements(
         self, placements: List[Placement]
-    ) -> List[Placement]:
+    ) -> Union[List[Placement], List[None]]:
         """Remove all placements that will result in the word being directly
-        adjacent to another word,
-        e.x.          or:
-            ATHENS       ATHENSSOFIA
-            SOFIA
+        adjacent to another word, like `ATHENSSOFIA`.
+        
+        Args:
+            placements: The placements to prune.
+        
+        Returns:
+            The pruned placements.
         """
 
         pruned_placements: List[Placement] = []
@@ -343,8 +428,15 @@ class Crossword:
 
         return pruned_placements
 
-    def _get_placements(self, word: str) -> List[Placement]:
-        """Find all placements for a given word (across and down), if valid."""
+    def _get_placements(self, word: str) -> Union[List[Placement], List[None]]:
+        """Find all placements for a given word (across and down), if valid.
+        
+        Args:
+            word: The word to find placements for.
+        
+        Returns:
+            The placements that were obtained.
+        """
         placements: List[Placement] = []
 
         for direction in [
@@ -371,7 +463,11 @@ class Crossword:
         return placements
 
     def _add_data(self, placement: Placement) -> None:
-        """Add placement information to ``self.data``."""
+        """Add placement information to `self.data`, extracted from `placement`.
+        
+        Args:
+            placement: The placement to extract data from.
+        """
         self.data[(placement["pos"][0], placement["pos"][1])] = {
             "word": placement["word"],
             "direction": placement["direction"],
@@ -384,6 +480,10 @@ class Crossword:
     ) -> None:
         """Attempt to all the words in the grid, recursing once to retry the
         placement of words with no intersections.
+        
+        Args:
+            words: The randomly sampled words to insert.
+            insert_backlog: Whether to insert the backlog or not.
         """
         if not insert_backlog: # First time execution, attempt to insert all words
             self.backlog: List[str] = []

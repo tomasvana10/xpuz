@@ -2,6 +2,7 @@
 
 from datetime import date
 from json import dump
+from typing import List, Dict, Tuple
 
 from xpuz.wrappers import CrosswordWrapper
 from xpuz.td import IPuzV2
@@ -14,11 +15,18 @@ class IPuz(dict):
     def __init__(
         self,
         cwrapper: CrosswordWrapper,
-        # Refer to ``utils._interpret_cword_data`` for information on these params
-        starting_word_matrix,
-        definitions_a,
-        definitions_d,
+        starting_word_matrix: List[List[int]],
+        definitions_a: List[Dict[int, Tuple[str]]],
+        definitions_d: List[Dict[int, Tuple[str]]],
     ) -> None:
+        """Initialise crossword data and the crossword wrapper object.
+        
+        Args:
+            cwrapper: The crossword wrapper.
+            starting_word_matrix: [read this function](utils.md#xpuz.utils._interpret_cword_data)
+            definitions_a: [read this function](utils.md#xpuz.utils._interpret_cword_data)
+            definitions_d: [read this function](utils.md#xpuz.utils._interpret_cword_data)
+        """
         self.cwrapper = cwrapper
         self.crossword = self.cwrapper.crossword
 

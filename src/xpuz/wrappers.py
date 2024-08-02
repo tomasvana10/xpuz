@@ -40,10 +40,27 @@ class CrosswordWrapper:
         word_count: int = 0,
         *,
         language: str = "en",
-        optimise: bool = True,  # Run ``utils._find_best_crossword``
+        optimise: bool = True,
         category_object: Optional[object] = None,
         value: int = None,
     ) -> None:
+        """Initialise the crossword's data and prime the instance for generation.
+        
+        Args:
+            category: The crossword's category.
+            name: The crossword's name.
+            word_count: The crossword's word count.
+            language: The crossword's language in `ISO 639` format (probably)
+            optimise: Whether to run 
+                      [_find_best_crossword](utils.md#xpuz.utils._find_best_crossword)
+                      or not.
+            category_object: The crossword category block that "contains" this 
+                             wrapper's crossword. This wrapper itself was generated
+                             when its crossword block was instantiated.
+            value: The value of this crossword (ranging from 0-~10), used by
+                   a tkinter `IntVar` to determine which crossword radiobutton
+                   should be selected.
+        """
         self.category = category
         self.language = language
         self.fullname = name  # capitals-easy, for example
@@ -66,6 +83,12 @@ class CrosswordWrapper:
         self.display_name: str = f"{self.translated_name} ({_(self.difficulty)})"
 
     def __str__(self) -> str:
+        """Display a dev-friendly representation of this `CrosswordWrapper` and
+        its attributes
+        
+        Returns:
+            The representation.
+        """
         sorted_dict = dict(sorted(list(self.__dict__.items())))
         attr_names = list(sorted_dict.keys())
         attr_vals = list(sorted_dict.values())
@@ -79,13 +102,16 @@ class CrosswordWrapper:
     def set_word_count(self, count: int) -> None:
         """Set this wrapper's word count. Called when the user changes their
         word count preference.
+        
+        Args:
+            count: The word count.
         """
         self.word_count: int = count
 
     def _check_info(self) -> None:
-        """Ensure the info.json of this crossword's toplevel (whether that is
+        """Ensure the `info.json` of this crossword's toplevel (whether that is
         the localised toplevel or the base toplevel) exists and is not empty.
-        Otherwise, run a utility function to derive a new info.json from the
+        Otherwise, run a utility function to derive a new `info.json` from the
         existing definitions.
         """
         if (
@@ -116,14 +142,18 @@ class CrosswordWrapper:
             )
 
     def _get_toplevel(self) -> PathLike:
-        """Find the absolute path to the toplevel of a crossword
-        (e.g <pkg_path>/locales/geography/capitals-easy).
+        """Find the absolute path to the toplevel of this wrapper's crossword
+        (e.g `<pkg_path>/locales/geography/capitals-easy`).
 
         The path returned will be in 1 of 3 locations:
+        
         1. Locales directory (if it is found),
         2. Base crossword directory (if not localised version is present),
         3. The system's document directory (if it is available and the crossword
-           belongs to the "user" category).
+           belongs to the `User` category).
+        
+        Returns:
+            The path to the toplevel of this crossword.
         """
 
         toplevel = path.join(  # Assume there is a localised version available
@@ -144,10 +174,11 @@ class CrosswordWrapper:
             return toplevel
 
     def make(self) -> Union[None, Crossword]:
-        """Generate a crossword, running ``utils._find_best_crossword`` if
-        ``self.optimise`` is set to True (it is by default). Any errors caught
+        """Generate a crossword, running 
+        [_find_best_crossword](utils.md#xpuz.utils._find_best_crossword) if
+        `self.optimise` is set to True (it is by default). Any errors caught
         are relayed to the main GUI through the helper attribute of
-        ``CrosswordWrapper``.
+        `CrosswordWrapper`.
         """
         help_func = getattr(
             CrosswordWrapper.helper, "show_messagebox", CrosswordWrapper.logger
@@ -173,17 +204,31 @@ class CrosswordWrapper:
 
     @property
     def cells(self) -> str:
+        """Return the representation of `self.crossword`'s cells. Essentially a
+        router method for `crossword.cells`
+        
+        Returns:
+            The cells.
+        """
         return self.crossword.cells
 
     @property
     def definitions(self) -> Dict[str, str]:
-        """Return the current definitions of the crossword."""
+        """Read the current definitions of the crossword.
+        
+        Returns:
+            The crossword's definitions.
+        """
         with open(path.join(self.toplevel, "definitions.json")) as f:
             return load(f)
 
     @property
     def info(self) -> CrosswordInfo:
-        """Return the current info of the crossword."""
+        """Read the current info of the crossword, checking it if it's invalid.
+        
+        Returns:
+            The crossword's info.
+        """
         try:
             with open(path.join(self.toplevel, "info.json")) as f:
                 return load(f)

@@ -1,7 +1,6 @@
-"""Flask web app to produce an interactive interface to complete a crossword. 
-The app is run when the user presses the "Load crossword" button in the main GUI.
-"""
+"""Flask web app that produces an interactive interface to complete a crossword."""
 
+from typing import Any, Dict
 from configparser import ConfigParser
 from logging import ERROR, getLogger
 from multiprocessing import Process
@@ -21,10 +20,13 @@ logger.setLevel(ERROR)
 cfg: ConfigParser = ConfigParser()
 
 
-def _app_process(*args, **kwargs) -> None:
-    """Ran as a new Process using the ``multiprocessing`` module. Kwargs are
-    forwarded from ``_create_app``, which forwards the arguments from
-    ``main.init_webapp``.
+def _app_process(**kwargs: Dict[str, Any]) -> None:
+    """This function is executed as a new Process with the `multiprocessing`
+    module to ensure the web application does not block the execution of the 
+    Tkinter GUI.
+    
+    Args:
+        **kwargs: Jinja2 template and crossword-related data.
     """
 
     @app.route("/")
@@ -59,18 +61,31 @@ def _app_process(*args, **kwargs) -> None:
 
 
 def _is_port_in_use(port: int) -> bool:
+    """Check if `port` is in use.
+    
+    Args:
+        port: The port to check
+    
+    Returns:
+        Whether the port is in use or not.
+    """
     with socket(AF_INET, SOCK_STREAM) as s:
         return s.connect_ex(("localhost", port)) == 0
 
 
-def _create_app(**kwargs) -> None:
-    """Execute the ``_app_process`` function as a multithreaded process."""
+def _create_app(**kwargs: Dict[str, Any]) -> None:
+    """Execute the ``_app_process`` function as a multithreaded process.
+    
+    Args:
+        **kwargs: Jinja2 template and crossword-related data.
+    """
     global server
     server = Process(target=_app_process, kwargs=kwargs)
     server.start()
 
 
 def _terminate_app() -> None:
+    """Terminate the app process."""
     if "server" in globals().keys():
         server.terminate()
         server.join()

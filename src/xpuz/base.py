@@ -4,7 +4,7 @@ instance.
 
 from configparser import ConfigParser
 from platform import system
-from typing import Dict, List, Tuple
+from typing import Dict, List, Union, Tuple, Callable, Literal
 
 from babel import Locale
 from customtkinter import (
@@ -26,6 +26,7 @@ class Addons:
     """Convenience and utility methods for all page classes."""
 
     def _set_fonts(self) -> None:
+        """Initialise this instance with all the required CTkFont objects."""
         self.TITLE_FONT = CTkFont(size=31, weight="bold", slant="roman")
         self.SUBHEADING_FONT = CTkFont(size=24, weight="normal", slant="roman")
         self.TEXT_FONT = CTkFont(size=15, weight="normal", slant="roman")
@@ -40,11 +41,20 @@ class Addons:
     def _confirm_route(
         self,
         *,
-        action: bool = None,
+        action: Callable = None,
         condition: bool = None,
         confirmation: Dict[str, bool] = {"close": True},
     ) -> bool:
-        """Allow the user to confirm if they wish to route through a messagebox."""
+        """Allow the user to confirm if they wish to route through a messagebox.
+        
+        Args:
+            action: A function to call if the user confirms to route.
+            condition: Only perform the confirmation if `True`.
+            confirmation: Passed in `**kwargs` syntax to the [messagebox helper](utils.md#xpuz.utils.GUIHelper.confirm_with_messagebox)
+        
+        Returns:
+            The status of the route confirmation; whether it was accepted or not.
+        """
 
         if (
             condition
@@ -60,15 +70,24 @@ class Addons:
 
     def _route(
         self,
-        page_ref: str,  # Name of the page instance
-        base: "Base",  # Reference to base instance
-        title: str,  # Title of the new page
-        **kwargs,
+        page_ref: Literal,
+        base: CTk,
+        title: str,
+        **kwargs: Dict[str, bool],
     ) -> bool:
         """Method for all page-related classes to simplify navigation.
 
         All class instances that use ``_route`` must have their content packed
-        and contain 4 content generation methods, as seen below.
+        and contain 4 content generation methods, as seen in the source code.
+        
+        Args:
+            page_ref: The new page's name, used to retrieve the corresponding class from `locals()`.
+            base: The main app instance.
+            title: The new page's title.
+            **kwargs: Confirmation dictionary routed to [_confirm_route](base.md#xpuz.base.Addons._confirm_route).
+        
+        Returns:
+            Status of the route; whether it was performed or not.
         """
         if (
             kwargs
@@ -107,13 +126,19 @@ class Base(CTk, Addons):
     """The main app instance. Contains methods used by all pages."""
 
     base_container: CTkFrame = None
-    lang_info: Tuple[Dict[str, str], List[str]] = []
-    locale: Locale = None
-    cfg: ConfigParser = None
+    lang_info: Tuple[Dict[str, str], List[str]] = [] 
+    locale: Locale = None 
+    cfg: ConfigParser = None 
     fullscreen: bool = False
     page_inst: object = None
 
-    def __init__(self, **kwargs) -> None:
+    def __init__(self, **kwargs: Dict[str, Union[Tuple[Dict[str, str], List[str]], Locale, ConfigParser]]) -> None:
+        """Initialise the base instance and container and apply widget scaling,
+        theme and appearance.
+        
+        Args:
+            **kwargs: `lang_info`, `cfg`, and `locale` objects passed from [main](__main__.md#xpuz.__main__.main).
+        """
         super().__init__()
 
         base_container = CTkFrame(self)
@@ -141,6 +166,11 @@ class Base(CTk, Addons):
         self._route(page, self, _(PAGE_MAP[page]))
 
     def _set_dim(self, dim: Tuple[int, int] = DIM) -> None:
+        """Set the dimensions of the program during runtime.
+        
+        Args: 
+            dim: The dimensions.
+        """
         scale = float(Base.cfg.get("m", "scale"))
         new_width = dim[0] * scale
         new_height = dim[1] * scale
@@ -152,6 +182,7 @@ class Base(CTk, Addons):
         self.update()
 
     def _toggle_fullscreen(self) -> None:
+        """Enable or disabled fullscreen mode."""
         Base.fullscreen = not Base.fullscreen
         if self.fullscreen:
             self.maxsize(self.winfo_screenwidth(), self.winfo_screenheight())
@@ -171,9 +202,13 @@ class Base(CTk, Addons):
     def _exit_handler(
         self, restart: bool = False, webapp_on: bool = False
     ) -> None:
-        """Called when the event "WM_DELETE_WINDOW" occurs or when the the
+        """Called when the event `WM_DELETE_WINDOW` occurs or when the the
         program must be restarted, in which case the ``restart`` default
         parameter is overridden.
+        
+        Args:
+            restart: Whether to perform a restart or not.
+            webapp_on: Whether the `Flask` web app is running or not.
         """
         # If user wants to exit/restart
         if GUIHelper.confirm_with_messagebox(exit_=True, restart=restart):
