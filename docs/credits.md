@@ -131,7 +131,12 @@ def _render_credits() -> str:
     prod_dependencies = _get_deps(
         _requirements(
             chain(  # type: ignore[arg-type]
-                project.get("dependencies", []),
+                # had to hardcode this here because only 2-3 packages would
+                # show up when the documentation was built for some reason.
+                # hopefully a temporary fix.
+                ["regex", "Babel", "customtkinter", "Flask", "flask_babel", 
+                "Pillow", "regex", "pathvalidate", "platformdirs", "CTkToolTip", 
+                "pywebview"],
                 chain(*project.get("optional-dependencies", {}).values()),
             ),
         ),
