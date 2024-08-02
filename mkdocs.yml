@@ -125,20 +125,3 @@ plugins:
             show_symbol_type_toc: true
             signature_crossrefs: true
             summary: true
-
-extra:
-  social:
-  - icon: fontawesome/brands/github
-    link: https://github.com/tomasvana10
-  analytics:
-    feedback:
-      title: Was this page helpful?
-      ratings:
-        - icon: material/emoticon-happy-outline
-          name: This page was helpful
-          data: 1
-          note: Thanks for your feedback!
-        - icon: material/emoticon-sad-outline
-          name: This page could be improved
-          data: 0
-          note: Let us know how we can improve this page.
