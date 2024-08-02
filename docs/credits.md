@@ -142,13 +142,12 @@ def _render_credits() -> str:
         "project_name": project_name,
         "prod_dependencies": sorted(prod_dependencies.values(), key=lambda dep: str(dep["name"]).lower()),
         "dev_dependencies": sorted(dev_dependencies.values(), key=lambda dep: str(dep["name"]).lower()),
-        "more_credits": "http://pawamoy.github.io/credits/",
     }
     template_text = dedent(
         """
         # Credits
 
-        These projects were used to build `{{ project_name }}`. Thank you!
+        These projects were used to create `{{ project_name }}`. Thank you!
 
         {% macro dep_line(dep) -%}
         [{{ dep.name }}](https://pypi.org/project/{{ dep.name }}/) | {{ dep.summary }} | {{ ("`" ~ dep.spec|sort(reverse=True)|join(", ") ~ "`") if dep.spec else "" }} | `{{ dep.version }}` | {{ dep.license }}
@@ -176,7 +175,18 @@ def _render_credits() -> str:
         {% endif -%}
         
         ### More Credits
-        
+        Project | Summary |
+        ------- | ------- |
+        [Google.Cloud.Translation.V2](https://cloud.google.com/dotnet/docs/reference/Google.Cloud.Translation.V2/latest) | Fast translation API
+        [Zoomooz.js](https://jaukia.github.io/zoomooz/) | JavaScript zooming plugin
+        [gulp.js](https://gulpjs.com/) | JavaScript automated workflows
+        [Babel.js](https://babeljs.io/) | JavaScript transpiler
+        [Terser](https://terser.org/) | JavaScript minifier
+        [NYTimes Mini Crossword](https://www.nytimes.com/crosswords/game/mini) | Inspiration for crossword game design
+        [CSS Pattern](https://css-pattern.com/) | CSS background
+        [Pure CSS Toggle Switch](https://codepen.io/morgoe/pen/VvzWQg) | Toggle switch CSS patterns
+        Jazzy Chords by NenadSimic -- https://freesound.org/s/150879/ -- License: Creative Commons 0 | Crossword completion sound licensed by CC
+
         """,
     )
     jinja_env = SandboxedEnvironment(undefined=StrictUndefined)

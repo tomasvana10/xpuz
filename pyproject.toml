@@ -42,6 +42,11 @@ dependencies = [
     "pywebview",
 ]
 
+[project.optional-dependencies]
+pdf = [
+    "pycairo",
+]
+
 [tool.setuptools.packages.find]
 where = ["src"]
 

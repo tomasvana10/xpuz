@@ -12,10 +12,12 @@ watch:
 nav:
   - Home: 
     - index.md
+    - Contributing: contributing.md
     - License: license.md
     - Credits: credits.md
     - Gallery: gallery.md
-  - Installation: installation.md
+  - Getting Started:
+    - installation.md
   - User Guide: user_guide.md
   - Troubleshooting: troubleshooting.md
   - FAQ: faq.md
@@ -24,9 +26,13 @@ nav:
 
 theme:
   name: material
+  font: 
+    text: Roboto
+    code: Roboto Mono
   icon:
     logo: material/book-open-page-variant
-    annotation: material/arrow-right-circle
+    annotation: material/plus-circle
+  favicon: favicon.ico
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -68,14 +74,22 @@ markdown_extensions:
   - callouts
   - footnotes
   - attr_list
+  - pymdownx.tabbed:
+      alternate_style: true
   - mkdocs-click
   - pymdownx.snippets
   - md_in_html
   - pymdownx.superfences
   - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - footnotes
   - def_list
   - admonition
+  - tables
   - toc:
       permalink: "¤"
 
@@ -87,7 +101,6 @@ plugins:
       - docs/scripts/gen_ref_nav.py
   - literate-nav:
       nav_file: SUMMARY.md
-  - coverage
   - mkdocstrings:
       handlers:
         python:

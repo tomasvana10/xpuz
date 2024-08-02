@@ -10,7 +10,6 @@ markdown-callouts
 markdown-exec
 mkdocs-gen-files
 mkdocs-literate-nav
-mkdocs-coverage
 mkdocstrings[python]
 tomli
 

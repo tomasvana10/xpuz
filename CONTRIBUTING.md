@@ -3,8 +3,9 @@ Thanks for deciding to contribute to `xpuz`. Please read below for information o
 
 When contributing to this project, you must agree that you have authored 100% of the content, that you have the necessary rights to the content and that the content you contribute may be provided under the project licence.
 
-Then, submit a pull request:
-1. Create a fork of `xpuz`
+Then, follow these steps: 
+
+1. Create a [fork of `xpuz`](https://github.com/tomasvana10/xpuz/fork)
    
 2. Clone your fork locally on your computer (requires git):
 ```
@@ -34,7 +35,7 @@ git push remote origin
 ```
 
 6. Create a pull request:
-   - Navigate to your repo's main page
-   - Go to pull requests
-   - Set the "compare" option to your new branch name
-   - Add some information and submit your changes
+      1. Navigate to your repo's main page
+      2. Go to pull requests
+      3. Set the "compare" option to your new branch name
+      4. Add some information and submit your changes
