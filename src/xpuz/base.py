@@ -4,7 +4,11 @@ instance.
 
 from configparser import ConfigParser
 from platform import system
-from typing import Dict, List, Union, Tuple, Callable, Literal
+from typing import Dict, List, Union, Tuple, Callable
+try:
+    from typing import Literal
+except ImportError:
+    from typing_extensions import Literal
 
 from babel import Locale
 from customtkinter import (

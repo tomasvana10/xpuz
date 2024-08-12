@@ -18,9 +18,12 @@ from typing import (
     Optional,
     Tuple,
     Union,
-    Literal,
     Any,
 )
+try:
+    from typing import Literal
+except ImportError:
+    from typing_extensions import Literal
 from urllib.error import URLError
 
 from babel import Locale

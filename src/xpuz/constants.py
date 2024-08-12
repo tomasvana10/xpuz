@@ -37,14 +37,11 @@ Attributes:
     LANG_REPLACEMENTS: Mapping of google translate language codes to their
         respective `Babel` language codes. `None` if they do not exist, otherwise,
         a string representing the `Babel`-correct code.
-    
-    
-    
 """
 
 from os import path
-from pathlib import Path, PosixPath, WindowsPath
-from typing import Dict, List, Union
+from pathlib import Path
+from typing import Dict, List, Union, Tuple
 
 from platformdirs import user_documents_dir
 from regex import Pattern, compile
@@ -92,7 +89,7 @@ class Colour:
 
 
 # Absolute paths used across the source code.
-DIR_PATH: Union[PosixPath, WindowsPath] = Path(__file__).resolve().parents[0]
+DIR_PATH: Path = Path(__file__).resolve().parents[0]
 TEMPLATE_CFG_PATH: str = path.join(DIR_PATH, "template.config.ini")
 DOC_PATH: str = user_documents_dir()
 DOC_DATA_PATH: str = path.join(DOC_PATH, "xpuz")
