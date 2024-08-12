@@ -22,9 +22,9 @@ cfg: ConfigParser = ConfigParser()
 
 def _app_process(**kwargs: Dict[str, Any]) -> None:
     """This function is executed as a new Process with the `multiprocessing`
-    module to ensure the web application does not block the execution of the 
+    module to ensure the web application does not block the execution of the
     Tkinter GUI.
-    
+
     Args:
         **kwargs: Jinja2 template and crossword-related data.
     """
@@ -62,10 +62,10 @@ def _app_process(**kwargs: Dict[str, Any]) -> None:
 
 def _is_port_in_use(port: int) -> bool:
     """Check if `port` is in use.
-    
+
     Args:
         port: The port to check
-    
+
     Returns:
         Whether the port is in use or not.
     """
@@ -75,7 +75,7 @@ def _is_port_in_use(port: int) -> bool:
 
 def _create_app(**kwargs: Dict[str, Any]) -> None:
     """Execute the ``_app_process`` function as a multithreaded process.
-    
+
     Args:
         **kwargs: Jinja2 template and crossword-related data.
     """

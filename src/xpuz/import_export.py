@@ -15,7 +15,7 @@ class Export(list):
 
     def __init__(self, blocks: List["UserCrosswordBlock"]) -> None:
         """Initialise the `self.blocks` array and export-related booleans.
-        
+
         Args:
             blocks: The available user crossword blocks
         """
@@ -79,7 +79,7 @@ class Import:
 
     def __init__(self, master: "CrosswordPane", fp: PathLike) -> None:
         """Initialise import-related booleans and lists.
-        
+
         Args:
             master: The instance of the crossword pane.
             fp: The filepath to which the crosswords will be imported.
@@ -145,7 +145,7 @@ class Import:
     def _write(self, crosswords: Any) -> None:
         """Write ``crosswords`` to ``self.fp``, collecting information on invalid
         and conflicting crosswords.
-        
+
         Args:
             crosswords: The crosswords to import.
         """

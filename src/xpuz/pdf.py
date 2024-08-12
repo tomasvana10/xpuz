@@ -40,15 +40,19 @@ class PDF:
         definitions_d: List[Dict[int, Tuple[str]]],
     ) -> None:
         """Initialise the crossword data and the crossword wrapper object.
-        
+
         Args:
             cwrapper: The crossword wrapper.
-            starting_word_positions: [read this function](utils.md#xpuz.utils._interpret_cword_data)
-            starting_word_matrix: [read this function](utils.md#xpuz.utils._interpret_cword_data)
-            definitions_a: [read this function](utils.md#xpuz.utils._interpret_cword_data)
-            definitions_d: [read this function](utils.md#xpuz.utils._interpret_cword_data)
+            starting_word_positions: 
+                [read this function](utils.md#xpuz.utils._interpret_cword_data)
+            starting_word_matrix: 
+                [read this function](utils.md#xpuz.utils._interpret_cword_data)
+            definitions_a: 
+                [read this function](utils.md#xpuz.utils._interpret_cword_data)
+            definitions_d: 
+                [read this function](utils.md#xpuz.utils._interpret_cword_data)
         """
-            
+
         self.cwrapper = cwrapper
         self.crossword = self.cwrapper.crossword
         self.grid: List[List[str]] = self.crossword.grid
@@ -113,8 +117,8 @@ class PDF:
         slant: str = FONT_SLANT_NORMAL,
         weight: str = FONT_WEIGHT_BOLD,
     ) -> None:
-        """Set the font that is used by `pycairo`. 
-        
+        """Set the font that is used by `pycairo`.
+
         Args:
             family: The font family.
             slant: The font slant.
@@ -140,8 +144,8 @@ class PDF:
 
     def _draw_grid(self, with_answers: bool = False) -> None:
         """Draw the crossword grid in the center of the page.
-        
-        Args: 
+
+        Args:
             with_answers: Whether to draw this current part of the crossword PDF
                           with answers in the grid or not.
         """
@@ -185,7 +189,7 @@ class PDF:
 
     def _draw_cell_letter(self, row: int, col: int) -> None:
         """Draw the letter at `self.grid[row][col]`.
-        
+
         Args:
             row: The row, used as a reference to determine the drawing location.
             col: The column, used as a reference to determine the drawing location.
@@ -208,7 +212,7 @@ class PDF:
     def _draw_number_label(self, row: int, col: int) -> None:
         """Draw a number label in the top left hand corner of the cell at ``row``
         and ``col``.
-        
+
         Args:
             row: The row, used as a reference to determine the drawing location.
             col: The column, used as a reference to determine the drawing location.
@@ -245,7 +249,7 @@ class PDF:
 
     def _draw_display_name(self, name: str) -> None:
         """Draw ``name`` at the top of the current page.
-        
+
         Args:
             name: The display name.
         """
@@ -300,7 +304,7 @@ class PDF:
         """Draw either the across or down definitions column.
 
         DISCLAIMER: Does not provide wrapping for clues.
-        
+
         Args:
             definitions: The definitions for either the across or down column.
             dir_title: The title for the column.

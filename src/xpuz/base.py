@@ -46,12 +46,15 @@ class Addons:
         confirmation: Dict[str, bool] = {"close": True},
     ) -> bool:
         """Allow the user to confirm if they wish to route through a messagebox.
-        
+
         Args:
             action: A function to call if the user confirms to route.
             condition: Only perform the confirmation if `True`.
-            confirmation: Passed in `**kwargs` syntax to the [messagebox helper](utils.md#xpuz.utils.GUIHelper.confirm_with_messagebox)
-        
+            confirmation: Passed in `**kwargs` syntax to the 
+                [messagebox helper](
+                    utils.md#xpuz.utils.GUIHelper.confirm_with_messagebox
+                )
+
         Returns:
             The status of the route confirmation; whether it was accepted or not.
         """
@@ -79,13 +82,15 @@ class Addons:
 
         All class instances that use ``_route`` must have their content packed
         and contain 4 content generation methods, as seen in the source code.
-        
+
         Args:
-            page_ref: The new page's name, used to retrieve the corresponding class from `locals()`.
+            page_ref: The new page's name, used to retrieve the corresponding 
+                      class from `locals()`.
             base: The main app instance.
             title: The new page's title.
-            **kwargs: Confirmation dictionary routed to [_confirm_route](base.md#xpuz.base.Addons._confirm_route).
-        
+            **kwargs: Confirmation dictionary routed to 
+                [_confirm_route](base.md#xpuz.base.Addons._confirm_route).
+
         Returns:
             Status of the route; whether it was performed or not.
         """
@@ -126,18 +131,24 @@ class Base(CTk, Addons):
     """The main app instance. Contains methods used by all pages."""
 
     base_container: CTkFrame = None
-    lang_info: Tuple[Dict[str, str], List[str]] = [] 
-    locale: Locale = None 
-    cfg: ConfigParser = None 
+    lang_info: Tuple[Dict[str, str], List[str]] = []
+    locale: Locale = None
+    cfg: ConfigParser = None
     fullscreen: bool = False
     page_inst: object = None
 
-    def __init__(self, **kwargs: Dict[str, Union[Tuple[Dict[str, str], List[str]], Locale, ConfigParser]]) -> None:
+    def __init__(
+        self,
+        **kwargs: Dict[
+            str, Union[Tuple[Dict[str, str], List[str]], Locale, ConfigParser]
+        ],
+    ) -> None:
         """Initialise the base instance and container and apply widget scaling,
         theme and appearance.
-        
+
         Args:
-            **kwargs: `lang_info`, `cfg`, and `locale` objects passed from [main](__main__.md#xpuz.__main__.main).
+            **kwargs: `lang_info`, `cfg`, and `locale` objects passed from 
+                [main](__main__.md#xpuz.__main__.main).
         """
         super().__init__()
 
@@ -167,8 +178,8 @@ class Base(CTk, Addons):
 
     def _set_dim(self, dim: Tuple[int, int] = DIM) -> None:
         """Set the dimensions of the program during runtime.
-        
-        Args: 
+
+        Args:
             dim: The dimensions.
         """
         scale = float(Base.cfg.get("m", "scale"))
@@ -205,7 +216,7 @@ class Base(CTk, Addons):
         """Called when the event `WM_DELETE_WINDOW` occurs or when the the
         program must be restarted, in which case the ``restart`` default
         parameter is overridden.
-        
+
         Args:
             restart: Whether to perform a restart or not.
             webapp_on: Whether the `Flask` web app is running or not.

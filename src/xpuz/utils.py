@@ -10,7 +10,17 @@ from os import DirEntry, PathLike, listdir, mkdir, path, scandir
 from platform import system
 from random import randint, sample
 from tkinter import messagebox, filedialog
-from typing import Callable, Dict, Iterable, List, Optional, Tuple, Union, Literal, Any
+from typing import (
+    Callable,
+    Dict,
+    Iterable,
+    List,
+    Optional,
+    Tuple,
+    Union,
+    Literal,
+    Any,
+)
 from urllib.error import URLError
 
 from babel import Locale
@@ -46,8 +56,8 @@ class GUIHelper:
     @staticmethod
     def _install_translations(locale: Locale) -> None:
         """Install translations from ``locale.language`` with gettext.
-        
-        Args: 
+
+        Args:
             locale: The current locale object.
         """
         translation(
@@ -58,15 +68,17 @@ class GUIHelper:
         ).install()
 
     @staticmethod
-    def confirm_with_messagebox(*args: Tuple[str], **kwargs: Dict[str, str]) -> bool:
+    def confirm_with_messagebox(
+        *args: Tuple[str], **kwargs: Dict[str, str]
+    ) -> bool:
         """Provide confirmations to the user with tkinter messageboxes.
-        
-        Args: 
+
+        Args:
             *args: Optional info messages to be included with specific messagebox
                    calls.
-            **kwargs: The specific messagebox name, selected by this method's 
+            **kwargs: The specific messagebox name, selected by this method's
                       `if` statements.
-        
+
         Returns:
             Whether the user confirmed/pressed yes on the messagebox or not.
         """
@@ -130,11 +142,11 @@ class GUIHelper:
     @staticmethod
     def show_messagebox(*args: Tuple[str], **kwargs: Dict[str, str]) -> None:
         """Show an error/info messagebox
-        
-        Args: 
-            *args: Optional error messages/details to be included with specific 
+
+        Args:
+            *args: Optional error messages/details to be included with specific
                    messagebox calls.
-            **kwargs: The specific messagebox name, selected by this method's 
+            **kwargs: The specific messagebox name, selected by this method's
                       `if` statements.
         """
         if "same_lang" in kwargs:
@@ -255,12 +267,9 @@ class GUIHelper:
                 )
                 + ": https://pycairo.readthedocs.io/en/latest/getting_started.html",
             )
-        
+
         if "ipuz_write_success" in kwargs:
-            return messagebox.showinfo(
-                _("Info"),
-                _("Successfully wrote ipuz")
-            )
+            return messagebox.showinfo(_("Info"), _("Successfully wrote ipuz"))
 
         if "first_time_browser" in kwargs:
             return messagebox.showinfo(
@@ -306,14 +315,14 @@ class BlockUtils:
         it consists of) starts with ``query``, or if ``category`` starts with
         ``query``. All comparisons are caseless and do not regard whitespace
         (except the category, which keeps its whitespace).
-        
+
         Args:
             query: A query entered by the user.
             block_name: The current block name that is being queried.
             category: The category of the current block name that is being queried.
-        
+
         Returns:
-            Whether the query was found in the category or block name, or not. 
+            Whether the query was found in the category or block name, or not.
         """
         formatted_query = query.strip().casefold()
         return any(
@@ -325,10 +334,10 @@ class BlockUtils:
     def _put_block(cls, block: CTkFrame, side: str = "left") -> None:
         """Pack ``block`` in its parent container and append it to the available
         blocks in ``cls``.
-        
+
         Args:
-            block: The block instance to be packed. 
-            side: The side to pack the block. `"top"` for the crossword editor 
+            block: The block instance to be packed.
+            side: The side to pack the block. `"top"` for the crossword editor
                   panes, and `"left"` for the crossword browser container.
         """
         block.pack(side=side, padx=5, pady=(5, 0))
@@ -338,7 +347,7 @@ class BlockUtils:
     def _remove_block(cls, block: CTkFrame) -> None:
         """Remove ``block`` from its parent container and the available blocks
         in ``cls``.
-        
+
         Args:
             block: The block to remove.
         """
@@ -352,8 +361,8 @@ class BlockUtils:
     ) -> None:
         """Call ``func``, passing each block in ``cls.blocks`` as parameters.
         Most often used to put or remove all of the blocks in ``cls.blocks``.
-        
-        Args: 
+
+        Args:
             func: The function to perform on the block.
         """
         for block in [
@@ -366,7 +375,7 @@ class BlockUtils:
     @classmethod
     def _config_selectors(cls, **kwargs: Dict[str, Any]) -> None:
         """Enable or disable all the radiobutton selectors in ``cls.blocks``.
-        
+
         Args:
             **kwargs: Configuration parameters.
         """
@@ -376,8 +385,8 @@ class BlockUtils:
 
 def _open_file(fp: PathLike) -> None:
     """Open ``fp`` (directory) in the OS' default file explorer.
-    
-    Args: 
+
+    Args:
         fp: The filepath to open.
     """
     plat: str = system()
@@ -394,9 +403,11 @@ def _open_file(fp: PathLike) -> None:
             os_system("xdg-open %s" % fp)
 
 
-def _get_saveas_filename(title: str, name: str, extension: str, filetypes: List[Tuple[str]]) -> Union[str, PathLike]:
+def _get_saveas_filename(
+    title: str, name: str, extension: str, filetypes: List[Tuple[str]]
+) -> Union[str, PathLike]:
     """Get user input for a file save location.
-    
+
     Args:
         title: The file explorer's titlebar text.
         name: The default file name.
@@ -412,9 +423,11 @@ def _get_saveas_filename(title: str, name: str, extension: str, filetypes: List[
     )
 
 
-def _get_open_filename(title: str, filetypes: List[Tuple[str]]) -> Union[str, PathLike]:
+def _get_open_filename(
+    title: str, filetypes: List[Tuple[str]]
+) -> Union[str, PathLike]:
     """Get user input for the location to a file that is to be opened.
-    
+
     Args:
         title: The file explorer's titlebar text.
         filetypes: Available filetypes to display.
@@ -432,12 +445,12 @@ def _get_english_string(
     """Find the english version of ``index_value`` by finding its index in
     ``localised_arr``, then using the resulting integer to index ``eng_arr``.
     This function assumes both arrays have the same relative order.
-    
+
     Args:
         eng_arr: The default english values.
         localised_arr: The localised values.
         index_value: The position of the localised string within `localised_arr`.
-    
+
     Returns:
         The english string that was indexed.
     """
@@ -447,7 +460,7 @@ def _get_english_string(
 def _check_version() -> Union[None, str]:
     """Find latest remote GitHub release if it is higher than the local
     release using the ``urllib`` module.
-    
+
     Returns:
         The latest release, if it was found. Otherwise, returns `None`.
     """
@@ -465,7 +478,10 @@ def _check_version() -> Union[None, str]:
         # Any component of the remote semver'd tag is greater than that of the
         # local tag (MAJOR or MINOR or PATCH), meaning a new version has been
         # made, so, return the remote version.
-        if any(int(item[0]) > int(item[1]) for item in list(zip(remote_ver, local_ver))):
+        if any(
+            int(item[0]) > int(item[1])
+            for item in list(zip(remote_ver, local_ver))
+        ):
             return data["name"]
 
     return None  # ``response.status`` wasn't 200, meaning some error occurred.
@@ -480,16 +496,16 @@ def _doc_data_routine(
 ) -> bool:
     """Scan through both the package and system document directories, making
     the required folders if needed.
-    
+
     Args:
         doc_callback: A function to execute if possible when scanning the system's
                       document directory to make missing files.
-        local_callback: A function to execute if possible when scanning the 
+        local_callback: A function to execute if possible when scanning the
                         local data of the `xpuz` package to make missing files.
         toplevel: The path of the system's document directory.
         datalevel: The path to the data files within `toplevel`
         sublevel: The path to `config.ini` within `toplevel`.
-    
+
     Returns:
         Whether the document data has been successfully made or not.
     """
@@ -504,19 +520,15 @@ def _doc_data_routine(
         return False  # Cannot continue, as Documents do not exist
 
     # If the code reached this point, it means a Documents folder must exist
-    if not path.exists(
-        datalevel
-    ):  # Attempt to make the ``xpuz`` dir in Documents
+    if not path.exists(datalevel):  # Attempt to make the ``xpuz`` dir in Documents
         mkdir(DOC_DATA_PATH)
 
-    if not path.exists(
-        sublevel
-    ):  # The required sub-directory doesn't exist yet
-        # in Documents
+    if not path.exists(sublevel):  # The required sub-directory doesn't exist 
+                                   # yet in Documents
         if doc_callback:
             try:
                 doc_callback()  # Attempt to make the required sub-directory
-                # eg ``xpuz/user`` for user crosswords
+                                # eg ``xpuz/user`` for user crosswords
             except OSError:
                 pass
 
@@ -526,7 +538,7 @@ def _doc_data_routine(
 def _check_doc_cfg_is_up_to_date() -> bool:
     """Check if the all the sections (and values of those sections) are present
     in the document config.ini file.
-    
+
     Returns:
         Whether the config.ini in the system's documents directory is up-to-date
         or not.
@@ -570,7 +582,7 @@ def _update_cfg(
 ) -> None:
     """Update ``cfg`` at the given section, option and value, then write it
     to an available config path.
-    
+
     Args:
         section: The section to update.
         option: The option to update.
@@ -594,8 +606,8 @@ def _read_cfg(cfg: ConfigParser) -> None:
     """Determine which config file to access (whether it is
     ``template.config.ini`` in the package or ``config.ini`` in the system
     documents directory), and write its contents to ``cfg``.
-    
-    Args: 
+
+    Args:
         cfg: The config parser instance.
     """
     # Documents directory unavailable
@@ -609,7 +621,7 @@ def _read_cfg(cfg: ConfigParser) -> None:
 
 def _get_base_categories() -> Iterable[DirEntry]:
     """Get all the available crossword categories sorted alphabetically.
-    
+
     Returns:
         All the directory entries to the available crossword categories. They
         can be sourced from both the package and the system's data.
@@ -636,18 +648,18 @@ def _get_base_categories() -> Iterable[DirEntry]:
 
 
 def _sort_crosswords_by_suffix(
-    cwords: Union[List[DirEntry], List[Tuple[DirEntry, DirEntry]]]
+    cwords: Union[List[DirEntry], List[Tuple[DirEntry, DirEntry]]],
 ) -> Union[List[DirEntry], List[Tuple[DirEntry, DirEntry]]]:
     """Sort an iterable container with crossword directory entries based on
     the crossword's suffix (from -easy to -extreme, if possible).
-    
+
     Args:
         cwords: A list of directory entries of crosswords, or an array of
                 tuples with lists of both category entries **and** crossword
                 entries, if sorting all available crosswords.
-    
+
     Returns:
-        The unsorted crosswords if any one of them is missing a suffix, or the 
+        The unsorted crosswords if any one of them is missing a suffix, or the
         sorted crosswords in the same structure they were passed to the function.
     """
     try:
@@ -671,13 +683,13 @@ def _get_base_crosswords(
 ) -> Iterable[DirEntry]:
     """Get all the available crosswords from the base crossword directory if
     they have valid ``definitions.json`` files.
-    
+
     Args:
         category: The path/directory entry to the category.
         sort: Whether to sort the obtained crosswords or not.
         allow_empty_defs: Consider a crossword with no definitions to be valid
                           if it is user made.
-    
+
     Returns:
         The acquired crosswords, sorted or unsorted, based on if any errors
         occurred during the sorting process.
@@ -706,9 +718,9 @@ def _get_base_crosswords(
 def _make_cword_info_json(
     fp: PathLike, cword_name: str, category: str
 ) -> None:
-    """Make an info.json file for a given crossword, since it doesn't exist. 
+    """Make an info.json file for a given crossword, since it doesn't exist.
     Infer any required information that is not passed by the caller.
-    
+
     Args:
         fp: The path to write the info to.
         cword_name: The name of the crossword.
@@ -755,7 +767,7 @@ def _update_cword_info_word_count(
     """Update the word count in a crossword's `info.json` file if it is
     inconsistent with the amount of key-pair values in its `definitions.json`
     file.
-    
+
     Args:
         fp: The toplevel of the crossword.
         info: The existing info of the crossword.
@@ -769,7 +781,7 @@ def _update_cword_info_word_count(
 def _make_category_info_json(fp: PathLike, hex_: str = None) -> None:
     """Write a new info.json to a category since it does not exist in the a
     category's directory.
-    
+
     Args:
         fp: The path to write the category's `info.json` file to.
         hex_: A hexadecimal colour value stored in a string, which represents
@@ -786,7 +798,7 @@ def _load_attempts_db() -> Dict[str, int]:
     should be conducted for a crossword based on its word count. This is
     integral to the crossword optimisation process, as crossword generation
     time scales logarithmically with word count.
-    
+
     Returns:
         The attempts dictionary.
     """
@@ -799,16 +811,16 @@ def _get_language_options() -> Tuple[Dict[str, str], List[str]]:
     """Gather a dictionary that maps each localised language name to its
     english acronym, and a list that contains all of the localised language
     names. This data is derived from ``LOCALES_PATH``.
-    
+
     Returns:
         The localised language dictionary and the localised languages list.
     """
     localised_lang_db: Dict[str, str] = {}  # Used to retrieve the language
-                                            # code for the selected language
-                                            # e.x. {"አማርኛ": "am",}
+    # code for the selected language
+    # e.x. {"አማርኛ": "am",}
     localised_langs: List[str] = []  # Used in the language selection
-                                     # optionmenu
-                                     # e.x. ["አማርኛ", "عربي"]
+    # optionmenu
+    # e.x. ["አማርኛ", "عربي"]
 
     i: int = 0
     for locale in sorted(
@@ -829,13 +841,15 @@ def _get_language_options() -> Tuple[Dict[str, str], List[str]]:
 
 
 def _get_colour_palette(
-    appearance_mode: Union[Literal["Light"], Literal["Dark"], Literal["System"]]
+    appearance_mode: Union[
+        Literal["Light"], Literal["Dark"], Literal["System"]
+    ],
 ) -> Dict[str, str]:
     """Create a dictionary based on ``constants.Colour`` for the web app.
-    
+
     Args:
         appearance_mode: The current tkinter appearance mode.
-    
+
     Returns:
         A colour code dictionary.
     """
@@ -854,11 +868,11 @@ def _find_best_crossword(
     """Determine the best crossword out of a amount of instantiated
     crosswords based on the largest amount of total intersections and
     smallest amount of fails.
-    
+
     Args:
         crossword: The `Crossword` instance to perform the optimised creation on.
         cls: The `Crossword` class.
-    
+
     Returns:
         The best `Crossword` instance that was found.
     """
@@ -923,15 +937,15 @@ def _find_best_crossword(
     return best_crossword
 
 
-def _interpret_cword_data(crossword: "Crossword") -> Tuple[
-        List[Tuple[int]], List[Dict[int, Tuple[str]]], List[List[int]]
-    ]:
+def _interpret_cword_data(
+    crossword: "Crossword",
+) -> Tuple[List[Tuple[int]], List[Dict[int, Tuple[str]]], List[List[int]]]:
     """Gather data to help with the templated creation of the crossword
     web application.
-    
+
     Args:
         crossword: The `Crossword` instance to gather data on.
-    
+
     Returns:
         The interpreted crossword data. Please view the source code below for
         more information.
@@ -949,7 +963,7 @@ def _interpret_cword_data(crossword: "Crossword") -> Tuple[
 
     num_label: int = (
         1  # Incremented whenever the start of a word is found;
-           # used to create ``starting_word_matrix``.
+        # used to create ``starting_word_matrix``.
     )
     for row in range(crossword.dimensions):
         for column in range(crossword.dimensions):
@@ -997,31 +1011,29 @@ def _randomise_definitions(definitions: Dict[str, str]) -> Dict[str, str]:
     """Randomises the existing definitions when attempting reinsertion,
     which prevents ``_find_best_crossword`` from favouring certain word
     groups with intrinsically higher intersections.
-    
+
     Args:
         definitions: The crossword's definitions.
-    
+
     Returns:
         The randomised crossword definitions.
     """
     return dict(sample(list(definitions.items()), len(definitions)))
 
 
-def _verify_definitions(
-    definitions: Dict[str, str], word_count: int
-) -> None:
+def _verify_definitions(definitions: Dict[str, str], word_count: int) -> None:
     """Process a dictionary of definitions through statements to raise
     errors for particular edge cases in a definitions dictionary. This
     function also uses ``_format_definitions`` to randomly sample a specified
     amount of definitions from the definitions dictionary, then format
     those definitions appropriately.
-    
+
     Args:
         definitions: The crossword's definitions.
         word_count: The crossword's word count.
-    
+
     Raises:
-        DefinitionsParsingError: If the definitions are invalid. Please view the 
+        DefinitionsParsingError: If the definitions are invalid. Please view the
                                  source code below for more information.
     """
     # Required error checking
@@ -1045,11 +1057,11 @@ def _format_definitions(
     """Randomly pick definitions from a larger sample, then prune
     everything except the language characters from the words (the keys of
     the definitions).
-    
+
     Args:
         definitions: The crossword's definitions.
         word_count: The crossword's word count.
-    
+
     Returns:
         The formatted crossword definitions.
     """

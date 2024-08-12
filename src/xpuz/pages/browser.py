@@ -581,15 +581,17 @@ class BrowserPage(CTkFrame, Addons):
         self.webapp_on: bool = False
 
     def _export(self) -> None:
-        export: str = _get_english_string(BASE_ENG_EXPORTS, self.exports, self.export_pref.get())
+        export: str = _get_english_string(
+            BASE_ENG_EXPORTS, self.exports, self.export_pref.get()
+        )
         if export == BASE_ENG_EXPORTS[0]:
             self._export_pdf()
         else:
             self._export_ipuz()
 
     def _export_ipuz(self) -> None:
-        from xpuz.ipuz import IPuz 
-        
+        from xpuz.ipuz import IPuz
+
         IPuz(
             self.cwrapper,
             self.starting_word_matrix,

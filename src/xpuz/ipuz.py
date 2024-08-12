@@ -12,6 +12,7 @@ from xpuz.utils import GUIHelper, _get_saveas_filename
 
 class IPuz(dict):
     """Export a generated crossword in ``ipuz`` format."""
+
     def __init__(
         self,
         cwrapper: CrosswordWrapper,
@@ -20,12 +21,15 @@ class IPuz(dict):
         definitions_d: List[Dict[int, Tuple[str]]],
     ) -> None:
         """Initialise crossword data and the crossword wrapper object.
-        
+
         Args:
             cwrapper: The crossword wrapper.
-            starting_word_matrix: [read this function](utils.md#xpuz.utils._interpret_cword_data)
-            definitions_a: [read this function](utils.md#xpuz.utils._interpret_cword_data)
-            definitions_d: [read this function](utils.md#xpuz.utils._interpret_cword_data)
+            starting_word_matrix: 
+                [read this function](utils.md#xpuz.utils._interpret_cword_data)
+            definitions_a: 
+                [read this function](utils.md#xpuz.utils._interpret_cword_data)
+            definitions_d: 
+                [read this function](utils.md#xpuz.utils._interpret_cword_data)
         """
         self.cwrapper = cwrapper
         self.crossword = self.cwrapper.crossword

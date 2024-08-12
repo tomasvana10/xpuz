@@ -1,4 +1,4 @@
-"""Default GUI page for ``xpuz``. Provides global configuration options and 
+"""Default GUI page for ``xpuz``. Provides global configuration options and
 routing buttons to other available pages.
 """
 

@@ -30,8 +30,8 @@ class CrosswordWrapper:
     """
 
     helper: Union[None, object] = None  # Set to ``main.GUIHelper`` at runtime
-                                        # (if using the GUI)
-    logger: object = lambda *args, **kwargs: print(f"{args[0]}({args[1]})") 
+    # (if using the GUI)
+    logger: object = lambda *args, **kwargs: print(f"{args[0]}({args[1]})")
 
     def __init__(
         self,
@@ -45,16 +45,16 @@ class CrosswordWrapper:
         value: int = None,
     ) -> None:
         """Initialise the crossword's data and prime the instance for generation.
-        
+
         Args:
             category: The crossword's category.
             name: The crossword's name.
             word_count: The crossword's word count.
             language: The crossword's language in `ISO 639` format (probably)
-            optimise: Whether to run 
+            optimise: Whether to run
                       [_find_best_crossword](utils.md#xpuz.utils._find_best_crossword)
                       or not.
-            category_object: The crossword category block that "contains" this 
+            category_object: The crossword category block that "contains" this
                              wrapper's crossword. This wrapper itself was generated
                              when its crossword block was instantiated.
             value: The value of this crossword (ranging from 0-~10), used by
@@ -80,12 +80,14 @@ class CrosswordWrapper:
         self.translated_name: str = self.info["translated_name"] or self.name
         self.difficulty: str = DIFFICULTIES[self.info["difficulty"]]
         self.translated_difficulty = _(self.difficulty)
-        self.display_name: str = f"{self.translated_name} ({_(self.difficulty)})"
+        self.display_name: str = (
+            f"{self.translated_name} ({_(self.difficulty)})"
+        )
 
     def __str__(self) -> str:
         """Display a dev-friendly representation of this `CrosswordWrapper` and
         its attributes
-        
+
         Returns:
             The representation.
         """
@@ -102,7 +104,7 @@ class CrosswordWrapper:
     def set_word_count(self, count: int) -> None:
         """Set this wrapper's word count. Called when the user changes their
         word count preference.
-        
+
         Args:
             count: The word count.
         """
@@ -146,12 +148,12 @@ class CrosswordWrapper:
         (e.g `<pkg_path>/locales/geography/capitals-easy`).
 
         The path returned will be in 1 of 3 locations:
-        
+
         1. Locales directory (if it is found),
         2. Base crossword directory (if not localised version is present),
         3. The system's document directory (if it is available and the crossword
            belongs to the `User` category).
-        
+
         Returns:
             The path to the toplevel of this crossword.
         """
@@ -174,7 +176,7 @@ class CrosswordWrapper:
             return toplevel
 
     def make(self) -> Union[None, Crossword]:
-        """Generate a crossword, running 
+        """Generate a crossword, running
         [_find_best_crossword](utils.md#xpuz.utils._find_best_crossword) if
         `self.optimise` is set to True (it is by default). Any errors caught
         are relayed to the main GUI through the helper attribute of
@@ -206,7 +208,7 @@ class CrosswordWrapper:
     def cells(self) -> str:
         """Return the representation of `self.crossword`'s cells. Essentially a
         router method for `crossword.cells`
-        
+
         Returns:
             The cells.
         """
@@ -215,7 +217,7 @@ class CrosswordWrapper:
     @property
     def definitions(self) -> Dict[str, str]:
         """Read the current definitions of the crossword.
-        
+
         Returns:
             The crossword's definitions.
         """
@@ -225,7 +227,7 @@ class CrosswordWrapper:
     @property
     def info(self) -> CrosswordInfo:
         """Read the current info of the crossword, checking it if it's invalid.
-        
+
         Returns:
             The crossword's info.
         """
