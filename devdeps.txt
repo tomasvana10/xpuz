@@ -1,6 +1,6 @@
 # dev
 black
-ruff==0.4.10
+ruff==0.6.8
 
 # docs
 mkdocs
