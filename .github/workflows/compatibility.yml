@@ -1,9 +1,12 @@
-name: Tests
+name: Compatibility Tests
 
 on:
   push:
     branches: [main]
   pull_request:
+
+permissions:
+  contents: read
 
 jobs:
   build:
@@ -17,7 +20,7 @@ jobs:
           - python-version: 3.7
             platform: ubuntu-22.04
           - python-version: 3.7
-            platform: macos-15
+            platform: macos-15-intel
         exclude:
           - python-version: 3.7
             platform: ubuntu-latest
