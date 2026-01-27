@@ -5,6 +5,7 @@ from os import PathLike, listdir, path
 from pprint import pformat
 from typing import Dict, Optional, Union
 
+from xpuz.compat import get_class_annotations
 from xpuz.constants import (
     BASE_CWORDS_PATH,
     DIFFICULTIES,
@@ -131,7 +132,7 @@ class CrosswordWrapper:
 
         info: CrosswordInfo = self.info
         if not all(  # Pick up missing attributes
-            key in info for key in CrosswordInfo.__dict__["__annotations__"]
+            key in info for key in get_class_annotations(CrosswordInfo)
         ):
             return _make_cword_info_json(
                 self.toplevel, self.fullname, self.category
