@@ -13,7 +13,7 @@
   [![release](https://img.shields.io/github/v/release/tomasvana10/xpuz?logo=github)](https://github.com/tomasvana10/xpuz/releases/latest)
   [![issues](https://img.shields.io/github/issues-raw/tomasvana10/xpuz.svg?maxAge=25000)](https://github.com/tomasvana10/xpuz/issues)
   [![CodeQL](https://github.com/tomasvana10/xpuz/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/tomasvana10/xpuz/actions/workflows/github-code-scanning/codeql)
-  [![Tests](https://github.com/tomasvana10/xpuz/actions/workflows/tox-tests.yml/badge.svg)](https://github.com/tomasvana10/xpuz/actions/workflows/tox-tests.yml)
+  [![Compatibility Tests](https://github.com/tomasvana10/xpuz/actions/workflows/compatibility.yml/badge.svg)](https://github.com/tomasvana10/xpuz/actions/workflows/compatibility.yml)
   
 </div>
 
